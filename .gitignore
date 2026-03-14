@@ -38,3 +38,9 @@ Thumbs.db
 *.tmp
 .cache/
 tmp/
+
+# === Python ===
+uv.lock
+.python-version
+__pycache__/
+*.pyc
