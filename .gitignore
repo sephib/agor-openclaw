@@ -5,7 +5,7 @@
 # branch. If your branch lives on a public remote, move to a private
 # repo rather than ignoring files.
 
-# === Secrets ===
+# === Sensitive / Private Files ===
 .env
 .env.local
 *.pem
@@ -16,7 +16,26 @@ config.json
 secrets.*
 .claude/settings.json
 
-# === Runtime ===
+# === Agor State (runtime tracking) ===
+memory/agor-state/*.json
+
+# === Runtime Memory (daily logs, task outputs) ===
+memory/*.md
+memory/learnings/*.md
+
+# === Ad-hoc scripts and prompts ===
+prompt*.md
+archive_*.py
+
+# === Python ===
+.venv/
+__pycache__/
+*.pyc
+uv.lock
+.python-version
+
+# === Agent Runtime ===
+.openclaw/
 node_modules/
 dist/
 build/
@@ -38,9 +57,3 @@ Thumbs.db
 *.tmp
 .cache/
 tmp/
-
-# === Python ===
-uv.lock
-.python-version
-__pycache__/
-*.pyc
