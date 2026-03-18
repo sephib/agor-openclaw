@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation - TaskFlow</title>
+    <meta name="description" content="Complete API documentation for TaskFlow integration">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: #fff;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #4f46e5;
+        }
+
+        .header-nav {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .header-nav a {
+            text-decoration: none;
+            color: #666;
+            transition: color 0.3s;
+        }
+
+        .header-nav a:hover {
+            color: #4f46e5;
+        }
+
+        /* Main Layout */
+        .docs-container {
+            display: flex;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 280px;
+            background: #f9fafb;
+            border-right: 1px solid #e5e7eb;
+            padding: 2rem 1.5rem;
+            height: calc(100vh - 60px);
+            position: sticky;
+            top: 60px;
+            overflow-y: auto;
+        }
+
+        .sidebar h3 {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            color: #6b7280;
+            margin-bottom: 1rem;
+            letter-spacing: 0.05em;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .sidebar li {
+            margin-bottom: 0.5rem;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #4b5563;
+            display: block;
+            padding: 0.5rem 0.75rem;
+            border-radius: 6px;
+            transition: all 0.3s;
+        }
+
+        .sidebar a:hover {
+            background: #e5e7eb;
+            color: #111;
+        }
+
+        .sidebar a.active {
+            background: #4f46e5;
+            color: #fff;
+        }
+
+        /* Content Area */
+        .content {
+            flex: 1;
+            padding: 3rem;
+            max-width: 900px;
+        }
+
+        .content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #111;
+        }
+
+        .content h2 {
+            font-size: 1.75rem;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            color: #111;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+
+        .content h3 {
+            font-size: 1.25rem;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            color: #111;
+        }
+
+        .content p {
+            margin-bottom: 1.5rem;
+            color: #4b5563;
+        }
+
+        .content ul,
+        .content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+            color: #4b5563;
+        }
+
+        .content li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Code Blocks */
+        code {
+            background: #f3f4f6;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.875rem;
+            color: #e11d48;
+        }
+
+        pre {
+            background: #1f2937;
+            color: #f9fafb;
+            padding: 1.5rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin-bottom: 1.5rem;
+        }
+
+        pre code {
+            background: none;
+            color: #f9fafb;
+            padding: 0;
+        }
+
+        /* Info Boxes */
+        .info-box {
+            background: #eff6ff;
+            border-left: 4px solid #3b82f6;
+            padding: 1.25rem;
+            margin-bottom: 1.5rem;
+            border-radius: 4px;
+        }
+
+        .warning-box {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 1.25rem;
+            margin-bottom: 1.5rem;
+            border-radius: 4px;
+        }
+
+        .success-box {
+            background: #dcfce7;
+            border-left: 4px solid #22c55e;
+            padding: 1.25rem;
+            margin-bottom: 1.5rem;
+            border-radius: 4px;
+        }
+
+        /* Parameters Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1.5rem;
+        }
+
+        th {
+            background: #f9fafb;
+            text-align: left;
+            padding: 0.75rem;
+            border-bottom: 2px solid #e5e7eb;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 0.75rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            color: #6b7280;
+            font-size: 0.875rem;
+        }
+
+        .breadcrumb a {
+            color: #4f46e5;
+            text-decoration: none;
+        }
+
+        /* Table of Contents */
+        .toc {
+            width: 250px;
+            padding: 2rem 1.5rem;
+            position: sticky;
+            top: 60px;
+            height: calc(100vh - 60px);
+            overflow-y: auto;
+        }
+
+        .toc h4 {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            color: #6b7280;
+            margin-bottom: 1rem;
+            letter-spacing: 0.05em;
+        }
+
+        .toc ul {
+            list-style: none;
+        }
+
+        .toc li {
+            margin-bottom: 0.5rem;
+        }
+
+        .toc a {
+            text-decoration: none;
+            color: #6b7280;
+            font-size: 0.875rem;
+            transition: color 0.3s;
+        }
+
+        .toc a:hover {
+            color: #4f46e5;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .toc {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                display: none;
+            }
+
+            .content {
+                padding: 1.5rem;
+            }
+
+            .content h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Mobile Menu Button */
+        .mobile-menu-btn {
+            display: none;
+            background: #4f46e5;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo">TaskFlow Docs</div>
+            <ul class="header-nav">
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">API Reference</a></li>
+                <li><a href="#">Guides</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="docs-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <h3>Getting Started</h3>
+            <ul>
+                <li><a href="#" class="active">Introduction</a></li>
+                <li><a href="#">Quick Start</a></li>
+                <li><a href="#">Authentication</a></li>
+            </ul>
+
+            <h3>API Reference</h3>
+            <ul>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Tasks</a></li>
+                <li><a href="#">Users</a></li>
+                <li><a href="#">Teams</a></li>
+                <li><a href="#">Webhooks</a></li>
+            </ul>
+
+            <h3>Guides</h3>
+            <ul>
+                <li><a href="#">Integration Patterns</a></li>
+                <li><a href="#">Rate Limits</a></li>
+                <li><a href="#">Error Handling</a></li>
+                <li><a href="#">Best Practices</a></li>
+            </ul>
+
+            <h3>Resources</h3>
+            <ul>
+                <li><a href="#">SDK Libraries</a></li>
+                <li><a href="#">Changelog</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <div class="breadcrumb">
+                <a href="#">Home</a> / <a href="#">API</a> / <span>Introduction</span>
+            </div>
+
+            <h1>API Documentation</h1>
+            <p>Welcome to the TaskFlow API documentation. This guide will help you integrate TaskFlow into your applications and automate your workflow.</p>
+
+            <div class="info-box">
+                <strong>API Version:</strong> v2.0<br>
+                <strong>Base URL:</strong> <code>https://api.taskflow.com/v2</code>
+            </div>
+
+            <h2>Getting Started</h2>
+            <p>To use the TaskFlow API, you'll need to authenticate your requests using an API key. Follow these steps to get started:</p>
+
+            <ol>
+                <li>Sign up for a TaskFlow account</li>
+                <li>Navigate to Settings → API Keys</li>
+                <li>Generate a new API key</li>
+                <li>Include the key in your request headers</li>
+            </ol>
+
+            <h3>Authentication</h3>
+            <p>All API requests must include your API key in the authorization header:</p>
+
+            <pre><code>Authorization: Bearer YOUR_API_KEY</code></pre>
+
+            <div class="warning-box">
+                <strong>Security Note:</strong> Never expose your API key in client-side code or public repositories. Keep your keys secure and rotate them regularly.
+            </div>
+
+            <h2>Making Your First Request</h2>
+            <p>Here's a simple example to fetch all projects in your workspace:</p>
+
+            <pre><code>curl https://api.taskflow.com/v2/projects \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json"</code></pre>
+
+            <h3>Response Format</h3>
+            <p>All API responses are returned in JSON format:</p>
+
+            <pre><code>{
+  "data": [
+    {
+      "id": "proj_123abc",
+      "name": "Website Redesign",
+      "status": "active",
+      "created_at": "2024-01-15T10:30:00Z"
+    }
+  ],
+  "meta": {
+    "total": 1,
+    "page": 1,
+    "per_page": 20
+  }
+}</code></pre>
+
+            <h2>Common Operations</h2>
+
+            <h3>Create a Task</h3>
+            <p>Create a new task in a project:</p>
+
+            <pre><code>POST /v2/projects/:project_id/tasks
+
+{
+  "title": "Design homepage mockup",
+  "description": "Create initial design concepts",
+  "assignee_id": "user_456def",
+  "due_date": "2024-02-01",
+  "priority": "high"
+}</code></pre>
+
+            <h3>Parameters</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Required</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>title</code></td>
+                        <td>string</td>
+                        <td>Yes</td>
+                        <td>Task title (max 200 characters)</td>
+                    </tr>
+                    <tr>
+                        <td><code>description</code></td>
+                        <td>string</td>
+                        <td>No</td>
+                        <td>Detailed task description</td>
+                    </tr>
+                    <tr>
+                        <td><code>assignee_id</code></td>
+                        <td>string</td>
+                        <td>No</td>
+                        <td>User ID to assign the task</td>
+                    </tr>
+                    <tr>
+                        <td><code>due_date</code></td>
+                        <td>date</td>
+                        <td>No</td>
+                        <td>Task due date (ISO 8601 format)</td>
+                    </tr>
+                    <tr>
+                        <td><code>priority</code></td>
+                        <td>enum</td>
+                        <td>No</td>
+                        <td>Priority level: low, medium, high</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Rate Limits</h2>
+            <p>The API enforces rate limits to ensure fair usage:</p>
+
+            <ul>
+                <li><strong>Free tier:</strong> 100 requests per hour</li>
+                <li><strong>Professional:</strong> 1,000 requests per hour</li>
+                <li><strong>Enterprise:</strong> Custom limits</li>
+            </ul>
+
+            <p>Rate limit information is included in response headers:</p>
+
+            <pre><code>X-RateLimit-Limit: 1000
+X-RateLimit-Remaining: 998
+X-RateLimit-Reset: 1609459200</code></pre>
+
+            <h2>Error Handling</h2>
+            <p>The API uses standard HTTP status codes to indicate success or failure:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Status Code</th>
+                        <th>Meaning</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>200</td>
+                        <td>OK</td>
+                        <td>Request successful</td>
+                    </tr>
+                    <tr>
+                        <td>201</td>
+                        <td>Created</td>
+                        <td>Resource created successfully</td>
+                    </tr>
+                    <tr>
+                        <td>400</td>
+                        <td>Bad Request</td>
+                        <td>Invalid request parameters</td>
+                    </tr>
+                    <tr>
+                        <td>401</td>
+                        <td>Unauthorized</td>
+                        <td>Invalid or missing API key</td>
+                    </tr>
+                    <tr>
+                        <td>404</td>
+                        <td>Not Found</td>
+                        <td>Resource not found</td>
+                    </tr>
+                    <tr>
+                        <td>429</td>
+                        <td>Too Many Requests</td>
+                        <td>Rate limit exceeded</td>
+                    </tr>
+                    <tr>
+                        <td>500</td>
+                        <td>Server Error</td>
+                        <td>Internal server error</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="success-box">
+                <strong>Next Steps:</strong> Now that you understand the basics, explore the <a href="#">API Reference</a> for detailed endpoint documentation or check out our <a href="#">integration guides</a> for common use cases.
+            </div>
+        </main>
+
+        <!-- Table of Contents -->
+        <aside class="toc">
+            <h4>On This Page</h4>
+            <ul>
+                <li><a href="#getting-started">Getting Started</a></li>
+                <li><a href="#authentication">Authentication</a></li>
+                <li><a href="#making-requests">Making Your First Request</a></li>
+                <li><a href="#common-operations">Common Operations</a></li>
+                <li><a href="#rate-limits">Rate Limits</a></li>
+                <li><a href="#error-handling">Error Handling</a></li>
+            </ul>
+        </aside>
+    </div>
+</body>
+</html>
