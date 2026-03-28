@@ -52,3 +52,8 @@ Thumbs.db
 *.tmp
 .cache/
 tmp/
+memory/trello-plan-*.json
+memory/trello-actions-*.json
+memory/filtered-new-sessions-*.json
+memory/agor-state/trello-processor.json.OLD
+memory/verification-reports/verification-pre-flight-*.json

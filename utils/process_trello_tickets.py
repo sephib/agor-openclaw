@@ -26,9 +26,9 @@ from trello_sync import (
 
 # Configuration
 BOARD_ID = "5af14633e01cb0c5e1df9df6"  # B.Berry Projects
-MAX_CODING_WORKTREES = 3
-MAX_RESEARCH_SESSIONS = 2
-MAX_TICKETS_PER_RUN = 5
+MAX_CODING_WORKTREES = 10
+MAX_RESEARCH_SESSIONS = 10
+MAX_TICKETS_PER_RUN = 10
 
 # Categorization keywords
 CODING_KEYWORDS = [
@@ -379,6 +379,38 @@ def main():
             json.dump(plan, f, indent=2)
 
         print(f"✓ JSON plan saved to: {json_file}")
+
+        # CRITICAL: Generate actions with DuckDB duplicate checking
+        print("\n🔍 Generating action list (DuckDB duplicate check)...")
+        try:
+            import subprocess
+            actions_script = WORKSPACE_ROOT / "utils" / "generate_actions.py"
+            result = subprocess.run(
+                ["python3", str(actions_script), str(json_file)],
+                capture_output=True,
+                text=True,
+                timeout=30
+            )
+
+            if result.returncode == 0:
+                # Extract actions file path from output
+                for line in result.stdout.split('\n'):
+                    if 'Actions saved to:' in line:
+                        actions_file = line.split('Actions saved to:')[1].strip()
+                        print(f"✓ Actions file: {actions_file}")
+
+                        # Print summary
+                        for line in result.stdout.split('\n'):
+                            if 'Updates:' in line or 'Creates:' in line or 'Total actions:' in line:
+                                print(f"  {line.strip()}")
+                        break
+            else:
+                print(f"⚠️ Warning: generate_actions.py failed: {result.stderr}")
+                print("   Continuing without action file...")
+
+        except Exception as e:
+            print(f"⚠️ Warning: Could not generate actions: {e}")
+            print("   Continuing without action file...")
 
         return 0
 
