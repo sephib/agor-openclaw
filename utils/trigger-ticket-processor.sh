@@ -56,15 +56,46 @@ main() {
 
     log "Latest plan: $LATEST_PLAN"
 
-    # Read plan to determine if there's work to do
-    CODING_COUNT=$(jq '.coding_tasks | length' "$LATEST_PLAN")
-    RESEARCH_COUNT=$(jq '.research_tasks | length' "$LATEST_PLAN")
-    TOTAL_WORK=$((CODING_COUNT + RESEARCH_COUNT))
+    # CRITICAL: Generate actions BEFORE creating orchestrator
+    # This Python script reads state and decides what to do
+    log "Generating action list (checking for duplicates)..."
+    ACTIONS_FILE=$(python3 "$WORKSPACE_ROOT/utils/generate_actions.py" "$LATEST_PLAN" 2>&1 | grep "Actions saved to:" | awk '{print $NF}')
 
-    log "Work to process: $CODING_COUNT coding tasks, $RESEARCH_COUNT research tasks"
+    if [ -z "$ACTIONS_FILE" ] || [ ! -f "$ACTIONS_FILE" ]; then
+        log "ERROR: Failed to generate actions file"
+        exit 1
+    fi
+
+    log "Actions file: $ACTIONS_FILE"
+
+    # PRE-FLIGHT VERIFICATION: Check for potential duplicates
+    log "Running pre-flight verification..."
+    if python3 "$WORKSPACE_ROOT/utils/verify_no_duplicates.py" \
+        --mode pre-flight \
+        --plan-file "$LATEST_PLAN" \
+        --actions-file "$ACTIONS_FILE" \
+        --quiet; then
+        log "✓ Pre-flight verification passed"
+    else
+        VERIFY_EXIT=$?
+        if [ $VERIFY_EXIT -eq 1 ]; then
+            log "⛔ DUPLICATE RISK DETECTED - ABORTING"
+            log "Check verification report in memory/verification-reports/"
+            exit 1
+        elif [ $VERIFY_EXIT -eq 2 ]; then
+            log "⚠ Configuration issues detected but continuing"
+        fi
+    fi
+
+    # Read action stats
+    UPDATE_COUNT=$(jq '.stats.updates' "$ACTIONS_FILE")
+    CREATE_COUNT=$(jq '.stats.creates' "$ACTIONS_FILE")
+    TOTAL_WORK=$((UPDATE_COUNT + CREATE_COUNT))
+
+    log "Work to process: $UPDATE_COUNT updates, $CREATE_COUNT creates"
 
     if [ "$TOTAL_WORK" -eq 0 ]; then
-        log "No tasks to process, skipping session creation"
+        log "No tasks to process (all tickets already have active sessions)"
         exit 0
     fi
 
@@ -74,42 +105,98 @@ main() {
 
     log "Creating Agor session in worktree $WORKTREE_ID..."
 
-    # Build prompt with plan details
-    PROMPT="Process Trello tickets (scheduled run $TIMESTAMP):
+    # Build prompt - SIMPLE executor, no decisions
+    PROMPT="🤖 Trello Ticket Processor - Execute Pre-Computed Actions
 
-Read and execute the plan from: $LATEST_PLAN
+**Your job:** Execute the action list. NO thinking, NO decisions, just DO.
 
-Found:
-- $CODING_COUNT coding tasks to process
-- $RESEARCH_COUNT research tasks to process
+## Read the Action List
 
-For each coding task:
-1. Create isolated worktree: ticket-{card-id}
-2. Create new session with task details
-3. Update Trello card with worktree link and progress
+\`\`\`bash
+cat $ACTIONS_FILE
+\`\`\`
 
-For each research task:
-1. Spawn subsession for investigation
-2. Update Trello card with findings
+This JSON has been pre-computed by generate_actions.py which already:
+- ✅ Read the state file
+- ✅ Checked for existing sessions
+- ✅ Decided UPDATE vs CREATE for each ticket
 
-Respect concurrency limits:
-- Max 3 coding worktrees
-- Max 2 research sessions
+## Execute Each Action (Loop Through actions Array)
 
-After completion:
-- Log summary to memory/$(date +%Y-%m-%d).md
-- Update memory/agor-state/trello-processor.json with active workers
+\`\`\`python
+import json
+import sys
+sys.path.insert(0, 'utils')
+from session_manager import generate_update_prompt, generate_create_prompt, load_state, save_state
+
+# Load actions
+actions_data = json.load(open('$ACTIONS_FILE'))
+state = load_state()
+
+stats = {'updated': 0, 'created': 0}
+
+# Execute each action
+for action in actions_data['actions']:
+    if action['action'] == 'update':
+        # UPDATE existing session
+        prompt = generate_update_prompt(action['task'])
+        result = agor_sessions_prompt(
+            session_id=action['session_id'],
+            mode='continue',
+            prompt=prompt
+        )
+        print(f\"✅ UPDATED {action['session_id'][:8]} - {action['title']}\")
+        stats['updated'] += 1
+
+    elif action['action'] == 'create':
+        # CREATE new session
+        prompt = generate_create_prompt(action['task'], action['category'])
+        result = agor_sessions_create(
+            worktree_id='659dbc25-b301-4e2c-ab26-c07cd1737fcb',
+            agentic_tool='claude-code',
+            title=action['title'],
+            initial_prompt=prompt
+        )
+        print(f\"✅ CREATED {result.session_id[:8]} - {action['title']}\")
+
+        # Track in state
+        from session_manager import track_session_creation
+        track_session_creation(result.session_id, action['task'], action['category'], state)
+        stats['created'] += 1
+
+# Save state
+from datetime import datetime, timezone
+state['last_run'] = datetime.now(timezone.utc).isoformat()
+state['stats'] = stats
+save_state(state)
+
+print(f\"\n✅ Complete: Updated {stats['updated']}, Created {stats['created']}\")
+\`\`\`
+
+## That's It!
+
+Just execute the actions. The Python script already did all the thinking.
+
+Expected: $UPDATE_COUNT updates, $CREATE_COUNT creates
 "
 
     # Create Agor session - AUTO-EXECUTION ENABLED
+    # NOTE: Explicitly set permissionConfig to allow MCP tools (Trello access)
     log "Calling Agor API to create session..."
     RESPONSE=$(curl -s -X POST "$AGOR_API/sessions" \
       -H "Content-Type: application/json" \
-      -d "{
-        \"worktreeId\": \"$WORKTREE_ID\",
-        \"agenticTool\": \"claude-code\",
-        \"initialPrompt\": $(echo "$PROMPT" | jq -Rs .)
-      }")
+      -d "$(jq -n \
+        --arg worktreeId "$WORKTREE_ID" \
+        --arg agenticTool "claude-code" \
+        --arg initialPrompt "$PROMPT" \
+        '{
+          worktreeId: $worktreeId,
+          agenticTool: $agenticTool,
+          initialPrompt: $initialPrompt,
+          permissionConfig: {
+            mode: "acceptEdits"
+          }
+        }')")
 
     if [ $? -eq 0 ]; then
         SESSION_ID=$(echo "$RESPONSE" | jq -r '.session_id // "unknown"' 2>/dev/null || echo "unknown")
