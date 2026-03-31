@@ -132,6 +132,58 @@ Now set up your Agor workspace. This is where the magic happens.
 
 ---
 
+## Discover Skills
+
+Now that repos are set up, figure out what capabilities would be most useful.
+
+### Step 3: Explore the Agent Skills Ecosystem
+
+The [SKILL.md standard](https://agentskills.io) has become the universal format for agent capabilities, supported by 30+ platforms (Claude Code, Codex, Cursor, Copilot, and more). There are hundreds of thousands of community-built skills available.
+
+**Start a natural conversation:**
+
+> "What kinds of tasks will you be tackling most often? Code review, testing, deployments, documentation?"
+
+Based on their answer, introduce the ecosystem:
+
+> "There's a large ecosystem of community skills that might save us from reinventing the wheel. Want me to look into what's available for [their use cases]?"
+
+**If they're interested:**
+
+1. **Explain the main discovery platforms:**
+   - **[skills.sh](https://skills.sh)** — Curated catalog, ~83K+ skills, CLI install (`npx skills add <owner/repo>`). Best UX, tracks real install counts. Good signal-to-noise ratio.
+   - **[SkillsMP](https://skillsmp.com)** — Largest catalog (~351K+ skills), auto-crawls GitHub for SKILL.md files. More volume, less curation.
+   - **[agentskills.io](https://agentskills.io)** — Anthropic's official spec site and reference library. Trusted starting points.
+
+2. **Help them evaluate options:**
+   - Check install counts and community adoption
+   - Review the SKILL.md source before installing — it's just markdown, easy to audit
+   - Prefer skills from known organizations (e.g., `github.com/anthropics/skills`)
+   - Be aware of supply chain risk: community hubs have had malicious submissions
+
+3. **Install relevant skills:**
+   ```bash
+   npx skills add <owner/repo>
+   ```
+   Skills get added to the `.claude/` directory and are immediately available.
+
+4. **Record what was installed:**
+   Add to `IDENTITY.md`:
+   ```markdown
+   ## Installed Skills
+   - [skill-name] — [what it does] (source: [platform])
+   ```
+
+**If they prefer to build custom:**
+
+> "No problem. We can build exactly what you need in `skills/`. You can always tap into the ecosystem later."
+
+**If they're unsure:**
+
+> "Let's start without external skills. As we work together, I'll suggest community skills when I notice patterns that match. You can always say no."
+
+---
+
 ## Run a "Hello World" POC
 
 Time to prove Agor integration works!
@@ -282,6 +334,7 @@ Before deleting this file, make sure you've:
 - [ ] Set up main board in Agor
 - [ ] Filled in BOARD.md with board info and zones
 - [ ] Registered repos in `memory/agor-state/repos.json`
+- [ ] Discussed skills ecosystem and installed any relevant skills
 - [ ] Run POC (created worktree + session)
 - [ ] Created initial daily log (`memory/YYYY-MM-DD.md`)
 - [ ] Created Agor state tracking files (`memory/agor-state/`)

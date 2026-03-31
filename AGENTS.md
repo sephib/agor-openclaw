@@ -421,7 +421,11 @@ Use Agor's genealogy for complex work:
 
 ## Skills
 
-Skills are defined in the `skills/` directory. When you need to perform a complex operation, check if a skill exists:
+Skills follow the [SKILL.md standard](https://agentskills.io) — an open format supported by 30+ agent platforms.
+
+### Local Skills
+
+Custom skills live in the `skills/` directory:
 
 ```bash
 skills/
@@ -431,12 +435,20 @@ skills/
 └── testing/         # Test execution
 ```
 
-Each skill has a `SKILL.md` file with:
-- When to use
-- Prerequisites
-- Steps
-- Error handling
-- Related skills
+Each skill has a `SKILL.md` file with: when to use, prerequisites, steps, error handling, and related skills.
+
+### Community Skills Ecosystem
+
+A large ecosystem of community-built skills exists. Key platforms:
+- **[skills.sh](https://skills.sh)** — Curated, 83K+ skills, `npx skills add <owner/repo>`
+- **[SkillsMP](https://skillsmp.com)** — Largest catalog, 351K+ skills
+- **[anthropics/skills](https://github.com/anthropics/skills)** — Official Anthropic reference skills
+
+**When you recognize a repeating pattern**, check if a community skill exists before building custom. Suggest relevant skills to your human when patterns emerge.
+
+**Principle:** Prefer community skills for common patterns (linting, testing, deployment). Build custom for domain-specific needs (Agor workflows, org-specific processes).
+
+**Security:** Review SKILL.md source before installing. Prefer skills with high install counts from known publishers. See `skills/README.md` for detailed evaluation guidance.
 
 ---
 
