@@ -170,15 +170,82 @@ Skills in this workspace should leverage Agor MCP heavily:
 
 ---
 
-## Future: Skill Discovery
+## The SKILL.md Standard
 
-As the agent learns and evolves, skills will:
-- Be created by the agent itself (self-improvement)
-- Be shared across agent instances
-- Evolve based on success/failure patterns
-- Become more automated over time
+The [SKILL.md format](https://agentskills.io) is an open standard (originated by Anthropic) for defining agent capabilities. It's supported by 30+ platforms including Claude Code, OpenAI Codex, Cursor, GitHub Copilot, VS Code, Gemini CLI, Kiro, JetBrains, and Roo Code.
 
-For now, start simple: document the patterns you want the agent to follow.
+A SKILL.md file is just markdown describing:
+- **When to use** the skill (trigger conditions)
+- **Prerequisites** (tools, permissions, context needed)
+- **Steps** to execute
+- **Error handling** and edge cases
+
+This is exactly the format used in this `skills/` directory. Skills you write here are compatible with the broader ecosystem.
+
+---
+
+## The Agent Skills Ecosystem
+
+A large ecosystem of community-built skills exists across several discovery platforms:
+
+### Discovery Platforms
+
+| Platform | Catalog Size | Strengths | Install Method |
+|----------|-------------|-----------|----------------|
+| [skills.sh](https://skills.sh) | 83K+ skills | Curated, best UX, real install counts, CLI-first | `npx skills add <owner/repo>` |
+| [SkillsMP](https://skillsmp.com) | 351K+ skills | Largest catalog, auto-crawls GitHub | Browse + manual install |
+| [agentskills.io](https://agentskills.io) | Reference library | Official Anthropic spec site, trusted starting points | Manual |
+
+### Installing Community Skills
+
+```bash
+# Install a skill from skills.sh
+npx skills add <owner/repo>
+
+# Skills are added to your .claude/ directory and immediately available
+```
+
+### Anthropic's Official Skills
+
+The [anthropics/skills](https://github.com/anthropics/skills) repository contains high-quality, trusted skills maintained by Anthropic. These are good starting points and reliable references for writing your own.
+
+### Evaluating Skill Quality and Security
+
+**Before installing any community skill:**
+
+1. **Read the SKILL.md source** — it's just markdown, easy to audit
+2. **Check install counts** on skills.sh (higher = more vetted by community)
+3. **Prefer known publishers** — official org repos, well-known maintainers
+4. **Review what it executes** — skills can run shell commands; understand what they do
+5. **Be cautious with low-install-count skills** from unknown authors
+
+**Security context:** Community hubs have had malicious skill submissions (341 flagged by Feb 2026). The SKILL.md format itself is safe (it's markdown), but skills that invoke shell commands or install dependencies need scrutiny. This is standard supply-chain hygiene — same as evaluating any open-source dependency.
+
+### When to Use Community Skills vs. Custom
+
+**Use community skills when:**
+- The task is a common pattern (linting, testing, deployment, code review)
+- A well-adopted skill exists (high install count, known publisher)
+- You want battle-tested workflows
+
+**Build custom skills when:**
+- The workflow is domain-specific to your repos or org
+- You need tight integration with Agor MCP operations
+- No community skill fits or existing ones need heavy modification
+- Security requirements demand full control
+
+**Principle:** Prefer community skills for common patterns, build custom for domain-specific needs.
+
+---
+
+## Skill Discovery as an Ongoing Practice
+
+As you work with your human, watch for repeating patterns:
+- Tasks that follow the same steps each time
+- Workflows the human describes verbally that could be codified
+- Pain points that a community skill might already solve
+
+When you spot a pattern, check the ecosystem first. If a good skill exists, suggest it. If not, create one in `skills/` and consider contributing it back.
 
 ---
 
