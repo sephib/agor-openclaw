@@ -51,12 +51,31 @@ print(f"Processing {actions_file.name}: {len(data['lists'])} lists, {data['stats
 # Connect to DuckDB
 db = SessionDB()
 
-# Archive Agor sessions for deleted Trello cards
-for deleted in data.get('deleted_cards', []):
+# --- CLEANUP: orphaned sessions for cards no longer active in Trello ---
+# archived_cards: card was archived/done in Trello → archive Agor session (DuckDB already marked archived)
+# deleted_cards:  card is gone from Trello entirely → archive Agor session (DuckDB row already hard-deleted)
+sessions_archived_agor = []
+sessions_deleted_agor = []
+
+for entry in data.get('archived_cards', []):
     try:
-        agor.sessions.archive(session_id=deleted['session_id'])
+        agor.sessions.archive(session_id=entry['session_id'])
+        sessions_archived_agor.append(entry)
+        print(f"  ARCHIVED session {entry['session_id'][:8]} ({entry['title']})")
     except Exception as e:
-        print(f"ERROR archiving session {deleted['session_id'][:8]} ({deleted['title']}): {e}")
+        print(f"  ERROR archiving session {entry['session_id'][:8]} ({entry['title']}): {e}")
+
+for entry in data.get('deleted_cards', []):
+    try:
+        agor.sessions.archive(session_id=entry['session_id'])
+        sessions_deleted_agor.append(entry)
+        print(f"  DELETED→archived session {entry['session_id'][:8]} ({entry['title']})")
+    except Exception as e:
+        print(f"  ERROR archiving deleted-card session {entry['session_id'][:8]} ({entry['title']}): {e}")
+
+if sessions_archived_agor or sessions_deleted_agor:
+    print(f"Cleanup: {len(sessions_archived_agor)} archived, {len(sessions_deleted_agor)} deleted")
+# --- END CLEANUP ---
 
 # Track created worktrees and sessions
 worktrees_created = {}  # list_id → worktree_id
@@ -296,6 +315,8 @@ log_entry = f"""
 - Worktrees created: {len(worktrees_created)}
 - Sessions created: {len(sessions_created)}
 - Sessions updated: {len(sessions_updated)}
+- Sessions archived (card archived/done): {len(sessions_archived_agor)}
+- Sessions deleted (card gone from Trello): {len(sessions_deleted_agor)}
 - Total cards processed: {data['stats']['total_cards']}
 
 **Worktrees Created:**
@@ -346,7 +367,7 @@ log_file = Path('memory') / f"{datetime.now().strftime('%Y-%m-%d')}.md"
 with open(log_file, 'a') as f:
     f.write("\n---\n\n" + log_entry)
 
-print(f"Processed {data['stats']['total_cards']} cards: {len(sessions_created)} created, {len(sessions_updated)} updated, {len(worktrees_created)} new worktrees")
+print(f"Processed {data['stats']['total_cards']} cards: {len(sessions_created)} created, {len(sessions_updated)} updated, {len(worktrees_created)} new worktrees, {len(sessions_archived_agor)} archived, {len(sessions_deleted_agor)} deleted")
 ```
 
 ---

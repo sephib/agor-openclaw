@@ -56,6 +56,17 @@ def fetch_lists(creds: Dict) -> List[Dict]:
     return active_lists
 
 
+def fetch_all_cards_raw(creds: Dict) -> Dict[str, Dict]:
+    """Fetch ALL cards including archived ones, keyed by card_id.
+
+    Used to distinguish deleted cards (absent entirely) from archived cards
+    (present with closed=True) during orphan cleanup.
+    """
+    url = f"/1/boards/{BOARD_ID}/cards?filter=all&fields=id,name,closed,labels,idList"
+    all_cards = api_request(url, creds)
+    return {card['id']: card for card in all_cards}
+
+
 def fetch_cards_by_list(creds: Dict) -> Dict[str, List[Dict]]:
     """Fetch all active cards grouped by list"""
     url = f"/1/boards/{BOARD_ID}/cards?fields=id,name,desc,url,dateLastActivity,labels,due,idList&members=false&attachments=false"
@@ -161,14 +172,37 @@ def generate_actions(creds: Dict) -> Dict:
     existing_sessions = db.get_all_active_sessions()
     existing_card_ids = {s['card_id']: s for s in existing_sessions if s.get('category') != 'list-worktree'}
 
-    # Detect deleted cards: in DB but no longer on board
+    # Detect orphaned sessions: in DB but no longer in active card set.
+    # Distinguish deleted (gone from Trello entirely) from archived (closed=True)
+    # so the orchestrator can take the appropriate action on the Agor session.
     all_current_card_ids = {card['id'] for cards in cards_by_list.values() for card in cards}
-    deleted_card_ids = set(existing_card_ids.keys()) - all_current_card_ids
-    deleted_cards = []
-    for card_id in deleted_card_ids:
-        session = existing_card_ids[card_id]
-        db.archive_session(card_id)
-        deleted_cards.append({'card_id': card_id, 'session_id': session['session_id'], 'title': session.get('title', '')})
+    orphaned_card_ids = set(existing_card_ids.keys()) - all_current_card_ids
+
+    archived_cards = []  # Card was archived or done in Trello → archive Agor session
+    deleted_cards = []   # Card is gone from Trello entirely → delete Agor session
+
+    if orphaned_card_ids:
+        all_cards_raw = fetch_all_cards_raw(creds)
+        for card_id in orphaned_card_ids:
+            session = existing_card_ids[card_id]
+            entry = {
+                'card_id': card_id,
+                'session_id': session['session_id'],
+                'title': session.get('title', '')
+            }
+            raw = all_cards_raw.get(card_id)
+            if raw is None:
+                # Card is completely gone (deleted or moved to another board)
+                db.delete_session(card_id)
+                deleted_cards.append(entry)
+            elif raw.get('closed', False):
+                # Card still exists in Trello but is archived (closed=True)
+                db.archive_session(card_id)
+                archived_cards.append(entry)
+            else:
+                # Card exists and is open but filtered out (done label, list archived, etc.)
+                db.archive_session(card_id)
+                archived_cards.append(entry)
 
     # Generate actions
     list_actions = []
@@ -178,7 +212,8 @@ def generate_actions(creds: Dict) -> Dict:
         'sessions_to_create': 0,
         'sessions_to_update': 0,
         'total_cards': 0,
-        'sessions_archived': len(deleted_cards)
+        'sessions_archived': len(archived_cards),
+        'sessions_deleted': len(deleted_cards),
     }
 
     for list_info in lists:
@@ -260,6 +295,7 @@ def generate_actions(creds: Dict) -> Dict:
         'timestamp': datetime.now(timezone.utc).isoformat(),
         'board_id': BOARD_ID,
         'lists': list_actions,
+        'archived_cards': archived_cards,
         'deleted_cards': deleted_cards,
         'stats': stats
     }
@@ -279,8 +315,13 @@ def main():
             json.dump(actions, f, indent=2)
 
         s = actions['stats']
-        archived = f", {s['sessions_archived']} archived" if s['sessions_archived'] else ""
-        print(f"Generated {output_file.name}: {s['total_cards']} cards, {s['sessions_to_create']} creates, {s['sessions_to_update']} updates, {s['worktrees_to_create']} new worktrees{archived}")
+        cleanup = []
+        if s['sessions_archived']:
+            cleanup.append(f"{s['sessions_archived']} archived")
+        if s['sessions_deleted']:
+            cleanup.append(f"{s['sessions_deleted']} deleted")
+        cleanup_str = f", {', '.join(cleanup)}" if cleanup else ""
+        print(f"Generated {output_file.name}: {s['total_cards']} cards, {s['sessions_to_create']} creates, {s['sessions_to_update']} updates, {s['worktrees_to_create']} new worktrees{cleanup_str}")
         return 0
 
     except Exception as e:

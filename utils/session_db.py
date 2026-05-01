@@ -214,8 +214,23 @@ class SessionDB:
         self.conn.commit()
 
     def archive_session(self, card_id: str):
-        """Mark session as archived"""
+        """Mark session as archived (card was archived/done in Trello)"""
         self.update_session(card_id, status='archived')
+
+    def delete_session(self, card_id: str):
+        """Hard-delete session record (card was permanently deleted from Trello).
+
+        Logs to history before removing so there is an audit trail.
+        """
+        session = self.get_session(card_id)
+        if session:
+            self.conn.execute("""
+                INSERT INTO session_history (id, card_id, session_id, action)
+                VALUES (nextval('session_history_seq'), ?, ?, 'deleted')
+            """, [card_id, session['session_id']])
+
+        self.conn.execute("DELETE FROM ticket_sessions WHERE card_id = ?", [card_id])
+        self.conn.commit()
 
     def get_all_active_sessions(self) -> List[Dict]:
         """
