@@ -1,4 +1,4 @@
-Trello Ticket Update
+Trello Ticket Check-in
 
 Card: S&P 500 Sell-Off: 1 Vanguard ETF I'm Loading Up On Right Now | The Motley Fool
 List: שוטף
@@ -23,27 +23,39 @@ Description (READ ONLY - do not modify):
 - **52-Week Range:** $241.62 - $344.42 (currently ~6% off highs)
 - **Expense Ratio:** 0.03% (exceptionally low)
 - **P/E Ratio:** 28.90
-- **Dividend Yiel
+- **Dividend Yield:** 1.2%
+- **AUM:** $1.99 trillion
+- **Holdings:** ~3,500 stocks across all market caps
+
+---
+
+## 💡 Investment Thesis
+
+### Why VTI During the Sell-Off?
+
+**Author's Reasoning:**
+- Market downturns create buying opportunities for quality assets
+- "Buy the dip" strategy: acquire broad market exposure a
 
 Your Actions:
-1. Review any changes to the ticket
-2. Continue work on this task
-3. Post progress updates to Trello card AS COMMENTS
-4. When complete, post completion comment
+1. Review any changes to the ticket since last check
+2. Continue work on this task if needed
+3. Post progress updates to Trello card AS COMMENTS (not description edits)
+4. If task is complete, post a final summary comment
 
 CRITICAL RULES:
 - NEVER modify the card description
-- ONLY post comments (not edit description)
+- ONLY post comments (not edit description)  
 - All your updates go in COMMENTS only
+- Max 1 comment per day - do not spam
 
-How to update Trello (curl with creds from ~/.config/mcp-trello.env):
+How to post a Trello comment:
   source ~/.config/mcp-trello.env
-  curl -s -X POST "https://api.trello.com/1/cards/69d7ed2d1ea27d482153a7eb/actions/comments" \
-    --data-urlencode "text=Your comment here" \
-    -d "key=$TRELLO_API_KEY" -d "token=$TRELLO_TOKEN"
+  curl -s -X POST "https://api.trello.com/1/cards/69d7ed2d1ea27d482153a7eb/actions/comments" --data-urlencode "text=Your comment" -d "key=$TRELLO_API_KEY" -d "token=$TRELLO_TOKEN"
 
-URL VERIFICATION CRITICAL:
+URL VERIFICATION:
 - Test EVERY link with WebFetch before posting
-- AliExpress links expire - verify before posting
-- If 404, search for alternative with WebSearch
-- Format: [VERIFIED Product](url) - Verified 2026-05-01
+- AliExpress/Amazon links expire - verify before posting
+- Format verified links as: [Product](url) - Verified 2026-05-01
+
+Check-in time: 2026-05-01 23:07 UTC

@@ -1,12 +1,14 @@
 Trello Ticket Check-in
 
-Card: הפקדה לגל 1100 שח
-List: שוטף
-Priority: 15
-Trello: https://trello.com/c/MJZLPkVD/125-%D7%94%D7%A4%D7%A7%D7%93%D7%94-%D7%9C%D7%92%D7%9C-1100-%D7%A9%D7%97
+Card: תיקון פין מקרר
+List: בית
+Priority: 5
+Trello: https://trello.com/c/CZ1md1Vg/74-%D7%AA%D7%99%D7%A7%D7%95%D7%9F-%D7%A4%D7%99%D7%9F-%D7%9E%D7%A7%D7%A8%D7%A8
 
 Description (READ ONLY - do not modify):
-אני רוצה שזה יהיה  אפשרות להוסיף הפקדות כל כמה חודשים 
+*9189
+שירות בלומברג
+רפרפת
 
 Your Actions:
 1. Review any changes to the ticket since last check
@@ -22,7 +24,7 @@ CRITICAL RULES:
 
 How to post a Trello comment:
   source ~/.config/mcp-trello.env
-  curl -s -X POST "https://api.trello.com/1/cards/69eb8e98cd62ed9be0f25d21/actions/comments" --data-urlencode "text=Your comment" -d "key=$TRELLO_API_KEY" -d "token=$TRELLO_TOKEN"
+  curl -s -X POST "https://api.trello.com/1/cards/6916c011ba970394ecd9199e/actions/comments" --data-urlencode "text=Your comment" -d "key=$TRELLO_API_KEY" -d "token=$TRELLO_TOKEN"
 
 URL VERIFICATION:
 - Test EVERY link with WebFetch before posting

@@ -1,4 +1,4 @@
-Trello Ticket Update
+Trello Ticket Check-in
 
 Card: מקום
 List: בת מצווה
@@ -21,27 +21,37 @@ Description (READ ONLY - do not modify):
 **כתובת:** בצלאל 7, ירושלים (ליד רח' המלך ג'ורג')
 **טלפונים:** 072-3316359 | משלוחים: 079-5658822
 **סוג:** מסעדה איטלקית 100% ללא גלוטן + בר פיצה ויין עם שירותי קייטרינג
-**קיבולת:**
+**קיבולת:** אירועים קטנים עד ~150 אנשים
+**כשרות:** חלבי בהשגחת צוהר
+**הערות:**
+- המסעדה הראשונה בירושלים שכולה ללא גלוטן
+- מגישים מטבח ים-תיכוני וביתי: פיצה, פסטה, מאפים
+- מיקום מרכזי ברחוב בצלאל
+
+### 3. בית שמואל (Beit Shmuel)
+**כתובת:** שדרות המלך דוד 13, ירושלים
+**טלפון:** 02-620-3455
+**סוג:** מרכז יהדות פר
 
 Your Actions:
-1. Review any changes to the ticket
-2. Continue work on this task
-3. Post progress updates to Trello card AS COMMENTS
-4. When complete, post completion comment
+1. Review any changes to the ticket since last check
+2. Continue work on this task if needed
+3. Post progress updates to Trello card AS COMMENTS (not description edits)
+4. If task is complete, post a final summary comment
 
 CRITICAL RULES:
 - NEVER modify the card description
-- ONLY post comments (not edit description)
+- ONLY post comments (not edit description)  
 - All your updates go in COMMENTS only
+- Max 1 comment per day - do not spam
 
-How to update Trello (curl with creds from ~/.config/mcp-trello.env):
+How to post a Trello comment:
   source ~/.config/mcp-trello.env
-  curl -s -X POST "https://api.trello.com/1/cards/69b59cb95c7ea9a9e6751bfb/actions/comments" \
-    --data-urlencode "text=Your comment here" \
-    -d "key=$TRELLO_API_KEY" -d "token=$TRELLO_TOKEN"
+  curl -s -X POST "https://api.trello.com/1/cards/69b59cb95c7ea9a9e6751bfb/actions/comments" --data-urlencode "text=Your comment" -d "key=$TRELLO_API_KEY" -d "token=$TRELLO_TOKEN"
 
-URL VERIFICATION CRITICAL:
+URL VERIFICATION:
 - Test EVERY link with WebFetch before posting
-- AliExpress links expire - verify before posting
-- If 404, search for alternative with WebSearch
-- Format: [VERIFIED Product](url) - Verified 2026-05-01
+- AliExpress/Amazon links expire - verify before posting
+- Format verified links as: [Product](url) - Verified 2026-05-01
+
+Check-in time: 2026-05-01 23:07 UTC

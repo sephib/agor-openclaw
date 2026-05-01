@@ -1,12 +1,18 @@
 Trello Ticket Check-in
 
-Card: הפקדה לגל 1100 שח
-List: שוטף
+Card: packing for cycling trip
+List: brno 2026
 Priority: 15
-Trello: https://trello.com/c/MJZLPkVD/125-%D7%94%D7%A4%D7%A7%D7%93%D7%94-%D7%9C%D7%92%D7%9C-1100-%D7%A9%D7%97
+Trello: https://trello.com/c/lbOyxkIM/135-packing-for-cycling-trip
 
 Description (READ ONLY - do not modify):
-אני רוצה שזה יהיה  אפשרות להוסיף הפקדות כל כמה חודשים 
+how should i pack for my trip
+i need to carry my computer and have a business workday
+Sunday 10th of may - tlv - vienna - get bicycle and rest
+Monday 11 th - cycle to Mikulov
+Tuesday 12th - cycle to brno
+Wednesday 13 - bussines meeting all day - Train back to Vienna - return bike - sleep
+Thursday 14 th - get to the airport by 0900 (flight at 1140)
 
 Your Actions:
 1. Review any changes to the ticket since last check
@@ -22,7 +28,7 @@ CRITICAL RULES:
 
 How to post a Trello comment:
   source ~/.config/mcp-trello.env
-  curl -s -X POST "https://api.trello.com/1/cards/69eb8e98cd62ed9be0f25d21/actions/comments" --data-urlencode "text=Your comment" -d "key=$TRELLO_API_KEY" -d "token=$TRELLO_TOKEN"
+  curl -s -X POST "https://api.trello.com/1/cards/69f4bc95faa5d93af1c916db/actions/comments" --data-urlencode "text=Your comment" -d "key=$TRELLO_API_KEY" -d "token=$TRELLO_TOKEN"
 
 URL VERIFICATION:
 - Test EVERY link with WebFetch before posting

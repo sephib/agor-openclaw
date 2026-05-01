@@ -1,0 +1,43 @@
+Trello Ticket Check-in
+
+Card: Led light strip
+List: בית
+Priority: 5
+Trello: https://trello.com/c/C9x1rUVl/114-led-light-strip
+
+Description (READ ONLY - do not modify):
+This power supply can safely handle up to 102 Watts of total power, but for long-term safety and to prevent overheating, it is best practice to use only 80% of its capacity. This leaves you with approximately 81.6 Watts of usable power. [1, 2, 3] 
+The maximum length of LED strip you can connect depends entirely on the wattage per meter of your specific strip.
+
+## Estimated Maximum Lengths
+Below are common 12V LED strip types and the maximum length this power supply can support (using the 80% safety rule):
+
+| LED Strip Type [4] | Typical Wattage | Max Length (80% Load) | Max Length (Full 102W) |
+|---|---|---|---|
+| Standard (3528/2835) | ~4.8 W/m | 17 meters | 21 meters |
+| High Density (2835) | ~9.6 W/m | 8.5 meters | 10.6 meters |
+| Bright/RGB (5050) | ~14.4 W/m | 5.6 meters | 7 meters |
+
+
+Your Actions:
+1. Review any changes to the ticket since last check
+2. Continue work on this task if needed
+3. Post progress updates to Trello card AS COMMENTS (not description edits)
+4. If task is complete, post a final summary comment
+
+CRITICAL RULES:
+- NEVER modify the card description
+- ONLY post comments (not edit description)  
+- All your updates go in COMMENTS only
+- Max 1 comment per day - do not spam
+
+How to post a Trello comment:
+  source ~/.config/mcp-trello.env
+  curl -s -X POST "https://api.trello.com/1/cards/69cecac22a8d47dfeb754700/actions/comments" --data-urlencode "text=Your comment" -d "key=$TRELLO_API_KEY" -d "token=$TRELLO_TOKEN"
+
+URL VERIFICATION:
+- Test EVERY link with WebFetch before posting
+- AliExpress/Amazon links expire - verify before posting
+- Format verified links as: [Product](url) - Verified 2026-05-01
+
+Check-in time: 2026-05-01 23:07 UTC
