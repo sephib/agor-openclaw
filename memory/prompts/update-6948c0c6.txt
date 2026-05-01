@@ -1,0 +1,46 @@
+Trello Ticket Update
+
+Card: Standing pita for balence
+List: AliExpress
+Priority: 15
+Trello: https://trello.com/c/QyI7nQWk/116-standing-pita-for-balence
+
+Description (READ ONLY - do not modify):
+# Standing Balance Board Research (Updated 2026-04-06)
+
+## Summary
+✅ AliExpress: 5 wooden balance boards found ($13-30 USD)
+✅ Israeli Retailers: Balance cushions available (₪82+)
+❌ Yad2.co.il: **No active listings found**
+
+---
+
+## AliExpress Options (Wooden Balance Boards)
+
+**Note:** AliExpress links redirect to Hebrew site automatically. Prices shown from search results - please click to verify current availability.
+
+1. **SPART Wooden Balance Board** - $13.60 USD
+   - https://www.aliexpress.com
+
+Your Actions:
+1. Review any changes to the ticket
+2. Continue work on this task
+3. Post progress updates to Trello card AS COMMENTS
+4. When complete, post completion comment
+
+CRITICAL RULES:
+- NEVER modify the card description
+- ONLY post comments (not edit description)
+- All your updates go in COMMENTS only
+
+How to update Trello (curl with creds from ~/.config/mcp-trello.env):
+  source ~/.config/mcp-trello.env
+  curl -s -X POST "https://api.trello.com/1/cards/69d1f76f4f0937153c2e2068/actions/comments" \
+    --data-urlencode "text=Your comment here" \
+    -d "key=$TRELLO_API_KEY" -d "token=$TRELLO_TOKEN"
+
+URL VERIFICATION CRITICAL:
+- Test EVERY link with WebFetch before posting
+- AliExpress links expire - verify before posting
+- If 404, search for alternative with WebSearch
+- Format: [VERIFIED Product](url) - Verified 2026-05-01

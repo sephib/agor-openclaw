@@ -1,0 +1,40 @@
+Trello Ticket Update
+
+Card: קריאה בתורה של גל
+List: בת מצווה
+Priority: 15
+Trello: https://trello.com/c/Cn01sKgg/102-%D7%A7%D7%A8%D7%99%D7%90%D7%94-%D7%91%D7%AA%D7%95%D7%A8%D7%94-%D7%A9%D7%9C-%D7%92%D7%9C
+
+Description (READ ONLY - do not modify):
+גל צריכה ללמוד את כל העליות + הפטרה
+
+## 📚 משאבים לתרגול קריאה בתורה (Torah Reading Practice Resources)
+
+### ההקלטות וטקסטים (Recordings & Texts)
+- **TorahTots Trop Trainer**: https://www.torahtots.com/trop/trop.htm - Interactive cantillation trainer
+- **Mechon Mamre**: https://www.mechon-mamre.org/p/pt/pt0.htm - Torah text with trop
+- **Sefaria**: https://www.sefaria.org - Complete Torah with commentaries and trop marks
+- **Virtual Cantor**: https://www.virtualcantor.com - Practice recordings fo
+
+Your Actions:
+1. Review any changes to the ticket
+2. Continue work on this task
+3. Post progress updates to Trello card AS COMMENTS
+4. When complete, post completion comment
+
+CRITICAL RULES:
+- NEVER modify the card description
+- ONLY post comments (not edit description)
+- All your updates go in COMMENTS only
+
+How to update Trello (curl with creds from ~/.config/mcp-trello.env):
+  source ~/.config/mcp-trello.env
+  curl -s -X POST "https://api.trello.com/1/cards/69b59d37bac8b8d643e22faa/actions/comments" \
+    --data-urlencode "text=Your comment here" \
+    -d "key=$TRELLO_API_KEY" -d "token=$TRELLO_TOKEN"
+
+URL VERIFICATION CRITICAL:
+- Test EVERY link with WebFetch before posting
+- AliExpress links expire - verify before posting
+- If 404, search for alternative with WebSearch
+- Format: [VERIFIED Product](url) - Verified 2026-05-01

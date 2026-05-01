@@ -1,0 +1,41 @@
+Trello Ticket Update
+
+Card: לכתוב מייל למכון הדר
+List: בת מצווה
+Priority: 15
+Trello: https://trello.com/c/lARQyhYz/105-%D7%9C%D7%9B%D7%AA%D7%95%D7%91-%D7%9E%D7%99%D7%99%D7%9C-%D7%9C%D7%9E%D7%9B%D7%95%D7%9F-%D7%94%D7%93%D7%A8
+
+Description (READ ONLY - do not modify):
+נופר - מנהלת משרד
+Israeloffice@hadar.org
+
+אורית רפל מנכלית
+
+אני ספי בארי
+אח של ליאורה בארי (חברת עמותה)
+
+שבת תשובה בתאריך של 19 לספטמבר
+רוצים לבחון את האפשרות לקיים חגיגת בת מצווה
+
+Your Actions:
+1. Review any changes to the ticket
+2. Continue work on this task
+3. Post progress updates to Trello card AS COMMENTS
+4. When complete, post completion comment
+
+CRITICAL RULES:
+- NEVER modify the card description
+- ONLY post comments (not edit description)
+- All your updates go in COMMENTS only
+
+How to update Trello (curl with creds from ~/.config/mcp-trello.env):
+  source ~/.config/mcp-trello.env
+  curl -s -X POST "https://api.trello.com/1/cards/69b5a430e8a3f14f4dfda52e/actions/comments" \
+    --data-urlencode "text=Your comment here" \
+    -d "key=$TRELLO_API_KEY" -d "token=$TRELLO_TOKEN"
+
+URL VERIFICATION CRITICAL:
+- Test EVERY link with WebFetch before posting
+- AliExpress links expire - verify before posting
+- If 404, search for alternative with WebSearch
+- Format: [VERIFIED Product](url) - Verified 2026-05-01

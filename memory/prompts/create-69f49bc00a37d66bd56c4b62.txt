@@ -1,0 +1,40 @@
+Handle ticket: Rent a bicycle Vienna
+
+Card ID: 69f49bc00a37d66bd56c4b62
+List: brno 2026
+Category: personal
+Priority: 15
+Trello: https://trello.com/c/4qwdKYxo/131-rent-a-bicycle-vienna
+
+Description:
+Need to be from 10night to 13 night
+For travelling to brno
+Check what bicycle is best suited to travel from Vienna to brno, touring or mountain 
+
+Your Job:
+1. Understand the task from the description
+2. Execute the work needed
+3. Post progress updates to Trello AS COMMENTS ONLY
+4. When complete, post a summary comment
+
+CRITICAL RULES FOR TRELLO UPDATES:
+- NEVER modify the card description
+- ONLY post comments (not edit description)
+- The description is user-maintained - read-only for you!
+- All your updates MUST go in COMMENTS only
+
+How to update Trello (curl with creds from ~/.config/mcp-trello.env):
+  source ~/.config/mcp-trello.env
+  curl -s -X POST "https://api.trello.com/1/cards/69f49bc00a37d66bd56c4b62/actions/comments" \
+    --data-urlencode "text=Your comment here" \
+    -d "key=$TRELLO_API_KEY" -d "token=$TRELLO_TOKEN"
+
+URL VERIFICATION CRITICAL:
+- Test EVERY link with WebFetch before posting to Trello
+- AliExpress/Amazon links expire - always verify
+- If link 404s, search for alternative with WebSearch
+- Format: [VERIFIED Product - Price](url) - Verified 2026-05-01
+
+Trello Card: https://trello.com/c/4qwdKYxo/131-rent-a-bicycle-vienna
+
+Start working on this task!

@@ -1,0 +1,45 @@
+Handle ticket: Martini espresso pods
+
+Card ID: 69f4a97017d429c51562fa4e
+List: שוטף
+Category: personal
+Priority: 15
+Trello: https://trello.com/c/eIqzqQYT/132-martini-espresso-pods
+
+Description:
+-6g Calcium Lactate
+
+Sodium Alginate Bath
+
+-5g Sodium Alginate
+
+-1 Liter Distilled Water
+
+
+Your Job:
+1. Understand the task from the description
+2. Execute the work needed
+3. Post progress updates to Trello AS COMMENTS ONLY
+4. When complete, post a summary comment
+
+CRITICAL RULES FOR TRELLO UPDATES:
+- NEVER modify the card description
+- ONLY post comments (not edit description)
+- The description is user-maintained - read-only for you!
+- All your updates MUST go in COMMENTS only
+
+How to update Trello (curl with creds from ~/.config/mcp-trello.env):
+  source ~/.config/mcp-trello.env
+  curl -s -X POST "https://api.trello.com/1/cards/69f4a97017d429c51562fa4e/actions/comments" \
+    --data-urlencode "text=Your comment here" \
+    -d "key=$TRELLO_API_KEY" -d "token=$TRELLO_TOKEN"
+
+URL VERIFICATION CRITICAL:
+- Test EVERY link with WebFetch before posting to Trello
+- AliExpress/Amazon links expire - always verify
+- If link 404s, search for alternative with WebSearch
+- Format: [VERIFIED Product - Price](url) - Verified 2026-05-01
+
+Trello Card: https://trello.com/c/eIqzqQYT/132-martini-espresso-pods
+
+Start working on this task!

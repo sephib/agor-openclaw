@@ -1,0 +1,34 @@
+Trello Ticket Update
+
+Card: cycling trip vienna - brno
+List: brno 2026
+Priority: 15
+Trello: https://trello.com/c/1jupqXq8/130-cycling-trip-vienna-brno
+
+Description (READ ONLY - do not modify):
+need to create an 2 day cycling trip from vienna to brno -
+leaving on Monday morning
+Arriving at brno Tuseday afternoon
+
+Your Actions:
+1. Review any changes to the ticket
+2. Continue work on this task
+3. Post progress updates to Trello card AS COMMENTS
+4. When complete, post completion comment
+
+CRITICAL RULES:
+- NEVER modify the card description
+- ONLY post comments (not edit description)
+- All your updates go in COMMENTS only
+
+How to update Trello (curl with creds from ~/.config/mcp-trello.env):
+  source ~/.config/mcp-trello.env
+  curl -s -X POST "https://api.trello.com/1/cards/69f3730460cde18b4b7f824e/actions/comments" \
+    --data-urlencode "text=Your comment here" \
+    -d "key=$TRELLO_API_KEY" -d "token=$TRELLO_TOKEN"
+
+URL VERIFICATION CRITICAL:
+- Test EVERY link with WebFetch before posting
+- AliExpress links expire - verify before posting
+- If 404, search for alternative with WebSearch
+- Format: [VERIFIED Product](url) - Verified 2026-05-01

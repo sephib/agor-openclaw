@@ -1,0 +1,38 @@
+Handle ticket: staying in brno -12, 13 of may
+
+Card ID: 69f4bc32d02b9edc12a546e9
+List: brno 2026
+Category: personal
+Priority: 15
+Trello: https://trello.com/c/abB536Sw/134-staying-in-brno-12-13-of-may
+
+Description:
+how much will it cost to stay in **Grandezza Hotel Luxury Palace**
+
+Your Job:
+1. Understand the task from the description
+2. Execute the work needed
+3. Post progress updates to Trello AS COMMENTS ONLY
+4. When complete, post a summary comment
+
+CRITICAL RULES FOR TRELLO UPDATES:
+- NEVER modify the card description
+- ONLY post comments (not edit description)
+- The description is user-maintained - read-only for you!
+- All your updates MUST go in COMMENTS only
+
+How to update Trello (curl with creds from ~/.config/mcp-trello.env):
+  source ~/.config/mcp-trello.env
+  curl -s -X POST "https://api.trello.com/1/cards/69f4bc32d02b9edc12a546e9/actions/comments" \
+    --data-urlencode "text=Your comment here" \
+    -d "key=$TRELLO_API_KEY" -d "token=$TRELLO_TOKEN"
+
+URL VERIFICATION CRITICAL:
+- Test EVERY link with WebFetch before posting to Trello
+- AliExpress/Amazon links expire - always verify
+- If link 404s, search for alternative with WebSearch
+- Format: [VERIFIED Product - Price](url) - Verified 2026-05-01
+
+Trello Card: https://trello.com/c/abB536Sw/134-staying-in-brno-12-13-of-may
+
+Start working on this task!

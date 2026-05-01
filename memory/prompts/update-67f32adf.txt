@@ -1,0 +1,56 @@
+Trello Ticket Update
+
+Card: מחלקת הדרכת טאורינד ski touring
+List: שוטף
+Priority: 15
+Trello: https://trello.com/c/24FkrFNx/112-%D7%9E%D7%97%D7%9C%D7%A7%D7%AA-%D7%94%D7%93%D7%A8%D7%9B%D7%AA-%D7%98%D7%90%D7%95%D7%A8%D7%99%D7%A0%D7%93-ski-touring
+
+Description (READ ONLY - do not modify):
+## ✅ מסמך הקמה מעודכן - 2026-03-30
+
+### 📄 מסמך מלא בעברית (מעודכן)
+**קובץ:** `ski-touring-department-hebrew.md`
+
+---
+
+## עדכון לפי משוב 30.03.2026
+
+### הבעיות המרכזיות
+
+**1️⃣ בעיה מרכזית: איכות הסקי בחלק מהצוותים**
+- איכות סקי לא אחידה בין צוותים
+- חלק מהצוותים חסרים מיומנויות בסיסיות
+- פערים ביכולת גלישה בכל ההר
+- השפעה ישירה על יכולת מבצעית
+
+**2️⃣ בעיה משנית: שליטה על מדריכי סקי**
+- חוסר מחויבות של מדריכים חיצוניים
+- קושי בתיאום ובקרה על איכות
+- תלות בלוח זמנים חיצוני
+
+### הנחת עבודה
+
+✅ **בצוו
+
+Your Actions:
+1. Review any changes to the ticket
+2. Continue work on this task
+3. Post progress updates to Trello card AS COMMENTS
+4. When complete, post completion comment
+
+CRITICAL RULES:
+- NEVER modify the card description
+- ONLY post comments (not edit description)
+- All your updates go in COMMENTS only
+
+How to update Trello (curl with creds from ~/.config/mcp-trello.env):
+  source ~/.config/mcp-trello.env
+  curl -s -X POST "https://api.trello.com/1/cards/69c9304c182bc53fc17069c4/actions/comments" \
+    --data-urlencode "text=Your comment here" \
+    -d "key=$TRELLO_API_KEY" -d "token=$TRELLO_TOKEN"
+
+URL VERIFICATION CRITICAL:
+- Test EVERY link with WebFetch before posting
+- AliExpress links expire - verify before posting
+- If 404, search for alternative with WebSearch
+- Format: [VERIFIED Product](url) - Verified 2026-05-01
