@@ -38,9 +38,15 @@ Outputs: `memory/ticket-sessions-{timestamp}.json`
 ```python
 import json
 from pathlib import Path
+from datetime import datetime
 import sys
 sys.path.insert(0, 'utils')
 from session_db import SessionDB
+from list_context import get_context_for_prompt
+
+# Load user preferences (injected into every new session)
+user_prefs_path = Path('memory/user-preferences.md')
+user_prefs = user_prefs_path.read_text() if user_prefs_path.exists() else ""
 
 # Load actions file
 actions_file = sorted(Path('memory').glob('ticket-sessions-*.json'))[-1]
@@ -85,6 +91,7 @@ sessions_updated = []
 for list_info in data['lists']:
     list_id = list_info['list_id']
     list_name = list_info['list_name']
+    list_type = list_info.get('list_type', 'task')
     worktree_name = list_info['worktree_name']
     worktree_action = list_info['worktree_action']
     cards = list_info['cards']
@@ -99,7 +106,7 @@ for list_info in data['lists']:
                 worktree_name=worktree_name,
                 board_id="1a508c77-dacb-46fe-ab24-e527fb476882",
                 create_branch=True,
-                notes=f"Trello List: {list_name} ({len(cards)} cards)"
+                notes=f"Trello List: {list_name} ({list_type}, {len(cards)} cards)"
             )
             worktree_id = worktree.worktree_id
             worktrees_created[list_id] = worktree_id
@@ -110,26 +117,41 @@ for list_info in data['lists']:
     else:
         # Worktree exists - we need to find it
         try:
-            # Get worktrees from board
             worktrees = agor.worktrees.list(repo_id="88617156-51f9-44d1-8ba2-24897afc5da6")
             matching = [w for w in worktrees if w.name == worktree_name]
 
             if matching:
                 worktree_id = matching[0].worktree_id
             else:
-                # Create if it doesn't exist
                 worktree = agor.worktrees.create(
                     repo_id="88617156-51f9-44d1-8ba2-24897afc5da6",
                     worktree_name=worktree_name,
                     board_id="1a508c77-dacb-46fe-ab24-e527fb476882",
                     create_branch=True,
-                    notes=f"Trello List: {list_name}"
+                    notes=f"Trello List: {list_name} ({list_type})"
                 )
                 worktree_id = worktree.worktree_id
 
         except Exception as e:
             print(f"ERROR finding/creating worktree {worktree_name}: {e}")
             continue
+
+    # Persist list → worktree mapping
+    db.upsert_list(
+        list_id=list_id,
+        list_name=list_name,
+        list_type=list_type,
+        worktree_id=worktree_id,
+        worktree_name=worktree_name,
+        ticket_count=len(cards),
+    )
+
+    # Build shared list context block for prompt injection
+    list_context_block = get_context_for_prompt(
+        worktree_name=worktree_name,
+        list_name=list_name,
+        list_type=list_type,
+    )
 
     # STEP 2: Process each card (create or update session)
     for card_info in cards:
@@ -149,13 +171,13 @@ for list_info in data['lists']:
 🔄 Ticket Update from Trello
 
 **Card:** {title}
-**List:** {list_name}
+**List:** {list_name} ({list_type})
 **Priority:** {priority}
 **Trello:** {url}
 
 **Description:**
 {description[:500] if description else 'No description'}
-
+{list_context_block}
 **Your Actions:**
 1. Review any changes to the ticket
 2. Continue work on this task
@@ -200,18 +222,36 @@ trello.update_description(card_id, ...)  # ❌ NEVER!
         elif action == 'create':
             # CREATE new session in this worktree
 
+            write_back_section = f"""
+## List Discovery Write-Back
+
+If you learn something relevant to ALL tickets in this list (a decision, constraint,
+booking confirmation, budget update), append a line to:
+  memory/list-context/{worktree_name}.md
+
+Format: `- [{datetime.now().strftime('%Y-%m-%d')}] {title}: <your discovery>`
+
+Other sessions and future runs will see this.
+""" if list_type != 'task' else ""
+
             initial_prompt = f"""
 Handle ticket: **{title}**
 
 **Details:**
 - Card ID: {card_id}
-- List: {list_name}
+- List: {list_name} ({list_type})
 - Category: {category}
 - Priority: {priority}
 - Trello: {url}
 
 **Description:**
 {description if description else 'No description provided'}
+{list_context_block}
+## User Preferences
+
+{user_prefs if user_prefs else 'No preferences configured yet. See memory/user-preferences.md'}
+
+---
 
 **Your Job:**
 1. Understand the task from description
@@ -262,7 +302,7 @@ update_card_description(...)  # ❌ NEVER modify description!
 □ Product availability confirmed
 □ Verification date included
 □ Updates posted as COMMENTS only (not description edits)
-
+{write_back_section}
 **Trello Card:** {url}
 
 Start working on this task!
@@ -275,12 +315,13 @@ Start working on this task!
                     initial_prompt=initial_prompt
                 )
 
-                # Track in DuckDB
+                # Track in DuckDB (with list_id)
                 db.create_session(
                     card_id=card_id,
                     session_id=session.session_id,
                     category=category,
-                    title=title
+                    title=title,
+                    list_id=list_id,
                 )
 
                 sessions_created.append({
@@ -324,9 +365,8 @@ log_entry = f"""
 
 if worktrees_created:
     for list_id, wt_id in worktrees_created.items():
-        # Find list name
         list_data = [l for l in data['lists'] if l['list_id'] == list_id][0]
-        log_entry += f"- {list_data['list_name']} → `{list_data['worktree_name']}` [{wt_id[:8]}]\n"
+        log_entry += f"- {list_data['list_name']} ({list_data.get('list_type','task')}) → `{list_data['worktree_name']}` [{wt_id[:8]}]\n"
 else:
     log_entry += "- None (all lists had worktrees)\n"
 
@@ -447,20 +487,34 @@ Total cards: 42
 - WebFetch tool required
 
 ### ✅ DuckDB Tracking
-- Tracks: `card_id → session_id`
-- Not list-based anymore (back to per-ticket)
-- Simple duplicate prevention
+- `trello_list`: list_id → list_type, worktree_id, ticket_count
+- `ticket_sessions`: card_id → session_id, list_id
+- Context files: `memory/list-context/{worktree_name}.md`
+
+### ✅ Three-Tier Context
+Every new session gets: card context + list context + user preferences
+
+### ✅ List Types
+| Pattern | Type | Shared context |
+|---|---|---|
+| trip/travel/vacation | `project` | Full synthesis |
+| party/event/wedding | `project` | Full synthesis |
+| home/house/renovation | `project` | Full synthesis |
+| aliexpress/shopping/buy | `shopping` | Item summary |
+| anything else | `task` | None |
 
 ---
 
 ## See Also
 
 - `utils/generate_ticket_sessions_by_list.py` - Entry point
-- `utils/session_db.py` - DuckDB wrapper
+- `utils/session_db.py` - DuckDB wrapper (trello_list + ticket_sessions)
+- `utils/list_context.py` - List context synthesis and injection
 - `utils/trello_sync.py` - Trello API helpers
+- `memory/user-preferences.md` - Global user preferences
 
 ---
 
-**Version:** 5.0 (hybrid: worktree per list + session per ticket)
-**Last Updated:** 2026-04-14
+**Version:** 6.0 (three-tier context: card + list + user preferences)
+**Last Updated:** 2026-05-01
 **Status:** Ready for deployment

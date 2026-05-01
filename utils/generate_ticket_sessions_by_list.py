@@ -27,6 +27,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from trello_sync import load_credentials, api_request, has_label, WORKSPACE_ROOT
 from session_db import SessionDB
+from list_context import classify_list_type, synthesize_list_context, write_list_context
 
 # Configuration
 BOARD_ID = "5af14633e01cb0c5e1df9df6"  # B.Berry Projects
@@ -226,6 +227,8 @@ def generate_actions(creds: Dict) -> Dict:
         if not cards:
             continue
 
+        list_type = classify_list_type(list_name)
+
         # Check if any card in this list has a session (implies worktree exists)
         has_worktree = any(card['id'] in existing_card_ids for card in cards)
         worktree_action = 'exists' if has_worktree else 'create'
@@ -234,6 +237,21 @@ def generate_actions(creds: Dict) -> Dict:
             stats['worktrees_to_create'] += 1
         else:
             stats['worktrees_existing'] += 1
+
+        # Synthesize list context for project/shopping lists
+        if list_type != 'task':
+            cards_for_context = [
+                {'title': c['name'], 'description': c.get('desc', ''),
+                 'url': c.get('url', ''), 'card_id': c['id']}
+                for c in cards
+            ]
+            context_content = synthesize_list_context(
+                list_name=list_name,
+                list_type=list_type,
+                worktree_name=worktree_name,
+                cards=cards_for_context,
+            )
+            write_list_context(worktree_name, context_content)
 
         # Process each card
         card_actions = []
@@ -283,6 +301,7 @@ def generate_actions(creds: Dict) -> Dict:
         list_actions.append({
             'list_id': list_id,
             'list_name': list_name,
+            'list_type': list_type,
             'worktree_name': worktree_name,
             'worktree_action': worktree_action,
             'cards': card_actions
