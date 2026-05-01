@@ -1,394 +1,344 @@
-# Trello Ticket Processor - Scheduled Prompt
+# Trello Ticket Processor - Hybrid Architecture
 
-You are the orchestrator - manage existing sessions AND create new ones based on DuckDB state.
+**One worktree per list** + **One session per ticket**
 
-## 🔒 CRITICAL: Duplicate Prevention with DuckDB
+## 🎯 Architecture
 
-This workflow uses DuckDB to track existing sessions and prevent duplicates.
-- Existing tickets → UPDATE session (check for new comments)
-- New tickets → CREATE session
-- DO NOT create duplicate sessions
+```
+Worktree: trello-list-shopping
+├─ Session: Buy o-ring (ticket 1)
+├─ Session: USB-C cable (ticket 2)
+└─ Session: Product X (ticket 3)
 
----
-
-## Step 1: Run Scheduled Entry Point (DuckDB Check)
-
-```bash
-cd /Users/josephberry/.agor/worktrees/local/agor-openclaw/trello-task-processor
-uv run python utils/scheduled_run.py
+Worktree: trello-list-development
+├─ Session: Implement feature Y
+└─ Session: Fix bug Z
 ```
 
-This script:
-1. Fetches Trello tickets
-2. Generates execution plan
-3. **Checks DuckDB for existing sessions**
-4. **Filters to ONLY new tickets**
-5. Outputs: `memory/filtered-new-sessions-{timestamp}.json`
-
-Also generates: `memory/trello-actions-{timestamp}.json` (full action list with updates)
+**Benefits:**
+- Visual organization by list (worktrees on board)
+- Full context per ticket (dedicated sessions)
+- Complete isolation between tickets
+- Easy to see progress by category
 
 ---
 
-## Step 2: Read Both Files
+## Step 1: Generate Actions
 
 ```bash
-# Filtered new sessions (CREATE actions)
-FILTERED_FILE=$(ls -t memory/filtered-new-sessions-*.json | head -1)
-
-# Full actions (includes UPDATE actions)
-ACTIONS_FILE=$(ls -t memory/trello-actions-*.json | head -1)
-
-cat $FILTERED_FILE  # New sessions to create
-cat $ACTIONS_FILE   # All actions (updates + creates)
+uv run python utils/generate_ticket_sessions_by_list.py
 ```
+
+Outputs: `memory/ticket-sessions-{timestamp}.json`
 
 ---
 
-## Step 3: Process UPDATE Actions (Existing Sessions)
-
-**IMPORTANT:** For tickets that already have sessions, check if there are new comments or updates.
+## Step 2: Process Actions
 
 ```python
 import json
 from pathlib import Path
 import sys
 sys.path.insert(0, 'utils')
-from trello_sync import load_credentials, api_request
+from session_db import SessionDB
 
 # Load actions file
-actions_file = sorted(Path('memory').glob('trello-actions-*.json'))[-1]
-actions_data = json.load(open(actions_file))
+actions_file = sorted(Path('memory').glob('ticket-sessions-*.json'))[-1]
+data = json.load(open(actions_file))
 
-# Load Trello credentials
-creds = load_credentials()
+print(f"Processing {actions_file.name}: {len(data['lists'])} lists, {data['stats']['total_cards']} cards")
 
-update_actions = [a for a in actions_data['actions'] if a['action'] == 'update']
+# Connect to DuckDB
+db = SessionDB()
 
-print(f"\n{'='*70}")
-print(f"PROCESSING {len(update_actions)} EXISTING SESSIONS")
-print(f"{'='*70}\n")
-
-for action in update_actions:
-    card_id = action['card_id']
-    session_id = action['session_id']
-    title = action['title']
-
-    print(f"Checking: {title}")
-    print(f"  Session: {session_id[:8]}")
-    print(f"  Card: {card_id}")
-
-    # Fetch latest card data from Trello
-    card_url = f"/1/cards/{card_id}?fields=desc,dateLastActivity&actions=commentCard&actions_limit=10"
+# Archive Agor sessions for deleted Trello cards
+for deleted in data.get('deleted_cards', []):
     try:
-        card_data = api_request(card_url, creds)
+        agor.sessions.archive(session_id=deleted['session_id'])
+    except Exception as e:
+        print(f"ERROR archiving session {deleted['session_id'][:8]} ({deleted['title']}): {e}")
 
-        # Check for recent comments (last 24 hours)
-        from datetime import datetime, timedelta, timezone
-        recent_threshold = datetime.now(timezone.utc) - timedelta(hours=24)
+# Track created worktrees and sessions
+worktrees_created = {}  # list_id → worktree_id
+sessions_created = []
+sessions_updated = []
 
-        recent_comments = []
-        for comment in card_data.get('actions', []):
-            comment_date = datetime.fromisoformat(comment['date'].replace('Z', '+00:00'))
-            if comment_date > recent_threshold:
-                recent_comments.append({
-                    'text': comment['data']['text'],
-                    'date': comment['date'],
-                    'member': comment.get('memberCreator', {}).get('fullName', 'Unknown')
-                })
+for list_info in data['lists']:
+    list_id = list_info['list_id']
+    list_name = list_info['list_name']
+    worktree_name = list_info['worktree_name']
+    worktree_action = list_info['worktree_action']
+    cards = list_info['cards']
 
-        if recent_comments:
-            print(f"  ✅ {len(recent_comments)} new comment(s) - sending update to session")
+    # STEP 1: Ensure worktree exists
+    worktree_id = None
 
-            # Send update prompt to existing session
+    if worktree_action == 'create':
+        try:
+            worktree = agor.worktrees.create(
+                repo_id="88617156-51f9-44d1-8ba2-24897afc5da6",
+                worktree_name=worktree_name,
+                board_id="1a508c77-dacb-46fe-ab24-e527fb476882",
+                create_branch=True,
+                notes=f"Trello List: {list_name} ({len(cards)} cards)"
+            )
+            worktree_id = worktree.worktree_id
+            worktrees_created[list_id] = worktree_id
+        except Exception as e:
+            print(f"ERROR creating worktree {worktree_name}: {e}")
+            continue
+
+    else:
+        # Worktree exists - we need to find it
+        try:
+            # Get worktrees from board
+            worktrees = agor.worktrees.list(repo_id="88617156-51f9-44d1-8ba2-24897afc5da6")
+            matching = [w for w in worktrees if w.name == worktree_name]
+
+            if matching:
+                worktree_id = matching[0].worktree_id
+            else:
+                # Create if it doesn't exist
+                worktree = agor.worktrees.create(
+                    repo_id="88617156-51f9-44d1-8ba2-24897afc5da6",
+                    worktree_name=worktree_name,
+                    board_id="1a508c77-dacb-46fe-ab24-e527fb476882",
+                    create_branch=True,
+                    notes=f"Trello List: {list_name}"
+                )
+                worktree_id = worktree.worktree_id
+
+        except Exception as e:
+            print(f"ERROR finding/creating worktree {worktree_name}: {e}")
+            continue
+
+    # STEP 2: Process each card (create or update session)
+    for card_info in cards:
+        card_id = card_info['card_id']
+        title = card_info['title']
+        action = card_info['action']
+        category = card_info['category']
+        priority = card_info['priority']
+        description = card_info.get('description', '')
+        url = card_info['url']
+
+        if action == 'update':
+            # UPDATE existing session
+            session_id = card_info['session_id']
+
             update_prompt = f"""
 🔄 Ticket Update from Trello
 
 **Card:** {title}
-**Trello URL:** {action['task']['url']}
+**List:** {list_name}
+**Priority:** {priority}
+**Trello:** {url}
 
-**New Comments ({len(recent_comments)}):**
-"""
-            for i, comment in enumerate(recent_comments, 1):
-                update_prompt += f"\n{i}. **{comment['member']}** ({comment['date']}):\n{comment['text']}\n"
-
-            update_prompt += f"""
+**Description:**
+{description[:500] if description else 'No description'}
 
 **Your Actions:**
-1. Review the new comments above
-2. Take any requested actions
-3. Update progress on Trello card
-4. If work is complete, mark as done
+1. Review any changes to the ticket
+2. Continue work on this task
+3. Post progress updates to Trello card AS COMMENTS
+4. When complete, post completion comment
 
-⚠️ URL VERIFICATION:
-- If posting links, verify they work with WebFetch
-- No 404 links allowed (especially AliExpress)
-- Test every URL before posting
+🚨 CRITICAL RULES:
+- NEVER modify the card description
+- ONLY post comments (not edit description)
+- The description is user-maintained - hands off!
+- All your updates go in COMMENTS only
 
-**Current Task Description:**
-{action['task'].get('description', 'No description')[:500]}
+⚠️ URL VERIFICATION CRITICAL:
+- Test EVERY link with WebFetch before posting
+- AliExpress links expire - verify before posting
+- If 404, search for alternative with WebSearch
+- Format: ✅ [Product](url) - Verified {datetime.now().strftime('%Y-%m-%d')}
+
+**How to update Trello:**
+```python
+# CORRECT: Post comment
+trello.add_comment(card_id, "Your update here...")
+
+# WRONG: Don't do this
+trello.update_description(card_id, ...)  # ❌ NEVER!
+```
 """
 
-            # Use agor.sessions.prompt to send update
             try:
                 agor.sessions.prompt(
                     session_id=session_id,
                     prompt=update_prompt
                 )
-                print(f"  📤 Update sent to session {session_id[:8]}")
+                sessions_updated.append({
+                    'title': title,
+                    'session_id': session_id,
+                    'list_name': list_name
+                })
             except Exception as e:
-                print(f"  ⚠️  Failed to send update: {e}")
-        else:
-            print(f"  ℹ️  No new comments - session still active, no update needed")
+                print(f"ERROR updating session {session_id[:8]} ({title}): {e}")
 
-    except Exception as e:
-        print(f"  ❌ Error fetching card: {e}")
+        elif action == 'create':
+            # CREATE new session in this worktree
 
-    print()
+            initial_prompt = f"""
+Handle ticket: **{title}**
 
-print(f"{'='*70}")
-print(f"UPDATE PROCESSING COMPLETE")
-print(f"{'='*70}\n")
-```
+**Details:**
+- Card ID: {card_id}
+- List: {list_name}
+- Category: {category}
+- Priority: {priority}
+- Trello: {url}
 
----
+**Description:**
+{description if description else 'No description provided'}
 
-## Step 4: Process CREATE Actions (New Sessions)
+**Your Job:**
+1. Understand the task from description
+2. Execute the work needed
+3. Post progress updates to Trello AS COMMENTS
+4. When complete, post summary comment
+5. Move card to appropriate list when done
 
+**For Coding Tasks:**
+- You're already in a worktree ({worktree_name})
+- Implement changes here
+- Create PR when ready
+- Link PR in Trello comment
+
+**For Research/Shopping Tasks:**
+- Research the topic
+- Gather information
+- Post findings to Trello as comment
+
+🚨 CRITICAL RULES FOR TRELLO UPDATES:
+- NEVER modify the card description
+- ONLY post comments (not edit description)
+- The description is user-maintained - read-only for you!
+- All your updates MUST go in COMMENTS only
+
+**How to update Trello:**
 ```python
-from utils.session_db import SessionDB
+# CORRECT: Post comment with your findings
+from trello_sync import add_comment
+add_comment(card_id="{card_id}", text="Your update here...")
 
-# Load filtered file (new sessions only)
-filtered_file = sorted(Path('memory').glob('filtered-new-sessions-*.json'))[-1]
-data = json.load(open(filtered_file))
-new_sessions = data.get('new_sessions', [])
-
-if not new_sessions:
-    print("✅ No new sessions needed - all tickets already have active sessions")
-else:
-    print(f"\n{'='*70}")
-    print(f"CREATING {len(new_sessions)} NEW SESSIONS")
-    print(f"{'='*70}\n")
-
-    # Connect to DuckDB
-    db = SessionDB()
-
-    created_sessions = []
-
-    for session_info in new_sessions:
-        card_id = session_info['card_id']
-        title = session_info['title']
-        category = session_info['category']
-        url = session_info['url']
-        priority = session_info['priority']
-        description = session_info['description']
-
-        # Double-check not already in DuckDB (safety check)
-        if db.has_session(card_id):
-            print(f"⚠️  SKIP {title} - already has session in DuckDB")
-            continue
-
-        # Create session based on category
-        if category == 'coding':
-            session = agor.sessions.create(
-                worktree_id="659dbc25-b301-4e2c-ab26-c07cd1737fcb",
-                agentic_tool="claude-code",
-                initial_prompt=f"""
-Handle coding ticket: {title}
-
-Task Details:
-- Card ID: {card_id}
-- Title: {title}
-- Description: {description}
-- Priority: {priority}
-- Trello URL: {url}
-
-Your Job:
-1. Create dedicated worktree: ticket-{card_id[:8]}
-   - Use: agor.worktrees.create(
-       repo_id="88617156-51f9-44d1-8ba2-24897afc5da6",
-       worktree_name="ticket-{card_id[:8]}",
-       board_id="1a508c77-dacb-46fe-ab24-e527fb476882",
-       create_branch=True
-     )
-
-2. Create worker session in that worktree
-3. Implement the feature
-4. Update Trello card with progress
-5. When complete, post comment on Trello card: {url}
-
-⚠️ URL VERIFICATION REQUIRED:
-- Before posting ANY links (especially AliExpress), verify they work
-- Use: WebFetch(url) to check HTTP status
-- If 404, find working alternative with WebSearch
-- Only include verified working links in your output
-- Mark verified links: ✅ [Link](url) - Verified {date}
-
-See skills/trello-ticket-processor.md for details.
-                """
-            )
-
-        elif category == 'research':
-            session = agor.sessions.create(
-                worktree_id="659dbc25-b301-4e2c-ab26-c07cd1737fcb",
-                agentic_tool="claude-code",
-                initial_prompt=f"""
-Handle research ticket: {title}
-
-Task Details:
-- Card ID: {card_id}
-- Title: {title}
-- Description: {description}
-- Priority: {priority}
-- Trello URL: {url}
-
-Your Job:
-1. Investigate the topic/question
-2. Gather relevant information
-3. Provide findings and recommendations
-4. Post findings to Trello card: {url}
+# WRONG: Don't do this
+update_card_description(...)  # ❌ NEVER modify description!
+```
 
 ⚠️ URL VERIFICATION CRITICAL:
-- BEFORE including ANY link in your findings, VERIFY it works
-- Use WebFetch to check each URL returns HTTP 200
-- Common issues:
-  * AliExpress links often 404 (product removed/changed)
-  * Use WebSearch to find current working alternatives
-  * Test EVERY link before including it
-- Format verified links: ✅ [Product Name](url) - Verified {date}
-- For broken links: ❌ Link broken - searched for alternative: [New Link](url)
-
-Quality check before posting to Trello:
-□ All links tested with WebFetch
-□ All links return HTTP 200
-□ No 404 errors
-□ Verification date included
-
-No worktree needed - research in this session.
-                """
-            )
-
-        elif category == 'personal':
-            session = agor.sessions.create(
-                worktree_id="659dbc25-b301-4e2c-ab26-c07cd1737fcb",
-                agentic_tool="claude-code",
-                initial_prompt=f"""
-Handle personal task: {title}
-
-Task Details:
-- Card ID: {card_id}
-- Title: {title}
-- Description: {description}
-- Priority: {priority}
-- Trello URL: {url}
-
-Your Job:
-1. Research/handle the personal task
-2. Provide findings or recommendations
-3. Update Trello card: {url}
-
-⚠️ URL VERIFICATION CRITICAL FOR SHOPPING/PRODUCT LINKS:
-- Test EVERY product link before posting to Trello
-- Method: WebFetch(url) - check for HTTP 200 and product availability
-- AliExpress links expire frequently - always verify
+- Test EVERY link with WebFetch before posting to Trello
+- AliExpress/Amazon/eBay links expire - always verify
 - If link 404s:
-  1. Search for same product with WebSearch
-  2. Find current working link
-  3. Verify new link works
-  4. Include note: "Original link expired - found current link"
-- Format: ✅ [Product - Price](verified-url) - Checked {date}
-- NEVER post unverified links - causes user frustration with 404s
+  1. Search for alternative with WebSearch
+  2. Verify new link works
+  3. Note: "Original link expired - found alternative"
+- Format: ✅ [Product - Price](url) - Verified {datetime.now().strftime('%Y-%m-%d')}
 
-Quality check before posting to Trello:
+**Quality Standards:**
 □ All links tested with WebFetch
-□ All links return HTTP 200
-□ Product pages load correctly
-□ No 404 errors
-□ Prices and availability confirmed
-□ Links are NOT region-locked or temporary
+□ All links return HTTP 200 (no 404s)
+□ Product availability confirmed
+□ Verification date included
+□ Updates posted as COMMENTS only (not description edits)
 
-Common issues to avoid:
-- AliExpress: Product removed/expired → Search for current alternative
-- Amazon: Affiliate/tracking links broken → Use clean product URL
-- eBay: Auction ended → Find "Buy It Now" or current listing
-                """
-            )
+**Trello Card:** {url}
 
-        # CRITICAL: Track in DuckDB immediately
-        db.create_session(
-            card_id=card_id,
-            session_id=session.session_id,
-            category=category,
-            title=title
-        )
+Start working on this task!
+"""
 
-        created_sessions.append({
-            'session_id': session.session_id,
-            'ticket_title': title,
-            'ticket_id': card_id,
-            'category': category
-        })
+            try:
+                session = agor.sessions.create(
+                    worktree_id=worktree_id,
+                    agentic_tool="claude-code",
+                    initial_prompt=initial_prompt
+                )
 
-        print(f"✅ Created + tracked: {title} → {session.session_id[:8]}")
+                # Track in DuckDB
+                db.create_session(
+                    card_id=card_id,
+                    session_id=session.session_id,
+                    category=category,
+                    title=title
+                )
 
-    db.close()
+                sessions_created.append({
+                    'title': title,
+                    'session_id': session.session_id,
+                    'list_name': list_name,
+                    'worktree_name': worktree_name
+                })
 
-    print(f"\n✅ Created {len(created_sessions)} sessions")
-    print(f"✅ All tracked in DuckDB - no duplicates will be created next run")
+            except Exception as e:
+                print(f"ERROR creating session for {title}: {e}")
+
+db.close()
+
 ```
 
 ---
 
-## Step 5: Log Summary
+## Step 3: Log Summary
 
 ```python
 from datetime import datetime
 
-# Count updates and creates
-actions_data = json.load(open(actions_file))
-update_count = len([a for a in actions_data['actions'] if a['action'] == 'update'])
-create_count = len([a for a in actions_data['actions'] if a['action'] == 'create'])
-
 log_entry = f"""
-### Trello Ticket Processing - {datetime.now().strftime('%H:%M')} (Scheduled)
+### Trello Processing - {datetime.now().strftime('%H:%M')} (Scheduled)
+
+**Architecture:** One worktree per list + One session per ticket
 
 **Actions file:** {actions_file.name}
-**Filtered file:** {filtered_file.name}
 
 **Summary:**
-- Updates sent: {update_count} (existing sessions checked for new comments)
-- New sessions created: {create_count}
-- Total actions: {update_count + create_count}
+- Worktrees created: {len(worktrees_created)}
+- Sessions created: {len(sessions_created)}
+- Sessions updated: {len(sessions_updated)}
+- Total cards processed: {data['stats']['total_cards']}
 
+**Worktrees Created:**
+"""
+
+if worktrees_created:
+    for list_id, wt_id in worktrees_created.items():
+        # Find list name
+        list_data = [l for l in data['lists'] if l['list_id'] == list_id][0]
+        log_entry += f"- {list_data['list_name']} → `{list_data['worktree_name']}` [{wt_id[:8]}]\n"
+else:
+    log_entry += "- None (all lists had worktrees)\n"
+
+log_entry += f"""
 **Sessions Created:**
 """
 
-if created_sessions:
-    for s in created_sessions:
-        log_entry += f"- {s['category'].title()}: \"{s['ticket_title']}\" → [session {s['session_id'][:8]}](http://localhost:3030/b/openclaw-agor/{s['session_id'][:8]})\n"
+if sessions_created:
+    for s in sessions_created[:10]:  # First 10
+        log_entry += f"- **{s['title']}** in `{s['worktree_name']}` → [{s['session_id'][:8]}]\n"
+    if len(sessions_created) > 10:
+        log_entry += f"- ... and {len(sessions_created) - 10} more\n"
 else:
-    log_entry += "- None (all tickets already have active sessions)\n"
+    log_entry += "- None (all tickets had sessions)\n"
 
 log_entry += f"""
-**View active tickets:** http://localhost:3030/w/659dbc25-b301-4e2c-ab26-c07cd1737fcb
+**Sessions Updated:** {len(sessions_updated)}
 
-**DuckDB Status:**
-- Total sessions tracked: {len(db.get_all_active_sessions()) if 'db' in locals() else 'N/A'}
-- All sessions persistent in: memory/agor-state/sessions.duckdb
-- Next run will check for updates + create new sessions ✅
+**View board:** http://localhost:3030/b/1a508c77-dacb-46fe-ab24-e527fb476882
 
 **Configuration:**
-- Visibility Worktree ID: 659dbc25-b301-4e2c-ab26-c07cd1737fcb
 - Repo ID: 88617156-51f9-44d1-8ba2-24897afc5da6
 - Board ID: 1a508c77-dacb-46fe-ab24-e527fb476882
 - Trello Board: 5af14633e01cb0c5e1df9df6
-- Max coding sessions: 10 concurrent
-- Max research sessions: 10 concurrent
-- Max tickets per run: 10
 
-**URL Verification:**
-- All worker sessions verify links before posting
+**DuckDB:**
+- Tracks card_id → session_id
+- {len(sessions_created)} new entries
+- {len(sessions_updated)} existing entries updated
+
+**Quality:**
+- All sessions verify URLs before posting
 - No 404 links allowed (especially AliExpress)
-- WebFetch used to test all URLs
 """
 
 # Append to daily log
@@ -396,152 +346,100 @@ log_file = Path('memory') / f"{datetime.now().strftime('%Y-%m-%d')}.md"
 with open(log_file, 'a') as f:
     f.write("\n---\n\n" + log_entry)
 
-print(f"\n✅ Logged to {log_file}")
+print(f"Processed {data['stats']['total_cards']} cards: {len(sessions_created)} created, {len(sessions_updated)} updated, {len(worktrees_created)} new worktrees")
 ```
 
 ---
 
-## Important Notes
+## Architecture Summary
 
-### ✅ Dual Workflow: Updates + Creates
-
-**UPDATE existing sessions (tickets already in DuckDB):**
-1. Fetch latest Trello card data
-2. Check for new comments (last 24 hours)
-3. If new comments → send update prompt to existing session
-4. If no changes → skip (session still active, no action needed)
-
-**CREATE new sessions (tickets NOT in DuckDB):**
-1. Check DuckDB to confirm not already tracked
-2. Create session in trello-visibility-hub
-3. Track in DuckDB immediately
-4. Log creation
-
-### ⚠️ URL Verification (CRITICAL)
-
-**All worker sessions MUST verify links before posting:**
-
-```bash
-# Method 1: WebFetch tool (preferred)
-WebFetch(url)  # Returns status + content
-
-# Method 2: curl
-curl -I "https://aliexpress.com/item/..." | head -1
-# Expected: HTTP/1.1 200 OK
-```
-
-**Quality checklist for sessions:**
-- □ All product links tested with WebFetch
-- □ All links return HTTP 200
-- □ No 404 errors in final Trello comments
-- □ Verification date included
-- □ Broken links replaced with working alternatives
-
-**Common issues:**
-- **AliExpress:** Product links expire frequently (item removed/sold out)
-  - Fix: Search for current product, verify new link
-- **Amazon:** Affiliate/tracking parameters break links
-  - Fix: Use clean product URL (amazon.com/dp/PRODUCTID)
-- **eBay:** Auction links expire when auction ends
-  - Fix: Find "Buy It Now" or current listing
-
-**Fix process:**
-1. Test link with WebFetch
-2. If broken (404/403), use WebSearch to find current product
-3. Verify new link works
-4. Add note: "✅ Link verified {date}" or "⚠️ Original link expired - found current alternative"
-
-### ✅ Duplicate Prevention
-
-**How it works:**
-- DuckDB tracks all sessions in `memory/agor-state/sessions.duckdb`
-- `scheduled_run.py` filters to ONLY new tickets
-- Orchestrator receives pre-filtered list (no decision-making)
-- Each session tracked in DuckDB immediately after creation
-- Next run checks DuckDB first → no duplicates ✅
-
-**Safety check before creating any session:**
-```python
-if db.has_session(card_id):
-    print(f"⚠️ SKIP - already exists in DuckDB")
-    continue
-```
-
-### ✅ Configuration
-
-- Max coding: 10 concurrent (was 3)
-- Max research: 10 concurrent (was 2)
-- Max tickets per run: 10 (was 5)
-
-### ✅ Workflow Diagram
+### Hierarchy
 
 ```
-scheduled_run.py
-    ↓
-DuckDB check
-    ↓
-┌──────────────┬──────────────┐
-│  UPDATE      │  CREATE      │
-│  (existing)  │  (new)       │
-├──────────────┼──────────────┤
-│ Check Trello │ Create       │
-│ for comments │ session      │
-│ ↓            │ ↓            │
-│ If new       │ Track in     │
-│ → Send       │ DuckDB       │
-│   update     │              │
-│ If none      │              │
-│ → Skip       │              │
-└──────────────┴──────────────┘
-    ↓
-All sessions verify URLs ✅
-    ↓
-No duplicates ✅
+Board
+└─ Worktree (per list)
+   └─ Session (per ticket)
 ```
 
-### ⚠️ Critical Safety Checks
+### Example
 
-1. **Before creating session:**
-   ```python
-   if db.has_session(card_id):
-       skip()  # Already tracked
-   ```
+**Trello has 3 lists:**
+1. Shopping (5 cards)
+2. Development (3 cards)
+3. Home (2 cards)
 
-2. **Before posting links:**
-   ```python
-   status = WebFetch(url)
-   if status != 200:
-       find_alternative()
-   ```
+**Agor creates:**
+```
+Board: openclaw-agor
+├─ trello-list-shopping (worktree)
+│  ├─ Session: Buy o-ring
+│  ├─ Session: USB-C cable
+│  ├─ Session: Product A
+│  ├─ Session: Product B
+│  └─ Session: Product C
+├─ trello-list-development (worktree)
+│  ├─ Session: Implement feature X
+│  ├─ Session: Fix bug Y
+│  └─ Session: Refactor Z
+└─ trello-list-home (worktree)
+   ├─ Session: Task 1
+   └─ Session: Task 2
+```
 
-3. **After creating session:**
-   ```python
-   db.create_session(card_id, session_id, category, title)
-   # Immediately tracked - prevents duplicates
-   ```
+**Total:** 3 worktrees, 10 sessions
+
+---
+
+## Current State (First Run)
+
+Based on test run:
+
+```
+Worktrees to create: 1 (japan)
+Worktrees existing: 8
+Sessions to create: 16
+Sessions to update: 26
+Total cards: 42
+```
+
+**Will create:**
+- 1 new worktree (japan)
+- 16 new sessions in their respective worktrees
+- Send updates to 26 existing sessions
+
+---
+
+## Key Points
+
+### ✅ Organization
+- Lists = Worktrees (spatial organization on board)
+- Tickets = Sessions (full context per task)
+
+### ✅ Isolation
+- Each session has dedicated context
+- Sessions in same worktree share list context
+- Complete isolation between tickets
+
+### ✅ URL Verification
+- EVERY session verifies links before posting
+- No 404s allowed (especially AliExpress)
+- WebFetch tool required
+
+### ✅ DuckDB Tracking
+- Tracks: `card_id → session_id`
+- Not list-based anymore (back to per-ticket)
+- Simple duplicate prevention
 
 ---
 
 ## See Also
 
-- `skills/trello-ticket-processor.md` - Full workflow documentation
-- `SOLUTION-FINAL.md` - Complete duplicate prevention architecture
-- `utils/scheduled_run.py` - Entry point with DuckDB filtering
-- `utils/session_db.py` - DuckDB wrapper for persistence
+- `utils/generate_ticket_sessions_by_list.py` - Entry point
+- `utils/session_db.py` - DuckDB wrapper
 - `utils/trello_sync.py` - Trello API helpers
 
 ---
 
-## Key Principles
-
-1. **Orchestrator is DUMB EXECUTOR** - Receives pre-filtered input, just executes
-2. **DuckDB is SOURCE OF TRUTH** - All session tracking happens here
-3. **UPDATE existing sessions** - Check Trello for new comments, send updates
-4. **VERIFY ALL URLS** - No 404s allowed, especially AliExpress
-5. **NO decision-making** - All filtering happens in `scheduled_run.py`
-
----
-
-**Version:** 2.0 (with UPDATE support + URL verification)
-**Last Updated:** 2026-03-20
-**Status:** Ready for production
+**Version:** 5.0 (hybrid: worktree per list + session per ticket)
+**Last Updated:** 2026-04-14
+**Status:** Ready for deployment

@@ -1,13 +1,14 @@
 {
-  "last_run": "2026-05-01T07:00:00+00:00",
+  "last_run": "2026-05-01T15:00:00+00:00",
   "last_run_status": "success",
   "last_run_summary": {
-    "updates_sent": 25,
+    "updates_sent": 3,
     "sessions_recreated": 0,
     "new_sessions_created": 0,
     "total_cards": 48,
-    "skipped_blocked": 8,
-    "skipped_quizlet": 1,
+    "skipped_per_day_limit": 6,
+    "skipped_blocked": 0,
+    "skipped_quizlet": 0,
     "skipped_not_found": 7,
     "skipped_per_day_limit": 7,
     "skipped_invalid": 0,
@@ -23,7 +24,7 @@
     ]
   },
   "active_sessions": 33,
-  "next_scheduled_run": "2026-05-01T12:00:00+00:00",
+  "next_scheduled_run": "2026-05-01T20:00:00+00:00",
   "schedule": {
     "enabled": true,
     "cron": "0 */4 * * *",
@@ -45,6 +46,22 @@
     "dead_sessions": "7 sessions confirmed gone: 245675aa (creat website), 888aacdd (\u05d0\u05e8\u05e0\u05d5\u05e0\u05d4), e6b2c709 (\u05ea\u05d9\u05e7\u05d5\u05df \u05e4\u05d9\u05df \u05de\u05e7\u05e8\u05e8), 544d1804 (Led light strip), 2e691145 (Japan museum), 85337ae4 (Dishwasher), 63d0cd60 (\u05d4\u05ea\u05e7\u05e0\u05ea \u05d0\u05d9\u05e0\u05d8\u05e8\u05e0\u05d8)"
   },
   "recent_runs": [
+    {
+      "timestamp": "2026-05-01T15:00:00+00:00",
+      "actions_file": "memory/trello-actions-20260501-150119.json",
+      "updates": 3,
+      "creates": 0,
+      "errors": 0,
+      "note": "3 regular updates (pension/water-leak/investments), 6 per-day-limit skipped (already sent at 03:00), new focused architecture (top 9 from plan)"
+    },
+    {
+      "timestamp": "2026-05-01T11:00:00+00:00",
+      "actions_file": "memory/ticket-sessions-20260501-110104.json",
+      "updates": 25,
+      "creates": 0,
+      "errors": 0,
+      "note": "25 regular updates sent, 7 per-day-limit skipped (finance/maccabi/nursing/fighter-cal/ergometry/harel/brompton already sent at 03:00), 8 blocked skipped, 1 quizlet blocked, 7 dead sessions skipped"
+    },
     {
       "timestamp": "2026-05-01T07:00:00+00:00",
       "actions_file": "memory/ticket-sessions-20260501-070045.json",

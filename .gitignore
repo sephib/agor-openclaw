@@ -62,3 +62,11 @@ memory/trello-actions-*.json
 memory/filtered-new-sessions-*.json
 memory/agor-state/trello-processor.json.OLD
 memory/verification-reports/verification-pre-flight-*.json
+temp/*
+memory/ticket-sessions*.json
+memory/update*
+memory/session*
+memory/list-sessions*
+memory/actions-to-execute-20260415-110153.json
+memory/remaining*
+memory/agor-state/sessions.duckdb

@@ -346,42 +346,21 @@ def format_plan_for_agent(plan: Dict) -> str:
 
 def main():
     """Main execution"""
-    print("=== Trello Ticket Processor ===\n")
-
     try:
-        # Load credentials
-        print("Loading Trello credentials...")
         creds = load_credentials()
-
-        # Fetch active cards
-        print(f"Fetching active cards from board {BOARD_ID}...")
         cards = fetch_active_cards(creds)
-        print(f"✓ Found {len(cards)} active cards\n")
-
-        # Generate execution plan
-        print("Generating execution plan...")
         plan = generate_execution_plan(cards, creds)
 
-        # Output plan
-        plan_text = format_plan_for_agent(plan)
-        print(plan_text)
-
-        # Save to file
+        # Save plan files
         output_file = WORKSPACE_ROOT / "memory" / f"trello-plan-{datetime.now().strftime('%Y%m%d-%H%M%S')}.md"
         with open(output_file, 'w') as f:
-            f.write(plan_text)
+            f.write(format_plan_for_agent(plan))
 
-        print(f"\n✓ Plan saved to: {output_file}")
-
-        # Also output JSON for programmatic consumption
         json_file = output_file.with_suffix('.json')
         with open(json_file, 'w') as f:
             json.dump(plan, f, indent=2)
 
-        print(f"✓ JSON plan saved to: {json_file}")
-
-        # CRITICAL: Generate actions with DuckDB duplicate checking
-        print("\n🔍 Generating action list (DuckDB duplicate check)...")
+        # Generate actions with DuckDB duplicate checking
         try:
             import subprocess
             actions_script = WORKSPACE_ROOT / "utils" / "generate_actions.py"
@@ -392,30 +371,17 @@ def main():
                 timeout=30
             )
 
-            if result.returncode == 0:
-                # Extract actions file path from output
-                for line in result.stdout.split('\n'):
-                    if 'Actions saved to:' in line:
-                        actions_file = line.split('Actions saved to:')[1].strip()
-                        print(f"✓ Actions file: {actions_file}")
-
-                        # Print summary
-                        for line in result.stdout.split('\n'):
-                            if 'Updates:' in line or 'Creates:' in line or 'Total actions:' in line:
-                                print(f"  {line.strip()}")
-                        break
-            else:
-                print(f"⚠️ Warning: generate_actions.py failed: {result.stderr}")
-                print("   Continuing without action file...")
+            if result.returncode != 0:
+                print(f"WARNING: generate_actions.py failed: {result.stderr}", file=sys.stderr)
 
         except Exception as e:
-            print(f"⚠️ Warning: Could not generate actions: {e}")
-            print("   Continuing without action file...")
+            print(f"WARNING: Could not generate actions: {e}", file=sys.stderr)
 
+        print(f"Generated {output_file.name} ({len(cards)} cards)")
         return 0
 
     except Exception as e:
-        print(f"\n✗ Processing failed: {e}", file=sys.stderr)
+        print(f"ERROR: {e}", file=sys.stderr)
         import traceback
         traceback.print_exc()
         return 1

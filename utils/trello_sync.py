@@ -346,47 +346,63 @@ def log_sync_summary(stats: Dict, changes: Dict) -> None:
     print(f"\nSync summary logged to {log_file}")
 
 
+def add_comment(card_id: str, text: str, creds: Optional[Dict] = None) -> Dict:
+    """
+    Add a comment to a Trello card
+
+    🚨 CRITICAL RULE: Use this function to post updates to cards.
+    NEVER modify the card description directly!
+
+    Args:
+        card_id: Trello card ID
+        text: Comment text to post
+        creds: Optional credentials (will load if not provided)
+
+    Returns:
+        Response from Trello API
+
+    Example:
+        add_comment(
+            card_id="abc123",
+            text="✅ Research complete! Found 3 options:\\n1. Option A - $50\\n2. Option B - $75\\n3. Option C - $100"
+        )
+    """
+    if creds is None:
+        creds = load_credentials()
+
+    url = f"/1/cards/{card_id}/actions/comments"
+    data = {'text': text}
+
+    return api_request(url, creds, method="POST", data=data)
+
+
 def main():
     """Main sync execution"""
-    print("=== Trello Personal Task Sync (Label-Based) ===\n")
-
     try:
-        # Load credentials and config
-        print("Loading credentials and configuration...")
         creds = load_credentials()
         config = load_config()
         old_tasks = config.get('tasks', [])
 
         # Sync Trello → Agor
         new_tasks, stats = sync_trello_to_agor(creds, config)
-        print(f"\n✓ Fetched {stats['total_synced']} tasks from Trello (label-based)")
-        print(f"  - Active: {stats['active_count']} (cards with 'active' label)")
-        print(f"  - Backlog: {stats['backlog_count']}/10 (cards with 'backlog' label)")
 
         # Sync Agor → Trello (detect and push label changes)
-        print("\nChecking for local changes to sync back...")
         new_tasks, changes = sync_agor_to_trello(creds, old_tasks, new_tasks, config)
-
-        total_changes = changes['moved_to_active'] + changes['archived']
-        if total_changes > 0:
-            print(f"\n✓ Synced {total_changes} changes to Trello (labels)")
-        else:
-            print("\n✓ No local changes to sync")
 
         # Update config
         config['tasks'] = new_tasks
         config['last_synced'] = datetime.now(timezone.utc).isoformat()
         save_config(config)
-        print(f"\n✓ Updated {CONFIG_FILE}")
 
         # Log summary
         log_sync_summary(stats, changes)
 
-        print("\n=== Sync Complete ===")
+        total_changes = changes['moved_to_active'] + changes['archived']
+        print(f"Synced {stats['total_synced']} tasks, {total_changes} changes to Trello")
         return 0
 
     except Exception as e:
-        print(f"\n✗ Sync failed: {e}", file=sys.stderr)
+        print(f"ERROR: {e}", file=sys.stderr)
         import traceback
         traceback.print_exc()
         return 1

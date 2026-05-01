@@ -42,12 +42,12 @@ def create_session(
         requests.HTTPError: If API call fails
     """
     payload = {
-        "worktreeId": worktree_id,
-        "agenticTool": agentic_tool,
+        "worktree_id": worktree_id,
+        "agentic_tool": agentic_tool,
     }
 
     if initial_prompt:
-        payload["initialPrompt"] = initial_prompt
+        payload["initial_prompt"] = initial_prompt
 
     if title:
         payload["title"] = title
