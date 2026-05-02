@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-05-02T07:00:00+00:00",
+  "last_run": "2026-05-02T11:00:00+00:00",
   "last_run_status": "success",
   "last_run_summary": {
     "updates_sent": 23,
@@ -9,11 +9,11 @@
     "skipped_per_day": 8,
     "skipped_do_not_retry": 6,
     "skipped_dead": 6,
-    "per_day_updates": 8,
+    "per_day_updates": 0,
     "regular_updates": 23
   },
   "active_sessions": 31,
-  "next_scheduled_run": "2026-05-02T11:00:00+00:00",
+  "next_scheduled_run": "2026-05-02T15:00:00+00:00",
   "schedule": {
     "enabled": true,
     "cron": "0 */4 * * *",
@@ -36,6 +36,14 @@
     "uuid_gotcha": "When processing updates: always read full session UUIDs from the actions file or DuckDB. Never manually construct or truncate UUIDs - the suffix matters. The generate script correctly reads from DuckDB; the orchestrator must read from the generated actions file too."
   },
   "recent_runs": [
+    {
+      "timestamp": "2026-05-02T11:00:00+00:00",
+      "actions_file": "memory/ticket-sessions-20260502-110029.json",
+      "updates": 23,
+      "creates": 0,
+      "errors": 0,
+      "note": "23 regular updates, 8 per-day skipped (already sent at 03:00), 6 do-not-retry skipped, 6 dead skipped. UUID fix: pension session had wrong UUID in actions file (f04e vs f049) - used DuckDB UUID."
+    },
     {
       "timestamp": "2026-05-02T07:00:00+00:00",
       "actions_file": "memory/ticket-sessions-20260502-070023.json",
