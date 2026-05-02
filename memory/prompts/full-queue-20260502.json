@@ -1,0 +1,250 @@
+[
+  {
+    "card_id": "674ff3ccb57927269396bc97",
+    "session_id": "c0fc66fe-6993-4d37-965a-fdb121718e57",
+    "title": "תכנית עבודה - ספי וסיגי",
+    "list_name": "In Progress",
+    "category": "per-day",
+    "prompt": "Daily check-in 2026-05-02 - תכנית עבודה - ספי וסיגי\n\nCard: תכנית עבודה - ספי וסיגי\nList: In Progress\nTrello: https://trello.com/c/Zy7HT50X/52-%D7%AA%D7%9B%D7%A0%D7%99%D7%AA-%D7%A2%D7%91%D7%95%D7%93%D7%94-%D7%A1%D7%A4%D7%99-%D7%95%D7%A1%D7%99%D7%92%D7%99\n\nTask: Financial work plan - 6 steps need manual user action. Summarize current status and next required user action.\n\nPost ONE comment only (max 1/day via curl). Check if you already posted today first.\n\nsource ~/.config/mcp-trello.env\ncurl -s -X POST \"https://api.trello.com/1/cards/674ff3ccb57927269396bc97/actions/comments\" --data-urlencode \"key=$TRELLO_API_KEY\" --data-urlencode \"token=$TRELLO_TOKEN\" --data-urlencode \"text=YOUR STATUS UPDATE\"\n\nRULES: Comment only, never edit description. Verify links before posting."
+  },
+  {
+    "card_id": "674ff398f97eed6db925d920",
+    "session_id": "656ebf1b-f049-4978-88a2-352d902021b7",
+    "title": "לעבור על פנסיה / קרן השתלמות סיגי",
+    "list_name": "In Progress",
+    "category": "regular",
+    "prompt": "Daily check-in 2026-05-02 - לעבור על פנסיה / קרן השתלמות סיגי\n\nCard: לעבור על פנסיה / קרן השתלמות סיגי\nList: In Progress\nTrello: https://trello.com/c/ujD52gO3/51-%D7%9C%D7%A2%D7%91%D7%95%D7%A8-%D7%A2%D7%9C-%D7%A4%D7%A0%D7%A1%D7%99%D7%94-%D7%A7%D7%A8%D7%9F-%D7%94%D7%A9%D7%AA%D7%9C%D7%9E%D7%95%D7%AA-%D7%A1%D7%99%D7%92%D7%99\nDescription: ## Research Completed - March 29, 2026\n\n### Keren Hishtalmut (Continuing Education Fund)\n\n**What it is:**\nA 6-year tax-advantaged savings plan. Historically for professional development, now used for general savings.\n\n**2026 Contribution Limits:**\n- **Employees:** 2.5% employee + 7.5% employer = 10% total\n- **Self-Employed:** Up to 20,566 ₪/year (capital gains tax-free on profits)\n- Tax-free on em\n\n\nCheck status and continue working on this task. Post a brief update as a Trello comment.\n\nsource ~/.config/mcp-trello.env\ncurl -s -X POST \"https://api.trello.com/1/cards/674ff398f97eed6db925d920/actions/comments\" --data-urlencode \"key=$TRELLO_API_KEY\" --data-urlencode \"token=$TRELLO_TOKEN\" --data-urlencode \"text=YOUR STATUS UPDATE\"\n\nRULES: Comment only, never edit description. Verify all links before posting."
+  },
+  {
+    "card_id": "66e91a69e56d8125fb2f984a",
+    "session_id": "34491817-6e94-4fa3-acfe-c937cd370d58",
+    "title": "מכבי - גל - סעודי",
+    "list_name": "In Progress",
+    "category": "per-day",
+    "prompt": "Daily check-in 2026-05-02 - מכבי - גל - סעודי\n\nCard: מכבי - גל - סעודי\nList: In Progress\nTrello: https://trello.com/c/Mbx6yUEN/46-%D7%9E%D7%9B%D7%91%D7%99-%D7%92%D7%9C-%D7%A1%D7%A2%D7%95%D7%93%D7%99\n\nTask: Maccabi nursing insurance - blocked on user calling *6300. Remind user of this action.\n\nPost ONE comment only (max 1/day via curl). Check if you already posted today first.\n\nsource ~/.config/mcp-trello.env\ncurl -s -X POST \"https://api.trello.com/1/cards/66e91a69e56d8125fb2f984a/actions/comments\" --data-urlencode \"key=$TRELLO_API_KEY\" --data-urlencode \"token=$TRELLO_TOKEN\" --data-urlencode \"text=YOUR STATUS UPDATE\"\n\nRULES: Comment only, never edit description. Verify links before posting."
+  },
+  {
+    "card_id": "67c1cb49c988608fff85a87f",
+    "session_id": "a5d7af00-76fb-45e4-828e-bd6d12349f4a",
+    "title": "לבטל סיעודי לענות ועודד",
+    "list_name": "In Progress",
+    "category": "per-day",
+    "prompt": "Daily check-in 2026-05-02 - לבטל סיעודי לענות ועודד\n\nCard: לבטל סיעודי לענות ועודד\nList: In Progress\nTrello: https://trello.com/c/tyBzXFXA/60-%D7%9C%D7%91%D7%98%D7%9C-%D7%A1%D7%99%D7%A2%D7%95%D7%93%D7%99-%D7%9C%D7%A2%D7%A0%D7%95%D7%AA-%D7%95%D7%A2%D7%95%D7%93%D7%93\n\nTask: Nursing insurance Anat+Oded - blocked on human action. Remind user what is needed.\n\nPost ONE comment only (max 1/day via curl). Check if you already posted today first.\n\nsource ~/.config/mcp-trello.env\ncurl -s -X POST \"https://api.trello.com/1/cards/67c1cb49c988608fff85a87f/actions/comments\" --data-urlencode \"key=$TRELLO_API_KEY\" --data-urlencode \"token=$TRELLO_TOKEN\" --data-urlencode \"text=YOUR STATUS UPDATE\"\n\nRULES: Comment only, never edit description. Verify links before posting."
+  },
+  {
+    "card_id": "695ccfe0505ccec8391cde85",
+    "session_id": "f87fb40e-7ff6-472e-951f-aaf671eeeea5",
+    "title": "fighter cal card",
+    "list_name": "In Progress",
+    "category": "per-day",
+    "prompt": "Daily check-in 2026-05-02 - fighter cal card\n\nCard: fighter cal card\nList: In Progress\nTrello: https://trello.com/c/rWixYvhJ/79-fighter-cal-card\n\nTask: Fighter Cal - research done, blocked on user activating at cal-platform.com. Remind user.\n\nPost ONE comment only (max 1/day via curl). Check if you already posted today first.\n\nsource ~/.config/mcp-trello.env\ncurl -s -X POST \"https://api.trello.com/1/cards/695ccfe0505ccec8391cde85/actions/comments\" --data-urlencode \"key=$TRELLO_API_KEY\" --data-urlencode \"token=$TRELLO_TOKEN\" --data-urlencode \"text=YOUR STATUS UPDATE\"\n\nRULES: Comment only, never edit description. Verify links before posting."
+  },
+  {
+    "card_id": "68e6861b1974349dd8cd52f4",
+    "session_id": "804e9e63-d686-4024-ba20-23f6c9a07bb5",
+    "title": "גיחון נזילה",
+    "list_name": "In Progress",
+    "category": "regular",
+    "prompt": "Daily check-in 2026-05-02 - גיחון נזילה\n\nCard: גיחון נזילה\nList: In Progress\nTrello: https://trello.com/c/skhAf2fm/70-%D7%92%D7%99%D7%97%D7%95%D7%9F-%D7%A0%D7%96%D7%99%D7%9C%D7%94\nDescription: **הנחה לנזילה** \n     **אישור על שליחת בקשה  מספר -** 7899531\n\n‌\n\n‌\n\n         **יוסף בארי  , תודה על פנייתך**\n\n‌\n\n         **פנייתך התקבלה בהצלחה ותטופל עד 14 ימי עסקים.**\n\n‌\n\n         **מספר  לקוח**  100177157    **מספר חשבון חוזה**  1451519\n\n\nCheck status and continue working on this task. Post a brief update as a Trello comment.\n\nsource ~/.config/mcp-trello.env\ncurl -s -X POST \"https://api.trello.com/1/cards/68e6861b1974349dd8cd52f4/actions/comments\" --data-urlencode \"key=$TRELLO_API_KEY\" --data-urlencode \"token=$TRELLO_TOKEN\" --data-urlencode \"text=YOUR STATUS UPDATE\"\n\nRULES: Comment only, never edit description. Verify all links before posting."
+  },
+  {
+    "card_id": "69a3f25d326bc707992e9c07",
+    "session_id": "5f27f6b8-cf88-46f7-a8c6-620ae97921e8",
+    "title": "ארגומטריה - ספי",
+    "list_name": "In Progress",
+    "category": "per-day",
+    "prompt": "Daily check-in 2026-05-02 - ארגומטריה - ספי\n\nCard: ארגומטריה - ספי\nList: In Progress\nTrello: https://trello.com/c/EII7xKIu/96-%D7%90%D7%A8%D7%92%D7%95%D7%9E%D7%98%D7%A8%D7%99%D7%94-%D7%A1%D7%A4%D7%99\n\nTask: Ergometry Safi - blocked on human booking at Assuta. Remind user to book.\n\nPost ONE comment only (max 1/day via curl). Check if you already posted today first.\n\nsource ~/.config/mcp-trello.env\ncurl -s -X POST \"https://api.trello.com/1/cards/69a3f25d326bc707992e9c07/actions/comments\" --data-urlencode \"key=$TRELLO_API_KEY\" --data-urlencode \"token=$TRELLO_TOKEN\" --data-urlencode \"text=YOUR STATUS UPDATE\"\n\nRULES: Comment only, never edit description. Verify links before posting."
+  },
+  {
+    "card_id": "665d6d84820825a7b050a064",
+    "session_id": "aaabc270-63fb-4c6d-b0ae-769e30553c06",
+    "title": "עדכון ביטוח 500952425 ביטוח בריאות הראל",
+    "list_name": "בית",
+    "category": "per-day",
+    "prompt": "Daily check-in 2026-05-02 - עדכון ביטוח 500952425 ביטוח בריאות הראל\n\nCard: עדכון ביטוח 500952425 ביטוח בריאות הראל\nList: בית\nTrello: https://trello.com/c/bTEDYio7/36-%D7%A2%D7%93%D7%9B%D7%95%D7%9F-%D7%91%D7%99%D7%98%D7%95%D7%97-500952425-%D7%91%D7%99%D7%98%D7%95%D7%97-%D7%91%D7%A8%D7%99%D7%90%D7%95%D7%AA-%D7%94%D7%A8%D7%90%D7%9C\n\nTask: Harel insurance 500952425 - WARNING: previous short links all 404'd. Verify any links with WebFetch before posting.\n\nPost ONE comment only (max 1/day via curl). Check if you already posted today first.\n\nsource ~/.config/mcp-trello.env\ncurl -s -X POST \"https://api.trello.com/1/cards/665d6d84820825a7b050a064/actions/comments\" --data-urlencode \"key=$TRELLO_API_KEY\" --data-urlencode \"token=$TRELLO_TOKEN\" --data-urlencode \"text=YOUR STATUS UPDATE\"\n\nRULES: Comment only, never edit description. Verify links before posting."
+  },
+  {
+    "card_id": "69c810111a8466737e72d0f6",
+    "session_id": "85c8728d-afdf-4b76-8a76-fb2d26cf14ff",
+    "title": "בחינה של תיק השקעות",
+    "list_name": "שוטף",
+    "category": "regular",
+    "prompt": "Daily check-in 2026-05-02 - בחינה של תיק השקעות\n\nCard: בחינה של תיק השקעות\nList: שוטף\nTrello: https://trello.com/c/bIkIYl3L/111-%D7%91%D7%97%D7%99%D7%A0%D7%94-%D7%A9%D7%9C-%D7%AA%D7%99%D7%A7-%D7%94%D7%A9%D7%A7%D7%A2%D7%95%D7%AA\nDescription: ## פרטי הפרק\n\n**כותרת:** 2026 ארבע קושיות כלכליות לפסח\n\n**תאריך פרסום:** 26 במרץ 2026\n\n**משך:** 53 דקות\n\n**מגישים:** שי סלינס (עורך משנה של כלכליסט) ואורי גרינפלד (כלכלן ראשי ואסטרטג באגם לידרים)\n\n---\n\n## תוכן הפרק\n\nלקראת חג הפסח, מציגים המגישים ניתוח מעמיק של שאלות המעסיקות משקיעים ישראלים בתקופה סוערת:\n\n### 1. שוק הנפט - לאן הוא פונה?\n- ניתוח כיווני שוק הנפט\n- השפעות על הכלכלה הישראלית והעולמית\n\n\n\nCheck status and continue working on this task. Post a brief update as a Trello comment.\n\nsource ~/.config/mcp-trello.env\ncurl -s -X POST \"https://api.trello.com/1/cards/69c810111a8466737e72d0f6/actions/comments\" --data-urlencode \"key=$TRELLO_API_KEY\" --data-urlencode \"token=$TRELLO_TOKEN\" --data-urlencode \"text=YOUR STATUS UPDATE\"\n\nRULES: Comment only, never edit description. Verify all links before posting."
+  },
+  {
+    "card_id": "69c9304c182bc53fc17069c4",
+    "session_id": "67f32adf-6998-4c01-b8c6-db5b5c242495",
+    "title": "מחלקת הדרכת טאורינד ski touring",
+    "list_name": "שוטף",
+    "category": "regular",
+    "prompt": "Daily check-in 2026-05-02 - מחלקת הדרכת טאורינד ski touring\n\nCard: מחלקת הדרכת טאורינד ski touring\nList: שוטף\nTrello: https://trello.com/c/24FkrFNx/112-%D7%9E%D7%97%D7%9C%D7%A7%D7%AA-%D7%94%D7%93%D7%A8%D7%9B%D7%AA-%D7%98%D7%90%D7%95%D7%A8%D7%99%D7%A0%D7%93-ski-touring\nDescription: ## ✅ מסמך הקמה מעודכן - 2026-03-30\n\n### 📄 מסמך מלא בעברית (מעודכן)\n**קובץ:** `ski-touring-department-hebrew.md`\n\n---\n\n## עדכון לפי משוב 30.03.2026\n\n### הבעיות המרכזיות\n\n**1️⃣ בעיה מרכזית: איכות הסקי בחלק מהצוותים**\n- איכות סקי לא אחידה בין צוותים\n- חלק מהצוותים חסרים מיומנויות בסיסיות\n- פערים ביכולת גלישה בכל ההר\n- השפעה ישירה על יכולת מבצעית\n\n**2️⃣ בעיה משנית: שליטה על מדריכי סקי**\n- חוסר מחויבות\n\n\nCheck status and continue working on this task. Post a brief update as a Trello comment.\n\nsource ~/.config/mcp-trello.env\ncurl -s -X POST \"https://api.trello.com/1/cards/69c9304c182bc53fc17069c4/actions/comments\" --data-urlencode \"key=$TRELLO_API_KEY\" --data-urlencode \"token=$TRELLO_TOKEN\" --data-urlencode \"text=YOUR STATUS UPDATE\"\n\nRULES: Comment only, never edit description. Verify all links before posting."
+  },
+  {
+    "card_id": "69d14dfc4d45bd39f2b66253",
+    "session_id": "e1484dd5-7c16-4c5a-ba98-7929173daa04",
+    "title": "Open an ib account for ibm espp",
+    "list_name": "שוטף",
+    "category": "regular",
+    "prompt": "Daily check-in 2026-05-02 - Open an ib account for ibm espp\n\nCard: Open an ib account for ibm espp\nList: שוטף\nTrello: https://trello.com/c/Alv5L8C3/115-open-an-ib-account-for-ibm-espp\nDescription: # Opening Interactive Brokers Account for IBM ESPP Shares\n\n## Important Clarification\n\n**Interactive Brokers does NOT administer ESPPs** - it's not an ESPP provider like Schwab or E*TRADE. However, you CAN:\n1. Open a regular IB brokerage account\n2. Transfer IBM ESPP shares FROM Computershare TO Interactive Brokers for trading/management\n\n---\n\n# 🇮🇱 ISRAELI CITIZEN SETUP GUIDE\n\n## Recommended Accoun\n\n\nCheck status and continue working on this task. Post a brief update as a Trello comment.\n\nsource ~/.config/mcp-trello.env\ncurl -s -X POST \"https://api.trello.com/1/cards/69d14dfc4d45bd39f2b66253/actions/comments\" --data-urlencode \"key=$TRELLO_API_KEY\" --data-urlencode \"token=$TRELLO_TOKEN\" --data-urlencode \"text=YOUR STATUS UPDATE\"\n\nRULES: Comment only, never edit description. Verify all links before posting."
+  },
+  {
+    "card_id": "69d7ed2d1ea27d482153a7eb",
+    "session_id": "48ea58c0-2bc7-4110-beb0-2a3e1d7ac493",
+    "title": "S&P 500 Sell-Off: 1 Vanguard ETF I'm Loading Up On Right Now | The Motley Fool",
+    "list_name": "שוטף",
+    "category": "regular",
+    "prompt": "Daily check-in 2026-05-02 - S&P 500 Sell-Off: 1 Vanguard ETF I'm Loading Up On Right Now | The Motley Fool\n\nCard: S&P 500 Sell-Off: 1 Vanguard ETF I'm Loading Up On Right Now | The Motley Fool\nList: שוטף\nTrello: https://trello.com/c/g0QbKst6/117-sp-500-sell-off-1-vanguard-etf-im-loading-up-on-right-now-the-motley-fool\nDescription: # Investment Analysis: Vanguard Total Stock Market ETF (VTI)\n\n**Article:** S&P 500 Sell-Off: 1 Vanguard ETF I'm Loading Up On Right Now\n**Author:** Katie Brockman (The Motley Fool)\n**Published:** April 8, 2026\n\n---\n\n## 📊 The Recommended ETF\n\n**Vanguard Total Stock Market ETF (VTI)**\n\n### Current Metrics (as of April 9, 2026)\n- **Price:** $332.50\n- **52-Week Range:** $241.62 - $344.42 (currently ~6\n\n\nCheck status and continue working on this task. Post a brief update as a Trello comment.\n\nsource ~/.config/mcp-trello.env\ncurl -s -X POST \"https://api.trello.com/1/cards/69d7ed2d1ea27d482153a7eb/actions/comments\" --data-urlencode \"key=$TRELLO_API_KEY\" --data-urlencode \"token=$TRELLO_TOKEN\" --data-urlencode \"text=YOUR STATUS UPDATE\"\n\nRULES: Comment only, never edit description. Verify all links before posting."
+  },
+  {
+    "card_id": "69eb8e98cd62ed9be0f25d21",
+    "session_id": "35abf4f2-8d57-4f26-ba4e-2bc2b9d32ecd",
+    "title": "הפקדה לגל 1100 שח",
+    "list_name": "שוטף",
+    "category": "regular",
+    "prompt": "Daily check-in 2026-05-02 - הפקדה לגל 1100 שח\n\nCard: הפקדה לגל 1100 שח\nList: שוטף\nTrello: https://trello.com/c/MJZLPkVD/125-%D7%94%D7%A4%D7%A7%D7%93%D7%94-%D7%9C%D7%92%D7%9C-1100-%D7%A9%D7%97\nDescription: אני רוצה שזה יהיה  אפשרות להוסיף הפקדות כל כמה חודשים \n\n\nCheck status and continue working on this task. Post a brief update as a Trello comment.\n\nsource ~/.config/mcp-trello.env\ncurl -s -X POST \"https://api.trello.com/1/cards/69eb8e98cd62ed9be0f25d21/actions/comments\" --data-urlencode \"key=$TRELLO_API_KEY\" --data-urlencode \"token=$TRELLO_TOKEN\" --data-urlencode \"text=YOUR STATUS UPDATE\"\n\nRULES: Comment only, never edit description. Verify all links before posting."
+  },
+  {
+    "card_id": "69f4a97017d429c51562fa4e",
+    "session_id": "c6cf79d9-277d-43c8-906c-76cad059840d",
+    "title": "Martini espresso pods",
+    "list_name": "שוטף",
+    "category": "regular",
+    "prompt": "Daily check-in 2026-05-02 - Martini espresso pods\n\nCard: Martini espresso pods\nList: שוטף\nTrello: https://trello.com/c/eIqzqQYT/132-martini-espresso-pods\nDescription: -6g Calcium Lactate\n\nSodium Alginate Bath\n\n-5g Sodium Alginate\n\n-1 Liter Distilled Water\n\n\n\nCheck status and continue working on this task. Post a brief update as a Trello comment.\n\nsource ~/.config/mcp-trello.env\ncurl -s -X POST \"https://api.trello.com/1/cards/69f4a97017d429c51562fa4e/actions/comments\" --data-urlencode \"key=$TRELLO_API_KEY\" --data-urlencode \"token=$TRELLO_TOKEN\" --data-urlencode \"text=YOUR STATUS UPDATE\"\n\nRULES: Comment only, never edit description. Verify all links before posting."
+  },
+  {
+    "card_id": "69b59cb95c7ea9a9e6751bfb",
+    "session_id": "c4eb8012-a030-439e-a7de-18a61d46ab8b",
+    "title": "מקום",
+    "list_name": "בת מצווה",
+    "category": "regular",
+    "prompt": "Daily check-in 2026-05-02 - מקום\n\nCard: מקום\nList: בת מצווה\nTrello: https://trello.com/c/xldVHuaS/101-%D7%9E%D7%A7%D7%95%D7%9D\nDescription: ## מחקר מקומות לבת מצווה\n\n### 1. מכון שלום הרטמן\n**כתובת:** גדליהו אלון 11, ירושלים (המושבה הגרמנית)\n**טלפון:** 02-5675320\n**סוג:** מרכז פלורליסטי למחקר והגות יהודית שמארח אירועים\n**הערות:**\n- ממוקם במושבה הגרמנית בירושלים\n- מקום מכובד ויוקרתי\n- קיבולת לא זמינה באופן מיידי - מומלץ ליצור קשר ישירות\n\n### 2. קזה (Kazze)\n**כתובת:** בצלאל 7, ירושלים (ליד רח' המלך ג'ורג')\n**טלפונים:** 072-3316359 | משלו\n\n\nCheck status and continue working on this task. Post a brief update as a Trello comment.\n\nsource ~/.config/mcp-trello.env\ncurl -s -X POST \"https://api.trello.com/1/cards/69b59cb95c7ea9a9e6751bfb/actions/comments\" --data-urlencode \"key=$TRELLO_API_KEY\" --data-urlencode \"token=$TRELLO_TOKEN\" --data-urlencode \"text=YOUR STATUS UPDATE\"\n\nRULES: Comment only, never edit description. Verify all links before posting."
+  },
+  {
+    "card_id": "69b59d37bac8b8d643e22faa",
+    "session_id": "33c58b16-7316-484c-b48e-36990cc8552d",
+    "title": "קריאה בתורה של גל",
+    "list_name": "בת מצווה",
+    "category": "regular",
+    "prompt": "Daily check-in 2026-05-02 - קריאה בתורה של גל\n\nCard: קריאה בתורה של גל\nList: בת מצווה\nTrello: https://trello.com/c/Cn01sKgg/102-%D7%A7%D7%A8%D7%99%D7%90%D7%94-%D7%91%D7%AA%D7%95%D7%A8%D7%94-%D7%A9%D7%9C-%D7%92%D7%9C\nDescription: גל צריכה ללמוד את כל העליות + הפטרה\n\n## 📚 משאבים לתרגול קריאה בתורה (Torah Reading Practice Resources)\n\n### ההקלטות וטקסטים (Recordings & Texts)\n- **TorahTots Trop Trainer**: https://www.torahtots.com/trop/trop.htm - Interactive cantillation trainer\n- **Mechon Mamre**: https://www.mechon-mamre.org/p/pt/pt0.htm - Torah text with trop\n- **Sefaria**: https://www.sefaria.org - Complete Torah with comm\n\n\nCheck status and continue working on this task. Post a brief update as a Trello comment.\n\nsource ~/.config/mcp-trello.env\ncurl -s -X POST \"https://api.trello.com/1/cards/69b59d37bac8b8d643e22faa/actions/comments\" --data-urlencode \"key=$TRELLO_API_KEY\" --data-urlencode \"token=$TRELLO_TOKEN\" --data-urlencode \"text=YOUR STATUS UPDATE\"\n\nRULES: Comment only, never edit description. Verify all links before posting."
+  },
+  {
+    "card_id": "69b59ed255ea6e4fca6da0bb",
+    "session_id": "ec977892-c0dc-47dc-b2d9-4b0be368edf0",
+    "title": "מתנה",
+    "list_name": "בת מצווה",
+    "category": "regular",
+    "prompt": "Daily check-in 2026-05-02 - מתנה\n\nCard: מתנה\nList: בת מצווה\nTrello: https://trello.com/c/sMIolL5l/103-%D7%9E%D7%AA%D7%A0%D7%94\nDescription: (see card)\n\n\nCheck status and continue working on this task. Post a brief update as a Trello comment.\n\nsource ~/.config/mcp-trello.env\ncurl -s -X POST \"https://api.trello.com/1/cards/69b59ed255ea6e4fca6da0bb/actions/comments\" --data-urlencode \"key=$TRELLO_API_KEY\" --data-urlencode \"token=$TRELLO_TOKEN\" --data-urlencode \"text=YOUR STATUS UPDATE\"\n\nRULES: Comment only, never edit description. Verify all links before posting."
+  },
+  {
+    "card_id": "69b5a2c3ac3c6b5fd3f09da4",
+    "session_id": "ff6d4d51-92b4-4b87-8d81-296856e758d3",
+    "title": "קייטרניג",
+    "list_name": "בת מצווה",
+    "category": "regular",
+    "prompt": "Daily check-in 2026-05-02 - קייטרניג\n\nCard: קייטרניג\nList: בת מצווה\nTrello: https://trello.com/c/HaHuUMsH/104-%D7%A7%D7%99%D7%99%D7%98%D7%A8%D7%A0%D7%99%D7%92\nDescription: (see card)\n\n\nCheck status and continue working on this task. Post a brief update as a Trello comment.\n\nsource ~/.config/mcp-trello.env\ncurl -s -X POST \"https://api.trello.com/1/cards/69b5a2c3ac3c6b5fd3f09da4/actions/comments\" --data-urlencode \"key=$TRELLO_API_KEY\" --data-urlencode \"token=$TRELLO_TOKEN\" --data-urlencode \"text=YOUR STATUS UPDATE\"\n\nRULES: Comment only, never edit description. Verify all links before posting."
+  },
+  {
+    "card_id": "69b5a430e8a3f14f4dfda52e",
+    "session_id": "cc9eb217-d559-4c5c-82d8-5291b55af415",
+    "title": "לכתוב מייל למכון הדר",
+    "list_name": "בת מצווה",
+    "category": "regular",
+    "prompt": "Daily check-in 2026-05-02 - לכתוב מייל למכון הדר\n\nCard: לכתוב מייל למכון הדר\nList: בת מצווה\nTrello: https://trello.com/c/lARQyhYz/105-%D7%9C%D7%9B%D7%AA%D7%95%D7%91-%D7%9E%D7%99%D7%99%D7%9C-%D7%9C%D7%9E%D7%9B%D7%95%D7%9F-%D7%94%D7%93%D7%A8\nDescription: נופר - מנהלת משרד\nIsraeloffice@hadar.org\n\nאורית רפל מנכלית\n\nאני ספי בארי\nאח של ליאורה בארי (חברת עמותה)\n\nשבת תשובה בתאריך של 19 לספטמבר\nרוצים לבחון את האפשרות לקיים חגיגת בת מצווה\n\n\nCheck status and continue working on this task. Post a brief update as a Trello comment.\n\nsource ~/.config/mcp-trello.env\ncurl -s -X POST \"https://api.trello.com/1/cards/69b5a430e8a3f14f4dfda52e/actions/comments\" --data-urlencode \"key=$TRELLO_API_KEY\" --data-urlencode \"token=$TRELLO_TOKEN\" --data-urlencode \"text=YOUR STATUS UPDATE\"\n\nRULES: Comment only, never edit description. Verify all links before posting."
+  },
+  {
+    "card_id": "69dc844b4f5f30935ec2d267",
+    "session_id": "400631b6-ced0-4f62-861b-bb24fac117f0",
+    "title": "Ninja blade 7 fins and cup",
+    "list_name": "AliExpress",
+    "category": "regular",
+    "prompt": "Daily check-in 2026-05-02 - Ninja blade 7 fins and cup\n\nCard: Ninja blade 7 fins and cup\nList: AliExpress\nTrello: https://trello.com/c/kcZ07RF2/120-ninja-blade-7-fins-and-cup\nDescription: 3008103092721025499 Serial No\n\nModel: CB103IS\n\n---\n\n## RESEARCH COMPLETED - 2026-04-13\n\n### ⚠️ CRITICAL COMPATIBILITY INFO\n\nYour **Ninja Power Nutri Duo CB103IS** (Israeli market model, 1100W) requires a **Hybrid Edge blade** - NOT standard 6-fin or 7-fin blades used in older Ninja models.\n\n**Correct Blade:** Ninja Hybrid Edge 7-fin blade (Part #703KKU100 in US, regional equivalent in Israel)\n\n---\n\n\nCheck status and continue working on this task. Post a brief update as a Trello comment.\n\nsource ~/.config/mcp-trello.env\ncurl -s -X POST \"https://api.trello.com/1/cards/69dc844b4f5f30935ec2d267/actions/comments\" --data-urlencode \"key=$TRELLO_API_KEY\" --data-urlencode \"token=$TRELLO_TOKEN\" --data-urlencode \"text=YOUR STATUS UPDATE\"\n\nRULES: Comment only, never edit description. Verify all links before posting."
+  },
+  {
+    "card_id": "69e3db1c76c671891be84959",
+    "session_id": "33fcfeff-f0e7-4c7d-a39b-c8761895bfdc",
+    "title": "תאורת אוירה למסיבה על גבי שולחן",
+    "list_name": "AliExpress",
+    "category": "per-day",
+    "prompt": "Daily check-in 2026-05-02 - תאורת אוירה למסיבה על גבי שולחן\n\nCard: תאורת אוירה למסיבה על גבי שולחן\nList: AliExpress\nTrello: https://trello.com/c/EFnodVcj/124-%D7%AA%D7%90%D7%95%D7%A8%D7%AA-%D7%90%D7%95%D7%99%D7%A8%D7%94-%D7%9C%D7%9E%D7%A1%D7%99%D7%91%D7%94-%D7%A2%D7%9C-%D7%92%D7%91%D7%99-%D7%A9%D7%95%D7%9C%D7%97%D7%9F\n\nTask: AliExpress party lighting - re-verify all 5 previously posted links with WebFetch (links expire). Replace any 404s.\n\nPost ONE comment only (max 1/day via curl). Check if you already posted today first.\n\nsource ~/.config/mcp-trello.env\ncurl -s -X POST \"https://api.trello.com/1/cards/69e3db1c76c671891be84959/actions/comments\" --data-urlencode \"key=$TRELLO_API_KEY\" --data-urlencode \"token=$TRELLO_TOKEN\" --data-urlencode \"text=YOUR STATUS UPDATE\"\n\nRULES: Comment only, never edit description. Verify links before posting."
+  },
+  {
+    "card_id": "69eda5e76a2a3ea34ccf8a8c",
+    "session_id": "04e25841-6793-4bda-a1f6-21165d889465",
+    "title": "Firestick for lighting gas",
+    "list_name": "AliExpress",
+    "category": "regular",
+    "prompt": "Daily check-in 2026-05-02 - Firestick for lighting gas\n\nCard: Firestick for lighting gas\nList: AliExpress\nTrello: https://trello.com/c/zPfuI7ac/126-firestick-for-lighting-gas\nDescription: (see card)\n\n\nCheck status and continue working on this task. Post a brief update as a Trello comment.\n\nsource ~/.config/mcp-trello.env\ncurl -s -X POST \"https://api.trello.com/1/cards/69eda5e76a2a3ea34ccf8a8c/actions/comments\" --data-urlencode \"key=$TRELLO_API_KEY\" --data-urlencode \"token=$TRELLO_TOKEN\" --data-urlencode \"text=YOUR STATUS UPDATE\"\n\nRULES: Comment only, never edit description. Verify all links before posting."
+  },
+  {
+    "card_id": "69f4c46b2fd7989443980643",
+    "session_id": "37f0f899-956d-4585-9ebf-4bfc30444107",
+    "title": "buy watch classic / modern for Oded .",
+    "list_name": "AliExpress",
+    "category": "regular",
+    "prompt": "Daily check-in 2026-05-02 - buy watch classic / modern for Oded .\n\nCard: buy watch classic / modern for Oded .\nList: AliExpress\nTrello: https://trello.com/c/Rkm6eqxV/137-buy-watch-classic-modern-for-oded\nDescription: (see card)\n\n\nCheck status and continue working on this task. Post a brief update as a Trello comment.\n\nsource ~/.config/mcp-trello.env\ncurl -s -X POST \"https://api.trello.com/1/cards/69f4c46b2fd7989443980643/actions/comments\" --data-urlencode \"key=$TRELLO_API_KEY\" --data-urlencode \"token=$TRELLO_TOKEN\" --data-urlencode \"text=YOUR STATUS UPDATE\"\n\nRULES: Comment only, never edit description. Verify all links before posting."
+  },
+  {
+    "card_id": "69ef89e6a6eed3bd383bd2aa",
+    "session_id": "06f9e56b-9ef7-408d-8699-3e428de90e0a",
+    "title": "second hand brompton",
+    "list_name": "brno 2026",
+    "category": "per-day",
+    "prompt": "Daily check-in 2026-05-02 - second hand brompton\n\nCard: second hand brompton\nList: brno 2026\nTrello: https://trello.com/c/32mD2I9D/128-second-hand-brompton\n\nTask: Second-hand Brompton - found 4 listings 25K-37K CZK in Prague. Check for Vienna listings (trip is May 10).\n\nURGENT: Brno trip is May 10-14, 2026 - ONLY 8 DAYS AWAY!\n\nPost ONE comment only (max 1/day via curl). Check if you already posted today first.\n\nsource ~/.config/mcp-trello.env\ncurl -s -X POST \"https://api.trello.com/1/cards/69ef89e6a6eed3bd383bd2aa/actions/comments\" --data-urlencode \"key=$TRELLO_API_KEY\" --data-urlencode \"token=$TRELLO_TOKEN\" --data-urlencode \"text=YOUR STATUS UPDATE\"\n\nRULES: Comment only, never edit description. Verify links before posting."
+  },
+  {
+    "card_id": "69f372a0e4d2ff607b1b4f90",
+    "session_id": "56e2841d-02b7-4fc3-b863-fd62e4dbef74",
+    "title": "flights TLV - Vienna",
+    "list_name": "brno 2026",
+    "category": "regular",
+    "prompt": "Daily check-in 2026-05-02 - flights TLV - Vienna\n\nCard: flights TLV - Vienna\nList: brno 2026\nTrello: https://trello.com/c/isL0oYTk/129-flights-tlv-vienna\nDescription: E-Ticket Blue Bird Airways Pnr Ref. 305BBBC4 flight 316\nTLV 07:55 (local time) -  VIE 10:40 (local time)\n\nE-Ticket Blue Bird Airways Pnr Ref. 305BBBC4 flight 317\n VIE 11:40 (local time) -  TLV 16:10 (local time)\n\n\nURGENT: Brno trip is May 10-14, 2026 - ONLY 8 DAYS AWAY!\n\nCheck status and continue working on this task. Post a brief update as a Trello comment.\n\nsource ~/.config/mcp-trello.env\ncurl -s -X POST \"https://api.trello.com/1/cards/69f372a0e4d2ff607b1b4f90/actions/comments\" --data-urlencode \"key=$TRELLO_API_KEY\" --data-urlencode \"token=$TRELLO_TOKEN\" --data-urlencode \"text=YOUR STATUS UPDATE\"\n\nRULES: Comment only, never edit description. Verify all links before posting."
+  },
+  {
+    "card_id": "69f3730460cde18b4b7f824e",
+    "session_id": "9b97a1c9-a620-4e7d-9e02-1abbac2b9904",
+    "title": "cycling trip vienna - brno",
+    "list_name": "brno 2026",
+    "category": "regular",
+    "prompt": "Daily check-in 2026-05-02 - cycling trip vienna - brno\n\nCard: cycling trip vienna - brno\nList: brno 2026\nTrello: https://trello.com/c/1jupqXq8/130-cycling-trip-vienna-brno\nDescription: need to create an 2 day cycling trip from vienna to brno -\nleaving on Monday morning\nArriving at brno Tuseday afternoon\n\n\nURGENT: Brno trip is May 10-14, 2026 - ONLY 8 DAYS AWAY!\n\nCheck status and continue working on this task. Post a brief update as a Trello comment.\n\nsource ~/.config/mcp-trello.env\ncurl -s -X POST \"https://api.trello.com/1/cards/69f3730460cde18b4b7f824e/actions/comments\" --data-urlencode \"key=$TRELLO_API_KEY\" --data-urlencode \"token=$TRELLO_TOKEN\" --data-urlencode \"text=YOUR STATUS UPDATE\"\n\nRULES: Comment only, never edit description. Verify all links before posting."
+  },
+  {
+    "card_id": "69f49bc00a37d66bd56c4b62",
+    "session_id": "d833a39b-11b9-456b-8741-6cb02d500897",
+    "title": "Rent a bicycle Vienna",
+    "list_name": "brno 2026",
+    "category": "regular",
+    "prompt": "Daily check-in 2026-05-02 - Rent a bicycle Vienna\n\nCard: Rent a bicycle Vienna\nList: brno 2026\nTrello: https://trello.com/c/4qwdKYxo/131-rent-a-bicycle-vienna\nDescription: Need to be from 10night to 13 night\nFor travelling to brno\nCheck what bicycle is best suited to travel from Vienna to brno, touring or mountain \n\n\nURGENT: Brno trip is May 10-14, 2026 - ONLY 8 DAYS AWAY!\n\nCheck status and continue working on this task. Post a brief update as a Trello comment.\n\nsource ~/.config/mcp-trello.env\ncurl -s -X POST \"https://api.trello.com/1/cards/69f49bc00a37d66bd56c4b62/actions/comments\" --data-urlencode \"key=$TRELLO_API_KEY\" --data-urlencode \"token=$TRELLO_TOKEN\" --data-urlencode \"text=YOUR STATUS UPDATE\"\n\nRULES: Comment only, never edit description. Verify all links before posting."
+  },
+  {
+    "card_id": "69f4b350d84020b5bbb9eab0",
+    "session_id": "5d0d6cf2-1feb-43ed-897e-0c019d6bbbcb",
+    "title": "Overnight stay Mikulov",
+    "list_name": "brno 2026",
+    "category": "regular",
+    "prompt": "Daily check-in 2026-05-02 - Overnight stay Mikulov\n\nCard: Overnight stay Mikulov\nList: brno 2026\nTrello: https://trello.com/c/5KmAAkdb/133-overnight-stay-mikulov\nDescription: Find mea place to stay, between 50 to 100 euro\n\nHere are some possibilities, but feel free to find others\n\n• Hotel Ryzlink — cyclist-friendly, spacious bike parking, 3 min from town center\n• Hotel Radost — bike loans available\n• Penzion Zelený strom — B&B on rou\n\n\n\n\nURGENT: Brno trip is May 10-14, 2026 - ONLY 8 DAYS AWAY!\n\nCheck status and continue working on this task. Post a brief update as a Trello comment.\n\nsource ~/.config/mcp-trello.env\ncurl -s -X POST \"https://api.trello.com/1/cards/69f4b350d84020b5bbb9eab0/actions/comments\" --data-urlencode \"key=$TRELLO_API_KEY\" --data-urlencode \"token=$TRELLO_TOKEN\" --data-urlencode \"text=YOUR STATUS UPDATE\"\n\nRULES: Comment only, never edit description. Verify all links before posting."
+  },
+  {
+    "card_id": "69f4bc32d02b9edc12a546e9",
+    "session_id": "5f136274-b886-4a7b-b4f7-a6793cdc3d8c",
+    "title": "staying in brno -12, 13 of may",
+    "list_name": "brno 2026",
+    "category": "regular",
+    "prompt": "Daily check-in 2026-05-02 - staying in brno -12, 13 of may\n\nCard: staying in brno -12, 13 of may\nList: brno 2026\nTrello: https://trello.com/c/abB536Sw/134-staying-in-brno-12-13-of-may\nDescription: how much will it cost to stay in **Grandezza Hotel Luxury Palace**\n\n\nURGENT: Brno trip is May 10-14, 2026 - ONLY 8 DAYS AWAY!\n\nCheck status and continue working on this task. Post a brief update as a Trello comment.\n\nsource ~/.config/mcp-trello.env\ncurl -s -X POST \"https://api.trello.com/1/cards/69f4bc32d02b9edc12a546e9/actions/comments\" --data-urlencode \"key=$TRELLO_API_KEY\" --data-urlencode \"token=$TRELLO_TOKEN\" --data-urlencode \"text=YOUR STATUS UPDATE\"\n\nRULES: Comment only, never edit description. Verify all links before posting."
+  },
+  {
+    "card_id": "69f4bc95faa5d93af1c916db",
+    "session_id": "e5ff772e-8019-465a-9ec8-a060ed985f36",
+    "title": "packing for cycling trip",
+    "list_name": "brno 2026",
+    "category": "regular",
+    "prompt": "Daily check-in 2026-05-02 - packing for cycling trip\n\nCard: packing for cycling trip\nList: brno 2026\nTrello: https://trello.com/c/lbOyxkIM/135-packing-for-cycling-trip\nDescription: how should i pack for my trip\ni need to carry my computer and have a business workday\nSunday 10th of may - tlv - vienna - get bicycle and rest\nMonday 11 th - cycle to Mikulov\nTuesday 12th - cycle to brno\nWednesday 13 - bussines meeting all day - Train back to Vienna - return bike - sleep\nThursday 14 th - get to the airport by 0900 (flight at 1140)\n\n\nURGENT: Brno trip is May 10-14, 2026 - ONLY 8 DAYS AWAY!\n\nCheck status and continue working on this task. Post a brief update as a Trello comment.\n\nsource ~/.config/mcp-trello.env\ncurl -s -X POST \"https://api.trello.com/1/cards/69f4bc95faa5d93af1c916db/actions/comments\" --data-urlencode \"key=$TRELLO_API_KEY\" --data-urlencode \"token=$TRELLO_TOKEN\" --data-urlencode \"text=YOUR STATUS UPDATE\"\n\nRULES: Comment only, never edit description. Verify all links before posting."
+  },
+  {
+    "card_id": "69f4be40cf87ebbe8d0b6e99",
+    "session_id": "49985e9b-8a4f-4700-98bf-c1e0499dd2e4",
+    "title": "buy bicycle pannir  that has a place for computer",
+    "list_name": "brno 2026",
+    "category": "regular",
+    "prompt": "Daily check-in 2026-05-02 - buy bicycle pannir  that has a place for computer\n\nCard: buy bicycle pannir  that has a place for computer\nList: brno 2026\nTrello: https://trello.com/c/d8VZsKZz/136-buy-bicycle-pannir-that-has-a-place-for-computer\nDescription: find me a shop in Vienna where i can buy a backpack / pannir that has a place for the computer and can be attached to the bicycle\n\n\nURGENT: Brno trip is May 10-14, 2026 - ONLY 8 DAYS AWAY!\n\nCheck status and continue working on this task. Post a brief update as a Trello comment.\n\nsource ~/.config/mcp-trello.env\ncurl -s -X POST \"https://api.trello.com/1/cards/69f4be40cf87ebbe8d0b6e99/actions/comments\" --data-urlencode \"key=$TRELLO_API_KEY\" --data-urlencode \"token=$TRELLO_TOKEN\" --data-urlencode \"text=YOUR STATUS UPDATE\"\n\nRULES: Comment only, never edit description. Verify all links before posting."
+  }
+]
