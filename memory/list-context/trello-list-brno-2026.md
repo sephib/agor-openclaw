@@ -1,7 +1,19 @@
 # List Context: brno 2026
-**Type:** project  |  **Synthesized:** 2026-05-02 20:00 UTC  |  **Cards:** 8
+**Type:** project  |  **Synthesized:** 2026-05-04 00:00 UTC  |  **Cards:** 9
 
 ## Project Cards
+
+### Rent a bicycle Vienna
+[Trello](https://trello.com/c/4qwdKYxo/131-rent-a-bicycle-vienna)
+Need to be from 10night to 13 night
+For travelling to brno
+Check what bicycle is best suited to travel from Vienna to brno, touring or mountain
+
+### cycling trip vienna - brno
+[Trello](https://trello.com/c/1jupqXq8/130-cycling-trip-vienna-brno)
+need to create an 2 day cycling trip from vienna to brno -
+leaving on Monday morning
+Arriving at brno Tuseday afternoon
 
 ### second hand brompton
 [Trello](https://trello.com/c/32mD2I9D/128-second-hand-brompton)
@@ -14,18 +26,6 @@ TLV 07:55 (local time) -  VIE 10:40 (local time)
 
 E-Ticket Blue Bird Airways Pnr Ref. 305BBBC4 flight 317
  VIE 11:40 (local time) -  TLV 16:10 (local time)
-
-### cycling trip vienna - brno
-[Trello](https://trello.com/c/1jupqXq8/130-cycling-trip-vienna-brno)
-need to create an 2 day cycling trip from vienna to brno -
-leaving on Monday morning
-Arriving at brno Tuseday afternoon
-
-### Rent a bicycle Vienna
-[Trello](https://trello.com/c/4qwdKYxo/131-rent-a-bicycle-vienna)
-Need to be from 10night to 13 night
-For travelling to brno
-Check what bicycle is best suited to travel from Vienna to brno, touring or mountain
 
 ### Overnight stay Mikulov
 [Trello](https://trello.com/c/5KmAAkdb/133-overnight-stay-mikulov)
@@ -54,6 +54,13 @@ Thursday 14 th - get to the airport by 0900 (flight at 1140)
 ### buy bicycle pannir  that has a place for computer
 [Trello](https://trello.com/c/d8VZsKZz/136-buy-bicycle-pannir-that-has-a-place-for-computer)
 find me a shop in Vienna where i can buy a backpack / pannir that has a place for the computer and can be attached to the bicycle
+
+### wether forcast vienna brno
+[Trello](https://trello.com/c/xGTXhTbG/138-wether-forcast-vienna-brno)
+get at least 3 different forcast for the trip from vienna to brno
+what are the chance of rain
+what are the tempertures
+how is the wind?
 
 ## Append Your Discoveries Here
 <!-- When you learn something relevant to ALL tasks in this list,
