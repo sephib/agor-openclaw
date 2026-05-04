@@ -1,5 +1,5 @@
 # List Context: brno 2026
-**Type:** project  |  **Synthesized:** 2026-05-04 00:00 UTC  |  **Cards:** 9
+**Type:** project  |  **Synthesized:** 2026-05-04 08:00 UTC  |  **Cards:** 11
 
 ## Project Cards
 
@@ -61,6 +61,23 @@ get at least 3 different forcast for the trip from vienna to brno
 what are the chance of rain
 what are the tempertures
 how is the wind?
+
+### Google trip map
+[Trello](https://trello.com/c/Fk4GEq8N/139-google-trip-map)
+Creat a map from google that includes 
+The Vienna airport 
+The location of bike stores that I'm going to rent from
+The bicycle route from Vienna to brno EV9
+The red hat office
+
+### Train brno to Vienna 13th may
+[Trello](https://trello.com/c/T8MaTG9I/140-train-brno-to-vienna-13th-may)
+Find me 3 options to take a train from brno to Vienna 
+At aprox 1900, 2000, 2100
+Verify that I can bring a bicycle on the train 
+Give me the cost and a link to buy the tickets 
+Verify that the link is valid
+Consider to give me 2 different ticket agency
 
 ## Append Your Discoveries Here
 <!-- When you learn something relevant to ALL tasks in this list,
