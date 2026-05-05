@@ -1,5 +1,5 @@
 # List Context: brno 2026
-**Type:** project  |  **Synthesized:** 2026-05-04 08:00 UTC  |  **Cards:** 11
+**Type:** project  |  **Synthesized:** 2026-05-05 08:00 UTC  |  **Cards:** 12
 
 ## Project Cards
 
@@ -78,6 +78,12 @@ Verify that I can bring a bicycle on the train
 Give me the cost and a link to buy the tickets 
 Verify that the link is valid
 Consider to give me 2 different ticket agency
+
+### Hotel vienna 13th may
+[Trello](https://trello.com/c/KfSZLGyW/141-hotel-vienna-13th-may)
+Find me 3  options for an hotel that is not far from the train station for the train arriving from Brno.
+The budget of the hotel should be aprox 100 euro
+It should be bicycle friendly
 
 ## Append Your Discoveries Here
 <!-- When you learn something relevant to ALL tasks in this list,
