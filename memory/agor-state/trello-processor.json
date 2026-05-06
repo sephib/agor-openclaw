@@ -1,19 +1,17 @@
 {
-  "last_run": "2026-05-03T11:00:00+00:00",
+  "last_run": "2026-05-06T11:00:00+00:00",
   "last_run_status": "success",
   "last_run_summary": {
-    "updates_sent": 31,
+    "updates_sent": 38,
     "sessions_created": 0,
     "sessions_recreated": 0,
-    "total_cards": 43,
-    "skipped_per_day": 0,
-    "skipped_do_not_retry": 6,
-    "skipped_dead": 6,
-    "per_day_updates": 8,
-    "regular_updates": 23
+    "total_cards": 45,
+    "skipped_blocked": 6,
+    "session_not_found": 1,
+    "worktrees_created": 0
   },
-  "active_sessions": 31,
-  "next_scheduled_run": "2026-05-03T15:00:00+00:00",
+  "active_sessions": 38,
+  "next_scheduled_run": "2026-05-06T15:00:00+00:00",
   "schedule": {
     "enabled": true,
     "cron": "0 */4 * * *",
@@ -36,6 +34,14 @@
     "uuid_gotcha": "When processing updates: always read full session UUIDs from the actions file or DuckDB. Never manually construct or truncate UUIDs - the suffix matters. The generate script correctly reads from DuckDB; the orchestrator must read from the generated actions file too."
   },
   "recent_runs": [
+    {
+      "timestamp": "2026-05-06T11:00:00+00:00",
+      "actions_file": "memory/ticket-sessions-20260506-110101.json",
+      "updates": 38,
+      "creates": 0,
+      "errors": 1,
+      "note": "38 updates, 6 blocked skipped (Red Hat life insurance, Quizlet, Sigi bike, Elections, Bat Mitzvah date, Guest list), 1 session-not-found (internet/672215e9 - dead). Brno trip May 10-14 is 4 days away."
+    },
     {
       "timestamp": "2026-05-03T11:00:00+00:00",
       "actions_file": "memory/ticket-sessions-20260503-110038.json",

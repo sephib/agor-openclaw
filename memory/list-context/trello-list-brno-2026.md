@@ -1,5 +1,5 @@
 # List Context: brno 2026
-**Type:** project  |  **Synthesized:** 2026-05-05 08:00 UTC  |  **Cards:** 12
+**Type:** project  |  **Synthesized:** 2026-05-06 08:01 UTC  |  **Cards:** 10
 
 ## Project Cards
 
@@ -8,12 +8,6 @@
 Need to be from 10night to 13 night
 For travelling to brno
 Check what bicycle is best suited to travel from Vienna to brno, touring or mountain
-
-### cycling trip vienna - brno
-[Trello](https://trello.com/c/1jupqXq8/130-cycling-trip-vienna-brno)
-need to create an 2 day cycling trip from vienna to brno -
-leaving on Monday morning
-Arriving at brno Tuseday afternoon
 
 ### second hand brompton
 [Trello](https://trello.com/c/32mD2I9D/128-second-hand-brompton)
@@ -26,16 +20,6 @@ TLV 07:55 (local time) -  VIE 10:40 (local time)
 
 E-Ticket Blue Bird Airways Pnr Ref. 305BBBC4 flight 317
  VIE 11:40 (local time) -  TLV 16:10 (local time)
-
-### Overnight stay Mikulov
-[Trello](https://trello.com/c/5KmAAkdb/133-overnight-stay-mikulov)
-Find mea place to stay, between 50 to 100 euro
-
-Here are some possibilities, but feel free to find others
-
-• Hotel Ryzlink — cyclist-friendly, spacious bike parking, 3 min from town center
-• Hotel Radost — bike loans available
-• Penzion Zelený strom — B&B on rou
 
 ### staying in brno -12, 13 of may
 [Trello](https://trello.com/c/abB536Sw/134-staying-in-brno-12-13-of-may)
