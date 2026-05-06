@@ -1,17 +1,18 @@
 {
-  "last_run": "2026-05-06T11:00:00+00:00",
+  "last_run": "2026-05-06T15:00:00+00:00",
   "last_run_status": "success",
   "last_run_summary": {
-    "updates_sent": 38,
+    "updates_sent": 22,
     "sessions_created": 0,
     "sessions_recreated": 0,
     "total_cards": 45,
+    "skipped_dead": 6,
     "skipped_blocked": 6,
-    "session_not_found": 1,
+    "skipped_per_day": 11,
     "worktrees_created": 0
   },
   "active_sessions": 38,
-  "next_scheduled_run": "2026-05-06T15:00:00+00:00",
+  "next_scheduled_run": "2026-05-06T19:00:00+00:00",
   "schedule": {
     "enabled": true,
     "cron": "0 */4 * * *",
@@ -34,6 +35,14 @@
     "uuid_gotcha": "When processing updates: always read full session UUIDs from the actions file or DuckDB. Never manually construct or truncate UUIDs - the suffix matters. The generate script correctly reads from DuckDB; the orchestrator must read from the generated actions file too."
   },
   "recent_runs": [
+    {
+      "timestamp": "2026-05-06T15:00:00+00:00",
+      "actions_file": "memory/ticket-sessions-20260506-150048.json",
+      "updates": 22,
+      "creates": 0,
+      "errors": 0,
+      "note": "22 updates sent (6 brno URGENT - trip May 10 in 4 days, 2 in-progress, 5 שוטף, 5 בת מצווה, 4 aliexpress). 6 dead skipped, 6 blocked skipped, 11 per-day-limit skipped (already sent at 11:00). DuckDB lock cleared (PID 28913)."
+    },
     {
       "timestamp": "2026-05-06T11:00:00+00:00",
       "actions_file": "memory/ticket-sessions-20260506-110101.json",
@@ -185,46 +194,6 @@
       "creates": 0,
       "errors": 0,
       "note": "29 regular updates + 7 special check-ins, 9 blocked skipped, 2 not-found skipped (Dishwasher 85337ae4 + Internet 63d0cd60)"
-    },
-    {
-      "timestamp": "2026-04-27T20:00:00.000000+00:00",
-      "actions_file": "memory/ticket-sessions-20260427-230105.json",
-      "updates": 32,
-      "creates": 1,
-      "errors": 0,
-      "note": "32 updates sent, 1 new session (second hand brompton in brno-2026), 12 blocked skipped, 63d0cd60 research-complete skipped"
-    },
-    {
-      "timestamp": "2026-04-27T16:00:00.000000+00:00",
-      "actions_file": "memory/ticket-sessions-20260427-190055.json",
-      "updates": 31,
-      "creates": 1,
-      "errors": 0,
-      "note": "31 updates sent, 1 new session (brno-2026 bicycle trip), 1 new worktree, 12 blocked skipped, 2 not-found skipped"
-    },
-    {
-      "timestamp": "2026-04-27T11:00:00.000000+00:00",
-      "actions_file": "memory/ticket-sessions-20260427-110027.json",
-      "updates": 32,
-      "creates": 0,
-      "errors": 2,
-      "note": "32 updates sent, 11 blocked skipped, 2 not-found (63d0cd60 התקנת אינטרנט + 85337ae4 Dishwasher)"
-    },
-    {
-      "timestamp": "2026-04-26T16:10:23.180857+00:00",
-      "actions_file": "memory/ticket-sessions-20260426-190115.json",
-      "updates": 31,
-      "creates": 0,
-      "errors": 0,
-      "note": "31 updates sent, 14 skipped (12 blocked + 2 invalid sessions), fix: added Sigi bike plate to blocked list"
-    },
-    {
-      "timestamp": "2026-04-24T11:00:00+00:00",
-      "actions_file": "memory/ticket-sessions-20260424-110028.json",
-      "updates": 30,
-      "creates": 3,
-      "errors": 0,
-      "note": "30 updates sent (25 regular + 5 special), 3 stale sessions recreated, 9 skipped (blocked), 1 skipped (complete)"
     }
   ]
 }
