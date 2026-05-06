@@ -36,7 +36,8 @@ DAILY_LOG_DIR = WORKSPACE_ROOT / "memory"
 LABEL_IDS = {
     "backlog": "69b12e49c497c49bc237af68",
     "active": "69b12e4a3cbdfe167a6b9def",
-    "done": "69b12e4ac2818bc88abd2b4d"
+    "done": "69b12e4ac2818bc88abd2b4d",
+    "skip": "5af14633841642c2a87b2193"
 }
 
 

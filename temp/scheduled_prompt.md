@@ -204,6 +204,16 @@ trello.add_comment(card_id, "Your update here...")
 # WRONG: Don't do this
 trello.update_description(card_id, ...)  # ❌ NEVER!
 ```
+
+**When your work is complete, add the 'skip' label** so this card won't be re-processed next run:
+```python
+import sys
+sys.path.insert(0, 'utils')
+from trello_sync import add_label_to_card, load_credentials, LABEL_IDS
+creds = load_credentials()
+add_label_to_card(creds, card_id="{card_id}", label_id=LABEL_IDS['skip'])
+```
+The user can remove the 'skip' label anytime to re-engage you on this card.
 """
 
             try:
@@ -257,7 +267,7 @@ Handle ticket: **{title}**
 1. Understand the task from description
 2. Execute the work needed
 3. Post progress updates to Trello AS COMMENTS
-4. When complete, post summary comment
+4. When complete, post summary comment and add the 'skip' label
 5. Move card to appropriate list when done
 
 **For Coding Tasks:**
@@ -286,6 +296,16 @@ add_comment(card_id="{card_id}", text="Your update here...")
 # WRONG: Don't do this
 update_card_description(...)  # ❌ NEVER modify description!
 ```
+
+**When your work is complete, add the 'skip' label** so this card won't be re-processed next run:
+```python
+import sys
+sys.path.insert(0, 'utils')
+from trello_sync import add_label_to_card, load_credentials, LABEL_IDS
+creds = load_credentials()
+add_label_to_card(creds, card_id="{card_id}", label_id=LABEL_IDS['skip'])
+```
+The user can remove the 'skip' label anytime to re-engage you on this card.
 
 ⚠️ URL VERIFICATION CRITICAL:
 - Test EVERY link with WebFetch before posting to Trello
