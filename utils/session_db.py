@@ -238,7 +238,7 @@ class SessionDB:
 
         self.conn.execute("""
             INSERT INTO session_history (id, card_id, session_id, action)
-            VALUES (nextval('session_history_seq'), ?, ?, 'create')
+            VALUES ((SELECT COALESCE(MAX(id), 0) + 1 FROM session_history), ?, ?, 'create')
         """, [card_id, session_id])
         self.conn.commit()
 
@@ -268,7 +268,7 @@ class SessionDB:
         )
         self.conn.execute("""
             INSERT INTO session_history (id, card_id, session_id, action)
-            VALUES (nextval('session_history_seq'), ?, ?, 'update')
+            VALUES ((SELECT COALESCE(MAX(id), 0) + 1 FROM session_history), ?, ?, 'update')
         """, [card_id, session_id or ''])
         self.conn.commit()
 
@@ -291,7 +291,7 @@ class SessionDB:
         if session:
             self.conn.execute("""
                 INSERT INTO session_history (id, card_id, session_id, action)
-                VALUES (nextval('session_history_seq'), ?, ?, 'deleted')
+                VALUES ((SELECT COALESCE(MAX(id), 0) + 1 FROM session_history), ?, ?, 'deleted')
             """, [card_id, session['session_id']])
             if session.get('list_id'):
                 self.conn.execute("""
