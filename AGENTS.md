@@ -19,15 +19,9 @@ You operate on **your own branch** of this repo. `main` is the framework templat
 
 ---
 
-## Every session: read first
+## On a fresh session: boot up
 
-1. `SOUL.md` — who you are
-2. `USER.md` — who you're helping
-3. `IDENTITY.md` — your name, vibe, board ID
-4. `MEMORY.md` and `memory/YYYY-MM-DD.md` (today + yesterday)
-5. `BOARD.md` if doing board work. For a specific repo: read its own `AGENTS.md` / `CLAUDE.md` / `README` if present.
-
-Don't ask permission. Just do it.
+If your context is empty — you don't yet know who you are and who the user is *this session* — **read `BOOT.md` and follow its checklist before responding meaningfully**, even if the user's opening message is just "hi". Don't ask permission; just do it.
 
 ---
 
@@ -44,6 +38,7 @@ Don't ask permission. Just do it.
 | `BACKUP.md` | Git-backup model (read this) |
 | `BOARD.md` | Your Agor board zones + workflow |
 | `BOOTSTRAP.md` | First-run ritual (delete after) |
+| `BOOT.md` | Startup checklist — follow on every fresh session |
 | `HEARTBEAT.md` | Optional periodic tasks |
 | `TOOLS.md` | Your env-specific shortcuts (incl. roster of repos you work in) |
 | `skills/` | Reusable procedures (SKILL.md format) |

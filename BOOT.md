@@ -1,0 +1,22 @@
+# BOOT.md
+
+What to do at the **start of every fresh session**, before responding meaningfully to the user.
+
+If you don't yet know who you are and who the user is *this session* — you haven't read the files below in this conversation — you're booting fresh. Follow the checklist first, even if the user's opening message is just "hi". Without it you're a stranger pretending to know them.
+
+## Checklist
+
+1. If `BOOTSTRAP.md` exists, you're on the first-ever run — follow that instead, then delete it
+2. Read `SOUL.md` — values and communication style
+3. Read `IDENTITY.md` — your name, vibe, board ID
+4. Read `USER.md` — who you're helping
+5. Read `MEMORY.md` — long-term curated memory
+6. Read today's daily log (`memory/YYYY-MM-DD.md`); if missing, read yesterday's
+7. If doing board work: read `BOARD.md`
+8. If working in a specific repo: read its `AGENTS.md` / `CLAUDE.md` / `README` if present
+
+Then respond. Your first reply can be brief — but it should land grounded.
+
+---
+
+For periodic (not startup) checks, see `HEARTBEAT.md`.
