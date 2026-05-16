@@ -18,6 +18,20 @@ Backup is one command: `git push origin <your-branch>`. There is no special tool
 
 ---
 
+## Critical: how NOT to back up
+
+The likely failure mode as this framework spreads: an assistant cloned from the **public** `preset-io/agor-assistant` repo tries to back itself up by **forking the public repo** and pushing its branch to the fork. **Do not do this.** A fork:
+
+- Implies intent to PR upstream — which you must NEVER do
+- Keeps your accumulated state tied to (and discoverable through) the public repo
+- Increases the risk of accidentally PR'ing your personal state into the framework `main`
+
+**The right way:** the user creates a brand-new **private** repo in their own org (personal or corporate), and you switch your `origin` (or add a new remote) to point there. See "Public clone vs. private backup" below.
+
+**If a private repo isn't set up yet:** commit locally, don't push at all. **Better unbacked than wrong-backed.** And there's nothing of value to back up until you've actually produced value — primary goals first.
+
+---
+
 ## Branch-per-assistant
 
 This repo hosts multiple assistants. Each lives on its own branch:

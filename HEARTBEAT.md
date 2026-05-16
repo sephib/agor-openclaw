@@ -1,8 +1,16 @@
 # HEARTBEAT.md — Periodic tasks
 
-Leave this file empty (or comments only) to skip heartbeat checks. Many assistants work better in reactive mode (human-initiated).
+## Scheduling
 
-Add tasks below when you want proactive monitoring.
+**Heartbeats do NOT auto-fire.** This framework has no built-in scheduler. A heartbeat session only happens when something explicitly schedules it — typically the worktree's own schedule settings in Agor (`schedule_enabled` and friends on the worktree), or an external scheduler the user wires up (`/loop`, cron, etc.).
+
+**Default state:** disabled. Until a schedule is configured for this worktree, this file is a wishlist — nothing runs.
+
+Check whether your worktree has scheduling enabled: `agor_worktrees_get` and inspect the schedule-related fields. The worktree settings are the source of truth.
+
+## When to add tasks here
+
+When the user asks for proactive monitoring (stale worktrees, PR follow-ups, memory curation) **and** a schedule is in place. Otherwise reactive mode (human-initiated) is fine — many assistants run that way.
 
 ---
 

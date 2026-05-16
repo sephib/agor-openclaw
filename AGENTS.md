@@ -35,30 +35,33 @@ If your context is empty — you don't yet know who you are and who the user is 
 | `MEMORY.md` | Long-term curated memory |
 | `memory/YYYY-MM-DD.md` | Daily logs (raw notes) |
 | `memory/learnings/` | Lessons learned |
-| `BACKUP.md` | Git-backup model (read this) |
-| `BOARD.md` | Your Agor board zones + workflow |
-| `BOOTSTRAP.md` | First-run ritual (delete after) |
+| `BOOTSTRAP.md` | First-run ritual — delete after |
 | `BOOT.md` | Startup checklist — follow on every fresh session |
-| `HEARTBEAT.md` | Optional periodic tasks |
+| `HEARTBEAT.md` | Periodic tasks — disabled by default; fires only when a heartbeat is scheduled on this worktree in Agor |
+| `BACKUP.md` | Git-backup model — how state survives restarts |
+| `BOARD.md` | Your Agor board zones + workflow |
 | `TOOLS.md` | Your env-specific shortcuts (incl. roster of repos you work in) |
 | `skills/` | Reusable procedures (SKILL.md format) |
 
 ---
 
-## You are an orchestrator
+## Coding tasks
 
-Your job is to **delegate coding work**, not do it directly.
+Not every assistant codes. But when the user asks for coding work (features, fixes, refactors), delegate — don't do it inline in your own session.
 
-**For ANY coding work** (features, fixes, refactors):
-1. Create a NEW worktree (`agor_worktrees_create`, `boardId` required)
-2. Create a NEW session in it (`agor_sessions_create`)
-3. Log what + why in today's daily log
+**Pattern:**
+1. Create a NEW worktree (`agor_worktrees_create`, `boardId` required). Branch name matches worktree name.
+2. Create a NEW session in it (`agor_sessions_create`) with a clear brief: context, goals, success criteria.
+3. Monitor via callback (if enabled) or by polling MCP.
+4. As the session produces an issue or PR, attach the URL to the worktree (`agor_worktrees_update` with `issueUrl` / `pullRequestUrl`) so it shows up on the board.
+5. Archive the worktree when the work is done.
+6. Log what + why in today's daily log.
 
-One worktree = one branch = one PR. Don't spawn coding subsessions in your own context — they pollute it and create orphaned work.
+**Why this shape:** one worktree = one branch = one PR. Coding subsessions inside your own context pollute it and orphan the work.
 
-**For local work** (memory updates, research, reading): do it yourself, or use `agor_sessions_spawn` for parallel investigation. Use `agor_sessions_prompt` with `mode=fork` to try alternatives from an earlier point.
+**For local work** (memory, research, reading): just do it. For parallel investigation, `agor_sessions_spawn`. For an alternative approach from an earlier point, `agor_sessions_prompt` with `mode=fork`.
 
-**Agor is the source of truth** for worktree/session/repo state — IDs, status, genealogy, zone, PR URLs. Query it via MCP when you need it; don't maintain a local copy.
+**Agor is the source of truth** for worktree/session/repo state — IDs, status, genealogy, zone, issue/PR URLs. Query MCP when you need it; don't maintain a local copy.
 
 ---
 
@@ -74,12 +77,12 @@ One worktree = one branch = one PR. Don't spawn coding subsessions in your own c
 
 ## Agor MCP
 
-Agor MCP uses **progressive tool discovery** — don't memorize signatures.
+Agor MCP is assumed to be attached — it's the orchestration interface and self-documents its tools by domain. If it doesn't appear to be present, you're in the wrong environment; flag it.
 
-- Browse / search: `agor_search_tools` (no args returns domains overview)
+- Browse / search: `agor_search_tools` (no args returns the domains overview)
 - Call any discovered tool: `agor_execute_tool`
 
-Always pass `boardId` when creating worktrees, or they'll be invisible on boards.
+Don't memorize signatures — discover them. Always pass `boardId` when creating worktrees, or they'll be invisible on boards.
 
 ---
 
