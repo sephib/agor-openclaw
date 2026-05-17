@@ -43,6 +43,10 @@ import sys
 sys.path.insert(0, 'utils')
 from session_db import SessionDB
 from list_context import get_context_for_prompt
+from trello_sync import add_label_to_card, load_credentials, LABEL_IDS
+
+# Load Trello credentials (used to apply skip label at orchestrator level)
+creds = load_credentials()
 
 # Load user preferences (injected into every new session)
 user_prefs_path = Path('memory/user-preferences.md')
@@ -226,6 +230,12 @@ The user can remove the 'skip' label anytime to re-engage you on this card.
                     'session_id': session_id,
                     'list_name': list_name
                 })
+                # Apply skip label at orchestrator level — don't rely on worker to do it
+                try:
+                    add_label_to_card(creds, card_id, LABEL_IDS['skip'])
+                    print(f"  SKIP label applied: {title}")
+                except Exception as label_err:
+                    print(f"  WARNING: skip label failed for {title}: {label_err}")
             except Exception as e:
                 print(f"ERROR updating session {session_id[:8]} ({title}): {e}")
 
@@ -343,6 +353,13 @@ Start working on this task!
                     title=title,
                     list_id=list_id,
                 )
+
+                # Apply skip label at orchestrator level — don't rely on worker to do it
+                try:
+                    add_label_to_card(creds, card_id, LABEL_IDS['skip'])
+                    print(f"  SKIP label applied: {title}")
+                except Exception as label_err:
+                    print(f"  WARNING: skip label failed for {title}: {label_err}")
 
                 sessions_created.append({
                     'title': title,
