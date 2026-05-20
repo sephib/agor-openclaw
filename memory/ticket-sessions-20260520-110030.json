@@ -1,0 +1,62 @@
+{
+  "timestamp": "2026-05-20T08:00:30.938111+00:00",
+  "board_id": "5af14633e01cb0c5e1df9df6",
+  "lists": [
+    {
+      "list_id": "69b3de203dc8fa181eefc7a6",
+      "list_name": "AliExpress",
+      "list_type": "shopping",
+      "worktree_name": "trello-list-aliexpress",
+      "worktree_action": "exists",
+      "cards": [
+        {
+          "card_id": "6a04c8265be9489c53b7942f",
+          "title": "screen protector for mac 14 inch",
+          "action": "update",
+          "session_id": "eb66887e-9a57-4bf5-8738-e83574d788ca",
+          "priority": 15,
+          "category": "personal",
+          "description": "",
+          "url": "https://trello.com/c/KDX6zj3V/146-screen-protector-for-mac-14-inch",
+          "labels": [],
+          "due_date": null
+        },
+        {
+          "card_id": "6a060a3e586db2c814cbab5f",
+          "title": "Bracelets that are weights ",
+          "action": "update",
+          "session_id": "2067bfad-2f80-43a6-812a-d3f82df66c5d",
+          "priority": 15,
+          "category": "personal",
+          "description": "",
+          "url": "https://trello.com/c/CkUgsGKx/147-bracelets-that-are-weights",
+          "labels": [],
+          "due_date": null
+        },
+        {
+          "card_id": "6a073576da3e8d7e02c012db",
+          "title": "CamelBak water lid",
+          "action": "update",
+          "session_id": "44038ed1-c84e-486c-a49d-d504c1653010",
+          "priority": 15,
+          "category": "personal",
+          "description": "",
+          "url": "https://trello.com/c/ZIzmuFcz/148-camelbak-water-lid",
+          "labels": [],
+          "due_date": null
+        }
+      ]
+    }
+  ],
+  "archived_cards": [],
+  "deleted_cards": [],
+  "stats": {
+    "worktrees_to_create": 0,
+    "worktrees_existing": 1,
+    "sessions_to_create": 0,
+    "sessions_to_update": 3,
+    "total_cards": 3,
+    "sessions_archived": 0,
+    "sessions_deleted": 0
+  }
+}
