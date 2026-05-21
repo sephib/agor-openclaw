@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-05-21T20:00:20.863430+00:00",
+  "board_id": "5af14633e01cb0c5e1df9df6",
+  "lists": [],
+  "archived_cards": [
+    {
+      "card_id": "6a04c8265be9489c53b7942f",
+      "session_id": "eb66887e-9a57-4bf5-8738-e83574d788ca",
+      "title": "screen protector for mac 14 inch"
+    },
+    {
+      "card_id": "6a060a3e586db2c814cbab5f",
+      "session_id": "2067bfad-2f80-43a6-812a-d3f82df66c5d",
+      "title": "Bracelets that are weights"
+    },
+    {
+      "card_id": "6a073576da3e8d7e02c012db",
+      "session_id": "44038ed1-c84e-486c-a49d-d504c1653010",
+      "title": "CamelBak water lid"
+    }
+  ],
+  "deleted_cards": [],
+  "stats": {
+    "worktrees_to_create": 0,
+    "worktrees_existing": 0,
+    "sessions_to_create": 0,
+    "sessions_to_update": 0,
+    "total_cards": 0,
+    "sessions_archived": 3,
+    "sessions_deleted": 0
+  }
+}
