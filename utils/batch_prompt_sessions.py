@@ -10,6 +10,9 @@ import time
 from datetime import datetime
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).parent))
+from list_context import generate_aliexpress_search_url
+
 # MCP endpoint config
 MCP_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIzMDhiZmFjMS00YTQ4LTRjMjYtYTQ0OS03Yjg0MjdlMjZmMGYiLCJ1aWQiOiI0ZmJiYzE4ZS05ODU4LTRiNzYtODFiYy1iN2U5MzFkYTc4MDUiLCJhdWQiOiJhZ29yOm1jcDppbnRlcm5hbCJ9.tq-j3lHLwaD0Pf2cFrYtV4Bd_M97mnirrRQ5TC1Jei8"
 MCP_URL = f"http://localhost:3030/mcp?sessionToken={MCP_TOKEN}"
@@ -65,6 +68,26 @@ def call_mcp(tool_name: str, arguments: dict) -> dict:
     return {"error": f"Failed to parse response: {output[:200]}"}
 
 
+def _aliexpress_link_block(title: str, list_name: str, today: str) -> str:
+    """Return the link strategy block — AliExpress-specific or generic."""
+    if 'aliexpress' not in list_name.lower():
+        return (
+            f"URL VERIFICATION:\n"
+            f"- Test links with WebFetch before posting\n"
+            f"- Format: Verified {today}\n"
+        )
+    search_url = generate_aliexpress_search_url(title)
+    return (
+        f"LINK STRATEGY FOR ALIEXPRESS:\n"
+        f"- PRIMARY link (always include): {search_url}\n"
+        f"  This search URL is query-based and will NEVER 404.\n"
+        f"- You MAY also include 1-2 product links as secondary picks.\n"
+        f"  Use clean URLs: aliexpress.com/item/ID.html (strip tracking params).\n"
+        f"- Format: 🔍 Search: [search terms]({search_url})\n"
+        f"  Optional: ✅ [Product - Price](clean-url) - Verified {today}\n"
+    )
+
+
 def build_update_prompt(card, list_name: str) -> str:
     card_id = card["card_id"]
     title = card["title"]
@@ -72,6 +95,7 @@ def build_update_prompt(card, list_name: str) -> str:
     url = card["url"]
     description = card.get("description", "") or ""
     today = datetime.now().strftime("%Y-%m-%d")
+    link_block = _aliexpress_link_block(title, list_name, today)
 
     return (
         f"Ticket update check-in: {title}\n\n"
@@ -92,9 +116,7 @@ def build_update_prompt(card, list_name: str) -> str:
         f"  curl -s -X POST 'https://api.trello.com/1/cards/{card_id}/actions/comments' "
         f"--data-urlencode 'text=YOUR_COMMENT' "
         f"-d \"key=$TRELLO_API_KEY&token=$TRELLO_API_TOKEN\"\n\n"
-        f"URL VERIFICATION (for AliExpress/shopping cards):\n"
-        f"- Test EVERY link with WebFetch before posting\n"
-        f"- Format: Verified {today}\n\n"
+        f"{link_block}\n"
         f"Post max ONE comment per day - skip if already commented today.\n"
         f"Trello Card: {url}"
     )
@@ -108,6 +130,7 @@ def build_create_prompt(card, list_name: str, worktree_name: str) -> str:
     url = card["url"]
     description = card.get("description", "") or ""
     today = datetime.now().strftime("%Y-%m-%d")
+    link_block = _aliexpress_link_block(title, list_name, today)
 
     return (
         f"Handle ticket: {title}\n\n"
@@ -133,10 +156,7 @@ def build_create_prompt(card, list_name: str, worktree_name: str) -> str:
         f"  curl -s -X POST 'https://api.trello.com/1/cards/{card_id}/actions/comments' "
         f"--data-urlencode 'text=YOUR_COMMENT' "
         f"-d \"key=$TRELLO_API_KEY&token=$TRELLO_API_TOKEN\"\n\n"
-        f"URL VERIFICATION CRITICAL:\n"
-        f"- Test EVERY link with WebFetch before posting\n"
-        f"- If 404, search for alternative with WebSearch\n"
-        f"- Format: Verified {today}\n\n"
+        f"{link_block}\n"
         f"Trello Card: {url}\n\n"
         f"Start working on this task!"
     )

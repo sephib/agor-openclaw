@@ -42,7 +42,7 @@ from datetime import datetime
 import sys
 sys.path.insert(0, 'utils')
 from session_db import SessionDB
-from list_context import get_context_for_prompt
+from list_context import get_context_for_prompt, generate_aliexpress_search_url
 from trello_sync import add_label_to_card, load_credentials, LABEL_IDS
 
 # Load Trello credentials (used to apply skip label at orchestrator level)
@@ -166,10 +166,30 @@ for list_info in data['lists']:
         priority = card_info['priority']
         description = card_info.get('description', '')
         url = card_info['url']
+        is_aliexpress = 'aliexpress' in list_name.lower()
+        aliexpress_search_url = generate_aliexpress_search_url(title) if is_aliexpress else None
 
         if action == 'update':
             # UPDATE existing session
             session_id = card_info['session_id']
+
+            aliexpress_block = f"""
+**AliExpress Search (stable link — never expires):**
+  {aliexpress_search_url}
+
+🔗 LINK STRATEGY FOR ALIEXPRESS:
+- The search URL above is your PRIMARY link — always include it in your Trello comment
+- It is query-based and will never 404
+- You MAY also include 1-2 specific product links as secondary recommendations
+- For product links: use clean URLs (aliexpress.com/item/ID.html — strip tracking params)
+- Format: 🔍 Search: [search terms]({aliexpress_search_url})
+  Optional top picks: ✅ [Product - Price](clean-url) - Verified {datetime.now().strftime('%Y-%m-%d')}
+""" if aliexpress_search_url else f"""
+⚠️ URL VERIFICATION:
+- Test links with WebFetch before posting
+- If 404, search for alternative with WebSearch
+- Format: ✅ [Product](url) - Verified {datetime.now().strftime('%Y-%m-%d')}
+"""
 
             update_prompt = f"""
 🔄 Ticket Update from Trello
@@ -193,13 +213,7 @@ for list_info in data['lists']:
 - ONLY post comments (not edit description)
 - The description is user-maintained - hands off!
 - All your updates go in COMMENTS only
-
-⚠️ URL VERIFICATION CRITICAL:
-- Test EVERY link with WebFetch before posting
-- AliExpress links expire - verify before posting
-- If 404, search for alternative with WebSearch
-- Format: ✅ [Product](url) - Verified {datetime.now().strftime('%Y-%m-%d')}
-
+{aliexpress_block}
 **How to update Trello:**
 ```python
 # CORRECT: Post comment
@@ -317,21 +331,22 @@ add_label_to_card(creds, card_id="{card_id}", label_id=LABEL_IDS['skip'])
 ```
 The user can remove the 'skip' label anytime to re-engage you on this card.
 
-⚠️ URL VERIFICATION CRITICAL:
-- Test EVERY link with WebFetch before posting to Trello
-- AliExpress/Amazon/eBay links expire - always verify
-- If link 404s:
-  1. Search for alternative with WebSearch
-  2. Verify new link works
-  3. Note: "Original link expired - found alternative"
-- Format: ✅ [Product - Price](url) - Verified {datetime.now().strftime('%Y-%m-%d')}
-
+{f'''🔗 LINK STRATEGY FOR ALIEXPRESS:
+- Your PRIMARY link (always include in Trello comment):
+  {aliexpress_search_url}
+- This search URL is query-based and will NEVER 404
+- You MAY also include 1-2 specific product links as secondary picks
+- For product links: use clean URLs (aliexpress.com/item/ID.html — strip tracking params)
+- Format: 🔍 Search: [search terms]({aliexpress_search_url})
+  Optional: ✅ [Product - Price](clean-url) - Verified {datetime.now().strftime("%Y-%m-%d")}
+''' if aliexpress_search_url else f'''⚠️ URL VERIFICATION:
+- Test links with WebFetch before posting to Trello
+- If link 404s, search for alternative with WebSearch
+- Format: ✅ [Product - Price](url) - Verified {datetime.now().strftime("%Y-%m-%d")}
+'''}
 **Quality Standards:**
-□ All links tested with WebFetch
-□ All links return HTTP 200 (no 404s)
-□ Product availability confirmed
-□ Verification date included
 □ Updates posted as COMMENTS only (not description edits)
+{f"□ Search URL included as primary link" if aliexpress_search_url else "□ All links tested with WebFetch"}
 {write_back_section}
 **Trello Card:** {url}
 

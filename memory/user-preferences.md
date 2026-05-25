@@ -6,12 +6,15 @@ Injected into every session's initial prompt. Edit this file to shape how all se
 
 ## Shopping & Online Orders
 
-- **Verify all links before posting** — use WebFetch to confirm HTTP 200. Never post 404s.
-- **AliExpress links expire** — re-verify on every check-in. If 404, find alternative with WebSearch.
-- **Link format**: `✅ [Product Name - Price](url) - Verified YYYY-MM-DD`
+- **AliExpress: use search URLs as primary links** — product-specific links expire and 404.
+  The system pre-generates a stable AliExpress search URL for each card (query-based, never breaks).
+  Always include it as your primary link. Product links are optional secondary recommendations.
+- **Search URL format**: `https://www.aliexpress.com/wholesale?SearchText=...`
+- **Product links (secondary)**: use clean URLs (`aliexpress.com/item/ID.html` — strip tracking params)
+- **Link format**: `🔍 Search: [terms](search-url)` + optional `✅ [Product - Price](clean-url) - Verified YYYY-MM-DD`
 - Prefer sellers with **4.5+ star ratings** and 100+ reviews
 - Prefer **free shipping** when available (especially AliExpress Choice items)
-- **Never post unverified links** — if you can't verify, say so and explain why
+- For non-AliExpress links: verify with WebFetch before posting
 
 ## Trello Updates (ALL sessions)
 

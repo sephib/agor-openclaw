@@ -15,6 +15,7 @@ Sessions append list-level discoveries back to this file.
 """
 
 import re
+import urllib.parse
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, List, Optional
@@ -29,6 +30,30 @@ _TYPE_PATTERNS = [
     (r'\b(home|house|renovation|apartment|flat|garden|kitchen)\b', 'project'),
     (r'\b(aliexpress|amazon|ebay|shopping|buy|order|purchase|store)\b', 'shopping'),
 ]
+
+
+_FILLER_WORDS = {
+    'buy', 'order', 'find', 'get', 'for', 'possibly', 'or', 'something',
+    'else', 'that', 'is', 'are', 'which', 'a', 'an', 'the', 'and', 'with',
+    'has', 'have', 'need', 'want', 'looking', 'maybe', 'perhaps',
+}
+
+
+def _clean_search_terms(title: str) -> str:
+    """Strip filler words from a card title to produce search-friendly terms."""
+    words = title.lower().split()
+    cleaned = [w.strip('.,!?;:') for w in words if w.lower().strip('.,!?;:') not in _FILLER_WORDS]
+    cleaned = [w for w in cleaned if len(w) > 1]
+    return ' '.join(cleaned)
+
+
+def generate_aliexpress_search_url(title: str) -> str:
+    """Build a stable AliExpress search URL from a card title."""
+    terms = _clean_search_terms(title)
+    if not terms:
+        terms = title.strip()
+    encoded = urllib.parse.quote_plus(terms)
+    return f"https://www.aliexpress.com/wholesale?SearchText={encoded}"
 
 
 def classify_list_type(list_name: str) -> str:
@@ -72,7 +97,7 @@ def synthesize_list_context(
     if list_type == 'project':
         lines += _project_section(cards)
     elif list_type == 'shopping':
-        lines += _shopping_section(cards)
+        lines += _shopping_section(cards, list_name=list_name)
 
     if sibling_sessions:
         lines += _sibling_section(sibling_sessions)
@@ -114,13 +139,17 @@ def _project_section(cards: List[Dict]) -> List[str]:
     return lines
 
 
-def _shopping_section(cards: List[Dict]) -> List[str]:
+def _shopping_section(cards: List[Dict], list_name: str = "") -> List[str]:
+    is_aliexpress = 'aliexpress' in list_name.lower()
     lines = ["## Items in This List", ""]
     for card in cards:
         title = card.get('title') or card.get('name', '?')
         desc = (card.get('description') or card.get('desc') or '').strip()
         summary = desc[:120] + ("..." if len(desc) > 120 else "") if desc else ""
         entry = f"- **{title}**"
+        if is_aliexpress:
+            search_url = generate_aliexpress_search_url(title)
+            entry += f" — [Search AliExpress]({search_url})"
         if summary:
             entry += f": {summary}"
         lines.append(entry)
