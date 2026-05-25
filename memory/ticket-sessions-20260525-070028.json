@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-05-25T04:00:28.230890+00:00",
+  "board_id": "5af14633e01cb0c5e1df9df6",
+  "lists": [
+    {
+      "list_id": "69b3de203dc8fa181eefc7a6",
+      "list_name": "AliExpress",
+      "list_type": "shopping",
+      "worktree_name": "trello-list-aliexpress",
+      "worktree_action": "create",
+      "cards": [
+        {
+          "card_id": "6a134d52138194ffe75f5dc2",
+          "title": "Bicycle chain plaier, screw",
+          "action": "create",
+          "priority": 15,
+          "category": "personal",
+          "description": "",
+          "url": "https://trello.com/c/gD9SdrOh/150-bicycle-chain-plaier-screw",
+          "labels": [],
+          "due_date": null
+        }
+      ]
+    }
+  ],
+  "archived_cards": [],
+  "deleted_cards": [],
+  "stats": {
+    "worktrees_to_create": 1,
+    "worktrees_existing": 0,
+    "sessions_to_create": 1,
+    "sessions_to_update": 0,
+    "total_cards": 1,
+    "sessions_archived": 0,
+    "sessions_deleted": 0
+  }
+}
