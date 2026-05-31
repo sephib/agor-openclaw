@@ -1,17 +1,13 @@
 {
-  "last_run": "2026-05-26T08:00:34+00:00",
+  "last_run": "2026-05-31T04:00:55.667534+00:00",
   "last_run_status": "success",
   "last_run_summary": {
     "updates_sent": 0,
     "sessions_created": 0,
-    "sessions_recreated": 0,
     "total_cards": 0,
-    "skipped_dead": 0,
-    "skipped_blocked": 0,
-    "skipped_per_day": 0,
     "worktrees_created": 0,
     "sessions_archived": 0,
-    "note": "Board fully dormant. 0 active cards - all have 'skip' label."
+    "note": "Board fully dormant. 0 active cards - all have skip label."
   },
   "active_sessions": 1,
   "next_scheduled_run": "2026-05-24T04:00:00+00:00",
@@ -33,10 +29,18 @@
     "api_gotcha": "REST API /sessions/{id}/prompt returns 404. Must use MCP tool agor_sessions_prompt with short IDs.",
     "trello_comments": "mcp__trello has no add-comment tool. All sessions must use curl with creds from ~/.config/mcp-trello.env",
     "session_pagination": "agor_sessions_list only returns 100 of 448 total sessions. Use agor_sessions_get for individual verification.",
-    "dead_sessions": "7 sessions confirmed gone: 245675aa (creat website), 888aacdd (ארנונה), e6b2c709 (תיקון פין מקרר), 544d1804 (Led light strip), 2e691145 (Japan museum), 85337ae4 (Dishwasher), 63d0cd60 (התקנת אינטרנט)",
+    "dead_sessions": "7 sessions confirmed gone: 245675aa (creat website), 888aacdd (\u05d0\u05e8\u05e0\u05d5\u05e0\u05d4), e6b2c709 (\u05ea\u05d9\u05e7\u05d5\u05df \u05e4\u05d9\u05df \u05de\u05e7\u05e8\u05e8), 544d1804 (Led light strip), 2e691145 (Japan museum), 85337ae4 (Dishwasher), 63d0cd60 (\u05d4\u05ea\u05e7\u05e0\u05ea \u05d0\u05d9\u05e0\u05d8\u05e8\u05e0\u05d8)",
     "uuid_gotcha": "When processing updates: always read full session UUIDs from the actions file or DuckDB. Never manually construct or truncate UUIDs - the suffix matters. The generate script correctly reads from DuckDB; the orchestrator must read from the generated actions file too."
   },
   "recent_runs": [
+    {
+      "timestamp": "2026-05-31T04:00:55.667534+00:00",
+      "actions_file": "memory/ticket-sessions-20260531-070037.json",
+      "updates": 0,
+      "creates": 0,
+      "errors": 0,
+      "note": "Board fully dormant. 0 active cards - all have skip label."
+    },
     {
       "timestamp": "2026-05-26T08:00:34+00:00",
       "actions_file": "memory/ticket-sessions-20260526-110034.json",
@@ -195,7 +199,7 @@
       "updates": 0,
       "creates": 2,
       "errors": 0,
-      "note": "2 new sessions created (לקבוע תור לדבר טרנר בשערי צדק + Car rental). 2 new worktrees: trello-list-a66ef130-2 + trello-list-vacation-summer-2026."
+      "note": "2 new sessions created (\u05dc\u05e7\u05d1\u05d5\u05e2 \u05ea\u05d5\u05e8 \u05dc\u05d3\u05d1\u05e8 \u05d8\u05e8\u05e0\u05e8 \u05d1\u05e9\u05e2\u05e8\u05d9 \u05e6\u05d3\u05e7 + Car rental). 2 new worktrees: trello-list-a66ef130-2 + trello-list-vacation-summer-2026."
     },
     {
       "timestamp": "2026-05-06T15:00:00+00:00",
@@ -203,7 +207,7 @@
       "updates": 22,
       "creates": 0,
       "errors": 0,
-      "note": "22 updates sent (6 brno URGENT - trip May 10 in 4 days, 2 in-progress, 5 שוטף, 5 בת מצווה, 4 aliexpress). 6 dead skipped, 6 blocked skipped, 11 per-day-limit skipped (already sent at 11:00). DuckDB lock cleared (PID 28913)."
+      "note": "22 updates sent (6 brno URGENT - trip May 10 in 4 days, 2 in-progress, 5 \u05e9\u05d5\u05d8\u05e3, 5 \u05d1\u05ea \u05de\u05e6\u05d5\u05d5\u05d4, 4 aliexpress). 6 dead skipped, 6 blocked skipped, 11 per-day-limit skipped (already sent at 11:00). DuckDB lock cleared (PID 28913)."
     },
     {
       "timestamp": "2026-05-06T11:00:00+00:00",
@@ -268,86 +272,6 @@
       "creates": 0,
       "errors": 0,
       "note": "25 regular updates sent, 7 per-day-limit skipped (finance/maccabi/nursing/fighter-cal/ergometry/harel/brompton already sent at 03:00), 8 blocked skipped, 1 quizlet blocked, 7 dead sessions skipped"
-    },
-    {
-      "timestamp": "2026-04-30T20:00:00+00:00",
-      "actions_file": "memory/ticket-sessions-20260430-230043.json",
-      "updates": 25,
-      "creates": 0,
-      "errors": 0,
-      "note": "25 updates sent, 7 dead sessions skipped, 9 blocked (do-not-retry) skipped, 7 per-day-limit skipped (finance/maccabi/nursing/fighter-cal/ergometry/harel/brompton already sent at 16:00)"
-    },
-    {
-      "timestamp": "2026-04-30T16:08:38.051235+00:00",
-      "actions_file": "memory/ticket-sessions-20260430-190113.json",
-      "updates": 24,
-      "creates": 2,
-      "errors": 0,
-      "note": "24 regular updates sent, 2 new sessions created (flights TLV-Vienna + cycling Vienna-Brno in brno-2026 worktree), 9 blocked skipped, 7 not-found skipped, 6 per-day-limit skipped (already sent today)"
-    },
-    {
-      "timestamp": "2026-04-30T19:00:00.000000+00:00",
-      "actions_file": "memory/ticket-sessions-20260430-110052.json",
-      "updates": 31,
-      "creates": 0,
-      "errors": 0,
-      "note": "31 updates sent (6 per-day + 25 regular), 9 blocked skipped, 7 not-found skipped (2 legacy + 5 new dead: creat website/ארנונה/תיקון פין/Led strip/Japan museum)"
-    },
-    {
-      "timestamp": "2026-04-29T19:00:00.000000+00:00",
-      "actions_file": "memory/ticket-sessions-20260429-190054.json",
-      "updates": 29,
-      "creates": 0,
-      "errors": 0,
-      "note": "29 regular updates sent, 4 per-day-limit skipped, 4 special skipped, 8 blocked skipped, 2 not-found skipped"
-    },
-    {
-      "timestamp": "2026-04-29T15:00:00.000000+00:00",
-      "actions_file": "memory/ticket-sessions-20260429-150038.json",
-      "updates": 29,
-      "creates": 0,
-      "errors": 0,
-      "note": "29 regular updates sent (same set as 11:00), 4 per-day-limit skipped (finance/maccabi/ergometry/harel already sent at 11:00), 4 special skipped (AliExpress/Japan/Food-Snacks/Quizlet already sent), 8 blocked skipped, 2 not-found skipped"
-    },
-    {
-      "timestamp": "2026-04-29T11:00:00.000000+00:00",
-      "actions_file": "memory/ticket-sessions-20260429-110115.json",
-      "updates": 37,
-      "creates": 0,
-      "errors": 0,
-      "note": "37 updates sent (29 regular + 4 per-day-limit + 4 special: AliExpress verify/Japan done/Food-Snacks/Quizlet), 8 blocked skipped, 2 not-found skipped (Dishwasher 85337ae4 + Internet 63d0cd60)"
-    },
-    {
-      "timestamp": "2026-04-28T20:00:00.000000+00:00",
-      "actions_file": "memory/ticket-sessions-20260428-230037.json",
-      "updates": 31,
-      "creates": 0,
-      "errors": 0,
-      "note": "31 updates sent, 9 blocked skipped, 4 per-day-limit skipped (finance/maccabi/ergometry/harel already sent at 08:00), 2 not-found (Dishwasher 85337ae4 + Internet 63d0cd60)"
-    },
-    {
-      "timestamp": "2026-04-28T19:00:00.000000+00:00",
-      "actions_file": "memory/ticket-sessions-20260428-190055.json",
-      "updates": 31,
-      "creates": 0,
-      "errors": 0,
-      "note": "31 updates sent, 9 blocked skipped, 4 per-day-limit skipped (finance/maccabi/ergometry/harel already sent at 08:00), 2 not-found, 1 quizlet (user resolve)"
-    },
-    {
-      "timestamp": "2026-04-28T12:00:00.000000+00:00",
-      "actions_file": "memory/ticket-sessions-20260428-150040.json",
-      "updates": 31,
-      "creates": 0,
-      "errors": 0,
-      "note": "31 updates sent, 9 blocked skipped, 4 per-day-limit skipped (already sent at 08:00), 2 not-found, 1 Quizlet (user must resolve)"
-    },
-    {
-      "timestamp": "2026-04-28T08:00:00.000000+00:00",
-      "actions_file": "memory/ticket-sessions-20260428-070110.json",
-      "updates": 36,
-      "creates": 0,
-      "errors": 0,
-      "note": "29 regular updates + 7 special check-ins, 9 blocked skipped, 2 not-found skipped (Dishwasher 85337ae4 + Internet 63d0cd60)"
     }
   ]
 }
