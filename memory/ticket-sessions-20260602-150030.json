@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-06-02T12:00:30.339719+00:00",
+  "board_id": "5af14633e01cb0c5e1df9df6",
+  "lists": [],
+  "archived_cards": [],
+  "deleted_cards": [],
+  "stats": {
+    "worktrees_to_create": 0,
+    "worktrees_existing": 0,
+    "sessions_to_create": 0,
+    "sessions_to_update": 0,
+    "total_cards": 0,
+    "sessions_archived": 0,
+    "sessions_deleted": 0
+  }
+}
