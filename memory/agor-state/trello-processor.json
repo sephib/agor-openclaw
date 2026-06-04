@@ -1,15 +1,15 @@
 {
-  "last_run": "2026-06-03T08:00:30+00:00",
+  "last_run": "2026-06-04T15:00:42+00:00",
   "last_run_status": "success",
   "last_run_summary": {
     "updates_sent": 0,
     "sessions_created": 0,
     "total_cards": 0,
     "worktrees_created": 0,
-    "sessions_archived": 0,
-    "note": "Board fully dormant. 0 active cards - all have skip label."
+    "sessions_archived": 1,
+    "note": "Board dormant. 1 session archived (Blurry NanoPolix - card done in Trello)."
   },
-  "active_sessions": 1,
+  "active_sessions": 0,
   "next_scheduled_run": "2026-05-24T04:00:00+00:00",
   "schedule": {
     "enabled": true,
@@ -33,6 +33,23 @@
     "uuid_gotcha": "When processing updates: always read full session UUIDs from the actions file or DuckDB. Never manually construct or truncate UUIDs - the suffix matters. The generate script correctly reads from DuckDB; the orchestrator must read from the generated actions file too."
   },
   "recent_runs": [
+    {
+      "timestamp": "2026-06-04T15:00:42+00:00",
+      "actions_file": "memory/ticket-sessions-20260604-150042.json",
+      "updates": 0,
+      "creates": 0,
+      "errors": 0,
+      "archived": 1,
+      "note": "Board dormant. 1 session archived (Blurry NanoPolix - card done in Trello)."
+    },
+    {
+      "timestamp": "2026-06-04T11:01:00+00:00",
+      "actions_file": "memory/ticket-sessions-20260604-110028.json",
+      "updates": 0,
+      "creates": 1,
+      "errors": 0,
+      "note": "1 new session: Blurry NanoPolix A58 in trello-list-6e707233-3 (new worktree)."
+    },
     {
       "timestamp": "2026-06-03T08:00:30+00:00",
       "actions_file": "memory/ticket-sessions-20260603-110025.json",
