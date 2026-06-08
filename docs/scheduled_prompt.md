@@ -450,8 +450,8 @@ log_entry += f"""
 - {len(sessions_updated)} existing entries updated
 
 **Quality:**
-- All sessions verify URLs before posting
-- No 404 links allowed (especially AliExpress)
+- AliExpress cards use stable search URLs as primary links (never 404)
+- Non-AliExpress links verified with WebFetch before posting
 """
 
 # Append to daily log
@@ -533,10 +533,10 @@ Total cards: 42
 - Sessions in same worktree share list context
 - Complete isolation between tickets
 
-### ✅ URL Verification
-- EVERY session verifies links before posting
-- No 404s allowed (especially AliExpress)
-- WebFetch tool required
+### ✅ Link Strategy
+- AliExpress cards get stable search URLs as primary links (query-based, never 404)
+- Product-specific links are optional secondary recommendations (clean URLs, no tracking params)
+- Non-AliExpress links verified with WebFetch before posting
 
 ### ✅ DuckDB Tracking
 - `trello_list`: list_id → list_type, worktree_id, ticket_count
@@ -567,6 +567,6 @@ Every new session gets: card context + list context + user preferences
 
 ---
 
-**Version:** 6.0 (three-tier context: card + list + user preferences)
-**Last Updated:** 2026-05-01
+**Version:** 6.1 (AliExpress search URLs as primary links)
+**Last Updated:** 2026-06-08
 **Status:** Ready for deployment
