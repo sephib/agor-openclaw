@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-06-08T08:01:02.461007+00:00",
+  "last_run": "2026-06-10T08:01:04.089839+00:00",
   "last_run_status": "success",
   "last_run_summary": {
     "updates_sent": 0,
@@ -10,7 +10,7 @@
     "note": "Board dormant. 0 active cards."
   },
   "active_sessions": 0,
-  "next_scheduled_run": "2026-06-08T12:00:00+00:00",
+  "next_scheduled_run": "2026-06-10T12:00:00+00:00",
   "schedule": {
     "enabled": true,
     "cron": "0 */4 * * *",
@@ -33,6 +33,15 @@
     "uuid_gotcha": "When processing updates: always read full session UUIDs from the actions file or DuckDB. Never manually construct or truncate UUIDs - the suffix matters. The generate script correctly reads from DuckDB; the orchestrator must read from the generated actions file too."
   },
   "recent_runs": [
+    {
+      "timestamp": "2026-06-10T08:01:04.089839+00:00",
+      "actions_file": "memory/ticket-sessions-20260610-110048.json",
+      "updates": 0,
+      "creates": 0,
+      "errors": 0,
+      "archived": 0,
+      "note": "Board dormant. 0 active cards."
+    },
     {
       "timestamp": "2026-06-08T08:01:02.461007+00:00",
       "actions_file": "memory/ticket-sessions-20260608-110102.json",
@@ -272,22 +281,6 @@
       "creates": 0,
       "errors": 0,
       "note": "4 updates sent (screen protector, Bracelets weights, CamelBak lid in AliExpress + Vllm/guidellm/ray in Tech). Third run of 2026-05-17."
-    },
-    {
-      "timestamp": "2026-05-17T11:00:27+00:00",
-      "actions_file": "memory/ticket-sessions-20260517-110027.json",
-      "updates": 2,
-      "creates": 2,
-      "errors": 0,
-      "note": "2 new sessions (CamelBak lid + Bracelets weights in trello-list-aliexpress). 2 updates (screen protector + Vllm+guidellm+ray)."
-    },
-    {
-      "timestamp": "2026-05-14T04:00:32+00:00",
-      "actions_file": "memory/ticket-sessions-20260514-070032.json",
-      "updates": 1,
-      "creates": 1,
-      "errors": 0,
-      "note": "1 new session created (screen protector for mac 14 inch in trello-list-aliexpress-2). 1 update sent (Vllm+guidellm+ray). 1 new worktree: trello-list-aliexpress-2 (original trello-list-aliexpress already existed)."
     }
   ]
 }
