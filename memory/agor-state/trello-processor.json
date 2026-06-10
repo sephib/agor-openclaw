@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-06-10T08:01:04.089839+00:00",
+  "last_run": "2026-06-10T12:00:35.027957+00:00",
   "last_run_status": "success",
   "last_run_summary": {
     "updates_sent": 0,
@@ -10,7 +10,7 @@
     "note": "Board dormant. 0 active cards."
   },
   "active_sessions": 0,
-  "next_scheduled_run": "2026-06-10T12:00:00+00:00",
+  "next_scheduled_run": "2026-06-10T16:00:00+00:00",
   "schedule": {
     "enabled": true,
     "cron": "0 */4 * * *",
@@ -33,6 +33,15 @@
     "uuid_gotcha": "When processing updates: always read full session UUIDs from the actions file or DuckDB. Never manually construct or truncate UUIDs - the suffix matters. The generate script correctly reads from DuckDB; the orchestrator must read from the generated actions file too."
   },
   "recent_runs": [
+    {
+      "timestamp": "2026-06-10T12:00:35.027957+00:00",
+      "actions_file": "memory/ticket-sessions-20260610-150035.json",
+      "updates": 0,
+      "creates": 0,
+      "errors": 0,
+      "archived": 0,
+      "note": "Board dormant. 0 active cards."
+    },
     {
       "timestamp": "2026-06-10T08:01:04.089839+00:00",
       "actions_file": "memory/ticket-sessions-20260610-110048.json",
