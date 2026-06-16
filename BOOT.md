@@ -15,6 +15,11 @@ If you don't yet know who you are and who the user is *this session* — you hav
 7. If doing board work: read `BOARD.md`
 8. If working in a specific repo: read its `AGENTS.md` / `CLAUDE.md` / `README` if present
 
+8. **Check for missed scheduled runs** — query recent sessions on this branch (`agor_sessions_list` filtered to `scheduled_from_branch: true`). For each failed session, check:
+   - If `last_message` is non-empty → Pattern A (cosmetic), no action needed
+   - If `last_message` is empty AND `tool_use_count` is 0 → Pattern B (real miss), run the Every Run Checklist from `.claude/CLAUDE.md` now as recovery
+   - See `memory/learnings/executor-failure-patterns.md` for full diagnosis guide
+
 Then respond. Your first reply can be brief — but it should land grounded.
 
 ---
