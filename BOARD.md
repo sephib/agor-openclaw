@@ -1,173 +1,94 @@
-# BOARD.md - Your Agor Board Configuration
+# BOARD.md - Oggy's Agent Guide Board
 
-**Purpose:** Document your board structure, zones, and workflow expectations so agents understand how to organize work spatially.
-
----
-
-## Board Information
-
-- **Board ID:** `[Your board ID from IDENTITY.md]`
-- **Board Name:** `[Your board name]`
-- **Board URL:** `[Agor board URL]`
+- **Board ID:** `019ecc25-547e-725c-a50d-75b657741ff2`
+- **Board Name:** Oggy's Agent Guide
+- **Board URL:** http://localhost:3030/ui/b/my-agent-guide-s-board/
 
 ---
 
-## Zones and Workflow
+## Purpose
 
-**Why zones matter:** Zones represent workflow states. The zone a worktree is IN determines its true status—this is your spatial organization of work.
+This is a **meta board** — not where agents run, but where we design them and track how they perform.
 
-### Zone Definitions
-
-Document each zone on your board:
-
-```markdown
-### [Zone Name]
-
-- **Zone ID:** zone-xxxxx
-- **Purpose:** [What this zone represents]
-- **Workflow State:** [e.g., "planning", "in-progress", "review", "done"]
-- **Agent Behavior:**
-  - [What should agents do when worktrees are in this zone?]
-  - [Any automated actions to take?]
-  - [When to move worktrees out of this zone?]
-
-**Zone Trigger:** [If configured]
-- Behavior: [always_new / show_picker]
-- Agent: [claude-code / codex / gemini]
-- Prompt Template: [What prompt gets triggered]
-```
+**Flow:** Explore needs → Define agent guidelines → Launch agents on their own boards → Track active agents → Gather insights back here
 
 ---
 
-## Example Zone Configuration
+## Zones
 
-### Design!
+### Explore
 
-- **Zone ID:** zone-1770152859108
-- **Purpose:** Planning and design phase before implementation
-- **Workflow State:** planning
+- **Zone ID:** zone-explore
+- **Purpose:** Investigating needs — "I have this problem, could an agent help?"
+- **Workflow State:** exploring
+- **What goes here:**
+  - Cards describing problems or workflows that might benefit from agents
+  - Research notes on what's possible
+  - Questions to investigate
 - **Agent Behavior:**
-  - Focus on research, exploration, and design decisions
-  - Don't start coding until design is approved
-  - Update worktree notes with design decisions
-  - Move to "In Progress" when ready to implement
+  - Brainstorm and research feasibility
+  - Identify tools, MCP integrations, and skills needed
+  - Move to Define when the concept is clear enough to spec out
 
-### In Progress
+### Define
 
-- **Zone ID:** zone-1770152859362
-- **Purpose:** Active development work
-- **Workflow State:** in-progress
+- **Zone ID:** zone-define
+- **Purpose:** Designing the agent — writing guidelines, SOUL, workflow, tools it needs
+- **Workflow State:** defining
+- **What goes here:**
+  - Agent specs (SOUL.md drafts, CLAUDE.md guidelines)
+  - Tool/MCP requirements
+  - Workflow diagrams
+  - Board and zone designs for the agent's own board
 - **Agent Behavior:**
-  - Actively work on implementation
-  - Run tests frequently
-  - Update worktree metadata with progress
-  - Move to "Open a PR" when work is complete
+  - Draft agent configuration files
+  - Define what repos, tools, and integrations the agent needs
+  - Move to Active once the agent is created and launched on its own board
 
-### Open a PR
+### Active
 
-- **Zone ID:** zone-1770152859410
-- **Purpose:** Work ready for pull request creation
-- **Workflow State:** ready-for-pr
+- **Zone ID:** zone-active
+- **Purpose:** Agents that are live on other boards — tracking their status
+- **Workflow State:** active
+- **What goes here:**
+  - Cards referencing agents running on other boards
+  - Links to their board, worktrees, sessions
+  - Status updates and health checks
 - **Agent Behavior:**
-  - Create pull request if not exists
-  - Link PR URL to worktree metadata
-  - Ensure CI passes
-  - Move to "Codex review" or "Human review" after PR created
+  - Monitor agent performance
+  - Check if agents are stuck, blocked, or producing good results
+  - Gather findings and move learnings to Insights
 
-### Codex review
+### Insights
 
-- **Zone ID:** zone-1770152859458
-- **Purpose:** Code review by AI agent
-- **Workflow State:** ai-review
+- **Zone ID:** zone-insights
+- **Purpose:** Learnings from active agents — what works, what needs adjustment
+- **Workflow State:** reflecting
+- **What goes here:**
+  - Patterns discovered (e.g., "Trello MCP can't comment, use curl workaround")
+  - Agent refinement notes
+  - Workflow improvements to feed back into Define
 - **Agent Behavior:**
-  - Spawn code review session
-  - Check for common issues
-  - Update PR with review comments
-  - Move to "Human review" after AI review complete
-
-### Human review / Trash
-
-- **Zone ID:** zone-1770152859506
-- **Purpose:** Terminal states (awaiting human or discarded)
-- **Workflow State:** terminal
-- **Agent Behavior:**
-  - Don't take automated actions
-  - Mark as completed/archived in memory
-  - Only touch if explicitly asked by human
-
-### Done: PR merged or worktree abandoned
-
-- **Zone ID:** zone-1770152859554
-- **Purpose:** Completed work
-- **Workflow State:** done
-- **Agent Behavior:**
-  - Mark as completed in memory
-  - Archive from active tracking
-  - Clean up if worktree is stale
-  - Don't report in heartbeat checks
+  - Synthesize learnings
+  - Update agent guidelines based on real-world experience
+  - Feed improvements back to agents in Active or new specs in Define
 
 ---
 
 ## Workflow Transitions
 
-Document how worktrees move between zones:
-
 ```
-Design! → In Progress → Open a PR → Codex review → Human review → Done
-                ↓                          ↓
-              Trash ←──────────────────────┘
+Explore → Define → Active → Insights
+   ↑                           |
+   └───────────────────────────┘
+         (refine and iterate)
 ```
-
----
-
-## Agent Instructions
-
-**For heartbeat checks:**
-
-Zone information is now **directly available** in worktree MCP responses as `zone_id` and `zone_label` fields (no position calculations needed):
-
-```
-Use agor_worktrees_list to get all worktrees.
-Each worktree includes zone_id and zone_label fields automatically.
-
-Take actions based on zone_label:
-- "Done: PR merged or worktree abandoned" → Mark completed in memory, archive
-- "Ready for PR" + missing pull_request_url → Create PR
-- "In Progress" + stale last_updated → Flag for attention
-```
-
-**Key points:**
-- Zone info is automatically included in `agor_worktrees_get` and `agor_worktrees_list`
-- No need to manually match positions or call `agor_boards_get`
-- Trust `zone_label` as source of truth for workflow state
-- Use `agor_worktrees_set_zone` to move worktrees between zones
-
-**For new work:**
-1. Create worktree with required `boardId` (use `agor_worktrees_create`)
-2. Use `agor_worktrees_set_zone` to place in appropriate starting zone
-3. Zone triggers may auto-start sessions (if configured)
-
----
-
-## Setup Notes
-
-**During bootstrap:**
-- Agent should help set up board structure
-- Create zones for common workflow states
-- Configure zone triggers if desired
-- Document zone purposes in this file
-
-**As you evolve:**
-- Update zone definitions when workflow changes
-- Add new zones as needed
-- Document agent behavior expectations
-- Keep this file synchronized with actual board
 
 ---
 
 ## Notes
 
-- This file should be updated whenever board structure changes
-- Zone IDs are stable, but positions/sizes may change
-- Agent behavior should adapt to your workflow, not dictate it
-- Empty template by default—fill in during bootstrap or as needed
+- Agents run on their OWN boards (Jounce-speckit, openclaw-agor, etc.)
+- This board tracks the meta-level: what agents exist, what they do, how well they work
+- Cards here reference external boards, worktrees, and sessions
+- Oggy (this agent) is the advisor who helps design and evaluate agents
