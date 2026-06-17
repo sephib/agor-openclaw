@@ -16,6 +16,8 @@ memory/agor-state/*.json
 
 # === Runtime Memory (daily logs, task outputs) ===
 memory/*.md
+# Preserve important reusable learnings
+!memory/learnings/board-zone-sizing.md
 memory/learnings/*.md
 
 # === Ad-hoc scripts and prompts ===

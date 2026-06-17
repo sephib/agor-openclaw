@@ -22,7 +22,15 @@ _(Major choices made, with rationale and outcomes)_
 
 ### Lessons Learned
 
-_(Mistakes made, lessons discovered, patterns recognized)_
+#### Board Zone Sizing (2026-06-17)
+**Standard dimensions for Agor board zones:**
+- Width: 600px (matches worktree card width)
+- Height: 400px (work zones), 750-850px (Done/Archive zones)
+- Spacing: 50px gaps between zones
+
+**Context:** Initial Buff board had 450px wide zones → cards overflowed. Analysis of working boards showed 600px is the standard. See `memory/learnings/board-zone-sizing.md` for full details and grid layout formulas.
+
+**When creating boards:** Always use 600px width minimum for zones that will hold worktree cards.
 
 ### Important Context
 
