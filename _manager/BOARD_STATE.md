@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-20 02:01 IDT (30-min advance heartbeat)*
+*Last updated: 2026-06-20 02:30 IDT (30-min advance heartbeat)*
 
 ---
 
@@ -21,16 +21,16 @@
 
 ---
 
-## Key Changes Since Last Run (Jun 20 02:01 IDT)
+## Key Changes Since Last Run (Jun 20 02:30 IDT)
 
 | What observed | Status |
 |---|---|
-| **PR #1601 (jn-5675)** | ↔ UNCHANGED — MERGEABLE (no conflicts), CI catastrophic (8 checks failing). 17h+ no new commits since rebase at 09:19 IDT Jun 19. |
+| **PR #1601 (jn-5675)** | ↔ UNCHANGED — MERGEABLE (no conflicts), CI catastrophic (8 checks failing). 17.5h+ no new commits since rebase at 09:19 IDT Jun 19. |
 | **PR #1604 (jn-5676)** | ↔ UNCHANGED — CONFLICTING + DRAFT. pre-commit failing only. Last updated Jun 18 16:14 IDT. |
 | **PR #1588 (jn-5546)** | ↔ UNCHANGED — BEHIND, MERGEABLE. pre-commit failing (2 checks). Last updated Jun 18 15:12 IDT. |
 | **No new merges to main** | ℹ️ Last merge: PR #1599 (jn-5674) Jun 18 23:55 IDT |
-| **No new CI runs on board** | ℹ️ Zero pushes across all board branches — board fully static 17h+. |
-| **PR #1606 (JN-5725, off-board)** | ↔ UNCHANGED since 01:33 IDT — 3rd consecutive e2e failure still standing. No new CI runs since 00:30 IDT. |
+| **No new CI runs on board** | ℹ️ Zero pushes across all board branches — board fully static 17.5h+. |
+| **PR #1606 (JN-5725, off-board)** | ↔ UNCHANGED since 02:01 IDT — 3rd consecutive e2e failure still standing. No new CI runs since 00:30 IDT. |
 
 ---
 
