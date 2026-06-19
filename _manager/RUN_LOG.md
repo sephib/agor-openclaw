@@ -4,6 +4,24 @@
 
 ---
 
+## 2026-06-19 — 30-min Board Advancement Heartbeat (18:03 IDT)
+
+**Session:** 019ee065 | http://localhost:3030/ui/s/019ee065b03373518c79ed2b/
+
+**Board summary:** Board remains fully static — no new commits, CI runs, or sessions on board branches. ~30 min since last run (17:33 IDT). 10+ hours since last push across all board branches.
+
+**Key findings:**
+- 🚨 jn-5675 (PR #1601): CI still catastrophic — 8 checks failing. Same CI run from 09:19 IDT. No new commits in 10+ hours. Fix session proposal still PENDING.
+- 🔴 jn-5676 (PR #1604): Still CONFLICTING + DRAFT. Pre-commit only (2 checks) failing. No change since Jun 18 16:14 IDT.
+- 🔴 PR #1588 (JN-5546): Unchanged — pre-commit failing (2 checks), MERGEABLE.
+- ⚠️ PR #1606 (JN-5725, off-board): e2e-smoke now DEFINITIVELY HUNG — 1h35m+ since 16:28 IDT. All other 11 checks PASSING (including pre-commit ✅). MERGEABLE + REVIEW_REQUIRED — only blocked by hung e2e-smoke job.
+
+**Proposals written:** None new — existing proposals unchanged.
+
+**No actions taken** — supervised mode.
+
+---
+
 ## 2026-06-19 — 30-min Board Advancement Heartbeat (17:33 IDT)
 
 **Session:** 019ee04a | http://localhost:3030/ui/s/019ee04a38ab7f1ca16bdf2b/
