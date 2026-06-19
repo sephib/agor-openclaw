@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-20 00:03 IDT";
+export const LAST_UPDATED = "2026-06-20 00:33 IDT";
 
 export const WORKTREES = [
   {
@@ -173,7 +173,7 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): e2e FAILED AGAIN — Joseph's re-triggered run completed as FAILURE (e2e-smoke + e2e-tests). 2nd consecutive failure. 11 other checks PASSING. Investigate before re-running blindly.",
+    message: "🚨 PR #1606 (JN-5725, off-board): e2e FAILED AGAIN — 3rd consecutive failure. New CI run completed 00:30 IDT Jun 20 — e2e-smoke + e2e-tests FAILING. 12 other checks PASSING. Systemic e2e instability — needs investigation, not just re-run.",
   },
   {
     level: "red",

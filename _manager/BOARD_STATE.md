@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-20 00:03 IDT (30-min advance heartbeat)*
+*Last updated: 2026-06-20 00:33 IDT (30-min advance heartbeat)*
 
 ---
 
@@ -21,16 +21,16 @@
 
 ---
 
-## Key Changes Since Last Run (Jun 20 00:03 IDT)
+## Key Changes Since Last Run (Jun 20 00:33 IDT)
 
 | What observed | Status |
 |---|---|
-| **PR #1601 (jn-5675)** | ↔ UNCHANGED — MERGEABLE (no conflicts), CI catastrophic (8 checks failing). 18.5h+ no new commits. |
+| **PR #1601 (jn-5675)** | ↔ UNCHANGED — MERGEABLE (no conflicts), CI catastrophic (8 checks failing). 19h+ no new commits. |
 | **PR #1604 (jn-5676)** | ↔ UNCHANGED — CONFLICTING + DRAFT. pre-commit failing only. Last updated Jun 18 19:14 IDT. |
 | **PR #1588 (jn-5546)** | ↔ UNCHANGED — BEHIND, MERGEABLE. pre-commit failing (2 checks). Last updated Jun 18 18:12 IDT. |
 | **No new merges to main** | ℹ️ Last merge: PR #1599 (jn-5674) Jun 18 23:55 IDT |
-| **No new CI runs on board** | ℹ️ Zero pushes across all board branches — board fully static 18.5h+. |
-| **PR #1606 (JN-5725, off-board)** | ↔ UNCHANGED — 2nd e2e failure (completed 20:10 IDT). No new CI run. No reviews. 4h+ since failure. |
+| **No new CI runs on board** | ℹ️ Zero pushes across all board branches — board fully static 19h+. |
+| **PR #1606 (JN-5725, off-board)** | 🔴 NEW CI RUN — started 00:09 IDT, completed 00:30 IDT. **3RD CONSECUTIVE e2e FAILURE** (e2e-smoke + e2e-tests). 12 other checks PASSING. |
 
 ---
 
@@ -52,15 +52,15 @@ Root cause: broken `__init__.py` conflict resolution from session 019ede80 ("mer
 
 ---
 
-### 🔴 OFF-BOARD — PR #1606 (JN-5725) e2e-smoke FAILED AGAIN (2nd failure)
+### 🚨 OFF-BOARD — PR #1606 (JN-5725) e2e-smoke FAILED AGAIN (3rd failure)
 
-PR #1606 status as of 20:33 IDT:
-- 11 checks PASSING (pre-commit-run ✅, tox ✅, integration ✅, e2e-api ✅, pre-commit ✅, nox ✅, integration-tests ✅, atlas-validate ✅ + others)
-- **e2e-smoke / e2e: FAILURE** — re-run triggered by Joseph at ~19:45 IDT has now failed
+PR #1606 status as of 00:33 IDT Jun 20:
+- 12 checks PASSING (pre-commit-run ✅, tox ✅, integration ✅, e2e-api ✅, pre-commit ✅, nox ✅, integration-tests ✅, atlas-validate ✅ + others)
+- **e2e-smoke / e2e: FAILURE** — NEW CI run triggered ~00:09 IDT (after last heartbeat at 00:03 IDT), completed 00:30 IDT
 - **e2e-tests: FAILURE** — also failing
 - MERGEABLE + REVIEW_REQUIRED (no reviews yet)
 
-This is the SECOND e2e failure on PR #1606. Pattern suggests systemic e2e instability — may need deeper investigation (flaky test infra vs. real regression). Another re-run could be tried, but two consecutive failures should be flagged.
+This is the THIRD consecutive e2e failure on PR #1606. Three consecutive failures rules out a simple flaky retry. This is systemic — e2e test infra investigation needed before another re-run. No reviews yet.
 
 ---
 
