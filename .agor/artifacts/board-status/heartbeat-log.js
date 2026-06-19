@@ -110,4 +110,13 @@ export const HEARTBEAT_RUNS = [
     summary: "Board fully static — no changes since 10:03 IDT. All PRs (#1601/#1604/#1588) unchanged. CI catastrophic on #1601, CONFLICTING on #1604. jn-5675 fix session still pending approval.",
     sessionUrl: "http://localhost:3030/ui/s/019edf374b427e31903e9fdb/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-19 14:33 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "4-hour gap in heartbeats (10:33→14:33 IDT). Board static — no new commits or sessions. ONE change: JN-5673 Jira now Done ✅ (was 85h+ stale In Review). PRs #1601/#1604/#1588 all unchanged. jn-5675 CI still catastrophic (8 checks failing). Fix session pending approval.",
+    sessionUrl: "http://localhost:3030/ui/s/019edfa56b067d65918761e3/",
+  },
 ];
