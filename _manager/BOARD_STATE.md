@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-19 20:03 IDT (30-min advance heartbeat)*
+*Last updated: 2026-06-19 20:33 IDT (30-min advance heartbeat)*
 
 ---
 
@@ -10,7 +10,7 @@
 |--------|------|------|-------------|-----|-----|--------|-------|
 | jn-5675-historical-visibility | [JN-5675](https://jounce.atlassian.net/browse/JN-5675) | Code | In Progress | [#1601](https://github.com/Jounce-IO/jounce/pull/1601) | ❌❌ **CATASTROPHIC** — pre-commit + tox + integration + e2e-api + nox + integration-tests + e2e-tests ALL FAILING | — | 🚨 MERGEABLE (conflicts resolved by session 019ede80) but CI catastrophic — broken `__init__.py` fix needed |
 | jn-5676-notebook-scaffold | [JN-5676](https://jounce.atlassian.net/browse/JN-5676) | Publish | In Progress | [#1604](https://github.com/Jounce-IO/jounce/pull/1604) DRAFT | ❌ pre-commit FAIL only + **CONFLICTING** (tox/nox/integration/e2e all ✅) | — | 🔴 CONFLICTING; CI improved — only pre-commit blocking once conflict resolved |
-| jn-5546-docs-module-layout | [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | Code Review | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | ❌ pre-commit FAIL (tox/integration/nox all ✅) — BEHIND | sephib COMMENTED (MUST FIX items) | 🔴 Pre-commit fix + sephib MUST FIX items |
+| jn-5546-docs-module-layout | [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | Code Review | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | ❌ pre-commit FAIL (tox/integration/nox all ✅) — MERGEABLE | sephib COMMENTED (MUST FIX items) | 🔴 Pre-commit fix + sephib MUST FIX items |
 | ci-statistics-notebook | [JN-5708](https://jounce.atlassian.net/browse/JN-5708) (issue link) | Code | Done | — | — | — | ⚠️ No sessions; JN-5708 Done; scope unclear |
 | internal-cr-system | — | Code | — | — | — | — | 🔴 Filesystem FAILED (git lock) — unchanged |
 | dual-heartbeat-system | — | Code | — | — | — | — | ✅ Idle, docs done |
@@ -21,16 +21,16 @@
 
 ---
 
-## Key Changes Since Last Run (Jun 19 19:33 IDT)
+## Key Changes Since Last Run (Jun 19 20:03 IDT)
 
 | What observed | Status |
 |---|---|
-| **PR #1601 (jn-5675)** | ↔ UNCHANGED — MERGEABLE, CI still catastrophic (8 checks failing). Same CI run from 09:19 IDT. No new commits in ~12 hours. |
+| **PR #1601 (jn-5675)** | ↔ UNCHANGED — MERGEABLE, CI still catastrophic (8 checks failing). No new commits in ~12 hours. |
 | **PR #1604 (jn-5676)** | ↔ UNCHANGED — CONFLICTING + DRAFT. pre-commit failing only (2 checks). Last updated: Jun 18 16:14 IDT. |
-| **PR #1588 (jn-5546)** | ↔ UNCHANGED — pre-commit failing (2 checks). MERGEABLE. Last CI run: Jun 18 15:12 UTC. |
-| **No new merges to main** | ℹ️ Last merge: PR #1599 (jn-5674) Jun 18 20:55 UTC (23:55 IDT) |
-| **No new CI runs on board** | ℹ️ Zero pushes across all board branches — board fully static for 12+ hours. |
-| **PR #1606 (JN-5725, off-board)** | 🟢 **NEW CI RUN IN PROGRESS** — e2e-smoke / e2e: IN_PROGRESS since ~19:45 IDT. PR updated at 19:45 IDT. Joseph re-triggered CI after the e2e-smoke FAILURE. All 11 other checks PASSING. MERGEABLE + REVIEW_REQUIRED (no reviews yet). If e2e-smoke passes → only review approval needed to merge. |
+| **PR #1588 (jn-5546)** | ↔ UNCHANGED — pre-commit failing (2 checks). MERGEABLE. |
+| **No new merges to main** | ℹ️ Last merge: PR #1599 (jn-5674) Jun 18 23:55 IDT |
+| **No new CI runs on board** | ℹ️ Zero pushes across all board branches — board fully static 12.5+ hours. |
+| **PR #1606 (JN-5725, off-board)** | 🔴 **e2e-smoke FAILED AGAIN** — The CI run Joseph re-triggered at ~19:45 IDT has now completed as FAILURE. e2e-smoke / e2e: FAILURE. e2e-tests: FAILURE. 11 other checks still PASSING. MERGEABLE + REVIEW_REQUIRED. This is the SECOND e2e failure on this PR. |
 
 ---
 
@@ -52,14 +52,15 @@ Root cause: broken `__init__.py` conflict resolution from session 019ede80 ("mer
 
 ---
 
-### 🟢 OFF-BOARD — PR #1606 (JN-5725) e2e-smoke NEW CI RUN IN PROGRESS
+### 🔴 OFF-BOARD — PR #1606 (JN-5725) e2e-smoke FAILED AGAIN (2nd failure)
 
-PR #1606 status as of 20:03 IDT:
+PR #1606 status as of 20:33 IDT:
 - 11 checks PASSING (pre-commit-run ✅, tox ✅, integration ✅, e2e-api ✅, pre-commit ✅, nox ✅, integration-tests ✅, atlas-validate ✅ + others)
-- **e2e-smoke / e2e: IN_PROGRESS** — new run triggered ~19:45 IDT
-- MERGEABLE + REVIEW_REQUIRED (no reviews yet, reviews: [])
+- **e2e-smoke / e2e: FAILURE** — re-run triggered by Joseph at ~19:45 IDT has now failed
+- **e2e-tests: FAILURE** — also failing
+- MERGEABLE + REVIEW_REQUIRED (no reviews yet)
 
-Joseph re-triggered CI (acted on the re-run proposal from 19:03 IDT run). If e2e-smoke passes, only a review approval is needed to merge. Watch this closely — result expected within 1-2 hours if CI follows previous pattern.
+This is the SECOND e2e failure on PR #1606. Pattern suggests systemic e2e instability — may need deeper investigation (flaky test infra vs. real regression). Another re-run could be tried, but two consecutive failures should be flagged.
 
 ---
 
@@ -71,7 +72,7 @@ Joseph re-triggered CI (acted on the re-run proposal from 19:03 IDT run). If e2e
 
 ### 🔴 PR #1588 (JN-5546) — pre-commit + sephib MUST FIX
 
-Unchanged. BEHIND (not MERGEABLE) + pre-commit failing + sephib MUST FIX items outstanding.
+Unchanged. MERGEABLE + pre-commit failing + sephib MUST FIX items outstanding.
 
 ---
 

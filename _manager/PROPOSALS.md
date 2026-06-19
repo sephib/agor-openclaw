@@ -4,6 +4,37 @@
 
 ---
 
+## 2026-06-19 20:33 IDT Heartbeat — PR #1606 e2e FAILED AGAIN (2nd failure)
+
+**Updates since 20:03 IDT:**
+
+- Board fully static — no new commits, CI runs, or sessions on board branches.
+- All board PRs (#1601/#1604/#1588) unchanged.
+- **PR #1606 (off-board): 🔴 e2e FAILED AGAIN** — The CI run Joseph re-triggered at ~19:45 IDT completed as FAILURE. e2e-smoke / e2e: FAILURE. e2e-tests: FAILURE. 11 other checks still PASSING. This is the SECOND consecutive e2e failure. Pattern: two runs, both failing e2e-smoke + e2e-tests; everything else green. Suggests systemic e2e issue or real regression — not random flake.
+
+---
+
+## 🔴 Proposal: Investigate PR #1606 e2e failures before re-running — NEW
+
+- **Action:** Before attempting another blind e2e re-run on PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606), investigate the failure logs. Check: (1) what exactly is failing in e2e-smoke vs e2e-tests — same test? different? (2) Is this a known flaky test or a real regression from the PR's changes? (3) Compare with recent main branch CI runs.
+- **Reason:** Two consecutive e2e failures (the hung 2h run + Joseph's re-run both failing) makes random flake less likely. Either there's a real regression in the PR changes or a systemic e2e infra problem that blind re-runs won't fix.
+- **Risk:** Low — investigation is just log reading. Wrong call: if it IS real flake, investigation adds delay. But third re-run without understanding the failure is worse.
+- **Worktree:** N/A — off-board PR
+- **Next steps if regression:** Need a fix session on `feat/jn-5725-integrate-vllm-log-analyzer` branch
+- **Next steps if infra flake:** Another re-run is appropriate; can be done via `gh run rerun --failed`
+- **Status:** PENDING — needs Joseph to check failure logs or approve investigation
+
+---
+
+## ✅ ACTIONED: Re-run e2e jobs on PR #1606 (JN-5725) — COMPLETED (FAILURE)
+
+- **Action (originally proposed):** Re-run failed `e2e-smoke / e2e` jobs on PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606)
+- **Status:** ✅ ACTIONED — Joseph re-triggered CI at ~19:45 IDT. Run completed at ~20:33 IDT. **RESULT: FAILURE** — e2e-smoke + e2e-tests both failed again. See new investigation proposal above.
+
+~~**SUPERSEDED: Cancel + re-run e2e-smoke on PR #1606 (JN-5725)**~~ — job has completed (as FAILURE). Re-run directly from failed check.
+
+---
+
 ## 2026-06-19 20:03 IDT Heartbeat — PR #1606 NEW CI RUN IN PROGRESS
 
 **Updates since 19:33 IDT:**
@@ -11,16 +42,6 @@
 - Board fully static — no new commits, CI runs, or sessions on board branches.
 - All board PRs (#1601/#1604/#1588) unchanged.
 - **PR #1606 (off-board): 🟢 NEW CI RUN** — Joseph re-triggered e2e-smoke at ~19:45 IDT. e2e-smoke / e2e now IN_PROGRESS. All 11 other checks PASSING. If this passes, only review approval remains.
-
----
-
-## ✅ ACTIONED: Re-run e2e jobs on PR #1606 (JN-5725) — CI NOW IN PROGRESS
-
-- **Action (originally proposed):** Re-run failed `e2e-smoke / e2e` jobs on PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606)
-- **Status:** ✅ ACTIONED — Joseph re-triggered CI at ~19:45 IDT. e2e-smoke IN_PROGRESS.
-- **Next:** Watch for e2e-smoke result. If PASS → request review. If FAIL (again) → determine if flaky infra or real code issue.
-
-~~**SUPERSEDED: Cancel + re-run e2e-smoke on PR #1606 (JN-5725)**~~ — job has completed (as FAILURE). Re-run directly from failed check.
 
 ---
 
