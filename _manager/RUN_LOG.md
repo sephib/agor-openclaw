@@ -4,6 +4,42 @@
 
 ---
 
+## 2026-06-19 — 30-min Board Advancement Heartbeat (22:33 IDT)
+
+**Session:** 019ee15c | http://localhost:3030/ui/s/019ee15ce42e7ecda3c7057e/
+
+**Board summary:** Board branches fully static (16h+). No material changes since 22:03 IDT run.
+
+**Key findings:**
+- ↔ jn-5675 (PR #1601): CI still catastrophic — 8 checks failing. 16h+ without any commit or fix. MERGEABLE (no conflicts). Fix session proposal still PENDING (highest priority).
+- ↔ jn-5676 (PR #1604): Still CONFLICTING + DRAFT. pre-commit only (2 checks) failing. No change since Jun 18 16:14 IDT.
+- ↔ PR #1588 (JN-5546): BEHIND + MERGEABLE. 2 pre-commit failures. No change since Jun 18.
+- ↔ **PR #1606 (JN-5725, off-board)**: Still BLOCKED. No new CI run since 2nd failure. No reviews. e2e-smoke + e2e-tests failing.
+
+**Proposals written:** None new — existing proposals unchanged.
+
+**No autonomous actions taken** — supervised mode.
+
+---
+
+## 2026-06-19 — 30-min Board Advancement Heartbeat (22:03 IDT)
+
+**Session:** 019ee141 | http://localhost:3030/ui/s/019ee141-6d40-7c56-83b2-38588e09afde/
+
+**Board summary:** Board branches fully static (15h+). No material changes since 21:33 IDT run.
+
+**Key findings:**
+- ↔ jn-5675 (PR #1601): CI still catastrophic — 8 checks failing. 15h+ without any commit or fix. MERGEABLE (no conflicts) but BLOCKED. Fix session proposal still PENDING (highest priority).
+- ↔ jn-5676 (PR #1604): Still CONFLICTING + DRAFT. pre-commit only (2 checks) failing. No change since Jun 18 16:14 IDT.
+- ↔ PR #1588 (JN-5546): BEHIND + MERGEABLE. 2 pre-commit failures. No change since Jun 18.
+- ↔ **PR #1606 (JN-5725, off-board)**: Still BLOCKED. No new CI run since 2nd failure. No reviews. e2e-smoke + e2e-tests failing.
+
+**Proposals written:** None new — existing proposals unchanged.
+
+**No autonomous actions taken** — supervised mode.
+
+---
+
 ## 2026-06-19 — 30-min Board Advancement Heartbeat (21:33 IDT)
 
 **Session:** 019ee125 | http://localhost:3030/ui/s/019ee125f5437d4eabdbd7d2/
