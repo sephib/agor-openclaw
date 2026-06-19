@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-19 15:35 IDT (30-min advance heartbeat)*
+*Last updated: 2026-06-19 16:03 IDT (30-min advance heartbeat)*
 
 ---
 
@@ -20,15 +20,15 @@
 
 ---
 
-## Key Changes Since Last Run (Jun 19 15:03 IDT)
+## Key Changes Since Last Run (Jun 19 15:35 IDT)
 
 | What observed | Status |
 |---|---|
-| **PR #1601 (jn-5675)** | ↔ UNCHANGED — MERGEABLE, CI still catastrophic (8 checks failing). Same CI run from 09:17 IDT. No new commits in ~6.5 hours. |
+| **PR #1601 (jn-5675)** | ↔ UNCHANGED — MERGEABLE, CI still catastrophic (8 checks failing). Same CI run from 09:19 IDT. No new commits in ~7 hours. |
 | **PR #1604 (jn-5676)** | ↔ UNCHANGED — CONFLICTING + DRAFT. pre-commit failing only. Last updated: Jun 18 16:14 IDT. |
 | **PR #1588 (jn-5546)** | ↔ UNCHANGED — pre-commit failing. MERGEABLE. Last CI run: Jun 18 15:12 UTC. |
 | **No new merges to main** | ℹ️ Last merge: PR #1599 (jn-5674) Jun 18 23:55 IDT |
-| **No new CI runs** | ℹ️ Zero pushes across all board branches — board fully static for ~6.5 hours. |
+| **No new CI runs** | ℹ️ Zero pushes across all board branches — board fully static for ~7 hours. |
 | **PR #1606 (JN-5725, not on this board)** | ↔ UNCHANGED — still failing e2e-smoke + e2e-tests (2 checks). MERGEABLE + REVIEW_REQUIRED. Updated Jun 19 10:48 IDT. Pre-commit already passing (noted last run). |
 
 ---
