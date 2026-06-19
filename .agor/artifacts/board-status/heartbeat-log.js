@@ -182,4 +182,13 @@ export const HEARTBEAT_RUNS = [
     summary: "Board fully static — 10h+ zero activity. PRs #1601 (8 CI fails)/#1604 (CONFLICTING+DRAFT)/#1588 (pre-commit) all unchanged. OFF-BOARD: PR #1606 e2e-smoke DEFINITIVELY HUNG (1h35m since 16:28 IDT) — all other 11 checks PASSING including pre-commit.",
     sessionUrl: "http://localhost:3030/ui/s/019ee065b03373518c79ed2b/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-19 18:33 IDT",
+    actions: 0,
+    findings: 4,
+    status: "ok",
+    summary: "Board fully static — 10.5h+ zero activity. PRs #1601 (8 CI fails)/#1604 (CONFLICTING+DRAFT)/#1588 (pre-commit, BEHIND) all unchanged. OFF-BOARD: PR #1606 e2e-smoke NOW 2h05m+ HUNG — needs cancel+rerun. JN-5539 + JN-5244 newly flagged as In Progress without worktrees.",
+    sessionUrl: "http://localhost:3030/ui/s/019ee081280479db85f33bc8/",
+  },
 ];

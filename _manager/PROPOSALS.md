@@ -4,6 +4,24 @@
 
 ---
 
+## 2026-06-19 18:33 IDT Heartbeat — board static, PR #1606 e2e-smoke 2h+ hung
+
+**Updates since 18:03 IDT:**
+
+- Board fully static — no new commits, CI runs, or sessions.
+- All board PRs (#1601/#1604/#1588) unchanged.
+- PR #1606 (off-board): e2e-smoke now 2h05m+ running — definitively hung. All other 11 checks passing.
+
+---
+
+## 🚨 NEW Proposal: Cancel + re-run e2e-smoke on PR #1606 (JN-5725)
+- **Action:** Joseph cancels the hung `e2e-smoke / e2e` job on PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606) and re-triggers CI (push an empty commit or re-run the workflow).
+- **Reason:** e2e-smoke has been IN_PROGRESS for 2h05m+ since ~16:28 IDT. All other 11 checks are PASSING (including pre-commit ✅). PR is MERGEABLE + REVIEW_REQUIRED — the only blocker is this single hung job. Once it passes + review approval received, this PR can merge.
+- **Risk:** Low — cancelling a stuck job. Re-trigger via GitHub Actions UI or `git commit --allow-empty && git push`.
+- **Status:** PENDING — needs Joseph to act in GitHub Actions UI
+
+---
+
 ## 2026-06-19 10:03 IDT Heartbeat — jn-5675 now MERGEABLE; jn-5676 CI improved
 
 **Updates since 09:33 IDT:**

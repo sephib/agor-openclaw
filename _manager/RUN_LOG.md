@@ -4,6 +4,25 @@
 
 ---
 
+## 2026-06-19 — 30-min Board Advancement Heartbeat (18:33 IDT)
+
+**Session:** 019ee081 | http://localhost:3030/ui/s/019ee081280479db85f33bc8/
+
+**Board summary:** Board fully static — 10.5+ hours since last push on any board branch. ~30 min since last run (18:03 IDT). No new commits, CI runs, or sessions.
+
+**Key findings:**
+- 🚨 jn-5675 (PR #1601): CI still catastrophic — 8 checks failing. Same CI run from 09:19 IDT. No new commits in ~9.5 hours. Fix session proposal still PENDING.
+- 🔴 jn-5676 (PR #1604): Still CONFLICTING + DRAFT. Pre-commit only (2 checks) failing. No change since Jun 18 16:14 IDT.
+- 🔴 PR #1588 (JN-5546): Unchanged — pre-commit failing (2 checks), BEHIND (not MERGEABLE).
+- 🚨 PR #1606 (JN-5725, off-board): e2e-smoke NOW 2h05m+ HUNG (since ~16:28 IDT). All other 11 checks PASSING including pre-commit. MERGEABLE + REVIEW_REQUIRED. Needs cancel+rerun.
+- ℹ️ New: JN-5539 ("Dependency & Build Standardization") and JN-5244 ("Add --user CLI flags") appear In Progress in Jira sprint without board worktrees — added to sprint ticket table.
+
+**Proposals written:** New proposal for PR #1606 e2e-smoke cancellation added to PROPOSALS.md.
+
+**No actions taken** — supervised mode.
+
+---
+
 ## 2026-06-19 — 30-min Board Advancement Heartbeat (18:03 IDT)
 
 **Session:** 019ee065 | http://localhost:3030/ui/s/019ee065b03373518c79ed2b/
