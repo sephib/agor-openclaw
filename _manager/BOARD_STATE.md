@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-19 17:03 IDT (30-min advance heartbeat)*
+*Last updated: 2026-06-19 17:33 IDT (30-min advance heartbeat)*
 
 ---
 
@@ -20,16 +20,16 @@
 
 ---
 
-## Key Changes Since Last Run (Jun 19 16:33 IDT)
+## Key Changes Since Last Run (Jun 19 17:03 IDT)
 
 | What observed | Status |
 |---|---|
-| **PR #1601 (jn-5675)** | ↔ UNCHANGED — MERGEABLE, CI still catastrophic (8 checks failing). Same CI run from 09:19 IDT. No new commits in ~8 hours. |
+| **PR #1601 (jn-5675)** | ↔ UNCHANGED — MERGEABLE, CI still catastrophic (8 checks failing). Same CI run from 09:19 IDT. No new commits in ~9 hours. |
 | **PR #1604 (jn-5676)** | ↔ UNCHANGED — CONFLICTING + DRAFT. pre-commit failing only (2 checks). Last updated: Jun 18 16:14 IDT. |
 | **PR #1588 (jn-5546)** | ↔ UNCHANGED — pre-commit failing (2 checks). MERGEABLE. Last CI run: Jun 18 15:12 UTC. |
 | **No new merges to main** | ℹ️ Last merge: PR #1599 (jn-5674) Jun 18 20:55 UTC (23:55 IDT) |
-| **No new CI runs on board** | ℹ️ Zero pushes across all board branches — board fully static for 8+ hours. |
-| **PR #1606 (JN-5725, not on this board)** | 🆕 NEW CI run at 16:26 IDT — e2e-smoke now IN_PROGRESS. Was last seen updated 10:48 IDT. MERGEABLE + REVIEW_REQUIRED. |
+| **No new CI runs on board** | ℹ️ Zero pushes across all board branches — board fully static for 9+ hours. |
+| **PR #1606 (JN-5725, not on this board)** | ⚠️ e2e-smoke STILL IN_PROGRESS — running since 16:26 IDT (67+ min). Other 10 checks PASSING. May be hung. MERGEABLE + REVIEW_REQUIRED. |
 
 ---
 
