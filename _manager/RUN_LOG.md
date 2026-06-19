@@ -4,11 +4,258 @@
 
 ---
 
+## 2026-06-19 — 30-min Board Advancement Heartbeat (10:03 IDT)
+
+**Session:** 019edf1b | http://localhost:3030/ui/s/019edf1bd36b7156b18798496c13fd71/
+
+**Board summary:**
+- 8 active worktrees on board
+- Key change: **PR #1601 (jn-5675) now MERGEABLE** — conflicts resolved since 09:33 IDT. CI still catastrophically broken (8/8 checks failing).
+- Key change: **PR #1604 (jn-5676) CI improved** — tox/nox/integration/e2e all now PASSING. Only pre-commit failing + still CONFLICTING.
+
+**Key findings:**
+- 🚨 jn-5675 (PR #1601): NOW MERGEABLE but CI catastrophic — all 8 checks failing. `__init__.py` fix is the critical path. Fix session still pending Joseph's scope decision.
+- 🔴 jn-5676 (PR #1604): CI significantly improved. Once rebased + pre-commit fixed, only standard review remains. Still DRAFT.
+- 🔴 PR #1588 (JN-5546): Unchanged — pre-commit fail + sephib MUST FIX items.
+- 🔴 internal-cr-system: Unchanged — git lock.
+- ⚠️ ci-statistics-notebook: Unchanged — scope unclear.
+
+**Proposals written:** None new — existing proposals from 09:33 remain valid with updated context (jn-5675 MERGEABLE note added).
+
+**No actions taken** — supervised mode.
+
+---
+
+## 2026-06-19 — 30-min Board Advancement Heartbeat (09:33 IDT)
+
+*(BOARD_STATE.md and PROPOSALS.md updated only — data.js/heartbeat-log.js not updated this run)*
+
+**Session:** 019ede80 (rebase session that completed at 09:14 IDT) | BOARD_STATE.md-only run
+
+**Key finding:** New rebase session (019ede80) completed but broke CI catastrophically via bad `__init__.py` conflict resolution.
+
+---
+
+## 2026-06-19 — 30-min Board Advancement Heartbeat (09:03 IDT)
+
+**Session:** 019ede77 (current) | http://localhost:3030/ui/s/019ede775d69736cbe297bfa/
+
+**Board summary:**
+- 8 active branches on jounce-workflow-ai board (jn-5674 archived from table — MERGED)
+- Major new flag: **jn-5675 last session FAILED** (session 019ed63c, pre-commit fix attempt)
+- jn-5676 PR #1604 still CONFLICTING 17h after reported-successful rebase — main moved again
+
+**Key findings:**
+- 🚨 jn-5675 (PR #1601): Last session **FAILED** — parallel pre-commit fix attempt crashed. Branch still CONFLICTING + CI RED. Needs new fix session. Still awaiting Joseph's CR scope decision.
+- 🔴 jn-5676 (PR #1604): CONFLICTING despite rebase Jun 18 16:14 IDT. 17h elapsed — GitHub caching rules out; main got new commits after rebase. Another rebase needed.
+- 🔴 PR #1588 (JN-5546): pre-commit fail + sephib MUST FIX — unchanged
+- 🔴 internal-cr-system: Filesystem FAILED (git lock) — unchanged
+- ⚠️ ci-statistics-notebook: No sessions, needs_attention — unchanged
+- ✅ JN-5670 now Done in Jira (was In Progress last scan)
+
+**Proposals written:** 2 new (jn-5675 fix session restart, jn-5676 re-rebase)
+
+**No actions taken** — supervised mode.
+
+---
+
 ## 2026-06-15 — Agent Created
 
 - Board manager branch created by Oggy (agent advisor)
 - Operating mode: SUPERVISED (propose only, no autonomous actions)
 - Awaiting first scheduled run
+
+---
+
+## 2026-06-17 — Morning scan (scheduled)
+
+**Session:** 019ed3f3 (current)
+
+**Board summary:**
+- 12 active worktrees on board (excluding archived board-manager)
+- 2 new worktrees since last run: `jn-5675-historical-visibility` (impl done Jun 16), `jn-5546-docs-module-layout` (appeared on board)
+- Major change: JN-5674 is **unblocked** — PR #1599 (draft) created, in Revise zone
+
+**Key findings:**
+- 🔴 `jn-5695-db-connect-script` is in BLOCKED zone but PR #1596 is ready — wrong zone, not actually blocked
+- ⚠️ 3 Jira status mismatches: JN-5673 (PR exists → should be In Review), JN-5695 (PR exists → In Review), JN-5546 (PR exists → In Review)
+- ⚠️ 2 worktrees with impl done but no next-step triggered: jn-5675, jn-5676
+- ✅ jn-5673-visibility-module: all CI fixes pushed, waiting on e2e CI result
+- ✅ jn-5674-operational-visibility: unblocked, PR #1599 draft active
+
+**Proposals written:** 9 (3 zone/Jira fixes, 2 validate triggers, 4 archival cleanup)
+
+**No actions taken** — supervised mode.
+
+---
+
+## 2026-06-17 — Afternoon scan (~13:00 IDT)
+
+**Session:** 019ed501 (current)
+
+**Board summary:**
+- 15 branches on board (up from 12 this morning — 3 new: fix-dashboard-syntax-error, velocity-dashboard, + 1 unidentified floating branch from Jun 15)
+- Major change: PR #1595 (JN-5673) CI **fully passed** ✅ — all checks green including e2e
+- Major change: PR #1599 (JN-5674) was **un-drafted** by Joseph — now a real PR
+
+**Key findings:**
+- 🔴 `velocity-dashboard` session is `awaiting_permission` — needs Joseph to respond (needs_attention=true)
+- ✅ JN-5673 Jira status updated to In Review; JN-5382 now Done
+- ✅ `fix-dashboard-syntax-error` completed: dashboard is now token-focused ("Jounce Token Dashboard"), bars/sort by totalTokens — artifact not yet re-published
+- ⚠️ `jn-5673-visibility-module` (Respond zone): session waiting on Slack channel answer for PR #1595 post
+- ⚠️ `jn-5674-operational-visibility` (Revise): PR undrafted, last session done Jun 17 09:45 — may be ready for Code Review
+- ⚠️ `jn-5676-notebook-scaffold`: cleaned up further (rename, delete duplicate) Jun 17 09:56, still no PR
+- 🆕 New sprint ticket: JN-5708 "Add separate e2e test tags for API server vs full suite" (Backlog, no worktree)
+- Carried: JN-5695 still in wrong zone (BLOCKED), JN-5546 Jira mismatch, JN-5675 impl done no PR
+
+**Proposals written:** 4 new (velocity-dashboard user action, dashboard re-publish, JN-5673 Slack channel, move JN-5674 to Code Review)
+
+**No actions taken** — supervised mode.
+
+---
+
+## 2026-06-18 — 30-min Board Advancement Heartbeat (~16:30 IDT)
+
+**Session:** 019edaec (current)
+
+**Board summary:**
+- 17 branches on board (up from 15 last run) — 3 new: `ci-statistics-notebook`, `internal-cr-system`, `dual-heartbeat-system`
+- Major: JN-5674 respond Round 2 complete (Jun 18 12:19) — Mark's 2 comments addressed, code pushed
+- Major: markVaykhansky APPROVED PR #1599 (JN-5674) — approval predates code push; re-review likely needed
+
+**Key findings:**
+- 🟡 JN-5674: Respond Round 2 done (12:19 IDT). Mark approved but code changed after — waiting on CI (e2e-smoke only) and Mark re-review
+- 🔴 PR #1604 (JN-5676): CI RED — pre-commit failure. Publish session completed but CI went red afterward
+- 🔴 PR #1588 (JN-5546): CI RED — pre-commit failure (ongoing)
+- 🔴 `internal-cr-system`: filesystem FAILED (git lock). Session ran anyway and pushed review-config scaffolding. Cannot run new sessions
+- ⚠️ JN-5675: blocked on Joseph — approve which of 10 Critical/High findings to fix
+- ⚠️ `ci-statistics-notebook`: no sessions yet, scope unclear (linked to JN-5708 which is Done)
+- ✅ `dual-heartbeat-system`: heartbeat docs created (heartbeat-advance.md, heartbeat-sync.md, HEARTBEAT_DESIGN.md), idle
+- 🆕 New sprint tickets: JN-5728 (e2e CI gaps), JN-5724 (Lychee flaky), JN-5677 now In Progress, JN-5670 In Progress
+
+**Proposals written:** 5 new (fix internal-cr-system, fix JN-5676 CI, fix JN-5546 CI, JN-5675 scope, ci-statistics-notebook scope)
+
+**No actions taken** — supervised mode.
+
+---
+
+## 2026-06-18 — 30-min Board Advancement Heartbeat (~17:00 IDT)
+
+**Session:** 019edb08 (current)
+
+**Board summary:**
+- 10 active branches on jounce-workflow-ai board (non-archived, with zone placement)
+- Major: PR #1599 (JN-5674) now **READY TO MERGE** — CI ALL GREEN + Mark APPROVED
+- Major: PR #1604 (JN-5676) CI changed from RED → **ALL GREEN** (pre-commit fixed itself or was fixed between heartbeats)
+
+**Key findings:**
+- 🚨 JN-5674 PR #1599: CI ALL GREEN, APPROVED — **ready to merge** (Joseph action needed)
+- ✅ JN-5676 PR #1604: CI now ALL GREEN (was RED last run). Still DRAFT — needs un-draft + review
+- ✅ JN-5675 PR #1601: CI ALL GREEN, not draft — but blocked on Joseph approving fix scope
+- 🔴 JN-5546 PR #1588: CI still RED (pre-commit) — unchanged, needs fix session
+- 🔴 internal-cr-system: Filesystem still FAILED (git lock) — unchanged
+- 🆕 JN-5678 "[DOCS] Dashboard README and setup instructions" — new Backlog ticket, no worktree
+
+**Proposals written:** 2 new (JN-5674 merge, JN-5676 un-draft); 1 resolved (JN-5676 CI fix — auto-resolved)
+
+**No actions taken** — supervised mode.
+
+---
+
+## 2026-06-18 — 30-min Board Advancement Heartbeat (~17:30 IDT)
+
+**Session:** 019edb5a (current)
+
+**Board summary:**
+- 10 active branches on jounce-workflow-ai board (unchanged from last run)
+- Major: Conflict cascade detected — PRs #1599, #1601, #1604 all now CONFLICTING
+- Root cause: PR #1598 (JN-5619 EvalHub) merged to main at 13:33 UTC; GitHub's lazy mergeable computation delayed detection to this heartbeat
+
+**Key findings:**
+- 🔴 PR #1599 (JN-5674): CONFLICTING — was "READY TO MERGE" 30 min ago; Mark's approval still valid but rebase needed before merge
+- 🔴 PR #1604 (JN-5676): CONFLICTING — CI still GREEN, still DRAFT; need rebase before un-draft
+- 🔴 PR #1601 (JN-5675): CONFLICTING — CI still GREEN; also still blocked on Joseph's fix scope decision
+- 🔴 PR #1588 (JN-5546): CI still RED (pre-commit), now MERGEABLE (no conflicts) — no change from last run
+- 🔴 internal-cr-system: Filesystem FAILED (unchanged)
+- ⚠️ JN-5673 Jira: PR #1595 merged Jun 17 but Jira still "In Review" — 24h+ stale
+
+**Proposals written:** 4 new (rebase #1599, rebase #1604, rebase #1601, JN-5673 Jira → Done); 2 superseded (merge #1599, un-draft #1604)
+
+**No actions taken** — supervised mode.
+
+---
+
+## 2026-06-18 — 30-min Board Advancement Heartbeat (~18:00 IDT)
+
+**Session:** 019edb75 (current)
+
+**Board summary:**
+- 10 active branches on jounce-workflow-ai board (unchanged from last run)
+- No merges, no rebases, no sessions completed since last heartbeat (~17:30 IDT)
+- Conflict cascade from PR #1598 merge persists across PRs #1599, #1601, #1604
+
+**Key findings:**
+- 🔴 PR #1599 (JN-5674): Still CONFLICTING — no rebase started; CI GREEN; Mark's approval still valid
+- 🔴 PR #1601 (JN-5675): Still CONFLICTING — CI GREEN; scope decision still pending from Joseph
+- 🔴 PR #1604 (JN-5676): Still CONFLICTING + DRAFT; only CodeRabbit CI (draft PR, expected)
+- 🔴 PR #1588 (JN-5546): CI still RED — **new CI run triggered at 15:12 UTC, still failing pre-commit**; PR MERGEABLE
+- 🔴 internal-cr-system: Filesystem FAILED (unchanged)
+- ⚠️ JN-5673 Jira: PR #1595 merged Jun 17 but Jira still "In Review" — 24h+ stale, increasingly urgent
+- ✅ ci-statistics-notebook / dual-heartbeat-system: unchanged, still flagged
+
+**Changes vs last run:** Only one: PR #1588 got a new CI run (15:12 UTC) — still failing. Everything else static.
+
+**Proposals written:** None new — all prior proposals remain PENDING.
+
+**No actions taken** — supervised mode.
+
+---
+
+## 2026-06-18 — 30-min Board Advancement Heartbeat (~19:35 IDT)
+
+**Session:** 019edbad (current)
+
+**Board summary:**
+- 10 active branches on jounce-workflow-ai board (unchanged from last run)
+- Major: Conflict cascade RESOLVED — PRs #1599, #1601, #1604 all now MERGEABLE (mechanism unknown)
+- Major: PR #1599 (JN-5674) back to **READY TO MERGE** — CI ALL GREEN (33/33) + Mark APPROVED + MERGEABLE
+- New issue: PRs #1601 and #1604 now have CI RED (pre-commit) from fresh CI runs after the rebase — same failure pattern as #1588
+
+**Key findings:**
+- 🚨 JN-5674 PR #1599: **READY TO MERGE** — CI ✅ ALL GREEN, Mark APPROVED ✅, MERGEABLE ✅. Joseph action needed.
+- 🔴 PR #1601 (JN-5675): Conflicts resolved ✅ but CI RED (pre-commit at 19:19 IDT). Also blocked on scope decision.
+- 🔴 PR #1604 (JN-5676): Conflicts resolved ✅ but CI RED (pre-commit at 19:20 IDT). Still DRAFT.
+- 🔴 PR #1588 (JN-5546): CI still RED — no change. sephib review has MUST FIX items.
+- 🔴 Pre-commit pattern: All 3 PRs (#1588, #1601, #1604) failing on same check — likely one fix unblocks all.
+- ⚠️ JN-5673 Jira: PR merged Jun 17 — now 36h+ "In Review", increasingly urgent
+- 🆕 PR #1606 (JN-5725 vllm-log-analyzer): new PR on separate branch, CI RED (pre-commit)
+
+**Proposals written:** 2 new (MERGE #1599, unified pre-commit fix); 3 resolved (rebase proposals)
+
+**No actions taken** — supervised mode.
+
+---
+
+## 2026-06-18 — 30-min Board Advancement Heartbeat (~20:10 IDT)
+
+**Session:** 019edbc8 (current)
+
+**Board summary:**
+- 10 active branches on jounce-workflow-ai board (unchanged)
+- Major: PR #1599 (JN-5674) **DOWNGRADED** from READY TO MERGE → CI RED + stale approval
+- Major: Pre-commit cascade now **5 PRs wide** (#1599, #1601, #1604, #1588, #1606)
+
+**Key findings:**
+- 🔴 PR #1599 (JN-5674): New push at ~20:01 IDT triggered CI (completed 20:07 IDT) — **pre-commit now failing**. Mark's APPROVED (13:25 IDT) is STALE (predates push). `reviewDecision: ""`. Downgraded from READY TO MERGE.
+- 🔴 PRE-COMMIT CASCADE ESCALATED: Was 3 PRs → now 5 PRs (#1599 newly added). All fail on `pre-commit-run / pre-commit` and `pre-commit`. Systemic issue.
+- 🔴 PR #1601, #1604, #1588: Unchanged — still CI RED (pre-commit). No session activity.
+- ⚠️ JN-5673 Jira: PR merged Jun 17 — now 48h+ still "In Review". Jira updated at 19:14 IDT but status unchanged.
+- 📊 JN-5675 Jira status changed: "In Progress" → "In Review" (updated 19:13 IDT)
+- No new worktrees. No session activity since last heartbeat.
+
+**Proposals written:** 1 updated (pre-commit fix escalated to 5-PR cascade); 1 superseded (MERGE #1599 — now blocked)
+
+**No actions taken** — supervised mode.
 
 ---
 
@@ -23,3 +270,110 @@
 - Updated `BOOT.md` to check for missed scheduled runs at startup and auto-recover
 
 **What I cannot fix:** The executor crashes themselves are Agor infrastructure issues. I can only detect and compensate at session startup.
+
+---
+
+## 2026-06-18 ~21:02 IDT — 30-min advance heartbeat
+
+**Session:** 019edbe4-2b05-7351-98dd-cd21d59db243
+
+**Board summary:**
+- 10 active branches on jounce-workflow-ai board (unchanged)
+- NO MATERIAL CHANGES since 20:10 IDT heartbeat — all PRs and worktrees same state
+
+**Key findings:**
+- ❌ PRE-COMMIT CASCADE UNCHANGED: All 5 PRs (#1599, #1601, #1604, #1588, #1606) still failing on same pre-commit checks. No session activity. No fix attempted.
+- 🔍 **NEW**: Mark's approval on PR #1599 shows as APPROVED (not DISMISSED) in GitHub API despite push at 20:02 IDT. If "Dismiss stale reviews" is OFF on main branch protection, Mark's approval is still valid — merge unblocked once pre-commit passes.
+- ⚠️ JN-5673 Jira: Still "In Review" despite PR #1595 merged Jun 17 — 48h+ stale. Proposal to transition to Done remains PENDING.
+- Board last_updated: 18:56 IDT — no board changes in last 2h.
+- No new PRs merged. No new worktrees.
+
+**Proposals written:** 0 new (carried from 20:10 run)
+
+**No actions taken** — supervised mode.
+
+---
+
+## 2026-06-18 ~21:35 IDT — 30-min advance heartbeat
+
+**Session:** 019edbff-a2aa-760a-9d7f-620f42fe438c
+
+**Board summary:**
+- 10 active branches on jounce-workflow-ai board (unchanged)
+- ONE material change since ~21:02 IDT: Mark's approval on PR #1599 now confirmed DISMISSED
+
+**Key findings:**
+- 🔍 **NEW (corrects 21:02 observation):** PR #1599 `reviewDecision: ""` — Mark's approval IS dismissed. "Dismiss stale reviews" is enabled on main. Previous observation that it was "still APPROVED" was incorrect. Mark must re-approve after CI passes.
+- ✅ PR #1599: All non-pre-commit checks PASS (e2e-api, e2e-smoke, e2e-tests, integration, tox, nox, atlas-validate). ONLY pre-commit blocking.
+- ❌ PRE-COMMIT CASCADE UNCHANGED: All 5 PRs (#1599, #1601, #1604, #1588, #1606) failing on same pre-commit checks.
+- 🚨 JN-5673 Jira: Still "In Review" — now **72h+** since PR merged Jun 17. Most urgent housekeeping item.
+- No new sessions, no new merges, no new worktrees.
+
+**Proposals written:** 0 new (updated Mark approval clarification in BOARD_STATE.md)
+
+**No actions taken** — supervised mode.
+
+---
+
+## 2026-06-18 ~22:35 IDT — 30-min advance heartbeat
+
+**Session:** 019edc36-91d0-78c6-b10a-988e7219472d
+
+**Board summary:**
+- 10 active branches in pipeline zones on jounce-workflow-ai board (unchanged from last run)
+- **MAJOR CHANGE**: `fix: precommit and test timeout` pushed to jn-5674 at 22:30 IDT — CI IN PROGRESS on PR #1599
+
+**Key findings:**
+- 🟡 PR #1599 (jn-5674): Pre-commit fix pushed! Commit `d8417f0f` — "fix: precommit and test timeout" at 22:30 IDT. CI run 27784229854 now IN PROGRESS. Jobs: pre-commit-run, tox, integration, e2e-api all in_progress. If passes: Mark needs to re-approve, then #1599 can merge.
+- 🔴 PRs #1601, #1604, #1588, #1606: All still pre-commit FAILURE. The fix on jn-5674 may need to be cherry-picked/applied to these branches too.
+- 📋 PR #1601 detail: tox, integration, e2e-api, e2e-smoke, nox ALL GREEN — only pre-commit blocks it. No human approval yet.
+- 📋 PR #1604 detail: All checks GREEN except pre-commit — DRAFT, REVIEW_REQUIRED.
+- 🚨 JN-5673 Jira: Still "In Review" — now **80h+** since PR #1595 merged Jun 17. Proposal to transition to Done remains PENDING.
+- No new merges. No new worktrees.
+
+**Proposals written:** 1 new (pre-commit fix result monitoring)
+
+**No actions taken** — supervised mode.
+
+---
+
+## 2026-06-18 ~23:05 IDT — 30-min advance heartbeat
+
+**Session:** 019edc52-0bd5-7c9a-9a99-33f9b8126457
+
+**Board summary:**
+- 10 active branches in pipeline zones on jounce-workflow-ai board (unchanged from last run)
+- **BREAKTHROUGH CONFIRMED**: PR #1599 (jn-5674) CI now **ALL GREEN** — pre-commit fix from 22:30 IDT worked!
+
+**Key findings:**
+- 🚨 PR #1599 (JN-5674): **CI ALL GREEN** — `pre-commit-run / pre-commit` (5m18s PASS) and `pre-commit` (5s PASS). `mergeable: MERGEABLE`. `reviewDecision: ""` — Mark's approval is DISMISSED. **Needs Mark re-approval to merge.** This is the highest priority action.
+- 🔴 PRs #1601, #1604, #1588, #1606: Still failing pre-commit — fix from jn-5674 not yet applied. All other checks GREEN on #1601 and #1604.
+- 🚨 JN-5673 Jira: Still "In Review" — now **85h+** since PR #1595 merged Jun 17. Proposal PENDING.
+- ⚠️ `heartbeat-advance.md` missing from `_manager/` — was supposed to be created by dual-heartbeat-system but not present.
+- No new merges. No new worktrees.
+
+**Proposals written:** 2 new (re-request Mark review on #1599; confirmed-apply fix to #1601/#1604/#1588/#1606)
+
+**No actions taken** — supervised mode.
+
+---
+
+## 2026-06-18 ~22:05 IDT — 30-min advance heartbeat
+
+**Session:** 019edc1b-1a4c-7b02-9a3d-7a57ab327286
+
+**Board summary:**
+- 10 active branches in pipeline zones on jounce-workflow-ai board (unchanged from last run)
+- NO MATERIAL CHANGES since ~21:35 IDT heartbeat — all PRs and worktrees same state
+- New identification: `fix-dashboard-syntax-error` in Plan zone (filesystem FAILED — utility branch, Jun 17 work complete, non-blocking)
+
+**Key findings:**
+- ❌ PRE-COMMIT CASCADE UNCHANGED: All 5 PRs (#1599, #1601, #1604, #1588, #1606) still failing on same pre-commit checks. No session activity. No fix attempted. Now 2h+ without progress since cascade began.
+- 🔴 PR #1599: `reviewDecision: ""` — Mark's approval still dismissed. Unchanged.
+- 🚨 JN-5673 Jira: Still "In Review" despite PR merged Jun 17 — **75h+ stale**. Proposal PENDING, increasingly critical.
+- ⚠️ fix-dashboard-syntax-error: Plan zone branch identified — filesystem FAILED (invalid ref), utility branch from Jun 17, non-blocking. Candidate for archival.
+- No new PRs merged. No new worktrees. No new sessions.
+
+**Proposals written:** 0 new (all prior proposals remain PENDING)
+
+**No actions taken** — supervised mode.

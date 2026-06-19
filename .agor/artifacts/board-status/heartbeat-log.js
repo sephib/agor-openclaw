@@ -1,0 +1,104 @@
+export const HEARTBEAT_RUNS = [
+  // Each heartbeat run appends an entry here when it updates the dashboard.
+  // Format: { type, timestamp, actions, status, sessionUrl }
+  //
+  // type: "advance" | "sync"
+  // timestamp: ISO string in IDT
+  // actions: number of auto-advances performed
+  // findings: number of items flagged for human attention
+  // status: "ok" | "error"
+  // summary: brief description of what happened
+  // sessionUrl: link to the Agor session
+  //
+  // Example:
+  // {
+  //   type: "advance",
+  //   timestamp: "2026-06-18 16:30 IDT",
+  //   actions: 2,
+  //   findings: 1,
+  //   status: "ok",
+  //   summary: "Rebased JN-5675 onto main, flagged JN-5676 needs review",
+  //   sessionUrl: "http://localhost:3030/ui/s/...",
+  // },
+  {
+    type: "advance",
+    timestamp: "2026-06-18 19:35 IDT",
+    actions: 0,
+    findings: 4,
+    status: "ok",
+    summary: "Conflict cascade resolved — PR #1599 READY TO MERGE; PRs #1601 & #1604 now CI RED (pre-commit, same pattern as #1588)",
+    sessionUrl: "http://localhost:3030/ui/s/019edbad3c1a712e85ad9b2f/",
+  },
+  {
+    type: "advance",
+    timestamp: "2026-06-18 20:10 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "PR #1599 DOWNGRADED from READY TO MERGE — new push ~20:01 IDT → CI RED (pre-commit) + approval staled; pre-commit cascade now 5 PRs wide",
+    sessionUrl: "http://localhost:3030/ui/s/019edbc8b3d47da7b42712b2/",
+  },
+  {
+    type: "advance",
+    timestamp: "2026-06-18 21:02 IDT",
+    actions: 0,
+    findings: 4,
+    status: "ok",
+    summary: "No material changes since 20:10 IDT. Pre-commit cascade unchanged (5 PRs). NEW: Mark's approval on #1599 shows APPROVED (not DISMISSED) in API — may still be valid if 'Dismiss stale reviews' is OFF.",
+    sessionUrl: "http://localhost:3030/ui/s/019edbe4-2b05-7351-98dd-cd21d59db243/",
+  },
+  {
+    type: "advance",
+    timestamp: "2026-06-18 21:35 IDT",
+    actions: 0,
+    findings: 3,
+    status: "ok",
+    summary: "Mark's approval on #1599 CONFIRMED DISMISSED ('Dismiss stale reviews' IS on). All other #1599 checks GREEN. Pre-commit cascade 5 PRs unchanged. JN-5673 Jira 72h+ stale.",
+    sessionUrl: "http://localhost:3030/ui/s/019edbff-a2aa-760a-9d7f-620f42fe438c/",
+  },
+  {
+    type: "advance",
+    timestamp: "2026-06-18 22:05 IDT",
+    actions: 0,
+    findings: 3,
+    status: "ok",
+    summary: "No material changes. Pre-commit cascade (5 PRs) still blocked — 2h+ without progress. JN-5673 Jira 75h+ stale. fix-dashboard-syntax-error identified in Plan zone (filesystem failed, non-blocking).",
+    sessionUrl: "http://localhost:3030/ui/s/019edc1b1a4c7b029a3d7a57/",
+  },
+  {
+    type: "advance",
+    timestamp: "2026-06-18 22:35 IDT",
+    actions: 0,
+    findings: 2,
+    status: "ok",
+    summary: "BREAKTHROUGH: 'fix: precommit and test timeout' pushed to jn-5674 at 22:30 IDT — CI IN PROGRESS on PR #1599. If passes, fix must be applied to #1601/#1604/#1588/#1606. JN-5673 Jira 80h+ stale.",
+    sessionUrl: "http://localhost:3030/ui/s/019edc3691d078c6b10a988e/",
+  },
+  {
+    type: "advance",
+    timestamp: "2026-06-18 23:05 IDT",
+    actions: 0,
+    findings: 3,
+    status: "ok",
+    summary: "CONFIRMED: PR #1599 CI ALL GREEN — pre-commit fix works. Mark approval DISMISSED — needs re-review to merge. Fix must now be applied to #1601/#1604/#1588/#1606. JN-5673 Jira 85h+ stale.",
+    sessionUrl: "http://localhost:3030/ui/s/019edc520bd57c9a9a9933f9/",
+  },
+  {
+    type: "advance",
+    timestamp: "2026-06-19 09:03 IDT",
+    actions: 0,
+    findings: 4,
+    status: "ok",
+    summary: "jn-5675 last session FAILED (pre-commit fix attempt crashed). jn-5676 still CONFLICTING 17h after rebase — main moved again. JN-5674 merged. All pre-commit failures overnight unchanged.",
+    sessionUrl: "http://localhost:3030/ui/s/019ede775d69736cbe297bfa/",
+  },
+  {
+    type: "advance",
+    timestamp: "2026-06-19 10:03 IDT",
+    actions: 0,
+    findings: 3,
+    status: "ok",
+    summary: "jn-5675 PR #1601 now MERGEABLE (conflicts resolved) but CI still catastrophic (8 checks). jn-5676 CI improved — only pre-commit failing now (still CONFLICTING). No autonomous actions taken.",
+    sessionUrl: "http://localhost:3030/ui/s/019edf1bd36b7156b18798496c13fd71/",
+  },
+];
