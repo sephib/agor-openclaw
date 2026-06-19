@@ -155,4 +155,13 @@ export const HEARTBEAT_RUNS = [
     summary: "Board fully static — no changes since 16:03 IDT. 7.5h+ of zero activity. PRs #1601 (8 CI fails)/#1604 (CONFLICTING+DRAFT)/#1588 (pre-commit) all unchanged. jn-5675 fix session still PENDING approval.",
     sessionUrl: "http://localhost:3030/ui/s/019ee01349817c1eb99f1d77/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-19 17:03 IDT",
+    actions: 0,
+    findings: 3,
+    status: "ok",
+    summary: "Board fully static — no changes on board branches since 16:33 IDT. 8h+ of zero activity. ONE off-board change: PR #1606 (JN-5725) new CI run triggered at 16:26 IDT — e2e-smoke IN_PROGRESS. Board PRs #1601/#1604/#1588 all unchanged.",
+    sessionUrl: "http://localhost:3030/ui/s/019ee02ec0fe7e458b016beb/",
+  },
 ];
