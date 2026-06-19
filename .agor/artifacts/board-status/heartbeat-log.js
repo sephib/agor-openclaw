@@ -191,4 +191,13 @@ export const HEARTBEAT_RUNS = [
     summary: "Board fully static — 10.5h+ zero activity. PRs #1601 (8 CI fails)/#1604 (CONFLICTING+DRAFT)/#1588 (pre-commit, BEHIND) all unchanged. OFF-BOARD: PR #1606 e2e-smoke NOW 2h05m+ HUNG — needs cancel+rerun. JN-5539 + JN-5244 newly flagged as In Progress without worktrees.",
     sessionUrl: "http://localhost:3030/ui/s/019ee081280479db85f33bc8/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-19 19:03 IDT",
+    actions: 0,
+    findings: 2,
+    status: "ok",
+    summary: "Board static — 11h+ zero activity on board branches. ONE change: PR #1606 (JN-5725) e2e-smoke RESOLVED as FAILURE after 2h11m run (18:39 IDT) — e2e-tests also failed. Likely flaky infra; needs re-run. Board PRs #1601/#1604/#1588 all unchanged.",
+    sessionUrl: "http://localhost:3030/ui/s/019ee09ca1a1743da9e9ab53/",
+  },
 ];

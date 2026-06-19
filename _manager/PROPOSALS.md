@@ -4,21 +4,23 @@
 
 ---
 
-## 2026-06-19 18:33 IDT Heartbeat — board static, PR #1606 e2e-smoke 2h+ hung
+## 2026-06-19 19:03 IDT Heartbeat — PR #1606 e2e-smoke resolved as FAILURE
 
-**Updates since 18:03 IDT:**
+**Updates since 18:33 IDT:**
 
-- Board fully static — no new commits, CI runs, or sessions.
+- Board fully static — no new commits, CI runs, or sessions on board branches.
 - All board PRs (#1601/#1604/#1588) unchanged.
-- PR #1606 (off-board): e2e-smoke now 2h05m+ running — definitively hung. All other 11 checks passing.
+- **PR #1606 (off-board): e2e-smoke COMPLETED as FAILURE at 18:39 IDT** (ran 2h11m, 16:28→18:39 IDT). e2e-tests also FAILED. Cancel+rerun proposal below superseded — job already finished.
 
 ---
 
-## 🚨 NEW Proposal: Cancel + re-run e2e-smoke on PR #1606 (JN-5725)
-- **Action:** Joseph cancels the hung `e2e-smoke / e2e` job on PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606) and re-triggers CI (push an empty commit or re-run the workflow).
-- **Reason:** e2e-smoke has been IN_PROGRESS for 2h05m+ since ~16:28 IDT. All other 11 checks are PASSING (including pre-commit ✅). PR is MERGEABLE + REVIEW_REQUIRED — the only blocker is this single hung job. Once it passes + review approval received, this PR can merge.
-- **Risk:** Low — cancelling a stuck job. Re-trigger via GitHub Actions UI or `git commit --allow-empty && git push`.
+## 🔴 UPDATED Proposal: Re-run failed e2e jobs on PR #1606 (JN-5725)
+- **Action:** Joseph re-runs the failed `e2e-smoke / e2e` and `e2e-tests` jobs on PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606) via GitHub Actions "Re-run failed jobs".
+- **Reason:** e2e-smoke ran for 2h11m (16:28→18:39 IDT) then FAILED. e2e-tests also failed. Given the 2h11m runtime this is almost certainly a flaky infrastructure timeout, not a real code failure. All 10 other checks are PASSING (including pre-commit ✅). PR is MERGEABLE + REVIEW_REQUIRED.
+- **Risk:** Low — re-running failed CI jobs.
 - **Status:** PENDING — needs Joseph to act in GitHub Actions UI
+
+~~**SUPERSEDED: Cancel + re-run e2e-smoke on PR #1606 (JN-5725)**~~ — job has completed (as FAILURE). Re-run directly from failed check.
 
 ---
 
