@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-19 10:03 IDT (30-min advance heartbeat)*
+*Last updated: 2026-06-19 10:33 IDT (30-min advance heartbeat)*
 
 ---
 
@@ -20,16 +20,16 @@
 
 ---
 
-## Key Changes Since Last Run (Jun 19 09:33 IDT)
+## Key Changes Since Last Run (Jun 19 10:03 IDT)
 
 | What observed | Status |
 |---|---|
-| **PR #1601 (jn-5675) now MERGEABLE** | 🆕 Conflicts resolved — was CONFLICTING at 09:33 IDT. CI still catastrophic (8 checks failing). |
-| **PR #1604 (jn-5676) CI improved** | 🆕 tox / integration / nox / integration-tests / e2e-tests all NOW PASSING. Only pre-commit failing + still CONFLICTING. |
-| **PR #1588 (jn-5546) unchanged** | ❌ pre-commit still failing, MERGEABLE. No new CI run. |
+| **PR #1601 (jn-5675)** | ↔ UNCHANGED — MERGEABLE, CI still catastrophic (8 checks failing). Same CI run from 09:17 IDT. No new commits. |
+| **PR #1604 (jn-5676)** | ↔ UNCHANGED — CONFLICTING + DRAFT. pre-commit failing only. Last CI run: Jun 18 19:14 IDT. |
+| **PR #1588 (jn-5546)** | ↔ UNCHANGED — pre-commit failing. MERGEABLE. Last CI run: Jun 18 18:12 IDT. |
 | **No new merges to main** | ℹ️ Last merge: PR #1599 (jn-5674) Jun 18 23:55 IDT |
-| **JN-5670 "Benchmark Visibility Dashboard" in Jira** | ⚠️ In Progress — no board worktree |
-| **JN-5539, JN-5244 in Jira** | ℹ️ In Progress — not on this board |
+| **No new CI runs** | ℹ️ Zero pushes across all branches in the last 30 min — board fully static. |
+| **jn-5674-operational-visibility still in Respond zone** | 🗑️ PR #1599 MERGED Jun 18 23:55 IDT — archive proposal still PENDING |
 
 ---
 
