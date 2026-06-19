@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-19 19:03 IDT";
+export const LAST_UPDATED = "2026-06-19 20:03 IDT";
 
 export const WORKTREES = [
   {
@@ -171,6 +171,10 @@ export const MERGED = [
 ];
 
 export const ALERTS = [
+  {
+    level: "green",
+    message: "🟢 PR #1606 (JN-5725, off-board): NEW CI RUN — e2e-smoke IN_PROGRESS since ~19:45 IDT. Joseph re-triggered after previous FAILURE. 11 other checks PASSING. If passes → review approval only needed to merge.",
+  },
   {
     level: "red",
     message: "🚨 jn-5675 (PR #1601): MERGEABLE but CI CATASTROPHIC — all 8 checks failing. Broken __init__.py from rebase session 019ede80. Fix session needed ASAP.",

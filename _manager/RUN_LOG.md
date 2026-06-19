@@ -4,6 +4,42 @@
 
 ---
 
+## 2026-06-19 — 30-min Board Advancement Heartbeat (20:03 IDT)
+
+**Session:** 019ee0d3 | http://localhost:3030/ui/s/019ee0d38e137bca981554ca/
+
+**Board summary:** Board branches fully static (12+ hours). ONE material change off-board: PR #1606 (JN-5725) has a new CI run in progress since 19:45 IDT — Joseph re-triggered e2e-smoke.
+
+**Key findings:**
+- ↔ jn-5675 (PR #1601): CI still catastrophic — 8 checks failing. Same CI run from 09:19 IDT. No new commits in ~12 hours. Fix session proposal still PENDING.
+- ↔ jn-5676 (PR #1604): Still CONFLICTING + DRAFT. Pre-commit only (2 checks) failing. No change since Jun 18 16:14 IDT.
+- ↔ PR #1588 (JN-5546): Unchanged — pre-commit failing (2 checks), MERGEABLE.
+- 🟢 **PR #1606 (JN-5725, off-board) STATUS CHANGE**: Joseph re-triggered CI at ~19:45 IDT. e2e-smoke / e2e now IN_PROGRESS. All 11 other checks PASSING. MERGEABLE + REVIEW_REQUIRED (no reviews). If passes → needs review approval only.
+
+**Proposals written:** Updated PR #1606 proposal — marked ACTIONED (CI re-triggered by Joseph).
+
+**No autonomous actions taken** — supervised mode.
+
+---
+
+## 2026-06-19 — 30-min Board Advancement Heartbeat (19:33 IDT)
+
+**Session:** 019ee0b8 | http://localhost:3030/ui/s/019ee0b816837d8f937078cf/
+
+**Board summary:** Board fully static — 11.5+ hours since last push on any board branch. ~30 min since last run (19:03 IDT).
+
+**Key findings:**
+- ↔ jn-5675 (PR #1601): CI still catastrophic — 8 checks failing. Same CI run from 09:19 IDT. No new commits in ~10.5 hours. Fix session proposal still PENDING.
+- ↔ jn-5676 (PR #1604): Still CONFLICTING + DRAFT. Pre-commit only (2 checks) failing. No change since Jun 18 16:14 IDT.
+- ↔ PR #1588 (JN-5546): Unchanged — pre-commit failing (2 checks), MERGEABLE.
+- ↔ PR #1606 (JN-5725, off-board): Unchanged — e2e-smoke FAILURE (resolved 18:39 IDT after 2h11m run). No new CI run since.
+
+**Proposals written:** None new — existing proposals unchanged.
+
+**No actions taken** — supervised mode.
+
+---
+
 ## 2026-06-19 — 30-min Board Advancement Heartbeat (19:03 IDT)
 
 **Session:** 019ee09c | http://localhost:3030/ui/s/019ee09ca1a1743da9e9ab53/

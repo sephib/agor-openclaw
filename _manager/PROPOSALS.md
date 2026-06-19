@@ -4,21 +4,21 @@
 
 ---
 
-## 2026-06-19 19:03 IDT Heartbeat — PR #1606 e2e-smoke resolved as FAILURE
+## 2026-06-19 20:03 IDT Heartbeat — PR #1606 NEW CI RUN IN PROGRESS
 
-**Updates since 18:33 IDT:**
+**Updates since 19:33 IDT:**
 
 - Board fully static — no new commits, CI runs, or sessions on board branches.
 - All board PRs (#1601/#1604/#1588) unchanged.
-- **PR #1606 (off-board): e2e-smoke COMPLETED as FAILURE at 18:39 IDT** (ran 2h11m, 16:28→18:39 IDT). e2e-tests also FAILED. Cancel+rerun proposal below superseded — job already finished.
+- **PR #1606 (off-board): 🟢 NEW CI RUN** — Joseph re-triggered e2e-smoke at ~19:45 IDT. e2e-smoke / e2e now IN_PROGRESS. All 11 other checks PASSING. If this passes, only review approval remains.
 
 ---
 
-## 🔴 UPDATED Proposal: Re-run failed e2e jobs on PR #1606 (JN-5725)
-- **Action:** Joseph re-runs the failed `e2e-smoke / e2e` and `e2e-tests` jobs on PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606) via GitHub Actions "Re-run failed jobs".
-- **Reason:** e2e-smoke ran for 2h11m (16:28→18:39 IDT) then FAILED. e2e-tests also failed. Given the 2h11m runtime this is almost certainly a flaky infrastructure timeout, not a real code failure. All 10 other checks are PASSING (including pre-commit ✅). PR is MERGEABLE + REVIEW_REQUIRED.
-- **Risk:** Low — re-running failed CI jobs.
-- **Status:** PENDING — needs Joseph to act in GitHub Actions UI
+## ✅ ACTIONED: Re-run e2e jobs on PR #1606 (JN-5725) — CI NOW IN PROGRESS
+
+- **Action (originally proposed):** Re-run failed `e2e-smoke / e2e` jobs on PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606)
+- **Status:** ✅ ACTIONED — Joseph re-triggered CI at ~19:45 IDT. e2e-smoke IN_PROGRESS.
+- **Next:** Watch for e2e-smoke result. If PASS → request review. If FAIL (again) → determine if flaky infra or real code issue.
 
 ~~**SUPERSEDED: Cancel + re-run e2e-smoke on PR #1606 (JN-5725)**~~ — job has completed (as FAILURE). Re-run directly from failed check.
 

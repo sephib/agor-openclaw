@@ -200,4 +200,22 @@ export const HEARTBEAT_RUNS = [
     summary: "Board static — 11h+ zero activity on board branches. ONE change: PR #1606 (JN-5725) e2e-smoke RESOLVED as FAILURE after 2h11m run (18:39 IDT) — e2e-tests also failed. Likely flaky infra; needs re-run. Board PRs #1601/#1604/#1588 all unchanged.",
     sessionUrl: "http://localhost:3030/ui/s/019ee09ca1a1743da9e9ab53/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-19 19:33 IDT",
+    actions: 0,
+    findings: 2,
+    status: "ok",
+    summary: "Board fully static — 11.5h+ zero activity on all board branches. Zero changes since 19:03 IDT. PRs #1601 (8 CI fails)/#1604 (CONFLICTING+DRAFT)/#1588 (pre-commit) all unchanged. PR #1606 (off-board) e2e-smoke failure unchanged — no new CI run.",
+    sessionUrl: "http://localhost:3030/ui/s/019ee0b816837d8f937078cf/",
+  },
+  {
+    type: "advance",
+    timestamp: "2026-06-19 20:03 IDT",
+    actions: 0,
+    findings: 1,
+    status: "ok",
+    summary: "Board branches static (12h+). ONE change: PR #1606 (JN-5725, off-board) e2e-smoke NEW CI RUN IN PROGRESS since 19:45 IDT — Joseph re-triggered after previous FAILURE. 11 other checks PASSING. If passes → review approval only needed.",
+    sessionUrl: "http://localhost:3030/ui/s/019ee0d38e137bca981554ca/",
+  },
 ];

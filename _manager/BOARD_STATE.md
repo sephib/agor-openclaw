@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-19 19:03 IDT (30-min advance heartbeat)*
+*Last updated: 2026-06-19 20:03 IDT (30-min advance heartbeat)*
 
 ---
 
@@ -21,16 +21,16 @@
 
 ---
 
-## Key Changes Since Last Run (Jun 19 18:33 IDT)
+## Key Changes Since Last Run (Jun 19 19:33 IDT)
 
 | What observed | Status |
 |---|---|
-| **PR #1601 (jn-5675)** | ↔ UNCHANGED — MERGEABLE, CI still catastrophic (8 checks failing). Same CI run from 09:19 IDT. No new commits in ~10 hours. |
+| **PR #1601 (jn-5675)** | ↔ UNCHANGED — MERGEABLE, CI still catastrophic (8 checks failing). Same CI run from 09:19 IDT. No new commits in ~12 hours. |
 | **PR #1604 (jn-5676)** | ↔ UNCHANGED — CONFLICTING + DRAFT. pre-commit failing only (2 checks). Last updated: Jun 18 16:14 IDT. |
 | **PR #1588 (jn-5546)** | ↔ UNCHANGED — pre-commit failing (2 checks). MERGEABLE. Last CI run: Jun 18 15:12 UTC. |
 | **No new merges to main** | ℹ️ Last merge: PR #1599 (jn-5674) Jun 18 20:55 UTC (23:55 IDT) |
-| **No new CI runs on board** | ℹ️ Zero pushes across all board branches — board fully static for 11+ hours. |
-| **PR #1606 (JN-5725, off-board)** | 🔴 **STATUS CHANGE**: e2e-smoke COMPLETED as FAILURE at 18:39 IDT (after 2h11m run). e2e-tests also FAILED. All other 10 checks still PASSING. PR MERGEABLE + REVIEW_REQUIRED — blocked by e2e failures. Needs rerun (likely flaky infrastructure given 2h+ runtime). |
+| **No new CI runs on board** | ℹ️ Zero pushes across all board branches — board fully static for 12+ hours. |
+| **PR #1606 (JN-5725, off-board)** | 🟢 **NEW CI RUN IN PROGRESS** — e2e-smoke / e2e: IN_PROGRESS since ~19:45 IDT. PR updated at 19:45 IDT. Joseph re-triggered CI after the e2e-smoke FAILURE. All 11 other checks PASSING. MERGEABLE + REVIEW_REQUIRED (no reviews yet). If e2e-smoke passes → only review approval needed to merge. |
 
 ---
 
@@ -52,15 +52,14 @@ Root cause: broken `__init__.py` conflict resolution from session 019ede80 ("mer
 
 ---
 
-### 🔴 OFF-BOARD — PR #1606 (JN-5725) e2e-smoke FAILED (after 2h11m run)
+### 🟢 OFF-BOARD — PR #1606 (JN-5725) e2e-smoke NEW CI RUN IN PROGRESS
 
-PR #1606 status as of 18:39 IDT:
-- 10 of 12 checks PASSING (pre-commit-run ✅, tox ✅, integration ✅, e2e-api ✅, pre-commit ✅, nox ✅, integration-tests ✅, atlas-validate ✅)
-- **e2e-smoke / e2e: FAILURE** (ran 13:28→15:39 UTC = 16:28→18:39 IDT — 2h11m)
-- **e2e-tests: FAILURE** (downstream, ran 15:39 UTC — 5s after e2e-smoke)
-- MERGEABLE + REVIEW_REQUIRED
+PR #1606 status as of 20:03 IDT:
+- 11 checks PASSING (pre-commit-run ✅, tox ✅, integration ✅, e2e-api ✅, pre-commit ✅, nox ✅, integration-tests ✅, atlas-validate ✅ + others)
+- **e2e-smoke / e2e: IN_PROGRESS** — new run triggered ~19:45 IDT
+- MERGEABLE + REVIEW_REQUIRED (no reviews yet, reviews: [])
 
-The hung job has now resolved as FAILURE. Given the 2h11m runtime this is almost certainly a flaky infrastructure timeout, not a real code failure. Joseph needs to **re-run the failed jobs** in GitHub Actions UI (or re-trigger CI). Once e2e-smoke passes, PR will only need a review approval.
+Joseph re-triggered CI (acted on the re-run proposal from 19:03 IDT run). If e2e-smoke passes, only a review approval is needed to merge. Watch this closely — result expected within 1-2 hours if CI follows previous pattern.
 
 ---
 
