@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-19 14:33 IDT (30-min advance heartbeat)*
+*Last updated: 2026-06-19 15:03 IDT (30-min advance heartbeat)*
 
 ---
 
@@ -20,17 +20,16 @@
 
 ---
 
-## Key Changes Since Last Run (Jun 19 10:33 IDT)
+## Key Changes Since Last Run (Jun 19 14:33 IDT)
 
 | What observed | Status |
 |---|---|
-| **JN-5673 Jira** | ✅ NOW DONE — was "In Review" 85h+ stale. Finally resolved. |
-| **PR #1601 (jn-5675)** | ↔ UNCHANGED — MERGEABLE, CI still catastrophic (8 checks failing). Same CI run from 09:17 IDT. No new commits. |
+| **PR #1601 (jn-5675)** | ↔ UNCHANGED — MERGEABLE, CI still catastrophic (8 checks failing). Same CI run from 09:17 IDT. No new commits in ~6 hours. |
 | **PR #1604 (jn-5676)** | ↔ UNCHANGED — CONFLICTING + DRAFT. pre-commit failing only. Last updated: Jun 18 16:14 IDT. |
 | **PR #1588 (jn-5546)** | ↔ UNCHANGED — pre-commit failing. MERGEABLE. Last CI run: Jun 18 15:12 UTC. |
 | **No new merges to main** | ℹ️ Last merge: PR #1599 (jn-5674) Jun 18 23:55 IDT |
-| **No new CI runs** | ℹ️ Zero pushes across all branches — board fully static for ~5 hours. |
-| **⚠️ 4-hour heartbeat gap** | ℹ️ Last logged run was 10:33 IDT. This run is 14:33 IDT — ~4h gap on 30-min schedule. Schedules may have been skipped or missed. |
+| **No new CI runs** | ℹ️ Zero pushes across all board branches — board fully static for ~6 hours. |
+| **PR #1606 (JN-5725, not on this board)** | ⬆️ Improved since 14:33 — pre-commit now PASSING. Still failing e2e-smoke + e2e-tests (2 checks). MERGEABLE + REVIEW_REQUIRED. Updated Jun 19 10:48 IDT. |
 
 ---
 
