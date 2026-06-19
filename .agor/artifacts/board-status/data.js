@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-19 20:33 IDT";
+export const LAST_UPDATED = "2026-06-19 21:03 IDT";
 
 export const WORKTREES = [
   {
@@ -42,8 +42,8 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1588",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1588",
-    status: "CI RED (pre-commit only — tox/nox all PASS). sephib MUST FIX items outstanding.",
-    blockedOn: "Pre-commit CI fix + sephib review MUST FIX items",
+    status: "CI RED (pre-commit only — tox/nox all PASS). BEHIND (base advanced). sephib MUST FIX items outstanding.",
+    blockedOn: "Rebase onto main + pre-commit CI fix + sephib review MUST FIX items",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ed01e5624752fbade0eab/",
     sessionLabel: "fix session",

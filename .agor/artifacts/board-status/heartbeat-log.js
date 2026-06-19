@@ -227,4 +227,13 @@ export const HEARTBEAT_RUNS = [
     summary: "Board static (12.5h+). ONE change: PR #1606 (JN-5725, off-board) e2e-smoke FAILED AGAIN — Joseph's re-triggered run completed as FAILURE (e2e-smoke + e2e-tests). 2nd consecutive failure; 11 other checks PASSING. Board PRs #1601/#1604/#1588 all unchanged.",
     sessionUrl: "http://localhost:3030/ui/s/019ee0ef05af7ed38ce4cf2fe2d3d718/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-19 21:03 IDT",
+    actions: 0,
+    findings: 2,
+    status: "ok",
+    summary: "Board static (13h+). No changes since 20:33 IDT. PR #1606 (off-board) 2nd e2e failure — still no new CI run, no reviews. PR #1588 now BEHIND (base advanced). Board PRs #1601/#1604/#1588 all unchanged.",
+    sessionUrl: "http://localhost:3030/ui/s/019ee10a7d897d72b9c9ed43/",
+  },
 ];

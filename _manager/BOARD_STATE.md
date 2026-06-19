@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-19 20:33 IDT (30-min advance heartbeat)*
+*Last updated: 2026-06-19 21:03 IDT (30-min advance heartbeat)*
 
 ---
 
@@ -21,16 +21,16 @@
 
 ---
 
-## Key Changes Since Last Run (Jun 19 20:03 IDT)
+## Key Changes Since Last Run (Jun 19 20:33 IDT)
 
 | What observed | Status |
 |---|---|
-| **PR #1601 (jn-5675)** | ↔ UNCHANGED — MERGEABLE, CI still catastrophic (8 checks failing). No new commits in ~12 hours. |
+| **PR #1601 (jn-5675)** | ↔ UNCHANGED — MERGEABLE, CI still catastrophic (8 checks failing). No new commits in ~13 hours. |
 | **PR #1604 (jn-5676)** | ↔ UNCHANGED — CONFLICTING + DRAFT. pre-commit failing only (2 checks). Last updated: Jun 18 16:14 IDT. |
-| **PR #1588 (jn-5546)** | ↔ UNCHANGED — pre-commit failing (2 checks). MERGEABLE. |
-| **No new merges to main** | ℹ️ Last merge: PR #1599 (jn-5674) Jun 18 23:55 IDT |
-| **No new CI runs on board** | ℹ️ Zero pushes across all board branches — board fully static 12.5+ hours. |
-| **PR #1606 (JN-5725, off-board)** | 🔴 **e2e-smoke FAILED AGAIN** — The CI run Joseph re-triggered at ~19:45 IDT has now completed as FAILURE. e2e-smoke / e2e: FAILURE. e2e-tests: FAILURE. 11 other checks still PASSING. MERGEABLE + REVIEW_REQUIRED. This is the SECOND e2e failure on this PR. |
+| **PR #1588 (jn-5546)** | ⚠️ MergeStateStatus changed BEHIND (was MERGEABLE) — base branch advanced. Still 2 pre-commit failures. Still MERGEABLE. |
+| **No new merges to main** | ℹ️ Last merge: PR #1599 (jn-5674) Jun 18 20:55 UTC |
+| **No new CI runs on board** | ℹ️ Zero pushes across all board branches — board fully static 13+ hours. |
+| **PR #1606 (JN-5725, off-board)** | ↔ UNCHANGED — 2nd e2e failure (since 20:33 IDT). No new CI run. No reviews. |
 
 ---
 
