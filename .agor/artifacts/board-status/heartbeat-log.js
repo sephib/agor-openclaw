@@ -632,4 +632,13 @@ export const HEARTBEAT_RUNS = [
     summary: "ONE change: PR #1606 (JN-5725, off-board) 5th CI run COMPLETED 18:52 IDT — 5TH CONSECUTIVE FAILURE (e2e-smoke/e2e ❌, e2e-tests ❌; all other 12 checks ✅). Systemic e2e issue confirmed. Board branches static 46.5h+.",
     sessionUrl: "http://localhost:3030/ui/s/019ee5c30d3c792ab2c1e915f8faaae9/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-20 19:30 IDT",
+    actions: 0,
+    findings: 3,
+    status: "ok",
+    summary: "Board fully static — zero changes since 19:00 IDT. PRs #1601 (8 CI fails, 47h+ stuck)/#1604 (CONFLICTING+DRAFT, 53.5h+)/#1588 (pre-commit, BEHIND, 54.5h+) all unchanged. PR #1606 (off-board) 5th e2e failure still latest — no new CI runs since 18:52 IDT.",
+    sessionUrl: "http://localhost:3030/ui/s/019ee5de825b734d83374149/",
+  },
 ];
