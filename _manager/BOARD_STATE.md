@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-20 21:30 IDT (30-min advance heartbeat)*
+*Last updated: 2026-06-20 22:00 IDT (30-min advance heartbeat)*
 
 ---
 
@@ -10,7 +10,7 @@
 |--------|------|------|-------------|-----|-----|--------|-------|
 | jn-5675-historical-visibility | [JN-5675](https://jounce.atlassian.net/browse/JN-5675) | Code | In Progress | [#1601](https://github.com/Jounce-IO/jounce/pull/1601) | ❌❌ **CATASTROPHIC** — pre-commit + tox + integration + e2e-api + nox + integration-tests + e2e-tests ALL FAILING | — | 🚨 MERGEABLE (conflicts resolved by session 019ede80) but CI catastrophic — broken `__init__.py` fix needed |
 | jn-5676-notebook-scaffold | [JN-5676](https://jounce.atlassian.net/browse/JN-5676) | Publish | In Progress | [#1604](https://github.com/Jounce-IO/jounce/pull/1604) DRAFT | ❌ pre-commit FAIL only + **CONFLICTING** (tox/nox/integration/e2e all ✅) | — | 🔴 CONFLICTING; CI improved — only pre-commit blocking once conflict resolved |
-| jn-5546-docs-module-layout | [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | Code Review | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | ❌ pre-commit FAIL (tox/integration/nox all ✅) — MERGEABLE | sephib COMMENTED (MUST FIX items) | 🔴 Pre-commit fix + sephib MUST FIX items |
+| jn-5546-docs-module-layout | [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | Code Review | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | ❌ pre-commit FAIL (tox/integration/nox all ✅) — BEHIND | sephib COMMENTED (MUST FIX items) | 🔴 Pre-commit fix + sephib MUST FIX items |
 | ci-statistics-notebook | [JN-5708](https://jounce.atlassian.net/browse/JN-5708) (issue link) | Code | Done | — | — | — | ⚠️ No sessions; JN-5708 Done; scope unclear |
 | internal-cr-system | — | Code | — | — | — | — | 🔴 Filesystem FAILED (git lock) — unchanged |
 | dual-heartbeat-system | — | Code | — | — | — | — | ✅ Idle, docs done |
@@ -21,23 +21,37 @@
 
 ---
 
-## Key Changes Since Last Run (Jun 20 21:00 IDT)
+## Key Changes Since Last Run (Jun 20 21:30 IDT)
 
 | What observed | Status |
 |---|---|
+| **PR #1602 (JN-5685/JN-5679, off-board)** | 🆕 NEW — `persist-monotonicity-test` branch. Updated 21:52 IDT. CONFLICTING. atlas-validate ❌ (all other checks PASS). 0 reviews. |
 | **PR #1601 (jn-5675)** | ↔ UNCHANGED — MERGEABLE (no conflicts), CI catastrophic (8 checks failing). 36.5h+ no new commits since rebase at 09:19 IDT Jun 19. |
 | **PR #1604 (jn-5676)** | ↔ UNCHANGED — CONFLICTING + DRAFT. pre-commit failing only. Last updated Jun 18 16:14 IDT (53.5h+). |
 | **PR #1588 (jn-5546)** | ↔ UNCHANGED — BEHIND. pre-commit failing (2 checks). Last updated Jun 18 15:12 IDT (54.5h+). |
-| **No new merges to main** | ℹ️ Last merge: PR #1599 (jn-5674) Jun 18 23:55 IDT — main branch static 45.5h+. |
-| **PR #1606 (JN-5725, off-board)** | ↔ UNCHANGED — 5th CI run remains most recent (completed 18:52 IDT). No new runs since 18:52 IDT (~2.5h+). e2e-smoke/e2e ❌, e2e-tests ❌. All other checks PASSING. |
+| **No new merges to main** | ℹ️ Last merge: PR #1599 (jn-5674) Jun 18 23:55 IDT — main branch static 46h+. |
+| **PR #1606 (JN-5725, off-board)** | ↔ UNCHANGED — 5th CI run remains most recent (completed 18:52 IDT). No new runs since 18:52 IDT (~3h+). e2e-smoke/e2e ❌, e2e-tests ❌. All other checks PASSING. |
 
 ---
 
 ## Attention Items
 
+### 🆕 NEW — PR #1602 (JN-5685/JN-5679, off-board) — monotonicity persistence
+
+New PR updated at 21:52 IDT Jun 20 (8 min before this heartbeat). NOT on any board worktree.
+- Branch: `persist-monotonicity-test`
+- PR: [#1602](https://github.com/Jounce-IO/jounce/pull/1602) — "feat(jbenchmark): add monotonicity verdict persistence tables and ingestion (JN-5685, JN-5679)"
+- State: OPEN, CONFLICTING (needs rebase), REVIEW_REQUIRED, not draft, 0 reviews
+- CI: ❌ **atlas-validate** FAILURE + **atlas-validate-run** FAILURE; ✅ pre-commit, nox, integration-tests, e2e-tests, tox, integration all PASSING
+- Last review fix commit: "fix(jbenchmark): address review findings for monotonicity persistence"
+
+Needs: rebase onto main + atlas-validate fix + review.
+
+---
+
 ### 🚨 HIGHEST PRIORITY — jn-5675 `__init__.py` still broken
 
-PR #1601 is **MERGEABLE** (conflicts resolved by session 019ede80 at ~09:19 IDT). But ALL CI checks continue to fail — now 36h+ without any fix:
+PR #1601 is **MERGEABLE** (conflicts resolved by session 019ede80 at ~09:19 IDT). But ALL CI checks continue to fail — now 36.5h+ without any fix:
 - `pre-commit-run / pre-commit` FAILURE
 - `tox-run / tox` FAILURE
 - `integration-run / integration` FAILURE
@@ -53,14 +67,14 @@ Root cause: broken `__init__.py` conflict resolution from session 019ede80 ("mer
 
 ### 🔴 OFF-BOARD — PR #1606 (JN-5725) 5th CI Run COMPLETED: 5TH FAILURE
 
-PR #1606 status as of 21:00 IDT Jun 20:
+PR #1606 status as of 22:00 IDT Jun 20:
 - **5th CI run COMPLETED: FAILURE** — completed 18:52 IDT (run ID: 27872550696)
 - ✅ PASSING: check-changes, JIRA Association, pre-commit-run/pre-commit, tox-run/tox, integration-run/integration, e2e-api/e2e, pre-commit, nox, integration-tests, atlas-validate
 - ❌ FAILING: **e2e-smoke/e2e** ❌, **e2e-tests** ❌
 - Skipped: bake, atlas-validate-run, e2e-product
 - MERGEABLE + REVIEW_REQUIRED (0 reviews)
 
-**Pattern: 5 consecutive failures, same 2 tests failing, all else PASSING.** This is definitively a systemic e2e issue, not random flake. The e2e-smoke/e2e and e2e-tests are the only consistent failures across all 5 runs. Investigation of the e2e failure logs is now warranted before any further re-runs.
+**Pattern: 5 consecutive failures, same 2 tests failing, all else PASSING.** This is definitively a systemic e2e issue, not random flake. Investigation of the e2e failure logs is now warranted before any further re-runs.
 
 ---
 
@@ -72,7 +86,7 @@ PR #1606 status as of 21:00 IDT Jun 20:
 
 ### 🔴 PR #1588 (JN-5546) — pre-commit + sephib MUST FIX
 
-Unchanged. MERGEABLE + pre-commit failing + sephib MUST FIX items outstanding.
+Unchanged. BEHIND + pre-commit failing + sephib MUST FIX items outstanding.
 
 ---
 

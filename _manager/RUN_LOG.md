@@ -4,6 +4,27 @@
 
 ---
 
+## 2026-06-20 — 30-min Board Advancement Heartbeat (22:00 IDT)
+
+**Session:** 019ee667 | http://localhost:3030/ui/s/019ee667d8447fe8a33928e3/
+
+**Board summary:** ONE new finding — PR #1602 (`persist-monotonicity-test`, JN-5685/JN-5679) spotted at 21:52 IDT. Not a board worktree; off-board PR. Board branches otherwise static — no new CI runs, no new commits on any board PR. Main branch static 46h+ since PR #1599 merged Jun 18 23:55 IDT.
+
+**Key findings:**
+- 🆕 **PR #1602 (JN-5685/JN-5679, off-board)**: `persist-monotonicity-test` branch — "add monotonicity verdict persistence tables and ingestion". Updated 21:52 IDT. CONFLICTING. ❌ atlas-validate + atlas-validate-run failing; ✅ pre-commit, tox, integration, nox, e2e-tests all PASSING. 0 reviews. Not on any board worktree.
+- ↔ jn-5675 (PR #1601): CI still catastrophic — 8 checks failing. 36.5h+ since last commit (rebase at 09:19 IDT Jun 19). MERGEABLE. Fix session proposal still PENDING (highest priority).
+- ↔ jn-5676 (PR #1604): Still CONFLICTING + DRAFT. pre-commit only failing. No change since Jun 18 16:14 IDT (~53.5h+).
+- ↔ PR #1588 (JN-5546): BEHIND. 2 pre-commit failures. No change since Jun 18 15:12 IDT (~54.5h+).
+- ↔ **PR #1606 (JN-5725, off-board)**: 5th consecutive e2e failure (18:52 IDT) remains most recent. No new CI runs since 18:52 IDT (~3h+).
+
+**Jira:** No status changes — all tickets match previous run.
+
+**Proposals written:** None new — existing proposals unchanged.
+
+**No autonomous actions taken** — supervised mode.
+
+---
+
 ## 2026-06-20 — 30-min Board Advancement Heartbeat (21:30 IDT)
 
 **Session:** 019ee64c | http://localhost:3030/ui/s/019ee64c60b179e89e8aea56/

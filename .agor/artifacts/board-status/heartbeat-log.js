@@ -31,6 +31,15 @@ export const HEARTBEAT_RUNS = [
   },
   {
     type: "advance",
+    timestamp: "2026-06-20 22:00 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "NEW: PR #1602 (JN-5685/JN-5679, persist-monotonicity-test) updated 21:52 IDT — CONFLICTING + atlas-validate failing, 0 reviews, off-board. All board PRs unchanged.",
+    sessionUrl: "http://localhost:3030/ui/s/019ee667d8447fe8a33928e3/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-20 21:30 IDT",
     actions: 0,
     findings: 4,
