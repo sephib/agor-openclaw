@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-20 18:30 IDT";
+export const LAST_UPDATED = "2026-06-20 19:00 IDT";
 
 export const WORKTREES = [
   {
@@ -172,8 +172,8 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "yellow",
-    message: "⚡ PR #1606 (JN-5725, off-board): 5th CI RUN NOW IN PROGRESS (queued 18:31 IDT). Previous 4 runs all failed e2e. Jobs running: pre-commit, integration, tox, e2e-api. 0 reviews. Result expected within ~15-20 min.",
+    level: "red",
+    message: "🔴 PR #1606 (JN-5725, off-board): 5th CI RUN COMPLETED 18:52 IDT — 5TH CONSECUTIVE FAILURE. e2e-smoke/e2e ❌, e2e-tests ❌. All other 12 checks PASSING (pre-commit ✅, tox ✅, integration ✅, e2e-api ✅, nox ✅). Systemic e2e issue confirmed — investigation of failure logs needed before further re-runs. 0 reviews.",
   },
   {
     level: "red",

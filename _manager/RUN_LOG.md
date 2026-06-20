@@ -4,6 +4,26 @@
 
 ---
 
+## 2026-06-20 — 30-min Board Advancement Heartbeat (19:00 IDT)
+
+**Session:** 019ee5c3 | http://localhost:3030/ui/s/019ee5c30d3c792ab2c1e915f8faaae9/
+
+**Board summary:** ONE CHANGE — PR #1606 (off-board, JN-5725) 5th CI run **COMPLETED at 18:52 IDT: 5TH CONSECUTIVE FAILURE**. e2e-smoke/e2e ❌ + e2e-tests ❌. All other 12 checks PASSING. Systemic e2e issue confirmed. Board branches static 46.5h+.
+
+**Key findings:**
+- 🔴 **PR #1606 (JN-5725, off-board)**: **5th run COMPLETED as FAILURE** (18:52 IDT). e2e-smoke/e2e ❌, e2e-tests ❌. All other checks PASSING (pre-commit ✅, tox ✅, integration ✅, e2e-api ✅, nox ✅). 5 consecutive failures = systemic e2e issue confirmed. Investigation needed.
+- ↔ jn-5675 (PR #1601): CI still catastrophic — 8 checks failing. 46.5h+ since last commit. MERGEABLE. Fix session proposal still PENDING (highest priority).
+- ↔ jn-5676 (PR #1604): Still CONFLICTING + DRAFT. pre-commit only failing. 52.5h+ no change.
+- ↔ PR #1588 (JN-5546): BEHIND. 2 pre-commit failures. 52.5h+ no change.
+
+**Jira:** No status changes — all tickets match previous run.
+
+**Proposals written:** None new — existing proposals unchanged (e2e investigation proposal remains PENDING).
+
+**No autonomous actions taken** — supervised mode.
+
+---
+
 ## 2026-06-20 — 30-min Board Advancement Heartbeat (18:30 IDT)
 
 **Session:** 019ee5a7 | http://localhost:3030/ui/s/019ee5a793247ebabe698f4bf51a447d/
