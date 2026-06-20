@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-21 00:04 IDT";
+export const LAST_UPDATED = "2026-06-21 02:01 IDT";
 
 export const WORKTREES = [
   {
@@ -10,7 +10,7 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1601",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1601",
-    status: "🚨 MERGEABLE (conflicts resolved!) but CI CATASTROPHIC — all 8 checks failing. Broken __init__.py from rebase session 019ede80. 48h+ no fix.",
+    status: "🚨 MERGEABLE (conflicts resolved!) but CI CATASTROPHIC — all 8 checks failing. Broken __init__.py from rebase session 019ede80. 50h+ no fix.",
     blockedOn: "Fix broken __init__.py (import collision from merge-both-sides conflict resolution)",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ede80727b73af9ee27e9d/",
@@ -26,9 +26,9 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1607",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1607",
-    status: "🆕 NEW (created 23:15 IDT Jun 20) — OPEN, MERGEABLE, REVIEW_REQUIRED. CI not fully visible yet (only CodeRabbit showing).",
-    blockedOn: "CI confirmation + review",
-    blockedType: "running",
+    status: "⚠️ OPEN, MERGEABLE, REVIEW_REQUIRED. CI NOT TRIGGERED — only CodeRabbit showing after 2h45m. Possible devcontainer-only change skips CI workflows.",
+    blockedOn: "CI non-trigger investigation + review",
+    blockedType: "blocked",
     sessionUrl: null,
     sessionLabel: null,
     lastActive: "2026-06-20 23:15 IDT",
@@ -90,7 +90,7 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1604 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1604",
-    status: "CI improved — only pre-commit failing (tox/nox/integration/e2e all PASS). Still CONFLICTING. DRAFT. 62h+ stalled.",
+    status: "CI pre-commit failing only (tox/nox/integration/e2e all PASS). Still CONFLICTING. DRAFT. 64h+ stalled.",
     blockedOn: "Rebase onto main + pre-commit fix → un-draft + review",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019edb7fb4c770d78fc7a47d/",
@@ -106,7 +106,7 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1588",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1588",
-    status: "CI RED (pre-commit only — tox/nox all PASS). BEHIND (base advanced). sephib MUST FIX items outstanding. 63h+ stalled.",
+    status: "CI RED (pre-commit only — tox/nox all PASS). MERGEABLE. sephib MUST FIX items outstanding. 65h+ stalled.",
     blockedOn: "Rebase onto main + pre-commit CI fix + sephib review MUST FIX items",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ed01e5624752fbade0eab/",
@@ -221,15 +221,15 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "green",
-    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): 'persist-monotonicity-test' — CI ALL GREEN! pre-commit ✅, tox ✅, integration ✅, e2e-tests ✅, nox ✅, atlas-validate ✅. MERGEABLE, REVIEW_REQUIRED. Ready for review — needs reviewer assigned.",
+    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): 'persist-monotonicity-test' — CI ALL GREEN since ~00:00 IDT Jun 21 (2h+). pre-commit ✅, tox ✅, integration ✅, e2e-tests ✅, nox ✅, atlas-validate ✅. MERGEABLE, REVIEW_REQUIRED. Ready for review — needs reviewer assigned.",
   },
   {
     level: "red",
-    message: "🚨 jn-5675 (PR #1601): MERGEABLE but CI CATASTROPHIC — all 8 checks failing. Broken __init__.py from rebase session 019ede80. 48h+ no fix. URGENT session needed.",
+    message: "🚨 jn-5675 (PR #1601): MERGEABLE but CI CATASTROPHIC — all 8 checks failing. Broken __init__.py from rebase session 019ede80. 50h+ no fix. URGENT session needed.",
   },
   {
     level: "yellow",
-    message: "🆕 JN-5729 hotfix: Two branches (jn-5729-pin-python-313 with PR #1607 in Code, jn-5729-pin-uv-default-python in Ingest with no PR). JN-5729 Jira still Backlog + unassigned. PR #1607 CI not fully showing — needs monitoring.",
+    message: "⚠️ JN-5729 PR #1607: CI NOT TRIGGERED after 2h45m — only CodeRabbit showing. Possible devcontainer-only change skips CI workflows. JN-5729 still Backlog + unassigned. jn-5729-pin-uv-default-python (Ingest) likely superseded.",
   },
   {
     level: "red",
@@ -237,11 +237,11 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 jn-5676 (PR #1604): CONFLICTING + DRAFT. CI otherwise clean (only pre-commit blocking). Rebase + pre-commit fix needed. 62h+ stalled.",
+    message: "🔴 jn-5676 (PR #1604): CONFLICTING + DRAFT. CI otherwise clean (only pre-commit blocking). Rebase + pre-commit fix needed. 64h+ stalled.",
   },
   {
     level: "red",
-    message: "🔴 PR #1588 (JN-5546): BEHIND + pre-commit failing + sephib MUST FIX items outstanding. 63h+ stalled.",
+    message: "🔴 PR #1588 (JN-5546): MERGEABLE + pre-commit failing + sephib MUST FIX items outstanding. 65h+ stalled.",
   },
   {
     level: "yellow",

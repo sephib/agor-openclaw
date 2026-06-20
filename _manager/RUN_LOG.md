@@ -1673,3 +1673,39 @@
 **No actions taken** — supervised mode.
 
 **Next:** 02:00 IDT overnight heartbeat
+
+---
+
+## 02:01 IDT Jun 21 — Overnight Advance Heartbeat
+
+**Session:** 019ee743-69ef-7d17-9bf0-2f777edea67f
+
+**Board summary:**
+- 12 worktrees on jounce-workflow-ai board — FULLY STATIC since 00:04 IDT run
+- BOARD_STATE.md was ~2h old (at boundary; full refresh performed)
+- 🎉 PR #1602 (JN-5685/JN-5679): CI ALL GREEN, OPEN, 2h+ since green — still no reviewer
+- ⚠️ PR #1607 (jn-5729): Only CodeRabbit shown after 2h45m — CI may not have triggered
+
+**PRs checked:** [#1602](https://github.com/Jounce-IO/jounce/pull/1602) (✅ ALL GREEN, OPEN), [#1601](https://github.com/Jounce-IO/jounce/pull/1601) (❌ CI catastrophic, unchanged), [#1607](https://github.com/Jounce-IO/jounce/pull/1607) (⚠️ CI non-trigger), [#1604](https://github.com/Jounce-IO/jounce/pull/1604) (❌ pre-commit + CONFLICTING unchanged), [#1588](https://github.com/Jounce-IO/jounce/pull/1588) (❌ pre-commit unchanged, MERGEABLE), [#1606](https://github.com/Jounce-IO/jounce/pull/1606) (❌ e2e-smoke/e2e-tests unchanged, 5th run)
+
+**Merges detected:** None since Jun 18 (PR #1599 last merge)
+
+**CI changes:** No changes from 00:04 IDT run — all PRs static
+
+**New branches:** None
+
+**Jira:**
+- JN-5662: Still "In Review" (PR #1591 merged Jun 15, 6 days stale)
+- All other Jira statuses unchanged
+
+**Flags:**
+- 🎉 PR #1602 ready for review (2h+ CI green, no reviewer yet)
+- 🚨 PR #1601 (jn-5675): 50h+ no fix, CI catastrophic
+- ⚠️ PR #1607: CI non-trigger — investigate why only CodeRabbit showing
+- 🔴 JN-5662 Jira stale (should be Done)
+
+**Proposals written:** 0 new (all prior proposals remain PENDING)
+
+**No actions taken** — supervised mode.
+
+**Next:** 04:00 IDT overnight heartbeat

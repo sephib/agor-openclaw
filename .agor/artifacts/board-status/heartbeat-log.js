@@ -704,4 +704,13 @@ export const HEARTBEAT_RUNS = [
     summary: "TWO NEW branches for JN-5729 hotfix (jn-5729-pin-python-313 with PR #1607 + jn-5729-pin-uv-default-python). PR #1602 CI ALL GREEN — ready for review. JN-5673 Jira confirmed Done. PR #1601 CI still catastrophic (48h+ no fix). PR #1606 5th e2e failure unchanged.",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019ee6d58b3173309cd69aef/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-21 02:01 IDT",
+    actions: 0,
+    findings: 3,
+    status: "ok",
+    summary: "Board fully static since 00:04 IDT. PR #1602 CI ALL GREEN 2h+ still waiting for reviewer. PR #1607 (JN-5729 hotfix) CI not triggered after 2h45m — only CodeRabbit showing. All other PRs (#1601/#1604/#1588/#1606) unchanged.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019ee74369ef7d179bf02f77/",
+  },
 ];
