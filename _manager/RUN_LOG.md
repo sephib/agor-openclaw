@@ -4,6 +4,46 @@
 
 ---
 
+## 2026-06-20 — 30-min Board Advancement Heartbeat (18:00 IDT)
+
+**Session:** 019ee58c | http://localhost:3030/ui/s/019ee58c1b7d7f8b95079b48/
+
+**Board summary:** Zero changes since 17:30 IDT. Board fully static — all board branches unchanged, no new CI runs on PR #1606 (1.5h+), no new commits. 44.5h+ since last activity on any board branch.
+
+**Key findings:**
+- ↔ jn-5675 (PR #1601): CI still catastrophic — 8 checks failing. 44.5h+ since last commit (rebase at 09:19 IDT Jun 19). MERGEABLE (no conflicts). Fix session proposal still PENDING (highest priority).
+- ↔ jn-5676 (PR #1604): Still CONFLICTING + DRAFT. pre-commit only failing. No change since Jun 18 16:14 IDT (51.5h+).
+- ↔ PR #1588 (JN-5546): BEHIND. 2 pre-commit failures. No change since Jun 18 15:12 IDT (51.5h+).
+- ↔ **PR #1606 (JN-5725, off-board)**: Unchanged — 4th consecutive e2e failure from 16:32 IDT Jun 20. No new CI runs (1.5h+ since last run). 0 reviews.
+
+**Jira:** No status changes — all tickets match previous run.
+
+**Proposals written:** None new — existing proposals unchanged.
+
+**No autonomous actions taken** — supervised mode.
+
+---
+
+## 2026-06-20 — 30-min Board Advancement Heartbeat (17:30 IDT)
+
+**Session:** 019ee570 | http://localhost:3030/ui/s/019ee570a3c3756aa121530033601fd8/
+
+**Board summary:** Zero changes since 17:00 IDT. Board fully static — all board branches unchanged, no new CI runs on PR #1606, no new commits. 43.5h+ since last activity on any board branch.
+
+**Key findings:**
+- ↔ jn-5675 (PR #1601): CI still catastrophic — 8 checks failing. 43.5h+ since last commit (rebase at 09:19 IDT Jun 19). MERGEABLE (no conflicts). Fix session proposal still PENDING (highest priority).
+- ↔ jn-5676 (PR #1604): Still CONFLICTING + DRAFT. pre-commit only failing. No change since Jun 18 16:14 IDT (50.5h+).
+- ↔ PR #1588 (JN-5546): BEHIND. 2 pre-commit failures. No change since Jun 18 15:12 IDT (50.5h+).
+- ↔ **PR #1606 (JN-5725, off-board)**: Unchanged — 4th consecutive e2e failure from 16:32 IDT Jun 20. No new CI runs (1h+ since last run).
+
+**Jira:** No status changes — all tickets match previous run.
+
+**Proposals written:** None new — existing proposals unchanged.
+
+**No autonomous actions taken** — supervised mode.
+
+---
+
 ## 2026-06-20 — 30-min Board Advancement Heartbeat (17:00 IDT)
 
 **Session:** 019ee555 | http://localhost:3030/ui/s/019ee5552c7d7ba9bf1d916a/

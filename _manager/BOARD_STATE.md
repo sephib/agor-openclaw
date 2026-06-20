@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-20 17:00 IDT (30-min advance heartbeat)*
+*Last updated: 2026-06-20 18:00 IDT (30-min advance heartbeat)*
 
 ---
 
@@ -21,15 +21,15 @@
 
 ---
 
-## Key Changes Since Last Run (Jun 20 16:30 IDT)
+## Key Changes Since Last Run (Jun 20 17:30 IDT)
 
 | What observed | Status |
 |---|---|
-| **PR #1601 (jn-5675)** | ↔ UNCHANGED — MERGEABLE (no conflicts), CI catastrophic (8 checks failing). 43h+ no new commits since rebase at 09:19 IDT Jun 19. |
-| **PR #1604 (jn-5676)** | ↔ UNCHANGED — CONFLICTING + DRAFT. pre-commit failing only. Last updated Jun 18 16:14 IDT (50h+). |
-| **PR #1588 (jn-5546)** | ↔ UNCHANGED — BEHIND. pre-commit failing (2 checks). Last updated Jun 18 15:12 IDT (50h+). |
-| **No new merges to main** | ℹ️ Last merge: PR #1599 (jn-5674) Jun 18 23:55 IDT — board fully static 43h+. |
-| **PR #1606 (JN-5725, off-board)** | ↔ UNCHANGED — 4th consecutive e2e failure from run completed 16:32 IDT Jun 20. No new CI runs since then. e2e-api/e2e ❌ + e2e-tests ❌. e2e-smoke SKIPPED. 0 reviews. |
+| **PR #1601 (jn-5675)** | ↔ UNCHANGED — MERGEABLE (no conflicts), CI catastrophic (8 checks failing). 44.5h+ no new commits since rebase at 09:19 IDT Jun 19. |
+| **PR #1604 (jn-5676)** | ↔ UNCHANGED — CONFLICTING + DRAFT. pre-commit failing only. Last updated Jun 18 16:14 IDT (51.5h+). |
+| **PR #1588 (jn-5546)** | ↔ UNCHANGED — BEHIND. pre-commit failing (2 checks). Last updated Jun 18 15:12 IDT (51.5h+). |
+| **No new merges to main** | ℹ️ Last merge: PR #1599 (jn-5674) Jun 18 23:55 IDT — board fully static 44.5h+. |
+| **PR #1606 (JN-5725, off-board)** | ↔ UNCHANGED — 4th consecutive e2e failure from run completed 16:32 IDT Jun 20. No new CI runs since then (1.5h+). e2e-api/e2e ❌ + e2e-tests ❌. e2e-smoke SKIPPED. 0 reviews. |
 
 ---
 
@@ -37,7 +37,7 @@
 
 ### 🚨 HIGHEST PRIORITY — jn-5675 `__init__.py` still broken
 
-PR #1601 is **MERGEABLE** (conflicts resolved by session 019ede80 at ~09:14 IDT). But ALL CI checks continue to fail — now 43h+ without any fix:
+PR #1601 is **MERGEABLE** (conflicts resolved by session 019ede80 at ~09:14 IDT). But ALL CI checks continue to fail — now 44.5h+ without any fix:
 - `pre-commit-run / pre-commit` FAILURE
 - `tox-run / tox` FAILURE
 - `integration-run / integration` FAILURE
