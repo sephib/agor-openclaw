@@ -695,4 +695,13 @@ export const HEARTBEAT_RUNS = [
     summary: "Board fully static — zero changes since 20:00 IDT. PRs #1601 (8 CI fails, 35h+ stuck)/#1604 (CONFLICTING+DRAFT, 49.5h+)/#1588 (pre-commit, BEHIND, 50.5h+) all unchanged. PR #1606 (off-board) 5th e2e failure still latest — no new CI runs since 18:52 IDT (~1.5h+).",
     sessionUrl: "http://localhost:3030/ui/s/019ee615714b7264bd5ea75cb8190294/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-21 00:04 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "TWO NEW branches for JN-5729 hotfix (jn-5729-pin-python-313 with PR #1607 + jn-5729-pin-uv-default-python). PR #1602 CI ALL GREEN — ready for review. JN-5673 Jira confirmed Done. PR #1601 CI still catastrophic (48h+ no fix). PR #1606 5th e2e failure unchanged.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019ee6d58b3173309cd69aef/",
+  },
 ];

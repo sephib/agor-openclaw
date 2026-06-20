@@ -4,6 +4,40 @@
 
 ---
 
+## 2026-06-21 00:04 IDT — Overnight Heartbeat Findings
+
+### 🎉 PR #1602 CI ALL GREEN — Needs Review
+
+PR [#1602](https://github.com/Jounce-IO/jounce/pull/1602) — "feat(jbenchmark): add monotonicity verdict persistence tables and ingestion (JN-5685, JN-5679)"
+
+All CI checks now passing (completed after 22:30 IDT Jun 20). OPEN, MERGEABLE, REVIEW_REQUIRED, 0 reviews.
+
+## Proposal: Request review on PR #1602 (JN-5685/JN-5679)
+- **Action:** Request review from appropriate reviewer(s) on PR [#1602](https://github.com/Jounce-IO/jounce/pull/1602)
+- **Reason:** CI is ALL GREEN — pre-commit, tox, integration, e2e-tests, nox, atlas-validate all passing. MERGEABLE. Only review approval remains.
+- **Risk:** None — standard review request.
+- **Worktree:** N/A (off-board PR, branch: `persist-monotonicity-test`)
+- **Status:** PENDING — requires Joseph to assign reviewer
+
+---
+
+## Proposal: Clarify JN-5729 branch relationship (jn-5729-pin-uv-default-python vs jn-5729-pin-python-313)
+- **Action:** Determine if `jn-5729-pin-uv-default-python` (Ingest zone, no PR) should be archived now that `jn-5729-pin-python-313` (Code zone, PR [#1607](https://github.com/Jounce-IO/jounce/pull/1607)) is the active approach
+- **Reason:** Two branches for the same JN-5729 hotfix created within 4 minutes. `pin-python-313` has a PR already; `pin-uv-default-python` is still in Ingest with no PR. Likely superseded.
+- **Risk:** Low if `pin-uv-default-python` is truly superseded. Medium if it was an alternative fix that should be preserved.
+- **Worktree:** `jn-5729-pin-uv-default-python` (branch_id: `019ee6a9-5093-7a95-9cf1-46b6579322ba`)
+- **Status:** PENDING — needs Joseph to confirm which approach is active
+
+---
+
+## Proposal: Archive code-reviewes worktree
+- **Action:** Archive worktree `code-reviewes` (branch_id: `019eca19-5393-7e1e-bc66-e9daa06733f7`) in Code Review zone
+- **Reason:** No PR, no sessions, no Jira ticket. Code review work completed Jun 15 per prior run notes.
+- **Risk:** Low — no active work, easily reversible.
+- **Status:** PENDING — cleanup, awaiting Joseph approval
+
+---
+
 ## 2026-06-19 20:33 IDT Heartbeat — PR #1606 e2e FAILED AGAIN (2nd failure)
 
 **Updates since 20:03 IDT:**

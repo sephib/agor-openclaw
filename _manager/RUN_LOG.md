@@ -1632,3 +1632,44 @@
 **Proposals written:** 0 new (all prior proposals remain PENDING)
 
 **No actions taken** — supervised mode.
+
+---
+
+## 00:04 IDT Jun 21 — Overnight Advance Heartbeat
+
+**Session:** 019ee6d5-8b31-7330-9cd6-9aefcf759101
+
+**Board summary:**
+- 12 worktrees on jounce-workflow-ai board (2 NEW: jn-5729-pin-python-313, jn-5729-pin-uv-default-python)
+- ⚠️ BOARD_STATE.md was 8h+ stale — full refresh performed
+- 🎉 PR #1602 (JN-5685/JN-5679): CI ALL GREEN — was IN_PROGRESS at last heartbeat. Ready for review.
+- ✅ JN-5673 Jira: Now correctly DONE (was stuck "In Review" 80h+)
+
+**PRs checked:** [#1601](https://github.com/Jounce-IO/jounce/pull/1601) (❌ CI catastrophic unchanged), [#1604](https://github.com/Jounce-IO/jounce/pull/1604) (❌ pre-commit + CONFLICTING unchanged), [#1588](https://github.com/Jounce-IO/jounce/pull/1588) (❌ pre-commit + BEHIND unchanged), [#1607](https://github.com/Jounce-IO/jounce/pull/1607) (🆕 new, CI not fully visible), [#1602](https://github.com/Jounce-IO/jounce/pull/1602) (✅ ALL GREEN), [#1606](https://github.com/Jounce-IO/jounce/pull/1606) (❌ e2e-smoke/e2e-tests unchanged)
+
+**Merges detected:** None since Jun 18 (PR #1599 last merge)
+
+**CI changes:**
+- PR #1602: IN_PROGRESS → ALL GREEN 🎉
+- All other PRs: unchanged
+
+**New branches:**
+- `jn-5729-pin-python-313` (Code zone, PR #1607) — hotfix to pin Python 3.13
+- `jn-5729-pin-uv-default-python` (Ingest zone, no PR) — companion/possibly superseded
+
+**Jira:**
+- JN-5673: Resolved — now Done ✅
+- JN-5662: Stale — still "In Review" (PR #1591 merged Jun 15, 6 days ago)
+- JN-5729: Backlog + unassigned despite having active PRs
+
+**Flags:**
+- 🚨 PR #1601 (jn-5675): 48h+ no fix, CI catastrophic
+- 🎉 PR #1602 ready for review
+- 🆕 JN-5729 hotfix needs attention (two branches, one with PR)
+- 🔴 JN-5662 Jira stale (should be Done)
+
+**Proposals written:** 3 new (request review #1602, clarify JN-5729 branches, archive code-reviewes)
+
+**No actions taken** — supervised mode.
+
+**Next:** 02:00 IDT overnight heartbeat
