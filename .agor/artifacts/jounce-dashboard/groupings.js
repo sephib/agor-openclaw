@@ -1,3 +1,5 @@
+import { TICKET_LAST_ACTIVE } from './data';
+
 function extractTicket(branchName) {
   const m = (branchName || '').match(/jn-(\d+)/i);
   return m ? `JN-${m[1]}` : null;
@@ -23,14 +25,35 @@ function groupByKey(rows, keyFn) {
   return Object.values(map);
 }
 
+export const SORT_OPTIONS = [
+  { id: 'cost', label: 'Cost' },
+  { id: 'date', label: 'Last Active' },
+];
+
+function sortTickets(items, sortBy) {
+  if (sortBy === 'date') {
+    return items.sort((a, b) => {
+      const da = TICKET_LAST_ACTIVE[a.label] || '0000-00-00';
+      const db = TICKET_LAST_ACTIVE[b.label] || '0000-00-00';
+      return db.localeCompare(da);
+    });
+  }
+  return items.sort((a, b) => b.totalCost - a.totalCost);
+}
+
 export const GROUPINGS = [
   {
     id: 'ticket',
     label: 'By Ticket',
     apiParams: { groupBy: 'branch' },
-    transform: (rows) =>
-      groupByKey(rows, (r) => extractTicket(r.branchName))
-        .sort((a, b) => b.totalCost - a.totalCost),
+    hasSortOptions: true,
+    transform: (rows, sortBy) => {
+      const items = groupByKey(rows, (r) => extractTicket(r.branchName));
+      items.forEach((item) => {
+        item.lastActive = TICKET_LAST_ACTIVE[item.label] || null;
+      });
+      return sortTickets(items, sortBy);
+    },
   },
   {
     id: 'week',
