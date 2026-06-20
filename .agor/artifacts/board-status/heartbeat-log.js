@@ -31,6 +31,15 @@ export const HEARTBEAT_RUNS = [
   },
   {
     type: "advance",
+    timestamp: "2026-06-20 22:30 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "PR #1602 REBASED — now MERGEABLE, new CI run IN PROGRESS (22:28 IDT). atlas-validate ✅, e2e-tests ✅, pre-commit/tox/integration still running. All board PRs unchanged.",
+    sessionUrl: "http://localhost:3030/ui/s/019ee683045b7896b19e2ea9/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-20 22:00 IDT",
     actions: 0,
     findings: 5,

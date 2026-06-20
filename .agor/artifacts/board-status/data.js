@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-20 22:00 IDT";
+export const LAST_UPDATED = "2026-06-20 22:30 IDT";
 
 export const WORKTREES = [
   {
@@ -172,12 +172,12 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "red",
-    message: "🆕 PR #1602 (JN-5685/JN-5679, off-board): 'persist-monotonicity-test' — updated 21:52 IDT Jun 20. CONFLICTING + atlas-validate ❌. Pre-commit/tox/integration/e2e-tests all PASSING. 0 reviews. Needs rebase + atlas-validate fix.",
+    level: "yellow",
+    message: "🔄 PR #1602 (JN-5685/JN-5679, off-board): 'persist-monotonicity-test' — REBASED! Now MERGEABLE. NEW CI RUN IN PROGRESS (started 22:28 IDT Jun 20). atlas-validate ✅, e2e-tests ✅. Pre-commit/tox/integration still running. 0 reviews.",
   },
   {
     level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): 5th CI RUN COMPLETED 18:52 IDT — 5TH CONSECUTIVE FAILURE. e2e-smoke/e2e ❌, e2e-tests ❌. All other 12 checks PASSING (pre-commit ✅, tox ✅, integration ✅, e2e-api ✅, nox ✅). Systemic e2e issue confirmed — investigation of failure logs needed before further re-runs. 0 reviews. No new runs since 18:52 IDT (3h+).",
+    message: "🔴 PR #1606 (JN-5725, off-board): 5th CI RUN COMPLETED 18:52 IDT — 5TH CONSECUTIVE FAILURE. e2e-smoke/e2e ❌, e2e-tests ❌. All other 12 checks PASSING. Systemic e2e issue confirmed — investigation of failure logs needed before further re-runs. 0 reviews. No new runs since 18:52 IDT (3.5h+).",
   },
   {
     level: "red",

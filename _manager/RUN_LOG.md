@@ -4,6 +4,27 @@
 
 ---
 
+## 2026-06-20 — 30-min Board Advancement Heartbeat (22:30 IDT)
+
+**Session:** 019ee683 | http://localhost:3030/ui/s/019ee683045b7896b19e2ea9/
+
+**Board summary:** ONE key change — PR #1602 (`persist-monotonicity-test`, JN-5685/JN-5679) was **rebased**: flipped from CONFLICTING → MERGEABLE, with a fresh CI run launched at 22:28 IDT. CI looks promising so far (atlas-validate ✅, e2e-tests ✅; pre-commit/tox/integration still in progress). All board branches static — no new CI runs, no new commits.
+
+**Key findings:**
+- 🔄 **PR #1602 (JN-5685/JN-5679, off-board)**: REBASED at some point between 21:52–22:28 IDT. Now MERGEABLE + CI IN PROGRESS. If CI passes, only review (0 currently) blocks merge.
+- ↔ jn-5675 (PR #1601): CI still catastrophic — 8 checks failing. 37h+ since last commit (rebase at 09:19 IDT Jun 19). MERGEABLE. Fix session proposal still PENDING (highest priority).
+- ↔ jn-5676 (PR #1604): Still CONFLICTING + DRAFT. pre-commit only failing. No change since Jun 18 16:14 IDT (~54h+).
+- ↔ PR #1588 (JN-5546): BEHIND. 2 pre-commit failures. No change since Jun 18 15:12 IDT (~55h+).
+- ↔ **PR #1606 (JN-5725, off-board)**: 5th consecutive e2e failure (18:52 IDT) remains most recent. No new CI runs since 18:52 IDT (~3.5h+).
+
+**Jira:** No status changes — all tickets match previous run.
+
+**Proposals written:** None new — existing proposals unchanged.
+
+**No autonomous actions taken** — supervised mode.
+
+---
+
 ## 2026-06-20 — 30-min Board Advancement Heartbeat (22:00 IDT)
 
 **Session:** 019ee667 | http://localhost:3030/ui/s/019ee667d8447fe8a33928e3/

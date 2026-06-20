@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-20 22:00 IDT (30-min advance heartbeat)*
+*Last updated: 2026-06-20 22:30 IDT (30-min advance heartbeat)*
 
 ---
 
@@ -21,31 +21,33 @@
 
 ---
 
-## Key Changes Since Last Run (Jun 20 21:30 IDT)
+## Key Changes Since Last Run (Jun 20 22:00 IDT)
 
 | What observed | Status |
 |---|---|
-| **PR #1602 (JN-5685/JN-5679, off-board)** | 🆕 NEW — `persist-monotonicity-test` branch. Updated 21:52 IDT. CONFLICTING. atlas-validate ❌ (all other checks PASS). 0 reviews. |
-| **PR #1601 (jn-5675)** | ↔ UNCHANGED — MERGEABLE (no conflicts), CI catastrophic (8 checks failing). 36.5h+ no new commits since rebase at 09:19 IDT Jun 19. |
-| **PR #1604 (jn-5676)** | ↔ UNCHANGED — CONFLICTING + DRAFT. pre-commit failing only. Last updated Jun 18 16:14 IDT (53.5h+). |
-| **PR #1588 (jn-5546)** | ↔ UNCHANGED — BEHIND. pre-commit failing (2 checks). Last updated Jun 18 15:12 IDT (54.5h+). |
-| **No new merges to main** | ℹ️ Last merge: PR #1599 (jn-5674) Jun 18 23:55 IDT — main branch static 46h+. |
-| **PR #1606 (JN-5725, off-board)** | ↔ UNCHANGED — 5th CI run remains most recent (completed 18:52 IDT). No new runs since 18:52 IDT (~3h+). e2e-smoke/e2e ❌, e2e-tests ❌. All other checks PASSING. |
+| **PR #1602 (JN-5685/JN-5679, off-board)** | 🆕 REBASED — was CONFLICTING, now MERGEABLE. NEW CI RUN IN PROGRESS as of 22:28 IDT. atlas-validate ✅, atlas-validate-run ✅, e2e-tests ✅ so far. pre-commit/tox/integration still IN_PROGRESS. |
+| **PR #1601 (jn-5675)** | ↔ UNCHANGED — MERGEABLE (no conflicts), CI catastrophic (8 checks failing). 37h+ no new commits since rebase at 09:19 IDT Jun 19. |
+| **PR #1604 (jn-5676)** | ↔ UNCHANGED — CONFLICTING + DRAFT. pre-commit failing only. Last updated Jun 18 16:14 IDT (54h+). |
+| **PR #1588 (jn-5546)** | ↔ UNCHANGED — BEHIND. pre-commit failing (2 checks). Last updated Jun 18 15:12 IDT (55h+). |
+| **No new merges to main** | ℹ️ Last merge: PR #1599 (jn-5674) Jun 18 23:55 IDT — main branch static 46.5h+. |
+| **PR #1606 (JN-5725, off-board)** | ↔ UNCHANGED — 5th CI run remains most recent (completed 18:52 IDT). No new runs since 18:52 IDT (~3.5h+). e2e-smoke/e2e ❌, e2e-tests ❌. All other checks PASSING. |
 
 ---
 
 ## Attention Items
 
-### 🆕 NEW — PR #1602 (JN-5685/JN-5679, off-board) — monotonicity persistence
+### 🆕 NEW STATUS — PR #1602 (JN-5685/JN-5679, off-board) — monotonicity persistence REBASED
 
-New PR updated at 21:52 IDT Jun 20 (8 min before this heartbeat). NOT on any board worktree.
+Updated: was CONFLICTING → now MERGEABLE. New CI run IN PROGRESS as of 22:28 IDT Jun 20.
 - Branch: `persist-monotonicity-test`
 - PR: [#1602](https://github.com/Jounce-IO/jounce/pull/1602) — "feat(jbenchmark): add monotonicity verdict persistence tables and ingestion (JN-5685, JN-5679)"
-- State: OPEN, CONFLICTING (needs rebase), REVIEW_REQUIRED, not draft, 0 reviews
-- CI: ❌ **atlas-validate** FAILURE + **atlas-validate-run** FAILURE; ✅ pre-commit, nox, integration-tests, e2e-tests, tox, integration all PASSING
-- Last review fix commit: "fix(jbenchmark): address review findings for monotonicity persistence"
+- State: OPEN, MERGEABLE, REVIEW_REQUIRED, not draft, 0 reviews
+- CI run ID: 27881505121 — IN PROGRESS (started 22:28 IDT)
+  - ✅ atlas-validate-run, atlas-validate, e2e-tests, e2e-api (SKIPPED), check-changes, JIRA Association
+  - 🔄 IN_PROGRESS: pre-commit-run/pre-commit, tox-run/tox, integration-run/integration
+  - Last CI update: 22:30:41 IDT (atlas-validate completed)
 
-Needs: rebase onto main + atlas-validate fix + review.
+Needs: CI to complete + review.
 
 ---
 
@@ -67,14 +69,14 @@ Root cause: broken `__init__.py` conflict resolution from session 019ede80 ("mer
 
 ### 🔴 OFF-BOARD — PR #1606 (JN-5725) 5th CI Run COMPLETED: 5TH FAILURE
 
-PR #1606 status as of 22:00 IDT Jun 20:
+PR #1606 status as of 22:30 IDT Jun 20:
 - **5th CI run COMPLETED: FAILURE** — completed 18:52 IDT (run ID: 27872550696)
 - ✅ PASSING: check-changes, JIRA Association, pre-commit-run/pre-commit, tox-run/tox, integration-run/integration, e2e-api/e2e, pre-commit, nox, integration-tests, atlas-validate
 - ❌ FAILING: **e2e-smoke/e2e** ❌, **e2e-tests** ❌
 - Skipped: bake, atlas-validate-run, e2e-product
 - MERGEABLE + REVIEW_REQUIRED (0 reviews)
 
-**Pattern: 5 consecutive failures, same 2 tests failing, all else PASSING.** This is definitively a systemic e2e issue, not random flake. Investigation of the e2e failure logs is now warranted before any further re-runs.
+**Pattern: 5 consecutive failures, same 2 tests failing, all else PASSING.** 3.5h+ since last CI run — no new activity. Systemic e2e issue confirmed.
 
 ---
 
