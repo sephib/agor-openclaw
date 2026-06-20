@@ -4,6 +4,42 @@
 
 ---
 
+## 2026-06-20 — 30-min Board Advancement Heartbeat (08:30 IDT)
+
+**Session:** 019ee382 | http://localhost:3030/ui/s/019ee3823ba67698b8bf8794/
+
+**Board summary:** Zero changes since 08:01 IDT. Board fully static — all board branches unchanged, no new CI runs, no new commits. 29h+ since last activity on any board branch.
+
+**Key findings:**
+- ↔ jn-5675 (PR #1601): CI still catastrophic — 8 checks failing. 29h+ since last commit (rebase at 09:19 IDT Jun 19). MERGEABLE (no conflicts). Fix session proposal still PENDING (highest priority).
+- ↔ jn-5676 (PR #1604): Still CONFLICTING + DRAFT. pre-commit only failing. No change since Jun 18 16:14 IDT.
+- ↔ PR #1588 (JN-5546): BEHIND + MERGEABLE. 2 pre-commit failures. No change since Jun 18 15:12 IDT.
+- ↔ **PR #1606 (JN-5725, off-board)**: Unchanged — 3rd consecutive e2e failure still standing. No new CI runs since 00:30 IDT (8h+).
+
+**Proposals written:** None new — existing proposals unchanged.
+
+**No autonomous actions taken** — supervised mode.
+
+---
+
+## 2026-06-20 — 30-min Board Advancement Heartbeat (08:01 IDT)
+
+**Session:** 019ee366 | http://localhost:3030/ui/s/019ee366c413716cbe7b45132f80bd35/
+
+**Board summary:** Zero changes since 07:31 IDT. Board fully static — all board branches unchanged, no new CI runs, no new commits. 27h+ since last activity on any board branch.
+
+**Key findings:**
+- ↔ jn-5675 (PR #1601): CI still catastrophic — 8 checks failing. 27h+ since last commit (rebase at 09:19 IDT Jun 19). MERGEABLE (no conflicts). Fix session proposal still PENDING (highest priority).
+- ↔ jn-5676 (PR #1604): Still CONFLICTING + DRAFT. pre-commit only failing. No change since Jun 18 16:14 IDT.
+- ↔ PR #1588 (JN-5546): BEHIND + MERGEABLE. 2 pre-commit failures. No change since Jun 18 15:12 IDT.
+- ↔ **PR #1606 (JN-5725, off-board)**: Unchanged — 3rd consecutive e2e failure still standing. No new CI runs since 00:30 IDT (7.5h+).
+
+**Proposals written:** None new — existing proposals unchanged.
+
+**No autonomous actions taken** — supervised mode.
+
+---
+
 ## 2026-06-20 — 30-min Board Advancement Heartbeat (07:31 IDT)
 
 **Session:** 019ee34b | http://localhost:3030/ui/s/019ee34b4c997107ad7dac4f/
