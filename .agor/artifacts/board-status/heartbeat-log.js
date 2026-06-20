@@ -22,6 +22,15 @@ export const HEARTBEAT_RUNS = [
   // },
   {
     type: "advance",
+    timestamp: "2026-06-20 18:30 IDT",
+    actions: 0,
+    findings: 1,
+    status: "ok",
+    summary: "Board static 45h+; PR #1606 5th CI run NOW IN PROGRESS (queued 18:31 IDT) — all else unchanged",
+    sessionUrl: "http://localhost:3030/ui/s/019ee5a793247ebabe698f4bf51a447d/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-18 19:35 IDT",
     actions: 0,
     findings: 4,

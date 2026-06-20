@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-20 18:00 IDT (30-min advance heartbeat)*
+*Last updated: 2026-06-20 18:30 IDT (30-min advance heartbeat)*
 
 ---
 
@@ -21,15 +21,15 @@
 
 ---
 
-## Key Changes Since Last Run (Jun 20 17:30 IDT)
+## Key Changes Since Last Run (Jun 20 18:00 IDT)
 
 | What observed | Status |
 |---|---|
-| **PR #1601 (jn-5675)** | ↔ UNCHANGED — MERGEABLE (no conflicts), CI catastrophic (8 checks failing). 44.5h+ no new commits since rebase at 09:19 IDT Jun 19. |
-| **PR #1604 (jn-5676)** | ↔ UNCHANGED — CONFLICTING + DRAFT. pre-commit failing only. Last updated Jun 18 16:14 IDT (51.5h+). |
-| **PR #1588 (jn-5546)** | ↔ UNCHANGED — BEHIND. pre-commit failing (2 checks). Last updated Jun 18 15:12 IDT (51.5h+). |
-| **No new merges to main** | ℹ️ Last merge: PR #1599 (jn-5674) Jun 18 23:55 IDT — board fully static 44.5h+. |
-| **PR #1606 (JN-5725, off-board)** | ↔ UNCHANGED — 4th consecutive e2e failure from run completed 16:32 IDT Jun 20. No new CI runs since then (1.5h+). e2e-api/e2e ❌ + e2e-tests ❌. e2e-smoke SKIPPED. 0 reviews. |
+| **PR #1601 (jn-5675)** | ↔ UNCHANGED — MERGEABLE (no conflicts), CI catastrophic (8 checks failing). 45h+ no new commits since rebase at 09:19 IDT Jun 19. |
+| **PR #1604 (jn-5676)** | ↔ UNCHANGED — CONFLICTING + DRAFT. pre-commit failing only. Last updated Jun 18 16:14 IDT (52h+). |
+| **PR #1588 (jn-5546)** | ↔ UNCHANGED — BEHIND. pre-commit failing (2 checks). Last updated Jun 18 15:12 IDT (52h+). |
+| **No new merges to main** | ℹ️ Last merge: PR #1599 (jn-5674) Jun 18 23:55 IDT — board fully static 45h+. |
+| **PR #1606 (JN-5725, off-board)** | 🆕 **5th CI RUN IN PROGRESS** — queued 18:31 IDT Jun 20. Jobs running: pre-commit, integration, tox, e2e-api. Previous 4 runs all failed e2e. Result expected ~18:45-18:50 IDT. |
 
 ---
 
@@ -51,16 +51,18 @@ Root cause: broken `__init__.py` conflict resolution from session 019ede80 ("mer
 
 ---
 
-### 🚨 OFF-BOARD — PR #1606 (JN-5725) e2e FAILED AGAIN (4th failure)
+### ⚡ OFF-BOARD — PR #1606 (JN-5725) 5th CI Run IN PROGRESS
 
-PR #1606 status as of 16:32 IDT Jun 20 (new CI run just completed this heartbeat):
-- 12 checks PASSING (pre-commit-run ✅, tox ✅, integration ✅, integration-tests ✅, nox ✅, atlas-validate ✅, pre-commit ✅ + others)
-- **e2e-api / e2e: FAILURE** — completed 13:30:25 UTC (16:30:25 IDT)
-- **e2e-tests: FAILURE** — completed 13:30:32 UTC (16:30:32 IDT)
-- **e2e-smoke: SKIPPED** — (was FAILING in 3rd run — notable change in CI behavior)
+PR #1606 status as of 18:30 IDT Jun 20:
+- **5th CI run IN PROGRESS** — queued 18:31 IDT (run ID: 27872550696)
+- Jobs currently in_progress: pre-commit, integration, tox, e2e-api
+- Jobs already completed: check-changes ✅, atlas-validate ✅, bake SKIPPED, atlas-validate-run SKIPPED
+- Previous run (4th, completed 16:32 IDT Jun 20): e2e-api/e2e ❌, e2e-tests ❌, e2e-smoke SKIPPED
 - MERGEABLE + REVIEW_REQUIRED (0 reviews)
 
-This is the **FOURTH consecutive e2e failure** on PR #1606. Notable: e2e-smoke is now SKIPPED rather than FAILING — this could mean CI config changed or a different trigger path. e2e-api/e2e and e2e-tests continue to fail regardless. Systemic — needs investigation before another re-run. No reviews yet.
+The triggering of a 5th run suggests Joseph or CI re-triggered after the 4th failure. Result expected ~18:45-18:50 IDT. Watch for whether e2e passes or fails again.
+
+**Previous 4 runs:** all failed e2e. Pattern: systemic e2e issue on this branch. If 5th run also fails, investigation of e2e logs is warranted.
 
 ---
 

@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-20 18:00 IDT";
+export const LAST_UPDATED = "2026-06-20 18:30 IDT";
 
 export const WORKTREES = [
   {
@@ -172,8 +172,8 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "red",
-    message: "🚨 PR #1606 (JN-5725, off-board): e2e FAILED AGAIN — 4th consecutive failure (last run 16:32 IDT Jun 20, 1.5h+ no new runs). e2e-api/e2e + e2e-tests FAILING. e2e-smoke SKIPPED. 12 other checks PASSING. Systemic e2e instability — needs investigation, not just re-run. 0 reviews.",
+    level: "yellow",
+    message: "⚡ PR #1606 (JN-5725, off-board): 5th CI RUN NOW IN PROGRESS (queued 18:31 IDT). Previous 4 runs all failed e2e. Jobs running: pre-commit, integration, tox, e2e-api. 0 reviews. Result expected within ~15-20 min.",
   },
   {
     level: "red",
