@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-20 03:00 IDT (30-min advance heartbeat)*
+*Last updated: 2026-06-20 03:30 IDT (30-min advance heartbeat)*
 
 ---
 
@@ -21,7 +21,7 @@
 
 ---
 
-## Key Changes Since Last Run (Jun 20 03:00 IDT)
+## Key Changes Since Last Run (Jun 20 03:30 IDT)
 
 | What observed | Status |
 |---|---|
