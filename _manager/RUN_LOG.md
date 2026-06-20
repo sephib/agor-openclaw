@@ -4,6 +4,26 @@
 
 ---
 
+## 2026-06-20 — 30-min Board Advancement Heartbeat (11:30 IDT)
+
+**Session:** 019ee427 | http://localhost:3030/ui/s/019ee42708f87addbd17b205/
+
+**Board summary:** Zero changes since 11:00 IDT. Board fully static — all board branches unchanged, no new CI runs, no new commits. 35.5h+ since last activity on any board branch.
+
+**Key findings:**
+- ↔ jn-5675 (PR #1601): CI still catastrophic — 8 checks failing. 35.5h+ since last commit (rebase at 09:19 IDT Jun 19). MERGEABLE (no conflicts). Fix session proposal still PENDING (highest priority).
+- ↔ jn-5676 (PR #1604): Still CONFLICTING + DRAFT. pre-commit only failing. No change since Jun 18 19:14 IDT (44h+).
+- ↔ PR #1588 (JN-5546): BEHIND + MERGEABLE. 2 pre-commit failures. No change since Jun 18 18:12 IDT (45h+).
+- ↔ **PR #1606 (JN-5725, off-board)**: Unchanged — 3rd consecutive e2e failure still standing. No new CI runs since 00:09 IDT Jun 20 (11.5h+).
+
+**Jira:** No status changes — all tickets match previous run.
+
+**Proposals written:** None new — existing proposals unchanged.
+
+**No autonomous actions taken** — supervised mode.
+
+---
+
 ## 2026-06-20 — 30-min Board Advancement Heartbeat (11:00 IDT)
 
 **Session:** 019ee40b | http://localhost:3030/ui/s/019ee40b93e474d999ad45a4/
