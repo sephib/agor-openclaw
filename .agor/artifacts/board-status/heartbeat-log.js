@@ -22,6 +22,15 @@ export const HEARTBEAT_RUNS = [
   // },
   {
     type: "advance",
+    timestamp: "2026-06-20 21:00 IDT",
+    actions: 0,
+    findings: 4,
+    status: "ok",
+    summary: "Board static 48.5h+; zero changes since 20:30 IDT — all PRs unchanged, no new CI runs on #1606 (2h+ since 5th failure)",
+    sessionUrl: "http://localhost:3030/ui/s/019ee630e91972298c87967d/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-20 18:30 IDT",
     actions: 0,
     findings: 1,
