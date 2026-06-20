@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-20 15:30 IDT (30-min advance heartbeat)*
+*Last updated: 2026-06-20 16:00 IDT (30-min advance heartbeat)*
 
 ---
 
@@ -21,16 +21,16 @@
 
 ---
 
-## Key Changes Since Last Run (Jun 20 15:00 IDT)
+## Key Changes Since Last Run (Jun 20 15:30 IDT)
 
 | What observed | Status |
 |---|---|
-| **PR #1601 (jn-5675)** | ↔ UNCHANGED — MERGEABLE (no conflicts), CI catastrophic (8 checks failing). 40.5h+ no new commits since rebase at 09:19 IDT Jun 19. |
-| **PR #1604 (jn-5676)** | ↔ UNCHANGED — CONFLICTING + DRAFT. pre-commit failing only. Last updated Jun 18 16:14 IDT (48h+). |
+| **PR #1601 (jn-5675)** | ↔ UNCHANGED — MERGEABLE (no conflicts), CI catastrophic (8 checks failing). 41h+ no new commits since rebase at 09:19 IDT Jun 19. |
+| **PR #1604 (jn-5676)** | ↔ UNCHANGED — CONFLICTING + DRAFT. pre-commit failing only. Last updated Jun 18 16:14 IDT (48.5h+). |
 | **PR #1588 (jn-5546)** | ↔ UNCHANGED — BEHIND, MERGEABLE. pre-commit failing (2 checks). Last updated Jun 18 15:12 IDT (49h+). |
 | **No new merges to main** | ℹ️ Last merge: PR #1599 (jn-5674) Jun 18 23:55 IDT |
-| **No new CI runs on board** | ℹ️ Zero pushes across all board branches — board fully static 40.5h+. |
-| **PR #1606 (JN-5725, off-board)** | ↔ UNCHANGED since 00:30 IDT Jun 20 — 3rd consecutive e2e failure still standing. No new CI runs in 15h+. |
+| **No new CI runs on board** | ℹ️ Zero pushes across all board branches — board fully static 41h+. |
+| **PR #1606 (JN-5725, off-board)** | ↔ UNCHANGED since 00:30 IDT Jun 20 — 3rd consecutive e2e failure still standing. No new CI runs in 15.5h+. |
 
 ---
 
@@ -38,7 +38,7 @@
 
 ### 🚨 HIGHEST PRIORITY — jn-5675 `__init__.py` still broken
 
-PR #1601 is **MERGEABLE** (conflicts resolved by session 019ede80 at ~09:14 IDT). But ALL CI checks continue to fail — now 40.5h+ without any fix:
+PR #1601 is **MERGEABLE** (conflicts resolved by session 019ede80 at ~09:14 IDT). But ALL CI checks continue to fail — now 41h+ without any fix:
 - `pre-commit-run / pre-commit` FAILURE
 - `tox-run / tox` FAILURE
 - `integration-run / integration` FAILURE
@@ -54,7 +54,7 @@ Root cause: broken `__init__.py` conflict resolution from session 019ede80 ("mer
 
 ### 🚨 OFF-BOARD — PR #1606 (JN-5725) e2e-smoke FAILED AGAIN (3rd failure)
 
-PR #1606 status as of 00:30 IDT Jun 20 (15h+ ago — no new runs):
+PR #1606 status as of 00:30 IDT Jun 20 (15.5h+ ago — no new runs):
 - 12 checks PASSING (pre-commit-run ✅, tox ✅, integration ✅, e2e-api ✅, pre-commit ✅, nox ✅, integration-tests ✅, atlas-validate ✅ + others)
 - **e2e-smoke / e2e: FAILURE** — CI run triggered ~00:09 IDT Jun 20, completed 00:30 IDT
 - **e2e-tests: FAILURE** — also failing

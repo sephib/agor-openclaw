@@ -569,4 +569,13 @@ export const HEARTBEAT_RUNS = [
     summary: "Board fully static — zero changes since 15:00 IDT. PRs #1601 (8 CI fails, 40.5h+ stuck)/#1604 (CONFLICTING+DRAFT)/#1588 (pre-commit, BEHIND) all unchanged. PR #1606 (off-board) 3rd e2e failure unchanged — no new CI runs since 00:30 IDT Jun 20 (15h+).",
     sessionUrl: "http://localhost:3030/ui/s/019ee502c5d37283b54c3be2/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-20 16:00 IDT",
+    actions: 0,
+    findings: 3,
+    status: "ok",
+    summary: "Board fully static — zero changes since 15:30 IDT. PRs #1601 (8 CI fails, 41h+ stuck)/#1604 (CONFLICTING+DRAFT)/#1588 (pre-commit, BEHIND) all unchanged. PR #1606 (off-board) 3rd e2e failure unchanged — no new CI runs since 00:30 IDT Jun 20 (15.5h+).",
+    sessionUrl: "http://localhost:3030/ui/s/019ee51e3d947db680e4ad4a8abb4a52/",
+  },
 ];
