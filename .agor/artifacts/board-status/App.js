@@ -325,11 +325,18 @@ export default function App() {
     }
   };
 
+  const activeWorktrees = useMemo(() => {
+    return WORKTREES.filter((w) => {
+      if (!w.pr) return true;
+      return !w.pr.includes("MERGED") && !w.pr.includes("CLOSED");
+    });
+  }, []);
+
   const sorted = useMemo(() => {
-    if (!sortKey) return WORKTREES;
+    if (!sortKey) return activeWorktrees;
     const col = COLUMNS.find((c) => c.key === sortKey);
-    if (!col) return WORKTREES;
-    const items = [...WORKTREES];
+    if (!col) return activeWorktrees;
+    const items = [...activeWorktrees];
     items.sort((a, b) => {
       const va = col.sortValue(a);
       const vb = col.sortValue(b);
@@ -337,12 +344,12 @@ export default function App() {
       return sortDir === "asc" ? cmp : -cmp;
     });
     return items;
-  }, [sortKey, sortDir]);
+  }, [sortKey, sortDir, activeWorktrees]);
 
-  const needsYou = WORKTREES.filter((w) => w.blockedType === "owner");
-  const running = WORKTREES.filter((w) => w.blockedType === "running");
-  const waiting = WORKTREES.filter((w) => w.blockedType === "external");
-  const blocked = WORKTREES.filter((w) => w.blockedType === "blocked");
+  const needsYou = activeWorktrees.filter((w) => w.blockedType === "owner");
+  const running = activeWorktrees.filter((w) => w.blockedType === "running");
+  const waiting = activeWorktrees.filter((w) => w.blockedType === "external");
+  const blocked = activeWorktrees.filter((w) => w.blockedType === "blocked");
 
   return (
     <div style={{ padding: 16, fontFamily: "system-ui, sans-serif", maxWidth: 900 }}>

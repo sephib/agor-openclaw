@@ -22,6 +22,15 @@ export const HEARTBEAT_RUNS = [
   // },
   {
     type: "advance",
+    timestamp: "2026-06-21 12:00 IDT",
+    actions: 4,
+    findings: 2,
+    status: "ok",
+    summary: "4 worktrees archived (JN-5729 ×3 + code-reviewes). PR #1604 MAJOR IMPROVEMENT: CONFLICTING+pre-commit FAIL → MERGEABLE+ALL CI GREEN. Ready to un-draft. JN-5729 Jira now Done. PR #1601 still CONFLICTING.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019ee968e62e7c618089f9e4/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-21 11:33 IDT",
     actions: 0,
     findings: 1,
