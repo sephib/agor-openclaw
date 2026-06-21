@@ -803,4 +803,13 @@ export const HEARTBEAT_RUNS = [
     summary: "PR #1608 MERGED (09:37 IDT, JN-5729). PR #1607 CLOSED (08:03 IDT, superseded). PR #1601 CI ALL GREEN — main merge at 09:41 IDT resolved 58h+ catastrophic failure. PR #1606 now CONFLICTING. 3 JN-5729 worktrees proposed for archive.",
     sessionUrl: "http://localhost:3030/ui/s/019ee8fae4c27d14bdbd1c92/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-21 14:00 IDT",
+    actions: 1,
+    findings: 6,
+    status: "ok",
+    summary: "PR #1601 e2e-smoke NOW PASSING — ALL CI GREEN (was PENDING at 13:30 IDT). Ready for Code Review zone move. ci-statistics-notebook archived (JN-5708 Done + 3d inactive). Board otherwise static.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019eea44562377e3a778d68b/",
+  },
 ];

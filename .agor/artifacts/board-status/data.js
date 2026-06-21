@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-21 13:30 IDT";
+export const LAST_UPDATED = "2026-06-21 14:00 IDT";
 
 export const WORKTREES = [
   {
@@ -10,9 +10,9 @@ export const WORKTREES = [
     zone: "Respond",
     pr: "#1601",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1601",
-    status: "🟡 CONFLICT RESOLVED (13:30 IDT Jun 21) — MERGEABLE. e2e-smoke PENDING. Once green → move to Code Review zone.",
-    blockedOn: "Waiting on e2e-smoke CI result",
-    blockedType: "running",
+    status: "🎉 ALL CI GREEN (e2e-smoke PASSED ~13:45 IDT) — OPEN + MERGEABLE + no review requested. Ready for Code Review zone move + review request.",
+    blockedOn: "Zone move to Code Review + review request",
+    blockedType: "owner",
     sessionUrl: "http://localhost:3030/ui/s/019ede80727b73af9ee27e9d/",
     sessionLabel: "last session (idle)",
     lastActive: "2026-06-21 09:41 IDT",
@@ -28,7 +28,7 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1604 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1604",
-    status: "🟡 IMPROVED: conflict resolved + ALL CI GREEN (pre-commit ✅, tox ✅, nox ✅, integration ✅). Still DRAFT. Ready to un-draft + request review. 79h+ stalled.",
+    status: "🟡 ALL CI GREEN + MERGEABLE. Still DRAFT. Ready to un-draft + request review. 80h+ stalled.",
     blockedOn: "Un-draft PR + request review",
     blockedType: "owner",
     sessionUrl: "http://localhost:3030/ui/s/019edb7fb4c770d78fc7a47d/",
@@ -44,28 +44,12 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1588",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1588",
-    status: "CI RED (pre-commit only — tox/nox all PASS). MERGEABLE. sephib MUST FIX items outstanding. 75h+ stalled.",
+    status: "CI RED (pre-commit only — tox/nox all PASS). MERGEABLE. sephib MUST FIX items outstanding. 77h+ stalled.",
     blockedOn: "Pre-commit CI fix + sephib review MUST FIX items",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ed01e5624752fbade0eab/",
     sessionLabel: "fix session",
     lastActive: "2026-06-17 22:08 IDT",
-  },
-  {
-    ticket: null,
-    ticketUrl: "https://jounce.atlassian.net/browse/JN-5708",
-    title: "CI statistics marimo notebook",
-    branch: "ci-statistics-notebook",
-    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/ci-statistics-notebook",
-    zone: "Code",
-    pr: null,
-    prUrl: null,
-    status: "No sessions — scope unclear (linked to JN-5708 which is Done)",
-    blockedOn: "Joseph — clarify scope",
-    blockedType: "owner",
-    sessionUrl: null,
-    sessionLabel: null,
-    lastActive: "2026-06-18 11:31 IDT",
   },
   {
     ticket: null,
@@ -150,7 +134,7 @@ export const MERGED = [
     pr: "#1608",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1608",
     mergedDate: "2026-06-21",
-    note: "Merged 09:37 IDT Jun 21 — 3 worktrees archived 12:00 IDT",
+    note: "Merged 09:37 IDT Jun 21 — worktrees archived 12:00 & 14:00 IDT",
   },
   {
     ticket: "JN-5674",
@@ -192,20 +176,20 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "yellow",
-    message: "🟡 PR #1604 (JN-5676) IMPROVED: conflict resolved + ALL CI GREEN (pre-commit ✅, tox ✅, nox ✅, integration ✅, e2e-tests ✅). Was CONFLICTING+pre-commit FAIL. Still DRAFT — ready to un-draft + request review.",
+    level: "green",
+    message: "🎉 PR #1601 (JN-5675): ALL CI GREEN — e2e-smoke PASSED ~13:45 IDT. OPEN + MERGEABLE + no reviewer yet. PROPOSAL: move to Code Review zone + request review + update JN-5675 Jira to 'In Review'.",
   },
   {
     level: "yellow",
-    message: "🟡 PR #1601 (JN-5675): CONFLICT RESOLVED at 13:30 IDT — now MERGEABLE. e2e-smoke PENDING. Once green → ready for Code Review zone move.",
+    message: "🟡 PR #1604 (JN-5676): ALL CI GREEN + MERGEABLE. Still DRAFT — 80h+ stalled. Ready to un-draft + request review.",
   },
   {
     level: "green",
-    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): CI ALL GREEN 18h+. MERGEABLE. reviewDecision=''. Needs reviewer assigned.",
+    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): CI ALL GREEN 19h+. MERGEABLE. reviewDecision=''. Needs reviewer assigned.",
   },
   {
     level: "red",
-    message: "🔴 PR #1588 (JN-5546): MERGEABLE + pre-commit failing + sephib MUST FIX items outstanding. 75h+ stalled.",
+    message: "🔴 PR #1588 (JN-5546): MERGEABLE + pre-commit failing + sephib MUST FIX items outstanding. 77h+ stalled.",
   },
   {
     level: "red",
@@ -213,14 +197,10 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⚠️ 3 Jira tickets stale: JN-5662 (In Review, PR #1591 merged Jun 15 — 6+ days), JN-5673 (In Review, PR #1595 merged Jun 17 — 4+ days), JN-5674 (In Progress, PR #1599 merged Jun 18 — 3+ days). All should be Done.",
+    message: "⚠️ 4 Jira tickets stale: JN-5662 (In Review, PR #1591 merged Jun 15 — 6+ days), JN-5673 (In Review, PR #1595 merged Jun 17 — 4+ days), JN-5674 (In Progress, PR #1599 merged Jun 18 — 3+ days), JN-5675 (In Progress, but PR #1601 open awaiting review — should be 'In Review').",
   },
   {
     level: "red",
     message: "internal-cr-system: filesystem FAILED (git lock) — cannot start new sessions",
-  },
-  {
-    level: "yellow",
-    message: "ci-statistics-notebook: no sessions, scope unclear — needs Joseph clarification",
   },
 ];

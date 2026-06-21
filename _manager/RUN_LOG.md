@@ -1853,3 +1853,11 @@
 **No actions taken** — supervised mode. No merges/closures to auto-archive.
 
 **Next:** 14:00 IDT advance heartbeat — check if e2e-smoke on #1601 completed green
+
+## 14:00 IDT — Weekday Daytime Heartbeat
+- PRs checked: #1601 (OPEN/ALL GREEN), #1604 (OPEN/DRAFT/ALL GREEN), #1602 (OPEN/ALL GREEN), #1588 (OPEN/pre-commit FAIL), #1596 (OPEN/CONFLICTING/DRAFT), #1606 (OPEN/CONFLICTING/e2e FAIL)
+- Merges detected: none
+- Archives: ci-statistics-notebook (JN-5708 Done + 3+ days inactive + no PR)
+- CI changes: PR #1601 e2e-smoke NOW PASSING — ALL 13 checks green (was PENDING at 13:30 IDT). Major change.
+- Flags: PR #1601 ready for Code Review zone move + review request; PR #1602 19h+ green no reviewer; PR #1604 80h+ DRAFT; JN-5662/5673/5674 Jira stale; JN-5675 Jira should be "In Review"; PR #1606 CONFLICTING+e2e fail
+- Next: PR #1601 zone move to Code Review + review request; un-draft #1604; assign reviewer to #1602
