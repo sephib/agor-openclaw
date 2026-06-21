@@ -713,4 +713,13 @@ export const HEARTBEAT_RUNS = [
     summary: "Board fully static since 00:04 IDT. PR #1602 CI ALL GREEN 2h+ still waiting for reviewer. PR #1607 (JN-5729 hotfix) CI not triggered after 2h45m — only CodeRabbit showing. All other PRs (#1601/#1604/#1588/#1606) unchanged.",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019ee74369ef7d179bf02f77/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-21 04:00 IDT",
+    actions: 0,
+    findings: 3,
+    status: "ok",
+    summary: "Board fully static since 02:01 IDT. PR #1602 CI ALL GREEN 4h+ still waiting for reviewer. PR #1607 CI still not triggered after 5h. PR #1601 CI catastrophic 52h+ no fix. All other PRs unchanged.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019ee7b147b37eb483fe6603191226f1/",
+  },
 ];

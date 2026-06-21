@@ -4,6 +4,16 @@
 
 ---
 
+## 04:00 IDT — Overnight Advance Heartbeat (Jun 21)
+
+- PRs checked: #1602 (OPEN, ALL GREEN), #1607 (OPEN, only CodeRabbit), #1601 (OPEN, 8 fails), #1604 (DRAFT, CONFLICTING, pre-commit fail), #1588 (OPEN, pre-commit fail), #1606 (OPEN, e2e-smoke+e2e-tests fail)
+- Merges detected: none — board static since 02:01 IDT run
+- CI changes: none — all PRs unchanged from 02:01 IDT
+- Flags: PR #1602 now 4h+ CI-green with no reviewer; PR #1607 now 5h+ with no full CI triggered; PR #1601 now 52h+ without a fix commit
+- Next: Joseph needs to assign reviewer to PR #1602; investigate why #1607 CI didn't trigger; fix session needed for #1601
+
+---
+
 ## 2026-06-20 — 30-min Board Advancement Heartbeat (22:30 IDT)
 
 **Session:** 019ee683 | http://localhost:3030/ui/s/019ee683045b7896b19e2ea9/

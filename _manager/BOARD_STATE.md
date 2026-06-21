@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-21 02:01 IDT (overnight advance heartbeat)*
+*Last updated: 2026-06-21 04:00 IDT (overnight advance heartbeat)*
 
 ---
 
@@ -8,84 +8,93 @@
 
 | Branch | Jira | Zone | Jira Status | PR | CI | Review | Flags |
 |--------|------|------|-------------|-----|-----|--------|-------|
-| jn-5675-historical-visibility | [JN-5675](https://jounce.atlassian.net/browse/JN-5675) | Code | In Progress | [#1601](https://github.com/Jounce-IO/jounce/pull/1601) | ❌❌ **CATASTROPHIC** — pre-commit + tox + integration + e2e-api + nox + integration-tests + e2e-tests ALL FAILING | — | 🚨 MERGEABLE but CI broken — `__init__.py` fix needed. 50h+ no new commits |
-| jn-5729-pin-python-313 | [JN-5729](https://jounce.atlassian.net/browse/JN-5729) | Code | Backlog (unassigned) | [#1607](https://github.com/Jounce-IO/jounce/pull/1607) | ⚠️ **SUSPICIOUS** — Only CodeRabbit shown after 2h45m. Full CI appears not triggered. | REVIEW_REQUIRED | 🔴 CI non-trigger — needs investigation |
+| jn-5675-historical-visibility | [JN-5675](https://jounce.atlassian.net/browse/JN-5675) | Code | In Progress | [#1601](https://github.com/Jounce-IO/jounce/pull/1601) | ❌❌ **CATASTROPHIC** — pre-commit + tox + integration + e2e-api + nox + integration-tests + e2e-tests ALL FAILING | — | 🚨 MERGEABLE but CI broken — `__init__.py` fix needed. 52h+ no new commits |
+| jn-5729-pin-python-313 | [JN-5729](https://jounce.atlassian.net/browse/JN-5729) | Code | Backlog (unassigned) | [#1607](https://github.com/Jounce-IO/jounce/pull/1607) | ⚠️ **SUSPICIOUS** — Only CodeRabbit after 5h. Full CI not triggered. | REVIEW_REQUIRED | 🔴 CI non-trigger — 5h+ since PR created 23:15 IDT Jun 20 |
 | ci-statistics-notebook | [JN-5708](https://jounce.atlassian.net/browse/JN-5708) (issue link) | Code | Done | — | — | — | ⚠️ No sessions; JN-5708 Done; scope unclear |
 | internal-cr-system | — | Code | — | — | — | — | 🔴 Filesystem FAILED (git lock) — unchanged |
 | dual-heartbeat-system | — | Code | — | — | — | — | ✅ Idle, docs done |
 | jn-5676-notebook-scaffold | [JN-5676](https://jounce.atlassian.net/browse/JN-5676) | Publish | In Progress | [#1604](https://github.com/Jounce-IO/jounce/pull/1604) DRAFT | ❌ pre-commit FAIL only (tox/nox/integration/e2e all ✅) + **CONFLICTING** | REVIEW_REQUIRED | 🔴 CONFLICTING; needs rebase + pre-commit fix to un-draft |
 | jn-5546-docs-document-module-layout-convention-and-3 | [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | Code Review | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | ❌ pre-commit FAIL (tox/integration/nox all ✅) — MERGEABLE | — | 🔴 Pre-commit fix needed + sephib MUST FIX comments outstanding |
 | code-reviewes | — | Code Review | — | — | — | — | 🗑️ Should be ARCHIVED — review done Jun 15 |
-| jn-5674-operational-visibility | [JN-5674](https://jounce.atlassian.net/browse/JN-5674) | Respond | Done | [#1599](https://github.com/Jounce-IO/jounce/pull/1599) MERGED | — | — | 🗑️ Should be ARCHIVED — PR merged Jun 18 (2+ days ago) |
+| jn-5674-operational-visibility | [JN-5674](https://jounce.atlassian.net/browse/JN-5674) | Respond | Done | [#1599](https://github.com/Jounce-IO/jounce/pull/1599) MERGED | — | — | 🗑️ Should be ARCHIVED — PR merged Jun 18 (3 days ago) |
 | jn-5729-pin-uv-default-python | [JN-5729](https://jounce.atlassian.net/browse/JN-5729) | Ingest | Backlog (unassigned) | — | — | — | ⚠️ Likely superseded by jn-5729-pin-python-313 |
 | jn-5695-db-connect-script | [JN-5695](https://jounce.atlassian.net/browse/JN-5695) | BLOCKED | Backlog | [#1596](https://github.com/Jounce-IO/jounce/pull/1596) DRAFT | ⚠️ Only CodeRabbit (CI likely not triggered for db script only) | — | 🔴 CONFLICTING; frozen |
 | jn-5672-dal-ext-dashboard | [JN-5672](https://jounce.atlassian.net/browse/JN-5672) | BLOCKED | Backlog | — | — | — | ℹ️ On hold |
 
 ---
 
-## Key Changes Since Last Run (Jun 21 00:04 IDT)
+## Off-Board PRs (monitored)
+
+| PR | Branch | Jira | CI | State | Flags |
+|----|--------|------|----|-------|-------|
+| [#1602](https://github.com/Jounce-IO/jounce/pull/1602) | persist-monotonicity-test | JN-5685/JN-5679 | ✅ ALL GREEN | OPEN, MERGEABLE, REVIEW_REQUIRED | 🎉 **4h+ since green** — needs reviewer assigned |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | ❌ e2e-smoke + e2e-tests FAIL (others ✅) | OPEN, MERGEABLE, REVIEW_REQUIRED | 🔴 5th consecutive e2e failure — systemic pattern |
+
+---
+
+## Key Changes Since Last Run (Jun 21 02:01 IDT)
 
 | What observed | Status |
 |---|---|
-| **↔ Board STATIC** — 0 merges, 0 zone changes, 0 new PRs since 00:04 IDT | All 12 worktrees in same zones as before. |
-| **🎉 PR #1602 (JN-5685/JN-5679) — CI ALL GREEN (confirmed)** | Still OPEN, MERGEABLE, REVIEW_REQUIRED after 2h+ — no reviewer assigned yet. |
-| **⚠️ PR #1607 (jn-5729-pin-python-313) — CI non-trigger** | 2h45m since creation; only CodeRabbit shown. Full CI checks have not appeared. Suspicious. |
-| **🔴 PR #1601 (jn-5675)** | ↔ UNCHANGED — CI catastrophic (8 checks failing). 50h+ no new commits or fix. |
+| **↔ Board STATIC** — 0 merges, 0 zone changes, 0 new PRs since 02:01 IDT | All 12 worktrees in same zones as before. |
+| **🎉 PR #1602 (JN-5685/JN-5679) — CI ALL GREEN, 4h+ waiting** | Still OPEN, MERGEABLE, REVIEW_REQUIRED — no reviewer in ~4h since green. |
+| **⚠️ PR #1607 (jn-5729-pin-python-313) — CI still not triggered** | Now 5h since creation at 23:15 IDT Jun 20. Still only CodeRabbit. |
+| **🔴 PR #1601 (jn-5675)** | ↔ UNCHANGED — CI catastrophic (8 checks). Now 52h+ without fix. |
 | **🔴 PR #1604 (jn-5676)** | ↔ UNCHANGED — CONFLICTING + DRAFT. pre-commit only failing. |
-| **🔴 PR #1588 (jn-5546)** | ↔ UNCHANGED — pre-commit failing. MERGEABLE (not BEHIND anymore). |
-| **🔴 PR #1606 (JN-5725, off-board)** | ↔ UNCHANGED — e2e-smoke/e2e-tests ❌. 5th CI run remains most recent. |
+| **🔴 PR #1588 (jn-5546)** | ↔ UNCHANGED — pre-commit failing. MERGEABLE. |
+| **🔴 PR #1606 (JN-5725, off-board)** | ↔ UNCHANGED — e2e-smoke/e2e-tests ❌. 5th run remains most recent. |
 
 ---
 
 ## Attention Items
 
-### 🎉 ACTION NEEDED — PR #1602 (JN-5685/JN-5679) CI ALL GREEN — 2h+ since green
+### 🎉 ACTION NEEDED — PR #1602 (JN-5685/JN-5679) CI ALL GREEN — 4h+ since green
 
 PR [#1602](https://github.com/Jounce-IO/jounce/pull/1602) — "feat(jbenchmark): add monotonicity verdict persistence tables and ingestion (JN-5685, JN-5679)"
 
-**CI ALL GREEN — all checks passing:**
+**CI ALL GREEN — all checks passing (confirmed 04:00 IDT):**
 - ✅ pre-commit-run/pre-commit, tox-run/tox, integration-run/integration
 - ✅ e2e-tests, nox, integration-tests
 - ✅ atlas-validate-run/atlas-validate, atlas-validate, check-changes, JIRA Association
 - State: OPEN, MERGEABLE, REVIEW_REQUIRED (0 reviews), not draft
 
-**This PR is ready for review.** Has been CI-green since ~00:00 IDT Jun 21 (2h+ as of this run). Needs a reviewer assigned or request sent.
+**This PR is ready for review.** Has been CI-green since ~00:00 IDT Jun 21 (4h+ as of this run). Needs a reviewer assigned.
 
 ---
 
-### ⚠️ NEW FLAG — PR #1607 (jn-5729) CI not triggered after 2h45m
+### ⚠️ FLAG — PR #1607 (jn-5729) CI not triggered after 5h
 
 PR [#1607](https://github.com/Jounce-IO/jounce/pull/1607) — "fix(devcontainer): JN-5729 pin Python to 3.13, prevent 3.14 installation"
 
-Created 23:15 IDT Jun 20. As of 02:01 IDT Jun 21 (2h45m later), `gh pr checks 1607` returns only CodeRabbit. This is unusual — full CI suite should have been triggered by now.
+Created 23:15 IDT Jun 20. As of 04:00 IDT Jun 21 (5h later), `gh pr checks 1607` returns only CodeRabbit. This is unusual — full CI suite has still not been triggered.
 
-**Possible causes:** devcontainer-only change skips all CI workflows; CI triggered but stale/errored; branch protection rules differ. **Action needed:** Joseph to check why CI didn't run on this PR.
+**Possible causes:** devcontainer-only change skips all CI workflows; CI triggered but errored. **Action needed:** Joseph to check why CI didn't run on this PR — may need manual re-trigger.
 
 ---
 
-### 🚨 HIGHEST PRIORITY — jn-5675 `__init__.py` CI catastrophic (50h+ stalled)
+### 🚨 HIGHEST PRIORITY — jn-5675 `__init__.py` CI catastrophic (52h+ stalled)
 
 PR [#1601](https://github.com/Jounce-IO/jounce/pull/1601) still failing all CI checks. MERGEABLE but broken:
 - `pre-commit-run / pre-commit` ❌, `tox-run / tox` ❌, `integration-run / integration` ❌
 - `e2e-api / e2e` ❌, `pre-commit` ❌, `nox` ❌, `integration-tests` ❌, `e2e-tests` ❌
 
-Root cause: broken `__init__.py` conflict resolution. 50h+ without a fix. Session needed.
+Root cause: broken `__init__.py` conflict resolution. 52h+ without a fix. Session needed.
 
 ---
 
 ### 🔴 OFF-BOARD — PR #1606 (JN-5725) Systemic e2e failure (5th run, unchanged)
 
-PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): e2e-smoke/e2e ❌, e2e-tests ❌, all others ✅. 5th consecutive failure; last run 18:52 IDT Jun 20. Pattern confirmed: systemic e2e infra issue.
+PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): e2e-smoke/e2e ❌, e2e-tests ❌, all others ✅. 5th consecutive failure. Pattern confirmed: systemic e2e infra issue.
 
 ---
 
-### 🔴 jn-5676 — CONFLICTING + DRAFT (64h+ stalled)
+### 🔴 jn-5676 — CONFLICTING + DRAFT (66h+ stalled)
 
 PR [#1604](https://github.com/Jounce-IO/jounce/pull/1604): DRAFT + CONFLICTING. CI otherwise clean (only pre-commit failing). Needs rebase + pre-commit fix + un-draft.
 
 ---
 
-### 🔴 PR #1588 (JN-5546) — pre-commit + sephib MUST FIX (65h+ stalled)
+### 🔴 PR #1588 (JN-5546) — pre-commit + sephib MUST FIX (67h+ stalled)
 
 MERGEABLE + pre-commit failing + sephib MUST FIX comments. No fix activity.
 
