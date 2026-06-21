@@ -25,17 +25,22 @@ This check catches sessions that start from a stale git-committed snapshot rathe
 
 ## Step 1 — Recently-merged sweep (run FIRST, every time)
 
+Only track PRs where Joseph is assigned or requested for review. Run both commands and combine results:
+
 ```bash
 gh pr list --state merged --repo Jounce-IO/jounce --limit 20 \
-  --json number,title,mergedAt,headRefName,author
+  --assignee @me --json number,title,mergedAt,headRefName,author
+
+gh pr list --state merged --repo Jounce-IO/jounce --limit 20 \
+  --search "review-requested:joberry" --json number,title,mergedAt,headRefName,author
 ```
 
-Cross-reference against every worktree tracked in `_manager/BOARD_STATE.md` (Active Worktrees table AND Respond zone).
+Deduplicate by PR number. Cross-reference against every worktree tracked in `_manager/BOARD_STATE.md` (Active Worktrees table, all zones).
 
 **For each match (a tracked PR now showing merged):**
 - Move it from Active to Recently Merged in BOARD_STATE.md immediately
-- If the worktree is in the Respond zone: flag for retirement (see Step 5)
-- Note in run summary: "PR #NNNN detected merged — was showing active in BOARD_STATE.md"
+- Archive the worktree via `agor_branches_archive` (autonomous permission — see below)
+- Note in run summary: "PR #NNNN detected merged — archived worktree"
 
 This sweep catches merges that occurred between heartbeat runs, including merges that happened while a prior session was mid-scan.
 
@@ -98,24 +103,26 @@ For off-board PRs mentioned in ALERTS (e.g., #1602, #1606): check these too.
 
 ---
 
-## Step 5 — Respond-zone retirement check
+## Step 5 — Worktree retirement check (all zones)
 
-For each worktree currently in the Respond zone:
-1. Get its PR URL from Agor MCP
-2. Check `gh pr view <N> --json state,mergedAt`
-3. If `state: MERGED`: add a retirement proposal to `_manager/PROPOSALS.md`
+For each worktree on the board (any zone, not just Respond):
+1. Get its PR URL from Agor MCP (if set)
+2. Check `gh pr view <N> --json state,mergedAt,closedAt`
+3. If `state: MERGED` or `state: CLOSED`: **archive the worktree immediately**
 
-Format:
-```markdown
-## Proposal: Archive Respond-zone worktree <branch>
-- **Action:** Archive worktree `<branch>` — PR #NNNN merged <date>
-- **Reason:** PR merged; Respond-zone purpose fulfilled; worktree is now stale
-- **Risk:** Low — work is committed to main
-- **Worktree:** <branch>
-- **Status:** PENDING
+```bash
+# Autonomous archive — no proposal needed
+agor_branches_archive(branchId="<branch_id>")
 ```
 
-Do NOT archive autonomously. Propose only.
+This permission is granted because:
+- The PR is already shipped (MERGED) or abandoned (CLOSED)
+- Archiving in Agor is reversible via `agor_branches_unarchive`
+- The worktree data remains on disk
+
+Also archive worktrees with no PR when their linked Jira ticket is Done and the worktree has been inactive 24h+.
+
+Note each archive in the run summary: "Archived <branch> — PR #NNNN MERGED/CLOSED"
 
 ---
 
@@ -189,14 +196,18 @@ If git push fails (network, auth): note the failure in the run summary but do NO
 ## Quick reference — key commands
 
 ```bash
-# Recently merged sweep (Step 1 — run first)
-gh pr list --state merged --repo Jounce-IO/jounce --limit 20 --json number,title,mergedAt,headRefName,author
+# Recently merged sweep — scoped to Joseph's PRs (Step 1 — run first)
+gh pr list --state merged --repo Jounce-IO/jounce --limit 20 --assignee @me --json number,title,mergedAt,headRefName,author
+gh pr list --state merged --repo Jounce-IO/jounce --limit 20 --search "review-requested:joberry" --json number,title,mergedAt,headRefName,author
 
 # PR state (Step 3)
 gh pr view <N> --repo Jounce-IO/jounce --json number,title,state,mergedAt,closedAt,mergeable,reviewDecision,isDraft
 
 # CI status (Step 4)
 gh pr checks <N> --repo Jounce-IO/jounce
+
+# Archive worktree — autonomous when PR MERGED/CLOSED (Step 5)
+# Via Agor MCP: agor_branches_archive(branchId="<branch_id>")
 
 # Commit and push (Step 10 — every run)
 git add _manager/ .agor/artifacts/ && git commit -m "chore: HH:MM IDT advance heartbeat — <summary>" && git push origin private-julie
@@ -211,8 +222,9 @@ git add _manager/ .agor/artifacts/ && git commit -m "chore: HH:MM IDT advance he
 | Fix 1 — Explicit protocol checklist | This file |
 | Fix 2 — mergedAt check when CI passes | Step 3 critical reflex |
 | Fix 3 — Commit after every run | Step 10 (mandatory) |
-| Fix 4 — Recently merged sweep | Step 1 |
-| Fix 5 — Respond-zone retirement trigger | Step 5 |
+| Fix 4 — Recently merged sweep | Step 1 (scoped to Joseph's PRs) |
+| Fix 5 — Any-zone retirement trigger | Step 5 (all zones, autonomous archive) |
 | Fix 6 — BOARD_STATE.md staleness warning | Step 0 |
+| Fix 7 — Autonomous archive for MERGED/CLOSED | Step 5 + CLAUDE.md permission grant |
 
 *Created: 2026-06-20 | Reason: RCA for stale PR #1595 report (merged Jun 17, reported as open Jun 17-18 due to race condition + git commit gap)*
