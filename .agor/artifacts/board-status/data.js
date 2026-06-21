@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-21 14:30 IDT";
+export const LAST_UPDATED = "2026-06-21 17:00 IDT";
 
 export const WORKTREES = [
   {
@@ -11,7 +11,7 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1604 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1604",
-    status: "🟡 ALL CI GREEN + MERGEABLE. Still DRAFT. Ready to un-draft + request review. 80h+ stalled.",
+    status: "🟡 ALL CI GREEN + MERGEABLE. Still DRAFT. Ready to un-draft + request review. 83h+ stalled.",
     blockedOn: "Un-draft PR + request review",
     blockedType: "owner",
     sessionUrl: "http://localhost:3030/ui/s/019edb7fb4c770d78fc7a47d/",
@@ -27,7 +27,7 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1588",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1588",
-    status: "CI RED (pre-commit only — tox/nox all PASS). MERGEABLE. sephib MUST FIX items outstanding. 77h+ stalled.",
+    status: "CI RED (pre-commit only — tox/nox all PASS). MERGEABLE. sephib MUST FIX items outstanding. 80h+ stalled.",
     blockedOn: "Pre-commit CI fix + sephib review MUST FIX items",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ed01e5624752fbade0eab/",
@@ -169,23 +169,23 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "yellow",
-    message: "🟡 PR #1604 (JN-5676): ALL CI GREEN + MERGEABLE. Still DRAFT — 80h+ stalled. Ready to un-draft + request review.",
+    message: "🟡 PR #1604 (JN-5676): ALL CI GREEN + MERGEABLE. Still DRAFT — 83h+ stalled. Ready to un-draft + request review.",
   },
   {
     level: "green",
-    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): CI ALL GREEN 20h+. OPEN, no reviewer assigned yet.",
+    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): CI ALL GREEN 21h+. OPEN, no reviewer assigned yet.",
   },
   {
     level: "red",
-    message: "🔴 PR #1588 (JN-5546): MERGEABLE + pre-commit failing + sephib MUST FIX items outstanding. 77h+ stalled.",
+    message: "🔴 PR #1588 (JN-5546): MERGEABLE + pre-commit failing + sephib MUST FIX items outstanding. 80h+ stalled.",
   },
   {
     level: "yellow",
-    message: "🟡 PR #1606 (JN-5725, off-board): CI re-running (PENDING). Still CONFLICTING. Conflict must be resolved.",
+    message: "🟡 PR #1606 (JN-5725, off-board): Conflict resolved ✅ (now MERGEABLE). e2e-smoke + e2e-tests still FAILING — needs fix before merge.",
   },
   {
     level: "yellow",
-    message: "⚠️ 3 Jira tickets stale: JN-5662 (In Review, PR #1591 merged Jun 15 — 6+ days), JN-5673 (In Review, PR #1595 merged Jun 17 — 4+ days), JN-5674 (In Review, PR #1599 merged Jun 18 — 3+ days). All should be Done.",
+    message: "⚠️ 2 Jira tickets stale: JN-5673 (In Review, PR #1595 merged Jun 17 — 4+ days), JN-5674 (In Review, PR #1599 merged Jun 18 — 3+ days). Both should be Done. (JN-5662 ✅ resolved this run.)",
   },
   {
     level: "red",

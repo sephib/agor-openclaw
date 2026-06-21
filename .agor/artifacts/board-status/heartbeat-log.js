@@ -22,6 +22,15 @@ export const HEARTBEAT_RUNS = [
   // },
   {
     type: "advance",
+    timestamp: "2026-06-21 17:00 IDT",
+    actions: 0,
+    findings: 3,
+    status: "ok",
+    summary: "JN-5662 Jira now Done ✅ (was stale 6+ days). PR #1606 conflict resolved (MERGEABLE) but e2e-smoke still FAILING. PR #1602 21h+ green no reviewer. 2 Jira stale (JN-5673/5674). Gap: 4 missed windows 15:00–16:30 IDT.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019eea7b450b7e6cb92fb1ab/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-21 13:30 IDT",
     actions: 0,
     findings: 1,
