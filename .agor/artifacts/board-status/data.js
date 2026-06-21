@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-21 13:00 IDT";
+export const LAST_UPDATED = "2026-06-21 13:30 IDT";
 
 export const WORKTREES = [
   {
@@ -10,9 +10,9 @@ export const WORKTREES = [
     zone: "Respond",
     pr: "#1601",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1601",
-    status: "⚠️ CI ALL GREEN but CONFLICTING (since ~11:10 IDT Jun 21). Needs rebase onto main. Zone=Respond since Jun 18 (corrected).",
-    blockedOn: "Rebase onto main to resolve conflicts",
-    blockedType: "blocked",
+    status: "🟡 CONFLICT RESOLVED (13:30 IDT Jun 21) — MERGEABLE. e2e-smoke PENDING. Once green → move to Code Review zone.",
+    blockedOn: "Waiting on e2e-smoke CI result",
+    blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019ede80727b73af9ee27e9d/",
     sessionLabel: "last session (idle)",
     lastActive: "2026-06-21 09:41 IDT",
@@ -197,11 +197,11 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⚠️ PR #1601 (JN-5675): CI ALL GREEN but CONFLICTING (since ~11:10 IDT). Needs rebase onto main before Code Review zone move.",
+    message: "🟡 PR #1601 (JN-5675): CONFLICT RESOLVED at 13:30 IDT — now MERGEABLE. e2e-smoke PENDING. Once green → ready for Code Review zone move.",
   },
   {
     level: "green",
-    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): CI ALL GREEN 17h+. MERGEABLE. reviewDecision=''. Needs reviewer assigned.",
+    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): CI ALL GREEN 18h+. MERGEABLE. reviewDecision=''. Needs reviewer assigned.",
   },
   {
     level: "red",

@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-21 13:00 IDT (advance heartbeat)*
+*Last updated: 2026-06-21 13:30 IDT (advance heartbeat)*
 
 ---
 
@@ -8,7 +8,7 @@
 
 | Branch | Jira | Zone | Jira Status | PR | CI | Review | Flags |
 |--------|------|------|-------------|-----|-----|--------|-------|
-| jn-5675-historical-visibility | [JN-5675](https://jounce.atlassian.net/browse/JN-5675) | Respond | In Review | [#1601](https://github.com/Jounce-IO/jounce/pull/1601) | ✅ **ALL GREEN** | — | 🔴 **CONFLICTING** (since ~11:10 IDT Jun 21) — needs rebase before Code Review zone move. Zone=Respond since Jun 18 16:55 IDT (corrected from "Code" in prev state). |
+| jn-5675-historical-visibility | [JN-5675](https://jounce.atlassian.net/browse/JN-5675) | Respond | In Review | [#1601](https://github.com/Jounce-IO/jounce/pull/1601) | 🟡 **MOSTLY GREEN** (e2e-smoke PENDING) | — | 🟡 **CONFLICT RESOLVED** (13:30 IDT Jun 21) — MERGEABLE. e2e-smoke still pending. Was CONFLICTING since ~11:10 IDT. Once e2e-smoke passes → ready for Code Review zone move. |
 | jn-5676-notebook-scaffold | [JN-5676](https://jounce.atlassian.net/browse/JN-5676) | Publish | In Progress | [#1604](https://github.com/Jounce-IO/jounce/pull/1604) DRAFT | ✅ **ALL GREEN** (was pre-commit FAIL + CONFLICTING!) | REVIEW_REQUIRED | 🟡 **IMPROVED**: conflict resolved + CI all green. Still DRAFT. Ready to un-draft + request review. 75h+ stalled. |
 | jn-5546-docs-document-module-layout-convention-and-3 | [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | Code Review | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | ❌ pre-commit FAIL (tox/integration/nox all ✅) — MERGEABLE | — | 🔴 Pre-commit fix needed + sephib MUST FIX comments; 75h+ stalled |
 | ci-statistics-notebook | [JN-5708](https://jounce.atlassian.net/browse/JN-5708) (issue link) | Code | Done | — | — | — | ⚠️ No sessions; JN-5708 Done; scope unclear |
@@ -40,14 +40,14 @@
 
 ---
 
-## Key Changes Since Last Run (Jun 21 12:30 IDT)
+## Key Changes Since Last Run (Jun 21 13:00 IDT)
 
 | What observed | Status |
 |---|---|
-| **↔ PR #1601** | UNCHANGED — CONFLICTING, CI ALL GREEN. ~2h since conflict started. |
-| **↔ PR #1604** | UNCHANGED — ALL CI GREEN + MERGEABLE + DRAFT. ~79h stalled. Ready to un-draft. |
-| **↔ PR #1602** | UNCHANGED — ALL GREEN now 17h+, OPEN, MERGEABLE, reviewDecision="" — still no reviewer |
-| **↔ PR #1588** | UNCHANGED — pre-commit failing; 76h+ stalled |
+| **🟢 PR #1601** | **CONFLICT RESOLVED** — MERGEABLE (was CONFLICTING since ~11:10 IDT). CI: 12/13 checks pass, e2e-smoke PENDING. Once e2e-smoke green → ready for Code Review zone. |
+| **↔ PR #1604** | UNCHANGED — ALL CI GREEN + MERGEABLE + DRAFT. ~79.5h stalled. Ready to un-draft. |
+| **↔ PR #1602** | UNCHANGED — ALL GREEN now 18h+, OPEN, MERGEABLE, reviewDecision="" — still no reviewer |
+| **↔ PR #1588** | UNCHANGED — pre-commit failing; 76.5h+ stalled |
 | **↔ PR #1606** | UNCHANGED — CONFLICTING + e2e fail |
 | **↔ Jira mismatches** | JN-5662 (6+ days stale), JN-5673 (4+ days stale), JN-5674 (3+ days stale) — all still "In Review"/"In Progress" despite PRs merged |
 
@@ -65,13 +65,13 @@ PR [#1604](https://github.com/Jounce-IO/jounce/pull/1604) — "feat(jbenchmark):
 
 ---
 
-### 🔴 ONGOING — PR #1601 (JN-5675) CONFLICTING
+### 🟡 IMPROVED — PR #1601 (JN-5675) CONFLICT RESOLVED — e2e-smoke PENDING
 
 PR [#1601](https://github.com/Jounce-IO/jounce/pull/1601) — "feat(jbenchmark): JN-5675 historical visibility functions"
 
-**State:** OPEN, CONFLICTING, CI ALL GREEN. Conflict caused by post-11:02 IDT merge to main. Needs rebase.
+**State:** OPEN, MERGEABLE. Conflict was active ~11:10–13:30 IDT; now resolved. CI: 12/13 checks pass. e2e-smoke PENDING (triggered after rebase).
 
-**Required action:** Rebase jn-5675-historical-visibility onto main, push. Once MERGEABLE, move to Code Review zone.
+**Next action:** Wait for e2e-smoke to complete. If green → move to Code Review zone and request review.
 
 ---
 

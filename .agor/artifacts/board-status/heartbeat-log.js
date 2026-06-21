@@ -22,6 +22,15 @@ export const HEARTBEAT_RUNS = [
   // },
   {
     type: "advance",
+    timestamp: "2026-06-21 13:30 IDT",
+    actions: 0,
+    findings: 1,
+    status: "ok",
+    summary: "PR #1601 (JN-5675) CONFLICT RESOLVED — now MERGEABLE. e2e-smoke PENDING. PR #1602 CI green 18h+ still no reviewer. Board otherwise static.",
+    sessionUrl: "http://localhost:3030/ui/s/019ee9bb4ccd746abf7f90c20eaba380/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-21 13:00 IDT",
     actions: 0,
     findings: 2,
