@@ -848,4 +848,13 @@ export const HEARTBEAT_RUNS = [
     summary: "PR #1601 (JN-5675) MERGED 16:15 IDT — jn-5675-historical-visibility archived (autonomous). JN-5675 already Done in Jira. PR #1606 CI now PENDING (new run). JN-5662/5673/5674 still stale (3 flags).",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019eea5fcd407069b8dc8157/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-21 21:05 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "PR #1602 NOW FULLY GREEN (e2e-smoke SKIPPING — pending run completed, not required for this PR). PR #1606 pre-commit fixed but e2e-smoke+e2e-tests now FAIL. PR #1604 GH Actions CI still not running 3h+ post-un-draft. No new merges. JN-5673 stale (4+ days).",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019eeb5720c47122a9ec45b6/",
+  },
 ];

@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-21 20:32 IDT";
+export const LAST_UPDATED = "2026-06-21 21:05 IDT";
 
 export const WORKTREES = [
   {
@@ -11,8 +11,8 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1604 OPEN",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1604",
-    status: "🔴 GH Actions CI NOT triggered 2.5h+ after un-draft (20:32 IDT). Only CodeRabbit ✅ visible. reviewDecision cleared. Manual CI re-trigger needed before human reviewer.",
-    blockedOn: "GH Actions CI not running — manual re-trigger + address CodeRabbit comments",
+    status: "🔴 GH Actions CI NOT triggered 3h+ after un-draft (~17:30 IDT). Only CodeRabbit ✅ visible. Manual CI re-trigger + address CodeRabbit comments before human reviewer.",
+    blockedOn: "GH Actions CI not running — manual re-trigger needed",
     blockedType: "owner",
     sessionUrl: "http://localhost:3030/ui/s/019edb7fb4c770d78fc7a47d/",
     sessionLabel: "rebase session",
@@ -28,7 +28,7 @@ export const WORKTREES = [
     zone: "Revise",
     pr: "#1615 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1615",
-    status: "🆕 Draft PR open. Pre-commit FAIL (WIP expected). tox/nox/integration/e2e-tests ✅. Depends on JN-5676 (#1604) merging first.",
+    status: "⏳ Draft PR open. Pre-commit FAIL (WIP expected). tox/nox/integration/e2e-tests ✅. Depends on JN-5676 (#1604) merging first.",
     blockedOn: "JN-5676 (#1604) must merge first",
     blockedType: "blocked",
     sessionUrl: null,
@@ -44,7 +44,7 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1588",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1588",
-    status: "CI RED (pre-commit only — tox/nox all PASS). MERGEABLE. sephib MUST FIX items outstanding. 87h+ stalled.",
+    status: "CI RED (pre-commit only — tox/nox all PASS). MERGEABLE. sephib MUST FIX items outstanding. 90h+ stalled.",
     blockedOn: "Pre-commit CI fix + sephib review MUST FIX items",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ed01e5624752fbade0eab/",
@@ -185,24 +185,24 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "red",
-    message: "🔴 PR #1604 (JN-5676): GH Actions CI NOT triggered 2.5h+ after un-draft. Only CodeRabbit visible. Need manual CI re-trigger + address CodeRabbit actionable comments before requesting human reviewer.",
-  },
-  {
-    level: "yellow",
-    message: "🆕 PR #1615 (JN-5677): New draft PR — pre-commit failing (expected WIP). Depends on #1604 merging. No action needed yet.",
-  },
-  {
     level: "green",
-    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): 28h+ green — e2e-smoke PENDING (new run). Wait for green then assign reviewer.",
-  },
-  {
-    level: "yellow",
-    message: "🟡 PR #1606 (JN-5725, off-board): Failure mode shifted — now pre-commit FAIL (was e2e). Fix pre-commit, then re-check e2e.",
+    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): NOW FULLY GREEN — e2e-smoke SKIPPING (all checks pass/skip). OPEN, MERGEABLE, no reviewer assigned. Assign reviewer immediately.",
   },
   {
     level: "red",
-    message: "🔴 PR #1588 (JN-5546): MERGEABLE + pre-commit failing + sephib MUST FIX items outstanding. 87h+ stalled.",
+    message: "🔴 PR #1604 (JN-5676): GH Actions CI NOT triggered 3h+ after un-draft. Only CodeRabbit visible. Need manual CI re-trigger + address CodeRabbit actionable comments before requesting human reviewer.",
+  },
+  {
+    level: "red",
+    message: "🔴 PR #1606 (JN-5725, off-board): pre-commit now FIXED but e2e-smoke + e2e-tests now FAIL. Fix e2e failures.",
+  },
+  {
+    level: "yellow",
+    message: "⏳ PR #1615 (JN-5677): Draft PR — pre-commit failing (expected WIP). Depends on #1604 merging. No action needed yet.",
+  },
+  {
+    level: "red",
+    message: "🔴 PR #1588 (JN-5546): MERGEABLE + pre-commit failing + sephib MUST FIX items outstanding. 90h+ stalled.",
   },
   {
     level: "yellow",

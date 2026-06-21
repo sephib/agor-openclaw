@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-21 20:32 IDT (advance heartbeat)*
+*Last updated: 2026-06-21 21:05 IDT (advance heartbeat)*
 
 ---
 
@@ -8,9 +8,9 @@
 
 | Branch | Jira | Zone | Jira Status | PR | CI | Review | Flags |
 |--------|------|------|-------------|-----|-----|--------|-------|
-| jn-5676-notebook-scaffold | [JN-5676](https://jounce.atlassian.net/browse/JN-5676) | Publish | In Review | [#1604](https://github.com/Jounce-IO/jounce/pull/1604) **OPEN** (un-drafted ~17:30 IDT) | ⚠️ Only CodeRabbit ✅ — GH Actions CI **not triggered** 2.5h+ after un-draft | reviewDecision="" (CodeRabbit cleared) | 🔴 **GH Actions CI not running** — manual re-trigger needed before requesting human review |
-| jn-5677-dev-historical-mode-notebook-cells | [JN-5677](https://jounce.atlassian.net/browse/JN-5677) | Revise | In Progress | [#1615](https://github.com/Jounce-IO/jounce/pull/1615) **DRAFT** OPEN | ❌ pre-commit FAIL; tox/nox/integration/e2e-tests/atlas ✅ | REVIEW_REQUIRED | 🆕 **NEW** — first tracked run; draft PR with pre-commit failures (expected for WIP) |
-| jn-5546-docs-document-module-layout-convention-and-3 | [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | Code Review | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | ❌ pre-commit FAIL (tox/integration/nox all ✅) — MERGEABLE | — | 🔴 Pre-commit fix needed + sephib MUST FIX comments; 87h+ stalled |
+| jn-5676-notebook-scaffold | [JN-5676](https://jounce.atlassian.net/browse/JN-5676) | Publish | In Review | [#1604](https://github.com/Jounce-IO/jounce/pull/1604) **OPEN** | ⚠️ Only CodeRabbit ✅ — GH Actions CI **not triggered** 3h+ after un-draft | reviewDecision="" | 🔴 **GH Actions CI not running** — manual re-trigger needed |
+| jn-5677-dev-historical-mode-notebook-cells | [JN-5677](https://jounce.atlassian.net/browse/JN-5677) | Revise | In Progress | [#1615](https://github.com/Jounce-IO/jounce/pull/1615) **DRAFT** OPEN | ❌ pre-commit FAIL; tox/nox/integration/e2e-tests/atlas ✅ | REVIEW_REQUIRED | ⏳ WIP — draft, pre-commit failure expected |
+| jn-5546-docs-document-module-layout-convention-and-3 | [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | Code Review | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | ❌ pre-commit FAIL (tox/integration/nox all ✅) — MERGEABLE | — | 🔴 Pre-commit fix needed + sephib MUST FIX comments; 90h+ stalled |
 | internal-cr-system | — | Code | — | — | — | — | 🔴 Filesystem FAILED (git lock) — unchanged |
 | dual-heartbeat-system | — | Code | — | — | — | — | ✅ Idle, docs done |
 | standup-drafts | — | Code | — | — | — | — | ℹ️ Utility branch |
@@ -40,66 +40,66 @@
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
 | [#1605](https://github.com/Jounce-IO/jounce/pull/1605) | auto-apply-labels | [JN-5730](https://jounce.atlassian.net/browse/JN-5730) | — | **MERGED 10:50 IDT** | 🎉 MERGED — off-board, no archive needed |
-| [#1602](https://github.com/Jounce-IO/jounce/pull/1602) | persist-monotonicity-test | JN-5685/JN-5679 | ⏳ ALL GREEN except e2e-smoke PENDING (new run triggered) | OPEN, MERGEABLE, reviewDecision="" | 🎉 **28h+ since green** — e2e-smoke re-running; needs reviewer assigned |
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | ❌ **pre-commit FAIL** (changed from e2e FAIL); e2e checks now SKIPPING | OPEN, **MERGEABLE**, REVIEW_REQUIRED | 🟡 **Failure mode shifted**: was e2e-smoke+tests FAIL, now pre-commit FAIL — needs pre-commit fix |
+| [#1602](https://github.com/Jounce-IO/jounce/pull/1602) | persist-monotonicity-test | JN-5685/JN-5679 | ✅ **ALL GREEN** — e2e-smoke SKIPPING (was PENDING), all others PASS | OPEN, MERGEABLE, reviewDecision="" | 🎉 **FULLY GREEN — assign reviewer NOW** |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | ❌ e2e-smoke FAIL + e2e-tests FAIL (pre-commit now PASS) | OPEN, **MERGEABLE**, REVIEW_REQUIRED | 🔴 **Failure mode shifted again**: pre-commit fixed, now e2e-smoke + e2e-tests FAIL |
 
 ---
 
-## Key Changes Since Last Run (Jun 21 20:00 IDT)
+## Key Changes Since Last Run (Jun 21 20:32 IDT)
 
 | What observed | Status |
 |---|---|
-| **🆕 jn-5677 worktree detected** | Branch `jn-5677-dev-historical-mode-notebook-cells` in Revise zone with draft PR [#1615](https://github.com/Jounce-IO/jounce/pull/1615). Was previously "Sprint Tickets Without Board Worktrees." Pre-commit failing (expected WIP). Jira JN-5677 In Progress ✅. |
-| **🔴 PR #1604 GH Actions CI still not triggered** | 2.5h+ since un-draft — still only CodeRabbit visible. reviewDecision changed "" (CodeRabbit cleared). Manual CI re-trigger needed. |
-| **⏳ PR #1602 e2e-smoke now PENDING** | New CI run was triggered (was "ALL GREEN 27h+"). All other checks green. e2e-smoke pending — positive development. |
-| **↔ PR #1606 failure mode shifted** | Was "e2e-smoke + e2e-tests FAIL." Now pre-commit FAIL + e2e checks SKIPPING (likely gated behind pre-commit). New CI run. |
-| **↔ PR #1588** | UNCHANGED — pre-commit failing; 87h+ stalled. |
-| **↔ PR #1596** | UNCHANGED — CONFLICTING, DRAFT, frozen. |
+| **🎉 PR #1602 NOW FULLY GREEN** | e2e-smoke changed PENDING → SKIPPING. All other checks PASS. PR is fully green and ready for a reviewer. OPEN, MERGEABLE, no reviewer assigned. |
+| **↔ PR #1606 failure mode shifted (again)** | pre-commit now PASS (was FAIL). But e2e-smoke FAIL + e2e-tests FAIL. New failure mode: e2e suite. |
+| **🔴 PR #1604 GH Actions CI still not triggered** | Now 3h+ since un-draft. Unchanged. |
+| **↔ PR #1588** | UNCHANGED — pre-commit failing; 90h+ stalled. |
+| **↔ PR #1615** | UNCHANGED — pre-commit failing WIP draft. |
 | **↔ JN-5673** | UNCHANGED — still "In Review" (PR #1595 merged Jun 17, 4+ days stale). |
+| **No new merges** | Step 1 sweep: no PRs merged since 20:32 IDT. |
 
 ---
 
 ## Attention Items
 
-### 🔴 PR #1604 (JN-5676) — GH Actions CI NOT Running (2.5h+ after un-draft)
+### 🎉 ACTION NEEDED — PR #1602 (JN-5685/JN-5679) — NOW FULLY GREEN
+
+PR [#1602](https://github.com/Jounce-IO/jounce/pull/1602) — "feat(jbenchmark): add monotonicity verdict persistence tables and ingestion"
+
+**e2e-smoke is now SKIPPING** (the pending run from last heartbeat completed — e2e-smoke not required for this PR's changes). All other checks pass. OPEN, MERGEABLE, no reviewer assigned.
+
+**Required action:** Assign a reviewer immediately.
+
+---
+
+### 🔴 PR #1604 (JN-5676) — GH Actions CI NOT Running (3h+ after un-draft)
 
 PR [#1604](https://github.com/Jounce-IO/jounce/pull/1604) — "feat(jbenchmark): notebook scaffold + operational mode (JN-5676)"
 
-Un-drafted ~17:30 IDT. As of 20:32 IDT, GH Actions CI has **not triggered** — only CodeRabbit visible in `gh pr checks`. reviewDecision="" (CodeRabbit review cleared, 2 actionable comments remain open).
+Un-drafted ~17:30 IDT. As of 21:05 IDT, GH Actions CI has **not triggered** — only CodeRabbit visible. reviewDecision="" (CodeRabbit review cleared, 2 actionable comments remain open).
 
 **Required action:** Manually re-trigger CI (push an empty commit or use GitHub UI), then address CodeRabbit actionable comments, confirm CI green, request a human reviewer.
 
 ---
 
-### 🆕 PR #1615 (JN-5677) — New Draft PR, Pre-commit Failing (WIP)
+### 🔴 OFF-BOARD — PR #1606 (JN-5725) — e2e Failure (pre-commit fixed)
+
+PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): MERGEABLE. Pre-commit was fixed this run. But now e2e-smoke + e2e-tests FAIL. Pattern: each time one issue is fixed, another surfaces.
+
+**Required action:** Fix e2e failures.
+
+---
+
+### 🆕 PR #1615 (JN-5677) — Draft PR, Pre-commit Failing (WIP)
 
 PR [#1615](https://github.com/Jounce-IO/jounce/pull/1615) — "feat(jbenchmark): historical mode notebook cells (JN-5677)"
 
-DRAFT, MERGEABLE. Pre-commit FAIL — expected for WIP. tox/nox/integration/e2e-tests/atlas all green. Depends on JN-5676 (PR #1604) merging first.
+DRAFT, MERGEABLE. Pre-commit FAIL — expected for WIP. Depends on JN-5676 (PR #1604) merging first.
 
 **No action needed** — WIP, draft, pre-commit failure is expected.
 
 ---
 
-### 🎉 ACTION NEEDED — PR #1602 (JN-5685/JN-5679) — 28h+ Green, e2e-smoke Re-running
-
-PR [#1602](https://github.com/Jounce-IO/jounce/pull/1602) — "feat(jbenchmark): add monotonicity verdict persistence tables and ingestion"
-
-e2e-smoke now PENDING (new run). All other checks pass. OPEN, no reviewer assigned.
-
-**Required action:** Wait for e2e-smoke to complete. If green → assign reviewer immediately.
-
----
-
-### 🟡 OFF-BOARD — PR #1606 (JN-5725) — Failure Mode Shifted to Pre-commit
-
-PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): MERGEABLE. Previous failure was e2e-smoke. New CI run shows pre-commit FAIL with e2e checks SKIPPING. Pre-commit is gating everything.
-
-**Required action:** Fix pre-commit failures, then re-run to see if e2e-smoke still fails.
-
----
-
-### 🔴 PR #1588 (JN-5546) — pre-commit + sephib MUST FIX (87h+ stalled)
+### 🔴 PR #1588 (JN-5546) — pre-commit + sephib MUST FIX (90h+ stalled)
 
 MERGEABLE + pre-commit failing + sephib MUST FIX comments. No fix activity.
 
@@ -131,8 +131,6 @@ JN-5674 ✅ Done (resolved prior run). JN-5673 should be Done.
 | [JN-5724](https://jounce.atlassian.net/browse/JN-5724) | Reduce Lychee precommit flaky results | Backlog | No worktree |
 | [JN-5539](https://jounce.atlassian.net/browse/JN-5539) | Dependency & Build Standardization | **In Progress** | No worktree — may be cross-cutting |
 | [JN-5244](https://jounce.atlassian.net/browse/JN-5244) | Add --user, --no-cache CLI flags to runner | **In Progress** | No worktree — may be older/lower priority |
-
-*Note: JN-5677 now has worktree `jn-5677-dev-historical-mode-notebook-cells` — removed from this table.*
 
 ---
 

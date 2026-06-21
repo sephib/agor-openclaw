@@ -1907,3 +1907,39 @@
 - Flags: JN-5662/5673/5674 still "In Review" despite PRs merged (6+/4+/3+ days stale); JN-5675 already Done ✅
 - Actions: Archived jn-5675-historical-visibility (autonomous — PR #1601 MERGED)
 - Next: #1604 needs un-draft + review request; #1602 needs reviewer; JN-5662/5673/5674 need manual Jira updates
+
+## 17:00 IDT — Weekday Daytime Advance Heartbeat (Jun 21)
+- PRs checked: #1604 (DRAFT, OPEN, CI GREEN), #1602 (off-board, ALL GREEN 21h+, no reviewer), #1588 (pre-commit FAIL), #1606 (MERGEABLE, e2e-smoke FAIL)
+- Merges detected: none
+- Archives: none
+- CI changes: PR #1606 conflict resolved (MERGEABLE). JN-5662 Jira transitioned to Done ✅.
+- Flags: JN-5673/5674 still "In Review" (2 stale Jira tickets); #1602 21h+ green no reviewer
+- Actions: none (supervised)
+- Next: #1604 needs un-draft; #1602 needs reviewer
+
+## 20:00 IDT — Weekday Daytime Advance Heartbeat (Jun 21)
+- PRs checked: #1604 (OPEN, NOT DRAFT — UN-DRAFTED ~17:30 IDT, CI only CodeRabbit visible), #1602 (off-board, ALL GREEN 27h+, no reviewer), #1606 (e2e-smoke FAIL still), #1588 (pre-commit FAIL), #1615 (new DRAFT, pre-commit FAIL WIP)
+- Merges detected: none
+- Archives: none
+- CI changes: PR #1604 un-drafted ~17:30 IDT — GH Actions CI NOT triggered yet. JN-5674 Jira transitioned to Done ✅. JN-5677 worktree detected with draft PR #1615.
+- Flags: #1604 CI not running post-un-draft; #1602 27h+ green no reviewer; JN-5673 stale
+- Actions: none (supervised)
+- Next: manual CI re-trigger for #1604; reviewer for #1602
+
+## 20:32 IDT — Weekday Daytime Advance Heartbeat (Jun 21)
+- PRs checked: #1604 (OPEN, CI only CodeRabbit 2.5h+ after un-draft), #1615 (DRAFT, pre-commit FAIL WIP), #1602 (off-board, e2e-smoke PENDING new run), #1606 (off-board, failure shifted to pre-commit FAIL), #1588 (pre-commit FAIL)
+- Merges detected: none
+- Archives: none
+- CI changes: #1602 e2e-smoke changed to PENDING (new CI run triggered). #1606 failure mode shifted: was e2e FAIL, now pre-commit FAIL. #1615 detected for first time (new worktree in Revise zone).
+- Flags: #1604 CI still not running 2.5h+; #1602 e2e-smoke pending; JN-5673 stale
+- Actions: none (supervised)
+- Next: wait for #1602 e2e-smoke; manual CI trigger for #1604
+
+## 21:05 IDT — Weekday Daytime Advance Heartbeat (Jun 21)
+- PRs checked: #1604 (OPEN, CI only CodeRabbit 3h+ after un-draft), #1615 (DRAFT, pre-commit FAIL WIP), #1602 (off-board, **ALL GREEN** — e2e-smoke SKIPPING), #1606 (off-board, pre-commit PASS but e2e-smoke+e2e-tests FAIL), #1588 (pre-commit FAIL)
+- Merges detected: none
+- Archives: none
+- CI changes: **#1602 NOW FULLY GREEN** — e2e-smoke SKIPPING (pending run completed, test not required for this PR). **#1606 pre-commit fixed** but now e2e-smoke+e2e-tests FAIL.
+- Flags: #1602 FULLY GREEN — assign reviewer; #1604 CI still not running 3h+; #1606 e2e failure; #1588 90h+ stalled; JN-5673 stale
+- Actions: none (no MERGED/CLOSED PRs to archive)
+- Next: assign reviewer to #1602; manual CI trigger for #1604
