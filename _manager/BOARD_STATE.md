@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-21 10:31 IDT (advance heartbeat)*
+*Last updated: 2026-06-21 11:02 IDT (advance heartbeat)*
 
 ---
 
@@ -8,7 +8,7 @@
 
 | Branch | Jira | Zone | Jira Status | PR | CI | Review | Flags |
 |--------|------|------|-------------|-----|-----|--------|-------|
-| jn-5675-historical-visibility | [JN-5675](https://jounce.atlassian.net/browse/JN-5675) | Code | In Review | [#1601](https://github.com/Jounce-IO/jounce/pull/1601) | ✅ **ALL GREEN** (after main merge 09:41 IDT) | — | 🎉 CI FIXED — was catastrophic 58h+; ready for Code Review zone |
+| jn-5675-historical-visibility | [JN-5675](https://jounce.atlassian.net/browse/JN-5675) | Code | In Review | [#1601](https://github.com/Jounce-IO/jounce/pull/1601) | ✅ **ALL GREEN** | — | Ready for Code Review zone move |
 | jn-5729-pin-uv-default-python-2 | [JN-5729](https://jounce.atlassian.net/browse/JN-5729) | Publish | Backlog | [#1608](https://github.com/Jounce-IO/jounce/pull/1608) **MERGED** | — | — | 🎉 PR MERGED 09:37 IDT — propose archive |
 | jn-5729-pin-python-313 | [JN-5729](https://jounce.atlassian.net/browse/JN-5729) | Code | Backlog | [#1607](https://github.com/Jounce-IO/jounce/pull/1607) **CLOSED** | — | — | 🗑️ PR CLOSED 08:03 IDT (superseded by #1608) — propose archive |
 | jn-5729-pin-uv-default-python | [JN-5729](https://jounce.atlassian.net/browse/JN-5729) | Ingest | Backlog | — | — | — | 🗑️ JN-5729 done via #1608 — no PR — propose archive |
@@ -20,7 +20,7 @@
 | jn-5695-db-connect-script | [JN-5695](https://jounce.atlassian.net/browse/JN-5695) | BLOCKED | Backlog | [#1596](https://github.com/Jounce-IO/jounce/pull/1596) DRAFT | ⚠️ Only CodeRabbit | — | 🔴 CONFLICTING; frozen |
 | jn-5672-dal-ext-dashboard | [JN-5672](https://jounce.atlassian.net/browse/JN-5672) | BLOCKED | Backlog | — | — | — | ℹ️ On hold |
 | code-reviewes | — | Code Review | — | — | — | — | 🗑️ Should be ARCHIVED — review done Jun 15 |
-| standup-drafts | — | (no zone) | — | — | — | — | ℹ️ Utility branch |
+| standup-drafts | — | Code | — | — | — | — | ℹ️ Utility branch |
 
 **Archived Since Last Run:**
 - jn-5673-visibility-scaffold (archived Jun 21 04:57 IDT)
@@ -32,19 +32,19 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1605](https://github.com/Jounce-IO/jounce/pull/1605) | auto-apply-labels | [JN-5730](https://jounce.atlassian.net/browse/JN-5730) | ✅ **ALL GREEN** | OPEN, MERGEABLE, **APPROVED** | 🎉 **READY TO MERGE** — CI fully green + approved (was CI in progress at 09:45 IDT) |
-| [#1602](https://github.com/Jounce-IO/jounce/pull/1602) | persist-monotonicity-test | JN-5685/JN-5679 | ✅ ALL GREEN | OPEN, MERGEABLE, reviewDecision="" | 🎉 **10.5h+ since green** — reviewDecision changed from REVIEW_REQUIRED to "" (1 comment review from OmerMarcovich) — needs reviewer assigned |
+| [#1605](https://github.com/Jounce-IO/jounce/pull/1605) | auto-apply-labels | [JN-5730](https://jounce.atlassian.net/browse/JN-5730) | — | **MERGED 10:50 IDT** | 🎉 **MERGED at 10:50 IDT** — "(infra): auto apply jbenchmark and argocd labels" merged by ushaket |
+| [#1602](https://github.com/Jounce-IO/jounce/pull/1602) | persist-monotonicity-test | JN-5685/JN-5679 | ✅ ALL GREEN | OPEN, MERGEABLE, reviewDecision="" | 🎉 **11h+ since green** — needs reviewer assigned |
 | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | ❌ e2e-smoke + e2e-tests FAIL (others ✅) | OPEN, **CONFLICTING**, REVIEW_REQUIRED | 🔴 CONFLICTING + systemic e2e failures — unchanged |
 
 ---
 
-## Key Changes Since Last Run (Jun 21 09:45 IDT)
+## Key Changes Since Last Run (Jun 21 10:31 IDT)
 
 | What observed | Status |
 |---|---|
-| **🎉 PR #1605 ALL GREEN + APPROVED** | was "CI in progress + APPROVED" at 09:45 IDT. CI now fully green — all checks pass. MERGEABLE + APPROVED. Ready to merge! |
-| **↔ PR #1601** | UNCHANGED — ALL GREEN, OPEN, MERGEABLE, no review. Waiting for Code Review zone move. |
-| **↔ PR #1602** | UNCHANGED — ALL GREEN 10.5h+, OPEN, MERGEABLE, reviewDecision="" |
+| **🎉 PR #1605 MERGED at 10:50 IDT** | Was "ALL GREEN + APPROVED, ready to merge" at 10:31 IDT. Merged by ushaket (Uri Shaket) — "(infra): auto apply jbenchmark and argocd labels (JN-5730)". |
+| **↔ PR #1601** | UNCHANGED — ALL GREEN, OPEN, MERGEABLE, no review. Still needs Code Review zone move. |
+| **↔ PR #1602** | UNCHANGED — ALL GREEN now 11h+, OPEN, MERGEABLE, reviewDecision="" |
 | **↔ PR #1604** | UNCHANGED — DRAFT + CONFLICTING + pre-commit fail; 72h+ stalled |
 | **↔ PR #1588** | UNCHANGED — pre-commit failing; 73h+ stalled |
 | **↔ PR #1606** | UNCHANGED — CONFLICTING + e2e fail |
@@ -53,17 +53,9 @@
 
 ## Attention Items
 
-### 🎉 READY TO MERGE — PR #1605 (JN-5730) CI ALL GREEN + APPROVED
+### 🎉 MERGED — PR #1605 (JN-5730) at 10:50 IDT
 
-PR [#1605](https://github.com/Jounce-IO/jounce/pull/1605) — "(infra): auto apply jbenchmark and argocd labels (JN-5730)"
-
-**NEW at 10:31 IDT** — CI went ALL GREEN and PR is APPROVED. Was "CI in progress" at 09:45 IDT. Now fully ready.
-
-**CI (all pass):** pre-commit ✅, pre-commit-run/pre-commit ✅, tox ✅, integration ✅, e2e-api ✅, e2e-smoke ✅, e2e-tests ✅, nox ✅, atlas-validate ✅, JIRA Association ✅
-
-State: OPEN, MERGEABLE, APPROVED. Not draft. Off-board PR.
-
-**Action needed:** Joseph can merge this PR now.
+PR [#1605](https://github.com/Jounce-IO/jounce/pull/1605) — "(infra): auto apply jbenchmark and argocd labels (JN-5730)" — **MERGED** at 10:50 IDT (07:50:01 UTC) by Uri Shaket. Was flagged as READY TO MERGE at the 10:31 IDT heartbeat. No worktree on this board — off-board PR, no archive needed.
 
 ---
 
@@ -81,16 +73,14 @@ State: OPEN, MERGEABLE, no review. Not draft.
 
 ---
 
-### 🎉 ACTION NEEDED — PR #1602 (JN-5685/JN-5679) CI ALL GREEN — 10.5h+ since green
+### 🎉 ACTION NEEDED — PR #1602 (JN-5685/JN-5679) CI ALL GREEN — 11h+ since green
 
 PR [#1602](https://github.com/Jounce-IO/jounce/pull/1602) — "feat(jbenchmark): add monotonicity verdict persistence tables and ingestion (JN-5685, JN-5679)"
 
-**CI ALL GREEN** — confirmed 09:45 IDT. All checks passing.
+**CI ALL GREEN** — confirmed 11:02 IDT. All checks passing.
 - State: OPEN, MERGEABLE, reviewDecision="" (was REVIEW_REQUIRED)
 - Reviews: OmerMarcovich left a COMMENT at 04:26 IDT (not an approval)
-- 10.5h+ since CI went green (00:00 IDT Jun 21). No reviewer assigned.
-
-**Note:** reviewDecision changed from REVIEW_REQUIRED to "". May indicate branch protection changed or the comment review changed the policy. Still needs a human approval review.
+- 11h+ since CI went green (00:00 IDT Jun 21). No reviewer assigned.
 
 ---
 
@@ -99,7 +89,7 @@ PR [#1602](https://github.com/Jounce-IO/jounce/pull/1602) — "feat(jbenchmark):
 PR [#1608](https://github.com/Jounce-IO/jounce/pull/1608) merged 09:37 IDT — "fix(devcontainer): pin uv default Python to 3.13 (JN-5729)". Three worktrees now need archiving:
 
 1. `jn-5729-pin-uv-default-python-2` (Publish zone) — PR #1608 merged ✅
-2. `jn-5729-pin-python-313` (Code zone) — PR #1607 closed (superseded) 
+2. `jn-5729-pin-python-313` (Code zone) — PR #1607 closed (superseded)
 3. `jn-5729-pin-uv-default-python` (Ingest zone) — no PR, JN-5729 work complete
 
 Also: JN-5729 Jira is still Backlog (unassigned) — should be updated to Done.
@@ -118,9 +108,9 @@ MERGEABLE + pre-commit failing + sephib MUST FIX comments. No fix activity.
 
 ---
 
-### 🔴 OFF-BOARD — PR #1606 (JN-5725) Systemic e2e failure + NOW CONFLICTING
+### 🔴 OFF-BOARD — PR #1606 (JN-5725) Systemic e2e failure + CONFLICTING
 
-PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): e2e-smoke ❌, e2e-tests ❌ (systemic). Now also CONFLICTING (was MERGEABLE at 08:03 IDT). Both issues need attention before merge.
+PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): e2e-smoke ❌, e2e-tests ❌ (systemic). Also CONFLICTING. Both issues need attention before merge.
 
 ---
 
@@ -161,6 +151,7 @@ Git lock error — unchanged since Jun 18.
 
 | Ticket | PR | Merged |
 |--------|----|--------|
+| [JN-5730](https://jounce.atlassian.net/browse/JN-5730) | [#1605](https://github.com/Jounce-IO/jounce/pull/1605) | Jun 21 10:50 IDT ✅ |
 | [JN-5729](https://jounce.atlassian.net/browse/JN-5729) | [#1608](https://github.com/Jounce-IO/jounce/pull/1608) | Jun 21 09:37 IDT ✅ |
 | [JN-5674](https://jounce.atlassian.net/browse/JN-5674) | [#1599](https://github.com/Jounce-IO/jounce/pull/1599) | Jun 18 23:55 IDT ✅ |
 | JN-5619 | [#1598](https://github.com/Jounce-IO/jounce/pull/1598) | Jun 18 13:33 UTC ✅ |

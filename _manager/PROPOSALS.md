@@ -6,12 +6,9 @@
 
 ## 2026-06-21 10:31 IDT — Advance Heartbeat
 
-### 🎉 PR #1605 (JN-5730) ALL GREEN + APPROVED — Ready to merge
-- **Action:** Flag to Joseph that PR [#1605](https://github.com/Jounce-IO/jounce/pull/1605) "(infra): auto apply jbenchmark and argocd labels" is now ALL GREEN + APPROVED and ready to merge
-- **Reason:** CI completed successfully between 09:45–10:31 IDT. All checks pass: pre-commit, tox, integration, e2e-api, e2e-smoke, e2e-tests, nox, atlas-validate. APPROVED + MERGEABLE. Off-board PR (no worktree on this board).
-- **Risk:** None — standard merge when ready
-- **Worktree:** N/A (off-board PR, branch: `auto-apply-labels`)
-- **Status:** PENDING — needs Joseph to merge
+### ~~🎉 PR #1605 (JN-5730) ALL GREEN + APPROVED — Ready to merge~~ — RESOLVED ✅
+- **RESOLVED:** PR [#1605](https://github.com/Jounce-IO/jounce/pull/1605) **MERGED at 10:50 IDT Jun 21** by ushaket (Uri Shaket). Was flagged READY TO MERGE at 10:31 IDT heartbeat. No action needed.
+- **Status:** RESOLVED
 
 ---
 

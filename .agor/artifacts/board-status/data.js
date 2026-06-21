@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-21 10:31 IDT";
+export const LAST_UPDATED = "2026-06-21 11:02 IDT";
 
 export const WORKTREES = [
   {
@@ -181,6 +181,15 @@ export const WORKTREES = [
 
 export const MERGED = [
   {
+    ticket: "JN-5730",
+    ticketUrl: "https://jounce.atlassian.net/browse/JN-5730",
+    title: "Auto apply jbenchmark and argocd labels",
+    pr: "#1605",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1605",
+    mergedDate: "2026-06-21",
+    note: "Merged 10:50 IDT Jun 21 by ushaket — off-board PR",
+  },
+  {
     ticket: "JN-5729",
     ticketUrl: "https://jounce.atlassian.net/browse/JN-5729",
     title: "Hotfix: pin uv default Python to 3.13",
@@ -230,7 +239,7 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "green",
-    message: "🎉 PR #1605 (JN-5730, off-board): 'auto apply jbenchmark and argocd labels' — CI ALL GREEN + APPROVED at 10:31 IDT. OPEN, MERGEABLE. READY TO MERGE.",
+    message: "🎉 PR #1605 (JN-5730) MERGED at 10:50 IDT Jun 21 — '(infra): auto apply jbenchmark and argocd labels'. Merged by ushaket. Off-board PR.",
   },
   {
     level: "green",
@@ -242,7 +251,7 @@ export const ALERTS = [
   },
   {
     level: "green",
-    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): 'persist-monotonicity-test' — CI ALL GREEN 10.5h+. pre-commit ✅, tox ✅, integration ✅, e2e-tests ✅, nox ✅, atlas-validate ✅. MERGEABLE. reviewDecision=''. Needs reviewer assigned.",
+    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): 'persist-monotonicity-test' — CI ALL GREEN 11h+. pre-commit ✅, tox ✅, integration ✅, e2e-tests ✅, nox ✅, atlas-validate ✅. MERGEABLE. reviewDecision=''. Needs reviewer assigned.",
   },
   {
     level: "red",
@@ -254,7 +263,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): e2e-smoke/e2e ❌, e2e-tests ❌. Now also CONFLICTING (was MERGEABLE at 08:03 IDT). Systemic e2e issue + conflict cascade.",
+    message: "🔴 PR #1606 (JN-5725, off-board): e2e-smoke/e2e ❌, e2e-tests ❌. Also CONFLICTING. Systemic e2e issue + conflict cascade.",
   },
   {
     level: "yellow",

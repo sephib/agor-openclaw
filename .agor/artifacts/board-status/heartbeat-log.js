@@ -22,6 +22,15 @@ export const HEARTBEAT_RUNS = [
   // },
   {
     type: "advance",
+    timestamp: "2026-06-21 11:02 IDT",
+    actions: 0,
+    findings: 1,
+    status: "ok",
+    summary: "PR #1605 (JN-5730) MERGED at 10:50 IDT — all other PRs static. PR #1601 still awaits Code Review zone move; PR #1602 11h+ green needs reviewer.",
+    sessionUrl: "http://localhost:3030/ui/s/019ee931fa4672dcb1314b43/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-21 10:31 IDT",
     actions: 0,
     findings: 1,
