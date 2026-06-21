@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-21 20:00 IDT";
+export const LAST_UPDATED = "2026-06-21 20:32 IDT";
 
 export const WORKTREES = [
   {
@@ -11,12 +11,29 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1604 OPEN",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1604",
-    status: "🟡 UN-DRAFTED ~17:30 IDT! CodeRabbit: 2 actionable comments + 2 nitpicks. GH Actions CI pending re-trigger. Human review needed.",
-    blockedOn: "CodeRabbit actionable items + CI pending re-run + human reviewer",
+    status: "🔴 GH Actions CI NOT triggered 2.5h+ after un-draft (20:32 IDT). Only CodeRabbit ✅ visible. reviewDecision cleared. Manual CI re-trigger needed before human reviewer.",
+    blockedOn: "GH Actions CI not running — manual re-trigger + address CodeRabbit comments",
     blockedType: "owner",
     sessionUrl: "http://localhost:3030/ui/s/019edb7fb4c770d78fc7a47d/",
     sessionLabel: "rebase session",
     lastActive: "2026-06-18 16:14 IDT",
+  },
+  {
+    ticket: "JN-5677",
+    sprint: "current",
+    ticketUrl: "https://jounce.atlassian.net/browse/JN-5677",
+    title: "Historical mode notebook cells",
+    branch: "jn-5677-dev-historical-mode-notebook-cells",
+    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5677-dev-historical-mode-notebook-cells",
+    zone: "Revise",
+    pr: "#1615 DRAFT",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1615",
+    status: "🆕 Draft PR open. Pre-commit FAIL (WIP expected). tox/nox/integration/e2e-tests ✅. Depends on JN-5676 (#1604) merging first.",
+    blockedOn: "JN-5676 (#1604) must merge first",
+    blockedType: "blocked",
+    sessionUrl: null,
+    sessionLabel: null,
+    lastActive: "2026-06-21 (active)",
   },
   {
     ticket: "JN-5546",
@@ -27,7 +44,7 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1588",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1588",
-    status: "CI RED (pre-commit only — tox/nox all PASS). MERGEABLE. sephib MUST FIX items outstanding. 83h+ stalled.",
+    status: "CI RED (pre-commit only — tox/nox all PASS). MERGEABLE. sephib MUST FIX items outstanding. 87h+ stalled.",
     blockedOn: "Pre-commit CI fix + sephib review MUST FIX items",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ed01e5624752fbade0eab/",
@@ -168,24 +185,28 @@ export const MERGED = [
 
 export const ALERTS = [
   {
+    level: "red",
+    message: "🔴 PR #1604 (JN-5676): GH Actions CI NOT triggered 2.5h+ after un-draft. Only CodeRabbit visible. Need manual CI re-trigger + address CodeRabbit actionable comments before requesting human reviewer.",
+  },
+  {
     level: "yellow",
-    message: "🟡 PR #1604 (JN-5676): UN-DRAFTED ~17:30 IDT. CodeRabbit: 2 actionable comments (exception handling for DB calls in notebook). GH Actions CI pending re-trigger. Assign human reviewer after CI confirms green.",
+    message: "🆕 PR #1615 (JN-5677): New draft PR — pre-commit failing (expected WIP). Depends on #1604 merging. No action needed yet.",
   },
   {
     level: "green",
-    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): CI ALL GREEN 27h+. OPEN, no reviewer assigned yet.",
+    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): 28h+ green — e2e-smoke PENDING (new run). Wait for green then assign reviewer.",
+  },
+  {
+    level: "yellow",
+    message: "🟡 PR #1606 (JN-5725, off-board): Failure mode shifted — now pre-commit FAIL (was e2e). Fix pre-commit, then re-check e2e.",
   },
   {
     level: "red",
-    message: "🔴 PR #1588 (JN-5546): MERGEABLE + pre-commit failing + sephib MUST FIX items outstanding. 83h+ stalled.",
+    message: "🔴 PR #1588 (JN-5546): MERGEABLE + pre-commit failing + sephib MUST FIX items outstanding. 87h+ stalled.",
   },
   {
     level: "yellow",
-    message: "🟡 PR #1606 (JN-5725, off-board): MERGEABLE. e2e-smoke + e2e-tests still FAILING — needs fix before merge.",
-  },
-  {
-    level: "yellow",
-    message: "⚠️ 1 Jira ticket stale: JN-5673 (In Review, PR #1595 merged Jun 17 — 4+ days). Should be Done. (JN-5674 ✅ resolved this run.)",
+    message: "⚠️ 1 Jira ticket stale: JN-5673 (In Review, PR #1595 merged Jun 17 — 4+ days). Should be Done.",
   },
   {
     level: "red",

@@ -31,6 +31,15 @@ export const HEARTBEAT_RUNS = [
   },
   {
     type: "advance",
+    timestamp: "2026-06-21 20:32 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "NEW: jn-5677 worktree found (Revise zone, draft PR #1615 — removed from no-worktree list). PR #1604 GH Actions CI still not triggered 2.5h+ post-un-draft (red flag). PR #1602 e2e-smoke PENDING (new run). PR #1606 failure shifted: pre-commit now (was e2e). JN-5673 still stale.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019eeb3ba98f71718fd3a57f315810d4/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-21 20:00 IDT",
     actions: 0,
     findings: 4,

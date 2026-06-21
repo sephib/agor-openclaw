@@ -4,6 +4,18 @@
 
 ---
 
+## 20:32 IDT — Weekday Daytime Advance Heartbeat (Jun 21)
+
+- PRs checked: #1604 (OPEN, not draft, CI still only CodeRabbit — GH Actions not triggered 2.5h+ post-un-draft), #1615 (NEW — draft PR JN-5677, pre-commit FAIL), #1588 (pre-commit FAIL — unchanged, 87h+ stalled), #1596 (CONFLICTING, DRAFT — unchanged), #1602 (off-board, e2e-smoke PENDING — new CI run, all else GREEN), #1606 (off-board, pre-commit FAIL — failure mode shifted from e2e)
+- Merges detected: none since 20:00 IDT
+- CI changes: #1604 GH Actions CI still not running 2.5h+ after un-draft; #1602 e2e-smoke now PENDING (new run triggered); #1606 failure shifted from e2e-smoke to pre-commit (new CI run); #1615 new — pre-commit FAIL (WIP)
+- Jira: JN-5677 now has worktree (removed from "no worktree" table). JN-5673 still "In Review" (PR #1595 merged Jun 17, 4+ days stale — unchanged).
+- Autonomous actions: 0 (no new MERGED/CLOSED PRs to archive)
+- Flags: 5 (PR #1604 GH Actions not running, PR #1602 reviewer needed + e2e-smoke pending, PR #1606 pre-commit fix, PR #1588 pre-commit + MUST FIX, JN-5673 Jira mismatch)
+- Next: PR #1604 — re-trigger GH Actions CI manually; PR #1602 — wait for e2e-smoke, then assign reviewer; PR #1606 — fix pre-commit; mark JN-5673 Done
+
+---
+
 ## 20:00 IDT — Weekday Daytime Advance Heartbeat (Jun 21)
 
 - PRs checked: #1604 (OPEN, **UN-DRAFTED ~17:30 IDT**, CodeRabbit reviewed — CI pending re-trigger), #1588 (pre-commit FAIL — unchanged, 83h+ stalled), #1596 (CONFLICTING, DRAFT — BLOCKED, unchanged), #1602 (off-board, ALL GREEN 27h+ — still no reviewer), #1606 (off-board, e2e-smoke/e2e-tests FAIL — unchanged)
