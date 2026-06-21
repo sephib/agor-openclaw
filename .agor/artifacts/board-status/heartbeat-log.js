@@ -31,6 +31,15 @@ export const HEARTBEAT_RUNS = [
   },
   {
     type: "advance",
+    timestamp: "2026-06-21 20:00 IDT",
+    actions: 0,
+    findings: 4,
+    status: "ok",
+    summary: "PR #1604 UN-DRAFTED ~17:30 IDT — CodeRabbit left 2 actionable comments; GH Actions CI pending re-trigger. JN-5674 now Done ✅ (stale → resolved, 1 mismatch remains: JN-5673). PR #1602 27h+ green no reviewer. PR #1606 e2e still failing.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019eeb2031f773449d3edba575c85633/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-21 13:30 IDT",
     actions: 0,
     findings: 1,
