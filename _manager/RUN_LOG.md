@@ -4,6 +4,16 @@
 
 ---
 
+## 11:33 IDT — Weekday Daytime Advance Heartbeat (Jun 21)
+
+- PRs checked: #1601 (ALL GREEN ✅ but **NOW CONFLICTING** — was MERGEABLE at 11:02 IDT), #1602 (ALL GREEN 12.5h+), #1604 (DRAFT, CONFLICTING, pre-commit fail), #1588 (pre-commit fail), #1606 (CONFLICTING + e2e fail)
+- Merges detected: none since 11:02 IDT — board otherwise static
+- CI changes: **PR #1601 became CONFLICTING** since 11:02 IDT. CI itself is still ALL GREEN (run 27896273144). Likely caused by post-11:02 main merge that conflicted with jn-5675 changes.
+- Flags: PR #1601 needs rebase before Code Review zone move; PR #1602 12.5h+ green no reviewer; 3 JN-5729 worktrees still pending archive; JN-5662 + JN-5729 Jira mismatches persist
+- Next: Rebase jn-5675 onto main; assign reviewer to #1602; archive JN-5729 worktrees; update Jira statuses
+
+---
+
 ## 11:02 IDT — Weekday Daytime Advance Heartbeat (Jun 21)
 
 - PRs checked: #1601 (ALL GREEN ✅, no review), #1602 (ALL GREEN 11h+, reviewDecision=""), #1604 (DRAFT, CONFLICTING, pre-commit fail), #1588 (pre-commit fail), #1605 (**MERGED 10:50 IDT** ✅), #1606 (CONFLICTING + e2e fail)

@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-21 11:02 IDT";
+export const LAST_UPDATED = "2026-06-21 11:33 IDT";
 
 export const WORKTREES = [
   {
@@ -10,9 +10,9 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1601",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1601",
-    status: "🎉 CI ALL GREEN — main merged in 09:41 IDT. All checks passing. OPEN, MERGEABLE, no review. Ready for Code Review zone.",
-    blockedOn: null,
-    blockedType: "running",
+    status: "⚠️ CI ALL GREEN but now CONFLICTING (was MERGEABLE at 11:02 IDT). Needs rebase onto main before Code Review zone move.",
+    blockedOn: "Rebase onto main to resolve conflicts",
+    blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ede80727b73af9ee27e9d/",
     sessionLabel: "last session (idle)",
     lastActive: "2026-06-21 09:41 IDT",
@@ -242,8 +242,8 @@ export const ALERTS = [
     message: "🎉 PR #1605 (JN-5730) MERGED at 10:50 IDT Jun 21 — '(infra): auto apply jbenchmark and argocd labels'. Merged by ushaket. Off-board PR.",
   },
   {
-    level: "green",
-    message: "🎉 PR #1601 (JN-5675): CI ALL GREEN — main merged into branch 09:41 IDT resolved 58h+ catastrophic failure. pre-commit ✅, tox ✅, integration ✅, e2e-api ✅, e2e-smoke ✅, e2e-tests ✅, nox ✅. OPEN, MERGEABLE. Ready for Code Review zone.",
+    level: "yellow",
+    message: "⚠️ PR #1601 (JN-5675): CI ALL GREEN but now CONFLICTING (was MERGEABLE at 11:02 IDT). Needs rebase onto main before it can be merged or moved to Code Review zone.",
   },
   {
     level: "green",
@@ -251,15 +251,15 @@ export const ALERTS = [
   },
   {
     level: "green",
-    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): 'persist-monotonicity-test' — CI ALL GREEN 11h+. pre-commit ✅, tox ✅, integration ✅, e2e-tests ✅, nox ✅, atlas-validate ✅. MERGEABLE. reviewDecision=''. Needs reviewer assigned.",
+    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): 'persist-monotonicity-test' — CI ALL GREEN 12.5h+. pre-commit ✅, tox ✅, integration ✅, e2e-tests ✅, nox ✅, atlas-validate ✅. MERGEABLE. reviewDecision=''. Needs reviewer assigned.",
   },
   {
     level: "red",
-    message: "🔴 jn-5676 (PR #1604): CONFLICTING + DRAFT. CI otherwise clean (only pre-commit blocking). Rebase + pre-commit fix needed. 72h+ stalled.",
+    message: "🔴 jn-5676 (PR #1604): CONFLICTING + DRAFT. CI otherwise clean (only pre-commit blocking). Rebase + pre-commit fix needed. 73h+ stalled.",
   },
   {
     level: "red",
-    message: "🔴 PR #1588 (JN-5546): MERGEABLE + pre-commit failing + sephib MUST FIX items outstanding. 73h+ stalled.",
+    message: "🔴 PR #1588 (JN-5546): MERGEABLE + pre-commit failing + sephib MUST FIX items outstanding. 74h+ stalled.",
   },
   {
     level: "red",

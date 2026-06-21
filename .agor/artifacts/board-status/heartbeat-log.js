@@ -22,6 +22,15 @@ export const HEARTBEAT_RUNS = [
   // },
   {
     type: "advance",
+    timestamp: "2026-06-21 11:33 IDT",
+    actions: 0,
+    findings: 1,
+    status: "ok",
+    summary: "PR #1601 (JN-5675) became CONFLICTING since 11:02 IDT (was MERGEABLE) — CI still ALL GREEN. No new merges. Board otherwise static.",
+    sessionUrl: null,
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-21 11:02 IDT",
     actions: 0,
     findings: 1,
