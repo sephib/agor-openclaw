@@ -1,23 +1,6 @@
-export const LAST_UPDATED = "2026-06-21 14:00 IDT";
+export const LAST_UPDATED = "2026-06-21 14:30 IDT";
 
 export const WORKTREES = [
-  {
-    ticket: "JN-5675",
-    ticketUrl: "https://jounce.atlassian.net/browse/JN-5675",
-    title: "Historical visibility functions",
-    branch: "jn-5675-historical-visibility",
-    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5675-historical-visibility",
-    zone: "Respond",
-    pr: "#1601",
-    prUrl: "https://github.com/Jounce-IO/jounce/pull/1601",
-    status: "🎉 ALL CI GREEN (e2e-smoke PASSED ~13:45 IDT) — OPEN + MERGEABLE + no review requested. Ready for Code Review zone move + review request.",
-    blockedOn: "Zone move to Code Review + review request",
-    blockedType: "owner",
-    sessionUrl: "http://localhost:3030/ui/s/019ede80727b73af9ee27e9d/",
-    sessionLabel: "last session (idle)",
-    lastActive: "2026-06-21 09:41 IDT",
-    sprint: "current",
-  },
   {
     ticket: "JN-5676",
     sprint: "current",
@@ -119,6 +102,15 @@ export const WORKTREES = [
 
 export const MERGED = [
   {
+    ticket: "JN-5675",
+    ticketUrl: "https://jounce.atlassian.net/browse/JN-5675",
+    title: "Historical visibility functions",
+    pr: "#1601",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1601",
+    mergedDate: "2026-06-21",
+    note: "Merged 16:15 IDT Jun 21 — worktree archived 14:30 IDT",
+  },
+  {
     ticket: "JN-5730",
     ticketUrl: "https://jounce.atlassian.net/browse/JN-5730",
     title: "Auto apply jbenchmark and argocd labels",
@@ -134,7 +126,7 @@ export const MERGED = [
     pr: "#1608",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1608",
     mergedDate: "2026-06-21",
-    note: "Merged 09:37 IDT Jun 21 — worktrees archived 12:00 & 14:00 IDT",
+    note: "Merged 09:37 IDT Jun 21 — worktrees archived 12:00 IDT",
   },
   {
     ticket: "JN-5674",
@@ -170,34 +162,30 @@ export const MERGED = [
     pr: "#1595",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1595",
     mergedDate: "2026-06-17",
-    note: "Jira now Done ✅",
+    note: null,
   },
 ];
 
 export const ALERTS = [
-  {
-    level: "green",
-    message: "🎉 PR #1601 (JN-5675): ALL CI GREEN — e2e-smoke PASSED ~13:45 IDT. OPEN + MERGEABLE + no reviewer yet. PROPOSAL: move to Code Review zone + request review + update JN-5675 Jira to 'In Review'.",
-  },
   {
     level: "yellow",
     message: "🟡 PR #1604 (JN-5676): ALL CI GREEN + MERGEABLE. Still DRAFT — 80h+ stalled. Ready to un-draft + request review.",
   },
   {
     level: "green",
-    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): CI ALL GREEN 19h+. MERGEABLE. reviewDecision=''. Needs reviewer assigned.",
+    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): CI ALL GREEN 20h+. OPEN, no reviewer assigned yet.",
   },
   {
     level: "red",
     message: "🔴 PR #1588 (JN-5546): MERGEABLE + pre-commit failing + sephib MUST FIX items outstanding. 77h+ stalled.",
   },
   {
-    level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): e2e-smoke/e2e ❌, e2e-tests ❌. Also CONFLICTING. Systemic e2e issue + conflict cascade.",
+    level: "yellow",
+    message: "🟡 PR #1606 (JN-5725, off-board): CI re-running (PENDING). Still CONFLICTING. Conflict must be resolved.",
   },
   {
     level: "yellow",
-    message: "⚠️ 4 Jira tickets stale: JN-5662 (In Review, PR #1591 merged Jun 15 — 6+ days), JN-5673 (In Review, PR #1595 merged Jun 17 — 4+ days), JN-5674 (In Progress, PR #1599 merged Jun 18 — 3+ days), JN-5675 (In Progress, but PR #1601 open awaiting review — should be 'In Review').",
+    message: "⚠️ 3 Jira tickets stale: JN-5662 (In Review, PR #1591 merged Jun 15 — 6+ days), JN-5673 (In Review, PR #1595 merged Jun 17 — 4+ days), JN-5674 (In Review, PR #1599 merged Jun 18 — 3+ days). All should be Done.",
   },
   {
     level: "red",

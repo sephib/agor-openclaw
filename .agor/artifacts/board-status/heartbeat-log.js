@@ -812,4 +812,13 @@ export const HEARTBEAT_RUNS = [
     summary: "PR #1601 e2e-smoke NOW PASSING — ALL CI GREEN (was PENDING at 13:30 IDT). Ready for Code Review zone move. ci-statistics-notebook archived (JN-5708 Done + 3d inactive). Board otherwise static.",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019eea44562377e3a778d68b/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-21 14:30 IDT",
+    actions: 1,
+    findings: 4,
+    status: "ok",
+    summary: "PR #1601 (JN-5675) MERGED 16:15 IDT — jn-5675-historical-visibility archived (autonomous). JN-5675 already Done in Jira. PR #1606 CI now PENDING (new run). JN-5662/5673/5674 still stale (3 flags).",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019eea5fcd407069b8dc8157/",
+  },
 ];

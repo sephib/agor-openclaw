@@ -1861,3 +1861,12 @@
 - CI changes: PR #1601 e2e-smoke NOW PASSING — ALL 13 checks green (was PENDING at 13:30 IDT). Major change.
 - Flags: PR #1601 ready for Code Review zone move + review request; PR #1602 19h+ green no reviewer; PR #1604 80h+ DRAFT; JN-5662/5673/5674 Jira stale; JN-5675 Jira should be "In Review"; PR #1606 CONFLICTING+e2e fail
 - Next: PR #1601 zone move to Code Review + review request; un-draft #1604; assign reviewer to #1602
+
+## 14:30 IDT — Weekday Daytime Advance Heartbeat (Jun 21)
+
+- PRs checked: #1601 (MERGED 16:15 IDT!), #1604 (DRAFT, ALL GREEN, 80h+ stalled), #1588 (pre-commit FAIL, unchanged), #1596 (CONFLICTING DRAFT, BLOCKED), #1602 (off-board, ALL GREEN 20h+, no reviewer), #1606 (off-board, CONFLICTING + CI now PENDING/re-running)
+- Merges detected: **PR #1601 MERGED** at 16:15 IDT (was OPEN+ALL CI GREEN at 14:00 IDT)
+- CI changes: #1606 CI state changed from e2e-smoke/tests FAIL → new run PENDING
+- Flags: JN-5662/5673/5674 still "In Review" despite PRs merged (6+/4+/3+ days stale); JN-5675 already Done ✅
+- Actions: Archived jn-5675-historical-visibility (autonomous — PR #1601 MERGED)
+- Next: #1604 needs un-draft + review request; #1602 needs reviewer; JN-5662/5673/5674 need manual Jira updates
