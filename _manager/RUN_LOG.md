@@ -4,6 +4,19 @@
 
 ---
 
+## 12:30 IDT — Weekday Daytime Advance Heartbeat (Jun 21)
+
+- PRs checked: #1601 (OPEN, CONFLICTING, CI ALL GREEN — unchanged), #1604 (OPEN, DRAFT, MERGEABLE, CI ALL GREEN — unchanged, ~78h stalled), #1588 (pre-commit FAIL — unchanged), #1596 (CONFLICTING, DRAFT — BLOCKED, unchanged), #1602 (off-board, ALL GREEN 16h+ — still no reviewer), #1606 (off-board, CONFLICTING + e2e FAIL — unchanged)
+- Merges detected: none since 12:00 IDT
+- CI changes: none
+- Zone correction: jn-5675-historical-visibility actually in Respond zone since Jun 18 16:55 IDT — BOARD_STATE.md had it wrong as "Code". Corrected.
+- Jira: JN-5673 still "In Review" (PR #1595 merged Jun 17 — 4+ days stale), JN-5674 still "In Progress" (PR #1599 merged Jun 18 — 3+ days stale). Plus JN-5662 (6+ days stale). Total 3 stale Jira tickets.
+- Flags: 2 (zone data correction + 3 stale Jira mismatches combined)
+- Autonomous actions: 0 (no MERGED/CLOSED PRs to archive)
+- Next: Board static — key items unchanged (PR #1604 needs un-drafting, PR #1601 needs rebase, PR #1602 needs reviewer)
+
+---
+
 ## 12:00 IDT — Weekday Daytime Advance Heartbeat (Jun 21)
 
 - PRs checked: #1601 (CONFLICTING, CI ALL GREEN — unchanged), #1602 (ALL GREEN 13h+), #1604 (DRAFT, **MERGEABLE + ALL CI GREEN** — was CONFLICTING+pre-commit FAIL!), #1588 (pre-commit fail — unchanged), #1606 (CONFLICTING + e2e fail — unchanged)

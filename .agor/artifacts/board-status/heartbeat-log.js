@@ -22,6 +22,15 @@ export const HEARTBEAT_RUNS = [
   // },
   {
     type: "advance",
+    timestamp: "2026-06-21 12:30 IDT",
+    actions: 0,
+    findings: 2,
+    status: "ok",
+    summary: "Zone correction: jn-5675 was Code in state, actually Respond since Jun 18. PR #1602 CI green 16h+. 3 Jira stale (JN-5662/5673/5674). Board otherwise static.",
+    sessionUrl: "http://localhost:3030/ui/s/019ee9845dc479358efc0499/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-21 12:00 IDT",
     actions: 4,
     findings: 2,

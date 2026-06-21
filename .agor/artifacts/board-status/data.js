@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-21 12:00 IDT";
+export const LAST_UPDATED = "2026-06-21 12:30 IDT";
 
 export const WORKTREES = [
   {
@@ -7,18 +7,20 @@ export const WORKTREES = [
     title: "Historical visibility functions",
     branch: "jn-5675-historical-visibility",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5675-historical-visibility",
-    zone: "Code",
+    zone: "Respond",
     pr: "#1601",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1601",
-    status: "⚠️ CI ALL GREEN but CONFLICTING (since ~11:10 IDT). Needs rebase onto main before Code Review zone move.",
+    status: "⚠️ CI ALL GREEN but CONFLICTING (since ~11:10 IDT Jun 21). Needs rebase onto main. Zone=Respond since Jun 18 (corrected).",
     blockedOn: "Rebase onto main to resolve conflicts",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ede80727b73af9ee27e9d/",
     sessionLabel: "last session (idle)",
     lastActive: "2026-06-21 09:41 IDT",
+    sprint: "current",
   },
   {
     ticket: "JN-5676",
+    sprint: "current",
     ticketUrl: "https://jounce.atlassian.net/browse/JN-5676",
     title: "Notebook scaffold + operational mode",
     branch: "jn-5676-notebook-scaffold",
@@ -199,7 +201,7 @@ export const ALERTS = [
   },
   {
     level: "green",
-    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): CI ALL GREEN 13h+. MERGEABLE. reviewDecision=''. Needs reviewer assigned.",
+    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): CI ALL GREEN 16h+. MERGEABLE. reviewDecision=''. Needs reviewer assigned.",
   },
   {
     level: "red",
@@ -211,7 +213,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⚠️ JN-5662 Jira stale: still 'In Review' — PR #1591 merged Jun 15 (6+ days ago). Should be Done.",
+    message: "⚠️ 3 Jira tickets stale: JN-5662 (In Review, PR #1591 merged Jun 15 — 6+ days), JN-5673 (In Review, PR #1595 merged Jun 17 — 4+ days), JN-5674 (In Progress, PR #1599 merged Jun 18 — 3+ days). All should be Done.",
   },
   {
     level: "red",

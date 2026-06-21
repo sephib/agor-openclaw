@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-21 12:00 IDT (advance heartbeat)*
+*Last updated: 2026-06-21 12:30 IDT (advance heartbeat)*
 
 ---
 
@@ -8,7 +8,7 @@
 
 | Branch | Jira | Zone | Jira Status | PR | CI | Review | Flags |
 |--------|------|------|-------------|-----|-----|--------|-------|
-| jn-5675-historical-visibility | [JN-5675](https://jounce.atlassian.net/browse/JN-5675) | Code | In Review | [#1601](https://github.com/Jounce-IO/jounce/pull/1601) | ✅ **ALL GREEN** | — | 🔴 **CONFLICTING** (since ~11:10 IDT) — needs rebase before Code Review zone move |
+| jn-5675-historical-visibility | [JN-5675](https://jounce.atlassian.net/browse/JN-5675) | Respond | In Review | [#1601](https://github.com/Jounce-IO/jounce/pull/1601) | ✅ **ALL GREEN** | — | 🔴 **CONFLICTING** (since ~11:10 IDT Jun 21) — needs rebase before Code Review zone move. Zone=Respond since Jun 18 16:55 IDT (corrected from "Code" in prev state). |
 | jn-5676-notebook-scaffold | [JN-5676](https://jounce.atlassian.net/browse/JN-5676) | Publish | In Progress | [#1604](https://github.com/Jounce-IO/jounce/pull/1604) DRAFT | ✅ **ALL GREEN** (was pre-commit FAIL + CONFLICTING!) | REVIEW_REQUIRED | 🟡 **IMPROVED**: conflict resolved + CI all green. Still DRAFT. Ready to un-draft + request review. 75h+ stalled. |
 | jn-5546-docs-document-module-layout-convention-and-3 | [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | Code Review | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | ❌ pre-commit FAIL (tox/integration/nox all ✅) — MERGEABLE | — | 🔴 Pre-commit fix needed + sephib MUST FIX comments; 75h+ stalled |
 | ci-statistics-notebook | [JN-5708](https://jounce.atlassian.net/browse/JN-5708) (issue link) | Code | Done | — | — | — | ⚠️ No sessions; JN-5708 Done; scope unclear |
@@ -40,17 +40,17 @@
 
 ---
 
-## Key Changes Since Last Run (Jun 21 11:33 IDT)
+## Key Changes Since Last Run (Jun 21 12:00 IDT)
 
 | What observed | Status |
 |---|---|
-| **🎉 PR #1604 (JN-5676) NOW ALL CI GREEN + MERGEABLE** | Was CONFLICTING + pre-commit FAIL at 11:33 IDT. Now: MERGEABLE, pre-commit ✅, tox ✅, nox ✅, integration ✅, e2e-tests ✅. Still DRAFT + REVIEW_REQUIRED. Ready to un-draft. |
-| **✅ JN-5729 Jira now Done** | Was flagged as stale Backlog; resolved between runs (PR #1608 merged 09:37 IDT) |
-| **🗑️ 4 worktrees archived (autonomous)** | jn-5729-pin-uv-default-python-2 (PR #1608 MERGED), jn-5729-pin-python-313 (PR #1607 CLOSED), jn-5729-pin-uv-default-python (JN-5729 done), code-reviewes (6+ days inactive) |
-| **↔ PR #1601** | UNCHANGED — still CONFLICTING, CI ALL GREEN |
-| **↔ PR #1602** | UNCHANGED — ALL GREEN now 13h+, OPEN, MERGEABLE, reviewDecision="" |
+| **🔧 CORRECTION: jn-5675 zone was "Code" — it's actually Respond** | Zone changed Jun 18 16:55 IDT; previous BOARD_STATE.md had it wrong. Now corrected. |
+| **↔ PR #1601** | UNCHANGED — still CONFLICTING, CI ALL GREEN. 3h+ since conflict started. |
+| **↔ PR #1604** | UNCHANGED — ALL CI GREEN + MERGEABLE + DRAFT. ~78h stalled. Ready to un-draft. |
+| **↔ PR #1602** | UNCHANGED — ALL GREEN now 16h+, OPEN, MERGEABLE, reviewDecision="" — still no reviewer |
 | **↔ PR #1588** | UNCHANGED — pre-commit failing; 75h+ stalled |
 | **↔ PR #1606** | UNCHANGED — CONFLICTING + e2e fail |
+| **↔ Jira mismatches** | JN-5662 (6+ days stale), JN-5673 (4+ days stale), JN-5674 (3+ days stale) — all still "In Review"/"In Progress" despite PRs merged |
 
 ---
 
@@ -102,9 +102,15 @@ Git lock error — unchanged since Jun 18.
 
 ---
 
-### ⚠️ Jira mismatch — JN-5662 still "In Review"
+### ⚠️ Jira mismatches (3 stale tickets)
 
-[JN-5662](https://jounce.atlassian.net/browse/JN-5662) Jira status: **In Review** — but PR [#1591](https://github.com/Jounce-IO/jounce/pull/1591) merged **Jun 15** (6+ days ago). Should be Done.
+| Ticket | Jira Status | PR | Merged | Days Stale |
+|--------|-------------|-----|--------|-----------|
+| [JN-5662](https://jounce.atlassian.net/browse/JN-5662) | In Review | [#1591](https://github.com/Jounce-IO/jounce/pull/1591) | Jun 15 | 6+ days |
+| [JN-5673](https://jounce.atlassian.net/browse/JN-5673) | In Review | [#1595](https://github.com/Jounce-IO/jounce/pull/1595) | Jun 17 | 4+ days |
+| [JN-5674](https://jounce.atlassian.net/browse/JN-5674) | In Progress | [#1599](https://github.com/Jounce-IO/jounce/pull/1599) | Jun 18 | 3+ days |
+
+All three should be transitioned to Done. JN-5674 being "In Progress" when the PR merged 3 days ago is the most actively misleading.
 
 ---
 

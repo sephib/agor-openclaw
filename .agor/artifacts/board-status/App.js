@@ -2,6 +2,7 @@ import React, { useState, useMemo } from "react";
 import { WORKTREES, MERGED, LAST_UPDATED } from "./data";
 import { ZONE_MODEL_CONFIG, SCHEDULES, REVIEWERS } from "./config";
 import { HEARTBEAT_RUNS } from "./heartbeat-log";
+import { SPRINTS, CURRENT_SPRINT_ID } from "./sprints";
 
 const TYPE_STYLES = {
   running: { bg: "#e8f4fd", color: "#0969da", label: "Running" },
@@ -308,6 +309,7 @@ export default function App() {
   const [activeTab, setActiveTab] = useState("status");
   const [sortKey, setSortKey] = useState("lastActive");
   const [sortDir, setSortDir] = useState("desc");
+  const [sprintFilter, setSprintFilter] = useState(CURRENT_SPRINT_ID);
   const [pageLoaded] = useState(() => {
     const now = new Date();
     return now.toLocaleString("en-US", {
@@ -327,10 +329,16 @@ export default function App() {
 
   const activeWorktrees = useMemo(() => {
     return WORKTREES.filter((w) => {
-      if (!w.pr) return true;
-      return !w.pr.includes("MERGED") && !w.pr.includes("CLOSED");
+      // Filter out merged/closed PRs
+      if (w.pr && (w.pr.includes("MERGED") || w.pr.includes("CLOSED"))) {
+        return false;
+      }
+      // Show items with no sprint OR items matching selected sprint
+      // Special case: "all" shows everything
+      if (sprintFilter === "all") return true;
+      return !w.sprint || w.sprint === sprintFilter;
     });
-  }, []);
+  }, [sprintFilter]);
 
   const sorted = useMemo(() => {
     if (!sortKey) return activeWorktrees;
@@ -346,6 +354,11 @@ export default function App() {
     return items;
   }, [sortKey, sortDir, activeWorktrees]);
 
+  const filteredMerged = useMemo(() => {
+    if (sprintFilter === "all") return MERGED;
+    return MERGED.filter((m) => !m.sprint || m.sprint === sprintFilter);
+  }, [sprintFilter]);
+
   const needsYou = activeWorktrees.filter((w) => w.blockedType === "owner");
   const running = activeWorktrees.filter((w) => w.blockedType === "running");
   const waiting = activeWorktrees.filter((w) => w.blockedType === "external");
@@ -354,9 +367,26 @@ export default function App() {
   return (
     <div style={{ padding: 16, fontFamily: "system-ui, sans-serif", maxWidth: 900 }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
-        <h2 style={{ margin: 0, fontSize: 15, fontWeight: 700, color: "#222" }}>
-          Board Status — jounce-workflow-ai
-        </h2>
+        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+          <h2 style={{ margin: 0, fontSize: 15, fontWeight: 700, color: "#222" }}>
+            Board Status — jounce-workflow-ai
+          </h2>
+          <select
+            value={sprintFilter}
+            onChange={(e) => setSprintFilter(e.target.value)}
+            style={{
+              padding: "4px 8px", fontSize: 12, fontWeight: 500, borderRadius: 6,
+              border: "1px solid #d0d7de", background: "#fff", color: "#333", cursor: "pointer"
+            }}
+          >
+            <option value="all">All Sprints</option>
+            {SPRINTS.map((s) => (
+              <option key={s.id} value={s.id}>
+                {s.name} {s.isCurrent ? "⭐" : ""}
+              </option>
+            ))}
+          </select>
+        </div>
         <div style={{ textAlign: "right" }}>
           <div style={{ fontSize: 11, color: "#999" }}>
             Data from: {LAST_UPDATED}
@@ -419,11 +449,11 @@ export default function App() {
         </tbody>
       </table>
 
-      {MERGED.length > 0 && (
+      {filteredMerged.length > 0 && (
         <>
           <h3 style={{ fontSize: 13, fontWeight: 600, color: "#666", marginTop: 20, marginBottom: 8 }}>Recently Merged</h3>
           <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
-            {MERGED.map((m) => (
+            {filteredMerged.map((m) => (
               <div key={m.ticket} style={{ padding: "6px 12px", borderRadius: 6, background: "#e8f5e9", fontSize: 12 }}>
                 <a href={m.ticketUrl} target="_blank" rel="noopener noreferrer" style={{ color: "#2e7d32", textDecoration: "none", fontWeight: 600 }}>{m.ticket}</a>
                 {" "}
