@@ -4,6 +4,18 @@
 
 ---
 
+## 13:00 IDT — Weekday Daytime Advance Heartbeat (Jun 21)
+
+- PRs checked: #1601 (OPEN, CONFLICTING, CI ALL GREEN — unchanged), #1604 (OPEN, DRAFT, MERGEABLE, CI ALL GREEN — unchanged, ~79h stalled), #1588 (pre-commit FAIL — unchanged, 76h+), #1596 (CONFLICTING, DRAFT — BLOCKED, unchanged), #1602 (off-board, ALL GREEN 17h+ — still no reviewer), #1606 (off-board, CONFLICTING + e2e FAIL — unchanged)
+- Merges detected: none since 12:30 IDT
+- CI changes: none — all PRs identical to 12:30 IDT run
+- Jira: JN-5662 "In Review" (6+ days stale), JN-5673 "In Review" (4+ days stale), JN-5674 "In Progress" (3+ days stale) — all unchanged
+- Autonomous actions: 0 (no MERGED/CLOSED PRs to archive)
+- Flags: 2 (3 stale Jira mismatches + PR #1602 17h+ green needs reviewer)
+- Next: Board static — key items unchanged (PR #1604 needs un-drafting, PR #1601 needs rebase, PR #1602 needs reviewer, 3 Jira tickets need Done status)
+
+---
+
 ## 12:30 IDT — Weekday Daytime Advance Heartbeat (Jun 21)
 
 - PRs checked: #1601 (OPEN, CONFLICTING, CI ALL GREEN — unchanged), #1604 (OPEN, DRAFT, MERGEABLE, CI ALL GREEN — unchanged, ~78h stalled), #1588 (pre-commit FAIL — unchanged), #1596 (CONFLICTING, DRAFT — BLOCKED, unchanged), #1602 (off-board, ALL GREEN 16h+ — still no reviewer), #1606 (off-board, CONFLICTING + e2e FAIL — unchanged)

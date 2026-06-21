@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-21 12:30 IDT (advance heartbeat)*
+*Last updated: 2026-06-21 13:00 IDT (advance heartbeat)*
 
 ---
 
@@ -40,15 +40,14 @@
 
 ---
 
-## Key Changes Since Last Run (Jun 21 12:00 IDT)
+## Key Changes Since Last Run (Jun 21 12:30 IDT)
 
 | What observed | Status |
 |---|---|
-| **🔧 CORRECTION: jn-5675 zone was "Code" — it's actually Respond** | Zone changed Jun 18 16:55 IDT; previous BOARD_STATE.md had it wrong. Now corrected. |
-| **↔ PR #1601** | UNCHANGED — still CONFLICTING, CI ALL GREEN. 3h+ since conflict started. |
-| **↔ PR #1604** | UNCHANGED — ALL CI GREEN + MERGEABLE + DRAFT. ~78h stalled. Ready to un-draft. |
-| **↔ PR #1602** | UNCHANGED — ALL GREEN now 16h+, OPEN, MERGEABLE, reviewDecision="" — still no reviewer |
-| **↔ PR #1588** | UNCHANGED — pre-commit failing; 75h+ stalled |
+| **↔ PR #1601** | UNCHANGED — CONFLICTING, CI ALL GREEN. ~2h since conflict started. |
+| **↔ PR #1604** | UNCHANGED — ALL CI GREEN + MERGEABLE + DRAFT. ~79h stalled. Ready to un-draft. |
+| **↔ PR #1602** | UNCHANGED — ALL GREEN now 17h+, OPEN, MERGEABLE, reviewDecision="" — still no reviewer |
+| **↔ PR #1588** | UNCHANGED — pre-commit failing; 76h+ stalled |
 | **↔ PR #1606** | UNCHANGED — CONFLICTING + e2e fail |
 | **↔ Jira mismatches** | JN-5662 (6+ days stale), JN-5673 (4+ days stale), JN-5674 (3+ days stale) — all still "In Review"/"In Progress" despite PRs merged |
 
@@ -62,7 +61,7 @@ PR [#1604](https://github.com/Jounce-IO/jounce/pull/1604) — "feat(jbenchmark):
 
 **State change since last heartbeat:** Was CONFLICTING + pre-commit FAIL → now **MERGEABLE + ALL CI GREEN** (pre-commit ✅, tox ✅, nox ✅, integration ✅, e2e-tests ✅). Still DRAFT + REVIEW_REQUIRED.
 
-**Required action:** Un-draft the PR and request a review. The blockers (conflict + pre-commit) are resolved. 75h+ stalled — this is actionable now.
+**Required action:** Un-draft the PR and request a review. The blockers (conflict + pre-commit) are resolved. 79h+ stalled — this is actionable now.
 
 ---
 
@@ -76,15 +75,15 @@ PR [#1601](https://github.com/Jounce-IO/jounce/pull/1601) — "feat(jbenchmark):
 
 ---
 
-### 🎉 ACTION NEEDED — PR #1602 (JN-5685/JN-5679) CI ALL GREEN — 13h+
+### 🎉 ACTION NEEDED — PR #1602 (JN-5685/JN-5679) CI ALL GREEN — 17h+
 
 PR [#1602](https://github.com/Jounce-IO/jounce/pull/1602) — "feat(jbenchmark): add monotonicity verdict persistence tables and ingestion"
 
-**CI ALL GREEN** — 13h+ since green. OPEN, MERGEABLE, reviewDecision="". No reviewer assigned.
+**CI ALL GREEN** — 17h+ since green. OPEN, MERGEABLE, reviewDecision="". No reviewer assigned.
 
 ---
 
-### 🔴 PR #1588 (JN-5546) — pre-commit + sephib MUST FIX (75h+ stalled)
+### 🔴 PR #1588 (JN-5546) — pre-commit + sephib MUST FIX (76h+ stalled)
 
 MERGEABLE + pre-commit failing + sephib MUST FIX comments. No fix activity.
 

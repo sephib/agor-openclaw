@@ -22,6 +22,15 @@ export const HEARTBEAT_RUNS = [
   // },
   {
     type: "advance",
+    timestamp: "2026-06-21 13:00 IDT",
+    actions: 0,
+    findings: 2,
+    status: "ok",
+    summary: "Board static — PR #1602 CI green 17h+ still no reviewer; PR #1604 79h+ stalled as DRAFT; PR #1601 still CONFLICTING; 3 Jira stale (JN-5662/5673/5674). No merges.",
+    sessionUrl: "http://localhost:3030/ui/s/019ee99fd5367179a416a687/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-21 12:30 IDT",
     actions: 0,
     findings: 2,

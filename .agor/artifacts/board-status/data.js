@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-21 12:30 IDT";
+export const LAST_UPDATED = "2026-06-21 13:00 IDT";
 
 export const WORKTREES = [
   {
@@ -28,7 +28,7 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1604 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1604",
-    status: "🟡 IMPROVED: conflict resolved + ALL CI GREEN (pre-commit ✅, tox ✅, nox ✅, integration ✅). Still DRAFT. Ready to un-draft + request review. 75h+ stalled.",
+    status: "🟡 IMPROVED: conflict resolved + ALL CI GREEN (pre-commit ✅, tox ✅, nox ✅, integration ✅). Still DRAFT. Ready to un-draft + request review. 79h+ stalled.",
     blockedOn: "Un-draft PR + request review",
     blockedType: "owner",
     sessionUrl: "http://localhost:3030/ui/s/019edb7fb4c770d78fc7a47d/",
@@ -201,7 +201,7 @@ export const ALERTS = [
   },
   {
     level: "green",
-    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): CI ALL GREEN 16h+. MERGEABLE. reviewDecision=''. Needs reviewer assigned.",
+    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): CI ALL GREEN 17h+. MERGEABLE. reviewDecision=''. Needs reviewer assigned.",
   },
   {
     level: "red",

@@ -219,6 +219,83 @@ function HeartbeatTab() {
   );
 }
 
+function SprintsTab() {
+  const sprintStats = useMemo(() => {
+    return SPRINTS.map((sprint) => {
+      const activeCount = WORKTREES.filter((w) => {
+        if (w.pr && (w.pr.includes("MERGED") || w.pr.includes("CLOSED"))) return false;
+        return w.sprint === sprint.id;
+      }).length;
+
+      const mergedCount = MERGED.filter((m) => m.sprint === sprint.id).length;
+
+      const noSprintActive = WORKTREES.filter((w) => {
+        if (w.pr && (w.pr.includes("MERGED") || w.pr.includes("CLOSED"))) return false;
+        return !w.sprint;
+      }).length;
+
+      const noSprintMerged = MERGED.filter((m) => !m.sprint).length;
+
+      return {
+        ...sprint,
+        activeCount,
+        mergedCount,
+        totalCount: activeCount + mergedCount,
+        noSprintActive: sprint.id === SPRINTS[0]?.id ? noSprintActive : 0,
+        noSprintMerged: sprint.id === SPRINTS[0]?.id ? noSprintMerged : 0,
+      };
+    });
+  }, []);
+
+  return (
+    <div>
+      <div style={{ marginBottom: 16 }}>
+        <div style={{ fontSize: 13, color: "#666", marginBottom: 8 }}>
+          Sprint overview showing active and merged tickets per sprint
+        </div>
+      </div>
+
+      <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 12, background: "#fff", borderRadius: 8, overflow: "hidden", boxShadow: "0 1px 3px rgba(0,0,0,0.08)" }}>
+        <thead>
+          <tr style={{ background: "#f8f9fa", borderBottom: "2px solid #e0e0e0" }}>
+            <th style={{ padding: "8px 10px", textAlign: "left", fontSize: 11, color: "#666", fontWeight: 600 }}>Sprint</th>
+            <th style={{ padding: "8px 10px", textAlign: "left", fontSize: 11, color: "#666", fontWeight: 600 }}>Date Range</th>
+            <th style={{ padding: "8px 10px", textAlign: "center", fontSize: 11, color: "#666", fontWeight: 600 }}>Active</th>
+            <th style={{ padding: "8px 10px", textAlign: "center", fontSize: 11, color: "#666", fontWeight: 600 }}>Merged</th>
+            <th style={{ padding: "8px 10px", textAlign: "center", fontSize: 11, color: "#666", fontWeight: 600 }}>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          {sprintStats.map((s) => (
+            <tr key={s.id} style={{ borderBottom: "1px solid #eee", background: s.isCurrent ? "#f0f9ff" : "transparent" }}>
+              <td style={{ padding: "8px 10px", fontWeight: 600, color: s.isCurrent ? "#0969da" : "#333" }}>
+                {s.name} {s.isCurrent && "⭐"}
+                {s.noSprintActive + s.noSprintMerged > 0 && (
+                  <div style={{ fontSize: 10, color: "#666", fontWeight: 400, marginTop: 2 }}>
+                    + {s.noSprintActive + s.noSprintMerged} no-sprint items
+                  </div>
+                )}
+              </td>
+              <td style={{ padding: "8px 10px", fontSize: 11, color: "#666" }}>
+                {s.startDate} → {s.endDate}
+              </td>
+              <td style={{ padding: "8px 10px", textAlign: "center", fontWeight: 600, color: "#0969da" }}>
+                {s.activeCount + s.noSprintActive}
+              </td>
+              <td style={{ padding: "8px 10px", textAlign: "center", fontWeight: 600, color: "#2e7d32" }}>
+                {s.mergedCount + s.noSprintMerged}
+              </td>
+              <td style={{ padding: "8px 10px", textAlign: "center", fontWeight: 700, color: "#333" }}>
+                {s.totalCount + s.noSprintActive + s.noSprintMerged}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
 function ConfigTab() {
   const modelBadge = (m) => (
     <span style={{
@@ -400,6 +477,7 @@ export default function App() {
       <div style={{ display: "flex", gap: 4, marginBottom: 16, borderBottom: "2px solid #e0e0e0" }}>
         {[
           { id: "status", label: "Board Status" },
+          { id: "sprints", label: `Sprints (${SPRINTS.length})` },
           { id: "heartbeat", label: `Heartbeat (${HEARTBEAT_RUNS.length})` },
           { id: "config", label: "Configuration" },
         ].map((tab) => (
@@ -418,6 +496,7 @@ export default function App() {
 
       {activeTab === "config" && <ConfigTab />}
       {activeTab === "heartbeat" && <HeartbeatTab />}
+      {activeTab === "sprints" && <SprintsTab />}
 
       {activeTab === "status" && <>
       <div style={{ display: "flex", gap: 12, marginBottom: 16, flexWrap: "wrap" }}>
