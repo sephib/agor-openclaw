@@ -4,6 +4,118 @@
 
 ---
 
+## 2026-06-21 09:45 IDT — Advance Heartbeat
+
+### 🎉 Proposal: Move jn-5675 to Code Review zone — PR #1601 CI ALL GREEN
+- **Action:** Move `jn-5675-historical-visibility` from Code zone → Code Review zone
+- **Reason:** PR [#1601](https://github.com/Jounce-IO/jounce/pull/1601) CI went from CATASTROPHIC (8 checks failing 58h+) to ALL GREEN after main was merged into branch at 09:41 IDT. All checks now pass: pre-commit ✅, tox ✅, integration ✅, e2e-api ✅, e2e-smoke ✅, e2e-tests ✅, nox ✅, atlas-validate ✅. OPEN, MERGEABLE, no review yet.
+- **Risk:** Low — zone move triggers Code Review prompt template
+- **Worktree:** jn-5675-historical-visibility (branch_id: `019ed06a-0ce7-7632-bfdf-29bfd44d2f87`)
+- **Status:** PENDING — **highest priority now that CI is green**
+
+---
+
+### 🆕 Proposal: Archive jn-5729-pin-uv-default-python-2 — PR #1608 merged
+- **Action:** Archive worktree `jn-5729-pin-uv-default-python-2` — PR [#1608](https://github.com/Jounce-IO/jounce/pull/1608) merged Jun 21 09:37 IDT
+- **Reason:** PR merged; JN-5729 complete; worktree purpose fulfilled
+- **Risk:** Low — work is committed to main
+- **Worktree:** jn-5729-pin-uv-default-python-2 (Publish zone)
+- **Status:** PENDING
+
+---
+
+### 🆕 Proposal: Archive jn-5729-pin-python-313 — PR #1607 closed
+- **Action:** Archive worktree `jn-5729-pin-python-313` — PR [#1607](https://github.com/Jounce-IO/jounce/pull/1607) closed Jun 21 08:03 IDT (not merged, superseded by #1608)
+- **Reason:** PR closed and abandoned; superseded by #1608 which merged; worktree is now orphaned
+- **Risk:** Low — work is abandoned, #1608 is the canonical fix
+- **Worktree:** jn-5729-pin-python-313 (Code zone)
+- **Status:** PENDING
+
+---
+
+### 🆕 Proposal: Archive jn-5729-pin-uv-default-python (Ingest) — JN-5729 done
+- **Action:** Archive worktree `jn-5729-pin-uv-default-python` (Ingest zone) — no PR, JN-5729 resolved via #1608
+- **Reason:** JN-5729 is complete (PR #1608 merged). This Ingest-zone worktree was created alongside the others but has no PR and was never the active approach.
+- **Risk:** Low — no PR, no commits of record
+- **Worktree:** jn-5729-pin-uv-default-python (branch_id: `019ee6a9-5093-7a95-9cf1-46b6579322ba`)
+- **Status:** PENDING
+
+---
+
+### 🆕 Proposal: Update JN-5729 Jira to Done
+- **Action:** Transition [JN-5729](https://jounce.atlassian.net/browse/JN-5729) from Backlog → Done
+- **Reason:** PR [#1608](https://github.com/Jounce-IO/jounce/pull/1608) merged Jun 21 09:37 IDT. Ticket is still Backlog (unassigned) — stale.
+- **Risk:** Low — standard Jira housekeeping
+- **Status:** PENDING
+
+---
+
+## 2026-06-21 08:03 IDT — Morning Scan
+
+### ~~🆕 Proposal: Clarify JN-5729 PR strategy (#1607 vs #1608)~~ — RESOLVED ✅
+- ~~**Action:** Ask Joseph which PR to keep for JN-5729~~
+- **RESOLVED:** PR #1608 merged Jun 21 09:37 IDT. PR #1607 closed Jun 21 08:03 IDT. Strategy is clear: #1608 was the winning approach. Archive proposals added in 09:45 IDT block above.
+- **Status:** RESOLVED
+
+---
+
+### 🎉 Proposal: Assign reviewer to PR #1602 (JN-5685/JN-5679) — 8h+ GREEN
+- **Action:** Flag to Joseph that PR #1602 has been CI-green for 8h+ and needs a reviewer assigned
+- **Reason:** PR is MERGEABLE, all checks pass, but has 0 reviews and REVIEW_REQUIRED state. Ready to merge once reviewed.
+- **Risk:** None — just flagging for attention
+- **Worktree:** N/A (off-board PR, branch: `persist-monotonicity-test`)
+- **Status:** PENDING
+
+---
+
+### ~~⚠️ Proposal: Investigate PR #1607 pre-commit failure~~ — SUPERSEDED ✅
+- **SUPERSEDED:** PR #1607 was closed Jun 21 08:03 IDT. #1608 merged instead. No fix needed.
+- **Status:** SUPERSEDED
+
+---
+
+### ~~🚨 Proposal: Fix jn-5675 CI catastrophic failure — HIGHEST PRIORITY~~ — RESOLVED ✅
+- **RESOLVED:** CI fixed at 09:45 IDT Jun 21 — main was merged into jn-5675 at 09:41 IDT which resolved the `__init__.py` issue. All checks now ALL GREEN. See new proposal above to move to Code Review zone.
+- **Status:** RESOLVED
+
+---
+
+### 🔴 Proposal: Rebase + un-draft PR #1604 (jn-5676) — 70h+ stalled
+- **Action:** Create session in `jn-5676-notebook-scaffold` to rebase onto main, fix pre-commit, and un-draft the PR
+- **Reason:** PR #1604 is CONFLICTING + DRAFT for 70h+. Only pre-commit failing in CI (tox/integration/nox/e2e all ✅). Needs rebase and final cleanup to be review-ready.
+- **Risk:** Low — rebase is mechanical, pre-commit fix likely minor
+- **Worktree:** jn-5676-notebook-scaffold (branch_id: `019ecb55-dfb2-7a50-94d0-03795915e974`)
+- **Status:** PENDING
+
+---
+
+### 🔴 Proposal: Fix pre-commit on PR #1588 (JN-5546) — 71h+ stalled
+- **Action:** Create session in `jn-5546-docs-document-module-layout-convention-and-3` to fix pre-commit failures + address sephib's MUST FIX comments
+- **Reason:** PR #1588 is MERGEABLE but pre-commit failing + reviewer feedback outstanding for 71h+
+- **Risk:** Low — focused fixes
+- **Worktree:** jn-5546-docs-document-module-layout-convention-and-3 (branch_id: `019eb5f0-cc8c-7030-9ca4-e5c61b189b94`)
+- **Status:** PENDING
+
+---
+
+### 🗑️ Proposal: Archive code-reviewes worktree
+- **Action:** Archive worktree `code-reviewes` (branch_id: `019eca19-5393-7e1e-bc66-e9daa06733f7`)
+- **Reason:** Review work completed Jun 15 (6+ days ago), worktree idle since then. In Code Review zone with no active sessions or purpose.
+- **Risk:** Low — no PR associated, no ongoing work
+- **Worktree:** code-reviewes
+- **Status:** PENDING
+
+---
+
+### ⚠️ Proposal: Archive or clarify ci-statistics-notebook worktree
+- **Action:** Archive worktree `ci-statistics-notebook` (branch_id: `019ed9db-a6cf-72a0-a235-2aeab44f4ebd`) OR clarify its purpose
+- **Reason:** Linked to JN-5708 which is Done (PR #1603 merged Jun 18). No sessions in worktree. Scope unclear.
+- **Risk:** Low if archiving — ticket is Done. Medium if there's unmerged work.
+- **Worktree:** ci-statistics-notebook
+- **Status:** PENDING
+
+---
+
 ## 2026-06-21 00:04 IDT — Overnight Heartbeat Findings
 
 ### 🎉 PR #1602 CI ALL GREEN — Needs Review

@@ -4,6 +4,16 @@
 
 ---
 
+## 09:45 IDT — Weekday Daytime Advance Heartbeat (Jun 21)
+
+- PRs checked: #1601 (ALL GREEN ✅), #1602 (ALL GREEN, reviewDecision changed to ""), #1604 (DRAFT, CONFLICTING, pre-commit fail 72h+), #1588 (pre-commit fail 73h+), #1606 (CONFLICTING + e2e fail), #1605 (CI in progress), #1607 (CLOSED), #1608 (MERGED)
+- Merges detected: PR #1608 merged 09:37 IDT (jn-5729, jn-5729-pin-uv-default-python-2)
+- CI changes: PR #1601 went from CATASTROPHIC (8 failures 58h+) to ALL GREEN — main merged into branch 09:41 IDT. PR #1606 changed from MERGEABLE to CONFLICTING.
+- Flags: PR #1601 ready for Code Review; 3 JN-5729 worktrees to archive; PR #1602 9h+ green needs reviewer; JN-5729 Jira needs Done; PR #1607 closed (not merged)
+- Next: Move jn-5675 to Code Review; archive 3 JN-5729 worktrees; assign reviewer to #1602; update JN-5729 Jira
+
+---
+
 ## 06:00 IDT — Overnight Advance Heartbeat (Jun 21)
 
 - PRs checked: #1602 (OPEN, ALL GREEN 6h+), #1607 (OPEN, only CodeRabbit 7h), #1601 (OPEN, 8 fails 54h+), #1604 (DRAFT, CONFLICTING, pre-commit fail 68h+), #1588 (OPEN, pre-commit fail 69h+), #1606 (OPEN, e2e-smoke+e2e-tests fail)
@@ -1729,3 +1739,17 @@
 **No actions taken** — supervised mode.
 
 **Next:** 04:00 IDT overnight heartbeat
+
+---
+
+## 08:03 IDT — Morning Scan (Jun 21)
+
+- PRs checked: #1608 (NEW, MERGEABLE), #1607 (OPEN, pre-commit fail + e2e-smoke pending), #1602 (OPEN, ALL GREEN 8h+), #1601 (OPEN, 8 fails 56h+), #1604 (DRAFT, CONFLICTING 70h+), #1588 (OPEN, pre-commit fail 71h+), #1606 (OPEN, e2e-smoke+e2e-tests fail)
+- New PR detected: #1608 (jn-5729-pin-uv-default-python) — MERGEABLE, REVIEW_REQUIRED; likely duplicate of #1607
+- PR #1607: pre-commit FAIL + e2e-smoke PENDING after trigger commit 20:28 IDT Jun 20
+- Merges detected: none — board static since 06:00 IDT
+- Archived worktrees: jn-5673-visibility-scaffold + jn-5674-operational-visibility (both cleaned up 04:57 IDT)
+- CI changes: #1607 now has pre-commit failure (was only CodeRabbit at 06:00 IDT); #1602 still green 8h+
+- Flags: PR #1602 8h+ CI-green, no reviewer; NEW PR #1608 needs clarification vs #1607; PR #1607 pre-commit fail; PR #1601 56h+ stalled
+- Proposals written: 8 new proposals (archive code-reviewes, archive/clarify ci-statistics-notebook, fix jn-5675 CI, clarify JN-5729 strategy, assign reviewer #1602, investigate #1607 pre-commit, rebase #1604, fix #1588)
+- Next: Joseph needs to clarify #1607 vs #1608; assign reviewer to #1602; approve fix sessions for broken PRs

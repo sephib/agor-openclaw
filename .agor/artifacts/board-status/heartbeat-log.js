@@ -731,4 +731,13 @@ export const HEARTBEAT_RUNS = [
     summary: "Board fully static since 04:00 IDT. PR #1602 CI ALL GREEN 6h+ still waiting for reviewer. PR #1607 CI still not triggered after 7h. PR #1601 CI catastrophic 54h+ no fix. All other PRs unchanged.",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019ee81f264070208ab60546/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-21 09:45 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "PR #1608 MERGED (09:37 IDT, JN-5729). PR #1607 CLOSED (08:03 IDT, superseded). PR #1601 CI ALL GREEN — main merge at 09:41 IDT resolved 58h+ catastrophic failure. PR #1606 now CONFLICTING. 3 JN-5729 worktrees proposed for archive.",
+    sessionUrl: "http://localhost:3030/ui/s/019ee8fae4c27d14bdbd1c92/",
+  },
 ];
