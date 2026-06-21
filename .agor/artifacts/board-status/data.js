@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-21 09:45 IDT";
+export const LAST_UPDATED = "2026-06-21 10:31 IDT";
 
 export const WORKTREES = [
   {
@@ -230,7 +230,11 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "green",
-    message: "🎉 PR #1601 (JN-5675): CI went ALL GREEN at 09:45 IDT — main merged into branch resolved 58h+ catastrophic failure. pre-commit ✅, tox ✅, integration ✅, e2e-api ✅, e2e-smoke ✅, e2e-tests ✅, nox ✅. OPEN, MERGEABLE. Ready for Code Review zone.",
+    message: "🎉 PR #1605 (JN-5730, off-board): 'auto apply jbenchmark and argocd labels' — CI ALL GREEN + APPROVED at 10:31 IDT. OPEN, MERGEABLE. READY TO MERGE.",
+  },
+  {
+    level: "green",
+    message: "🎉 PR #1601 (JN-5675): CI ALL GREEN — main merged into branch 09:41 IDT resolved 58h+ catastrophic failure. pre-commit ✅, tox ✅, integration ✅, e2e-api ✅, e2e-smoke ✅, e2e-tests ✅, nox ✅. OPEN, MERGEABLE. Ready for Code Review zone.",
   },
   {
     level: "green",
@@ -238,7 +242,7 @@ export const ALERTS = [
   },
   {
     level: "green",
-    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): 'persist-monotonicity-test' — CI ALL GREEN 9h+. pre-commit ✅, tox ✅, integration ✅, e2e-tests ✅, nox ✅, atlas-validate ✅. MERGEABLE. reviewDecision changed from REVIEW_REQUIRED to '' (1 comment from OmerMarcovich). Needs reviewer assigned.",
+    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): 'persist-monotonicity-test' — CI ALL GREEN 10.5h+. pre-commit ✅, tox ✅, integration ✅, e2e-tests ✅, nox ✅, atlas-validate ✅. MERGEABLE. reviewDecision=''. Needs reviewer assigned.",
   },
   {
     level: "red",

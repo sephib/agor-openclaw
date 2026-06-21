@@ -22,6 +22,15 @@ export const HEARTBEAT_RUNS = [
   // },
   {
     type: "advance",
+    timestamp: "2026-06-21 10:31 IDT",
+    actions: 0,
+    findings: 1,
+    status: "ok",
+    summary: "PR #1605 ALL GREEN + APPROVED — ready to merge. Board otherwise static since 09:45 IDT.",
+    sessionUrl: "http://localhost:3030/ui/s/019ee9165c4d70529497d284/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-20 21:00 IDT",
     actions: 0,
     findings: 4,

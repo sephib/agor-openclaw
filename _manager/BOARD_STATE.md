@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-21 09:45 IDT (advance heartbeat)*
+*Last updated: 2026-06-21 10:31 IDT (advance heartbeat)*
 
 ---
 
@@ -32,28 +32,40 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1602](https://github.com/Jounce-IO/jounce/pull/1602) | persist-monotonicity-test | JN-5685/JN-5679 | ✅ ALL GREEN | OPEN, MERGEABLE, reviewDecision="" | 🎉 **9h+ since green** — reviewDecision changed from REVIEW_REQUIRED to "" (1 comment review from OmerMarcovich) — needs reviewer assigned |
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | ❌ e2e-smoke + e2e-tests FAIL (others ✅) | OPEN, **CONFLICTING**, REVIEW_REQUIRED | 🔴 Now CONFLICTING (was MERGEABLE at 08:03) + systemic e2e failures |
-| [#1605](https://github.com/Jounce-IO/jounce/pull/1605) | auto-apply-labels | — | ⏳ CI IN PROGRESS | OPEN, MERGEABLE, APPROVED | ⚠️ Fresh CI run in progress; was CONFLICTING at 08:03 — now MERGEABLE |
+| [#1605](https://github.com/Jounce-IO/jounce/pull/1605) | auto-apply-labels | [JN-5730](https://jounce.atlassian.net/browse/JN-5730) | ✅ **ALL GREEN** | OPEN, MERGEABLE, **APPROVED** | 🎉 **READY TO MERGE** — CI fully green + approved (was CI in progress at 09:45 IDT) |
+| [#1602](https://github.com/Jounce-IO/jounce/pull/1602) | persist-monotonicity-test | JN-5685/JN-5679 | ✅ ALL GREEN | OPEN, MERGEABLE, reviewDecision="" | 🎉 **10.5h+ since green** — reviewDecision changed from REVIEW_REQUIRED to "" (1 comment review from OmerMarcovich) — needs reviewer assigned |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | ❌ e2e-smoke + e2e-tests FAIL (others ✅) | OPEN, **CONFLICTING**, REVIEW_REQUIRED | 🔴 CONFLICTING + systemic e2e failures — unchanged |
 
 ---
 
-## Key Changes Since Last Run (Jun 21 08:03 IDT)
+## Key Changes Since Last Run (Jun 21 09:45 IDT)
 
 | What observed | Status |
 |---|---|
-| **🎉 PR #1608 MERGED** | jn-5729-pin-uv-default-python-2 merged 09:37 IDT — JN-5729 complete |
-| **🔴 PR #1607 CLOSED** | jn-5729-pin-python-313 closed 08:03 IDT (not merged — superseded by #1608) |
-| **🎉 PR #1601 CI ALL GREEN** | Main merged into jn-5675 at 09:41 IDT triggered fresh CI — all checks now passing. Was catastrophically failing for 58h+. |
-| **⚠️ PR #1602 reviewDecision changed** | Was REVIEW_REQUIRED; now "". OmerMarcovich added a COMMENT review 04:26 IDT. Still OPEN, needs explicit review. |
-| **🔴 PR #1606 now CONFLICTING** | Was MERGEABLE at 08:03 IDT — now CONFLICTING. e2e still failing. |
-| **⏳ PR #1605 CI in progress** | Fresh CI run — was CONFLICTING+APPROVED, now MERGEABLE with CI running |
+| **🎉 PR #1605 ALL GREEN + APPROVED** | was "CI in progress + APPROVED" at 09:45 IDT. CI now fully green — all checks pass. MERGEABLE + APPROVED. Ready to merge! |
+| **↔ PR #1601** | UNCHANGED — ALL GREEN, OPEN, MERGEABLE, no review. Waiting for Code Review zone move. |
+| **↔ PR #1602** | UNCHANGED — ALL GREEN 10.5h+, OPEN, MERGEABLE, reviewDecision="" |
 | **↔ PR #1604** | UNCHANGED — DRAFT + CONFLICTING + pre-commit fail; 72h+ stalled |
 | **↔ PR #1588** | UNCHANGED — pre-commit failing; 73h+ stalled |
+| **↔ PR #1606** | UNCHANGED — CONFLICTING + e2e fail |
 
 ---
 
 ## Attention Items
+
+### 🎉 READY TO MERGE — PR #1605 (JN-5730) CI ALL GREEN + APPROVED
+
+PR [#1605](https://github.com/Jounce-IO/jounce/pull/1605) — "(infra): auto apply jbenchmark and argocd labels (JN-5730)"
+
+**NEW at 10:31 IDT** — CI went ALL GREEN and PR is APPROVED. Was "CI in progress" at 09:45 IDT. Now fully ready.
+
+**CI (all pass):** pre-commit ✅, pre-commit-run/pre-commit ✅, tox ✅, integration ✅, e2e-api ✅, e2e-smoke ✅, e2e-tests ✅, nox ✅, atlas-validate ✅, JIRA Association ✅
+
+State: OPEN, MERGEABLE, APPROVED. Not draft. Off-board PR.
+
+**Action needed:** Joseph can merge this PR now.
+
+---
 
 ### 🎉 READY FOR CODE REVIEW — PR #1601 (JN-5675) CI ALL GREEN
 
@@ -69,14 +81,14 @@ State: OPEN, MERGEABLE, no review. Not draft.
 
 ---
 
-### 🎉 ACTION NEEDED — PR #1602 (JN-5685/JN-5679) CI ALL GREEN — 9h+ since green
+### 🎉 ACTION NEEDED — PR #1602 (JN-5685/JN-5679) CI ALL GREEN — 10.5h+ since green
 
 PR [#1602](https://github.com/Jounce-IO/jounce/pull/1602) — "feat(jbenchmark): add monotonicity verdict persistence tables and ingestion (JN-5685, JN-5679)"
 
 **CI ALL GREEN** — confirmed 09:45 IDT. All checks passing.
 - State: OPEN, MERGEABLE, reviewDecision="" (was REVIEW_REQUIRED)
 - Reviews: OmerMarcovich left a COMMENT at 04:26 IDT (not an approval)
-- 9h+ since CI went green (00:00 IDT Jun 21). No reviewer assigned.
+- 10.5h+ since CI went green (00:00 IDT Jun 21). No reviewer assigned.
 
 **Note:** reviewDecision changed from REVIEW_REQUIRED to "". May indicate branch protection changed or the comment review changed the policy. Still needs a human approval review.
 

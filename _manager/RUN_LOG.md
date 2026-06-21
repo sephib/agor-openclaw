@@ -4,6 +4,16 @@
 
 ---
 
+## 10:31 IDT — Weekday Daytime Advance Heartbeat (Jun 21)
+
+- PRs checked: #1601 (ALL GREEN ✅, no review), #1602 (ALL GREEN 10.5h+, reviewDecision=""), #1604 (DRAFT, CONFLICTING, pre-commit fail), #1588 (pre-commit fail), #1605 (NEW: ALL GREEN + APPROVED ✅), #1606 (CONFLICTING + e2e fail)
+- Merges detected: none — board fully static since 09:45 IDT
+- CI changes: **PR #1605 CI completed — ALL GREEN + APPROVED** (was in progress at 09:45 IDT). All other PRs unchanged.
+- Flags: PR #1605 ready to merge; PR #1601 still needs Code Review zone move; PR #1602 10.5h+ green no reviewer; 3 JN-5729 worktrees still pending archive
+- Next: Merge PR #1605; move jn-5675 to Code Review; assign reviewer to #1602; archive JN-5729 worktrees
+
+---
+
 ## 09:45 IDT — Weekday Daytime Advance Heartbeat (Jun 21)
 
 - PRs checked: #1601 (ALL GREEN ✅), #1602 (ALL GREEN, reviewDecision changed to ""), #1604 (DRAFT, CONFLICTING, pre-commit fail 72h+), #1588 (pre-commit fail 73h+), #1606 (CONFLICTING + e2e fail), #1605 (CI in progress), #1607 (CLOSED), #1608 (MERGED)
