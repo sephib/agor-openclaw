@@ -722,4 +722,13 @@ export const HEARTBEAT_RUNS = [
     summary: "Board fully static since 02:01 IDT. PR #1602 CI ALL GREEN 4h+ still waiting for reviewer. PR #1607 CI still not triggered after 5h. PR #1601 CI catastrophic 52h+ no fix. All other PRs unchanged.",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019ee7b147b37eb483fe6603191226f1/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-21 06:00 IDT",
+    actions: 0,
+    findings: 3,
+    status: "ok",
+    summary: "Board fully static since 04:00 IDT. PR #1602 CI ALL GREEN 6h+ still waiting for reviewer. PR #1607 CI still not triggered after 7h. PR #1601 CI catastrophic 54h+ no fix. All other PRs unchanged.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019ee81f264070208ab60546/",
+  },
 ];

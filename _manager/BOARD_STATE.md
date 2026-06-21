@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-21 04:00 IDT (overnight advance heartbeat)*
+*Last updated: 2026-06-21 06:00 IDT (overnight advance heartbeat)*
 
 ---
 
@@ -32,53 +32,53 @@
 
 ---
 
-## Key Changes Since Last Run (Jun 21 02:01 IDT)
+## Key Changes Since Last Run (Jun 21 04:00 IDT)
 
 | What observed | Status |
 |---|---|
-| **↔ Board STATIC** — 0 merges, 0 zone changes, 0 new PRs since 02:01 IDT | All 12 worktrees in same zones as before. |
-| **🎉 PR #1602 (JN-5685/JN-5679) — CI ALL GREEN, 4h+ waiting** | Still OPEN, MERGEABLE, REVIEW_REQUIRED — no reviewer in ~4h since green. |
-| **⚠️ PR #1607 (jn-5729-pin-python-313) — CI still not triggered** | Now 5h since creation at 23:15 IDT Jun 20. Still only CodeRabbit. |
-| **🔴 PR #1601 (jn-5675)** | ↔ UNCHANGED — CI catastrophic (8 checks). Now 52h+ without fix. |
-| **🔴 PR #1604 (jn-5676)** | ↔ UNCHANGED — CONFLICTING + DRAFT. pre-commit only failing. |
-| **🔴 PR #1588 (jn-5546)** | ↔ UNCHANGED — pre-commit failing. MERGEABLE. |
+| **↔ Board STATIC** — 0 merges, 0 zone changes, 0 new PRs since 04:00 IDT | All 12 worktrees in same zones as before. |
+| **🎉 PR #1602 (JN-5685/JN-5679) — CI ALL GREEN, 6h+ waiting** | Still OPEN, MERGEABLE, REVIEW_REQUIRED — no reviewer assigned in 6h+ since green. |
+| **⚠️ PR #1607 (jn-5729-pin-python-313) — CI still not triggered** | Now 7h since creation at 23:15 IDT Jun 20. Still only CodeRabbit. |
+| **🔴 PR #1601 (jn-5675)** | ↔ UNCHANGED — CI catastrophic (8 checks). Now 54h+ without fix. |
+| **🔴 PR #1604 (jn-5676)** | ↔ UNCHANGED — CONFLICTING + DRAFT. pre-commit only failing. 68h+ stalled. |
+| **🔴 PR #1588 (jn-5546)** | ↔ UNCHANGED — pre-commit failing. MERGEABLE. 69h+ stalled. |
 | **🔴 PR #1606 (JN-5725, off-board)** | ↔ UNCHANGED — e2e-smoke/e2e-tests ❌. 5th run remains most recent. |
 
 ---
 
 ## Attention Items
 
-### 🎉 ACTION NEEDED — PR #1602 (JN-5685/JN-5679) CI ALL GREEN — 4h+ since green
+### 🎉 ACTION NEEDED — PR #1602 (JN-5685/JN-5679) CI ALL GREEN — 6h+ since green
 
 PR [#1602](https://github.com/Jounce-IO/jounce/pull/1602) — "feat(jbenchmark): add monotonicity verdict persistence tables and ingestion (JN-5685, JN-5679)"
 
-**CI ALL GREEN — all checks passing (confirmed 04:00 IDT):**
+**CI ALL GREEN — all checks passing (confirmed 06:00 IDT):**
 - ✅ pre-commit-run/pre-commit, tox-run/tox, integration-run/integration
 - ✅ e2e-tests, nox, integration-tests
 - ✅ atlas-validate-run/atlas-validate, atlas-validate, check-changes, JIRA Association
 - State: OPEN, MERGEABLE, REVIEW_REQUIRED (0 reviews), not draft
 
-**This PR is ready for review.** Has been CI-green since ~00:00 IDT Jun 21 (4h+ as of this run). Needs a reviewer assigned.
+**This PR is ready for review.** Has been CI-green since ~00:00 IDT Jun 21 (6h+ as of this run). Needs a reviewer assigned.
 
 ---
 
-### ⚠️ FLAG — PR #1607 (jn-5729) CI not triggered after 5h
+### ⚠️ FLAG — PR #1607 (jn-5729) CI not triggered after 7h
 
 PR [#1607](https://github.com/Jounce-IO/jounce/pull/1607) — "fix(devcontainer): JN-5729 pin Python to 3.13, prevent 3.14 installation"
 
-Created 23:15 IDT Jun 20. As of 04:00 IDT Jun 21 (5h later), `gh pr checks 1607` returns only CodeRabbit. This is unusual — full CI suite has still not been triggered.
+Created 23:15 IDT Jun 20. As of 06:00 IDT Jun 21 (7h later), `gh pr checks 1607` returns only CodeRabbit. This is unusual — full CI suite has still not been triggered.
 
 **Possible causes:** devcontainer-only change skips all CI workflows; CI triggered but errored. **Action needed:** Joseph to check why CI didn't run on this PR — may need manual re-trigger.
 
 ---
 
-### 🚨 HIGHEST PRIORITY — jn-5675 `__init__.py` CI catastrophic (52h+ stalled)
+### 🚨 HIGHEST PRIORITY — jn-5675 `__init__.py` CI catastrophic (54h+ stalled)
 
 PR [#1601](https://github.com/Jounce-IO/jounce/pull/1601) still failing all CI checks. MERGEABLE but broken:
 - `pre-commit-run / pre-commit` ❌, `tox-run / tox` ❌, `integration-run / integration` ❌
 - `e2e-api / e2e` ❌, `pre-commit` ❌, `nox` ❌, `integration-tests` ❌, `e2e-tests` ❌
 
-Root cause: broken `__init__.py` conflict resolution. 52h+ without a fix. Session needed.
+Root cause: broken `__init__.py` conflict resolution. 54h+ without a fix. Session needed.
 
 ---
 
@@ -88,13 +88,13 @@ PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): e2e-smoke/e2e ❌, e2
 
 ---
 
-### 🔴 jn-5676 — CONFLICTING + DRAFT (66h+ stalled)
+### 🔴 jn-5676 — CONFLICTING + DRAFT (68h+ stalled)
 
-PR [#1604](https://github.com/Jounce-IO/jounce/pull/1604): DRAFT + CONFLICTING. CI otherwise clean (only pre-commit failing). Needs rebase + pre-commit fix + un-draft.
+PR [#1604](https://github.com/Jounce-IO/jounce/pull/1604): DRAFT + CONFLICTING. CI otherwise clean (only pre-commit failing). Needs rebase + pre-commit fix + un-draft. 68h+ stalled.
 
 ---
 
-### 🔴 PR #1588 (JN-5546) — pre-commit + sephib MUST FIX (67h+ stalled)
+### 🔴 PR #1588 (JN-5546) — pre-commit + sephib MUST FIX (69h+ stalled)
 
 MERGEABLE + pre-commit failing + sephib MUST FIX comments. No fix activity.
 
