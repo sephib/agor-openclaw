@@ -1073,4 +1073,13 @@ export const HEARTBEAT_RUNS = [
     summary: "PR #1606 NEW CI run 27958172294 (supersedes 27955371445 — another push triggered fresh CI). e2e-api ✅ still passing, pre-commit/tox/integration/e2e-smoke ⏳ PENDING. PR #1604 all-green needs reviewer (10th flag). No new merges.",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019eefa1ebeb7df286c326dd/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-22 18:30 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "PR #1606 CI REGRESSED — new run 27968237684: e2e-api ❌ FAIL + e2e-tests ❌ FAIL (was passing in 27967430673). PR #1604 still not merged (11th flag, ALL GREEN + APPROVED). jn-5724 filesystem FAILED (git lock — now 2 affected worktrees). No new merges.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019ef046-75d0-7753-ad74-c5099d2642af/",
+  },
 ];

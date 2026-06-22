@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-22 18:00 IDT";
+export const LAST_UPDATED = "2026-06-22 18:30 IDT";
 
 export const WORKTREES = [
   {
@@ -11,12 +11,12 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1604 OPEN",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1604",
-    status: "🎉🎉 ALL CI GREEN + APPROVED — READY TO MERGE NOW! Run 27959917357: ALL checks ✅ (e2e-smoke PASSED 18:00 IDT). Merge this PR!",
+    status: "🎉🎉 ALL CI GREEN + APPROVED — READY TO MERGE NOW! (11th flag). Run 27959917357: ALL checks ✅. Merge this PR!",
     blockedOn: null,
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019edb7fb4c770d78fc7a47d/",
     sessionLabel: "rebase session",
-    lastActive: "2026-06-22 18:00 IDT (e2e-smoke PASSED — ALL GREEN)",
+    lastActive: "2026-06-22 18:00 IDT (ALL CI GREEN — still not merged)",
   },
   {
     ticket: "JN-5677",
@@ -60,9 +60,9 @@ export const WORKTREES = [
     zone: "Ingest",
     pr: null,
     prUrl: null,
-    status: "ℹ️ NEW — Ingest zone. JN-5724 In Progress. No sessions yet.",
-    blockedOn: null,
-    blockedType: "running",
+    status: "🔴 filesystem FAILED (git lock — same error as internal-cr-system). No sessions possible until fixed.",
+    blockedOn: "Git lock error — filesystem needs fix",
+    blockedType: "blocked",
     sessionUrl: null,
     sessionLabel: null,
     lastActive: null,
@@ -76,7 +76,7 @@ export const WORKTREES = [
     zone: "Ingest",
     pr: null,
     prUrl: null,
-    status: "ℹ️ NEW — Ingest zone. JN-5616 In Progress. No sessions yet.",
+    status: "ℹ️ Ingest zone. JN-5616 In Progress. No sessions yet.",
     blockedOn: null,
     blockedType: "running",
     sessionUrl: null,
@@ -227,15 +227,19 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "green",
-    message: "🎉🎉 PR #1604 (JN-5676, Publish zone): ALL CI GREEN + APPROVED — READY TO MERGE NOW! Run 27959917357: e2e-smoke ✅ PASSED (18:00 IDT). Every check green. Merge immediately.",
+    message: "🎉🎉 PR #1604 (JN-5676, Publish zone): ALL CI GREEN + APPROVED — READY TO MERGE NOW! (11th flag). Run 27959917357: every check ✅. Merge immediately.",
   },
   {
-    level: "yellow",
-    message: "🟡 PR #1606 (JN-5725, off-board): NEW CI run 27967430673 — all checks ✅ — only e2e-smoke ⏳ PENDING. MERGEABLE. REVIEW_REQUIRED. JN-5725 Done in Jira.",
+    level: "red",
+    message: "🔴 PR #1606 (JN-5725, off-board): CI REGRESSED — new run 27968237684: e2e-api ❌ FAIL + e2e-tests ❌ FAIL (was passing in run 27967430673). Investigate before merging.",
   },
   {
-    level: "green",
-    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): MERGED 14:34 IDT Jun 22. Both Jira tickets Done ✅.",
+    level: "red",
+    message: "🔴 jn-5724-lychee-precommit-flaky: filesystem FAILED (git lock). Two worktrees now affected (also internal-cr-system). Fix: rm .git/config.lock in worktree shared git dir.",
+  },
+  {
+    level: "red",
+    message: "⚠️ PR #1615 (JN-5677): TRIPLE — DRAFT + CONFLICTING + pre-commit FAIL (run 27934981657). Blocked on #1604 merging. Fix conflict + pre-commit even while draft.",
   },
   {
     level: "yellow",
@@ -243,19 +247,11 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⚠️ PR #1615 (JN-5677): TRIPLE problem — DRAFT + CONFLICTING + pre-commit FAIL (run 27934981657). Blocked on #1604 merging. Fix conflict + pre-commit even while still draft.",
+    message: "⚠️ Jira stale: JN-5673 (In Review, PR #1595 MERGED Jun 17 — 5+ days, should be Done); JN-5546 (In Progress, should be 'In Review'); JN-5725 (Done but PR #1606 open with CI failure).",
   },
   {
     level: "yellow",
-    message: "ℹ️ Two new Ingest worktrees: jn-5724-lychee-precommit-flaky (JN-5724) and jn-5616-replace-find-project-root (JN-5616). Both In Progress in Jira. No sessions yet.",
-  },
-  {
-    level: "yellow",
-    message: "⚠️ Jira stale: JN-5673 (In Review, PR #1595 MERGED Jun 17 — 5+ days, should be Done); JN-5546 (In Progress, should be 'In Review'); JN-5725 (Done but PR #1606 still open — CI nearly done).",
-  },
-  {
-    level: "yellow",
-    message: "⚠️ model-packaging-cr (Code Review zone): 7+ days inactive, no PR. Confirm with Joseph whether to archive.",
+    message: "⚠️ model-packaging-cr (Code Review zone): 8+ days inactive, no PR. Confirm with Joseph whether to archive.",
   },
   {
     level: "red",
