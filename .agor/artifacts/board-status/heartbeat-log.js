@@ -866,4 +866,13 @@ export const HEARTBEAT_RUNS = [
     summary: "PR #1588 (JN-5546) NOW FULLY GREEN — pre-commit fixed overnight (was 90h+ stalled); needs reviewer + JN-5546 Jira update to 'In Review'. PR #1604 GH Actions CI still not triggered 15.5h after un-draft. PR #1602 green 12h+ no reviewer. PR #1606 e2e persisting. 13h overnight gap detected.",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019eedea20917942b73ca215a8b3c32e/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-22 09:34 IDT",
+    actions: 0,
+    findings: 4,
+    status: "ok",
+    summary: "PR #1588 REGRESSION — main merged into branch at 09:24 IDT, new CI run, pre-commit FAILING again. PR #1615 now ALL GREEN (pre-commit fixed since 09:02 run). PR #1604 CI still not running (~17h). PR #1602 still awaiting reviewer (13h+). PR #1606 e2e unchanged.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019eee0597fe7fbcaf92b04c/",
+  },
 ];

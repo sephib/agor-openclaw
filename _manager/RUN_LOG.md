@@ -1952,3 +1952,12 @@
 - Flags: #1588 FULLY GREEN → needs reviewer NOW; JN-5546 Jira still "In Progress" (should be "In Review"); #1602 still no reviewer (12h+); #1604 CI anomaly; #1606 e2e persisting; JN-5673 stale 5+ days; overnight heartbeats appear to have not run (13h gap)
 - Actions: none (supervised); no MERGED/CLOSED PRs to archive
 - Next: assign reviewer to #1588 and #1602; manual CI re-trigger for #1604; fix e2e for #1606; update JN-5546 Jira to "In Review"; update JN-5673 to Done
+
+## 09:34 IDT — Weekday Daytime Heartbeat
+- PRs checked: #1604 (OPEN), #1588 (OPEN), #1615 (OPEN/DRAFT), #1602 (OPEN off-board), #1606 (OPEN off-board), #1596 (DRAFT/BLOCKED)
+- Merges detected: none — no new merges since Jun 21
+- CI changes: **PR #1588 REGRESSION** — main merged into branch at 09:24 IDT (22 min after last run), new CI run, pre-commit now FAILING again (was green at 09:02). **PR #1615 ALL GREEN** — pre-commit fixed since 09:02 run. PR #1604 GH Actions still not running (~17h). PR #1602 still green, still no reviewer. PR #1606 e2e unchanged.
+- Archives: none — no MERGED/CLOSED PRs found
+- Flags: #1588 pre-commit regressed (main merge triggered); #1615 now green (positive); #1604 CI anomaly ~17h; #1602 reviewer overdue 13h+; #1606 e2e persistent; JN-5673 stale 5+ days
+- Actions: none (supervised)
+- Next: fix pre-commit on #1588; manual CI re-trigger for #1604; assign reviewer to #1602; fix e2e for #1606

@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-22 09:02 IDT";
+export const LAST_UPDATED = "2026-06-22 09:34 IDT";
 
 export const WORKTREES = [
   {
@@ -11,7 +11,7 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1604 OPEN",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1604",
-    status: "🔴 GH Actions CI NOT triggered 15.5h+ after un-draft (~17:30 IDT Jun 21). Only CodeRabbit ✅ visible. Manual CI re-trigger + address CodeRabbit comments before human reviewer.",
+    status: "🔴 GH Actions CI NOT triggered ~17h after un-draft (~17:30 IDT Jun 21). Only CodeRabbit ✅ visible. Manual CI re-trigger needed.",
     blockedOn: "GH Actions CI not running — manual re-trigger needed",
     blockedType: "owner",
     sessionUrl: "http://localhost:3030/ui/s/019edb7fb4c770d78fc7a47d/",
@@ -28,12 +28,12 @@ export const WORKTREES = [
     zone: "Revise",
     pr: "#1615 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1615",
-    status: "⏳ Draft PR open. Pre-commit FAIL (WIP expected). tox/nox/integration/e2e-tests ✅. Depends on JN-5676 (#1604) merging first.",
+    status: "🎉 ALL GREEN (pre-commit fixed since 09:02 IDT). Draft — blocked on JN-5676 (#1604) merging first.",
     blockedOn: "JN-5676 (#1604) must merge first",
     blockedType: "blocked",
     sessionUrl: null,
     sessionLabel: null,
-    lastActive: "2026-06-21 (active)",
+    lastActive: "2026-06-22 (CI updated 09:34 IDT)",
   },
   {
     ticket: "JN-5546",
@@ -44,12 +44,12 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1588",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1588",
-    status: "🎉 NOW FULLY GREEN — pre-commit fixed! All CI passing. MERGEABLE, no reviewer assigned. Was stalled 90h+. Jira still 'In Progress' — needs update to 'In Review'.",
-    blockedOn: null,
-    blockedType: "running",
+    status: "🔴 REGRESSION — was FULLY GREEN at 09:02 IDT. Main merged into branch at 09:24 IDT triggered new CI: pre-commit now FAILING again.",
+    blockedOn: "pre-commit FAIL — main merge broke it",
+    blockedType: "owner",
     sessionUrl: "http://localhost:3030/ui/s/019ed01e5624752fbade0eab/",
     sessionLabel: "fix session",
-    lastActive: "2026-06-22 09:02 IDT",
+    lastActive: "2026-06-22 09:34 IDT",
   },
   {
     ticket: null,
@@ -185,16 +185,20 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "green",
-    message: "🎉 PR #1588 (JN-5546, Code Review zone): NOW FULLY GREEN — pre-commit fixed after 90h+ stall. All CI passing. Assign reviewer + update Jira JN-5546 to 'In Review'.",
-  },
-  {
-    level: "green",
-    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): FULLY GREEN 12h+ — no reviewer assigned. Assign reviewer immediately.",
+    level: "red",
+    message: "🔴 PR #1588 (JN-5546, Code Review zone): REGRESSION — was FULLY GREEN at 09:02 IDT. Main branch merged into branch at 09:24 IDT → new CI run → pre-commit FAILING again. Fix pre-commit, then assign reviewer.",
   },
   {
     level: "red",
-    message: "🔴 PR #1604 (JN-5676): GH Actions CI NOT triggered 15.5h+ after un-draft. Only CodeRabbit visible. Need manual CI re-trigger via GitHub UI or empty commit push.",
+    message: "🔴 PR #1604 (JN-5676): GH Actions CI NOT triggered ~17h after un-draft. Only CodeRabbit visible. Need manual CI re-trigger via GitHub UI or empty commit push.",
+  },
+  {
+    level: "green",
+    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): FULLY GREEN 13h+ — no reviewer assigned. Assign reviewer immediately.",
+  },
+  {
+    level: "green",
+    message: "🎉 PR #1615 (JN-5677): ALL CI NOW GREEN (pre-commit fixed since 09:02 IDT). Draft, blocked on #1604 merging first. No action needed yet.",
   },
   {
     level: "red",
@@ -202,11 +206,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⏳ PR #1615 (JN-5677): Draft PR — pre-commit failing (expected WIP). Depends on #1604 merging. No action needed yet.",
-  },
-  {
-    level: "yellow",
-    message: "⚠️ 2 Jira tickets stale: JN-5673 (In Review, PR #1595 merged Jun 17 — 5+ days should be Done); JN-5546 (In Progress, PR #1588 fully green — should be In Review).",
+    message: "⚠️ 2 Jira tickets stale: JN-5673 (In Review, PR #1595 merged Jun 17 — 5+ days should be Done); JN-5546 (In Progress, should be 'In Review' once pre-commit fixed).",
   },
   {
     level: "red",
