@@ -31,6 +31,15 @@ export const HEARTBEAT_RUNS = [
   },
   {
     type: "advance",
+    timestamp: "2026-06-22 17:30 IDT",
+    actions: 0,
+    findings: 7,
+    status: "ok",
+    summary: "🎉 PR #1604 APPROVED ✅ (reviewDecision '' → APPROVED). New CI run 27959917357 (all pass, e2e-smoke pending). PR #1606 nearly all green (run 27958974262, e2e-smoke pending). 2 new Ingest worktrees: JN-5724, JN-5616. No merges.",
+    sessionUrl: "http://localhost:3030/ui/s/019eefbd6327714fa8e93417b27a2adb/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-22 16:30 IDT",
     actions: 0,
     findings: 6,

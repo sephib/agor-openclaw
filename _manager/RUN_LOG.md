@@ -4,6 +4,19 @@
 
 ---
 
+## 17:30 IDT — Weekday Daytime Advance Heartbeat (Jun 22)
+
+- PRs checked: #1604 (**APPROVED** ✅ reviewDecision changed from "" → APPROVED; new CI run 27959917357 all pass except e2e-smoke PENDING), #1606 (run 27958974262, nearly all green — only e2e-smoke pending; supersedes 27958172294), #1615 (DRAFT+CONFLICTING+pre-commit FAIL — unchanged), #1588 (MERGEABLE, no reviewer — unchanged), #1596 (DRAFT CONFLICTING — unchanged)
+- Merges detected: none since 17:00 IDT
+- CI changes: **#1604 APPROVED** — reviewer finally approved after 10+ heartbeats. New CI run 27959917357 running (e2e-smoke still pending). #1606 CI run 27958974262 nearly all green (only e2e-smoke pending).
+- Board scan: **Two new Ingest worktrees detected** — jn-5724-lychee-precommit-flaky ([JN-5724](https://jounce.atlassian.net/browse/JN-5724)) and jn-5616-replace-find-project-root ([JN-5616](https://jounce.atlassian.net/browse/JN-5616)). Both Jira In Progress, no sessions yet.
+- Jira: JN-5673 still "In Review" (PR #1595 merged Jun 17, 5+ days stale); JN-5546 still "In Progress" (should be "In Review"); JN-5725 Done but PR #1606 still open (CI nearly done)
+- Autonomous actions: 0 (no MERGED/CLOSED PRs)
+- Findings: 7 items (#1604 APPROVED waiting on e2e-smoke, #1606 nearly all green, #1615 triple blocked, #1588 reviewer needed, JN-5673 stale Jira, 2 new Ingest worktrees, model-packaging-cr stale)
+- Next: When e2e-smoke passes for #1604 → merge; when e2e-smoke passes for #1606 → assign reviewer; assign reviewer to #1588; update JN-5546 → In Review; fix #1615; mark JN-5673 Done; ingest JN-5724 + JN-5616
+
+---
+
 ## 16:00 IDT — Weekday Daytime Advance Heartbeat (Jun 22)
 
 - PRs checked: #1604 (ALL GREEN unchanged, run 27947074357; still no reviewer — **8th consecutive heartbeat**), #1615 (DRAFT+CONFLICTING+pre-commit FAIL — unchanged), #1588 (MERGEABLE, stale CI run 27933817996 — unchanged), #1596 (DRAFT CONFLICTING — unchanged), #1606 (off-board, **🔴 run 27952850789 COMPLETED** — e2e-api ❌ FAIL, e2e-tests ❌ FAIL; pre-commit/integration/tox PASS; fix push did NOT resolve regression)

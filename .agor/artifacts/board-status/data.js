@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-22 17:00 IDT";
+export const LAST_UPDATED = "2026-06-22 17:30 IDT";
 
 export const WORKTREES = [
   {
@@ -11,12 +11,12 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1604 OPEN",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1604",
-    status: "🎉 ALL GREEN — all checks pass (run 27947074357). MERGEABLE. Assign reviewer NOW — 10th consecutive heartbeat flagging this.",
+    status: "🎉 APPROVED ✅ — run 27959917357: all checks pass except e2e-smoke ⏳ PENDING. Once smoke passes → READY TO MERGE.",
     blockedOn: null,
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019edb7fb4c770d78fc7a47d/",
     sessionLabel: "rebase session",
-    lastActive: "2026-06-22 14:30 IDT (e2e-smoke passed)",
+    lastActive: "2026-06-22 14:30 IDT (e2e-smoke passed prev run)",
   },
   {
     ticket: "JN-5677",
@@ -44,12 +44,44 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1588",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1588",
-    status: "🟡 MERGEABLE, reviewDecision=''. Stale branch CI run 27933817996 shows pre-commit FAIL. PR is MERGEABLE — assign reviewer. Jira should be 'In Review'.",
+    status: "🟡 MERGEABLE, reviewDecision=''. Assign reviewer. Jira should be 'In Review'.",
     blockedOn: null,
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019ed01e5624752fbade0eab/",
     sessionLabel: "fix session",
     lastActive: "2026-06-17 10:14 IDT",
+  },
+  {
+    ticket: "JN-5724",
+    ticketUrl: "https://jounce.atlassian.net/browse/JN-5724",
+    title: "Reduce Lychee precommit flaky results",
+    branch: "jn-5724-lychee-precommit-flaky",
+    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5724-lychee-precommit-flaky",
+    zone: "Ingest",
+    pr: null,
+    prUrl: null,
+    status: "ℹ️ NEW — Ingest zone. JN-5724 In Progress. No sessions yet.",
+    blockedOn: null,
+    blockedType: "running",
+    sessionUrl: null,
+    sessionLabel: null,
+    lastActive: null,
+  },
+  {
+    ticket: "JN-5616",
+    ticketUrl: "https://jounce.atlassian.net/browse/JN-5616",
+    title: "Replace find_project_root() calls in tests with conftest fixture",
+    branch: "jn-5616-replace-find-project-root",
+    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5616-replace-find-project-root",
+    zone: "Ingest",
+    pr: null,
+    prUrl: null,
+    status: "ℹ️ NEW — Ingest zone. JN-5616 In Progress. No sessions yet.",
+    blockedOn: null,
+    blockedType: "running",
+    sessionUrl: null,
+    sessionLabel: null,
+    lastActive: null,
   },
   {
     ticket: null,
@@ -195,11 +227,11 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "green",
-    message: "🎉 PR #1604 (JN-5676, Publish zone): ALL GREEN (run 27947074357). MERGEABLE. Assign reviewer NOW — 10th consecutive heartbeat.",
+    message: "🎉 PR #1604 (JN-5676, Publish zone): APPROVED ✅ — run 27959917357 all checks pass except e2e-smoke ⏳ PENDING. Once smoke passes → READY TO MERGE.",
   },
   {
     level: "yellow",
-    message: "🟡 PR #1606 (JN-5725, off-board): NEW CI run 27958172294 (triggered since 16:30 IDT). e2e-api ✅, atlas-validate ✅ — pre-commit/tox/integration/e2e-smoke ⏳ PENDING. JN-5725 Done in Jira. Watch result.",
+    message: "🟡 PR #1606 (JN-5725, off-board): CI run 27958974262 — nearly all green (pre-commit ✅, tox ✅, integration ✅, e2e-api ✅, nox ✅) — only e2e-smoke ⏳ PENDING. MERGEABLE. REVIEW_REQUIRED. JN-5725 Done in Jira.",
   },
   {
     level: "green",
@@ -215,7 +247,11 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⚠️ Jira stale: JN-5673 (In Review, PR #1595 MERGED Jun 17 — 5+ days, should be Done); JN-5546 (In Progress, should be 'In Review'); JN-5725 (Done but PR #1606 still open — CI failing).",
+    message: "ℹ️ Two new Ingest worktrees: jn-5724-lychee-precommit-flaky (JN-5724) and jn-5616-replace-find-project-root (JN-5616). Both In Progress in Jira. No sessions yet.",
+  },
+  {
+    level: "yellow",
+    message: "⚠️ Jira stale: JN-5673 (In Review, PR #1595 MERGED Jun 17 — 5+ days, should be Done); JN-5546 (In Progress, should be 'In Review'); JN-5725 (Done but PR #1606 still open — CI nearly done).",
   },
   {
     level: "yellow",
