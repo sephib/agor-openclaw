@@ -22,6 +22,15 @@ export const HEARTBEAT_RUNS = [
   // },
   {
     type: "advance",
+    timestamp: "2026-06-22 11:30 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "CORRECTION: PR #1615 was incorrectly reported ALL GREEN for 3 heartbeats — run 27937907242 is PR #1602's run; #1615 actual run 27934981657 = pre-commit FAIL. PR #1606 e2e-smoke now PENDING (was FAIL). No merges. #1604 GH Actions still missing ~20h. #1602 reviewer 20h+.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019eee73c9af73b283dc653e/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-21 17:00 IDT",
     actions: 0,
     findings: 3,

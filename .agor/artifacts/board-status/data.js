@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-22 11:03 IDT";
+export const LAST_UPDATED = "2026-06-22 11:30 IDT";
 
 export const WORKTREES = [
   {
@@ -11,7 +11,7 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1604 OPEN",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1604",
-    status: "🔴 GH Actions CI NOT triggered ~18.5h after un-draft (~17:30 IDT Jun 21). Only CodeRabbit ✅ visible. Manual CI re-trigger needed.",
+    status: "🔴 GH Actions CI NOT triggered ~20h after un-draft (~17:30 IDT Jun 21). Only CodeRabbit ✅ visible. Manual CI re-trigger needed.",
     blockedOn: "GH Actions CI not running — manual re-trigger needed",
     blockedType: "owner",
     sessionUrl: "http://localhost:3030/ui/s/019edb7fb4c770d78fc7a47d/",
@@ -28,12 +28,12 @@ export const WORKTREES = [
     zone: "Revise",
     pr: "#1615 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1615",
-    status: "🎉 ALL GREEN (pre-commit regression fixed — CI run 27937907242 all passing). Draft — blocked on JN-5676 (#1604) merging first.",
-    blockedOn: "JN-5676 (#1604) must merge first",
+    status: "⚠️ CORRECTION: was incorrectly reported ALL GREEN — still pre-commit FAIL (CI run 27934981657, created 09:52 IDT Jun 22). Draft — blocked on JN-5676 (#1604) merging first.",
+    blockedOn: "pre-commit FAIL + JN-5676 (#1604) must merge first",
     blockedType: "blocked",
     sessionUrl: null,
     sessionLabel: null,
-    lastActive: "2026-06-22 (CI updated 11:03 IDT)",
+    lastActive: "2026-06-22 (CI run 09:52 IDT)",
   },
   {
     ticket: "JN-5546",
@@ -44,12 +44,12 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1588",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1588",
-    status: "🔴 pre-commit FAIL (3rd heartbeat) — main merged into branch at 09:24 IDT Jun 22 broke CI (run 27933817996). Needs fix before reviewer assignment.",
+    status: "🔴 pre-commit FAIL (4th heartbeat) — main merged into branch at 09:24 IDT Jun 22 broke CI (run 27933817996). Needs fix before reviewer assignment.",
     blockedOn: "pre-commit FAIL — main merge broke it",
     blockedType: "owner",
     sessionUrl: "http://localhost:3030/ui/s/019ed01e5624752fbade0eab/",
     sessionLabel: "fix session",
-    lastActive: "2026-06-22 11:03 IDT",
+    lastActive: "2026-06-22 11:30 IDT",
   },
   {
     ticket: null,
@@ -185,24 +185,24 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "red",
-    message: "🔴 PR #1588 (JN-5546, Code Review zone): pre-commit FAIL — 3rd consecutive heartbeat. Main merged into branch at 09:24 IDT Jun 22 broke CI (run 27933817996). Fix pre-commit then assign reviewer.",
+    level: "yellow",
+    message: "⚠️ CORRECTION: PR #1615 (JN-5677) was incorrectly reported ALL GREEN in last 3 heartbeats. Run 27937907242 belongs to PR #1602. PR #1615 actual run 27934981657 = pre-commit FAIL (09:52 IDT Jun 22). Still DRAFT + failing.",
   },
   {
     level: "red",
-    message: "🔴 PR #1604 (JN-5676): GH Actions CI NOT triggered ~18.5h after un-draft. Only CodeRabbit visible. Need manual CI re-trigger via GitHub UI or empty commit push.",
+    message: "🔴 PR #1588 (JN-5546, Code Review zone): pre-commit FAIL — 4th consecutive heartbeat. Main merged into branch at 09:24 IDT Jun 22 broke CI (run 27933817996). Fix pre-commit then assign reviewer.",
+  },
+  {
+    level: "red",
+    message: "🔴 PR #1604 (JN-5676): GH Actions CI NOT triggered ~20h after un-draft. Only CodeRabbit visible. Need manual CI re-trigger via GitHub UI or empty commit push.",
   },
   {
     level: "green",
-    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): FULLY GREEN 15h+ — no reviewer assigned. Assign reviewer immediately.",
+    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): FULLY GREEN ~20h — no reviewer assigned. Assign reviewer immediately.",
   },
   {
-    level: "green",
-    message: "🎉 PR #1615 (JN-5677): REGRESSION FIXED — ALL CI GREEN (CI run 27937907242 — pre-commit fixed). Still DRAFT, blocked on #1604 merging first. No action needed yet.",
-  },
-  {
-    level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): e2e-smoke FAIL (54min) + e2e-tests FAIL. Pre-commit ✅. Fix e2e failures.",
+    level: "yellow",
+    message: "⏳ PR #1606 (JN-5725, off-board): e2e-smoke now PENDING (new run), e2e-api now PASS. Was fully FAIL — possible improvement. Monitor.",
   },
   {
     level: "yellow",
