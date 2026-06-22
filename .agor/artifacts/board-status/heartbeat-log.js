@@ -40,6 +40,15 @@ export const HEARTBEAT_RUNS = [
   },
   {
     type: "advance",
+    timestamp: "2026-06-22 12:32 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "NEW: PR #1604 (JN-5676) now CONFLICTING (was MERGEABLE + no CI). PR #1606 RESOLVED — conflict fixed, CI running (run 27942715114, e2e-smoke+integration pending). PR #1615 now CONFLICTING too (triple: DRAFT+conflict+pre-commit). PR #1588 pre-commit FAIL 6th heartbeat. PR #1602 ~24.5h green no reviewer.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019eeeaab8ab7bac89e37ee6/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-21 17:00 IDT",
     actions: 0,
     findings: 3,

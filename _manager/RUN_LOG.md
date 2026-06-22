@@ -1994,3 +1994,12 @@
 - Flags: #1615 regression fixed (good news); #1588 pre-commit still broken (3rd run); #1604 CI anomaly ~18.5h; #1602 reviewer overdue 15h+; #1606 e2e persistent; JN-5673 Jira stale 5+ days; JN-5546 Jira "In Progress" should be "In Review"
 - Actions: none (supervised)
 - Next: fix pre-commit on #1588; manual CI re-trigger for #1604; assign reviewer to #1602 and #1588 (once green); fix e2e for #1606; update JN-5673 and JN-5546 Jira status
+
+## 12:32 IDT — Weekday Daytime Advance Heartbeat (Jun 22)
+
+- PRs checked: #1604 (OPEN, **NEW: CONFLICTING** — merge conflict appeared since 12:02 IDT; GH Actions CI still never triggered ~19h after un-draft), #1615 (DRAFT, **NOW CONFLICTING** + pre-commit FAIL — run 27934981657, triple problem), #1588 (pre-commit FAIL — 6th consecutive heartbeat, MERGEABLE), #1596 (DRAFT, CONFLICTING — BLOCKED, frozen), #1602 (off-board, ALL GREEN run 27937907242 — ~24.5h no reviewer), #1606 (off-board, **RESOLVED: conflict fixed** — now MERGEABLE, new CI run 27942715114: pre-commit ✅, e2e-api ✅, tox ✅, e2e-smoke + integration PENDING)
+- Merges detected: none since Jun 21
+- CI changes: PR #1606 new CI run 27942715114 triggered (conflict resolved + rebased); PR #1604 still no GH Actions CI; PR #1588 still run 27933817996 (pre-commit FAIL); PR #1602 all green same run
+- Flags: 🔴 PR #1604 now double-blocked (merge conflict + no CI); 🎉 PR #1606 unblocked (conflict resolved, CI running); 🔴 PR #1588 6th heartbeat with pre-commit FAIL; 🎉 PR #1602 ~24.5h green no reviewer
+- Auto-archives: none (no PRs moved to MERGED/CLOSED)
+- Next: Watch #1606 CI (e2e-smoke + integration); Joseph needs to rebase #1604 + trigger CI; fix #1588 pre-commit; assign reviewer to #1602

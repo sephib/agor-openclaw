@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-22 12:02 IDT";
+export const LAST_UPDATED = "2026-06-22 12:32 IDT";
 
 export const WORKTREES = [
   {
@@ -11,8 +11,8 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1604 OPEN",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1604",
-    status: "🔴 GH Actions CI NOT triggered ~18.5h after un-draft (est. ~17:30-18:00 IDT Jun 21). Only CodeRabbit ✅ visible. Manual CI re-trigger needed.",
-    blockedOn: "GH Actions CI not running — manual re-trigger needed",
+    status: "🔴 NEW: NOW CONFLICTING — merge conflict appeared since 12:02 IDT. GH Actions CI still never triggered ~19h after un-draft (~17:30-18:00 IDT Jun 21). Double problem: conflict + CI not running. Needs rebase + CI re-trigger.",
+    blockedOn: "Merge conflict + GH Actions CI not running",
     blockedType: "owner",
     sessionUrl: "http://localhost:3030/ui/s/019edb7fb4c770d78fc7a47d/",
     sessionLabel: "rebase session",
@@ -28,8 +28,8 @@ export const WORKTREES = [
     zone: "Revise",
     pr: "#1615 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1615",
-    status: "⚠️ pre-commit FAIL (CI run 27934981657, created 09:52 IDT Jun 22). Draft — blocked on JN-5676 (#1604) merging first. Fix pre-commit even while still draft.",
-    blockedOn: "pre-commit FAIL + JN-5676 (#1604) must merge first",
+    status: "🔴 TRIPLE: DRAFT + CONFLICTING + pre-commit FAIL (CI run 27934981657, created 09:52 IDT Jun 22). Blocked on JN-5676 (#1604) merging first. Fix pre-commit and conflict even while still draft.",
+    blockedOn: "DRAFT + merge conflict + pre-commit FAIL + blocked on #1604",
     blockedType: "blocked",
     sessionUrl: null,
     sessionLabel: null,
@@ -44,12 +44,12 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1588",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1588",
-    status: "🔴 pre-commit FAIL (5th heartbeat) — main merged into branch at 09:24 IDT Jun 22 broke CI (run 27933817996). Needs fix before reviewer assignment.",
+    status: "🔴 pre-commit FAIL (6th heartbeat) — main merged into branch at 09:24 IDT Jun 22 broke CI (run 27933817996). Still MERGEABLE. Needs fix before reviewer assignment.",
     blockedOn: "pre-commit FAIL — main merge broke it",
     blockedType: "owner",
     sessionUrl: "http://localhost:3030/ui/s/019ed01e5624752fbade0eab/",
     sessionLabel: "fix session",
-    lastActive: "2026-06-22 12:02 IDT",
+    lastActive: "2026-06-22 12:32 IDT",
   },
   {
     ticket: null,
@@ -186,23 +186,23 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "red",
-    message: "🔴 NEW: PR #1606 (JN-5725, off-board) now CONFLICTING — was MERGEABLE + e2e-smoke PENDING at 11:30 IDT. GH Actions CI not running (only CodeRabbit). Needs merge conflict resolution.",
+    message: "🔴 NEW: PR #1604 (JN-5676, Publish zone) NOW CONFLICTING — merge conflict appeared since 12:02 IDT. AND GH Actions CI still never triggered ~19h after un-draft. Double problem: rebase needed + CI re-trigger.",
   },
   {
     level: "red",
-    message: "🔴 PR #1588 (JN-5546, Code Review zone): pre-commit FAIL — 5th consecutive heartbeat. Main merged into branch at 09:24 IDT Jun 22 broke CI (run 27933817996). Fix pre-commit then assign reviewer.",
-  },
-  {
-    level: "red",
-    message: "🔴 PR #1604 (JN-5676): GH Actions CI NOT triggered ~18.5h after un-draft. Only CodeRabbit visible. Need manual CI re-trigger via GitHub UI or empty commit push.",
+    message: "🔴 PR #1588 (JN-5546, Code Review zone): pre-commit FAIL — 6th consecutive heartbeat. Main merged into branch at 09:24 IDT Jun 22 broke CI (run 27933817996). Fix pre-commit then assign reviewer.",
   },
   {
     level: "green",
-    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): FULLY GREEN ~23.5h — no reviewer assigned. Assign reviewer immediately.",
+    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): FULLY GREEN ~24.5h — no reviewer assigned. Assign reviewer immediately.",
+  },
+  {
+    level: "green",
+    message: "🎉 PR #1606 (JN-5725, off-board): RESOLVED — conflict fixed, CI now running (run 27942715114). pre-commit ✅, e2e-api ✅, tox ✅. e2e-smoke + integration PENDING. Monitor for green.",
   },
   {
     level: "yellow",
-    message: "⚠️ PR #1615 (JN-5677): pre-commit FAIL (run 27934981657). DRAFT blocked on #1604 merging. Fix pre-commit even while still draft.",
+    message: "⚠️ PR #1615 (JN-5677): TRIPLE problem — DRAFT + CONFLICTING + pre-commit FAIL (run 27934981657). Blocked on #1604 merging. Fix conflict + pre-commit even while still draft.",
   },
   {
     level: "yellow",
