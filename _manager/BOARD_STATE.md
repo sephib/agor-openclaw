@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-22 15:00 IDT (advance heartbeat)*
+*Last updated: 2026-06-22 15:30 IDT (advance heartbeat)*
 
 ---
 
@@ -8,13 +8,14 @@
 
 | Branch | Jira | Zone | Jira Status | PR | CI | Review | Flags |
 |--------|------|------|-------------|-----|-----|--------|-------|
-| jn-5676-notebook-scaffold | [JN-5676](https://jounce.atlassian.net/browse/JN-5676) | Publish | In Review | [#1604](https://github.com/Jounce-IO/jounce/pull/1604) **OPEN** | ✅ **ALL GREEN** (run 27947074357: pre-commit ✅, integration ✅, e2e-api ✅, tox ✅, nox ✅, **e2e-smoke ✅ PASSED**) | reviewDecision="" | 🎉 **ALL GREEN — ASSIGN REVIEWER NOW** |
+| jn-5676-notebook-scaffold | [JN-5676](https://jounce.atlassian.net/browse/JN-5676) | Publish | In Review | [#1604](https://github.com/Jounce-IO/jounce/pull/1604) **OPEN** | ✅ **ALL GREEN** (run 27947074357: pre-commit ✅, integration ✅, e2e-api ✅, tox ✅, nox ✅, e2e-smoke ✅, e2e-tests ✅) | reviewDecision="" | 🎉 **ALL GREEN — ASSIGN REVIEWER NOW** (7th consecutive heartbeat) |
 | jn-5677-dev-historical-mode-notebook-cells | [JN-5677](https://jounce.atlassian.net/browse/JN-5677) | Revise | In Review | [#1615](https://github.com/Jounce-IO/jounce/pull/1615) **DRAFT** OPEN | ❌ **pre-commit FAIL** (CI run 27934981657, created 09:52 IDT Jun 22) | REVIEW_REQUIRED | 🔴 **TRIPLE: DRAFT + CONFLICTING + pre-commit FAIL** — blocked on #1604 merging first |
 | jn-5546-docs-document-module-layout-convention-and-3 | [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | Code Review | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | 🟡 PR checks run 27933817996 shows pre-commit FAIL (stale branch CI run); MERGEABLE | reviewDecision="" | 🟡 **Needs reviewer** — MERGEABLE; Jira should be "In Review" |
+| model-packaging-cr | — | Code Review | — | — | — | — | ⚠️ 7+ days inactive (last session Jun 15), no PR — may be stale |
 | internal-cr-system | — | Code | — | — | — | — | 🔴 Filesystem FAILED (git lock) — unchanged |
 | dual-heartbeat-system | — | Code | — | — | — | — | ℹ️ Idle, docs done |
-| standup-drafts | — | Code | — | — | — | — | ℹ️ Utility branch |
-| jn-5695-db-connect-script | [JN-5695](https://jounce.atlassian.net/browse/JN-5695) | BLOCKED | Backlog | [#1596](https://github.com/Jounce-IO/jounce/pull/1596) DRAFT | ⚠️ Only CodeRabbit — CONFLICTING | — | 🔴 CONFLICTING; frozen |
+| standup-drafts | — | Code | — | — | — | — | ℹ️ Utility branch, no sessions |
+| jn-5695-db-connect-script | [JN-5695](https://jounce.atlassian.net/browse/JN-5695) | BLOCKED | Backlog | [#1596](https://github.com/Jounce-IO/jounce/pull/1596) DRAFT | ⚠️ CONFLICTING | — | 🔴 CONFLICTING; frozen |
 | jn-5672-dal-ext-dashboard | [JN-5672](https://jounce.atlassian.net/browse/JN-5672) | BLOCKED | Backlog | — | — | — | ℹ️ On hold |
 
 **Archived This Session (14:30 IDT Jun 21):**
@@ -41,54 +42,43 @@
 |----|--------|------|----|-------|-------|
 | [#1605](https://github.com/Jounce-IO/jounce/pull/1605) | auto-apply-labels | [JN-5730](https://jounce.atlassian.net/browse/JN-5730) | — | **MERGED Jun 21** | 🎉 MERGED — off-board, no archive needed |
 | [#1602](https://github.com/Jounce-IO/jounce/pull/1602) | persist-monotonicity-test | JN-5685/JN-5679 | ✅ ALL GREEN | **MERGED 14:34 IDT Jun 22** | 🎉 MERGED — JN-5685 Done, JN-5679 Done |
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | 🔴 **Run 27950494952** (created 14:50 IDT, triggered by #1602 merge): e2e-api ❌ FAIL, e2e-tests ❌ FAIL; pre-commit ✅, integration ✅, tox ✅, nox ✅; e2e-smoke SKIPPED | OPEN, **MERGEABLE**, REVIEW_REQUIRED | 🔴 **NEW e2e-api FAIL** — regression triggered by #1602 merge; JN-5725 shows Done in Jira but PR still OPEN |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | 🟡 **NEW run 27952850789** (triggered ~15:00 IDT): pre-commit ⏳ PENDING, integration ⏳ PENDING, e2e-api ⏳ PENDING, tox ⏳ PENDING | OPEN, **MERGEABLE**, REVIEW_REQUIRED | 🟡 **NEW CI run** — e2e-api regression fix likely pushed; JN-5725 shows Done in Jira but PR still OPEN |
 
 ---
 
-## Key Changes Since Last Run (Jun 22 14:30 IDT)
+## Key Changes Since Last Run (Jun 22 15:00 IDT)
 
 | What observed | Status |
 |---|---|
-| **🎉 PR #1602 MERGED** | Merged 14:34 IDT Jun 22 (11:34Z) by approval — REVIEW_REQUIRED → APPROVED → MERGED. JN-5685 Done ✅, JN-5679 Done ✅. Off-board PR, no worktree to archive. |
-| **🔴 PR #1606 e2e-api FAIL** | New CI run 27950494952 created 14:50 IDT Jun 22 (triggered by #1602 merge into main). e2e-api ❌ FAIL, e2e-tests ❌ FAIL. Was "e2e-smoke PENDING" in prior run 27948135971. Regression introduced by #1602. |
-| **⚠️ JN-5725 Done in Jira but PR #1606 open** | Jira ticket marked Done, but PR #1606 is still open with CI failures. New mismatch. |
-| **↔ PR #1604 all green** | Unchanged — still ALL GREEN (run 27947074357). MERGEABLE. No reviewer assigned yet. |
+| **🟡 PR #1606 NEW CI run 27952850789** | New run triggered ~15:00 IDT Jun 22 — replaces failing run 27950494952 (e2e-api FAIL). All major checks (pre-commit, integration, e2e-api, tox) now PENDING. Someone pushed a fix for the e2e-api regression from #1602 merge. Monitor outcome. |
+| **↔ PR #1604 all green** | Unchanged — still ALL GREEN (run 27947074357). MERGEABLE. No reviewer assigned — 7th consecutive heartbeat flagging this. |
 | **↔ PR #1615 triple problem** | Unchanged — DRAFT + CONFLICTING + pre-commit FAIL. |
-| **↔ PR #1588 branch CI pre-commit** | Unchanged — stale run 27933817996 FAIL; PR MERGEABLE (UNKNOWN in API, but MERGEABLE confirmed at 14:30 scan). |
+| **↔ PR #1588 needs reviewer** | Unchanged — MERGEABLE, no reviewer, Jira still "In Progress". |
+| **↔ Jira mismatches** | Unchanged — JN-5673 "In Review" (merged Jun 17), JN-5546 "In Progress" (should be "In Review"), JN-5725 "Done" (PR still open). |
 
 ---
 
 ## Attention Items
 
-### 🎉 PR #1604 (JN-5676) — ALL GREEN — ASSIGN REVIEWER NOW
+### 🎉 PR #1604 (JN-5676) — ALL GREEN — ASSIGN REVIEWER NOW (URGENT)
 
 PR [#1604](https://github.com/Jounce-IO/jounce/pull/1604) — "feat(jbenchmark): notebook scaffold + operational mode (JN-5676)"
 
-**ALL CI CHECKS NOW PASS.** e2e-smoke PASSED (run 27947074357, 10m42s). MERGEABLE. reviewDecision="" — no reviewer yet.
-
-This was CONFLICTING + no CI for 21.5h, then conflict resolved at ~14:03 IDT, and e2e-smoke just completed and passed. 
+**ALL CI CHECKS PASS.** MERGEABLE. reviewDecision="" — no reviewer yet. This has been flagged for 7 consecutive heartbeats (~3.5 hours).
 
 **Required action:** Assign reviewer immediately.
 
 ---
 
-### 🎉 PR #1602 (JN-5685/JN-5679) — MERGED 14:34 IDT Jun 22
-
-PR [#1602](https://github.com/Jounce-IO/jounce/pull/1602) — MERGED. JN-5685 Done ✅, JN-5679 Done ✅. Off-board PR, no worktree to archive.
-
----
-
-### 🔴 PR #1606 (JN-5725) — NEW e2e-api FAIL (regression from #1602 merge)
+### 🟡 PR #1606 (JN-5725) — NEW CI RUN PENDING (watching e2e-api regression fix)
 
 PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606) — "feat(vllm-analyzer): integrate log analyzer into experiment-workflow (JN-5725)"
 
-New CI run 27950494952 (created 14:50 IDT Jun 22): **e2e-api ❌ FAIL, e2e-tests ❌ FAIL**. Triggered by merge of main after #1602 landed. Previous run 27948135971 had e2e-api PASS.
+New CI run 27952850789 triggered ~15:00 IDT Jun 22. Previous run 27950494952 had e2e-api ❌ FAIL. New run has all checks PENDING — likely someone pushed a fix for the regression introduced by #1602 merge.
 
-JN-5725 is "Done" in Jira, but PR is still OPEN with CI failures. Investigate whether:
-1. PR needs to be updated to fix e2e-api regression, OR
-2. Jira was prematurely closed
+JN-5725 is "Done" in Jira, but PR is still OPEN. Wait for CI result before deciding.
 
-**Required action:** Joseph to investigate e2e-api failure and decide whether to fix or close/revert PR #1606.
+**Required action:** Monitor CI run 27952850789 outcome at next heartbeat.
 
 ---
 
@@ -96,7 +86,7 @@ JN-5725 is "Done" in Jira, but PR is still OPEN with CI failures. Investigate wh
 
 PR [#1588](https://github.com/Jounce-IO/jounce/pull/1588) — "docs(jbenchmark): add CONTRIBUTING.md and service READMEs (JN-5546)"
 
-Stale branch CI run 27933817996 shows pre-commit FAIL, but PR is MERGEABLE (reviewDecision=""). Pattern from previous runs: branch CI run doesn't update PR merge gate status. Assign reviewer.
+MERGEABLE (reviewDecision=""). Assign reviewer.
 
 **Required action:** (1) Assign a reviewer. (2) Update Jira [JN-5546](https://jounce.atlassian.net/browse/JN-5546) from "In Progress" → "In Review".
 
@@ -105,6 +95,14 @@ Stale branch CI run 27933817996 shows pre-commit FAIL, but PR is MERGEABLE (revi
 ### ⚠️ PR #1615 (JN-5677) — TRIPLE: DRAFT + CONFLICTING + pre-commit FAIL
 
 PR [#1615](https://github.com/Jounce-IO/jounce/pull/1615): DRAFT, pre-commit FAIL (run 27934981657, 09:52 IDT Jun 22), CONFLICTING. Blocked on JN-5676 (#1604) merging first. Fix pre-commit and resolve conflict even while still in draft.
+
+---
+
+### ⚠️ model-packaging-cr — POTENTIALLY STALE
+
+Branch in Code Review zone for `Jounce-IO/model-packaging-pipeline`. No PR linked. Last session Jun 15 (7+ days ago). Code review findings were written but no follow-up action visible.
+
+**Required action:** Confirm with Joseph whether this review is still needed or can be archived.
 
 ---
 
@@ -120,7 +118,7 @@ Git lock error — unchanged since Jun 18.
 |--------|-------------|-----|--------|-----------|
 | [JN-5673](https://jounce.atlassian.net/browse/JN-5673) | In Review | [#1595](https://github.com/Jounce-IO/jounce/pull/1595) | Merged Jun 17 | 5+ days stale — should be Done |
 | [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | OPEN, MERGEABLE | Should be "In Review" (open PR) |
-| [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | **Done** | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | OPEN, e2e-api FAIL | Ticket Done but PR still open with CI failures — investigate |
+| [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | **Done** | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | OPEN, CI pending | Ticket Done but PR still open — wait for CI result |
 
 ---
 

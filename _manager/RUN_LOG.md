@@ -4,6 +4,18 @@
 
 ---
 
+## 15:30 IDT — Weekday Daytime Advance Heartbeat (Jun 22)
+
+- PRs checked: #1604 (ALL GREEN unchanged, run 27947074357; still no reviewer — 7th consecutive heartbeat), #1615 (DRAFT+CONFLICTING+pre-commit FAIL — unchanged), #1588 (MERGEABLE, stale CI run 27933817996 — unchanged), #1596 (DRAFT CONFLICTING — unchanged), #1606 (off-board, **🟡 NEW CI run 27952850789** — pre-commit/integration/e2e-api/tox all PENDING; replaces failing run 27950494952)
+- Merges detected: none since 15:00 IDT
+- CI changes: **#1606 NEW RUN 27952850789** — someone pushed a fix for the e2e-api regression from #1602 merge; all major checks pending. Everything else static.
+- Jira: JN-5673 still "In Review" (PR #1595 merged Jun 17, 5+ days stale); JN-5546 still "In Progress" (should be "In Review"); JN-5725 Done but PR #1606 still open (CI pending — may be fixed)
+- Autonomous actions: 0 (no MERGED/CLOSED PRs)
+- Findings: 6 items (#1604 needs reviewer 7th flag, #1606 new CI pending, #1615 triple blocked, #1588 reviewer needed, JN-5673 stale Jira, model-packaging-cr 7+ days stale)
+- Next: Monitor #1606 CI run 27952850789 — if e2e-api passes → PR may be ready; assign reviewer to #1604 NOW; assign reviewer to #1588; fix #1615; mark JN-5673 Done; confirm model-packaging-cr fate
+
+---
+
 ## 15:00 IDT — Weekday Daytime Advance Heartbeat (Jun 22)
 
 - PRs checked: #1604 (ALL GREEN unchanged, run 27947074357; still no reviewer), #1615 (DRAFT+CONFLICTING+pre-commit FAIL — unchanged), #1588 (MERGEABLE, stale CI run 27933817996 — unchanged), #1596 (DRAFT CONFLICTING — unchanged), #1602 (off-board, **🎉 MERGED 14:34 IDT Jun 22** — JN-5685 Done, JN-5679 Done), #1606 (off-board, **🔴 NEW e2e-api FAIL** in run 27950494952 created 14:50 IDT, triggered by #1602 merge)

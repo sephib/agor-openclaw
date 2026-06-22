@@ -31,6 +31,15 @@ export const HEARTBEAT_RUNS = [
   },
   {
     type: "advance",
+    timestamp: "2026-06-22 15:30 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "🟡 PR #1606 NEW CI run 27952850789 (pre-commit/integration/e2e-api/tox PENDING) — someone pushed fix for e2e-api regression from #1602 merge. #1604 unchanged all-green needs reviewer (7th flag). All else static.",
+    sessionUrl: "http://localhost:3030/ui/s/019eef4f851e7a90925d61012bcd7097/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-22 15:00 IDT",
     actions: 0,
     findings: 6,

@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-22 15:00 IDT";
+export const LAST_UPDATED = "2026-06-22 15:30 IDT";
 
 export const WORKTREES = [
   {
@@ -11,7 +11,7 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1604 OPEN",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1604",
-    status: "🎉 ALL GREEN — e2e-smoke PASSED (run 27947074357). All checks pass. MERGEABLE. Assign reviewer NOW.",
+    status: "🎉 ALL GREEN — all checks pass (run 27947074357). MERGEABLE. Assign reviewer NOW — 7th consecutive heartbeat flagging this.",
     blockedOn: null,
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019edb7fb4c770d78fc7a47d/",
@@ -28,12 +28,12 @@ export const WORKTREES = [
     zone: "Revise",
     pr: "#1615 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1615",
-    status: "🔴 TRIPLE: DRAFT + CONFLICTING + pre-commit FAIL (CI run 27934981657, created 09:52 IDT Jun 22). Blocked on JN-5676 (#1604) merging first. Fix pre-commit and conflict even while still draft.",
+    status: "🔴 TRIPLE: DRAFT + CONFLICTING + pre-commit FAIL (CI run 27934981657). Blocked on JN-5676 (#1604) merging first. Fix pre-commit and conflict even while still draft.",
     blockedOn: "DRAFT + merge conflict + pre-commit FAIL + blocked on #1604",
     blockedType: "blocked",
-    sessionUrl: null,
-    sessionLabel: null,
-    lastActive: "2026-06-22 (CI run 09:52 IDT)",
+    sessionUrl: "http://localhost:3030/ui/s/019eeaf04583757a89f47a99/",
+    sessionLabel: "revise session",
+    lastActive: "2026-06-22 06:31 IDT (4 fixes pushed)",
   },
   {
     ticket: "JN-5546",
@@ -49,7 +49,7 @@ export const WORKTREES = [
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019ed01e5624752fbade0eab/",
     sessionLabel: "fix session",
-    lastActive: "2026-06-22 14:30 IDT",
+    lastActive: "2026-06-17 10:14 IDT",
   },
   {
     ticket: null,
@@ -195,11 +195,11 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "green",
-    message: "🎉 PR #1604 (JN-5676, Publish zone): ALL GREEN — e2e-smoke PASSED (run 27947074357). MERGEABLE. Assign reviewer NOW.",
+    message: "🎉 PR #1604 (JN-5676, Publish zone): ALL GREEN (run 27947074357). MERGEABLE. Assign reviewer NOW — 7th consecutive heartbeat.",
   },
   {
-    level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): NEW e2e-api FAIL in run 27950494952 (created 14:50 IDT, triggered by #1602 merge). Was PASSING in prior run. Investigate regression. JN-5725 marked Done in Jira but PR still open.",
+    level: "yellow",
+    message: "🟡 PR #1606 (JN-5725, off-board): NEW CI run 27952850789 (all checks PENDING). Previous run 27950494952 had e2e-api FAIL. Someone pushed a fix — monitoring outcome. JN-5725 Done in Jira but PR still open.",
   },
   {
     level: "green",
@@ -215,7 +215,11 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⚠️ Jira stale: JN-5673 (In Review, PR #1595 MERGED Jun 17 — 5+ days should be Done); JN-5546 (In Progress, should be 'In Review'); JN-5725 (Done but PR #1606 still open with CI failures).",
+    message: "⚠️ Jira stale: JN-5673 (In Review, PR #1595 MERGED Jun 17 — 5+ days, should be Done); JN-5546 (In Progress, should be 'In Review'); JN-5725 (Done but PR #1606 still open — CI pending).",
+  },
+  {
+    level: "yellow",
+    message: "⚠️ model-packaging-cr (Code Review zone): 7+ days inactive, no PR. Confirm with Joseph whether to archive.",
   },
   {
     level: "red",
