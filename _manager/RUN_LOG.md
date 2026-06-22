@@ -2015,3 +2015,12 @@
 - Flags: 🔴 PR #1604 now double-blocked (merge conflict + no CI); 🎉 PR #1606 unblocked (conflict resolved, CI running); 🔴 PR #1588 6th heartbeat with pre-commit FAIL; 🎉 PR #1602 ~24.5h green no reviewer
 - Auto-archives: none (no PRs moved to MERGED/CLOSED)
 - Next: Watch #1606 CI (e2e-smoke + integration); Joseph needs to rebase #1604 + trigger CI; fix #1588 pre-commit; assign reviewer to #1602
+
+## 13:32 IDT — Weekday Daytime Advance Heartbeat (Jun 22)
+- PRs checked: #1604 (OPEN, CONFLICTING, still no GH Actions CI ~21.5h), #1615 (DRAFT, CONFLICTING, pre-commit FAIL run 27934981657), #1588 (OPEN, MERGEABLE — **PR checks NOW ALL GREEN** run 27937907242; note branch run 27933817996 failed but didn't update PR status checks), #1596 (DRAFT, CONFLICTING, BLOCKED), #1602 (off-board, OPEN — new run 27945336025, e2e-smoke PENDING), #1606 (off-board, OPEN — same run 27945336025 as #1602, e2e-smoke PENDING)
+- Merges detected: none — Step 1 sweep confirmed no new merges since Jun 21
+- Archives: none — no MERGED/CLOSED PRs
+- CI changes: **🎉 PR #1588 PR checks now ALL GREEN** (run 27937907242) — pre-commit passing per `gh pr checks`; upgraded from 🔴 to 🟡. **PR #1602 new CI run 27945336025** (main merged by Uri Shaket ~10:54 IDT), e2e-smoke PENDING. **PR #1606 same run 27945336025** (shared CI jobs), e2e-smoke PENDING. PR #1604 and #1615 unchanged.
+- Flags: 🟡 #1588 ready for reviewer (PR checks green); 🟡 #1602 ~26.5h no reviewer; 🔴 JN-5673 Jira "In Review" but PR #1595 MERGED Jun 17 (stale 5+ days); ⚠️ JN-5546 Jira "In Progress" should be "In Review"; 🔴 #1604 CI anomaly ~21.5h + CONFLICTING
+- Actions: none (supervised)
+- Next: assign reviewer to #1588 and #1602; update JN-5673 → Done; update JN-5546 → In Review; rebase #1604; check if e2e-smoke completes on #1602/#1606

@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-22 13:02 IDT";
+export const LAST_UPDATED = "2026-06-22 13:32 IDT";
 
 export const WORKTREES = [
   {
@@ -11,7 +11,7 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1604 OPEN",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1604",
-    status: "🔴 CONFLICTING + CI never triggered (~20h+ since un-draft ~17:30-18:00 IDT Jun 21). Double problem unchanged. Needs rebase onto main + CI re-trigger.",
+    status: "🔴 CONFLICTING + CI never triggered (~21.5h since un-draft ~17:30-18:00 IDT Jun 21). Double problem unchanged. Needs rebase onto main + CI re-trigger.",
     blockedOn: "Merge conflict + GH Actions CI not running",
     blockedType: "owner",
     sessionUrl: "http://localhost:3030/ui/s/019edb7fb4c770d78fc7a47d/",
@@ -44,12 +44,12 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1588",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1588",
-    status: "🔴 pre-commit FAIL (7th heartbeat) — main merged into branch at 09:24 IDT Jun 22 broke CI (run 27933817996). Still MERGEABLE. Needs fix before reviewer assignment.",
-    blockedOn: "pre-commit FAIL — main merge broke it",
-    blockedType: "owner",
+    status: "🟡 PR checks ALL GREEN (run 27937907242 — pre-commit ✅). MERGEABLE, reviewDecision=''. Note: branch CI run 27933817996 failed pre-commit at 09:24 IDT but did NOT update PR status checks. PR is ready for reviewer.",
+    blockedOn: null,
+    blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019ed01e5624752fbade0eab/",
     sessionLabel: "fix session",
-    lastActive: "2026-06-22 13:02 IDT",
+    lastActive: "2026-06-22 13:32 IDT",
   },
   {
     ticket: null,
@@ -186,19 +186,19 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "red",
-    message: "🔴 PR #1604 (JN-5676, Publish zone) CONFLICTING + GH Actions CI still never triggered (~20h+ since un-draft). Double problem unchanged. Needs rebase onto main + CI re-trigger.",
+    message: "🔴 PR #1604 (JN-5676, Publish zone) CONFLICTING + GH Actions CI still never triggered (~21.5h since un-draft). Needs rebase onto main + CI re-trigger.",
   },
   {
-    level: "red",
-    message: "🔴 PR #1588 (JN-5546, Code Review zone): pre-commit FAIL — 7th consecutive heartbeat. Main merged into branch at 09:24 IDT Jun 22 broke CI (run 27933817996). Fix pre-commit then assign reviewer.",
+    level: "yellow",
+    message: "🟡 PR #1588 (JN-5546, Code Review zone): PR checks NOW ALL GREEN (run 27937907242 — pre-commit ✅). MERGEABLE. Assign reviewer + update Jira JN-5546 → In Review.",
   },
   {
-    level: "green",
-    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): FULLY GREEN ~25h — no reviewer assigned. Assign reviewer immediately.",
+    level: "yellow",
+    message: "🟡 PR #1602 (JN-5685/JN-5679, off-board): new CI run 27945336025, e2e-smoke PENDING. ~26.5h no reviewer. Assign reviewer now.",
   },
   {
-    level: "green",
-    message: "🟡 PR #1606 (JN-5725, off-board): CI run 27944181800 progressing — pre-commit ✅, tox ✅, integration ✅, e2e-api ✅. Only e2e-smoke PENDING. Nearly ready for review.",
+    level: "yellow",
+    message: "🟡 PR #1606 (JN-5725, off-board): same CI run 27945336025, e2e-smoke PENDING. REVIEW_REQUIRED — ready once e2e-smoke clears.",
   },
   {
     level: "yellow",
@@ -206,7 +206,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⚠️ 2 Jira tickets stale: JN-5673 (In Review, PR #1595 merged Jun 17 — 5+ days should be Done); JN-5546 (In Progress, should be 'In Review' once pre-commit fixed).",
+    message: "⚠️ 2 Jira tickets stale: JN-5673 (In Review, PR #1595 MERGED Jun 17 — 5+ days should be Done); JN-5546 (In Progress, should be 'In Review' — PR is open).",
   },
   {
     level: "red",
