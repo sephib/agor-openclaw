@@ -49,6 +49,15 @@ export const HEARTBEAT_RUNS = [
   },
   {
     type: "advance",
+    timestamp: "2026-06-22 13:02 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "PR #1606 CI run 27944181800: integration PASSED, e2e-api PASSED, only e2e-smoke PENDING — nearly ready for review. PR #1604 CONFLICTING + no CI unchanged (~20h). PR #1588 pre-commit FAIL 7th heartbeat. PR #1602 ~25h green no reviewer. PR #1615 triple problem unchanged. No new merges.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019eeec62ff9735096d198dd/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-21 17:00 IDT",
     actions: 0,
     findings: 3,

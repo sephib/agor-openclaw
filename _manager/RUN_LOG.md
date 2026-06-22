@@ -4,6 +4,18 @@
 
 ---
 
+## 13:02 IDT — Weekday Daytime Advance Heartbeat (Jun 22)
+
+- PRs checked: #1604 (OPEN, CONFLICTING, CI still only CodeRabbit — GH Actions ~20h+ not triggered, unchanged), #1615 (DRAFT, CONFLICTING, pre-commit FAIL run 27934981657 — unchanged), #1588 (pre-commit FAIL run 27933817996 — 7th consecutive heartbeat), #1596 (DRAFT, CONFLICTING — BLOCKED, unchanged), #1602 (off-board, ALL GREEN run 27937907242 — ~25h no reviewer), #1606 (off-board, **NEW run 27944181800**: pre-commit ✅, tox ✅, integration ✅, e2e-api ✅, e2e-smoke PENDING)
+- Merges detected: none since Jun 21
+- CI changes: **#1606 progress** — new CI run 27944181800: integration now PASSED, e2e-api PASSED. Only e2e-smoke pending. Was at run 27942715114 with both e2e-smoke + integration pending.
+- Jira: JN-5673 still "In Review" (PR #1595 merged Jun 17, 5+ days stale); JN-5546 still "In Progress" (should be "In Review"); JN-5677 "In Review" (PR still draft + failing)
+- Autonomous actions: 0 (no new MERGED/CLOSED PRs to archive)
+- Flags: 5 (PR #1604 CONFLICTING + CI not running, PR #1588 pre-commit FAIL 7th heartbeat, PR #1602 reviewer needed 25h+, PR #1615 triple problem, Jira stale JN-5673)
+- Next: Resolve #1604 conflict + trigger CI; fix #1588 pre-commit; assign reviewer to #1602; wait for #1606 e2e-smoke; mark JN-5673 Done
+
+---
+
 ## 12:02 IDT — Weekday Daytime Advance Heartbeat (Jun 22)
 
 - PRs checked: #1604 (OPEN, not draft, CI still only CodeRabbit — GH Actions ~18.5h not triggered), #1615 (DRAFT, pre-commit FAIL — run 27934981657, unchanged), #1588 (pre-commit FAIL — 5th consecutive heartbeat, unchanged), #1596 (DRAFT, UNKNOWN — BLOCKED), #1602 (off-board, ALL GREEN run 27937907242 — ~23.5h no reviewer), #1606 (off-board, **now CONFLICTING** — was MERGEABLE + e2e-smoke PENDING at 11:30 IDT; GH Actions not running)

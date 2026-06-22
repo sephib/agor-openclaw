@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-22 12:32 IDT";
+export const LAST_UPDATED = "2026-06-22 13:02 IDT";
 
 export const WORKTREES = [
   {
@@ -11,7 +11,7 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1604 OPEN",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1604",
-    status: "🔴 NEW: NOW CONFLICTING — merge conflict appeared since 12:02 IDT. GH Actions CI still never triggered ~19h after un-draft (~17:30-18:00 IDT Jun 21). Double problem: conflict + CI not running. Needs rebase + CI re-trigger.",
+    status: "🔴 CONFLICTING + CI never triggered (~20h+ since un-draft ~17:30-18:00 IDT Jun 21). Double problem unchanged. Needs rebase onto main + CI re-trigger.",
     blockedOn: "Merge conflict + GH Actions CI not running",
     blockedType: "owner",
     sessionUrl: "http://localhost:3030/ui/s/019edb7fb4c770d78fc7a47d/",
@@ -44,12 +44,12 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1588",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1588",
-    status: "🔴 pre-commit FAIL (6th heartbeat) — main merged into branch at 09:24 IDT Jun 22 broke CI (run 27933817996). Still MERGEABLE. Needs fix before reviewer assignment.",
+    status: "🔴 pre-commit FAIL (7th heartbeat) — main merged into branch at 09:24 IDT Jun 22 broke CI (run 27933817996). Still MERGEABLE. Needs fix before reviewer assignment.",
     blockedOn: "pre-commit FAIL — main merge broke it",
     blockedType: "owner",
     sessionUrl: "http://localhost:3030/ui/s/019ed01e5624752fbade0eab/",
     sessionLabel: "fix session",
-    lastActive: "2026-06-22 12:32 IDT",
+    lastActive: "2026-06-22 13:02 IDT",
   },
   {
     ticket: null,
@@ -186,19 +186,19 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "red",
-    message: "🔴 NEW: PR #1604 (JN-5676, Publish zone) NOW CONFLICTING — merge conflict appeared since 12:02 IDT. AND GH Actions CI still never triggered ~19h after un-draft. Double problem: rebase needed + CI re-trigger.",
+    message: "🔴 PR #1604 (JN-5676, Publish zone) CONFLICTING + GH Actions CI still never triggered (~20h+ since un-draft). Double problem unchanged. Needs rebase onto main + CI re-trigger.",
   },
   {
     level: "red",
-    message: "🔴 PR #1588 (JN-5546, Code Review zone): pre-commit FAIL — 6th consecutive heartbeat. Main merged into branch at 09:24 IDT Jun 22 broke CI (run 27933817996). Fix pre-commit then assign reviewer.",
+    message: "🔴 PR #1588 (JN-5546, Code Review zone): pre-commit FAIL — 7th consecutive heartbeat. Main merged into branch at 09:24 IDT Jun 22 broke CI (run 27933817996). Fix pre-commit then assign reviewer.",
   },
   {
     level: "green",
-    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): FULLY GREEN ~24.5h — no reviewer assigned. Assign reviewer immediately.",
+    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): FULLY GREEN ~25h — no reviewer assigned. Assign reviewer immediately.",
   },
   {
     level: "green",
-    message: "🎉 PR #1606 (JN-5725, off-board): RESOLVED — conflict fixed, CI now running (run 27942715114). pre-commit ✅, e2e-api ✅, tox ✅. e2e-smoke + integration PENDING. Monitor for green.",
+    message: "🟡 PR #1606 (JN-5725, off-board): CI run 27944181800 progressing — pre-commit ✅, tox ✅, integration ✅, e2e-api ✅. Only e2e-smoke PENDING. Nearly ready for review.",
   },
   {
     level: "yellow",
