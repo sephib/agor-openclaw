@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-22 14:03 IDT (advance heartbeat)*
+*Last updated: 2026-06-22 14:30 IDT (advance heartbeat)*
 
 ---
 
@@ -8,9 +8,9 @@
 
 | Branch | Jira | Zone | Jira Status | PR | CI | Review | Flags |
 |--------|------|------|-------------|-----|-----|--------|-------|
-| jn-5676-notebook-scaffold | [JN-5676](https://jounce.atlassian.net/browse/JN-5676) | Publish | In Review | [#1604](https://github.com/Jounce-IO/jounce/pull/1604) **OPEN** | 🟡 CI run 27947074357: pre-commit ✅, integration ✅, e2e-api ✅, tox ✅, nox ✅; **e2e-smoke PENDING** | reviewDecision="" | 🟡 **e2e-smoke pending** — conflict RESOLVED, CI now running (was CONFLICTING + no CI) |
+| jn-5676-notebook-scaffold | [JN-5676](https://jounce.atlassian.net/browse/JN-5676) | Publish | In Review | [#1604](https://github.com/Jounce-IO/jounce/pull/1604) **OPEN** | ✅ **ALL GREEN** (run 27947074357: pre-commit ✅, integration ✅, e2e-api ✅, tox ✅, nox ✅, **e2e-smoke ✅ PASSED**) | reviewDecision="" | 🎉 **ALL GREEN — ASSIGN REVIEWER NOW** |
 | jn-5677-dev-historical-mode-notebook-cells | [JN-5677](https://jounce.atlassian.net/browse/JN-5677) | Revise | In Review | [#1615](https://github.com/Jounce-IO/jounce/pull/1615) **DRAFT** OPEN | ❌ **pre-commit FAIL** (CI run 27934981657, created 09:52 IDT Jun 22) | REVIEW_REQUIRED | 🔴 **TRIPLE: DRAFT + CONFLICTING + pre-commit FAIL** — blocked on #1604 merging first |
-| jn-5546-docs-document-module-layout-convention-and-3 | [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | Code Review | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | 🟡 PR checks run 27937907242 still shows as failing pre-commit (run 27933817996); MERGEABLE | reviewDecision="" | 🟡 **Needs reviewer** — MERGEABLE; branch CI pre-commit fail on older run; Jira should be "In Review" |
+| jn-5546-docs-document-module-layout-convention-and-3 | [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | Code Review | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | 🟡 PR checks run 27933817996 shows pre-commit FAIL (stale branch CI run); MERGEABLE | reviewDecision="" | 🟡 **Needs reviewer** — MERGEABLE; Jira should be "In Review" |
 | internal-cr-system | — | Code | — | — | — | — | 🔴 Filesystem FAILED (git lock) — unchanged |
 | dual-heartbeat-system | — | Code | — | — | — | — | ℹ️ Idle, docs done |
 | standup-drafts | — | Code | — | — | — | — | ℹ️ Utility branch |
@@ -40,51 +40,53 @@
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
 | [#1605](https://github.com/Jounce-IO/jounce/pull/1605) | auto-apply-labels | [JN-5730](https://jounce.atlassian.net/browse/JN-5730) | — | **MERGED Jun 21** | 🎉 MERGED — off-board, no archive needed |
-| [#1602](https://github.com/Jounce-IO/jounce/pull/1602) | persist-monotonicity-test | JN-5685/JN-5679 | ✅ **ALL GREEN** (run 27937907242 — EXIT:0; e2e-smoke SKIPPED) | OPEN, MERGEABLE, reviewDecision="" | 🟡 **ALL GREEN — ~27h no reviewer** (was e2e-smoke pending, now resolved/skipped) |
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | 🟡 **NEW run 27946929591**: pre-commit ✅, integration ✅, e2e-api ✅, tox ✅; **e2e-smoke PENDING** | OPEN, **MERGEABLE** (was CONFLICTING!), REVIEW_REQUIRED | 🟡 **IMPROVED** — conflict resolved, new CI run; e2e-smoke pending |
+| [#1602](https://github.com/Jounce-IO/jounce/pull/1602) | persist-monotonicity-test | JN-5685/JN-5679 | 🟡 **NEW run 27949244396** (triggered by Uri's main merge at 11:25 IDT Jun 22): integration PENDING, pre-commit PENDING; others pass/skip | OPEN, MERGEABLE, reviewDecision="" | 🟡 **New CI run in progress** — was ALL GREEN; waiting for integration + pre-commit to pass |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | 🟡 **Run 27948135971**: pre-commit ✅, integration ✅, e2e-api ✅, tox ✅, nox ✅; **e2e-smoke PENDING** | OPEN, **MERGEABLE**, REVIEW_REQUIRED | 🟡 All checks pass except e2e-smoke still pending |
 
 ---
 
-## Key Changes Since Last Run (Jun 22 13:32 IDT)
+## Key Changes Since Last Run (Jun 22 14:03 IDT)
 
 | What observed | Status |
 |---|---|
-| **🎉 PR #1604 CONFLICT RESOLVED** | Conflict resolved between 13:32-14:03 IDT. Now MERGEABLE + CI running (run 27947074357). All key checks PASS: pre-commit ✅, integration ✅, e2e-api ✅, tox ✅, nox ✅. Only e2e-smoke PENDING. Was CONFLICTING + CI never triggered for 21.5h. |
-| **✅ PR #1602 ALL GREEN** | e2e-smoke that was PENDING last run now SKIPPED (run 27937907242 EXIT:0). PR is fully green. ~27h without reviewer. |
-| **🎉 PR #1606 CONFLICT RESOLVED** | Also resolved between 13:32-14:03 IDT. Now MERGEABLE + new CI run 27946929591: pre-commit ✅, integration ✅, e2e-api ✅; e2e-smoke PENDING. Was CONFLICTING. |
+| **🎉 PR #1604 NOW ALL GREEN** | e2e-smoke PASSED (run 27947074357, job 82695327278, 10m42s). All checks green. MERGEABLE, reviewDecision="". **Assign reviewer NOW.** Was "e2e-smoke PENDING" at last run. |
+| **PR #1602 NEW CI RUN** | URI Shaket merged main into branch at 11:25 IDT Jun 22. New run 27949244396: integration PENDING, pre-commit PENDING. Was ALL GREEN (run 27937907242). |
+| **PR #1606 e2e-smoke still PENDING** | New run 27948135971 (vs 27946929591 last run). Same status — all other checks pass. |
 | **↔ PR #1615 triple problem** | Unchanged — DRAFT + CONFLICTING + pre-commit FAIL. |
-| **↔ PR #1588 branch CI pre-commit** | Unchanged — `gh pr checks` shows run 27933817996 with pre-commit FAIL; PR is MERGEABLE. |
+| **↔ PR #1588 branch CI pre-commit** | Unchanged — stale run 27933817996 FAIL; PR MERGEABLE. |
 | **No new merges** | Step 1 sweep confirmed: no PRs merged since Jun 21. |
 
 ---
 
 ## Attention Items
 
-### 🟡 PR #1604 (JN-5676) — e2e-smoke PENDING, then reviewer needed
+### 🎉 PR #1604 (JN-5676) — ALL GREEN — ASSIGN REVIEWER NOW
 
 PR [#1604](https://github.com/Jounce-IO/jounce/pull/1604) — "feat(jbenchmark): notebook scaffold + operational mode (JN-5676)"
 
-**MAJOR IMPROVEMENT from last run.** Conflict resolved (between 13:32-14:03 IDT), CI now properly running (run 27947074357). Pre-commit ✅, integration ✅, e2e-api ✅, tox ✅, nox ✅. Only e2e-smoke pending.
+**ALL CI CHECKS NOW PASS.** e2e-smoke PASSED (run 27947074357, 10m42s). MERGEABLE. reviewDecision="" — no reviewer yet.
 
-**Required action:** Wait for e2e-smoke to complete. If it passes, assign reviewer. If it fails, investigate.
+This was CONFLICTING + no CI for 21.5h, then conflict resolved at ~14:03 IDT, and e2e-smoke just completed and passed. 
+
+**Required action:** Assign reviewer immediately.
 
 ---
 
-### 🟡 PR #1602 (JN-5685/JN-5679) — ALL GREEN, ~27h no reviewer
+### 🟡 PR #1602 (JN-5685/JN-5679) — New CI run, monitor before assigning reviewer
 
 PR [#1602](https://github.com/Jounce-IO/jounce/pull/1602) — "feat(jbenchmark): add monotonicity verdict persistence tables and ingestion"
 
-ALL checks pass or skip (EXIT:0, run 27937907242). e2e-smoke resolved to SKIPPED. OPEN, MERGEABLE, reviewDecision="". ~27h no reviewer.
+New CI run 27949244396 triggered by Uri Shaket merging main into branch (11:25 IDT Jun 22). Integration + pre-commit PENDING. Was ALL GREEN (EXIT:0, run 27937907242). ~28h+ without reviewer.
 
-**Required action:** Assign a reviewer NOW. Nothing is blocking merge.
+**Required action:** Wait for new CI run to complete, then assign reviewer.
 
 ---
 
-### 🟡 PR #1606 (JN-5725) — CONFLICT RESOLVED, e2e-smoke pending, REVIEW_REQUIRED
+### 🟡 PR #1606 (JN-5725) — e2e-smoke pending, REVIEW_REQUIRED
 
 PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606) — "feat(vllm-analyzer): integrate log analyzer into experiment-workflow (JN-5725)"
 
-Conflict resolved (between 13:32-14:03 IDT). New CI run 27946929591: pre-commit ✅, integration ✅, e2e-api ✅, tox ✅; e2e-smoke PENDING. REVIEW_REQUIRED.
+Run 27948135971: pre-commit ✅, integration ✅, e2e-api ✅, tox ✅, nox ✅; e2e-smoke PENDING. REVIEW_REQUIRED.
 
 **Monitor:** Wait for e2e-smoke. Ready for review once it clears.
 
@@ -94,7 +96,7 @@ Conflict resolved (between 13:32-14:03 IDT). New CI run 27946929591: pre-commit 
 
 PR [#1588](https://github.com/Jounce-IO/jounce/pull/1588) — "docs(jbenchmark): add CONTRIBUTING.md and service READMEs (JN-5546)"
 
-`gh pr checks` shows pre-commit FAIL on run 27933817996 (branch CI), but PR is MERGEABLE (reviewDecision=""). Pattern from previous runs: branch CI run doesn't update PR merge gate status. Assign reviewer; if reviewer finds CI is blocking, address then.
+Stale branch CI run 27933817996 shows pre-commit FAIL, but PR is MERGEABLE (reviewDecision=""). Pattern from previous runs: branch CI run doesn't update PR merge gate status. Assign reviewer.
 
 **Required action:** (1) Assign a reviewer. (2) Update Jira [JN-5546](https://jounce.atlassian.net/browse/JN-5546) from "In Progress" → "In Review".
 
@@ -118,8 +120,6 @@ Git lock error — unchanged since Jun 18.
 |--------|-------------|-----|--------|-----------|
 | [JN-5673](https://jounce.atlassian.net/browse/JN-5673) | In Review | [#1595](https://github.com/Jounce-IO/jounce/pull/1595) | Merged Jun 17 | 5+ days stale — should be Done |
 | [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | OPEN, MERGEABLE | Should be "In Review" (open PR) |
-
-Note: JN-5677 removed from mismatch list — Jira "In Review" is acceptable while PR is open (even if draft/failing).
 
 ---
 

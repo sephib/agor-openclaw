@@ -22,6 +22,15 @@ export const HEARTBEAT_RUNS = [
   // },
   {
     type: "advance",
+    timestamp: "2026-06-22 14:30 IDT",
+    actions: 0,
+    findings: 7,
+    status: "ok",
+    summary: "🎉 PR #1604 (JN-5676) NOW ALL GREEN — e2e-smoke PASSED (run 27947074357). Assign reviewer. PR #1602 new CI run 27949244396 (Uri's main merge 11:25 IDT, integration+pre-commit pending). PR #1606 e2e-smoke still pending. No new merges.",
+    sessionUrl: "http://localhost:3030/ui/s/019eef18964b77e3ae708d3350fae2fa/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-22 11:30 IDT",
     actions: 0,
     findings: 5,

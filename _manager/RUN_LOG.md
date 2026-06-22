@@ -4,6 +4,18 @@
 
 ---
 
+## 14:30 IDT — Weekday Daytime Advance Heartbeat (Jun 22)
+
+- PRs checked: #1604 (**🎉 ALL GREEN** — e2e-smoke PASSED run 27947074357, 10m42s; MERGEABLE, no reviewer), #1615 (DRAFT, CONFLICTING, pre-commit FAIL — unchanged), #1588 (MERGEABLE; stale branch CI run 27933817996 still showing FAIL), #1596 (DRAFT, CONFLICTING — unchanged), #1602 (off-board, **NEW RUN 27949244396** — Uri Shaket merged main at 11:25 IDT; integration + pre-commit PENDING), #1606 (off-board, **run 27948135971**: all pass except e2e-smoke PENDING)
+- Merges detected: none since Jun 21
+- CI changes: **#1604 e2e-smoke PASSED** — now ALL GREEN 🎉 (was PENDING at 14:03 IDT); **#1602 new CI run triggered** by Uri merging main (integration + pre-commit now PENDING, was fully green)
+- Jira: JN-5673 still "In Review" (PR #1595 merged Jun 17, 5+ days stale — 10th+ consecutive flag); JN-5546 still "In Progress" (should be "In Review")
+- Autonomous actions: 0 (no new MERGED/CLOSED PRs to archive)
+- Findings: 7 items (PR #1604 needs reviewer, PR #1602 new CI run pending, PR #1606 e2e-smoke pending, PR #1588 reviewer needed, PR #1615 triple blocked, JN-5673 stale, JN-5546 Jira mismatch)
+- Next: Assign reviewer to #1604 NOW (all green); wait for #1602 new CI run before assigning reviewer; wait for #1606 e2e-smoke; assign reviewer to #1588; fix #1615 pre-commit + conflict; mark JN-5673 Done
+
+---
+
 ## 14:03 IDT — Weekday Daytime Advance Heartbeat (Jun 22)
 
 - PRs checked: #1604 (**MAJOR CHANGE** — MERGEABLE + CI running run 27947074357: pre-commit ✅, integration ✅, e2e-api ✅, tox ✅, nox ✅; e2e-smoke PENDING; was CONFLICTING + no CI), #1615 (DRAFT, CONFLICTING, pre-commit FAIL — unchanged), #1588 (MERGEABLE; branch CI still shows run 27933817996 pre-commit FAIL), #1596 (DRAFT, CONFLICTING — unchanged), #1602 (off-board, ALL GREEN EXIT:0 — e2e-smoke SKIPPED, ~27h no reviewer), #1606 (off-board, **MAJOR CHANGE** — MERGEABLE + new CI run 27946929591: pre-commit ✅, integration ✅, e2e-api ✅; e2e-smoke PENDING; was CONFLICTING)

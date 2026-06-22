@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-22 14:03 IDT";
+export const LAST_UPDATED = "2026-06-22 14:30 IDT";
 
 export const WORKTREES = [
   {
@@ -11,12 +11,12 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1604 OPEN",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1604",
-    status: "🟡 CONFLICT RESOLVED — CI now running (run 27947074357). pre-commit ✅, integration ✅, e2e-api ✅, tox ✅, nox ✅; e2e-smoke PENDING. Awaiting e2e-smoke completion then reviewer.",
-    blockedOn: "e2e-smoke pending",
+    status: "🎉 ALL GREEN — e2e-smoke PASSED (run 27947074357). All checks pass. MERGEABLE. Assign reviewer NOW.",
+    blockedOn: null,
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019edb7fb4c770d78fc7a47d/",
     sessionLabel: "rebase session",
-    lastActive: "2026-06-22 14:03 IDT (conflict resolved)",
+    lastActive: "2026-06-22 14:30 IDT (e2e-smoke passed)",
   },
   {
     ticket: "JN-5677",
@@ -44,12 +44,12 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1588",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1588",
-    status: "🟡 MERGEABLE, reviewDecision=''. gh pr checks shows pre-commit FAIL on branch CI run 27933817996. PR is MERGEABLE — assign reviewer. Jira should be 'In Review'.",
+    status: "🟡 MERGEABLE, reviewDecision=''. Stale branch CI run 27933817996 shows pre-commit FAIL. PR is MERGEABLE — assign reviewer. Jira should be 'In Review'.",
     blockedOn: null,
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019ed01e5624752fbade0eab/",
     sessionLabel: "fix session",
-    lastActive: "2026-06-22 14:03 IDT",
+    lastActive: "2026-06-22 14:30 IDT",
   },
   {
     ticket: null,
@@ -185,16 +185,16 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "yellow",
-    message: "🟡 PR #1604 (JN-5676, Publish zone): CONFLICT RESOLVED — CI now running (run 27947074357). All key checks PASS; e2e-smoke PENDING. Assign reviewer when e2e-smoke clears.",
+    level: "green",
+    message: "🎉 PR #1604 (JN-5676, Publish zone): ALL GREEN — e2e-smoke PASSED (run 27947074357). MERGEABLE. Assign reviewer NOW.",
   },
   {
     level: "yellow",
-    message: "🟡 PR #1602 (JN-5685/JN-5679, off-board): ALL GREEN (EXIT:0, e2e-smoke SKIPPED). MERGEABLE. ~27h no reviewer. Assign reviewer NOW.",
+    message: "🟡 PR #1602 (JN-5685/JN-5679, off-board): New CI run 27949244396 triggered by Uri's main merge (11:25 IDT Jun 22). Integration + pre-commit PENDING. Was ALL GREEN. Monitor before assigning reviewer.",
   },
   {
     level: "yellow",
-    message: "🟡 PR #1606 (JN-5725, off-board): CONFLICT RESOLVED — new CI run 27946929591, pre-commit ✅, e2e-smoke PENDING. REVIEW_REQUIRED.",
+    message: "🟡 PR #1606 (JN-5725, off-board): Run 27948135971 — all pass except e2e-smoke PENDING. REVIEW_REQUIRED.",
   },
   {
     level: "yellow",
