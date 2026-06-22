@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-22 09:34 IDT (advance heartbeat)*
+*Last updated: 2026-06-22 11:03 IDT (advance heartbeat)*
 
 ---
 
@@ -8,13 +8,13 @@
 
 | Branch | Jira | Zone | Jira Status | PR | CI | Review | Flags |
 |--------|------|------|-------------|-----|-----|--------|-------|
-| jn-5676-notebook-scaffold | [JN-5676](https://jounce.atlassian.net/browse/JN-5676) | Publish | In Review | [#1604](https://github.com/Jounce-IO/jounce/pull/1604) **OPEN** | ⚠️ Only CodeRabbit ✅ — GH Actions CI **not triggered** ~17h after un-draft | reviewDecision="" | 🔴 **GH Actions CI not running** — manual re-trigger needed |
-| jn-5677-dev-historical-mode-notebook-cells | [JN-5677](https://jounce.atlassian.net/browse/JN-5677) | Revise | In Progress | [#1615](https://github.com/Jounce-IO/jounce/pull/1615) **DRAFT** OPEN | ✅ **ALL GREEN** — pre-commit now PASS (was FAIL at 09:02) | REVIEW_REQUIRED | 🎉 **CI now fully green** — still draft, blocked on #1604 merging first |
-| jn-5546-docs-document-module-layout-convention-and-3 | [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | Code Review | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | ❌ **pre-commit FAIL** (regression — main merged into branch at 09:24 IDT, triggered new CI run) | reviewDecision="" | 🔴 **REGRESSION** — was green at 09:02, main merge broke pre-commit again |
+| jn-5676-notebook-scaffold | [JN-5676](https://jounce.atlassian.net/browse/JN-5676) | Publish | In Review | [#1604](https://github.com/Jounce-IO/jounce/pull/1604) **OPEN** | ⚠️ Only CodeRabbit ✅ — GH Actions CI **not triggered** ~18.5h after un-draft | reviewDecision="" | 🔴 **GH Actions CI not running** — manual re-trigger needed |
+| jn-5677-dev-historical-mode-notebook-cells | [JN-5677](https://jounce.atlassian.net/browse/JN-5677) | Revise | In Review | [#1615](https://github.com/Jounce-IO/jounce/pull/1615) **DRAFT** OPEN | ✅ **ALL GREEN** (CI run 27937907242 — pre-commit FIXED, regression resolved) | REVIEW_REQUIRED | 🎉 **Regression fixed** — fully green again |
+| jn-5546-docs-document-module-layout-convention-and-3 | [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | Code Review | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | ❌ **pre-commit FAIL** (regression — main merged into branch at 09:24 IDT Jun 22; CI run 27933817996) | reviewDecision="" | 🔴 **pre-commit FAIL** (3rd heartbeat with this regression) |
 | internal-cr-system | — | Code | — | — | — | — | 🔴 Filesystem FAILED (git lock) — unchanged |
 | dual-heartbeat-system | — | Code | — | — | — | — | ✅ Idle, docs done |
 | standup-drafts | — | Code | — | — | — | — | ℹ️ Utility branch |
-| jn-5695-db-connect-script | [JN-5695](https://jounce.atlassian.net/browse/JN-5695) | BLOCKED | Backlog | [#1596](https://github.com/Jounce-IO/jounce/pull/1596) DRAFT | ⚠️ Only CodeRabbit | — | 🔴 CONFLICTING; frozen |
+| jn-5695-db-connect-script | [JN-5695](https://jounce.atlassian.net/browse/JN-5695) | BLOCKED | Backlog | [#1596](https://github.com/Jounce-IO/jounce/pull/1596) DRAFT | ⚠️ Only CodeRabbit — CONFLICTING | — | 🔴 CONFLICTING; frozen |
 | jn-5672-dal-ext-dashboard | [JN-5672](https://jounce.atlassian.net/browse/JN-5672) | BLOCKED | Backlog | — | — | — | ℹ️ On hold |
 
 **Archived This Session (14:30 IDT Jun 21):**
@@ -40,63 +40,63 @@
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
 | [#1605](https://github.com/Jounce-IO/jounce/pull/1605) | auto-apply-labels | [JN-5730](https://jounce.atlassian.net/browse/JN-5730) | — | **MERGED Jun 21** | 🎉 MERGED — off-board, no archive needed |
-| [#1602](https://github.com/Jounce-IO/jounce/pull/1602) | persist-monotonicity-test | JN-5685/JN-5679 | ✅ **ALL GREEN** | OPEN, MERGEABLE, reviewDecision="" | 🎉 **FULLY GREEN — assign reviewer NOW** (12h+ waiting) |
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | ❌ e2e-smoke FAIL (54min) + e2e-tests FAIL (pre-commit ✅) | OPEN, **MERGEABLE**, REVIEW_REQUIRED | 🔴 e2e-smoke + e2e-tests FAIL — unchanged from last night |
+| [#1602](https://github.com/Jounce-IO/jounce/pull/1602) | persist-monotonicity-test | JN-5685/JN-5679 | ✅ **ALL GREEN** | OPEN, MERGEABLE, reviewDecision="" | 🎉 **FULLY GREEN — assign reviewer NOW** (15h+ waiting) |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | ❌ e2e-smoke FAIL (54min) + e2e-tests FAIL (pre-commit ✅) | OPEN, **MERGEABLE**, REVIEW_REQUIRED | 🔴 e2e-smoke + e2e-tests FAIL — unchanged |
 
 ---
 
-## Key Changes Since Last Run (Jun 22 09:02 IDT)
+## Key Changes Since Last Run (Jun 22 10:00 IDT)
 
 | What observed | Status |
 |---|---|
-| **🔴 PR #1588 REGRESSION** | Was FULLY GREEN at 09:02 IDT. Main branch merged into the branch at 09:24 IDT, triggering new CI run. pre-commit now FAILING again. |
-| **🎉 PR #1615 NOW ALL GREEN** | Was pre-commit FAIL at 09:02 IDT. Now ALL CI passing including pre-commit! Still a draft, blocked on #1604 merging first. |
-| **↔ PR #1604 GH Actions CI still not running** | ~17h since un-draft (17:30 IDT Jun 21). Only CodeRabbit. Unchanged. |
-| **↔ PR #1602 still green, no reviewer** | Fully green, now 13h+ with no reviewer. |
+| **🎉 PR #1615 NOW ALL GREEN** | Was pre-commit FAILING (regression) at 10:00 IDT. New CI run 27937907242 shows ALL checks passing. Regression resolved — ready for un-draft + reviewer once #1604 merges. |
+| **↔ PR #1604 GH Actions CI still not running** | ~18.5h since un-draft (17:30 IDT Jun 21). Only CodeRabbit. Manual re-trigger needed. |
+| **↔ PR #1588 pre-commit still FAILING** | 3rd consecutive heartbeat with this regression from Jun 22 09:24 IDT main merge. Needs fix. |
+| **↔ PR #1602 still green, no reviewer** | Fully green, now 15h+ with no reviewer. Unchanged. |
 | **↔ PR #1606 e2e still failing** | e2e-smoke FAIL (54min) + e2e-tests FAIL — unchanged. |
-| **No new merges** | Step 1 sweep: no PRs merged since Jun 21 last run. |
+| **No new merges** | Step 1 sweep confirmed: no PRs merged since Jun 21. |
 
 ---
 
 ## Attention Items
 
-### 🔴 URGENT — PR #1588 (JN-5546) — pre-commit FAIL AGAIN (regression)
+### 🎉 GOOD NEWS — PR #1615 (JN-5677) — NOW ALL GREEN (regression fixed)
+
+PR [#1615](https://github.com/Jounce-IO/jounce/pull/1615) — "feat(jbenchmark): historical mode notebook cells (JN-5677)"
+
+Was pre-commit FAILING (regression) at 10:00 IDT. New CI run 27937907242 shows all checks passing including pre-commit. The regression caused by the main merge is now fixed.
+
+**Status:** Still DRAFT — waiting for PR #1604 ([JN-5676](https://jounce.atlassian.net/browse/JN-5676)) to merge before un-drafting.
+
+---
+
+### 🔴 PR #1604 (JN-5676) — GH Actions CI NOT Running (~18.5h after un-draft)
+
+PR [#1604](https://github.com/Jounce-IO/jounce/pull/1604) — "feat(jbenchmark): notebook scaffold + operational mode (JN-5676)"
+
+Un-drafted ~17:30 IDT Jun 21. Now 11:03 IDT Jun 22 — ~18.5h later. GH Actions CI has **still not triggered** — only CodeRabbit. Very abnormal.
+
+**Required action:** Manually re-trigger CI (push empty commit or use GitHub UI → Re-run workflows), then address CodeRabbit comments, confirm CI green, request reviewer.
+
+---
+
+### 🔴 URGENT — PR #1588 (JN-5546) — pre-commit FAIL (3rd heartbeat)
 
 PR [#1588](https://github.com/Jounce-IO/jounce/pull/1588) — "docs(jbenchmark): add CONTRIBUTING.md and service READMEs (JN-5546)"
 
-Was fully green at 09:02 IDT. Joseph (or GH auto-update) merged main into the branch at 09:24 IDT — new CI run triggered, pre-commit now FAILING. This is a regression from the "all green" state observed in the previous run.
+Was FULLY GREEN at 09:02 IDT. Main merged into branch at 09:24 IDT Jun 22 — pre-commit now FAILING. Third heartbeat with this state — still unresolved. Jira status still "In Progress" but should be "In Review".
 
 **Required action:** Fix pre-commit failures in the branch, then assign a reviewer. Update Jira [JN-5546](https://jounce.atlassian.net/browse/JN-5546) to "In Review" when green.
 
 ---
 
-### 🎉 PR #1615 (JN-5677) — NOW ALL GREEN (pre-commit fixed)
-
-PR [#1615](https://github.com/Jounce-IO/jounce/pull/1615) — "feat(jbenchmark): historical mode notebook cells (JN-5677)"
-
-Was pre-commit FAIL at 09:02 IDT. Now ALL CI passing — pre-commit ✅, tox ✅, integration ✅, e2e-tests ✅, build ✅. Still DRAFT. Still blocked on JN-5676 (PR #1604) merging first.
-
-**No action needed** — wait for #1604 to merge, then un-draft and request review.
-
----
-
-### 🎉 ACTION NEEDED — PR #1602 (JN-5685/JN-5679) — FULLY GREEN (13h+ waiting)
+### 🎉 ACTION NEEDED — PR #1602 (JN-5685/JN-5679) — FULLY GREEN (15h+ waiting)
 
 PR [#1602](https://github.com/Jounce-IO/jounce/pull/1602) — "feat(jbenchmark): add monotonicity verdict persistence tables and ingestion"
 
 All checks pass/skip. OPEN, MERGEABLE, no reviewer.
 
 **Required action:** Assign a reviewer immediately.
-
----
-
-### 🔴 PR #1604 (JN-5676) — GH Actions CI NOT Running (~17h after un-draft)
-
-PR [#1604](https://github.com/Jounce-IO/jounce/pull/1604) — "feat(jbenchmark): notebook scaffold + operational mode (JN-5676)"
-
-Un-drafted ~17:30 IDT Jun 21. Now 09:34 IDT Jun 22 — ~17h later. GH Actions CI has **still not triggered** — only CodeRabbit. Very abnormal.
-
-**Required action:** Manually re-trigger CI (push empty commit or use GitHub UI → Re-run workflows), then address CodeRabbit comments, confirm CI green, request reviewer.
 
 ---
 
@@ -114,12 +114,13 @@ Git lock error — unchanged since Jun 18.
 
 ---
 
-### ⚠️ Jira mismatches (2 stale tickets)
+### ⚠️ Jira mismatches (3 items)
 
-| Ticket | Jira Status | PR | Merged/State | Days Stale |
+| Ticket | Jira Status | PR | Merged/State | Notes |
 |--------|-------------|-----|--------|-----------|
-| [JN-5673](https://jounce.atlassian.net/browse/JN-5673) | In Review | [#1595](https://github.com/Jounce-IO/jounce/pull/1595) | Merged Jun 17 | 5+ days |
-| [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | OPEN, ALL GREEN | Should be "In Review" |
+| [JN-5673](https://jounce.atlassian.net/browse/JN-5673) | In Review | [#1595](https://github.com/Jounce-IO/jounce/pull/1595) | Merged Jun 17 | 5+ days stale — should be Done |
+| [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | OPEN, pre-commit FAIL | Should be "In Review" (open PR) |
+| [JN-5677](https://jounce.atlassian.net/browse/JN-5677) | In Review | [#1615](https://github.com/Jounce-IO/jounce/pull/1615) | DRAFT, ALL GREEN | Jira slightly ahead — PR still draft |
 
 ---
 

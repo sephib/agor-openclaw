@@ -875,4 +875,13 @@ export const HEARTBEAT_RUNS = [
     summary: "PR #1588 REGRESSION — main merged into branch at 09:24 IDT, new CI run, pre-commit FAILING again. PR #1615 now ALL GREEN (pre-commit fixed since 09:02 run). PR #1604 CI still not running (~17h). PR #1602 still awaiting reviewer (13h+). PR #1606 e2e unchanged.",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019eee0597fe7fbcaf92b04c/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-22 11:03 IDT",
+    actions: 0,
+    findings: 4,
+    status: "ok",
+    summary: "PR #1615 regression FIXED — CI run 27937907242 all green (pre-commit fixed). PR #1588 pre-commit still FAILING (3rd heartbeat). PR #1604 GH Actions still not triggered (~18.5h). PR #1602 still awaiting reviewer (15h+). PR #1606 e2e unchanged.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019eee5854b77aba877bd7be21912c59/",
+  },
 ];
