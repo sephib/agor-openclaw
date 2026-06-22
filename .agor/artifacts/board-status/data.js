@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-22 15:30 IDT";
+export const LAST_UPDATED = "2026-06-22 16:00 IDT";
 
 export const WORKTREES = [
   {
@@ -11,7 +11,7 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1604 OPEN",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1604",
-    status: "🎉 ALL GREEN — all checks pass (run 27947074357). MERGEABLE. Assign reviewer NOW — 7th consecutive heartbeat flagging this.",
+    status: "🎉 ALL GREEN — all checks pass (run 27947074357). MERGEABLE. Assign reviewer NOW — 8th consecutive heartbeat flagging this.",
     blockedOn: null,
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019edb7fb4c770d78fc7a47d/",
@@ -198,8 +198,8 @@ export const ALERTS = [
     message: "🎉 PR #1604 (JN-5676, Publish zone): ALL GREEN (run 27947074357). MERGEABLE. Assign reviewer NOW — 7th consecutive heartbeat.",
   },
   {
-    level: "yellow",
-    message: "🟡 PR #1606 (JN-5725, off-board): NEW CI run 27952850789 (all checks PENDING). Previous run 27950494952 had e2e-api FAIL. Someone pushed a fix — monitoring outcome. JN-5725 Done in Jira but PR still open.",
+    level: "red",
+    message: "🔴 PR #1606 (JN-5725, off-board): run 27952850789 COMPLETED — e2e-api ❌ STILL FAILING (+ e2e-tests FAIL). Pre-commit/integration/tox PASS. Fix push ~15:00 IDT did NOT resolve regression from #1602 merge. Deeper diagnosis needed. JN-5725 Done in Jira but PR blocked.",
   },
   {
     level: "green",
@@ -215,7 +215,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⚠️ Jira stale: JN-5673 (In Review, PR #1595 MERGED Jun 17 — 5+ days, should be Done); JN-5546 (In Progress, should be 'In Review'); JN-5725 (Done but PR #1606 still open — CI pending).",
+    message: "⚠️ Jira stale: JN-5673 (In Review, PR #1595 MERGED Jun 17 — 5+ days, should be Done); JN-5546 (In Progress, should be 'In Review'); JN-5725 (Done but PR #1606 still open — CI failing).",
   },
   {
     level: "yellow",

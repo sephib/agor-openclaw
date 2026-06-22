@@ -31,6 +31,15 @@ export const HEARTBEAT_RUNS = [
   },
   {
     type: "advance",
+    timestamp: "2026-06-22 16:00 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "🔴 PR #1606 CI run 27952850789 COMPLETED — e2e-api STILL FAILING (fix push failed). #1604 all-green needs reviewer (8th flag). No merges. All else static.",
+    sessionUrl: "http://localhost:3030/ui/s/019eef6afc687addb93770e9f9903194/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-22 15:30 IDT",
     actions: 0,
     findings: 6,

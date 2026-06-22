@@ -4,6 +4,18 @@
 
 ---
 
+## 16:00 IDT — Weekday Daytime Advance Heartbeat (Jun 22)
+
+- PRs checked: #1604 (ALL GREEN unchanged, run 27947074357; still no reviewer — **8th consecutive heartbeat**), #1615 (DRAFT+CONFLICTING+pre-commit FAIL — unchanged), #1588 (MERGEABLE, stale CI run 27933817996 — unchanged), #1596 (DRAFT CONFLICTING — unchanged), #1606 (off-board, **🔴 run 27952850789 COMPLETED** — e2e-api ❌ FAIL, e2e-tests ❌ FAIL; pre-commit/integration/tox PASS; fix push did NOT resolve regression)
+- Merges detected: none since 15:30 IDT
+- CI changes: **#1606 run 27952850789 COMPLETE — e2e-api STILL FAILING.** The fix attempt pushed ~15:00 IDT failed to resolve the e2e-api regression from #1602. This is now 2nd consecutive run with e2e-api fail. Deeper diagnosis needed.
+- Jira: JN-5673 still "In Review" (PR #1595 merged Jun 17, 5+ days stale); JN-5546 still "In Progress" (should be "In Review"); JN-5725 Done but PR #1606 still open (CI failing)
+- Autonomous actions: 0 (no MERGED/CLOSED PRs)
+- Findings: 6 items (#1604 needs reviewer 8th flag, #1606 e2e-api STILL failing (escalated), #1615 triple blocked, #1588 reviewer needed, JN-5673 stale Jira, model-packaging-cr 7+ days stale)
+- Next: Diagnose #1606 e2e-api failure root cause (not fixed by last push); assign reviewer to #1604; assign reviewer to #1588; fix #1615; mark JN-5673 Done
+
+---
+
 ## 15:30 IDT — Weekday Daytime Advance Heartbeat (Jun 22)
 
 - PRs checked: #1604 (ALL GREEN unchanged, run 27947074357; still no reviewer — 7th consecutive heartbeat), #1615 (DRAFT+CONFLICTING+pre-commit FAIL — unchanged), #1588 (MERGEABLE, stale CI run 27933817996 — unchanged), #1596 (DRAFT CONFLICTING — unchanged), #1606 (off-board, **🟡 NEW CI run 27952850789** — pre-commit/integration/e2e-api/tox all PENDING; replaces failing run 27950494952)

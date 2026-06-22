@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-22 15:30 IDT (advance heartbeat)*
+*Last updated: 2026-06-22 16:00 IDT (advance heartbeat)*
 
 ---
 
@@ -8,7 +8,7 @@
 
 | Branch | Jira | Zone | Jira Status | PR | CI | Review | Flags |
 |--------|------|------|-------------|-----|-----|--------|-------|
-| jn-5676-notebook-scaffold | [JN-5676](https://jounce.atlassian.net/browse/JN-5676) | Publish | In Review | [#1604](https://github.com/Jounce-IO/jounce/pull/1604) **OPEN** | ✅ **ALL GREEN** (run 27947074357: pre-commit ✅, integration ✅, e2e-api ✅, tox ✅, nox ✅, e2e-smoke ✅, e2e-tests ✅) | reviewDecision="" | 🎉 **ALL GREEN — ASSIGN REVIEWER NOW** (7th consecutive heartbeat) |
+| jn-5676-notebook-scaffold | [JN-5676](https://jounce.atlassian.net/browse/JN-5676) | Publish | In Review | [#1604](https://github.com/Jounce-IO/jounce/pull/1604) **OPEN** | ✅ **ALL GREEN** (run 27947074357: pre-commit ✅, integration ✅, e2e-api ✅, tox ✅, nox ✅, e2e-smoke ✅, e2e-tests ✅) | reviewDecision="" | 🎉 **ALL GREEN — ASSIGN REVIEWER NOW** (8th consecutive heartbeat) |
 | jn-5677-dev-historical-mode-notebook-cells | [JN-5677](https://jounce.atlassian.net/browse/JN-5677) | Revise | In Review | [#1615](https://github.com/Jounce-IO/jounce/pull/1615) **DRAFT** OPEN | ❌ **pre-commit FAIL** (CI run 27934981657, created 09:52 IDT Jun 22) | REVIEW_REQUIRED | 🔴 **TRIPLE: DRAFT + CONFLICTING + pre-commit FAIL** — blocked on #1604 merging first |
 | jn-5546-docs-document-module-layout-convention-and-3 | [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | Code Review | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | 🟡 PR checks run 27933817996 shows pre-commit FAIL (stale branch CI run); MERGEABLE | reviewDecision="" | 🟡 **Needs reviewer** — MERGEABLE; Jira should be "In Review" |
 | model-packaging-cr | — | Code Review | — | — | — | — | ⚠️ 7+ days inactive (last session Jun 15), no PR — may be stale |
@@ -42,19 +42,19 @@
 |----|--------|------|----|-------|-------|
 | [#1605](https://github.com/Jounce-IO/jounce/pull/1605) | auto-apply-labels | [JN-5730](https://jounce.atlassian.net/browse/JN-5730) | — | **MERGED Jun 21** | 🎉 MERGED — off-board, no archive needed |
 | [#1602](https://github.com/Jounce-IO/jounce/pull/1602) | persist-monotonicity-test | JN-5685/JN-5679 | ✅ ALL GREEN | **MERGED 14:34 IDT Jun 22** | 🎉 MERGED — JN-5685 Done, JN-5679 Done |
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | 🟡 **NEW run 27952850789** (triggered ~15:00 IDT): pre-commit ⏳ PENDING, integration ⏳ PENDING, e2e-api ⏳ PENDING, tox ⏳ PENDING | OPEN, **MERGEABLE**, REVIEW_REQUIRED | 🟡 **NEW CI run** — e2e-api regression fix likely pushed; JN-5725 shows Done in Jira but PR still OPEN |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | ❌ **run 27952850789 COMPLETED** (pre-commit ✅, integration ✅, tox ✅, nox ✅, BUT e2e-api ❌ FAIL, e2e-tests ❌ FAIL) | OPEN, **MERGEABLE**, REVIEW_REQUIRED | 🔴 **e2e-api STILL FAILING** — fix push did NOT resolve the regression. JN-5725 Done in Jira but PR blocked on CI. |
 
 ---
 
-## Key Changes Since Last Run (Jun 22 15:00 IDT)
+## Key Changes Since Last Run (Jun 22 15:30 IDT)
 
 | What observed | Status |
 |---|---|
-| **🟡 PR #1606 NEW CI run 27952850789** | New run triggered ~15:00 IDT Jun 22 — replaces failing run 27950494952 (e2e-api FAIL). All major checks (pre-commit, integration, e2e-api, tox) now PENDING. Someone pushed a fix for the e2e-api regression from #1602 merge. Monitor outcome. |
-| **↔ PR #1604 all green** | Unchanged — still ALL GREEN (run 27947074357). MERGEABLE. No reviewer assigned — 7th consecutive heartbeat flagging this. |
+| **🔴 PR #1606 CI run 27952850789 COMPLETED — e2e-api STILL FAILING** | Run completed ~16:00 IDT Jun 22. Pre-commit ✅, integration ✅, tox ✅, nox ✅. BUT e2e-api ❌ FAIL, e2e-tests ❌ FAIL. The fix push (which triggered this run) did NOT resolve the regression introduced by #1602 merge. This is now the 2nd consecutive CI run with e2e-api failing. |
+| **↔ PR #1604 all green** | Unchanged — still ALL GREEN (run 27947074357). MERGEABLE. No reviewer assigned — **8th consecutive heartbeat** flagging this. |
 | **↔ PR #1615 triple problem** | Unchanged — DRAFT + CONFLICTING + pre-commit FAIL. |
 | **↔ PR #1588 needs reviewer** | Unchanged — MERGEABLE, no reviewer, Jira still "In Progress". |
-| **↔ Jira mismatches** | Unchanged — JN-5673 "In Review" (merged Jun 17), JN-5546 "In Progress" (should be "In Review"), JN-5725 "Done" (PR still open). |
+| **↔ Jira mismatches** | Unchanged — JN-5673 "In Review" (merged Jun 17), JN-5546 "In Progress" (should be "In Review"), JN-5725 "Done" (PR still open, CI failing). |
 
 ---
 
@@ -64,21 +64,21 @@
 
 PR [#1604](https://github.com/Jounce-IO/jounce/pull/1604) — "feat(jbenchmark): notebook scaffold + operational mode (JN-5676)"
 
-**ALL CI CHECKS PASS.** MERGEABLE. reviewDecision="" — no reviewer yet. This has been flagged for 7 consecutive heartbeats (~3.5 hours).
+**ALL CI CHECKS PASS.** MERGEABLE. reviewDecision="" — no reviewer yet. This has been flagged for **8 consecutive heartbeats (~4 hours)**.
 
 **Required action:** Assign reviewer immediately.
 
 ---
 
-### 🟡 PR #1606 (JN-5725) — NEW CI RUN PENDING (watching e2e-api regression fix)
+### 🔴 PR #1606 (JN-5725) — e2e-api STILL FAILING (fix attempt failed)
 
 PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606) — "feat(vllm-analyzer): integrate log analyzer into experiment-workflow (JN-5725)"
 
-New CI run 27952850789 triggered ~15:00 IDT Jun 22. Previous run 27950494952 had e2e-api ❌ FAIL. New run has all checks PENDING — likely someone pushed a fix for the regression introduced by #1602 merge.
+CI run 27952850789 **COMPLETED** ~16:00 IDT Jun 22. Pre-commit ✅, integration ✅, tox ✅, nox ✅. **e2e-api ❌ FAIL, e2e-tests ❌ FAIL.** The fix push that triggered this run did NOT resolve the e2e-api regression introduced by PR #1602 merge.
 
-JN-5725 is "Done" in Jira, but PR is still OPEN. Wait for CI result before deciding.
+JN-5725 is "Done" in Jira, but PR is blocked on CI failures. This is the 2nd consecutive CI run with e2e-api failing.
 
-**Required action:** Monitor CI run 27952850789 outcome at next heartbeat.
+**Required action:** Investigate why e2e-api is failing in #1606 — the regression from #1602 needs deeper diagnosis. Consider whether JN-5725 needs another fix push or if the root cause is structural.
 
 ---
 
