@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-23 00:00 IDT";
+export const LAST_UPDATED = "2026-06-23 02:00 IDT";
 
 export const WORKTREES = [
   {
@@ -11,12 +11,12 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1604 OPEN",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1604",
-    status: "🎉🎉 ALL CI GREEN + APPROVED — READY TO MERGE NOW! (15th flag). Run 27959917357: ALL checks ✅. Merge this PR!",
+    status: "🎉🎉 ALL CI GREEN + APPROVED — READY TO MERGE NOW! (16th flag). Run 27959917357: ALL checks ✅. Merge this PR!",
     blockedOn: null,
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019edb7fb4c770d78fc7a47d/",
     sessionLabel: "rebase session",
-    lastActive: "2026-06-23 00:00 IDT (ALL CI GREEN — 15th flag, still not merged)",
+    lastActive: "2026-06-23 02:00 IDT (ALL CI GREEN — 16th flag, still not merged)",
   },
   {
     ticket: "JN-5677",
@@ -227,11 +227,11 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "green",
-    message: "🎉🎉 PR #1604 (JN-5676, Publish zone): ALL CI GREEN + APPROVED — READY TO MERGE NOW! (15th flag). Run 27959917357: every check ✅. Merge immediately.",
+    message: "🎉🎉 PR #1604 (JN-5676, Publish zone): ALL CI GREEN + APPROVED — READY TO MERGE NOW! (16th flag). Run 27959917357: every check ✅. Merge immediately.",
   },
   {
-    level: "yellow",
-    message: "🟡 PR #1606 (JN-5725, off-board): CI run 27980646274 — e2e-api ✅, integration ✅, tox ✅, pre-commit ✅, nox ✅, atlas-validate ✅. e2e-smoke PENDING. 3 new commits after 21:30 heartbeat: fix Fluent Bit Path (21:34), S3 region auto (23:04), GCS region us-central1 (23:06 IDT). Jira Done but PR open. If e2e-smoke passes → needs reviewer.",
+    level: "red",
+    message: "🔴 PR #1606 (JN-5725, off-board): CI run 27980646274 — e2e-smoke FAILED (52m58s) + e2e-tests FAILED. All other checks ✅. Was PENDING at 00:00 IDT, resolved as FAILURE overnight. Needs e2e investigation before reviewer can be assigned. Jira Done but PR open.",
   },
   {
     level: "red",

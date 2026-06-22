@@ -4,6 +4,28 @@
 
 ---
 
+## 02:00 IDT — Overnight Advance Heartbeat (2026-06-23)
+
+**Session:** 019ef190 | http://127.0.0.1:3030/ui/s/019ef190093d779db15c1bf61163c666/
+
+**Board summary:** PR #1606 e2e-smoke FAILED (was PENDING at 00:00 IDT). PR #1604 still awaiting merge (16th flag). All else unchanged overnight.
+
+**Key findings:**
+- 🔴 **PR #1606 (JN-5725) — e2e-smoke FAILED** (run 27980646274, 52m58s) + e2e-tests FAILED. Was PENDING at last heartbeat. All other checks pass. Needs e2e investigation.
+- 🎉🎉 **PR #1604 (JN-5676) — ALL CI GREEN + APPROVED (16th flag)**: Still OPEN, APPROVED, MERGEABLE (run 27959917357 all ✅). Human action required.
+- ↔ **PR #1588 (JN-5546)**: pre-commit FAIL (run 27933817996). Unchanged.
+- ↔ **PR #1615 (JN-5677)**: DRAFT + CONFLICTING. Unchanged.
+- ↔ **jn-5724 + internal-cr-system**: filesystem FAILED (git lock). Unchanged.
+- ↔ **Jira stale**: JN-5673 In Review (PR #1595 merged Jun 17). Unchanged.
+
+**Proposals written:** None.
+
+**Autonomous actions taken:** None (no MERGED/CLOSED PRs).
+
+**Next:** Fix e2e-smoke failure in PR #1606; merge PR #1604 now (16th flag).
+
+---
+
 ## 21:30 IDT — Weekday Daytime Heartbeat (2026-06-22)
 
 **Session:** 019ef098 | http://127.0.0.1:3030/ui/s/019ef098dc0e7413ae80c545/
