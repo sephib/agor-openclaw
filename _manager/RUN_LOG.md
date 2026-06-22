@@ -4,6 +4,28 @@
 
 ---
 
+## 21:30 IDT — Weekday Daytime Heartbeat (2026-06-22)
+
+**Session:** 019ef098 | http://127.0.0.1:3030/ui/s/019ef098dc0e7413ae80c545/
+
+**Board summary:** Key development on PR #1606 — 2 new commits + nearly all CI green (e2e-smoke in progress). PR #1604 unchanged at 14th flag.
+
+**Key findings:**
+- ↔ **PR #1604 (JN-5676) — ALL CI GREEN + APPROVED (14th flag)**: Still not merged. OPEN, APPROVED, MERGEABLE, run 27959917357 all ✅. Requires human action.
+- 🟡 **PR #1606 (JN-5725) — CI run 27974611583 NEARLY ALL GREEN**: 2 new commits since last run: `fix: scope Fluent Bit to only tail daemon container logs` (21:13 IDT), `fix: use Lua filter to scope logs to daemon pod` (21:21 IDT). Run 27974611583: e2e-api ✅, integration ✅, tox ✅, pre-commit ✅, nox ✅, atlas-validate ✅. **e2e-smoke IN PROGRESS** (step "e2e tests" running since 21:29 IDT). If passes → needs reviewer.
+- ↔ **PR #1588 (JN-5546)**: pre-commit FAIL (run 27933817996). Unchanged.
+- ↔ **PR #1615 (JN-5677)**: DRAFT + CONFLICTING + pre-commit FAIL. Unchanged.
+- ↔ **jn-5724 + internal-cr-system**: Git lock errors — unchanged.
+- ↔ **Jira stale**: JN-5673 In Review (PR merged Jun 17). JN-5546 In Progress (should be In Review). JN-5725 Done (PR open, e2e-smoke running).
+
+**Proposals written:** None new — existing proposals unchanged.
+
+**Autonomous actions taken:** None.
+
+**Next:** Monitor e2e-smoke result for PR #1606 at next heartbeat (22:00 IDT).
+
+---
+
 ## 20:30 IDT — Weekday Daytime Advance Heartbeat (Jun 22)
 
 - PRs checked: #1604 (**ALL CI GREEN + APPROVED** — run 27959917357 unchanged — **12th flag MERGE NOW**), #1606 (new run **27970971622**: e2e-api ❌ FAIL + e2e-tests ❌ FAIL + e2e-smoke SKIPPING — 2nd consecutive failing run, not flaky), #1615 (DRAFT+CONFLICTING+pre-commit FAIL — unchanged), #1588 (**pre-commit FAIL** run 27933817996 — re-flagged, was dropped from board state), #1596 (DRAFT CONFLICTING — unchanged)

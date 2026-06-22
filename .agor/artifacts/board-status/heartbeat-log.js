@@ -1100,4 +1100,13 @@ export const HEARTBEAT_RUNS = [
     summary: "🟡 PR #1606 NEW CI run 27973178457 — 3 fresh commits (vllm-daemon Fluent Bit CRI parser fixes at 17:19+17:57 IDT). PENDING: e2e-api, integration, tox, pre-commit; atlas-validate ✅. Was 2 consecutive fails. PR #1604 still not merged (13th flag, ALL CI GREEN + APPROVED). #1588 pre-commit FAIL + #1615 TRIPLE blocked + git lock ×2 all unchanged. No new merges.",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019ef07d64bb76e3a220a3df/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-22 21:30 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "🟡 PR #1606 CI run 27974611583 — 2 MORE commits (Lua filter to scope Fluent Bit to daemon pod, 21:13+21:21 IDT). NEARLY ALL GREEN: e2e-api ✅ integration ✅ tox ✅ pre-commit ✅ nox ✅ atlas-validate ✅; e2e-smoke IN PROGRESS (running 21:26 IDT). PR #1604 still not merged (14th flag, ALL CI GREEN + APPROVED). All else unchanged.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019ef098dc0e7413ae80c545/",
+  },
 ];

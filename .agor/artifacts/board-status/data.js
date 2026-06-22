@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-22 21:00 IDT";
+export const LAST_UPDATED = "2026-06-22 21:30 IDT";
 
 export const WORKTREES = [
   {
@@ -11,12 +11,12 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1604 OPEN",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1604",
-    status: "🎉🎉 ALL CI GREEN + APPROVED — READY TO MERGE NOW! (13th flag). Run 27959917357: ALL checks ✅. This has been flagged every heartbeat since 18:00 IDT. Merge this PR!",
+    status: "🎉🎉 ALL CI GREEN + APPROVED — READY TO MERGE NOW! (14th flag). Run 27959917357: ALL checks ✅. This has been flagged every heartbeat since 18:00 IDT. Merge this PR!",
     blockedOn: null,
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019edb7fb4c770d78fc7a47d/",
     sessionLabel: "rebase session",
-    lastActive: "2026-06-22 21:00 IDT (ALL CI GREEN — 13th flag, still not merged)",
+    lastActive: "2026-06-22 21:30 IDT (ALL CI GREEN — 14th flag, still not merged)",
   },
   {
     ticket: "JN-5677",
@@ -227,11 +227,11 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "green",
-    message: "🎉🎉 PR #1604 (JN-5676, Publish zone): ALL CI GREEN + APPROVED — READY TO MERGE NOW! (13th flag). Run 27959917357: every check ✅. Merge immediately.",
+    message: "🎉🎉 PR #1604 (JN-5676, Publish zone): ALL CI GREEN + APPROVED — READY TO MERGE NOW! (14th flag). Run 27959917357: every check ✅. Merge immediately.",
   },
   {
     level: "yellow",
-    message: "🟡 PR #1606 (JN-5725, off-board): NEW CI RUN 27973178457 — 3 new commits pushed (vllm-daemon Fluent Bit CRI parser fixes, 17:19+17:57 IDT). Checks PENDING: e2e-api, integration, tox, pre-commit. atlas-validate ✅. Was failing 2 consecutive runs. Monitor for result.",
+    message: "🟡 PR #1606 (JN-5725, off-board): CI run 27974611583 — e2e-api ✅, integration ✅, tox ✅, pre-commit ✅, nox ✅, atlas-validate ✅. e2e-smoke IN PROGRESS (running since 21:26 IDT). 2 new commits: Lua filter to scope Fluent Bit to daemon pod (21:13+21:21 IDT). If e2e-smoke passes → needs reviewer.",
   },
   {
     level: "red",
