@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-22 16:30 IDT (advance heartbeat)*
+*Last updated: 2026-06-22 17:00 IDT (advance heartbeat)*
 
 ---
 
@@ -8,7 +8,7 @@
 
 | Branch | Jira | Zone | Jira Status | PR | CI | Review | Flags |
 |--------|------|------|-------------|-----|-----|--------|-------|
-| jn-5676-notebook-scaffold | [JN-5676](https://jounce.atlassian.net/browse/JN-5676) | Publish | In Review | [#1604](https://github.com/Jounce-IO/jounce/pull/1604) **OPEN** | ✅ **ALL GREEN** (run 27947074357: pre-commit ✅, integration ✅, e2e-api ✅, tox ✅, nox ✅, e2e-smoke ✅, e2e-tests ✅) | reviewDecision="" | 🎉 **ALL GREEN — ASSIGN REVIEWER NOW** (8th consecutive heartbeat) |
+| jn-5676-notebook-scaffold | [JN-5676](https://jounce.atlassian.net/browse/JN-5676) | Publish | In Review | [#1604](https://github.com/Jounce-IO/jounce/pull/1604) **OPEN** | ✅ **ALL GREEN** (run 27947074357: pre-commit ✅, integration ✅, e2e-api ✅, tox ✅, nox ✅, e2e-smoke ✅, e2e-tests ✅) | reviewDecision="" | 🎉 **ALL GREEN — ASSIGN REVIEWER NOW** (10th consecutive heartbeat) |
 | jn-5677-dev-historical-mode-notebook-cells | [JN-5677](https://jounce.atlassian.net/browse/JN-5677) | Revise | In Review | [#1615](https://github.com/Jounce-IO/jounce/pull/1615) **DRAFT** OPEN | ❌ **pre-commit FAIL** (CI run 27934981657, created 09:52 IDT Jun 22) | REVIEW_REQUIRED | 🔴 **TRIPLE: DRAFT + CONFLICTING + pre-commit FAIL** — blocked on #1604 merging first |
 | jn-5546-docs-document-module-layout-convention-and-3 | [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | Code Review | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | 🟡 PR checks run 27933817996 shows pre-commit FAIL (stale branch CI run); MERGEABLE | reviewDecision="" | 🟡 **Needs reviewer** — MERGEABLE; Jira should be "In Review" |
 | model-packaging-cr | — | Code Review | — | — | — | — | ⚠️ 7+ days inactive (last session Jun 15), no PR — may be stale |
@@ -42,19 +42,19 @@
 |----|--------|------|----|-------|-------|
 | [#1605](https://github.com/Jounce-IO/jounce/pull/1605) | auto-apply-labels | [JN-5730](https://jounce.atlassian.net/browse/JN-5730) | — | **MERGED Jun 21** | 🎉 MERGED — off-board, no archive needed |
 | [#1602](https://github.com/Jounce-IO/jounce/pull/1602) | persist-monotonicity-test | JN-5685/JN-5679 | ✅ ALL GREEN | **MERGED 14:34 IDT Jun 22** | 🎉 MERGED — JN-5685 Done, JN-5679 Done |
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | 🟡 **NEW run 27955371445** (pre-commit ✅, integration ✅, tox ✅, nox ✅, e2e-api ✅ — e2e-smoke ⏳ PENDING) | OPEN, **MERGEABLE**, REVIEW_REQUIRED | 🟡 **e2e-api NOW PASSING** — fix resolved regression! e2e-smoke pending. JN-5725 Done in Jira. Assign reviewer when e2e-smoke passes. |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | 🟡 **NEW run 27958172294** (atlas-validate ✅, e2e-api ✅, check-changes ✅, CodeRabbit ✅, JIRA Association ✅ — pre-commit ⏳, tox ⏳, integration ⏳, e2e-smoke ⏳ PENDING) | OPEN, **MERGEABLE**, REVIEW_REQUIRED | 🟡 **NEW CI run since 16:30** — e2e-api still passing, majority of checks still pending. JN-5725 Done in Jira. |
 
 ---
 
-## Key Changes Since Last Run (Jun 22 16:00 IDT)
+## Key Changes Since Last Run (Jun 22 16:30 IDT)
 
 | What observed | Status |
 |---|---|
-| **🎉 PR #1606 NEW CI run 27955371445 — e2e-api NOW PASSING** | New run triggered since 16:00 IDT. Pre-commit ✅, integration ✅, tox ✅, nox ✅, e2e-api ✅, atlas-validate ✅. **e2e-smoke still PENDING**. This is a significant improvement — previous run 27952850789 had e2e-api FAILING. If e2e-smoke passes, #1606 will be ALL GREEN. |
-| **↔ PR #1604 all green** | Unchanged — still ALL GREEN (run 27947074357). MERGEABLE. No reviewer — **9th consecutive heartbeat** flagging this. |
+| **🔄 PR #1606 NEW CI run 27958172294** | Supersedes run 27955371445 from last heartbeat. New run since 16:30 IDT (likely triggered by another push). Status: e2e-api ✅ still passing, but pre-commit/tox/integration/e2e-smoke all ⏳ PENDING. CI still in progress. |
+| **↔ PR #1604 all green** | Unchanged — still ALL GREEN (run 27947074357). MERGEABLE. No reviewer — **10th consecutive heartbeat** flagging this. |
 | **↔ PR #1615 triple problem** | Unchanged — DRAFT + CONFLICTING + pre-commit FAIL. |
 | **↔ PR #1588 needs reviewer** | Unchanged — MERGEABLE, no reviewer, Jira still "In Progress". |
-| **↔ Jira mismatches** | Unchanged — JN-5673 "In Review" (merged Jun 17), JN-5546 "In Progress" (should be "In Review"), JN-5725 "Done" (PR still open, e2e-smoke pending). |
+| **↔ Jira mismatches** | Unchanged — JN-5673 "In Review" (merged Jun 17), JN-5546 "In Progress" (should be "In Review"), JN-5725 "Done" (PR still open, CI running). |
 
 ---
 
@@ -64,23 +64,21 @@
 
 PR [#1604](https://github.com/Jounce-IO/jounce/pull/1604) — "feat(jbenchmark): notebook scaffold + operational mode (JN-5676)"
 
-**ALL CI CHECKS PASS.** MERGEABLE. reviewDecision="" — no reviewer yet. This has been flagged for **9 consecutive heartbeats (~4.5 hours)**.
+**ALL CI CHECKS PASS.** MERGEABLE. reviewDecision="" — no reviewer yet. This has been flagged for **10 consecutive heartbeats (~5 hours)**.
 
 **Required action:** Assign reviewer immediately.
 
 ---
 
-### 🟡 PR #1606 (JN-5725) — NEW CI run, e2e-api PASSING — e2e-smoke PENDING
+### 🟡 PR #1606 (JN-5725) — NEW CI run 27958172294 — checks PENDING
 
 PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606) — "feat(vllm-analyzer): integrate log analyzer into experiment-workflow (JN-5725)"
 
-New CI run **27955371445** triggered since 16:00 IDT. Status: pre-commit ✅, integration ✅, tox ✅, nox ✅, e2e-api ✅, atlas-validate ✅. **e2e-smoke ⏳ PENDING.** 
-
-This is a significant improvement — previous run 27952850789 had e2e-api ❌ FAILING. The fix appears to have resolved the regression from #1602 merge. Waiting for e2e-smoke to confirm full green.
+New CI run **27958172294** triggered since 16:30 IDT (supersedes run 27955371445). Status: atlas-validate ✅, e2e-api ✅, check-changes ✅ — but pre-commit ⏳, tox ⏳, integration ⏳, e2e-smoke ⏳ still PENDING.
 
 JN-5725 is "Done" in Jira. MERGEABLE. REVIEW_REQUIRED (no reviewer yet).
 
-**Required action:** Watch e2e-smoke result. If it passes → assign reviewer. If it fails → diagnose e2e-smoke regression.
+**Required action:** Watch CI result. If all green → assign reviewer.
 
 ---
 

@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-22 16:30 IDT";
+export const LAST_UPDATED = "2026-06-22 17:00 IDT";
 
 export const WORKTREES = [
   {
@@ -11,7 +11,7 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1604 OPEN",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1604",
-    status: "🎉 ALL GREEN — all checks pass (run 27947074357). MERGEABLE. Assign reviewer NOW — 9th consecutive heartbeat flagging this.",
+    status: "🎉 ALL GREEN — all checks pass (run 27947074357). MERGEABLE. Assign reviewer NOW — 10th consecutive heartbeat flagging this.",
     blockedOn: null,
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019edb7fb4c770d78fc7a47d/",
@@ -195,11 +195,11 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "green",
-    message: "🎉 PR #1604 (JN-5676, Publish zone): ALL GREEN (run 27947074357). MERGEABLE. Assign reviewer NOW — 9th consecutive heartbeat.",
+    message: "🎉 PR #1604 (JN-5676, Publish zone): ALL GREEN (run 27947074357). MERGEABLE. Assign reviewer NOW — 10th consecutive heartbeat.",
   },
   {
     level: "yellow",
-    message: "🟡 PR #1606 (JN-5725, off-board): NEW CI run 27955371445 — e2e-api NOW PASSING ✅! Pre-commit/integration/tox/nox/e2e-api all PASS. e2e-smoke ⏳ PENDING. If e2e-smoke passes → assign reviewer. Fix resolved the regression from #1602 merge.",
+    message: "🟡 PR #1606 (JN-5725, off-board): NEW CI run 27958172294 (triggered since 16:30 IDT). e2e-api ✅, atlas-validate ✅ — pre-commit/tox/integration/e2e-smoke ⏳ PENDING. JN-5725 Done in Jira. Watch result.",
   },
   {
     level: "green",
