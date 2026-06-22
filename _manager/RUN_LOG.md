@@ -4,6 +4,18 @@
 
 ---
 
+## 12:02 IDT — Weekday Daytime Advance Heartbeat (Jun 22)
+
+- PRs checked: #1604 (OPEN, not draft, CI still only CodeRabbit — GH Actions ~18.5h not triggered), #1615 (DRAFT, pre-commit FAIL — run 27934981657, unchanged), #1588 (pre-commit FAIL — 5th consecutive heartbeat, unchanged), #1596 (DRAFT, UNKNOWN — BLOCKED), #1602 (off-board, ALL GREEN run 27937907242 — ~23.5h no reviewer), #1606 (off-board, **now CONFLICTING** — was MERGEABLE + e2e-smoke PENDING at 11:30 IDT; GH Actions not running)
+- Merges detected: none since Jun 21
+- CI changes: **#1606 NEW — CONFLICTING** (was MERGEABLE). No other CI changes.
+- Jira: JN-5673 still "In Review" (PR #1595 merged Jun 17, 5+ days stale); JN-5546 still "In Progress" (should be "In Review"); JN-5677 "In Review" (PR draft + failing)
+- Autonomous actions: 0 (no new MERGED/CLOSED PRs to archive)
+- Flags: 5 (PR #1606 now CONFLICTING, PR #1604 GH Actions missing, PR #1588 pre-commit FAIL 5th heartbeat, PR #1602 reviewer needed 23.5h+, PR #1615 pre-commit FAIL)
+- Next: Resolve #1606 conflicts; fix #1615 pre-commit; re-trigger #1604 CI; fix #1588 pre-commit; assign reviewer to #1602; mark JN-5673 Done
+
+---
+
 ## 11:30 IDT — Weekday Daytime Advance Heartbeat (Jun 22)
 
 - PRs checked: #1604 (OPEN, not draft, CI still only CodeRabbit — GH Actions ~20h not triggered), #1615 (**CORRECTION**: pre-commit FAIL — cited run 27937907242 in last 3 heartbeats belongs to PR #1602, not #1615; actual run 27934981657 = FAIL), #1588 (pre-commit FAIL — 4th heartbeat, unchanged), #1596 (CONFLICTING, DRAFT — BLOCKED, unchanged), #1602 (off-board, ALL GREEN run 27937907242 — ~20h no reviewer), #1606 (off-board, e2e-smoke PENDING (new run) + e2e-api now PASS — was FAIL)

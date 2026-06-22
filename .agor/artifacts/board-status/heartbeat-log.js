@@ -31,6 +31,15 @@ export const HEARTBEAT_RUNS = [
   },
   {
     type: "advance",
+    timestamp: "2026-06-22 12:02 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "NEW: PR #1606 (JN-5725) now CONFLICTING — was MERGEABLE + e2e-smoke PENDING at 11:30 IDT. PR #1604 GH Actions CI still not running ~18.5h. PR #1588 pre-commit FAIL 5th heartbeat. PR #1602 fully green ~23.5h no reviewer. PR #1615 pre-commit still FAIL. No new merges.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019eee8f4139761ba3502241/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-21 17:00 IDT",
     actions: 0,
     findings: 3,
