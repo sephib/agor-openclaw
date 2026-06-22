@@ -857,4 +857,13 @@ export const HEARTBEAT_RUNS = [
     summary: "PR #1602 NOW FULLY GREEN (e2e-smoke SKIPPING — pending run completed, not required for this PR). PR #1606 pre-commit fixed but e2e-smoke+e2e-tests now FAIL. PR #1604 GH Actions CI still not running 3h+ post-un-draft. No new merges. JN-5673 stale (4+ days).",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019eeb5720c47122a9ec45b6/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-22 09:02 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "PR #1588 (JN-5546) NOW FULLY GREEN — pre-commit fixed overnight (was 90h+ stalled); needs reviewer + JN-5546 Jira update to 'In Review'. PR #1604 GH Actions CI still not triggered 15.5h after un-draft. PR #1602 green 12h+ no reviewer. PR #1606 e2e persisting. 13h overnight gap detected.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019eedea20917942b73ca215a8b3c32e/",
+  },
 ];
