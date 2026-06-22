@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-22 21:30 IDT";
+export const LAST_UPDATED = "2026-06-23 00:00 IDT";
 
 export const WORKTREES = [
   {
@@ -11,12 +11,12 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1604 OPEN",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1604",
-    status: "🎉🎉 ALL CI GREEN + APPROVED — READY TO MERGE NOW! (14th flag). Run 27959917357: ALL checks ✅. This has been flagged every heartbeat since 18:00 IDT. Merge this PR!",
+    status: "🎉🎉 ALL CI GREEN + APPROVED — READY TO MERGE NOW! (15th flag). Run 27959917357: ALL checks ✅. Merge this PR!",
     blockedOn: null,
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019edb7fb4c770d78fc7a47d/",
     sessionLabel: "rebase session",
-    lastActive: "2026-06-22 21:30 IDT (ALL CI GREEN — 14th flag, still not merged)",
+    lastActive: "2026-06-23 00:00 IDT (ALL CI GREEN — 15th flag, still not merged)",
   },
   {
     ticket: "JN-5677",
@@ -28,8 +28,8 @@ export const WORKTREES = [
     zone: "Revise",
     pr: "#1615 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1615",
-    status: "🔴 TRIPLE: DRAFT + CONFLICTING + pre-commit FAIL (CI run 27934981657). Blocked on JN-5676 (#1604) merging first. Fix pre-commit and conflict even while still draft.",
-    blockedOn: "DRAFT + merge conflict + pre-commit FAIL + blocked on #1604",
+    status: "🔴 DRAFT + CONFLICTING. Blocked on JN-5676 (#1604) merging first. Resolve conflict after #1604 merges.",
+    blockedOn: "DRAFT + merge conflict + blocked on #1604",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019eeaf04583757a89f47a99/",
     sessionLabel: "revise session",
@@ -44,7 +44,7 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1588",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1588",
-    status: "🔴 pre-commit FAIL (run 27933817996) — re-flagged (was dropped from board state earlier). MERGEABLE but CI failing. Fix pre-commit, then assign reviewer. Jira should be 'In Review'.",
+    status: "🔴 pre-commit FAIL (run 27933817996). MERGEABLE but CI failing. Fix pre-commit, then assign reviewer. Jira should be 'In Review'.",
     blockedOn: "pre-commit FAIL (CI run 27933817996)",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ed01e5624752fbade0eab/",
@@ -227,34 +227,26 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "green",
-    message: "🎉🎉 PR #1604 (JN-5676, Publish zone): ALL CI GREEN + APPROVED — READY TO MERGE NOW! (14th flag). Run 27959917357: every check ✅. Merge immediately.",
+    message: "🎉🎉 PR #1604 (JN-5676, Publish zone): ALL CI GREEN + APPROVED — READY TO MERGE NOW! (15th flag). Run 27959917357: every check ✅. Merge immediately.",
   },
   {
     level: "yellow",
-    message: "🟡 PR #1606 (JN-5725, off-board): CI run 27974611583 — e2e-api ✅, integration ✅, tox ✅, pre-commit ✅, nox ✅, atlas-validate ✅. e2e-smoke IN PROGRESS (running since 21:26 IDT). 2 new commits: Lua filter to scope Fluent Bit to daemon pod (21:13+21:21 IDT). If e2e-smoke passes → needs reviewer.",
+    message: "🟡 PR #1606 (JN-5725, off-board): CI run 27980646274 — e2e-api ✅, integration ✅, tox ✅, pre-commit ✅, nox ✅, atlas-validate ✅. e2e-smoke PENDING. 3 new commits after 21:30 heartbeat: fix Fluent Bit Path (21:34), S3 region auto (23:04), GCS region us-central1 (23:06 IDT). Jira Done but PR open. If e2e-smoke passes → needs reviewer.",
   },
   {
     level: "red",
-    message: "🔴 PR #1588 (JN-5546, Code Review zone): pre-commit FAIL re-flagged — CI run 27933817996 shows pre-commit failure. Fix pre-commit, then assign reviewer.",
+    message: "🔴 PR #1588 (JN-5546, Code Review zone): pre-commit FAIL — CI run 27933817996. Fix pre-commit, then assign reviewer. Update Jira to 'In Review'.",
   },
   {
     level: "red",
-    message: "🔴 jn-5724-lychee-precommit-flaky: filesystem FAILED (git lock). Two worktrees now affected (also internal-cr-system). Fix: rm .git/config.lock in worktree shared git dir.",
+    message: "🔴 jn-5724-lychee-precommit-flaky + internal-cr-system: filesystem FAILED (git lock). Fix: rm .git/config.lock in worktree shared git dir.",
   },
   {
     level: "red",
-    message: "⚠️ PR #1615 (JN-5677): TRIPLE — DRAFT + CONFLICTING + pre-commit FAIL (run 27934981657). Blocked on #1604 merging. Fix conflict + pre-commit even while draft.",
+    message: "⚠️ PR #1615 (JN-5677): DRAFT + CONFLICTING. Blocked on #1604 merging. Resolve conflict after #1604 merges.",
   },
   {
     level: "yellow",
-    message: "⚠️ Jira stale: JN-5673 (In Review, PR #1595 MERGED Jun 17 — 5+ days, should be Done); JN-5546 (In Progress, should be 'In Review' — also needs pre-commit fix); JN-5725 (Done but PR #1606 open with CI pending).",
-  },
-  {
-    level: "yellow",
-    message: "⚠️ model-packaging-cr (Code Review zone): 8+ days inactive, no PR. Confirm with Joseph whether to archive.",
-  },
-  {
-    level: "red",
-    message: "internal-cr-system: filesystem FAILED (git lock) — cannot start new sessions",
+    message: "⚠️ Jira stale: JN-5673 (In Review, PR #1595 MERGED Jun 17 — 6+ days, should be Done); JN-5546 (In Progress, should be 'In Review'); JN-5725 (Done but PR #1606 open).",
   },
 ];

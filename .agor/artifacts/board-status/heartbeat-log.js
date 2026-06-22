@@ -1109,4 +1109,13 @@ export const HEARTBEAT_RUNS = [
     summary: "🟡 PR #1606 CI run 27974611583 — 2 MORE commits (Lua filter to scope Fluent Bit to daemon pod, 21:13+21:21 IDT). NEARLY ALL GREEN: e2e-api ✅ integration ✅ tox ✅ pre-commit ✅ nox ✅ atlas-validate ✅; e2e-smoke IN PROGRESS (running 21:26 IDT). PR #1604 still not merged (14th flag, ALL CI GREEN + APPROVED). All else unchanged.",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019ef098dc0e7413ae80c545/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-23 00:00 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "PR #1606: 3 more commits after prev heartbeat (fix Fluent Bit Path 21:34, S3 region 23:04, GCS region 23:06 IDT) — new CI run 27980646274, all ✅ except e2e-smoke PENDING. PR #1604 still not merged (15th flag). model-packaging-cr removed from tracking (not on this board). All else static.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019ef122-2afe-7cb9-a959-b6c671c81212/",
+  },
 ];
