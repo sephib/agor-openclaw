@@ -31,6 +31,15 @@ export const HEARTBEAT_RUNS = [
   },
   {
     type: "advance",
+    timestamp: "2026-06-22 15:00 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "🎉 PR #1602 MERGED 14:34 IDT. 🔴 PR #1606 e2e-api NEW FAIL (run 27950494952, triggered by #1602 merge) — regression. JN-5725 Done in Jira but PR open. #1604 unchanged all-green, needs reviewer.",
+    sessionUrl: "http://localhost:3030/ui/s/019eef3411017c848ce983c4d89d9d6d/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-22 11:30 IDT",
     actions: 0,
     findings: 5,

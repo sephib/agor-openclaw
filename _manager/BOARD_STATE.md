@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-22 14:30 IDT (advance heartbeat)*
+*Last updated: 2026-06-22 15:00 IDT (advance heartbeat)*
 
 ---
 
@@ -40,21 +40,21 @@
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
 | [#1605](https://github.com/Jounce-IO/jounce/pull/1605) | auto-apply-labels | [JN-5730](https://jounce.atlassian.net/browse/JN-5730) | — | **MERGED Jun 21** | 🎉 MERGED — off-board, no archive needed |
-| [#1602](https://github.com/Jounce-IO/jounce/pull/1602) | persist-monotonicity-test | JN-5685/JN-5679 | 🟡 **NEW run 27949244396** (triggered by Uri's main merge at 11:25 IDT Jun 22): integration PENDING, pre-commit PENDING; others pass/skip | OPEN, MERGEABLE, reviewDecision="" | 🟡 **New CI run in progress** — was ALL GREEN; waiting for integration + pre-commit to pass |
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | 🟡 **Run 27948135971**: pre-commit ✅, integration ✅, e2e-api ✅, tox ✅, nox ✅; **e2e-smoke PENDING** | OPEN, **MERGEABLE**, REVIEW_REQUIRED | 🟡 All checks pass except e2e-smoke still pending |
+| [#1602](https://github.com/Jounce-IO/jounce/pull/1602) | persist-monotonicity-test | JN-5685/JN-5679 | ✅ ALL GREEN | **MERGED 14:34 IDT Jun 22** | 🎉 MERGED — JN-5685 Done, JN-5679 Done |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | 🔴 **Run 27950494952** (created 14:50 IDT, triggered by #1602 merge): e2e-api ❌ FAIL, e2e-tests ❌ FAIL; pre-commit ✅, integration ✅, tox ✅, nox ✅; e2e-smoke SKIPPED | OPEN, **MERGEABLE**, REVIEW_REQUIRED | 🔴 **NEW e2e-api FAIL** — regression triggered by #1602 merge; JN-5725 shows Done in Jira but PR still OPEN |
 
 ---
 
-## Key Changes Since Last Run (Jun 22 14:03 IDT)
+## Key Changes Since Last Run (Jun 22 14:30 IDT)
 
 | What observed | Status |
 |---|---|
-| **🎉 PR #1604 NOW ALL GREEN** | e2e-smoke PASSED (run 27947074357, job 82695327278, 10m42s). All checks green. MERGEABLE, reviewDecision="". **Assign reviewer NOW.** Was "e2e-smoke PENDING" at last run. |
-| **PR #1602 NEW CI RUN** | URI Shaket merged main into branch at 11:25 IDT Jun 22. New run 27949244396: integration PENDING, pre-commit PENDING. Was ALL GREEN (run 27937907242). |
-| **PR #1606 e2e-smoke still PENDING** | New run 27948135971 (vs 27946929591 last run). Same status — all other checks pass. |
+| **🎉 PR #1602 MERGED** | Merged 14:34 IDT Jun 22 (11:34Z) by approval — REVIEW_REQUIRED → APPROVED → MERGED. JN-5685 Done ✅, JN-5679 Done ✅. Off-board PR, no worktree to archive. |
+| **🔴 PR #1606 e2e-api FAIL** | New CI run 27950494952 created 14:50 IDT Jun 22 (triggered by #1602 merge into main). e2e-api ❌ FAIL, e2e-tests ❌ FAIL. Was "e2e-smoke PENDING" in prior run 27948135971. Regression introduced by #1602. |
+| **⚠️ JN-5725 Done in Jira but PR #1606 open** | Jira ticket marked Done, but PR #1606 is still open with CI failures. New mismatch. |
+| **↔ PR #1604 all green** | Unchanged — still ALL GREEN (run 27947074357). MERGEABLE. No reviewer assigned yet. |
 | **↔ PR #1615 triple problem** | Unchanged — DRAFT + CONFLICTING + pre-commit FAIL. |
-| **↔ PR #1588 branch CI pre-commit** | Unchanged — stale run 27933817996 FAIL; PR MERGEABLE. |
-| **No new merges** | Step 1 sweep confirmed: no PRs merged since Jun 21. |
+| **↔ PR #1588 branch CI pre-commit** | Unchanged — stale run 27933817996 FAIL; PR MERGEABLE (UNKNOWN in API, but MERGEABLE confirmed at 14:30 scan). |
 
 ---
 
@@ -72,23 +72,23 @@ This was CONFLICTING + no CI for 21.5h, then conflict resolved at ~14:03 IDT, an
 
 ---
 
-### 🟡 PR #1602 (JN-5685/JN-5679) — New CI run, monitor before assigning reviewer
+### 🎉 PR #1602 (JN-5685/JN-5679) — MERGED 14:34 IDT Jun 22
 
-PR [#1602](https://github.com/Jounce-IO/jounce/pull/1602) — "feat(jbenchmark): add monotonicity verdict persistence tables and ingestion"
-
-New CI run 27949244396 triggered by Uri Shaket merging main into branch (11:25 IDT Jun 22). Integration + pre-commit PENDING. Was ALL GREEN (EXIT:0, run 27937907242). ~28h+ without reviewer.
-
-**Required action:** Wait for new CI run to complete, then assign reviewer.
+PR [#1602](https://github.com/Jounce-IO/jounce/pull/1602) — MERGED. JN-5685 Done ✅, JN-5679 Done ✅. Off-board PR, no worktree to archive.
 
 ---
 
-### 🟡 PR #1606 (JN-5725) — e2e-smoke pending, REVIEW_REQUIRED
+### 🔴 PR #1606 (JN-5725) — NEW e2e-api FAIL (regression from #1602 merge)
 
 PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606) — "feat(vllm-analyzer): integrate log analyzer into experiment-workflow (JN-5725)"
 
-Run 27948135971: pre-commit ✅, integration ✅, e2e-api ✅, tox ✅, nox ✅; e2e-smoke PENDING. REVIEW_REQUIRED.
+New CI run 27950494952 (created 14:50 IDT Jun 22): **e2e-api ❌ FAIL, e2e-tests ❌ FAIL**. Triggered by merge of main after #1602 landed. Previous run 27948135971 had e2e-api PASS.
 
-**Monitor:** Wait for e2e-smoke. Ready for review once it clears.
+JN-5725 is "Done" in Jira, but PR is still OPEN with CI failures. Investigate whether:
+1. PR needs to be updated to fix e2e-api regression, OR
+2. Jira was prematurely closed
+
+**Required action:** Joseph to investigate e2e-api failure and decide whether to fix or close/revert PR #1606.
 
 ---
 
@@ -114,12 +114,13 @@ Git lock error — unchanged since Jun 18.
 
 ---
 
-### ⚠️ Jira mismatches (2 items)
+### ⚠️ Jira mismatches (3 items)
 
 | Ticket | Jira Status | PR | Merged/State | Notes |
 |--------|-------------|-----|--------|-----------|
 | [JN-5673](https://jounce.atlassian.net/browse/JN-5673) | In Review | [#1595](https://github.com/Jounce-IO/jounce/pull/1595) | Merged Jun 17 | 5+ days stale — should be Done |
 | [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | OPEN, MERGEABLE | Should be "In Review" (open PR) |
+| [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | **Done** | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | OPEN, e2e-api FAIL | Ticket Done but PR still open with CI failures — investigate |
 
 ---
 
@@ -140,6 +141,7 @@ Git lock error — unchanged since Jun 18.
 
 | Ticket | PR | Merged |
 |--------|----|--------|
+| [JN-5685](https://jounce.atlassian.net/browse/JN-5685)/[JN-5679](https://jounce.atlassian.net/browse/JN-5679) | [#1602](https://github.com/Jounce-IO/jounce/pull/1602) | Jun 22 14:34 IDT ✅ |
 | [JN-5675](https://jounce.atlassian.net/browse/JN-5675) | [#1601](https://github.com/Jounce-IO/jounce/pull/1601) | Jun 21 16:15 IDT ✅ |
 | [JN-5730](https://jounce.atlassian.net/browse/JN-5730) | [#1605](https://github.com/Jounce-IO/jounce/pull/1605) | Jun 21 10:50 IDT ✅ |
 | [JN-5729](https://jounce.atlassian.net/browse/JN-5729) | [#1608](https://github.com/Jounce-IO/jounce/pull/1608) | Jun 21 09:37 IDT ✅ |

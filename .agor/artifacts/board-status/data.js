@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-22 14:30 IDT";
+export const LAST_UPDATED = "2026-06-22 15:00 IDT";
 
 export const WORKTREES = [
   {
@@ -119,6 +119,15 @@ export const WORKTREES = [
 
 export const MERGED = [
   {
+    ticket: "JN-5685/JN-5679",
+    ticketUrl: "https://jounce.atlassian.net/browse/JN-5685",
+    title: "Monotonicity verdict persistence tables and ingestion",
+    pr: "#1602",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1602",
+    mergedDate: "2026-06-22",
+    note: "Merged 14:34 IDT Jun 22 — off-board PR by Uri Shaket",
+  },
+  {
     ticket: "JN-5675",
     ticketUrl: "https://jounce.atlassian.net/browse/JN-5675",
     title: "Historical visibility functions",
@@ -189,12 +198,12 @@ export const ALERTS = [
     message: "🎉 PR #1604 (JN-5676, Publish zone): ALL GREEN — e2e-smoke PASSED (run 27947074357). MERGEABLE. Assign reviewer NOW.",
   },
   {
-    level: "yellow",
-    message: "🟡 PR #1602 (JN-5685/JN-5679, off-board): New CI run 27949244396 triggered by Uri's main merge (11:25 IDT Jun 22). Integration + pre-commit PENDING. Was ALL GREEN. Monitor before assigning reviewer.",
+    level: "red",
+    message: "🔴 PR #1606 (JN-5725, off-board): NEW e2e-api FAIL in run 27950494952 (created 14:50 IDT, triggered by #1602 merge). Was PASSING in prior run. Investigate regression. JN-5725 marked Done in Jira but PR still open.",
   },
   {
-    level: "yellow",
-    message: "🟡 PR #1606 (JN-5725, off-board): Run 27948135971 — all pass except e2e-smoke PENDING. REVIEW_REQUIRED.",
+    level: "green",
+    message: "🎉 PR #1602 (JN-5685/JN-5679, off-board): MERGED 14:34 IDT Jun 22. Both Jira tickets Done ✅.",
   },
   {
     level: "yellow",
@@ -206,7 +215,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⚠️ Jira stale: JN-5673 (In Review, PR #1595 MERGED Jun 17 — 5+ days should be Done); JN-5546 (In Progress, should be 'In Review').",
+    message: "⚠️ Jira stale: JN-5673 (In Review, PR #1595 MERGED Jun 17 — 5+ days should be Done); JN-5546 (In Progress, should be 'In Review'); JN-5725 (Done but PR #1606 still open with CI failures).",
   },
   {
     level: "red",

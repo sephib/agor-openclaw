@@ -4,6 +4,18 @@
 
 ---
 
+## 15:00 IDT — Weekday Daytime Advance Heartbeat (Jun 22)
+
+- PRs checked: #1604 (ALL GREEN unchanged, run 27947074357; still no reviewer), #1615 (DRAFT+CONFLICTING+pre-commit FAIL — unchanged), #1588 (MERGEABLE, stale CI run 27933817996 — unchanged), #1596 (DRAFT CONFLICTING — unchanged), #1602 (off-board, **🎉 MERGED 14:34 IDT Jun 22** — JN-5685 Done, JN-5679 Done), #1606 (off-board, **🔴 NEW e2e-api FAIL** in run 27950494952 created 14:50 IDT, triggered by #1602 merge)
+- Merges detected: **PR #1602 MERGED** at 14:34 IDT Jun 22 (caught in Step 3 — off-board PR, no worktree to archive)
+- CI changes: **#1606 regression** — new run 27950494952 shows e2e-api FAIL (was passing in run 27948135971); likely caused by incompatibility with code from #1602 merge; also JN-5725 shows Done in Jira but #1606 still open
+- Jira: JN-5685 Done ✅, JN-5679 Done ✅ (consistent with #1602 merge); JN-5725 Done but PR #1606 still open (new mismatch); JN-5673 still "In Review" (PR merged Jun 17); JN-5546 still "In Progress"
+- Autonomous actions: 0 (off-board PR, nothing to archive)
+- Findings: 6 items (#1604 needs reviewer, #1606 new e2e-api FAIL regression, JN-5725 Jira mismatch, #1615 triple blocked, #1588 reviewer needed, JN-5673 stale)
+- Next: Investigate #1606 e2e-api failure — was it caused by #1602 landing? Is PR still needed or should it be closed? Assign reviewer to #1604 NOW; fix #1615; assign reviewer to #1588
+
+---
+
 ## 14:30 IDT — Weekday Daytime Advance Heartbeat (Jun 22)
 
 - PRs checked: #1604 (**🎉 ALL GREEN** — e2e-smoke PASSED run 27947074357, 10m42s; MERGEABLE, no reviewer), #1615 (DRAFT, CONFLICTING, pre-commit FAIL — unchanged), #1588 (MERGEABLE; stale branch CI run 27933817996 still showing FAIL), #1596 (DRAFT, CONFLICTING — unchanged), #1602 (off-board, **NEW RUN 27949244396** — Uri Shaket merged main at 11:25 IDT; integration + pre-commit PENDING), #1606 (off-board, **run 27948135971**: all pass except e2e-smoke PENDING)
