@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-22 17:30 IDT";
+export const LAST_UPDATED = "2026-06-22 18:00 IDT";
 
 export const WORKTREES = [
   {
@@ -11,12 +11,12 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1604 OPEN",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1604",
-    status: "🎉 APPROVED ✅ — run 27959917357: all checks pass except e2e-smoke ⏳ PENDING. Once smoke passes → READY TO MERGE.",
+    status: "🎉🎉 ALL CI GREEN + APPROVED — READY TO MERGE NOW! Run 27959917357: ALL checks ✅ (e2e-smoke PASSED 18:00 IDT). Merge this PR!",
     blockedOn: null,
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019edb7fb4c770d78fc7a47d/",
     sessionLabel: "rebase session",
-    lastActive: "2026-06-22 14:30 IDT (e2e-smoke passed prev run)",
+    lastActive: "2026-06-22 18:00 IDT (e2e-smoke PASSED — ALL GREEN)",
   },
   {
     ticket: "JN-5677",
@@ -227,11 +227,11 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "green",
-    message: "🎉 PR #1604 (JN-5676, Publish zone): APPROVED ✅ — run 27959917357 all checks pass except e2e-smoke ⏳ PENDING. Once smoke passes → READY TO MERGE.",
+    message: "🎉🎉 PR #1604 (JN-5676, Publish zone): ALL CI GREEN + APPROVED — READY TO MERGE NOW! Run 27959917357: e2e-smoke ✅ PASSED (18:00 IDT). Every check green. Merge immediately.",
   },
   {
     level: "yellow",
-    message: "🟡 PR #1606 (JN-5725, off-board): CI run 27958974262 — nearly all green (pre-commit ✅, tox ✅, integration ✅, e2e-api ✅, nox ✅) — only e2e-smoke ⏳ PENDING. MERGEABLE. REVIEW_REQUIRED. JN-5725 Done in Jira.",
+    message: "🟡 PR #1606 (JN-5725, off-board): NEW CI run 27967430673 — all checks ✅ — only e2e-smoke ⏳ PENDING. MERGEABLE. REVIEW_REQUIRED. JN-5725 Done in Jira.",
   },
   {
     level: "green",

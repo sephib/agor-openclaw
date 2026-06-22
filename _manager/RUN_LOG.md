@@ -4,6 +4,17 @@
 
 ---
 
+## 18:00 IDT — Weekday Daytime Advance Heartbeat (Jun 22)
+
+- PRs checked: #1604 (**ALL CI GREEN** ✅ — e2e-smoke PASSED run 27959917357 — APPROVED + MERGEABLE → **MERGE NOW**), #1606 (new CI run **27967430673** — all ✅, e2e-smoke ⏳ PENDING; supersedes 27958974262), #1615 (DRAFT+CONFLICTING+pre-commit FAIL — unchanged), #1588 (MERGEABLE, no reviewer — unchanged), #1596 (DRAFT CONFLICTING — unchanged)
+- Merges detected: none since 17:30 IDT
+- CI changes: **#1604 e2e-smoke PASSED** — run 27959917357 fully complete, ALL checks green. **#1606 new CI run 27967430673** triggered since last heartbeat — all checks passing, only e2e-smoke pending.
+- Autonomous actions: 0 (no MERGED/CLOSED PRs)
+- Findings: 6 items (#1604 READY TO MERGE, #1606 e2e-smoke pending on new run, #1615 triple blocked, #1588 reviewer needed, JN-5673 stale Jira, model-packaging-cr stale)
+- Next: **MERGE #1604 now** — ALL GREEN + APPROVED; when e2e-smoke passes for #1606 → assign reviewer; assign reviewer to #1588; update JN-5546 → In Review; fix #1615 (unblocked once #1604 merges)
+
+---
+
 ## 17:30 IDT — Weekday Daytime Advance Heartbeat (Jun 22)
 
 - PRs checked: #1604 (**APPROVED** ✅ reviewDecision changed from "" → APPROVED; new CI run 27959917357 all pass except e2e-smoke PENDING), #1606 (run 27958974262, nearly all green — only e2e-smoke pending; supersedes 27958172294), #1615 (DRAFT+CONFLICTING+pre-commit FAIL — unchanged), #1588 (MERGEABLE, no reviewer — unchanged), #1596 (DRAFT CONFLICTING — unchanged)

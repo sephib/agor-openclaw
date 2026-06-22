@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-22 17:30 IDT (advance heartbeat)*
+*Last updated: 2026-06-22 18:00 IDT (advance heartbeat)*
 
 ---
 
@@ -8,7 +8,7 @@
 
 | Branch | Jira | Zone | Jira Status | PR | CI | Review | Flags |
 |--------|------|------|-------------|-----|-----|--------|-------|
-| jn-5676-notebook-scaffold | [JN-5676](https://jounce.atlassian.net/browse/JN-5676) | Publish | In Review | [#1604](https://github.com/Jounce-IO/jounce/pull/1604) **OPEN** | ✅ **MOSTLY GREEN** (run 27959917357: pre-commit ✅, integration ✅, e2e-api ✅, tox ✅, nox ✅, integration-tests ✅, pre-commit-run ✅ — e2e-smoke ⏳ PENDING) | **APPROVED** ✅ | 🎉 **APPROVED — waiting on e2e-smoke only. Can merge when smoke passes.** |
+| jn-5676-notebook-scaffold | [JN-5676](https://jounce.atlassian.net/browse/JN-5676) | Publish | In Review | [#1604](https://github.com/Jounce-IO/jounce/pull/1604) **OPEN** | ✅ **ALL GREEN** (run 27959917357: ALL checks pass — e2e-smoke ✅ PASSED 18:00 IDT!) | **APPROVED** ✅ | 🎉🎉 **READY TO MERGE — ALL CI GREEN + APPROVED. Merge now!** |
 | jn-5677-dev-historical-mode-notebook-cells | [JN-5677](https://jounce.atlassian.net/browse/JN-5677) | Revise | In Review | [#1615](https://github.com/Jounce-IO/jounce/pull/1615) **DRAFT** OPEN | ❌ **pre-commit FAIL** (CI run 27934981657, created 09:52 IDT Jun 22) | REVIEW_REQUIRED | 🔴 **TRIPLE: DRAFT + CONFLICTING + pre-commit FAIL** — blocked on #1604 merging first |
 | jn-5546-docs-document-module-layout-convention-and-3 | [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | Code Review | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | 🟡 PR checks run 27933817996 shows pre-commit FAIL (stale branch CI run); MERGEABLE | reviewDecision="" | 🟡 **Needs reviewer** — MERGEABLE; Jira should be "In Review" |
 | jn-5724-lychee-precommit-flaky | [JN-5724](https://jounce.atlassian.net/browse/JN-5724) | Ingest | In Progress | — | — | — | ℹ️ **NEW** — Ingest zone; JN-5724 "In Progress"; no sessions yet |
@@ -44,17 +44,16 @@
 |----|--------|------|----|-------|-------|
 | [#1605](https://github.com/Jounce-IO/jounce/pull/1605) | auto-apply-labels | [JN-5730](https://jounce.atlassian.net/browse/JN-5730) | — | **MERGED Jun 21** | 🎉 MERGED — off-board, no archive needed |
 | [#1602](https://github.com/Jounce-IO/jounce/pull/1602) | persist-monotonicity-test | JN-5685/JN-5679 | ✅ ALL GREEN | **MERGED 14:34 IDT Jun 22** | 🎉 MERGED — JN-5685 Done, JN-5679 Done |
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | 🟡 **run 27958974262** (atlas-validate ✅, e2e-api ✅, check-changes ✅, CodeRabbit ✅, JIRA Association ✅, pre-commit ✅, tox ✅, integration ✅, nox ✅ — e2e-smoke ⏳ PENDING) | OPEN, **MERGEABLE**, REVIEW_REQUIRED | 🟡 **Nearly all green — only e2e-smoke pending.** JN-5725 Done in Jira. |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | 🟡 **run 27967430673** (all pass — e2e-smoke ⏳ PENDING) | OPEN, **MERGEABLE**, REVIEW_REQUIRED | 🟡 **New CI run 27967430673 — all green except e2e-smoke still pending.** JN-5725 Done in Jira. |
 
 ---
 
-## Key Changes Since Last Run (Jun 22 17:00 IDT)
+## Key Changes Since Last Run (Jun 22 17:30 IDT)
 
 | What observed | Status |
 |---|---|
-| **🎉 PR #1604 reviewDecision: APPROVED** | Reviewer approved! Was "" for 10+ consecutive heartbeats. New CI run 27959917357 (all pass except e2e-smoke PENDING). Once smoke passes → can merge. |
-| **🟡 PR #1606 CI run 27958974262 (supersedes 27958172294)** | New run from ~17:00 IDT. Almost all green: pre-commit ✅, tox ✅, integration ✅, e2e-api ✅, nox ✅ — e2e-smoke still ⏳ PENDING. Getting very close. |
-| **ℹ️ Two new Ingest worktrees** | jn-5724-lychee-precommit-flaky and jn-5616-replace-find-project-root appeared in Ingest zone. Both Jira tickets "In Progress". |
+| **🎉🎉 PR #1604 e2e-smoke PASSED — ALL CI GREEN!** | Run 27959917357: ALL checks pass. APPROVED + MERGEABLE. **READY TO MERGE NOW.** |
+| **🟡 PR #1606 NEW CI run 27967430673** | New run from ~18:00 IDT (supersedes 27958974262). All checks passing — only e2e-smoke still ⏳ PENDING. |
 | **↔ PR #1615 triple problem** | Unchanged — DRAFT + CONFLICTING + pre-commit FAIL. |
 | **↔ PR #1588 needs reviewer** | Unchanged — MERGEABLE, no reviewer, Jira still "In Progress". |
 | **↔ Jira mismatches** | Unchanged — JN-5673 "In Review" (merged Jun 17), JN-5546 "In Progress" (should be "In Review"), JN-5725 "Done" (PR still open, CI nearly done). |
@@ -63,21 +62,21 @@
 
 ## Attention Items
 
-### 🎉 PR #1604 (JN-5676) — APPROVED — waiting on e2e-smoke only
+### 🎉🎉 PR #1604 (JN-5676) — ALL GREEN — READY TO MERGE NOW
 
 PR [#1604](https://github.com/Jounce-IO/jounce/pull/1604) — "feat(jbenchmark): notebook scaffold + operational mode (JN-5676)"
 
-**reviewDecision: APPROVED** (changed this run from ""). New CI run 27959917357: all checks pass except e2e-smoke still PENDING. Once e2e-smoke passes → READY TO MERGE.
+**ALL CI CHECKS PASSED** (run 27959917357): pre-commit ✅, integration ✅, e2e-api ✅, tox ✅, nox ✅, integration-tests ✅, e2e-smoke ✅, e2e-tests ✅, atlas-validate ✅. APPROVED. MERGEABLE.
 
-**Required action:** Monitor e2e-smoke result for run 27959917357. When smoke passes → merge.
+**Required action: MERGE THIS PR.** Everything is green. No blockers.
 
 ---
 
-### 🟡 PR #1606 (JN-5725) — Nearly all green, e2e-smoke pending
+### 🟡 PR #1606 (JN-5725) — New CI run, e2e-smoke still pending
 
 PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606) — "feat(vllm-analyzer): integrate log analyzer into experiment-workflow (JN-5725)"
 
-CI run **27958974262**: pre-commit ✅, tox ✅, integration ✅, e2e-api ✅, nox ✅ — e2e-smoke ⏳ PENDING. MERGEABLE. REVIEW_REQUIRED. JN-5725 Done in Jira.
+**NEW** CI run **27967430673** (started ~18:00 IDT, supersedes 27958974262): pre-commit ✅, tox ✅, integration ✅, e2e-api ✅, nox ✅, atlas-validate ✅, integration-tests ✅, check-changes ✅, pre-commit (post) ✅ — e2e-smoke ⏳ PENDING. MERGEABLE. REVIEW_REQUIRED. JN-5725 Done in Jira.
 
 **Required action:** Wait for e2e-smoke. If passes → assign reviewer.
 
