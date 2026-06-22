@@ -1091,4 +1091,13 @@ export const HEARTBEAT_RUNS = [
     summary: "PR #1606 new run 27970971622 still failing (e2e-api ❌ + e2e-tests ❌ — 2nd consecutive failing run). PR #1604 still not merged (12th flag, ALL GREEN + APPROVED). PR #1588 pre-commit FAIL re-flagged (run 27933817996 — was incorrectly dropped from board state). No new merges. 2h gap since last heartbeat.",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019ef061ed1b7258a087f76c/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-22 21:00 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "🟡 PR #1606 NEW CI run 27973178457 — 3 fresh commits (vllm-daemon Fluent Bit CRI parser fixes at 17:19+17:57 IDT). PENDING: e2e-api, integration, tox, pre-commit; atlas-validate ✅. Was 2 consecutive fails. PR #1604 still not merged (13th flag, ALL CI GREEN + APPROVED). #1588 pre-commit FAIL + #1615 TRIPLE blocked + git lock ×2 all unchanged. No new merges.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019ef07d64bb76e3a220a3df/",
+  },
 ];
