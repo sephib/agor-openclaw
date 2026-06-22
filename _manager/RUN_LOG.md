@@ -4,6 +4,18 @@
 
 ---
 
+## 14:03 IDT — Weekday Daytime Advance Heartbeat (Jun 22)
+
+- PRs checked: #1604 (**MAJOR CHANGE** — MERGEABLE + CI running run 27947074357: pre-commit ✅, integration ✅, e2e-api ✅, tox ✅, nox ✅; e2e-smoke PENDING; was CONFLICTING + no CI), #1615 (DRAFT, CONFLICTING, pre-commit FAIL — unchanged), #1588 (MERGEABLE; branch CI still shows run 27933817996 pre-commit FAIL), #1596 (DRAFT, CONFLICTING — unchanged), #1602 (off-board, ALL GREEN EXIT:0 — e2e-smoke SKIPPED, ~27h no reviewer), #1606 (off-board, **MAJOR CHANGE** — MERGEABLE + new CI run 27946929591: pre-commit ✅, integration ✅, e2e-api ✅; e2e-smoke PENDING; was CONFLICTING)
+- Merges detected: none since Jun 21
+- CI changes: **#1604** CONFLICT RESOLVED — CI now running (run 27947074357), was 21.5h+ with no CI; **#1602** e2e-smoke resolved to SKIPPED (was PENDING); **#1606** CONFLICT RESOLVED — new CI run 27946929591 with most checks PASS (was CONFLICTING + no CI)
+- Jira: JN-5673 still "In Review" (PR #1595 merged Jun 17, 5+ days stale — 9th+ consecutive flag); JN-5546 still "In Progress" (should be "In Review"); JN-5677 "In Review" (PR draft + failing — acceptable)
+- Autonomous actions: 0 (no new MERGED/CLOSED PRs to archive)
+- Findings: 8 items (PR #1604 e2e-smoke pending, PR #1602 reviewer needed 27h+, PR #1606 e2e-smoke pending, PR #1588 reviewer needed, PR #1615 triple blocked, internal-cr-system filesystem failed, JN-5673 stale, JN-5546 Jira mismatch)
+- Next: Monitor #1604 e2e-smoke (if passes → assign reviewer); assign reviewer to #1602 NOW; wait for #1606 e2e-smoke; assign reviewer to #1588; fix #1615 pre-commit + conflict; mark JN-5673 Done
+
+---
+
 ## 13:02 IDT — Weekday Daytime Advance Heartbeat (Jun 22)
 
 - PRs checked: #1604 (OPEN, CONFLICTING, CI still only CodeRabbit — GH Actions ~20h+ not triggered, unchanged), #1615 (DRAFT, CONFLICTING, pre-commit FAIL run 27934981657 — unchanged), #1588 (pre-commit FAIL run 27933817996 — 7th consecutive heartbeat), #1596 (DRAFT, CONFLICTING — BLOCKED, unchanged), #1602 (off-board, ALL GREEN run 27937907242 — ~25h no reviewer), #1606 (off-board, **NEW run 27944181800**: pre-commit ✅, tox ✅, integration ✅, e2e-api ✅, e2e-smoke PENDING)

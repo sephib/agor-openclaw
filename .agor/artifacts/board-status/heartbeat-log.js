@@ -947,4 +947,13 @@ export const HEARTBEAT_RUNS = [
     summary: "PR #1588 PR checks NOW ALL GREEN (run 27937907242) — upgraded from red to yellow, ready for reviewer. PR #1602 new CI run 27945336025 (e2e-smoke pending). PR #1606 same run, e2e-smoke pending. PR #1604 unchanged CONFLICTING + no CI (~21.5h). JN-5673 stale (In Review but MERGED Jun 17).",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019eeee1-a725-7b75-8f0c-983521789859/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-22 14:03 IDT",
+    actions: 0,
+    findings: 8,
+    status: "ok",
+    summary: "3 MAJOR IMPROVEMENTS: PR #1604 conflict RESOLVED — CI now running (run 27947074357), all checks pass, e2e-smoke PENDING; PR #1606 conflict RESOLVED — new CI run 27946929591, all checks pass, e2e-smoke PENDING; PR #1602 ALL GREEN (EXIT:0, e2e-smoke now SKIPPED). PR #1588 MERGEABLE needs reviewer. PR #1615 still TRIPLE blocked. No new merges.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019eeefd1ef775d48d70bc7f/",
+  },
 ];
