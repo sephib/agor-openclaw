@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-22 18:30 IDT";
+export const LAST_UPDATED = "2026-06-22 20:30 IDT";
 
 export const WORKTREES = [
   {
@@ -11,12 +11,12 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1604 OPEN",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1604",
-    status: "🎉🎉 ALL CI GREEN + APPROVED — READY TO MERGE NOW! (11th flag). Run 27959917357: ALL checks ✅. Merge this PR!",
+    status: "🎉🎉 ALL CI GREEN + APPROVED — READY TO MERGE NOW! (12th flag). Run 27959917357: ALL checks ✅. This has been flagged every heartbeat since 18:00 IDT. Merge this PR!",
     blockedOn: null,
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019edb7fb4c770d78fc7a47d/",
     sessionLabel: "rebase session",
-    lastActive: "2026-06-22 18:00 IDT (ALL CI GREEN — still not merged)",
+    lastActive: "2026-06-22 20:30 IDT (ALL CI GREEN — 12th flag, still not merged)",
   },
   {
     ticket: "JN-5677",
@@ -44,9 +44,9 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1588",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1588",
-    status: "🟡 MERGEABLE, reviewDecision=''. Assign reviewer. Jira should be 'In Review'.",
-    blockedOn: null,
-    blockedType: "running",
+    status: "🔴 pre-commit FAIL (run 27933817996) — re-flagged (was dropped from board state earlier today). MERGEABLE but CI failing. Fix pre-commit, then assign reviewer. Jira should be 'In Review'.",
+    blockedOn: "pre-commit FAIL (CI run 27933817996)",
+    blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ed01e5624752fbade0eab/",
     sessionLabel: "fix session",
     lastActive: "2026-06-17 10:14 IDT",
@@ -227,11 +227,15 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "green",
-    message: "🎉🎉 PR #1604 (JN-5676, Publish zone): ALL CI GREEN + APPROVED — READY TO MERGE NOW! (11th flag). Run 27959917357: every check ✅. Merge immediately.",
+    message: "🎉🎉 PR #1604 (JN-5676, Publish zone): ALL CI GREEN + APPROVED — READY TO MERGE NOW! (12th flag). Run 27959917357: every check ✅. Merge immediately.",
   },
   {
     level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): CI REGRESSED — new run 27968237684: e2e-api ❌ FAIL + e2e-tests ❌ FAIL (was passing in run 27967430673). Investigate before merging.",
+    message: "🔴 PR #1606 (JN-5725, off-board): CI STILL FAILING — run 27970971622: e2e-api ❌ FAIL + e2e-tests ❌ FAIL + e2e-smoke SKIPPING. 2nd consecutive failing run. Not flaky — real regression. Fix before merging.",
+  },
+  {
+    level: "red",
+    message: "🔴 PR #1588 (JN-5546, Code Review zone): pre-commit FAIL re-flagged — CI run 27933817996 shows pre-commit failure. Was incorrectly dropped from board state earlier. Fix pre-commit, then assign reviewer.",
   },
   {
     level: "red",
@@ -243,11 +247,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "🟡 PR #1588 (JN-5546, Code Review zone): MERGEABLE (reviewDecision=''). Assign reviewer + update Jira JN-5546 → In Review.",
-  },
-  {
-    level: "yellow",
-    message: "⚠️ Jira stale: JN-5673 (In Review, PR #1595 MERGED Jun 17 — 5+ days, should be Done); JN-5546 (In Progress, should be 'In Review'); JN-5725 (Done but PR #1606 open with CI failure).",
+    message: "⚠️ Jira stale: JN-5673 (In Review, PR #1595 MERGED Jun 17 — 5+ days, should be Done); JN-5546 (In Progress, should be 'In Review' — also needs pre-commit fix); JN-5725 (Done but PR #1606 open with CI failure).",
   },
   {
     level: "yellow",

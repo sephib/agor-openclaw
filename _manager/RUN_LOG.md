@@ -4,6 +4,17 @@
 
 ---
 
+## 20:30 IDT — Weekday Daytime Advance Heartbeat (Jun 22)
+
+- PRs checked: #1604 (**ALL CI GREEN + APPROVED** — run 27959917357 unchanged — **12th flag MERGE NOW**), #1606 (new run **27970971622**: e2e-api ❌ FAIL + e2e-tests ❌ FAIL + e2e-smoke SKIPPING — 2nd consecutive failing run, not flaky), #1615 (DRAFT+CONFLICTING+pre-commit FAIL — unchanged), #1588 (**pre-commit FAIL** run 27933817996 — re-flagged, was dropped from board state), #1596 (DRAFT CONFLICTING — unchanged)
+- Merges detected: none since 18:30 IDT
+- CI changes: **#1606 new CI run 27970971622** — same e2e-api + e2e-tests failures as run 27968237684. Two consecutive runs now failing. **#1588 pre-commit re-flagged** — CI run 27933817996 shows pre-commit FAIL, was incorrectly dropped from board state at some point during the day.
+- Autonomous actions: 0 (no MERGED/CLOSED PRs)
+- Findings: 6 items (#1604 12th MERGE flag, #1606 persistent e2e CI failure, #1588 pre-commit FAIL re-flagged, #1615 triple blocked, git-lock two worktrees, Jira stale JN-5673/JN-5546/JN-5725)
+- Next: **MERGE #1604 now** — 12th flag, 2+ hours since last heartbeat, still green; fix e2e-api in #1606; fix pre-commit in #1588; fix #1615 once #1604 merged
+
+---
+
 ## 18:00 IDT — Weekday Daytime Advance Heartbeat (Jun 22)
 
 - PRs checked: #1604 (**ALL CI GREEN** ✅ — e2e-smoke PASSED run 27959917357 — APPROVED + MERGEABLE → **MERGE NOW**), #1606 (new CI run **27967430673** — all ✅, e2e-smoke ⏳ PENDING; supersedes 27958974262), #1615 (DRAFT+CONFLICTING+pre-commit FAIL — unchanged), #1588 (MERGEABLE, no reviewer — unchanged), #1596 (DRAFT CONFLICTING — unchanged)

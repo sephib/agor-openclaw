@@ -1082,4 +1082,13 @@ export const HEARTBEAT_RUNS = [
     summary: "PR #1606 CI REGRESSED — new run 27968237684: e2e-api ❌ FAIL + e2e-tests ❌ FAIL (was passing in 27967430673). PR #1604 still not merged (11th flag, ALL GREEN + APPROVED). jn-5724 filesystem FAILED (git lock — now 2 affected worktrees). No new merges.",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019ef046-75d0-7753-ad74-c5099d2642af/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-22 20:30 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "PR #1606 new run 27970971622 still failing (e2e-api ❌ + e2e-tests ❌ — 2nd consecutive failing run). PR #1604 still not merged (12th flag, ALL GREEN + APPROVED). PR #1588 pre-commit FAIL re-flagged (run 27933817996 — was incorrectly dropped from board state). No new merges. 2h gap since last heartbeat.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019ef061ed1b7258a087f76c/",
+  },
 ];

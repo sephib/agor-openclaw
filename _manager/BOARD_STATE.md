@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-22 18:30 IDT (advance heartbeat)*
+*Last updated: 2026-06-22 20:30 IDT (advance heartbeat)*
 
 ---
 
@@ -8,9 +8,9 @@
 
 | Branch | Jira | Zone | Jira Status | PR | CI | Review | Flags |
 |--------|------|------|-------------|-----|-----|--------|-------|
-| jn-5676-notebook-scaffold | [JN-5676](https://jounce.atlassian.net/browse/JN-5676) | Publish | In Review | [#1604](https://github.com/Jounce-IO/jounce/pull/1604) **OPEN** | ✅ **ALL GREEN** (run 27959917357: ALL checks pass) | **APPROVED** ✅ | 🎉🎉 **READY TO MERGE — ALL CI GREEN + APPROVED. 11th flag. Merge now!** |
+| jn-5676-notebook-scaffold | [JN-5676](https://jounce.atlassian.net/browse/JN-5676) | Publish | In Review | [#1604](https://github.com/Jounce-IO/jounce/pull/1604) **OPEN** | ✅ **ALL GREEN** (run 27959917357: ALL checks pass) | **APPROVED** ✅ | 🎉🎉 **READY TO MERGE — ALL CI GREEN + APPROVED. 12th flag. Merge now!** |
 | jn-5677-dev-historical-mode-notebook-cells | [JN-5677](https://jounce.atlassian.net/browse/JN-5677) | Revise | In Review | [#1615](https://github.com/Jounce-IO/jounce/pull/1615) **DRAFT** OPEN | ❌ **pre-commit FAIL** (run 27934981657) | REVIEW_REQUIRED | 🔴 **TRIPLE: DRAFT + CONFLICTING + pre-commit FAIL** — blocked on #1604 merging first |
-| jn-5546-docs-document-module-layout-convention-and-3 | [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | Code Review | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | 🟡 MERGEABLE | reviewDecision="" | 🟡 **Needs reviewer** — MERGEABLE; Jira should be "In Review" |
+| jn-5546-docs-document-module-layout-convention-and-3 | [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | Code Review | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | ❌ **pre-commit FAIL** (run 27933817996) | reviewDecision="" | 🔴 **CI FAILING** — pre-commit FAIL (re-flagged: was dropped from board state but still failing); Jira should be "In Review" |
 | jn-5724-lychee-precommit-flaky | [JN-5724](https://jounce.atlassian.net/browse/JN-5724) | Ingest | In Progress | — | — | — | 🔴 **filesystem FAILED** (git lock — same error as internal-cr-system) |
 | jn-5616-replace-find-project-root | [JN-5616](https://jounce.atlassian.net/browse/JN-5616) | Ingest | In Progress | — | — | — | ℹ️ Ingest zone; ready; no sessions yet |
 | model-packaging-cr | — | Code Review | — | — | — | — | ⚠️ 8+ days inactive (last session Jun 15), no PR — likely stale |
@@ -44,43 +44,43 @@
 |----|--------|------|----|-------|-------|
 | [#1605](https://github.com/Jounce-IO/jounce/pull/1605) | auto-apply-labels | [JN-5730](https://jounce.atlassian.net/browse/JN-5730) | — | **MERGED Jun 21** | 🎉 MERGED — off-board, no archive needed |
 | [#1602](https://github.com/Jounce-IO/jounce/pull/1602) | persist-monotonicity-test | JN-5685/JN-5679 | ✅ ALL GREEN | **MERGED 14:34 IDT Jun 22** | 🎉 MERGED — JN-5685 Done, JN-5679 Done |
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | ❌ **e2e-api FAIL + e2e-tests FAIL** (run 27968237684) | OPEN, **MERGEABLE**, REVIEW_REQUIRED | 🔴 **CI REGRESSED** — new run 27968237684: e2e-api ❌ FAIL, e2e-tests ❌ FAIL (was passing in run 27967430673). Need investigation. |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | ❌ **e2e-api FAIL + e2e-tests FAIL** (run 27970971622) | OPEN, **MERGEABLE**, REVIEW_REQUIRED | 🔴 **CI STILL FAILING** — new run 27970971622: e2e-api ❌ FAIL, e2e-tests ❌ FAIL, e2e-smoke SKIPPING. Same pattern as run 27968237684. |
 
 ---
 
-## Key Changes Since Last Run (Jun 22 18:00 IDT)
+## Key Changes Since Last Run (Jun 22 18:30 IDT)
 
 | What observed | Status |
 |---|---|
-| **↔ PR #1604 still OPEN (11th flag)** | ALL CI GREEN + APPROVED + MERGEABLE — not yet merged. |
-| **🔴 PR #1606 CI REGRESSED** | New run 27968237684: e2e-api ❌ FAIL, e2e-tests ❌ FAIL. Previous run 27967430673 had e2e-api passing. Something broke. |
-| **🔴 jn-5724 filesystem FAILED** | Git lock error on worktree creation — same pattern as internal-cr-system. Two worktrees now have git lock issues. |
+| **↔ PR #1604 still OPEN (12th flag)** | ALL CI GREEN + APPROVED + MERGEABLE — still not merged. |
+| **🔴 PR #1606 CI new run 27970971622** | Still failing: e2e-api ❌ FAIL + e2e-tests ❌ FAIL + e2e-smoke SKIPPING. Same pattern as run 27968237684. No fix yet. |
+| **🔴 PR #1588 pre-commit FAIL re-flagged** | CI run 27933817996 shows pre-commit FAIL — this was noted in early morning heartbeats but dropped from board state. Still failing. |
 | **↔ PR #1615 triple problem** | Unchanged — DRAFT + CONFLICTING + pre-commit FAIL. |
-| **↔ PR #1588 needs reviewer** | Unchanged — MERGEABLE, no reviewer, Jira still "In Progress". |
+| **↔ jn-5724 + internal-cr-system** | Git lock errors — unchanged. |
 
 ---
 
 ## Attention Items
 
-### 🎉🎉 PR #1604 (JN-5676) — ALL GREEN — READY TO MERGE NOW (11th flag)
+### 🎉🎉 PR #1604 (JN-5676) — ALL GREEN — READY TO MERGE NOW (12th flag)
 
 PR [#1604](https://github.com/Jounce-IO/jounce/pull/1604) — "feat(jbenchmark): notebook scaffold + operational mode (JN-5676)"
 
 **ALL CI CHECKS PASSED** (run 27959917357): pre-commit ✅, integration ✅, e2e-api ✅, tox ✅, nox ✅, integration-tests ✅, e2e-smoke ✅, e2e-tests ✅, atlas-validate ✅. APPROVED. MERGEABLE.
 
-**Required action: MERGE THIS PR.** Everything is green. No blockers.
+**Required action: MERGE THIS PR.** Everything is green. No blockers. This is the 12th consecutive flag.
 
 ---
 
-### 🔴 PR #1606 (JN-5725) — CI REGRESSED — e2e-api + e2e-tests FAILING
+### 🔴 PR #1606 (JN-5725) — CI STILL FAILING — e2e-api + e2e-tests FAILING
 
 PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606) — "feat(vllm-analyzer): integrate log analyzer into experiment-workflow (JN-5725)"
 
-**CI REGRESSION** in new run **27968237684**: e2e-api ❌ FAIL, e2e-tests ❌ FAIL, e2e-smoke ⏭️ SKIPPING. Pre-commit ✅, tox ✅, integration ✅, nox ✅, atlas-validate ✅, integration-tests ✅.
+**CI STILL FAILING** in new run **27970971622**: e2e-api ❌ FAIL, e2e-tests ❌ FAIL, e2e-smoke ⏭️ SKIPPING. Pre-commit ✅, tox ✅, integration ✅, nox ✅, atlas-validate ✅, integration-tests ✅.
 
-Previous run 27967430673 had all checks passing (except e2e-smoke pending). The new run (27968237684) shows e2e failures — may be a flaky test or a rebase introduced a regression.
+Same failure pattern as runs 27968237684 and 27967430673 (which appeared passing but then regressed). Two consecutive runs now showing e2e failures — not flaky, appears to be a real regression.
 
-**Required action:** Investigate e2e-api failure in run 27968237684. Check if flaky or real regression. JN-5725 is "Done" in Jira but PR still open.
+**Required action:** Fix e2e-api regression in PR #1606. JN-5725 is "Done" in Jira but PR still open with CI failure.
 
 ---
 
@@ -104,13 +104,13 @@ PR [#1615](https://github.com/Jounce-IO/jounce/pull/1615): DRAFT, pre-commit FAI
 
 ---
 
-### 🟡 PR #1588 (JN-5546) — PR MERGEABLE, assign reviewer
+### 🔴 PR #1588 (JN-5546) — pre-commit FAIL + needs reviewer
 
 PR [#1588](https://github.com/Jounce-IO/jounce/pull/1588) — "docs(jbenchmark): add CONTRIBUTING.md and service READMEs (JN-5546)"
 
-MERGEABLE (reviewDecision=""). Assign reviewer.
+MERGEABLE (no conflicts, reviewDecision="") but **pre-commit CI FAILING** (run 27933817996). This failure was flagged in early-morning heartbeats (7th at 13:02 IDT) but was dropped from subsequent board state updates — re-flagged now.
 
-**Required action:** (1) Assign a reviewer. (2) Update Jira [JN-5546](https://jounce.atlassian.net/browse/JN-5546) from "In Progress" → "In Review".
+**Required action:** (1) Fix pre-commit failure in PR #1588. (2) Assign a reviewer. (3) Update Jira [JN-5546](https://jounce.atlassian.net/browse/JN-5546) from "In Progress" → "In Review".
 
 ---
 
@@ -133,8 +133,8 @@ Two worktrees have git lock errors. The underlying `.git/config.lock` file likel
 | Ticket | Jira Status | PR | Merged/State | Notes |
 |--------|-------------|-----|--------|-----------|
 | [JN-5673](https://jounce.atlassian.net/browse/JN-5673) | In Review | [#1595](https://github.com/Jounce-IO/jounce/pull/1595) | Merged Jun 17 | 5+ days stale — should be Done |
-| [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | OPEN, MERGEABLE | Should be "In Review" (open PR) |
-| [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | **Done** | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | OPEN, CI now FAILING | Ticket Done but PR open with CI failure |
+| [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | OPEN, pre-commit FAIL | Should be "In Review" AND needs pre-commit fix |
+| [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | **Done** | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | OPEN, CI FAILING (2 runs) | Ticket Done but PR open with persistent CI failure |
 
 ---
 
