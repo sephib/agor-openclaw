@@ -2207,3 +2207,14 @@
 - Board scan: model-packaging-cr not present on this board — removed from tracking
 - Flags: #1604 15th merge flag; #1606 e2e-smoke pending; #1588 pre-commit fail; #1615 DRAFT+CONFLICTING; 2 git lock worktrees; JN-5673 stale Jira
 - Next: Monitor #1606 e2e-smoke result; MERGE #1604; fix #1588 pre-commit; fix git locks
+
+## 04:00 IDT — Overnight Advance Heartbeat (2026-06-23)
+
+**Session:** 019ef1fd-e81d-749d-8a75-8dc7c35aa7e1 | http://127.0.0.1:3030/ui/s/019ef1fde81d749d8a758dc7/
+
+- PRs checked: #1604 (OPEN, ALL GREEN, APPROVED — 17th flag), #1606 (OPEN, e2e-smoke FAILED + e2e-tests FAILED — run 27980646274, unchanged), #1588 (OPEN, pre-commit FAIL — unchanged), #1615 (DRAFT, CONFLICTING — unchanged), #1596 (DRAFT, CONFLICTING — unchanged)
+- Merges detected: none
+- CI changes: None — board is fully static since 02:00 IDT. No new commits, no new CI runs on any tracked PR overnight.
+- Flags: #1604 17th merge flag; #1606 e2e-smoke+e2e-tests FAILED (run 27980646274); #1588 pre-commit FAIL; #1615 DRAFT+CONFLICTING; 2 git lock worktrees; JN-5673 stale Jira 7+ days
+- Auto-archives: none (no merged/closed PRs detected)
+- Next: MERGE #1604 (17th flag — action overdue). Investigate #1606 e2e-smoke failure. Fix #1588 pre-commit. Fix git lock × 2.

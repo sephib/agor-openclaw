@@ -1127,4 +1127,13 @@ export const HEARTBEAT_RUNS = [
     summary: "🔴 PR #1606 e2e-smoke FAILED (52m58s, run 27980646274) + e2e-tests FAILED — was PENDING at 00:00 IDT. PR #1604 still not merged (16th flag, ALL GREEN + APPROVED). All else unchanged overnight.",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019ef190093d779db15c1bf61163c666/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-23 04:00 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "Board static overnight — no merges, no new CI runs, no commits. PR #1604 still not merged (17th flag, ALL GREEN + APPROVED). PR #1606 e2e-smoke FAILED unchanged (run 27980646274). PR #1588 pre-commit FAIL unchanged. PR #1615 DRAFT+CONFLICTING unchanged.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019ef1fde81d749d8a758dc7/",
+  },
 ];
