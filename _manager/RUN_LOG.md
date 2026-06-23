@@ -4,6 +4,67 @@
 
 ---
 
+## 12:01 IDT — Weekday Daytime Advance Heartbeat (2026-06-23)
+
+**Session:** 019ef3b5-8a09 | http://127.0.0.1:3030/ui/s/019ef3b58a0973e7a6de61da/
+
+- PRs checked: #1615 (DRAFT, CONFLICTING, pre-commit FAIL — unchanged), #1588 (OPEN, MERGEABLE, pre-commit FAIL — unchanged), #1596 (DRAFT, CONFLICTING — unchanged), #1606 (off-board, **NEW: MERGEABLE** — was CONFLICTING; new CI run 28014947351 PENDING: pre-commit/tox/integration/e2e-api; builds ✅)
+- Merges detected: none — Step 1 sweep confirmed no new merges since Jun 23 10:51 IDT (#1604)
+- Archives: none — no MERGED/CLOSED PRs found
+- CI changes: **🟡 PR #1606 conflicts resolved** (CONFLICTING → MERGEABLE) + new CI run 28014947351 launched. JN-5725 Jira: Done. All other PRs unchanged.
+- Flags: (1) PR #1615 DRAFT+CONFLICTING+pre-commit FAIL; (2) PR #1606 new CI PENDING — monitor; (3) PR #1588 pre-commit FAIL; (4) jn-5616 session idle 3h; (5) jn-5724 session idle 3h; (6) Jira stale ×3 (JN-5673/5674/5546)
+- Auto-archives: none
+- Next: Watch #1606 CI result (next heartbeat); prompt jn-5616 + jn-5724 sessions; fix #1615 conflicts + pre-commit; fix #1588 pre-commit + assign reviewer
+
+---
+
+## ~14:30 IDT — Session Recovery + Kickoffs (2026-06-23)
+
+**Trigger:** "continue from agor session 019ef357-1ff4" — previous session hit "Prompt is too long"
+
+**What that session had done before hitting the limit:**
+- Morning board brief delivered
+- Squash message for PR #1604 generated
+- Daily Slack draft produced
+- Standup scope rule enforced + memory updated (only Joseph's own PRs/issues)
+- `standup-drafts` + `dual-heartbeat-system` worktrees archived
+- Discovered: internal-cr-system is clean (fs=failed was stale); jn-5724 has broken worktree (no .git file)
+
+**Actions taken this session:**
+- 🔧 **jn-5724 worktree recreated** — `git worktree add` from bare repo; `.artifacts/` preserved; branch was at main HEAD (no prior commits, git was never set up correctly)
+- 🟢 **jn-5616 session kicked off** — `/implement:plan` sent to session [019ef37e-0be5](http://127.0.0.1:3030/ui/s/019ef37e0be57f11b62add84/)
+- 🟢 **jn-5724 session kicked off** — `/implement:ingest` sent to session [019ef37e-14ca](http://127.0.0.1:3030/ui/s/019ef37e14ca7e1991ce303e/) with worktree-fix context
+- 🟢 **internal-cr-system Phase 2 kicked off** — Phase 1 (review-config.json, arch+diff reviewers) was complete since Jun 18. Phase 2 (first parallel code review run) sent to session [019eda0a-e566](http://127.0.0.1:3030/ui/s/019eda0ae5667f0fa8bf3d95/)
+
+**Autonomous actions taken:** 3 session prompts + 1 worktree repair
+
+**Next:** Monitor jn-5616, jn-5724, internal-cr-system sessions. Standing issues: PR #1615 conflicts, PR #1606 e2e, PR #1588 pre-commit.
+
+---
+
+## ~14:00 IDT — Advance Heartbeat (2026-06-23)
+
+**Trigger:** user "try again"
+
+**Board summary:** Git lock resolved — jn-5724 + internal-cr-system unblocked. PR #1606 CI run 28010083976 completed: e2e-smoke ❌ + e2e-tests ❌ (same failures persist). All other PRs unchanged.
+
+**Key findings:**
+- 🎉 **Git lock RESOLVED** — `.git/config.lock` gone. jn-5724 + internal-cr-system can now operate.
+- 🔴 **PR #1606 (JN-5725) CI FAILED** — run 28010083976 complete: e2e-smoke ❌ + e2e-tests ❌. Was in-progress at 11:30 IDT. PR still CONFLICTING + no reviewer.
+- ↔ **PR #1615 (JN-5677)** — DRAFT + CONFLICTING + pre-commit FAIL. No change.
+- ↔ **PR #1588 (JN-5546)** — MERGEABLE + pre-commit FAIL. No change.
+- ↔ **jn-5616 session** — idle, ready_for_prompt. No commits.
+- ↔ **jn-5724 session** — idle, ready_for_prompt. Git lock resolved, can proceed.
+- ℹ️ **dual-heartbeat-system + standup-drafts** — absent from board scan, removed from tracking.
+
+**Proposals written:** None.
+
+**Autonomous actions taken:** None.
+
+**Next:** Prompt jn-5616 + jn-5724 sessions (git lock gone). Fix e2e on #1606. Resolve conflicts + pre-commit on #1615.
+
+---
+
 ## 11:30 IDT — Weekday Daytime Advance Heartbeat (2026-06-23)
 
 **Session:** 019ef39a-130e | http://127.0.0.1:3030/ui/s/019ef39a130e7c08b6ad2e9b/

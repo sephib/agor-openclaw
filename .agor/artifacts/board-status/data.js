@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-23 11:30 IDT";
+export const LAST_UPDATED = "2026-06-23 12:01 IDT";
 
 export const WORKTREES = [
   {
@@ -11,7 +11,7 @@ export const WORKTREES = [
     zone: "Revise",
     pr: "#1615 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1615",
-    status: "🔴 DRAFT + CONFLICTING — JN-5676 (#1604) merged 10:51 IDT. Unblock now: resolve conflicts, push, promote from DRAFT. Jira already Done. pre-commit FAIL (run 27934981657).",
+    status: "🔴 DRAFT + CONFLICTING — JN-5676 (#1604) merged 10:51 IDT. UNBLOCK NOW: resolve conflicts, push, promote from DRAFT. Jira already Done. pre-commit FAIL (run 27934981657).",
     blockedOn: "Merge conflict (needs rebase onto main after #1604 merge) + DRAFT",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019eeaf04583757a89f47a99/",
@@ -43,12 +43,12 @@ export const WORKTREES = [
     zone: "Plan",
     pr: null,
     prUrl: null,
-    status: "🔴 filesystem FAILED (git lock). Ingest+Plan session ran 4 min (08:00-08:03 IDT) then idle — likely hit lock. No progress until git lock fixed.",
-    blockedOn: "Git lock error — rm .git/config.lock",
-    blockedType: "blocked",
+    status: "⏳ Ingest+Plan session idle since 09:02 IDT (3h). Git lock resolved. Ready for prompt to continue Ingest+Plan.",
+    blockedOn: null,
+    blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019ef37e14ca7e1991ce303e/",
     sessionLabel: "ingest+plan session (idle)",
-    lastActive: "2026-06-23 08:03 IDT (session idle after 4 min — git lock)",
+    lastActive: "2026-06-23 09:02 IDT (session idle, ready_for_prompt)",
   },
   {
     ticket: "JN-5616",
@@ -59,12 +59,12 @@ export const WORKTREES = [
     zone: "Plan",
     pr: null,
     prUrl: null,
-    status: "⏳ Ingest+Plan session ran 3 min (08:00-08:02 IDT), now idle. Awaiting user prompt to continue planning.",
+    status: "⏳ Ingest+Plan session idle since 09:04 IDT (3h). Ready for prompt to continue planning.",
     blockedOn: null,
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019ef37e0be57f11b62add84/",
     sessionLabel: "ingest+plan session (idle)",
-    lastActive: "2026-06-23 08:02 IDT (session idle, ready for prompt)",
+    lastActive: "2026-06-23 09:04 IDT (session idle, ready for prompt)",
   },
   {
     ticket: null,
@@ -75,28 +75,12 @@ export const WORKTREES = [
     zone: "Code",
     pr: null,
     prUrl: null,
-    status: "Filesystem FAILED (git lock) — scaffolding done but no new sessions possible",
-    blockedOn: "Git lock error — filesystem needs fix",
-    blockedType: "blocked",
-    sessionUrl: "http://localhost:3030/ui/s/019eda0ae5667f0fa8bf3d95/",
-    sessionLabel: "scaffold session",
-    lastActive: "2026-06-18 09:25 IDT",
-  },
-  {
-    ticket: null,
-    ticketUrl: null,
-    title: "Dual heartbeat system",
-    branch: "dual-heartbeat-system",
-    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/dual-heartbeat-system",
-    zone: "Code",
-    pr: null,
-    prUrl: null,
-    status: "Heartbeat docs created — idle, waiting on schedule setup",
+    status: "🟢 Phase 2 running — Phase 1 complete (review-config.json + 2 reviewers). Git lock resolved. Phase 2 code review session kicked off.",
     blockedOn: null,
     blockedType: "running",
-    sessionUrl: "http://localhost:3030/ui/s/019eda139d5d79bf96130bd0/",
-    sessionLabel: "doc session",
-    lastActive: "2026-06-18 09:34 IDT",
+    sessionUrl: "http://localhost:3030/ui/s/019eda0ae5667f0fa8bf3d95/",
+    sessionLabel: "Phase 2 session",
+    lastActive: "2026-06-23 09:00 IDT (Phase 2 session sent)",
   },
   {
     ticket: "JN-5695",
@@ -140,7 +124,7 @@ export const MERGED = [
     pr: "#1604",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1604",
     mergedDate: "2026-06-23",
-    note: "Merged 10:51 IDT Jun 23 — worktree archived this heartbeat",
+    note: "Merged 10:51 IDT Jun 23 — worktree archived 11:30 IDT heartbeat",
   },
   {
     ticket: "JN-5685/JN-5679",
@@ -205,19 +189,19 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⏳ PR #1606 (JN-5725, off-board): CI run 28010083976 in_progress at time of check. NOW CONFLICTING with main (due to #1604 merge). Needs merge-main push after CI completes. REVIEW_REQUIRED. Jira Done.",
+    message: "⏳ PR #1606 (JN-5725, off-board): CONFLICTING resolved → now MERGEABLE. New CI run 28014947351 PENDING (pre-commit, tox, integration, e2e-api running; all builds PASS). JN-5725 Jira Done. Awaiting CI result.",
   },
   {
     level: "red",
     message: "🔴 PR #1588 (JN-5546, Code Review zone): pre-commit FAIL — CI run 27933817996. Fix pre-commit, then assign reviewer. Update Jira to 'In Review'.",
   },
   {
-    level: "red",
-    message: "🔴 jn-5724-lychee-precommit-flaky + internal-cr-system: filesystem FAILED (git lock). Fix: rm /Users/josephberry/.agor/worktrees/Jounce-IO/jounce/.git/config.lock",
+    level: "yellow",
+    message: "⚠️ jn-5616 (JN-5616, Plan zone) session idle 3h (since 09:04 IDT). Ready for prompt to continue Ingest+Plan.",
   },
   {
     level: "yellow",
-    message: "⚠️ jn-5616 session idle after 3 min (08:02 IDT) — Ingest+Plan session ran briefly. Ready for next prompt.",
+    message: "⚠️ jn-5724 (JN-5724, Plan zone) session idle 3h (since 09:02 IDT). Git lock resolved. Ready for prompt to resume Ingest+Plan.",
   },
   {
     level: "yellow",
