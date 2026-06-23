@@ -1181,4 +1181,13 @@ export const HEARTBEAT_RUNS = [
     summary: "🔴 PR #1619 (JN-5759) merged to main at 12:30 IDT — re-created conflicts in #1606 (was MERGEABLE, now CONFLICTING). CI run 28015066339: 9/10 PASS (e2e-smoke pending). ✅ JN-5673 + JN-5674 both now Done in Jira (stale flags cleared). Sessions jn-5616 + jn-5724 idle 3.5h. Git locks persist on jn-5724 + internal-cr-system.",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019ef3d101ad788d99085212/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-23 13:01 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "🟢 jn-5724 READY TO PUSH (user approval needed). 🟢 jn-5616 VALIDATED (ready for /publish). 🔴 PR #1606 CI FAILED (e2e-smoke + e2e-tests). #1615 DRAFT+CONFLICTING. #1588 pre-commit FAIL.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019ef407f0907df3a381310c/",
+  },
 ];

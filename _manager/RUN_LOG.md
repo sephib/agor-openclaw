@@ -2332,3 +2332,11 @@
 - Flags: #1606 CONFLICTING again (new main merge); #1615 DRAFT+CONFLICTING+pre-commit FAIL; #1588 pre-commit FAIL; jn-5616 idle 3.5h; jn-5724 idle 3.5h + git lock; internal-cr-system git lock
 - Auto-archives: none (no merged/closed PRs detected)
 - Next: Resolve #1606 conflicts again (after #1619 merge); monitor e2e-smoke; unblock #1615; fix #1588 pre-commit; resolve git locks × 2
+
+## 13:01 IDT — Weekday Daytime Heartbeat
+- PRs checked: #1615 (OPEN/DRAFT/CONFLICTING/pre-commit FAIL), #1588 (OPEN/MERGEABLE/pre-commit FAIL), #1606 (OPEN/CONFLICTING/CI FAILED), #1596 (OPEN/DRAFT/CONFLICTING)
+- Merges detected: none new since last run
+- CI changes: PR #1606 run 28015066339 COMPLETED with FAILURE — e2e-smoke + e2e-tests both failed (was "9/10 PASS, e2e-smoke pending" at 12:31)
+- Zone changes: jn-5724 Plan→Publish (session waiting for push approval); jn-5616 Plan→Code (validation passed, ready for /publish)
+- Flags: 🟢 jn-5724 ready to push (user approval needed); 🟢 jn-5616 validated, needs /publish; 🔴 #1606 CI FAILED; 🔴 #1615 DRAFT+CONFLICTING; 🔴 #1588 pre-commit FAIL
+- Next: User needs to (1) approve jn-5724 push, (2) run /publish for jn-5616, (3) investigate e2e failures in #1606
