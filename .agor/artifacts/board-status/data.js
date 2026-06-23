@@ -1,23 +1,6 @@
-export const LAST_UPDATED = "2026-06-23 10:30 IDT";
+export const LAST_UPDATED = "2026-06-23 11:30 IDT";
 
 export const WORKTREES = [
-  {
-    ticket: "JN-5676",
-    sprint: "current",
-    ticketUrl: "https://jounce.atlassian.net/browse/JN-5676",
-    title: "Notebook scaffold + operational mode",
-    branch: "jn-5676-notebook-scaffold",
-    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5676-notebook-scaffold",
-    zone: "Publish",
-    pr: "#1604 OPEN",
-    prUrl: "https://github.com/Jounce-IO/jounce/pull/1604",
-    status: "⏳ NEW CI RUN 28009842915 PENDING — 3 commits pushed at 10:29-10:32 IDT (merge main + 2 auto-builds). Still APPROVED + MERGEABLE. Monitor CI; if passes → merge immediately.",
-    blockedOn: null,
-    blockedType: "running",
-    sessionUrl: "http://localhost:3030/ui/s/019edb7fb4c770d78fc7a47d/",
-    sessionLabel: "rebase session",
-    lastActive: "2026-06-23 10:32 IDT (3 commits pushed: merge main + 2 auto-builds; new CI run PENDING)",
-  },
   {
     ticket: "JN-5677",
     sprint: "current",
@@ -28,8 +11,8 @@ export const WORKTREES = [
     zone: "Revise",
     pr: "#1615 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1615",
-    status: "🔴 DRAFT + CONFLICTING. Blocked on JN-5676 (#1604) merging first. Resolve conflict after #1604 merges.",
-    blockedOn: "DRAFT + merge conflict + blocked on #1604",
+    status: "🔴 DRAFT + CONFLICTING — JN-5676 (#1604) merged 10:51 IDT. Unblock now: resolve conflicts, push, promote from DRAFT. Jira already Done. pre-commit FAIL (run 27934981657).",
+    blockedOn: "Merge conflict (needs rebase onto main after #1604 merge) + DRAFT",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019eeaf04583757a89f47a99/",
     sessionLabel: "revise session",
@@ -57,15 +40,15 @@ export const WORKTREES = [
     title: "Reduce Lychee precommit flaky results",
     branch: "jn-5724-lychee-precommit-flaky",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5724-lychee-precommit-flaky",
-    zone: "Ingest",
+    zone: "Plan",
     pr: null,
     prUrl: null,
-    status: "🔴 filesystem FAILED (git lock — same error as internal-cr-system). No sessions possible until fixed.",
-    blockedOn: "Git lock error — filesystem needs fix",
+    status: "🔴 filesystem FAILED (git lock). Ingest+Plan session ran 4 min (08:00-08:03 IDT) then idle — likely hit lock. No progress until git lock fixed.",
+    blockedOn: "Git lock error — rm .git/config.lock",
     blockedType: "blocked",
-    sessionUrl: null,
-    sessionLabel: null,
-    lastActive: null,
+    sessionUrl: "http://localhost:3030/ui/s/019ef37e14ca7e1991ce303e/",
+    sessionLabel: "ingest+plan session (idle)",
+    lastActive: "2026-06-23 08:03 IDT (session idle after 4 min — git lock)",
   },
   {
     ticket: "JN-5616",
@@ -73,15 +56,15 @@ export const WORKTREES = [
     title: "Replace find_project_root() calls in tests with conftest fixture",
     branch: "jn-5616-replace-find-project-root",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5616-replace-find-project-root",
-    zone: "Ingest",
+    zone: "Plan",
     pr: null,
     prUrl: null,
-    status: "ℹ️ Ingest zone. JN-5616 In Progress. No sessions yet.",
+    status: "⏳ Ingest+Plan session ran 3 min (08:00-08:02 IDT), now idle. Awaiting user prompt to continue planning.",
     blockedOn: null,
     blockedType: "running",
-    sessionUrl: null,
-    sessionLabel: null,
-    lastActive: null,
+    sessionUrl: "http://localhost:3030/ui/s/019ef37e0be57f11b62add84/",
+    sessionLabel: "ingest+plan session (idle)",
+    lastActive: "2026-06-23 08:02 IDT (session idle, ready for prompt)",
   },
   {
     ticket: null,
@@ -151,6 +134,15 @@ export const WORKTREES = [
 
 export const MERGED = [
   {
+    ticket: "JN-5676",
+    ticketUrl: "https://jounce.atlassian.net/browse/JN-5676",
+    title: "Notebook scaffold + operational mode",
+    pr: "#1604",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1604",
+    mergedDate: "2026-06-23",
+    note: "Merged 10:51 IDT Jun 23 — worktree archived this heartbeat",
+  },
+  {
     ticket: "JN-5685/JN-5679",
     ticketUrl: "https://jounce.atlassian.net/browse/JN-5685",
     title: "Monotonicity verdict persistence tables and ingestion",
@@ -196,24 +188,6 @@ export const MERGED = [
     note: "Merged 23:55 IDT Jun 18 — Jira marked Done Jun 21",
   },
   {
-    ticket: "JN-5619",
-    ticketUrl: null,
-    title: "EvalHub export pipeline",
-    pr: "#1598",
-    prUrl: "https://github.com/Jounce-IO/jounce/pull/1598",
-    mergedDate: "2026-06-18",
-    note: null,
-  },
-  {
-    ticket: "JN-5708",
-    ticketUrl: "https://jounce.atlassian.net/browse/JN-5708",
-    title: "E2E test tags — three-tier CI pipeline",
-    pr: "#1603",
-    prUrl: "https://github.com/Jounce-IO/jounce/pull/1603",
-    mergedDate: "2026-06-18",
-    note: null,
-  },
-  {
     ticket: "JN-5673",
     ticketUrl: "https://jounce.atlassian.net/browse/JN-5673",
     title: "Visibility module scaffold",
@@ -226,12 +200,12 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "yellow",
-    message: "⏳ PR #1604 (JN-5676, Publish zone): NEW CI RUN 28009842915 PENDING — 3 commits pushed at 10:29-10:32 IDT (merge main + 2 auto-builds). Still APPROVED + MERGEABLE. Monitor; if all checks pass → MERGE immediately.",
+    level: "red",
+    message: "🔴 PR #1615 (JN-5677, Revise zone): DRAFT + CONFLICTING — JN-5676 (#1604) merged at 10:51 IDT. UNBLOCK NOW: resolve conflicts, push, promote from DRAFT. Jira already Done. pre-commit FAIL (run 27934981657).",
   },
   {
     level: "yellow",
-    message: "⏳ PR #1606 (JN-5725, off-board): NEW CI RUN 28009911039 PENDING — 4 vllm-daemon fixes + merge main pushed 09:17-10:31 IDT. Previous e2e-smoke FAILED (run 27980646274) may be resolved. Watch for results. MERGEABLE, REVIEW_REQUIRED, Jira Done.",
+    message: "⏳ PR #1606 (JN-5725, off-board): CI run 28010083976 in_progress at time of check. NOW CONFLICTING with main (due to #1604 merge). Needs merge-main push after CI completes. REVIEW_REQUIRED. Jira Done.",
   },
   {
     level: "red",
@@ -239,14 +213,14 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 jn-5724-lychee-precommit-flaky + internal-cr-system: filesystem FAILED (git lock). Fix: rm .git/config.lock in worktree shared git dir.",
-  },
-  {
-    level: "red",
-    message: "⚠️ PR #1615 (JN-5677): DRAFT + CONFLICTING. Blocked on #1604 merging. Resolve conflict after #1604 merges.",
+    message: "🔴 jn-5724-lychee-precommit-flaky + internal-cr-system: filesystem FAILED (git lock). Fix: rm /Users/josephberry/.agor/worktrees/Jounce-IO/jounce/.git/config.lock",
   },
   {
     level: "yellow",
-    message: "⚠️ Jira stale: JN-5673 (In Review, PR #1595 MERGED Jun 17 — 6+ days, should be Done); JN-5546 (In Progress, should be 'In Review'); JN-5725 (Done but PR #1606 open).",
+    message: "⚠️ jn-5616 session idle after 3 min (08:02 IDT) — Ingest+Plan session ran briefly. Ready for next prompt.",
+  },
+  {
+    level: "yellow",
+    message: "⚠️ Jira stale: JN-5673 (In Review, PR #1595 MERGED Jun 17 — 6+ days, should be Done); JN-5674 (In Review, PR #1599 MERGED Jun 18 — 5+ days, should be Done); JN-5546 (In Progress, should be 'In Review').",
   },
 ];

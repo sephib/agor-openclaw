@@ -1154,4 +1154,13 @@ export const HEARTBEAT_RUNS = [
     summary: "TWO NEW CI RUNS: #1604 run 28009842915 PENDING (3 commits: merge main + 2 auto-builds at 10:29-10:32 IDT; still APPROVED); #1606 run 28009911039 PENDING (4 vllm-daemon fixes + merge main at 09:17-10:31 IDT — may resolve prior e2e-smoke failures). #1588 pre-commit FAIL unchanged. #1615 DRAFT+CONFLICTING unchanged.",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019ef36323147504b86f3f92/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-23 11:30 IDT",
+    actions: 1,
+    findings: 6,
+    status: "ok",
+    summary: "🎉 PR #1604 (JN-5676) MERGED 10:51 IDT — jn-5676 archived (1 auto-action). PR #1615 (JN-5677) unblocked but still DRAFT+CONFLICTING+pre-commit FAIL. PR #1606 now CONFLICTING (due to #1604 merge), CI run 28010083976 in-progress. jn-5616 Plan session idle, jn-5724 Plan session idle (hit git lock). 6 flags.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019ef39a130e7c08b6ad2e9b/",
+  },
 ];
