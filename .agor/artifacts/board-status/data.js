@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-23 12:01 IDT";
+export const LAST_UPDATED = "2026-06-23 12:31 IDT";
 
 export const WORKTREES = [
   {
@@ -11,8 +11,8 @@ export const WORKTREES = [
     zone: "Revise",
     pr: "#1615 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1615",
-    status: "🔴 DRAFT + CONFLICTING — JN-5676 (#1604) merged 10:51 IDT. UNBLOCK NOW: resolve conflicts, push, promote from DRAFT. Jira already Done. pre-commit FAIL (run 27934981657).",
-    blockedOn: "Merge conflict (needs rebase onto main after #1604 merge) + DRAFT",
+    status: "🔴 DRAFT + CONFLICTING + pre-commit FAIL — UNBLOCK: resolve conflicts (PR #1619 merged 12:30 IDT), fix pre-commit, promote from DRAFT. Jira Done.",
+    blockedOn: "Merge conflict + DRAFT + pre-commit FAIL",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019eeaf04583757a89f47a99/",
     sessionLabel: "revise session",
@@ -27,7 +27,7 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1588",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1588",
-    status: "🔴 pre-commit FAIL (run 27933817996). MERGEABLE but CI failing. Fix pre-commit, then assign reviewer. Jira should be 'In Review'.",
+    status: "🔴 pre-commit FAIL (run 27933817996). Fix pre-commit, then assign reviewer. Jira should be 'In Review'.",
     blockedOn: "pre-commit FAIL (CI run 27933817996)",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ed01e5624752fbade0eab/",
@@ -43,8 +43,8 @@ export const WORKTREES = [
     zone: "Plan",
     pr: null,
     prUrl: null,
-    status: "⏳ Ingest+Plan session idle since 09:02 IDT (3h). Git lock resolved. Ready for prompt to continue Ingest+Plan.",
-    blockedOn: null,
+    status: "⏳ Ingest+Plan session idle since 09:02 IDT (3.5h). Git lock on filesystem. Ready for prompt.",
+    blockedOn: "git lock on filesystem",
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019ef37e14ca7e1991ce303e/",
     sessionLabel: "ingest+plan session (idle)",
@@ -59,7 +59,7 @@ export const WORKTREES = [
     zone: "Plan",
     pr: null,
     prUrl: null,
-    status: "⏳ Ingest+Plan session idle since 09:04 IDT (3h). Ready for prompt to continue planning.",
+    status: "⏳ Ingest+Plan session idle since 09:04 IDT (3.5h). Ready for prompt to continue planning.",
     blockedOn: null,
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019ef37e0be57f11b62add84/",
@@ -75,8 +75,8 @@ export const WORKTREES = [
     zone: "Code",
     pr: null,
     prUrl: null,
-    status: "🟢 Phase 2 running — Phase 1 complete (review-config.json + 2 reviewers). Git lock resolved. Phase 2 code review session kicked off.",
-    blockedOn: null,
+    status: "⚠️ Git lock on filesystem (failed). Phase 2 session sent 09:00 IDT — no update since.",
+    blockedOn: "git lock on filesystem",
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019eda0ae5667f0fa8bf3d95/",
     sessionLabel: "Phase 2 session",
@@ -117,6 +117,15 @@ export const WORKTREES = [
 ];
 
 export const MERGED = [
+  {
+    ticket: "JN-5759",
+    ticketUrl: null,
+    title: "fix(validator): add missing detail field to responses multimodal test",
+    pr: "#1619",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1619",
+    mergedDate: "2026-06-23",
+    note: "Merged 12:30 IDT Jun 23 — off-board PR; caused #1606 to re-conflict",
+  },
   {
     ticket: "JN-5676",
     ticketUrl: "https://jounce.atlassian.net/browse/JN-5676",
@@ -169,7 +178,7 @@ export const MERGED = [
     pr: "#1599",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1599",
     mergedDate: "2026-06-18",
-    note: "Merged 23:55 IDT Jun 18 — Jira marked Done Jun 21",
+    note: "Merged 23:55 IDT Jun 18 — Jira Done confirmed Jun 23",
   },
   {
     ticket: "JN-5673",
@@ -178,33 +187,33 @@ export const MERGED = [
     pr: "#1595",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1595",
     mergedDate: "2026-06-17",
-    note: null,
+    note: "Jira Done confirmed Jun 23 (was stale In Review for 6 days)",
   },
 ];
 
 export const ALERTS = [
   {
     level: "red",
-    message: "🔴 PR #1615 (JN-5677, Revise zone): DRAFT + CONFLICTING — JN-5676 (#1604) merged at 10:51 IDT. UNBLOCK NOW: resolve conflicts, push, promote from DRAFT. Jira already Done. pre-commit FAIL (run 27934981657).",
-  },
-  {
-    level: "yellow",
-    message: "⏳ PR #1606 (JN-5725, off-board): CONFLICTING resolved → now MERGEABLE. New CI run 28014947351 PENDING (pre-commit, tox, integration, e2e-api running; all builds PASS). JN-5725 Jira Done. Awaiting CI result.",
+    message: "🔴 PR #1606 (JN-5725, off-board): CONFLICTING AGAIN — PR #1619 merged to main at 12:30 IDT. CI run 28015066339: 9/10 PASS (e2e-smoke pending). Must rebase onto main again before merge. JN-5725 Jira Done.",
   },
   {
     level: "red",
-    message: "🔴 PR #1588 (JN-5546, Code Review zone): pre-commit FAIL — CI run 27933817996. Fix pre-commit, then assign reviewer. Update Jira to 'In Review'.",
+    message: "🔴 PR #1615 (JN-5677, Revise zone): DRAFT + CONFLICTING + pre-commit FAIL — UNBLOCK NOW: resolve conflicts (after #1619 merge to main), fix pre-commit, promote from DRAFT. Jira already Done.",
+  },
+  {
+    level: "red",
+    message: "🔴 PR #1588 (JN-5546, Code Review zone): pre-commit FAIL — CI run 27933817996. Fix pre-commit, assign reviewer, update Jira to 'In Review'.",
   },
   {
     level: "yellow",
-    message: "⚠️ jn-5616 (JN-5616, Plan zone) session idle 3h (since 09:04 IDT). Ready for prompt to continue Ingest+Plan.",
+    message: "⚠️ jn-5616 (JN-5616, Plan zone) session idle 3.5h (since 09:04 IDT). Ready for prompt to continue Ingest+Plan.",
   },
   {
     level: "yellow",
-    message: "⚠️ jn-5724 (JN-5724, Plan zone) session idle 3h (since 09:02 IDT). Git lock resolved. Ready for prompt to resume Ingest+Plan.",
+    message: "⚠️ jn-5724 (JN-5724, Plan zone) session idle 3.5h (since 09:02 IDT). Git lock on filesystem (failed). Ready for prompt to resume Ingest+Plan.",
   },
   {
     level: "yellow",
-    message: "⚠️ Jira stale: JN-5673 (In Review, PR #1595 MERGED Jun 17 — 6+ days, should be Done); JN-5674 (In Review, PR #1599 MERGED Jun 18 — 5+ days, should be Done); JN-5546 (In Progress, should be 'In Review').",
+    message: "⚠️ JN-5546 Jira should be 'In Review' (has open PR #1588). Two git locks: jn-5724 + internal-cr-system (filesystem_status: failed).",
   },
 ];

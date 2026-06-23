@@ -1172,4 +1172,13 @@ export const HEARTBEAT_RUNS = [
     summary: "🟡 PR #1606 (JN-5725) conflicts resolved (CONFLICTING → MERGEABLE) + new CI run 28014947351 PENDING (pre-commit/tox/integration/e2e-api; builds ✅). JN-5725 Jira: Done. All other PRs static. Sessions jn-5616 + jn-5724 idle 3h (ready_for_prompt). 6 flags, 0 auto-actions.",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019ef3b58a0973e7a6de61da/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-23 12:31 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "🔴 PR #1619 (JN-5759) merged to main at 12:30 IDT — re-created conflicts in #1606 (was MERGEABLE, now CONFLICTING). CI run 28015066339: 9/10 PASS (e2e-smoke pending). ✅ JN-5673 + JN-5674 both now Done in Jira (stale flags cleared). Sessions jn-5616 + jn-5724 idle 3.5h. Git locks persist on jn-5724 + internal-cr-system.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019ef3d101ad788d99085212/",
+  },
 ];
