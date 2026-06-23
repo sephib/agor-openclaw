@@ -1145,4 +1145,13 @@ export const HEARTBEAT_RUNS = [
     summary: "Board static overnight — no merges, no new CI runs, no commits. PR #1604 still not merged (18th flag, ALL GREEN + APPROVED). PR #1606 e2e-smoke FAILED unchanged (run 27980646274). PR #1588 pre-commit FAIL unchanged. PR #1615 DRAFT+CONFLICTING unchanged.",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019ef26bc6927c0a8e530562b0ea764a/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-23 10:30 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "TWO NEW CI RUNS: #1604 run 28009842915 PENDING (3 commits: merge main + 2 auto-builds at 10:29-10:32 IDT; still APPROVED); #1606 run 28009911039 PENDING (4 vllm-daemon fixes + merge main at 09:17-10:31 IDT — may resolve prior e2e-smoke failures). #1588 pre-commit FAIL unchanged. #1615 DRAFT+CONFLICTING unchanged.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019ef36323147504b86f3f92/",
+  },
 ];

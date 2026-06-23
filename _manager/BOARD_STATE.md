@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-23 06:00 IDT (advance heartbeat)*
+*Last updated: 2026-06-23 10:30 IDT (advance heartbeat)*
 
 ---
 
@@ -8,7 +8,7 @@
 
 | Branch | Jira | Zone | Jira Status | PR | CI | Review | Flags |
 |--------|------|------|-------------|-----|-----|--------|-------|
-| jn-5676-notebook-scaffold | [JN-5676](https://jounce.atlassian.net/browse/JN-5676) | Publish | In Review | [#1604](https://github.com/Jounce-IO/jounce/pull/1604) **OPEN** | ✅ **ALL GREEN** (run 27959917357: ALL checks pass) | **APPROVED** ✅ | 🎉🎉 **READY TO MERGE — ALL CI GREEN + APPROVED. 18th flag. Merge now!** |
+| jn-5676-notebook-scaffold | [JN-5676](https://jounce.atlassian.net/browse/JN-5676) | Publish | In Review | [#1604](https://github.com/Jounce-IO/jounce/pull/1604) **OPEN** | ⏳ **CI PENDING** (run 28009842915: all main checks PENDING — triggered by 3 commits at 10:29-10:32 IDT) | **APPROVED** ✅ | ⏳ **NEW CI RUN** — 3 commits pushed (merge main + 2 auto-builds). CI 28009842915 in progress. Wait for results. |
 | jn-5677-dev-historical-mode-notebook-cells | [JN-5677](https://jounce.atlassian.net/browse/JN-5677) | Revise | In Review | [#1615](https://github.com/Jounce-IO/jounce/pull/1615) **DRAFT** OPEN | ❌ **CONFLICTING** | REVIEW_REQUIRED | 🔴 **DRAFT + CONFLICTING** — blocked on #1604 merging first |
 | jn-5546-docs-document-module-layout-convention-and-3 | [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | Code Review | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | ❌ **pre-commit FAIL** (run 27933817996) | reviewDecision="" | 🔴 **CI FAILING** — pre-commit FAIL; Jira should be "In Review" |
 | jn-5724-lychee-precommit-flaky | [JN-5724](https://jounce.atlassian.net/browse/JN-5724) | Ingest | In Progress | — | — | — | 🔴 **filesystem FAILED** (git lock — same error as internal-cr-system) |
@@ -48,12 +48,12 @@
 
 ---
 
-## Key Changes Since Last Run (Jun 23 04:00 IDT)
+## Key Changes Since Last Run (Jun 23 06:00 IDT)
 
 | What observed | Status |
 |---|---|
-| **↔ PR #1604 still OPEN (18th flag)** | ALL CI GREEN + APPROVED + MERGEABLE — still not merged. |
-| **↔ PR #1606 — e2e-smoke FAILED + e2e-tests FAILED** | Unchanged since 02:00 IDT. Run 27980646274 still the latest. No new commits or CI runs overnight. |
+| **🔄 PR #1604 — NEW CI RUN 28009842915** | 3 commits pushed at 10:29-10:32 IDT: merge main + 2 auto-build commits. All main checks PENDING. Still APPROVED + MERGEABLE. |
+| **🔄 PR #1606 — NEW CI RUN 28009911039** | 4 fix commits (fix vllm-daemon Lua/sidecar/GCS) + merge main pushed 09:17-10:31 IDT. All main checks PENDING. Previous e2e-smoke FAILED may be resolved. |
 | **↔ PR #1588 pre-commit FAIL** | Still failing (run 27933817996). Unchanged. |
 | **↔ PR #1615 DRAFT + CONFLICTING** | Blocked on #1604. Unchanged. |
 | **↔ jn-5724 + internal-cr-system** | Git lock errors — unchanged. |
@@ -63,25 +63,30 @@
 
 ## Attention Items
 
-### 🎉🎉 PR #1604 (JN-5676) — ALL GREEN — READY TO MERGE NOW (18th flag)
+### ⏳ PR #1604 (JN-5676) — NEW CI RUN PENDING (was ALL GREEN)
 
 PR [#1604](https://github.com/Jounce-IO/jounce/pull/1604) — "feat(jbenchmark): notebook scaffold + operational mode (JN-5676)"
 
-**ALL CI CHECKS PASSED** (run 27959917357): pre-commit ✅, integration ✅, e2e-api ✅, tox ✅, nox ✅, integration-tests ✅, e2e-smoke ✅, e2e-tests ✅, atlas-validate ✅. APPROVED. MERGEABLE.
+3 commits pushed at 10:29-10:32 IDT: `Merge branch 'main'` + 2× `build: automatic update of jbenchmark-gcp-development-jn-5676-noteboo…`. New CI run **28009842915** triggered — all main checks PENDING. Still **APPROVED + MERGEABLE**.
 
-**Required action: MERGE THIS PR.** Everything is green. No blockers. This is the 18th consecutive flag.
+**Watch for CI results.** If all checks pass → merge immediately. Prior run 27959917357 was ALL GREEN.
 
 ---
 
-### 🔴 PR #1606 (JN-5725) — e2e-smoke FAILED + e2e-tests FAILED
+### ⏳ PR #1606 (JN-5725) — NEW CI RUN PENDING (4 fixes pushed this morning)
 
 PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606) — "feat(vllm-analyzer): integrate log analyzer into experiment-workflow (JN-5725)"
 
-**CI RUN 27980646274** — e2e-smoke **FAILED** (52m58s) + e2e-tests **FAILED**. All other checks pass: e2e-api ✅, integration ✅, tox ✅, pre-commit ✅, nox ✅, integration-tests ✅, atlas-validate ✅. MERGEABLE, REVIEW_REQUIRED. Jira is Done.
+4 fix commits pushed 09:17-10:31 IDT:
+- `fix(vllm-daemon): use record_modifier with env var expansion`
+- `fix(vllm-daemon): correct GCS endpoint format per official docs`
+- `fix(vllm-daemon): use Lua filter for env var expansion`
+- `fix(vllm-daemon): implement proper sidecar pattern with shared volume`
+- `Merge branch 'main' into feat/jn-5725-integrate-vllm-log-analyzer`
 
-No new commits overnight. Failure is unchanged from 02:00 IDT.
+New CI run **28009911039** triggered — all main checks PENDING. MERGEABLE, REVIEW_REQUIRED. Jira Done.
 
-**Action: Investigate e2e-smoke failure.** Fix the e2e test or infrastructure issue, then push fix to trigger new CI run. Once CI passes → needs reviewer.
+**Watch for CI results.** Previous e2e-smoke FAILED (run 27980646274) may now be resolved by the fixes. If CI passes → needs reviewer.
 
 ---
 

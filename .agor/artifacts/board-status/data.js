@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-23 06:00 IDT";
+export const LAST_UPDATED = "2026-06-23 10:30 IDT";
 
 export const WORKTREES = [
   {
@@ -11,12 +11,12 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1604 OPEN",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1604",
-    status: "🎉🎉 ALL CI GREEN + APPROVED — READY TO MERGE NOW! (18th flag). Run 27959917357: ALL checks ✅. Merge this PR!",
+    status: "⏳ NEW CI RUN 28009842915 PENDING — 3 commits pushed at 10:29-10:32 IDT (merge main + 2 auto-builds). Still APPROVED + MERGEABLE. Monitor CI; if passes → merge immediately.",
     blockedOn: null,
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019edb7fb4c770d78fc7a47d/",
     sessionLabel: "rebase session",
-    lastActive: "2026-06-23 06:00 IDT (ALL CI GREEN — 18th flag, still not merged)",
+    lastActive: "2026-06-23 10:32 IDT (3 commits pushed: merge main + 2 auto-builds; new CI run PENDING)",
   },
   {
     ticket: "JN-5677",
@@ -226,12 +226,12 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "green",
-    message: "🎉🎉 PR #1604 (JN-5676, Publish zone): ALL CI GREEN + APPROVED — READY TO MERGE NOW! (18th flag). Run 27959917357: every check ✅. Merge immediately.",
+    level: "yellow",
+    message: "⏳ PR #1604 (JN-5676, Publish zone): NEW CI RUN 28009842915 PENDING — 3 commits pushed at 10:29-10:32 IDT (merge main + 2 auto-builds). Still APPROVED + MERGEABLE. Monitor; if all checks pass → MERGE immediately.",
   },
   {
-    level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): CI run 27980646274 — e2e-smoke FAILED (52m58s) + e2e-tests FAILED. All other checks ✅. No new commits overnight (unchanged from 02:00 IDT). Needs e2e investigation before reviewer can be assigned. Jira Done but PR open.",
+    level: "yellow",
+    message: "⏳ PR #1606 (JN-5725, off-board): NEW CI RUN 28009911039 PENDING — 4 vllm-daemon fixes + merge main pushed 09:17-10:31 IDT. Previous e2e-smoke FAILED (run 27980646274) may be resolved. Watch for results. MERGEABLE, REVIEW_REQUIRED, Jira Done.",
   },
   {
     level: "red",
