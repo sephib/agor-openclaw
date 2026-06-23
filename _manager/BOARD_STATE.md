@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-23 14:30 IDT (advance heartbeat)*
+*Last updated: 2026-06-23 15:00 IDT (advance heartbeat)*
 
 ---
 
@@ -50,18 +50,17 @@
 
 ---
 
-## Key Changes Since Last Run (Jun 23 13:31 IDT)
+## Key Changes Since Last Run (Jun 23 14:30 IDT)
 
 | What observed | Status |
 |---|---|
 | **↔ Board static** | No new merges, no CI changes, no PR state changes. |
-| **↔ PR #1622 (JN-5724)** | DRAFT, MERGEABLE, CI ALL PASS. No change. |
-| **↔ PR #1623 (JN-5616)** | DRAFT, MERGEABLE, CI ALL PASS. No change. |
+| **↔ PR #1622 (JN-5724)** | DRAFT, CI ALL PASS (run 28020178138). Mergeable UNKNOWN (GitHub recomputing). No functional change. |
+| **↔ PR #1623 (JN-5616)** | DRAFT, CI ALL PASS (run 28020219339). Mergeable UNKNOWN (GitHub recomputing). No functional change. |
 | **↔ PR #1615 (JN-5677)** | DRAFT + CONFLICTING + pre-commit FAIL. No change. |
-| **↔ PR #1588 (JN-5546)** | pre-commit FAIL. MERGEABLE. No change. |
-| **↔ PR #1606 (JN-5725)** | OPEN, CONFLICTING. No new CI run detected. Last known: CI FAILED. |
+| **↔ PR #1588 (JN-5546)** | CI check timed out. Last known: pre-commit FAIL (run 27933817996). No change. |
+| **↔ PR #1606 (JN-5725)** | OPEN, CONFLICTING. No new CI run. Last known: CI FAILED (run 28015066339). |
 | **↔ internal-cr-system** | Session idle since 09:50 IDT after re-dispatch. |
-| **ℹ️ JN-5612 new ticket** | "Fix github.GITHUB_SHA → github.sha in all workflow run-name fields" — Backlog, assigned to Joseph, no worktree yet. |
 
 ---
 
