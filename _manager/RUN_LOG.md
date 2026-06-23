@@ -4,6 +4,22 @@
 
 ---
 
+## 15:30 IDT — Weekday Daytime Advance Heartbeat (2026-06-23)
+
+**Session:** 019ef551-a432 | http://127.0.0.1:3030/ui/s/019ef551a432772c80c1ffda/
+
+- PRs checked: #1622 (DRAFT, MERGEABLE, CI ALL PASS — unchanged), #1623 (DRAFT, MERGEABLE, CI ALL PASS — unchanged), #1615 (DRAFT, CONFLICTING, pre-commit FAIL — unchanged), #1588 (OPEN, MERGEABLE, pre-commit FAIL — unchanged), #1606 off-board (OPEN, CONFLICTING, CI FAILED — unchanged), #1596 (DRAFT, CONFLICTING — unchanged)
+- Merges detected: none — latest merge still PR #1604 at 10:51 IDT Jun 23
+- Archives: none — no MERGED/CLOSED PRs found
+- CI changes: none — all CI results identical to last run
+- **Zone corrections:** jn-5677 Agor = Code (not Revise as in BOARD_STATE); jn-5616 Agor = Validate (not Publish as in BOARD_STATE). BOARD_STATE + data.js updated to reflect actual Agor zones.
+- Jira: JN-5724 In Review ✅, JN-5616 In Review ✅, JN-5677 Done (PR still open), JN-5546 In Progress (should be In Review), JN-5725 Done (PR CI FAILED). JN-5244 no longer in active sprint — removed from no-worktree list.
+- Flags: (1) #1622 + #1623 DRAFT awaiting promotion; (2) #1606 CI FAILED + CONFLICTING; (3) #1615 DRAFT+CONFLICTING+pre-commit FAIL; (4) #1588 pre-commit FAIL; (5) internal-cr-system idle since 09:50 IDT; (6) JN-5546 Jira stale
+- Auto-archives: none
+- Next: Promote #1622 + #1623 from DRAFT; unblock #1615 conflicts; fix #1588 pre-commit
+
+---
+
 ## 12:01 IDT — Weekday Daytime Advance Heartbeat (2026-06-23)
 
 **Session:** 019ef3b5-8a09 | http://127.0.0.1:3030/ui/s/019ef3b58a0973e7a6de61da/

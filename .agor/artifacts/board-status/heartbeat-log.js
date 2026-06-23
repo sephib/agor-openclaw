@@ -1217,4 +1217,13 @@ export const HEARTBEAT_RUNS = [
     summary: "Board static — no new merges, no CI changes. #1622 + #1623 DRAFT/PASS awaiting promotion (mergeable UNKNOWN — GitHub recomputing); #1606 CONFLICTING CI FAILED; #1615 DRAFT+CONFLICTING; #1588 pre-commit FAIL (CI timeout). 6 findings unchanged.",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019ef5362f7b7604ad3b90f9/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-23 15:30 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "Zone corrections: jn-5677 = Code (not Revise), jn-5616 = Validate (not Publish) per Agor MCP. #1622 + #1623 DRAFT/PASS awaiting promotion; #1606 CI FAILED+CONFLICTING; #1615 DRAFT+CONFLICTING+pre-commit FAIL; #1588 pre-commit FAIL. JN-5244 removed from sprint tracking.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019ef551a432772c80c1ffda/",
+  },
 ];

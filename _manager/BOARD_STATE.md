@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-23 15:00 IDT (advance heartbeat)*
+*Last updated: 2026-06-23 15:30 IDT (advance heartbeat)*
 
 ---
 
@@ -8,9 +8,9 @@
 
 | Branch | Jira | Zone | Jira Status | PR | CI | Review | Flags |
 |--------|------|------|-------------|-----|-----|--------|-------|
-| jn-5724-lychee-precommit-flaky | [JN-5724](https://jounce.atlassian.net/browse/JN-5724) | Publish | In Review | [#1622](https://github.com/Jounce-IO/jounce/pull/1622) **DRAFT** MERGEABLE | ✅ ALL PASS (run 28020178138) | REVIEW_REQUIRED | 🟢 **PR #1622 CREATED** — DRAFT, all CI passing. Needs promotion from DRAFT. |
-| jn-5616-replace-find-project-root | [JN-5616](https://jounce.atlassian.net/browse/JN-5616) | Publish | In Review | [#1623](https://github.com/Jounce-IO/jounce/pull/1623) **DRAFT** MERGEABLE | ✅ ALL PASS (run 28020219339) | REVIEW_REQUIRED | 🟢 **PR #1623 CREATED** — DRAFT, all CI passing. Needs promotion from DRAFT. |
-| jn-5677-dev-historical-mode-notebook-cells | [JN-5677](https://jounce.atlassian.net/browse/JN-5677) | Revise | Done | [#1615](https://github.com/Jounce-IO/jounce/pull/1615) **DRAFT** CONFLICTING | ❌ pre-commit FAIL (run 27934981657) | REVIEW_REQUIRED | 🔴 **UNBLOCK** — resolve conflicts, fix pre-commit, promote from DRAFT |
+| jn-5724-lychee-precommit-flaky | [JN-5724](https://jounce.atlassian.net/browse/JN-5724) | Publish | In Review | [#1622](https://github.com/Jounce-IO/jounce/pull/1622) **DRAFT** MERGEABLE | ✅ ALL PASS (run 28020178138) | REVIEW_REQUIRED | 🟢 **PR #1622** — DRAFT, all CI passing. Needs promotion from DRAFT. |
+| jn-5616-replace-find-project-root | [JN-5616](https://jounce.atlassian.net/browse/JN-5616) | Validate | In Review | [#1623](https://github.com/Jounce-IO/jounce/pull/1623) **DRAFT** MERGEABLE | ✅ ALL PASS (run 28020219339) | REVIEW_REQUIRED | 🟢 **PR #1623** — DRAFT, all CI passing. Needs promotion from DRAFT. ⚠️ Zone updated: Agor shows Validate (not Publish). |
+| jn-5677-dev-historical-mode-notebook-cells | [JN-5677](https://jounce.atlassian.net/browse/JN-5677) | Code | Done | [#1615](https://github.com/Jounce-IO/jounce/pull/1615) **DRAFT** CONFLICTING | ❌ pre-commit FAIL (run 27934981657) | REVIEW_REQUIRED | 🔴 **UNBLOCK** — resolve conflicts, fix pre-commit, promote from DRAFT. ⚠️ Zone updated: Agor shows Code (not Revise). Jira Done but PR still open. |
 | jn-5546-docs-document-module-layout-convention-and-3 | [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | Code Review | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | ❌ **pre-commit FAIL** (run 27933817996) | reviewDecision="" | 🔴 **CI FAILING** — pre-commit FAIL; Jira should be "In Review" |
 | internal-cr-system | — | Code | — | — | — | — | ⚠️ Session idle since 09:50 IDT; status after re-dispatch unclear |
 | jn-5695-db-connect-script | [JN-5695](https://jounce.atlassian.net/browse/JN-5695) | BLOCKED | Backlog | [#1596](https://github.com/Jounce-IO/jounce/pull/1596) DRAFT | ⚠️ CONFLICTING | — | 🔴 CONFLICTING; frozen |
@@ -50,17 +50,19 @@
 
 ---
 
-## Key Changes Since Last Run (Jun 23 14:30 IDT)
+## Key Changes Since Last Run (Jun 23 15:00 IDT)
 
 | What observed | Status |
 |---|---|
-| **↔ Board static** | No new merges, no CI changes, no PR state changes. |
-| **↔ PR #1622 (JN-5724)** | DRAFT, CI ALL PASS (run 28020178138). Mergeable UNKNOWN (GitHub recomputing). No functional change. |
-| **↔ PR #1623 (JN-5616)** | DRAFT, CI ALL PASS (run 28020219339). Mergeable UNKNOWN (GitHub recomputing). No functional change. |
+| **⚠️ Zone correction: jn-5677** | Agor MCP shows Code zone (zone-1781429763919), not Revise as previously recorded. BOARD_STATE updated. |
+| **⚠️ Zone correction: jn-5616** | Agor MCP shows Validate zone (zone-1781432651131), not Publish as previously recorded. BOARD_STATE updated. |
+| **↔ PR #1622 (JN-5724)** | DRAFT, CI ALL PASS (run 28020178138). MERGEABLE. No functional change. |
+| **↔ PR #1623 (JN-5616)** | DRAFT, CI ALL PASS (run 28020219339). MERGEABLE. No functional change. |
 | **↔ PR #1615 (JN-5677)** | DRAFT + CONFLICTING + pre-commit FAIL. No change. |
-| **↔ PR #1588 (JN-5546)** | CI check timed out. Last known: pre-commit FAIL (run 27933817996). No change. |
+| **↔ PR #1588 (JN-5546)** | Last CI: pre-commit FAIL (run 27933817996). No change. |
 | **↔ PR #1606 (JN-5725)** | OPEN, CONFLICTING. No new CI run. Last known: CI FAILED (run 28015066339). |
-| **↔ internal-cr-system** | Session idle since 09:50 IDT after re-dispatch. |
+| **↔ internal-cr-system** | Session idle since 09:50 IDT. No new activity. |
+| **ℹ️ JN-5244 absent from sprint** | No longer appearing in Joseph's active sprint tickets — may have been removed or reassigned. |
 
 ---
 
@@ -80,6 +82,7 @@ PR [#1622](https://github.com/Jounce-IO/jounce/pull/1622): `fix(lychee): remove 
 PR [#1623](https://github.com/Jounce-IO/jounce/pull/1623): `refactor(jbenchmark): replace find_project_root() in tests with conftest fixtures (JN-5616)`
 - DRAFT, MERGEABLE, ALL CI PASS ✅
 - Jira [JN-5616](https://jounce.atlassian.net/browse/JN-5616): In Review ✅
+- Agor zone: Validate (corrected from Publish)
 - **Action needed:** Promote from DRAFT → Ready for Review
 
 ---
@@ -103,13 +106,12 @@ Required actions:
 ### 🔴 PR #1615 (JN-5677) — UNBLOCK: Resolve conflicts + promote from DRAFT
 
 PR [#1615](https://github.com/Jounce-IO/jounce/pull/1615): Still DRAFT + CONFLICTING + pre-commit FAIL (since Jun 22).
+Agor zone: Code (corrected from Revise). Jira JN-5677: Done.
 
 Remaining work:
 1. Resolve merge conflicts (rebase onto main)
 2. Fix pre-commit failure (run 27934981657)
 3. Promote from DRAFT → Ready for Review
-
-Note: JN-5677 Jira is already Done.
 
 ---
 
@@ -143,8 +145,7 @@ Session [019eda0a](http://127.0.0.1:3030/ui/s/019eda0ae5667f0fa8bf3d95/) — idl
 | [JN-5678](https://jounce.atlassian.net/browse/JN-5678) | [DOCS] Dashboard README and setup instructions | Backlog | No worktree |
 | [JN-5728](https://jounce.atlassian.net/browse/JN-5728) | Fix e2e CI workflow gaps | Backlog | No worktree |
 | [JN-5539](https://jounce.atlassian.net/browse/JN-5539) | Dependency & Build Standardization | **In Progress** | No worktree — may be cross-cutting |
-| [JN-5244](https://jounce.atlassian.net/browse/JN-5244) | Add --user, --no-cache CLI flags to runner | **In Progress** | No worktree — may be older/lower priority |
-| [JN-5612](https://jounce.atlassian.net/browse/JN-5612) | Fix github.GITHUB_SHA → github.sha in all workflow run-name fields | Backlog | No worktree — new as of Jun 23 14:30 IDT scan |
+| [JN-5612](https://jounce.atlassian.net/browse/JN-5612) | Fix github.GITHUB_SHA → github.sha in all workflow run-name fields | Backlog | No worktree |
 
 ---
 

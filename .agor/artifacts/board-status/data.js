@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-23 15:00 IDT";
+export const LAST_UPDATED = "2026-06-23 15:30 IDT";
 
 export const WORKTREES = [
   {
@@ -23,10 +23,10 @@ export const WORKTREES = [
     title: "Replace find_project_root() calls in tests with conftest fixture",
     branch: "jn-5616-replace-find-project-root",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5616-replace-find-project-root",
-    zone: "Publish",
+    zone: "Validate",
     pr: "#1623 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1623",
-    status: "🟢 PR #1623 CREATED — DRAFT, MERGEABLE, all CI PASS (run 28020219339). Jira In Review. Needs promotion from DRAFT.",
+    status: "🟢 PR #1623 CREATED — DRAFT, MERGEABLE, all CI PASS (run 28020219339). Jira In Review. Needs promotion from DRAFT. (Zone: Validate per Agor)",
     blockedOn: "Awaiting DRAFT promotion",
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019ef405c3e3746c900eac40/",
@@ -40,14 +40,14 @@ export const WORKTREES = [
     title: "Historical mode notebook cells",
     branch: "jn-5677-dev-historical-mode-notebook-cells",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5677-dev-historical-mode-notebook-cells",
-    zone: "Revise",
+    zone: "Code",
     pr: "#1615 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1615",
-    status: "🔴 DRAFT + CONFLICTING + pre-commit FAIL — UNBLOCK: resolve conflicts, fix pre-commit, promote from DRAFT. Jira Done.",
+    status: "🔴 DRAFT + CONFLICTING + pre-commit FAIL — UNBLOCK: resolve conflicts, fix pre-commit, promote from DRAFT. Jira Done. (Zone: Code per Agor, was Revise in previous state)",
     blockedOn: "Merge conflict + DRAFT + pre-commit FAIL",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019eeaf04583757a89f47a99/",
-    sessionLabel: "revise session",
+    sessionLabel: "session",
     lastActive: "2026-06-22 14:25 IDT (squash message composed)",
   },
   {
@@ -206,7 +206,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 PR #1615 (JN-5677, Revise zone): DRAFT + CONFLICTING + pre-commit FAIL — UNBLOCK: resolve conflicts, fix pre-commit, promote from DRAFT. Jira already Done.",
+    message: "🔴 PR #1615 (JN-5677, Code zone): DRAFT + CONFLICTING + pre-commit FAIL — UNBLOCK: resolve conflicts, fix pre-commit, promote from DRAFT. Jira already Done.",
   },
   {
     level: "red",
