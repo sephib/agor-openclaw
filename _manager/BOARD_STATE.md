@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-23 13:31 IDT (advance heartbeat)*
+*Last updated: 2026-06-23 14:30 IDT (advance heartbeat)*
 
 ---
 
@@ -50,16 +50,18 @@
 
 ---
 
-## Key Changes Since Last Run (Jun 23 13:01 IDT)
+## Key Changes Since Last Run (Jun 23 13:31 IDT)
 
 | What observed | Status |
 |---|---|
-| **🟢 jn-5724 → PR #1622 CREATED** | Draft PR created: MERGEABLE, all CI checks PASS. Jira already "In Review". |
-| **🟢 jn-5616 → PR #1623 CREATED** | Draft PR created: MERGEABLE, all CI checks PASS. Jira already "In Review". |
+| **↔ Board static** | No new merges, no CI changes, no PR state changes. |
+| **↔ PR #1622 (JN-5724)** | DRAFT, MERGEABLE, CI ALL PASS. No change. |
+| **↔ PR #1623 (JN-5616)** | DRAFT, MERGEABLE, CI ALL PASS. No change. |
 | **↔ PR #1615 (JN-5677)** | DRAFT + CONFLICTING + pre-commit FAIL. No change. |
 | **↔ PR #1588 (JN-5546)** | pre-commit FAIL. MERGEABLE. No change. |
-| **↔ PR #1606 (JN-5725)** | OPEN, CONFLICTING. No new CI run. Last known: CI FAILED. |
+| **↔ PR #1606 (JN-5725)** | OPEN, CONFLICTING. No new CI run detected. Last known: CI FAILED. |
 | **↔ internal-cr-system** | Session idle since 09:50 IDT after re-dispatch. |
+| **ℹ️ JN-5612 new ticket** | "Fix github.GITHUB_SHA → github.sha in all workflow run-name fields" — Backlog, assigned to Joseph, no worktree yet. |
 
 ---
 
@@ -143,6 +145,7 @@ Session [019eda0a](http://127.0.0.1:3030/ui/s/019eda0ae5667f0fa8bf3d95/) — idl
 | [JN-5728](https://jounce.atlassian.net/browse/JN-5728) | Fix e2e CI workflow gaps | Backlog | No worktree |
 | [JN-5539](https://jounce.atlassian.net/browse/JN-5539) | Dependency & Build Standardization | **In Progress** | No worktree — may be cross-cutting |
 | [JN-5244](https://jounce.atlassian.net/browse/JN-5244) | Add --user, --no-cache CLI flags to runner | **In Progress** | No worktree — may be older/lower priority |
+| [JN-5612](https://jounce.atlassian.net/browse/JN-5612) | Fix github.GITHUB_SHA → github.sha in all workflow run-name fields | Backlog | No worktree — new as of Jun 23 14:30 IDT scan |
 
 ---
 

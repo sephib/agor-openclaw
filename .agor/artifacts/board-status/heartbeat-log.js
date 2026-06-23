@@ -1199,4 +1199,13 @@ export const HEARTBEAT_RUNS = [
     summary: "🟢 PR #1622 (JN-5724) + PR #1623 (JN-5616) CREATED — both DRAFT, MERGEABLE, all CI PASS. 🔴 #1606 CI FAILED+CONFLICTING; #1615 DRAFT+CONFLICTING; #1588 pre-commit FAIL. internal-cr-system idle.",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019ef423687273a0bfc6fa42/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-23 14:30 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "Board static — no new merges, no CI changes. #1622 + #1623 DRAFT/PASS awaiting promotion; #1606 CONFLICTING CI FAILED; #1615 DRAFT+CONFLICTING; #1588 pre-commit FAIL. JN-5612 new backlog ticket noted.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019ef43edff47c209af1e951/",
+  },
 ];
