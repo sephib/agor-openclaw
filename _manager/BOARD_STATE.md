@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-23 04:00 IDT (advance heartbeat)*
+*Last updated: 2026-06-23 06:00 IDT (advance heartbeat)*
 
 ---
 
@@ -8,7 +8,7 @@
 
 | Branch | Jira | Zone | Jira Status | PR | CI | Review | Flags |
 |--------|------|------|-------------|-----|-----|--------|-------|
-| jn-5676-notebook-scaffold | [JN-5676](https://jounce.atlassian.net/browse/JN-5676) | Publish | In Review | [#1604](https://github.com/Jounce-IO/jounce/pull/1604) **OPEN** | ✅ **ALL GREEN** (run 27959917357: ALL checks pass) | **APPROVED** ✅ | 🎉🎉 **READY TO MERGE — ALL CI GREEN + APPROVED. 17th flag. Merge now!** |
+| jn-5676-notebook-scaffold | [JN-5676](https://jounce.atlassian.net/browse/JN-5676) | Publish | In Review | [#1604](https://github.com/Jounce-IO/jounce/pull/1604) **OPEN** | ✅ **ALL GREEN** (run 27959917357: ALL checks pass) | **APPROVED** ✅ | 🎉🎉 **READY TO MERGE — ALL CI GREEN + APPROVED. 18th flag. Merge now!** |
 | jn-5677-dev-historical-mode-notebook-cells | [JN-5677](https://jounce.atlassian.net/browse/JN-5677) | Revise | In Review | [#1615](https://github.com/Jounce-IO/jounce/pull/1615) **DRAFT** OPEN | ❌ **CONFLICTING** | REVIEW_REQUIRED | 🔴 **DRAFT + CONFLICTING** — blocked on #1604 merging first |
 | jn-5546-docs-document-module-layout-convention-and-3 | [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | Code Review | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | ❌ **pre-commit FAIL** (run 27933817996) | reviewDecision="" | 🔴 **CI FAILING** — pre-commit FAIL; Jira should be "In Review" |
 | jn-5724-lychee-precommit-flaky | [JN-5724](https://jounce.atlassian.net/browse/JN-5724) | Ingest | In Progress | — | — | — | 🔴 **filesystem FAILED** (git lock — same error as internal-cr-system) |
@@ -48,11 +48,11 @@
 
 ---
 
-## Key Changes Since Last Run (Jun 23 02:00 IDT)
+## Key Changes Since Last Run (Jun 23 04:00 IDT)
 
 | What observed | Status |
 |---|---|
-| **↔ PR #1604 still OPEN (17th flag)** | ALL CI GREEN + APPROVED + MERGEABLE — still not merged. |
+| **↔ PR #1604 still OPEN (18th flag)** | ALL CI GREEN + APPROVED + MERGEABLE — still not merged. |
 | **↔ PR #1606 — e2e-smoke FAILED + e2e-tests FAILED** | Unchanged since 02:00 IDT. Run 27980646274 still the latest. No new commits or CI runs overnight. |
 | **↔ PR #1588 pre-commit FAIL** | Still failing (run 27933817996). Unchanged. |
 | **↔ PR #1615 DRAFT + CONFLICTING** | Blocked on #1604. Unchanged. |
@@ -63,13 +63,13 @@
 
 ## Attention Items
 
-### 🎉🎉 PR #1604 (JN-5676) — ALL GREEN — READY TO MERGE NOW (17th flag)
+### 🎉🎉 PR #1604 (JN-5676) — ALL GREEN — READY TO MERGE NOW (18th flag)
 
 PR [#1604](https://github.com/Jounce-IO/jounce/pull/1604) — "feat(jbenchmark): notebook scaffold + operational mode (JN-5676)"
 
 **ALL CI CHECKS PASSED** (run 27959917357): pre-commit ✅, integration ✅, e2e-api ✅, tox ✅, nox ✅, integration-tests ✅, e2e-smoke ✅, e2e-tests ✅, atlas-validate ✅. APPROVED. MERGEABLE.
 
-**Required action: MERGE THIS PR.** Everything is green. No blockers. This is the 17th consecutive flag.
+**Required action: MERGE THIS PR.** Everything is green. No blockers. This is the 18th consecutive flag.
 
 ---
 

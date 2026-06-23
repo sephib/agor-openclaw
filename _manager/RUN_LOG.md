@@ -2218,3 +2218,10 @@
 - Flags: #1604 17th merge flag; #1606 e2e-smoke+e2e-tests FAILED (run 27980646274); #1588 pre-commit FAIL; #1615 DRAFT+CONFLICTING; 2 git lock worktrees; JN-5673 stale Jira 7+ days
 - Auto-archives: none (no merged/closed PRs detected)
 - Next: MERGE #1604 (17th flag — action overdue). Investigate #1606 e2e-smoke failure. Fix #1588 pre-commit. Fix git lock × 2.
+
+## 06:00 IDT — Overnight Heartbeat
+- PRs checked: #1604 (OPEN, ALL GREEN, APPROVED), #1615 (DRAFT, CONFLICTING), #1588 (OPEN, pre-commit FAIL), #1596 (DRAFT, CONFLICTING), #1606 (OPEN, e2e-smoke FAILED + e2e-tests FAILED)
+- Merges detected: none
+- CI changes: none — all CI unchanged since 04:00 IDT
+- Flags: PR #1604 still not merged (18th flag); PR #1606 e2e failures persist; PR #1588 pre-commit fail; JN-5673 Jira still stale (In Review, PR merged Jun 17)
+- Next: Joseph to merge #1604 at start of day; investigate #1606 e2e-smoke failure
