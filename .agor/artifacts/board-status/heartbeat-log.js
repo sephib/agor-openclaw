@@ -1190,4 +1190,13 @@ export const HEARTBEAT_RUNS = [
     summary: "🟢 jn-5724 READY TO PUSH (user approval needed). 🟢 jn-5616 VALIDATED (ready for /publish). 🔴 PR #1606 CI FAILED (e2e-smoke + e2e-tests). #1615 DRAFT+CONFLICTING. #1588 pre-commit FAIL.",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019ef407f0907df3a381310c/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-23 13:31 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "🟢 PR #1622 (JN-5724) + PR #1623 (JN-5616) CREATED — both DRAFT, MERGEABLE, all CI PASS. 🔴 #1606 CI FAILED+CONFLICTING; #1615 DRAFT+CONFLICTING; #1588 pre-commit FAIL. internal-cr-system idle.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019ef423687273a0bfc6fa42/",
+  },
 ];

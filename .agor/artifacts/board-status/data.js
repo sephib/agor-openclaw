@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-23 13:01 IDT";
+export const LAST_UPDATED = "2026-06-23 13:31 IDT";
 
 export const WORKTREES = [
   {
@@ -8,14 +8,14 @@ export const WORKTREES = [
     branch: "jn-5724-lychee-precommit-flaky",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5724-lychee-precommit-flaky",
     zone: "Publish",
-    pr: null,
-    prUrl: null,
-    status: "🟢 READY TO PUSH — fix implemented (remove stale lychee exclude_path), session 019ef3e3 waiting for user approval to push branch + create draft PR. Respond 'yes' to proceed.",
-    blockedOn: "Awaiting user approval to push",
+    pr: "#1622 DRAFT",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1622",
+    status: "🟢 PR #1622 CREATED — DRAFT, MERGEABLE, all CI PASS (run 28020178138). Jira In Review. Needs promotion from DRAFT.",
+    blockedOn: "Awaiting DRAFT promotion",
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019ef3e3ea0e734d882e878e/",
-    sessionLabel: "publish session (awaiting approval)",
-    lastActive: "2026-06-23 10:28 IDT (session idle, awaiting push approval)",
+    sessionLabel: "publish session (complete)",
+    lastActive: "2026-06-23 10:28 IDT",
   },
   {
     ticket: "JN-5616",
@@ -23,15 +23,15 @@ export const WORKTREES = [
     title: "Replace find_project_root() calls in tests with conftest fixture",
     branch: "jn-5616-replace-find-project-root",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5616-replace-find-project-root",
-    zone: "Code",
-    pr: null,
-    prUrl: null,
-    status: "🟢 VALIDATED — all 32 pre-commit hooks PASS, all 3161 unit tests PASS, rebased on main. Ready for /publish.",
-    blockedOn: null,
+    zone: "Publish",
+    pr: "#1623 DRAFT",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1623",
+    status: "🟢 PR #1623 CREATED — DRAFT, MERGEABLE, all CI PASS (run 28020219339). Jira In Review. Needs promotion from DRAFT.",
+    blockedOn: "Awaiting DRAFT promotion",
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019ef405c3e3746c900eac40/",
-    sessionLabel: "validate session (complete)",
-    lastActive: "2026-06-23 10:33 IDT (validation passed)",
+    sessionLabel: "publish session (complete)",
+    lastActive: "2026-06-23 10:33 IDT",
   },
   {
     ticket: "JN-5677",
@@ -75,8 +75,8 @@ export const WORKTREES = [
     zone: "Code",
     pr: null,
     prUrl: null,
-    status: "⚠️ Git lock on filesystem (failed). Re-dispatched agents at 09:50 IDT — status unknown. Check session for review results.",
-    blockedOn: "git lock on filesystem",
+    status: "⚠️ Session idle since 09:50 IDT after re-dispatch. Status unclear — check session for results.",
+    blockedOn: "status unclear after re-dispatch",
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019eda0ae5667f0fa8bf3d95/",
     sessionLabel: "Phase 2 session",
@@ -194,11 +194,11 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "green",
-    message: "🟢 jn-5724 (JN-5724, Publish zone): READY TO PUSH — session 019ef3e3 waiting for user approval. Fix: remove stale lychee exclude_path. Respond 'yes' in session to push + create draft PR.",
+    message: "🟢 PR #1622 (JN-5724, Publish): DRAFT created — MERGEABLE, all CI PASS. Promote from DRAFT when ready.",
   },
   {
     level: "green",
-    message: "🟢 jn-5616 (JN-5616, Code zone): VALIDATED — all 32 pre-commit hooks + 3161 unit tests PASS. Run /publish in session 019ef405 to create draft PR.",
+    message: "🟢 PR #1623 (JN-5616, Publish): DRAFT created — MERGEABLE, all CI PASS. Promote from DRAFT when ready.",
   },
   {
     level: "red",
@@ -214,6 +214,6 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⚠️ internal-cr-system (Code zone): agents re-dispatched 09:50 IDT. Git lock on filesystem persists. Check session 019eda0a for results.",
+    message: "⚠️ internal-cr-system (Code zone): session idle since 09:50 IDT after re-dispatch. Check session 019eda0a for results.",
   },
 ];

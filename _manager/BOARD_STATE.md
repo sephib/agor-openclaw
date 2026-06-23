@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-23 13:01 IDT (advance heartbeat)*
+*Last updated: 2026-06-23 13:31 IDT (advance heartbeat)*
 
 ---
 
@@ -8,11 +8,11 @@
 
 | Branch | Jira | Zone | Jira Status | PR | CI | Review | Flags |
 |--------|------|------|-------------|-----|-----|--------|-------|
+| jn-5724-lychee-precommit-flaky | [JN-5724](https://jounce.atlassian.net/browse/JN-5724) | Publish | In Review | [#1622](https://github.com/Jounce-IO/jounce/pull/1622) **DRAFT** MERGEABLE | ✅ ALL PASS (run 28020178138) | REVIEW_REQUIRED | 🟢 **PR #1622 CREATED** — DRAFT, all CI passing. Needs promotion from DRAFT. |
+| jn-5616-replace-find-project-root | [JN-5616](https://jounce.atlassian.net/browse/JN-5616) | Publish | In Review | [#1623](https://github.com/Jounce-IO/jounce/pull/1623) **DRAFT** MERGEABLE | ✅ ALL PASS (run 28020219339) | REVIEW_REQUIRED | 🟢 **PR #1623 CREATED** — DRAFT, all CI passing. Needs promotion from DRAFT. |
 | jn-5677-dev-historical-mode-notebook-cells | [JN-5677](https://jounce.atlassian.net/browse/JN-5677) | Revise | Done | [#1615](https://github.com/Jounce-IO/jounce/pull/1615) **DRAFT** CONFLICTING | ❌ pre-commit FAIL (run 27934981657) | REVIEW_REQUIRED | 🔴 **UNBLOCK** — resolve conflicts, fix pre-commit, promote from DRAFT |
 | jn-5546-docs-document-module-layout-convention-and-3 | [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | Code Review | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | ❌ **pre-commit FAIL** (run 27933817996) | reviewDecision="" | 🔴 **CI FAILING** — pre-commit FAIL; Jira should be "In Review" |
-| jn-5724-lychee-precommit-flaky | [JN-5724](https://jounce.atlassian.net/browse/JN-5724) | Publish | In Progress | — | — | — | 🟢 **READY TO PUSH** — session waiting for user approval to push branch + create draft PR. Fix: remove stale lychee exclude_path. Session 019ef3e3 idle since 10:28 IDT. |
-| jn-5616-replace-find-project-root | [JN-5616](https://jounce.atlassian.net/browse/JN-5616) | Code | In Progress | — | — | — | 🟢 **VALIDATED** — all 32 pre-commit hooks PASS, all 3161 unit tests PASS. Ready for /publish. Session 019ef405 idle since 10:33 IDT. |
-| internal-cr-system | — | Code | — | — | — | — | ⚠️ **git lock on filesystem** — re-dispatched agents at 09:50 IDT; status unknown |
+| internal-cr-system | — | Code | — | — | — | — | ⚠️ Session idle since 09:50 IDT; status after re-dispatch unclear |
 | jn-5695-db-connect-script | [JN-5695](https://jounce.atlassian.net/browse/JN-5695) | BLOCKED | Backlog | [#1596](https://github.com/Jounce-IO/jounce/pull/1596) DRAFT | ⚠️ CONFLICTING | — | 🔴 CONFLICTING; frozen |
 | jn-5672-dal-ext-dashboard | [JN-5672](https://jounce.atlassian.net/browse/JN-5672) | BLOCKED | Backlog | — | — | — | ℹ️ On hold |
 
@@ -46,43 +46,40 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | ❌ run 28015066339 COMPLETE — **FAILURE** (e2e-smoke FAIL, e2e-tests FAIL) | OPEN, **CONFLICTING**, REVIEW_REQUIRED="" | 🔴 **CI FAILED + CONFLICTING** — e2e-smoke and e2e-tests both failed; ALSO still conflicting after #1619 merge. Needs: (1) fix e2e failures, (2) rebase onto main, (3) new CI run. JN-5725 Done. |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | ❌ last known: FAILURE (run 28015066339) — no new CI run detected | OPEN, **CONFLICTING** | 🔴 **CI FAILED + CONFLICTING** — e2e-smoke and e2e-tests failed. Still conflicting. JN-5725 Done. |
 
 ---
 
-## Key Changes Since Last Run (Jun 23 12:31 IDT)
+## Key Changes Since Last Run (Jun 23 13:01 IDT)
 
 | What observed | Status |
 |---|---|
-| **🟢 jn-5724 → Publish zone, READY TO PUSH** | Session 019ef3e3 at 10:28 IDT: fix implemented (1 commit: remove stale lychee exclude_path), asking user to confirm push + draft PR. |
-| **🟢 jn-5616 → Code zone, VALIDATION PASSED** | Session 019ef405 at 10:33 IDT: all 32 pre-commit hooks pass, 3161 unit tests pass. Ready for /publish. |
-| **🔴 PR #1606 CI FAILED** | Run 28015066339 completed with FAILURE — e2e-smoke and e2e-tests both failed. Was "9/10 PASS, e2e-smoke pending" at 12:31. |
-| **↔ PR #1615 (JN-5677)** | DRAFT + CONFLICTING + pre-commit FAIL. Session last active Jun 22 14:25 IDT. No change. |
-| **↔ PR #1588 (JN-5546)** | pre-commit FAIL. MERGEABLE (no git conflicts). No new CI run. No change. |
-| **↔ internal-cr-system** | Re-dispatched agents at 09:50 IDT. Git lock on filesystem. Status unclear. |
+| **🟢 jn-5724 → PR #1622 CREATED** | Draft PR created: MERGEABLE, all CI checks PASS. Jira already "In Review". |
+| **🟢 jn-5616 → PR #1623 CREATED** | Draft PR created: MERGEABLE, all CI checks PASS. Jira already "In Review". |
+| **↔ PR #1615 (JN-5677)** | DRAFT + CONFLICTING + pre-commit FAIL. No change. |
+| **↔ PR #1588 (JN-5546)** | pre-commit FAIL. MERGEABLE. No change. |
+| **↔ PR #1606 (JN-5725)** | OPEN, CONFLICTING. No new CI run. Last known: CI FAILED. |
+| **↔ internal-cr-system** | Session idle since 09:50 IDT after re-dispatch. |
 
 ---
 
 ## Attention Items
 
-### 🟢 jn-5724 (JN-5724) — READY TO PUSH: waiting for user approval
+### 🟢 PR #1622 (JN-5724) — DRAFT: promote when ready
 
-Session [019ef3e3](http://127.0.0.1:3030/ui/s/019ef3e3ea0e734d882e878e/) — idle since 10:28 IDT, asking user to confirm:
-
-- **Branch:** `jn-5724-lychee-precommit-flaky`
-- **Fix:** `fix(lychee): remove stale exclude_path for non-existent directory (JN-5724)`
-- **Action needed:** Respond "yes" to push branch + create draft PR
+PR [#1622](https://github.com/Jounce-IO/jounce/pull/1622): `fix(lychee): remove stale exclude_path for non-existent directory (JN-5724)`
+- DRAFT, MERGEABLE, ALL CI PASS ✅
+- Jira [JN-5724](https://jounce.atlassian.net/browse/JN-5724): In Review ✅
+- **Action needed:** Promote from DRAFT → Ready for Review
 
 ---
 
-### 🟢 jn-5616 (JN-5616) — VALIDATED: ready for /publish
+### 🟢 PR #1623 (JN-5616) — DRAFT: promote when ready
 
-Session [019ef405](http://127.0.0.1:3030/ui/s/019ef405c3e3746c900eac40/) — idle since 10:33 IDT, validation complete:
-
-- All 32 pre-commit hooks pass ✅
-- All 3161 unit tests pass ✅
-- Branch rebased on current main ✅
-- **Action needed:** Run `/publish` to push branch and create draft PR
+PR [#1623](https://github.com/Jounce-IO/jounce/pull/1623): `refactor(jbenchmark): replace find_project_root() in tests with conftest fixtures (JN-5616)`
+- DRAFT, MERGEABLE, ALL CI PASS ✅
+- Jira [JN-5616](https://jounce.atlassian.net/browse/JN-5616): In Review ✅
+- **Action needed:** Promote from DRAFT → Ready for Review
 
 ---
 
@@ -92,7 +89,7 @@ PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): CI run 28015066339 co
 - e2e-smoke: FAILED
 - e2e-tests: FAILED
 
-PR also CONFLICTING after #1619 merged to main. JN-5725 Jira: Done.
+PR also CONFLICTING. JN-5725 Jira: Done.
 
 Required actions:
 1. Fix e2e failures (check run 28015066339 logs for root cause)
@@ -123,9 +120,9 @@ PR [#1588](https://github.com/Jounce-IO/jounce/pull/1588): pre-commit CI FAILING
 
 ---
 
-### ⚠️ internal-cr-system — agents re-dispatched, status unknown
+### ⚠️ internal-cr-system — session idle, status unclear
 
-Session [019eda0a](http://127.0.0.1:3030/ui/s/019eda0ae5667f0fa8bf3d95/) — re-dispatched agents at 09:50 IDT. Git lock on filesystem persists. Agents may still be running or may have completed — check session for results.
+Session [019eda0a](http://127.0.0.1:3030/ui/s/019eda0ae5667f0fa8bf3d95/) — idle since 09:50 IDT after re-dispatch. Unknown whether git lock was resolved and work completed. Check session for results.
 
 ---
 
