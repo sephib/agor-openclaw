@@ -4,6 +4,23 @@
 
 ---
 
+## 00:00 IDT — Weekday Overnight Advance Heartbeat (2026-06-25)
+
+**Session:** 019efb6e-ee3b | http://127.0.0.1:3030/ui/s/019efb6eee3b789f8ac010bb/
+
+> ⚠️ BOARD_STATE.md was ~17.5 hours old. Overnight session scheduled 21:00 UTC Jun 24 = 00:00 IDT Jun 25. Full refresh performed.
+
+- PRs checked: #1622 (DRAFT, MERGEABLE, CI ALL PASS new run 28124127331), #1623 (**PROMOTED FROM DRAFT**, MERGEABLE, CI ALL PASS run 28124083253 — full e2e suite), #1615 (DRAFT, CONFLICTING, CI blocked — unchanged), #1588 (OPEN MERGEABLE, pre-commit FAIL run 27933817996 — unchanged), #1596 (DRAFT, CONFLICTING — unchanged), #1606 off-board (**CI FAILED** run 28122073927 — e2e-smoke FAIL 17m15s + e2e-tests FAIL)
+- Merges detected: none — latest merge still PR #1604 at 10:51 IDT Jun 23
+- Archives: none — no MERGED/CLOSED PRs found
+- CI changes: **PR #1623 PROMOTED FROM DRAFT** (biggest change — now open for review, full e2e suite passing); **PR #1606 CI FAILED** (e2e-smoke + e2e-tests, was "CI RUNNING" at last check); PR #1622 updated CI run (28124127331)
+- Jira: JN-5616 In Review ✅, JN-5724 In Review ✅, JN-5677 Done (PR still open/conflicting), JN-5546 In Progress (should be In Review)
+- Flags: (1) #1623 PROMOTED — needs reviewer; (2) #1606 CI FAILED again; (3) #1622 DRAFT awaiting promotion; (4) #1615 DRAFT+CONFLICTING; (5) #1588 pre-commit FAIL; (6) internal-cr-system filesystem failed
+- Auto-archives: none
+- Next: Joseph to assign reviewer on #1623; investigate #1606 e2e failure (run 28122073927); promote #1622 from DRAFT; unblock #1615
+
+---
+
 ## 16:30 IDT — Weekday Daytime Advance Heartbeat (2026-06-24)
 
 **Session:** 019ef9d3-103a | http://127.0.0.1:3030/ui/s/019ef9d3103a761c906f784f/

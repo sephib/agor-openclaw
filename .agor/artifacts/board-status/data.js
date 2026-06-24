@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-24 16:30 IDT";
+export const LAST_UPDATED = "2026-06-25 00:00 IDT";
 
 export const WORKTREES = [
   {
@@ -10,7 +10,7 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1622 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1622",
-    status: "🟢 PR #1622 DRAFT — all CI PASS (run 28020178138), REVIEW_REQUIRED. Jira In Review. Needs promotion from DRAFT.",
+    status: "🟢 PR #1622 DRAFT — all CI PASS (run 28124127331), REVIEW_REQUIRED. Jira In Review. Needs promotion from DRAFT.",
     blockedOn: "Awaiting DRAFT promotion",
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019ef3e3ea0e734d882e878e/",
@@ -24,10 +24,10 @@ export const WORKTREES = [
     branch: "jn-5616-replace-find-project-root",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5616-replace-find-project-root",
     zone: "Validate",
-    pr: "#1623 DRAFT",
+    pr: "#1623",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1623",
-    status: "🟢 PR #1623 DRAFT — MERGEABLE, all CI PASS (run 28020219339). Jira In Review. Needs promotion from DRAFT.",
-    blockedOn: "Awaiting DRAFT promotion",
+    status: "🟢 PR #1623 PROMOTED FROM DRAFT — MERGEABLE, full e2e suite ALL PASS (run 28124083253: e2e-product ✅ 19m, e2e-smoke ✅ 11m, e2e-api ✅). CodeRabbit done. Jira In Review. Needs reviewer assigned.",
+    blockedOn: "Awaiting reviewer assignment",
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019ef405c3e3746c900eac40/",
     sessionLabel: "publish session (complete)",
@@ -193,16 +193,16 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "yellow",
-    message: "🟡 PR #1606 (JN-5725, off-board): NEW CI RUN IN PROGRESS (run 28102143811) — someone rebased since Jun 23. Was CONFLICTING+CI FAILED. Now MERGEABLE. Monitor outcome.",
+    level: "green",
+    message: "🟢 PR #1623 (JN-5616, Validate): PROMOTED FROM DRAFT — MERGEABLE, full e2e suite ALL PASS (run 28124083253). Assign reviewer to merge.",
+  },
+  {
+    level: "red",
+    message: "🔴 PR #1606 (JN-5725, off-board): CI FAILED (run 28122073927) — e2e-smoke FAIL (17m15s) + e2e-tests FAIL. Rebase resolved conflicts but e2e still failing. Investigate failure logs.",
   },
   {
     level: "green",
-    message: "🟢 PR #1622 (JN-5724, Publish): DRAFT — all CI PASS (run 28020178138). Promote from DRAFT when ready.",
-  },
-  {
-    level: "green",
-    message: "🟢 PR #1623 (JN-5616, Validate): DRAFT — MERGEABLE, all CI PASS (run 28020219339). Promote from DRAFT when ready.",
+    message: "🟢 PR #1622 (JN-5724, Publish): DRAFT — all CI PASS (run 28124127331). Promote from DRAFT when ready.",
   },
   {
     level: "red",

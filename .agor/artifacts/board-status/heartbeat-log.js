@@ -22,6 +22,15 @@ export const HEARTBEAT_RUNS = [
   // },
   {
     type: "advance",
+    timestamp: "2026-06-25 00:00 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "🟢 PR #1623 (JN-5616) PROMOTED FROM DRAFT — MERGEABLE, full e2e suite PASS (run 28124083253: e2e-product ✅ 19m, e2e-smoke ✅ 11m). Needs reviewer. 🔴 PR #1606 CI FAILED (run 28122073927: e2e-smoke+e2e-tests FAIL — rebase helped conflicts but e2e still broken). PR #1622 new CI run 28124127331 still DRAFT. #1615 DRAFT+CONFLICTING, #1588 pre-commit FAIL — all unchanged.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019efb6eee3b789f8ac010bb/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-24 16:30 IDT",
     actions: 0,
     findings: 6,

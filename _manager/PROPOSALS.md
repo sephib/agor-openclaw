@@ -4,6 +4,23 @@
 
 ---
 
+## 2026-06-25 00:00 IDT — Overnight Advance Heartbeat
+
+### 🟢 Proposal: Move jn-5616 to Code Review zone — PR #1623 promoted from DRAFT
+- **Action:** Move `jn-5616-replace-find-project-root` from Validate zone → Code Review zone
+- **Reason:** PR [#1623](https://github.com/Jounce-IO/jounce/pull/1623) was promoted from DRAFT overnight. Now OPEN, MERGEABLE, full e2e suite ALL PASS (run 28124083253: e2e-product ✅ 19m27s, e2e-smoke ✅ 11m19s, e2e-api ✅). CodeRabbit review completed. Needs a human reviewer assigned.
+- **Risk:** Low — zone move triggers Code Review prompt template; worktree may spin up a session
+- **Worktree:** jn-5616-replace-find-project-root (branch_id: `019eefb5-f4fc-7c6d-a7e1-3aaf5be8b804`)
+- **Status:** PENDING
+
+### 🔴 Proposal: Investigate PR #1606 (JN-5725) e2e failure — run 28122073927
+- **Action:** Joseph investigates or approves a fix session to diagnose `e2e-smoke` + `e2e-tests` failure on PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606)
+- **Reason:** The rebase (which made #1606 MERGEABLE) completed, but new CI run 28122073927 still fails: e2e-smoke (17m15s FAIL) + e2e-tests FAIL. All 14 other checks pass. Pattern persists: e2e-smoke and e2e-tests consistently fail on this PR across multiple runs. JN-5725 Jira is Done.
+- **Risk:** Low for investigation. The root cause may be a real regression in the PR's vllm-analyzer changes.
+- **Status:** PENDING
+
+---
+
 ## 2026-06-21 10:31 IDT — Advance Heartbeat
 
 ### ~~🎉 PR #1605 (JN-5730) ALL GREEN + APPROVED — Ready to merge~~ — RESOLVED ✅
