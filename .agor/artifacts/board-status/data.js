@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-23 15:30 IDT";
+export const LAST_UPDATED = "2026-06-24 16:30 IDT";
 
 export const WORKTREES = [
   {
@@ -10,7 +10,7 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1622 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1622",
-    status: "🟢 PR #1622 CREATED — DRAFT, MERGEABLE, all CI PASS (run 28020178138). Jira In Review. Needs promotion from DRAFT.",
+    status: "🟢 PR #1622 DRAFT — all CI PASS (run 28020178138), REVIEW_REQUIRED. Jira In Review. Needs promotion from DRAFT.",
     blockedOn: "Awaiting DRAFT promotion",
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019ef3e3ea0e734d882e878e/",
@@ -26,7 +26,7 @@ export const WORKTREES = [
     zone: "Validate",
     pr: "#1623 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1623",
-    status: "🟢 PR #1623 CREATED — DRAFT, MERGEABLE, all CI PASS (run 28020219339). Jira In Review. Needs promotion from DRAFT. (Zone: Validate per Agor)",
+    status: "🟢 PR #1623 DRAFT — MERGEABLE, all CI PASS (run 28020219339). Jira In Review. Needs promotion from DRAFT.",
     blockedOn: "Awaiting DRAFT promotion",
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019ef405c3e3746c900eac40/",
@@ -43,12 +43,12 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1615 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1615",
-    status: "🔴 DRAFT + CONFLICTING + pre-commit FAIL — UNBLOCK: resolve conflicts, fix pre-commit, promote from DRAFT. Jira Done. (Zone: Code per Agor, was Revise in previous state)",
-    blockedOn: "Merge conflict + DRAFT + pre-commit FAIL",
+    status: "🔴 DRAFT + CONFLICTING — CI blocked (only CodeRabbit). UNBLOCK: resolve conflicts, fix pre-commit, promote from DRAFT. Jira Done.",
+    blockedOn: "Merge conflict + DRAFT",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019eeaf04583757a89f47a99/",
     sessionLabel: "session",
-    lastActive: "2026-06-22 14:25 IDT (squash message composed)",
+    lastActive: "2026-06-22 14:25 IDT",
   },
   {
     ticket: "JN-5546",
@@ -75,12 +75,12 @@ export const WORKTREES = [
     zone: "Code",
     pr: null,
     prUrl: null,
-    status: "⚠️ Session idle since 09:50 IDT after re-dispatch. Status unclear — check session for results.",
-    blockedOn: "status unclear after re-dispatch",
-    blockedType: "running",
+    status: "⚠️ filesystem_status: failed (git lock error on .git/config). No PR. Stagnant since Jun 18.",
+    blockedOn: "git lock filesystem failure",
+    blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019eda0ae5667f0fa8bf3d95/",
     sessionLabel: "Phase 2 session",
-    lastActive: "2026-06-23 09:50 IDT (agents re-dispatched)",
+    lastActive: "2026-06-23 09:50 IDT",
   },
   {
     ticket: "JN-5695",
@@ -193,20 +193,20 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "green",
-    message: "🟢 PR #1622 (JN-5724, Publish): DRAFT created — MERGEABLE, all CI PASS. Promote from DRAFT when ready.",
+    level: "yellow",
+    message: "🟡 PR #1606 (JN-5725, off-board): NEW CI RUN IN PROGRESS (run 28102143811) — someone rebased since Jun 23. Was CONFLICTING+CI FAILED. Now MERGEABLE. Monitor outcome.",
   },
   {
     level: "green",
-    message: "🟢 PR #1623 (JN-5616, Publish): DRAFT created — MERGEABLE, all CI PASS. Promote from DRAFT when ready.",
+    message: "🟢 PR #1622 (JN-5724, Publish): DRAFT — all CI PASS (run 28020178138). Promote from DRAFT when ready.",
+  },
+  {
+    level: "green",
+    message: "🟢 PR #1623 (JN-5616, Validate): DRAFT — MERGEABLE, all CI PASS (run 28020219339). Promote from DRAFT when ready.",
   },
   {
     level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): CI FAILED — run 28015066339 e2e-smoke + e2e-tests FAILED. PR also CONFLICTING. Needs: (1) fix e2e failures, (2) rebase onto main, (3) new CI run. JN-5725 Done.",
-  },
-  {
-    level: "red",
-    message: "🔴 PR #1615 (JN-5677, Code zone): DRAFT + CONFLICTING + pre-commit FAIL — UNBLOCK: resolve conflicts, fix pre-commit, promote from DRAFT. Jira already Done.",
+    message: "🔴 PR #1615 (JN-5677, Code zone): DRAFT + CONFLICTING — CI blocked. UNBLOCK: resolve conflicts, fix pre-commit, promote from DRAFT. Jira already Done.",
   },
   {
     level: "red",
@@ -214,6 +214,6 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⚠️ internal-cr-system (Code zone): session idle since 09:50 IDT after re-dispatch. Check session 019eda0a for results.",
+    message: "⚠️ internal-cr-system (Code zone): filesystem_status failed (git lock error). No PR. Stagnant since Jun 18.",
   },
 ];

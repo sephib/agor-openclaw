@@ -22,6 +22,15 @@ export const HEARTBEAT_RUNS = [
   // },
   {
     type: "advance",
+    timestamp: "2026-06-24 16:30 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "🟡 PR #1606 (JN-5725) REBASED — was CONFLICTING+CI FAILED, now MERGEABLE + new CI run 28102143811 IN PROGRESS (pre-commit/tox/integration/e2e-api PENDING). #1622+#1623 DRAFT/PASS still awaiting promotion. #1615 DRAFT+CONFLICTING. #1588 pre-commit FAIL. internal-cr-system filesystem failed. 25h gap (08:00+08:30 IDT sessions failed, 11:30+12:30 idle).",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019ef9d3103a761c906f784f/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-22 14:30 IDT",
     actions: 0,
     findings: 7,

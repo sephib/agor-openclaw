@@ -4,6 +4,23 @@
 
 ---
 
+## 16:30 IDT — Weekday Daytime Advance Heartbeat (2026-06-24)
+
+**Session:** 019ef9d3-103a | http://127.0.0.1:3030/ui/s/019ef9d3103a761c906f784f/
+
+> ⚠️ BOARD_STATE.md was ~25 hours old. Sessions at 08:00+08:30 IDT Jun 24 failed; 11:30+12:30 IDT idle with no output. Full refresh performed.
+
+- PRs checked: #1622 (DRAFT, UNKNOWN mergeable, CI ALL PASS — unchanged), #1623 (DRAFT, MERGEABLE, CI ALL PASS — unchanged), #1615 (DRAFT, CONFLICTING, CI blocked — unchanged), #1588 (OPEN MERGEABLE, pre-commit FAIL — unchanged), #1596 (DRAFT, CONFLICTING — unchanged), #1606 off-board (OPEN, **MERGEABLE** — was CONFLICTING+CI FAILED; new CI run 28102143811 IN PROGRESS)
+- Merges detected: none — latest merge still PR #1604 at 10:51 IDT Jun 23
+- Archives: none — no MERGED/CLOSED PRs found
+- CI changes: **PR #1606 major change** — rebased by someone overnight; CONFLICTING → MERGEABLE; new CI run 28102143811 now running (integration/pre-commit/tox/e2e-api PENDING; atlas-validate ✅). All board PRs static.
+- Jira: JN-5724 In Review ✅, JN-5616 In Review ✅, JN-5677 Done (PR still open/conflicting), JN-5546 In Progress (should be In Review), JN-5670 In Progress (no worktree), JN-5539 In Progress (no worktree)
+- Flags: (1) #1606 CI running — watch outcome; (2) #1622 + #1623 DRAFT awaiting promotion; (3) #1615 DRAFT+CONFLICTING; (4) #1588 pre-commit FAIL; (5) internal-cr-system filesystem failed; (6) JN-5546 Jira stale
+- Auto-archives: none
+- Next: Monitor PR #1606 CI outcome; promote #1622 + #1623 from DRAFT; unblock #1615 conflicts; fix #1588 pre-commit
+
+---
+
 ## 15:30 IDT — Weekday Daytime Advance Heartbeat (2026-06-23)
 
 **Session:** 019ef551-a432 | http://127.0.0.1:3030/ui/s/019ef551a432772c80c1ffda/
