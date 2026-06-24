@@ -22,6 +22,15 @@ export const HEARTBEAT_RUNS = [
   // },
   {
     type: "advance",
+    timestamp: "2026-06-25 02:00 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "Board fully static — no merges, no CI changes since midnight IDT run. #1623 still needs reviewer (promoted at 00:00 IDT); #1622 DRAFT/PASS awaiting promotion; #1606 e2e FAIL unchanged; #1615 DRAFT+CONFLICTING; #1588 pre-commit FAIL; internal-cr-system failed.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019efbdccd8c727f8fbe7dda/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-25 00:00 IDT",
     actions: 0,
     findings: 6,

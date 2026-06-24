@@ -1,8 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-25 00:00 IDT (advance heartbeat)*
-
-> ⚠️ BOARD_STATE.md was ~17.5 hours old at start of this run (last updated Jun 24 16:30 IDT). Overnight sessions at 21:00 UTC Jun 24 = midnight IDT Jun 25. Full refresh performed.
+*Last updated: 2026-06-25 02:00 IDT (advance heartbeat)*
 
 ---
 
@@ -11,15 +9,12 @@
 | Branch | Jira | Zone | Jira Status | PR | CI | Review | Flags |
 |--------|------|------|-------------|-----|-----|--------|-------|
 | jn-5724-lychee-precommit-flaky | [JN-5724](https://jounce.atlassian.net/browse/JN-5724) | Publish | In Review | [#1622](https://github.com/Jounce-IO/jounce/pull/1622) **DRAFT** MERGEABLE | ✅ ALL PASS (run 28124127331) | REVIEW_REQUIRED | 🟢 **PR #1622** — DRAFT, all CI passing. Needs promotion from DRAFT. |
-| jn-5616-replace-find-project-root | [JN-5616](https://jounce.atlassian.net/browse/JN-5616) | Validate | In Review | [#1623](https://github.com/Jounce-IO/jounce/pull/1623) **OPEN** (promoted from DRAFT) MERGEABLE | ✅ ALL PASS (run 28124083253 — full e2e suite) | reviewDecision="" | 🟢 **PR #1623 PROMOTED FROM DRAFT** — MERGEABLE, full e2e suite passing (e2e-product ✅ 19m, e2e-smoke ✅ 11m, e2e-api ✅). CodeRabbit done. **Needs reviewer assigned.** |
+| jn-5616-replace-find-project-root | [JN-5616](https://jounce.atlassian.net/browse/JN-5616) | Validate | In Review | [#1623](https://github.com/Jounce-IO/jounce/pull/1623) **OPEN** MERGEABLE | ✅ ALL PASS (run 28124083253 — full e2e suite) | reviewDecision="" | 🟢 **PR #1623 PROMOTED FROM DRAFT** — MERGEABLE, full e2e suite passing (e2e-product ✅ 19m, e2e-smoke ✅ 11m, e2e-api ✅). CodeRabbit done. **Needs reviewer assigned.** |
 | jn-5677-dev-historical-mode-notebook-cells | [JN-5677](https://jounce.atlassian.net/browse/JN-5677) | Code | Done | [#1615](https://github.com/Jounce-IO/jounce/pull/1615) **DRAFT** CONFLICTING | ⚠️ Only CodeRabbit (CONFLICTING blocks CI) | REVIEW_REQUIRED | 🔴 **UNBLOCK** — resolve conflicts, fix pre-commit, promote from DRAFT. Jira Done. |
 | jn-5546-docs-document-module-layout-convention-and-3 | [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | Code Review | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) MERGEABLE | ❌ **pre-commit FAIL** (run 27933817996) | reviewDecision="" | 🔴 **CI FAILING** — pre-commit FAIL; Jira should be "In Review" |
 | internal-cr-system | — | Code | — | — | — | — | ⚠️ filesystem_status: failed (git lock error). No PR. Stagnant. |
 | jn-5695-db-connect-script | [JN-5695](https://jounce.atlassian.net/browse/JN-5695) | BLOCKED | Backlog | [#1596](https://github.com/Jounce-IO/jounce/pull/1596) DRAFT | ⚠️ CONFLICTING | — | 🔴 CONFLICTING; frozen |
 | jn-5672-dal-ext-dashboard | [JN-5672](https://jounce.atlassian.net/browse/JN-5672) | BLOCKED | Backlog | — | — | — | ℹ️ On hold |
-
-**Also on board (non-jounce / utility):**
-- `fix-dashboard-syntax-error` — Plan zone — Julie-internal branch, filesystem failed (origin/private-julie error), no PR. Present since Jun 17. Non-blocking.
 
 **Archived This Session:**
 - none
@@ -47,6 +42,7 @@
 **Removed from tracking (confirmed archived on board):**
 - dual-heartbeat-system — confirmed archived in board scan Jun 23
 - standup-drafts — confirmed archived in board scan Jun 23
+- fix-dashboard-syntax-error — no longer visible in any zone scan (was Plan zone); presumed archived
 
 ---
 
@@ -54,20 +50,15 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | ❌ **CI FAILED** (run 28122073927) — e2e-smoke FAIL (17m15s) + e2e-tests FAIL; all other checks ✅ | OPEN, MERGEABLE | 🔴 **CI FAILED** — e2e-smoke + e2e-tests failing (run 28122073927). Was "CI RUNNING" last check (rebase completed but failed e2e). JN-5725 Done. |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | ❌ **CI FAILED** (run 28122073927) — e2e-smoke FAIL (17m15s) + e2e-tests FAIL; all other checks ✅ | OPEN, MERGEABLE | 🔴 **CI FAILED** — e2e-smoke + e2e-tests failing (run 28122073927). JN-5725 Done. |
 
 ---
 
-## Key Changes Since Last Run (Jun 24 16:30 IDT)
+## Key Changes Since Last Run (00:00 IDT Jun 25)
 
 | What observed | Status |
 |---|---|
-| **🟢 PR #1623 PROMOTED FROM DRAFT** | Was DRAFT at 16:30 IDT Jun 24. Now `isDraft: false` — OPEN, MERGEABLE. Full e2e suite passing (run 28124083253): e2e-product ✅ 19m27s, e2e-smoke ✅ 11m19s, e2e-api ✅ 2m37s. CodeRabbit review done. **No reviewer yet.** Major positive change. |
-| **🔴 PR #1606 CI FAILED** | Was "CI RUNNING" (run 28102143811 pending) at 16:30 IDT Jun 24. New run 28122073927 completed: e2e-smoke FAIL (17m15s) + e2e-tests FAIL. All other checks pass. Rebase helped with conflicts but e2e still failing. |
-| **↔ PR #1622 (JN-5724)** | New CI run (28124127331 vs old 28020178138). Still DRAFT, MERGEABLE, REVIEW_REQUIRED. All CI pass (smaller run since DRAFT). |
-| **↔ PR #1615 (JN-5677)** | DRAFT + CONFLICTING. Only CodeRabbit shows (conflicts block CI). No change. |
-| **↔ PR #1588 (JN-5546)** | MERGEABLE, pre-commit FAIL (run 27933817996). No new CI run. |
-| **↔ internal-cr-system** | filesystem_status: failed (git lock). No change. |
+| **↔ Board fully static** | No merges, no new CI runs, no commits since the midnight IDT heartbeat. All PR states identical to 00:00 IDT. |
 
 ---
 
@@ -76,7 +67,7 @@
 ### 🟢 PR #1623 (JN-5616) — PROMOTED: assign reviewer NOW
 
 PR [#1623](https://github.com/Jounce-IO/jounce/pull/1623): `refactor(jbenchmark): replace find_project_root() in tests with conftest fixtures (JN-5616)`
-- **Promoted from DRAFT** overnight — `isDraft: false`
+- **Promoted from DRAFT** at midnight run — `isDraft: false`
 - MERGEABLE, ALL CI PASS ✅ (run 28124083253) — full e2e suite including e2e-product (19m27s), e2e-smoke (11m19s)
 - CodeRabbit review completed
 - reviewDecision="" — **no reviewer yet**
@@ -88,7 +79,7 @@ PR [#1623](https://github.com/Jounce-IO/jounce/pull/1623): `refactor(jbenchmark)
 ### 🟢 PR #1622 (JN-5724) — DRAFT: promote when ready
 
 PR [#1622](https://github.com/Jounce-IO/jounce/pull/1622): `fix(lychee): remove stale exclude_path for non-existent directory (JN-5724)`
-- DRAFT, MERGEABLE, REVIEW_REQUIRED, ALL CI PASS ✅ (new run 28124127331)
+- DRAFT, MERGEABLE, REVIEW_REQUIRED, ALL CI PASS ✅ (run 28124127331)
 - Jira [JN-5724](https://jounce.atlassian.net/browse/JN-5724): In Review ✅
 - **Action needed:** Promote from DRAFT → Ready for Review
 
@@ -97,10 +88,8 @@ PR [#1622](https://github.com/Jounce-IO/jounce/pull/1622): `fix(lychee): remove 
 ### 🔴 PR #1606 (JN-5725, off-board) — CI FAILED (e2e-smoke + e2e-tests)
 
 PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer): integrate log analyzer into experiment-workflow (JN-5725)`
-- Was rebased overnight (CONFLICTING → MERGEABLE). New CI run 28122073927 completed.
-- **e2e-smoke FAIL** (17m15s) + **e2e-tests FAIL**. All other 14 checks pass.
+- **e2e-smoke FAIL** (17m15s) + **e2e-tests FAIL** (run 28122073927). All other 14 checks pass.
 - JIRA [JN-5725](https://jounce.atlassian.net/browse/JN-5725): Done
-- Pattern: e2e continues to fail even after rebase. Persistent issue — likely real regression or infra problem specific to this PR.
 - **Action needed:** Investigate e2e failure logs for run 28122073927
 
 ---
