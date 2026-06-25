@@ -1343,4 +1343,13 @@ export const HEARTBEAT_RUNS = [
     summary: "#1623 e2e-product PENDING→SKIPPING (CI complete, assign reviewer); #1606 FAIL again (run 28155258049, retry failed); jira-operations worktree new (timed_out); jn-5677 zone corrected Revise→Respond; 7 findings.",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019efde6c2007873824ee489/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-25 12:32 IDT",
+    actions: 0,
+    findings: 7,
+    status: "ok",
+    summary: "#1623 CI improving (e2e-tests PASS, e2e-product PENDING); #1606 new run 28159345039 also FAILED (persistent e2e); all other PRs unchanged; 7 findings.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019efe1db0e57b2f819172fd/",
+  },
 ];

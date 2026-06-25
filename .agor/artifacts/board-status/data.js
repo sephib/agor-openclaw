@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-25 12:02 IDT";
+export const LAST_UPDATED = "2026-06-25 12:32 IDT";
 
 export const WORKTREES = [
   {
@@ -26,9 +26,9 @@ export const WORKTREES = [
     zone: "Validate",
     pr: "#1623",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1623",
-    status: "🔴 PR #1623 OPEN — MERGEABLE, REVIEW_REQUIRED. CI FAILING: e2e-product/e2e FAIL (45m27s) + e2e-tests FAIL (run 28153233486). Fix CI before assigning reviewer. [CORRECTION from 11:33 run which wrongly attributed #1615's CI run to this PR]",
-    blockedOn: "e2e-product FAIL + e2e-tests FAIL (run 28153233486)",
-    blockedType: "blocked",
+    status: "🟡 PR #1623 OPEN — MERGEABLE, REVIEW_REQUIRED. CI IMPROVING: e2e-tests now PASS (was FAIL). e2e-product/e2e still PENDING (run 28153233486). Waiting for e2e-product result — assign reviewer if it passes.",
+    blockedOn: "e2e-product/e2e PENDING (run 28153233486)",
+    blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019ef405c3e3746c900eac40/",
     sessionLabel: "publish session (complete)",
     lastActive: "2026-06-25 06:47 IDT",
@@ -193,16 +193,16 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "red",
-    message: "🔴 PR #1623 (JN-5616, Validate): CI FAILING — e2e-product/e2e FAIL (45m27s) + e2e-tests FAIL (run 28153233486). CORRECTION: 11:33 run wrongly reported all passing (confused #1615's run 28153631250). Fix e2e failures before assigning reviewer.",
+    level: "yellow",
+    message: "🟡 PR #1623 (JN-5616, Validate): CI IMPROVING — e2e-tests now PASS. e2e-product/e2e still PENDING (run 28153233486). Assign reviewer as soon as e2e-product passes.",
   },
   {
     level: "red",
     message: "🔴 PR #1615 (JN-5677, Respond): Integration CI FAILING (run 28153631250). CodeRabbit: 10 actionable comments. Fix integration failures + CodeRabbit items.",
   },
   {
-    level: "yellow",
-    message: "🟡 PR #1606 (JN-5725, off-board): New CI run 28158086561 — e2e-smoke PENDING (was FAIL). Monitoring for result.",
+    level: "red",
+    message: "🔴 PR #1606 (JN-5725, off-board): Persistent e2e failures — new run 28159345039: e2e-smoke FAIL (17m3s) + e2e-tests FAIL. Multiple consecutive CI runs failing. Investigate root cause.",
   },
   {
     level: "green",

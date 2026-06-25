@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-25 12:02 IDT (advance heartbeat)*
+*Last updated: 2026-06-25 12:32 IDT (advance heartbeat)*
 
 ---
 
@@ -9,7 +9,7 @@
 | Branch | Jira | Zone | Jira Status | PR | CI | Review | Flags |
 |--------|------|------|-------------|-----|-----|--------|-------|
 | jn-5724-lychee-precommit-flaky | [JN-5724](https://jounce.atlassian.net/browse/JN-5724) | Publish | In Review | [#1622](https://github.com/Jounce-IO/jounce/pull/1622) **DRAFT** MERGEABLE | ✅ ALL PASS/SKIP | REVIEW_REQUIRED | 🟢 **PR #1622** — DRAFT, all CI passing. Needs promotion from DRAFT. |
-| jn-5616-replace-find-project-root | [JN-5616](https://jounce.atlassian.net/browse/JN-5616) | Validate | In Review | [#1623](https://github.com/Jounce-IO/jounce/pull/1623) **OPEN** MERGEABLE | ❌ **2 FAIL** (e2e-product/e2e 45m27s + e2e-tests 4s, run 28153233486) | REVIEW_REQUIRED | 🔴 **CI FAILING** — e2e-product FAIL + e2e-tests FAIL. **CORRECTION from 11:33 run** (prior run wrongly attributed #1615's run 28153631250 to #1623). CI is NOT complete. |
+| jn-5616-replace-find-project-root | [JN-5616](https://jounce.atlassian.net/browse/JN-5616) | Validate | In Review | [#1623](https://github.com/Jounce-IO/jounce/pull/1623) **OPEN** MERGEABLE | ⏳ **e2e-product PENDING** (run 28153233486 — e2e-tests now ✅ PASS, all others ✅ PASS) | REVIEW_REQUIRED | 🟡 **CI IMPROVING** — e2e-tests now PASS (was FAIL). e2e-product/e2e still PENDING. Waiting for result before assigning reviewer. |
 | jn-5677-dev-historical-mode-notebook-cells | [JN-5677](https://jounce.atlassian.net/browse/JN-5677) | **Respond** | Done | [#1615](https://github.com/Jounce-IO/jounce/pull/1615) **OPEN** MERGEABLE | ❌ **2 FAIL** (integration-run + integration-tests, run 28153631250) | reviewDecision="" | 🔴 **CI FAILING** — integration tests fail. CodeRabbit: 10 actionable comments. Jira Done but PR stuck. |
 | jn-5546-docs-document-module-layout-convention-and-3 | [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | Code Review | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) MERGEABLE | ❌ **2 FAIL** (pre-commit + pre-commit-run/pre-commit) | reviewDecision="" | 🔴 **CI FAILING** — pre-commit fails; Jira should be "In Review" |
 | internal-cr-system | — | Code | — | — | — | — | ⚠️ No PR. No Jira. Stagnant since Jun 18. filesystem_status: failed (git lock) |
@@ -51,16 +51,16 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | ⏳ **e2e-smoke PENDING** (new run 28158086561; e2e-api ✅, integration ✅, pre-commit ✅) | OPEN, MERGEABLE | 🟡 **New CI run** — e2e-smoke now PENDING (was FAIL in run 28155258049). Someone triggered a re-run or pushed a fix. JN-5725 Done (Unassigned). |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | ❌ **2 FAIL** (e2e-smoke/e2e FAIL 17m3s + e2e-tests FAIL 4s, run 28159345039) | OPEN, MERGEABLE | 🔴 **CI FAILING** — new run 28159345039 also failed. e2e-smoke + e2e-tests. JN-5725 Done (Unassigned). Persistent e2e failures across multiple runs. |
 
 ---
 
-## Key Changes Since Last Run (11:33 IDT Jun 25)
+## Key Changes Since Last Run (12:02 IDT Jun 25)
 
 | What observed | Status |
 |---|---|
-| **#1623 CI CORRECTION** | ⚠️ **MAJOR ERROR IN PRIOR RUN**: 11:33 run reported #1623 CI as "all passing (run 28153631250)". This was wrong — run 28153631250 belongs to #1615. #1623's actual CI run is 28153233486: e2e-product/e2e FAIL (45m27s) + e2e-tests FAIL. #1623 needs CI fix before reviewer can be assigned. |
-| **#1606 new CI run** | e2e-smoke now PENDING in run 28158086561 (was FAIL in 28155258049). Monitoring — could be a fix or another retry. |
+| **#1623 CI IMPROVING** | e2e-tests now **PASS** (was FAIL). e2e-product/e2e still **PENDING** (run 28153233486). All 10 other checks PASS. Significant improvement — awaiting e2e-product result before assigning reviewer. |
+| **#1606 CI FAILED (new run)** | New run 28159345039 completed — e2e-smoke/e2e FAIL (17m3s) + e2e-tests FAIL (4s). Was PENDING in run 28158086561. Persistent e2e failures across multiple CI runs. |
 | **#1615 unchanged** | Still 2 FAIL (integration-run + integration-tests, run 28153631250). |
 | **#1622 unchanged** | Still DRAFT, all CI PASS/SKIP. |
 | **#1588 unchanged** | Still pre-commit FAIL. |
@@ -71,14 +71,13 @@
 
 ## Attention Items
 
-### 🔴 PR #1623 (JN-5616) — CI FAILING (CORRECTION from prior run)
+### 🟡 PR #1623 (JN-5616) — CI IMPROVING — e2e-product PENDING
 
 PR [#1623](https://github.com/Jounce-IO/jounce/pull/1623): `refactor(jbenchmark): replace find_project_root() in tests with conftest fixtures (JN-5616)`
 - OPEN, MERGEABLE, REVIEW_REQUIRED
-- CI: ❌ **2 FAIL** — `e2e-product/e2e` FAIL (45m27s) + `e2e-tests` FAIL (4s) — run 28153233486
-- **CORRECTION**: Prior heartbeat (11:33 IDT) incorrectly said CI was complete and all passing. That was run 28153631250 which belongs to #1615, not #1623.
+- CI: ⏳ **e2e-product/e2e PENDING** — e2e-tests now ✅ PASS (was FAIL). 10 PASS + 1 PENDING + 2 SKIP — run 28153233486
 - Jira [JN-5616](https://jounce.atlassian.net/browse/JN-5616): In Review
-- **Action needed:** Fix e2e failures before assigning reviewer.
+- **Action needed:** Wait for e2e-product result. If passes → assign reviewer immediately.
 
 ---
 
@@ -94,13 +93,13 @@ PR [#1615](https://github.com/Jounce-IO/jounce/pull/1615): `feat(jbenchmark): hi
 
 ---
 
-### 🟡 PR #1606 (JN-5725, off-board) — new CI run, monitoring
+### 🔴 PR #1606 (JN-5725, off-board) — persistent e2e failures
 
 PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer): integrate log analyzer into experiment-workflow`
-- e2e-smoke/e2e: **PENDING** (new run 28158086561); other checks PASS
-- Was FAIL in previous run 28155258049; new run may indicate a fix was pushed
+- e2e-smoke/e2e: ❌ FAIL (17m3s) + e2e-tests: ❌ FAIL (4s) — new run 28159345039
+- Previous runs also failing: 28155258049, 28158086561 (pending → completed FAIL)
 - JIRA [JN-5725](https://jounce.atlassian.net/browse/JN-5725): Done (Unassigned)
-- **Monitor:** Wait for e2e-smoke result.
+- **Action needed:** Investigate persistent e2e-smoke + e2e-tests failures across multiple CI runs — not a flaky issue.
 
 ---
 
