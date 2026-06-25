@@ -1379,4 +1379,22 @@ export const HEARTBEAT_RUNS = [
     summary: "#1606 NEW PUSH (SHA d9ae5eb6, 13:17 IDT) — run 28161157784 CANCELLED, new run 28163223200 IN PROGRESS (all PASS, e2e-smoke PENDING). All other PRs unchanged. #1623 still 2 FAIL, #1615 integration FAIL, #1588 pre-commit FAIL, #1622 DRAFT/PASS.",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019efe549f9978edbeb5deb9/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-25 14:02 IDT",
+    actions: 0,
+    findings: 7,
+    status: "ok",
+    summary: "#1622 PROMOTED FROM DRAFT (ready for review, e2e-smoke pending run 28164293495). #1623 CI RECOVERING (run 28153233486: was 2 FAIL, now nearly all PASS — only e2e-product pending). #1615 CI WORSENED (new run 28164315935: 4 FAIL — pre-commit regressed + integration still failing). #1606 new run 28165238349 advancing (e2e-api pending). No merges.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019efe7017247cee9f647938/",
+  },
+  {
+    type: "advance",
+    timestamp: "2026-06-25 14:32 IDT",
+    actions: 0,
+    findings: 7,
+    status: "ok",
+    summary: "🟢🟢 #1622 + #1623 CI ALL PASS — e2e-smoke ✅ PASS (run 28164293495) and e2e-product ✅ PASS (run 28153233486). Both fully green, REVIEW_REQUIRED. Assign reviewers to merge. #1615 4 FAIL unchanged (run 28164315935). #1606 new run 28166156463: e2e-api PASS, e2e-smoke PENDING.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019efe8b8ef278efa779a3c4/",
+  },
 ];

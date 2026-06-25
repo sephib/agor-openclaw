@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-25 14:02 IDT";
+export const LAST_UPDATED = "2026-06-25 14:32 IDT";
 
 export const WORKTREES = [
   {
@@ -10,8 +10,8 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1622",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1622",
-    status: "🟢 PR #1622 PROMOTED FROM DRAFT — OPEN, REVIEW_REQUIRED. CI run 28164293495: all PASS, e2e-smoke PENDING. Jira In Review. Assign reviewer.",
-    blockedOn: "Awaiting reviewer assignment; e2e-smoke pending",
+    status: "🟢 PR #1622 CI ALL PASS — e2e-smoke ✅ PASS (10m29s, run 28164293495). OPEN, REVIEW_REQUIRED. Fully green — assign reviewer to merge.",
+    blockedOn: "Awaiting reviewer assignment",
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019ef3e3ea0e734d882e878e/",
     sessionLabel: "publish session (complete)",
@@ -26,8 +26,8 @@ export const WORKTREES = [
     zone: "Validate",
     pr: "#1623",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1623",
-    status: "🟡 PR #1623 OPEN — MERGEABLE, REVIEW_REQUIRED. CI RECOVERING: run 28153233486 — e2e-smoke PASS, integration PASS, e2e-tests PASS, pre-commit PASS; only e2e-product PENDING. Was 2 FAIL last run.",
-    blockedOn: "e2e-product PENDING (run 28153233486)",
+    status: "🟢 PR #1623 CI ALL PASS — e2e-product ✅ PASS (27m56s, run 28153233486). OPEN, REVIEW_REQUIRED. Fully green — assign reviewer to merge.",
+    blockedOn: "Awaiting reviewer assignment",
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019ef405c3e3746c900eac40/",
     sessionLabel: "publish session (complete)",
@@ -43,8 +43,8 @@ export const WORKTREES = [
     zone: "Revise",
     pr: "#1615",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1615",
-    status: "🔴 PR #1615 OPEN MERGEABLE — CI WORSENED: new run 28164315935, 4 FAIL (integration-run + integration-tests + pre-commit + pre-commit-run). Pre-commit regressed from previous run. Zone: Revise (appropriate). Jira Done.",
-    blockedOn: "Integration + pre-commit CI failures (run 28164315935)",
+    status: "🔴 PR #1615 OPEN MERGEABLE — CI FAIL UNCHANGED: run 28164315935, 4 FAIL (integration-run + integration-tests + pre-commit + pre-commit-run). No new push. Zone: Revise. Jira Done.",
+    blockedOn: "Integration + pre-commit CI failures (run 28164315935) — no new push",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019eeaf04583757a89f47a99/",
     sessionLabel: "session",
@@ -194,19 +194,19 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "green",
-    message: "🟢 PR #1622 (JN-5724, Publish): PROMOTED FROM DRAFT — now ready for review. CI run 28164293495: all PASS, e2e-smoke PENDING. Assign reviewer.",
+    message: "🟢 PR #1622 (JN-5724, Publish): CI ALL PASS — e2e-smoke ✅ PASS (10m29s, run 28164293495). OPEN, REVIEW_REQUIRED. Fully green — assign reviewer to merge.",
   },
   {
-    level: "yellow",
-    message: "🟡 PR #1623 (JN-5616, Validate): CI RECOVERING — run 28153233486: e2e-smoke PASS, integration PASS, e2e-tests PASS, pre-commit PASS; only e2e-product PENDING. Was 2 FAIL. Monitor e2e-product result.",
+    level: "green",
+    message: "🟢 PR #1623 (JN-5616, Validate): CI ALL PASS — e2e-product ✅ PASS (27m56s, run 28153233486). OPEN, REVIEW_REQUIRED. Fully green — assign reviewer to merge.",
   },
   {
     level: "red",
-    message: "🔴 PR #1615 (JN-5677, Revise): CI WORSENED — new run 28164315935, 4 FAIL (integration-run + integration-tests + pre-commit + pre-commit-run). Fix pre-commit + integration failures.",
+    message: "🔴 PR #1615 (JN-5677, Revise): CI FAIL UNCHANGED — run 28164315935, 4 FAIL (integration-run + integration-tests + pre-commit + pre-commit-run). No new push. Fix pre-commit + integration failures.",
   },
   {
     level: "yellow",
-    message: "🟡 PR #1606 (JN-5725, off-board): CI advancing — run 28165238349: integration+pre-commit+tox PASS, e2e-api PENDING. Monitor e2e-api result.",
+    message: "🟡 PR #1606 (JN-5725, off-board): CI advancing — run 28166156463: e2e-api ✅ PASS, integration ✅, pre-commit ✅, tox ✅; e2e-smoke ⏳ PENDING.",
   },
   {
     level: "red",
