@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-25 15:32 IDT (advance heartbeat)*
+*Last updated: 2026-06-25 16:02 IDT (advance heartbeat)*
 
 ---
 
@@ -8,8 +8,8 @@
 
 | Branch | Jira | Zone | Jira Status | PR | CI | Review | Flags |
 |--------|------|------|-------------|-----|-----|--------|-------|
-| jn-5724-lychee-precommit-flaky | [JN-5724](https://jounce.atlassian.net/browse/JN-5724) | Publish | In Review | [#1622](https://github.com/Jounce-IO/jounce/pull/1622) **OPEN** UNKNOWN | ✅ **ALL PASS** (e2e-smoke ✅ 10m29s, run 28164293495) | REVIEW_REQUIRED | 🟢 **CI ALL PASS** — unchanged. Fully green. Assign reviewer to merge. |
-| jn-5616-replace-find-project-root | [JN-5616](https://jounce.atlassian.net/browse/JN-5616) | Validate | In Review | [#1623](https://github.com/Jounce-IO/jounce/pull/1623) **OPEN** UNKNOWN | ✅ **ALL PASS** (e2e-product ✅ 27m56s, run 28153233486) | REVIEW_REQUIRED | 🟢 **CI ALL PASS** — unchanged. Fully green. Assign reviewer to merge. |
+| jn-5724-lychee-precommit-flaky | [JN-5724](https://jounce.atlassian.net/browse/JN-5724) | Publish | In Review | [#1622](https://github.com/Jounce-IO/jounce/pull/1622) **OPEN** ⚠️ CONFLICTING | ✅ **ALL PASS** (e2e-smoke ✅ 10m29s, run 28164293495) | REVIEW_REQUIRED | 🟡 **NOW CONFLICTING** — CI still ALL PASS (run unchanged). Developed merge conflict with main since 15:32 run. Needs rebase. |
+| jn-5616-replace-find-project-root | [JN-5616](https://jounce.atlassian.net/browse/JN-5616) | Validate | In Review | [#1623](https://github.com/Jounce-IO/jounce/pull/1623) **OPEN** ⚠️ CONFLICTING | ✅ **ALL PASS** (e2e-product ✅ 27m56s, run 28153233486) | REVIEW_REQUIRED | 🟡 **NOW CONFLICTING** — CI still ALL PASS (run unchanged). Developed merge conflict with main since 15:32 run. Needs rebase. |
 | jn-5677-dev-historical-mode-notebook-cells | [JN-5677](https://jounce.atlassian.net/browse/JN-5677) | **Revise** | Done | [#1615](https://github.com/Jounce-IO/jounce/pull/1615) **OPEN** CONFLICTING | ⚠️ **2 FAIL** (integration-run + integration-tests, run 28167796913) — run COMPLETE | REVIEW_REQUIRED | 🟡 **CI STABLE at 2 FAIL** — run 28167796913 now complete: e2e-api ✅ PASS (was pending), e2e-smoke ✅ PASS. Only integration-run + integration-tests still FAIL. CONFLICTING unchanged. |
 | jn-5546-docs-document-module-layout-convention-and-3 | [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | Code Review | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) UNKNOWN | ❌ **2 FAIL** (pre-commit + pre-commit-run, run 27933817996) | reviewDecision="" | 🔴 **CI FAILING** — pre-commit fails; Jira should be "In Review" |
 | internal-cr-system | — | Code | — | — | — | — | ⚠️ No PR. No Jira. Stagnant since Jun 18. filesystem_status: failed (git lock) |
@@ -51,19 +51,19 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | ⏳ **MOSTLY PASS** (run 28168866197 IN PROGRESS: most ✅, e2e-smoke ⏳) | OPEN, **CONFLICTING** (was MERGEABLE) | 🟡 **NEW PUSH + CONFLICTING** — another push triggered run 28168866197. Prior run 28168534325 cancelled. Most checks ✅ PASS, e2e-smoke ⏳ still running. Now CONFLICTING. |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | ⏳ **MOSTLY PASS** (run 28171648898 IN PROGRESS: most ✅, e2e-smoke ⏳) | OPEN, **MERGEABLE** (conflict resolved!) | 🟢 **CONFLICT RESOLVED + CI ADVANCING** — run 28171648898: all checks ✅ PASS (e2e-api ✅ 3m53s, integration ✅, pre-commit ✅, tox ✅), e2e-smoke ⏳ still running. Previously CONFLICTING; now MERGEABLE. |
 
 ---
 
-## Key Changes Since Last Run (15:02 IDT Jun 25)
+## Key Changes Since Last Run (15:32 IDT Jun 25)
 
 | What observed | Status |
 |---|---|
-| **#1622 CI unchanged** | ALL PASS (same run 28164293495). Still OPEN, REVIEW_REQUIRED. |
-| **#1623 CI unchanged** | ALL PASS (same run 28153233486). Still OPEN, REVIEW_REQUIRED. |
-| **#1615 — run 28167796913 now COMPLETE** | e2e-api ✅ NOW PASS (was pending). e2e-smoke ✅ PASS. Remaining: 2 FAIL (integration-run + integration-tests). CONFLICTING unchanged. |
-| **#1606 — another new push + now CONFLICTING** | Prior run 28168534325 CANCELLED. New run 28168866197 IN PROGRESS: most checks ✅ PASS, e2e-smoke ⏳. Also: now CONFLICTING (was MERGEABLE). |
-| **#1588 CI unchanged** | Still 2 FAIL (pre-commit run 27933817996). |
+| **#1622 NOW CONFLICTING** | CI still ALL PASS (run 28164293495 unchanged). REVIEW_REQUIRED. **New merge conflict with main since 15:32.** Needs rebase. |
+| **#1623 NOW CONFLICTING** | CI still ALL PASS (run 28153233486 unchanged). REVIEW_REQUIRED. **New merge conflict with main since 15:32.** Needs rebase. |
+| **#1615 — CodeRabbit pending** | No new full CI run complete. Integration failures (2 FAIL, run 28167796913) still standing. CONFLICTING unchanged. |
+| **#1606 — conflict RESOLVED + MERGEABLE** | Was CONFLICTING at 15:32; now MERGEABLE. New run 28171648898: all ✅ PASS, e2e-smoke ⏳ pending. |
+| **#1588 unchanged** | Still 2 FAIL pre-commit (run 27933817996). CONFLICTING. |
 | **No new merges** | Step 1 sweep confirmed no new merges. |
 | **Jira unchanged** | JN-5616 In Review, JN-5724 In Review, JN-5677 Done, JN-5546 In Progress (stale), JN-5612 In Progress (no worktree) |
 
@@ -71,23 +71,23 @@
 
 ## Attention Items
 
-### 🟢 PR #1622 (JN-5724) — CI ALL PASS — ready for reviewer
+### 🟡 PR #1622 (JN-5724) — CI ALL PASS but NOW CONFLICTING
 
 PR [#1622](https://github.com/Jounce-IO/jounce/pull/1622): `fix(lychee): remove stale exclude_path for non-existent directory (JN-5724)`
-- OPEN, REVIEW_REQUIRED
-- CI: Run 28164293495 — **ALL checks ✅ PASS** (including e2e-smoke 10m29s) — fully green
+- OPEN, CONFLICTING (new since 15:32 IDT), REVIEW_REQUIRED
+- CI: Run 28164293495 — **ALL checks ✅ PASS** (including e2e-smoke 10m29s) — CI still green
 - Jira [JN-5724](https://jounce.atlassian.net/browse/JN-5724): In Review ✅
-- **Action needed:** Assign reviewer. This is merge-ready.
+- **Action needed:** (1) Rebase on main to resolve merge conflict. CI will re-run. (2) Assign reviewer once green again.
 
 ---
 
-### 🟢 PR #1623 (JN-5616) — CI ALL PASS — ready for reviewer
+### 🟡 PR #1623 (JN-5616) — CI ALL PASS but NOW CONFLICTING
 
 PR [#1623](https://github.com/Jounce-IO/jounce/pull/1623): `refactor(jbenchmark): replace find_project_root() in tests with conftest fixtures (JN-5616)`
-- OPEN, REVIEW_REQUIRED
-- CI: Run 28153233486 — **ALL checks ✅ PASS** (including e2e-product 27m56s, e2e-smoke 10m11s) — fully green
-- Jira [JN-5616](https://jounce.atlassian.net/browse/JN-5616): In Review
-- **Action needed:** Assign reviewer. This is merge-ready.
+- OPEN, CONFLICTING (new since 15:32 IDT), REVIEW_REQUIRED
+- CI: Run 28153233486 — **ALL checks ✅ PASS** (including e2e-product 27m56s, e2e-smoke 10m11s) — CI still green
+- Jira [JN-5616](https://jounce.atlassian.net/browse/JN-5616): In Review ✅
+- **Action needed:** (1) Rebase on main to resolve merge conflict. CI will re-run. (2) Assign reviewer once green again.
 
 ---
 
@@ -113,16 +113,15 @@ PR [#1588](https://github.com/Jounce-IO/jounce/pull/1588): 2 pre-commit checks F
 
 ---
 
-### 🟡 PR #1606 (JN-5725, off-board) — CI nearly complete + now CONFLICTING
+### 🟢 PR #1606 (JN-5725, off-board) — Conflict RESOLVED + CI nearly done
 
 PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer): integrate log analyzer into experiment-workflow`
-- Now CONFLICTING (was MERGEABLE)
-- Run 28168866197 (latest push) IN PROGRESS:
-  - ✅ PASS: pre-commit, pre-commit-run, integration-run, integration-tests, tox, nox, atlas-validate, e2e-api
-  - ⏳ IN PROGRESS: e2e-smoke
-- Prior run 28168534325 was cancelled by new push
+- OPEN, **MERGEABLE** (conflict resolved since 15:32 IDT)
+- Run 28171648898 IN PROGRESS:
+  - ✅ PASS: e2e-api (3m53s), integration-run, integration-tests, pre-commit, pre-commit-run, tox-run, atlas-validate, nox
+  - ⏳ PENDING: e2e-smoke
 - JIRA [JN-5725](https://jounce.atlassian.net/browse/JN-5725): Done (Unassigned)
-- **Action needed:** Wait for e2e-smoke to complete. Resolve merge conflict.
+- **Action needed:** Wait for e2e-smoke to complete. If PASS, this PR becomes fully green and merge-ready.
 
 ---
 

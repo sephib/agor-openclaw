@@ -2623,3 +2623,17 @@
 - CI changes: #1615 run 28167796913 now COMPLETE — e2e-api ✅ resolved from pending, now 2 FAIL (integration only); #1606 another new push — prior run 28168534325 cancelled, new run 28168866197 mostly ✅ (e2e-smoke pending), now CONFLICTING
 - Flags: #1615 CONFLICTING + 2 FAIL; #1606 CONFLICTING + CI in progress; #1588 2 FAIL pre-commit; JN-5612 In Progress no worktree; jira-operations no zone/PR; internal-cr-system stagnant
 - Next: Monitor e2e-smoke on #1606. Watch #1615 integration failures.
+
+## 16:02 IDT — Weekday Daytime Advance Heartbeat (2026-06-25)
+
+**Session:** 019efedd-f566 | http://127.0.0.1:3030/ui/s/019efeddf566791293ed989e/
+
+- PRs checked: #1622 (🟡 NOW CONFLICTING — CI ALL PASS run 28164293495, REVIEW_REQUIRED, but new merge conflict since 15:32), #1623 (🟡 NOW CONFLICTING — CI ALL PASS run 28153233486, REVIEW_REQUIRED, but new merge conflict since 15:32), #1615 (OPEN, CONFLICTING, CodeRabbit pending — no new full CI run yet; 2 FAIL integration still standing), #1588 (2 FAIL pre-commit unchanged, CONFLICTING), #1596 (DRAFT, CONFLICTING — unchanged), #1606 off-board (🟢 CONFLICT RESOLVED → now MERGEABLE; run 28171648898: all ✅, e2e-smoke ⏳ pending)
+- Merges detected: none — Step 1 sweep confirmed no new merges of tracked PRs
+- CI changes: (1) **#1622 newly CONFLICTING** — same green CI but merge conflict developed with main between 15:32 and 16:02 runs; (2) **#1623 newly CONFLICTING** — same situation; (3) **#1606 conflict RESOLVED** — was CONFLICTING at 15:32, now MERGEABLE; new run 28171648898 advancing with only e2e-smoke pending
+- Board scan: 8 worktrees tracked — same zones as prior run
+- Archives: none
+- Jira: unchanged (JN-5616 In Review, JN-5724 In Review, JN-5677 Done, JN-5546 In Progress stale, JN-5612 In Progress no worktree)
+- Flags: (1) #1622 newly CONFLICTING — needs rebase; (2) #1623 newly CONFLICTING — needs rebase; (3) #1615 integration FAIL + CONFLICTING; (4) #1588 pre-commit FAIL + CONFLICTING; (5) #1606 e2e-smoke pending (positive); (6) jira-operations no zone/timed_out; (7) internal-cr-system stagnant; (8) JN-5612 no worktree
+- Auto-archives: none
+- Next: Joseph to rebase #1622 + #1623 on main (both have CI green, just need conflict resolution); watch #1606 e2e-smoke result; fix #1615 integration + rebase; fix #1588 pre-commit + rebase

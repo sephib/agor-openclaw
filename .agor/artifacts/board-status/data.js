@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-25 15:32 IDT";
+export const LAST_UPDATED = "2026-06-25 16:02 IDT";
 
 export const WORKTREES = [
   {
@@ -10,9 +10,9 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1622",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1622",
-    status: "🟢 PR #1622 CI ALL PASS — run 28164293495 unchanged. OPEN, REVIEW_REQUIRED. Fully green — assign reviewer to merge.",
-    blockedOn: "Awaiting reviewer assignment",
-    blockedType: "running",
+    status: "🟡 PR #1622 NOW CONFLICTING — CI ALL PASS (run 28164293495 unchanged) but merge conflict with main developed since 15:32 IDT. Rebase needed before merge.",
+    blockedOn: "Merge conflict with main (new since 15:32 IDT)",
+    blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ef3e3ea0e734d882e878e/",
     sessionLabel: "publish session (complete)",
     lastActive: "2026-06-23 10:28 IDT",
@@ -26,9 +26,9 @@ export const WORKTREES = [
     zone: "Validate",
     pr: "#1623",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1623",
-    status: "🟢 PR #1623 CI ALL PASS — run 28153233486 unchanged. OPEN, REVIEW_REQUIRED. Fully green — assign reviewer to merge.",
-    blockedOn: "Awaiting reviewer assignment",
-    blockedType: "running",
+    status: "🟡 PR #1623 NOW CONFLICTING — CI ALL PASS (run 28153233486 unchanged) but merge conflict with main developed since 15:32 IDT. Rebase needed before merge.",
+    blockedOn: "Merge conflict with main (new since 15:32 IDT)",
+    blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ef405c3e3746c900eac40/",
     sessionLabel: "publish session (complete)",
     lastActive: "2026-06-25 06:47 IDT",
@@ -59,8 +59,8 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1588",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1588",
-    status: "🔴 pre-commit FAIL (run 27933817996). PR is MERGEABLE (no conflicts). Fix pre-commit, then assign reviewer. Jira should be 'In Review'.",
-    blockedOn: "pre-commit FAIL (CI run 27933817996)",
+    status: "🔴 pre-commit FAIL (run 27933817996). PR now CONFLICTING. Fix pre-commit + rebase, then assign reviewer. Jira should be 'In Review'.",
+    blockedOn: "pre-commit FAIL + merge conflict",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ed01e5624752fbade0eab/",
     sessionLabel: "fix session",
@@ -193,24 +193,24 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "green",
-    message: "🟢 PR #1622 (JN-5724, Publish): CI ALL PASS — run 28164293495 unchanged. OPEN, REVIEW_REQUIRED. Fully green — assign reviewer to merge.",
-  },
-  {
-    level: "green",
-    message: "🟢 PR #1623 (JN-5616, Validate): CI ALL PASS — run 28153233486 unchanged. OPEN, REVIEW_REQUIRED. Fully green — assign reviewer to merge.",
+    level: "yellow",
+    message: "🟡 PR #1622 (JN-5724, Publish): NOW CONFLICTING — CI ALL PASS (run 28164293495) but merge conflict with main developed since 15:32 IDT. Rebase on main, then assign reviewer.",
   },
   {
     level: "yellow",
-    message: "🟡 PR #1615 (JN-5677, Revise): run 28167796913 COMPLETE — e2e-api ✅ PASS (was pending), e2e-smoke ✅ PASS. 2 FAIL remain (integration-run + integration-tests). CONFLICTING — needs rebase + fix integration failures.",
+    message: "🟡 PR #1623 (JN-5616, Validate): NOW CONFLICTING — CI ALL PASS (run 28153233486) but merge conflict with main developed since 15:32 IDT. Rebase on main, then assign reviewer.",
   },
   {
     level: "yellow",
-    message: "🟡 PR #1606 (JN-5725, off-board): another new push — run 28168866197 IN PROGRESS: most checks ✅ PASS, e2e-smoke ⏳. Now CONFLICTING (was MERGEABLE). Prior run 28168534325 cancelled.",
+    message: "🟡 PR #1615 (JN-5677, Revise): 2 FAIL integration (run 28167796913) + CONFLICTING. CodeRabbit review queued. Needs integration fix + rebase.",
+  },
+  {
+    level: "green",
+    message: "🟢 PR #1606 (JN-5725, off-board): conflict RESOLVED (now MERGEABLE). Run 28171648898: all ✅ PASS, e2e-smoke ⏳ pending. Nearly green.",
   },
   {
     level: "red",
-    message: "🔴 PR #1588 (JN-5546, Code Review zone): pre-commit FAIL — CI run 27933817996. Fix pre-commit, assign reviewer, update Jira to 'In Review'.",
+    message: "🔴 PR #1588 (JN-5546, Code Review zone): pre-commit FAIL (run 27933817996) + CONFLICTING. Fix pre-commit + rebase + assign reviewer + update Jira to 'In Review'.",
   },
   {
     level: "yellow",
