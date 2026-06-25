@@ -4,6 +4,22 @@
 
 ---
 
+## 12:02 IDT — Weekday Daytime Advance Heartbeat (2026-06-25)
+
+**Session:** 019efe02-39c4 | http://127.0.0.1:3030/ui/s/019efe0239c47faab0729f7d/
+
+- PRs checked: #1623 (OPEN, MERGEABLE, REVIEW_REQUIRED — ❌ **2 FAIL**: e2e-product FAIL 45m27s + e2e-tests FAIL, run 28153233486), #1622 (DRAFT, ALL PASS/SKIP — no change), #1615 (OPEN, MERGEABLE, integration 2 FAIL run 28153631250 — no change), #1588 (pre-commit FAIL — no change), #1606 off-board (e2e-smoke now PENDING, new run 28158086561 — was FAIL), #1596 (DRAFT, CONFLICTING — no change)
+- Merges detected: none
+- Archives: none
+- CI changes: **CORRECTION** — #1623 CI was wrongly reported as "all passing" in 11:33 run; actual run 28153233486 shows e2e-product FAIL + e2e-tests FAIL (prior run confused #1615's run 28153631250 with #1623). #1606 new CI run with e2e-smoke pending.
+- Jira: JN-5616 In Review, JN-5724 In Review, JN-5677 Done, JN-5546 In Progress (stale), JN-5670 In Progress (no worktree)
+- Zone changes: none — all zones match prior run
+- Flags: (1) #1623 CI FAILING e2e-product + e2e-tests (correction); (2) #1615 integration failures + 10 CodeRabbit items; (3) #1606 new CI run pending; (4) #1622 DRAFT awaiting promotion; (5) #1588 pre-commit FAIL; (6) internal-cr-system filesystem failed; (7) jira-operations no zone/session timed_out
+- Auto-archives: none
+- Next: Joseph to fix #1623 e2e failures; fix #1615 integration failures + CodeRabbit items; monitor #1606 e2e-smoke result; promote #1622 from DRAFT
+
+---
+
 ## 10:00 IDT — Weekday Daytime Advance Heartbeat (2026-06-25)
 
 **Session:** 019efdaf-d352 | http://127.0.0.1:3030/ui/s/019efdafd35270ebb095c3bd/

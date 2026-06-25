@@ -22,6 +22,15 @@ export const HEARTBEAT_RUNS = [
   // },
   {
     type: "advance",
+    timestamp: "2026-06-25 12:02 IDT",
+    actions: 0,
+    findings: 7,
+    status: "ok",
+    summary: "CORRECTION: #1623 CI is FAILING (e2e-product + e2e-tests, run 28153233486) — 11:33 run wrongly attributed #1615's CI run to #1623. #1606 new CI run (e2e-smoke PENDING, was FAIL). #1615 integration FAIL + CodeRabbit items unchanged. Board otherwise static.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019efe0239c47faab0729f7d/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-25 10:00 IDT",
     actions: 0,
     findings: 6,

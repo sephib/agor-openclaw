@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-25 11:33 IDT";
+export const LAST_UPDATED = "2026-06-25 12:02 IDT";
 
 export const WORKTREES = [
   {
@@ -10,7 +10,7 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1622 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1622",
-    status: "🟢 PR #1622 DRAFT — all CI PASS (run 28124127331), REVIEW_REQUIRED. Jira In Review. Needs promotion from DRAFT.",
+    status: "🟢 PR #1622 DRAFT — all CI PASS/SKIP, REVIEW_REQUIRED. Jira In Review. Needs promotion from DRAFT.",
     blockedOn: "Awaiting DRAFT promotion",
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019ef3e3ea0e734d882e878e/",
@@ -26,9 +26,9 @@ export const WORKTREES = [
     zone: "Validate",
     pr: "#1623",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1623",
-    status: "🟡 PR #1623 OPEN — MERGEABLE, CI COMPLETE (e2e-product skipping, all others pass, run 28153631250). CodeRabbit + Joseph reviewed. REVIEW_REQUIRED — needs human reviewer.",
-    blockedOn: "Awaiting human reviewer — CI unblocked",
-    blockedType: "running",
+    status: "🔴 PR #1623 OPEN — MERGEABLE, REVIEW_REQUIRED. CI FAILING: e2e-product/e2e FAIL (45m27s) + e2e-tests FAIL (run 28153233486). Fix CI before assigning reviewer. [CORRECTION from 11:33 run which wrongly attributed #1615's CI run to this PR]",
+    blockedOn: "e2e-product FAIL + e2e-tests FAIL (run 28153233486)",
+    blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ef405c3e3746c900eac40/",
     sessionLabel: "publish session (complete)",
     lastActive: "2026-06-25 06:47 IDT",
@@ -43,7 +43,7 @@ export const WORKTREES = [
     zone: "Respond",
     pr: "#1615",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1615",
-    status: "🔴 PR #1615 OPEN MERGEABLE — conflicts resolved + promoted from DRAFT (06:47 IDT). Integration CI FAILING (run 28153631250: integration-run + integration-tests FAIL). CodeRabbit: 10 actionable comments. reviewDecision=''. Jira Done.",
+    status: "🔴 PR #1615 OPEN MERGEABLE — Integration CI FAILING (run 28153631250: integration-run + integration-tests FAIL). CodeRabbit: 10 actionable comments. reviewDecision=''. Jira Done.",
     blockedOn: "Integration CI failures + CodeRabbit actionable items",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019eeaf04583757a89f47a99/",
@@ -194,19 +194,19 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "red",
-    message: "🔴 PR #1615 (JN-5677, Respond): Conflicts resolved + promoted from DRAFT — but integration CI FAILING (run 28153631250). CodeRabbit: 10 actionable comments. Fix integration failures + CodeRabbit items.",
-  },
-  {
-    level: "yellow",
-    message: "🟡 PR #1623 (JN-5616, Validate): CI COMPLETE (e2e-product skipping) — REVIEW_REQUIRED. CodeRabbit + Joseph reviewed. No human reviewer assigned. Assign reviewer now.",
-  },
-  {
-    level: "green",
-    message: "🟢 PR #1622 (JN-5724, Publish): DRAFT — all CI PASS (run 28149881600). Promote from DRAFT when ready.",
+    message: "🔴 PR #1623 (JN-5616, Validate): CI FAILING — e2e-product/e2e FAIL (45m27s) + e2e-tests FAIL (run 28153233486). CORRECTION: 11:33 run wrongly reported all passing (confused #1615's run 28153631250). Fix e2e failures before assigning reviewer.",
   },
   {
     level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): e2e-smoke/e2e FAIL (17m38s) + e2e-tests FAIL (run 28155258049). Persistent failure — retry also failed.",
+    message: "🔴 PR #1615 (JN-5677, Respond): Integration CI FAILING (run 28153631250). CodeRabbit: 10 actionable comments. Fix integration failures + CodeRabbit items.",
+  },
+  {
+    level: "yellow",
+    message: "🟡 PR #1606 (JN-5725, off-board): New CI run 28158086561 — e2e-smoke PENDING (was FAIL). Monitoring for result.",
+  },
+  {
+    level: "green",
+    message: "🟢 PR #1622 (JN-5724, Publish): DRAFT — all CI PASS/SKIP. Promote from DRAFT when ready.",
   },
   {
     level: "red",
