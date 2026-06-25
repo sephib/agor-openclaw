@@ -2435,6 +2435,14 @@
 - Auto-archives: none
 - Next: User to promote #1622 and #1623 from DRAFT; resolve #1615 conflicts; fix #1588 pre-commit; investigate #1606 e2e failures
 
+## 06:00 IDT — Overnight Heartbeat
+- PRs checked: #1622 (OPEN, DRAFT, MERGEABLE, CI PASS run 28124127331), #1623 (OPEN, MERGEABLE, CI PASS run 28124083253), #1615 (OPEN, DRAFT, CONFLICTING), #1588 (OPEN, MERGEABLE, pre-commit FAIL run 27933817996), #1596 (OPEN, DRAFT, CONFLICTING), #1606 (OPEN, MERGEABLE, e2e-smoke+e2e-tests FAIL run 28122073927)
+- Merges detected: none — Step 1 sweep confirmed no new merges of tracked PRs
+- CI changes: none — all same run IDs as 04:00 IDT
+- Flags: 6 — #1623 needs reviewer; #1622 DRAFT promotion; #1606 e2e FAIL; #1615 DRAFT+CONFLICTING; #1588 pre-commit FAIL; internal-cr-system failed
+- Auto-archives: none
+- Next: User to (1) assign reviewer for #1623, (2) promote #1622 from DRAFT, (3) investigate #1606 e2e failures, (4) unblock #1615
+
 ## 04:00 IDT — Overnight Heartbeat
 - PRs checked: #1622 (OPEN, DRAFT, MERGEABLE, CI PASS run 28124127331), #1623 (OPEN, MERGEABLE, CI PASS run 28124083253), #1615 (OPEN, DRAFT, CONFLICTING), #1588 (OPEN, MERGEABLE, pre-commit FAIL run 27933817996), #1596 (OPEN, DRAFT, CONFLICTING), #1606 (OPEN, MERGEABLE, e2e-smoke+e2e-tests FAIL run 28122073927)
 - Merges detected: none — Step 1 sweep confirmed no new merges of tracked PRs
