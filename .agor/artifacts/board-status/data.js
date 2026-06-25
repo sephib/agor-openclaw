@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-25 15:02 IDT";
+export const LAST_UPDATED = "2026-06-25 15:32 IDT";
 
 export const WORKTREES = [
   {
@@ -43,8 +43,8 @@ export const WORKTREES = [
     zone: "Revise",
     pr: "#1615",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1615",
-    status: "🟡 PR #1615 OPEN CONFLICTING — CI IMPROVING: new run 28167796913 (new push!): pre-commit ✅ FIXED, now 2 FAIL (integration-run + integration-tests). e2e-api ⏳ PENDING. CONFLICTING — needs rebase.",
-    blockedOn: "Integration CI failures (run 28167796913) + merge conflict with main",
+    status: "🟡 PR #1615 OPEN CONFLICTING — run 28167796913 COMPLETE: e2e-api ✅ resolved (was pending), e2e-smoke ✅ PASS. 2 FAIL remain (integration-run + integration-tests). CONFLICTING — needs rebase.",
+    blockedOn: "Integration CI failures (run 28167796913 complete) + merge conflict with main",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019eeaf04583757a89f47a99/",
     sessionLabel: "session",
@@ -202,11 +202,11 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "🟡 PR #1615 (JN-5677, Revise): CI IMPROVING — new run 28167796913 (new push!): pre-commit ✅ FIXED (was FAIL), now 2 FAIL (integration-run + integration-tests). e2e-api ⏳ PENDING. BUT: CONFLICTING — merge conflict with main appeared. Needs rebase + fix integration failures.",
+    message: "🟡 PR #1615 (JN-5677, Revise): run 28167796913 COMPLETE — e2e-api ✅ PASS (was pending), e2e-smoke ✅ PASS. 2 FAIL remain (integration-run + integration-tests). CONFLICTING — needs rebase + fix integration failures.",
   },
   {
     level: "yellow",
-    message: "🟡 PR #1606 (JN-5725, off-board): NEW PUSH — run 28168534325: all CI ⏳ PENDING. Build ✅ PASS. Monitor.",
+    message: "🟡 PR #1606 (JN-5725, off-board): another new push — run 28168866197 IN PROGRESS: most checks ✅ PASS, e2e-smoke ⏳. Now CONFLICTING (was MERGEABLE). Prior run 28168534325 cancelled.",
   },
   {
     level: "red",

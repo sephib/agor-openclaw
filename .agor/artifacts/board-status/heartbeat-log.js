@@ -1406,4 +1406,22 @@ export const HEARTBEAT_RUNS = [
     summary: "🟢🟢 #1622 + #1623 CI ALL PASS — e2e-smoke ✅ PASS (run 28164293495) and e2e-product ✅ PASS (run 28153233486). Both fully green, REVIEW_REQUIRED. Assign reviewers to merge. #1615 4 FAIL unchanged (run 28164315935). #1606 new run 28166156463: e2e-api PASS, e2e-smoke PENDING.",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019efe8b8ef278efa779a3c4/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-25 15:02 IDT",
+    actions: 0,
+    findings: 8,
+    status: "ok",
+    summary: "#1622/#1623 CI ALL PASS unchanged; #1615 CI IMPROVING (new run 28167796913: pre-commit FIXED, 2 FAIL remain, CONFLICTING); #1606 new push (run 28168534325 pending); 8 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019efea7095d7faaaa17f517/",
+  },
+  {
+    type: "advance",
+    timestamp: "2026-06-25 15:32 IDT",
+    actions: 0,
+    findings: 8,
+    status: "ok",
+    summary: "#1622/#1623 CI ALL PASS unchanged; #1615 run 28167796913 COMPLETE (e2e-api ✅ resolved, 2 FAIL integration remain, CONFLICTING); #1606 another new push (run 28168866197 IN PROGRESS, mostly ✅, e2e-smoke pending, now CONFLICTING); no merges",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019efec27e17741ba38b9e13/",
+  },
 ];
