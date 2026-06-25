@@ -4,6 +4,21 @@
 
 ---
 
+## 15:02 IDT — Weekday Daytime Advance Heartbeat (2026-06-25)
+
+**Session:** 019efea7-095d | http://127.0.0.1:3030/ui/s/019efea7095d7faaaa17f517/
+
+- PRs checked: #1622 (OPEN, REVIEW_REQUIRED, CI ALL PASS run 28164293495 — unchanged), #1623 (OPEN, REVIEW_REQUIRED, CI ALL PASS run 28153233486 — unchanged), #1615 (NEW RUN 28167796913 — new push! Pre-commit FIXED, now 2 FAIL: integration-run+integration-tests; e2e-api PENDING; CONFLICTING), #1588 (pre-commit FAIL — unchanged), #1606 off-board (NEW RUN 28168534325 — new push, all CI pending, build PASS), #1596 (DRAFT, CONFLICTING — unchanged)
+- Merges detected: none (Step 1 sweep clean)
+- Archives: none
+- CI changes: (1) **#1615 CI IMPROVING** — new run 28167796913 from new push: pre-commit ✅ FIXED (was FAIL), now 2 FAIL (integration only), e2e-api pending; BUT: CONFLICTING (merge conflict appeared); (2) **#1606 new push** — run 28168534325 all CI pending; (3) #1622/#1623 unchanged
+- Jira: JN-5616 In Review, JN-5724 In Review, JN-5677 Done, JN-5546 In Progress (stale), JN-5612 In Progress (newly spotted, no worktree)
+- Flags: (1) #1622 merge-ready — assign reviewer; (2) #1623 merge-ready — assign reviewer; (3) #1615 integration failures + merge conflict; (4) #1606 new push CI pending; (5) #1588 pre-commit FAIL; (6) JN-5612 In Progress no worktree; (7) internal-cr-system filesystem failed; (8) jira-operations no zone/session timed_out
+- Auto-archives: none
+- Next: Monitor #1615 e2e-api result; monitor #1606 CI results; Joseph to assign reviewer on #1622 + #1623
+
+---
+
 ## 14:02 IDT — Weekday Daytime Advance Heartbeat (2026-06-25)
 
 **Session:** 019efe70-1724 | http://127.0.0.1:3030/ui/s/019efe7017247cee9f647938/

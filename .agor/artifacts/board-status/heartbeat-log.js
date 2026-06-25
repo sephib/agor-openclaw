@@ -31,6 +31,15 @@ export const HEARTBEAT_RUNS = [
   },
   {
     type: "advance",
+    timestamp: "2026-06-25 15:02 IDT",
+    actions: 0,
+    findings: 8,
+    status: "ok",
+    summary: "🟡 #1615 CI IMPROVING — new run 28167796913 (new push!): pre-commit ✅ FIXED (was FAIL), now 2 FAIL (integration). But CONFLICTING now. 🟡 #1606 new run 28168534325 (new push) — all CI pending. #1622/#1623 CI ALL PASS unchanged. JN-5612 newly spotted In Progress, no worktree.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019efea7095d7faaaa17f517/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-25 12:02 IDT",
     actions: 0,
     findings: 7,

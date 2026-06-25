@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-25 14:32 IDT";
+export const LAST_UPDATED = "2026-06-25 15:02 IDT";
 
 export const WORKTREES = [
   {
@@ -10,7 +10,7 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1622",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1622",
-    status: "🟢 PR #1622 CI ALL PASS — e2e-smoke ✅ PASS (10m29s, run 28164293495). OPEN, REVIEW_REQUIRED. Fully green — assign reviewer to merge.",
+    status: "🟢 PR #1622 CI ALL PASS — run 28164293495 unchanged. OPEN, REVIEW_REQUIRED. Fully green — assign reviewer to merge.",
     blockedOn: "Awaiting reviewer assignment",
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019ef3e3ea0e734d882e878e/",
@@ -26,7 +26,7 @@ export const WORKTREES = [
     zone: "Validate",
     pr: "#1623",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1623",
-    status: "🟢 PR #1623 CI ALL PASS — e2e-product ✅ PASS (27m56s, run 28153233486). OPEN, REVIEW_REQUIRED. Fully green — assign reviewer to merge.",
+    status: "🟢 PR #1623 CI ALL PASS — run 28153233486 unchanged. OPEN, REVIEW_REQUIRED. Fully green — assign reviewer to merge.",
     blockedOn: "Awaiting reviewer assignment",
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019ef405c3e3746c900eac40/",
@@ -43,8 +43,8 @@ export const WORKTREES = [
     zone: "Revise",
     pr: "#1615",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1615",
-    status: "🔴 PR #1615 OPEN MERGEABLE — CI FAIL UNCHANGED: run 28164315935, 4 FAIL (integration-run + integration-tests + pre-commit + pre-commit-run). No new push. Zone: Revise. Jira Done.",
-    blockedOn: "Integration + pre-commit CI failures (run 28164315935) — no new push",
+    status: "🟡 PR #1615 OPEN CONFLICTING — CI IMPROVING: new run 28167796913 (new push!): pre-commit ✅ FIXED, now 2 FAIL (integration-run + integration-tests). e2e-api ⏳ PENDING. CONFLICTING — needs rebase.",
+    blockedOn: "Integration CI failures (run 28167796913) + merge conflict with main",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019eeaf04583757a89f47a99/",
     sessionLabel: "session",
@@ -194,23 +194,27 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "green",
-    message: "🟢 PR #1622 (JN-5724, Publish): CI ALL PASS — e2e-smoke ✅ PASS (10m29s, run 28164293495). OPEN, REVIEW_REQUIRED. Fully green — assign reviewer to merge.",
+    message: "🟢 PR #1622 (JN-5724, Publish): CI ALL PASS — run 28164293495 unchanged. OPEN, REVIEW_REQUIRED. Fully green — assign reviewer to merge.",
   },
   {
     level: "green",
-    message: "🟢 PR #1623 (JN-5616, Validate): CI ALL PASS — e2e-product ✅ PASS (27m56s, run 28153233486). OPEN, REVIEW_REQUIRED. Fully green — assign reviewer to merge.",
-  },
-  {
-    level: "red",
-    message: "🔴 PR #1615 (JN-5677, Revise): CI FAIL UNCHANGED — run 28164315935, 4 FAIL (integration-run + integration-tests + pre-commit + pre-commit-run). No new push. Fix pre-commit + integration failures.",
+    message: "🟢 PR #1623 (JN-5616, Validate): CI ALL PASS — run 28153233486 unchanged. OPEN, REVIEW_REQUIRED. Fully green — assign reviewer to merge.",
   },
   {
     level: "yellow",
-    message: "🟡 PR #1606 (JN-5725, off-board): CI advancing — run 28166156463: e2e-api ✅ PASS, integration ✅, pre-commit ✅, tox ✅; e2e-smoke ⏳ PENDING.",
+    message: "🟡 PR #1615 (JN-5677, Revise): CI IMPROVING — new run 28167796913 (new push!): pre-commit ✅ FIXED (was FAIL), now 2 FAIL (integration-run + integration-tests). e2e-api ⏳ PENDING. BUT: CONFLICTING — merge conflict with main appeared. Needs rebase + fix integration failures.",
+  },
+  {
+    level: "yellow",
+    message: "🟡 PR #1606 (JN-5725, off-board): NEW PUSH — run 28168534325: all CI ⏳ PENDING. Build ✅ PASS. Monitor.",
   },
   {
     level: "red",
     message: "🔴 PR #1588 (JN-5546, Code Review zone): pre-commit FAIL — CI run 27933817996. Fix pre-commit, assign reviewer, update Jira to 'In Review'.",
+  },
+  {
+    level: "yellow",
+    message: "⚠️ JN-5612 — In Progress sprint ticket, no worktree on board. 'Fix github.GITHUB_SHA → github.sha in all workflow run-name fields'.",
   },
   {
     level: "yellow",
