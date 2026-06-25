@@ -22,6 +22,15 @@ export const HEARTBEAT_RUNS = [
   // },
   {
     type: "advance",
+    timestamp: "2026-06-25 14:02 IDT",
+    actions: 0,
+    findings: 7,
+    status: "ok",
+    summary: "🟢 #1622 PROMOTED FROM DRAFT (ready for review, e2e-smoke pending run 28164293495). 🟡 #1623 CI RECOVERING (run 28153233486: was 2 FAIL, now nearly all PASS — only e2e-product pending). 🔴 #1615 CI WORSENED (new run 28164315935: 4 FAIL — pre-commit regressed + integration still failing). 🟡 #1606 new run 28165238349 advancing (e2e-api pending). No merges.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019efe7017247cee9f647938/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-25 12:02 IDT",
     actions: 0,
     findings: 7,

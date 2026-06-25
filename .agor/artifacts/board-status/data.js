@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-25 13:32 IDT";
+export const LAST_UPDATED = "2026-06-25 14:02 IDT";
 
 export const WORKTREES = [
   {
@@ -8,10 +8,10 @@ export const WORKTREES = [
     branch: "jn-5724-lychee-precommit-flaky",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5724-lychee-precommit-flaky",
     zone: "Publish",
-    pr: "#1622 DRAFT",
+    pr: "#1622",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1622",
-    status: "🟢 PR #1622 DRAFT — all CI PASS/SKIP, REVIEW_REQUIRED. Jira In Review. Needs promotion from DRAFT.",
-    blockedOn: "Awaiting DRAFT promotion",
+    status: "🟢 PR #1622 PROMOTED FROM DRAFT — OPEN, REVIEW_REQUIRED. CI run 28164293495: all PASS, e2e-smoke PENDING. Jira In Review. Assign reviewer.",
+    blockedOn: "Awaiting reviewer assignment; e2e-smoke pending",
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019ef3e3ea0e734d882e878e/",
     sessionLabel: "publish session (complete)",
@@ -26,9 +26,9 @@ export const WORKTREES = [
     zone: "Validate",
     pr: "#1623",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1623",
-    status: "🔴 PR #1623 OPEN — MERGEABLE, REVIEW_REQUIRED. CI FAILING: run 28153233486 COMPLETE — e2e-product/e2e FAIL (43m53s) + e2e-tests FAIL (3s). e2e-tests 3s failure = likely setup error. No new CI run. Fix + push required.",
-    blockedOn: "e2e-product FAIL + e2e-tests FAIL (run 28153233486)",
-    blockedType: "blocked",
+    status: "🟡 PR #1623 OPEN — MERGEABLE, REVIEW_REQUIRED. CI RECOVERING: run 28153233486 — e2e-smoke PASS, integration PASS, e2e-tests PASS, pre-commit PASS; only e2e-product PENDING. Was 2 FAIL last run.",
+    blockedOn: "e2e-product PENDING (run 28153233486)",
+    blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019ef405c3e3746c900eac40/",
     sessionLabel: "publish session (complete)",
     lastActive: "2026-06-25 06:47 IDT",
@@ -40,11 +40,11 @@ export const WORKTREES = [
     title: "Historical mode notebook cells",
     branch: "jn-5677-dev-historical-mode-notebook-cells",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5677-dev-historical-mode-notebook-cells",
-    zone: "Respond",
+    zone: "Revise",
     pr: "#1615",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1615",
-    status: "🔴 PR #1615 OPEN MERGEABLE — Integration CI FAILING (run 28153631250: integration-run + integration-tests FAIL). CodeRabbit: 10 actionable comments. reviewDecision=''. Jira Done.",
-    blockedOn: "Integration CI failures + CodeRabbit actionable items",
+    status: "🔴 PR #1615 OPEN MERGEABLE — CI WORSENED: new run 28164315935, 4 FAIL (integration-run + integration-tests + pre-commit + pre-commit-run). Pre-commit regressed from previous run. Zone: Revise (appropriate). Jira Done.",
+    blockedOn: "Integration + pre-commit CI failures (run 28164315935)",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019eeaf04583757a89f47a99/",
     sessionLabel: "session",
@@ -193,20 +193,20 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "red",
-    message: "🔴 PR #1623 (JN-5616, Validate): CI FAILING — run 28153233486 COMPLETE with FAILURE. e2e-product/e2e FAIL (43m53s) + e2e-tests FAIL (3s). e2e-tests 3s = likely setup/config error. Fix + push to trigger new CI run.",
-  },
-  {
-    level: "red",
-    message: "🔴 PR #1615 (JN-5677, Respond): Integration CI FAILING (run 28153631250). CodeRabbit: 10 actionable comments. Fix integration failures + CodeRabbit items.",
+    level: "green",
+    message: "🟢 PR #1622 (JN-5724, Publish): PROMOTED FROM DRAFT — now ready for review. CI run 28164293495: all PASS, e2e-smoke PENDING. Assign reviewer.",
   },
   {
     level: "yellow",
-    message: "🟡 PR #1606 (JN-5725, off-board): Developer pushed new commit (13:17 IDT) — run 28161157784 CANCELLED, new run 28163223200 IN PROGRESS. All checks PASS, e2e-smoke PENDING. Positive — active fix underway.",
+    message: "🟡 PR #1623 (JN-5616, Validate): CI RECOVERING — run 28153233486: e2e-smoke PASS, integration PASS, e2e-tests PASS, pre-commit PASS; only e2e-product PENDING. Was 2 FAIL. Monitor e2e-product result.",
   },
   {
-    level: "green",
-    message: "🟢 PR #1622 (JN-5724, Publish): DRAFT — all CI PASS/SKIP. Promote from DRAFT when ready.",
+    level: "red",
+    message: "🔴 PR #1615 (JN-5677, Revise): CI WORSENED — new run 28164315935, 4 FAIL (integration-run + integration-tests + pre-commit + pre-commit-run). Fix pre-commit + integration failures.",
+  },
+  {
+    level: "yellow",
+    message: "🟡 PR #1606 (JN-5725, off-board): CI advancing — run 28165238349: integration+pre-commit+tox PASS, e2e-api PENDING. Monitor e2e-api result.",
   },
   {
     level: "red",

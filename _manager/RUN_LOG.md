@@ -4,6 +4,22 @@
 
 ---
 
+## 14:02 IDT — Weekday Daytime Advance Heartbeat (2026-06-25)
+
+**Session:** 019efe70-1724 | http://127.0.0.1:3030/ui/s/019efe7017247cee9f647938/
+
+- PRs checked: #1622 (PROMOTED FROM DRAFT → OPEN, REVIEW_REQUIRED; CI run 28164293495 all PASS, e2e-smoke PENDING), #1623 (OPEN, MERGEABLE, REVIEW_REQUIRED — CI RECOVERING: run 28153233486 nearly all ✅ PASS, only e2e-product PENDING; was 2 FAIL), #1615 (CI WORSENED: new run 28164315935, 4 FAIL: integration-run + integration-tests + pre-commit + pre-commit-run; was 2 FAIL), #1588 (pre-commit FAIL — unchanged), #1606 off-board (new run 28165238349: integration+pre-commit+tox PASS, e2e-api PENDING), #1596 (DRAFT, CONFLICTING — unchanged)
+- Merges detected: none
+- Archives: none
+- CI changes: (1) **#1622 no longer DRAFT** — promoted to ready for review, new CI run running; (2) **#1623 CI RECOVERING** — same run 28153233486 now shows e2e-smoke, integration, e2e-tests, pre-commit all PASS; e2e-product pending; (3) **#1615 WORSENED** — new run with pre-commit regression; (4) **#1606 advancing** — new run with e2e-api pending
+- Jira: JN-5616 In Review, JN-5724 In Review, JN-5677 Done, JN-5546 In Progress (stale)
+- Zone changes: jn-5677 confirmed in Revise zone (was Respond — already updated in 10:00 run)
+- Flags: (1) #1622 promoted from DRAFT — assign reviewer; (2) #1623 CI recovering — monitor e2e-product; (3) #1615 CI worsened — fix pre-commit + integration; (4) #1606 new CI run — monitor e2e-api; (5) #1588 pre-commit FAIL; (6) internal-cr-system filesystem failed; (7) jira-operations no zone/session timed_out
+- Auto-archives: none
+- Next: Joseph to assign reviewer on #1622 (ready!); monitor #1623 e2e-product; fix #1615 pre-commit + integration regressions; monitor #1606 e2e-api
+
+---
+
 ## 12:02 IDT — Weekday Daytime Advance Heartbeat (2026-06-25)
 
 **Session:** 019efe02-39c4 | http://127.0.0.1:3030/ui/s/019efe0239c47faab0729f7d/
