@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-25 09:31 IDT";
+export const LAST_UPDATED = "2026-06-25 10:00 IDT";
 
 export const WORKTREES = [
   {
@@ -26,12 +26,12 @@ export const WORKTREES = [
     zone: "Validate",
     pr: "#1623",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1623",
-    status: "🟢 PR #1623 PROMOTED FROM DRAFT — MERGEABLE, full e2e suite ALL PASS (run 28124083253: e2e-product ✅ 19m, e2e-smoke ✅ 11m, e2e-api ✅). CodeRabbit done. Jira In Review. Needs reviewer assigned.",
-    blockedOn: "Awaiting reviewer assignment",
+    status: "🟡 PR #1623 OPEN — MERGEABLE, e2e-product PENDING (e2e-api ✅, e2e-smoke ✅, integration ✅, pre-commit ✅). CodeRabbit + Joseph reviewed. REVIEW_REQUIRED — needs human reviewer.",
+    blockedOn: "Awaiting human reviewer + e2e-product completion",
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019ef405c3e3746c900eac40/",
     sessionLabel: "publish session (complete)",
-    lastActive: "2026-06-23 10:33 IDT",
+    lastActive: "2026-06-25 06:47 IDT",
   },
   {
     ticket: "JN-5677",
@@ -40,15 +40,15 @@ export const WORKTREES = [
     title: "Historical mode notebook cells",
     branch: "jn-5677-dev-historical-mode-notebook-cells",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5677-dev-historical-mode-notebook-cells",
-    zone: "Code",
-    pr: "#1615 DRAFT",
+    zone: "Revise",
+    pr: "#1615",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1615",
-    status: "🔴 DRAFT + CONFLICTING — CI blocked (only CodeRabbit). UNBLOCK: resolve conflicts, fix pre-commit, promote from DRAFT. Jira Done.",
-    blockedOn: "Merge conflict + DRAFT",
+    status: "🔴 PR #1615 OPEN MERGEABLE — conflicts resolved + promoted from DRAFT (06:47 IDT). Integration CI FAILING (run 28153631250: integration-run + integration-tests FAIL). CodeRabbit: 10 actionable comments. Jira Done.",
+    blockedOn: "Integration CI failures + CodeRabbit actionable items",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019eeaf04583757a89f47a99/",
     sessionLabel: "session",
-    lastActive: "2026-06-22 14:25 IDT",
+    lastActive: "2026-06-25 07:28 IDT",
   },
   {
     ticket: "JN-5546",
@@ -193,20 +193,20 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "green",
-    message: "🟢 PR #1623 (JN-5616, Validate): PROMOTED FROM DRAFT — MERGEABLE, full e2e suite ALL PASS (run 28124083253). Assign reviewer to merge.",
-  },
-  {
     level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): CI FAILED (run 28122073927) — e2e-smoke FAIL (17m15s) + e2e-tests FAIL. Rebase resolved conflicts but e2e still failing. Investigate failure logs.",
+    message: "🔴 PR #1615 (JN-5677, Revise): Conflicts resolved + promoted from DRAFT — but integration CI FAILING (run 28153631250). CodeRabbit: 10 actionable comments (historical.py, notebook, transforms). Fix integration failures + CodeRabbit items.",
+  },
+  {
+    level: "yellow",
+    message: "🟡 PR #1623 (JN-5616, Validate): OPEN MERGEABLE — e2e-product pending, REVIEW_REQUIRED. CodeRabbit + Joseph reviewed. No human reviewer assigned yet. Assign reviewer.",
   },
   {
     level: "green",
-    message: "🟢 PR #1622 (JN-5724, Publish): DRAFT — all CI PASS (run 28124127331). Promote from DRAFT when ready.",
+    message: "🟢 PR #1622 (JN-5724, Publish): DRAFT — all CI PASS (run 28149881600). Promote from DRAFT when ready.",
   },
   {
-    level: "red",
-    message: "🔴 PR #1615 (JN-5677, Code zone): DRAFT + CONFLICTING — CI blocked. UNBLOCK: resolve conflicts, fix pre-commit, promote from DRAFT. Jira already Done.",
+    level: "yellow",
+    message: "🟡 PR #1606 (JN-5725, off-board): e2e-smoke PENDING (run 28153567358) — was FAIL. Possible fix in progress. Monitor result.",
   },
   {
     level: "red",

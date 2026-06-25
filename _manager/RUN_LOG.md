@@ -4,6 +4,22 @@
 
 ---
 
+## 10:00 IDT — Weekday Daytime Advance Heartbeat (2026-06-25)
+
+**Session:** 019efdaf-d352 | http://127.0.0.1:3030/ui/s/019efdafd35270ebb095c3bd/
+
+- PRs checked: #1623 (OPEN, MERGEABLE, e2e-product pending, REVIEW_REQUIRED — reviewer active), #1622 (DRAFT, ALL PASS — no change), #1615 (**MAJOR CHANGE**: OPEN MERGEABLE, was DRAFT+CONFLICTING; integration CI 2 FAIL run 28153631250), #1588 (pre-commit FAIL — no change), #1606 off-board (e2e-smoke PENDING was FAIL — possible fix), #1596 (DRAFT, CONFLICTING — no change)
+- Merges detected: none
+- Archives: none
+- CI changes: #1615 conflicts resolved + promoted (now integration FAIL); #1623 e2e-product pending; #1606 e2e-smoke pending (was fail)
+- Jira: JN-5677 Done ✅, JN-5616 In Review ✅, JN-5724 In Review ✅, JN-5546 In Progress (stale)
+- Zone changes: jn-5677 moved to Revise (was Code in prior BOARD_STATE)
+- Flags: (1) #1615 integration failures + 10 CodeRabbit actionable items; (2) #1623 needs human reviewer; (3) #1606 e2e pending (monitoring); (4) #1622 DRAFT awaiting promotion; (5) #1588 pre-commit FAIL; (6) internal-cr-system filesystem failed
+- Auto-archives: none
+- Next: Joseph to fix #1615 integration failures + CodeRabbit items; assign reviewer on #1623; monitor #1606 e2e-smoke result
+
+---
+
 ## 09:31 IDT — Weekday Daytime Advance Heartbeat (2026-06-25)
 
 **Session:** 019efd78-e41a | http://127.0.0.1:3030/ui/s/019efd78e41a72afb654d0ab/
