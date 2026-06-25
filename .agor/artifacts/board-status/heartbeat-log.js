@@ -1352,4 +1352,13 @@ export const HEARTBEAT_RUNS = [
     summary: "#1623 CI improving (e2e-tests PASS, e2e-product PENDING); #1606 new run 28159345039 also FAILED (persistent e2e); all other PRs unchanged; 7 findings.",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019efe1db0e57b2f819172fd/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-25 13:02 IDT",
+    actions: 0,
+    findings: 7,
+    status: "ok",
+    summary: "#1623 CI REGRESSION — run 28153233486 now FULLY COMPLETE with FAILURE (e2e-product FAIL 43m53s + e2e-tests FAIL 3s); #1606 NEW CI run 28161157784 IN PROGRESS (12:39 IDT, e2e-smoke pending, all others PASS); 7 findings.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019efe39287e70d7b665f842/",
+  },
 ];

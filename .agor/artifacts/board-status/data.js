@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-25 12:32 IDT";
+export const LAST_UPDATED = "2026-06-25 13:02 IDT";
 
 export const WORKTREES = [
   {
@@ -26,9 +26,9 @@ export const WORKTREES = [
     zone: "Validate",
     pr: "#1623",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1623",
-    status: "🟡 PR #1623 OPEN — MERGEABLE, REVIEW_REQUIRED. CI IMPROVING: e2e-tests now PASS (was FAIL). e2e-product/e2e still PENDING (run 28153233486). Waiting for e2e-product result — assign reviewer if it passes.",
-    blockedOn: "e2e-product/e2e PENDING (run 28153233486)",
-    blockedType: "running",
+    status: "🔴 PR #1623 OPEN — MERGEABLE, REVIEW_REQUIRED. CI FAILING: run 28153233486 COMPLETE — e2e-product/e2e FAIL (43m53s) + e2e-tests FAIL (3s). e2e-tests 3s failure = likely setup error. No new CI run. Fix + push required.",
+    blockedOn: "e2e-product FAIL + e2e-tests FAIL (run 28153233486)",
+    blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ef405c3e3746c900eac40/",
     sessionLabel: "publish session (complete)",
     lastActive: "2026-06-25 06:47 IDT",
@@ -193,16 +193,16 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "yellow",
-    message: "🟡 PR #1623 (JN-5616, Validate): CI IMPROVING — e2e-tests now PASS. e2e-product/e2e still PENDING (run 28153233486). Assign reviewer as soon as e2e-product passes.",
+    level: "red",
+    message: "🔴 PR #1623 (JN-5616, Validate): CI FAILING — run 28153233486 COMPLETE with FAILURE. e2e-product/e2e FAIL (43m53s) + e2e-tests FAIL (3s). e2e-tests 3s = likely setup/config error. Fix + push to trigger new CI run.",
   },
   {
     level: "red",
     message: "🔴 PR #1615 (JN-5677, Respond): Integration CI FAILING (run 28153631250). CodeRabbit: 10 actionable comments. Fix integration failures + CodeRabbit items.",
   },
   {
-    level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): Persistent e2e failures — new run 28159345039: e2e-smoke FAIL (17m3s) + e2e-tests FAIL. Multiple consecutive CI runs failing. Investigate root cause.",
+    level: "yellow",
+    message: "🟡 PR #1606 (JN-5725, off-board): New CI run 28161157784 IN PROGRESS (12:39 IDT). e2e-smoke PENDING, all others PASS. Previous run 28159345039 failed. Monitor result.",
   },
   {
     level: "green",

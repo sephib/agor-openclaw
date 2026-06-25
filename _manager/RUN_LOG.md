@@ -2542,3 +2542,17 @@
 - Flags: 7 — #1623 CI improving/e2e-product pending; #1606 persistent e2e FAIL; #1622 DRAFT promotion; #1615 integration FAIL; #1588 pre-commit FAIL; jira-operations unresolved; internal-cr-system stagnant
 - Auto-archives: none
 - Next: Joseph to (1) assign reviewer for #1623 if e2e-product passes, (2) promote #1622 from DRAFT, (3) investigate #1606 persistent e2e failures, (4) decide on jira-operations
+
+## 13:02 IDT — Weekday Daytime Advance Heartbeat (2026-06-25)
+
+**Session:** 019efe39-287e | http://127.0.0.1:3030/ui/s/019efe39287e70d7b665f842/
+
+- PRs checked: #1623 (❌ FAIL: run 28153233486 COMPLETE — e2e-product/e2e FAIL 43m53s + e2e-tests FAIL 3s; "improving" at 12:32 was premature), #1622 (DRAFT, ALL PASS/SKIP — unchanged), #1615 (integration 2 FAIL — unchanged), #1588 (pre-commit FAIL — unchanged), #1606 off-board (🆕 new run 28161157784 IN PROGRESS 12:39 IDT, e2e-smoke pending, all others PASS)
+- Merges detected: none
+- Archives: none
+- CI changes: **#1623 REGRESSION** — run 28153233486 fully complete with FAILURE (e2e-product 43m53s + e2e-tests 3s). Was "improving" at 12:32; now confirmed FAILED. **#1606 IMPROVING** — new run 28161157784 in progress; previous persistent failures not yet reproduced.
+- Jira: unchanged (JN-5616 In Review, JN-5724 In Review, JN-5677 Done, JN-5546 In Progress stale)
+- Zone changes: none
+- Flags: (1) #1623 CI FAILED e2e-product+e2e-tests; (2) #1615 integration failures + CodeRabbit; (3) #1606 new CI run pending — monitor; (4) #1622 DRAFT awaiting promotion; (5) #1588 pre-commit FAIL; (6) internal-cr-system filesystem failed; (7) jira-operations no zone/session timed_out
+- Auto-archives: none
+- Next: Joseph to investigate #1623 e2e failures (e2e-tests 3s failure = setup issue?); monitor #1606 run 28161157784 e2e-smoke result; fix #1615 integration + CodeRabbit; promote #1622 from DRAFT
