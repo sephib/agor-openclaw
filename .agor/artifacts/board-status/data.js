@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-25 10:00 IDT";
+export const LAST_UPDATED = "2026-06-25 11:33 IDT";
 
 export const WORKTREES = [
   {
@@ -26,8 +26,8 @@ export const WORKTREES = [
     zone: "Validate",
     pr: "#1623",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1623",
-    status: "🟡 PR #1623 OPEN — MERGEABLE, e2e-product PENDING (e2e-api ✅, e2e-smoke ✅, integration ✅, pre-commit ✅). CodeRabbit + Joseph reviewed. REVIEW_REQUIRED — needs human reviewer.",
-    blockedOn: "Awaiting human reviewer + e2e-product completion",
+    status: "🟡 PR #1623 OPEN — MERGEABLE, CI COMPLETE (e2e-product skipping, all others pass, run 28153631250). CodeRabbit + Joseph reviewed. REVIEW_REQUIRED — needs human reviewer.",
+    blockedOn: "Awaiting human reviewer — CI unblocked",
     blockedType: "running",
     sessionUrl: "http://localhost:3030/ui/s/019ef405c3e3746c900eac40/",
     sessionLabel: "publish session (complete)",
@@ -40,10 +40,10 @@ export const WORKTREES = [
     title: "Historical mode notebook cells",
     branch: "jn-5677-dev-historical-mode-notebook-cells",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5677-dev-historical-mode-notebook-cells",
-    zone: "Revise",
+    zone: "Respond",
     pr: "#1615",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1615",
-    status: "🔴 PR #1615 OPEN MERGEABLE — conflicts resolved + promoted from DRAFT (06:47 IDT). Integration CI FAILING (run 28153631250: integration-run + integration-tests FAIL). CodeRabbit: 10 actionable comments. Jira Done.",
+    status: "🔴 PR #1615 OPEN MERGEABLE — conflicts resolved + promoted from DRAFT (06:47 IDT). Integration CI FAILING (run 28153631250: integration-run + integration-tests FAIL). CodeRabbit: 10 actionable comments. reviewDecision=''. Jira Done.",
     blockedOn: "Integration CI failures + CodeRabbit actionable items",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019eeaf04583757a89f47a99/",
@@ -194,23 +194,27 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "red",
-    message: "🔴 PR #1615 (JN-5677, Revise): Conflicts resolved + promoted from DRAFT — but integration CI FAILING (run 28153631250). CodeRabbit: 10 actionable comments (historical.py, notebook, transforms). Fix integration failures + CodeRabbit items.",
+    message: "🔴 PR #1615 (JN-5677, Respond): Conflicts resolved + promoted from DRAFT — but integration CI FAILING (run 28153631250). CodeRabbit: 10 actionable comments. Fix integration failures + CodeRabbit items.",
   },
   {
     level: "yellow",
-    message: "🟡 PR #1623 (JN-5616, Validate): OPEN MERGEABLE — e2e-product pending, REVIEW_REQUIRED. CodeRabbit + Joseph reviewed. No human reviewer assigned yet. Assign reviewer.",
+    message: "🟡 PR #1623 (JN-5616, Validate): CI COMPLETE (e2e-product skipping) — REVIEW_REQUIRED. CodeRabbit + Joseph reviewed. No human reviewer assigned. Assign reviewer now.",
   },
   {
     level: "green",
     message: "🟢 PR #1622 (JN-5724, Publish): DRAFT — all CI PASS (run 28149881600). Promote from DRAFT when ready.",
   },
   {
-    level: "yellow",
-    message: "🟡 PR #1606 (JN-5725, off-board): e2e-smoke PENDING (run 28153567358) — was FAIL. Possible fix in progress. Monitor result.",
+    level: "red",
+    message: "🔴 PR #1606 (JN-5725, off-board): e2e-smoke/e2e FAIL (17m38s) + e2e-tests FAIL (run 28155258049). Persistent failure — retry also failed.",
   },
   {
     level: "red",
-    message: "🔴 PR #1588 (JN-5546, Code Review zone): pre-commit FAIL — CI run 27933817996. PR is MERGEABLE (no git conflicts). Fix pre-commit, assign reviewer, update Jira to 'In Review'.",
+    message: "🔴 PR #1588 (JN-5546, Code Review zone): pre-commit FAIL — CI run 27933817996. Fix pre-commit, assign reviewer, update Jira to 'In Review'.",
+  },
+  {
+    level: "yellow",
+    message: "⚠️ jira-operations (no zone): session timed_out 07:38 IDT. No PR, no Jira. Title: 'Create Q4 Planning Epic + Stories'. Decide: archive or assign zone.",
   },
   {
     level: "yellow",

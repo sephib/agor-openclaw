@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-25 10:00 IDT (advance heartbeat)*
+*Last updated: 2026-06-25 11:33 IDT (advance heartbeat)*
 
 ---
 
@@ -9,12 +9,15 @@
 | Branch | Jira | Zone | Jira Status | PR | CI | Review | Flags |
 |--------|------|------|-------------|-----|-----|--------|-------|
 | jn-5724-lychee-precommit-flaky | [JN-5724](https://jounce.atlassian.net/browse/JN-5724) | Publish | In Review | [#1622](https://github.com/Jounce-IO/jounce/pull/1622) **DRAFT** MERGEABLE | ✅ ALL PASS (9 ✅, 6 skip) | REVIEW_REQUIRED | 🟢 **PR #1622** — DRAFT, all CI passing. Needs promotion from DRAFT. |
-| jn-5616-replace-find-project-root | [JN-5616](https://jounce.atlassian.net/browse/JN-5616) | Validate | In Review | [#1623](https://github.com/Jounce-IO/jounce/pull/1623) **OPEN** MERGEABLE | ⏳ e2e-product PENDING (most pass) | REVIEW_REQUIRED | 🟡 **PR #1623 OPEN** — MERGEABLE, CI running. CodeRabbit + Joseph reviewed. **Needs human reviewer to approve.** |
-| jn-5677-dev-historical-mode-notebook-cells | [JN-5677](https://jounce.atlassian.net/browse/JN-5677) | **Revise** | Done | [#1615](https://github.com/Jounce-IO/jounce/pull/1615) **OPEN** MERGEABLE | ❌ **2 FAIL** (integration-run + integration-tests, run 28153631250) | REVIEW_REQUIRED | 🔴 **CI FAILING** — conflicts resolved + promoted from DRAFT (06:47 IDT), but integration tests fail. CodeRabbit: 10 actionable comments. |
+| jn-5616-replace-find-project-root | [JN-5616](https://jounce.atlassian.net/browse/JN-5616) | Validate | In Review | [#1623](https://github.com/Jounce-IO/jounce/pull/1623) **OPEN** MERGEABLE | ✅ ALL PASS (run 28153631250 complete; e2e-product skipping) | REVIEW_REQUIRED | 🟡 **PR #1623 OPEN** — CI complete (e2e-product now skipping, all others pass). **Needs human reviewer to approve.** |
+| jn-5677-dev-historical-mode-notebook-cells | [JN-5677](https://jounce.atlassian.net/browse/JN-5677) | **Respond** | Done | [#1615](https://github.com/Jounce-IO/jounce/pull/1615) **OPEN** MERGEABLE | ❌ **2 FAIL** (integration-run + integration-tests, run 28153631250) | reviewDecision="" | 🔴 **CI FAILING** — conflicts resolved + promoted from DRAFT (06:47 IDT), but integration tests fail. CodeRabbit: 10 actionable comments. |
 | jn-5546-docs-document-module-layout-convention-and-3 | [JN-5546](https://jounce.atlassian.net/browse/JN-5546) | Code Review | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) MERGEABLE | ❌ **2 FAIL** (pre-commit + pre-commit-run/pre-commit) | reviewDecision="" | 🔴 **CI FAILING** — pre-commit fails; Jira should be "In Review" |
 | internal-cr-system | — | Code | — | — | — | — | ⚠️ No PR. No Jira. Stagnant since Jun 18. filesystem_status: failed (git lock) |
 | jn-5695-db-connect-script | [JN-5695](https://jounce.atlassian.net/browse/JN-5695) | BLOCKED | Backlog | [#1596](https://github.com/Jounce-IO/jounce/pull/1596) DRAFT | ⚠️ CONFLICTING | — | 🔴 CONFLICTING; frozen |
 | jn-5672-dal-ext-dashboard | [JN-5672](https://jounce.atlassian.net/browse/JN-5672) | BLOCKED | Backlog | — | — | — | ℹ️ On hold |
+
+**New This Scan:**
+- jira-operations (no PR, no Jira, session timed_out 07:38 IDT — no zone set, title: "Create Q4 Planning Epic + Stories")
 
 **Archived This Session:**
 - none
@@ -50,17 +53,19 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | ❌ **2 FAIL** (e2e-smoke/e2e 17m15s + e2e-tests) | OPEN, MERGEABLE | 🔴 **CI FAILED** — e2e failures persist. JN-5725 Done (Unassigned). |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | ❌ **2 FAIL** (e2e-smoke/e2e 17m38s + e2e-tests, run 28155258049) | OPEN, MERGEABLE | 🔴 **CI FAILED** — e2e failures persist (new run, retry also failed). JN-5725 Done (Unassigned). |
 
 ---
 
-## Key Changes Since Last Run (09:31 IDT Jun 25)
+## Key Changes Since Last Run (10:00 IDT Jun 25)
 
 | What observed | Status |
 |---|---|
-| **#1615 MAJOR CHANGE** | Conflicts resolved + promoted from DRAFT → OPEN MERGEABLE. Moved to Revise zone. CI now running: 2 integration failures (run 28153631250). CodeRabbit 10 actionable comments posted 07:28 IDT. |
-| **#1623 reviewDecision** | Changed from "" → REVIEW_REQUIRED. Joseph (sephib) + CodeRabbit active today (06:47–07:11 IDT). e2e-product pending. |
-| **#1606 CI change** | e2e-smoke changed from FAIL (17m15s) → PENDING (new run 28153567358). Possible fix pushed. All other checks passing. |
+| **#1623 CI complete** | e2e-product PENDING → SKIPPING. CI now fully complete (run 28153631250). All checks pass or skip. PR ready for human review. |
+| **#1606 FAIL again** | New run 28155258049: e2e-smoke/e2e FAIL (17m38s) + e2e-tests FAIL. Previous PENDING was a retry — fix did not work. |
+| **jn-5677 zone correction** | Agor reports Respond zone (not Revise as shown before). Board state corrected. |
+| **jira-operations worktree new** | New worktree on board. Session timed_out 07:38 IDT. Title: "Create Q4 Planning Epic + Stories". No PR, no Jira, no zone. Flag for attention. |
+| **#1615 reviewDecision** | Changed from REVIEW_REQUIRED → "" (possibly review withdrawn after conflict resolution). CI still 2 FAIL. |
 | **No new merges** | Step 1 sweep confirmed no new merges of tracked PRs |
 | **Jira unchanged** | JN-5616 In Review, JN-5724 In Review, JN-5677 Done, JN-5546 In Progress (stale) |
 
@@ -84,11 +89,11 @@ PR [#1615](https://github.com/Jounce-IO/jounce/pull/1615): `feat(jbenchmark): hi
 
 PR [#1623](https://github.com/Jounce-IO/jounce/pull/1623): `refactor(jbenchmark): replace find_project_root() in tests with conftest fixtures (JN-5616)`
 - **OPEN**, MERGEABLE, reviewDecision=REVIEW_REQUIRED
-- CI: ⏳ e2e-product PENDING (all others pass: e2e-api ✅, e2e-smoke ✅, integration ✅, pre-commit ✅, tox ✅, nox ✅)
+- CI: ✅ **ALL COMPLETE** — e2e-product now SKIPPING (was PENDING); all checks pass/skip (run 28153631250)
 - CodeRabbit reviewed (multiple rounds); Joseph (sephib) reviewed at 06:47 IDT
 - reviewRequests=[] — **no human reviewer explicitly assigned**
 - Jira [JN-5616](https://jounce.atlassian.net/browse/JN-5616): In Review ✅
-- **Action needed:** Assign human reviewer; wait for e2e-product to complete
+- **Action needed:** Assign human reviewer — CI is now complete, no blockers
 
 ---
 
@@ -101,12 +106,12 @@ PR [#1622](https://github.com/Jounce-IO/jounce/pull/1622): `fix(lychee): remove 
 
 ---
 
-### 🟡 PR #1606 (JN-5725, off-board) — CI possibly recovering
+### 🔴 PR #1606 (JN-5725, off-board) — e2e FAIL persists
 
 PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer): integrate log analyzer into experiment-workflow (JN-5725)`
-- e2e-smoke now **PENDING** (run 28153567358) — was FAIL (17m15s). All others passing. May have been fixed.
+- e2e-smoke/e2e **FAIL** (17m38s) + e2e-tests **FAIL** — new run 28155258049. Previous PENDING was a retry that also failed.
 - JIRA [JN-5725](https://jounce.atlassian.net/browse/JN-5725): Done (Unassigned)
-- **Action needed:** Wait for e2e-smoke to complete; if passes, assign reviewer
+- **Action needed:** Investigate root cause of e2e-smoke failures (persistent across multiple runs)
 
 ---
 
@@ -115,6 +120,15 @@ PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer):
 PR [#1588](https://github.com/Jounce-IO/jounce/pull/1588): 2 pre-commit checks FAILING (9 ✅, 2 fail, 5 skip). PR is MERGEABLE (no git conflicts). Not a DRAFT.
 
 **Required action:** (1) Fix pre-commit failures. (2) Assign reviewer. (3) Update [JN-5546](https://jounce.atlassian.net/browse/JN-5546) from "In Progress" → "In Review".
+
+---
+
+### ⚠️ jira-operations — new worktree, session timed_out
+
+Branch `jira-operations` — appeared in board scan this run. No PR, no Jira ticket, no zone assigned.
+- Session `019efdac-6f1b-74b9-89ec-90801257c9f1`: **timed_out** at 07:38 IDT (Jun 25). Title: "Create Q4 Planning Epic + Stories"
+- No git commits (SHA unchanged from base)
+- **Action needed:** Joseph to decide: archive (if one-off task) or assign zone + create tickets
 
 ---
 

@@ -1316,4 +1316,22 @@ export const HEARTBEAT_RUNS = [
     summary: "Board static — no new merges, no CI changes since 09:02 IDT. #1623 OPEN/needs reviewer; #1622 DRAFT/PASS awaiting promotion; #1606 CI FAILED (run 28122073927); #1615 DRAFT+CONFLICTING; #1588 pre-commit FAIL; internal-cr-system filesystem failed.",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019efd78e41a72afb654d0ab/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-25 10:00 IDT",
+    actions: 1,
+    findings: 6,
+    status: "ok",
+    summary: "#1615 conflicts resolved+promoted OPEN MERGEABLE; CI: 2 integration FAIL. #1623 REVIEW_REQUIRED/active. #1606 e2e PENDING. #1622 DRAFT/PASS. #1588 pre-commit FAIL. 6 findings.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019efd9b9e61716394f0ba0e/",
+  },
+  {
+    type: "advance",
+    timestamp: "2026-06-25 11:33 IDT",
+    actions: 0,
+    findings: 7,
+    status: "ok",
+    summary: "#1623 e2e-product PENDING→SKIPPING (CI complete, assign reviewer); #1606 FAIL again (run 28155258049, retry failed); jira-operations worktree new (timed_out); jn-5677 zone corrected Revise→Respond; 7 findings.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019efde6c2007873824ee489/",
+  },
 ];
