@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-25 13:02 IDT";
+export const LAST_UPDATED = "2026-06-25 13:32 IDT";
 
 export const WORKTREES = [
   {
@@ -202,7 +202,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "🟡 PR #1606 (JN-5725, off-board): New CI run 28161157784 IN PROGRESS (12:39 IDT). e2e-smoke PENDING, all others PASS. Previous run 28159345039 failed. Monitor result.",
+    message: "🟡 PR #1606 (JN-5725, off-board): Developer pushed new commit (13:17 IDT) — run 28161157784 CANCELLED, new run 28163223200 IN PROGRESS. All checks PASS, e2e-smoke PENDING. Positive — active fix underway.",
   },
   {
     level: "green",

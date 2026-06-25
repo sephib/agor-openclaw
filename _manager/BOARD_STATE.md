@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-25 13:02 IDT (advance heartbeat)*
+*Last updated: 2026-06-25 13:32 IDT (advance heartbeat)*
 
 ---
 
@@ -51,16 +51,16 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | ⏳ **e2e-smoke PENDING** (run 28161157784 IN PROGRESS since 12:39 IDT — all others ✅ PASS) | OPEN, MERGEABLE | 🟡 **NEW CI RUN IN PROGRESS** — run 28161157784 started 12:39 IDT. Previous failures (e2e-smoke/e2e-tests) not yet reproduced in this run. e2e-smoke still running. |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://jounce.atlassian.net/browse/JN-5725) | ⏳ **e2e-smoke PENDING** (run 28163223200 IN PROGRESS since 13:17 IDT — all others ✅ PASS) | OPEN, MERGEABLE | 🟡 **NEW PUSH + NEW CI RUN** — developer pushed new commit (d9ae5eb6) at 13:17 IDT, cancelling run 28161157784. New run 28163223200 in progress: all checks PASS, e2e-smoke PENDING. Positive development. |
 
 ---
 
-## Key Changes Since Last Run (12:32 IDT Jun 25)
+## Key Changes Since Last Run (13:32 IDT Jun 25)
 
 | What observed | Status |
 |---|---|
-| **#1623 CI REGRESSION** | Run 28153233486 now **FULLY COMPLETE with FAILURE**. e2e-product/e2e FAIL (43m53s) + e2e-tests FAIL (3s). Was reported "improving" (e2e-tests PASS, e2e-product PENDING) at 12:32. No new CI run triggered — branch needs fix + re-push. |
-| **#1606 NEW CI RUN** | New run 28161157784 started 12:39 IDT **IN PROGRESS**. e2e-smoke/e2e still PENDING. All other checks ✅ PASS. Previous run 28159345039 failed e2e-smoke+e2e-tests. |
+| **#1606 NEW PUSH** | Developer pushed new commit (SHA d9ae5eb6) at ~13:17 IDT. Previous run 28161157784 **CANCELLED** by new push. New run 28163223200 **IN PROGRESS** (started 13:17 IDT) — all checks PASS, e2e-smoke still PENDING. Positive — active fix attempt. |
+| **#1623 unchanged** | Still ❌ 2 FAIL — e2e-product/e2e FAIL (43m53s) + e2e-tests FAIL (3s), run 28153233486. No new CI run. |
 | **#1615 unchanged** | Still 2 FAIL (integration-run + integration-tests, run 28153631250). |
 | **#1622 unchanged** | Still DRAFT, all CI PASS/SKIP. |
 | **#1588 unchanged** | Still pre-commit FAIL. |
@@ -94,14 +94,14 @@ PR [#1615](https://github.com/Jounce-IO/jounce/pull/1615): `feat(jbenchmark): hi
 
 ---
 
-### 🟡 PR #1606 (JN-5725, off-board) — NEW CI RUN IN PROGRESS
+### 🟡 PR #1606 (JN-5725, off-board) — NEW PUSH + CI IN PROGRESS
 
 PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer): integrate log analyzer into experiment-workflow`
-- New run 28161157784 **IN PROGRESS** (started 12:39 IDT Jun 25)
-- e2e-smoke/e2e: ⏳ PENDING — all other checks ✅ PASS
-- Previous run 28159345039: e2e-smoke/e2e FAIL (17m3s) + e2e-tests FAIL (4s)
+- Developer pushed new commit (SHA d9ae5eb6) at ~13:17 IDT Jun 25
+- Previous run 28161157784 **CANCELLED** by new push
+- New run 28163223200 **IN PROGRESS** (started 13:17 IDT): all checks ✅ PASS, e2e-smoke ⏳ PENDING
 - JIRA [JN-5725](https://jounce.atlassian.net/browse/JN-5725): Done (Unassigned)
-- **Action needed:** Monitor result of run 28161157784 (e2e-smoke pending ~12-15 min). If passes → hopeful recovery. If fails again → root cause investigation required.
+- **Action needed:** Monitor result of run 28163223200 (e2e-smoke running). If passes → ready for review. If fails again → root cause investigation required.
 
 ---
 

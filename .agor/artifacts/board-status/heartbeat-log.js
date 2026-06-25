@@ -1361,4 +1361,13 @@ export const HEARTBEAT_RUNS = [
     summary: "#1623 CI REGRESSION — run 28153233486 now FULLY COMPLETE with FAILURE (e2e-product FAIL 43m53s + e2e-tests FAIL 3s); #1606 NEW CI run 28161157784 IN PROGRESS (12:39 IDT, e2e-smoke pending, all others PASS); 7 findings.",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019efe39287e70d7b665f842/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-25 13:32 IDT",
+    actions: 0,
+    findings: 7,
+    status: "ok",
+    summary: "#1606 NEW PUSH (SHA d9ae5eb6, 13:17 IDT) — run 28161157784 CANCELLED, new run 28163223200 IN PROGRESS (all PASS, e2e-smoke PENDING). All other PRs unchanged. #1623 still 2 FAIL, #1615 integration FAIL, #1588 pre-commit FAIL, #1622 DRAFT/PASS.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019efe549f9978edbeb5deb9/",
+  },
 ];
