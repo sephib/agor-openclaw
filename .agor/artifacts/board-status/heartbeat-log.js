@@ -1280,4 +1280,13 @@ export const HEARTBEAT_RUNS = [
     summary: "Board static — no new merges, no CI changes. #1623 OPEN/needs reviewer; #1622 DRAFT/PASS; #1606 CI FAILED; #1615 CONFLICTING; #1588 pre-commit FAIL; 6 findings unchanged. Corrected stale header timestamp.",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019efd5d6c1c777da206a1fb/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-25 09:31 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "Board static — no new merges, no CI changes since 09:02 IDT. #1623 OPEN/needs reviewer; #1622 DRAFT/PASS awaiting promotion; #1606 CI FAILED (run 28122073927); #1615 DRAFT+CONFLICTING; #1588 pre-commit FAIL; internal-cr-system filesystem failed.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019efd78e41a72afb654d0ab/",
+  },
 ];
