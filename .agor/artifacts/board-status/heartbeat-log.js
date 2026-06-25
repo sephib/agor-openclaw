@@ -1271,4 +1271,13 @@ export const HEARTBEAT_RUNS = [
     summary: "Zone corrections: jn-5677 = Code (not Revise), jn-5616 = Validate (not Publish) per Agor MCP. #1622 + #1623 DRAFT/PASS awaiting promotion; #1606 CI FAILED+CONFLICTING; #1615 DRAFT+CONFLICTING+pre-commit FAIL; #1588 pre-commit FAIL. JN-5244 removed from sprint tracking.",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019ef551a432772c80c1ffda/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-25 09:02 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "Board static — no new merges, no CI changes. #1623 OPEN/needs reviewer; #1622 DRAFT/PASS; #1606 CI FAILED; #1615 CONFLICTING; #1588 pre-commit FAIL; 6 findings unchanged. Corrected stale header timestamp.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019efd5d6c1c777da206a1fb/",
+  },
 ];

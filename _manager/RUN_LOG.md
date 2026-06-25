@@ -2450,3 +2450,29 @@
 - Flags: 6 — #1623 needs reviewer; #1622 DRAFT promotion; #1606 e2e FAIL; #1615 DRAFT+CONFLICTING; #1588 pre-commit FAIL; internal-cr-system failed
 - Auto-archives: none
 - Next: User to (1) assign reviewer for #1623, (2) promote #1622 from DRAFT, (3) investigate #1606 e2e failures, (4) unblock #1615
+
+---
+
+## 15:00 IDT — Ad-hoc Manual Heartbeat (2026-06-25)
+
+**Session:** (current session)
+
+- PRs checked: #1623 (OPEN, MERGEABLE, ALL PASS 13 ✅ 2 skip — unchanged), #1622 (DRAFT, MERGEABLE, ALL PASS 9 ✅ 6 skip — unchanged), #1615 (DRAFT, CONFLICTING, CI blocked — unchanged), #1588 (OPEN, MERGEABLE, 2 FAIL 9 ✅ 5 skip — unchanged), #1606 off-board (OPEN, MERGEABLE, 2 FAIL 10 ✅ 3 skip — unchanged), #1596 (DRAFT, CONFLICTING — unchanged)
+- Merges detected: PR #1624 merged 2026-06-24 14:05 IDT (fix(jbenchmark): correct promote-trigger script path in Helm template — JN-5762) — already logged
+- Archives: none — no MERGED/CLOSED PRs found since last run
+- CI changes: none — all board PRs identical to 06:00 IDT run
+- Jira: JN-5616 In Review ✅, JN-5724 In Review ✅, JN-5677 Done, JN-5546 In Progress (should be In Review), JN-5672 Backlog, JN-5695 Backlog, JN-5670 In Progress (no worktree), JN-5539 In Progress (no worktree), JN-5244 In Progress (no worktree)
+- Flags: (1) #1623 OPEN — needs reviewer; (2) #1622 DRAFT awaiting promotion; (3) #1606 2 CI FAIL; (4) #1588 2 CI FAIL + Jira stale; (5) #1615 DRAFT+CONFLICTING; (6) internal-cr-system no PR/no Jira/stagnant
+- Auto-archives: none
+- Board scan: 7 active worktrees on jounce-workflow-ai board (019eb849-ec5b-715e-b8cc-e37c4c387740) — all in same zones as last run
+- Next: Joseph to assign reviewer on #1623; promote #1622 from DRAFT; investigate #1606/#1588 CI failures; unblock #1615; fix #1588 Jira status
+
+## 09:02 IDT — Weekday Daytime Heartbeat
+- PRs checked: #1623 (OPEN, MERGEABLE, ALL PASS — unchanged), #1622 (DRAFT, MERGEABLE, ALL PASS — unchanged), #1615 (DRAFT, CONFLICTING — unchanged), #1588 (OPEN, MERGEABLE, pre-commit 2 FAIL — unchanged), #1606 off-board (OPEN, MERGEABLE, e2e-smoke+e2e-tests 2 FAIL — unchanged), #1596 (DRAFT, CONFLICTING — unchanged)
+- Merges detected: none — Step 1 sweep confirmed no new merges of tracked PRs
+- CI changes: none — all same run IDs as 06:00 IDT overnight run
+- Board scan: 7 active worktrees on board — all in same zones (Code×2, Validate×1, Publish×1, Code Review×1, BLOCKED×2)
+- Note: previous BOARD_STATE.md header had incorrect "15:00 IDT" timestamp from prior session — corrected to 09:02 IDT
+- Flags: 6 — #1623 needs reviewer; #1622 DRAFT promotion; #1606 e2e FAIL; #1615 DRAFT+CONFLICTING; #1588 pre-commit FAIL; internal-cr-system stagnant+failed
+- Auto-archives: none
+- Next: Joseph to (1) assign reviewer for #1623, (2) promote #1622 from DRAFT, (3) investigate #1606 e2e failures, (4) unblock #1615
