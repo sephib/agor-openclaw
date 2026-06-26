@@ -4,6 +4,21 @@
 
 ---
 
+## 00:00 IDT — Weekend Advance Heartbeat (2026-06-27)
+
+**Session:** 019f05bb-d3e6 | http://127.0.0.1:3030/ui/s/019f05bbd3e672e8b7711dd2/
+
+- PRs checked: #1622 (OPEN, CONFLICTING, REVIEW_REQUIRED, CI ALL PASS run 28164293495 — unchanged), #1623 (OPEN, CONFLICTING, REVIEW_REQUIRED, CI ALL PASS run 28153233486 — unchanged), #1615 (OPEN, CONFLICTING, CI BLANK — only CodeRabbit showing — unchanged), #1588 (OPEN, CONFLICTING, pre-commit FAIL run 27933817996 — unchanged/stale), #1606 off-board (OPEN, MERGEABLE, ❌ 3 FAIL: e2e-gpu-live+e2e-smoke+e2e-tests run 28231394764 — unchanged), #1596 DRAFT (OPEN, CONFLICTING — unchanged)
+- Merges detected: none (Step 1 sweep clean)
+- Archives: none (no MERGED/CLOSED PRs found)
+- CI changes: none — board completely static since Jun 26 18:00 IDT run
+- Jira: JN-5616 In Review, JN-5724 In Review, JN-5677 Done, JN-5546 In Progress (stale/mismatch), JN-5612 In Progress (no worktree), JN-5670 In Progress (no worktree)
+- Flags: (1) #1606 CI 3 FAIL (unchanged); (2) #1615 CI blank (unchanged); (3) #1622 CONFLICTING needs rebase; (4) #1623 CONFLICTING needs rebase; (5) #1588 stale/CI FAIL; (6) JN-5612 no worktree
+- Auto-archives: none
+- Next: Joseph to investigate #1606 e2e-smoke failures and #1615 CI blank; rebase #1622 + #1623 on main on return from weekend
+
+---
+
 ## 18:00 IDT — Weekend Advance Heartbeat (2026-06-26)
 
 **Session:** 019f0472-38ed | http://127.0.0.1:3030/ui/s/019f047238ed7a6e8af05af0/

@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-26 18:00 IDT (advance heartbeat)*
+*Last updated: 2026-06-27 00:00 IDT (advance heartbeat)*
 
 ---
 
@@ -55,17 +55,17 @@
 
 ---
 
-## Key Changes Since Last Run (16:02 IDT Jun 25)
+## Key Changes Since Last Run (18:00 IDT Jun 26)
 
 | What observed | Status |
 |---|---|
-| **#1606 CI WORSENED** | New run 28231394764: e2e-smoke ❌ FAIL, e2e-gpu-live ❌ FAIL, e2e-tests ❌ FAIL. Was "nearly merge-ready" at 16:02 IDT — now blocked by CI. |
-| **#1615 CI WENT BLANK** | All check results dropped from rollup — only CodeRabbit showing (Jun 25 13:05 IDT). Prior integration failures no longer visible. Still CONFLICTING. |
+| **Board fully static** | No new merges, no CI changes on any tracked PR since Jun 26 18:00 IDT. |
 | **#1622 unchanged** | Still CONFLICTING, CI ALL PASS (run 28164293495). Weekend — no rebase. |
 | **#1623 unchanged** | Still CONFLICTING, CI ALL PASS (run 28153233486). Weekend — no rebase. |
+| **#1606 unchanged** | Still 3 FAIL (e2e-gpu-live, e2e-smoke, e2e-tests, run 28231394764). Off-board, MERGEABLE. |
+| **#1615 unchanged** | CI still blank — only CodeRabbit in rollup. Still CONFLICTING. |
 | **#1588 unchanged** | Still 2 FAIL pre-commit (run 27933817996). Stale. |
-| **No new merges** | Step 1 sweep confirmed no new merges since Jun 25 16:02 IDT. |
-| **Weekend heartbeat at 09:00 IDT failed** | Sibling session 019f0329-0a40 shows status: failed. This is the first successful run of Jun 26. |
+| **No new merges** | Step 1 sweep confirmed no new merges. |
 
 ---
 

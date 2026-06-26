@@ -22,6 +22,15 @@ export const HEARTBEAT_RUNS = [
   // },
   {
     type: "advance",
+    timestamp: "2026-06-27 00:00 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "Board fully static — no new merges, no CI changes since Jun 26 18:00 IDT run. #1622/#1623 still CONFLICTING, CI ALL PASS (weekend, no rebase). #1606 still 3 FAIL (unchanged). #1615 CI still blank. #1588 still stale.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f05bbd3e672e8b7711dd2/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-26 18:00 IDT",
     actions: 0,
     findings: 6,
