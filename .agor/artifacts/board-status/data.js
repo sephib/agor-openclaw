@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-25 16:02 IDT";
+export const LAST_UPDATED = "2026-06-26 18:00 IDT";
 
 export const WORKTREES = [
   {
@@ -10,8 +10,8 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1622",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1622",
-    status: "🟡 PR #1622 NOW CONFLICTING — CI ALL PASS (run 28164293495 unchanged) but merge conflict with main developed since 15:32 IDT. Rebase needed before merge.",
-    blockedOn: "Merge conflict with main (new since 15:32 IDT)",
+    status: "🟡 PR #1622 CONFLICTING (since Jun 25 15:32 IDT) — CI ALL PASS (run 28164293495 unchanged). Weekend, no rebase yet. Rebase on main needed before merge.",
+    blockedOn: "Merge conflict with main (since Jun 25 15:32 IDT)",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ef3e3ea0e734d882e878e/",
     sessionLabel: "publish session (complete)",
@@ -26,8 +26,8 @@ export const WORKTREES = [
     zone: "Validate",
     pr: "#1623",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1623",
-    status: "🟡 PR #1623 NOW CONFLICTING — CI ALL PASS (run 28153233486 unchanged) but merge conflict with main developed since 15:32 IDT. Rebase needed before merge.",
-    blockedOn: "Merge conflict with main (new since 15:32 IDT)",
+    status: "🟡 PR #1623 CONFLICTING (since Jun 25 15:32 IDT) — CI ALL PASS (run 28153233486 unchanged). Weekend, no rebase yet. Rebase on main needed before merge.",
+    blockedOn: "Merge conflict with main (since Jun 25 15:32 IDT)",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ef405c3e3746c900eac40/",
     sessionLabel: "publish session (complete)",
@@ -43,8 +43,8 @@ export const WORKTREES = [
     zone: "Revise",
     pr: "#1615",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1615",
-    status: "🟡 PR #1615 OPEN CONFLICTING — run 28167796913 COMPLETE: e2e-api ✅ resolved (was pending), e2e-smoke ✅ PASS. 2 FAIL remain (integration-run + integration-tests). CONFLICTING — needs rebase.",
-    blockedOn: "Integration CI failures (run 28167796913 complete) + merge conflict with main",
+    status: "🟡 PR #1615 OPEN CONFLICTING — ⚠️ CI CHECKS GONE (only CodeRabbit showing since Jun 25 13:05 IDT; prior integration failures from run 28167796913 no longer in rollup). Branch may have been touched without triggering full CI. Needs investigation + rebase.",
+    blockedOn: "CI checks blank + merge conflict with main",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019eeaf04583757a89f47a99/",
     sessionLabel: "session",
@@ -193,24 +193,24 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "yellow",
-    message: "🟡 PR #1622 (JN-5724, Publish): NOW CONFLICTING — CI ALL PASS (run 28164293495) but merge conflict with main developed since 15:32 IDT. Rebase on main, then assign reviewer.",
+    level: "red",
+    message: "🔴 PR #1606 (JN-5725, off-board): CI WORSENED — run 28231394764: e2e-gpu-live ❌, e2e-smoke ❌, e2e-tests ❌ FAIL. MERGEABLE (no git conflict). Was nearly merge-ready at Jun 25 16:02 IDT. Needs e2e investigation.",
   },
   {
     level: "yellow",
-    message: "🟡 PR #1623 (JN-5616, Validate): NOW CONFLICTING — CI ALL PASS (run 28153233486) but merge conflict with main developed since 15:32 IDT. Rebase on main, then assign reviewer.",
+    message: "🟡 PR #1615 (JN-5677, Revise): CI BLANK — only CodeRabbit in rollup (Jun 25 13:05 IDT). Prior integration failures (run 28167796913) no longer showing. Still CONFLICTING. Needs investigation + rebase.",
   },
   {
     level: "yellow",
-    message: "🟡 PR #1615 (JN-5677, Revise): 2 FAIL integration (run 28167796913) + CONFLICTING. CodeRabbit review queued. Needs integration fix + rebase.",
+    message: "🟡 PR #1622 (JN-5724, Publish): CONFLICTING (since Jun 25 15:32 IDT) — CI ALL PASS (run 28164293495). Weekend, no rebase yet. Rebase on main, then assign reviewer.",
   },
   {
-    level: "green",
-    message: "🟢 PR #1606 (JN-5725, off-board): conflict RESOLVED (now MERGEABLE). Run 28171648898: all ✅ PASS, e2e-smoke ⏳ pending. Nearly green.",
+    level: "yellow",
+    message: "🟡 PR #1623 (JN-5616, Validate): CONFLICTING (since Jun 25 15:32 IDT) — CI ALL PASS (run 28153233486). Weekend, no rebase yet. Rebase on main, then assign reviewer.",
   },
   {
     level: "red",
-    message: "🔴 PR #1588 (JN-5546, Code Review zone): pre-commit FAIL (run 27933817996) + CONFLICTING. Fix pre-commit + rebase + assign reviewer + update Jira to 'In Review'.",
+    message: "🔴 PR #1588 (JN-5546, Code Review zone): pre-commit FAIL (run 27933817996) + CONFLICTING. Stale since Jun 17. Fix pre-commit + rebase + assign reviewer + update Jira to 'In Review'.",
   },
   {
     level: "yellow",
@@ -218,7 +218,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⚠️ jira-operations (no zone): session timed_out 07:38 IDT. No PR, no Jira. Title: 'Create Q4 Planning Epic + Stories'. Decide: archive or assign zone.",
+    message: "⚠️ jira-operations (no zone): session timed_out 07:38 IDT Jun 25. No PR, no Jira. Title: 'Create Q4 Planning Epic + Stories'. Decide: archive or assign zone.",
   },
   {
     level: "yellow",

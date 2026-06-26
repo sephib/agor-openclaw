@@ -22,6 +22,15 @@ export const HEARTBEAT_RUNS = [
   // },
   {
     type: "advance",
+    timestamp: "2026-06-26 18:00 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "🔴 #1606 CI WORSENED (e2e-smoke ❌ FAILED in run 28231394764 — was pending at 16:02 IDT Jun 25). 🟡 #1615 CI BLANK (all checks dropped from rollup, only CodeRabbit showing). #1622/#1623 still CONFLICTING, CI ALL PASS — weekend, no rebase. #1588 still stale. No merges. 09:00 IDT Jun 26 session failed (prior); this is first successful run of the day.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f047238ed7a6e8af05af0/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-25 14:02 IDT",
     actions: 0,
     findings: 7,
