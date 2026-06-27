@@ -1451,4 +1451,13 @@ export const HEARTBEAT_RUNS = [
     summary: "#1622 NOW CONFLICTING (was REVIEW_REQUIRED/green); #1623 NOW CONFLICTING (same); #1606 conflict RESOLVED (MERGEABLE) + run 28171648898 nearly done (e2e-smoke pending); #1615 CodeRabbit pending, 2 FAIL integration unchanged; no merges",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019efeddf566791293ed989e/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-27 06:00 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "Board fully static (weekend) — no new merges, no CI changes since 00:00 IDT. #1622/#1623 CONFLICTING/PASS unchanged; #1606 3 FAIL unchanged; #1615 CI blank unchanged; 6 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f07056ebc7b8a964590a9/",
+  },
 ];
