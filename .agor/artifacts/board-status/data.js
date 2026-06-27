@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-27 18:00 IDT";
+export const LAST_UPDATED = "2026-06-28 00:00 IDT";
 
 export const WORKTREES = [
   {
