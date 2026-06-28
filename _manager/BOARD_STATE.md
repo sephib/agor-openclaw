@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-28 12:30 IDT (advance heartbeat)*
+*Last updated: 2026-06-28 13:00 IDT (advance heartbeat)*
 
 ---
 
@@ -16,7 +16,7 @@
 | jn-5695-db-connect-script | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) | BLOCKED | Backlog | [#1596](https://github.com/Jounce-IO/jounce/pull/1596) DRAFT OPEN CONFLICTING | — | — | 🔴 CONFLICTING; frozen |
 | jn-5672-dal-ext-dashboard | [JN-5672](https://redhat.atlassian.net/browse/JN-5672) | BLOCKED | Backlog | — | — | — | ℹ️ On hold |
 | jira-operations | — | (no zone) | — | — | — | — | ⚠️ session timed_out 07:38 IDT Jun 25. No PR, no Jira, no zone. Needs decision. |
-| jn-5612-fix-github-sha | [JN-5612](https://redhat.atlassian.net/browse/JN-5612) | **Publish** | In Progress ⚠️ | [#1627](https://github.com/Jounce-IO/jounce/pull/1627) **OPEN** MERGEABLE | 🔄 e2e-api PENDING (run 28318509109, rest PASS) | REVIEW_REQUIRED | 🆕 **PR #1627 CREATED** — MERGEABLE, CI mostly PASS (e2e-api pending). Jira still "In Progress" should be "In Review". |
+| jn-5612-fix-github-sha | [JN-5612](https://redhat.atlassian.net/browse/JN-5612) | **Publish** | In Progress ⚠️ | [#1627](https://github.com/Jounce-IO/jounce/pull/1627) **OPEN** MERGEABLE | ✅ **ALL PASS** (run 28318509109, e2e-api ✅ 4m37s, e2e-smoke ✅ 11m9s) | REVIEW_REQUIRED | 🟢 **CI ALL PASS** — MERGEABLE, all checks complete. Jira still "In Progress" — should be "In Review". **Assign reviewer now.** |
 
 **Archived This Session:**
 - none
@@ -52,42 +52,42 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🔄 **RUN 28318368770** — pre-commit ✅ integration ✅ tox ✅ nox ✅ atlas-validate ✅ check-changes ✅; **e2e-api PENDING**, **e2e-gpu-live PENDING**, bake/atlas-validate-run SKIPPING | OPEN, MERGEABLE (no git conflict) | 🟡 **CI RUNNING** — New run 28318368770 (was 28317645847 at 12:00 IDT, retriggered). e2e-api and e2e-gpu-live still pending. |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🔄 **RUN 28319028824** — pre-commit ✅ integration ✅ tox ✅ nox ✅ atlas-validate ✅ check-changes ✅ pre-commit-run ✅; **e2e-api PENDING**, **e2e-gpu-live PENDING**, bake/atlas-validate-run SKIPPING | OPEN, MERGEABLE (no git conflict) | 🟡 **CI RUNNING** — New run 28319028824 (was 28318368770 at 12:30 IDT, again retriggered). e2e-api and e2e-gpu-live still pending. |
 
 ---
 
-## Key Changes Since Last Run (12:00 IDT Jun 28)
+## Key Changes Since Last Run (12:30 IDT Jun 28)
 
 | What observed | Status |
 |---|---|
-| **🆕 PR #1627 CREATED — JN-5612** | `jn-5612-fix-github-sha` moved Ingest → Publish. PR OPEN, MERGEABLE, CI mostly PASS (e2e-api pending, run 28318509109). |
-| **JN-5612 Jira mismatch** | Jira still "In Progress" but PR exists — should be "In Review". |
-| **PR #1606 — new CI run 28318368770** | Retriggered again since 12:00 IDT run (was 28317645847). e2e-api + e2e-gpu-live still PENDING. |
+| **🟢 PR #1627 CI ALL PASS — JN-5612** | e2e-api ✅ completed (4m37s), e2e-smoke ✅ (11m9s). Run 28318509109 ALL PASS. PR OPEN, MERGEABLE, REVIEW_REQUIRED. **Ready for reviewer assignment.** |
+| **JN-5612 Jira mismatch (persists)** | Jira still "In Progress" — PR #1627 is now fully CI-green. Update Jira → "In Review". |
+| **PR #1606 — new CI run 28319028824** | Retriggered again (was 28318368770 at 12:30 IDT). e2e-api + e2e-gpu-live still PENDING; other checks PASS. |
 | **#1622 unchanged** | Still CONFLICTING, CI ALL PASS (run 28164293495). Needs rebase. |
 | **#1623 unchanged** | Still CONFLICTING, CI ALL PASS (run 28153233486). Needs rebase. |
 | **#1615 unchanged** | CI still blank — only CodeRabbit in rollup. Still CONFLICTING. |
 | **#1588 unchanged** | Still 2 FAIL pre-commit (run 27933817996). Stale. |
-| **No new merges** | Step 1 sweep confirmed no new merges since Jun 28 12:00 IDT. |
+| **No new merges** | Step 1 sweep confirmed no new merges since Jun 28 12:30 IDT. |
 
 ---
 
 ## Attention Items
 
-### 🆕 PR #1627 (JN-5612, Publish) — NEW PR, e2e PENDING
+### 🟢 PR #1627 (JN-5612, Publish) — CI ALL PASS, assign reviewer
 
 PR [#1627](https://github.com/Jounce-IO/jounce/pull/1627): `fix(ci): JN-5612 replace github.GITHUB_SHA with github.sha in workflow run-names`
 - OPEN, MERGEABLE (no git conflict), REVIEW_REQUIRED
-- CI run 28318509109 — All PASS: pre-commit ✅, integration ✅, tox ✅, nox ✅, atlas-validate ✅, check-changes ✅; **e2e-api PENDING**
-- Jira [JN-5612](https://redhat.atlassian.net/browse/JN-5612): **In Progress** ⚠️ — should be "In Review" now PR exists
-- **Action needed:** (1) Assign a reviewer. (2) Wait for e2e-api to complete. (3) Update Jira JN-5612 → "In Review".
+- CI run 28318509109 — **ALL PASS** ✅: pre-commit ✅, integration ✅, tox ✅, nox ✅, atlas-validate ✅, check-changes ✅, e2e-api ✅ (4m37s), e2e-smoke ✅ (11m9s)
+- Jira [JN-5612](https://redhat.atlassian.net/browse/JN-5612): **In Progress** ⚠️ — should be "In Review" now PR is fully CI-green
+- **Action needed:** (1) **Assign a reviewer now** — CI is fully green. (2) Update Jira JN-5612 → "In Review".
 
 ---
 
-### 🟡 PR #1606 (JN-5725, off-board) — CI RUNNING (retriggered)
+### 🟡 PR #1606 (JN-5725, off-board) — CI RUNNING (run 28319028824)
 
 PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer): integrate log analyzer into experiment-workflow`
 - OPEN, MERGEABLE (no git conflict)
-- Run 28318368770 — **IN PROGRESS**: pre-commit ✅, integration ✅, tox ✅, nox ✅, atlas-validate ✅; **e2e-api PENDING**, **e2e-gpu-live PENDING** (retriggered since 12:00 IDT, was run 28317645847)
+- Run 28319028824 — **IN PROGRESS**: pre-commit ✅, integration ✅, tox ✅, nox ✅, atlas-validate ✅, check-changes ✅, pre-commit-run ✅; **e2e-api PENDING**, **e2e-gpu-live PENDING** (retriggered again since 12:30 IDT, was run 28318368770)
 - Was previously 3 FAIL (e2e-gpu-live, e2e-smoke, e2e-tests, run 28231394764)
 - Jira [JN-5725](https://redhat.atlassian.net/browse/JN-5725): Done (Unassigned)
 - **Monitor:** Wait for e2e-api and e2e-gpu-live to complete. If they pass, PR will be merge-ready.
@@ -132,9 +132,9 @@ PR [#1588](https://github.com/Jounce-IO/jounce/pull/1588): 2 pre-commit checks F
 
 ---
 
-### ⚠️ JN-5612 — Jira still "In Progress" despite PR #1627 existing
+### ⚠️ JN-5612 — Jira still "In Progress" despite PR #1627 CI ALL PASS
 
-[JN-5612](https://redhat.atlassian.net/browse/JN-5612): "Fix github.GITHUB_SHA → github.sha in all workflow run-name fields" — **In Progress** (should be "In Review"). Worktree `jn-5612-fix-github-sha` now in **Publish zone**. PR [#1627](https://github.com/Jounce-IO/jounce/pull/1627) is OPEN, MERGEABLE, e2e-api pending. **Action:** Update Jira → "In Review" + assign reviewer.
+[JN-5612](https://redhat.atlassian.net/browse/JN-5612): "Fix github.GITHUB_SHA → github.sha in all workflow run-name fields" — **In Progress** (should be "In Review"). Worktree `jn-5612-fix-github-sha` in **Publish zone**. PR [#1627](https://github.com/Jounce-IO/jounce/pull/1627) is OPEN, MERGEABLE, ALL CI PASS. **Action:** Update Jira → "In Review" + assign reviewer immediately.
 
 ---
 

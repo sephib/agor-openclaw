@@ -1559,4 +1559,13 @@ export const HEARTBEAT_RUNS = [
     summary: "NEW PR #1627 for JN-5612 (MERGEABLE, e2e pending); #1606 CI retriggered run 28318368770 (e2e pending); #1622/#1623 CONFLICTING/PASS unchanged; #1615 CI blank unchanged; JN-5612 Jira mismatch (still In Progress)",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f0dac5a68704aa88de331/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-28 13:00 IDT",
+    actions: 0,
+    findings: 7,
+    status: "ok",
+    summary: "🟢 PR #1627 CI ALL PASS (e2e-api ✅ 4m37s, run 28318509109) — ready for reviewer; #1606 new run 28319028824 (e2e-api+e2e-gpu-live pending); #1622/#1623 CONFLICTING/PASS unchanged; #1615 CI blank unchanged; JN-5612 Jira mismatch persists",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f0dc7d1cf773d95e0748a/",
+  },
 ];

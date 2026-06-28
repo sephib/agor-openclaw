@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-28 12:30 IDT";
+export const LAST_UPDATED = "2026-06-28 13:00 IDT";
 
 export const WORKTREES = [
   {
@@ -123,12 +123,12 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1627",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1627",
-    status: "🆕 PR #1627 CREATED — OPEN, MERGEABLE. CI: All PASS except e2e-api PENDING (run 28318509109). ⚠️ Jira still 'In Progress' — needs update to 'In Review'. Assign reviewer.",
-    blockedOn: "e2e-api pending; Jira mismatch; reviewer needed",
+    status: "🟢 PR #1627 CI ALL PASS ✅ — OPEN, MERGEABLE. All checks complete (e2e-api ✅ 4m37s, e2e-smoke ✅ 11m9s, run 28318509109). ⚠️ Jira still 'In Progress' — needs update to 'In Review'. Assign reviewer now.",
+    blockedOn: "Jira mismatch; reviewer needed",
     blockedType: "active",
     sessionUrl: null,
     sessionLabel: null,
-    lastActive: "2026-06-28 12:30 IDT",
+    lastActive: "2026-06-28 13:00 IDT",
   },
 ];
 
@@ -209,12 +209,12 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "info",
-    message: "🆕 PR #1627 (JN-5612, Publish): NEW PR — OPEN, MERGEABLE. CI: All PASS except e2e-api PENDING (run 28318509109). Assign reviewer. Update Jira JN-5612 → 'In Review'.",
+    level: "green",
+    message: "🟢 PR #1627 (JN-5612, Publish): CI ALL PASS ✅ (run 28318509109 — e2e-api ✅ 4m37s, e2e-smoke ✅ 11m9s). OPEN, MERGEABLE. Assign reviewer now. Update Jira JN-5612 → 'In Review'.",
   },
   {
     level: "yellow",
-    message: "🟡 PR #1606 (JN-5725, off-board): CI run 28318368770 in progress (retriggered since 12:00 IDT) — all PASS except e2e-api PENDING, e2e-gpu-live PENDING. Was 3 FAIL on run 28231394764. Watch for e2e results.",
+    message: "🟡 PR #1606 (JN-5725, off-board): CI run 28319028824 in progress (retriggered again since 12:30 IDT) — all PASS except e2e-api PENDING, e2e-gpu-live PENDING. Was 3 FAIL on run 28231394764. Watch for e2e results.",
   },
   {
     level: "yellow",
