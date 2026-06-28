@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-28 16:00 IDT (advance heartbeat)*
+*Last updated: 2026-06-28 16:30 IDT (advance heartbeat)*
 
 ---
 
@@ -45,7 +45,9 @@
 **Previously Archived:**
 - jn-5673-visibility-scaffold (archived Jun 21 04:57 IDT)
 - jn-5674-operational-visibility (archived Jun 21 04:57 IDT, PR #1599 MERGED Jun 18)
-- model-packaging-cr (removed from tracking — not on this board; confirmed absent from board scan)
+
+**Still on board (not archived):**
+- `model-packaging-cr` (Code Review zone, model-packaging-pipeline repo, no PR, no sessions, last used Jun 15) — board scan Jun 28 16:30 IDT confirms still active. Previous tracking note "removed from tracking / confirmed absent" was incorrect. No PR to check; needs manual decision.
 
 **Removed from tracking (confirmed archived on board):**
 - dual-heartbeat-system — confirmed archived in board scan Jun 23
@@ -58,22 +60,22 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🟠 **Run 28323554940**: nox ✅ PASS (RESOLVED), tox ✅ PASS (RESOLVED), e2e-gpu-live ❌ FAIL (6m43s, persistent), e2e-smoke ⏳ PENDING, e2e-api ✅ (3m34s), integration ✅, pre-commit ✅. Prior run nox+tox failures were TRANSIENT. | OPEN, MERGEABLE | 🟠 **e2e-gpu-live only FAIL** — nox+tox de-escalated (transient). Persistent issue is e2e-gpu-live. Watch e2e-smoke result. |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🟠 **NEW run 28324478045** (16:30 IDT): nox ✅, tox ✅, pre-commit ✅, integration ✅, atlas-validate ✅, check-changes ✅. **e2e-gpu-live ⏳ PENDING**, **e2e-api ⏳ PENDING**. e2e-smoke not yet in rollup. Prior run 28323554940 had e2e-gpu-live ❌ FAIL. | OPEN, MERGEABLE | 🟠 **NEW CI RUN IN PROGRESS** — someone triggered new run. e2e-gpu-live pending (was FAIL in prior run). Watch for results. |
 
 ---
 
-## Key Changes Since Last Run (15:30 IDT Jun 28)
+## Key Changes Since Last Run (16:00 IDT Jun 28)
 
 | What observed | Status |
 |---|---|
-| **🟠 PR #1606 CI DE-ESCALATED** — nox+tox RESOLVED | Run 28323554940: nox ✅ PASS (was FAIL in run 28322029191), tox ✅ PASS (was FAIL). Prior escalation was TRANSIENT. Now only e2e-gpu-live ❌ persistent FAIL + e2e-smoke ⏳ pending. |
+| **🟠 PR #1606 NEW CI RUN** (28324478045) | NEW run triggered since 16:00 IDT. e2e-gpu-live ⏳ PENDING (was ❌ FAIL in run 28323554940), e2e-api ⏳ PENDING. nox ✅, tox ✅, pre-commit ✅, integration ✅ all passing. Watch for e2e results. |
 | **🟢 PR #1627 CI ALL PASS — JN-5612 (unchanged)** | Still ALL PASS (run 28318509109). OPEN, MERGEABLE, REVIEW_REQUIRED. Assign reviewer. |
 | **JN-5612 Jira mismatch (persists)** | Jira still "In Progress" — update → "In Review". |
 | **#1622 unchanged** | Still CONFLICTING, CI ALL PASS (run 28164293495). Needs rebase. |
 | **#1623 unchanged** | Still CONFLICTING, CI ALL PASS (run 28153233486). Needs rebase. |
 | **#1615 unchanged** | CI still blank — only CodeRabbit in rollup. Still CONFLICTING. |
 | **#1588 unchanged** | Still 2 FAIL pre-commit (run 27933817996). Stale. |
-| **No new merges** | Step 1 sweep confirmed no new merges since Jun 28 15:30 IDT. |
+| **No new merges** | Step 1 sweep confirmed no new merges since Jun 28 16:00 IDT. |
 
 ---
 
@@ -89,15 +91,15 @@ PR [#1627](https://github.com/Jounce-IO/jounce/pull/1627): `fix(ci): JN-5612 rep
 
 ---
 
-### 🟠 PR #1606 (JN-5725, off-board) — e2e-gpu-live FAIL only (nox+tox de-escalated)
+### 🟠 PR #1606 (JN-5725, off-board) — NEW CI RUN 28324478045 IN PROGRESS
 
 PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer): integrate log analyzer into experiment-workflow`
 - OPEN, MERGEABLE (no git conflict)
-- Run 28323554940: **nox ✅ RESOLVED, tox ✅ RESOLVED** — prior run 28322029191 failures were transient
-- **e2e-gpu-live ❌ FAIL** (6m43s) — persistent across all runs
-- **e2e-smoke ⏳ PENDING** — awaiting result
+- **NEW run 28324478045** (detected 16:30 IDT): nox ✅, tox ✅, pre-commit ✅, integration ✅, atlas-validate ✅, check-changes ✅ — all standard checks pass
+- **e2e-gpu-live ⏳ PENDING** (prior run 28323554940: ❌ FAIL 6m43s)
+- **e2e-api ⏳ PENDING**
 - Jira [JN-5725](https://redhat.atlassian.net/browse/JN-5725): Done (Unassigned)
-- **Action needed:** Investigate e2e-gpu-live persistent failure. If e2e-smoke passes, only GPU test remains.
+- **Action needed:** Monitor e2e-gpu-live result. New run may indicate a fix was pushed.
 
 ---
 

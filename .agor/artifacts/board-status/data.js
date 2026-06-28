@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-28 16:00 IDT";
+export const LAST_UPDATED = "2026-06-28 16:30 IDT";
 
 export const WORKTREES = [
   {
@@ -246,7 +246,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "🟠 PR #1606 (JN-5725, off-board): Run 28323554940 — nox ✅ RESOLVED, tox ✅ RESOLVED (prior run failures were transient). e2e-gpu-live ❌ FAIL (6m43s, persistent across all runs). e2e-smoke ⏳ pending. Investigate e2e-gpu-live root cause.",
+    message: "🟠 PR #1606 (JN-5725, off-board): NEW CI RUN 28324478045 (16:30 IDT). nox ✅, tox ✅, pre-commit ✅, integration ✅ all pass. e2e-gpu-live ⏳ PENDING (was ❌ FAIL in run 28323554940), e2e-api ⏳ PENDING. Monitor — new run may indicate fix pushed.",
   },
   {
     level: "info",
