@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-28 15:00 IDT";
+export const LAST_UPDATED = "2026-06-28 15:30 IDT";
 
 export const WORKTREES = [
   {
@@ -128,7 +128,7 @@ export const WORKTREES = [
     blockedType: "active",
     sessionUrl: null,
     sessionLabel: null,
-    lastActive: "2026-06-28 15:00 IDT",
+    lastActive: "2026-06-28 15:30 IDT",
   },
   {
     ticket: "JN-5244",
@@ -145,6 +145,22 @@ export const WORKTREES = [
     sessionUrl: null,
     sessionLabel: null,
     lastActive: "2026-06-28 14:49 IDT",
+  },
+  {
+    ticket: "JN-5780",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5780",
+    title: "Add JN project (jira-autofix)",
+    branch: "jn-5780-add-jn-project",
+    worktreePath: "/Users/josephberry/.agor/worktrees/redhat/jira-autofix/jn-5780-add-jn-project",
+    zone: "Plan",
+    pr: null,
+    prUrl: null,
+    status: "ℹ️ NEW (first detected 15:30 IDT Jun 28, created 08:32 IDT). Different repo (jira-autofix). JN-5780 inaccessible in Jira. No actual PR. No sessions. Needs Joseph clarification.",
+    blockedOn: "Needs owner clarification",
+    blockedType: "active",
+    sessionUrl: null,
+    sessionLabel: null,
+    lastActive: "2026-06-28 08:32 IDT",
   },
 ];
 
@@ -230,7 +246,11 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): Run 28322029191 IN PROGRESS — ESCALATED: e2e-gpu-live ❌ FAIL (8m11s), nox ❌ FAIL (NEW), tox ❌ FAIL (NEW), e2e-smoke ⏳ PENDING. More failures than prior runs. Investigate root cause.",
+    message: "🔴 PR #1606 (JN-5725, off-board): Prior run 28322029191 FAILED (nox ❌ FAIL + tox ❌ FAIL + e2e-gpu-live ❌ FAIL). NEW run 28323035881 IN PROGRESS (atlas-validate ✅, check-changes ✅; rest ⏳ pending). Watch for resolution.",
+  },
+  {
+    level: "info",
+    message: "ℹ️ jn-5780-add-jn-project (Plan zone): NEW worktree, first detected this run. Different repo (jira-autofix). JN-5780 inaccessible in Jira. No actual PR. Created 08:32 IDT Jun 28. Joseph needs to clarify intent.",
   },
   {
     level: "yellow",
@@ -259,9 +279,5 @@ export const ALERTS = [
   {
     level: "yellow",
     message: "⚠️ internal-cr-system (Code zone): filesystem_status failed (git lock error). No PR. Stagnant since Jun 18.",
-  },
-  {
-    level: "info",
-    message: "ℹ️ NEW: jn-5244-cli-flags worktree created 14:49 IDT Jun 28 (Ingest zone). JN-5244: Add --user/--no-cache/--skip-estimator CLI flags. No sessions yet — ready to ingest.",
   },
 ];
