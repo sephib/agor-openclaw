@@ -1577,4 +1577,13 @@ export const HEARTBEAT_RUNS = [
     summary: "🔴 PR #1606 CI run 28319028824 NOW FAILED (e2e-gpu-live ❌, e2e-smoke ❌, e2e-tests ❌ — persistent pattern); #1627 ALL PASS unchanged; #1622/#1623 CONFLICTING/PASS unchanged; 7 findings",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f0de34942742cb0c680b8/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-28 14:30 IDT",
+    actions: 0,
+    findings: 7,
+    status: "ok",
+    summary: "🟠 PR #1606 NEW CI run 28320557196 IN PROGRESS (e2e-gpu-live ❌ FAIL 6m42s, e2e-smoke ⏳ PENDING, e2e-api ✅); #1627 ALL PASS unchanged; #1622/#1623 CONFLICTING/PASS unchanged; 7 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f0dfec0fc73819d2b9823/",
+  },
 ];

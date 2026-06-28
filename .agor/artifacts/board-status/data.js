@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-28 13:30 IDT";
+export const LAST_UPDATED = "2026-06-28 14:30 IDT";
 
 export const WORKTREES = [
   {
@@ -128,7 +128,7 @@ export const WORKTREES = [
     blockedType: "active",
     sessionUrl: null,
     sessionLabel: null,
-    lastActive: "2026-06-28 13:00 IDT",
+    lastActive: "2026-06-28 14:30 IDT",
   },
 ];
 
@@ -214,7 +214,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): CI run 28319028824 FAILED — e2e-gpu-live ❌ FAIL (7m7s), e2e-smoke/e2e ❌ FAIL (11m57s), e2e-tests ❌ FAIL (4s). e2e-api ✅ PASS (3m29s). Persistent e2e failure pattern across multiple retriggered runs.",
+    message: "🔴 PR #1606 (JN-5725, off-board): NEW run 28320557196 IN PROGRESS — e2e-gpu-live ❌ FAIL (6m42s), e2e-smoke ⏳ PENDING, e2e-api ✅ PASS (3m57s). Prior run 28319028824: 3 FAIL. Persistent e2e-gpu-live failure across multiple retriggered runs.",
   },
   {
     level: "yellow",
