@@ -2784,3 +2784,10 @@
 - Flags: 6 — #1606 CI 3 FAIL; #1622/#1623 CONFLICTING/PASS; #1615 CI blank; #1588 FAIL+stale; JN-5612 no worktree
 - Auto-archives: none
 - Next: Joseph to rebase #1622/#1623; investigate #1606 e2e failures; fix #1615 CI blank + rebase; fix #1588 pre-commit + rebase
+
+## 12:00 IDT — Weekday Daytime Heartbeat
+- PRs checked: #1622 (OPEN, CONFLICTING, CI ALL PASS), #1623 (OPEN, CONFLICTING, CI ALL PASS), #1615 (OPEN, CONFLICTING, CI BLANK), #1588 (OPEN, CONFLICTING, 2 FAIL), #1596 (DRAFT OPEN, CONFLICTING), #1606 (OPEN, MERGEABLE, NEW CI RUN)
+- Merges detected: none
+- CI changes: PR #1606 — new CI run 28317645847 started (was 3 FAIL on run 28231394764). Pre-commit/integration/tox/nox/atlas-validate all PASS. e2e-api and e2e-gpu-live PENDING.
+- Flags: NEW worktree jn-5612-fix-github-sha added to board (Ingest zone) — JN-5612 In Progress, no PR yet. Removed JN-5612 from "sprint tickets without worktree" table.
+- Next: Watch PR #1606 e2e results (new run in progress). Monitor #1622/#1623 for rebase. JN-5612 worktree entering Ingest.

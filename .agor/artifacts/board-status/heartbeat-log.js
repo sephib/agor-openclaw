@@ -1541,4 +1541,13 @@ export const HEARTBEAT_RUNS = [
     summary: "Board fully static (weekend); #1622/#1623 CONFLICTING/PASS unchanged; #1606 3 FAIL unchanged; #1615 CI blank unchanged; 6 findings; Jira URLs → redhat.atlassian.net",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f0d756b5270418a5fef8a/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-28 12:00 IDT",
+    actions: 0,
+    findings: 7,
+    status: "ok",
+    summary: "NEW worktree jn-5612-fix-github-sha (Ingest zone); PR #1606 new CI run 28317645847 in progress (e2e pending, was 3 FAIL); #1622/#1623 CONFLICTING/PASS unchanged; #1615 CI blank unchanged; #1588 2 FAIL stale",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f0d90e27e7fb7990a9787/",
+  },
 ];

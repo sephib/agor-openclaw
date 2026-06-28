@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-28 11:30 IDT";
+export const LAST_UPDATED = "2026-06-28 12:00 IDT";
 
 export const WORKTREES = [
   {
@@ -114,6 +114,22 @@ export const WORKTREES = [
     sessionLabel: null,
     lastActive: "2026-06-14 15:00 IDT",
   },
+  {
+    ticket: "JN-5612",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5612",
+    title: "Fix github.GITHUB_SHA → github.sha in all workflow run-name fields",
+    branch: "jn-5612-fix-github-sha",
+    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5612-fix-github-sha",
+    zone: "Ingest",
+    pr: null,
+    prUrl: null,
+    status: "🆕 NEW — worktree created, in Ingest zone. No PR yet. JN-5612 In Progress.",
+    blockedOn: null,
+    blockedType: "active",
+    sessionUrl: null,
+    sessionLabel: null,
+    lastActive: "2026-06-28 12:00 IDT",
+  },
 ];
 
 export const MERGED = [
@@ -193,8 +209,8 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): CI WORSENED — run 28231394764: e2e-gpu-live ❌, e2e-smoke ❌, e2e-tests ❌ FAIL. MERGEABLE (no git conflict). Was nearly merge-ready at Jun 25 16:02 IDT. Needs e2e investigation.",
+    level: "yellow",
+    message: "🟡 PR #1606 (JN-5725, off-board): NEW CI run 28317645847 in progress — pre-commit ✅, integration ✅, tox ✅, nox ✅, atlas-validate ✅; e2e-api PENDING, e2e-gpu-live PENDING. Was 3 FAIL on run 28231394764. Watch for e2e results.",
   },
   {
     level: "yellow",
@@ -202,19 +218,19 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "🟡 PR #1622 (JN-5724, Publish): CONFLICTING (since Jun 25 15:32 IDT) — CI ALL PASS (run 28164293495). Weekend, no rebase yet. Rebase on main, then assign reviewer.",
+    message: "🟡 PR #1622 (JN-5724, Publish): CONFLICTING — CI ALL PASS (run 28164293495). Rebase on main needed, then assign reviewer.",
   },
   {
     level: "yellow",
-    message: "🟡 PR #1623 (JN-5616, Validate): CONFLICTING (since Jun 25 15:32 IDT) — CI ALL PASS (run 28153233486). Weekend, no rebase yet. Rebase on main, then assign reviewer.",
+    message: "🟡 PR #1623 (JN-5616, Validate): CONFLICTING — CI ALL PASS (run 28153233486). Rebase on main needed, then assign reviewer.",
   },
   {
     level: "red",
     message: "🔴 PR #1588 (JN-5546, Code Review zone): pre-commit FAIL (run 27933817996) + CONFLICTING. Stale since Jun 17. Fix pre-commit + rebase + assign reviewer + update Jira to 'In Review'.",
   },
   {
-    level: "yellow",
-    message: "⚠️ JN-5612 — In Progress sprint ticket, no worktree on board. 'Fix github.GITHUB_SHA → github.sha in all workflow run-name fields'.",
+    level: "info",
+    message: "🆕 JN-5612 — worktree jn-5612-fix-github-sha created, now in Ingest zone. No PR yet. 'Fix github.GITHUB_SHA → github.sha in all workflow run-name fields'.",
   },
   {
     level: "yellow",
