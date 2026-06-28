@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-28 20:00 IDT";
+export const LAST_UPDATED = "2026-06-28 20:30 IDT";
 
 export const WORKTREES = [
   {
@@ -246,7 +246,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): run 28328248783 COMPLETED — e2e-smoke ❌ FAIL (12m15s) + e2e-tests ❌ FAIL (3s). e2e-gpu-live ⏳ PENDING. Second consecutive e2e failure — new push did NOT fix root cause. Diagnose e2e-smoke logs in run 28328248783.",
+    message: "🔴 PR #1606 (JN-5725, off-board): NEW run 28329867635 (another push 20:00→20:30 IDT) — e2e-smoke ❌ FAIL (12m15s) AGAIN. e2e-tests ⏳ PENDING. e2e-gpu-live ⏳ PENDING (run 28329867561). Third+ consecutive e2e-smoke failure. Diagnose root cause in run 28329867635.",
   },
   {
     level: "info",

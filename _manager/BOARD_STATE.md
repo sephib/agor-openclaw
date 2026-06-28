@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-28 20:00 IDT (advance heartbeat)*
+*Last updated: 2026-06-28 20:30 IDT (advance heartbeat)*
 
 ---
 
@@ -60,23 +60,22 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🔴 **FAIL run 28328248783** (20:00 IDT): **e2e-smoke ❌ FAIL** (12m15s), **e2e-tests ❌ FAIL** (3s). All other checks PASS. **e2e-gpu-live ⏳ PENDING** (run 28328248722). New push did NOT fix e2e. Second consecutive e2e failure. | OPEN, MERGEABLE | 🔴 **e2e-smoke FAIL again** — second new push/run still failing. e2e-gpu-live still pending. Action needed: diagnose e2e root cause. |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🔴 **NEW run 28329867635** (20:30 IDT — another push since 20:00 IDT): **e2e-smoke ❌ FAIL** (12m15s). **e2e-tests ⏳ PENDING**. **e2e-gpu-live ⏳ PENDING** (run 28329867561). All other checks PASS. Third+ consecutive e2e-smoke failure — still not resolved. | OPEN, MERGEABLE | 🔴 **e2e-smoke FAILING persistently** — 3+ consecutive runs. e2e-tests/e2e-gpu-live pending. Diagnose e2e-smoke root cause in run 28329867635. |
 
 ---
 
-## Key Changes Since Last Run (19:30 IDT Jun 28)
+## Key Changes Since Last Run (20:00 IDT Jun 28)
 
 | What observed | Status |
 |---|---|
-| **🔴 PR #1606 run 28328248783 COMPLETED — e2e-smoke FAIL** | **DOWNGRADE: 🟠 IN PROGRESS → 🔴 FAIL.** Run 28328248783 completed: e2e-smoke ❌ FAIL (12m15s), e2e-tests ❌ FAIL (3s). e2e-gpu-live ⏳ PENDING (run 28328248722). Second consecutive e2e failure — new push did NOT fix root cause. All other checks PASS. Action: diagnose e2e failure. |
+| **🔴 PR #1606 NEW run 28329867635 — e2e-smoke FAIL AGAIN** | Another push since 20:00 IDT. Run 28329867635 supersedes 28328248783. e2e-smoke ❌ FAIL (12m15s, same duration). e2e-tests ⏳ PENDING (was ❌ FAIL in prior run). e2e-gpu-live ⏳ PENDING (run 28329867561). Third+ consecutive e2e-smoke failure. Root cause still unresolved. |
 | **🟢 PR #1627 CI ALL PASS — JN-5612 (unchanged)** | Still ALL PASS (run 28318509109). OPEN, MERGEABLE, REVIEW_REQUIRED. Assign reviewer. |
 | **JN-5612 Jira mismatch (persists)** | Jira still "In Progress" — update → "In Review". |
 | **#1622 unchanged** | Still CONFLICTING, CI ALL PASS (run 28164293495). Needs rebase. |
 | **#1623 unchanged** | Still CONFLICTING, CI ALL PASS (run 28153233486). Needs rebase. |
 | **#1615 unchanged** | CI still blank — only CodeRabbit in rollup. Still CONFLICTING. |
 | **#1588 unchanged** | Still 2 FAIL pre-commit (run 27933817996). Stale. |
-| **jn-5780 not in board scan** | Not found via agor_branches_list (jounce repo). On redhat/jira-autofix repo — not in this board's jounce scan. Status unknown. |
-| **No new merges** | Step 1 sweep confirmed no new merges since Jun 28 19:30 IDT. |
+| **No new merges** | Step 1 sweep confirmed no new merges since Jun 28 20:00 IDT. |
 
 ---
 
@@ -92,15 +91,15 @@ PR [#1627](https://github.com/Jounce-IO/jounce/pull/1627): `fix(ci): JN-5612 rep
 
 ---
 
-### 🔴 PR #1606 (JN-5725, off-board) — e2e FAIL again (run 28328248783 COMPLETE)
+### 🔴 PR #1606 (JN-5725, off-board) — e2e-smoke FAIL persistent (run 28329867635)
 
 PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer): integrate log analyzer into experiment-workflow`
 - OPEN, MERGEABLE (no git conflict)
-- **Run 28328248783 COMPLETED** (20:00 IDT): e2e-smoke ❌ FAIL (12m15s), e2e-tests ❌ FAIL (3s). All other checks PASS.
-- **e2e-gpu-live ⏳ PENDING** (run 28328248722)
-- New push (post-19:00 IDT) did NOT fix e2e-smoke. Second consecutive failure. Root cause NOT resolved.
+- **NEW run 28329867635** (20:30 IDT — another push since 20:00 IDT): e2e-smoke ❌ FAIL (12m15s). e2e-tests ⏳ PENDING. All other checks PASS.
+- **e2e-gpu-live ⏳ PENDING** (run 28329867561)
+- Third+ consecutive e2e-smoke failure — root cause NOT resolved despite multiple pushes.
 - Jira [JN-5725](https://redhat.atlassian.net/browse/JN-5725): Done (Unassigned)
-- **Action needed:** Diagnose e2e root cause — two pushes have failed e2e-smoke. Check e2e-smoke logs in run 28328248783.
+- **Action needed:** Diagnose e2e-smoke root cause — persistent across 3+ runs. Check e2e-smoke logs in run 28329867635.
 
 ---
 
