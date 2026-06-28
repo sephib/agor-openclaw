@@ -1496,4 +1496,22 @@ export const HEARTBEAT_RUNS = [
     summary: "Board fully static (weekend) — no new merges, no CI changes since 06:00 IDT. #1622/#1623 CONFLICTING/PASS unchanged; #1606 3 FAIL unchanged; #1615 CI blank unchanged; 6 findings",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f084f0b477da99fca1e50/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-28 09:00 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "Board fully static (weekend); #1622/#1623 CONFLICTING/PASS unchanged; #1606 3 FAIL unchanged; #1615 CI blank unchanged; 6 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f0cd09e6e7b79800e7853/",
+  },
+  {
+    type: "advance",
+    timestamp: "2026-06-28 09:30 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "Board fully static; #1622/#1623 CONFLICTING/PASS unchanged; #1606 3 FAIL unchanged; #1615 CI blank unchanged; 6 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f0cec159c7188a1b9d8b4/",
+  },
 ];

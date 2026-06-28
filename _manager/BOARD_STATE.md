@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-28 09:00 IDT (advance heartbeat)*
+*Last updated: 2026-06-28 09:30 IDT (advance heartbeat)*
 
 ---
 
@@ -55,13 +55,13 @@
 
 ---
 
-## Key Changes Since Last Run (00:00 IDT Jun 28)
+## Key Changes Since Last Run (09:00 IDT Jun 28)
 
 | What observed | Status |
 |---|---|
-| **Board fully static** | No new merges, no CI changes on any tracked PR since Jun 28 00:00 IDT. |
-| **#1622 unchanged** | Still CONFLICTING, CI ALL PASS (run 28164293495). Weekend — no rebase. |
-| **#1623 unchanged** | Still CONFLICTING, CI ALL PASS (run 28153233486). Weekend — no rebase. |
+| **Board fully static** | No new merges, no CI changes on any tracked PR since Jun 28 09:00 IDT. |
+| **#1622 unchanged** | Still CONFLICTING, CI ALL PASS (run 28164293495). Needs rebase. |
+| **#1623 unchanged** | Still CONFLICTING, CI ALL PASS (run 28153233486). Needs rebase. |
 | **#1606 unchanged** | Still 3 FAIL (e2e-gpu-live, e2e-smoke, e2e-tests, run 28231394764). Off-board, MERGEABLE. |
 | **#1615 unchanged** | CI still blank — only CodeRabbit in rollup. Still CONFLICTING. |
 | **#1588 unchanged** | Still 2 FAIL pre-commit (run 27933817996). Stale. |
