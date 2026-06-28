@@ -22,6 +22,15 @@ export const HEARTBEAT_RUNS = [
   // },
   {
     type: "advance",
+    timestamp: "2026-06-28 20:00 IDT",
+    actions: 0,
+    findings: 7,
+    status: "ok",
+    summary: "PR #1606 run 28328248783 COMPLETED — e2e-smoke ❌ FAIL (12m15s) + e2e-tests ❌ FAIL; e2e-gpu-live ⏳ PENDING; second consecutive e2e failure; #1627 ALL PASS unchanged; #1622/#1623 CONFLICTING/PASS unchanged; 7 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f0f2c9e8e76d0bc62019b/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-28 19:30 IDT",
     actions: 0,
     findings: 7,

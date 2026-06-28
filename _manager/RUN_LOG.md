@@ -4,6 +4,18 @@
 
 ---
 
+## 20:00 IDT — Weekday Daytime Advance Heartbeat (2026-06-28)
+
+**Session:** 019f0f2c-9e8e | http://127.0.0.1:3030/ui/s/019f0f2c9e8e76d0bc62019b/
+- PRs checked: #1606 (OPEN, FAIL), #1627 (OPEN, ALL PASS), #1622 (OPEN, CONFLICTING/PASS), #1623 (OPEN, CONFLICTING/PASS), #1615 (OPEN, CI blank/CONFLICTING), #1588 (OPEN, 2 FAIL/CONFLICTING)
+- Merges detected: none
+- CI changes: **#1606 DOWNGRADED — run 28328248783 completed: e2e-smoke ❌ FAIL (12m15s), e2e-tests ❌ FAIL (3s). Status: 🟠 IN PROGRESS → 🔴 FAIL.** e2e-gpu-live still PENDING (run 28328248722). Second consecutive e2e failure — new push did NOT fix root cause. All other PRs static.
+- Auto-advances: 0
+- Flags: 7 (same as prior run; #1627 still needs reviewer, #1606 now 🔴 FAIL again, #1622/#1623 need rebase, #1615 CI blank, #1588 stale/fail, JN-5612 Jira mismatch)
+- Next: Monitor e2e-gpu-live result for #1606; #1606 owner needs to diagnose e2e root cause
+
+---
+
 ## 19:30 IDT — Weekday Daytime Advance Heartbeat (2026-06-28)
 
 **Session:** 019f0f11-26fa | http://127.0.0.1:3030/ui/s/019f0f1126fa7d9b924a79d4/
