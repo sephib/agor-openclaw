@@ -1550,4 +1550,13 @@ export const HEARTBEAT_RUNS = [
     summary: "NEW worktree jn-5612-fix-github-sha (Ingest zone); PR #1606 new CI run 28317645847 in progress (e2e pending, was 3 FAIL); #1622/#1623 CONFLICTING/PASS unchanged; #1615 CI blank unchanged; #1588 2 FAIL stale",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f0d90e27e7fb7990a9787/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-28 12:30 IDT",
+    actions: 0,
+    findings: 7,
+    status: "ok",
+    summary: "NEW PR #1627 for JN-5612 (MERGEABLE, e2e pending); #1606 CI retriggered run 28318368770 (e2e pending); #1622/#1623 CONFLICTING/PASS unchanged; #1615 CI blank unchanged; JN-5612 Jira mismatch (still In Progress)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f0dac5a68704aa88de331/",
+  },
 ];

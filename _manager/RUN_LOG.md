@@ -2791,3 +2791,15 @@
 - CI changes: PR #1606 — new CI run 28317645847 started (was 3 FAIL on run 28231394764). Pre-commit/integration/tox/nox/atlas-validate all PASS. e2e-api and e2e-gpu-live PENDING.
 - Flags: NEW worktree jn-5612-fix-github-sha added to board (Ingest zone) — JN-5612 In Progress, no PR yet. Removed JN-5612 from "sprint tickets without worktree" table.
 - Next: Watch PR #1606 e2e results (new run in progress). Monitor #1622/#1623 for rebase. JN-5612 worktree entering Ingest.
+
+## 12:30 IDT — Weekday Daytime Advance Heartbeat (2026-06-28)
+
+**Session:** 019f0dac-5a68 | http://127.0.0.1:3030/ui/s/019f0dac5a68704aa88de331/
+
+- PRs checked: #1627 (NEW — OPEN, MERGEABLE, e2e-api PENDING run 28318509109), #1622 (OPEN, CONFLICTING, ALL PASS run 28164293495 — unchanged), #1623 (OPEN, CONFLICTING, ALL PASS run 28153233486 — unchanged), #1615 (OPEN, CONFLICTING, CI BLANK — unchanged), #1588 (OPEN, CONFLICTING, 2 FAIL pre-commit run 27933817996 — unchanged), #1606 off-board (OPEN, MERGEABLE, CI run 28318368770 — retriggered since 12:00 IDT, e2e PENDING)
+- Merges detected: none — Step 1 sweep confirmed no new merges since Jun 28 12:00 IDT
+- CI changes: #1627 NEW run 28318509109 (new PR); #1606 retriggered run 28318368770 (was 28317645847)
+- Jira: JN-5612 still "In Progress" despite PR #1627 existing — Jira mismatch flagged. JN-5724, JN-5616 In Review unchanged.
+- Auto-advances: none
+- Flags: 7 — #1627 e2e pending (new PR); #1606 e2e pending (retriggered); #1622/#1623 CONFLICTING/PASS; #1615 CI blank; #1588 FAIL+stale; JN-5612 Jira mismatch
+- Next: Watch PR #1627 e2e-api result (small CI fix, likely to pass). Watch PR #1606 e2e results. Joseph to update JN-5612 Jira → "In Review" + assign reviewer to #1627. Joseph to rebase #1622/#1623.

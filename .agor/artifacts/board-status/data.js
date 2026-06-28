@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-28 12:00 IDT";
+export const LAST_UPDATED = "2026-06-28 12:30 IDT";
 
 export const WORKTREES = [
   {
@@ -120,15 +120,15 @@ export const WORKTREES = [
     title: "Fix github.GITHUB_SHA → github.sha in all workflow run-name fields",
     branch: "jn-5612-fix-github-sha",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5612-fix-github-sha",
-    zone: "Ingest",
-    pr: null,
-    prUrl: null,
-    status: "🆕 NEW — worktree created, in Ingest zone. No PR yet. JN-5612 In Progress.",
-    blockedOn: null,
+    zone: "Publish",
+    pr: "#1627",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1627",
+    status: "🆕 PR #1627 CREATED — OPEN, MERGEABLE. CI: All PASS except e2e-api PENDING (run 28318509109). ⚠️ Jira still 'In Progress' — needs update to 'In Review'. Assign reviewer.",
+    blockedOn: "e2e-api pending; Jira mismatch; reviewer needed",
     blockedType: "active",
     sessionUrl: null,
     sessionLabel: null,
-    lastActive: "2026-06-28 12:00 IDT",
+    lastActive: "2026-06-28 12:30 IDT",
   },
 ];
 
@@ -209,8 +209,12 @@ export const MERGED = [
 
 export const ALERTS = [
   {
+    level: "info",
+    message: "🆕 PR #1627 (JN-5612, Publish): NEW PR — OPEN, MERGEABLE. CI: All PASS except e2e-api PENDING (run 28318509109). Assign reviewer. Update Jira JN-5612 → 'In Review'.",
+  },
+  {
     level: "yellow",
-    message: "🟡 PR #1606 (JN-5725, off-board): NEW CI run 28317645847 in progress — pre-commit ✅, integration ✅, tox ✅, nox ✅, atlas-validate ✅; e2e-api PENDING, e2e-gpu-live PENDING. Was 3 FAIL on run 28231394764. Watch for e2e results.",
+    message: "🟡 PR #1606 (JN-5725, off-board): CI run 28318368770 in progress (retriggered since 12:00 IDT) — all PASS except e2e-api PENDING, e2e-gpu-live PENDING. Was 3 FAIL on run 28231394764. Watch for e2e results.",
   },
   {
     level: "yellow",
@@ -229,8 +233,8 @@ export const ALERTS = [
     message: "🔴 PR #1588 (JN-5546, Code Review zone): pre-commit FAIL (run 27933817996) + CONFLICTING. Stale since Jun 17. Fix pre-commit + rebase + assign reviewer + update Jira to 'In Review'.",
   },
   {
-    level: "info",
-    message: "🆕 JN-5612 — worktree jn-5612-fix-github-sha created, now in Ingest zone. No PR yet. 'Fix github.GITHUB_SHA → github.sha in all workflow run-name fields'.",
+    level: "yellow",
+    message: "⚠️ JN-5612 Jira mismatch: Jira still 'In Progress' but PR #1627 is open — update Jira → 'In Review'.",
   },
   {
     level: "yellow",
