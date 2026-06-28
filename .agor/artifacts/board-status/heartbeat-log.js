@@ -22,6 +22,15 @@ export const HEARTBEAT_RUNS = [
   // },
   {
     type: "advance",
+    timestamp: "2026-06-28 15:00 IDT",
+    actions: 0,
+    findings: 7,
+    status: "ok",
+    summary: "NEW worktree jn-5244-cli-flags (Ingest, JN-5244); #1606 CI ESCALATED (nox+tox now failing, run 28322029191); #1627 ALL PASS unchanged; #1622/#1623 CONFLICTING/PASS unchanged; 7 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f0e3569fb73ac849771c7/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-28 09:00 IDT",
     actions: 0,
     findings: 6,

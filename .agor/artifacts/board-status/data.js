@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-28 14:30 IDT";
+export const LAST_UPDATED = "2026-06-28 15:00 IDT";
 
 export const WORKTREES = [
   {
@@ -10,7 +10,7 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1622",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1622",
-    status: "🟡 PR #1622 CONFLICTING (since Jun 25 15:32 IDT) — CI ALL PASS (run 28164293495 unchanged). Weekend, no rebase yet. Rebase on main needed before merge.",
+    status: "🟡 PR #1622 CONFLICTING (since Jun 25 15:32 IDT) — CI ALL PASS (run 28164293495 unchanged). Rebase on main needed before merge.",
     blockedOn: "Merge conflict with main (since Jun 25 15:32 IDT)",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ef3e3ea0e734d882e878e/",
@@ -26,7 +26,7 @@ export const WORKTREES = [
     zone: "Validate",
     pr: "#1623",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1623",
-    status: "🟡 PR #1623 CONFLICTING (since Jun 25 15:32 IDT) — CI ALL PASS (run 28153233486 unchanged). Weekend, no rebase yet. Rebase on main needed before merge.",
+    status: "🟡 PR #1623 CONFLICTING (since Jun 25 15:32 IDT) — CI ALL PASS (run 28153233486 unchanged). Rebase on main needed before merge.",
     blockedOn: "Merge conflict with main (since Jun 25 15:32 IDT)",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ef405c3e3746c900eac40/",
@@ -128,7 +128,23 @@ export const WORKTREES = [
     blockedType: "active",
     sessionUrl: null,
     sessionLabel: null,
-    lastActive: "2026-06-28 14:30 IDT",
+    lastActive: "2026-06-28 15:00 IDT",
+  },
+  {
+    ticket: "JN-5244",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5244",
+    title: "Add --user, --no-cache, --skip-estimator CLI flags to run_jbenchmark_runner",
+    branch: "jn-5244-cli-flags",
+    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5244-cli-flags",
+    zone: "Ingest",
+    pr: null,
+    prUrl: null,
+    status: "ℹ️ NEW worktree — created 14:49 IDT Jun 28. No sessions yet. Ready to ingest JN-5244.",
+    blockedOn: null,
+    blockedType: "active",
+    sessionUrl: null,
+    sessionLabel: null,
+    lastActive: "2026-06-28 14:49 IDT",
   },
 ];
 
@@ -214,7 +230,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): NEW run 28320557196 IN PROGRESS — e2e-gpu-live ❌ FAIL (6m42s), e2e-smoke ⏳ PENDING, e2e-api ✅ PASS (3m57s). Prior run 28319028824: 3 FAIL. Persistent e2e-gpu-live failure across multiple retriggered runs.",
+    message: "🔴 PR #1606 (JN-5725, off-board): Run 28322029191 IN PROGRESS — ESCALATED: e2e-gpu-live ❌ FAIL (8m11s), nox ❌ FAIL (NEW), tox ❌ FAIL (NEW), e2e-smoke ⏳ PENDING. More failures than prior runs. Investigate root cause.",
   },
   {
     level: "yellow",
@@ -234,7 +250,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⚠️ JN-5612 Jira mismatch: Jira still 'In Progress' but PR #1627 is open — update Jira → 'In Review'.",
+    message: "⚠️ JN-5612 Jira mismatch: Jira still 'In Progress' but PR #1627 is open and CI ALL PASS — update Jira → 'In Review'.",
   },
   {
     level: "yellow",
@@ -243,5 +259,9 @@ export const ALERTS = [
   {
     level: "yellow",
     message: "⚠️ internal-cr-system (Code zone): filesystem_status failed (git lock error). No PR. Stagnant since Jun 18.",
+  },
+  {
+    level: "info",
+    message: "ℹ️ NEW: jn-5244-cli-flags worktree created 14:49 IDT Jun 28 (Ingest zone). JN-5244: Add --user/--no-cache/--skip-estimator CLI flags. No sessions yet — ready to ingest.",
   },
 ];

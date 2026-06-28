@@ -2839,3 +2839,16 @@
 - Auto-advances: none
 - Flags: 7 — **#1627 CI ALL PASS, assign reviewer NOW** (high priority); **#1606 new run in progress, e2e-gpu-live persistent FAIL**; #1622/#1623 CONFLICTING/PASS; #1615 CI blank; #1588 FAIL+stale; JN-5612 Jira mismatch
 - Next: Watch PR #1606 e2e-smoke result (run 28320557196). Joseph to assign reviewer to #1627. Update JN-5612 Jira → "In Review". Joseph to rebase #1622/#1623.
+
+## 15:00 IDT — Weekday Daytime Advance Heartbeat (2026-06-28)
+
+**Session:** 019f0e35-69fb | http://127.0.0.1:3030/ui/s/019f0e3569fb73ac849771c7/
+
+- PRs checked: #1627 (OPEN, MERGEABLE, CI ALL PASS ✅ run 28318509109 — unchanged), #1606 off-board (OPEN, MERGEABLE, **NEW run 28322029191 IN PROGRESS — ESCALATED**: e2e-gpu-live ❌ FAIL 8m11s, nox ❌ FAIL, tox ❌ FAIL **NEW failures**, e2e-smoke ⏳ PENDING, e2e-api ✅ PASS 4m16s), #1622 (OPEN, CONFLICTING, ALL PASS run 28164293495 — unchanged), #1623 (OPEN, CONFLICTING, ALL PASS run 28153233486 — unchanged), #1615 (OPEN, CONFLICTING, CI BLANK — unchanged), #1588 (OPEN, CONFLICTING, 2 FAIL pre-commit run 27933817996 — unchanged)
+- Merges detected: none — Step 1 sweep confirmed no new merges since Jun 28 14:30 IDT
+- CI changes: **🔴 PR #1606 CI ESCALATED** — new run 28322029191: nox ❌ FAIL + tox ❌ FAIL are NEW failures (was only e2e-gpu-live failing in run 28320557196). e2e-gpu-live still failing (8m11s vs 6m42s prior). Run 28320557196 completed and new run triggered. PR #1627 unchanged (ALL PASS).
+- New worktrees: **ℹ️ jn-5244-cli-flags** — appeared in Ingest zone, created 14:49 IDT Jun 28 (JN-5244: Add --user/--no-cache/--skip-estimator CLI flags, In Progress, assigned Joseph Berry). No sessions started yet. Removed JN-5244 from "Sprint Tickets Without Board Worktrees" table.
+- Jira: JN-5612 still "In Progress" — mismatch persists. JN-5244 In Progress (worktree just created).
+- Auto-advances: none
+- Flags: 7 — **#1627 CI ALL PASS, assign reviewer NOW**; **#1606 CI ESCALATED** (nox+tox+e2e-gpu-live failing); #1622/#1623 CONFLICTING/PASS; #1615 CI blank; #1588 FAIL+stale; JN-5612 Jira mismatch
+- Next: Joseph to investigate PR #1606 nox+tox failures (new escalation). Assign reviewer to #1627. Update JN-5612 Jira → "In Review". Start ingest session for jn-5244-cli-flags. Joseph to rebase #1622/#1623.

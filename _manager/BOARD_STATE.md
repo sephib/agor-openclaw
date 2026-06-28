@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-28 14:30 IDT (advance heartbeat)*
+*Last updated: 2026-06-28 15:00 IDT (advance heartbeat)*
 
 ---
 
@@ -17,6 +17,7 @@
 | jn-5672-dal-ext-dashboard | [JN-5672](https://redhat.atlassian.net/browse/JN-5672) | BLOCKED | Backlog | — | — | — | ℹ️ On hold |
 | jira-operations | — | (no zone) | — | — | — | — | ⚠️ session timed_out 07:38 IDT Jun 25. No PR, no Jira, no zone. Needs decision. |
 | jn-5612-fix-github-sha | [JN-5612](https://redhat.atlassian.net/browse/JN-5612) | **Publish** | In Progress ⚠️ | [#1627](https://github.com/Jounce-IO/jounce/pull/1627) **OPEN** MERGEABLE | ✅ **ALL PASS** (run 28318509109, e2e-api ✅ 4m37s, e2e-smoke ✅ 11m9s) | REVIEW_REQUIRED | 🟢 **CI ALL PASS** — MERGEABLE, all checks complete. Jira still "In Progress" — should be "In Review". **Assign reviewer now.** |
+| jn-5244-cli-flags | [JN-5244](https://redhat.atlassian.net/browse/JN-5244) | **Ingest** | In Progress | — | — | — | ℹ️ **NEW** — worktree created 14:49 IDT Jun 28. No sessions yet. JN-5244: Add --user, --no-cache, --skip-estimator CLI flags. Ready to ingest. |
 
 **Archived This Session:**
 - none
@@ -52,22 +53,23 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🟠 **RUN 28320557196 IN PROGRESS** — e2e-gpu-live ❌ FAIL (6m42s, run 28320557116), e2e-smoke ⏳ PENDING, e2e-api ✅ PASS (3m57s); all other checks ✅. (Prior run 28319028824: 3 FAIL.) | OPEN, MERGEABLE (no git conflict) | 🔴 **e2e-gpu-live persistent FAIL** — new run triggered after run 28319028824 failed. e2e-smoke still pending. |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🔴 **RUN 28322029191 IN PROGRESS — 3 FAIL (ESCALATED)**: e2e-gpu-live ❌ FAIL (8m11s, run 28322029167), nox ❌ FAIL (3s) **NEW**, tox-run/tox ❌ FAIL (3m24s) **NEW**, e2e-smoke ⏳ PENDING; e2e-api ✅ PASS (4m16s), integration ✅, pre-commit ✅. Prior run 28320557196: e2e-gpu-live ❌ + e2e-smoke pending (now complete). | OPEN, MERGEABLE (no git conflict) | 🔴 **CI ESCALATED — nox + tox now failing** in addition to persistent e2e-gpu-live. New failures vs prior runs. |
 
 ---
 
-## Key Changes Since Last Run (13:30 IDT Jun 28)
+## Key Changes Since Last Run (14:30 IDT Jun 28)
 
 | What observed | Status |
 |---|---|
-| **🟠 PR #1606 NEW CI run 28320557196 IN PROGRESS** | e2e-gpu-live ❌ FAIL (6m42s, run 28320557116), e2e-smoke ⏳ PENDING, e2e-api ✅ PASS (3m57s). New run triggered after run 28319028824 FAILED at 13:30 IDT. Persistent e2e-gpu-live failure. |
+| **🔴 PR #1606 CI ESCALATED — new run 28322029191 IN PROGRESS** | nox ❌ FAIL + tox ❌ FAIL (NEW failures vs run 28320557196). e2e-gpu-live ❌ FAIL (8m11s, persistent). e2e-smoke ⏳ PENDING. Prior run 28320557196 completed and new run triggered. |
+| **ℹ️ NEW WORKTREE: jn-5244-cli-flags (Ingest zone)** | Created 14:49 IDT Jun 28. JN-5244 In Progress — Add --user/--no-cache/--skip-estimator CLI flags. No sessions yet. Removed from "Sprint Tickets Without Board Worktrees". |
 | **🟢 PR #1627 CI ALL PASS — JN-5612 (unchanged)** | Still ALL PASS (run 28318509109). OPEN, MERGEABLE, REVIEW_REQUIRED. Assign reviewer. |
 | **JN-5612 Jira mismatch (persists)** | Jira still "In Progress" — update → "In Review". |
 | **#1622 unchanged** | Still CONFLICTING, CI ALL PASS (run 28164293495). Needs rebase. |
 | **#1623 unchanged** | Still CONFLICTING, CI ALL PASS (run 28153233486). Needs rebase. |
 | **#1615 unchanged** | CI still blank — only CodeRabbit in rollup. Still CONFLICTING. |
 | **#1588 unchanged** | Still 2 FAIL pre-commit (run 27933817996). Stale. |
-| **No new merges** | Step 1 sweep confirmed no new merges since Jun 28 13:30 IDT. |
+| **No new merges** | Step 1 sweep confirmed no new merges since Jun 28 14:30 IDT. |
 
 ---
 
@@ -83,15 +85,15 @@ PR [#1627](https://github.com/Jounce-IO/jounce/pull/1627): `fix(ci): JN-5612 rep
 
 ---
 
-### 🔴 PR #1606 (JN-5725, off-board) — e2e-gpu-live FAIL, new run in progress
+### 🔴 PR #1606 (JN-5725, off-board) — CI ESCALATED: nox + tox + e2e-gpu-live now failing
 
 PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer): integrate log analyzer into experiment-workflow`
 - OPEN, MERGEABLE (no git conflict)
-- Run 28320557196 IN PROGRESS: e2e-gpu-live ❌ FAIL (6m42s, run 28320557116), e2e-smoke ⏳ PENDING, e2e-api ✅ PASS (3m57s), all other checks ✅
-- Prior run 28319028824 (complete): e2e-gpu-live ❌ (7m7s), e2e-smoke/e2e ❌ (11m57s), e2e-tests ❌ (4s)
-- Persistent e2e-gpu-live failure pattern across multiple retriggered runs
+- Run 28322029191 IN PROGRESS: e2e-gpu-live ❌ FAIL (8m11s), **nox ❌ FAIL (NEW)**, **tox-run/tox ❌ FAIL (NEW)**, e2e-smoke ⏳ PENDING, e2e-api ✅ PASS (4m16s)
+- Escalation vs prior run 28320557196 (which only had e2e-gpu-live failing)
+- Prior runs: 28319028824 (3 FAIL: e2e-gpu-live + e2e-smoke + e2e-tests), 28320557196 (e2e-gpu-live FAIL)
 - Jira [JN-5725](https://redhat.atlassian.net/browse/JN-5725): Done (Unassigned)
-- **Action needed:** Investigate root cause of e2e-gpu-live + e2e-smoke failures — persistent pattern, not a fluke. e2e-smoke result still pending this run.
+- **Action needed:** Investigate root cause — nox + tox failures are new and concerning. Not just e2e-gpu-live anymore.
 
 ---
 
@@ -158,7 +160,7 @@ Branch `internal-cr-system` in Code zone — no PR, no Jira ticket. Stagnant sin
 | Ticket | Jira Status | PR | Merged/State | Notes |
 |--------|-------------|-----|--------|-----------|
 | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | OPEN, 2 CI FAIL + CONFLICTING | Should be "In Review" AND needs CI fix |
-| [JN-5612](https://redhat.atlassian.net/browse/JN-5612) | In Progress | [#1627](https://github.com/Jounce-IO/jounce/pull/1627) | OPEN, MERGEABLE, e2e pending | Should be "In Review" now PR is open |
+| [JN-5612](https://redhat.atlassian.net/browse/JN-5612) | In Progress | [#1627](https://github.com/Jounce-IO/jounce/pull/1627) | OPEN, MERGEABLE, ALL CI PASS | Should be "In Review" now PR is open |
 
 ---
 
@@ -168,9 +170,9 @@ Branch `internal-cr-system` in Code zone — no PR, no Jira ticket. Stagnant sin
 |--------|---------|-------------|-------|
 | [JN-5670](https://redhat.atlassian.net/browse/JN-5670) | Benchmark Visibility Dashboard | **In Progress** | No worktree |
 | [JN-5539](https://redhat.atlassian.net/browse/JN-5539) | Dependency & Build Standardization | **In Progress** | No worktree — may be cross-cutting |
-| [JN-5244](https://redhat.atlassian.net/browse/JN-5244) | Add --user, --no-cache, --skip-estimator CLI flags | **In Progress** | No worktree |
 | [JN-5728](https://redhat.atlassian.net/browse/JN-5728) | Fix e2e CI workflow gaps — BRANCH_NAME on dispatch + scoped secrets | **Backlog** | No worktree |
 
+*(JN-5244 removed from this table — worktree jn-5244-cli-flags created 14:49 IDT Jun 28)*
 *(JN-5612 removed from this table — worktree jn-5612-fix-github-sha now exists on board)*
 
 ---
