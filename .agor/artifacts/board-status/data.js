@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-28 13:00 IDT";
+export const LAST_UPDATED = "2026-06-28 13:30 IDT";
 
 export const WORKTREES = [
   {
@@ -213,8 +213,8 @@ export const ALERTS = [
     message: "🟢 PR #1627 (JN-5612, Publish): CI ALL PASS ✅ (run 28318509109 — e2e-api ✅ 4m37s, e2e-smoke ✅ 11m9s). OPEN, MERGEABLE. Assign reviewer now. Update Jira JN-5612 → 'In Review'.",
   },
   {
-    level: "yellow",
-    message: "🟡 PR #1606 (JN-5725, off-board): CI run 28319028824 in progress (retriggered again since 12:30 IDT) — all PASS except e2e-api PENDING, e2e-gpu-live PENDING. Was 3 FAIL on run 28231394764. Watch for e2e results.",
+    level: "red",
+    message: "🔴 PR #1606 (JN-5725, off-board): CI run 28319028824 FAILED — e2e-gpu-live ❌ FAIL (7m7s), e2e-smoke/e2e ❌ FAIL (11m57s), e2e-tests ❌ FAIL (4s). e2e-api ✅ PASS (3m29s). Persistent e2e failure pattern across multiple retriggered runs.",
   },
   {
     level: "yellow",

@@ -1568,4 +1568,13 @@ export const HEARTBEAT_RUNS = [
     summary: "🟢 PR #1627 CI ALL PASS (e2e-api ✅ 4m37s, run 28318509109) — ready for reviewer; #1606 new run 28319028824 (e2e-api+e2e-gpu-live pending); #1622/#1623 CONFLICTING/PASS unchanged; #1615 CI blank unchanged; JN-5612 Jira mismatch persists",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f0dc7d1cf773d95e0748a/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-28 13:30 IDT",
+    actions: 0,
+    findings: 7,
+    status: "ok",
+    summary: "🔴 PR #1606 CI run 28319028824 NOW FAILED (e2e-gpu-live ❌, e2e-smoke ❌, e2e-tests ❌ — persistent pattern); #1627 ALL PASS unchanged; #1622/#1623 CONFLICTING/PASS unchanged; 7 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f0de34942742cb0c680b8/",
+  },
 ];

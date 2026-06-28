@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-28 13:00 IDT (advance heartbeat)*
+*Last updated: 2026-06-28 13:30 IDT (advance heartbeat)*
 
 ---
 
@@ -52,22 +52,22 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🔄 **RUN 28319028824** — pre-commit ✅ integration ✅ tox ✅ nox ✅ atlas-validate ✅ check-changes ✅ pre-commit-run ✅; **e2e-api PENDING**, **e2e-gpu-live PENDING**, bake/atlas-validate-run SKIPPING | OPEN, MERGEABLE (no git conflict) | 🟡 **CI RUNNING** — New run 28319028824 (was 28318368770 at 12:30 IDT, again retriggered). e2e-api and e2e-gpu-live still pending. |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | ❌ **RUN 28319028824 FAILED** — e2e-gpu-live ❌ FAIL (run 28319028783, 7m7s), e2e-smoke/e2e ❌ FAIL (11m57s), e2e-tests ❌ FAIL (4s); e2e-api ✅ PASS (3m29s); all other checks ✅ | OPEN, MERGEABLE (no git conflict) | 🔴 **CI FAILED** — run 28319028824 complete: 3 failures (e2e-gpu-live + e2e-smoke + e2e-tests). Persistent e2e pattern. |
 
 ---
 
-## Key Changes Since Last Run (12:30 IDT Jun 28)
+## Key Changes Since Last Run (13:00 IDT Jun 28)
 
 | What observed | Status |
 |---|---|
-| **🟢 PR #1627 CI ALL PASS — JN-5612** | e2e-api ✅ completed (4m37s), e2e-smoke ✅ (11m9s). Run 28318509109 ALL PASS. PR OPEN, MERGEABLE, REVIEW_REQUIRED. **Ready for reviewer assignment.** |
-| **JN-5612 Jira mismatch (persists)** | Jira still "In Progress" — PR #1627 is now fully CI-green. Update Jira → "In Review". |
-| **PR #1606 — new CI run 28319028824** | Retriggered again (was 28318368770 at 12:30 IDT). e2e-api + e2e-gpu-live still PENDING; other checks PASS. |
+| **🔴 PR #1606 CI FAILED — run 28319028824 complete** | e2e-gpu-live ❌ FAIL (7m7s), e2e-smoke/e2e ❌ FAIL (11m57s), e2e-tests ❌ FAIL (4s). e2e-api ✅ PASS (3m29s). Was PENDING at 13:00 IDT. Persistent e2e failure pattern on this branch. |
+| **🟢 PR #1627 CI ALL PASS — JN-5612 (unchanged)** | Still ALL PASS (run 28318509109). OPEN, MERGEABLE, REVIEW_REQUIRED. Assign reviewer. |
+| **JN-5612 Jira mismatch (persists)** | Jira still "In Progress" — update → "In Review". |
 | **#1622 unchanged** | Still CONFLICTING, CI ALL PASS (run 28164293495). Needs rebase. |
 | **#1623 unchanged** | Still CONFLICTING, CI ALL PASS (run 28153233486). Needs rebase. |
 | **#1615 unchanged** | CI still blank — only CodeRabbit in rollup. Still CONFLICTING. |
 | **#1588 unchanged** | Still 2 FAIL pre-commit (run 27933817996). Stale. |
-| **No new merges** | Step 1 sweep confirmed no new merges since Jun 28 12:30 IDT. |
+| **No new merges** | Step 1 sweep confirmed no new merges since Jun 28 13:00 IDT. |
 
 ---
 
@@ -83,14 +83,14 @@ PR [#1627](https://github.com/Jounce-IO/jounce/pull/1627): `fix(ci): JN-5612 rep
 
 ---
 
-### 🟡 PR #1606 (JN-5725, off-board) — CI RUNNING (run 28319028824)
+### 🔴 PR #1606 (JN-5725, off-board) — CI FAILED (run 28319028824)
 
 PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer): integrate log analyzer into experiment-workflow`
 - OPEN, MERGEABLE (no git conflict)
-- Run 28319028824 — **IN PROGRESS**: pre-commit ✅, integration ✅, tox ✅, nox ✅, atlas-validate ✅, check-changes ✅, pre-commit-run ✅; **e2e-api PENDING**, **e2e-gpu-live PENDING** (retriggered again since 12:30 IDT, was run 28318368770)
-- Was previously 3 FAIL (e2e-gpu-live, e2e-smoke, e2e-tests, run 28231394764)
+- Run 28319028824 — **FAILED**: e2e-gpu-live ❌ (7m7s, run 28319028783), e2e-smoke/e2e ❌ (11m57s), e2e-tests ❌ (4s); e2e-api ✅ PASS (3m29s); all other checks ✅
+- Persistent e2e failure pattern — was retriggered from run 28318368770 (which was PENDING at 13:00 IDT)
 - Jira [JN-5725](https://redhat.atlassian.net/browse/JN-5725): Done (Unassigned)
-- **Monitor:** Wait for e2e-api and e2e-gpu-live to complete. If they pass, PR will be merge-ready.
+- **Action needed:** Investigate root cause of e2e-gpu-live + e2e-smoke failures — persistent pattern across multiple CI runs. Not a fluke.
 
 ---
 
