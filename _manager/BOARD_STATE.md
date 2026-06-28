@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-28 17:00 IDT (advance heartbeat)*
+*Last updated: 2026-06-28 17:30 IDT (advance heartbeat)*
 
 ---
 
@@ -64,18 +64,18 @@
 
 ---
 
-## Key Changes Since Last Run (16:30 IDT Jun 28)
+## Key Changes Since Last Run (17:00 IDT Jun 28)
 
 | What observed | Status |
 |---|---|
-| **🟠 PR #1606 ANOTHER NEW CI RUN** (28325433415) | Run 28325433415 (newer than 28324478045 from 16:30). atlas-validate ✅, check-changes ✅, JIRA Association ✅, CodeRabbit ✅ — but tox-run, integration-run, pre-commit-run, e2e-api, e2e-gpu-live all ⏳ PENDING. Another push on this branch since 16:30. |
+| **🟢 PR #1606 CI MAJOR ADVANCEMENT** (run 28325917985) | ANOTHER new push triggered new run 28325917985 (supersedes 28325433415 from 17:00). tox-run ✅, integration-run ✅, pre-commit-run ✅, e2e-api ✅ all PASS. Only e2e-smoke ⏳ PENDING + e2e-gpu-live ⏳ PENDING (run 28325917922). Most execution checks now resolved. |
 | **🟢 PR #1627 CI ALL PASS — JN-5612 (unchanged)** | Still ALL PASS (run 28318509109). OPEN, MERGEABLE, REVIEW_REQUIRED. Assign reviewer. |
 | **JN-5612 Jira mismatch (persists)** | Jira still "In Progress" — update → "In Review". |
 | **#1622 unchanged** | Still CONFLICTING, CI ALL PASS (run 28164293495). Needs rebase. |
 | **#1623 unchanged** | Still CONFLICTING, CI ALL PASS (run 28153233486). Needs rebase. |
 | **#1615 unchanged** | CI still blank — only CodeRabbit in rollup. Still CONFLICTING. |
 | **#1588 unchanged** | Still 2 FAIL pre-commit (run 27933817996). Stale. |
-| **No new merges** | Step 1 sweep confirmed no new merges since Jun 28 16:30 IDT. |
+| **No new merges** | Step 1 sweep confirmed no new merges since Jun 28 17:00 IDT. |
 
 ---
 
@@ -91,15 +91,15 @@ PR [#1627](https://github.com/Jounce-IO/jounce/pull/1627): `fix(ci): JN-5612 rep
 
 ---
 
-### 🟠 PR #1606 (JN-5725, off-board) — ANOTHER NEW CI RUN 28325433415 IN PROGRESS
+### 🟠 PR #1606 (JN-5725, off-board) — CI SIGNIFICANTLY ADVANCED, e2e-smoke+gpu-live PENDING
 
 PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer): integrate log analyzer into experiment-workflow`
 - OPEN, MERGEABLE (no git conflict)
-- **NEW run 28325433415** (detected 17:00 IDT — newer than 28324478045 from 16:30 IDT): atlas-validate ✅, check-changes ✅, JIRA Association ✅, CodeRabbit ✅
-- **tox-run ⏳ PENDING**, **integration-run ⏳ PENDING**, **pre-commit-run ⏳ PENDING**, **e2e-api ⏳ PENDING**, **e2e-gpu-live ⏳ PENDING**
-- This suggests another push/commit on the branch since 16:30 IDT — active development continuing
+- **NEW run 28325917985** (detected 17:30 IDT — supersedes 28325433415 from 17:00 IDT): atlas-validate ✅, check-changes ✅, JIRA Association ✅, nox ✅, **tox-run ✅ PASS** (3m27s), **integration-run ✅ PASS** (2m59s), **pre-commit-run ✅ PASS** (5m19s), **e2e-api ✅ PASS** (3m36s)
+- **e2e-smoke ⏳ PENDING**, **e2e-gpu-live ⏳ PENDING** (run 28325917922)
+- Another push triggered this run since 17:00 IDT — most execution checks now resolved
 - Jira [JN-5725](https://redhat.atlassian.net/browse/JN-5725): Done (Unassigned)
-- **Action needed:** Monitor tox/integration/pre-commit-run/e2e results on run 28325433415.
+- **Action needed:** Monitor e2e-smoke + e2e-gpu-live on run 28325917985. If both pass → ready for reviewer.
 
 ---
 
