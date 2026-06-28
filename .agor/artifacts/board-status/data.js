@@ -1,9 +1,9 @@
-export const LAST_UPDATED = "2026-06-28 10:30 IDT";
+export const LAST_UPDATED = "2026-06-28 11:00 IDT";
 
 export const WORKTREES = [
   {
     ticket: "JN-5724",
-    ticketUrl: "https://jounce.atlassian.net/browse/JN-5724",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5724",
     title: "Reduce Lychee precommit flaky results",
     branch: "jn-5724-lychee-precommit-flaky",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5724-lychee-precommit-flaky",
@@ -19,7 +19,7 @@ export const WORKTREES = [
   },
   {
     ticket: "JN-5616",
-    ticketUrl: "https://jounce.atlassian.net/browse/JN-5616",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5616",
     title: "Replace find_project_root() calls in tests with conftest fixture",
     branch: "jn-5616-replace-find-project-root",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5616-replace-find-project-root",
@@ -36,7 +36,7 @@ export const WORKTREES = [
   {
     ticket: "JN-5677",
     sprint: "current",
-    ticketUrl: "https://jounce.atlassian.net/browse/JN-5677",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5677",
     title: "Historical mode notebook cells",
     branch: "jn-5677-dev-historical-mode-notebook-cells",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5677-dev-historical-mode-notebook-cells",
@@ -52,7 +52,7 @@ export const WORKTREES = [
   },
   {
     ticket: "JN-5546",
-    ticketUrl: "https://jounce.atlassian.net/browse/JN-5546",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5546",
     title: "Document module layout convention",
     branch: "jn-5546-docs",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5546-docs-document-module-layout-convention-and-3",
@@ -84,7 +84,7 @@ export const WORKTREES = [
   },
   {
     ticket: "JN-5695",
-    ticketUrl: "https://jounce.atlassian.net/browse/JN-5695",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5695",
     title: "DB connect script",
     branch: "jn-5695-db-connect-script",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5695-db-connect-script",
@@ -100,7 +100,7 @@ export const WORKTREES = [
   },
   {
     ticket: "JN-5672",
-    ticketUrl: "https://jounce.atlassian.net/browse/JN-5672",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5672",
     title: "DAL extensions for dashboard queries",
     branch: "jn-5672-dal-ext-dashboard",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5672-dal-ext-dashboard",
@@ -128,7 +128,7 @@ export const MERGED = [
   },
   {
     ticket: "JN-5676",
-    ticketUrl: "https://jounce.atlassian.net/browse/JN-5676",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5676",
     title: "Notebook scaffold + operational mode",
     pr: "#1604",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1604",
@@ -137,7 +137,7 @@ export const MERGED = [
   },
   {
     ticket: "JN-5685/JN-5679",
-    ticketUrl: "https://jounce.atlassian.net/browse/JN-5685",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5685",
     title: "Monotonicity verdict persistence tables and ingestion",
     pr: "#1602",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1602",
@@ -146,7 +146,7 @@ export const MERGED = [
   },
   {
     ticket: "JN-5675",
-    ticketUrl: "https://jounce.atlassian.net/browse/JN-5675",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5675",
     title: "Historical visibility functions",
     pr: "#1601",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1601",
@@ -155,7 +155,7 @@ export const MERGED = [
   },
   {
     ticket: "JN-5730",
-    ticketUrl: "https://jounce.atlassian.net/browse/JN-5730",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5730",
     title: "Auto apply jbenchmark and argocd labels",
     pr: "#1605",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1605",
@@ -164,7 +164,7 @@ export const MERGED = [
   },
   {
     ticket: "JN-5729",
-    ticketUrl: "https://jounce.atlassian.net/browse/JN-5729",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5729",
     title: "Hotfix: pin uv default Python to 3.13",
     pr: "#1608",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1608",
@@ -173,7 +173,7 @@ export const MERGED = [
   },
   {
     ticket: "JN-5674",
-    ticketUrl: "https://jounce.atlassian.net/browse/JN-5674",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5674",
     title: "Operational visibility functions",
     pr: "#1599",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1599",
@@ -182,7 +182,7 @@ export const MERGED = [
   },
   {
     ticket: "JN-5673",
-    ticketUrl: "https://jounce.atlassian.net/browse/JN-5673",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5673",
     title: "Visibility module scaffold",
     pr: "#1595",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1595",

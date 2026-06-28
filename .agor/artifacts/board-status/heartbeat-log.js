@@ -1523,4 +1523,13 @@ export const HEARTBEAT_RUNS = [
     summary: "Board fully static; #1622/#1623 CONFLICTING/PASS unchanged; #1606 3 FAIL unchanged; #1615 CI blank unchanged; 6 findings",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f0d2305127435843e4013/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-28 11:00 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "Board fully static; #1622/#1623 CONFLICTING/PASS unchanged; #1606 3 FAIL unchanged; #1615 CI blank unchanged; 6 findings; Jira URLs migrated to redhat.atlassian.net",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f0d3e8009761aaa9d966b/",
+  },
 ];
