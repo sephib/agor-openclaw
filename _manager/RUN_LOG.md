@@ -2865,3 +2865,15 @@
 - Auto-advances: none
 - Flags: 8 — **#1627 CI ALL PASS, assign reviewer NOW** (high priority); **#1606 new run in progress** (prior run had nox+tox+e2e-gpu-live FAIL — watch for resolution); **jn-5780-add-jn-project new worktree needs clarification**; #1622/#1623 CONFLICTING/PASS; #1615 CI blank; #1588 FAIL+stale; JN-5612 Jira mismatch
 - Next: Watch PR #1606 run 28323035881 results. Joseph to assign reviewer to #1627. Update JN-5612 Jira → "In Review". Clarify jn-5780-add-jn-project. Joseph to rebase #1622/#1623.
+
+## 16:00 IDT — Weekday Daytime Advance Heartbeat (2026-06-28)
+
+**Session:** 019f0e6c-595a | http://127.0.0.1:3030/ui/s/019f0e6c595a7cb18e102c5e/
+
+- PRs checked: #1627 (OPEN, MERGEABLE, CI ALL PASS ✅ run 28318509109 — unchanged), #1606 off-board (OPEN, MERGEABLE, **run 28323554940 COMPLETE** — nox ✅ RESOLVED, tox ✅ RESOLVED, e2e-gpu-live ❌ FAIL 6m43s persistent, e2e-smoke ⏳ PENDING, e2e-api ✅ 3m34s), #1622 (OPEN, CONFLICTING, ALL PASS run 28164293495 — unchanged), #1623 (OPEN, CONFLICTING, ALL PASS run 28153233486 — unchanged), #1615 (OPEN, CONFLICTING, CI BLANK — unchanged), #1588 (OPEN, CONFLICTING, 2 FAIL pre-commit run 27933817996 — unchanged), #1596 (DRAFT, CONFLICTING — unchanged)
+- Merges detected: none — Step 1 sweep confirmed no new merges since Jun 28 15:30 IDT
+- CI changes: **🟠 PR #1606 DE-ESCALATED** — run 28323554940: nox ✅ PASS (RESOLVED from FAIL in run 28322029191), tox ✅ PASS (RESOLVED). Prior escalation was transient. Only e2e-gpu-live ❌ FAIL remains (persistent). e2e-smoke ⏳ still pending. PR #1627 unchanged (ALL PASS run 28318509109).
+- Jira: JN-5612 still "In Progress" — mismatch persists. All others unchanged.
+- Auto-advances: none
+- Flags: 7 — **#1627 CI ALL PASS, assign reviewer NOW** (high priority); **#1606 e2e-gpu-live only FAIL** (nox+tox de-escalated — transient); #1622/#1623 CONFLICTING/PASS; #1615 CI blank; #1588 FAIL+stale; JN-5612 Jira mismatch
+- Next: Watch PR #1606 e2e-smoke result (run 28323554940). Joseph to assign reviewer to #1627. Update JN-5612 Jira → "In Review". Start ingest session for jn-5244-cli-flags. Joseph to rebase #1622/#1623. Clarify jn-5780-add-jn-project.

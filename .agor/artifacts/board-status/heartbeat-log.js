@@ -1604,4 +1604,13 @@ export const HEARTBEAT_RUNS = [
     summary: "⏳ PR #1606 NEW run 28323035881 IN PROGRESS (prior run 28322029191 completed: nox+tox+e2e-gpu-live FAIL); NEW worktree jn-5780-add-jn-project (Plan zone, jira-autofix repo, needs clarification); #1627 ALL PASS unchanged; #1622/#1623 CONFLICTING/PASS unchanged; 8 findings",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f0e50e1f57397a86f6a7c/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-28 16:00 IDT",
+    actions: 0,
+    findings: 7,
+    status: "ok",
+    summary: "🟠 PR #1606 DE-ESCALATED — run 28323554940: nox ✅ RESOLVED + tox ✅ RESOLVED (transient); e2e-gpu-live ❌ FAIL persistent, e2e-smoke ⏳ pending; #1627 ALL PASS unchanged; #1622/#1623 CONFLICTING/PASS unchanged; 7 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f0e6c595a7cb18e102c5e/",
+  },
 ];

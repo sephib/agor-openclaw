@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-28 15:30 IDT (advance heartbeat)*
+*Last updated: 2026-06-28 16:00 IDT (advance heartbeat)*
 
 ---
 
@@ -18,10 +18,10 @@
 | jira-operations | — | (no zone) | — | — | — | — | ⚠️ session timed_out 07:38 IDT Jun 25. No PR, no Jira, no zone. Needs decision. |
 | jn-5612-fix-github-sha | [JN-5612](https://redhat.atlassian.net/browse/JN-5612) | **Publish** | In Progress ⚠️ | [#1627](https://github.com/Jounce-IO/jounce/pull/1627) **OPEN** MERGEABLE | ✅ **ALL PASS** (run 28318509109, e2e-api ✅ 4m37s, e2e-smoke ✅ 11m9s) | REVIEW_REQUIRED | 🟢 **CI ALL PASS** — MERGEABLE, all checks complete. Jira still "In Progress" — should be "In Review". **Assign reviewer now.** |
 | jn-5244-cli-flags | [JN-5244](https://redhat.atlassian.net/browse/JN-5244) | **Ingest** | In Progress | — | — | — | ℹ️ Created 14:49 IDT Jun 28. No sessions yet. JN-5244: Add --user, --no-cache, --skip-estimator CLI flags. Ready to ingest. |
-| jn-5780-add-jn-project | [JN-5780](https://redhat.atlassian.net/browse/JN-5780) | **Plan** | Unknown | — (GitLab "create MR" link, no actual PR) | — | — | ℹ️ **NEW** (appeared 08:32 IDT Jun 28, different repo: jira-autofix). JN-5780 not accessible in Jira. No sessions, no actual PR. Needs review — may be agentic CI autofix worktree. |
+| jn-5780-add-jn-project | [JN-5780](https://redhat.atlassian.net/browse/JN-5780) | **Plan** | Unknown | — (GitLab "create MR" link, no actual PR) | — | — | ℹ️ Created 08:32 IDT Jun 28, different repo: redhat/jira-autofix. JN-5780 on redhat.atlassian.net. No sessions, no actual PR. Needs Joseph review — may be agentic CI autofix worktree. |
 
 **Untracked worktrees on board:**
-- `fix-dashboard-syntax-error` (Plan zone, filesystem_status: failed, last used Jun 17) — previously presumed archived but still visible. No PR. Stale.
+- `fix-dashboard-syntax-error` (Plan zone, filesystem_status: failed, last used Jun 17) — still visible. No PR. Stale.
 - `model-packaging-cr` (Code Review zone, last used Jun 15) — inactive since Jun 15. No PR. Different repo (model-packaging-pipeline).
 
 **Archived This Session:**
@@ -58,23 +58,22 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | ⏳ **NEW RUN 28323035881 IN PROGRESS** — atlas-validate ✅, check-changes ✅; pre-commit-run ⏳, tox ⏳, integration ⏳, e2e-api ⏳, e2e-gpu-live ⏳ (run 28323035772). **Prior run 28322029191 completed**: nox ❌ FAIL, tox ❌ FAIL (NEW), e2e-gpu-live ❌ FAIL. | OPEN, MERGEABLE (no git conflict) | 🔴 **CI NEW RUN — prior run had nox+tox FAIL (escalated).** Watching new run 28323035881 for resolution. |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🟠 **Run 28323554940**: nox ✅ PASS (RESOLVED), tox ✅ PASS (RESOLVED), e2e-gpu-live ❌ FAIL (6m43s, persistent), e2e-smoke ⏳ PENDING, e2e-api ✅ (3m34s), integration ✅, pre-commit ✅. Prior run nox+tox failures were TRANSIENT. | OPEN, MERGEABLE | 🟠 **e2e-gpu-live only FAIL** — nox+tox de-escalated (transient). Persistent issue is e2e-gpu-live. Watch e2e-smoke result. |
 
 ---
 
-## Key Changes Since Last Run (15:00 IDT Jun 28)
+## Key Changes Since Last Run (15:30 IDT Jun 28)
 
 | What observed | Status |
 |---|---|
-| **⏳ PR #1606 NEW CI RUN 28323035881 IN PROGRESS** | Prior run 28322029191 completed with nox ❌ FAIL + tox ❌ FAIL + e2e-gpu-live ❌ FAIL. New run triggered. Current: atlas-validate ✅, check-changes ✅; pre-commit-run/tox/integration/e2e-api/e2e-gpu-live all ⏳ pending. nox not yet visible in new run. |
-| **ℹ️ NEW WORKTREE: jn-5780-add-jn-project (Plan zone)** | Created 08:32 IDT Jun 28 (was missed in earlier scans). Different repo (jira-autofix). JN-5780 inaccessible in Jira. No actual PR (GitLab "create MR" placeholder link). Needs Joseph to clarify what this is. |
+| **🟠 PR #1606 CI DE-ESCALATED** — nox+tox RESOLVED | Run 28323554940: nox ✅ PASS (was FAIL in run 28322029191), tox ✅ PASS (was FAIL). Prior escalation was TRANSIENT. Now only e2e-gpu-live ❌ persistent FAIL + e2e-smoke ⏳ pending. |
 | **🟢 PR #1627 CI ALL PASS — JN-5612 (unchanged)** | Still ALL PASS (run 28318509109). OPEN, MERGEABLE, REVIEW_REQUIRED. Assign reviewer. |
 | **JN-5612 Jira mismatch (persists)** | Jira still "In Progress" — update → "In Review". |
 | **#1622 unchanged** | Still CONFLICTING, CI ALL PASS (run 28164293495). Needs rebase. |
 | **#1623 unchanged** | Still CONFLICTING, CI ALL PASS (run 28153233486). Needs rebase. |
 | **#1615 unchanged** | CI still blank — only CodeRabbit in rollup. Still CONFLICTING. |
 | **#1588 unchanged** | Still 2 FAIL pre-commit (run 27933817996). Stale. |
-| **No new merges** | Step 1 sweep confirmed no new merges since Jun 28 15:00 IDT. |
+| **No new merges** | Step 1 sweep confirmed no new merges since Jun 28 15:30 IDT. |
 
 ---
 
@@ -90,22 +89,23 @@ PR [#1627](https://github.com/Jounce-IO/jounce/pull/1627): `fix(ci): JN-5612 rep
 
 ---
 
-### 🔴 PR #1606 (JN-5725, off-board) — new CI run in progress, prior run had nox+tox FAIL
+### 🟠 PR #1606 (JN-5725, off-board) — e2e-gpu-live FAIL only (nox+tox de-escalated)
 
 PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer): integrate log analyzer into experiment-workflow`
 - OPEN, MERGEABLE (no git conflict)
-- Prior run 28322029191 completed: nox ❌ FAIL, tox ❌ FAIL, e2e-gpu-live ❌ FAIL — escalation vs run 28320557196
-- **New run 28323035881 IN PROGRESS**: atlas-validate ✅, check-changes ✅; pre-commit-run/tox/integration/e2e-api/e2e-gpu-live all pending. nox not yet visible.
+- Run 28323554940: **nox ✅ RESOLVED, tox ✅ RESOLVED** — prior run 28322029191 failures were transient
+- **e2e-gpu-live ❌ FAIL** (6m43s) — persistent across all runs
+- **e2e-smoke ⏳ PENDING** — awaiting result
 - Jira [JN-5725](https://redhat.atlassian.net/browse/JN-5725): Done (Unassigned)
-- **Action needed:** Watch new run. If nox+tox pass, root cause was transient. If still failing, investigate — nox+tox failures in addition to persistent e2e-gpu-live are concerning.
+- **Action needed:** Investigate e2e-gpu-live persistent failure. If e2e-smoke passes, only GPU test remains.
 
 ---
 
 ### ℹ️ jn-5780-add-jn-project (Plan zone) — new worktree, needs clarification
 
 Appeared in board scan (Plan zone). Created 08:32 IDT Jun 28.
-- Repo: jira-autofix (not jounce)
-- JN-5780: Not accessible in Jira (permission or different project)
+- Repo: redhat/jira-autofix (not jounce)
+- JN-5780: On redhat.atlassian.net (different Jira instance from jounce)
 - PR URL: GitLab "create new MR" placeholder — no actual PR exists
 - No sessions started
 - **Action needed:** Joseph to clarify — is this intentional? Should it be tracked/moved/archived?

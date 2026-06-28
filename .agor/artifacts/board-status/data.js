@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-28 15:30 IDT";
+export const LAST_UPDATED = "2026-06-28 16:00 IDT";
 
 export const WORKTREES = [
   {
@@ -128,7 +128,7 @@ export const WORKTREES = [
     blockedType: "active",
     sessionUrl: null,
     sessionLabel: null,
-    lastActive: "2026-06-28 15:30 IDT",
+    lastActive: "2026-06-28 16:00 IDT",
   },
   {
     ticket: "JN-5244",
@@ -155,7 +155,7 @@ export const WORKTREES = [
     zone: "Plan",
     pr: null,
     prUrl: null,
-    status: "ℹ️ NEW (first detected 15:30 IDT Jun 28, created 08:32 IDT). Different repo (jira-autofix). JN-5780 inaccessible in Jira. No actual PR. No sessions. Needs Joseph clarification.",
+    status: "ℹ️ Detected 15:30 IDT Jun 28, created 08:32 IDT. Different repo (redhat/jira-autofix). JN-5780 on redhat.atlassian.net. No actual PR. No sessions. Needs Joseph clarification.",
     blockedOn: "Needs owner clarification",
     blockedType: "active",
     sessionUrl: null,
@@ -245,8 +245,8 @@ export const ALERTS = [
     message: "🟢 PR #1627 (JN-5612, Publish): CI ALL PASS ✅ (run 28318509109 — e2e-api ✅ 4m37s, e2e-smoke ✅ 11m9s). OPEN, MERGEABLE. Assign reviewer now. Update Jira JN-5612 → 'In Review'.",
   },
   {
-    level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): Prior run 28322029191 FAILED (nox ❌ FAIL + tox ❌ FAIL + e2e-gpu-live ❌ FAIL). NEW run 28323035881 IN PROGRESS (atlas-validate ✅, check-changes ✅; rest ⏳ pending). Watch for resolution.",
+    level: "yellow",
+    message: "🟠 PR #1606 (JN-5725, off-board): Run 28323554940 — nox ✅ RESOLVED, tox ✅ RESOLVED (prior run failures were transient). e2e-gpu-live ❌ FAIL (6m43s, persistent across all runs). e2e-smoke ⏳ pending. Investigate e2e-gpu-live root cause.",
   },
   {
     level: "info",
