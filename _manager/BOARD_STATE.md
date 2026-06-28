@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-28 17:30 IDT (advance heartbeat)*
+*Last updated: 2026-06-28 18:00 IDT (advance heartbeat)*
 
 ---
 
@@ -60,22 +60,22 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🟠 **NEW run 28325433415** (17:00 IDT): atlas-validate ✅, check-changes ✅, JIRA Association ✅, CodeRabbit ✅. **tox-run ⏳ PENDING**, **integration-run ⏳ PENDING**, **pre-commit-run ⏳ PENDING**, **e2e-api ⏳ PENDING**, **e2e-gpu-live ⏳ PENDING**. Prior run 28324478045 (16:30 IDT) had e2e-gpu-live/e2e-api pending; another push triggered yet another run. | OPEN, MERGEABLE | 🟠 **ANOTHER NEW CI RUN 28325433415** — multiple pending jobs. atlas-validate ✅, check-changes ✅ already passing. Watch for tox/integration/e2e results. |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🟠 **NEW run 28326998740** (18:00 IDT): atlas-validate ✅, check-changes ✅, JIRA ✅, CodeRabbit ✅, integration-run ✅ (3m17s), tox-run ✅ (3m47s), integration-tests ✅. **pre-commit-run ⏳ PENDING**, **e2e-api ⏳ PENDING**, **e2e-gpu-live ⏳ PENDING** (run 28326998693), **nox ⏳ PENDING**. Another push since 17:30 IDT (supersedes run 28325917985). | OPEN, MERGEABLE | 🟠 **ANOTHER NEW CI RUN 28326998740** — active dev pushing frequently. integration ✅ + tox ✅ PASS; pre-commit/e2e/nox PENDING. Watch for results. |
 
 ---
 
-## Key Changes Since Last Run (17:00 IDT Jun 28)
+## Key Changes Since Last Run (17:30 IDT Jun 28)
 
 | What observed | Status |
 |---|---|
-| **🟢 PR #1606 CI MAJOR ADVANCEMENT** (run 28325917985) | ANOTHER new push triggered new run 28325917985 (supersedes 28325433415 from 17:00). tox-run ✅, integration-run ✅, pre-commit-run ✅, e2e-api ✅ all PASS. Only e2e-smoke ⏳ PENDING + e2e-gpu-live ⏳ PENDING (run 28325917922). Most execution checks now resolved. |
+| **🟠 PR #1606 ANOTHER NEW RUN 28326998740** | Another push since 17:30 IDT. supersedes run 28325917985 (which had tox/integration/pre-commit-run/e2e-api PASS, e2e-smoke+e2e-gpu-live PENDING). New run: integration ✅ (3m17s), tox ✅ (3m47s) PASS; pre-commit-run/e2e-api/e2e-gpu-live/nox ⏳ PENDING. Very active branch — multiple pushes per hour. |
 | **🟢 PR #1627 CI ALL PASS — JN-5612 (unchanged)** | Still ALL PASS (run 28318509109). OPEN, MERGEABLE, REVIEW_REQUIRED. Assign reviewer. |
 | **JN-5612 Jira mismatch (persists)** | Jira still "In Progress" — update → "In Review". |
 | **#1622 unchanged** | Still CONFLICTING, CI ALL PASS (run 28164293495). Needs rebase. |
 | **#1623 unchanged** | Still CONFLICTING, CI ALL PASS (run 28153233486). Needs rebase. |
 | **#1615 unchanged** | CI still blank — only CodeRabbit in rollup. Still CONFLICTING. |
 | **#1588 unchanged** | Still 2 FAIL pre-commit (run 27933817996). Stale. |
-| **No new merges** | Step 1 sweep confirmed no new merges since Jun 28 17:00 IDT. |
+| **No new merges** | Step 1 sweep confirmed no new merges since Jun 28 17:30 IDT. |
 
 ---
 
@@ -91,15 +91,15 @@ PR [#1627](https://github.com/Jounce-IO/jounce/pull/1627): `fix(ci): JN-5612 rep
 
 ---
 
-### 🟠 PR #1606 (JN-5725, off-board) — CI SIGNIFICANTLY ADVANCED, e2e-smoke+gpu-live PENDING
+### 🟠 PR #1606 (JN-5725, off-board) — ANOTHER NEW RUN, pre-commit+e2e PENDING
 
 PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer): integrate log analyzer into experiment-workflow`
 - OPEN, MERGEABLE (no git conflict)
-- **NEW run 28325917985** (detected 17:30 IDT — supersedes 28325433415 from 17:00 IDT): atlas-validate ✅, check-changes ✅, JIRA Association ✅, nox ✅, **tox-run ✅ PASS** (3m27s), **integration-run ✅ PASS** (2m59s), **pre-commit-run ✅ PASS** (5m19s), **e2e-api ✅ PASS** (3m36s)
-- **e2e-smoke ⏳ PENDING**, **e2e-gpu-live ⏳ PENDING** (run 28325917922)
-- Another push triggered this run since 17:00 IDT — most execution checks now resolved
+- **NEW run 28326998740** (detected 18:00 IDT — supersedes 28325917985 from 17:30 IDT): atlas-validate ✅, check-changes ✅, JIRA Association ✅, CodeRabbit ✅, **integration-run ✅** (3m17s), **tox-run ✅** (3m47s), integration-tests ✅
+- **pre-commit-run ⏳ PENDING**, **e2e-api ⏳ PENDING**, **e2e-gpu-live ⏳ PENDING** (run 28326998693), **nox ⏳ PENDING**
+- Very active — another push since 17:30 IDT (3rd+ push this afternoon). Prior run 28325917985 had all execution checks PASS except e2e-smoke+e2e-gpu-live.
 - Jira [JN-5725](https://redhat.atlassian.net/browse/JN-5725): Done (Unassigned)
-- **Action needed:** Monitor e2e-smoke + e2e-gpu-live on run 28325917985. If both pass → ready for reviewer.
+- **Action needed:** Monitor pre-commit + e2e results on run 28326998740. Active dev still pushing — expect more runs.
 
 ---
 

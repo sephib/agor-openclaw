@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-28 17:30 IDT";
+export const LAST_UPDATED = "2026-06-28 18:00 IDT";
 
 export const WORKTREES = [
   {
@@ -246,7 +246,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "🟠 PR #1606 (JN-5725, off-board): CI SIGNIFICANTLY ADVANCED — run 28325917985 (17:30 IDT): tox ✅, integration ✅, pre-commit-run ✅, e2e-api ✅ all PASS. Only e2e-smoke ⏳ + e2e-gpu-live ⏳ still PENDING. Major improvement from prior run.",
+    message: "🟠 PR #1606 (JN-5725, off-board): ANOTHER NEW RUN 28326998740 (18:00 IDT) — integration ✅ 3m17s, tox ✅ 3m47s, atlas-validate ✅. pre-commit ⏳, e2e-api ⏳, e2e-gpu-live ⏳, nox ⏳ PENDING. Very active dev — multiple pushes per hour. Watch for results.",
   },
   {
     level: "info",
