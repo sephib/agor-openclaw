@@ -22,6 +22,15 @@ export const HEARTBEAT_RUNS = [
   // },
   {
     type: "advance",
+    timestamp: "2026-06-29 16:30 IDT",
+    actions: 0,
+    findings: 7,
+    status: "ok",
+    summary: "2 NEW worktrees detected: jn-5793-jsonb-path-fix (Code, PR #1639 — 5 CI failures) + jn-5794-required-checks (Ingest). #1606 still CONFLICTING (e2e-smoke ❌ + e2e-tests ❌). #1588 still CONFLICTING (pre-commit ❌). 3 Jira mismatches persist (JN-5612/JN-5616/JN-5724).",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f1392d2df7b67bd63597b/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-29 16:00 IDT",
     actions: 0,
     findings: 6,

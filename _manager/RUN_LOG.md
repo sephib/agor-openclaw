@@ -4,6 +4,20 @@
 
 ---
 
+## 16:30 IDT — Weekday Daytime Advance Heartbeat (2026-06-29)
+
+**Session:** 019f1392-d2df | http://127.0.0.1:3030/ui/s/019f1392d2df7b67bd63597b/
+- PRs checked: #1639 NEW (OPEN MERGEABLE REVIEW_REQUIRED, CI 28375434698 — 5 FAIL), #1606 (OPEN CONFLICTING, CI 28366983945 unchanged), #1588 (OPEN CONFLICTING, CI 27933817996 stale), #1596 (DRAFT OPEN CONFLICTING)
+- Merges detected: none — no new merges since 16:00 IDT
+- CI changes: NEW — #1639 (run 28375434698): JIRA Association ❌, integration ❌, integration-tests ❌, pre-commit ❌, pre-commit-run ❌ — 5 failures; #1606 unchanged; #1588 unchanged
+- Board scan: 2 new worktrees detected — jn-5793-jsonb-path-fix (Code zone, PR #1639) + jn-5794-required-checks (Ingest zone, no PR)
+- Jira: JN-5793 Backlog, JN-5794 Backlog (via acli); JN-5612/JN-5616/JN-5724 mismatches still unresolved (3 total)
+- Auto-advances: 0
+- Flags: 7 (#1639 new PR 5 CI failures; #1606 CONFLICTING+e2e-smoke/e2e-tests FAIL; #1588 pre-commit FAIL+CONFLICTING; JN-5612/JN-5616/JN-5724 Jira mismatches; jira-operations no zone)
+- Next: Diagnose PR #1639 CI failures (JIRA Association may be instance migration issue). Owner of #1606 must rebase + diagnose. Update 3 Jira mismatches.
+
+---
+
 ## 16:00 IDT — Weekday Daytime Advance Heartbeat (2026-06-29)
 
 **Session:** 019f1377-5c4a | http://127.0.0.1:3030/ui/s/019f13775c4a77038cca36f1/

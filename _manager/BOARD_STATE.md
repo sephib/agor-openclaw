@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-29 16:00 IDT (advance heartbeat)*
+*Last updated: 2026-06-29 16:30 IDT (advance heartbeat)*
 
 ---
 
@@ -15,6 +15,8 @@
 | jira-operations | — | (no zone) | — | — | — | — | ⚠️ session timed_out 07:38 IDT Jun 25. No PR, no Jira, no zone. Needs decision. |
 | jn-5244-cli-flags | [JN-5244](https://redhat.atlassian.net/browse/JN-5244) | **Ingest** | In Progress | — | — | — | ℹ️ Created 14:49 IDT Jun 28. No sessions yet. JN-5244: Add --user, --no-cache, --skip-estimator CLI flags. Ready to ingest. |
 | jn-5780-add-jn-project | [JN-5780](https://redhat.atlassian.net/browse/JN-5780) | **Plan** | Unknown | — (GitLab "create MR" link, no actual PR) | — | — | ℹ️ Different repo: redhat/jira-autofix. Not found in jounce Plan zone scan. Needs Joseph review. |
+| jn-5793-jsonb-path-fix | [JN-5793](https://redhat.atlassian.net/browse/JN-5793) | **Code** | Backlog | [#1639](https://github.com/Jounce-IO/jounce/pull/1639) OPEN MERGEABLE | ❌ **5 FAIL** (JIRA Association + integration + integration-tests + pre-commit + pre-commit-run, run 28375434698) | REVIEW_REQUIRED | 🔴 **NEW** — detected 16:30 IDT Jun 29. CI has 5 failures. JIRA Association fail may be due to instance migration (redhat.atlassian.net). Needs investigation. |
+| jn-5794-required-checks | [JN-5794](https://redhat.atlassian.net/browse/JN-5794) | **Ingest** | Backlog | — | — | — | ℹ️ **NEW** — detected 16:30 IDT Jun 29. No sessions yet. JN-5794: [BUG] Auto-merge bypasses integration test failures. |
 
 **Untracked worktrees on board:**
 - `model-packaging-cr` (Code Review zone, model-packaging-pipeline repo, no PR, no sessions, last used Jun 15) — still on board. No PR to check; needs manual decision.
@@ -61,23 +63,40 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | run 28366983945 **COMPLETE**: e2e-api ✅ (4m1s), e2e-gpu-live ✅ (10m22s), integration ✅, integration-tests ✅, nox ✅, pre-commit ✅, tox ✅ — **e2e-smoke ❌ (5m28s), e2e-tests ❌ (3s) FAIL** | 🔴 **NOW CONFLICTING** (was MERGEABLE) | 🔴 **NOW CONFLICTING** — likely due to #1615 merge to main. CI still shows e2e-smoke ❌ + e2e-tests ❌ (3+ runs). Owner must rebase + diagnose e2e-smoke + e2e-tests root cause. |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | run 28366983945 **COMPLETE**: e2e-api ✅ (4m1s), e2e-gpu-live ✅ (10m22s), integration ✅, integration-tests ✅, nox ✅, pre-commit ✅, tox ✅ — **e2e-smoke ❌ (5m28s), e2e-tests ❌ (3s) FAIL** | 🔴 **CONFLICTING** (unchanged) | 🔴 **CONFLICTING** — due to #1615 merge to main. CI still shows e2e-smoke ❌ + e2e-tests ❌ (3+ runs, run unchanged). Owner must rebase + diagnose e2e-smoke + e2e-tests root cause. |
 
 ---
 
-## Key Changes Since Last Run (15:30 IDT Jun 29)
+## Key Changes Since Last Run (16:00 IDT Jun 29)
 
 | What observed | Status |
 |---|---|
-| **Board fully static** | No new merges, no CI changes, no zone moves since 15:30 IDT. |
-| **PR #1606 unchanged** | Still CONFLICTING + e2e-smoke ❌ (5m28s) + e2e-tests ❌ (3s) — same run 28366983945, no new CI triggered. |
+| **2 NEW worktrees detected** | `jn-5793-jsonb-path-fix` (Code, PR #1639) + `jn-5794-required-checks` (Ingest) appeared in board scan. |
+| **PR #1639 NEW — CI FAILING** | OPEN, MERGEABLE, REVIEW_REQUIRED. 5 CI failures: JIRA Association ❌ + integration ❌ + integration-tests ❌ + pre-commit ❌ + pre-commit-run ❌ (run 28375434698). |
+| **PR #1606 unchanged** | Still CONFLICTING + e2e-smoke ❌ (5m28s) + e2e-tests ❌ (3s) — same run 28366983945. |
 | **PR #1588 unchanged** | Still CONFLICTING + pre-commit ❌ — same stale run 27933817996. |
 | **Jira mismatches unchanged** | JN-5612 "In Progress", JN-5616 "In Review", JN-5724 "In Review" — 3 still stale. |
-| **model-packaging-cr confirmed** | Still on board (Code Review zone), no PR, no sessions, last used Jun 15. |
 
 ---
 
 ## Attention Items
+
+### 🔴 PR #1639 (JN-5793, Code zone) — NEW, CI FAILING
+
+PR [#1639](https://github.com/Jounce-IO/jounce/pull/1639): `fix(tests): JN-5793 update plan_json fixtures to match production JSONB structure`
+- NEW — detected this run (16:30 IDT Jun 29). JN-5793: Backlog, assigned to Joseph Berry.
+- 🔴 **5 CI failures** (run 28375434698): JIRA Association ❌, integration ❌, integration-tests ❌, pre-commit ❌, pre-commit-run ❌
+- JIRA Association fail may be related to instance migration (jounce.atlassian.net → redhat.atlassian.net)
+- **Action needed:** Diagnose pre-commit failures; fix JIRA Association check; resolve integration failures.
+
+---
+
+### ℹ️ jn-5794-required-checks (Ingest) — NEW worktree
+
+JN-5794: [BUG] Auto-merge bypasses integration test failures — integration-run not a required check. Backlog, assigned to Joseph Berry.
+- No sessions, no PR yet. Ready to start.
+
+---
 
 ### 🎉 PR #1615 (JN-5677, Respond) — MERGED at 15:08 IDT Jun 29 ✅
 
@@ -89,14 +108,14 @@ PR [#1615](https://github.com/Jounce-IO/jounce/pull/1615): `feat(jbenchmark): hi
 
 ---
 
-### 🔴 PR #1606 (JN-5725, off-board) — NOW CONFLICTING + e2e-smoke + e2e-tests FAIL
+### 🔴 PR #1606 (JN-5725, off-board) — CONFLICTING + e2e-smoke + e2e-tests FAIL
 
 PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer): integrate log analyzer into experiment-workflow`
-- 🔴 **NOW CONFLICTING** (was MERGEABLE at 15:00 IDT — changed after #1615 merged to main)
+- 🔴 **CONFLICTING** (since #1615 merged to main)
 - CI run 28366983945 **COMPLETE** (no new run): e2e-api ✅, e2e-gpu-live ✅, integration ✅, integration-tests ✅ — **e2e-smoke ❌ (5m28s), e2e-tests ❌ (3s) FAIL**
 - Pattern: e2e-smoke + e2e-tests fail across 3+ CI runs
 - Jira [JN-5725](https://redhat.atlassian.net/browse/JN-5725): Done (Unassigned) ✅
-- **Action needed:** (1) Rebase on main (now CONFLICTING). (2) Diagnose root cause of persistent e2e-smoke + e2e-tests failures.
+- **Action needed:** (1) Rebase on main (CONFLICTING). (2) Diagnose root cause of persistent e2e-smoke + e2e-tests failures.
 
 ---
 
@@ -178,6 +197,8 @@ Branch `internal-cr-system` in Code zone — no PR, no Jira ticket. Stagnant sin
 | [JN-5728](https://redhat.atlassian.net/browse/JN-5728) | Fix e2e CI workflow gaps | **Backlog** | No worktree |
 
 *(JN-5244 removed — worktree jn-5244-cli-flags exists on board, Ingest zone)*
+*(JN-5793 removed — worktree jn-5793-jsonb-path-fix exists on board, Code zone)*
+*(JN-5794 removed — worktree jn-5794-required-checks exists on board, Ingest zone)*
 *(JN-5677 removed — PR #1615 MERGED, worktree archived 15:33 IDT Jun 29)*
 *(JN-5612 removed — PR #1627 MERGED, worktree archived 11:00 IDT Jun 29)*
 *(JN-5616 removed — PR #1623 MERGED, worktree archived 14:00 IDT Jun 29)*

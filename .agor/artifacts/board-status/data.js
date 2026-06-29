@@ -1,6 +1,23 @@
-export const LAST_UPDATED = "2026-06-29 16:00 IDT";
+export const LAST_UPDATED = "2026-06-29 16:30 IDT";
 
 export const WORKTREES = [
+  {
+    ticket: "JN-5793",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5793",
+    title: "[BUG] JSONB path mismatch in search_experiments()",
+    branch: "jn-5793-jsonb-path-fix",
+    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5793-jsonb-path-fix",
+    zone: "Code",
+    pr: "#1639",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1639",
+    status: "🔴 NEW — 5 CI failures (run 28375434698): JIRA Association ❌ + integration ❌ + integration-tests ❌ + pre-commit ❌ + pre-commit-run ❌. MERGEABLE, REVIEW_REQUIRED. Needs diagnosis.",
+    blockedOn: "CI failures (5 checks)",
+    blockedType: "blocked",
+    sessionUrl: null,
+    sessionLabel: null,
+    recentSessions: [],
+    lastActive: "2026-06-29 16:30 IDT",
+  },
   {
     ticket: "JN-5546",
     ticketUrl: "https://redhat.atlassian.net/browse/JN-5546",
@@ -88,6 +105,23 @@ export const WORKTREES = [
     lastActive: "2026-06-14 15:00 IDT",
   },
   {
+    ticket: "JN-5794",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5794",
+    title: "[BUG] Auto-merge bypasses integration test failures",
+    branch: "jn-5794-required-checks",
+    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5794-required-checks",
+    zone: "Ingest",
+    pr: null,
+    prUrl: null,
+    status: "ℹ️ NEW worktree — detected 16:30 IDT Jun 29. No sessions yet. JN-5794: Backlog. Ready to start.",
+    blockedOn: null,
+    blockedType: "active",
+    sessionUrl: null,
+    sessionLabel: null,
+    recentSessions: [],
+    lastActive: "2026-06-29 16:30 IDT",
+  },
+  {
     ticket: "JN-5244",
     ticketUrl: "https://redhat.atlassian.net/browse/JN-5244",
     title: "Add --user, --no-cache, --skip-estimator CLI flags to run_jbenchmark_runner",
@@ -131,7 +165,7 @@ export const MERGED = [
     pr: "#1615",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1615",
     mergedDate: "2026-06-29",
-    note: "Merged 15:08 IDT Jun 29 — worktree archived 15:33 IDT. Admin merge (integration ❌ at merge). Jira Done ✅.",
+    note: "Merged 15:08 IDT Jun 29 — worktree archived 15:33 IDT. Admin merge (integration ❌ at merge time). Jira Done ✅.",
   },
   {
     ticket: "JN-5616",
@@ -236,12 +270,12 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "green",
-    message: "🎉 PR #1615 (JN-5677) MERGED at 15:08 IDT Jun 29 ✅ — worktree archived 15:33 IDT. Admin merge (integration ❌ at merge time). Jira JN-5677 Done ✅.",
+    level: "red",
+    message: "🔴 PR #1639 (JN-5793, Code): NEW — 5 CI failures (run 28375434698): JIRA Association ❌ + integration ❌ + integration-tests ❌ + pre-commit ❌ + pre-commit-run ❌. MERGEABLE, REVIEW_REQUIRED. Diagnose failures.",
   },
   {
     level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): NOW CONFLICTING (was MERGEABLE — #1615 merged to main). e2e-smoke ❌ (5m28s) + e2e-tests ❌ (3s) persist across 3+ runs. Owner must rebase + diagnose e2e-smoke + e2e-tests.",
+    message: "🔴 PR #1606 (JN-5725, off-board): CONFLICTING + e2e-smoke ❌ (5m28s) + e2e-tests ❌ (3s) persist across 3+ runs. Owner must rebase + diagnose root cause.",
   },
   {
     level: "yellow",
@@ -254,6 +288,10 @@ export const ALERTS = [
   {
     level: "yellow",
     message: "⚠️ JN-5724 Jira mismatch: PR #1622 MERGED Jun 29 10:17 IDT — Jira still 'In Review'. Update → 'Done'.",
+  },
+  {
+    level: "green",
+    message: "🎉 PR #1615 (JN-5677) MERGED at 15:08 IDT Jun 29 ✅ — worktree archived 15:33 IDT. Admin merge (integration ❌ at merge time). Jira JN-5677 Done ✅.",
   },
   {
     level: "green",
@@ -270,6 +308,10 @@ export const ALERTS = [
   {
     level: "red",
     message: "🔴 PR #1588 (JN-5546, Code Review zone): pre-commit FAIL (run 27933817996) + CONFLICTING. Stale since Jun 17. Fix pre-commit + rebase + assign reviewer + update Jira to 'In Review'.",
+  },
+  {
+    level: "info",
+    message: "ℹ️ jn-5794-required-checks (Ingest): NEW worktree — JN-5794 [BUG] auto-merge bypasses integration failures. No sessions yet.",
   },
   {
     level: "info",
