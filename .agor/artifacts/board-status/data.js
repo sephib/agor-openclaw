@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-28 20:30 IDT";
+export const LAST_UPDATED = "2026-06-29 09:30 IDT";
 
 export const WORKTREES = [
   {
@@ -10,12 +10,28 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1622",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1622",
-    status: "🟡 PR #1622 CONFLICTING (since Jun 25 15:32 IDT) — CI ALL PASS (run 28164293495 unchanged). Rebase on main needed before merge.",
-    blockedOn: "Merge conflict with main (since Jun 25 15:32 IDT)",
-    blockedType: "blocked",
+    status: "🎉 PR #1622 APPROVED ✅ + MERGEABLE — rebased since last run! New CI run 28353212111 IN PROGRESS (integration/tox/pre-commit/e2e-api pending). If CI passes, ready to merge immediately.",
+    blockedOn: "CI run in progress",
+    blockedType: "active",
     sessionUrl: "http://localhost:3030/ui/s/019ef3e3ea0e734d882e878e/",
     sessionLabel: "publish session (complete)",
-    lastActive: "2026-06-23 10:28 IDT",
+    lastActive: "2026-06-29 09:30 IDT",
+  },
+  {
+    ticket: "JN-5612",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5612",
+    title: "Fix github.GITHUB_SHA → github.sha in all workflow run-name fields",
+    branch: "jn-5612-fix-github-sha",
+    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5612-fix-github-sha",
+    zone: "Publish",
+    pr: "#1627",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1627",
+    status: "🟢 PR #1627 CI ALL PASS ✅ — OPEN, MERGEABLE. All checks complete (e2e-api ✅ 4m37s, e2e-smoke ✅ 11m9s, run 28318509109). ⚠️ Jira still 'In Progress' — needs update to 'In Review'. Assign reviewer now.",
+    blockedOn: "Jira mismatch; reviewer needed",
+    blockedType: "active",
+    sessionUrl: null,
+    sessionLabel: null,
+    lastActive: "2026-06-28 16:00 IDT",
   },
   {
     ticket: "JN-5616",
@@ -23,10 +39,10 @@ export const WORKTREES = [
     title: "Replace find_project_root() calls in tests with conftest fixture",
     branch: "jn-5616-replace-find-project-root",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5616-replace-find-project-root",
-    zone: "Validate",
+    zone: "Respond",
     pr: "#1623",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1623",
-    status: "🟡 PR #1623 CONFLICTING (since Jun 25 15:32 IDT) — CI ALL PASS (run 28153233486 unchanged). Rebase on main needed before merge.",
+    status: "🟡 PR #1623 CONFLICTING — CI ALL PASS (run 28153233486 unchanged). Rebase on main needed before merge.",
     blockedOn: "Merge conflict with main (since Jun 25 15:32 IDT)",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ef405c3e3746c900eac40/",
@@ -43,7 +59,7 @@ export const WORKTREES = [
     zone: "Revise",
     pr: "#1615",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1615",
-    status: "🟡 PR #1615 OPEN CONFLICTING — ⚠️ CI CHECKS GONE (only CodeRabbit showing since Jun 25 13:05 IDT; prior integration failures from run 28167796913 no longer in rollup). Branch may have been touched without triggering full CI. Needs investigation + rebase.",
+    status: "🟡 PR #1615 OPEN CONFLICTING — ⚠️ CI CHECKS GONE (only CodeRabbit showing since Jun 25 13:05 IDT; prior integration failures from run 28167796913 no longer in rollup). Needs rebase + CI re-trigger.",
     blockedOn: "CI checks blank + merge conflict with main",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019eeaf04583757a89f47a99/",
@@ -113,22 +129,6 @@ export const WORKTREES = [
     sessionUrl: null,
     sessionLabel: null,
     lastActive: "2026-06-14 15:00 IDT",
-  },
-  {
-    ticket: "JN-5612",
-    ticketUrl: "https://redhat.atlassian.net/browse/JN-5612",
-    title: "Fix github.GITHUB_SHA → github.sha in all workflow run-name fields",
-    branch: "jn-5612-fix-github-sha",
-    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5612-fix-github-sha",
-    zone: "Publish",
-    pr: "#1627",
-    prUrl: "https://github.com/Jounce-IO/jounce/pull/1627",
-    status: "🟢 PR #1627 CI ALL PASS ✅ — OPEN, MERGEABLE. All checks complete (e2e-api ✅ 4m37s, e2e-smoke ✅ 11m9s, run 28318509109). ⚠️ Jira still 'In Progress' — needs update to 'In Review'. Assign reviewer now.",
-    blockedOn: "Jira mismatch; reviewer needed",
-    blockedType: "active",
-    sessionUrl: null,
-    sessionLabel: null,
-    lastActive: "2026-06-28 16:00 IDT",
   },
   {
     ticket: "JN-5244",
@@ -242,27 +242,27 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "green",
+    message: "🎉 PR #1622 (JN-5724, Publish): APPROVED ✅ + MERGEABLE — rebased since last run! New CI run 28353212111 IN PROGRESS. If CI passes, ready to merge immediately.",
+  },
+  {
+    level: "green",
     message: "🟢 PR #1627 (JN-5612, Publish): CI ALL PASS ✅ (run 28318509109 — e2e-api ✅ 4m37s, e2e-smoke ✅ 11m9s). OPEN, MERGEABLE. Assign reviewer now. Update Jira JN-5612 → 'In Review'.",
   },
   {
-    level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): NEW run 28329867635 (another push 20:00→20:30 IDT) — e2e-smoke ❌ FAIL (12m15s) AGAIN. e2e-tests ⏳ PENDING. e2e-gpu-live ⏳ PENDING (run 28329867561). Third+ consecutive e2e-smoke failure. Diagnose root cause in run 28329867635.",
+    level: "yellow",
+    message: "🟠 PR #1606 (JN-5725, off-board): NEW run 28353163424 IN PROGRESS (another push ~09:00 IDT Jun 29). integration/tox/pre-commit/e2e-api/e2e-gpu-live all PENDING. Previous runs had persistent e2e-smoke failures — unknown if resolved.",
   },
   {
     level: "info",
-    message: "ℹ️ jn-5780-add-jn-project (Plan zone): NEW worktree, first detected this run. Different repo (jira-autofix). JN-5780 inaccessible in Jira. No actual PR. Created 08:32 IDT Jun 28. Joseph needs to clarify intent.",
+    message: "ℹ️ jn-5780-add-jn-project (Plan zone): different repo (jira-autofix). No actual PR. Needs Joseph clarification.",
   },
   {
     level: "yellow",
-    message: "🟡 PR #1615 (JN-5677, Revise): CI BLANK — only CodeRabbit in rollup (Jun 25 13:05 IDT). Prior integration failures (run 28167796913) no longer showing. Still CONFLICTING. Needs investigation + rebase.",
+    message: "🟡 PR #1615 (JN-5677, Revise): CI BLANK — only CodeRabbit in rollup (Jun 25 13:05 IDT). Still CONFLICTING. Needs rebase + CI re-trigger.",
   },
   {
     level: "yellow",
-    message: "🟡 PR #1622 (JN-5724, Publish): CONFLICTING — CI ALL PASS (run 28164293495). Rebase on main needed, then assign reviewer.",
-  },
-  {
-    level: "yellow",
-    message: "🟡 PR #1623 (JN-5616, Validate): CONFLICTING — CI ALL PASS (run 28153233486). Rebase on main needed, then assign reviewer.",
+    message: "🟡 PR #1623 (JN-5616, Respond): CONFLICTING — CI ALL PASS (run 28153233486). Rebase on main needed, then assign reviewer.",
   },
   {
     level: "red",

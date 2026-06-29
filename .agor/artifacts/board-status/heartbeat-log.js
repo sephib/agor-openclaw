@@ -22,6 +22,15 @@ export const HEARTBEAT_RUNS = [
   // },
   {
     type: "advance",
+    timestamp: "2026-06-29 09:30 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "PR #1622 APPROVED+MERGEABLE (rebased since last run!) CI run 28353212111 in progress; PR #1606 NEW run 28353163424 (another push); #1627 ALL PASS unchanged (assign reviewer); board state was 13h old (overnight sessions failed/missed); 6 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f12127aad7f9d87829a02/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-28 20:30 IDT",
     actions: 0,
     findings: 7,

@@ -2984,3 +2984,17 @@
 - Auto-advances: none
 - Flags: 7 — **#1627 CI ALL PASS, assign reviewer NOW** (high priority); **#1606 e2e-gpu-live only FAIL** (nox+tox de-escalated — transient); #1622/#1623 CONFLICTING/PASS; #1615 CI blank; #1588 FAIL+stale; JN-5612 Jira mismatch
 - Next: Watch PR #1606 e2e-smoke result (run 28323554940). Joseph to assign reviewer to #1627. Update JN-5612 Jira → "In Review". Start ingest session for jn-5244-cli-flags. Joseph to rebase #1622/#1623. Clarify jn-5780-add-jn-project.
+
+## 09:30 IDT — Weekday Daytime Advance Heartbeat (2026-06-29)
+
+**Session:** 019f1212-7aad | http://127.0.0.1:3030/ui/s/019f12127aad7f9d87829a02/
+
+> ⚠️ BOARD_STATE.md was 13 hours old — performing full refresh. Previous session at 09:00 IDT Jun 29 FAILED. Overnight/weekend sessions between 20:30 Jun 28 and 09:30 Jun 29 did not commit.
+
+- PRs checked: #1627 (OPEN, MERGEABLE, REVIEW_REQUIRED, CI ALL PASS run 28318509109 — unchanged), #1622 (OPEN, **MERGEABLE, APPROVED** — rebased! New CI run 28353212111 IN PROGRESS), #1623 (OPEN, CONFLICTING, ALL PASS run 28153233486 — unchanged), #1615 (OPEN, CONFLICTING, CI blank — unchanged), #1588 (OPEN, CONFLICTING, 2 FAIL pre-commit run 27933817996 — unchanged), #1596 (DRAFT, CONFLICTING — unchanged), #1606 off-board (OPEN, MERGEABLE, **NEW run 28353163424 IN PROGRESS** — another push ~09:00 IDT Jun 29; integration/tox/pre-commit/e2e-api/e2e-gpu-live all PENDING)
+- Merges detected: none — Step 1 sweep confirmed no new merges since Jun 28 20:30 IDT
+- CI changes: **🎉 PR #1622 APPROVED+MERGEABLE** — major change. Was CONFLICTING+REVIEW_REQUIRED. Now rebased and approved! CI run 28353212111 triggered. **🟠 PR #1606 NEW run 28353163424** — another push since last night; all major checks pending. PR #1627 unchanged (ALL PASS).
+- Jira: JN-5612 still "In Progress" — mismatch persists. All others unchanged.
+- Auto-advances: none
+- Flags: 6 — **#1622 APPROVED+MERGEABLE, watch CI** (high priority); **#1627 CI ALL PASS, assign reviewer NOW** (high priority); **#1606 new run in progress** (e2e history: persistent failures); #1623 CONFLICTING; #1615 CI blank; #1588 FAIL+stale
+- Next: Watch PR #1622 CI run 28353212111 — if ALL PASS, merge immediately (already APPROVED). Assign reviewer to #1627. Update JN-5612 Jira → "In Review". Watch PR #1606 e2e result. Joseph to rebase #1623. Start ingest session for jn-5244-cli-flags.
