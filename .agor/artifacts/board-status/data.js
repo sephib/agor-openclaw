@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-29 14:00 IDT";
+export const LAST_UPDATED = "2026-06-29 14:30 IDT";
 
 export const WORKTREES = [
   {
@@ -262,8 +262,8 @@ export const ALERTS = [
     message: "🔴 PR #1615 (JN-5677, Respond): APPROVED ✅ + MERGEABLE ✅ BUT CI FAILING — run 28366765871: e2e-api ❌ (3m23s), e2e-tests ❌ (3s), integration ❌ (2m56s), integration-tests ❌ (2s). Rebase fixed conflict but uncovered failures. Fix CI to merge!",
   },
   {
-    level: "yellow",
-    message: "🟡 PR #1606 (JN-5725, off-board): new CI run 28366983945 IN PROGRESS — e2e-api ⏳, e2e-gpu-live ⏳, pre-commit-run ⏳ pending. Watching (prior run had e2e-smoke ❌ + e2e-tests ❌).",
+    level: "red",
+    message: "🔴 PR #1606 (JN-5725, off-board): CI run 28366983945 COMPLETE — e2e-api ✅, e2e-gpu-live ✅ PASS but e2e-smoke ❌ (5m28s) + e2e-tests ❌ (3s) FAIL. Persistent across 3+ runs. Owner must diagnose root cause.",
   },
   {
     level: "yellow",

@@ -4,6 +4,19 @@
 
 ---
 
+## 14:30 IDT — Weekday Daytime Advance Heartbeat (2026-06-29)
+
+**Session:** 019f1324-f529 | http://127.0.0.1:3030/ui/s/019f1324f529780e8d3160c0/
+- PRs checked: #1615 (OPEN MERGEABLE APPROVED, CI run 28366765871 FAILING), #1588 (OPEN CONFLICTING), #1596 (DRAFT OPEN CONFLICTING), #1606 (OPEN MERGEABLE, CI run 28366983945 COMPLETE)
+- Merges detected: none (no new merges since #1623 at 13:45 IDT)
+- CI changes: **#1606 CI run 28366983945 COMPLETE** — e2e-api ✅ (4m1s), e2e-gpu-live ✅ (10m22s) PASS but **e2e-smoke ❌ (5m28s) + e2e-tests ❌ (3s) FAIL** (were pending at 14:00). Pattern: e2e-smoke + e2e-tests persist across 3+ runs. **#1615 unchanged** — same run 28366765871, same 4 failures.
+- Jira: JN-5612 still "In Progress", JN-5616 still "In Review", JN-5724 still "In Review" — 3 mismatches persist.
+- Auto-advances: 0
+- Flags: 6 (#1615 CI FAILING+APPROVED; #1606 e2e-smoke+e2e-tests FAIL persistent; #1588 pre-commit FAIL+CONFLICTING; JN-5612 Jira mismatch; JN-5616 Jira mismatch; JN-5724 Jira mismatch)
+- Next: Owner of #1606 diagnose root cause of e2e-smoke+e2e-tests (persistent). Owner of #1615 diagnose e2e-api/integration failures. Update 3 Jira mismatches (JN-5612/5616/5724) to 'Done'.
+
+---
+
 ## 13:00 IDT — Weekday Daytime Advance Heartbeat (2026-06-29)
 
 **Session:** 019f12ee-0649 | http://127.0.0.1:3030/ui/s/019f12ee0649744f90280f22/

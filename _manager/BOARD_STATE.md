@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-29 14:00 IDT (advance heartbeat)*
+*Last updated: 2026-06-29 14:30 IDT (advance heartbeat)*
 
 ---
 
@@ -59,18 +59,18 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | run 28366983945 **IN PROGRESS**: atlas-validate ✅, check-changes ✅, integration ✅, integration-tests ✅, nox ✅, tox-run ✅ — **e2e-api ⏳, e2e-gpu-live ⏳, pre-commit-run ⏳ PENDING** (new run after prior e2e-smoke ❌ + e2e-tests ❌ failures) | OPEN, MERGEABLE | 🟡 New CI run in progress (28366983945) — watchin e2e-api + e2e-gpu-live + pre-commit-run. Previous run had e2e-smoke + e2e-tests failing. |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | run 28366983945 **COMPLETE**: e2e-api ✅ (4m1s), e2e-gpu-live ✅ (10m22s), integration ✅, integration-tests ✅, nox ✅, pre-commit ✅, tox ✅ — **e2e-smoke ❌ (5m28s), e2e-tests ❌ (3s) FAIL** | OPEN, MERGEABLE | 🔴 CI run 28366983945 COMPLETE but **e2e-smoke ❌ + e2e-tests ❌** still failing. Persistent across 3+ runs. e2e-api + e2e-gpu-live now PASS. Owner must diagnose e2e-smoke + e2e-tests root cause. |
 
 ---
 
-## Key Changes Since Last Run (13:00 IDT Jun 29)
+## Key Changes Since Last Run (14:00 IDT Jun 29)
 
 | What observed | Status |
 |---|---|
-| **PR #1623 (JN-5616) MERGED** ✅ | Merged at 13:45 IDT — detected via Step 3. `jn-5616-replace-find-project-root` archived (autonomous action, 14:00 IDT). |
-| **PR #1615 MAJOR CHANGE** | Was: OPEN CONFLICTING, CI blank. Now: OPEN MERGEABLE APPROVED + CI FAILING (e2e-api ❌, e2e-tests ❌, integration ❌, integration-tests ❌ — run 28366765871). Rebase resolved conflict but uncovered failures. |
-| **PR #1606: new CI run 28366983945** | New run after prior e2e-smoke/e2e-tests failures. Currently IN PROGRESS — e2e-api/gpu-live/pre-commit-run pending. |
-| **JN-5616 Jira mismatch** | PR #1623 MERGED — Jira JN-5616 still "In Review" → needs "Done". |
+| **PR #1606 CI run 28366983945 COMPLETE** | Was IN PROGRESS at 14:00. Now DONE: e2e-api ✅, e2e-gpu-live ✅ — but **e2e-smoke ❌ (5m28s), e2e-tests ❌ (3s) FAIL**. Persistent pattern across 3+ runs. 🔴 |
+| **PR #1615 unchanged** | Still OPEN MERGEABLE APPROVED + CI FAILING (run 28366765871 — e2e-api ❌, e2e-tests ❌, integration ❌, integration-tests ❌). No new run triggered. |
+| **No new merges** | Nothing merged since #1623 at 13:45 IDT. |
+| **Jira mismatches unchanged** | JN-5612 "In Progress", JN-5616 "In Review", JN-5724 "In Review" — all 3 still showing wrong status. |
 | **#1588 unchanged** | Still CONFLICTING, pre-commit FAIL. |
 
 ---
@@ -97,14 +97,14 @@ PR [#1615](https://github.com/Jounce-IO/jounce/pull/1615): `feat(jbenchmark): hi
 
 ---
 
-### 🔴 PR #1606 (JN-5725, off-board) — new CI run 28366983945 in progress
+### 🔴 PR #1606 (JN-5725, off-board) — CI run 28366983945 COMPLETE, e2e-smoke + e2e-tests FAIL
 
 PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer): integrate log analyzer into experiment-workflow`
 - OPEN, **MERGEABLE** ✅
-- New CI run 28366983945 **IN PROGRESS**: atlas-validate ✅, check-changes ✅, integration ✅, integration-tests ✅, nox ✅, tox-run ✅ — e2e-api ⏳, e2e-gpu-live ⏳, pre-commit-run ⏳ PENDING
-- Previous run 28361650415 had: e2e-gpu-live ✅ (breakthrough) + e2e-api ✅ but e2e-smoke ❌ + e2e-tests ❌
-- Jira [JN-5725](https://redhat.atlassian.net/browse/JN-5725): Done (Unassigned)
-- **Action needed:** Watch e2e-api + e2e-gpu-live results in new run.
+- CI run 28366983945 **COMPLETE**: e2e-api ✅ (4m1s), e2e-gpu-live ✅ (10m22s), integration ✅, integration-tests ✅, nox ✅, pre-commit ✅, tox ✅ — **e2e-smoke ❌ (5m28s), e2e-tests ❌ (3s) FAIL**
+- Pattern: e2e-smoke + e2e-tests fail across 3+ CI runs; e2e-api and e2e-gpu-live now both consistently PASS
+- Jira [JN-5725](https://redhat.atlassian.net/browse/JN-5725): Done (Unassigned) ✅
+- **Action needed:** Diagnose root cause of persistent e2e-smoke + e2e-tests failures. These 2 are the only remaining blockers.
 
 ---
 
