@@ -31,6 +31,15 @@ export const HEARTBEAT_RUNS = [
   },
   {
     type: "advance",
+    timestamp: "2026-06-29 10:00 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "PR #1622 CI run 28353212111 almost complete (only e2e-api PENDING; already APPROVED+MERGEABLE); PR #1606 run 28353163424 major breakthrough (nox/tox/pre-commit all now PASS; only e2e-smoke/e2e-gpu-live PENDING); #1627 ALL PASS unchanged; 6 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f122df2ae7e969c5cf4c3/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-28 20:30 IDT",
     actions: 0,
     findings: 7,

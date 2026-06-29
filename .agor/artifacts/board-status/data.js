@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-29 09:30 IDT";
+export const LAST_UPDATED = "2026-06-29 10:00 IDT";
 
 export const WORKTREES = [
   {
@@ -10,8 +10,8 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1622",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1622",
-    status: "🎉 PR #1622 APPROVED ✅ + MERGEABLE — rebased since last run! New CI run 28353212111 IN PROGRESS (integration/tox/pre-commit/e2e-api pending). If CI passes, ready to merge immediately.",
-    blockedOn: "CI run in progress",
+    status: "🎉 PR #1622 APPROVED ✅ + MERGEABLE — CI run 28353212111 almost complete: integration ✅, tox ✅, pre-commit-run ✅, nox ✅, pre-commit ✅ all done. Only e2e-api ⏳ PENDING. If e2e-api PASS → ALL PASS → merge immediately.",
+    blockedOn: "e2e-api pending",
     blockedType: "active",
     sessionUrl: "http://localhost:3030/ui/s/019ef3e3ea0e734d882e878e/",
     sessionLabel: "publish session (complete)",
@@ -242,7 +242,7 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "green",
-    message: "🎉 PR #1622 (JN-5724, Publish): APPROVED ✅ + MERGEABLE — rebased since last run! New CI run 28353212111 IN PROGRESS. If CI passes, ready to merge immediately.",
+    message: "🎉 PR #1622 (JN-5724, Publish): APPROVED ✅ + MERGEABLE — CI run 28353212111 almost complete: integration ✅, tox ✅, pre-commit-run ✅, nox ✅ all PASS. Only e2e-api ⏳ PENDING. Watch for e2e-api PASS → merge.",
   },
   {
     level: "green",
@@ -250,7 +250,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "🟠 PR #1606 (JN-5725, off-board): NEW run 28353163424 IN PROGRESS (another push ~09:00 IDT Jun 29). integration/tox/pre-commit/e2e-api/e2e-gpu-live all PENDING. Previous runs had persistent e2e-smoke failures — unknown if resolved.",
+    message: "🟠 PR #1606 (JN-5725, off-board): Run 28353163424 — major progress: e2e-api ✅, integration ✅, nox ✅, tox ✅, pre-commit ✅ all PASS. Only e2e-smoke ⏳ + e2e-gpu-live ⏳ PENDING — the historically failing checks. Watch for e2e-smoke result.",
   },
   {
     level: "info",

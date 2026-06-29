@@ -2998,3 +2998,15 @@
 - Auto-advances: none
 - Flags: 6 — **#1622 APPROVED+MERGEABLE, watch CI** (high priority); **#1627 CI ALL PASS, assign reviewer NOW** (high priority); **#1606 new run in progress** (e2e history: persistent failures); #1623 CONFLICTING; #1615 CI blank; #1588 FAIL+stale
 - Next: Watch PR #1622 CI run 28353212111 — if ALL PASS, merge immediately (already APPROVED). Assign reviewer to #1627. Update JN-5612 Jira → "In Review". Watch PR #1606 e2e result. Joseph to rebase #1623. Start ingest session for jn-5244-cli-flags.
+
+## 10:00 IDT — Weekday Daytime Advance Heartbeat (2026-06-29)
+
+**Session:** 019f122d-f2ae | http://127.0.0.1:3030/ui/s/019f122df2ae7e969c5cf4c3/
+
+- PRs checked: #1627 (OPEN, MERGEABLE, REVIEW_REQUIRED, CI ALL PASS run 28318509109 — unchanged), #1622 (OPEN, MERGEABLE, APPROVED — run 28353212111 PROGRESSED: integration ✅, tox ✅, pre-commit-run ✅, nox ✅, pre-commit ✅ all done; only e2e-api ⏳ PENDING), #1623 (OPEN, CONFLICTING — unchanged), #1615 (OPEN, CONFLICTING, CI blank — unchanged), #1588 (OPEN, CONFLICTING, 2 FAIL pre-commit run 27933817996 — unchanged), #1596 (DRAFT, CONFLICTING — unchanged), #1606 off-board (OPEN, MERGEABLE, run 28353163424 MAJOR PROGRESS: e2e-api ✅ 4m7s, integration ✅, nox ✅, tox ✅, pre-commit-run ✅ 4m47s — all historically failing checks now PASS; only e2e-smoke ⏳ + e2e-gpu-live ⏳ PENDING)
+- Merges detected: none — Step 1 sweep confirmed no new merges since 09:30 IDT Jun 29
+- CI changes: **PR #1622 run 28353212111 significantly progressed** — was IN PROGRESS with most pending; now mostly complete, only e2e-api remaining. **PR #1606 run 28353163424 major breakthrough** — nox/tox/pre-commit-run all now PASS (were failing in prior runs); only e2e-smoke/e2e-gpu-live still pending. PR #1627 unchanged (ALL PASS).
+- Jira: JN-5612 still "In Progress" — mismatch persists. JN-5724 "In Review" ✅. JN-5616 "In Review" ✅.
+- Auto-advances: none
+- Flags: 6 — **#1622 e2e-api PENDING, watch** (near-complete CI, already APPROVED); **#1606 e2e-smoke/e2e-gpu-live PENDING** (best run yet — most checks green); **#1627 assign reviewer NOW**; #1623 CONFLICTING; #1615 CI blank; JN-5612 Jira mismatch
+- Next: Watch PR #1622 e2e-api result — if PASS, merge immediately. Watch PR #1606 e2e-smoke — if PASS, finally unblocked. Joseph to assign reviewer to #1627. Update JN-5612 Jira → "In Review".
