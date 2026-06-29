@@ -1,23 +1,6 @@
-export const LAST_UPDATED = "2026-06-29 10:30 IDT";
+export const LAST_UPDATED = "2026-06-29 11:00 IDT";
 
 export const WORKTREES = [
-  {
-    ticket: "JN-5612",
-    ticketUrl: "https://redhat.atlassian.net/browse/JN-5612",
-    title: "Fix github.GITHUB_SHA → github.sha in all workflow run-name fields",
-    branch: "jn-5612-fix-github-sha",
-    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5612-fix-github-sha",
-    zone: "Publish",
-    pr: "#1627",
-    prUrl: "https://github.com/Jounce-IO/jounce/pull/1627",
-    status: "🎉 PR #1627 APPROVED ✅ + MERGEABLE — NEW CI run 28355749941 IN PROGRESS (triggered after #1622 merge): integration ✅, check-changes ✅, atlas-validate ✅ — e2e-api ⏳, pre-commit-run ⏳, tox-run ⏳ PENDING. Watch → if ALL PASS, merge immediately. ⚠️ Jira still 'In Progress' → update to 'In Review'.",
-    blockedOn: "CI pending; Jira mismatch",
-    blockedType: "active",
-    sessionUrl: null,
-    sessionLabel: null,
-    recentSessions: [],
-    lastActive: "2026-06-29 10:30 IDT",
-  },
   {
     ticket: "JN-5616",
     ticketUrl: "https://redhat.atlassian.net/browse/JN-5616",
@@ -27,7 +10,7 @@ export const WORKTREES = [
     zone: "Respond",
     pr: "#1623",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1623",
-    status: "🟡 PR #1623 CONFLICTING — CI ALL PASS (run 28153233486 unchanged). Rebase on main needed before merge.",
+    status: "🟡 PR #1623 CONFLICTING (mergeable=UNKNOWN — GitHub recomputing) — CI ALL PASS (run 28153233486 unchanged since Jun 25). Rebase on main needed before merge.",
     blockedOn: "Merge conflict with main (since Jun 25 15:32 IDT)",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ef405c3e3746c900eac40/",
@@ -80,7 +63,7 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1588",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1588",
-    status: "🔴 pre-commit FAIL (run 27933817996). PR now CONFLICTING. Fix pre-commit + rebase, then assign reviewer. Jira should be 'In Review'.",
+    status: "🔴 pre-commit FAIL (run 27933817996). PR CONFLICTING (mergeable=UNKNOWN). Fix pre-commit + rebase, then assign reviewer. Jira should be 'In Review'.",
     blockedOn: "pre-commit FAIL + merge conflict",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ed01e5624752fbade0eab/",
@@ -195,6 +178,15 @@ export const WORKTREES = [
 
 export const MERGED = [
   {
+    ticket: "JN-5612",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5612",
+    title: "fix(ci): replace github.GITHUB_SHA with github.sha in workflow run-names",
+    pr: "#1627",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1627",
+    mergedDate: "2026-06-29",
+    note: "Merged 10:42 IDT Jun 29 — worktree archived 11:00 IDT. Jira still 'In Progress' → needs 'Done'.",
+  },
+  {
     ticket: "JN-5724",
     ticketUrl: "https://redhat.atlassian.net/browse/JN-5724",
     title: "fix(lychee): remove stale exclude_path for non-existent directory",
@@ -280,7 +272,7 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "green",
-    message: "🎉 PR #1627 (JN-5612, Publish): APPROVED ✅ + MERGEABLE — NEW CI run 28355749941 IN PROGRESS: integration ✅, check-changes ✅, atlas-validate ✅ — e2e-api ⏳, pre-commit-run ⏳, tox-run ⏳ PENDING. Watch → if ALL PASS, merge immediately.",
+    message: "🎉 PR #1627 (JN-5612) MERGED at 10:42 IDT Jun 29 ✅ — worktree jn-5612-fix-github-sha archived. Jira JN-5612 still 'In Progress' → update to 'Done'.",
   },
   {
     level: "green",
@@ -288,7 +280,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "🟠 PR #1606 (JN-5725, off-board): Now CONFLICTING (was MERGEABLE at 10:00 IDT). Run 28353163424: e2e-gpu-live ❌ FAIL (30m5s) — e2e-smoke ⏳ still pending. Needs rebase on main + e2e-gpu-live investigation.",
+    message: "🟠 PR #1606 (JN-5725, off-board): CONFLICTING. Run 28353163424 COMPLETE — all non-e2e checks PASS; e2e-gpu-live ❌ FAIL (30m5s); e2e-smoke ⏳ still PENDING. Needs rebase on main + e2e-gpu-live investigation.",
   },
   {
     level: "info",
@@ -300,7 +292,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "🟡 PR #1623 (JN-5616, Respond): CONFLICTING — CI ALL PASS (run 28153233486). Rebase on main needed, then assign reviewer.",
+    message: "🟡 PR #1623 (JN-5616, Respond): CONFLICTING (mergeable=UNKNOWN — GitHub recomputing) — CI ALL PASS (run 28153233486). Rebase on main needed, then assign reviewer.",
   },
   {
     level: "red",
@@ -308,11 +300,11 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⚠️ JN-5724 Jira mismatch: PR #1622 MERGED Jun 29 — Jira still 'In Review'. Update → 'Done'.",
+    message: "⚠️ JN-5612 Jira mismatch: PR #1627 MERGED Jun 29 — Jira still 'In Progress'. Update → 'Done'.",
   },
   {
     level: "yellow",
-    message: "⚠️ JN-5612 Jira mismatch: PR #1627 APPROVED — Jira still 'In Progress'. Update → 'In Review'.",
+    message: "⚠️ JN-5724 Jira mismatch: PR #1622 MERGED Jun 29 — Jira still 'In Review'. Update → 'Done'.",
   },
   {
     level: "yellow",

@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-29 10:30 IDT (advance heartbeat)*
+*Last updated: 2026-06-29 11:00 IDT (advance heartbeat)*
 
 ---
 
@@ -8,10 +8,9 @@
 
 | Branch | Jira | Zone | Jira Status | PR | CI | Review | Flags |
 |--------|------|------|-------------|-----|-----|--------|-------|
-| jn-5612-fix-github-sha | [JN-5612](https://redhat.atlassian.net/browse/JN-5612) | Publish | In Progress ⚠️ | [#1627](https://github.com/Jounce-IO/jounce/pull/1627) **OPEN** MERGEABLE | ⏳ **NEW run 28355749941 IN PROGRESS** — integration ✅, integration-tests ✅, atlas-validate ✅, check-changes ✅ — **e2e-api ⏳, pre-commit-run ⏳, tox-run ⏳ PENDING** | **APPROVED** ✅ | 🎉 **APPROVED** (new since 10:00 IDT)! New CI run triggered after #1622 merge. Watch for ALL PASS → merge immediately. Jira still "In Progress" ⚠️ |
-| jn-5616-replace-find-project-root | [JN-5616](https://redhat.atlassian.net/browse/JN-5616) | **Respond** | In Review | [#1623](https://github.com/Jounce-IO/jounce/pull/1623) **OPEN** ⚠️ CONFLICTING | ✅ **ALL PASS** (run 28153233486, unchanged since Jun 25) | REVIEW_REQUIRED | 🟡 **CONFLICTING — needs rebase.** CI still ALL PASS. Note: zone is Respond in Agor (was shown as Validate in prior log). |
-| jn-5677-dev-historical-mode-notebook-cells | [JN-5677](https://redhat.atlassian.net/browse/JN-5677) | **Revise** | Done | [#1615](https://github.com/Jounce-IO/jounce/pull/1615) **OPEN** CONFLICTING | ⚠️ **CI CHECKS GONE** — only CodeRabbit showing (no run data since Jun 25 13:05 IDT) | ="" (no decision) | 🟡 **CI BLANK** — prior integration failures no longer in rollup. Still CONFLICTING. |
-| jn-5546-docs-document-module-layout-convention-and-3 | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) | Code Review | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) OPEN CONFLICTING | ❌ **2 FAIL** (pre-commit + pre-commit-run, run 27933817996, stale) | reviewDecision="" | 🔴 **STALE** — unchanged since Jun 17. Pre-commit FAIL, CONFLICTING. Jira should be "In Review". |
+| jn-5616-replace-find-project-root | [JN-5616](https://redhat.atlassian.net/browse/JN-5616) | Respond | In Review | [#1623](https://github.com/Jounce-IO/jounce/pull/1623) **OPEN** CONFLICTING (mergeable=UNKNOWN) | ✅ **ALL PASS** (run 28153233486, unchanged since Jun 25) | REVIEW_REQUIRED | 🟡 **CONFLICTING — needs rebase.** CI still ALL PASS. |
+| jn-5677-dev-historical-mode-notebook-cells | [JN-5677](https://redhat.atlassian.net/browse/JN-5677) | **Respond** | Done | [#1615](https://github.com/Jounce-IO/jounce/pull/1615) **OPEN** CONFLICTING | ⚠️ **CI CHECKS GONE** — only CodeRabbit showing (no run data since Jun 25 13:05 IDT) | "" (no decision) | 🟡 **CI BLANK** — only CodeRabbit in rollup. Still CONFLICTING. |
+| jn-5546-docs-document-module-layout-convention-and-3 | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) | Code Review | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) OPEN CONFLICTING (mergeable=UNKNOWN) | ❌ **2 FAIL** (pre-commit + pre-commit-run, run 27933817996, stale) | reviewDecision="" | 🔴 **STALE** — unchanged since Jun 17. Pre-commit FAIL, CONFLICTING. Jira should be "In Review". |
 | internal-cr-system | — | Code | — | — | — | — | ⚠️ No PR. No Jira. Stagnant since Jun 18. filesystem_status: failed (git lock) |
 | jn-5695-db-connect-script | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) | BLOCKED | Backlog | [#1596](https://github.com/Jounce-IO/jounce/pull/1596) DRAFT OPEN CONFLICTING | — | — | 🔴 CONFLICTING; frozen |
 | jn-5672-dal-ext-dashboard | [JN-5672](https://redhat.atlassian.net/browse/JN-5672) | BLOCKED | Backlog | — | — | — | ℹ️ On hold |
@@ -22,7 +21,10 @@
 **Untracked worktrees on board:**
 - `model-packaging-cr` (Code Review zone, model-packaging-pipeline repo, no PR, no sessions, last used Jun 15) — still on board. No PR to check; needs manual decision.
 
-**Archived This Session (10:30 IDT Jun 29):**
+**Archived This Session (11:00 IDT Jun 29):**
+- jn-5612-fix-github-sha (archived — PR [#1627](https://github.com/Jounce-IO/jounce/pull/1627) MERGED 10:42 IDT Jun 29) ✅
+
+**Archived Previous (10:30 IDT Jun 29):**
 - jn-5724-lychee-precommit-flaky (archived — PR [#1622](https://github.com/Jounce-IO/jounce/pull/1622) MERGED 10:17 IDT Jun 29) ✅
 
 **Archived Previous (11:30 IDT Jun 23):**
@@ -55,53 +57,48 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | ⏳ **NEW run 28353163424 IN PROGRESS** (09:30 IDT Jun 29 — another push): integration, tox, pre-commit-run, e2e-api all ⏳ PENDING. atlas-validate ✅, check-changes ✅. e2e-gpu-live ⏳ PENDING (run 28353163362). | OPEN, MERGEABLE | 🟠 **Another new push/run this morning** (since last run at 20:30 Jun 28). Previous runs had persistent e2e-smoke failures. e2e checks all pending — unknown if resolved. |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | run 28353163424 **COMPLETE**: atlas-validate ✅, check-changes ✅, e2e-api ✅, integration ✅, integration-tests ✅, nox ✅, pre-commit ✅, pre-commit-run ✅, tox-run ✅ — **e2e-gpu-live ❌ FAIL (30m5s)** — **e2e-smoke ⏳ still PENDING** | OPEN, CONFLICTING | 🟠 e2e-gpu-live FAIL (persistent). e2e-smoke still pending — unknown if it will pass. Still CONFLICTING. Needs rebase + e2e-gpu-live investigation. |
 
 ---
 
-## Key Changes Since Last Run (10:00 IDT Jun 29)
+## Key Changes Since Last Run (10:30 IDT Jun 29)
 
 | What observed | Status |
 |---|---|
-| **🎉 PR #1622 MERGED** | Merged at 10:17 IDT (07:17 UTC) by sephib. Worktree jn-5724-lychee-precommit-flaky **ARCHIVED** ✅ (autonomous). JN-5724 still "In Review" — Jira mismatch, should be "Done". |
-| **🎉 PR #1627 now APPROVED** | Reviewer approved since 10:00 IDT! New CI run 28355749941 triggered (likely after #1622 merge). integration ✅, check-changes ✅, atlas-validate ✅ — e2e-api ⏳, pre-commit-run ⏳, tox-run ⏳ PENDING. |
-| **🟠 PR #1606 now CONFLICTING** | Was MERGEABLE at 10:00 IDT; now CONFLICTING (conflict introduced by recent merges). Also: e2e-gpu-live ❌ FAIL (30m5s) in run 28353163424 — e2e-smoke ⏳ still pending. |
-| **JN-5612 Jira mismatch (persists)** | Still "In Progress" — should be "In Review" now PR is APPROVED. |
-| **JN-5724 new Jira mismatch** | Still "In Review" — PR #1622 MERGED → should be "Done". |
-| **#1623 unchanged** | Still CONFLICTING, CI ALL PASS (run 28153233486). Needs rebase. |
-| **#1615 unchanged** | CI still blank. Still CONFLICTING. |
-| **#1588 unchanged** | Still 2 FAIL pre-commit (run 27933817996). Stale since Jun 17. |
+| **🎉 PR #1627 MERGED** | Merged at 10:42 IDT (07:42 UTC) by sephib. Worktree jn-5612-fix-github-sha **ARCHIVED** ✅ (autonomous). JN-5612 still "In Progress" — Jira mismatch, should be "Done". |
+| **PR #1623 mergeable=UNKNOWN** | GitHub recomputing (was CONFLICTING — may be rechecking after recent merges). CI still ALL PASS (run 28153233486 unchanged). |
+| **PR #1606 run 28353163424 COMPLETED** | All non-e2e checks PASS. e2e-gpu-live ❌ FAIL (30m5s). e2e-smoke ⏳ still PENDING. Still CONFLICTING. |
+| **#1615, #1588 unchanged** | No changes. |
 
 ---
 
 ## Attention Items
 
+### 🎉 PR #1627 (JN-5612, Publish) — MERGED at 10:42 IDT Jun 29 ✅
+
+PR [#1627](https://github.com/Jounce-IO/jounce/pull/1627): `fix(ci): JN-5612 replace github.GITHUB_SHA with github.sha in workflow run-names` — **MERGED**
+- Worktree `jn-5612-fix-github-sha` **ARCHIVED** (autonomous action, 11:00 IDT)
+- Jira [JN-5612](https://redhat.atlassian.net/browse/JN-5612): still **"In Progress"** ⚠️ — **should be "Done"**
+- **Action needed:** Update Jira JN-5612 → "Done".
+
+---
+
 ### 🎉 PR #1622 (JN-5724) — MERGED at 10:17 IDT Jun 29 ✅
 
 PR [#1622](https://github.com/Jounce-IO/jounce/pull/1622): `fix(lychee): remove stale exclude_path for non-existent directory (JN-5724)` — **MERGED**
-- Worktree `jn-5724-lychee-precommit-flaky` **ARCHIVED** (autonomous action, 10:30 IDT)
+- Worktree `jn-5724-lychee-precommit-flaky` **ARCHIVED** (10:30 IDT autonomous)
 - Jira [JN-5724](https://redhat.atlassian.net/browse/JN-5724): still **"In Review"** ⚠️ — **should be "Done"**
 - **Action needed:** Update Jira JN-5724 → "Done".
 
 ---
 
-### 🎉 PR #1627 (JN-5612, Publish) — APPROVED, new CI run in progress
-
-PR [#1627](https://github.com/Jounce-IO/jounce/pull/1627): `fix(ci): JN-5612 replace github.GITHUB_SHA with github.sha in workflow run-names`
-- OPEN, MERGEABLE (no git conflict), **APPROVED** ✅ (new since 10:00 IDT!)
-- **NEW CI run 28355749941** (triggered after #1622 merged) — integration ✅, integration-tests ✅, atlas-validate ✅, check-changes ✅ — **e2e-api ⏳, pre-commit-run ⏳, tox-run ⏳ PENDING**
-- Jira [JN-5612](https://redhat.atlassian.net/browse/JN-5612): **In Progress** ⚠️ — should be "In Review"
-- **Action needed:** (1) Watch CI run 28355749941 — if ALL PASS → **merge immediately** (already APPROVED + MERGEABLE). (2) Update Jira JN-5612 → "In Review".
-
----
-
-### 🟠 PR #1606 (JN-5725, off-board) — now CONFLICTING + e2e-gpu-live FAIL
+### 🟠 PR #1606 (JN-5725, off-board) — e2e-gpu-live FAIL + e2e-smoke PENDING + CONFLICTING
 
 PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer): integrate log analyzer into experiment-workflow`
-- OPEN, **CONFLICTING** (was MERGEABLE at 10:00 IDT — conflict introduced by recent merges to main)
-- Run 28353163424 completed: atlas-validate ✅, check-changes ✅, e2e-api ✅ (4m7s), integration ✅, integration-tests ✅, nox ✅, pre-commit ✅, pre-commit-run ✅, tox-run ✅ — **e2e-gpu-live ❌ FAIL (30m5s)** — **e2e-smoke ⏳ still PENDING**
+- OPEN, **CONFLICTING** (conflict from recent merges to main)
+- Run 28353163424 **COMPLETE**: atlas-validate ✅, check-changes ✅, e2e-api ✅, integration ✅, integration-tests ✅, nox ✅, pre-commit ✅, pre-commit-run ✅, tox-run ✅ — **e2e-gpu-live ❌ FAIL (30m5s)** — **e2e-smoke ⏳ still PENDING**
 - Jira [JN-5725](https://redhat.atlassian.net/browse/JN-5725): Done (Unassigned)
-- **Action needed:** (1) Rebase on main to fix CONFLICTING. (2) Investigate e2e-gpu-live failure — may be infra/transient. (3) Watch e2e-smoke result.
+- **Action needed:** (1) Wait for e2e-smoke result. (2) Investigate e2e-gpu-live failure. (3) Rebase on main to fix CONFLICTING.
 
 ---
 
@@ -129,7 +126,7 @@ PR [#1615](https://github.com/Jounce-IO/jounce/pull/1615): `feat(jbenchmark): hi
 
 PR [#1623](https://github.com/Jounce-IO/jounce/pull/1623): `refactor(jbenchmark): replace find_project_root() in tests with conftest fixtures (JN-5616)`
 - OPEN, CONFLICTING (since Jun 25 15:32 IDT), REVIEW_REQUIRED
-- CI: Run 28153233486 — **ALL checks ✅ PASS**
+- CI: Run 28153233486 — **ALL checks ✅ PASS** (unchanged)
 - Jira [JN-5616](https://redhat.atlassian.net/browse/JN-5616): In Review ✅
 - **Action needed:** Rebase on main. CI will re-run. Assign reviewer once green.
 
@@ -143,10 +140,10 @@ PR [#1588](https://github.com/Jounce-IO/jounce/pull/1588): 2 pre-commit checks F
 
 ---
 
-### ⚠️ Jira mismatches (2 new items)
+### ⚠️ Jira mismatches (2 items)
 
-- **JN-5724**: still "In Review" — PR #1622 **MERGED** Jun 29 → update to **"Done"**
-- **JN-5612**: still "In Progress" — PR #1627 **APPROVED + CI running** → update to **"In Review"**
+- **JN-5612**: still "In Progress" — PR #1627 **MERGED** Jun 29 10:42 IDT → update to **"Done"**
+- **JN-5724**: still "In Review" — PR #1622 **MERGED** Jun 29 10:17 IDT → update to **"Done"**
 
 ---
 
@@ -164,16 +161,6 @@ Branch `internal-cr-system` in Code zone — no PR, no Jira ticket. Stagnant sin
 
 ---
 
-### ⚠️ Jira mismatches (3 items)
-
-| Ticket | Jira Status | PR | Merged/State | Notes |
-|--------|-------------|-----|--------|-----------|
-| [JN-5724](https://redhat.atlassian.net/browse/JN-5724) | In Review | [#1622](https://github.com/Jounce-IO/jounce/pull/1622) | **MERGED** 10:17 IDT Jun 29 | Should be **"Done"** — update now |
-| [JN-5546](https://redhat.atlassian.net/browse/JN-5546) | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | OPEN, 2 CI FAIL + CONFLICTING | Should be "In Review" AND needs CI fix |
-| [JN-5612](https://redhat.atlassian.net/browse/JN-5612) | In Progress | [#1627](https://github.com/Jounce-IO/jounce/pull/1627) | OPEN, MERGEABLE, APPROVED | Should be "In Review" now PR is APPROVED |
-
----
-
 ## Sprint Tickets Without Board Worktrees
 
 | Ticket | Summary | Jira Status | Notes |
@@ -185,7 +172,7 @@ Branch `internal-cr-system` in Code zone — no PR, no Jira ticket. Stagnant sin
 | [JN-5728](https://redhat.atlassian.net/browse/JN-5728) | Fix e2e CI workflow gaps | **Backlog** | No worktree |
 
 *(JN-5244 removed — worktree jn-5244-cli-flags exists on board, Ingest zone)*
-*(JN-5612 removed — worktree jn-5612-fix-github-sha exists on board)*
+*(JN-5612 removed — PR #1627 MERGED, worktree archived 11:00 IDT Jun 29)*
 
 ---
 
@@ -193,6 +180,7 @@ Branch `internal-cr-system` in Code zone — no PR, no Jira ticket. Stagnant sin
 
 | Ticket | PR | Merged |
 |--------|----|--------|
+| [JN-5612](https://redhat.atlassian.net/browse/JN-5612) | [#1627](https://github.com/Jounce-IO/jounce/pull/1627) | Jun 29 10:42 IDT ✅ — worktree archived |
 | [JN-5724](https://redhat.atlassian.net/browse/JN-5724) | [#1622](https://github.com/Jounce-IO/jounce/pull/1622) | Jun 29 10:17 IDT ✅ — worktree archived |
 | JN-5762 | [#1624](https://github.com/Jounce-IO/jounce/pull/1624) | Jun 24 14:05 IDT ✅ |
 | JN-5759 | [#1619](https://github.com/Jounce-IO/jounce/pull/1619) | Jun 23 12:30 IDT ✅ (off-board, by another contributor) |

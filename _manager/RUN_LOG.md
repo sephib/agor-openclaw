@@ -4,6 +4,18 @@
 
 ---
 
+## 11:00 IDT — Weekday Daytime Advance Heartbeat (2026-06-29)
+
+**Session:** 019f1264-e481 | http://127.0.0.1:3030/ui/s/019f1264e48175329dd50504/
+- PRs checked: #1627 (MERGED 10:42 IDT — **NEW**), #1606 (OPEN, CONFLICTING, run 28353163424 COMPLETE), #1623 (OPEN, CONFLICTING/PASS), #1615 (OPEN, CI blank/CONFLICTING), #1588 (OPEN, 2 FAIL/CONFLICTING)
+- Merges detected: **PR #1627 MERGED 10:42 IDT** (07:42 UTC) — was shown APPROVED+IN_PROGRESS at last run; now confirmed merged
+- CI changes: **#1606 run 28353163424 COMPLETE** — atlas-validate ✅, check-changes ✅, e2e-api ✅, integration ✅, integration-tests ✅, nox ✅, pre-commit ✅, pre-commit-run ✅, tox-run ✅ — **e2e-gpu-live ❌ FAIL (30m5s)**, e2e-smoke ⏳ still PENDING. All other PRs static.
+- Auto-advances: 1 (archived jn-5612-fix-github-sha — PR #1627 MERGED)
+- Flags: 6 (JN-5612 Jira 'In Progress'→'Done' needed; JN-5724 Jira 'In Review'→'Done' needed; #1606 e2e-gpu-live FAIL + e2e-smoke pending + CONFLICTING; #1615 CI blank + CONFLICTING; #1623 CONFLICTING needs rebase; #1588 stale pre-commit FAIL)
+- Next: Watch #1606 e2e-smoke result. Update JN-5612 + JN-5724 Jira to 'Done'. Rebase #1623 + #1615 + #1588.
+
+---
+
 ## 20:30 IDT — Weekday Daytime Advance Heartbeat (2026-06-28)
 
 **Session:** 019f0f48-162b | http://127.0.0.1:3030/ui/s/019f0f48162b77618b0bdfed/

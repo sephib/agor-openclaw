@@ -1730,4 +1730,13 @@ export const HEARTBEAT_RUNS = [
     summary: "PR #1622 MERGED 10:17 IDT → worktree archived; PR #1627 APPROVED (new!) + NEW CI run 28355749941; PR #1606 now CONFLICTING + e2e-gpu-live FAIL; 6 findings",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f124969c47ac3b5b789fe/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-29 11:00 IDT",
+    actions: 1,
+    findings: 6,
+    status: "ok",
+    summary: "PR #1627 (JN-5612) MERGED 10:42 IDT → worktree jn-5612-fix-github-sha archived; PR #1606 run 28353163424 COMPLETE (all non-e2e PASS, e2e-gpu-live ❌ FAIL, e2e-smoke ⏳ pending); JN-5612+JN-5724 Jira mismatches (both need 'Done'); #1623 CONFLICTING/CI PASS unchanged; 6 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f1264e48175329dd50504/",
+  },
 ];
