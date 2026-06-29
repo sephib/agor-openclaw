@@ -4,6 +4,19 @@
 
 ---
 
+## 16:00 IDT — Weekday Daytime Advance Heartbeat (2026-06-29)
+
+**Session:** 019f1377-5c4a | http://127.0.0.1:3030/ui/s/019f13775c4a77038cca36f1/
+- PRs checked: #1606 (OPEN CONFLICTING, CI 28366983945 unchanged), #1588 (OPEN CONFLICTING, CI 27933817996 stale), #1596 (DRAFT OPEN CONFLICTING)
+- Merges detected: none — board static since 15:30 IDT
+- CI changes: none — #1606 same run 28366983945 (e2e-smoke ❌ + e2e-tests ❌), #1588 same stale run 27933817996 (pre-commit ❌)
+- Jira: JN-5612 "In Progress", JN-5616 "In Review", JN-5724 "In Review" — 3 mismatches unchanged
+- Auto-advances: 0
+- Flags: 6 (#1606 CONFLICTING+e2e-smoke/e2e-tests FAIL; #1588 pre-commit FAIL+CONFLICTING; JN-5612/JN-5616/JN-5724 Jira mismatches; jira-operations no zone)
+- Next: Owner of #1606 must rebase + diagnose e2e-smoke+e2e-tests. Update 3 Jira mismatches to 'Done'.
+
+---
+
 ## 15:30 IDT — Weekday Daytime Advance Heartbeat (2026-06-29)
 
 **Session:** 019f135b-e441 | http://127.0.0.1:3030/ui/s/019f135be4417f0aa24b59c6/

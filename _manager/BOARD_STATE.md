@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-29 15:30 IDT (advance heartbeat)*
+*Last updated: 2026-06-29 16:00 IDT (advance heartbeat)*
 
 ---
 
@@ -65,17 +65,15 @@
 
 ---
 
-## Key Changes Since Last Run (15:00 IDT Jun 29)
+## Key Changes Since Last Run (15:30 IDT Jun 29)
 
 | What observed | Status |
 |---|---|
-| **PR #1615 (JN-5677) MERGED** | Merged at 15:08 IDT Jun 29 — e2e-smoke ✅ (11m13s) + e2e-tests ✅ (3s) passed (were pending/failing); integration ❌ (2m56s) + integration-tests ❌ (4s) — **admin merge despite CI failures**. |
-| **Worktree jn-5677 archived** | Autonomous archive at 15:33 IDT — PR merged. |
-| **PR #1606 now CONFLICTING** | Changed from MERGEABLE to CONFLICTING — likely due to #1615 merging to main. Needs rebase. |
-| **CI #1606 unchanged** | Same run 28366983945 — e2e-smoke ❌ + e2e-tests ❌ persist. |
+| **Board fully static** | No new merges, no CI changes, no zone moves since 15:30 IDT. |
+| **PR #1606 unchanged** | Still CONFLICTING + e2e-smoke ❌ (5m28s) + e2e-tests ❌ (3s) — same run 28366983945, no new CI triggered. |
+| **PR #1588 unchanged** | Still CONFLICTING + pre-commit ❌ — same stale run 27933817996. |
 | **Jira mismatches unchanged** | JN-5612 "In Progress", JN-5616 "In Review", JN-5724 "In Review" — 3 still stale. |
-| **#1588 unchanged** | Still CONFLICTING + pre-commit FAIL. |
-| **JN-5677 Jira** | Status: Done ✅ — correct, no action needed. |
+| **model-packaging-cr confirmed** | Still on board (Code Review zone), no PR, no sessions, last used Jun 15. |
 
 ---
 

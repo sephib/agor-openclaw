@@ -22,6 +22,15 @@ export const HEARTBEAT_RUNS = [
   // },
   {
     type: "advance",
+    timestamp: "2026-06-29 16:00 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "Board fully static — no merges, no CI changes since 15:30 IDT. #1606 still CONFLICTING (e2e-smoke ❌ + e2e-tests ❌, run 28366983945). #1588 still CONFLICTING (pre-commit ❌). 3 Jira mismatches persist (JN-5612/JN-5616/JN-5724).",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f13775c4a77038cca36f1/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-29 14:30 IDT",
     actions: 0,
     findings: 6,
