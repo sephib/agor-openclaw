@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-29 12:00 IDT (advance heartbeat)*
+*Last updated: 2026-06-29 12:30 IDT (advance heartbeat)*
 
 ---
 
@@ -61,14 +61,14 @@
 
 ---
 
-## Key Changes Since Last Run (12:00 IDT Jun 29)
+## Key Changes Since Last Run (12:30 IDT Jun 29)
 
 | What observed | Status |
 |---|---|
-| **🎉 PR #1623 e2e-api PASSES** | CI run 28359653930: e2e-api ✅ PASS (3m21s). Only e2e-smoke ⏳ still pending. All other checks green. **Ready to assign reviewer once e2e-smoke clears.** |
-| **PR #1606 new CI run** | New run 28361650415 (replaced 28360438294): atlas-validate ✅, check-changes ✅, integration ✅, integration-tests ✅, nox ✅, pre-commit ✅, pre-commit-run ✅, tox-run ✅ — e2e-api ⏳ PENDING, e2e-gpu-live ⏳ PENDING. |
+| **Board fully static** | No new merges, no CI state changes since 12:00 IDT. |
+| **PR #1623 e2e-smoke still pending** | CI run 28359653930 unchanged — all PASS except e2e-smoke ⏳ (same as 12:00 IDT). |
+| **PR #1606 e2e-api + e2e-gpu-live still pending** | CI run 28361650415 unchanged — all other checks PASS; e2e-api ⏳ e2e-gpu-live ⏳ still pending. |
 | **#1615, #1588 unchanged** | #1615 still CONFLICTING, CI blank. #1588 still CONFLICTING, pre-commit FAIL. |
-| **No new merges** | PRs #1627 and #1622 remain in Recently Merged. No new merges detected. |
 | **Jira mismatches persist** | JN-5612 still "In Progress" (should be Done); JN-5724 still "In Review" (should be Done). |
 
 ---

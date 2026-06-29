@@ -22,6 +22,15 @@ export const HEARTBEAT_RUNS = [
   // },
   {
     type: "advance",
+    timestamp: "2026-06-29 12:30 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "Board fully static — no merges, no CI changes. #1623 e2e-smoke ⏳ still pending (run 28359653930 unchanged). #1606 e2e-api+e2e-gpu-live ⏳ still pending (run 28361650415 unchanged). JN-5612/JN-5724 Jira mismatches persist.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f12d28f4a7b7ba808d615/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-29 12:00 IDT",
     actions: 0,
     findings: 6,
