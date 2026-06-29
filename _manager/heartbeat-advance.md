@@ -175,6 +175,26 @@ Update `.agor/artifacts/board-status/data.js` to reflect current board state:
 - `MERGED` array (recently merged PRs)
 - `ALERTS` array (current red/yellow flags)
 
+For each worktree entry, maintain the `recentSessions` array (last 3–5 sessions, newest first).
+Each entry must include:
+
+```js
+recentSessions: [
+  {
+    sessionId: "019ef405c3e3746c900eac40",   // hex from session URL path
+    url: "http://127.0.0.1:3030/ui/s/<sessionId>/",
+    title: "respond",                          // phase name (ingest/plan/code/cr/respond)
+    status: "completed",                       // running | completed | failed | idle
+    timestamp: "2026-06-25 06:47 IDT",
+    outputFile: null,                          // e.g. "temp/respond-analysis001.md" or null
+  },
+  // ... older sessions follow
+],
+```
+
+When adding a new session at the start of a run, prepend it to `recentSessions` and trim to 5 entries.
+Keep the legacy `sessionUrl` and `sessionLabel` fields in sync with the most recent session for backward compatibility.
+
 Append to `.agor/artifacts/board-status/heartbeat-log.js` as well.
 
 ---

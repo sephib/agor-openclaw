@@ -18,12 +18,19 @@ const ZONE_COLORS = {
   BLOCKED: "#ffebee", "(floating)": "#f5f5f5",
 };
 
+const SESSION_STATUS_STYLES = {
+  running: { bg: "#e8f4fd", color: "#0969da", prefix: "⚡ " },
+  completed: { bg: "#f0f0f0", color: "#555", prefix: "" },
+  failed: { bg: "#ffeef0", color: "#cf222e", prefix: "✗ " },
+  idle: { bg: "#f0f0f0", color: "#555", prefix: "" },
+};
+
 const COLUMNS = [
   { key: "ticket", label: "Ticket", sortValue: (w) => w.ticket || "" },
   { key: "zone", label: "Zone", sortValue: (w) => w.zone },
   { key: "pr", label: "PR", sortValue: (w) => w.pr || "" },
   { key: "status", label: "Status", sortValue: (w) => w.status },
-  { key: "session", label: "Session", sortValue: (w) => w.sessionLabel || "" },
+  { key: "session", label: "Sessions", sortValue: (w) => (w.recentSessions && w.recentSessions[0]?.timestamp) || w.sessionLabel || "" },
   { key: "blockedOn", label: "Blocked On", sortValue: (w) => w.blockedType + (w.blockedOn || "") },
   { key: "lastActive", label: "Last Active", sortValue: (w) => w.lastActive || "" },
   { key: "actions", label: "Actions", sortValue: () => "" },
@@ -59,6 +66,42 @@ function SortHeader({ column, sortKey, sortDir, onSort }) {
   );
 }
 
+function SessionCell({ w }) {
+  const sessions = w.recentSessions && w.recentSessions.length > 0
+    ? w.recentSessions
+    : w.sessionUrl
+      ? [{ url: w.sessionUrl, title: w.sessionLabel || "session", status: "idle", sessionId: null, timestamp: null, outputFile: null }]
+      : [];
+
+  if (sessions.length === 0) {
+    return <span style={{ color: "#ccc", fontSize: 11 }}>—</span>;
+  }
+
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 3 }}>
+      {sessions.map((s, i) => {
+        const style = SESSION_STATUS_STYLES[s.status] || SESSION_STATUS_STYLES.idle;
+        return (
+          <div key={s.sessionId || i}>
+            <a
+              href={s.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              title={[s.timestamp, s.outputFile ? `Output: ${s.outputFile}` : null].filter(Boolean).join(" · ")}
+              style={{ display: "inline-block", padding: "2px 8px", borderRadius: 4, fontSize: 11, fontWeight: 500, background: style.bg, color: style.color, textDecoration: "none" }}
+            >
+              {style.prefix}{s.title || "session"}{s.outputFile ? " 📄" : ""}
+            </a>
+            {s.timestamp && (
+              <div style={{ fontSize: 10, color: "#aaa", marginTop: 1 }}>{s.timestamp}</div>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
 function Row({ w }) {
   const [copied, setCopied] = useState(false);
 
@@ -89,13 +132,7 @@ function Row({ w }) {
       </td>
       <td style={{ padding: "8px 6px", fontSize: 12, color: "#444" }}>{w.status}</td>
       <td style={{ padding: "8px 6px" }}>
-        {w.sessionUrl ? (
-          <a href={w.sessionUrl} target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", padding: "2px 8px", borderRadius: 4, fontSize: 11, fontWeight: 500, background: "#f0f0f0", color: "#0969da", textDecoration: "none" }}>
-            {w.sessionLabel || "session"}
-          </a>
-        ) : (
-          <span style={{ color: "#ccc", fontSize: 11 }}>—</span>
-        )}
+        <SessionCell w={w} />
       </td>
       <td style={{ padding: "8px 6px" }}>
         <Badge type={w.blockedType} />

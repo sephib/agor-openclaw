@@ -15,6 +15,7 @@ export const WORKTREES = [
     blockedType: "active",
     sessionUrl: null,
     sessionLabel: null,
+    recentSessions: [],
     lastActive: "2026-06-29 10:30 IDT",
   },
   {
@@ -31,6 +32,16 @@ export const WORKTREES = [
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ef405c3e3746c900eac40/",
     sessionLabel: "publish session (complete)",
+    recentSessions: [
+      {
+        sessionId: "019ef405c3e3746c900eac40",
+        url: "http://127.0.0.1:3030/ui/s/019ef405c3e3746c900eac40/",
+        title: "publish",
+        status: "completed",
+        timestamp: "2026-06-25 06:47 IDT",
+        outputFile: null,
+      },
+    ],
     lastActive: "2026-06-25 06:47 IDT",
   },
   {
@@ -48,6 +59,16 @@ export const WORKTREES = [
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019eeaf04583757a89f47a99/",
     sessionLabel: "session",
+    recentSessions: [
+      {
+        sessionId: "019eeaf04583757a89f47a99",
+        url: "http://127.0.0.1:3030/ui/s/019eeaf04583757a89f47a99/",
+        title: "code",
+        status: "completed",
+        timestamp: "2026-06-25 07:28 IDT",
+        outputFile: null,
+      },
+    ],
     lastActive: "2026-06-25 07:28 IDT",
   },
   {
@@ -64,6 +85,16 @@ export const WORKTREES = [
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ed01e5624752fbade0eab/",
     sessionLabel: "fix session",
+    recentSessions: [
+      {
+        sessionId: "019ed01e5624752fbade0eab",
+        url: "http://127.0.0.1:3030/ui/s/019ed01e5624752fbade0eab/",
+        title: "fix",
+        status: "completed",
+        timestamp: "2026-06-17 10:14 IDT",
+        outputFile: null,
+      },
+    ],
     lastActive: "2026-06-17 10:14 IDT",
   },
   {
@@ -80,6 +111,16 @@ export const WORKTREES = [
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019eda0ae5667f0fa8bf3d95/",
     sessionLabel: "Phase 2 session",
+    recentSessions: [
+      {
+        sessionId: "019eda0ae5667f0fa8bf3d95",
+        url: "http://127.0.0.1:3030/ui/s/019eda0ae5667f0fa8bf3d95/",
+        title: "Phase 2",
+        status: "completed",
+        timestamp: "2026-06-23 09:50 IDT",
+        outputFile: null,
+      },
+    ],
     lastActive: "2026-06-23 09:50 IDT",
   },
   {
@@ -96,6 +137,7 @@ export const WORKTREES = [
     blockedType: "blocked",
     sessionUrl: null,
     sessionLabel: null,
+    recentSessions: [],
     lastActive: "2026-06-15 17:23 IDT",
   },
   {
@@ -112,6 +154,7 @@ export const WORKTREES = [
     blockedType: "blocked",
     sessionUrl: null,
     sessionLabel: null,
+    recentSessions: [],
     lastActive: "2026-06-14 15:00 IDT",
   },
   {
@@ -128,6 +171,7 @@ export const WORKTREES = [
     blockedType: "active",
     sessionUrl: null,
     sessionLabel: null,
+    recentSessions: [],
     lastActive: "2026-06-28 14:49 IDT",
   },
   {
@@ -144,6 +188,7 @@ export const WORKTREES = [
     blockedType: "active",
     sessionUrl: null,
     sessionLabel: null,
+    recentSessions: [],
     lastActive: "2026-06-28 08:32 IDT",
   },
 ];
