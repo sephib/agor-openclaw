@@ -22,6 +22,15 @@ export const HEARTBEAT_RUNS = [
   // },
   {
     type: "advance",
+    timestamp: "2026-06-29 17:30 IDT",
+    actions: 0,
+    findings: 7,
+    status: "ok",
+    summary: "PR #1606 REBASED (CONFLICTING→MERGEABLE); new CI run 28376204013: 4 failures — e2e-smoke ❌+e2e-tests ❌ (persist) + integration ❌+integration-tests ❌ (NEW); #1639 unchanged (1 JIRA fail, run 28376204013); #1588 CONFLICTING unchanged; 3 Jira mismatches unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f146eb1c9744183c03935/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-29 17:00 IDT",
     actions: 0,
     findings: 6,

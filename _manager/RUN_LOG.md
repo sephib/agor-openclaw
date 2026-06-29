@@ -3156,6 +3156,18 @@
 - Flags: 6 — **#1615 APPROVED+MERGEABLE but CI FAILING** (high); **#1606 e2e-api/gpu-live pending** (medium); **JN-5616/JN-5612/JN-5724 Jira mismatches** (3); #1588 stale FAIL
 - Next: Watch #1606 e2e-api + e2e-gpu-live. Fix CI failures on #1615 (e2e-api, e2e-tests, integration, integration-tests). Update Jira JN-5616 → Done, JN-5612 → Done, JN-5724 → Done.
 
+## 17:30 IDT — Weekday Daytime Advance Heartbeat (2026-06-29)
+
+**Session:** 019f146e-b1c9 | http://127.0.0.1:3030/ui/s/019f146eb1c9744183c03935/
+
+- PRs checked: #1639 (OPEN MERGEABLE — unchanged, same CI run 28376204013: JIRA Association ❌ only), #1606 (**REBASED** — now MERGEABLE, was CONFLICTING; new CI run 28381202187: e2e-smoke ❌ 5m0s + e2e-tests ❌ 4s persist; integration ❌ 3m48s + integration-tests ❌ 5s NEW failures; 4 total), #1588 (OPEN CONFLICTING — unchanged), #1596 (DRAFT CONFLICTING — unchanged)
+- Merges detected: none — Step 1 sweep returned empty
+- CI changes: **#1606 significant** — rebased by owner, now MERGEABLE; new CI run 28381202187 reveals e2e-smoke+e2e-tests persist AND integration+integration-tests now also failing (new failures post-rebase). **#1639** unchanged.
+- Jira: JN-5616 still "In Review", JN-5612 still "In Progress", JN-5724 still "In Review" — 3 mismatches unchanged.
+- Auto-advances: 0
+- Flags: 7 — **#1606 rebased but 4 CI failures** (e2e-smoke+e2e-tests persist + integration+integration-tests new); **#1639 JIRA Association ❌** (migration issue); **#1588 CONFLICTING+pre-commit** (stale); **3 Jira mismatches** (JN-5616/5612/5724)
+- Next: Diagnose #1606 integration + integration-tests root cause (new failures post-rebase). Fix JIRA Association check on #1639 + assign reviewer. Joseph to update Jira mismatches → "Done".
+
 ## 15:00 IDT — Weekday Daytime Advance Heartbeat (2026-06-29)
 
 **Session:** 019f1340-7091 | http://127.0.0.1:3030/ui/s/019f1340709173db95781e17/

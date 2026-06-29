@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-29 17:00 IDT";
+export const LAST_UPDATED = "2026-06-29 17:30 IDT";
 
 export const WORKTREES = [
   {
@@ -275,7 +275,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): CONFLICTING + e2e-smoke ❌ (5m28s) + e2e-tests ❌ (3s) persist across 3+ runs. Owner must rebase + diagnose root cause.",
+    message: "🔴 PR #1606 (JN-5725, off-board): REBASED (CONFLICTING→MERGEABLE). New CI run 28381202187 — e2e-smoke ❌ (5m0s) + e2e-tests ❌ (4s) persist; integration ❌ (3m48s) + integration-tests ❌ (5s) NEW failures. 4 CI failures. Diagnose root causes.",
   },
   {
     level: "yellow",

@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-29 17:00 IDT (advance heartbeat)*
+*Last updated: 2026-06-29 17:30 IDT (advance heartbeat)*
 
 ---
 
@@ -63,16 +63,16 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | run 28366983945 **COMPLETE**: e2e-api ✅ (4m1s), e2e-gpu-live ✅ (10m22s), integration ✅, integration-tests ✅, nox ✅, pre-commit ✅, tox ✅ — **e2e-smoke ❌ (5m28s), e2e-tests ❌ (3s) FAIL** | 🔴 **CONFLICTING** (unchanged) | 🔴 **CONFLICTING** — due to #1615 merge to main. CI still shows e2e-smoke ❌ + e2e-tests ❌ (3+ runs, run unchanged). Owner must rebase + diagnose e2e-smoke + e2e-tests root cause. |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | run 28381202187 **COMPLETE**: e2e-api ✅ (4m16s), e2e-gpu-live ✅ (8m30s), pre-commit ✅, nox ✅, tox ✅ — **e2e-smoke ❌ (5m0s), e2e-tests ❌ (4s), integration ❌ (3m48s), integration-tests ❌ (5s) FAIL** | ✅ **MERGEABLE** (rebased since last run) | 🔴 **REBASED** (was CONFLICTING, now MERGEABLE) — new CI run 28381202187: e2e-smoke ❌ + e2e-tests ❌ persist (same pattern); integration ❌ + integration-tests ❌ NEW failures. 4 CI failures total. Owner must diagnose root causes. |
 
 ---
 
-## Key Changes Since Last Run (16:30 IDT Jun 29)
+## Key Changes Since Last Run (17:00 IDT Jun 29)
 
 | What observed | Status |
 |---|---|
-| **PR #1639 CI IMPROVED** | New run `28376204013`: only JIRA Association ❌ — all others ✅ (down from 5 failures). Nearly mergeable. |
-| **PR #1606 unchanged** | Still CONFLICTING + e2e-smoke ❌ (5m28s) + e2e-tests ❌ (3s) — same run 28366983945. |
+| **PR #1606 REBASED** | Was CONFLICTING → now MERGEABLE. New CI run 28381202187: e2e-smoke ❌ (5m0s), e2e-tests ❌ (4s) persist; integration ❌ (3m48s) + integration-tests ❌ (5s) NEW failures. 4 failures total. |
+| **PR #1639 unchanged** | Same run `28376204013`: only JIRA Association ❌ — all others ✅. MERGEABLE, REVIEW_REQUIRED. |
 | **PR #1588 unchanged** | Still CONFLICTING + pre-commit ❌ — same stale run 27933817996. |
 | **Jira mismatches unchanged** | JN-5616 "In Review", JN-5612 "In Progress", JN-5724 "In Review" — 3 still stale. |
 
@@ -108,14 +108,15 @@ PR [#1615](https://github.com/Jounce-IO/jounce/pull/1615): `feat(jbenchmark): hi
 
 ---
 
-### 🔴 PR #1606 (JN-5725, off-board) — CONFLICTING + e2e-smoke + e2e-tests FAIL
+### 🔴 PR #1606 (JN-5725, off-board) — REBASED + 4 CI FAILURES
 
 PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer): integrate log analyzer into experiment-workflow`
-- 🔴 **CONFLICTING** (since #1615 merged to main)
-- CI run 28366983945 **COMPLETE** (no new run): e2e-api ✅, e2e-gpu-live ✅, integration ✅, integration-tests ✅ — **e2e-smoke ❌ (5m28s), e2e-tests ❌ (3s) FAIL**
-- Pattern: e2e-smoke + e2e-tests fail across 3+ CI runs
+- ✅ **MERGEABLE** (rebased since 17:00 IDT — was CONFLICTING)
+- CI run 28381202187 **COMPLETE** (new run post-rebase): e2e-api ✅ (4m16s), e2e-gpu-live ✅ (8m30s), pre-commit ✅, nox ✅, tox ✅ — **e2e-smoke ❌ (5m0s), e2e-tests ❌ (4s), integration ❌ (3m48s), integration-tests ❌ (5s) FAIL**
+- **e2e-smoke + e2e-tests**: persistent failures (same pattern across 4+ runs)
+- **integration + integration-tests**: NEW failures in post-rebase CI run
 - Jira [JN-5725](https://redhat.atlassian.net/browse/JN-5725): Done (Unassigned) ✅
-- **Action needed:** (1) Rebase on main (CONFLICTING). (2) Diagnose root cause of persistent e2e-smoke + e2e-tests failures.
+- **Action needed:** Diagnose root cause — e2e-smoke + e2e-tests (persistent), + now integration + integration-tests (new).
 
 ---
 
