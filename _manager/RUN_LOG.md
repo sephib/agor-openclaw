@@ -4,6 +4,18 @@
 
 ---
 
+## 13:00 IDT — Weekday Daytime Advance Heartbeat (2026-06-29)
+
+**Session:** 019f12ee-0649 | http://127.0.0.1:3030/ui/s/019f12ee0649744f90280f22/
+- PRs checked: #1623 (OPEN MERGEABLE, CI run 28359653930), #1606 (OPEN MERGEABLE, CI run 28361650415), #1615 (OPEN CONFLICTING), #1588 (OPEN CONFLICTING)
+- Merges detected: none (no new merges since 12:30 IDT)
+- CI changes: **#1623 e2e-smoke ✅ PASSES** (10m49s, run 28359653930) — now only e2e-product ⏳ pending (new check). **#1606 e2e-gpu-live ✅ PASSES** (8m23s, run 28361650242) and e2e-api ✅ PASSES — BUT e2e-smoke ❌ FAIL (5m6s) + e2e-tests ❌ FAIL (13s) NEW failures in run 28361650415.
+- Auto-advances: 0
+- Flags: 6 (JN-5612 Jira 'In Progress'→'Done'; JN-5724 Jira 'In Review'→'Done'; #1606 e2e-smoke+e2e-tests FAIL; #1615 CI blank+CONFLICTING; #1588 pre-commit FAIL+CONFLICTING; jira-operations orphan; internal-cr-system stagnant)
+- Next: Assign reviewer to #1623 (e2e-smoke passed; only e2e-product pending). #1606 owner diagnose e2e-smoke + e2e-tests failures. Update JN-5612 + JN-5724 Jira to 'Done'.
+
+---
+
 ## 12:30 IDT — Weekday Daytime Advance Heartbeat (2026-06-29)
 
 **Session:** 019f12d2-8f4a | http://127.0.0.1:3030/ui/s/019f12d28f4a7b7ba808d615/

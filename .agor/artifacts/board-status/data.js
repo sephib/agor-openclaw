@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-29 12:30 IDT";
+export const LAST_UPDATED = "2026-06-29 13:00 IDT";
 
 export const WORKTREES = [
   {
@@ -10,7 +10,7 @@ export const WORKTREES = [
     zone: "Respond",
     pr: "#1623",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1623",
-    status: "🎉 PR #1623 MERGEABLE ✅ — CI run 28359653930: e2e-api ✅ PASS + all other checks PASS; only e2e-smoke ⏳ pending. Assign reviewer now!",
+    status: "🎉 PR #1623 MERGEABLE ✅ — CI run 28359653930: e2e-smoke ✅ PASS (10m49s) NEW + all other checks PASS; only e2e-product ⏳ pending. Assign reviewer now!",
     blockedOn: null,
     blockedType: "active",
     sessionUrl: "http://localhost:3030/ui/s/019ef405c3e3746c900eac40/",
@@ -279,8 +279,8 @@ export const ALERTS = [
     message: "🎉 PR #1622 (JN-5724) MERGED at 10:17 IDT Jun 29 ✅ — worktree archived. Jira JN-5724 still 'In Review' → update to 'Done'.",
   },
   {
-    level: "yellow",
-    message: "🟠 PR #1606 (JN-5725, off-board): MERGEABLE ✅. Latest CI run 28361650415: tox ✅ nox ✅ pre-commit ✅ pre-commit-run ✅ integration ✅ — e2e-api ⏳ e2e-gpu-live ⏳ PENDING. Prior pattern: e2e-gpu-live FAIL. Watch closely.",
+    level: "red",
+    message: "🔴 PR #1606 (JN-5725, off-board): MERGEABLE ✅ but CI FAILING. Run 28361650415: e2e-gpu-live ✅ PASS (finally!) + e2e-api ✅ — BUT e2e-smoke ❌ FAIL (5m6s) + e2e-tests ❌ FAIL (13s) NEW failures. Owner needs to diagnose.",
   },
   {
     level: "info",
@@ -292,7 +292,7 @@ export const ALERTS = [
   },
   {
     level: "green",
-    message: "🎉 PR #1623 (JN-5616, Respond): MERGEABLE ✅ — CI run 28359653930: e2e-api ✅ PASSES (was pending last run)! Only e2e-smoke ⏳ remaining. Assign reviewer now!",
+    message: "🎉 PR #1623 (JN-5616, Respond): MERGEABLE ✅ — CI run 28359653930: e2e-smoke ✅ PASSES (was pending last run)! Only e2e-product ⏳ remaining (new check). Assign reviewer now!",
   },
   {
     level: "red",
