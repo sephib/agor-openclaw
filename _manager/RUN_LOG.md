@@ -4,6 +4,18 @@
 
 ---
 
+## 12:00 IDT — Weekday Daytime Advance Heartbeat (2026-06-29)
+
+**Session:** 019f12b7-172d | http://127.0.0.1:3030/ui/s/019f12b7172d747ca5f8dc08/
+- PRs checked: #1623 (OPEN MERGEABLE, CI run 28359653930), #1606 (OPEN MERGEABLE, CI run 28361650415), #1615 (OPEN CONFLICTING), #1588 (OPEN CONFLICTING, pre-commit FAIL)
+- Merges detected: none (no new merges since 11:30 IDT)
+- CI changes: **PR #1623 e2e-api ✅ PASSES** (3m21s) — only e2e-smoke ⏳ remaining in run 28359653930. **Ready to assign reviewer!** PR #1606 new run 28361650415: tox ✅ nox ✅ pre-commit ✅ pre-commit-run ✅ integration ✅ — e2e-api ⏳ e2e-gpu-live ⏳ pending.
+- Auto-advances: 0
+- Flags: 6 (JN-5612 Jira 'In Progress'→'Done'; JN-5724 Jira 'In Review'→'Done'; #1615 CI blank+CONFLICTING; #1588 pre-commit FAIL+CONFLICTING; jira-operations orphan; internal-cr-system stagnant)
+- Next: Assign reviewer to #1623 once e2e-smoke passes. Watch #1606 e2e-gpu-live. Update JN-5612 + JN-5724 Jira.
+
+---
+
 ## 11:00 IDT — Weekday Daytime Advance Heartbeat (2026-06-29)
 
 **Session:** 019f1264-e481 | http://127.0.0.1:3030/ui/s/019f1264e48175329dd50504/

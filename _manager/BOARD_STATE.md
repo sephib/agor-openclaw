@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-29 11:30 IDT (advance heartbeat)*
+*Last updated: 2026-06-29 12:00 IDT (advance heartbeat)*
 
 ---
 
@@ -8,7 +8,7 @@
 
 | Branch | Jira | Zone | Jira Status | PR | CI | Review | Flags |
 |--------|------|------|-------------|-----|-----|--------|-------|
-| jn-5616-replace-find-project-root | [JN-5616](https://redhat.atlassian.net/browse/JN-5616) | Respond | In Review | [#1623](https://github.com/Jounce-IO/jounce/pull/1623) **OPEN** ✅ **MERGEABLE** | ⏳ **CI IN PROGRESS** (run 28359653930 — most PASS, e2e-api pending) | "" (reviewDecision reset — no decision) | 🟢 **MERGEABLE now!** New CI run in progress. Assign reviewer once e2e-api passes. |
+| jn-5616-replace-find-project-root | [JN-5616](https://redhat.atlassian.net/browse/JN-5616) | Respond | In Review | [#1623](https://github.com/Jounce-IO/jounce/pull/1623) **OPEN** ✅ **MERGEABLE** | 🟢 **CI ALMOST GREEN** (run 28359653930 — all PASS including e2e-api ✅; only e2e-smoke ⏳ pending) | "" (no decision — assign reviewer) | 🎉 **e2e-api PASSES!** Only e2e-smoke remaining. Assign reviewer now! |
 | jn-5677-dev-historical-mode-notebook-cells | [JN-5677](https://redhat.atlassian.net/browse/JN-5677) | **Respond** | Done | [#1615](https://github.com/Jounce-IO/jounce/pull/1615) **OPEN** CONFLICTING | ⚠️ **CI CHECKS GONE** — only CodeRabbit showing (no run data since Jun 25 13:05 IDT) | "" (no decision) | 🟡 **CI BLANK** — only CodeRabbit in rollup. Still CONFLICTING. |
 | jn-5546-docs-document-module-layout-convention-and-3 | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) | Code Review | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) OPEN CONFLICTING (mergeable=UNKNOWN) | ❌ **2 FAIL** (pre-commit + pre-commit-run, run 27933817996, stale) | reviewDecision="" | 🔴 **STALE** — unchanged since Jun 17. Pre-commit FAIL, CONFLICTING. Jira should be "In Review". |
 | internal-cr-system | — | Code | — | — | — | — | ⚠️ No PR. No Jira. Stagnant since Jun 18. filesystem_status: failed (git lock) |
@@ -61,14 +61,15 @@
 
 ---
 
-## Key Changes Since Last Run (11:00 IDT Jun 29)
+## Key Changes Since Last Run (12:00 IDT Jun 29)
 
 | What observed | Status |
 |---|---|
-| **🟢 PR #1623 now MERGEABLE** | Was CONFLICTING/UNKNOWN. Now MERGEABLE ✅. New CI run 28359653930 in progress — most checks PASS, e2e-api ⏳ pending. reviewDecision reset to "" (no decision — assign reviewer needed once CI passes). |
-| **🟢 PR #1606 now MERGEABLE** | Was CONFLICTING. Now MERGEABLE ✅. New CI run 28360438294 triggered — most checks PASS, pre-commit-run/e2e-api/e2e-gpu-live ⏳ pending. |
+| **🎉 PR #1623 e2e-api PASSES** | CI run 28359653930: e2e-api ✅ PASS (3m21s). Only e2e-smoke ⏳ still pending. All other checks green. **Ready to assign reviewer once e2e-smoke clears.** |
+| **PR #1606 new CI run** | New run 28361650415 (replaced 28360438294): atlas-validate ✅, check-changes ✅, integration ✅, integration-tests ✅, nox ✅, pre-commit ✅, pre-commit-run ✅, tox-run ✅ — e2e-api ⏳ PENDING, e2e-gpu-live ⏳ PENDING. |
 | **#1615, #1588 unchanged** | #1615 still CONFLICTING, CI blank. #1588 still CONFLICTING, pre-commit FAIL. |
 | **No new merges** | PRs #1627 and #1622 remain in Recently Merged. No new merges detected. |
+| **Jira mismatches persist** | JN-5612 still "In Progress" (should be Done); JN-5724 still "In Review" (should be Done). |
 
 ---
 
@@ -92,14 +93,14 @@ PR [#1622](https://github.com/Jounce-IO/jounce/pull/1622): `fix(lychee): remove 
 
 ---
 
-### 🟠 PR #1606 (JN-5725, off-board) — new CI run in progress, now MERGEABLE
+### 🟠 PR #1606 (JN-5725, off-board) — latest CI run in progress, MERGEABLE
 
 PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer): integrate log analyzer into experiment-workflow`
-- OPEN, **MERGEABLE** ✅ (resolved from CONFLICTING)
-- New CI run 28360438294 **IN PROGRESS**: atlas-validate ✅, check-changes ✅, integration ✅, integration-tests ✅, nox ✅, tox-run ✅ — pre-commit-run ⏳ PENDING, e2e-api ⏳ PENDING, e2e-gpu-live ⏳ PENDING
-- Previous run 28353163424: e2e-gpu-live ❌ FAIL (30m5s) — need to watch if e2e-gpu-live fails again on new run
+- OPEN, **MERGEABLE** ✅
+- Latest CI run 28361650415 **IN PROGRESS**: atlas-validate ✅, check-changes ✅, integration ✅, integration-tests ✅, nox ✅, pre-commit ✅, pre-commit-run ✅, tox-run ✅ — e2e-api ⏳ PENDING, e2e-gpu-live ⏳ PENDING
+- Previous pattern: e2e-gpu-live ❌ FAIL (persistent across multiple runs) — watch this
 - Jira [JN-5725](https://redhat.atlassian.net/browse/JN-5725): Done (Unassigned)
-- **Action needed:** Wait for new CI run 28360438294 results, especially e2e-gpu-live (was failing in prior run).
+- **Action needed:** Wait for e2e-api + e2e-gpu-live results on run 28361650415.
 
 ---
 
@@ -123,14 +124,14 @@ PR [#1615](https://github.com/Jounce-IO/jounce/pull/1615): `feat(jbenchmark): hi
 
 ---
 
-### 🟢 PR #1623 (JN-5616) — Now MERGEABLE, CI in progress
+### 🎉 PR #1623 (JN-5616) — CI almost fully green — ASSIGN REVIEWER
 
 PR [#1623](https://github.com/Jounce-IO/jounce/pull/1623): `refactor(jbenchmark): replace find_project_root() in tests with conftest fixtures (JN-5616)`
-- OPEN, **MERGEABLE** ✅ (resolved from CONFLICTING)
-- CI run 28359653930 **IN PROGRESS**: JIRA Association ✅, atlas-validate ✅, check-changes ✅, integration ✅, pre-commit ✅, pre-commit-run ✅, integration-tests ✅, nox ✅, tox-run ✅ — e2e-api ⏳ PENDING
-- reviewDecision: "" (reset — no decision yet)
+- OPEN, **MERGEABLE** ✅
+- CI run 28359653930 **ALMOST GREEN**: JIRA Association ✅, atlas-validate ✅, check-changes ✅, integration ✅, pre-commit ✅, pre-commit-run ✅, integration-tests ✅, nox ✅, tox-run ✅, **e2e-api ✅ PASS** (3m21s) — only e2e-smoke ⏳ PENDING
+- reviewDecision: "" (no decision — assign reviewer)
 - Jira [JN-5616](https://redhat.atlassian.net/browse/JN-5616): In Review ✅
-- **Action needed:** Wait for e2e-api result. Once CI all green, assign reviewer.
+- **Action needed:** Assign reviewer! e2e-smoke still pending but all other checks green including e2e-api.
 
 ---
 

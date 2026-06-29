@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-29 11:30 IDT";
+export const LAST_UPDATED = "2026-06-29 12:00 IDT";
 
 export const WORKTREES = [
   {
@@ -10,7 +10,7 @@ export const WORKTREES = [
     zone: "Respond",
     pr: "#1623",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1623",
-    status: "🟢 PR #1623 MERGEABLE ✅ — new CI run 28359653930 in progress (most PASS, e2e-api ⏳ pending). reviewDecision reset — assign reviewer once CI all green.",
+    status: "🎉 PR #1623 MERGEABLE ✅ — CI run 28359653930: e2e-api ✅ PASS + all other checks PASS; only e2e-smoke ⏳ pending. Assign reviewer now!",
     blockedOn: null,
     blockedType: "active",
     sessionUrl: "http://localhost:3030/ui/s/019ef405c3e3746c900eac40/",
@@ -280,7 +280,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "🟠 PR #1606 (JN-5725, off-board): Now MERGEABLE ✅. New CI run 28360438294 in progress — most PASS; pre-commit-run/e2e-api/e2e-gpu-live ⏳ PENDING. Prior run: e2e-gpu-live ❌ FAIL (30m5s). Watch for e2e-gpu-live result.",
+    message: "🟠 PR #1606 (JN-5725, off-board): MERGEABLE ✅. Latest CI run 28361650415: tox ✅ nox ✅ pre-commit ✅ pre-commit-run ✅ integration ✅ — e2e-api ⏳ e2e-gpu-live ⏳ PENDING. Prior pattern: e2e-gpu-live FAIL. Watch closely.",
   },
   {
     level: "info",
@@ -292,7 +292,7 @@ export const ALERTS = [
   },
   {
     level: "green",
-    message: "🟢 PR #1623 (JN-5616, Respond): MERGEABLE ✅ — new CI run 28359653930 in progress (most PASS, e2e-api ⏳ pending). Assign reviewer once e2e-api green.",
+    message: "🎉 PR #1623 (JN-5616, Respond): MERGEABLE ✅ — CI run 28359653930: e2e-api ✅ PASSES (was pending last run)! Only e2e-smoke ⏳ remaining. Assign reviewer now!",
   },
   {
     level: "red",

@@ -22,6 +22,15 @@ export const HEARTBEAT_RUNS = [
   // },
   {
     type: "advance",
+    timestamp: "2026-06-29 12:00 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "PR #1623 e2e-api PASSES ✅ (run 28359653930) — only e2e-smoke pending; ready to assign reviewer. PR #1606 new run 28361650415: tox/nox/pre-commit/integration all PASS; e2e-api+e2e-gpu-live pending. No new merges. Jira mismatches JN-5612/JN-5724 persist.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f12b7172d747ca5f8dc08/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-29 09:30 IDT",
     actions: 0,
     findings: 6,
