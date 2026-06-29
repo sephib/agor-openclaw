@@ -3010,3 +3010,15 @@
 - Auto-advances: none
 - Flags: 6 — **#1622 e2e-api PENDING, watch** (near-complete CI, already APPROVED); **#1606 e2e-smoke/e2e-gpu-live PENDING** (best run yet — most checks green); **#1627 assign reviewer NOW**; #1623 CONFLICTING; #1615 CI blank; JN-5612 Jira mismatch
 - Next: Watch PR #1622 e2e-api result — if PASS, merge immediately. Watch PR #1606 e2e-smoke — if PASS, finally unblocked. Joseph to assign reviewer to #1627. Update JN-5612 Jira → "In Review".
+
+## 10:30 IDT — Weekday Daytime Advance Heartbeat (2026-06-29)
+
+**Session:** 019f1249-69c4 | http://127.0.0.1:3030/ui/s/019f124969c47ac3b5b789fe/
+
+- PRs checked: #1622 (**MERGED** 10:17 IDT — archived worktree), #1627 (**APPROVED** ✅ — new CI run 28355749941 IN PROGRESS: integration ✅, check-changes ✅ — e2e-api/pre-commit-run/tox-run ⏳), #1606 (**now CONFLICTING** — was MERGEABLE; e2e-gpu-live ❌ FAIL 30m5s, e2e-smoke ⏳ still pending), #1623 (OPEN, CONFLICTING, CI ALL PASS — unchanged), #1615 (OPEN, CONFLICTING, CI blank — unchanged), #1588 (OPEN, CONFLICTING, 2 FAIL — stale unchanged), #1596 (DRAFT, OPEN — unchanged)
+- Merges detected: **PR #1622 MERGED at 10:17 IDT** (detected via Step 1 sweep) — was still tracked as OPEN in prior state
+- CI changes: **#1627 APPROVED + new run 28355749941** (major: was REVIEW_REQUIRED at 10:00 IDT); **#1606 e2e-gpu-live FAIL + now CONFLICTING** (was MERGEABLE + most checks passing at 10:00 IDT)
+- Jira: JN-5724 still "In Review" — should be "Done" (PR merged). JN-5612 still "In Progress" — should be "In Review" (PR APPROVED).
+- Auto-advances: 1 — archived `jn-5724-lychee-precommit-flaky` (PR #1622 MERGED)
+- Flags: 6 — **#1627 APPROVED, watch CI run 28355749941** (high); **JN-5724 Jira mismatch → Done** (medium); **JN-5612 Jira mismatch → In Review** (medium); **#1606 CONFLICTING + e2e-gpu-live FAIL**; #1623 CONFLICTING; #1588 stale/FAIL
+- Next: Watch PR #1627 CI run 28355749941 — if ALL PASS → merge (already APPROVED + MERGEABLE). Update JN-5724 Jira → "Done". Update JN-5612 Jira → "In Review". Investigate #1606 e2e-gpu-live failure. Joseph to rebase #1623 + #1606.

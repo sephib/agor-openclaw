@@ -1,22 +1,6 @@
-export const LAST_UPDATED = "2026-06-29 10:00 IDT";
+export const LAST_UPDATED = "2026-06-29 10:30 IDT";
 
 export const WORKTREES = [
-  {
-    ticket: "JN-5724",
-    ticketUrl: "https://redhat.atlassian.net/browse/JN-5724",
-    title: "Reduce Lychee precommit flaky results",
-    branch: "jn-5724-lychee-precommit-flaky",
-    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5724-lychee-precommit-flaky",
-    zone: "Publish",
-    pr: "#1622",
-    prUrl: "https://github.com/Jounce-IO/jounce/pull/1622",
-    status: "🎉 PR #1622 APPROVED ✅ + MERGEABLE — CI run 28353212111 almost complete: integration ✅, tox ✅, pre-commit-run ✅, nox ✅, pre-commit ✅ all done. Only e2e-api ⏳ PENDING. If e2e-api PASS → ALL PASS → merge immediately.",
-    blockedOn: "e2e-api pending",
-    blockedType: "active",
-    sessionUrl: "http://localhost:3030/ui/s/019ef3e3ea0e734d882e878e/",
-    sessionLabel: "publish session (complete)",
-    lastActive: "2026-06-29 09:30 IDT",
-  },
   {
     ticket: "JN-5612",
     ticketUrl: "https://redhat.atlassian.net/browse/JN-5612",
@@ -26,12 +10,12 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1627",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1627",
-    status: "🟢 PR #1627 CI ALL PASS ✅ — OPEN, MERGEABLE. All checks complete (e2e-api ✅ 4m37s, e2e-smoke ✅ 11m9s, run 28318509109). ⚠️ Jira still 'In Progress' — needs update to 'In Review'. Assign reviewer now.",
-    blockedOn: "Jira mismatch; reviewer needed",
+    status: "🎉 PR #1627 APPROVED ✅ + MERGEABLE — NEW CI run 28355749941 IN PROGRESS (triggered after #1622 merge): integration ✅, check-changes ✅, atlas-validate ✅ — e2e-api ⏳, pre-commit-run ⏳, tox-run ⏳ PENDING. Watch → if ALL PASS, merge immediately. ⚠️ Jira still 'In Progress' → update to 'In Review'.",
+    blockedOn: "CI pending; Jira mismatch",
     blockedType: "active",
     sessionUrl: null,
     sessionLabel: null,
-    lastActive: "2026-06-28 16:00 IDT",
+    lastActive: "2026-06-29 10:30 IDT",
   },
   {
     ticket: "JN-5616",
@@ -56,7 +40,7 @@ export const WORKTREES = [
     title: "Historical mode notebook cells",
     branch: "jn-5677-dev-historical-mode-notebook-cells",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5677-dev-historical-mode-notebook-cells",
-    zone: "Revise",
+    zone: "Respond",
     pr: "#1615",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1615",
     status: "🟡 PR #1615 OPEN CONFLICTING — ⚠️ CI CHECKS GONE (only CodeRabbit showing since Jun 25 13:05 IDT; prior integration failures from run 28167796913 no longer in rollup). Needs rebase + CI re-trigger.",
@@ -166,6 +150,15 @@ export const WORKTREES = [
 
 export const MERGED = [
   {
+    ticket: "JN-5724",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5724",
+    title: "fix(lychee): remove stale exclude_path for non-existent directory",
+    pr: "#1622",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1622",
+    mergedDate: "2026-06-29",
+    note: "Merged 10:17 IDT Jun 29 — worktree archived 10:30 IDT. Jira still 'In Review' → needs 'Done'.",
+  },
+  {
     ticket: "JN-5759",
     ticketUrl: null,
     title: "fix(validator): add missing detail field to responses multimodal test",
@@ -242,15 +235,15 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "green",
-    message: "🎉 PR #1622 (JN-5724, Publish): APPROVED ✅ + MERGEABLE — CI run 28353212111 almost complete: integration ✅, tox ✅, pre-commit-run ✅, nox ✅ all PASS. Only e2e-api ⏳ PENDING. Watch for e2e-api PASS → merge.",
+    message: "🎉 PR #1627 (JN-5612, Publish): APPROVED ✅ + MERGEABLE — NEW CI run 28355749941 IN PROGRESS: integration ✅, check-changes ✅, atlas-validate ✅ — e2e-api ⏳, pre-commit-run ⏳, tox-run ⏳ PENDING. Watch → if ALL PASS, merge immediately.",
   },
   {
     level: "green",
-    message: "🟢 PR #1627 (JN-5612, Publish): CI ALL PASS ✅ (run 28318509109 — e2e-api ✅ 4m37s, e2e-smoke ✅ 11m9s). OPEN, MERGEABLE. Assign reviewer now. Update Jira JN-5612 → 'In Review'.",
+    message: "🎉 PR #1622 (JN-5724) MERGED at 10:17 IDT Jun 29 ✅ — worktree archived. Jira JN-5724 still 'In Review' → update to 'Done'.",
   },
   {
     level: "yellow",
-    message: "🟠 PR #1606 (JN-5725, off-board): Run 28353163424 — major progress: e2e-api ✅, integration ✅, nox ✅, tox ✅, pre-commit ✅ all PASS. Only e2e-smoke ⏳ + e2e-gpu-live ⏳ PENDING — the historically failing checks. Watch for e2e-smoke result.",
+    message: "🟠 PR #1606 (JN-5725, off-board): Now CONFLICTING (was MERGEABLE at 10:00 IDT). Run 28353163424: e2e-gpu-live ❌ FAIL (30m5s) — e2e-smoke ⏳ still pending. Needs rebase on main + e2e-gpu-live investigation.",
   },
   {
     level: "info",
@@ -258,7 +251,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "🟡 PR #1615 (JN-5677, Revise): CI BLANK — only CodeRabbit in rollup (Jun 25 13:05 IDT). Still CONFLICTING. Needs rebase + CI re-trigger.",
+    message: "🟡 PR #1615 (JN-5677, Respond): CI BLANK — only CodeRabbit in rollup (Jun 25 13:05 IDT). Still CONFLICTING. Needs rebase + CI re-trigger.",
   },
   {
     level: "yellow",
@@ -270,7 +263,11 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⚠️ JN-5612 Jira mismatch: Jira still 'In Progress' but PR #1627 is open and CI ALL PASS — update Jira → 'In Review'.",
+    message: "⚠️ JN-5724 Jira mismatch: PR #1622 MERGED Jun 29 — Jira still 'In Review'. Update → 'Done'.",
+  },
+  {
+    level: "yellow",
+    message: "⚠️ JN-5612 Jira mismatch: PR #1627 APPROVED — Jira still 'In Progress'. Update → 'In Review'.",
   },
   {
     level: "yellow",
