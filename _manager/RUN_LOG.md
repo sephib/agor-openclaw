@@ -4,6 +4,19 @@
 
 ---
 
+## 15:30 IDT — Weekday Daytime Advance Heartbeat (2026-06-29)
+
+**Session:** 019f135b-e441 | http://127.0.0.1:3030/ui/s/019f135be4417f0aa24b59c6/
+- PRs checked: #1615 (MERGED 15:08 IDT ✅), #1588 (OPEN CONFLICTING), #1596 (DRAFT OPEN CONFLICTING), #1606 (OPEN NOW CONFLICTING, CI 28366983945 COMPLETE)
+- Merges detected: **PR #1615 (JN-5677) MERGED at 15:08 IDT** — e2e-smoke ✅ (11m13s) + e2e-tests ✅ passed; integration ❌ (2m56s) + integration-tests ❌ (4s) failing — admin merge. Worktree archived (autonomous, 15:33 IDT).
+- CI changes: **PR #1606 now CONFLICTING** (was MERGEABLE) — likely due to #1615 merge to main. Same run 28366983945: e2e-smoke ❌ + e2e-tests ❌ still failing. No new CI run. JN-5677 Jira: Done ✅ (correct).
+- Jira: JN-5612 still "In Progress", JN-5616 still "In Review", JN-5724 still "In Review" — 3 mismatches persist.
+- Auto-advances: 1 (jn-5677-dev-historical-mode-notebook-cells archived)
+- Flags: 6 (#1606 CONFLICTING+e2e-smoke/e2e-tests FAIL; #1588 pre-commit FAIL+CONFLICTING; JN-5612 Jira mismatch; JN-5616 Jira mismatch; JN-5724 Jira mismatch; jira-operations no zone)
+- Next: Owner of #1606 must rebase on main + diagnose e2e-smoke+e2e-tests root cause. Update 3 Jira mismatches (JN-5612/5616/5724) to 'Done'.
+
+---
+
 ## 14:30 IDT — Weekday Daytime Advance Heartbeat (2026-06-29)
 
 **Session:** 019f1324-f529 | http://127.0.0.1:3030/ui/s/019f1324f529780e8d3160c0/

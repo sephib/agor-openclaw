@@ -1847,4 +1847,13 @@ export const HEARTBEAT_RUNS = [
     summary: "#1615 CI partially improving: e2e-api ✅ PASS (re-run succeeded), e2e-smoke ⏳ PENDING, integration ❌ + integration-tests ❌ still failing; #1606 unchanged (e2e-smoke/e2e-tests ❌); 3 Jira mismatches; 6 findings",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f1340709173db95781e17/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-29 15:30 IDT",
+    actions: 1,
+    findings: 6,
+    status: "ok",
+    summary: "🎉 PR #1615 (JN-5677) MERGED 15:08 IDT (admin merge, integration ❌ at merge) → worktree archived 15:33 IDT; PR #1606 NOW CONFLICTING (was MERGEABLE — #1615 merged to main); 3 Jira mismatches (JN-5612/5616/5724); 6 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f135be4417f0aa24b59c6/",
+  },
 ];

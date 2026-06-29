@@ -1,33 +1,6 @@
-export const LAST_UPDATED = "2026-06-29 15:00 IDT";
+export const LAST_UPDATED = "2026-06-29 15:30 IDT";
 
 export const WORKTREES = [
-  {
-    ticket: "JN-5677",
-    sprint: "current",
-    ticketUrl: "https://redhat.atlassian.net/browse/JN-5677",
-    title: "Historical mode notebook cells",
-    branch: "jn-5677-dev-historical-mode-notebook-cells",
-    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5677-dev-historical-mode-notebook-cells",
-    zone: "Respond",
-    pr: "#1615",
-    prUrl: "https://github.com/Jounce-IO/jounce/pull/1615",
-    status: "🟠 PR #1615 APPROVED ✅ + MERGEABLE ✅ — CI PARTIALLY IMPROVING (run 28366765871): e2e-api ✅ PASS (3m48s, re-run succeeded), e2e-smoke ⏳ PENDING (re-run in progress), integration ❌ (2m56s), integration-tests ❌ (3s). 2 confirmed fails remain. Fix integration + integration-tests to merge!",
-    blockedOn: "CI failures (integration, integration-tests) + e2e-smoke pending",
-    blockedType: "blocked",
-    sessionUrl: "http://localhost:3030/ui/s/019eeaf04583757a89f47a99/",
-    sessionLabel: "session",
-    recentSessions: [
-      {
-        sessionId: "019eeaf04583757a89f47a99",
-        url: "http://127.0.0.1:3030/ui/s/019eeaf04583757a89f47a99/",
-        title: "code",
-        status: "completed",
-        timestamp: "2026-06-25 07:28 IDT",
-        outputFile: null,
-      },
-    ],
-    lastActive: "2026-06-25 07:28 IDT",
-  },
   {
     ticket: "JN-5546",
     ticketUrl: "https://redhat.atlassian.net/browse/JN-5546",
@@ -152,6 +125,15 @@ export const WORKTREES = [
 
 export const MERGED = [
   {
+    ticket: "JN-5677",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5677",
+    title: "feat(jbenchmark): historical mode notebook cells",
+    pr: "#1615",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1615",
+    mergedDate: "2026-06-29",
+    note: "Merged 15:08 IDT Jun 29 — worktree archived 15:33 IDT. Admin merge (integration ❌ at merge). Jira Done ✅.",
+  },
+  {
     ticket: "JN-5616",
     ticketUrl: "https://redhat.atlassian.net/browse/JN-5616",
     title: "refactor(jbenchmark): replace find_project_root() in tests with conftest fixtures",
@@ -255,15 +237,11 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "green",
-    message: "🎉 PR #1623 (JN-5616) MERGED at 13:45 IDT Jun 29 ✅ — worktree jn-5616-replace-find-project-root archived 14:00 IDT. Jira JN-5616 still 'In Review' → update to 'Done'.",
+    message: "🎉 PR #1615 (JN-5677) MERGED at 15:08 IDT Jun 29 ✅ — worktree archived 15:33 IDT. Admin merge (integration ❌ at merge time). Jira JN-5677 Done ✅.",
   },
   {
     level: "red",
-    message: "🟠 PR #1615 (JN-5677, Respond): APPROVED ✅ + MERGEABLE ✅ — CI PARTIALLY IMPROVING (run 28366765871): e2e-api ✅ PASS (re-run 3m48s), e2e-smoke ⏳ PENDING (re-run), integration ❌ (2m56s), integration-tests ❌ (3s). 2 confirmed fails remain. Fix integration + integration-tests to merge!",
-  },
-  {
-    level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): CI run 28366983945 COMPLETE — e2e-api ✅, e2e-gpu-live ✅ PASS but e2e-smoke ❌ (5m28s) + e2e-tests ❌ (3s) FAIL. Persistent across 3+ runs. Owner must diagnose root cause.",
+    message: "🔴 PR #1606 (JN-5725, off-board): NOW CONFLICTING (was MERGEABLE — #1615 merged to main). e2e-smoke ❌ (5m28s) + e2e-tests ❌ (3s) persist across 3+ runs. Owner must rebase + diagnose e2e-smoke + e2e-tests.",
   },
   {
     level: "yellow",
@@ -279,11 +257,15 @@ export const ALERTS = [
   },
   {
     level: "green",
-    message: "🎉 PR #1627 (JN-5612) MERGED at 10:42 IDT Jun 29 ✅ — worktree jn-5612-fix-github-sha archived. Jira JN-5612 still 'In Progress' → update to 'Done'.",
+    message: "🎉 PR #1623 (JN-5616) MERGED at 13:45 IDT Jun 29 ✅ — worktree archived. Jira still 'In Review' → update to 'Done'.",
   },
   {
     level: "green",
-    message: "🎉 PR #1622 (JN-5724) MERGED at 10:17 IDT Jun 29 ✅ — worktree archived. Jira JN-5724 still 'In Review' → update to 'Done'.",
+    message: "🎉 PR #1627 (JN-5612) MERGED at 10:42 IDT Jun 29 ✅ — worktree archived. Jira still 'In Progress' → update to 'Done'.",
+  },
+  {
+    level: "green",
+    message: "🎉 PR #1622 (JN-5724) MERGED at 10:17 IDT Jun 29 ✅ — worktree archived. Jira still 'In Review' → update to 'Done'.",
   },
   {
     level: "red",
