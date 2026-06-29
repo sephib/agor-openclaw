@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-29 14:30 IDT (advance heartbeat)*
+*Last updated: 2026-06-29 15:00 IDT (advance heartbeat)*
 
 ---
 
@@ -8,7 +8,7 @@
 
 | Branch | Jira | Zone | Jira Status | PR | CI | Review | Flags |
 |--------|------|------|-------------|-----|-----|--------|-------|
-| jn-5677-dev-historical-mode-notebook-cells | [JN-5677](https://redhat.atlassian.net/browse/JN-5677) | Respond | Done | [#1615](https://github.com/Jounce-IO/jounce/pull/1615) **OPEN** ✅ **MERGEABLE** | 🔴 **CI FAILING** (run 28366765871 — e2e-api ❌ 3m23s, e2e-tests ❌ 3s, integration ❌ 2m56s, integration-tests ❌ 2s; pre-commit ✅, tox ✅, nox ✅, check-changes ✅) | ✅ **APPROVED** | 🔴 **CI FAILING despite APPROVED+MERGEABLE** — new run triggered after rebase; 4 checks fail. Fix CI before merge! |
+| jn-5677-dev-historical-mode-notebook-cells | [JN-5677](https://redhat.atlassian.net/browse/JN-5677) | Respond | Done | [#1615](https://github.com/Jounce-IO/jounce/pull/1615) **OPEN** ✅ **MERGEABLE** | 🟠 **CI PARTIALLY FIXED** (run 28366765871 — integration ❌ 2m56s, integration-tests ❌ 3s, e2e-smoke ⏳ PENDING; **e2e-api ✅ now PASS** 3m48s; pre-commit ✅, tox ✅, nox ✅) | ✅ **APPROVED** | 🔴 **CI still FAILING** — e2e-api improved (re-run passed), e2e-smoke pending, but integration + integration-tests still ❌. 2 confirmed fails remain. |
 | jn-5546-docs-document-module-layout-convention-and-3 | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) | Code Review | In Progress | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) OPEN CONFLICTING (mergeable=UNKNOWN) | ❌ **2 FAIL** (pre-commit + pre-commit-run, run 27933817996, stale) | reviewDecision="" | 🔴 **STALE** — unchanged since Jun 17. Pre-commit FAIL, CONFLICTING. Jira should be "In Review". |
 | internal-cr-system | — | Code | — | — | — | — | ⚠️ No PR. No Jira. Stagnant since Jun 18. filesystem_status: failed (git lock) |
 | jn-5695-db-connect-script | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) | BLOCKED | Backlog | [#1596](https://github.com/Jounce-IO/jounce/pull/1596) DRAFT OPEN CONFLICTING | — | — | 🔴 CONFLICTING; frozen |
@@ -63,12 +63,12 @@
 
 ---
 
-## Key Changes Since Last Run (14:00 IDT Jun 29)
+## Key Changes Since Last Run (15:00 IDT Jun 29)
 
 | What observed | Status |
 |---|---|
-| **PR #1606 CI run 28366983945 COMPLETE** | Was IN PROGRESS at 14:00. Now DONE: e2e-api ✅, e2e-gpu-live ✅ — but **e2e-smoke ❌ (5m28s), e2e-tests ❌ (3s) FAIL**. Persistent pattern across 3+ runs. 🔴 |
-| **PR #1615 unchanged** | Still OPEN MERGEABLE APPROVED + CI FAILING (run 28366765871 — e2e-api ❌, e2e-tests ❌, integration ❌, integration-tests ❌). No new run triggered. |
+| **PR #1615 CI partially improved** | run 28366765871: **e2e-api now ✅ PASS** (was ❌ at 14:30 — re-run succeeded in 3m48s); **e2e-smoke ⏳ PENDING** (was e2e-tests ❌ — re-run triggered). integration ❌ + integration-tests ❌ UNCHANGED. 2 confirmed fails remain. |
+| **PR #1606 unchanged** | CI run 28366983945 still COMPLETE: e2e-smoke ❌ (5m28s) + e2e-tests ❌ (3s) FAIL. No new run. |
 | **No new merges** | Nothing merged since #1623 at 13:45 IDT. |
 | **Jira mismatches unchanged** | JN-5612 "In Progress", JN-5616 "In Review", JN-5724 "In Review" — all 3 still showing wrong status. |
 | **#1588 unchanged** | Still CONFLICTING, pre-commit FAIL. |
@@ -87,13 +87,18 @@ PR [#1623](https://github.com/Jounce-IO/jounce/pull/1623): `refactor(jbenchmark)
 
 ---
 
-### 🔴 PR #1615 (JN-5677, Respond) — APPROVED + MERGEABLE but CI FAILING
+### 🔴 PR #1615 (JN-5677, Respond) — APPROVED + MERGEABLE but CI FAILING (partially improving)
 
 PR [#1615](https://github.com/Jounce-IO/jounce/pull/1615): `feat(jbenchmark): historical mode notebook cells (JN-5677)`
-- **MAJOR CHANGE** from prior state: was CONFLICTING + CI blank → now OPEN + **MERGEABLE** + **APPROVED** ✅
-- But CI run 28366765871 **FAILING**: e2e-api ❌ (3m23s), e2e-tests ❌ (3s), integration ❌ (2m56s), integration-tests ❌ (2s). pre-commit ✅, tox ✅, nox ✅, check-changes ✅, atlas-validate ✅.
+- OPEN + **MERGEABLE** + **APPROVED** ✅
+- CI run 28366765871 — **PARTIALLY IMPROVED** since 14:30:
+  - **e2e-api ✅ PASS** (3m48s) — was ❌ at 14:30; re-run succeeded
+  - **e2e-smoke ⏳ PENDING** — re-run in progress (was e2e-tests ❌ 3s before)
+  - **integration ❌** (2m56s) — still failing
+  - **integration-tests ❌** (3s) — still failing
+  - pre-commit ✅, tox ✅, nox ✅, check-changes ✅, atlas-validate ✅
 - Jira [JN-5677](https://redhat.atlassian.net/browse/JN-5677): Done ✅ (Jira OK)
-- **Action needed:** Diagnose + fix e2e-api, e2e-tests, integration, integration-tests failures, then merge (already APPROVED).
+- **Action needed:** Fix integration + integration-tests failures. e2e-smoke result pending. Once all CI green, merge (already APPROVED+MERGEABLE).
 
 ---
 

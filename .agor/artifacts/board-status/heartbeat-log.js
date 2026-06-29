@@ -1829,4 +1829,22 @@ export const HEARTBEAT_RUNS = [
     summary: "PR #1623 (JN-5616) MERGED 13:45 IDT → jn-5616-replace-find-project-root archived; PR #1615 MAJOR: was CONFLICTING → now APPROVED+MERGEABLE but CI FAILING (e2e-api/tests/integration ❌); PR #1606 new run 28366983945 in progress; 3 Jira mismatches (JN-5616/5612/5724 need Done); 6 findings",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f13097dbd72d9a1aae634/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-29 14:30 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "PR #1606 run 28366983945 COMPLETE but e2e-smoke ❌ + e2e-tests ❌ persist (3rd+ run); #1615 unchanged (CI FAILING, APPROVED+MERGEABLE); 3 Jira mismatches; 6 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f13247dbd72d9a1aa0001/",
+  },
+  {
+    type: "advance",
+    timestamp: "2026-06-29 15:00 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "#1615 CI partially improving: e2e-api ✅ PASS (re-run succeeded), e2e-smoke ⏳ PENDING, integration ❌ + integration-tests ❌ still failing; #1606 unchanged (e2e-smoke/e2e-tests ❌); 3 Jira mismatches; 6 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f1340709173db95781e17/",
+  },
 ];

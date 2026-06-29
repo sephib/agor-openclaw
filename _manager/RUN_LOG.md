@@ -3102,3 +3102,15 @@
 - Auto-advances: 1 — archived `jn-5616-replace-find-project-root` (PR #1623 MERGED)
 - Flags: 6 — **#1615 APPROVED+MERGEABLE but CI FAILING** (high); **#1606 e2e-api/gpu-live pending** (medium); **JN-5616/JN-5612/JN-5724 Jira mismatches** (3); #1588 stale FAIL
 - Next: Watch #1606 e2e-api + e2e-gpu-live. Fix CI failures on #1615 (e2e-api, e2e-tests, integration, integration-tests). Update Jira JN-5616 → Done, JN-5612 → Done, JN-5724 → Done.
+
+## 15:00 IDT — Weekday Daytime Advance Heartbeat (2026-06-29)
+
+**Session:** 019f1340-7091 | http://127.0.0.1:3030/ui/s/019f1340709173db95781e17/
+
+- PRs checked: #1615 (**e2e-api now ✅ PASS** 3m48s — re-run succeeded; e2e-smoke ⏳ PENDING; integration ❌ 2m56s + integration-tests ❌ 3s still failing — 2 confirmed fails remain), #1606 (unchanged — e2e-smoke ❌ 5m28s + e2e-tests ❌ 3s; rest PASS), #1588 (OPEN CONFLICTING — unchanged), #1596 (DRAFT CONFLICTING — unchanged)
+- Merges detected: none — Step 1 sweep clean since #1623 at 13:45 IDT
+- CI changes: **#1615 partial improvement** — e2e-api re-run PASSED (3m48s vs failed 3m23s at 14:30); e2e-smoke re-run PENDING; integration + integration-tests still failing (3rd+ run). **#1606 no change** — same 2 fails as captured at 14:30.
+- Jira: JN-5612 still "In Progress", JN-5616 still "In Review", JN-5724 still "In Review" — all 3 mismatches unchanged. JN-5677 "Done" ✅.
+- Auto-advances: none
+- Flags: 6 — **#1615 CI still FAILING** (integration ❌, integration-tests ❌, e2e-smoke ⏳); **#1606 e2e-smoke + e2e-tests FAIL** (persistent); **JN-5612/5616/5724 Jira mismatches**; #1588 stale/CONFLICTING
+- Next: Watch e2e-smoke result on #1615 — if it passes, only integration + integration-tests remain. Diagnose integration failures on #1615. Diagnose persistent e2e-smoke on #1606. Joseph to update Jira mismatches.
