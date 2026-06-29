@@ -4,6 +4,19 @@
 
 ---
 
+## 18:00 IDT — Weekday Daytime Advance Heartbeat (2026-06-29)
+
+**Session:** 019f148a-2977 | http://127.0.0.1:3030/ui/s/019f148a29777299bd7149c9/
+- PRs checked: #1639 (OPEN MERGEABLE REVIEW_REQUIRED, CI 28376204013 — 1 FAIL: JIRA Association only), #1606 (OPEN MERGEABLE, CI 28381202187 — 4 FAIL: e2e-smoke ❌ + e2e-tests ❌ + integration ❌ + integration-tests ❌), #1588 (OPEN CONFLICTING, CI 27933817996 stale — 2 FAIL: pre-commit), #1596 (DRAFT OPEN CONFLICTING)
+- Merges detected: none — board static since 17:30 IDT
+- CI changes: none — all runs unchanged from prior run
+- Jira: JN-5616 "In Review", JN-5612 "In Progress", JN-5724 "In Review" — 3 mismatches unchanged
+- Auto-advances: 0
+- Flags: 7 (#1639 JIRA Association only—nearly mergeable; #1606 MERGEABLE+4 CI fails; #1588 pre-commit FAIL+CONFLICTING; JN-5612/JN-5616/JN-5724 Jira mismatches; jira-operations no zone)
+- Next: Fix JIRA Association check for #1639 + assign reviewer. Owner of #1606 must diagnose CI root causes.
+
+---
+
 ## 17:00 IDT — Weekday Daytime Advance Heartbeat (2026-06-29)
 
 **Session:** 019f13c9-8426 | http://127.0.0.1:3030/ui/s/019f13c9842672cd82a0e2d9/

@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-29 17:30 IDT (advance heartbeat)*
+*Last updated: 2026-06-29 18:00 IDT (advance heartbeat)*
 
 ---
 
@@ -67,12 +67,13 @@
 
 ---
 
-## Key Changes Since Last Run (17:00 IDT Jun 29)
+## Key Changes Since Last Run (18:00 IDT Jun 29)
 
 | What observed | Status |
 |---|---|
-| **PR #1606 REBASED** | Was CONFLICTING → now MERGEABLE. New CI run 28381202187: e2e-smoke ❌ (5m0s), e2e-tests ❌ (4s) persist; integration ❌ (3m48s) + integration-tests ❌ (5s) NEW failures. 4 failures total. |
+| **Board static** | No zone changes, no new merges. All PRs unchanged since 17:30 IDT run. |
 | **PR #1639 unchanged** | Same run `28376204013`: only JIRA Association ❌ — all others ✅. MERGEABLE, REVIEW_REQUIRED. |
+| **PR #1606 unchanged** | Same run `28381202187`: e2e-smoke ❌ (5m0s), e2e-tests ❌ (4s), integration ❌ (3m48s), integration-tests ❌ (5s). MERGEABLE. |
 | **PR #1588 unchanged** | Still CONFLICTING + pre-commit ❌ — same stale run 27933817996. |
 | **Jira mismatches unchanged** | JN-5616 "In Review", JN-5612 "In Progress", JN-5724 "In Review" — 3 still stale. |
 
