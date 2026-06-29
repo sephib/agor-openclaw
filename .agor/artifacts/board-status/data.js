@@ -1,32 +1,6 @@
-export const LAST_UPDATED = "2026-06-29 13:00 IDT";
+export const LAST_UPDATED = "2026-06-29 14:00 IDT";
 
 export const WORKTREES = [
-  {
-    ticket: "JN-5616",
-    ticketUrl: "https://redhat.atlassian.net/browse/JN-5616",
-    title: "Replace find_project_root() calls in tests with conftest fixture",
-    branch: "jn-5616-replace-find-project-root",
-    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5616-replace-find-project-root",
-    zone: "Respond",
-    pr: "#1623",
-    prUrl: "https://github.com/Jounce-IO/jounce/pull/1623",
-    status: "🎉 PR #1623 MERGEABLE ✅ — CI run 28359653930: e2e-smoke ✅ PASS (10m49s) NEW + all other checks PASS; only e2e-product ⏳ pending. Assign reviewer now!",
-    blockedOn: null,
-    blockedType: "active",
-    sessionUrl: "http://localhost:3030/ui/s/019ef405c3e3746c900eac40/",
-    sessionLabel: "publish session (complete)",
-    recentSessions: [
-      {
-        sessionId: "019ef405c3e3746c900eac40",
-        url: "http://127.0.0.1:3030/ui/s/019ef405c3e3746c900eac40/",
-        title: "publish",
-        status: "completed",
-        timestamp: "2026-06-25 06:47 IDT",
-        outputFile: null,
-      },
-    ],
-    lastActive: "2026-06-25 06:47 IDT",
-  },
   {
     ticket: "JN-5677",
     sprint: "current",
@@ -37,8 +11,8 @@ export const WORKTREES = [
     zone: "Respond",
     pr: "#1615",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1615",
-    status: "🟡 PR #1615 OPEN CONFLICTING — ⚠️ CI CHECKS GONE (only CodeRabbit showing since Jun 25 13:05 IDT; prior integration failures from run 28167796913 no longer in rollup). Needs rebase + CI re-trigger.",
-    blockedOn: "CI checks blank + merge conflict with main",
+    status: "🔴 PR #1615 APPROVED ✅ + MERGEABLE ✅ BUT CI FAILING — run 28366765871: e2e-api ❌ (3m23s), e2e-tests ❌ (3s), integration ❌ (2m56s), integration-tests ❌ (2s). Rebase fixed conflict but uncovered failures. Fix CI, then merge!",
+    blockedOn: "CI failures (e2e-api, e2e-tests, integration, integration-tests)",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019eeaf04583757a89f47a99/",
     sessionLabel: "session",
@@ -166,7 +140,7 @@ export const WORKTREES = [
     zone: "Plan",
     pr: null,
     prUrl: null,
-    status: "ℹ️ Detected 15:30 IDT Jun 28, created 08:32 IDT. Different repo (redhat/jira-autofix). JN-5780 on redhat.atlassian.net. No actual PR. No sessions. Needs Joseph clarification.",
+    status: "ℹ️ Detected Jun 28. Different repo (redhat/jira-autofix). Not in jounce Plan zone scan. No actual PR. Needs Joseph clarification.",
     blockedOn: "Needs owner clarification",
     blockedType: "active",
     sessionUrl: null,
@@ -177,6 +151,15 @@ export const WORKTREES = [
 ];
 
 export const MERGED = [
+  {
+    ticket: "JN-5616",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5616",
+    title: "refactor(jbenchmark): replace find_project_root() in tests with conftest fixtures",
+    pr: "#1623",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1623",
+    mergedDate: "2026-06-29",
+    note: "Merged 13:45 IDT Jun 29 — worktree archived 14:00 IDT. Jira still 'In Review' → needs 'Done'.",
+  },
   {
     ticket: "JN-5612",
     ticketUrl: "https://redhat.atlassian.net/browse/JN-5612",
@@ -272,6 +255,30 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "green",
+    message: "🎉 PR #1623 (JN-5616) MERGED at 13:45 IDT Jun 29 ✅ — worktree jn-5616-replace-find-project-root archived 14:00 IDT. Jira JN-5616 still 'In Review' → update to 'Done'.",
+  },
+  {
+    level: "red",
+    message: "🔴 PR #1615 (JN-5677, Respond): APPROVED ✅ + MERGEABLE ✅ BUT CI FAILING — run 28366765871: e2e-api ❌ (3m23s), e2e-tests ❌ (3s), integration ❌ (2m56s), integration-tests ❌ (2s). Rebase fixed conflict but uncovered failures. Fix CI to merge!",
+  },
+  {
+    level: "yellow",
+    message: "🟡 PR #1606 (JN-5725, off-board): new CI run 28366983945 IN PROGRESS — e2e-api ⏳, e2e-gpu-live ⏳, pre-commit-run ⏳ pending. Watching (prior run had e2e-smoke ❌ + e2e-tests ❌).",
+  },
+  {
+    level: "yellow",
+    message: "⚠️ JN-5616 Jira mismatch: PR #1623 MERGED Jun 29 13:45 IDT — Jira still 'In Review'. Update → 'Done'.",
+  },
+  {
+    level: "yellow",
+    message: "⚠️ JN-5612 Jira mismatch: PR #1627 MERGED Jun 29 10:42 IDT — Jira still 'In Progress'. Update → 'Done'.",
+  },
+  {
+    level: "yellow",
+    message: "⚠️ JN-5724 Jira mismatch: PR #1622 MERGED Jun 29 10:17 IDT — Jira still 'In Review'. Update → 'Done'.",
+  },
+  {
+    level: "green",
     message: "🎉 PR #1627 (JN-5612) MERGED at 10:42 IDT Jun 29 ✅ — worktree jn-5612-fix-github-sha archived. Jira JN-5612 still 'In Progress' → update to 'Done'.",
   },
   {
@@ -280,31 +287,11 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): MERGEABLE ✅ but CI FAILING. Run 28361650415: e2e-gpu-live ✅ PASS (finally!) + e2e-api ✅ — BUT e2e-smoke ❌ FAIL (5m6s) + e2e-tests ❌ FAIL (13s) NEW failures. Owner needs to diagnose.",
+    message: "🔴 PR #1588 (JN-5546, Code Review zone): pre-commit FAIL (run 27933817996) + CONFLICTING. Stale since Jun 17. Fix pre-commit + rebase + assign reviewer + update Jira to 'In Review'.",
   },
   {
     level: "info",
     message: "ℹ️ jn-5780-add-jn-project (Plan zone): different repo (jira-autofix). No actual PR. Needs Joseph clarification.",
-  },
-  {
-    level: "yellow",
-    message: "🟡 PR #1615 (JN-5677, Respond): CI BLANK — only CodeRabbit in rollup (Jun 25 13:05 IDT). Still CONFLICTING. Needs rebase + CI re-trigger.",
-  },
-  {
-    level: "green",
-    message: "🎉 PR #1623 (JN-5616, Respond): MERGEABLE ✅ — CI run 28359653930: e2e-smoke ✅ PASSES (was pending last run)! Only e2e-product ⏳ remaining (new check). Assign reviewer now!",
-  },
-  {
-    level: "red",
-    message: "🔴 PR #1588 (JN-5546, Code Review zone): pre-commit FAIL (run 27933817996) + CONFLICTING. Stale since Jun 17. Fix pre-commit + rebase + assign reviewer + update Jira to 'In Review'.",
-  },
-  {
-    level: "yellow",
-    message: "⚠️ JN-5612 Jira mismatch: PR #1627 MERGED Jun 29 — Jira still 'In Progress'. Update → 'Done'.",
-  },
-  {
-    level: "yellow",
-    message: "⚠️ JN-5724 Jira mismatch: PR #1622 MERGED Jun 29 — Jira still 'In Review'. Update → 'Done'.",
   },
   {
     level: "yellow",
