@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-29 16:30 IDT (advance heartbeat)*
+*Last updated: 2026-06-29 17:00 IDT (advance heartbeat)*
 
 ---
 
@@ -15,7 +15,7 @@
 | jira-operations | — | (no zone) | — | — | — | — | ⚠️ session timed_out 07:38 IDT Jun 25. No PR, no Jira, no zone. Needs decision. |
 | jn-5244-cli-flags | [JN-5244](https://redhat.atlassian.net/browse/JN-5244) | **Ingest** | In Progress | — | — | — | ℹ️ Created 14:49 IDT Jun 28. No sessions yet. JN-5244: Add --user, --no-cache, --skip-estimator CLI flags. Ready to ingest. |
 | jn-5780-add-jn-project | [JN-5780](https://redhat.atlassian.net/browse/JN-5780) | **Plan** | Unknown | — (GitLab "create MR" link, no actual PR) | — | — | ℹ️ Different repo: redhat/jira-autofix. Not found in jounce Plan zone scan. Needs Joseph review. |
-| jn-5793-jsonb-path-fix | [JN-5793](https://redhat.atlassian.net/browse/JN-5793) | **Code** | Backlog | [#1639](https://github.com/Jounce-IO/jounce/pull/1639) OPEN MERGEABLE | ❌ **5 FAIL** (JIRA Association + integration + integration-tests + pre-commit + pre-commit-run, run 28375434698) | REVIEW_REQUIRED | 🔴 **NEW** — detected 16:30 IDT Jun 29. CI has 5 failures. JIRA Association fail may be due to instance migration (redhat.atlassian.net). Needs investigation. |
+| jn-5793-jsonb-path-fix | [JN-5793](https://redhat.atlassian.net/browse/JN-5793) | **Code** | Backlog | [#1639](https://github.com/Jounce-IO/jounce/pull/1639) OPEN MERGEABLE | ⚠️ **1 FAIL** (JIRA Association only, run 28376204013) — all others ✅ (integration ✅, pre-commit ✅, e2e-smoke ✅ 11m34s, e2e-tests ✅, nox ✅, tox ✅, e2e-api ✅) | REVIEW_REQUIRED | 🟡 **CI IMPROVED** — was 5 failures (run 28375434698), now 1 (JIRA Association only, run 28376204013). Likely instance migration issue (jounce.atlassian.net → redhat.atlassian.net). Nearly ready — needs: (1) fix JIRA Association check, (2) assign reviewer. |
 | jn-5794-required-checks | [JN-5794](https://redhat.atlassian.net/browse/JN-5794) | **Ingest** | Backlog | — | — | — | ℹ️ **NEW** — detected 16:30 IDT Jun 29. No sessions yet. JN-5794: [BUG] Auto-merge bypasses integration test failures. |
 
 **Untracked worktrees on board:**
@@ -67,27 +67,27 @@
 
 ---
 
-## Key Changes Since Last Run (16:00 IDT Jun 29)
+## Key Changes Since Last Run (16:30 IDT Jun 29)
 
 | What observed | Status |
 |---|---|
-| **2 NEW worktrees detected** | `jn-5793-jsonb-path-fix` (Code, PR #1639) + `jn-5794-required-checks` (Ingest) appeared in board scan. |
-| **PR #1639 NEW — CI FAILING** | OPEN, MERGEABLE, REVIEW_REQUIRED. 5 CI failures: JIRA Association ❌ + integration ❌ + integration-tests ❌ + pre-commit ❌ + pre-commit-run ❌ (run 28375434698). |
+| **PR #1639 CI IMPROVED** | New run `28376204013`: only JIRA Association ❌ — all others ✅ (down from 5 failures). Nearly mergeable. |
 | **PR #1606 unchanged** | Still CONFLICTING + e2e-smoke ❌ (5m28s) + e2e-tests ❌ (3s) — same run 28366983945. |
 | **PR #1588 unchanged** | Still CONFLICTING + pre-commit ❌ — same stale run 27933817996. |
-| **Jira mismatches unchanged** | JN-5612 "In Progress", JN-5616 "In Review", JN-5724 "In Review" — 3 still stale. |
+| **Jira mismatches unchanged** | JN-5616 "In Review", JN-5612 "In Progress", JN-5724 "In Review" — 3 still stale. |
 
 ---
 
 ## Attention Items
 
-### 🔴 PR #1639 (JN-5793, Code zone) — NEW, CI FAILING
+### 🟡 PR #1639 (JN-5793, Code zone) — CI IMPROVED (1 failure remaining)
 
 PR [#1639](https://github.com/Jounce-IO/jounce/pull/1639): `fix(tests): JN-5793 update plan_json fixtures to match production JSONB structure`
-- NEW — detected this run (16:30 IDT Jun 29). JN-5793: Backlog, assigned to Joseph Berry.
-- 🔴 **5 CI failures** (run 28375434698): JIRA Association ❌, integration ❌, integration-tests ❌, pre-commit ❌, pre-commit-run ❌
-- JIRA Association fail may be related to instance migration (jounce.atlassian.net → redhat.atlassian.net)
-- **Action needed:** Diagnose pre-commit failures; fix JIRA Association check; resolve integration failures.
+- Detected 16:30 IDT Jun 29. JN-5793: Backlog, assigned to Joseph Berry.
+- **Previous run** (28375434698): 5 failures — JIRA Association ❌, integration ❌, integration-tests ❌, pre-commit ❌, pre-commit-run ❌
+- **Current run** (28376204013): **1 failure only** — JIRA Association ❌; all others ✅ (e2e-smoke ✅ 11m34s, e2e-tests ✅, integration ✅ 3m20s, integration-tests ✅, pre-commit ✅ 4m52s, e2e-api ✅, nox ✅, tox ✅)
+- JIRA Association failure likely due to instance migration (jounce.atlassian.net → redhat.atlassian.net)
+- **Action needed:** (1) Fix or suppress JIRA Association check (migration-related). (2) Assign reviewer — nearly ready to merge.
 
 ---
 

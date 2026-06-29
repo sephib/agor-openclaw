@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-29 16:30 IDT";
+export const LAST_UPDATED = "2026-06-29 17:00 IDT";
 
 export const WORKTREES = [
   {
@@ -10,13 +10,13 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1639",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1639",
-    status: "🔴 NEW — 5 CI failures (run 28375434698): JIRA Association ❌ + integration ❌ + integration-tests ❌ + pre-commit ❌ + pre-commit-run ❌. MERGEABLE, REVIEW_REQUIRED. Needs diagnosis.",
-    blockedOn: "CI failures (5 checks)",
-    blockedType: "blocked",
+    status: "🟡 CI IMPROVED — new run 28376204013: only JIRA Association ❌ (1 failure, down from 5). All others ✅: integration ✅, pre-commit ✅, e2e-smoke ✅ 11m34s, e2e-tests ✅. MERGEABLE, REVIEW_REQUIRED. Likely migration issue (jounce→redhat.atlassian.net). Fix JIRA check + assign reviewer.",
+    blockedOn: "JIRA Association check (migration-related)",
+    blockedType: "active",
     sessionUrl: null,
     sessionLabel: null,
     recentSessions: [],
-    lastActive: "2026-06-29 16:30 IDT",
+    lastActive: "2026-06-29 17:00 IDT",
   },
   {
     ticket: "JN-5546",
@@ -270,8 +270,8 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "red",
-    message: "🔴 PR #1639 (JN-5793, Code): NEW — 5 CI failures (run 28375434698): JIRA Association ❌ + integration ❌ + integration-tests ❌ + pre-commit ❌ + pre-commit-run ❌. MERGEABLE, REVIEW_REQUIRED. Diagnose failures.",
+    level: "yellow",
+    message: "🟡 PR #1639 (JN-5793, Code): CI IMPROVED — new run 28376204013: 1 failure only (JIRA Association ❌, likely migration issue). All others ✅. Fix JIRA check + assign reviewer → nearly mergeable.",
   },
   {
     level: "red",

@@ -22,6 +22,15 @@ export const HEARTBEAT_RUNS = [
   // },
   {
     type: "advance",
+    timestamp: "2026-06-29 17:00 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "PR #1639 CI IMPROVED — new run 28376204013: 1 failure only (JIRA Association ❌, migration issue) down from 5. All others ✅. #1606 CONFLICTING+e2e-smoke/e2e-tests ❌ unchanged. #1588 pre-commit ❌ unchanged. 3 Jira mismatches persist.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f13c9842672cd82a0e2d9/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-29 16:30 IDT",
     actions: 0,
     findings: 7,
