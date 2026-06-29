@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-29 11:00 IDT";
+export const LAST_UPDATED = "2026-06-29 11:30 IDT";
 
 export const WORKTREES = [
   {
@@ -10,9 +10,9 @@ export const WORKTREES = [
     zone: "Respond",
     pr: "#1623",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1623",
-    status: "🟡 PR #1623 CONFLICTING (mergeable=UNKNOWN — GitHub recomputing) — CI ALL PASS (run 28153233486 unchanged since Jun 25). Rebase on main needed before merge.",
-    blockedOn: "Merge conflict with main (since Jun 25 15:32 IDT)",
-    blockedType: "blocked",
+    status: "🟢 PR #1623 MERGEABLE ✅ — new CI run 28359653930 in progress (most PASS, e2e-api ⏳ pending). reviewDecision reset — assign reviewer once CI all green.",
+    blockedOn: null,
+    blockedType: "active",
     sessionUrl: "http://localhost:3030/ui/s/019ef405c3e3746c900eac40/",
     sessionLabel: "publish session (complete)",
     recentSessions: [
@@ -280,7 +280,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "🟠 PR #1606 (JN-5725, off-board): CONFLICTING. Run 28353163424 COMPLETE — all non-e2e checks PASS; e2e-gpu-live ❌ FAIL (30m5s); e2e-smoke ⏳ still PENDING. Needs rebase on main + e2e-gpu-live investigation.",
+    message: "🟠 PR #1606 (JN-5725, off-board): Now MERGEABLE ✅. New CI run 28360438294 in progress — most PASS; pre-commit-run/e2e-api/e2e-gpu-live ⏳ PENDING. Prior run: e2e-gpu-live ❌ FAIL (30m5s). Watch for e2e-gpu-live result.",
   },
   {
     level: "info",
@@ -291,8 +291,8 @@ export const ALERTS = [
     message: "🟡 PR #1615 (JN-5677, Respond): CI BLANK — only CodeRabbit in rollup (Jun 25 13:05 IDT). Still CONFLICTING. Needs rebase + CI re-trigger.",
   },
   {
-    level: "yellow",
-    message: "🟡 PR #1623 (JN-5616, Respond): CONFLICTING (mergeable=UNKNOWN — GitHub recomputing) — CI ALL PASS (run 28153233486). Rebase on main needed, then assign reviewer.",
+    level: "green",
+    message: "🟢 PR #1623 (JN-5616, Respond): MERGEABLE ✅ — new CI run 28359653930 in progress (most PASS, e2e-api ⏳ pending). Assign reviewer once e2e-api green.",
   },
   {
     level: "red",

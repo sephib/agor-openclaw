@@ -1739,4 +1739,13 @@ export const HEARTBEAT_RUNS = [
     summary: "PR #1627 (JN-5612) MERGED 10:42 IDT → worktree jn-5612-fix-github-sha archived; PR #1606 run 28353163424 COMPLETE (all non-e2e PASS, e2e-gpu-live ❌ FAIL, e2e-smoke ⏳ pending); JN-5612+JN-5724 Jira mismatches (both need 'Done'); #1623 CONFLICTING/CI PASS unchanged; 6 findings",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f1264e48175329dd50504/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-29 11:30 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "PR #1623 now MERGEABLE + new CI run 28359653930 (most PASS, e2e-api pending); PR #1606 now MERGEABLE + new CI run 28360438294 (most PASS, e2e-gpu-live pending); JN-5612+JN-5724 Jira mismatches; 6 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f129b9f417dfd9b10bdbc/",
+  },
 ];

@@ -3034,3 +3034,10 @@
 - Auto-advances: 1 — archived `jn-5724-lychee-precommit-flaky` (PR #1622 MERGED)
 - Flags: 6 — **#1627 APPROVED, watch CI run 28355749941** (high); **JN-5724 Jira mismatch → Done** (medium); **JN-5612 Jira mismatch → In Review** (medium); **#1606 CONFLICTING + e2e-gpu-live FAIL**; #1623 CONFLICTING; #1588 stale/FAIL
 - Next: Watch PR #1627 CI run 28355749941 — if ALL PASS → merge (already APPROVED + MERGEABLE). Update JN-5724 Jira → "Done". Update JN-5612 Jira → "In Review". Investigate #1606 e2e-gpu-live failure. Joseph to rebase #1623 + #1606.
+
+## 11:30 IDT — Weekday Daytime Heartbeat
+- PRs checked: #1623 (OPEN MERGEABLE → new CI run 28359653930 in progress), #1615 (OPEN CONFLICTING unchanged), #1588 (OPEN CONFLICTING pre-commit FAIL unchanged), #1606 (OPEN MERGEABLE → new CI run 28360438294 in progress)
+- Merges detected: none (PRs #1627 and #1622 already in Recently Merged from prior runs)
+- CI changes: #1623 now MERGEABLE + new run 28359653930 (most PASS, e2e-api pending); #1606 now MERGEABLE + new run 28360438294 (most PASS, pre-commit-run/e2e-api/e2e-gpu-live pending)
+- Flags: Jira mismatches (JN-5612 still In Progress, JN-5724 still In Review); #1615 CI blank; #1588 stale pre-commit FAIL; jira-operations no zone; internal-cr-system git lock
+- Next: Watch e2e-api on #1623 — if passes, assign reviewer. Watch e2e-gpu-live on #1606 — was failing previously.
