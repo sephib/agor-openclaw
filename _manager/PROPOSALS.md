@@ -1,6 +1,23 @@
 # Proposals — jounce-workflow-ai
 
-*Last updated: 2026-06-30 09:01 IDT*
+*Last updated: 2026-06-30 16:30 IDT*
+
+---
+
+## Proposal: Assign jn-5795 to Plan zone — NEW (16:30 IDT Jun 30)
+- **Action:** Call `agor_branches_set_zone` to move `jn-5795-upgrade-to-guidellm-v070` (branchId: `019f185c-0150-7a10-a5f7-27bc71112e3f`) to the Plan zone (`zone-1781209696300`)
+- **Reason:** Worktree created 11:48 IDT Jun 30 for JN-5795 "Upgrade to GuideLLM v0.7.0" (Epic). Design session complete (143 messages, idle since 12:45 IDT, design doc at `.artifacts/design/JN-5795/03-design.md`). Should move to Plan zone to reflect current phase.
+- **Risk:** Low — zone assignment is visual only, does not trigger automation
+- **Worktree:** jn-5795-upgrade-to-guidellm-v070 (currently NO ZONE)
+- **Status:** PENDING
+
+---
+
+## Proposal: Update JN-5714 to Done — Jun 30 16:00 IDT
+- **Action:** Update [JN-5714](https://redhat.atlassian.net/browse/JN-5714) Jira status → Done
+- **Reason:** PR #1628 merged 15:39 IDT Jun 30; Jira still "Backlog"
+- **Risk:** Low — correcting stale state
+- **Status:** PENDING
 
 ---
 

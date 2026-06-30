@@ -22,6 +22,15 @@ export const HEARTBEAT_RUNS = [
   // },
   {
     type: "advance",
+    timestamp: "2026-06-30 16:30 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "NEW worktree jn-5795 (JN-5795, design done, no zone); PR #1606 REGRESSION now CONFLICTING; 4 Jira mismatches persist (JN-5714/5612/5616/5724); #1588 CONFLICTING unchanged; no new merges",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f18b90d0074d782e13006/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-30 16:00 IDT",
     actions: 1,
     findings: 5,

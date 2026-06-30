@@ -4,6 +4,19 @@
 
 ---
 
+## 16:30 IDT — Weekday Daytime Advance Heartbeat (2026-06-30)
+
+**Session:** 019f18b9-0d00 | http://127.0.0.1:3030/ui/s/019f18b90d0074d782e13006/
+- PRs checked: #1588 (OPEN CONFLICTING — stale 14+ days), #1596 (DRAFT CONFLICTING), #1606 (OPEN — REGRESSION: now CONFLICTING, was MERGEABLE; e2e-smoke ❌ + e2e-tests ❌ unchanged run 28429314700)
+- Merges detected: none (PR #1628 and #1639 already captured in previous runs)
+- New worktrees: jn-5795-upgrade-to-guidellm-v070 (JN-5795 "Upgrade to GuideLLM v0.7.0", Epic Backlog, design session done 143 msgs, no zone)
+- CI changes: PR #1606 changed mergeable: MERGEABLE → CONFLICTING (regression)
+- Flags: (1) jn-5795 no zone assigned; (2) PR #1606 CONFLICTING regression; (3) 4 Jira mismatches persist (JN-5714/5612/5616/5724); (4) PR #1588 stale 14+ days; (5) PR #1596 frozen
+- Auto-advances: 0
+- Next: Joseph to review jn-5795 proposal (Plan zone), address PR #1606 conflict + e2e failures, update 4 Jira tickets to Done
+
+---
+
 ## 16:00 IDT — Weekday Daytime Advance Heartbeat (2026-06-30)
 
 **Session:** 019f189d-94b6 | http://127.0.0.1:3030/ui/s/019f189d94b67938846a89a8/

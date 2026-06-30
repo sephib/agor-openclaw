@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-30 16:00 IDT";
+export const LAST_UPDATED = "2026-06-30 16:30 IDT";
 
 export const WORKTREES = [
   {
@@ -138,6 +138,32 @@ export const WORKTREES = [
     recentSessions: [],
     lastActive: "2026-06-28 08:32 IDT",
   },
+  {
+    ticket: "JN-5795",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5795",
+    title: "Upgrade to GuideLLM v0.7.0",
+    branch: "jn-5795-upgrade-to-guidellm-v070",
+    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5795-upgrade-to-guidellm-v070",
+    zone: "NO ZONE",
+    pr: null,
+    prUrl: null,
+    status: "ℹ️ NEW — Created 11:48 IDT Jun 30. Design session done (143 msgs, idle 12:45 IDT). Proposal: assign to Plan zone.",
+    blockedOn: null,
+    blockedType: "active",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f185c2c687ed7bbdd1902/",
+    sessionLabel: "design",
+    recentSessions: [
+      {
+        sessionId: "019f185c2c687ed7bbdd19025d9960d5",
+        url: "http://127.0.0.1:3030/ui/s/019f185c2c687ed7bbdd1902/",
+        title: "design",
+        status: "idle",
+        timestamp: "2026-06-30 12:45 IDT",
+        outputFile: null,
+      },
+    ],
+    lastActive: "2026-06-30 12:45 IDT",
+  },
 ];
 
 export const MERGED = [
@@ -271,6 +297,10 @@ export const MERGED = [
 
 export const ALERTS = [
   {
+    level: "info",
+    message: "ℹ️ NEW: jn-5795-upgrade-to-guidellm-v070 — JN-5795 'Upgrade to GuideLLM v0.7.0' (Epic, Backlog). Design session done (143 msgs, idle 12:45 IDT Jun 30). No zone assigned. Proposal: move to Plan zone.",
+  },
+  {
     level: "green",
     message: "🎉 PR #1628 (JN-5714) MERGED at 15:39 IDT Jun 30 ✅ — cr-pr-1628 archived automatically 16:00 IDT. All CI green + APPROVED. Update JN-5714 Jira → Done (currently 'Backlog').",
   },
@@ -283,8 +313,8 @@ export const ALERTS = [
     message: "⚠️ 4 Jira mismatches need update to Done: JN-5714 (PR #1628 MERGED Jun 30, still 'Backlog'), JN-5612 (PR #1627 MERGED Jun 29, still 'In Progress'), JN-5616 (PR #1623 MERGED Jun 29, still 'In Review'), JN-5724 (PR #1622 MERGED Jun 29, still 'In Review').",
   },
   {
-    level: "yellow",
-    message: "🟡 PR #1606 (JN-5725, off-board): CI run 28429314700 COMPLETE — e2e-smoke ❌ + e2e-tests ❌ still failing (all other checks ✅). Jira JN-5725 Done. Diagnose e2e failures or close PR.",
+    level: "red",
+    message: "🔴 PR #1606 (JN-5725, off-board): REGRESSION — now CONFLICTING (was MERGEABLE). CI run 28429314700: e2e-smoke ❌ + e2e-tests ❌ (all other checks ✅). Jira JN-5725 Done. Rebase + fix e2e or close PR.",
   },
   {
     level: "red",

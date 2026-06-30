@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-30 16:00 IDT (advance heartbeat)*
+*Last updated: 2026-06-30 16:30 IDT (advance heartbeat)*
 
 ---
 
@@ -15,6 +15,7 @@
 | jira-operations | (no zone) | — | — | — | ⚠️ No zone, no PR — needs zone assignment or archive |
 | jn-5244-cli-flags | Ingest | — | — | [JN-5244](https://redhat.atlassian.net/browse/JN-5244) | ℹ️ No sessions yet. Ready to ingest. |
 | jn-5794-required-checks | Ingest | — | — | [JN-5794](https://redhat.atlassian.net/browse/JN-5794) | ℹ️ No sessions yet. Ready to ingest. |
+| jn-5795-upgrade-to-guidellm-v070 | NO ZONE | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) "Upgrade to GuideLLM v0.7.0" — Epic, Backlog | ℹ️ **NEW** — Created 11:48 IDT Jun 30. Design session done (143 msgs, idle 12:45 IDT). No zone assigned yet. Proposal: move to Plan zone. |
 
 **Note:** jn-5780-add-jn-project is not in the Agor jounce repo list (active or archived). Per data.js it belongs to a different repo (jira-autofix). Board scan shows no record of it.
 
@@ -24,7 +25,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** | ❌ e2e-smoke ❌ + e2e-tests ❌ (run 28429314700, all else ✅) | ✅ MERGEABLE | 🟡 2 persistent e2e failures. Jira Done. Decide: fix and merge, or close PR. |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** | ❌ e2e-smoke ❌ + e2e-tests ❌ (run 28429314700, all else ✅) | 🔴 CONFLICTING (regression: was MERGEABLE) | 🔴 Now CONFLICTING + 2 persistent e2e failures. Jira Done. Fix conflict + e2e, or close PR. |
 | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | jn-5546-docs-document-module-layout-convention-and-3 | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) — In Progress | ❌ pre-commit FAIL (stale run 27933817996) | 🔴 CONFLICTING | 🔴 **STALE** — unchanged since Jun 17. Needs rebase + pre-commit fix. |
 | [#1596](https://github.com/Jounce-IO/jounce/pull/1596) | jn-5695-db-connect-script | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) | — | 🔴 DRAFT CONFLICTING | 🔴 Frozen; solved locally |
 
@@ -57,19 +58,29 @@
 
 ---
 
-## Key Changes Since Last Run (15:30 IDT Jun 30)
+## Key Changes Since Last Run (16:00 IDT Jun 30)
 
 | What observed | Status |
 |---|---|
-| **PR #1628 MERGED** | 🎉 Merged at 15:39 IDT Jun 30 — cr-pr-1628 archived automatically |
-| **JN-5714 Jira mismatch** | ❌ PR #1628 MERGED, but JN-5714 still "Backlog" — update → Done |
-| **PR #1606: unchanged** | 🟡 e2e-smoke ❌ + e2e-tests ❌ persist (run 28429314700) |
-| **PR #1588: unchanged** | 🔴 Still CONFLICTING, pre-commit FAIL, stale 14+ days |
-| **Jira mismatches: now 4 total** | JN-5714 (new), JN-5612, JN-5616, JN-5724 all need Done |
+| **NEW: jn-5795-upgrade-to-guidellm-v070** | ℹ️ New worktree on board, NO ZONE. JN-5795 "Upgrade to GuideLLM v0.7.0" (Epic, Backlog). Design session done (143 msgs, idle 12:45 IDT). Proposal: assign to Plan zone. |
+| **PR #1606 regression** | 🔴 Now CONFLICTING (was MERGEABLE since Jun 22). CI unchanged: e2e-smoke ❌ + e2e-tests ❌ (run 28429314700). |
+| **Jira mismatches: 4 unchanged** | JN-5714/5612/5616/5724 all still unresolved — no updates since last run |
+| **PR #1588: unchanged** | 🔴 Still CONFLICTING + pre-commit FAIL, stale 14+ days |
+| **PR #1628 / #1639** | Already captured as MERGED; no new merges this run |
 
 ---
 
 ## Attention Items
+
+### ℹ️ NEW: jn-5795-upgrade-to-guidellm-v070 — Design Done, No Zone
+
+- **Worktree:** `jn-5795-upgrade-to-guidellm-v070` created 11:48 IDT Jun 30
+- **Ticket:** [JN-5795](https://redhat.atlassian.net/browse/JN-5795) "Upgrade to GuideLLM v0.7.0" — Epic, Backlog, assigned to Joseph
+- **Status:** Design session complete (143 messages, idle since 12:45 IDT)
+- **Missing:** No board zone assigned, no PR
+- **Proposal:** Assign to Plan zone (design artifact ready in `.artifacts/design/JN-5795/03-design.md`)
+
+---
 
 ### 🎉 PR #1628 (JN-5714) — MERGED at 15:39 IDT Jun 30
 
@@ -80,13 +91,13 @@ PR [#1628](https://github.com/Jounce-IO/jounce/pull/1628): `feat(jbenchmark): re
 
 ---
 
-### 🟡 PR #1606 (JN-5725) — CI Partially Improved (2 Fails Remain)
+### 🔴 PR #1606 (JN-5725) — REGRESSION: Now CONFLICTING + 2 e2e Failures
 
 PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer): integrate log analyzer into experiment-workflow`
-- CI run 28429314700 **COMPLETED**: integration ✅ PASS, integration-tests ✅, e2e-api ✅, pre-commit ✅, tox ✅, nox ✅
-- **Still failing:** e2e-smoke ❌ (6m15s), e2e-tests ❌ (4s) — same 2 persistent failures
+- **NEW:** `mergeable: CONFLICTING` (was MERGEABLE since Jun 22 — something merged into main that conflicts)
+- CI run 28429314700 **STALE**: e2e-smoke ❌ (6m15s), e2e-tests ❌ (4s) — all other checks ✅
 - Jira JN-5725 shows **Done**
-- **Action needed:** Diagnose e2e-smoke and e2e-tests failures. Decide: fix and merge, or close PR (Jira already Done).
+- **Action needed:** Rebase on main to clear conflict, then diagnose e2e failures. Decide: fix and merge, or close PR (Jira already Done).
 
 ---
 
