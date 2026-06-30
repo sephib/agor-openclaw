@@ -1,6 +1,6 @@
 # Proposals — jounce-workflow-ai
 
-*Last updated: 2026-06-30 16:30 IDT*
+*Last updated: 2026-06-30 18:00 IDT*
 
 ---
 
@@ -21,12 +21,18 @@
 
 ---
 
-## Proposal: Assign Reviewer to PR #1639 — URGENT
-- **Action:** Assign a reviewer to PR [#1639](https://github.com/Jounce-IO/jounce/pull/1639) (JN-5793)
-- **Reason:** ALL CI checks now passing as of 09:01 IDT Jun 30 — including JIRA Association (was the last blocker). PR is MERGEABLE, REVIEW_REQUIRED. Ready to merge.
-- **Risk:** None — PR is ready
-- **Worktree:** jn-5793-jsonb-path-fix (Code zone)
+## Proposal: Move jn-5794-required-checks to Code Review zone — NEW (18:00 IDT Jun 30)
+- **Action:** Call `agor_branches_set_zone` to move `jn-5794-required-checks` from Ingest zone to Code Review zone
+- **Reason:** PR #1643 was published at 17:29 IDT Jun 30 (OPEN/MERGEABLE/REVIEW_REQUIRED). CI partially passing, pending jobs running. Zone still shows Ingest; board should reflect PR-published state.
+- **Risk:** Low — zone assignment is visual only
+- **Worktree:** jn-5794-required-checks
 - **Status:** PENDING
+
+---
+
+## Proposal: Assign Reviewer to PR #1639 — RESOLVED (merged Jun 30 10:41 IDT)
+- **Action:** ~~Assign a reviewer to PR #1639 (JN-5793)~~
+- **Status:** RESOLVED — PR #1639 merged 10:41 IDT Jun 30; worktree archived.
 
 ---
 

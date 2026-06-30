@@ -3396,3 +3396,16 @@
 - Auto-advances: 0
 - Flags: 6 — **#1628 awaiting merge** (approved, all green); **#1606 e2e-smoke + e2e-tests FAIL** (persistent, 2 FAIL run 28429314700); **JN-5612/JN-5616/JN-5724 Jira mismatches** (3 tickets need Done); **#1588 stale CONFLICTING**
 - Next: Watch #1628 for merge. Diagnose/close e2e-smoke/e2e-tests failures on #1606. Joseph to update 3 Jira mismatches → Done. Watch #1588 for rebase.
+
+## 18:00 IDT — Weekday Daytime Advance Heartbeat (2026-06-30)
+
+**Session:** 019f190b-72a0 | http://127.0.0.1:3030/ui/s/019f190b72a07d3fbc5fd28d/
+
+- PRs checked: #1643 (OPEN MERGEABLE REVIEW_REQUIRED — **NEW** published 17:29 IDT), #1606 (OPEN CONFLICTING — run 28429314700, e2e-smoke ❌ + e2e-tests ❌ unchanged), #1588 (OPEN CONFLICTING — unchanged), #1596 (DRAFT OPEN CONFLICTING — unchanged)
+- Merges detected: none — Step 1 sweep clean (no new merges since #1628 at 15:39 IDT)
+- CI changes: **NEW: PR #1643 CI run 28454190163** — most checks ✅ (JIRA, check-changes, atlas-validate, e2e-tests, integration-tests), ⏳ tox-run+pre-commit-run+build-images still pending. #1606 run 28429314700 unchanged (e2e-smoke ❌ + e2e-tests ❌ persist). #1588 unchanged. #1596 unchanged.
+- Jira: JN-5714 still "Backlog", JN-5612 still "In Progress", JN-5616 still "In Review", JN-5724 still "In Review" — 4 mismatches persist (no change).
+- New proposals: **Move jn-5794-required-checks from Ingest → Code Review zone** (PR #1643 now published).
+- Auto-advances: 0
+- Flags: 5 — **NEW: PR #1643 (JN-5794) CI running, needs reviewer + zone move**; **#1606 CONFLICTING + e2e-smoke ❌ + e2e-tests ❌** (persistent, run 28429314700); **JN-5714/5612/5616/5724 Jira mismatches** (4 tickets need Done); **#1588 stale CONFLICTING**
+- Next: Watch #1643 CI to complete; assign reviewer. Update 4 Jira mismatches → Done. Watch #1588 + #1606.

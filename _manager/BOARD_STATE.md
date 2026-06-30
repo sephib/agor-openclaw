@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-30 16:30 IDT (advance heartbeat)*
+*Last updated: 2026-06-30 18:00 IDT (advance heartbeat)*
 
 ---
 
@@ -14,7 +14,7 @@
 | internal-cr-system | Code | — | — | — | ⚠️ No PR; filesystem had git lock error; stagnant since Jun 18 |
 | jira-operations | (no zone) | — | — | — | ⚠️ No zone, no PR — needs zone assignment or archive |
 | jn-5244-cli-flags | Ingest | — | — | [JN-5244](https://redhat.atlassian.net/browse/JN-5244) | ℹ️ No sessions yet. Ready to ingest. |
-| jn-5794-required-checks | Ingest | — | — | [JN-5794](https://redhat.atlassian.net/browse/JN-5794) | ℹ️ No sessions yet. Ready to ingest. |
+| jn-5794-required-checks | Ingest | [#1643](https://github.com/Jounce-IO/jounce/pull/1643) NEW | ⏳ CI running (some ✅, tox+pre-commit+build ⏳ pending) | [JN-5794](https://redhat.atlassian.net/browse/JN-5794) | 🟡 PR #1643 published 17:29 IDT Jun 30 — OPEN/MERGEABLE/REVIEW_REQUIRED. CI in progress. Zone still Ingest. |
 | jn-5795-upgrade-to-guidellm-v070 | NO ZONE | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) "Upgrade to GuideLLM v0.7.0" — Epic, Backlog | ℹ️ **NEW** — Created 11:48 IDT Jun 30. Design session done (143 msgs, idle 12:45 IDT). No zone assigned yet. Proposal: move to Plan zone. |
 
 **Note:** jn-5780-add-jn-project is not in the Agor jounce repo list (active or archived). Per data.js it belongs to a different repo (jira-autofix). Board scan shows no record of it.
@@ -58,19 +58,30 @@
 
 ---
 
-## Key Changes Since Last Run (16:00 IDT Jun 30)
+## Key Changes Since Last Run (16:30 IDT Jun 30)
 
 | What observed | Status |
 |---|---|
-| **NEW: jn-5795-upgrade-to-guidellm-v070** | ℹ️ New worktree on board, NO ZONE. JN-5795 "Upgrade to GuideLLM v0.7.0" (Epic, Backlog). Design session done (143 msgs, idle 12:45 IDT). Proposal: assign to Plan zone. |
-| **PR #1606 regression** | 🔴 Now CONFLICTING (was MERGEABLE since Jun 22). CI unchanged: e2e-smoke ❌ + e2e-tests ❌ (run 28429314700). |
+| **NEW: PR #1643 (JN-5794) published** | 🟡 jn-5794-required-checks published PR at 17:29 IDT. State: OPEN/MERGEABLE/REVIEW_REQUIRED. CI run 28454190163 partially passing (JIRA, check-changes, atlas-validate, e2e-tests, integration-tests ✅; tox, pre-commit-run, build ⏳). |
+| **PR #1606: unchanged** | 🔴 Still CONFLICTING + e2e-smoke ❌ + e2e-tests ❌ (run 28429314700, unchanged) |
 | **Jira mismatches: 4 unchanged** | JN-5714/5612/5616/5724 all still unresolved — no updates since last run |
 | **PR #1588: unchanged** | 🔴 Still CONFLICTING + pre-commit FAIL, stale 14+ days |
-| **PR #1628 / #1639** | Already captured as MERGED; no new merges this run |
+| **No new merges** | Step 1 sweep clean — last merge was #1628 at 15:39 IDT Jun 30 |
 
 ---
 
 ## Attention Items
+
+### 🟡 NEW: PR #1643 (JN-5794) — Published 17:29 IDT, CI Running
+
+PR [#1643](https://github.com/Jounce-IO/jounce/pull/1643): `fix(ci): add all-checks aggregator gate to prevent auto-merge bypass (JN-5794)`
+- **Author:** sephib (Joseph Berry), published 17:29 IDT Jun 30
+- **State:** OPEN / MERGEABLE / REVIEW_REQUIRED
+- **CI (run 28454190163):** ✅ JIRA, check-changes, atlas-validate, e2e-tests, integration-tests all pass; ⏳ tox-run, pre-commit-run, build images still pending
+- **Zone:** jn-5794-required-checks still in Ingest (should move to Publish/Code Review)
+- **Action needed:** Wait for CI to complete, then assign reviewer. Move zone from Ingest → Code Review.
+
+---
 
 ### ℹ️ NEW: jn-5795-upgrade-to-guidellm-v070 — Design Done, No Zone
 

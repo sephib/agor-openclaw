@@ -2063,4 +2063,13 @@ export const HEARTBEAT_RUNS = [
     summary: "PR #1628 APPROVED by Joseph 13:51 IDT (cr-pr-1628 → awaiting merge); #1606 CI run 28429314700 unchanged (e2e-smoke ❌+e2e-tests ❌ persist); #1588 CONFLICTING unchanged; 3 Jira mismatches persist (JN-5612/5616/5724); 6 findings",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f182fb79072fc9a157370/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-30 18:00 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "NEW PR #1643 (JN-5794) published 17:29 IDT — CI running; #1606 CONFLICTING+e2e ❌ unchanged; 4 Jira mismatches persist (JN-5714/5612/5616/5724); #1588 unchanged; 0 auto-advances, 5 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f190b72a07d3fbc5fd28d/",
+  },
 ];

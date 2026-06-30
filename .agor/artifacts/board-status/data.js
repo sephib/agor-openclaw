@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-30 16:30 IDT";
+export const LAST_UPDATED = "2026-06-30 18:00 IDT";
 
 export const WORKTREES = [
   {
@@ -94,15 +94,15 @@ export const WORKTREES = [
     branch: "jn-5794-required-checks",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5794-required-checks",
     zone: "Ingest",
-    pr: null,
-    prUrl: null,
-    status: "ℹ️ NEW worktree — detected 16:30 IDT Jun 29. No sessions yet. JN-5794: Backlog. Ready to start.",
+    pr: "#1643",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1643",
+    status: "🟡 PR #1643 published 17:29 IDT Jun 30 — OPEN/MERGEABLE/REVIEW_REQUIRED. CI run 28454190163: ✅ most checks pass, ⏳ tox+pre-commit-run+build still pending. Zone needs update to Code Review.",
     blockedOn: null,
     blockedType: "active",
     sessionUrl: null,
     sessionLabel: null,
     recentSessions: [],
-    lastActive: "2026-06-29 16:30 IDT",
+    lastActive: "2026-06-30 18:00 IDT",
   },
   {
     ticket: "JN-5244",
@@ -313,16 +313,16 @@ export const ALERTS = [
     message: "⚠️ 4 Jira mismatches need update to Done: JN-5714 (PR #1628 MERGED Jun 30, still 'Backlog'), JN-5612 (PR #1627 MERGED Jun 29, still 'In Progress'), JN-5616 (PR #1623 MERGED Jun 29, still 'In Review'), JN-5724 (PR #1622 MERGED Jun 29, still 'In Review').",
   },
   {
+    level: "yellow",
+    message: "🟡 NEW: PR #1643 (JN-5794) published 17:29 IDT Jun 30 — OPEN/MERGEABLE/REVIEW_REQUIRED. CI run 28454190163: ✅ most checks, ⏳ tox+pre-commit-run+build pending. Zone still Ingest — propose move to Code Review after CI complete.",
+  },
+  {
     level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): REGRESSION — now CONFLICTING (was MERGEABLE). CI run 28429314700: e2e-smoke ❌ + e2e-tests ❌ (all other checks ✅). Jira JN-5725 Done. Rebase + fix e2e or close PR.",
+    message: "🔴 PR #1606 (JN-5725, off-board): CONFLICTING + CI run 28429314700: e2e-smoke ❌ + e2e-tests ❌ (all other checks ✅). Jira JN-5725 Done. Rebase + fix e2e or close PR.",
   },
   {
     level: "red",
     message: "🔴 PR #1588 (JN-5546, Code Review zone): pre-commit FAIL (run 27933817996) + CONFLICTING. Stale since Jun 17 (14+ days). Fix pre-commit + rebase + assign reviewer.",
-  },
-  {
-    level: "info",
-    message: "ℹ️ jn-5794-required-checks (Ingest): JN-5794 [BUG] auto-merge bypasses integration failures. No sessions yet.",
   },
   {
     level: "info",
