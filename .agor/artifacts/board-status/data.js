@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-30 14:00 IDT";
+export const LAST_UPDATED = "2026-06-30 14:30 IDT";
 
 export const WORKTREES = [
   {
@@ -10,13 +10,22 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1628",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1628",
-    status: "🟢 APPROVED by Joseph 13:51 IDT — all CI ✅ green (run 28429468461). Author: ushaket. Awaiting merge.",
-    blockedOn: null,
+    status: "🟡 NEW COMMITS from ushaket at 14:21 IDT — pre-commit ❌ FAIL (run 28440734679). Joseph commenting on new HEAD (14:33 IDT). Needs pre-commit fix before re-review.",
+    blockedOn: "pre-commit FAIL on new commits",
     blockedType: "active",
-    sessionUrl: null,
-    sessionLabel: null,
-    recentSessions: [],
-    lastActive: "2026-06-30 14:00 IDT",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f17e0b7bd7c5dbb975545/",
+    sessionLabel: "CR review",
+    recentSessions: [
+      {
+        sessionId: "019f17e0b7bd7c5dbb975545",
+        url: "http://127.0.0.1:3030/ui/s/019f17e0b7bd7c5dbb975545/",
+        title: "CR: PR #1628",
+        status: "idle",
+        timestamp: "2026-06-30 12:39 IDT",
+        outputFile: null,
+      },
+    ],
+    lastActive: "2026-06-30 14:33 IDT",
   },
   {
     ticket: "JN-5546",
@@ -27,7 +36,7 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1588",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1588",
-    status: "🔴 pre-commit FAIL (run 27933817996). PR CONFLICTING (mergeable=UNKNOWN). Fix pre-commit + rebase, then assign reviewer. Jira should be 'In Review'.",
+    status: "🔴 pre-commit FAIL (run 27933817996). PR CONFLICTING. Stale since Jun 17 (13+ days). Fix pre-commit + rebase, then assign reviewer.",
     blockedOn: "pre-commit FAIL + merge conflict",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ed01e5624752fbade0eab/",
@@ -279,8 +288,8 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "green",
-    message: "🟢 PR #1628 (JN-5714) APPROVED by Joseph at 13:51 IDT — feat(jbenchmark): release manifest schema by ushaket. All CI ✅ green (run 28429468461). Awaiting merge by maintainer.",
+    level: "yellow",
+    message: "🟡 PR #1628 (JN-5714): ushaket pushed 'CR' commits at 14:21 IDT after Joseph's approval. New CI run 28440734679: pre-commit ❌ FAIL. e2e-smoke still pending. Joseph commenting on new HEAD (14:33 IDT). Needs pre-commit fix before re-review.",
   },
   {
     level: "green",
@@ -288,7 +297,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "🟡 PR #1606 (JN-5725, off-board): CI run 28429314700 COMPLETE — integration ✅ + integration-tests ✅ now passing (improvement from 4→2 FAIL). e2e-smoke ❌ + e2e-tests ❌ still failing. Jira JN-5725 Done. Diagnose e2e failures or close PR.",
+    message: "🟡 PR #1606 (JN-5725, off-board): CI run 28429314700 COMPLETE — e2e-smoke ❌ + e2e-tests ❌ still failing (all other checks ✅). Jira JN-5725 Done. Diagnose e2e failures or close PR.",
   },
   {
     level: "yellow",
