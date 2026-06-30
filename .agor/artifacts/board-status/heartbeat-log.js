@@ -1946,4 +1946,13 @@ export const HEARTBEAT_RUNS = [
     summary: "Board static — no changes from 11:30 IDT; #1606 CI run 28429314700 unchanged (e2e-smoke ❌ + e2e-tests ❌ persist); #1588 CONFLICTING unchanged; 3 Jira mismatches (JN-5612/5616/5724) persist",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f17c1d910760caf5a7466/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-30 12:30 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "Board static; #1606 CI run 28429314700 unchanged (e2e-smoke ❌+e2e-tests ❌ persist); #1588 CONFLICTING unchanged; 3 Jira mismatches persist (JN-5612/5616/5724); 5 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f17dd50577a038fea3105/",
+  },
 ];
