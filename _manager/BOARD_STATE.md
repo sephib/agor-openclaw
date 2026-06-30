@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-30 22:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-01 00:00 IDT (advance heartbeat)*
 
 ---
 
@@ -8,7 +8,7 @@
 
 | Worktree | Zone | PR | CI | Jira | Status |
 |---------|------|----|----|------|--------|
-| jn-5546-docs-document-module-layout-convention-and-3 | Code Review | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | ❌ pre-commit FAIL (stale run 27933817996) | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) — In Progress | 🔴 CONFLICTING + pre-commit FAIL. Stale 13+ days. |
+| jn-5546-docs-document-module-layout-convention-and-3 | Code Review | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | ❌ pre-commit FAIL (run 28469578445) | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) — In Progress | ⚠️ Conflict RESOLVED (now MERGEABLE) but pre-commit still FAILING (new run). Fix pre-commit to unblock. |
 | jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | — | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) | 🔴 DRAFT CONFLICTING; frozen |
 | jn-5672-dal-ext-dashboard | BLOCKED | — | — | [JN-5672](https://redhat.atlassian.net/browse/JN-5672) | On hold — after notebooks complete |
 | internal-cr-system | Code | — | — | — | ⚠️ No PR; filesystem had git lock error; stagnant since Jun 18 |
@@ -58,15 +58,14 @@
 
 ---
 
-## Key Changes Since Last Run (21:30 IDT Jun 30)
+## Key Changes Since Last Run (22:00 IDT Jun 30)
 
 | What observed | Status |
 |---|---|
-| **Board static — no changes** | All states identical to 21:30 IDT scan |
+| **PR #1588: CONFLICT RESOLVED** | ⚠️ Now MERGEABLE (was CONFLICTING). New CI run 28469578445 — pre-commit STILL FAILING (pre-commit ❌ + pre-commit-run ❌). Fix pre-commit to unblock merge. |
 | **PR #1643: unchanged** | 🟢 Still ALL CI GREEN (run 28454371524). OPEN/MERGEABLE. reviewDecision="" — no reviewer assigned yet. |
 | **PR #1606: unchanged** | 🔴 Still CONFLICTING + e2e-smoke ❌ + e2e-tests ❌ (run 28429314700) |
 | **Jira mismatches: 4 unchanged** | JN-5714/5612/5616/5724 all still unresolved (JN-5714: Backlog, JN-5612: In Progress, JN-5616: In Review, JN-5724: In Review) |
-| **PR #1588: unchanged** | 🔴 Still CONFLICTING + pre-commit FAIL, stale 14+ days |
 | **No new merges** | Step 1 sweep clean — last merge was #1628 at 15:39 IDT Jun 30 |
 
 ---
@@ -122,12 +121,12 @@ PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer):
 
 ---
 
-### 🔴 PR #1588 (JN-5546) — Stale and Blocked
+### ⚠️ PR #1588 (JN-5546) — Conflict Resolved, Pre-commit Still Failing
 
 PR [#1588](https://github.com/Jounce-IO/jounce/pull/1588): `docs(jbenchmark): add CONTRIBUTING.md and service READMEs`
-- **STALE:** Unchanged since Jun 17 (13+ days)
-- **State:** CONFLICTING + pre-commit FAIL
-- **Action needed:** Rebase on main + fix pre-commit failures, or close PR
+- **CHANGE at 00:00 IDT Jul 1:** mergeable changed CONFLICTING → **MERGEABLE** (rebase or squash must have happened)
+- **CI (run 28469578445):** pre-commit ❌ + pre-commit-run ❌ (5m8s FAIL). All other checks skipped or passing.
+- **Action needed:** Fix pre-commit failures — conflict is gone, this is now the only blocker before assigning a reviewer.
 
 ---
 

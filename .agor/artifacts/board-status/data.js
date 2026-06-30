@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-30 22:00 IDT";
+export const LAST_UPDATED = "2026-07-01 00:00 IDT";
 
 export const WORKTREES = [
   {
@@ -10,8 +10,8 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1588",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1588",
-    status: "🔴 pre-commit FAIL (run 27933817996). PR CONFLICTING. Stale since Jun 17 (13+ days). Fix pre-commit + rebase, then assign reviewer.",
-    blockedOn: "pre-commit FAIL + merge conflict",
+    status: "⚠️ Conflict RESOLVED at 00:00 IDT Jul 1 — now MERGEABLE. New CI run 28469578445: pre-commit ❌ + pre-commit-run ❌ still FAILING. Fix pre-commit to unblock review.",
+    blockedOn: "pre-commit FAIL",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ed01e5624752fbade0eab/",
     sessionLabel: "fix session",
@@ -321,8 +321,8 @@ export const ALERTS = [
     message: "🔴 PR #1606 (JN-5725, off-board): CONFLICTING + CI run 28429314700: e2e-smoke ❌ + e2e-tests ❌ (all other checks ✅). Jira JN-5725 Done. Rebase + fix e2e or close PR.",
   },
   {
-    level: "red",
-    message: "🔴 PR #1588 (JN-5546, Code Review zone): pre-commit FAIL (run 27933817996) + CONFLICTING. Stale since Jun 17 (14+ days). Fix pre-commit + rebase + assign reviewer.",
+    level: "yellow",
+    message: "⚠️ PR #1588 (JN-5546, Code Review zone): Conflict RESOLVED at 00:00 IDT Jul 1 (now MERGEABLE). New CI run 28469578445: pre-commit ❌ + pre-commit-run ❌ still FAILING. Fix pre-commit — this is now the only blocker.",
   },
   {
     level: "info",
