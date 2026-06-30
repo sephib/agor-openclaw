@@ -1937,4 +1937,13 @@ export const HEARTBEAT_RUNS = [
     summary: "🎉 PR #1615 (JN-5677) MERGED 15:08 IDT (admin merge, integration ❌ at merge) → worktree archived 15:33 IDT; PR #1606 NOW CONFLICTING (was MERGEABLE — #1615 merged to main); 3 Jira mismatches (JN-5612/5616/5724); 6 findings",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f135be4417f0aa24b59c6/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-06-30 12:00 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "Board static — no changes from 11:30 IDT; #1606 CI run 28429314700 unchanged (e2e-smoke ❌ + e2e-tests ❌ persist); #1588 CONFLICTING unchanged; 3 Jira mismatches (JN-5612/5616/5724) persist",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f17c1d910760caf5a7466/",
+  },
 ];

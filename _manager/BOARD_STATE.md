@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-30 11:30 IDT (advance heartbeat)*
+*Last updated: 2026-06-30 12:00 IDT (advance heartbeat)*
 
 ---
 
@@ -56,13 +56,13 @@
 
 ---
 
-## Key Changes Since Last Run (11:00 IDT Jun 30)
+## Key Changes Since Last Run (11:30 IDT Jun 30)
 
 | What observed | Status |
 |---|---|
-| **PR #1606 CI run 28429314700 COMPLETED** | 🟡 **Partial improvement** — integration ✅ PASS + integration-tests ✅ PASS (were failing in run 28381202187). e2e-smoke ❌ + e2e-tests ❌ still failing. Down from 4 FAIL to 2 FAIL. |
-| **PR #1639: already processed** | ✅ MERGED 10:41 IDT, archived at 11:00 IDT. No new action needed. |
-| **PR #1588: unchanged** | 🔴 Still CONFLICTING, no activity |
+| **Board: STATIC** | No changes from 11:30 IDT run. All PRs, CI, worktrees, Jira mismatches unchanged. |
+| **PR #1606: unchanged** | 🟡 2 FAIL persist (e2e-smoke ❌ + e2e-tests ❌), run 28429314700, state OPEN MERGEABLE |
+| **PR #1588: unchanged** | 🔴 Still CONFLICTING, pre-commit FAIL, stale 13+ days |
 | **Jira mismatches: 3 persist** | JN-5612/JN-5616/JN-5724 still not updated to Done |
 
 ---
