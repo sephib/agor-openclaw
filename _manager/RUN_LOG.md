@@ -3192,3 +3192,52 @@
 - Auto-advances: none
 - Flags: 6 — **#1615 CI still FAILING** (integration ❌, integration-tests ❌, e2e-smoke ⏳); **#1606 e2e-smoke + e2e-tests FAIL** (persistent); **JN-5612/5616/5724 Jira mismatches**; #1588 stale/CONFLICTING
 - Next: Watch e2e-smoke result on #1615 — if it passes, only integration + integration-tests remain. Diagnose integration failures on #1615. Diagnose persistent e2e-smoke on #1606. Joseph to update Jira mismatches.
+
+---
+
+## 10:37 IDT — Manual Board Scan (2026-06-30)
+
+**Session:** 019f1501-06fc | http://127.0.0.1:3030/ui/s/019f150106fc7c6594a3d6db/
+- **CRITICAL:** Board is now EMPTY — all 9 worktrees that existed at 18:00 IDT Jun 29 are gone
+- PRs checked: #1639 (MERGEABLE REVIEW_REQUIRED, 1 FAIL: JIRA Association only — run 28376204013), #1606 (MERGEABLE, updated 14:55 IDT Jun 29), #1588 (CONFLICTING, stale since Jun 17), #1596 (DRAFT CONFLICTING)
+- Jira: 10 tickets in active sprint assigned to Joseph, none have worktrees on board
+- **Worktrees missing since last run:**
+  1. jn-5546-docs-document-module-layout-convention-and-3 (Code Review)
+  2. internal-cr-system (Code)
+  3. jn-5695-db-connect-script (BLOCKED)
+  4. jn-5672-dal-ext-dashboard (BLOCKED)
+  5. jira-operations (no zone)
+  6. jn-5244-cli-flags (Ingest)
+  7. jn-5780-add-jn-project (Plan)
+  8. jn-5793-jsonb-path-fix (Code)
+  9. jn-5794-required-checks (Ingest)
+- Flags: 4 (board empty investigation needed, PR #1639 nearly ready, PR #1606 needs CI recheck, PR #1588 stale)
+- Proposals: 4 new (investigate missing worktrees, assign reviewer to #1639, recheck #1606 CI, archive/fix #1588)
+- Next: Investigate worktree disappearance via agor_branches_list with includeArchived=true; assign reviewer to #1639; recheck #1606 CI status
+
+
+## 09:01 IDT — Weekday Daytime Advance Heartbeat (2026-06-30)
+
+**Session:** 019f171d-61cc | http://127.0.0.1:3030/ui/s/019f171d61cc736b9d1bf37d/
+- PRs checked: #1639 (OPEN MERGEABLE REVIEW_REQUIRED, ALL CI PASS ✅ — JIRA Association now ✅), #1606 (OPEN MERGEABLE, CI 28381202187 — 4 FAIL: e2e-smoke ❌ + e2e-tests ❌ + integration ❌ + integration-tests ❌ — unchanged; Jira JN-5725 now Done), #1588 (OPEN CONFLICTING, CI 27933817996 stale — unchanged), #1596 (DRAFT OPEN CONFLICTING)
+- Merges detected: none (no new merges since Jun 29 18:00)
+- CI changes: **#1639 ALL CHECKS NOW PASSING** — JIRA Association ✅ (run 28376203902). This was the last blocker. All functional checks ✅. #1606 unchanged (4 FAIL, same run). #1588 unchanged.
+- Jira: JN-5725 changed to Done (was In Progress) — PR #1606 still open, possible orphan. JN-5612/JN-5616/JN-5724 still In Progress/In Review — mismatches persist (3 total).
+- Correction: Previous sessions at 08:00 and 08:30 IDT (019f16e6-22a7 and 019f1701-9972) erroneously wrote "all worktrees gone" to BOARD_STATE.md. Full board scan confirms 8 active worktrees. Data corrected this run.
+- Auto-advances: 0
+- Flags: 5 (#1639 needs reviewer; #1606 Jira/PR mismatch (Done ticket, open PR with CI fails); #1588 stale+CONFLICTING; JN-5612/JN-5616/JN-5724 Jira mismatches)
+- Next: Assign reviewer to #1639 (ready to merge). Clarify #1606 intent. Update 3 Jira tickets to Done.
+
+---
+
+## 10:30 IDT — Weekday Daytime Advance Heartbeat (2026-06-30)
+
+**Session:** 019f176f-6f62 | http://127.0.0.1:3030/ui/s/019f176f6f6277d79fb3595a/
+
+- PRs checked: #1639 (**APPROVED** ✅ — reviewDecision REVIEW_REQUIRED→APPROVED, ALL CI PASS ✅ unchanged run 28376204013+28376203902), #1606 (OPEN MERGEABLE, CI 28381202187 — 4 FAIL: e2e-smoke ❌ + e2e-tests ❌ + integration ❌ + integration-tests ❌ — unchanged), #1588 (OPEN CONFLICTING — unchanged), #1596 (DRAFT OPEN CONFLICTING — unchanged)
+- Merges detected: none — Step 1 sweep clean (no new merges since Jun 29)
+- CI changes: **No CI changes.** #1639 unchanged (all pass). #1606 unchanged (4 FAIL, run 28381202187). #1588 unchanged. **Key state change: PR #1639 reviewDecision → APPROVED.**
+- Jira: JN-5612 still "In Progress", JN-5616 still "In Review", JN-5724 still "In Review" — all 3 mismatches unchanged. JN-5725 still "Done" (PR #1606 still open).
+- Auto-advances: 0
+- Flags: 5 — **#1639 APPROVED+CI PASS → MERGE NOW** (urgent); **#1606 Jira Done/PR open mismatch** (4 CI fails); **JN-5612/JN-5616/JN-5724 Jira mismatches** (3 tickets need Done)
+- Next: Merge PR #1639 immediately (APPROVED + all CI green). Clarify #1606 intent. Joseph to update 3 Jira mismatches → Done.

@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-29 18:00 IDT";
+export const LAST_UPDATED = "2026-06-30 10:30 IDT";
 
 export const WORKTREES = [
   {
@@ -10,13 +10,13 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1639",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1639",
-    status: "🟡 CI IMPROVED — new run 28376204013: only JIRA Association ❌ (1 failure, down from 5). All others ✅: integration ✅, pre-commit ✅, e2e-smoke ✅ 11m34s, e2e-tests ✅. MERGEABLE, REVIEW_REQUIRED. Likely migration issue (jounce→redhat.atlassian.net). Fix JIRA check + assign reviewer.",
-    blockedOn: "JIRA Association check (migration-related)",
+    status: "🟢 APPROVED + ALL CI PASS — JIRA Association ✅ (run 28376203902) + all functional ✅ (run 28376204013). MERGEABLE, APPROVED. Merge now!",
+    blockedOn: null,
     blockedType: "active",
     sessionUrl: null,
     sessionLabel: null,
     recentSessions: [],
-    lastActive: "2026-06-29 17:00 IDT",
+    lastActive: "2026-06-30 10:30 IDT",
   },
   {
     ticket: "JN-5546",
@@ -270,12 +270,12 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "yellow",
-    message: "🟡 PR #1639 (JN-5793, Code): CI IMPROVED — new run 28376204013: 1 failure only (JIRA Association ❌, likely migration issue). All others ✅. Fix JIRA check + assign reviewer → nearly mergeable.",
+    level: "green",
+    message: "🟢 PR #1639 (JN-5793, Code): APPROVED ✅ + ALL CI PASSING as of 10:30 IDT Jun 30 — JIRA Association ✅ + all functional ✅. MERGEABLE, APPROVED. MERGE NOW!",
   },
   {
-    level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): REBASED (CONFLICTING→MERGEABLE). New CI run 28381202187 — e2e-smoke ❌ (5m0s) + e2e-tests ❌ (4s) persist; integration ❌ (3m48s) + integration-tests ❌ (5s) NEW failures. 4 CI failures. Diagnose root causes.",
+    level: "yellow",
+    message: "🟡 PR #1606 (JN-5725, off-board): Jira JN-5725 now shows Done, but PR still open with 4 CI failures (e2e-smoke ❌, e2e-tests ❌, integration ❌, integration-tests ❌). Clarify intent — close PR or fix CI?",
   },
   {
     level: "yellow",
