@@ -3254,3 +3254,15 @@
 - Auto-advances: 0
 - Flags: 5 — **#1639 APPROVED+CI PASS → MERGE NOW** (urgent); **#1606 Jira Done/PR open mismatch** (4 CI fails); **JN-5612/JN-5616/JN-5724 Jira mismatches** (3 tickets need Done)
 - Next: Merge PR #1639 immediately (APPROVED + all CI green). Clarify #1606 intent. Joseph to update 3 Jira mismatches → Done.
+
+## 11:30 IDT — Weekday Daytime Advance Heartbeat (2026-06-30)
+
+**Session:** 019f17a6-5f71 | http://127.0.0.1:3030/ui/s/019f17a65f717d40bd2246fd/
+
+- PRs checked: #1639 (MERGED 10:41 IDT — already processed at 11:00), #1606 (OPEN MERGEABLE, CI run 28429314700 **COMPLETE**: integration ✅ 2m38s + integration-tests ✅ 4s now passing; e2e-smoke ❌ 6m15s + e2e-tests ❌ 4s still failing — 4→2 FAIL improvement), #1588 (OPEN CONFLICTING — unchanged), #1596 (DRAFT OPEN CONFLICTING — unchanged)
+- Merges detected: none — Step 1 sweep clean (no new merges since #1639 at 10:41 IDT)
+- CI changes: **#1606 CI run 28429314700 completed** — integration ✅ + integration-tests ✅ now PASSING (were failing in prior run 28381202187). e2e-smoke ❌ + e2e-tests ❌ persist (persistent failures across multiple runs). Net: 4 FAIL → 2 FAIL. **No other CI changes.**
+- Jira: JN-5793 — cannot query (old instance error). JN-5612 still "In Progress", JN-5616 still "In Review", JN-5724 still "In Review" — 3 mismatches unchanged. JN-5725 still "Done" (PR #1606 still open).
+- Auto-advances: 0
+- Flags: 5 — **#1606 e2e-smoke + e2e-tests FAIL** (persistent, diagnose or close PR); **JN-5612/JN-5616/JN-5724 Jira mismatches** (3 tickets need Done); **#1588 stale CONFLICTING**
+- Next: Diagnose e2e-smoke/e2e-tests failures on #1606 (decide fix or close). Joseph to update 3 Jira mismatches → Done. Watch #1588 for rebase.

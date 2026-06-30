@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-30 11:00 IDT";
+export const LAST_UPDATED = "2026-06-30 11:30 IDT";
 
 export const WORKTREES = [
   {
@@ -267,7 +267,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "🟡 PR #1606 (JN-5725, off-board): NEW CI run 28429314700 in progress — integration ✅ PASSING, pre-commit/tox/e2e pending. Jira JN-5725 Done. Wait for CI to complete, then decide merge or close.",
+    message: "🟡 PR #1606 (JN-5725, off-board): CI run 28429314700 COMPLETE — integration ✅ + integration-tests ✅ now passing (improvement from 4→2 FAIL). e2e-smoke ❌ + e2e-tests ❌ still failing. Jira JN-5725 Done. Diagnose e2e failures or close PR.",
   },
   {
     level: "yellow",

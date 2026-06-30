@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-30 11:00 IDT (advance heartbeat)*
+*Last updated: 2026-06-30 11:30 IDT (advance heartbeat)*
 
 ---
 
@@ -56,15 +56,14 @@
 
 ---
 
-## Key Changes Since Last Run (10:30 IDT Jun 30)
+## Key Changes Since Last Run (11:00 IDT Jun 30)
 
 | What observed | Status |
 |---|---|
-| **PR #1639 MERGED** | 🎉 Merged at 10:41 IDT Jun 30. Worktree jn-5793-jsonb-path-fix **ARCHIVED** ✓ (autonomous action). |
-| **PR #1606 NEW CI RUN** | 🟡 New run 28429314700 started — integration ✅ PASSING, JIRA Association ✅, pre-commit/tox/e2e in progress. Significant improvement from 4-failure run 28381202187. |
+| **PR #1606 CI run 28429314700 COMPLETED** | 🟡 **Partial improvement** — integration ✅ PASS + integration-tests ✅ PASS (were failing in run 28381202187). e2e-smoke ❌ + e2e-tests ❌ still failing. Down from 4 FAIL to 2 FAIL. |
+| **PR #1639: already processed** | ✅ MERGED 10:41 IDT, archived at 11:00 IDT. No new action needed. |
 | **PR #1588: unchanged** | 🔴 Still CONFLICTING, no activity |
 | **Jira mismatches: 3 persist** | JN-5612/JN-5616/JN-5724 still not updated to Done |
-| **JN-5793 Jira: cannot verify** | PR merged Jun 30 — Jira query returns "does not exist" error (old instance). Needs manual check. |
 
 ---
 
@@ -79,13 +78,14 @@ PR [#1639](https://github.com/Jounce-IO/jounce/pull/1639): `fix(tests): JN-5793 
 
 ---
 
-### 🟡 PR #1606 (JN-5725) — New CI Run In Progress
+### 🟡 PR #1606 (JN-5725) — CI Partially Improved (2 Fails Remain)
 
 PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer): integrate log analyzer into experiment-workflow`
-- New CI run 28429314700: integration ✅ PASSING, pre-commit/tox/integration-tests IN_PROGRESS, e2e-api QUEUED
-- Previous 4 failures (e2e-smoke, e2e-tests, integration, integration-tests) — the new run may resolve these
+- CI run 28429314700 **COMPLETED**: integration ✅ PASS (2m38s), integration-tests ✅ PASS (4s), e2e-api ✅ PASS, pre-commit ✅, tox ✅, nox ✅
+- **Still failing:** e2e-smoke ❌ (6m15s), e2e-tests ❌ (4s) — same 2 persistent failures
+- Improvement: 4 FAIL (run 28381202187) → 2 FAIL (run 28429314700)
 - Jira JN-5725 shows **Done**
-- **Action needed:** Wait for CI run to complete — if all pass, ready to merge or close based on intent
+- **Action needed:** Diagnose e2e-smoke and e2e-tests failures. Decide: fix and merge, or close PR (Jira already Done).
 
 ---
 
