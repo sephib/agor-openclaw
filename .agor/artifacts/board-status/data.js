@@ -1,6 +1,23 @@
-export const LAST_UPDATED = "2026-06-30 13:00 IDT";
+export const LAST_UPDATED = "2026-06-30 13:30 IDT";
 
 export const WORKTREES = [
+  {
+    ticket: "JN-5714",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5714",
+    title: "Release manifest schema",
+    branch: "cr-pr-1628",
+    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/cr-pr-1628",
+    zone: "Code Review",
+    pr: "#1628",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1628",
+    status: "🟡 REVIEW_REQUIRED — all CI ✅ green (run 28429468461). Author: ushaket. Needs Joseph review.",
+    blockedOn: "Awaiting review",
+    blockedType: "active",
+    sessionUrl: null,
+    sessionLabel: null,
+    recentSessions: [],
+    lastActive: "2026-06-30 13:30 IDT",
+  },
   {
     ticket: "JN-5546",
     ticketUrl: "https://redhat.atlassian.net/browse/JN-5546",
@@ -261,6 +278,10 @@ export const MERGED = [
 ];
 
 export const ALERTS = [
+  {
+    level: "yellow",
+    message: "🟡 PR #1628 (JN-5714) REVIEW_REQUIRED — feat(jbenchmark): release manifest schema by ushaket. All CI ✅ green (run 28429468461). Worktree cr-pr-1628 in Code Review zone. Joseph: please review and approve.",
+  },
   {
     level: "green",
     message: "🎉 PR #1639 (JN-5793) MERGED at 10:41 IDT Jun 30 ✅ — worktree archived automatically. All CI green + reviewer approved. Verify JN-5793 Jira → Done (Jira query failing, check manually).",

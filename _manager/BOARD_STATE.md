@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-30 13:00 IDT (advance heartbeat)*
+*Last updated: 2026-06-30 13:30 IDT (advance heartbeat)*
 
 ---
 
@@ -9,6 +9,7 @@
 | Worktree | Zone | PR | CI | Jira | Status |
 |---------|------|----|----|------|--------|
 | jn-5546-docs-document-module-layout-convention-and-3 | Code Review | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | ❌ pre-commit FAIL (stale run 27933817996) | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) — In Progress | 🔴 CONFLICTING + pre-commit FAIL. Stale 13+ days. |
+| cr-pr-1628 | Code Review | [#1628](https://github.com/Jounce-IO/jounce/pull/1628) | ✅ All green (run 28429468461) | [JN-5714](https://redhat.atlassian.net/browse/JN-5714) | 🟡 NEW — feat(jbenchmark): release manifest schema by ushaket. REVIEW_REQUIRED. Joseph to review. |
 | jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | — | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) | 🔴 DRAFT CONFLICTING; frozen |
 | jn-5672-dal-ext-dashboard | BLOCKED | — | — | [JN-5672](https://redhat.atlassian.net/browse/JN-5672) | On hold — after notebooks complete |
 | internal-cr-system | Code | — | — | — | ⚠️ No PR; filesystem had git lock error; stagnant since Jun 18 |
@@ -56,11 +57,11 @@
 
 ---
 
-## Key Changes Since Last Run (12:30 IDT Jun 30)
+## Key Changes Since Last Run (13:00 IDT Jun 30)
 
 | What observed | Status |
 |---|---|
-| **Board: STATIC** | No changes from 12:30 IDT run. All PRs, CI, worktrees, Jira mismatches unchanged. |
+| **NEW: cr-pr-1628 worktree detected** | 🟡 PR [#1628](https://github.com/Jounce-IO/jounce/pull/1628) (JN-5714 by ushaket) — all CI ✅ green, REVIEW_REQUIRED. Joseph needs to review. |
 | **PR #1606: unchanged** | 🟡 2 FAIL persist (e2e-smoke ❌ + e2e-tests ❌), run 28429314700, state OPEN MERGEABLE |
 | **PR #1588: unchanged** | 🔴 Still CONFLICTING, pre-commit FAIL, stale 13+ days |
 | **Jira mismatches: 3 persist** | JN-5612/JN-5616/JN-5724 still not updated to Done |
@@ -68,6 +69,16 @@
 ---
 
 ## Attention Items
+
+### 🟡 PR #1628 (JN-5714) — Needs Review
+
+PR [#1628](https://github.com/Jounce-IO/jounce/pull/1628): `feat(jbenchmark): release manifest schema (JN-5714)` by ushaket
+- **State:** OPEN MERGEABLE, REVIEW_REQUIRED
+- **CI:** All ✅ green (run 28429468461) — e2e-smoke ✅ 12m50s, e2e-tests ✅, all checks pass
+- **Worktree:** cr-pr-1628 (Code Review zone) — NEW, detected 13:30 IDT Jun 30
+- **Action needed:** Joseph to review and approve PR #1628
+
+---
 
 ### 🎉 PR #1639 (JN-5793) — MERGED
 
