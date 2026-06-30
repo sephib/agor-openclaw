@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-30 20:00 IDT";
+export const LAST_UPDATED = "2026-06-30 20:30 IDT";
 
 export const WORKTREES = [
   {
@@ -102,7 +102,7 @@ export const WORKTREES = [
     sessionUrl: null,
     sessionLabel: null,
     recentSessions: [],
-    lastActive: "2026-06-30 19:30 IDT",
+    lastActive: "2026-06-30 20:30 IDT",
   },
   {
     ticket: "JN-5244",
