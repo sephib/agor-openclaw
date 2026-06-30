@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-01 00:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-01 02:00 IDT (advance heartbeat)*
 
 ---
 
@@ -58,14 +58,15 @@
 
 ---
 
-## Key Changes Since Last Run (22:00 IDT Jun 30)
+## Key Changes Since Last Run (00:00 IDT Jul 1)
 
 | What observed | Status |
 |---|---|
-| **PR #1588: CONFLICT RESOLVED** | ⚠️ Now MERGEABLE (was CONFLICTING). New CI run 28469578445 — pre-commit STILL FAILING (pre-commit ❌ + pre-commit-run ❌). Fix pre-commit to unblock merge. |
+| **Board: static** | No changes detected. All PRs, CI runs, and Jira states identical to 00:00 IDT scan. |
 | **PR #1643: unchanged** | 🟢 Still ALL CI GREEN (run 28454371524). OPEN/MERGEABLE. reviewDecision="" — no reviewer assigned yet. |
+| **PR #1588: unchanged** | ⚠️ Still MERGEABLE. CI run 28469578445: pre-commit ❌ + pre-commit-run ❌ — unchanged. |
 | **PR #1606: unchanged** | 🔴 Still CONFLICTING + e2e-smoke ❌ + e2e-tests ❌ (run 28429314700) |
-| **Jira mismatches: 4 unchanged** | JN-5714/5612/5616/5724 all still unresolved (JN-5714: Backlog, JN-5612: In Progress, JN-5616: In Review, JN-5724: In Review) |
+| **Jira mismatches: 4 unchanged** | JN-5714/5612/5616/5724 all still unresolved — identical to 00:00 IDT |
 | **No new merges** | Step 1 sweep clean — last merge was #1628 at 15:39 IDT Jun 30 |
 
 ---
