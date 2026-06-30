@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-30 18:30 IDT (advance heartbeat)*
+*Last updated: 2026-06-30 19:00 IDT (advance heartbeat)*
 
 ---
 
@@ -58,13 +58,14 @@
 
 ---
 
-## Key Changes Since Last Run (18:00 IDT Jun 30)
+## Key Changes Since Last Run (18:30 IDT Jun 30)
 
 | What observed | Status |
 |---|---|
-| **PR #1643 CI: ALL GREEN** | 🟢 Run 28454371524 — all checks pass: tox-run ✅, pre-commit-run ✅, e2e-smoke ✅ (10m34s), e2e-api ✅, integration-run ✅, all-checks ✅ and more. Was partially ⏳ pending at 18:00. Ready for reviewer. |
-| **PR #1606: unchanged** | 🔴 Still CONFLICTING + e2e-smoke ❌ + e2e-tests ❌ (run 28429314700, unchanged) |
-| **Jira mismatches: 4 unchanged** | JN-5714/5612/5616/5724 all still unresolved — no updates since last run |
+| **Board static — no changes** | All states identical to 18:30 IDT scan |
+| **PR #1643: unchanged** | 🟢 Still ALL CI GREEN (run 28454371524). OPEN/MERGEABLE. reviewDecision="" — no reviewer assigned yet. |
+| **PR #1606: unchanged** | 🔴 Still CONFLICTING + e2e-smoke ❌ + e2e-tests ❌ (run 28429314700) |
+| **Jira mismatches: 4 unchanged** | JN-5714/5612/5616/5724 all still unresolved (JN-5714: Backlog, JN-5612: In Progress, JN-5616: In Review, JN-5724: In Review) |
 | **PR #1588: unchanged** | 🔴 Still CONFLICTING + pre-commit FAIL, stale 14+ days |
 | **No new merges** | Step 1 sweep clean — last merge was #1628 at 15:39 IDT Jun 30 |
 

@@ -3421,3 +3421,15 @@
 - Auto-advances: 0
 - Flags: 5 — **PR #1643 (JN-5794) ALL CI GREEN — needs reviewer + zone move Ingest→Code Review**; **#1606 CONFLICTING + e2e-smoke ❌ + e2e-tests ❌** (persistent, run 28429314700); **JN-5714/5612/5616/5724 Jira mismatches** (4 tickets need Done); **#1588 stale CONFLICTING**
 - Next: Assign reviewer to PR #1643. Move jn-5794-required-checks zone Ingest → Code Review. Update 4 Jira mismatches → Done. Watch #1588 + #1606.
+
+## 19:00 IDT — Weekday Daytime Advance Heartbeat (2026-06-30)
+
+**Session:** 019f1942-bb75 | http://127.0.0.1:3030/ui/s/019f1942bb75708f84669707/
+
+- PRs checked: #1643 (OPEN MERGEABLE — ALL CI GREEN run 28454371524, reviewDecision="" — unchanged), #1606 (OPEN CONFLICTING — run 28429314700, e2e-smoke ❌ + e2e-tests ❌ — unchanged), #1588 (OPEN CONFLICTING — unchanged), #1596 (DRAFT CONFLICTING — unchanged)
+- Merges detected: none — Step 1 sweep clean (no new merges since #1628 at 15:39 IDT)
+- CI changes: **None.** All PRs unchanged from 18:30 IDT scan. #1643 still all green (run 28454371524). #1606 still 2 FAIL (run 28429314700).
+- Jira: JN-5714 still "Backlog", JN-5612 still "In Progress", JN-5616 still "In Review", JN-5724 still "In Review" — 4 mismatches persist (no change from 18:30 IDT).
+- Auto-advances: 0
+- Flags: 5 — **#1643 (JN-5794) ALL CI GREEN — needs reviewer + zone move Ingest→Code Review**; **#1606 CONFLICTING + e2e-smoke ❌ + e2e-tests ❌**; **JN-5714/5612/5616/5724 Jira mismatches** (4 tickets need Done); **#1588 stale CONFLICTING**
+- Next: Assign reviewer to PR #1643. Move jn-5794-required-checks zone Ingest → Code Review. Update 4 Jira mismatches → Done. Watch #1588 + #1606.
