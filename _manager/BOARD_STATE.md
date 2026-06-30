@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-30 15:00 IDT (advance heartbeat)*
+*Last updated: 2026-06-30 15:30 IDT (advance heartbeat)*
 
 ---
 
@@ -9,7 +9,7 @@
 | Worktree | Zone | PR | CI | Jira | Status |
 |---------|------|----|----|------|--------|
 | jn-5546-docs-document-module-layout-convention-and-3 | Code Review | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | ❌ pre-commit FAIL (stale run 27933817996) | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) — In Progress | 🔴 CONFLICTING + pre-commit FAIL. Stale 13+ days. |
-| cr-pr-1628 | Code Review | [#1628](https://github.com/Jounce-IO/jounce/pull/1628) | ❌ pre-commit FAIL (run 28440734679); e2e-smoke ✅ + e2e-tests ✅ NOW PASSING | [JN-5714](https://redhat.atlassian.net/browse/JN-5714) | 🟡 pre-commit ❌ only blocker. e2e-smoke + e2e-tests now ✅. Joseph approved commit 8e8deec5; new commits 3ee9d49 pushed after. Ushaket to fix pre-commit. |
+| cr-pr-1628 | Code Review | [#1628](https://github.com/Jounce-IO/jounce/pull/1628) | ✅ pre-commit PASS (run 28443647770); e2e-smoke ⏳ PENDING; all others ✅ | [JN-5714](https://redhat.atlassian.net/browse/JN-5714) | 🟢 pre-commit NOW ✅ PASSING on new run 28443647770! reviewDecision=APPROVED. Only e2e-smoke PENDING. Nearly ready to merge. |
 | jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | — | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) | 🔴 DRAFT CONFLICTING; frozen |
 | jn-5672-dal-ext-dashboard | BLOCKED | — | — | [JN-5672](https://redhat.atlassian.net/browse/JN-5672) | On hold — after notebooks complete |
 | internal-cr-system | Code | — | — | — | ⚠️ No PR; filesystem had git lock error; stagnant since Jun 18 |
@@ -57,13 +57,13 @@
 
 ---
 
-## Key Changes Since Last Run (14:30 IDT Jun 30)
+## Key Changes Since Last Run (15:00 IDT Jun 30)
 
 | What observed | Status |
 |---|---|
-| **PR #1628: e2e-smoke ✅ + e2e-tests ✅ now PASSING** | 🟢 CI run 28440734679: e2e-smoke PASS (11m52s) + e2e-tests PASS (5s). Only pre-commit ❌ FAIL remains. |
-| **PR #1628: pre-commit ❌ still failing** | 🟡 pre-commit-run ❌ (5m29s) + pre-commit standalone ❌ (4s) — ushaket must fix |
-| **PR #1628: review state** | Joseph approved commit 8e8deec5; new commits 3ee9d49 pushed after approval; reviewDecision="" (approval may persist per branch protection settings) |
+| **PR #1628: pre-commit ✅ NOW PASSING** | 🟢 NEW CI run 28443647770: pre-commit ✅ PASS + pre-commit-run ✅ PASS. Ushaket fixed pre-commit failures! |
+| **PR #1628: e2e-smoke ⏳ PENDING** | ⏳ job 84289273314 still running — was passing in prior run 28440734679 |
+| **PR #1628: reviewDecision = APPROVED** | 🟢 Was "" last run, now shows APPROVED again. OPEN MERGEABLE. |
 | **PR #1606: unchanged** | 🟡 e2e-smoke ❌ + e2e-tests ❌ persist (run 28429314700) |
 | **PR #1588: unchanged** | 🔴 Still CONFLICTING, pre-commit FAIL, stale 13+ days |
 | **Jira mismatches: 3 persist** | JN-5612/JN-5616/JN-5724 still not updated to Done |
@@ -72,17 +72,17 @@
 
 ## Attention Items
 
-### 🟡 PR #1628 (JN-5714) — pre-commit Still Failing; e2e IMPROVED ✅
+### 🟢 PR #1628 (JN-5714) — pre-commit NOW PASSING; e2e-smoke Pending; APPROVED
 
 PR [#1628](https://github.com/Jounce-IO/jounce/pull/1628): `feat(jbenchmark): release manifest schema (JN-5714)` by ushaket
-- **State:** OPEN MERGEABLE
-- **CI run 28440734679 (latest):**
-  - ❌ pre-commit FAIL (pre-commit-run ❌ 5m29s + pre-commit standalone ❌ 4s)
-  - ✅ e2e-smoke PASS (11m52s) — **newly passing since 14:30 IDT**
-  - ✅ e2e-tests PASS (5s) — **newly passing since 14:30 IDT**
-  - ✅ integration, e2e-api, tox, atlas-validate, nox, check-changes
-- **Review:** Joseph approved commit 8e8deec5 at 10:51 IDT; ushaket pushed commit 3ee9d49 after; Joseph commented on 3ee9d49 at 11:33 IDT. reviewDecision="" (approval may persist if stale reviews not dismissed).
-- **Action needed:** ushaket to fix pre-commit failures. After fix, Joseph to confirm re-review or merge.
+- **State:** OPEN APPROVED MERGEABLE
+- **CI run 28443647770 (latest — new run since 15:00 IDT):**
+  - ✅ pre-commit PASS (3s) — **newly passing; ushaket fixed!**
+  - ✅ pre-commit-run PASS (4m45s) — **newly passing**
+  - ⏳ e2e-smoke PENDING (job 84289273314) — was ✅ in prior run
+  - ✅ e2e-tests, integration, e2e-api, tox, atlas-validate, nox, check-changes, deploy
+- **Review:** reviewDecision = APPROVED. Joseph approved previously; new CI run triggered by ushaket's pre-commit fix.
+- **Action needed:** Wait for e2e-smoke to complete (expected ✅). Then merge if e2e-smoke passes.
 
 ---
 

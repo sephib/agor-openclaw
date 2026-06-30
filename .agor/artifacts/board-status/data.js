@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-30 15:00 IDT";
+export const LAST_UPDATED = "2026-06-30 15:30 IDT";
 
 export const WORKTREES = [
   {
@@ -10,8 +10,8 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1628",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1628",
-    status: "🟡 pre-commit ❌ FAIL (run 28440734679) — only blocker. e2e-smoke ✅ + e2e-tests ✅ now PASSING. Ushaket to fix pre-commit; Joseph to confirm merge.",
-    blockedOn: "pre-commit FAIL on new commits",
+    status: "🟢 pre-commit ✅ NOW PASSING (run 28443647770)! reviewDecision=APPROVED. e2e-smoke ⏳ PENDING. All other checks ✅. Nearly ready to merge.",
+    blockedOn: "e2e-smoke pending",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f17e0b7bd7c5dbb975545/",
     sessionLabel: "CR review",
@@ -25,7 +25,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-06-30 15:00 IDT",
+    lastActive: "2026-06-30 15:30 IDT",
   },
   {
     ticket: "JN-5546",
@@ -288,8 +288,8 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "yellow",
-    message: "🟡 PR #1628 (JN-5714): CI run 28440734679 — e2e-smoke ✅ + e2e-tests ✅ NOW PASSING. Pre-commit ❌ FAIL still blocking. Ushaket to fix pre-commit on commit 3ee9d49. After fix, Joseph to confirm merge.",
+    level: "green",
+    message: "🟢 PR #1628 (JN-5714): CI run 28443647770 — pre-commit ✅ NOW PASSING! Ushaket fixed it. reviewDecision=APPROVED. e2e-smoke ⏳ PENDING (was ✅ in prior run). All other checks ✅. Wait for e2e-smoke → merge.",
   },
   {
     level: "green",
