@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-30 13:30 IDT";
+export const LAST_UPDATED = "2026-06-30 14:00 IDT";
 
 export const WORKTREES = [
   {
@@ -10,13 +10,13 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1628",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1628",
-    status: "🟡 REVIEW_REQUIRED — all CI ✅ green (run 28429468461). Author: ushaket. Needs Joseph review.",
-    blockedOn: "Awaiting review",
+    status: "🟢 APPROVED by Joseph 13:51 IDT — all CI ✅ green (run 28429468461). Author: ushaket. Awaiting merge.",
+    blockedOn: null,
     blockedType: "active",
     sessionUrl: null,
     sessionLabel: null,
     recentSessions: [],
-    lastActive: "2026-06-30 13:30 IDT",
+    lastActive: "2026-06-30 14:00 IDT",
   },
   {
     ticket: "JN-5546",
@@ -279,8 +279,8 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "yellow",
-    message: "🟡 PR #1628 (JN-5714) REVIEW_REQUIRED — feat(jbenchmark): release manifest schema by ushaket. All CI ✅ green (run 28429468461). Worktree cr-pr-1628 in Code Review zone. Joseph: please review and approve.",
+    level: "green",
+    message: "🟢 PR #1628 (JN-5714) APPROVED by Joseph at 13:51 IDT — feat(jbenchmark): release manifest schema by ushaket. All CI ✅ green (run 28429468461). Awaiting merge by maintainer.",
   },
   {
     level: "green",
