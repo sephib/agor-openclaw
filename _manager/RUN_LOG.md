@@ -4,6 +4,19 @@
 
 ---
 
+## 11:00 IDT — Weekday Daytime Advance Heartbeat (2026-06-30)
+
+**Session:** 019f178a-e9f3 | http://127.0.0.1:3030/ui/s/019f178ae9f37b679d73e667/
+- PRs checked: #1639 (MERGED 10:41 IDT ✅), #1606 (OPEN MERGEABLE — NEW CI run 28429314700: integration ✅, pre-commit/tox IN_PROGRESS), #1588 (OPEN CONFLICTING — pre-commit FAIL, stale run 27933817996), #1596 (DRAFT OPEN CONFLICTING)
+- Merges detected: PR #1639 MERGED 10:41 IDT Jun 30 (detected 11:00 IDT)
+- Auto-advances: 1 — archived jn-5793-jsonb-path-fix (PR #1639 MERGED)
+- CI changes: PR #1606 new run 28429314700 started — integration ✅ already passing (was failing in run 28381202187)
+- Jira: JN-5612 "In Progress", JN-5616 "In Review", JN-5724 "In Review" — 3 mismatches unchanged. JN-5725 "Done". JN-5793 cannot check (old Jira instance error).
+- Flags: 5 (#1639 merged/archived ✅; #1606 new CI run—may resolve; #1588 pre-commit FAIL+CONFLICTING; 3 Jira mismatches JN-5612/5616/5724; JN-5793 Jira unverifiable)
+- Next: Wait for #1606 CI run to complete. Joseph to update JN-5612/5616/5724 → Done. Verify JN-5793 Jira → Done manually.
+
+---
+
 ## 18:00 IDT — Weekday Daytime Advance Heartbeat (2026-06-29)
 
 **Session:** 019f148a-2977 | http://127.0.0.1:3030/ui/s/019f148a29777299bd7149c9/

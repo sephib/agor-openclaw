@@ -1,23 +1,6 @@
-export const LAST_UPDATED = "2026-06-30 10:30 IDT";
+export const LAST_UPDATED = "2026-06-30 11:00 IDT";
 
 export const WORKTREES = [
-  {
-    ticket: "JN-5793",
-    ticketUrl: "https://redhat.atlassian.net/browse/JN-5793",
-    title: "[BUG] JSONB path mismatch in search_experiments()",
-    branch: "jn-5793-jsonb-path-fix",
-    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5793-jsonb-path-fix",
-    zone: "Code",
-    pr: "#1639",
-    prUrl: "https://github.com/Jounce-IO/jounce/pull/1639",
-    status: "🟢 APPROVED + ALL CI PASS — JIRA Association ✅ (run 28376203902) + all functional ✅ (run 28376204013). MERGEABLE, APPROVED. Merge now!",
-    blockedOn: null,
-    blockedType: "active",
-    sessionUrl: null,
-    sessionLabel: null,
-    recentSessions: [],
-    lastActive: "2026-06-30 10:30 IDT",
-  },
   {
     ticket: "JN-5546",
     ticketUrl: "https://redhat.atlassian.net/browse/JN-5546",
@@ -159,6 +142,15 @@ export const WORKTREES = [
 
 export const MERGED = [
   {
+    ticket: "JN-5793",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5793",
+    title: "fix(tests): update plan_json fixtures to match production JSONB structure",
+    pr: "#1639",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1639",
+    mergedDate: "2026-06-30",
+    note: "Merged 10:41 IDT Jun 30 — worktree archived 11:00 IDT. All CI green + reviewer approved. Jira cannot verify (old instance error).",
+  },
+  {
     ticket: "JN-5677",
     ticketUrl: "https://redhat.atlassian.net/browse/JN-5677",
     title: "feat(jbenchmark): historical mode notebook cells",
@@ -271,11 +263,11 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "green",
-    message: "🟢 PR #1639 (JN-5793, Code): APPROVED ✅ + ALL CI PASSING as of 10:30 IDT Jun 30 — JIRA Association ✅ + all functional ✅. MERGEABLE, APPROVED. MERGE NOW!",
+    message: "🎉 PR #1639 (JN-5793) MERGED at 10:41 IDT Jun 30 ✅ — worktree archived automatically. All CI green + reviewer approved. Verify JN-5793 Jira → Done (Jira query failing, check manually).",
   },
   {
     level: "yellow",
-    message: "🟡 PR #1606 (JN-5725, off-board): Jira JN-5725 now shows Done, but PR still open with 4 CI failures (e2e-smoke ❌, e2e-tests ❌, integration ❌, integration-tests ❌). Clarify intent — close PR or fix CI?",
+    message: "🟡 PR #1606 (JN-5725, off-board): NEW CI run 28429314700 in progress — integration ✅ PASSING, pre-commit/tox/e2e pending. Jira JN-5725 Done. Wait for CI to complete, then decide merge or close.",
   },
   {
     level: "yellow",
@@ -288,22 +280,6 @@ export const ALERTS = [
   {
     level: "yellow",
     message: "⚠️ JN-5724 Jira mismatch: PR #1622 MERGED Jun 29 10:17 IDT — Jira still 'In Review'. Update → 'Done'.",
-  },
-  {
-    level: "green",
-    message: "🎉 PR #1615 (JN-5677) MERGED at 15:08 IDT Jun 29 ✅ — worktree archived 15:33 IDT. Admin merge (integration ❌ at merge time). Jira JN-5677 Done ✅.",
-  },
-  {
-    level: "green",
-    message: "🎉 PR #1623 (JN-5616) MERGED at 13:45 IDT Jun 29 ✅ — worktree archived. Jira still 'In Review' → update to 'Done'.",
-  },
-  {
-    level: "green",
-    message: "🎉 PR #1627 (JN-5612) MERGED at 10:42 IDT Jun 29 ✅ — worktree archived. Jira still 'In Progress' → update to 'Done'.",
-  },
-  {
-    level: "green",
-    message: "🎉 PR #1622 (JN-5724) MERGED at 10:17 IDT Jun 29 ✅ — worktree archived. Jira still 'In Review' → update to 'Done'.",
   },
   {
     level: "red",
