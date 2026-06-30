@@ -22,6 +22,15 @@ export const HEARTBEAT_RUNS = [
   // },
   {
     type: "advance",
+    timestamp: "2026-06-30 16:00 IDT",
+    actions: 1,
+    findings: 5,
+    status: "ok",
+    summary: "PR #1628 (JN-5714) MERGED 15:39 IDT — cr-pr-1628 archived; JN-5714 Jira mismatch (Backlog→Done); 4 total Jira mismatches; #1606 e2e ❌ unchanged; #1588 CONFLICTING unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f189d94b67938846a89a8/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-06-30 15:30 IDT",
     actions: 0,
     findings: 6,

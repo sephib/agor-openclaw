@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-06-30 15:30 IDT (advance heartbeat)*
+*Last updated: 2026-06-30 16:00 IDT (advance heartbeat)*
 
 ---
 
@@ -9,7 +9,6 @@
 | Worktree | Zone | PR | CI | Jira | Status |
 |---------|------|----|----|------|--------|
 | jn-5546-docs-document-module-layout-convention-and-3 | Code Review | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | ❌ pre-commit FAIL (stale run 27933817996) | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) — In Progress | 🔴 CONFLICTING + pre-commit FAIL. Stale 13+ days. |
-| cr-pr-1628 | Code Review | [#1628](https://github.com/Jounce-IO/jounce/pull/1628) | ✅ pre-commit PASS (run 28443647770); e2e-smoke ⏳ PENDING; all others ✅ | [JN-5714](https://redhat.atlassian.net/browse/JN-5714) | 🟢 pre-commit NOW ✅ PASSING on new run 28443647770! reviewDecision=APPROVED. Only e2e-smoke PENDING. Nearly ready to merge. |
 | jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | — | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) | 🔴 DRAFT CONFLICTING; frozen |
 | jn-5672-dal-ext-dashboard | BLOCKED | — | — | [JN-5672](https://redhat.atlassian.net/browse/JN-5672) | On hold — after notebooks complete |
 | internal-cr-system | Code | — | — | — | ⚠️ No PR; filesystem had git lock error; stagnant since Jun 18 |
@@ -49,6 +48,7 @@
 
 | Ticket | PR | PR Status | Jira Status | Action |
 |--------|-----|-----------|-------------|--------|
+| [JN-5714](https://redhat.atlassian.net/browse/JN-5714) | [#1628](https://github.com/Jounce-IO/jounce/pull/1628) | MERGED Jun 30 15:39 IDT | **Backlog** | ❌ Update Jira → Done (NEW) |
 | [JN-5612](https://redhat.atlassian.net/browse/JN-5612) | [#1627](https://github.com/Jounce-IO/jounce/pull/1627) | MERGED Jun 29 | **In Progress** | ❌ Update Jira → Done |
 | [JN-5616](https://redhat.atlassian.net/browse/JN-5616) | [#1623](https://github.com/Jounce-IO/jounce/pull/1623) | MERGED Jun 29 | **In Review** | ❌ Update Jira → Done |
 | [JN-5724](https://redhat.atlassian.net/browse/JN-5724) | [#1622](https://github.com/Jounce-IO/jounce/pull/1622) | MERGED Jun 29 | **In Review** | ❌ Update Jira → Done |
@@ -57,32 +57,26 @@
 
 ---
 
-## Key Changes Since Last Run (15:00 IDT Jun 30)
+## Key Changes Since Last Run (15:30 IDT Jun 30)
 
 | What observed | Status |
 |---|---|
-| **PR #1628: pre-commit ✅ NOW PASSING** | 🟢 NEW CI run 28443647770: pre-commit ✅ PASS + pre-commit-run ✅ PASS. Ushaket fixed pre-commit failures! |
-| **PR #1628: e2e-smoke ⏳ PENDING** | ⏳ job 84289273314 still running — was passing in prior run 28440734679 |
-| **PR #1628: reviewDecision = APPROVED** | 🟢 Was "" last run, now shows APPROVED again. OPEN MERGEABLE. |
+| **PR #1628 MERGED** | 🎉 Merged at 15:39 IDT Jun 30 — cr-pr-1628 archived automatically |
+| **JN-5714 Jira mismatch** | ❌ PR #1628 MERGED, but JN-5714 still "Backlog" — update → Done |
 | **PR #1606: unchanged** | 🟡 e2e-smoke ❌ + e2e-tests ❌ persist (run 28429314700) |
-| **PR #1588: unchanged** | 🔴 Still CONFLICTING, pre-commit FAIL, stale 13+ days |
-| **Jira mismatches: 3 persist** | JN-5612/JN-5616/JN-5724 still not updated to Done |
+| **PR #1588: unchanged** | 🔴 Still CONFLICTING, pre-commit FAIL, stale 14+ days |
+| **Jira mismatches: now 4 total** | JN-5714 (new), JN-5612, JN-5616, JN-5724 all need Done |
 
 ---
 
 ## Attention Items
 
-### 🟢 PR #1628 (JN-5714) — pre-commit NOW PASSING; e2e-smoke Pending; APPROVED
+### 🎉 PR #1628 (JN-5714) — MERGED at 15:39 IDT Jun 30
 
-PR [#1628](https://github.com/Jounce-IO/jounce/pull/1628): `feat(jbenchmark): release manifest schema (JN-5714)` by ushaket
-- **State:** OPEN APPROVED MERGEABLE
-- **CI run 28443647770 (latest — new run since 15:00 IDT):**
-  - ✅ pre-commit PASS (3s) — **newly passing; ushaket fixed!**
-  - ✅ pre-commit-run PASS (4m45s) — **newly passing**
-  - ⏳ e2e-smoke PENDING (job 84289273314) — was ✅ in prior run
-  - ✅ e2e-tests, integration, e2e-api, tox, atlas-validate, nox, check-changes, deploy
-- **Review:** reviewDecision = APPROVED. Joseph approved previously; new CI run triggered by ushaket's pre-commit fix.
-- **Action needed:** Wait for e2e-smoke to complete (expected ✅). Then merge if e2e-smoke passes.
+PR [#1628](https://github.com/Jounce-IO/jounce/pull/1628): `feat(jbenchmark): release manifest schema (JN-5714)` — **MERGED ✅**
+- **Merged:** 15:39 IDT Jun 30 2026
+- **cr-pr-1628 worktree:** archived automatically 16:00 IDT Jun 30
+- **Action needed:** Update JN-5714 in Jira → Done (currently shows "Backlog")
 
 ---
 
@@ -96,8 +90,9 @@ PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer):
 
 ---
 
-### ❌ Jira Mismatches (3 tickets need update to Done)
+### ❌ Jira Mismatches (4 tickets need update to Done)
 
+- [JN-5714](https://redhat.atlassian.net/browse/JN-5714): PR #1628 MERGED Jun 30 15:39 IDT → still "Backlog" (**NEW**)
 - [JN-5612](https://redhat.atlassian.net/browse/JN-5612): PR #1627 MERGED Jun 29 → still "In Progress"
 - [JN-5616](https://redhat.atlassian.net/browse/JN-5616): PR #1623 MERGED Jun 29 → still "In Review"
 - [JN-5724](https://redhat.atlassian.net/browse/JN-5724): PR #1622 MERGED Jun 29 → still "In Review"
@@ -117,6 +112,7 @@ PR [#1588](https://github.com/Jounce-IO/jounce/pull/1588): `docs(jbenchmark): ad
 
 | PR | Ticket | Merged | Worktree |
 |----|--------|--------|---------|
+| [#1628](https://github.com/Jounce-IO/jounce/pull/1628) | [JN-5714](https://redhat.atlassian.net/browse/JN-5714) | 15:39 IDT Jun 30 | Archived Jun 30 16:00 IDT |
 | [#1639](https://github.com/Jounce-IO/jounce/pull/1639) | [JN-5793](https://redhat.atlassian.net/browse/JN-5793) | 10:41 IDT Jun 30 | Archived Jun 30 11:00 IDT |
 | [#1627](https://github.com/Jounce-IO/jounce/pull/1627) | [JN-5612](https://redhat.atlassian.net/browse/JN-5612) | 10:42 IDT Jun 29 | Archived Jun 29 |
 | [#1622](https://github.com/Jounce-IO/jounce/pull/1622) | [JN-5724](https://redhat.atlassian.net/browse/JN-5724) | 10:17 IDT Jun 29 | Archived Jun 29 |

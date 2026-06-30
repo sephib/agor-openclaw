@@ -4,6 +4,20 @@
 
 ---
 
+## 16:00 IDT — Weekday Daytime Advance Heartbeat (2026-06-30)
+
+**Session:** 019f189d-94b6 | http://127.0.0.1:3030/ui/s/019f189d94b67938846a89a8/
+- PRs checked: #1628 (MERGED 15:39 IDT ✅), #1606 (OPEN — e2e-smoke ❌ + e2e-tests ❌ unchanged), #1588 (OPEN CONFLICTING — stale 14+ days), #1596 (DRAFT OPEN)
+- Merges detected: **PR #1628 MERGED 15:39 IDT Jun 30** — cr-pr-1628 archived automatically
+- **Key change — PR #1628 MERGED:** feat(jbenchmark): release manifest schema (JN-5714). All CI green, APPROVED. cr-pr-1628 worktree archived.
+- **New Jira mismatch:** JN-5714 still "Backlog" after merge — 4 total mismatches now
+- Auto-advances: 1 (archived cr-pr-1628)
+- Jira: JN-5714 "Backlog" (NEW mismatch), JN-5612 "In Progress", JN-5616 "In Review", JN-5724 "In Review" — 4 mismatches total
+- Flags: 5 (PR #1628 merged+archived; JN-5714 Jira mismatch new; #1606 e2e 2 FAIL; 3 prior Jira mismatches; #1588 stale CONFLICTING)
+- Next: Joseph to update JN-5714/JN-5612/JN-5616/JN-5724 → Done in Jira. Decide on PR #1606 (fix e2e or close). Fix PR #1588 (rebase + pre-commit).
+
+---
+
 ## 15:30 IDT — Weekday Daytime Advance Heartbeat (2026-06-30)
 
 **Session:** 019f1882-1d0c | http://127.0.0.1:3030/ui/s/019f18821d0c71c8ba77b381/

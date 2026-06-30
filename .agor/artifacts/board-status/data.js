@@ -1,32 +1,6 @@
-export const LAST_UPDATED = "2026-06-30 15:30 IDT";
+export const LAST_UPDATED = "2026-06-30 16:00 IDT";
 
 export const WORKTREES = [
-  {
-    ticket: "JN-5714",
-    ticketUrl: "https://redhat.atlassian.net/browse/JN-5714",
-    title: "Release manifest schema",
-    branch: "cr-pr-1628",
-    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/cr-pr-1628",
-    zone: "Code Review",
-    pr: "#1628",
-    prUrl: "https://github.com/Jounce-IO/jounce/pull/1628",
-    status: "🟢 pre-commit ✅ NOW PASSING (run 28443647770)! reviewDecision=APPROVED. e2e-smoke ⏳ PENDING. All other checks ✅. Nearly ready to merge.",
-    blockedOn: "e2e-smoke pending",
-    blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f17e0b7bd7c5dbb975545/",
-    sessionLabel: "CR review",
-    recentSessions: [
-      {
-        sessionId: "019f17e0b7bd7c5dbb975545",
-        url: "http://127.0.0.1:3030/ui/s/019f17e0b7bd7c5dbb975545/",
-        title: "CR: PR #1628",
-        status: "idle",
-        timestamp: "2026-06-30 12:39 IDT",
-        outputFile: null,
-      },
-    ],
-    lastActive: "2026-06-30 15:30 IDT",
-  },
   {
     ticket: "JN-5546",
     ticketUrl: "https://redhat.atlassian.net/browse/JN-5546",
@@ -168,6 +142,15 @@ export const WORKTREES = [
 
 export const MERGED = [
   {
+    ticket: "JN-5714",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5714",
+    title: "feat(jbenchmark): release manifest schema",
+    pr: "#1628",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1628",
+    mergedDate: "2026-06-30",
+    note: "Merged 15:39 IDT Jun 30 — cr-pr-1628 archived automatically 16:00 IDT. All CI green + APPROVED. JN-5714 Jira still 'Backlog' → needs Done.",
+  },
+  {
     ticket: "JN-5793",
     ticketUrl: "https://redhat.atlassian.net/browse/JN-5793",
     title: "fix(tests): update plan_json fixtures to match production JSONB structure",
@@ -289,7 +272,7 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "green",
-    message: "🟢 PR #1628 (JN-5714): CI run 28443647770 — pre-commit ✅ NOW PASSING! Ushaket fixed it. reviewDecision=APPROVED. e2e-smoke ⏳ PENDING (was ✅ in prior run). All other checks ✅. Wait for e2e-smoke → merge.",
+    message: "🎉 PR #1628 (JN-5714) MERGED at 15:39 IDT Jun 30 ✅ — cr-pr-1628 archived automatically 16:00 IDT. All CI green + APPROVED. Update JN-5714 Jira → Done (currently 'Backlog').",
   },
   {
     level: "green",
@@ -297,27 +280,19 @@ export const ALERTS = [
   },
   {
     level: "yellow",
+    message: "⚠️ 4 Jira mismatches need update to Done: JN-5714 (PR #1628 MERGED Jun 30, still 'Backlog'), JN-5612 (PR #1627 MERGED Jun 29, still 'In Progress'), JN-5616 (PR #1623 MERGED Jun 29, still 'In Review'), JN-5724 (PR #1622 MERGED Jun 29, still 'In Review').",
+  },
+  {
+    level: "yellow",
     message: "🟡 PR #1606 (JN-5725, off-board): CI run 28429314700 COMPLETE — e2e-smoke ❌ + e2e-tests ❌ still failing (all other checks ✅). Jira JN-5725 Done. Diagnose e2e failures or close PR.",
   },
   {
-    level: "yellow",
-    message: "⚠️ JN-5616 Jira mismatch: PR #1623 MERGED Jun 29 13:45 IDT — Jira still 'In Review'. Update → 'Done'.",
-  },
-  {
-    level: "yellow",
-    message: "⚠️ JN-5612 Jira mismatch: PR #1627 MERGED Jun 29 10:42 IDT — Jira still 'In Progress'. Update → 'Done'.",
-  },
-  {
-    level: "yellow",
-    message: "⚠️ JN-5724 Jira mismatch: PR #1622 MERGED Jun 29 10:17 IDT — Jira still 'In Review'. Update → 'Done'.",
-  },
-  {
     level: "red",
-    message: "🔴 PR #1588 (JN-5546, Code Review zone): pre-commit FAIL (run 27933817996) + CONFLICTING. Stale since Jun 17. Fix pre-commit + rebase + assign reviewer + update Jira to 'In Review'.",
+    message: "🔴 PR #1588 (JN-5546, Code Review zone): pre-commit FAIL (run 27933817996) + CONFLICTING. Stale since Jun 17 (14+ days). Fix pre-commit + rebase + assign reviewer.",
   },
   {
     level: "info",
-    message: "ℹ️ jn-5794-required-checks (Ingest): NEW worktree — JN-5794 [BUG] auto-merge bypasses integration failures. No sessions yet.",
+    message: "ℹ️ jn-5794-required-checks (Ingest): JN-5794 [BUG] auto-merge bypasses integration failures. No sessions yet.",
   },
   {
     level: "info",
@@ -325,7 +300,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⚠️ jira-operations (no zone): session timed_out 07:38 IDT Jun 25. No PR, no Jira. Title: 'Create Q4 Planning Epic + Stories'. Decide: archive or assign zone.",
+    message: "⚠️ jira-operations (no zone): session timed_out 07:38 IDT Jun 25. No PR, no Jira. Decide: archive or assign zone.",
   },
   {
     level: "yellow",
