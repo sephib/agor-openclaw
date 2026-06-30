@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-30 14:30 IDT";
+export const LAST_UPDATED = "2026-06-30 15:00 IDT";
 
 export const WORKTREES = [
   {
@@ -10,7 +10,7 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1628",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1628",
-    status: "🟡 NEW COMMITS from ushaket at 14:21 IDT — pre-commit ❌ FAIL (run 28440734679). Joseph commenting on new HEAD (14:33 IDT). Needs pre-commit fix before re-review.",
+    status: "🟡 pre-commit ❌ FAIL (run 28440734679) — only blocker. e2e-smoke ✅ + e2e-tests ✅ now PASSING. Ushaket to fix pre-commit; Joseph to confirm merge.",
     blockedOn: "pre-commit FAIL on new commits",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f17e0b7bd7c5dbb975545/",
@@ -25,7 +25,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-06-30 14:33 IDT",
+    lastActive: "2026-06-30 15:00 IDT",
   },
   {
     ticket: "JN-5546",
@@ -289,7 +289,7 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "yellow",
-    message: "🟡 PR #1628 (JN-5714): ushaket pushed 'CR' commits at 14:21 IDT after Joseph's approval. New CI run 28440734679: pre-commit ❌ FAIL. e2e-smoke still pending. Joseph commenting on new HEAD (14:33 IDT). Needs pre-commit fix before re-review.",
+    message: "🟡 PR #1628 (JN-5714): CI run 28440734679 — e2e-smoke ✅ + e2e-tests ✅ NOW PASSING. Pre-commit ❌ FAIL still blocking. Ushaket to fix pre-commit on commit 3ee9d49. After fix, Joseph to confirm merge.",
   },
   {
     level: "green",
