@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-06-30 18:00 IDT";
+export const LAST_UPDATED = "2026-06-30 18:30 IDT";
 
 export const WORKTREES = [
   {
@@ -96,13 +96,13 @@ export const WORKTREES = [
     zone: "Ingest",
     pr: "#1643",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1643",
-    status: "🟡 PR #1643 published 17:29 IDT Jun 30 — OPEN/MERGEABLE/REVIEW_REQUIRED. CI run 28454190163: ✅ most checks pass, ⏳ tox+pre-commit-run+build still pending. Zone needs update to Code Review.",
+    status: "🟢 PR #1643 ALL CI GREEN (run 28454371524) as of 18:30 IDT Jun 30 — OPEN/MERGEABLE. All 13 checks pass (tox ✅, pre-commit-run ✅, e2e-smoke ✅ 10m34s, all-checks ✅). Needs reviewer + zone move Ingest→Code Review.",
     blockedOn: null,
     blockedType: "active",
     sessionUrl: null,
     sessionLabel: null,
     recentSessions: [],
-    lastActive: "2026-06-30 18:00 IDT",
+    lastActive: "2026-06-30 18:30 IDT",
   },
   {
     ticket: "JN-5244",
@@ -313,8 +313,8 @@ export const ALERTS = [
     message: "⚠️ 4 Jira mismatches need update to Done: JN-5714 (PR #1628 MERGED Jun 30, still 'Backlog'), JN-5612 (PR #1627 MERGED Jun 29, still 'In Progress'), JN-5616 (PR #1623 MERGED Jun 29, still 'In Review'), JN-5724 (PR #1622 MERGED Jun 29, still 'In Review').",
   },
   {
-    level: "yellow",
-    message: "🟡 NEW: PR #1643 (JN-5794) published 17:29 IDT Jun 30 — OPEN/MERGEABLE/REVIEW_REQUIRED. CI run 28454190163: ✅ most checks, ⏳ tox+pre-commit-run+build pending. Zone still Ingest — propose move to Code Review after CI complete.",
+    level: "green",
+    message: "🟢 PR #1643 (JN-5794) ALL CI GREEN (run 28454371524) as of 18:30 IDT Jun 30 — OPEN/MERGEABLE. All 13 checks pass. Needs reviewer assigned + zone move jn-5794-required-checks: Ingest → Code Review.",
   },
   {
     level: "red",
