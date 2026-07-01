@@ -3552,3 +3552,10 @@
 - Next: Joseph to fix pre-commit on #1588; assign reviewer to #1643; update 4 Jira tickets → Done; address PR #1606
 
 ---
+
+## 06:00 IDT — Overnight Heartbeat (Jul 1 2026)
+- PRs checked: #1643 (OPEN/MERGEABLE, CI ALL GREEN run 28454371524), #1588 (OPEN/MERGEABLE, pre-commit FAIL run 28469578445), #1606 (CONFLICTING, e2e-smoke ❌ + e2e-tests ❌ run 28429314700)
+- Merges detected: none — last merge was #1628 at 15:39 IDT Jun 30
+- CI changes: none — all runs unchanged from 04:00 IDT scan
+- Flags: 4 Jira mismatches persist (JN-5714 Backlog, JN-5612 In Progress, JN-5616 In Review, JN-5724 In Review — all PRs merged); #1588 pre-commit blocking; #1606 conflicting; jn-5795 no zone
+- Next: Morning session will pick up — PR #1643 needs reviewer + zone move; 4 Jira mismatches need Done update
