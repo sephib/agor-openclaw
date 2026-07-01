@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-01 17:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-01 20:00 IDT (advance heartbeat)*
 
 ---
 
@@ -55,14 +55,14 @@
 
 ---
 
-## Key Changes Since Last Run (17:30 IDT Jul 1)
+## Key Changes Since Last Run (20:00 IDT Jul 1)
 
 | What observed | Status |
 |---|---|
-| **PR #1606: CONFLICT CLEARED** | 🟡 NEW: CONFLICTING → MERGEABLE. New CI run 28527509341. e2e-smoke ❌ + e2e-tests ❌ still fail. Pre-commit now ✅. Fix e2e or close PR. |
-| **PR #1643 MERGED** | 🎉 Already recorded — merged at 09:16 IDT Jul 1. jn-5794-required-checks archived at 09:21 IDT. |
-| **PR #1588: unchanged** | 🔴 mergeable UNKNOWN (computing), pre-commit FAIL (run 28469578445). |
-| **Jira mismatches: 3 confirmed + 2 unverifiable** | JN-5612 In Progress, JN-5616 In Review, JN-5724 In Review (all Joseph's, PRs merged Jun 29). JN-5794 + JN-5793 unverifiable (access errors). |
+| **Board STATIC** | No changes since 17:30 IDT Jul 1. All findings carry forward. |
+| **PR #1588: unchanged** | 🔴 CONFLICTING + pre-commit ❌ (run 28469578445). No new CI. |
+| **PR #1606: unchanged** | 🟡 MERGEABLE + e2e-smoke ❌ + e2e-tests ❌ (run 28527509341). No new CI. |
+| **Jira mismatches: unchanged** | JN-5612 In Progress, JN-5616 In Review, JN-5724 In Review (all PRs merged Jun 29). JN-5794 + JN-5793 unverifiable. |
 
 ---
 
