@@ -4,6 +4,18 @@
 
 ---
 
+## 04:00 IDT — Overnight Advance Heartbeat (2026-07-01)
+
+**Session:** 019f1b30-ea34 | http://127.0.0.1:3030/ui/s/019f1b30ea3473b78ecb9a6b/
+- PRs checked: #1643 (OPEN MERGEABLE, CI ALL GREEN run 28454371524 — unchanged), #1588 (OPEN MERGEABLE, pre-commit ❌ run 28469578445 — unchanged), #1606 (OPEN CONFLICTING + e2e ❌ — unchanged), #1596 (DRAFT CONFLICTING — unchanged)
+- Merges detected: none — last merge was #1628 at 15:39 IDT Jun 30
+- CI changes: none
+- Flags: (1) PR #1643 needs reviewer + zone move Ingest→Code Review; (2) PR #1588 pre-commit failing; (3) PR #1606 CONFLICTING+e2e ❌; (4) 4 Jira mismatches persist (JN-5714/5612/5616/5724); (5) jn-5795 no zone
+- Auto-advances: 0
+- Next: Joseph to review proposals — assign reviewer for #1643, fix #1588 pre-commit, address #1606
+
+---
+
 ## 16:30 IDT — Weekday Daytime Advance Heartbeat (2026-06-30)
 
 **Session:** 019f18b9-0d00 | http://127.0.0.1:3030/ui/s/019f18b90d0074d782e13006/
