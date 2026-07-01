@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-01 09:00 IDT";
+export const LAST_UPDATED = "2026-07-01 10:30 IDT";
 
 export const WORKTREES = [
   {
@@ -10,8 +10,8 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1588",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1588",
-    status: "⚠️ Conflict RESOLVED at 00:00 IDT Jul 1 — now MERGEABLE. New CI run 28469578445: pre-commit ❌ + pre-commit-run ❌ still FAILING. Fix pre-commit to unblock review.",
-    blockedOn: "pre-commit FAIL",
+    status: "🔴 REGRESSION: Was MERGEABLE at 00:00 IDT Jul 1 — now CONFLICTING again at 10:30 IDT. Something merged into main causing a new conflict. Pre-commit still FAILING (run 28469578445). Needs rebase + pre-commit fix.",
+    blockedOn: "CONFLICTING + pre-commit FAIL",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ed01e5624752fbade0eab/",
     sessionLabel: "fix session",
@@ -88,23 +88,6 @@ export const WORKTREES = [
     lastActive: "2026-06-14 15:00 IDT",
   },
   {
-    ticket: "JN-5794",
-    ticketUrl: "https://redhat.atlassian.net/browse/JN-5794",
-    title: "[BUG] Auto-merge bypasses integration test failures",
-    branch: "jn-5794-required-checks",
-    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5794-required-checks",
-    zone: "Ingest",
-    pr: "#1643",
-    prUrl: "https://github.com/Jounce-IO/jounce/pull/1643",
-    status: "🔄 NEW CI run 28496815646 at 09:00 IDT Jul 1 — OPEN/MERGEABLE. All checks pass except e2e-smoke PENDING. Previous run 28454371524 was all-green. Needs reviewer + zone move Ingest→Code Review.",
-    blockedOn: null,
-    blockedType: "active",
-    sessionUrl: null,
-    sessionLabel: null,
-    recentSessions: [],
-    lastActive: "2026-06-30 20:30 IDT",
-  },
-  {
     ticket: "JN-5244",
     ticketUrl: "https://redhat.atlassian.net/browse/JN-5244",
     title: "Add --user, --no-cache, --skip-estimator CLI flags to run_jbenchmark_runner",
@@ -167,6 +150,15 @@ export const WORKTREES = [
 ];
 
 export const MERGED = [
+  {
+    ticket: "JN-5794",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5794",
+    title: "fix(ci): add all-checks aggregator gate to prevent auto-merge bypass",
+    pr: "#1643",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1643",
+    mergedDate: "2026-07-01",
+    note: "Merged 09:16 IDT Jul 1 — jn-5794-required-checks worktree auto-archived at 09:21 IDT. Reviewer APPROVED. JN-5794 Jira status unverifiable (access error) → verify manually.",
+  },
   {
     ticket: "JN-5714",
     ticketUrl: "https://redhat.atlassian.net/browse/JN-5714",
@@ -297,32 +289,24 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "info",
-    message: "ℹ️ NEW: jn-5795-upgrade-to-guidellm-v070 — JN-5795 'Upgrade to GuideLLM v0.7.0' (Epic, Backlog). Design session done (143 msgs, idle 12:45 IDT Jun 30). No zone assigned. Proposal: move to Plan zone.",
+    level: "green",
+    message: "🎉 PR #1643 (JN-5794) MERGED at 09:16 IDT Jul 1 ✅ — jn-5794-required-checks auto-archived at 09:21 IDT. Reviewer APPROVED. Verify JN-5794 Jira → Done (Jira MCP access error for this ticket — check manually).",
   },
   {
-    level: "green",
-    message: "🎉 PR #1628 (JN-5714) MERGED at 15:39 IDT Jun 30 ✅ — cr-pr-1628 archived automatically 16:00 IDT. All CI green + APPROVED. Update JN-5714 Jira → Done (currently 'Backlog').",
-  },
-  {
-    level: "green",
-    message: "🎉 PR #1639 (JN-5793) MERGED at 10:41 IDT Jun 30 ✅ — worktree archived automatically. All CI green + reviewer approved. Verify JN-5793 Jira → Done (Jira query failing, check manually).",
+    level: "red",
+    message: "🔴 PR #1588 (JN-5546, Code Review zone): REGRESSION — Was MERGEABLE at 00:00 IDT Jul 1, now CONFLICTING again at 10:30 IDT. Something merged into main creating a new conflict. CI run 28469578445: pre-commit ❌ + pre-commit-run ❌ still FAILING. Needs rebase + pre-commit fix.",
   },
   {
     level: "yellow",
-    message: "⚠️ 4 Jira mismatches need update to Done: JN-5714 (PR #1628 MERGED Jun 30, still 'Backlog'), JN-5612 (PR #1627 MERGED Jun 29, still 'In Progress'), JN-5616 (PR #1623 MERGED Jun 29, still 'In Review'), JN-5724 (PR #1622 MERGED Jun 29, still 'In Review').",
-  },
-  {
-    level: "green",
-    message: "🔄 PR #1643 (JN-5794) NEW CI run 28496815646 at 09:00 IDT Jul 1 — OPEN/MERGEABLE. e2e-smoke PENDING, all others ✅. Previous run 28454371524 was all-green. Needs reviewer assigned + zone move jn-5794-required-checks: Ingest → Code Review.",
+    message: "⚠️ 5 Jira mismatches need action: JN-5794 (PR #1643 MERGED Jul 1, Jira unverifiable), JN-5714 (PR #1628 MERGED Jun 30, still 'Backlog'), JN-5612 (PR #1627 MERGED Jun 29, still 'In Progress'), JN-5616 (PR #1623 MERGED Jun 29, still 'In Review'), JN-5724 (PR #1622 MERGED Jun 29, still 'In Review').",
   },
   {
     level: "red",
     message: "🔴 PR #1606 (JN-5725, off-board): CONFLICTING + CI run 28429314700: e2e-smoke ❌ + e2e-tests ❌ (all other checks ✅). Jira JN-5725 Done. Rebase + fix e2e or close PR.",
   },
   {
-    level: "yellow",
-    message: "⚠️ PR #1588 (JN-5546, Code Review zone): Conflict RESOLVED at 00:00 IDT Jul 1 (now MERGEABLE). New CI run 28469578445: pre-commit ❌ + pre-commit-run ❌ still FAILING. Fix pre-commit — this is now the only blocker.",
+    level: "info",
+    message: "ℹ️ NEW: jn-5795-upgrade-to-guidellm-v070 — JN-5795 'Upgrade to GuideLLM v0.7.0' (Epic, Backlog). Design session done (143 msgs, idle 12:45 IDT Jun 30). No zone assigned. Proposal: move to Plan zone.",
   },
   {
     level: "info",

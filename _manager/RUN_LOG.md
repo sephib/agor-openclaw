@@ -3572,3 +3572,10 @@
 - Auto-advances: 0
 - Flags: 5 (PR #1643 e2e-smoke pending on new run + needs reviewer; PR #1588 pre-commit FAIL; PR #1606 e2e fails; 4 Jira mismatches; jn-5795 no zone)
 - Next: Wait for e2e-smoke on run 28496815646 (next heartbeat at 09:30 IDT); assign reviewer to #1643; fix pre-commit on #1588; update 4 Jira → Done
+
+## 10:30 IDT — Weekday Daytime Heartbeat
+- PRs checked: #1643 (MERGED 09:16 IDT Jul 1), #1588 (OPEN, CONFLICTING regression), #1606 (OPEN, CONFLICTING unchanged), #1596 (DRAFT CONFLICTING frozen)
+- Merges detected: PR #1643 merged 09:16 IDT Jul 1 — jn-5794-required-checks was already archived at 09:21 IDT by a prior session (between 09:00 and 10:30 IDT runs)
+- CI changes: #1588 — REGRESSION: mergeable changed from MERGEABLE→CONFLICTING since 00:00 IDT (something landed in main); pre-commit still ❌ run 28469578445
+- Flags: 5 Jira mismatches (JN-5794 NEW: PR merged but Jira access error; JN-5714/5612/5616/5724 persist); #1606 e2e ❌ + CONFLICTING unchanged
+- Next: #1588 needs rebase on main + pre-commit fix; JN-5794 Jira needs manual Done; 4 stale Jira tickets await Joseph

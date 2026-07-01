@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-01 09:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-01 10:30 IDT (advance heartbeat)*
 
 ---
 
@@ -8,16 +8,15 @@
 
 | Worktree | Zone | PR | CI | Jira | Status |
 |---------|------|----|----|------|--------|
-| jn-5546-docs-document-module-layout-convention-and-3 | Code Review | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | ❌ pre-commit FAIL (run 28469578445) | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) — In Progress | ⚠️ Conflict RESOLVED (now MERGEABLE) but pre-commit still FAILING (new run). Fix pre-commit to unblock. |
+| jn-5546-docs-document-module-layout-convention-and-3 | Code Review | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | ❌ pre-commit FAIL (run 28469578445) | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) — In Progress | 🔴 REGRESSION: Was MERGEABLE at 00:00 IDT, now CONFLICTING again. Pre-commit still failing. Rebase + fix pre-commit to unblock. |
 | jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | — | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) | 🔴 DRAFT CONFLICTING; frozen |
 | jn-5672-dal-ext-dashboard | BLOCKED | — | — | [JN-5672](https://redhat.atlassian.net/browse/JN-5672) | On hold — after notebooks complete |
 | internal-cr-system | Code | — | — | — | ⚠️ No PR; filesystem had git lock error; stagnant since Jun 18 |
 | jira-operations | (no zone) | — | — | — | ⚠️ No zone, no PR — needs zone assignment or archive |
 | jn-5244-cli-flags | Ingest | — | — | [JN-5244](https://redhat.atlassian.net/browse/JN-5244) | ℹ️ No sessions yet. Ready to ingest. |
-| jn-5794-required-checks | Ingest | [#1643](https://github.com/Jounce-IO/jounce/pull/1643) | ✅ ALL CI GREEN (run 28454371524) | [JN-5794](https://redhat.atlassian.net/browse/JN-5794) | 🟢 PR #1643 ALL CI PASS as of 18:30 IDT Jun 30 — OPEN/MERGEABLE. Zone still Ingest → propose move to Code Review + assign reviewer. |
-| jn-5795-upgrade-to-guidellm-v070 | NO ZONE | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) "Upgrade to GuideLLM v0.7.0" — Epic, Backlog | ℹ️ **NEW** — Created 11:48 IDT Jun 30. Design session done (143 msgs, idle 12:45 IDT). No zone assigned yet. Proposal: move to Plan zone. |
+| jn-5795-upgrade-to-guidellm-v070 | NO ZONE | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) "Upgrade to GuideLLM v0.7.0" — Epic, Backlog | ℹ️ Design session done (143 msgs, idle 12:45 IDT Jun 30). No zone assigned. Proposal: move to Plan zone. |
 
-**Note:** jn-5780-add-jn-project is not in the Agor jounce repo list (active or archived). Per data.js it belongs to a different repo (jira-autofix). Board scan shows no record of it.
+**Note:** jn-5794-required-checks was **archived at 09:21 IDT Jul 1** after PR #1643 merged at 09:16 IDT. jn-5780-add-jn-project is not in the Agor jounce repo list (active or archived). Per data.js it belongs to a different repo (jira-autofix).
 
 ---
 
@@ -25,9 +24,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** | ❌ e2e-smoke ❌ + e2e-tests ❌ (run 28429314700, all else ✅) | 🔴 CONFLICTING (regression: was MERGEABLE) | 🔴 Now CONFLICTING + 2 persistent e2e failures. Jira Done. Fix conflict + e2e, or close PR. |
-| [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | jn-5546-docs-document-module-layout-convention-and-3 | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) — In Progress | ❌ pre-commit FAIL (stale run 27933817996) | 🔴 CONFLICTING | 🔴 **STALE** — unchanged since Jun 17. Needs rebase + pre-commit fix. |
-| [#1596](https://github.com/Jounce-IO/jounce/pull/1596) | jn-5695-db-connect-script | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) | — | 🔴 DRAFT CONFLICTING | 🔴 Frozen; solved locally |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** | ❌ e2e-smoke ❌ + e2e-tests ❌ (run 28429314700, all else ✅) | 🔴 CONFLICTING | 🔴 CONFLICTING + 2 persistent e2e failures. Jira Done. Fix conflict + e2e, or close PR. |
 
 ---
 
@@ -35,7 +32,6 @@
 
 | Ticket | Summary | Jira Status | Notes |
 |--------|---------|-------------|-------|
-| [JN-5794](https://redhat.atlassian.net/browse/JN-5794) | [BUG] Auto-merge bypasses integration test failures | **Backlog** | Has worktree in Ingest zone, no sessions yet |
 | [JN-5790](https://redhat.atlassian.net/browse/JN-5790) | [DEV] Add integration-run to GitHub required status checks | **Waiting/Blocked** | No worktree |
 | [JN-5789](https://redhat.atlassian.net/browse/JN-5789) | [HOTFIX] Fix search_experiments() JSONB path mismatch | **Waiting/Blocked** | Related to JN-5793 (now merged via #1639) |
 | [JN-5788](https://redhat.atlassian.net/browse/JN-5788) | Verify Visibility Notebook in Production Environment | **Backlog** | No worktree |
@@ -49,7 +45,8 @@
 
 | Ticket | PR | PR Status | Jira Status | Action |
 |--------|-----|-----------|-------------|--------|
-| [JN-5714](https://redhat.atlassian.net/browse/JN-5714) | [#1628](https://github.com/Jounce-IO/jounce/pull/1628) | MERGED Jun 30 15:39 IDT | **Backlog** | ❌ Update Jira → Done (NEW) |
+| [JN-5794](https://redhat.atlassian.net/browse/JN-5794) | [#1643](https://github.com/Jounce-IO/jounce/pull/1643) | MERGED Jul 1 09:16 IDT | **Cannot verify** (Jira access error) | ❌ Verify in Jira → Done (NEW) |
+| [JN-5714](https://redhat.atlassian.net/browse/JN-5714) | [#1628](https://github.com/Jounce-IO/jounce/pull/1628) | MERGED Jun 30 15:39 IDT | **Backlog** | ❌ Update Jira → Done |
 | [JN-5612](https://redhat.atlassian.net/browse/JN-5612) | [#1627](https://github.com/Jounce-IO/jounce/pull/1627) | MERGED Jun 29 | **In Progress** | ❌ Update Jira → Done |
 | [JN-5616](https://redhat.atlassian.net/browse/JN-5616) | [#1623](https://github.com/Jounce-IO/jounce/pull/1623) | MERGED Jun 29 | **In Review** | ❌ Update Jira → Done |
 | [JN-5724](https://redhat.atlassian.net/browse/JN-5724) | [#1622](https://github.com/Jounce-IO/jounce/pull/1622) | MERGED Jun 29 | **In Review** | ❌ Update Jira → Done |
@@ -58,84 +55,62 @@
 
 ---
 
-## Key Changes Since Last Run (06:00 IDT Jul 1)
+## Key Changes Since Last Run (09:00 IDT Jul 1)
 
 | What observed | Status |
 |---|---|
-| **PR #1643: NEW CI RUN** | 🔄 New CI run **28496815646** triggered (push or re-run). Previous: 28454371524 (all green). New run: all checks PASS except **e2e-smoke PENDING** (still running). State: OPEN/MERGEABLE, no reviewer. |
-| **PR #1588: unchanged** | ⚠️ MERGEABLE. CI run 28469578445: pre-commit ❌ + pre-commit-run ❌ — unchanged. |
-| **PR #1606: unchanged** | 🔴 e2e-smoke ❌ + e2e-tests ❌ (run 28429314700) — mergeable UNKNOWN (GitHub recalculating) |
-| **Jira mismatches: 4 unchanged** | JN-5714/5612/5616/5724 all still unresolved |
-| **No new merges** | REST confirmed #1643 merged_at=null; GraphQL had intermittent timeouts (degraded gracefully) |
-| **Note: BOARD_STATE.md was 3h old** | ⚠️ Last updated 06:00 IDT, now 09:00 IDT — performing full refresh per Step 0 protocol |
+| **PR #1643 MERGED** | 🎉 Merged at 09:16 IDT Jul 1 (6 minutes before previous heartbeat finished scanning). jn-5794-required-checks worktree auto-archived at 09:21 IDT. |
+| **PR #1588 REGRESSION** | 🔴 Was MERGEABLE at 00:00 IDT Jul 1; now CONFLICTING again. Something merged into main between 00:00 IDT and 10:30 IDT that caused a new conflict. Pre-commit still failing (run 28469578445). |
+| **PR #1606: unchanged** | 🔴 CONFLICTING + e2e-smoke ❌ + e2e-tests ❌ (run 28429314700) — unchanged. |
+| **Jira mismatches: 4 unchanged + 1 new** | JN-5714/5612/5616/5724 unresolved. NEW: JN-5794 PR merged but Jira unverifiable (access error). |
 
 ---
 
 ## Attention Items
 
-### 🔄 PR #1643 (JN-5794) — NEW CI RUN at 09:00 IDT
+### 🎉 PR #1643 (JN-5794) — MERGED at 09:16 IDT Jul 1
 
 PR [#1643](https://github.com/Jounce-IO/jounce/pull/1643): `fix(ci): add all-checks aggregator gate to prevent auto-merge bypass (JN-5794)`
-- **Author:** sephib (Joseph Berry), published 17:29 IDT Jun 30
-- **State:** OPEN / MERGEABLE (confirmed via REST: merged_at=null)
-- **CI (run 28496815646) — NEW:** JIRA ✅, atlas-validate ✅, check-changes ✅, e2e-api ✅ (4m3s), integration-run ✅ (2m58s), integration-tests ✅, pre-commit-run ✅ (5m10s), tox-run ✅ (3m28s), nox ✅, pre-commit ✅, CodeRabbit ✅ — **e2e-smoke PENDING** (still running)
-- **Previous run 28454371524:** ALL 13 checks PASS including e2e-smoke ✅
-- **Zone:** jn-5794-required-checks still in Ingest (propose move to Code Review)
-- **Action needed:** Wait for e2e-smoke result on new run; assign reviewer + move zone Ingest → Code Review.
+- **Merged:** 09:16 IDT Jul 1 2026 (APPROVED by reviewer)
+- **Worktree:** jn-5794-required-checks auto-archived at 09:21 IDT Jul 1
+- **Action needed:** Verify/update [JN-5794](https://redhat.atlassian.net/browse/JN-5794) in Jira → Done (Jira MCP returning access error for this ticket)
 
 ---
 
-### ℹ️ NEW: jn-5795-upgrade-to-guidellm-v070 — Design Done, No Zone
+### 🔴 PR #1588 (JN-5546) — CONFLICTING AGAIN (Regression)
 
-- **Worktree:** `jn-5795-upgrade-to-guidellm-v070` created 11:48 IDT Jun 30
-- **Ticket:** [JN-5795](https://redhat.atlassian.net/browse/JN-5795) "Upgrade to GuideLLM v0.7.0" — Epic, Backlog, assigned to Joseph
-- **Status:** Design session complete (143 messages, idle since 12:45 IDT)
-- **Missing:** No board zone assigned, no PR
-- **Proposal:** Assign to Plan zone (design artifact ready in `.artifacts/design/JN-5795/03-design.md`)
-
----
-
-### 🎉 PR #1628 (JN-5714) — MERGED at 15:39 IDT Jun 30
-
-PR [#1628](https://github.com/Jounce-IO/jounce/pull/1628): `feat(jbenchmark): release manifest schema (JN-5714)` — **MERGED ✅**
-- **Merged:** 15:39 IDT Jun 30 2026
-- **cr-pr-1628 worktree:** archived automatically 16:00 IDT Jun 30
-- **Action needed:** Update JN-5714 in Jira → Done (currently shows "Backlog")
+PR [#1588](https://github.com/Jounce-IO/jounce/pull/1588): `docs(jbenchmark): add CONTRIBUTING.md and service READMEs`
+- **REGRESSION:** Was MERGEABLE at 00:00 IDT Jul 1; now back to CONFLICTING at 10:30 IDT
+- Something merged into main between 00:00 IDT and now that created a new conflict
+- **CI (run 28469578445):** pre-commit ❌ + pre-commit-run ❌ still FAILING. All other checks ✅.
+- **Action needed:** Rebase on main again + fix pre-commit failures
 
 ---
 
-### 🔴 PR #1606 (JN-5725) — REGRESSION: Now CONFLICTING + 2 e2e Failures
+### 🔴 PR #1606 (JN-5725) — CONFLICTING + e2e Failures (Off-board)
 
 PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer): integrate log analyzer into experiment-workflow`
-- **NEW:** `mergeable: CONFLICTING` (was MERGEABLE since Jun 22 — something merged into main that conflicts)
-- CI run 28429314700 **STALE**: e2e-smoke ❌ (6m15s), e2e-tests ❌ (4s) — all other checks ✅
+- CI run 28429314700: e2e-smoke ❌ (6m15s), e2e-tests ❌ (4s) — all other checks ✅
 - Jira JN-5725 shows **Done**
-- **Action needed:** Rebase on main to clear conflict, then diagnose e2e failures. Decide: fix and merge, or close PR (Jira already Done).
+- **Action needed:** Rebase on main to clear conflict, then fix e2e failures. Decide: fix and merge, or close PR.
 
 ---
 
-### ❌ Jira Mismatches (4 tickets need update to Done)
+### ❌ Jira Mismatches (5 tickets need action)
 
-- [JN-5714](https://redhat.atlassian.net/browse/JN-5714): PR #1628 MERGED Jun 30 15:39 IDT → still "Backlog" (**NEW**)
+- [JN-5794](https://redhat.atlassian.net/browse/JN-5794): PR #1643 MERGED Jul 1 09:16 IDT → Jira unverifiable (access error) (**NEW**)
+- [JN-5714](https://redhat.atlassian.net/browse/JN-5714): PR #1628 MERGED Jun 30 15:39 IDT → still "Backlog"
 - [JN-5612](https://redhat.atlassian.net/browse/JN-5612): PR #1627 MERGED Jun 29 → still "In Progress"
 - [JN-5616](https://redhat.atlassian.net/browse/JN-5616): PR #1623 MERGED Jun 29 → still "In Review"
 - [JN-5724](https://redhat.atlassian.net/browse/JN-5724): PR #1622 MERGED Jun 29 → still "In Review"
 
 ---
 
-### ⚠️ PR #1588 (JN-5546) — Conflict Resolved, Pre-commit Still Failing
-
-PR [#1588](https://github.com/Jounce-IO/jounce/pull/1588): `docs(jbenchmark): add CONTRIBUTING.md and service READMEs`
-- **CHANGE at 00:00 IDT Jul 1:** mergeable changed CONFLICTING → **MERGEABLE** (rebase or squash must have happened)
-- **CI (run 28469578445):** pre-commit ❌ + pre-commit-run ❌ (5m8s FAIL). All other checks skipped or passing.
-- **Action needed:** Fix pre-commit failures — conflict is gone, this is now the only blocker before assigning a reviewer.
-
----
-
-## Recently Merged (2026-06-29 to 2026-06-30)
+## Recently Merged (2026-07-01)
 
 | PR | Ticket | Merged | Worktree |
 |----|--------|--------|---------|
+| [#1643](https://github.com/Jounce-IO/jounce/pull/1643) | [JN-5794](https://redhat.atlassian.net/browse/JN-5794) | 09:16 IDT Jul 1 | Archived 09:21 IDT Jul 1 |
 | [#1628](https://github.com/Jounce-IO/jounce/pull/1628) | [JN-5714](https://redhat.atlassian.net/browse/JN-5714) | 15:39 IDT Jun 30 | Archived Jun 30 16:00 IDT |
 | [#1639](https://github.com/Jounce-IO/jounce/pull/1639) | [JN-5793](https://redhat.atlassian.net/browse/JN-5793) | 10:41 IDT Jun 30 | Archived Jun 30 11:00 IDT |
 | [#1627](https://github.com/Jounce-IO/jounce/pull/1627) | [JN-5612](https://redhat.atlassian.net/browse/JN-5612) | 10:42 IDT Jun 29 | Archived Jun 29 |
