@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-01 13:30 IDT";
+export const LAST_UPDATED = "2026-07-01 14:00 IDT";
 
 export const WORKTREES = [
   {
@@ -103,23 +103,6 @@ export const WORKTREES = [
     sessionLabel: null,
     recentSessions: [],
     lastActive: "2026-06-28 14:49 IDT",
-  },
-  {
-    ticket: "JN-5780",
-    ticketUrl: "https://redhat.atlassian.net/browse/JN-5780",
-    title: "Add JN project (jira-autofix)",
-    branch: "jn-5780-add-jn-project",
-    worktreePath: "/Users/josephberry/.agor/worktrees/redhat/jira-autofix/jn-5780-add-jn-project",
-    zone: "Plan",
-    pr: null,
-    prUrl: null,
-    status: "ℹ️ Detected Jun 28. Different repo (redhat/jira-autofix). Not in jounce Plan zone scan. No actual PR. Needs Joseph clarification.",
-    blockedOn: "Needs owner clarification",
-    blockedType: "active",
-    sessionUrl: null,
-    sessionLabel: null,
-    recentSessions: [],
-    lastActive: "2026-06-28 08:32 IDT",
   },
   {
     ticket: "JN-5795",
