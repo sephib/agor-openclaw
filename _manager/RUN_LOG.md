@@ -4,6 +4,18 @@
 
 ---
 
+## 11:00 IDT — Weekday Daytime Advance Heartbeat (2026-07-01)
+
+**Session:** 019f1cb1-74ef | http://127.0.0.1:3030/ui/s/019f1cb174ef7a7fa1da3078/
+- PRs checked: #1588 (OPEN CONFLICTING, pre-commit ❌ run 28469578445 — unchanged), #1606 (OPEN CONFLICTING + e2e-smoke ❌ + e2e-tests ❌ run 28429314700 — unchanged), #1596 (DRAFT CONFLICTING — unchanged)
+- Merges detected: none — last merge was #1643 (JN-5794) at 09:16 IDT Jul 1 (already recorded)
+- CI changes: none
+- Flags: (1) PR #1588 CONFLICTING + pre-commit FAIL; (2) PR #1606 CONFLICTING + e2e ❌; (3) 5 Jira mismatches (JN-5714/5612/5616/5724 + JN-5794 unverifiable); (4) jn-5795 no zone assigned; (5) jira-operations no zone
+- Auto-advances: 0
+- Next: Joseph to rebase #1588 + fix pre-commit; decide on #1606 (fix or close); update Jira statuses
+
+---
+
 ## 04:00 IDT — Overnight Advance Heartbeat (2026-07-01)
 
 **Session:** 019f1b30-ea34 | http://127.0.0.1:3030/ui/s/019f1b30ea3473b78ecb9a6b/

@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-01 10:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-01 11:00 IDT (advance heartbeat)*
 
 ---
 
@@ -55,14 +55,15 @@
 
 ---
 
-## Key Changes Since Last Run (09:00 IDT Jul 1)
+## Key Changes Since Last Run (10:30 IDT Jul 1)
 
 | What observed | Status |
 |---|---|
-| **PR #1643 MERGED** | 🎉 Merged at 09:16 IDT Jul 1 (6 minutes before previous heartbeat finished scanning). jn-5794-required-checks worktree auto-archived at 09:21 IDT. |
-| **PR #1588 REGRESSION** | 🔴 Was MERGEABLE at 00:00 IDT Jul 1; now CONFLICTING again. Something merged into main between 00:00 IDT and 10:30 IDT that caused a new conflict. Pre-commit still failing (run 28469578445). |
+| **Board static since 10:30 IDT** | No new merges or CI changes this run. |
+| **PR #1643 MERGED** | 🎉 Already recorded — merged at 09:16 IDT Jul 1. jn-5794-required-checks archived at 09:21 IDT. |
+| **PR #1588 REGRESSION** | 🔴 CONFLICTING + pre-commit FAIL (run 28469578445) — unchanged since 10:30 IDT. |
 | **PR #1606: unchanged** | 🔴 CONFLICTING + e2e-smoke ❌ + e2e-tests ❌ (run 28429314700) — unchanged. |
-| **Jira mismatches: 4 unchanged + 1 new** | JN-5714/5612/5616/5724 unresolved. NEW: JN-5794 PR merged but Jira unverifiable (access error). |
+| **Jira mismatches: 4 + 1 unverifiable** | JN-5714/5612/5616/5724 unresolved. JN-5794 Jira unverifiable (access error). |
 
 ---
 
