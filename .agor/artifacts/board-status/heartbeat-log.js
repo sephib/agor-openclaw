@@ -40,6 +40,15 @@ export const HEARTBEAT_RUNS = [
   },
   {
     type: "advance",
+    timestamp: "2026-07-01 16:00 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "Board static since 15:30 IDT; #1588 CONFLICTING+pre-commit FAIL unchanged; #1606 CONFLICTING+e2e ❌ unchanged; 3 Jira mismatches (JN-5612/5616/5724) + 2 unverifiable (JN-5794/5793); 0 auto-advances, 5 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f1dc430be7356bdcd30ed/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-01 14:00 IDT",
     actions: 0,
     findings: 5,
