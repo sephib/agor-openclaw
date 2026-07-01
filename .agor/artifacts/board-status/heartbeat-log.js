@@ -2225,4 +2225,13 @@ export const HEARTBEAT_RUNS = [
     summary: "PR #1643 (JN-5794) confirmed MERGED 09:16 IDT Jul 1 — worktree already archived 09:21 IDT by prior session; PR #1588 REGRESSION now CONFLICTING again (was MERGEABLE at 00:00 IDT); #1606 CONFLICTING+e2e ❌ unchanged; 5 Jira mismatches (JN-5794 new + 4 prior); 0 auto-advances, 6 findings",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f1c95f9fe747e94634091/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-07-01 11:30 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "Board static since 10:30 IDT; #1588 CONFLICTING+pre-commit FAIL unchanged; #1606 CONFLICTING+e2e ❌ unchanged; 5 Jira mismatches (JN-5714/5612/5616/5724 + JN-5794 unverifiable); 0 auto-advances, 5 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f1cccfd0b7aac82c11a3b/",
+  },
 ];
