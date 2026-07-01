@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-01 16:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-01 17:00 IDT (advance heartbeat)*
 
 ---
 
@@ -55,15 +55,14 @@
 
 ---
 
-## Key Changes Since Last Run (16:00 IDT Jul 1)
+## Key Changes Since Last Run (17:00 IDT Jul 1)
 
 | What observed | Status |
 |---|---|
-| **Board static since 15:30 IDT** | No new merges or CI changes this run. |
+| **Board static since 16:00 IDT** | No new merges or CI changes this run. |
 | **PR #1643 MERGED** | 🎉 Already recorded — merged at 09:16 IDT Jul 1. jn-5794-required-checks archived at 09:21 IDT. |
 | **PR #1588 REGRESSION** | 🔴 CONFLICTING + pre-commit FAIL (run 28469578445) — unchanged. |
 | **PR #1606: unchanged** | 🔴 CONFLICTING + e2e-smoke ❌ + e2e-tests ❌ (run 28429314700) — unchanged. |
-| **JN-5714 clarification** | ✅ Confirmed assigned to Uri Shaket — removed from Joseph's action items. Not Joseph's ticket. |
 | **Jira mismatches: 3 confirmed + 2 unverifiable** | JN-5612 In Progress, JN-5616 In Review, JN-5724 In Review (all Joseph's, PRs merged Jun 29). JN-5794 + JN-5793 unverifiable (access errors). |
 
 ---
