@@ -3603,3 +3603,10 @@
 - Auto-advances: 0
 - Flags: 5 (PR #1588 CONFLICTING+pre-commit FAIL; PR #1606 CONFLICTING+e2e; 4 Jira mismatches JN-5714/5612/5616/5724; JN-5794 unverifiable; jn-5795 no zone)
 - Next: Joseph to rebase #1588 on main + fix pre-commit; update 4 Jira tickets → Done; address PR #1606; assign zone to jn-5795
+
+## 12:00 IDT — Weekday Daytime Heartbeat
+- PRs checked: #1588 (OPEN, CONFLICTING, pre-commit FAIL run 28469578445), #1606 (OPEN, CONFLICTING, e2e ❌ run 28429314700), #1596 (DRAFT, CONFLICTING)
+- Merges detected: none
+- CI changes: none — #1588 still run 28469578445, #1606 still run 28429314700
+- Flags: 5 Jira mismatches persist (JN-5714 Backlog, JN-5612 In Progress, JN-5616 In Review, JN-5724 In Review, JN-5794 unverifiable); #1588 REGRESSION CONFLICTING+pre-commit FAIL; #1606 CONFLICTING+e2e ❌
+- Next: board static, no auto-advances; human action needed on #1588 rebase+pre-commit, Jira updates for 4 tickets
