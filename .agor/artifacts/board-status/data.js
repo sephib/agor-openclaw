@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-01 20:00 IDT";
+export const LAST_UPDATED = "2026-07-01 20:30 IDT";
 
 export const WORKTREES = [
   {
@@ -30,28 +30,19 @@ export const WORKTREES = [
   {
     ticket: null,
     ticketUrl: null,
-    title: "Internal code review system",
-    branch: "internal-cr-system",
-    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/internal-cr-system",
-    zone: "Code",
+    title: "Model packaging code review",
+    branch: "model-packaging-cr",
+    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/model-packaging-pipeline/model-packaging-cr",
+    zone: "Code Review",
     pr: null,
     prUrl: null,
-    status: "⚠️ filesystem_status: failed (git lock error on .git/config). No PR. Stagnant since Jun 18.",
-    blockedOn: "git lock filesystem failure",
+    status: "⚠️ model-packaging-pipeline repo. Created Jun 15 — stagnant 16+ days. No PR URL set. In Code Review zone with no visible work. Needs investigation or archive.",
+    blockedOn: "No PR, stagnant 16 days",
     blockedType: "blocked",
-    sessionUrl: "http://localhost:3030/ui/s/019eda0ae5667f0fa8bf3d95/",
-    sessionLabel: "Phase 2 session",
-    recentSessions: [
-      {
-        sessionId: "019eda0ae5667f0fa8bf3d95",
-        url: "http://127.0.0.1:3030/ui/s/019eda0ae5667f0fa8bf3d95/",
-        title: "Phase 2",
-        status: "completed",
-        timestamp: "2026-06-23 09:50 IDT",
-        outputFile: null,
-      },
-    ],
-    lastActive: "2026-06-23 09:50 IDT",
+    sessionUrl: null,
+    sessionLabel: null,
+    recentSessions: [],
+    lastActive: "2026-06-15 16:08 IDT",
   },
   {
     ticket: "JN-5695",
@@ -301,6 +292,6 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⚠️ internal-cr-system (Code zone): filesystem_status failed (git lock error). No PR. Stagnant since Jun 18.",
+    message: "⚠️ model-packaging-cr (Code Review zone, model-packaging-pipeline repo): Created Jun 15 — stagnant 16+ days. No PR URL set. Needs investigation or archive.",
   },
 ];

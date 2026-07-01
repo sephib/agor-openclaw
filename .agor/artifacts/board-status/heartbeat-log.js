@@ -2342,4 +2342,13 @@ export const HEARTBEAT_RUNS = [
     summary: "Board static since 17:30 IDT; #1588 CONFLICTING+pre-commit FAIL unchanged; #1606 MERGEABLE+e2e ❌ unchanged; 3 Jira mismatches (JN-5612/5616/5724) + 2 unverifiable (JN-5794/5793); 0 auto-advances, 5 findings",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f1e9fc4f3786d884384c4/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-07-01 20:30 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "Board static since 20:00 IDT; internal-cr-system no longer visible (likely archived); model-packaging-cr identified (Code Review zone, stagnant since Jun 15, no PR); #1588 CONFLICTING+pre-commit FAIL unchanged; #1606 MERGEABLE+e2e ❌ unchanged; 3 Jira mismatches (JN-5612/5616/5724) + 2 unverifiable (JN-5794/5793); 0 auto-advances, 5 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f1ebb3c7d7792a7cfc54d/",
+  },
 ];

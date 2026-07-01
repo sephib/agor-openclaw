@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-01 20:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-01 20:30 IDT (advance heartbeat)*
 
 ---
 
@@ -11,12 +11,12 @@
 | jn-5546-docs-document-module-layout-convention-and-3 | Code Review | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | ❌ pre-commit FAIL (run 28469578445) | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) — In Progress | 🔴 REGRESSION: Was MERGEABLE at 00:00 IDT, now CONFLICTING again. Pre-commit still failing. Rebase + fix pre-commit to unblock. |
 | jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | — | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) | 🔴 DRAFT CONFLICTING; frozen |
 | jn-5672-dal-ext-dashboard | BLOCKED | — | — | [JN-5672](https://redhat.atlassian.net/browse/JN-5672) | On hold — after notebooks complete |
-| internal-cr-system | Code | — | — | — | ⚠️ No PR; filesystem had git lock error; stagnant since Jun 18 |
+| model-packaging-cr | Code Review | — | — | — | ⚠️ model-packaging-pipeline repo. Created Jun 15. No PR URL set, stagnant 16+ days. Needs investigation or archive. |
 | jira-operations | (no zone) | — | — | — | ⚠️ No zone, no PR — needs zone assignment or archive |
 | jn-5244-cli-flags | Ingest | — | — | [JN-5244](https://redhat.atlassian.net/browse/JN-5244) | ℹ️ No sessions yet. Ready to ingest. |
 | jn-5795-upgrade-to-guidellm-v070 | NO ZONE | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) "Upgrade to GuideLLM v0.7.0" — Epic, Backlog | ℹ️ Design session done (143 msgs, idle 12:45 IDT Jun 30). No zone assigned. Proposal: move to Plan zone. |
 
-**Note:** jn-5794-required-checks was **archived at 09:21 IDT Jul 1** after PR #1643 merged at 09:16 IDT. jn-5780-add-jn-project is not in the Agor jounce repo list (active or archived). Per data.js it belongs to a different repo (jira-autofix).
+**Note:** jn-5794-required-checks was **archived at 09:21 IDT Jul 1** after PR #1643 merged at 09:16 IDT. jn-5780-add-jn-project is not in the Agor jounce repo list (active or archived). Per data.js it belongs to a different repo (jira-autofix). **internal-cr-system** (was Code zone, no PR) is no longer visible in board scan as of 20:30 IDT Jul 1 — likely archived by a previous session.
 
 ---
 
@@ -55,14 +55,16 @@
 
 ---
 
-## Key Changes Since Last Run (20:00 IDT Jul 1)
+## Key Changes Since Last Run (20:30 IDT Jul 1)
 
 | What observed | Status |
 |---|---|
-| **Board STATIC** | No changes since 17:30 IDT Jul 1. All findings carry forward. |
+| **Board mostly static** | No CI or PR changes since 20:00 IDT. Two structural observations below. |
 | **PR #1588: unchanged** | 🔴 CONFLICTING + pre-commit ❌ (run 28469578445). No new CI. |
 | **PR #1606: unchanged** | 🟡 MERGEABLE + e2e-smoke ❌ + e2e-tests ❌ (run 28527509341). No new CI. |
 | **Jira mismatches: unchanged** | JN-5612 In Progress, JN-5616 In Review, JN-5724 In Review (all PRs merged Jun 29). JN-5794 + JN-5793 unverifiable. |
+| **internal-cr-system: GONE** | No longer visible in board scan (Code zone, no PR). Likely archived by a previous session. |
+| **model-packaging-cr: newly tracked** | Found in Code Review zone (model-packaging-pipeline repo). Created Jun 15, no PR URL, stagnant 16 days. |
 
 ---
 

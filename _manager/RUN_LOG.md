@@ -3719,3 +3719,13 @@
 - Auto-advances: 0
 - Flags: 5 (PR #1588 CONFLICTING+pre-commit FAIL; PR #1606 MERGEABLE+e2e FAIL; JN-5612/5616/5724 Jira stale; JN-5794/5793 unverifiable)
 - Next: Joseph to rebase #1588 + fix pre-commit; update JN-5612/5616/5724 → Done; fix e2e or close #1606; assign zone to jn-5795
+
+## 20:30 IDT — Weekday Daytime Heartbeat
+- PRs checked: #1588 (CONFLICTING, pre-commit ❌), #1596 (DRAFT CONFLICTING), #1606 (MERGEABLE, e2e ❌)
+- Merges detected: none since 20:00 IDT run
+- CI changes: none — same CI runs as previous (28469578445 for #1588, 28527509341 for #1606)
+- Structural changes: internal-cr-system no longer visible in board scan (Code zone, no PR — likely archived); model-packaging-cr newly identified in Code Review zone (model-packaging-pipeline repo, created Jun 15, no PR, stagnant 16 days)
+- Jira: JN-5612 still In Progress, JN-5616 still In Review, JN-5724 still In Review (3 confirmed mismatches); JN-5794 + JN-5793 unverifiable — no changes
+- Auto-advances: 0
+- Flags: 5 (PR #1588 CONFLICTING+pre-commit FAIL; PR #1606 MERGEABLE+e2e FAIL; JN-5612/5616/5724 Jira stale; JN-5794/5793 unverifiable)
+- Next: Joseph to rebase #1588 + fix pre-commit; update JN-5612/5616/5724 → Done; fix e2e or close #1606; investigate/archive model-packaging-cr
