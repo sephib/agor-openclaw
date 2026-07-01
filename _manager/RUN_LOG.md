@@ -3559,3 +3559,16 @@
 - CI changes: none — all runs unchanged from 04:00 IDT scan
 - Flags: 4 Jira mismatches persist (JN-5714 Backlog, JN-5612 In Progress, JN-5616 In Review, JN-5724 In Review — all PRs merged); #1588 pre-commit blocking; #1606 conflicting; jn-5795 no zone
 - Next: Morning session will pick up — PR #1643 needs reviewer + zone move; 4 Jira mismatches need Done update
+
+## 09:00 IDT — Weekday Daytime Heartbeat (2026-07-01)
+
+**Session:** 019f1c43-c2b2 | http://127.0.0.1:3030/ui/s/019f1c43c2b27d35a22e4f42/
+- PRs checked: #1643 (OPEN/MERGEABLE, **NEW CI run 28496815646** — e2e-smoke PENDING, all others ✅), #1588 (OPEN/MERGEABLE, pre-commit ❌ run 28469578445 unchanged), #1606 (OPEN, e2e-smoke ❌ + e2e-tests ❌ run 28429314700 unchanged), #1596 (DRAFT unchanged)
+- Merges detected: none — REST confirmed #1643 merged_at=null; GraphQL had intermittent timeouts (degraded gracefully)
+- CI changes: **PR #1643 new CI run 28496815646** triggered (push or re-run). Previous run 28454371524 was all-green. New run: all passing, e2e-smoke still PENDING.
+- Jira: JN-5714 "Backlog", JN-5612 "In Progress", JN-5616 "In Review", JN-5724 "In Review" — 4 mismatches all unchanged
+- Board: 6 zoned worktrees (unchanged) + 2 unzoned (jn-5795, jira-operations)
+- Note: BOARD_STATE.md was 3h old at run start (06:00 → 09:00 IDT) — full refresh performed
+- Auto-advances: 0
+- Flags: 5 (PR #1643 e2e-smoke pending on new run + needs reviewer; PR #1588 pre-commit FAIL; PR #1606 e2e fails; 4 Jira mismatches; jn-5795 no zone)
+- Next: Wait for e2e-smoke on run 28496815646 (next heartbeat at 09:30 IDT); assign reviewer to #1643; fix pre-commit on #1588; update 4 Jira → Done

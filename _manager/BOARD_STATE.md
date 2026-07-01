@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-01 06:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-01 09:00 IDT (advance heartbeat)*
 
 ---
 
@@ -58,29 +58,30 @@
 
 ---
 
-## Key Changes Since Last Run (04:00 IDT Jul 1)
+## Key Changes Since Last Run (06:00 IDT Jul 1)
 
 | What observed | Status |
 |---|---|
-| **Board: static** | No changes detected. All PRs, CI runs, and Jira states identical to 04:00 IDT scan. |
-| **PR #1643: unchanged** | 🟢 Still ALL CI GREEN (run 28454371524). OPEN/MERGEABLE. reviewDecision="" — no reviewer assigned yet. |
-| **PR #1588: unchanged** | ⚠️ Still MERGEABLE. CI run 28469578445: pre-commit ❌ + pre-commit-run ❌ — unchanged. |
-| **PR #1606: unchanged** | 🔴 Still CONFLICTING + e2e-smoke ❌ + e2e-tests ❌ (run 28429314700) |
-| **Jira mismatches: 4 unchanged** | JN-5714/5612/5616/5724 all still unresolved — identical to 04:00 IDT |
-| **No new merges** | Step 1 sweep clean — last merge was #1628 at 15:39 IDT Jun 30 |
+| **PR #1643: NEW CI RUN** | 🔄 New CI run **28496815646** triggered (push or re-run). Previous: 28454371524 (all green). New run: all checks PASS except **e2e-smoke PENDING** (still running). State: OPEN/MERGEABLE, no reviewer. |
+| **PR #1588: unchanged** | ⚠️ MERGEABLE. CI run 28469578445: pre-commit ❌ + pre-commit-run ❌ — unchanged. |
+| **PR #1606: unchanged** | 🔴 e2e-smoke ❌ + e2e-tests ❌ (run 28429314700) — mergeable UNKNOWN (GitHub recalculating) |
+| **Jira mismatches: 4 unchanged** | JN-5714/5612/5616/5724 all still unresolved |
+| **No new merges** | REST confirmed #1643 merged_at=null; GraphQL had intermittent timeouts (degraded gracefully) |
+| **Note: BOARD_STATE.md was 3h old** | ⚠️ Last updated 06:00 IDT, now 09:00 IDT — performing full refresh per Step 0 protocol |
 
 ---
 
 ## Attention Items
 
-### 🟢 PR #1643 (JN-5794) — ALL CI GREEN as of 18:30 IDT
+### 🔄 PR #1643 (JN-5794) — NEW CI RUN at 09:00 IDT
 
 PR [#1643](https://github.com/Jounce-IO/jounce/pull/1643): `fix(ci): add all-checks aggregator gate to prevent auto-merge bypass (JN-5794)`
 - **Author:** sephib (Joseph Berry), published 17:29 IDT Jun 30
-- **State:** OPEN / MERGEABLE
-- **CI (run 28454371524):** ✅ ALL PASS — tox-run ✅ (3m47s), pre-commit-run ✅ (4m55s), e2e-smoke ✅ (10m34s), e2e-api ✅ (3m47s), e2e-tests ✅, integration-run ✅ (2m29s), integration-tests ✅, all-checks ✅, nox ✅, pre-commit ✅, atlas-validate ✅, check-changes ✅, JIRA ✅
+- **State:** OPEN / MERGEABLE (confirmed via REST: merged_at=null)
+- **CI (run 28496815646) — NEW:** JIRA ✅, atlas-validate ✅, check-changes ✅, e2e-api ✅ (4m3s), integration-run ✅ (2m58s), integration-tests ✅, pre-commit-run ✅ (5m10s), tox-run ✅ (3m28s), nox ✅, pre-commit ✅, CodeRabbit ✅ — **e2e-smoke PENDING** (still running)
+- **Previous run 28454371524:** ALL 13 checks PASS including e2e-smoke ✅
 - **Zone:** jn-5794-required-checks still in Ingest (propose move to Code Review)
-- **Action needed:** Assign reviewer + move zone Ingest → Code Review.
+- **Action needed:** Wait for e2e-smoke result on new run; assign reviewer + move zone Ingest → Code Review.
 
 ---
 

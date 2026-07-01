@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-01 06:00 IDT";
+export const LAST_UPDATED = "2026-07-01 09:00 IDT";
 
 export const WORKTREES = [
   {
@@ -96,7 +96,7 @@ export const WORKTREES = [
     zone: "Ingest",
     pr: "#1643",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1643",
-    status: "🟢 PR #1643 ALL CI GREEN (run 28454371524) as of 18:30 IDT Jun 30 — OPEN/MERGEABLE. All 13 checks pass (tox ✅, pre-commit-run ✅, e2e-smoke ✅ 10m34s, all-checks ✅). Needs reviewer + zone move Ingest→Code Review.",
+    status: "🔄 NEW CI run 28496815646 at 09:00 IDT Jul 1 — OPEN/MERGEABLE. All checks pass except e2e-smoke PENDING. Previous run 28454371524 was all-green. Needs reviewer + zone move Ingest→Code Review.",
     blockedOn: null,
     blockedType: "active",
     sessionUrl: null,
@@ -314,7 +314,7 @@ export const ALERTS = [
   },
   {
     level: "green",
-    message: "🟢 PR #1643 (JN-5794) ALL CI GREEN (run 28454371524) as of 18:30 IDT Jun 30 — OPEN/MERGEABLE. All 13 checks pass. Needs reviewer assigned + zone move jn-5794-required-checks: Ingest → Code Review.",
+    message: "🔄 PR #1643 (JN-5794) NEW CI run 28496815646 at 09:00 IDT Jul 1 — OPEN/MERGEABLE. e2e-smoke PENDING, all others ✅. Previous run 28454371524 was all-green. Needs reviewer assigned + zone move jn-5794-required-checks: Ingest → Code Review.",
   },
   {
     level: "red",
