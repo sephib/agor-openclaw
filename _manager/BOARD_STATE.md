@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-01 14:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-01 14:30 IDT (advance heartbeat)*
 
 ---
 
@@ -45,25 +45,26 @@
 
 | Ticket | PR | PR Status | Jira Status | Action |
 |--------|-----|-----------|-------------|--------|
-| [JN-5794](https://redhat.atlassian.net/browse/JN-5794) | [#1643](https://github.com/Jounce-IO/jounce/pull/1643) | MERGED Jul 1 09:16 IDT | **Cannot verify** (Jira access error) | ❌ Verify in Jira → Done (NEW) |
-| [JN-5714](https://redhat.atlassian.net/browse/JN-5714) | [#1628](https://github.com/Jounce-IO/jounce/pull/1628) | MERGED Jun 30 15:39 IDT | **Backlog** | ❌ Update Jira → Done |
+| [JN-5794](https://redhat.atlassian.net/browse/JN-5794) | [#1643](https://github.com/Jounce-IO/jounce/pull/1643) | MERGED Jul 1 09:16 IDT | **Cannot verify** (Jira access error) | ❌ Verify in Jira → Done |
 | [JN-5612](https://redhat.atlassian.net/browse/JN-5612) | [#1627](https://github.com/Jounce-IO/jounce/pull/1627) | MERGED Jun 29 | **In Progress** | ❌ Update Jira → Done |
 | [JN-5616](https://redhat.atlassian.net/browse/JN-5616) | [#1623](https://github.com/Jounce-IO/jounce/pull/1623) | MERGED Jun 29 | **In Review** | ❌ Update Jira → Done |
 | [JN-5724](https://redhat.atlassian.net/browse/JN-5724) | [#1622](https://github.com/Jounce-IO/jounce/pull/1622) | MERGED Jun 29 | **In Review** | ❌ Update Jira → Done |
 | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | OPEN, CI 2 FAIL | **Done** | ⚠️ Ticket marked Done but PR open — intentional? |
 | [JN-5793](https://redhat.atlassian.net/browse/JN-5793) | [#1639](https://github.com/Jounce-IO/jounce/pull/1639) | MERGED Jun 30 10:41 IDT | **Cannot check** (old Jira instance error) | ⚠️ PR merged — verify Jira is Done |
+| ~~[JN-5714](https://redhat.atlassian.net/browse/JN-5714)~~ | ~~[#1628](https://github.com/Jounce-IO/jounce/pull/1628)~~ | ~~MERGED Jun 30~~ | ~~**Backlog**~~ | ✅ Confirmed assigned to **Uri Shaket** (not Joseph) — removed from Joseph's action items |
 
 ---
 
-## Key Changes Since Last Run (14:00 IDT Jul 1)
+## Key Changes Since Last Run (14:30 IDT Jul 1)
 
 | What observed | Status |
 |---|---|
-| **Board static since 13:30 IDT** | No new merges or CI changes this run. |
+| **Board static since 14:00 IDT** | No new merges or CI changes this run. |
 | **PR #1643 MERGED** | 🎉 Already recorded — merged at 09:16 IDT Jul 1. jn-5794-required-checks archived at 09:21 IDT. |
-| **PR #1588 REGRESSION** | 🔴 CONFLICTING + pre-commit FAIL (run 28469578445) — unchanged since 10:30 IDT. |
+| **PR #1588 REGRESSION** | 🔴 CONFLICTING + pre-commit FAIL (run 28469578445) — unchanged. |
 | **PR #1606: unchanged** | 🔴 CONFLICTING + e2e-smoke ❌ + e2e-tests ❌ (run 28429314700) — unchanged. |
-| **Jira mismatches: 4 + 1 unverifiable** | JN-5714 Backlog, JN-5612 In Progress, JN-5616 In Review, JN-5724 In Review, JN-5794 unverifiable. All unchanged. |
+| **JN-5714 clarification** | ✅ Confirmed assigned to Uri Shaket — removed from Joseph's action items. Not Joseph's ticket. |
+| **Jira mismatches: 3 confirmed + 2 unverifiable** | JN-5612 In Progress, JN-5616 In Review, JN-5724 In Review (all Joseph's, PRs merged Jun 29). JN-5794 + JN-5793 unverifiable (access errors). |
 
 ---
 
@@ -97,13 +98,14 @@ PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer):
 
 ---
 
-### ❌ Jira Mismatches (5 tickets need action)
+### ❌ Jira Mismatches (3 confirmed + 2 unverifiable)
 
-- [JN-5794](https://redhat.atlassian.net/browse/JN-5794): PR #1643 MERGED Jul 1 09:16 IDT → Jira unverifiable (access error) (**NEW**)
-- [JN-5714](https://redhat.atlassian.net/browse/JN-5714): PR #1628 MERGED Jun 30 15:39 IDT → still "Backlog"
-- [JN-5612](https://redhat.atlassian.net/browse/JN-5612): PR #1627 MERGED Jun 29 → still "In Progress"
-- [JN-5616](https://redhat.atlassian.net/browse/JN-5616): PR #1623 MERGED Jun 29 → still "In Review"
-- [JN-5724](https://redhat.atlassian.net/browse/JN-5724): PR #1622 MERGED Jun 29 → still "In Review"
+- [JN-5794](https://redhat.atlassian.net/browse/JN-5794): PR [#1643](https://github.com/Jounce-IO/jounce/pull/1643) MERGED Jul 1 09:16 IDT → Jira unverifiable (access error)
+- [JN-5612](https://redhat.atlassian.net/browse/JN-5612): PR [#1627](https://github.com/Jounce-IO/jounce/pull/1627) MERGED Jun 29 → still "In Progress"
+- [JN-5616](https://redhat.atlassian.net/browse/JN-5616): PR [#1623](https://github.com/Jounce-IO/jounce/pull/1623) MERGED Jun 29 → still "In Review"
+- [JN-5724](https://redhat.atlassian.net/browse/JN-5724): PR [#1622](https://github.com/Jounce-IO/jounce/pull/1622) MERGED Jun 29 → still "In Review"
+- [JN-5793](https://redhat.atlassian.net/browse/JN-5793): PR [#1639](https://github.com/Jounce-IO/jounce/pull/1639) MERGED Jun 30 → unverifiable (old Jira instance error)
+- ~~JN-5714~~: Removed — confirmed assigned to Uri Shaket, not Joseph Berry
 
 ---
 

@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-01 14:00 IDT";
+export const LAST_UPDATED = "2026-07-01 14:30 IDT";
 
 export const WORKTREES = [
   {
@@ -281,7 +281,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⚠️ 5 Jira mismatches need action: JN-5794 (PR #1643 MERGED Jul 1, Jira unverifiable), JN-5714 (PR #1628 MERGED Jun 30, still 'Backlog'), JN-5612 (PR #1627 MERGED Jun 29, still 'In Progress'), JN-5616 (PR #1623 MERGED Jun 29, still 'In Review'), JN-5724 (PR #1622 MERGED Jun 29, still 'In Review').",
+    message: "⚠️ Jira mismatches (3 confirmed + 2 unverifiable): JN-5612 (PR #1627 MERGED Jun 29, still 'In Progress'), JN-5616 (PR #1623 MERGED Jun 29, still 'In Review'), JN-5724 (PR #1622 MERGED Jun 29, still 'In Review'), JN-5794 (unverifiable — access error), JN-5793 (unverifiable — old instance error). JN-5714 removed — confirmed Uri Shaket's ticket, not Joseph's.",
   },
   {
     level: "red",

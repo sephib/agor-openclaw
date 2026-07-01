@@ -2279,4 +2279,13 @@ export const HEARTBEAT_RUNS = [
     summary: "Board static since 11:30 IDT; #1588 CONFLICTING+pre-commit FAIL (run 28469578445) unchanged; #1606 CONFLICTING+e2e ❌ (run 28429314700) unchanged; 5 Jira mismatches (JN-5714/5612/5616/5724 + JN-5794 unverifiable); 0 auto-advances, 5 findings",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f1ce87851727799701b1b/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-07-01 14:30 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "Board static since 14:00 IDT; #1588 CONFLICTING+pre-commit FAIL unchanged; #1606 CONFLICTING+e2e ❌ unchanged; JN-5714 clarified as Uri Shaket's ticket (removed from Joseph's items); 3 confirmed Jira mismatches (JN-5612/5616/5724) + 2 unverifiable (JN-5794/5793); 0 auto-advances, 5 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f1d71c9ea720eb573365a/",
+  },
 ];
