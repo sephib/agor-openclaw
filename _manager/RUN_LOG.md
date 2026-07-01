@@ -3700,3 +3700,10 @@
 - Auto-advances: 0
 - Flags: 5 (PR #1588 CONFLICTING+pre-commit FAIL; PR #1606 CONFLICTING+e2e; JN-5612/5616/5724 Jira stale; JN-5794/5793 unverifiable)
 - Next: Joseph to rebase #1588 on main + fix pre-commit; update 3 Jira tickets → Done (JN-5612, JN-5616, JN-5724); address PR #1606; assign zone to jn-5795
+
+## 17:30 IDT — Weekday Daytime Heartbeat
+- PRs checked: #1588 (OPEN, mergeable UNKNOWN/computing, pre-commit FAIL — run 28469578445), #1606 (OPEN, MERGEABLE — was CONFLICTING, new run 28527509341), #1596 (DRAFT, UNKNOWN)
+- Merges detected: none
+- CI changes: #1606 conflict CLEARED — new CI run 28527509341; e2e-smoke ❌ + e2e-tests ❌ persist; pre-commit now ✅
+- Flags: 3 Jira stale (JN-5612/5616/5724 merged Jun 29 but still open); 2 unverifiable (JN-5794/5793)
+- Next: Joseph to decide on #1606 (fix e2e or close) and fix #1588 (rebase + pre-commit)

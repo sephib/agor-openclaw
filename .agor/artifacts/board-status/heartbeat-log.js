@@ -31,6 +31,15 @@ export const HEARTBEAT_RUNS = [
   },
   {
     type: "advance",
+    timestamp: "2026-07-01 17:30 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "PR #1606 conflict CLEARED — now MERGEABLE (new CI run 28527509341); e2e-smoke ❌ + e2e-tests ❌ persist; #1588 pre-commit FAIL unchanged; 3 Jira mismatches (JN-5612/5616/5724) + 2 unverifiable (JN-5794/5793); 0 auto-advances, 5 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f1e844e017320afc76117/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-01 17:00 IDT",
     actions: 0,
     findings: 5,

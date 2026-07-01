@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-01 17:00 IDT";
+export const LAST_UPDATED = "2026-07-01 17:30 IDT";
 
 export const WORKTREES = [
   {
@@ -284,8 +284,8 @@ export const ALERTS = [
     message: "⚠️ Jira mismatches (3 confirmed + 2 unverifiable): JN-5612 (PR #1627 MERGED Jun 29, still 'In Progress'), JN-5616 (PR #1623 MERGED Jun 29, still 'In Review'), JN-5724 (PR #1622 MERGED Jun 29, still 'In Review'), JN-5794 (unverifiable — access error), JN-5793 (unverifiable — old instance error). JN-5714 removed — confirmed Uri Shaket's ticket, not Joseph's.",
   },
   {
-    level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): CONFLICTING + CI run 28429314700: e2e-smoke ❌ + e2e-tests ❌ (all other checks ✅). Jira JN-5725 Done. Rebase + fix e2e or close PR.",
+    level: "yellow",
+    message: "🟡 PR #1606 (JN-5725, off-board): CONFLICT CLEARED at 17:30 IDT Jul 1 — now MERGEABLE. New CI run 28527509341: e2e-smoke ❌ + e2e-tests ❌ still failing (all other checks ✅). Jira JN-5725 Done. Fix e2e or close PR.",
   },
   {
     level: "info",

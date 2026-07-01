@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-01 17:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-01 17:30 IDT (advance heartbeat)*
 
 ---
 
@@ -24,7 +24,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** | ❌ e2e-smoke ❌ + e2e-tests ❌ (run 28429314700, all else ✅) | 🔴 CONFLICTING | 🔴 CONFLICTING + 2 persistent e2e failures. Jira Done. Fix conflict + e2e, or close PR. |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** | ❌ e2e-smoke ❌ + e2e-tests ❌ (run 28527509341, all else ✅) | ✅ MERGEABLE (was CONFLICTING) | 🟡 Conflict cleared (rebased?) — now MERGEABLE. e2e-smoke ❌ + e2e-tests ❌ persist. Jira Done. Fix e2e or close PR. |
 
 ---
 
@@ -55,14 +55,13 @@
 
 ---
 
-## Key Changes Since Last Run (17:00 IDT Jul 1)
+## Key Changes Since Last Run (17:30 IDT Jul 1)
 
 | What observed | Status |
 |---|---|
-| **Board static since 16:00 IDT** | No new merges or CI changes this run. |
+| **PR #1606: CONFLICT CLEARED** | 🟡 NEW: CONFLICTING → MERGEABLE. New CI run 28527509341. e2e-smoke ❌ + e2e-tests ❌ still fail. Pre-commit now ✅. Fix e2e or close PR. |
 | **PR #1643 MERGED** | 🎉 Already recorded — merged at 09:16 IDT Jul 1. jn-5794-required-checks archived at 09:21 IDT. |
-| **PR #1588 REGRESSION** | 🔴 CONFLICTING + pre-commit FAIL (run 28469578445) — unchanged. |
-| **PR #1606: unchanged** | 🔴 CONFLICTING + e2e-smoke ❌ + e2e-tests ❌ (run 28429314700) — unchanged. |
+| **PR #1588: unchanged** | 🔴 mergeable UNKNOWN (computing), pre-commit FAIL (run 28469578445). |
 | **Jira mismatches: 3 confirmed + 2 unverifiable** | JN-5612 In Progress, JN-5616 In Review, JN-5724 In Review (all Joseph's, PRs merged Jun 29). JN-5794 + JN-5793 unverifiable (access errors). |
 
 ---
@@ -88,12 +87,13 @@ PR [#1588](https://github.com/Jounce-IO/jounce/pull/1588): `docs(jbenchmark): ad
 
 ---
 
-### 🔴 PR #1606 (JN-5725) — CONFLICTING + e2e Failures (Off-board)
+### 🟡 PR #1606 (JN-5725) — CONFLICT CLEARED, e2e Still Failing (Off-board)
 
 PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer): integrate log analyzer into experiment-workflow`
-- CI run 28429314700: e2e-smoke ❌ (6m15s), e2e-tests ❌ (4s) — all other checks ✅
+- **CHANGE 17:30 IDT:** Now MERGEABLE (conflict cleared — likely rebased since last run)
+- New CI run 28527509341: e2e-smoke ❌ (6m17s), e2e-tests ❌ (4s) — all other checks ✅ (incl. pre-commit, integration)
 - Jira JN-5725 shows **Done**
-- **Action needed:** Rebase on main to clear conflict, then fix e2e failures. Decide: fix and merge, or close PR.
+- **Action needed:** Conflict is gone. Fix e2e failures or close PR.
 
 ---
 
