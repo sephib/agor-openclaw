@@ -1,4 +1,13 @@
 export const HEARTBEAT_RUNS = [
+  {
+    type: "advance",
+    timestamp: "2026-07-02 15:00 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "board static since 14:30 IDT; #1606 CONFLICTING+e2e ❌ unchanged; #1588 CONFLICTING+pre-commit FAIL unchanged; 3 Jira mismatches (JN-5612/5616/5724) + 2 unverifiable; 4 new sprint tickets without worktrees (JN-5678/5132/5461/5462); 0 auto-advances, 5 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f22ea7eb4750c81a35a2b/",
+  },
   // Each heartbeat run appends an entry here when it updates the dashboard.
   // Format: { type, timestamp, actions, status, sessionUrl }
   //

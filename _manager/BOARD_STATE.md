@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-02 14:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-02 15:00 IDT (advance heartbeat)*
 
 ---
 
@@ -41,6 +41,10 @@
 | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) | Create db_connect script for readonly psql access | **Backlog** | Has PR #1596 (DRAFT CONFLICTING) |
 | [JN-5670](https://redhat.atlassian.net/browse/JN-5670) | Benchmark Visibility Dashboard | **In Progress** | No worktree — confirmed 11:30 IDT Jul 2 |
 | [JN-5539](https://redhat.atlassian.net/browse/JN-5539) | Dependency & Build Standardization | **In Progress** | No worktree — confirmed 11:30 IDT Jul 2 |
+| [JN-5678](https://redhat.atlassian.net/browse/JN-5678) | [DOCS] Dashboard README and setup instructions | **Backlog** | No worktree — found 15:00 IDT Jul 2 |
+| [JN-5132](https://redhat.atlassian.net/browse/JN-5132) | Refactor run_jbenchmark script to support redesign flow | **Waiting/Blocked** | No worktree — found 15:00 IDT Jul 2 |
+| [JN-5462](https://redhat.atlassian.net/browse/JN-5462) | Implement agentic Jira→PR workflow - Forge | **Backlog** | No worktree — found 15:00 IDT Jul 2 |
+| [JN-5461](https://redhat.atlassian.net/browse/JN-5461) | Implement agentic Jira→PR workflow - AIPCC autofix | **Backlog** | No worktree — found 15:00 IDT Jul 2 |
 
 ---
 
@@ -57,15 +61,16 @@
 
 ---
 
-## Key Changes Since Last Run (14:00 IDT Jul 2)
+## Key Changes Since Last Run (14:30 IDT Jul 2)
 
 | What observed | Status |
 |---|---|
-| **Board static** | No new merges, no zone moves, no CI changes since 14:00 IDT. |
+| **Board static** | No new merges, no zone moves, no CI changes since 14:30 IDT. |
 | **PR #1606: unchanged** | 🔴 Still CONFLICTING + e2e ❌ (run 28527509341). No new CI activity. |
 | **PR #1588: unchanged** | 🔴 Still CONFLICTING + pre-commit ❌ (run 28469578445). No new CI. |
 | **Jira mismatches: confirmed** | JN-5612 still "In Progress", JN-5616 still "In Review", JN-5724 still "In Review" (all PRs merged Jun 29). JN-5794 + JN-5793 unverifiable. |
-| **sprint-planning-jul: session found** | Sibling session "Sprint 10 Planning + AGENTS.md Restructuring" (idle) visible — worktree has activity context. |
+| **New sprint tickets found** | JN-5678 (Dashboard README, Backlog), JN-5132 (refactor run_jbenchmark, Waiting/Blocked), JN-5461+JN-5462 (agentic Jira→PR workflow, Backlog) — all without worktrees. |
+| **fix-dashboard-syntax-error ZOMBIE confirmed** | Agor MCP confirms filesystem_status=FAILED — still in Plan zone with no recovery possible. |
 
 ---
 
