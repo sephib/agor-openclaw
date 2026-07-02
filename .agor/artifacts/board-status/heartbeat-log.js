@@ -2351,4 +2351,13 @@ export const HEARTBEAT_RUNS = [
     summary: "Board static since 20:00 IDT; internal-cr-system no longer visible (likely archived); model-packaging-cr identified (Code Review zone, stagnant since Jun 15, no PR); #1588 CONFLICTING+pre-commit FAIL unchanged; #1606 MERGEABLE+e2e ❌ unchanged; 3 Jira mismatches (JN-5612/5616/5724) + 2 unverifiable (JN-5794/5793); 0 auto-advances, 5 findings",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f1ebb3c7d7792a7cfc54d/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-07-02 09:00 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "Full refresh after 12.5h overnight gap; #1588 CONFLICTING+pre-commit FAIL unchanged; #1606 MERGEABLE+e2e ❌ unchanged; 3 Jira mismatches (JN-5612/5616/5724) + 2 unverifiable; NEW: fix-dashboard-syntax-error zombie worktree in Plan zone (filesystem FAILED Jun 17); 0 auto-advances, 6 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f2169f5f279e893a896ad/",
+  },
 ];

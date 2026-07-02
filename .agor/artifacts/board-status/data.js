@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-01 20:30 IDT";
+export const LAST_UPDATED = "2026-07-02 09:00 IDT";
 
 export const WORKTREES = [
   {
@@ -10,7 +10,7 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1588",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1588",
-    status: "🔴 REGRESSION: Was MERGEABLE at 00:00 IDT Jul 1 — now CONFLICTING again at 10:30 IDT. Something merged into main causing a new conflict. Pre-commit still FAILING (run 28469578445). Needs rebase + pre-commit fix.",
+    status: "🔴 CONFLICTING + pre-commit ❌ — UNCHANGED since Jul 1 10:30 IDT. Something merged into main creating new conflict. CI run 28469578445: pre-commit ❌ + pre-commit-run ❌. Needs rebase + pre-commit fix.",
     blockedOn: "CONFLICTING + pre-commit FAIL",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ed01e5624752fbade0eab/",
@@ -36,8 +36,8 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: null,
     prUrl: null,
-    status: "⚠️ model-packaging-pipeline repo. Created Jun 15 — stagnant 16+ days. No PR URL set. In Code Review zone with no visible work. Needs investigation or archive.",
-    blockedOn: "No PR, stagnant 16 days",
+    status: "⚠️ model-packaging-pipeline repo. Created Jun 15 — stagnant 17+ days. No PR URL set. In Code Review zone with no visible work. Needs investigation or archive.",
+    blockedOn: "No PR, stagnant 17+ days",
     blockedType: "blocked",
     sessionUrl: null,
     sessionLabel: null,
@@ -53,7 +53,7 @@ export const WORKTREES = [
     zone: "BLOCKED",
     pr: "#1596 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1596",
-    status: "Frozen — solved locally with Docker DB; PR CONFLICTING",
+    status: "Frozen — solved locally with Docker DB; PR DRAFT CONFLICTING",
     blockedOn: "Frozen",
     blockedType: "blocked",
     sessionUrl: null,
@@ -87,7 +87,7 @@ export const WORKTREES = [
     zone: "Ingest",
     pr: null,
     prUrl: null,
-    status: "ℹ️ NEW worktree — created 14:49 IDT Jun 28. No sessions yet. Ready to ingest JN-5244.",
+    status: "ℹ️ No sessions yet. Ready to ingest JN-5244.",
     blockedOn: null,
     blockedType: "active",
     sessionUrl: null,
@@ -104,7 +104,7 @@ export const WORKTREES = [
     zone: "NO ZONE",
     pr: null,
     prUrl: null,
-    status: "ℹ️ NEW — Created 11:48 IDT Jun 30. Design session done (143 msgs, idle 12:45 IDT). Proposal: assign to Plan zone.",
+    status: "ℹ️ Design session done (143 msgs, idle Jun 30 12:45 IDT). No zone assigned. Proposal: assign to Plan zone.",
     blockedOn: null,
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f185c2c687ed7bbdd1902/",
@@ -120,6 +120,49 @@ export const WORKTREES = [
       },
     ],
     lastActive: "2026-06-30 12:45 IDT",
+  },
+  {
+    ticket: "JN-5780",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5780",
+    title: "Add JN project to jira-autofix",
+    branch: "jn-5780-add-jn-project",
+    worktreePath: "/Users/josephberry/.agor/worktrees/redhat/jira-autofix/jn-5780-add-jn-project",
+    zone: "Plan",
+    pr: "MR#887 (GitLab)",
+    prUrl: "https://gitlab.com/redhat/rhel-ai/agentic-ci/autofix/-/merge_requests/887",
+    status: "ℹ️ jira-autofix repo (not jounce). Session done Jun 28 09:20 IDT. GitLab MR#887 pushed. Needs MR title fix (JN-5780: prefix). Idle.",
+    blockedOn: null,
+    blockedType: "active",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f0d5ea7227d949e5baa9c/",
+    sessionLabel: "implement",
+    recentSessions: [
+      {
+        sessionId: "019f0d5e-a722-7d94-9e5b-aa9cbc71aa67",
+        url: "http://127.0.0.1:3030/ui/s/019f0d5ea7227d949e5baa9c/",
+        title: "implement",
+        status: "idle",
+        timestamp: "2026-06-28 09:20 IDT",
+        outputFile: null,
+      },
+    ],
+    lastActive: "2026-06-28 09:20 IDT",
+  },
+  {
+    ticket: null,
+    ticketUrl: null,
+    title: "fix-dashboard-syntax-error (ZOMBIE)",
+    branch: "fix-dashboard-syntax-error",
+    worktreePath: "/Users/josephberry/.agor/worktrees/local/agor-openclaw/fix-dashboard-syntax-error",
+    zone: "Plan",
+    pr: null,
+    prUrl: null,
+    status: "🔴 ZOMBIE: agor-openclaw repo, filesystem_status=FAILED. Created Jun 17 — 15+ days stale. Error: 'fatal: invalid reference: origin/private-julie'. No Jira, no PR. PROPOSAL: archive.",
+    blockedOn: "Filesystem FAILED",
+    blockedType: "blocked",
+    sessionUrl: null,
+    sessionLabel: null,
+    recentSessions: [],
+    lastActive: "2026-06-17 10:22 IDT",
   },
 ];
 
@@ -263,35 +306,39 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "green",
-    message: "🎉 PR #1643 (JN-5794) MERGED at 09:16 IDT Jul 1 ✅ — jn-5794-required-checks auto-archived at 09:21 IDT. Reviewer APPROVED. Verify JN-5794 Jira → Done (Jira MCP access error for this ticket — check manually).",
+    level: "red",
+    message: "🔴 fix-dashboard-syntax-error (Plan zone): ZOMBIE WORKTREE — agor-openclaw repo, filesystem FAILED since Jun 17 (15+ days). Error: 'fatal: invalid reference: origin/private-julie'. No PR, no Jira. PROPOSAL: archive this worktree.",
   },
   {
     level: "red",
-    message: "🔴 PR #1588 (JN-5546, Code Review zone): REGRESSION — Was MERGEABLE at 00:00 IDT Jul 1, now CONFLICTING again at 10:30 IDT. Something merged into main creating a new conflict. CI run 28469578445: pre-commit ❌ + pre-commit-run ❌ still FAILING. Needs rebase + pre-commit fix.",
+    message: "🔴 PR #1588 (JN-5546, Code Review zone): CONFLICTING + pre-commit ❌ — unchanged since Jul 1 10:30 IDT. CI run 28469578445: pre-commit ❌ + pre-commit-run ❌. Needs rebase + pre-commit fix.",
   },
   {
     level: "yellow",
-    message: "⚠️ Jira mismatches (3 confirmed + 2 unverifiable): JN-5612 (PR #1627 MERGED Jun 29, still 'In Progress'), JN-5616 (PR #1623 MERGED Jun 29, still 'In Review'), JN-5724 (PR #1622 MERGED Jun 29, still 'In Review'), JN-5794 (unverifiable — access error), JN-5793 (unverifiable — old instance error). JN-5714 removed — confirmed Uri Shaket's ticket, not Joseph's.",
+    message: "⚠️ Jira mismatches (3 confirmed + 2 unverifiable): JN-5612 (PR #1627 MERGED Jun 29, still 'In Progress'), JN-5616 (PR #1623 MERGED Jun 29, still 'In Review'), JN-5724 (PR #1622 MERGED Jun 29, still 'In Review'), JN-5794 (unverifiable — access error), JN-5793 (unverifiable — old instance error).",
   },
   {
     level: "yellow",
-    message: "🟡 PR #1606 (JN-5725, off-board): CONFLICT CLEARED at 17:30 IDT Jul 1 — now MERGEABLE. New CI run 28527509341: e2e-smoke ❌ + e2e-tests ❌ still failing (all other checks ✅). Jira JN-5725 Done. Fix e2e or close PR.",
+    message: "🟡 PR #1606 (JN-5725, off-board): MERGEABLE. CI run 28527509341: e2e-smoke ❌ + e2e-tests ❌ still failing (all other checks ✅). Jira JN-5725 Done. Fix e2e or close PR.",
+  },
+  {
+    level: "green",
+    message: "🎉 PR #1643 (JN-5794) MERGED at 09:16 IDT Jul 1 ✅ — jn-5794-required-checks auto-archived at 09:21 IDT. Verify JN-5794 Jira → Done (Jira MCP access error — check manually).",
   },
   {
     level: "info",
-    message: "ℹ️ NEW: jn-5795-upgrade-to-guidellm-v070 — JN-5795 'Upgrade to GuideLLM v0.7.0' (Epic, Backlog). Design session done (143 msgs, idle 12:45 IDT Jun 30). No zone assigned. Proposal: move to Plan zone.",
+    message: "ℹ️ jn-5795-upgrade-to-guidellm-v070 (NO ZONE): Design session done Jun 30. Proposal: move to Plan zone.",
   },
   {
     level: "info",
-    message: "ℹ️ jn-5780-add-jn-project (Plan zone): different repo (jira-autofix). No actual PR. Needs Joseph clarification.",
+    message: "ℹ️ jn-5780-add-jn-project (Plan zone): jira-autofix repo, GitLab MR#887 pushed Jun 28. Needs MR title fix. Idle.",
   },
   {
     level: "yellow",
-    message: "⚠️ jira-operations (no zone): session timed_out 07:38 IDT Jun 25. No PR, no Jira. Decide: archive or assign zone.",
+    message: "⚠️ jira-operations (no zone): session last active Jun 25. No PR, no Jira. Decide: archive or assign zone.",
   },
   {
     level: "yellow",
-    message: "⚠️ model-packaging-cr (Code Review zone, model-packaging-pipeline repo): Created Jun 15 — stagnant 16+ days. No PR URL set. Needs investigation or archive.",
+    message: "⚠️ model-packaging-cr (Code Review zone, model-packaging-pipeline repo): Created Jun 15 — stagnant 17+ days. No PR URL set. Needs investigation or archive.",
   },
 ];
