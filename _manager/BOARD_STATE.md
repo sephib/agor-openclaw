@@ -1,10 +1,10 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-02 09:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-02 09:30 IDT (advance heartbeat)*
 
 ---
 
-⚠️ BOARD_STATE.md was ~12.5 hours old — full refresh performed. Overnight heartbeat gap (no commits between 20:30 IDT Jul 1 and 09:00 IDT Jul 2).
+Board static since 09:00 IDT — 30-min scan, no changes. All worktrees, CI runs, and Jira statuses unchanged.
 
 ---
 
@@ -58,15 +58,13 @@
 
 ---
 
-## Key Changes Since Last Run (20:30 IDT Jul 1)
+## Key Changes Since Last Run (09:00 IDT Jul 2)
 
 | What observed | Status |
 |---|---|
-| **Overnight gap** | No heartbeat commits Jul 1 20:30 → Jul 2 09:00 (12.5h gap). Full refresh performed. |
+| **Board static** | No changes from 09:00 IDT scan (30 min ago). All worktrees, CI runs, Jira unchanged. |
 | **PR #1588: unchanged** | 🔴 CONFLICTING + pre-commit ❌ (run 28469578445). No new CI. |
-| **PR #1606: unchanged** | 🟡 MERGEABLE + e2e-smoke ❌ + e2e-tests ❌ (run 28527509341). No new CI. |
-| **fix-dashboard-syntax-error: NEW FINDING** | 🔴 Found in Plan zone — agor-openclaw repo, filesystem FAILED since Jun 17. 15+ day zombie. Proposal: archive. |
-| **jn-5780: confirmed in Plan** | ℹ️ Confirmed Plan zone, GitLab MR#887 exists (Jun 28). Session idle. |
+| **PR #1606: unchanged** | 🟡 OPEN + e2e-smoke ❌ + e2e-tests ❌ (run 28527509341). No new CI. |
 | **Jira mismatches: unchanged** | JN-5612 In Progress, JN-5616 In Review, JN-5724 In Review (all PRs merged Jun 29). JN-5794 + JN-5793 unverifiable. |
 
 ---

@@ -2360,4 +2360,13 @@ export const HEARTBEAT_RUNS = [
     summary: "Full refresh after 12.5h overnight gap; #1588 CONFLICTING+pre-commit FAIL unchanged; #1606 MERGEABLE+e2e ❌ unchanged; 3 Jira mismatches (JN-5612/5616/5724) + 2 unverifiable; NEW: fix-dashboard-syntax-error zombie worktree in Plan zone (filesystem FAILED Jun 17); 0 auto-advances, 6 findings",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f2169f5f279e893a896ad/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-07-02 09:30 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "Board static since 09:00 IDT scan; #1588 CONFLICTING+pre-commit FAIL unchanged; #1606 e2e ❌ unchanged; 3 Jira mismatches (JN-5612/5616/5724) + 2 unverifiable (JN-5794/5793); 0 auto-advances, 5 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f21856d6c7cc79b6aca72/",
+  },
 ];
