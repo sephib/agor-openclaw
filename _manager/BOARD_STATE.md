@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-02 15:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-02 16:00 IDT (advance heartbeat)*
 
 ---
 
@@ -61,16 +61,16 @@
 
 ---
 
-## Key Changes Since Last Run (15:00 IDT Jul 2)
+## Key Changes Since Last Run (15:30 IDT Jul 2)
 
 | What observed | Status |
 |---|---|
-| **Board static** | No new merges, no zone moves, no CI changes since 15:00 IDT. |
+| **Board static** | No new merges, no zone moves, no CI changes since 15:30 IDT. |
 | **PR #1606: unchanged** | 🔴 Still CONFLICTING + e2e ❌ (run 28527509341). No new CI activity. |
 | **PR #1588: unchanged** | 🔴 Still CONFLICTING + pre-commit ❌ (run 28469578445). No new CI. |
-| **Jira mismatches: confirmed** | JN-5612 still "In Progress", JN-5616 still "In Review", JN-5724 still "In Review" (all PRs merged Jun 29). JN-5794 + JN-5793 unverifiable. |
+| **Jira mismatches: confirmed** | JN-5612 still "In Progress", JN-5616 still "In Review", JN-5724 still "In Review" (all PRs merged Jun 29). |
 | **No new sprint tickets** | Sprint ticket list unchanged from 15:00 IDT scan. |
-| **fix-dashboard-syntax-error ZOMBIE** | Confirmed filesystem_status=FAILED — still in Plan zone. |
+| **fix-dashboard-syntax-error ZOMBIE** | Still in Plan zone — ZOMBIE (agor-openclaw repo, filesystem FAILED). |
 
 ---
 
