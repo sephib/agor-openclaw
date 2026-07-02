@@ -3910,3 +3910,17 @@
 - Next: Joseph to rebase #1588 on main + fix pre-commit; rebase #1606 + fix e2e or close; update JN-5612/5616/5724 → Done
 
 ---
+
+---
+
+## 22:00 IDT — Overnight Heartbeat (2026-07-02)
+
+**Session:** 019f2434-32ca | http://127.0.0.1:3030/ui/s/019f243432ca7ea88d9cd4d1/
+- PRs checked: #1588 (OPEN CONFLICTING + pre-commit ❌ run 28469578445 — UNCHANGED), #1606 (OPEN CONFLICTING + e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌ run 28527509341 — UNCHANGED), #1596 (DRAFT CONFLICTING — UNCHANGED)
+- Merges detected: none — last merge #1643 (JN-5794) at 09:16 IDT Jul 1 (already captured); no new merges overnight
+- CI changes: none — all run IDs identical to 16:00 IDT scan; board static for 6h
+- Jira: JN-5612 still "In Progress", JN-5616 still "In Review", JN-5724 still "In Review" (3 confirmed mismatches persistent 3+ days); JN-5794 unverifiable (access error)
+- Board: static since 16:00 IDT — 8 active worktrees on board + zombie fix-dashboard-syntax-error; no zone changes overnight
+- Auto-advances: 0
+- Flags: 5 (PR #1588 CONFLICTING+pre-commit FAIL; PR #1606 CONFLICTING+e2e FAIL; JN-5612/5616/5724 Jira stale; fix-dashboard-syntax-error ZOMBIE)
+- Next: Joseph to rebase #1588 + fix pre-commit; rebase #1606 + fix e2e or close; update JN-5612/5616/5724 → Done in Jira

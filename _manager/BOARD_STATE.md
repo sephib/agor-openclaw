@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-02 16:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-02 22:00 IDT (advance heartbeat — overnight)*
 
 ---
 
@@ -61,15 +61,15 @@
 
 ---
 
-## Key Changes Since Last Run (15:30 IDT Jul 2)
+## Key Changes Since Last Run (16:00 IDT Jul 2)
 
 | What observed | Status |
 |---|---|
-| **Board static** | No new merges, no zone moves, no CI changes since 15:30 IDT. |
-| **PR #1606: unchanged** | 🔴 Still CONFLICTING + e2e ❌ (run 28527509341). No new CI activity. |
-| **PR #1588: unchanged** | 🔴 Still CONFLICTING + pre-commit ❌ (run 28469578445). No new CI. |
-| **Jira mismatches: confirmed** | JN-5612 still "In Progress", JN-5616 still "In Review", JN-5724 still "In Review" (all PRs merged Jun 29). |
-| **No new sprint tickets** | Sprint ticket list unchanged from 15:00 IDT scan. |
+| **Board static** | No new merges, no zone moves, no CI changes since 16:00 IDT (6h gap — overnight). |
+| **PR #1606: unchanged** | 🔴 Still CONFLICTING + e2e ❌ (run 28527509341). No new CI activity overnight. |
+| **PR #1588: unchanged** | 🔴 Still CONFLICTING + pre-commit ❌ (run 28469578445). No new CI overnight. |
+| **Jira mismatches: confirmed** | JN-5612 still "In Progress", JN-5616 still "In Review", JN-5724 still "In Review" (all PRs merged Jun 29). JN-5794 still unverifiable. |
+| **No new sprint tickets** | Sprint ticket list unchanged. |
 | **fix-dashboard-syntax-error ZOMBIE** | Still in Plan zone — ZOMBIE (agor-openclaw repo, filesystem FAILED). |
 
 ---
