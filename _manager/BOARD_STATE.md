@@ -1,10 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-02 09:30 IDT (advance heartbeat)*
-
----
-
-Board static since 09:00 IDT — 30-min scan, no changes. All worktrees, CI runs, and Jira statuses unchanged.
+*Last updated: 2026-07-02 10:00 IDT (advance heartbeat)*
 
 ---
 
@@ -21,6 +17,7 @@ Board static since 09:00 IDT — 30-min scan, no changes. All worktrees, CI runs
 | jn-5795-upgrade-to-guidellm-v070 | NO ZONE | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — Backlog | ℹ️ Design session done (idle Jun 30 12:45 IDT). No zone assigned. Proposal: move to Plan zone. |
 | jn-5780-add-jn-project | Plan | GitLab [MR#887](https://gitlab.com/redhat/rhel-ai/agentic-ci/autofix/-/merge_requests/887) | — | [JN-5780](https://redhat.atlassian.net/browse/JN-5780) | ℹ️ jira-autofix repo. Session done Jun 28 09:20 IDT. MR pushed to GitLab. Needs title fix (JN-5780: prefix). |
 | fix-dashboard-syntax-error | Plan | — | — | — | 🔴 ZOMBIE: agor-openclaw repo, filesystem_status=FAILED. Created Jun 17, error: "fatal: invalid reference: origin/private-julie". 15+ days stale. No Jira, no PR. PROPOSAL: archive. |
+| sprint-planning-jul | Plan | — | — | — | 🆕 NEW (updated 06:50 IDT Jul 2). No sessions, no PR, no Jira. Sprint planning for July? Needs context. |
 
 ---
 
@@ -28,7 +25,7 @@ Board static since 09:00 IDT — 30-min scan, no changes. All worktrees, CI runs
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ e2e-smoke ❌ + e2e-tests ❌ (run 28527509341, all else ✅) | ✅ MERGEABLE | 🟡 e2e failures persist. Jira Done. Fix e2e or close PR. |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌ (run 28527509341) | 🔴 CONFLICTING | 🔴 NEWLY CONFLICTING (was MERGEABLE at 09:30 IDT). e2e failures persist. Jira Done. Needs rebase + fix e2e or close PR. |
 
 ---
 
@@ -53,23 +50,33 @@ Board static since 09:00 IDT — 30-min scan, no changes. All worktrees, CI runs
 | [JN-5612](https://redhat.atlassian.net/browse/JN-5612) | [#1627](https://github.com/Jounce-IO/jounce/pull/1627) | MERGED Jun 29 | **In Progress** | ❌ Update Jira → Done |
 | [JN-5616](https://redhat.atlassian.net/browse/JN-5616) | [#1623](https://github.com/Jounce-IO/jounce/pull/1623) | MERGED Jun 29 | **In Review** | ❌ Update Jira → Done |
 | [JN-5724](https://redhat.atlassian.net/browse/JN-5724) | [#1622](https://github.com/Jounce-IO/jounce/pull/1622) | MERGED Jun 29 | **In Review** | ❌ Update Jira → Done |
-| [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | OPEN, e2e 2 FAIL | **Done** | ⚠️ Ticket marked Done but PR open — intentional? |
+| [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | OPEN, CONFLICTING, e2e ❌ | **Done** | ⚠️ Ticket marked Done but PR open + newly conflicting |
 | [JN-5793](https://redhat.atlassian.net/browse/JN-5793) | [#1639](https://github.com/Jounce-IO/jounce/pull/1639) | MERGED Jun 30 10:41 IDT | **Cannot check** (old Jira instance error) | ⚠️ PR merged — verify Jira is Done |
 
 ---
 
-## Key Changes Since Last Run (09:00 IDT Jul 2)
+## Key Changes Since Last Run (09:30 IDT Jul 2)
 
 | What observed | Status |
 |---|---|
-| **Board static** | No changes from 09:00 IDT scan (30 min ago). All worktrees, CI runs, Jira unchanged. |
+| **PR #1606: NEWLY CONFLICTING** | 🔴 Was MERGEABLE at 09:30 IDT — now CONFLICTING. Something merged into main since then. e2e failures unchanged (run 28527509341). Needs rebase. |
+| **sprint-planning-jul: NEW WORKTREE** | 🆕 Appeared in Plan zone. Updated 06:50 IDT Jul 2. No sessions, no PR, no Jira. Purpose unclear — sprint planning? |
 | **PR #1588: unchanged** | 🔴 CONFLICTING + pre-commit ❌ (run 28469578445). No new CI. |
-| **PR #1606: unchanged** | 🟡 OPEN + e2e-smoke ❌ + e2e-tests ❌ (run 28527509341). No new CI. |
 | **Jira mismatches: unchanged** | JN-5612 In Progress, JN-5616 In Review, JN-5724 In Review (all PRs merged Jun 29). JN-5794 + JN-5793 unverifiable. |
 
 ---
 
 ## Attention Items
+
+### 🔴 PR #1606 (JN-5725) — NEWLY CONFLICTING (Off-board)
+
+PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer): integrate log analyzer into experiment-workflow`
+- **State:** CONFLICTING as of 10:00 IDT Jul 2 (was MERGEABLE at 09:30 IDT)
+- **CI (run 28527509341):** all-checks ❌, e2e-smoke ❌ (6m17s), e2e-tests ❌ (4s) — all other checks ✅
+- **Jira:** JN-5725 shows Done
+- **Action needed:** Rebase on main + fix e2e failures, or close PR.
+
+---
 
 ### 🔴 fix-dashboard-syntax-error — ZOMBIE WORKTREE in Plan Zone
 
@@ -85,19 +92,17 @@ Board static since 09:00 IDT — 30-min scan, no changes. All worktrees, CI runs
 ### 🔴 PR #1588 (JN-5546) — CONFLICTING + pre-commit FAIL
 
 PR [#1588](https://github.com/Jounce-IO/jounce/pull/1588): `docs(jbenchmark): add CONTRIBUTING.md and service READMEs`
-- **Regression:** Was MERGEABLE at 00:00 IDT Jul 1; back to CONFLICTING at 10:30 IDT Jul 1
 - **CI (run 28469578445):** pre-commit ❌ + pre-commit-run ❌ FAILING. All other checks ✅.
 - **Action needed:** Rebase on main + fix pre-commit failures
 
 ---
 
-### 🟡 PR #1606 (JN-5725) — e2e Still Failing (Off-board)
+### 🆕 sprint-planning-jul — NEW WORKTREE in Plan Zone
 
-PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer): integrate log analyzer into experiment-workflow`
-- **State:** MERGEABLE (conflict cleared Jun 17:30 IDT Jul 1)
-- **CI (run 28527509341):** e2e-smoke ❌ (6m17s), e2e-tests ❌ (4s) — all other checks ✅
-- **Jira:** JN-5725 shows Done
-- **Action needed:** Fix e2e failures or close PR.
+- **Zone:** Plan
+- **Updated:** 06:50 IDT Jul 2 (today)
+- **No sessions, no PR, no Jira**
+- **Action needed:** Clarify purpose. If sprint planning session, it's fine. If abandoned, archive.
 
 ---
 

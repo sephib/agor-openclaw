@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-02 09:30 IDT";
+export const LAST_UPDATED = "2026-07-02 10:00 IDT";
 
 export const WORKTREES = [
   {
@@ -10,7 +10,7 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1588",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1588",
-    status: "🔴 CONFLICTING + pre-commit ❌ — UNCHANGED since Jul 1 10:30 IDT. Something merged into main creating new conflict. CI run 28469578445: pre-commit ❌ + pre-commit-run ❌. Needs rebase + pre-commit fix.",
+    status: "🔴 CONFLICTING + pre-commit ❌ — UNCHANGED since Jul 1 10:30 IDT. CI run 28469578445: pre-commit ❌ + pre-commit-run ❌. Needs rebase + pre-commit fix.",
     blockedOn: "CONFLICTING + pre-commit FAIL",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ed01e5624752fbade0eab/",
@@ -146,6 +146,23 @@ export const WORKTREES = [
       },
     ],
     lastActive: "2026-06-28 09:20 IDT",
+  },
+  {
+    ticket: null,
+    ticketUrl: null,
+    title: "Sprint planning July",
+    branch: "sprint-planning-jul",
+    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/sprint-planning-jul",
+    zone: "Plan",
+    pr: null,
+    prUrl: null,
+    status: "🆕 NEW as of 10:00 IDT Jul 2 scan. No sessions, no PR, no Jira. Updated 06:50 IDT Jul 2. Purpose unclear — sprint planning for July?",
+    blockedOn: "No context",
+    blockedType: "active",
+    sessionUrl: null,
+    sessionLabel: null,
+    recentSessions: [],
+    lastActive: "2026-07-02 06:50 IDT",
   },
   {
     ticket: null,
@@ -307,6 +324,10 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "red",
+    message: "🔴 PR #1606 (JN-5725, off-board): NEWLY CONFLICTING as of 10:00 IDT Jul 2 (was MERGEABLE at 09:30 IDT). e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌ (run 28527509341). Jira Done. Needs rebase + e2e fix or close PR.",
+  },
+  {
+    level: "red",
     message: "🔴 fix-dashboard-syntax-error (Plan zone): ZOMBIE WORKTREE — agor-openclaw repo, filesystem FAILED since Jun 17 (15+ days). Error: 'fatal: invalid reference: origin/private-julie'. No PR, no Jira. PROPOSAL: archive this worktree.",
   },
   {
@@ -315,11 +336,11 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⚠️ Jira mismatches (3 confirmed + 2 unverifiable): JN-5612 (PR #1627 MERGED Jun 29, still 'In Progress'), JN-5616 (PR #1623 MERGED Jun 29, still 'In Review'), JN-5724 (PR #1622 MERGED Jun 29, still 'In Review'), JN-5794 (unverifiable — access error), JN-5793 (unverifiable — old instance error).",
+    message: "🆕 sprint-planning-jul (Plan zone): NEW worktree detected (updated 06:50 IDT Jul 2). No sessions, no PR, no Jira. Purpose unclear — sprint planning for July? Needs context.",
   },
   {
     level: "yellow",
-    message: "🟡 PR #1606 (JN-5725, off-board): MERGEABLE. CI run 28527509341: e2e-smoke ❌ + e2e-tests ❌ still failing (all other checks ✅). Jira JN-5725 Done. Fix e2e or close PR.",
+    message: "⚠️ Jira mismatches (3 confirmed + 2 unverifiable): JN-5612 (PR #1627 MERGED Jun 29, still 'In Progress'), JN-5616 (PR #1623 MERGED Jun 29, still 'In Review'), JN-5724 (PR #1622 MERGED Jun 29, still 'In Review'), JN-5794 (unverifiable — access error), JN-5793 (unverifiable — old instance error).",
   },
   {
     level: "green",
