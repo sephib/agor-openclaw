@@ -2405,4 +2405,13 @@ export const HEARTBEAT_RUNS = [
     summary: "Board static since 11:00 IDT; #1606 CONFLICTING+e2e ❌ unchanged (run 28527509341); #1588 CONFLICTING+pre-commit FAIL unchanged; 3 Jira mismatches (JN-5612/5616/5724) + 2 unverifiable (JN-5794/5793); JN-5670+JN-5539 In Progress with no worktrees added to sprint table; 0 auto-advances, 5 findings",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f21f34b427102b9e86a83/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-07-02 12:00 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "Board static since 11:30 IDT; #1606 CONFLICTING+e2e ❌ unchanged (run 28527509341); #1588 CONFLICTING+pre-commit FAIL unchanged; 3 Jira mismatches (JN-5612/5616/5724) + 2 unverifiable (JN-5794/5793); JN-5670+JN-5539 In Progress no worktrees; 0 auto-advances, 5 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f220ec2897598aa3dcb59/",
+  },
 ];
