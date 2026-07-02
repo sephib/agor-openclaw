@@ -2378,4 +2378,13 @@ export const HEARTBEAT_RUNS = [
     summary: "PR #1606 NEWLY CONFLICTING (was MERGEABLE at 09:30 IDT); NEW worktree sprint-planning-jul in Plan zone (no sessions/PR/Jira); #1588 CONFLICTING+pre-commit FAIL unchanged; 3 Jira mismatches (JN-5612/5616/5724) + 2 unverifiable; 0 auto-advances, 6 findings",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f21a0e4c97113b72bf3fb/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-07-02 10:30 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "Board static since 10:00 IDT; PR #1606 CONFLICTING+e2e ❌ unchanged (run 28527509341); #1588 CONFLICTING+pre-commit FAIL unchanged; 3 Jira mismatches (JN-5612/5616/5724) + 2 unverifiable (JN-5794/5793); 0 auto-advances, 5 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f21bc5c21763ba602d1d6/",
+  },
 ];

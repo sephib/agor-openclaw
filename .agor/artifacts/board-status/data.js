@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-02 10:00 IDT";
+export const LAST_UPDATED = "2026-07-02 10:30 IDT";
 
 export const WORKTREES = [
   {
@@ -324,7 +324,7 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): NEWLY CONFLICTING as of 10:00 IDT Jul 2 (was MERGEABLE at 09:30 IDT). e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌ (run 28527509341). Jira Done. Needs rebase + e2e fix or close PR.",
+    message: "🔴 PR #1606 (JN-5725, off-board): CONFLICTING (since 10:00 IDT Jul 2). e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌ (run 28527509341). Jira Done. Needs rebase + e2e fix or close PR.",
   },
   {
     level: "red",
