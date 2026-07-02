@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-02 11:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-02 11:30 IDT (advance heartbeat)*
 
 ---
 
@@ -39,6 +39,8 @@
 | [JN-5783](https://redhat.atlassian.net/browse/JN-5783) | [RESEARCH] Define git tagging workflow | **Backlog** | No worktree |
 | [JN-5728](https://redhat.atlassian.net/browse/JN-5728) | [DEV] Fix e2e CI workflow gaps | **Backlog** | No worktree |
 | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) | Create db_connect script for readonly psql access | **Backlog** | Has PR #1596 (DRAFT CONFLICTING) |
+| [JN-5670](https://redhat.atlassian.net/browse/JN-5670) | Benchmark Visibility Dashboard | **In Progress** | No worktree — confirmed 11:30 IDT Jul 2 |
+| [JN-5539](https://redhat.atlassian.net/browse/JN-5539) | Dependency & Build Standardization | **In Progress** | No worktree — confirmed 11:30 IDT Jul 2 |
 
 ---
 
@@ -55,14 +57,15 @@
 
 ---
 
-## Key Changes Since Last Run (10:30 IDT Jul 2)
+## Key Changes Since Last Run (11:00 IDT Jul 2)
 
 | What observed | Status |
 |---|---|
 | **Board static** | No new merges, no zone moves, no CI changes since 10:00 IDT. |
 | **PR #1606: unchanged** | 🔴 Still CONFLICTING + e2e ❌ (run 28527509341). No new CI activity. |
 | **PR #1588: unchanged** | 🔴 Still CONFLICTING + pre-commit ❌ (run 28469578445). No new CI. |
-| **Jira mismatches: unchanged** | JN-5612 In Progress, JN-5616 In Review, JN-5724 In Review (all PRs merged Jun 29). JN-5794 + JN-5793 unverifiable (access error). |
+| **Jira mismatches: confirmed** | Live Jira query confirms: JN-5612 still "In Progress", JN-5616 still "In Review", JN-5724 still "In Review" (all PRs merged Jun 29). JN-5794 + JN-5793 unverifiable (access error). |
+| **JN-5670 + JN-5539: no worktrees** | Benchmark Visibility Dashboard (JN-5670) and Dependency & Build Standardization (JN-5539) are "In Progress" in active sprint but have no board worktrees. |
 
 ---
 
