@@ -2387,4 +2387,13 @@ export const HEARTBEAT_RUNS = [
     summary: "Board static since 10:00 IDT; PR #1606 CONFLICTING+e2e ❌ unchanged (run 28527509341); #1588 CONFLICTING+pre-commit FAIL unchanged; 3 Jira mismatches (JN-5612/5616/5724) + 2 unverifiable (JN-5794/5793); 0 auto-advances, 5 findings",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f21bc5c21763ba602d1d6/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-07-02 11:00 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "Board static since 10:00 IDT; #1588 CONFLICTING+pre-commit ❌ unchanged; #1606 CONFLICTING+e2e ❌ unchanged; 3 Jira mismatches (JN-5612/5616/5724) + 2 unverifiable; 0 auto-advances, 5 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f21d7d6e5793d9838c837/",
+  },
 ];
