@@ -4,6 +4,20 @@
 
 ---
 
+## 18:00 IDT — Weekend Advance Heartbeat (2026-07-03)
+
+**Session:** 019f287e-d28d | http://127.0.0.1:3030/ui/s/019f287ed28d78f682d2be8f/
+- PRs checked: #1588 (OPEN CONFLICTING, pre-commit ❌ run 28469578445 — unchanged), #1606 (OPEN CONFLICTING + e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌ run 28527509341 — unchanged), #1596 (DRAFT CONFLICTING — unchanged)
+- Merges detected: none — gh pr list (assignee joberry + review-requested joberry) both empty
+- CI changes: none — all checks identical to 12:00 IDT run
+- Jira: JN-5612 still "In Progress", JN-5616 still "In Review", JN-5724 still "In Review" (all PRs merged Jun 29, 5+ days stale). JN-5794/JN-5793 still unverifiable (access errors persist).
+- Board scan: zone-by-zone scan confirmed 9 worktrees — Code Review×2 (jn-5546+model-packaging-cr), BLOCKED×2 (jn-5672+jn-5695), Plan×3 (fix-dashboard+jn-5780+sprint-planning-jul), Ingest×1 (jn-5244), plus jn-5795/jira-operations (no zone — not found in zone queries)
+- Flags: #1606 CONFLICTING+e2e ❌, #1588 CONFLICTING+pre-commit ❌, fix-dashboard ZOMBIE, 3 Jira mismatches (JN-5612/5616/5724) + 2 unverifiable
+- Auto-advances: 0
+- Next: 00:00 IDT weekend heartbeat
+
+---
+
 ## 12:00 IDT — Weekend Advance Heartbeat (2026-07-03)
 
 **Session:** 019f2735-3720 | http://127.0.0.1:3030/ui/s/019f27353720792caa4f4f27/
