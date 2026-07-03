@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-03 06:00 IDT (advance heartbeat — weekend)*
+*Last updated: 2026-07-03 12:00 IDT (advance heartbeat — weekend)*
 
 ---
 
@@ -61,17 +61,15 @@
 
 ---
 
-## Key Changes Since Last Run (00:02 IDT Jul 3)
+## Key Changes Since Last Run (06:00 IDT Jul 3)
 
 | What observed | Status |
 |---|---|
-| **Board static** | No new merges, no zone moves, no CI changes since 00:02 IDT Jul 3 (6h weekend gap). |
-| **PR #1606: unchanged** | 🔴 Still CONFLICTING + e2e ❌ (run 28527509341). No new CI activity overnight. |
+| **Board static** | No new merges, no zone moves, no CI changes since 06:00 IDT Jul 3 (6h weekend gap). |
+| **PR #1606: unchanged** | 🔴 Still CONFLICTING + e2e ❌ (run 28527509341). No new CI activity. |
 | **PR #1588: unchanged** | 🔴 Still CONFLICTING + pre-commit ❌ (run 28469578445). No new CI since Jun 30. |
-| **Jira mismatches: confirmed** | JN-5612 still "In Progress", JN-5616 still "In Review", JN-5724 still "In Review" (all PRs merged Jun 29, 4+ days stale). |
-| **No new sprint tickets** | Sprint ticket list unchanged since 15:00 IDT Jul 2. |
-| **fix-dashboard-syntax-error** | Not found in Plan zone scan — may have been moved or removed. Previous status: ZOMBIE (agor-openclaw repo, filesystem FAILED). |
-| **jn-5795 / jira-operations / jn-5780** | Cannot verify via zone queries (different repos or no zone); status assumed unchanged. |
+| **Jira mismatches: unchanged** | JN-5612 still "In Progress", JN-5616 still "In Review", JN-5724 still "In Review" (all PRs merged Jun 29, 4+ days stale). |
+| **No new merges** | gh pr list (assignee + review-requested) returns empty. No merges since #1643 on Jul 1. |
 
 ---
 
