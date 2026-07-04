@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-04 06:00 IDT (advance heartbeat — weekend)*
+*Last updated: 2026-07-04 18:00 IDT (advance heartbeat — weekend)*
 
 ---
 
@@ -11,12 +11,12 @@
 | jn-5546-docs-document-module-layout-convention-and-3 | Code Review | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | ❌ pre-commit FAIL (run 28469578445) | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) — In Progress | 🔴 CONFLICTING + pre-commit ❌ — UNCHANGED since Jul 1 10:30. Needs rebase + pre-commit fix. |
 | jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | — | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) | 🔴 DRAFT CONFLICTING; frozen |
 | jn-5672-dal-ext-dashboard | BLOCKED | — | — | [JN-5672](https://redhat.atlassian.net/browse/JN-5672) | On hold — after notebooks complete |
-| model-packaging-cr | Code Review | — | — | — | ⚠️ model-packaging-pipeline repo. Created Jun 15. No PR URL set, stagnant 17+ days. Needs investigation or archive. |
-| jira-operations | (no zone) | — | — | — | ⚠️ No zone, no PR — needs zone assignment or archive |
+| model-packaging-cr | Code Review | — | — | — | ⚠️ model-packaging-pipeline repo. Created Jun 15. No PR URL set, stagnant 19+ days. Needs investigation or archive. |
+| jira-operations | (no zone) | — | — | — | ⚠️ No zone, no PR — last active Jun 25 (9 days). Needs zone assignment or archive |
 | jn-5244-cli-flags | Ingest | — | — | [JN-5244](https://redhat.atlassian.net/browse/JN-5244) | ℹ️ No sessions yet. Ready to ingest. |
 | jn-5795-upgrade-to-guidellm-v070 | NO ZONE | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — Backlog | ℹ️ Design session done (idle Jun 30 12:45 IDT). No zone assigned. Proposal: move to Plan zone. |
 | jn-5780-add-jn-project | Plan | GitLab [MR#887](https://gitlab.com/redhat/rhel-ai/agentic-ci/autofix/-/merge_requests/887) | — | [JN-5780](https://redhat.atlassian.net/browse/JN-5780) | ℹ️ jira-autofix repo. Session done Jun 28 09:20 IDT. MR pushed to GitLab. Needs title fix (JN-5780: prefix). |
-| fix-dashboard-syntax-error | Plan | — | — | — | 🔴 ZOMBIE: agor-openclaw repo, filesystem_status=FAILED. Created Jun 17, error: "fatal: invalid reference: origin/private-julie". 15+ days stale. No Jira, no PR. PROPOSAL: archive. |
+| fix-dashboard-syntax-error | Plan | — | — | — | 🔴 ZOMBIE: agor-openclaw repo, filesystem_status=FAILED. Created Jun 17, error: "fatal: invalid reference: origin/private-julie". 17+ days stale. No Jira, no PR. PROPOSAL: archive. |
 | sprint-planning-jul | Plan | — | — | — | 🆕 NEW (updated 06:50 IDT Jul 2). No sessions, no PR, no Jira. Sprint planning for July? Needs context. |
 
 ---
@@ -25,7 +25,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌ (run 28527509341) | 🔴 CONFLICTING | 🔴 NEWLY CONFLICTING (was MERGEABLE at 09:30 IDT). e2e failures persist. Jira Done. Needs rebase + fix e2e or close PR. |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌ (run 28527509341) | 🔴 CONFLICTING | 🔴 CONFLICTING (since 10:00 IDT Jul 2). e2e failures persist. Jira Done. Needs rebase + fix e2e or close PR. |
 
 ---
 
@@ -52,33 +52,33 @@
 
 | Ticket | PR | PR Status | Jira Status | Action |
 |--------|-----|-----------|-------------|--------|
-| [JN-5794](https://redhat.atlassian.net/browse/JN-5794) | [#1643](https://github.com/Jounce-IO/jounce/pull/1643) | MERGED Jul 1 09:16 IDT | **Cannot verify** (Jira access error) | ❌ Verify in Jira → Done |
+| [JN-5794](https://redhat.atlassian.net/browse/JN-5794) | [#1643](https://github.com/Jounce-IO/jounce/pull/1643) | MERGED Jul 1 09:16 IDT | **Cannot verify** (Jira MCP access error) | ❌ Verify in Jira → Done |
 | [JN-5612](https://redhat.atlassian.net/browse/JN-5612) | [#1627](https://github.com/Jounce-IO/jounce/pull/1627) | MERGED Jun 29 | **In Progress** | ❌ Update Jira → Done |
 | [JN-5616](https://redhat.atlassian.net/browse/JN-5616) | [#1623](https://github.com/Jounce-IO/jounce/pull/1623) | MERGED Jun 29 | **In Review** | ❌ Update Jira → Done |
 | [JN-5724](https://redhat.atlassian.net/browse/JN-5724) | [#1622](https://github.com/Jounce-IO/jounce/pull/1622) | MERGED Jun 29 | **In Review** | ❌ Update Jira → Done |
-| [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | OPEN, CONFLICTING, e2e ❌ | **Done** | ⚠️ Ticket marked Done but PR open + newly conflicting |
+| [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | OPEN, CONFLICTING, e2e ❌ | **Done** | ⚠️ Ticket marked Done but PR open + conflicting |
 | [JN-5793](https://redhat.atlassian.net/browse/JN-5793) | [#1639](https://github.com/Jounce-IO/jounce/pull/1639) | MERGED Jun 30 10:41 IDT | **Cannot check** (old Jira instance error) | ⚠️ PR merged — verify Jira is Done |
 
 ---
 
-## Key Changes Since Last Run (00:00 IDT Jul 4)
+## Key Changes Since Last Run (06:00 IDT Jul 4)
 
 | What observed | Status |
 |---|---|
-| **Board static** | No new merges, no zone moves, no CI changes since 00:00 IDT Jul 4 (6h weekend gap). |
+| **Board static** | No new merges, no zone moves, no CI changes since 06:00 IDT Jul 4 (12h weekend gap — 12:00 IDT session went idle without output). |
 | **PR #1606: unchanged** | 🔴 Still CONFLICTING + e2e ❌ (run 28527509341). No new CI activity. |
 | **PR #1588: unchanged** | 🔴 Still CONFLICTING + pre-commit ❌ (run 28469578445). No new CI since Jun 30. |
-| **Jira mismatches: unchanged** | JN-5612 still "In Progress", JN-5616 still "In Review", JN-5724 still "In Review" (all PRs merged Jun 29, 5+ days stale). JN-5794/JN-5793 still unverifiable. |
-| **No new merges** | gh pr list (assignee + review-requested) returns empty. No merges since #1643 on Jul 1. |
+| **Jira mismatches: unchanged** | JN-5612 still "In Progress", JN-5616 still "In Review", JN-5724 still "In Review" (all PRs merged Jun 29, 6+ days stale). JN-5794/JN-5793 still unverifiable. |
+| **No new merges** | gh pr list (assignee + review-requested) returns no merges since #1643 on Jul 1. |
 
 ---
 
 ## Attention Items
 
-### 🔴 PR #1606 (JN-5725) — NEWLY CONFLICTING (Off-board)
+### 🔴 PR #1606 (JN-5725) — CONFLICTING (Off-board)
 
 PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer): integrate log analyzer into experiment-workflow`
-- **State:** CONFLICTING as of 10:00 IDT Jul 2 (was MERGEABLE at 09:30 IDT)
+- **State:** CONFLICTING as of 10:00 IDT Jul 2
 - **CI (run 28527509341):** all-checks ❌, e2e-smoke ❌ (6m17s), e2e-tests ❌ (4s) — all other checks ✅
 - **Jira:** JN-5725 shows Done
 - **Action needed:** Rebase on main + fix e2e failures, or close PR.
@@ -88,11 +88,11 @@ PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer):
 ### 🔴 fix-dashboard-syntax-error — ZOMBIE WORKTREE in Plan Zone
 
 - **Branch:** agor-openclaw repo (not jounce)
-- **Created:** Jun 17 2026
+- **Created:** Jun 17 2026 (17+ days stale)
 - **Filesystem status:** FAILED — `fatal: invalid reference: origin/private-julie`
 - **Zone:** Plan (incorrectly placed)
 - **No PR, no Jira ticket**
-- **Action needed:** Archive this worktree — it's a 15-day-old failed creation artifact
+- **Action needed:** Archive this worktree — 17-day-old failed creation artifact
 
 ---
 
@@ -107,7 +107,7 @@ PR [#1588](https://github.com/Jounce-IO/jounce/pull/1588): `docs(jbenchmark): ad
 ### 🆕 sprint-planning-jul — NEW WORKTREE in Plan Zone
 
 - **Zone:** Plan
-- **Updated:** 06:50 IDT Jul 2 (today)
+- **Updated:** 06:50 IDT Jul 2
 - **No sessions, no PR, no Jira**
 - **Action needed:** Clarify purpose. If sprint planning session, it's fine. If abandoned, archive.
 

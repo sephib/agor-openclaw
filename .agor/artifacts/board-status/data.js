@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-04 06:00 IDT";
+export const LAST_UPDATED = "2026-07-04 18:00 IDT";
 
 export const WORKTREES = [
   {
@@ -36,7 +36,7 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: null,
     prUrl: null,
-    status: "⚠️ model-packaging-pipeline repo. Created Jun 15 — stagnant 17+ days. No PR URL set. In Code Review zone with no visible work. Needs investigation or archive.",
+    status: "⚠️ model-packaging-pipeline repo. Created Jun 15 — stagnant 19+ days. No PR URL set. In Code Review zone with no visible work. Needs investigation or archive.",
     blockedOn: "No PR, stagnant 17+ days",
     blockedType: "blocked",
     sessionUrl: null,
@@ -173,7 +173,7 @@ export const WORKTREES = [
     zone: "Plan",
     pr: null,
     prUrl: null,
-    status: "🔴 ZOMBIE: agor-openclaw repo, filesystem_status=FAILED. Created Jun 17 — 15+ days stale. Error: 'fatal: invalid reference: origin/private-julie'. No Jira, no PR. PROPOSAL: archive.",
+    status: "🔴 ZOMBIE: agor-openclaw repo, filesystem_status=FAILED. Created Jun 17 — 17+ days stale. Error: 'fatal: invalid reference: origin/private-julie'. No Jira, no PR. PROPOSAL: archive.",
     blockedOn: "Filesystem FAILED",
     blockedType: "blocked",
     sessionUrl: null,
@@ -328,7 +328,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 fix-dashboard-syntax-error (Plan zone): ZOMBIE WORKTREE — agor-openclaw repo, filesystem FAILED since Jun 17 (15+ days). Error: 'fatal: invalid reference: origin/private-julie'. No PR, no Jira. PROPOSAL: archive this worktree.",
+    message: "🔴 fix-dashboard-syntax-error (Plan zone): ZOMBIE WORKTREE — agor-openclaw repo, filesystem FAILED since Jun 17 (17+ days). Error: 'fatal: invalid reference: origin/private-julie'. No PR, no Jira. PROPOSAL: archive this worktree.",
   },
   {
     level: "red",
