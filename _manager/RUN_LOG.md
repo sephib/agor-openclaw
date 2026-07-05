@@ -4105,3 +4105,15 @@
 - Auto-advances: 0
 - Flags: 5 (PR #1588 CONFLICTING+pre-commit FAIL; PR #1606 CONFLICTING+e2e FAIL; JN-5612/5616/5724 Jira stale; fix-dashboard-syntax-error ZOMBIE)
 - Next: Joseph to rebase #1588 on main + fix pre-commit; rebase #1606 + fix e2e or close; update JN-5612/5616/5724 → Done
+
+## 15:00 IDT — Weekday Daytime Advance Heartbeat (2026-07-05)
+
+**Session:** 019f3242-181d | http://127.0.0.1:3030/ui/s/019f3242181d7b1790b517ff/
+- PRs checked: #1588 (OPEN CONFLICTING, pre-commit ❌ run 28469578445 — unchanged), #1606 (OPEN CONFLICTING + e2e ❌ run 28527509341 — unchanged), #1596 (DRAFT CONFLICTING — unchanged), #1631 (🆕 NEW: OPEN MERGEABLE, all CI ✅ run 28736019540)
+- Merges detected: none — no merges since #1643 Jul 1
+- CI changes: #1631 detected clean (all-checks ✅, e2e-smoke ✅, pre-commit ✅, integration ✅)
+- Jira: JN-5612 still "In Progress", JN-5616 still "In Review", JN-5724 still "In Review" (6+ days stale). JN-5717 (PR #1631) = Backlog/Uri Shaket. JN-5841 not found in Jira MCP.
+- New activity: PR #1631 code review session (019f323b) idle; JN-5841 ingest session (019f3236) idle — no new worktree created.
+- Board scan: 10 worktrees confirmed (jounce/model-packaging/jira-autofix/agor-openclaw repos). No zone changes.
+- Flags: #1631 clean/awaiting merge (new), #1606 CONFLICTING+e2e ❌, #1588 CONFLICTING+pre-commit ❌, fix-dashboard ZOMBIE (18+ days), 3 Jira mismatches + 2 unverifiable
+- Next: watch for #1631 merge; JN-5841 worktree likely coming

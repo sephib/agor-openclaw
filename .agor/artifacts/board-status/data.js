@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-05 14:30 IDT";
+export const LAST_UPDATED = "2026-07-05 15:00 IDT";
 
 export const WORKTREES = [
   {
@@ -322,6 +322,10 @@ export const MERGED = [
 ];
 
 export const ALERTS = [
+  {
+    level: "green",
+    message: "🟢 PR #1631 (JN-5717, off-board): NEW CLEAN PR — feat(jbenchmark): canonical export hash for release diff. OPEN, MERGEABLE, all CI ✅ (run 28736019540: all-checks ✅, e2e-smoke ✅, e2e-api ✅, pre-commit ✅). Joseph's CR session idle. Awaiting merge. Detected 15:00 IDT Jul 5.",
+  },
   {
     level: "red",
     message: "🔴 PR #1606 (JN-5725, off-board): CONFLICTING (since 10:00 IDT Jul 2). e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌ (run 28527509341). Jira Done. Needs rebase + e2e fix or close PR.",
