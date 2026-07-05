@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-05 13:00 IDT (advance heartbeat — weekday daytime)*
+*Last updated: 2026-07-05 13:30 IDT (advance heartbeat — weekday daytime)*
 
 ---
 
@@ -61,11 +61,11 @@
 
 ---
 
-## Key Changes Since Last Run (09:30 IDT Jul 5)
+## Key Changes Since Last Run (13:00 IDT Jul 5)
 
 | What observed | Status |
 |---|---|
-| **Board static** | No new merges, no zone moves, no CI changes since 09:30 IDT Jul 5. One heartbeat failed at 10:30 IDT. |
+| **Board static** | No new merges, no zone moves, no CI changes since 13:00 IDT Jul 5. |
 | **PR #1606: unchanged** | 🔴 Still CONFLICTING + e2e ❌ (run 28527509341). No new CI activity. |
 | **PR #1588: unchanged** | 🔴 Still CONFLICTING + pre-commit ❌ (run 28469578445). No new CI since Jun 30. |
 | **Jira mismatches: unchanged** | JN-5612 still "In Progress", JN-5616 still "In Review", JN-5724 still "In Review" (all PRs merged Jun 29, 6+ days stale). JN-5794/JN-5793 still unverifiable. |
