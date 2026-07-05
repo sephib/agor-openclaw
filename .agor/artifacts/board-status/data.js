@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-05 15:30 IDT";
+export const LAST_UPDATED = "2026-07-05 20:00 IDT";
 
 export const WORKTREES = [
   {
@@ -36,8 +36,8 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: null,
     prUrl: null,
-    status: "⚠️ model-packaging-pipeline repo. Created Jun 15 — stagnant 19+ days. No PR URL set. In Code Review zone with no visible work. Needs investigation or archive.",
-    blockedOn: "No PR, stagnant 17+ days",
+    status: "⚠️ model-packaging-pipeline repo. Created Jun 15 — stagnant 20+ days. No PR URL set. In Code Review zone with no visible work. Needs investigation or archive.",
+    blockedOn: "No PR, stagnant 20+ days",
     blockedType: "blocked",
     sessionUrl: null,
     sessionLabel: null,
@@ -77,6 +77,32 @@ export const WORKTREES = [
     sessionLabel: null,
     recentSessions: [],
     lastActive: "2026-06-14 15:00 IDT",
+  },
+  {
+    ticket: "JN-5841",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5841",
+    title: "AGENTS.md + model-packaging-pipeline (JN-5841)",
+    branch: "jn-5841-agents-md-root",
+    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5841-agents-md-root",
+    zone: "Ingest",
+    pr: null,
+    prUrl: null,
+    status: "🆕 NEW as of 19:07 IDT Jul 5. Ingest session completed (019f3236, title: 'Implement ingest — JN-5841 AGENTS.md + model-packaging-pipeline'). No PR yet. Ready for Plan phase.",
+    blockedOn: null,
+    blockedType: "active",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f3236cdab755bade4395a/",
+    sessionLabel: "ingest",
+    recentSessions: [
+      {
+        sessionId: "019f3236cdab755bade4395a",
+        url: "http://127.0.0.1:3030/ui/s/019f3236cdab755bade4395a/",
+        title: "ingest",
+        status: "idle",
+        timestamp: "2026-07-05 19:07 IDT",
+        outputFile: null,
+      },
+    ],
+    lastActive: "2026-07-05 19:07 IDT",
   },
   {
     ticket: "JN-5244",
@@ -122,6 +148,23 @@ export const WORKTREES = [
     lastActive: "2026-06-30 12:45 IDT",
   },
   {
+    ticket: null,
+    ticketUrl: null,
+    title: "jira-operations (stale, NO ZONE)",
+    branch: "jira-operations",
+    worktreePath: null,
+    zone: "NO ZONE",
+    pr: null,
+    prUrl: null,
+    status: "⚠️ CORRECTION: still exists in Agor (uid=249, last updated Jun 25). Was incorrectly reported as deleted in 15:30 IDT run. Stale 10+ days — no sessions, no PR. Propose archive if no longer needed.",
+    blockedOn: "Stale, no activity",
+    blockedType: "blocked",
+    sessionUrl: null,
+    sessionLabel: null,
+    recentSessions: [],
+    lastActive: "2026-06-25 07:41 IDT",
+  },
+  {
     ticket: "JN-5780",
     ticketUrl: "https://redhat.atlassian.net/browse/JN-5780",
     title: "Add JN project to jira-autofix",
@@ -156,7 +199,7 @@ export const WORKTREES = [
     zone: "Plan",
     pr: null,
     prUrl: null,
-    status: "🆕 NEW as of 10:00 IDT Jul 2 scan. No sessions, no PR, no Jira. Updated 06:50 IDT Jul 2. Purpose unclear — sprint planning for July?",
+    status: "ℹ️ No sessions, no PR, no Jira. Updated 06:50 IDT Jul 2. Purpose unclear — sprint planning for July?",
     blockedOn: "No context",
     blockedType: "active",
     sessionUrl: null,
@@ -173,7 +216,7 @@ export const WORKTREES = [
     zone: "Plan",
     pr: null,
     prUrl: null,
-    status: "🔴 ZOMBIE: agor-openclaw repo, filesystem_status=FAILED. Created Jun 17 — 17+ days stale. Error: 'fatal: invalid reference: origin/private-julie'. No Jira, no PR. PROPOSAL: archive.",
+    status: "🔴 ZOMBIE: agor-openclaw repo, filesystem_status=FAILED. Created Jun 17 — 18+ days stale. Error: 'fatal: invalid reference: origin/private-julie'. No Jira, no PR. PROPOSAL: archive.",
     blockedOn: "Filesystem FAILED",
     blockedType: "blocked",
     sessionUrl: null,
@@ -324,7 +367,7 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "green",
-    message: "🟢 PR #1631 (JN-5717, off-board): OPEN, MERGEABLE, all CI ✅ (run 28744609795: all-checks ✅, e2e-smoke ✅, e2e-api ✅, pre-commit ✅, integration ✅). New run at 15:30 IDT Jul 5 — still clean. CR session idle. Awaiting merge.",
+    message: "🟢 PR #1631 (JN-5717, off-board): OPEN, MERGEABLE, all CI ✅ (run 28744609795: all-checks ✅, e2e-smoke ✅, e2e-api ✅, pre-commit ✅, integration ✅). Unchanged since 15:30 IDT Jul 5 — still clean. Awaiting merge.",
   },
   {
     level: "red",
@@ -332,7 +375,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 fix-dashboard-syntax-error (Plan zone): ZOMBIE WORKTREE — agor-openclaw repo, filesystem FAILED since Jun 17 (17+ days). Error: 'fatal: invalid reference: origin/private-julie'. No PR, no Jira. PROPOSAL: archive this worktree.",
+    message: "🔴 fix-dashboard-syntax-error (Plan zone): ZOMBIE WORKTREE — agor-openclaw repo, filesystem FAILED since Jun 17 (18+ days). Error: 'fatal: invalid reference: origin/private-julie'. No PR, no Jira. PROPOSAL: archive this worktree.",
   },
   {
     level: "red",
@@ -340,7 +383,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "🆕 sprint-planning-jul (Plan zone): NEW worktree detected (updated 06:50 IDT Jul 2). No sessions, no PR, no Jira. Purpose unclear — sprint planning for July? Needs context.",
+    message: "⚠️ CORRECTION: jira-operations still EXISTS in Agor (uid=249, NO ZONE, last updated Jun 25). Was incorrectly reported as deleted/missing in 15:30 IDT Jul 5 run. Stale 10+ days — propose archive if no longer needed.",
   },
   {
     level: "yellow",
@@ -352,6 +395,10 @@ export const ALERTS = [
   },
   {
     level: "info",
+    message: "🆕 jn-5841-agents-md-root (Ingest zone): NEW as of 19:07 IDT Jul 5. Ingest session 019f3236 idle. JN-5841 Jira set. Ready for Plan phase.",
+  },
+  {
+    level: "info",
     message: "ℹ️ jn-5795-upgrade-to-guidellm-v070 (NO ZONE): Design session done Jun 30. Proposal: move to Plan zone.",
   },
   {
@@ -360,10 +407,6 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⚠️ jira-operations: NO LONGER IN AGOR (not active, not archived as of 15:30 IDT Jul 5). Was 'no zone', last seen Jun 25. Possible manual deletion — verify if intentional.",
-  },
-  {
-    level: "yellow",
-    message: "⚠️ model-packaging-cr (Code Review zone, model-packaging-pipeline repo): Created Jun 15 — stagnant 17+ days. No PR URL set. Needs investigation or archive.",
+    message: "⚠️ model-packaging-cr (Code Review zone, model-packaging-pipeline repo): Created Jun 15 — stagnant 20+ days. No PR URL set. Needs investigation or archive.",
   },
 ];

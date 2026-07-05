@@ -4130,3 +4130,18 @@
 - Auto-advances: 0
 - Flags: 6 (PR #1588 CONFLICTING+pre-commit ❌; PR #1606 CONFLICTING+e2e ❌; JN-5612/5616/5724 Jira stale; fix-dashboard-syntax-error ZOMBIE; jira-operations missing from Agor)
 - Next: Joseph to rebase #1588 + fix pre-commit; rebase #1606 + fix e2e or close; update JN-5612/5616/5724 → Done; confirm #1631 merge; clarify jira-operations status
+
+## 20:00 IDT — Weekday Daytime Advance Heartbeat (2026-07-05)
+
+**Session:** 019f3339-3404 | http://127.0.0.1:3030/ui/s/019f3339340474beb5fa8663/
+- PRs checked: #1588 (OPEN CONFLICTING + pre-commit ❌ run 28469578445 — unchanged), #1596 (DRAFT CONFLICTING — unchanged), #1606 (OPEN CONFLICTING + e2e ❌ run 28527509341 — unchanged), #1631 (OPEN MERGEABLE all CI ✅ run 28744609795 — unchanged)
+- Merges detected: none — no new merges since #1643 Jul 1
+- CI changes: none — all unchanged from 15:30 IDT run
+- Flags:
+  - CORRECTION: jira-operations still exists in Agor (uid=249, NO ZONE, Jun 25) — was incorrectly reported as deleted/missing in 15:30 IDT run
+  - jn-5841-agents-md-root confirmed new in Ingest zone (19:07 IDT Jul 5, ingest session 019f3236 idle)
+  - fix-dashboard-syntax-error still ZOMBIE in Plan zone (18+ days, FAILED filesystem)
+  - 3 Jira mismatches still stale (JN-5612/5616/5724, all PRs merged Jun 29)
+  - model-packaging-cr stagnant 20+ days, no PR
+  - Board: 11 total worktrees (9 in zones + jira-operations NO ZONE + jn-5795 NO ZONE)
+- Next: watch for #1631 merge; flag jira-operations & fix-dashboard for archive proposal
