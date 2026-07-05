@@ -4117,3 +4117,16 @@
 - Board scan: 10 worktrees confirmed (jounce/model-packaging/jira-autofix/agor-openclaw repos). No zone changes.
 - Flags: #1631 clean/awaiting merge (new), #1606 CONFLICTING+e2e ❌, #1588 CONFLICTING+pre-commit ❌, fix-dashboard ZOMBIE (18+ days), 3 Jira mismatches + 2 unverifiable
 - Next: watch for #1631 merge; JN-5841 worktree likely coming
+
+## 15:30 IDT — Weekday Daytime Advance Heartbeat (2026-07-05)
+
+**Session:** 019f3302-237a | http://127.0.0.1:3030/ui/s/019f3302237a717ea3cff92c/
+- PRs checked: #1588 (OPEN CONFLICTING, pre-commit ❌ run 28469578445 — unchanged), #1606 (OPEN CONFLICTING + e2e ❌ run 28527509341 — unchanged), #1596 (DRAFT CONFLICTING — unchanged), #1631 (OPEN MERGEABLE, **new CI run 28744609795** — all ✅ still clean)
+- Merges detected: none — no merges since #1643 Jul 1
+- CI changes: #1631 has new run 28744609795 (was 28736019540) — still all-checks ✅, e2e-smoke ✅, pre-commit ✅, integration ✅; no regression
+- Board scan: 9 active worktrees confirmed via zone queries; all zones unchanged
+- **⚠️ NEW: `jira-operations` NOT FOUND** — branch no longer present in agor-openclaw (not active, not archived). Last seen Jun 25. Removed from tracking.
+- Jira: JN-5612 still "In Progress", JN-5616 still "In Review", JN-5724 still "In Review" (3 confirmed mismatches persistent 6+ days); JN-5794/JN-5793 still unverifiable
+- Auto-advances: 0
+- Flags: 6 (PR #1588 CONFLICTING+pre-commit ❌; PR #1606 CONFLICTING+e2e ❌; JN-5612/5616/5724 Jira stale; fix-dashboard-syntax-error ZOMBIE; jira-operations missing from Agor)
+- Next: Joseph to rebase #1588 + fix pre-commit; rebase #1606 + fix e2e or close; update JN-5612/5616/5724 → Done; confirm #1631 merge; clarify jira-operations status

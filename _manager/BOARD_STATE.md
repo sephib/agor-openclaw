@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-05 15:00 IDT (advance heartbeat — weekday daytime)*
+*Last updated: 2026-07-05 15:30 IDT (advance heartbeat — weekday daytime)*
 
 ---
 
@@ -12,7 +12,7 @@
 | jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | — | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) | 🔴 DRAFT CONFLICTING; frozen |
 | jn-5672-dal-ext-dashboard | BLOCKED | — | — | [JN-5672](https://redhat.atlassian.net/browse/JN-5672) | On hold — after notebooks complete |
 | model-packaging-cr | Code Review | — | — | — | ⚠️ model-packaging-pipeline repo. Created Jun 15. No PR URL set, stagnant 20+ days. Needs investigation or archive. |
-| jira-operations | (no zone) | — | — | — | ⚠️ No zone, no PR — last active Jun 25 (10 days). Needs zone assignment or archive |
+| ~~jira-operations~~ | DELETED | — | — | — | ⚠️ No longer in Agor (not active, not archived) — removed from tracking as of 15:30 IDT Jul 5. Was "no zone", last seen Jun 25. |
 | jn-5244-cli-flags | Ingest | — | — | [JN-5244](https://redhat.atlassian.net/browse/JN-5244) | ℹ️ No sessions yet. Ready to ingest. |
 | jn-5795-upgrade-to-guidellm-v070 | NO ZONE | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — Backlog | ℹ️ Design session done (idle Jun 30 12:45 IDT). No zone assigned. Proposal: move to Plan zone. |
 | jn-5780-add-jn-project | Plan | GitLab [MR#887](https://gitlab.com/redhat/rhel-ai/agentic-ci/autofix/-/merge_requests/887) | — | [JN-5780](https://redhat.atlassian.net/browse/JN-5780) | ℹ️ jira-autofix repo. Session done Jun 28 09:20 IDT. MR pushed to GitLab. Needs title fix (JN-5780: prefix). |
@@ -26,7 +26,7 @@
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
 | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌ (run 28527509341) | 🔴 CONFLICTING | 🔴 CONFLICTING (since 10:00 IDT Jul 2). e2e failures persist. Jira Done. Needs rebase + fix e2e or close PR. |
-| [#1631](https://github.com/Jounce-IO/jounce/pull/1631) | jn-5717-export-hash-rehash | [JN-5717](https://redhat.atlassian.net/browse/JN-5717) — Backlog (Uri Shaket) | ✅ all-checks ✅ e2e ✅ pre-commit ✅ (run 28736019540) | 🟢 MERGEABLE, REVIEW_REQUIRED | 🆕 NEW (detected 15:00 IDT Jul 5). All CI green. Joseph's CR session (019f323b) ran and is idle. No worktree on board. |
+| [#1631](https://github.com/Jounce-IO/jounce/pull/1631) | jn-5717-export-hash-rehash | [JN-5717](https://redhat.atlassian.net/browse/JN-5717) — Backlog (Uri Shaket) | ✅ all-checks ✅ e2e ✅ pre-commit ✅ (run 28744609795) | 🟢 MERGEABLE | New run 28744609795 at 15:30 IDT Jul 5 scan — all ✅. Joseph's CR session (019f323b) idle. Awaiting merge. |
 
 ---
 
@@ -62,18 +62,18 @@
 
 ---
 
-## Key Changes Since Last Run (14:30 IDT Jul 5)
+## Key Changes Since Last Run (15:00 IDT Jul 5)
 
 | What observed | Status |
 |---|---|
-| **🆕 PR #1631 detected** | NEW: `feat(jbenchmark): canonical export hash for release diff (JN-5717)` — OPEN, MERGEABLE, **all CI ✅** (run 28736019540: all-checks ✅, e2e-smoke ✅, e2e-api ✅, e2e-tests ✅). Joseph's CR session (019f323b) is idle. No worktree on this board. |
-| **🆕 JN-5841 ingest session** | Sibling session "Implement ingest — JN-5841 AGENTS.md + model-packaging-pipeline" (019f3236) ran and is idle. JN-5841 not found in Jira MCP (possible new ticket or access issue). No worktree created yet. |
+| **PR #1631: new CI run** | OPEN, MERGEABLE, **all CI ✅** — new run 28744609795 (was 28736019540). Still fully green (all-checks ✅, e2e-smoke ✅, e2e-api ✅, pre-commit ✅, integration ✅). Awaiting merge. |
+| **`jira-operations` MISSING** | ⚠️ NOT FOUND in agor-openclaw branch list (not active, not archived). Previously "no zone", last activity Jun 25. Removed from tracking — assume deleted. |
 | **PR #1606: unchanged** | 🔴 Still CONFLICTING + e2e ❌ (run 28527509341). No new CI activity. |
 | **PR #1588: unchanged** | 🔴 Still CONFLICTING + pre-commit ❌ (run 28469578445). No new CI since Jun 30. |
 | **Jira mismatches: unchanged** | JN-5612 still "In Progress", JN-5616 still "In Review", JN-5724 still "In Review" (all PRs merged Jun 29, 6+ days stale). JN-5794/JN-5793 still unverifiable. |
 | **No new merges** | gh pr list (assignee + review-requested) returns no merges since #1643 on Jul 1. |
 | **fix-dashboard-syntax-error** | 🔴 Still ZOMBIE in Plan zone, 18+ days stale (FAILED filesystem). Proposal to archive outstanding. |
-| **Board scan confirmed** | All 10 active worktrees confirmed via Agor repo queries (jounce + model-packaging + jira-autofix + agor-openclaw repos). All zones unchanged. |
+| **Board scan confirmed** | 9 active worktrees confirmed via zone queries (Code Review: jn-5546/model-packaging-cr; BLOCKED: jn-5695/jn-5672; Ingest: jn-5244; Plan: sprint-planning-jul/fix-dashboard-syntax-error/jn-5780; NO ZONE: jn-5795). `jira-operations` no longer present. |
 
 ---
 
@@ -83,7 +83,7 @@
 
 PR [#1631](https://github.com/Jounce-IO/jounce/pull/1631): `feat(jbenchmark): canonical export hash for release diff (JN-5717)`
 - **State:** OPEN, MERGEABLE
-- **CI (run 28736019540):** all-checks ✅, e2e-smoke ✅, e2e-api ✅, e2e-tests ✅, pre-commit ✅, integration ✅ — fully green
+- **CI (run 28744609795):** all-checks ✅, e2e-smoke ✅, e2e-api ✅, e2e-tests ✅, pre-commit ✅, integration ✅ — fully green (new run since 15:00 IDT scan)
 - **Jira:** JN-5717 — Backlog, assigned Uri Shaket
 - **CR session:** Joseph ran code review (019f323b) — idle. No worktree on this board.
 - **Action:** This PR is ready to merge once review is complete.

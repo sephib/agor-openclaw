@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-05 15:00 IDT";
+export const LAST_UPDATED = "2026-07-05 15:30 IDT";
 
 export const WORKTREES = [
   {
@@ -324,7 +324,7 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "green",
-    message: "🟢 PR #1631 (JN-5717, off-board): NEW CLEAN PR — feat(jbenchmark): canonical export hash for release diff. OPEN, MERGEABLE, all CI ✅ (run 28736019540: all-checks ✅, e2e-smoke ✅, e2e-api ✅, pre-commit ✅). Joseph's CR session idle. Awaiting merge. Detected 15:00 IDT Jul 5.",
+    message: "🟢 PR #1631 (JN-5717, off-board): OPEN, MERGEABLE, all CI ✅ (run 28744609795: all-checks ✅, e2e-smoke ✅, e2e-api ✅, pre-commit ✅, integration ✅). New run at 15:30 IDT Jul 5 — still clean. CR session idle. Awaiting merge.",
   },
   {
     level: "red",
@@ -360,7 +360,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⚠️ jira-operations (no zone): session last active Jun 25. No PR, no Jira. Decide: archive or assign zone.",
+    message: "⚠️ jira-operations: NO LONGER IN AGOR (not active, not archived as of 15:30 IDT Jul 5). Was 'no zone', last seen Jun 25. Possible manual deletion — verify if intentional.",
   },
   {
     level: "yellow",
