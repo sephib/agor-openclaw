@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-05 09:30 IDT (advance heartbeat — weekday daytime)*
+*Last updated: 2026-07-05 13:00 IDT (advance heartbeat — weekday daytime)*
 
 ---
 
@@ -61,16 +61,16 @@
 
 ---
 
-## Key Changes Since Last Run (09:00 IDT Jul 5)
+## Key Changes Since Last Run (09:30 IDT Jul 5)
 
 | What observed | Status |
 |---|---|
-| **Board static** | No new merges, no zone moves, no CI changes since 09:00 IDT Jul 5. |
+| **Board static** | No new merges, no zone moves, no CI changes since 09:30 IDT Jul 5. One heartbeat failed at 10:30 IDT. |
 | **PR #1606: unchanged** | 🔴 Still CONFLICTING + e2e ❌ (run 28527509341). No new CI activity. |
 | **PR #1588: unchanged** | 🔴 Still CONFLICTING + pre-commit ❌ (run 28469578445). No new CI since Jun 30. |
 | **Jira mismatches: unchanged** | JN-5612 still "In Progress", JN-5616 still "In Review", JN-5724 still "In Review" (all PRs merged Jun 29, 6+ days stale). JN-5794/JN-5793 still unverifiable. |
 | **No new merges** | gh pr list (assignee + review-requested) returns no merges since #1643 on Jul 1. |
-| **fix-dashboard-syntax-error** | 🔴 Still ZOMBIE in Plan zone, 18 days stale (FAILED filesystem). Proposal to archive outstanding. |
+| **fix-dashboard-syntax-error** | 🔴 Still ZOMBIE in Plan zone, 18+ days stale (FAILED filesystem). Proposal to archive outstanding. |
 
 ---
 
