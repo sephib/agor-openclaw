@@ -4,6 +4,20 @@
 
 ---
 
+## 20:30 IDT — Weekday Daytime Advance Heartbeat (2026-07-05)
+
+**Session:** 019f3354-c6dd | http://127.0.0.1:3030/ui/s/019f3354c6dd74d386404e91/
+- PRs checked: #1588 (OPEN CONFLICTING, pre-commit ❌ run 28469578445 — unchanged), #1606 (OPEN CONFLICTING + e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌ run 28527509341 — unchanged), #1596 (DRAFT CONFLICTING — unchanged), #1631 (OPEN MERGEABLE, all CI ✅ run 28744609795 — unchanged)
+- Merges detected: none — no merges since #1643 Jul 1
+- CI changes: none — all CI run IDs unchanged since last run
+- Jira: JN-5612 still "In Progress", JN-5616 still "In Review", JN-5724 still "In Review" (all PRs merged Jun 29, 6+ days stale). JN-5794/JN-5793 unverifiable.
+- Board scan: 11 worktrees confirmed — Ingest×2 (jn-5244, jn-5841), Code Review×2 (jn-5546 w/#1588, model-packaging-cr), BLOCKED×2 (jn-5672, jn-5695 w/#1596), Plan×3 (fix-dashboard, jn-5780, sprint-planning-jul), NO ZONE×2 (jn-5795, jira-operations). Board static since 20:00 IDT Jul 5.
+- Flags: #1606 CONFLICTING+e2e ❌, #1588 CONFLICTING+pre-commit ❌, fix-dashboard ZOMBIE (18+ days), 3 Jira mismatches (JN-5612/5616/5724) + 2 unverifiable
+- Auto-advances: 0
+- Next: 21:00 IDT Jul 5 daytime heartbeat
+
+---
+
 ## 13:00 IDT — Weekday Daytime Advance Heartbeat (2026-07-05)
 
 **Session:** 019f31b8-c2df | http://127.0.0.1:3030/ui/s/019f31b8c2df755b974be3b4/

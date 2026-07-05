@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-05 20:00 IDT (advance heartbeat — weekday daytime)*
+*Last updated: 2026-07-05 20:30 IDT (advance heartbeat — weekday daytime)*
 
 ---
 
@@ -63,18 +63,18 @@
 
 ---
 
-## Key Changes Since Last Run (15:30 IDT Jul 5)
+## Key Changes Since Last Run (20:00 IDT Jul 5)
 
 | What observed | Status |
 |---|---|
-| **CORRECTION: jira-operations** | ⚠️ Still IN AGOR (uid=249, NO ZONE, last updated Jun 25). Previous run incorrectly reported it as "deleted/missing". It's stale but present. |
-| **jn-5841-agents-md-root CONFIRMED** | 🆕 In Ingest zone since 19:07 IDT Jul 5 (already noted in 15:00 IDT run). Ingest session 019f3236 idle/completed. No PR yet. |
+| **Board static** | No zone moves, no merges, no new CI runs since 20:00 IDT Jul 5. |
 | **PR #1631: unchanged** | OPEN, MERGEABLE, all CI ✅ (run 28744609795). Still awaiting merge. |
 | **PR #1606: unchanged** | 🔴 Still CONFLICTING + e2e ❌ (run 28527509341). No new CI. |
-| **PR #1588: unchanged** | 🔴 Still CONFLICTING + pre-commit ❌ (run 28469578445). No new CI since Jun 30. |
+| **PR #1588: unchanged** | 🔴 Still CONFLICTING + pre-commit ❌ (run 28469578445). No new CI. |
+| **PR #1596: unchanged** | DRAFT CONFLICTING. No activity. |
 | **Jira mismatches: unchanged** | JN-5612 still "In Progress", JN-5616 still "In Review", JN-5724 still "In Review" (all PRs merged Jun 29). |
 | **No new merges** | No new merges since #1643 on Jul 1. |
-| **Board worktree count** | 11 active worktrees (10 in zones + jira-operations NO ZONE + jn-5795 NO ZONE = 11 total) |
+| **Board worktree count** | 11 active worktrees (zones: Ingest×2, CodeReview×2, BLOCKED×2, Plan×3, NO ZONE×2) |
 
 ---
 
