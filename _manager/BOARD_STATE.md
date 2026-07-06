@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-06 11:33 IDT (advance heartbeat — weekday daytime)*
+*Last updated: 2026-07-06 12:03 IDT (advance heartbeat — weekday daytime)*
 
 ---
 
@@ -61,16 +61,16 @@
 
 ---
 
-## Key Changes Since Last Run (11:32 IDT Jul 6)
+## Key Changes Since Last Run (11:33 IDT Jul 6)
 
 | What observed | Status |
 |---|---|
-| **Board static** | No new merges, no CI changes, no zone moves since 10:32 IDT. |
+| **Board static** | No new merges, no CI changes, no zone moves since 11:33 IDT. |
 | **PR #1606: unchanged** | 🔴 Still CONFLICTING + e2e ❌ (run 28527509341). No new CI. |
 | **PR #1588: unchanged** | 🔴 Still CONFLICTING + pre-commit ❌ (run 28469578445). No new CI. |
 | **PR #1596: unchanged** | DRAFT CONFLICTING. No activity. |
-| **Jira mismatches: unchanged** | JN-5717 still Backlog (PR #1631 merged); JN-5794 still In Review (PR #1643 merged). |
-| **Board worktree scan** | 10 worktrees confirmed (8 jounce repo + 1 model-packaging + 1 agor-openclaw zombie). |
+| **Jira mismatches: unchanged** | JN-5717 still Backlog (PR #1631 merged); JN-5794 still In Review (PR #1643 merged) — confirmed via acli. |
+| **Board worktree scan** | 9 in Agor scan (8 jounce + 1 model-packaging) + jn-5780 (unregistered jira-autofix) + fix-dashboard zombie = 11 total tracked. |
 
 ---
 

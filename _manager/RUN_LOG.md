@@ -4,6 +4,20 @@
 
 ---
 
+## 12:03 IDT — Weekday Daytime Advance Heartbeat (2026-07-06)
+
+**Session:** 019f36a7-fc19 | http://127.0.0.1:3030/ui/s/019f36a7fc197603aca22272/
+- PRs checked: #1588 (OPEN CONFLICTING, pre-commit ❌ run 28469578445 — unchanged), #1606 (OPEN CONFLICTING + e2e ❌ run 28527509341 — unchanged), #1596 (DRAFT CONFLICTING — unchanged)
+- Merges detected: none — no new merges since #1631 (09:19 IDT Jul 6)
+- CI changes: none
+- Jira: JN-5717 still "Backlog" (PR #1631 merged Jul 6 — confirmed via acli), JN-5794 still "In Review" (PR #1643 merged Jul 1 — confirmed via acli) — both unchanged; Jira MCP still 401
+- Board scan: 9 in Agor (8 jounce + 1 model-packaging) + jn-5780 (unregistered jira-autofix) + fix-dashboard zombie = 11 total tracked. Static since 11:33 IDT.
+- Flags: 🔴 #1588 CONFLICTING+pre-commit ❌, 🔴 #1606 CONFLICTING+e2e ❌, ⚠️ 2 Jira mismatches remain (JN-5717/5794), fix-dashboard-syntax-error zombie, jira-operations stale
+- Auto-advances: 0
+- Next: wait for Joseph to rebase #1606/#1588; Jira updates for JN-5717/5794 need manual action
+
+---
+
 ## 11:32 IDT — Weekday Daytime Advance Heartbeat (2026-07-06)
 
 **Session:** 019f3671-1081 | http://127.0.0.1:3030/ui/s/019f36711081784a981c2cc5/
