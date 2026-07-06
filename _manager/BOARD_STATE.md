@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-06 14:03 IDT (advance heartbeat — weekday daytime)*
+*Last updated: 2026-07-06 16:00 IDT (advance heartbeat — weekday daytime)*
 
 ---
 
@@ -8,7 +8,7 @@
 
 | Worktree | Zone | PR | CI | Jira | Status |
 |---------|------|----|----|------|--------|
-| jn-5546-docs-document-module-layout-convention-and-3 | Code Review | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | ❌ pre-commit FAIL (run 28469578445) | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) — In Progress | 🔴 CONFLICTING + pre-commit ❌ — UNCHANGED since Jul 1 10:30. Needs rebase + pre-commit fix. |
+| jn-5546-docs-document-module-layout-convention-and-3 | Code Review | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | ❌ pre-commit FAIL (run 28469578445) | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) — In Progress | 🔴 CONFLICTING + pre-commit ❌ — UNCHANGED since Jul 1 10:30. 5 days stale. Needs rebase + pre-commit fix. |
 | jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | CONFLICTING | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) | 🔴 DRAFT CONFLICTING; frozen |
 | jn-5672-dal-ext-dashboard | BLOCKED | — | — | [JN-5672](https://redhat.atlassian.net/browse/JN-5672) | On hold — after notebooks complete |
 | model-packaging-cr | Code Review | — | — | — | ⚠️ model-packaging-pipeline repo. Created Jun 15. No PR URL set, stagnant 21+ days. Needs investigation or archive. |
@@ -61,17 +61,16 @@
 
 ---
 
-## Key Changes Since Last Run (13:33 IDT Jul 6)
+## Key Changes Since Last Run (14:03 IDT Jul 6)
 
 | What observed | Status |
 |---|---|
+| **⚠️ Monitoring gap detected** | ~2h gap in coverage (14:03 → 16:00 IDT). 3 scheduled runs appear to have been missed (14:33, 15:03, 15:33 IDT). |
 | **PR #1606: unchanged** | 🔴 Still CONFLICTING + e2e ❌ (run 28527509341). No new CI. |
-| **PR #1588: unchanged** | 🔴 Still CONFLICTING + pre-commit ❌ (run 28469578445). No new CI. |
+| **PR #1588: unchanged** | 🔴 Still CONFLICTING + pre-commit ❌ (run 28469578445). Now 5 days stale. No new CI. |
 | **PR #1596: unchanged** | DRAFT CONFLICTING. No activity. |
-| **Jira mismatches: unchanged** | JN-5717 still Backlog (PR #1631 merged); JN-5794 still In Review (PR #1643 merged) — confirmed via acli. |
-| **✅ JN-5783: Backlog → Done** | "[RESEARCH] Define git tagging workflow" is now Done in Jira. Removed from sprint-without-worktrees. |
-| **✅ JN-5789: Waiting/Blocked → Done** | "[HOTFIX] Fix search_experiments() JSONB path mismatch" is now Done in Jira. Removed from sprint-without-worktrees. |
-| **Board otherwise static** | No new merges, no CI changes since 13:33 IDT. |
+| **Jira mismatches: unchanged** | JN-5717 still Backlog (PR #1631 merged Jul 6); JN-5794 still In Review (PR #1643 merged Jul 1) — confirmed via acli. |
+| **Board otherwise static** | No new merges, no CI changes, no worktree zone changes since 14:03 IDT. |
 
 ---
 

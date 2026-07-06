@@ -4294,3 +4294,17 @@
 - Next: Joseph to rebase #1588/#1606 or close; update JN-5717+JN-5794 → Done in Jira
 
 ---
+
+---
+## 16:00 IDT — Weekday Daytime Advance Heartbeat (2026-07-06)
+
+**Session:** 019f3783-d42e | http://127.0.0.1:3030/ui/s/019f3783d42e7af2a948f3b9/
+- PRs checked: #1588 (OPEN CONFLICTING + pre-commit ❌ run 28469578445 — unchanged, now 5 days stale), #1596 (DRAFT CONFLICTING — unchanged), #1606 (OPEN CONFLICTING + e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌ run 28527509341 — unchanged)
+- Merges detected: none — board static since #1631 Jul 6 09:19 IDT
+- CI changes: none — all PRs unchanged since 14:03 IDT
+- Jira: JN-5717 still "Backlog" (PR #1631 merged Jul 6); JN-5794 still "In Review" (PR #1643 merged Jul 1) — both confirmed via acli
+- ⚠️ Monitoring gap: ~2h gap detected (14:03 → 16:00 IDT). 3 expected runs appear to have been missed (14:33, 15:03, 15:33 IDT)
+- Board scan: 9 jounce worktrees + 1 model-packaging on board — all in same zones as 14:03 IDT run
+- Auto-advances: 0
+- Flags: 🔴 #1588 CONFLICTING+pre-commit ❌ (5d stale), 🔴 #1606 CONFLICTING+e2e ❌, ⚠️ 2 Jira mismatches (JN-5717/5794), fix-dashboard ZOMBIE, jira-operations stale, ⚠️ monitoring gap 14:03→16:00 IDT
+- Next: Joseph to rebase #1588/#1606 or close; update JN-5717+JN-5794 → Done in Jira; investigate missed schedule runs

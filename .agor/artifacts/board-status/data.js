@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-06 14:03 IDT";
+export const LAST_UPDATED = "2026-07-06 16:00 IDT";
 
 export const WORKTREES = [
   {
@@ -10,7 +10,7 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1588",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1588",
-    status: "🔴 CONFLICTING + pre-commit ❌ — UNCHANGED since Jul 1 10:30 IDT. CI run 28469578445: pre-commit ❌ + pre-commit-run ❌. Needs rebase + pre-commit fix.",
+    status: "🔴 CONFLICTING + pre-commit ❌ — UNCHANGED since Jul 1 10:30 IDT (5 days stale). CI run 28469578445: pre-commit ❌ + pre-commit-run ❌. Needs rebase + pre-commit fix.",
     blockedOn: "CONFLICTING + pre-commit FAIL",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ed01e5624752fbade0eab/",
@@ -36,8 +36,8 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: null,
     prUrl: null,
-    status: "⚠️ model-packaging-pipeline repo. Created Jun 15 — stagnant 21+ days. No PR URL set. In Code Review zone with no visible work. Needs investigation or archive.",
-    blockedOn: "No PR, stagnant 21+ days",
+    status: "⚠️ model-packaging-pipeline repo. Created Jun 15 — stagnant 22+ days. No PR URL set. In Code Review zone with no visible work. Needs investigation or archive.",
+    blockedOn: "No PR, stagnant 22+ days",
     blockedType: "blocked",
     sessionUrl: null,
     sessionLabel: null,
@@ -216,7 +216,7 @@ export const WORKTREES = [
     zone: "Plan",
     pr: null,
     prUrl: null,
-    status: "🔴 ZOMBIE: agor-openclaw repo — not found in Agor scan. Created Jun 17 — 19+ days stale. Error: 'fatal: invalid reference: origin/private-julie'. No Jira, no PR. PROPOSAL: archive.",
+    status: "🔴 ZOMBIE: agor-openclaw repo — not found in Agor scan. Created Jun 17 — 20+ days stale. Error: 'fatal: invalid reference: origin/private-julie'. No Jira, no PR. PROPOSAL: archive.",
     blockedOn: "Filesystem FAILED / unregistered repo",
     blockedType: "blocked",
     sessionUrl: null,
@@ -375,6 +375,10 @@ export const MERGED = [
 
 export const ALERTS = [
   {
+    level: "yellow",
+    message: "⚠️ Monitoring gap: ~2h coverage gap detected (14:03 → 16:00 IDT Jul 6). 3 scheduled runs appear to have been missed (14:33, 15:03, 15:33 IDT). Board confirmed static via full scan.",
+  },
+  {
     level: "green",
     message: "✅ Sprint cleanup 14:03 IDT Jul 6: JN-5783 (Define git tagging workflow) → Done; JN-5789 (HOTFIX search_experiments JSONB path mismatch) → Done. Cleared from sprint tracking.",
   },
@@ -400,15 +404,15 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 PR #1588 (JN-5546, Code Review zone): CONFLICTING + pre-commit ❌ — unchanged since Jul 1 10:30 IDT. CI run 28469578445: pre-commit ❌ + pre-commit-run ❌. Needs rebase + pre-commit fix.",
+    message: "🔴 PR #1588 (JN-5546, Code Review zone): CONFLICTING + pre-commit ❌ — unchanged since Jul 1 10:30 IDT (5 days stale). CI run 28469578445: pre-commit ❌ + pre-commit-run ❌. Needs rebase + pre-commit fix.",
   },
   {
     level: "red",
-    message: "🔴 fix-dashboard-syntax-error (Plan zone): ZOMBIE WORKTREE — not found in Agor scan (agor-openclaw repo unregistered). Created Jun 17 — 19+ days stale. No PR, no Jira. PROPOSAL: archive this worktree.",
+    message: "🔴 fix-dashboard-syntax-error (Plan zone): ZOMBIE WORKTREE — not found in Agor scan (agor-openclaw repo unregistered). Created Jun 17 — 20+ days stale. No PR, no Jira. PROPOSAL: archive this worktree.",
   },
   {
     level: "yellow",
-    message: "⚠️ Jira mismatches (2 active): JN-5717 (PR #1631 MERGED Jul 6, Jira 'Backlog' — NEW), JN-5794 (PR #1643 MERGED Jul 1, Jira 'In Review'). Cleared this run: JN-5612 ✅, JN-5616 ✅, JN-5724 ✅, JN-5793 ✅.",
+    message: "⚠️ Jira mismatches (2 active): JN-5717 (PR #1631 MERGED Jul 6, Jira 'Backlog'), JN-5794 (PR #1643 MERGED Jul 1, Jira 'In Review' — 6 days stale). Cleared earlier: JN-5612 ✅, JN-5616 ✅, JN-5724 ✅, JN-5793 ✅.",
   },
   {
     level: "yellow",
@@ -420,7 +424,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⚠️ model-packaging-cr (Code Review zone, model-packaging-pipeline repo): Created Jun 15 — stagnant 21+ days. No PR URL set. Needs investigation or archive.",
+    message: "⚠️ model-packaging-cr (Code Review zone, model-packaging-pipeline repo): Created Jun 15 — stagnant 22+ days. No PR URL set. Needs investigation or archive.",
   },
   {
     level: "info",
