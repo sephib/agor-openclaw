@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-06 12:33 IDT";
+export const LAST_UPDATED = "2026-07-06 13:03 IDT";
 
 export const WORKTREES = [
   {
@@ -401,8 +401,16 @@ export const MERGED = [
 
 export const ALERTS = [
   {
+    level: "yellow",
+    message: "⚠️ JN-5788 status changed Backlog → Waiting/Blocked ('Verify Visibility Notebook in Production Environment'). No board worktree. Flag for triage.",
+  },
+  {
+    level: "yellow",
+    message: "⚠️ jn-5780-add-jn-project (Plan zone): JN-5780 Jira is 'Done'. Worktree inactive since Jun 28. GitLab MR#887 was pushed — likely merged. PROPOSAL: archive worktree.",
+  },
+  {
     level: "green",
-    message: "🆕 jn-5827-git-tagging-workflow first detected (12:33 IDT Jul 6). Created 09:06 IDT, session idle 09:11 IDT with plan written (59 msgs). JN-5827 Backlog. Still in Ingest zone — ready to move to Plan.",
+    message: "ℹ️ jn-5827-git-tagging-workflow (Ingest zone): plan session idle 09:11 IDT Jul 6 (59 msgs). JN-5827 Backlog. Ready to move to Plan zone.",
   },
   {
     level: "green",

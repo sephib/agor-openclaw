@@ -4252,3 +4252,15 @@
 - Next: Joseph to rebase #1588/#1606 or close; update JN-5717+JN-5794 → Done in Jira; move jn-5827 to Plan zone
 
 ---
+## 13:03 IDT — Weekday Daytime Advance Heartbeat (2026-07-06)
+
+**Session:** 019f36de-eb40 | http://127.0.0.1:3030/ui/s/019f36deeb4071faacf7bfa5/
+- PRs checked: #1588 (OPEN CONFLICTING + pre-commit ❌ run 28469578445 — unchanged), #1596 (DRAFT CONFLICTING — unchanged), #1606 (OPEN CONFLICTING + e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌ run 28527509341 — unchanged)
+- Merges detected: none — board static since #1631 Jul 6 09:19 IDT
+- CI changes: none — all PRs unchanged
+- Jira: JN-5717 still "Backlog" (PR #1631 merged Jul 6); JN-5794 still "In Review" (PR #1643 merged Jul 1). **NEW:** JN-5788 status changed Backlog → Waiting/Blocked. **NEW:** JN-5780 Jira is "Done" — worktree jn-5780-add-jn-project in Plan zone, inactive Jun 28 — propose archive.
+- Auto-advances: 0
+- Flags: 🔴 #1588 CONFLICTING+pre-commit ❌, 🔴 #1606 CONFLICTING+e2e ❌, ⚠️ 2 Jira mismatches (JN-5717/5794), ⚠️ JN-5788 now Waiting/Blocked (no worktree), ⚠️ JN-5780 Jira Done (worktree stale in Plan zone), fix-dashboard ZOMBIE, jira-operations stale
+- Next: Joseph to rebase #1588/#1606 or close; update JN-5717+JN-5794 → Done in Jira; approve jn-5780 archive
+
+---

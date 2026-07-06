@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-06 12:33 IDT (advance heartbeat — weekday daytime)*
+*Last updated: 2026-07-06 13:03 IDT (advance heartbeat — weekday daytime)*
 
 ---
 
@@ -37,7 +37,7 @@
 |--------|---------|-------------|-------|
 | [JN-5790](https://redhat.atlassian.net/browse/JN-5790) | [DEV] Add integration-run to GitHub required status checks | **Waiting/Blocked** | No worktree |
 | [JN-5789](https://redhat.atlassian.net/browse/JN-5789) | [HOTFIX] Fix search_experiments() JSONB path mismatch | **Waiting/Blocked** | Related to JN-5793 (merged via #1639) |
-| [JN-5788](https://redhat.atlassian.net/browse/JN-5788) | Verify Visibility Notebook in Production Environment | **Backlog** | No worktree |
+| [JN-5788](https://redhat.atlassian.net/browse/JN-5788) | Verify Visibility Notebook in Production Environment | **Waiting/Blocked** ← was Backlog | No worktree — status changed this run |
 | [JN-5783](https://redhat.atlassian.net/browse/JN-5783) | [RESEARCH] Define git tagging workflow | **Backlog** | No worktree |
 | [JN-5728](https://redhat.atlassian.net/browse/JN-5728) | [DEV] Fix e2e CI workflow gaps | **Backlog** | No worktree |
 | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) | Create db_connect script for readonly psql access | **Backlog** | Has PR #1596 (DRAFT CONFLICTING) |
@@ -62,16 +62,17 @@
 
 ---
 
-## Key Changes Since Last Run (12:03 IDT Jul 6)
+## Key Changes Since Last Run (12:33 IDT Jul 6)
 
 | What observed | Status |
 |---|---|
-| **🆕 jn-5827-git-tagging-workflow** | NEW worktree first detected this run. Created 09:06 IDT Jul 6. Session 019f36af idle 09:11 IDT with plan written (59 msgs). Still in Ingest zone. JN-5827 Jira: Backlog. |
+| **🆕 JN-5788 status change** | Jira status changed Backlog → **Waiting/Blocked** ("Verify Visibility Notebook in Production Environment"). No worktree. |
+| **🆕 JN-5780 Jira Done** | JN-5780 ("Add JN project to autofix.json") now "Done" in Jira. Worktree jn-5780-add-jn-project still in Plan zone. Inactive since Jun 28. Propose archive. |
 | **PR #1606: unchanged** | 🔴 Still CONFLICTING + e2e ❌ (run 28527509341). No new CI. |
 | **PR #1588: unchanged** | 🔴 Still CONFLICTING + pre-commit ❌ (run 28469578445). No new CI. |
 | **PR #1596: unchanged** | DRAFT CONFLICTING. No activity. |
 | **Jira mismatches: unchanged** | JN-5717 still Backlog (PR #1631 merged); JN-5794 still In Review (PR #1643 merged) — confirmed via acli. |
-| **Board worktree scan** | 10 in Agor scan (9 jounce + 1 model-packaging) + jn-5780 (unregistered jira-autofix) + fix-dashboard zombie = 12 total tracked. |
+| **Board static** | No new merges, no CI changes since 12:33 IDT. |
 
 ---
 
