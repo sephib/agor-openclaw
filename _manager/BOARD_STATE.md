@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-06 10:32 IDT (advance heartbeat — weekday daytime)*
+*Last updated: 2026-07-06 11:32 IDT (advance heartbeat — weekday daytime)*
 
 ---
 
@@ -61,17 +61,16 @@
 
 ---
 
-## Key Changes Since Last Run (08:32 IDT Jul 6)
+## Key Changes Since Last Run (10:32 IDT Jul 6)
 
 | What observed | Status |
 |---|---|
-| **PR #1631 MERGED** | 🎉 Merged at 09:19 IDT Jul 6 — off-board PR, no worktree to archive. JN-5717 Jira "Backlog" → needs Done. |
+| **Board static** | No new merges, no CI changes, no zone moves since 10:32 IDT. |
 | **PR #1606: unchanged** | 🔴 Still CONFLICTING + e2e ❌ (run 28527509341). No new CI. |
 | **PR #1588: unchanged** | 🔴 Still CONFLICTING + pre-commit ❌ (run 28469578445). No new CI. |
 | **PR #1596: unchanged** | DRAFT CONFLICTING. No activity. |
-| **Jira mismatches: 4 cleared!** | JN-5612, JN-5616, JN-5724, JN-5793 all now Done ✅ (confirmed via acli). 2 remain: JN-5717 (new) + JN-5794. |
-| **Jira MCP: 401 auth error** | Jira MCP returned 401 — used acli as fallback (works fine). |
-| **Board worktree scan** | 9 worktrees found in Agor scan. jn-5780 and fix-dashboard on unregistered repos (jira-autofix / agor-openclaw). |
+| **Jira mismatches: unchanged** | JN-5717 still Backlog (PR #1631 merged); JN-5794 still In Review (PR #1643 merged). |
+| **Board worktree scan** | 10 worktrees confirmed (8 jounce repo + 1 model-packaging + 1 agor-openclaw zombie). |
 
 ---
 
