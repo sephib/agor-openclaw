@@ -2765,4 +2765,13 @@ export const HEARTBEAT_RUNS = [
     summary: "Board static since 14:00 IDT; #1606 CONFLICTING+e2e ❌ unchanged (run 28527509341); #1588 CONFLICTING+pre-commit FAIL unchanged (run 28469578445); 3 Jira mismatches (JN-5612/5616/5724) confirmed; sprint-planning-jul session detected (idle); 0 auto-advances, 5 findings",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f22cf07057658a627fed8/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-07-06 21:02 IDT",
+    actions: 0,
+    findings: 7,
+    status: "ok",
+    summary: "⚠️ 5h monitoring gap (16:00→21:02 IDT, sessions 16:00+17:00 FAILED); 🟡 #1588 ACTIVELY WORKED (3 new commits since 16:00 IDT, build CI ✅, still CONFLICTING needs rebase); #1606 CONFLICTING+e2e ❌ unchanged; 2 Jira mismatches (JN-5717/5794) unchanged; 0 auto-advances, 7 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f389687ae74bea5ef988b/",
+  },
 ];

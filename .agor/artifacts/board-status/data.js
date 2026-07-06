@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-06 16:00 IDT";
+export const LAST_UPDATED = "2026-07-06 21:02 IDT";
 
 export const WORKTREES = [
   {
@@ -10,8 +10,8 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1588",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1588",
-    status: "🔴 CONFLICTING + pre-commit ❌ — UNCHANGED since Jul 1 10:30 IDT (5 days stale). CI run 28469578445: pre-commit ❌ + pre-commit-run ❌. Needs rebase + pre-commit fix.",
-    blockedOn: "CONFLICTING + pre-commit FAIL",
+    status: "🟡 CONFLICTING — actively worked! 3 new commits since 16:00 IDT (latest 19:46 IDT: address PR review feedback). Build CI ✅ runs 28811377xxx passing at 20:43 IDT. Full test suite not triggered (CONFLICTING). Needs rebase to clear conflict.",
+    blockedOn: "CONFLICTING — rebase needed",
     blockedType: "blocked",
     sessionUrl: "http://localhost:3030/ui/s/019ed01e5624752fbade0eab/",
     sessionLabel: "fix session",
@@ -25,7 +25,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-06-17 10:14 IDT",
+    lastActive: "2026-07-06 19:46 IDT",
   },
   {
     ticket: null,
@@ -376,7 +376,19 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "yellow",
-    message: "⚠️ Monitoring gap: ~2h coverage gap detected (14:03 → 16:00 IDT Jul 6). 3 scheduled runs appear to have been missed (14:33, 15:03, 15:33 IDT). Board confirmed static via full scan.",
+    message: "⚠️ Monitoring gap: ~5h coverage gap detected (16:00 → 21:02 IDT Jul 6). Sessions at 16:00 (019f3829) and 17:00 (019f3861) FAILED. Multiple scheduled runs missed. Board NOT static during gap — #1588 had 3 new commits.",
+  },
+  {
+    level: "green",
+    message: "🟡 PR #1588 (JN-5546) ACTIVELY WORKED: Joseph pushed 3 new commits since 16:00 IDT. Latest (19:46 IDT): 'docs(jbenchmark): address PR review feedback' — removes AI attribution HTML, fixes api_server README, etc. Build CI ✅ running. Still CONFLICTING — rebase needed to clear conflict + run full CI.",
+  },
+  {
+    level: "red",
+    message: "🔴 PR #1606 (JN-5725, off-board): CONFLICTING (since 10:00 IDT Jul 2). e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌ (run 28527509341). Jira Done. Needs rebase + e2e fix or close PR.",
+  },
+  {
+    level: "yellow",
+    message: "⚠️ Jira mismatches (2 active): JN-5717 (PR #1631 MERGED Jul 6, Jira 'Backlog'), JN-5794 (PR #1643 MERGED Jul 1, Jira 'In Review' — 5 days stale). Cleared earlier: JN-5612 ✅, JN-5616 ✅, JN-5724 ✅, JN-5793 ✅.",
   },
   {
     level: "green",
@@ -400,19 +412,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): CONFLICTING (since 10:00 IDT Jul 2). e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌ (run 28527509341). Jira Done. Needs rebase + e2e fix or close PR.",
-  },
-  {
-    level: "red",
-    message: "🔴 PR #1588 (JN-5546, Code Review zone): CONFLICTING + pre-commit ❌ — unchanged since Jul 1 10:30 IDT (5 days stale). CI run 28469578445: pre-commit ❌ + pre-commit-run ❌. Needs rebase + pre-commit fix.",
-  },
-  {
-    level: "red",
     message: "🔴 fix-dashboard-syntax-error (Plan zone): ZOMBIE WORKTREE — not found in Agor scan (agor-openclaw repo unregistered). Created Jun 17 — 20+ days stale. No PR, no Jira. PROPOSAL: archive this worktree.",
-  },
-  {
-    level: "yellow",
-    message: "⚠️ Jira mismatches (2 active): JN-5717 (PR #1631 MERGED Jul 6, Jira 'Backlog'), JN-5794 (PR #1643 MERGED Jul 1, Jira 'In Review' — 6 days stale). Cleared earlier: JN-5612 ✅, JN-5616 ✅, JN-5724 ✅, JN-5793 ✅.",
   },
   {
     level: "yellow",

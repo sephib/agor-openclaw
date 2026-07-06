@@ -4308,3 +4308,17 @@
 - Auto-advances: 0
 - Flags: 🔴 #1588 CONFLICTING+pre-commit ❌ (5d stale), 🔴 #1606 CONFLICTING+e2e ❌, ⚠️ 2 Jira mismatches (JN-5717/5794), fix-dashboard ZOMBIE, jira-operations stale, ⚠️ monitoring gap 14:03→16:00 IDT
 - Next: Joseph to rebase #1588/#1606 or close; update JN-5717+JN-5794 → Done in Jira; investigate missed schedule runs
+
+---
+## 21:02 IDT — Weekday Daytime Advance Heartbeat (2026-07-06)
+
+**Session:** 019f3896-87ae | http://127.0.0.1:3030/ui/s/019f389687ae74bea5ef988b/
+- PRs checked: #1588 (OPEN CONFLICTING — ACTIVELY WORKED, 3 new commits since 16:00 IDT), #1596 (DRAFT CONFLICTING — unchanged), #1606 (OPEN CONFLICTING + e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌ run 28527509341 — unchanged)
+- Merges detected: none — no new merges since #1631 Jul 6 09:19 IDT
+- CI changes: #1588 new build CI runs (28811377xxx) passing at 20:43 IDT for new head 674026720279 — full test suite not triggered (CONFLICTING). #1606 unchanged.
+- Jira: JN-5717 still "Backlog" (PR #1631 merged Jul 6); JN-5794 still "In Review" (PR #1643 merged Jul 1) — confirmed via acli. Jira MCP 401 again.
+- ⚠️ Monitoring gap: ~5h gap detected (16:00 → 21:02 IDT). Sessions at 16:00 (019f3829) and 17:00 (019f3861) FAILED. Multiple scheduled runs missed.
+- 🟡 #1588 NEW ACTIVITY: Joseph pushed 3 commits — 16:13 IDT (docs slack-notify README), 16:21 IDT (internal CR + merge), 19:46 IDT (address PR review feedback: remove AI attribution HTML, fix api_server README, add just pf explanation). Build CI ✅. PR still CONFLICTING.
+- Auto-advances: 0
+- Flags: 🟡 #1588 actively worked but still CONFLICTING (needs rebase), 🔴 #1606 CONFLICTING+e2e ❌, ⚠️ 2 Jira mismatches (JN-5717/5794), ⚠️ monitoring gap ~5h, fix-dashboard ZOMBIE, jira-operations stale
+- Next: #1588 rebase to clear conflict + full CI run; Joseph to update JN-5717+JN-5794 → Done; investigate failed heartbeat sessions
