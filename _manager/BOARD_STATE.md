@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-06 12:03 IDT (advance heartbeat — weekday daytime)*
+*Last updated: 2026-07-06 12:33 IDT (advance heartbeat — weekday daytime)*
 
 ---
 
@@ -19,6 +19,7 @@
 | jn-5780-add-jn-project | Plan | GitLab [MR#887](https://gitlab.com/redhat/rhel-ai/agentic-ci/autofix/-/merge_requests/887) | — | [JN-5780](https://redhat.atlassian.net/browse/JN-5780) | ℹ️ jira-autofix repo (unregistered in Agor scan). Session done Jun 28. MR pushed. Idle. |
 | fix-dashboard-syntax-error | Plan | — | — | — | 🔴 ZOMBIE: agor-openclaw repo, not found in Agor scan. Created Jun 17, 19+ days stale. PROPOSAL: archive. |
 | sprint-planning-jul | Plan | — | — | — | ℹ️ Updated 06:50 IDT Jul 2. No sessions, no PR, no Jira. Sprint planning for July? |
+| jn-5827-git-tagging-workflow | Ingest | — | — | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) — Backlog | 🆕 NEW (first detected this run). Created 09:06 IDT Jul 6. Session 019f36af idle 09:11 IDT, 59 msgs — plan written. Still in Ingest zone. Consider moving to Plan zone. |
 
 ---
 
@@ -61,20 +62,30 @@
 
 ---
 
-## Key Changes Since Last Run (11:33 IDT Jul 6)
+## Key Changes Since Last Run (12:03 IDT Jul 6)
 
 | What observed | Status |
 |---|---|
-| **Board static** | No new merges, no CI changes, no zone moves since 11:33 IDT. |
+| **🆕 jn-5827-git-tagging-workflow** | NEW worktree first detected this run. Created 09:06 IDT Jul 6. Session 019f36af idle 09:11 IDT with plan written (59 msgs). Still in Ingest zone. JN-5827 Jira: Backlog. |
 | **PR #1606: unchanged** | 🔴 Still CONFLICTING + e2e ❌ (run 28527509341). No new CI. |
 | **PR #1588: unchanged** | 🔴 Still CONFLICTING + pre-commit ❌ (run 28469578445). No new CI. |
 | **PR #1596: unchanged** | DRAFT CONFLICTING. No activity. |
 | **Jira mismatches: unchanged** | JN-5717 still Backlog (PR #1631 merged); JN-5794 still In Review (PR #1643 merged) — confirmed via acli. |
-| **Board worktree scan** | 9 in Agor scan (8 jounce + 1 model-packaging) + jn-5780 (unregistered jira-autofix) + fix-dashboard zombie = 11 total tracked. |
+| **Board worktree scan** | 10 in Agor scan (9 jounce + 1 model-packaging) + jn-5780 (unregistered jira-autofix) + fix-dashboard zombie = 12 total tracked. |
 
 ---
 
 ## Attention Items
+
+### 🆕 jn-5827-git-tagging-workflow — NEW WORKTREE (Ingest zone, plan written)
+
+- **Created:** 09:06 IDT Jul 6 2026
+- **Session:** 019f36af (idle 09:11 IDT, 59 messages) — plan written and ready
+- **Jira:** [JN-5827](https://redhat.atlassian.net/browse/JN-5827) — "[DEV] Implement git tagging workflow for 3.5GA release" — Backlog
+- **Zone:** Still Ingest (should move to Plan since plan session is done)
+- **Action:** First detected this run (was created at 09:06 IDT but missed in prior scans). No action needed now; monitor for phase progression.
+
+---
 
 ### 🎉 PR #1631 (JN-5717) — MERGED 09:19 IDT Jul 6
 

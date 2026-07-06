@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-06 12:03 IDT";
+export const LAST_UPDATED = "2026-07-06 12:33 IDT";
 
 export const WORKTREES = [
   {
@@ -208,6 +208,32 @@ export const WORKTREES = [
     lastActive: "2026-07-02 06:50 IDT",
   },
   {
+    ticket: "JN-5827",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5827",
+    title: "Implement git tagging workflow for 3.5GA release",
+    branch: "jn-5827-git-tagging-workflow",
+    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5827-git-tagging-workflow",
+    zone: "Ingest",
+    pr: null,
+    prUrl: null,
+    status: "🆕 NEW (first detected 12:33 IDT Jul 6). Created 09:06 IDT Jul 6. Session 019f36af idle 09:11 IDT, 59 msgs — plan written. Still in Ingest zone. Jira: Backlog. Ready to move to Plan zone.",
+    blockedOn: null,
+    blockedType: "active",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f36afb2567e2b9f7d473b/",
+    sessionLabel: "plan",
+    recentSessions: [
+      {
+        sessionId: "019f36afb2567e2b9f7d473b",
+        url: "http://127.0.0.1:3030/ui/s/019f36afb2567e2b9f7d473b/",
+        title: "plan",
+        status: "idle",
+        timestamp: "2026-07-06 09:11 IDT",
+        outputFile: null,
+      },
+    ],
+    lastActive: "2026-07-06 09:11 IDT",
+  },
+  {
     ticket: null,
     ticketUrl: null,
     title: "fix-dashboard-syntax-error (ZOMBIE)",
@@ -374,6 +400,10 @@ export const MERGED = [
 ];
 
 export const ALERTS = [
+  {
+    level: "green",
+    message: "🆕 jn-5827-git-tagging-workflow first detected (12:33 IDT Jul 6). Created 09:06 IDT, session idle 09:11 IDT with plan written (59 msgs). JN-5827 Backlog. Still in Ingest zone — ready to move to Plan.",
+  },
   {
     level: "green",
     message: "🎉 PR #1631 (JN-5717, off-board) MERGED at 09:19 IDT Jul 6 ✅ — all CI passed, APPROVED. No board worktree to archive. Update JN-5717 Jira → Done (currently 'Backlog').",

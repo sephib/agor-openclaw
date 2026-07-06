@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-06 12:33 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "🆕 jn-5827-git-tagging-workflow first detected (created 09:06 IDT, plan written); board otherwise static; #1606 CONFLICTING+e2e ❌ unchanged; #1588 CONFLICTING+pre-commit ❌ unchanged; 2 Jira mismatches remain (JN-5717/5794); 10 Agor+2 unregistered=12 tracked; 0 auto-advances",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f36c373f77c15b8357ad0/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-06 12:03 IDT",
     actions: 0,
     findings: 5,
