@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-06 13:33 IDT";
+export const LAST_UPDATED = "2026-07-06 14:03 IDT";
 
 export const WORKTREES = [
   {
@@ -375,8 +375,12 @@ export const MERGED = [
 
 export const ALERTS = [
   {
+    level: "green",
+    message: "✅ Sprint cleanup 14:03 IDT Jul 6: JN-5783 (Define git tagging workflow) → Done; JN-5789 (HOTFIX search_experiments JSONB path mismatch) → Done. Cleared from sprint tracking.",
+  },
+  {
     level: "yellow",
-    message: "⚠️ JN-5788 status changed Backlog → Waiting/Blocked ('Verify Visibility Notebook in Production Environment'). No board worktree. Flag for triage.",
+    message: "⚠️ JN-5788 ('Verify Visibility Notebook in Production Environment'): Waiting/Blocked, no board worktree. Flag for triage.",
   },
   {
     level: "green",

@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-06 13:33 IDT (advance heartbeat — weekday daytime)*
+*Last updated: 2026-07-06 14:03 IDT (advance heartbeat — weekday daytime)*
 
 ---
 
@@ -36,11 +36,10 @@
 | Ticket | Summary | Jira Status | Notes |
 |--------|---------|-------------|-------|
 | [JN-5790](https://redhat.atlassian.net/browse/JN-5790) | [DEV] Add integration-run to GitHub required status checks | **Waiting/Blocked** | No worktree |
-| [JN-5789](https://redhat.atlassian.net/browse/JN-5789) | [HOTFIX] Fix search_experiments() JSONB path mismatch | **Waiting/Blocked** | Related to JN-5793 (merged via #1639) |
-| [JN-5788](https://redhat.atlassian.net/browse/JN-5788) | Verify Visibility Notebook in Production Environment | **Waiting/Blocked** ← was Backlog | No worktree — status changed this run |
-| [JN-5783](https://redhat.atlassian.net/browse/JN-5783) | [RESEARCH] Define git tagging workflow | **Backlog** | No worktree |
+| [JN-5789](https://redhat.atlassian.net/browse/JN-5789) | [HOTFIX] Fix search_experiments() JSONB path mismatch | ~~Waiting/Blocked~~ → **Done** ✅ | Cleared 14:03 IDT Jul 6 |
+| [JN-5788](https://redhat.atlassian.net/browse/JN-5788) | Verify Visibility Notebook in Production Environment | **Waiting/Blocked** | No worktree |
+| [JN-5783](https://redhat.atlassian.net/browse/JN-5783) | [RESEARCH] Define git tagging workflow | ~~Backlog~~ → **Done** ✅ | Cleared 14:03 IDT Jul 6 |
 | [JN-5728](https://redhat.atlassian.net/browse/JN-5728) | [DEV] Fix e2e CI workflow gaps | **Backlog** | No worktree |
-| [JN-5695](https://redhat.atlassian.net/browse/JN-5695) | Create db_connect script for readonly psql access | **Backlog** | Has PR #1596 (DRAFT CONFLICTING) |
 | [JN-5670](https://redhat.atlassian.net/browse/JN-5670) | Benchmark Visibility Dashboard | **In Progress** | No worktree |
 | [JN-5539](https://redhat.atlassian.net/browse/JN-5539) | Dependency & Build Standardization | **In Progress** | No worktree |
 | [JN-5678](https://redhat.atlassian.net/browse/JN-5678) | [DOCS] Dashboard README and setup instructions | **Backlog** | No worktree |
@@ -62,17 +61,17 @@
 
 ---
 
-## Key Changes Since Last Run (13:03 IDT Jul 6)
+## Key Changes Since Last Run (13:33 IDT Jul 6)
 
 | What observed | Status |
 |---|---|
-| **✅ jn-5780 ARCHIVED** | jn-5780-add-jn-project archived autonomously 13:34 IDT — JN-5780 Jira Done + 8+ days inactive. Removed from active worktrees. |
-| **fix-dashboard confirmed FAILED** | fix-dashboard-syntax-error confirmed in agor-openclaw repo with filesystem_status: "failed" (error: fatal: invalid reference: origin/private-julie). No PR, no Jira. 19+ days stale. Proposal to archive remains open. |
 | **PR #1606: unchanged** | 🔴 Still CONFLICTING + e2e ❌ (run 28527509341). No new CI. |
 | **PR #1588: unchanged** | 🔴 Still CONFLICTING + pre-commit ❌ (run 28469578445). No new CI. |
 | **PR #1596: unchanged** | DRAFT CONFLICTING. No activity. |
 | **Jira mismatches: unchanged** | JN-5717 still Backlog (PR #1631 merged); JN-5794 still In Review (PR #1643 merged) — confirmed via acli. |
-| **Board otherwise static** | No new merges, no CI changes since 13:03 IDT. |
+| **✅ JN-5783: Backlog → Done** | "[RESEARCH] Define git tagging workflow" is now Done in Jira. Removed from sprint-without-worktrees. |
+| **✅ JN-5789: Waiting/Blocked → Done** | "[HOTFIX] Fix search_experiments() JSONB path mismatch" is now Done in Jira. Removed from sprint-without-worktrees. |
+| **Board otherwise static** | No new merges, no CI changes since 13:33 IDT. |
 
 ---
 
