@@ -4212,3 +4212,15 @@
 - Next: monitor for #1588/#1606 rebase; Joseph to update JN-5717+JN-5794 Jira to Done; check Jira MCP auth
 
 ---
+## 11:33 IDT — Weekday Daytime Advance Heartbeat (2026-07-06)
+
+**Session:** 019f368c-84a1 | http://127.0.0.1:3030/ui/s/019f368c84a1709f88cfba4f/
+- PRs checked: #1588 (OPEN CONFLICTING + pre-commit ❌ run 28469578445 — unchanged), #1596 (DRAFT CONFLICTING — unchanged), #1606 (OPEN CONFLICTING + e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌ run 28527509341 — unchanged)
+- Merges detected: none — board static since 11:32 IDT
+- CI changes: none — all unchanged
+- Jira: JN-5717 still "Backlog" (PR #1631 merged Jul 6); JN-5794 still "In Review" (PR #1643 merged Jul 1). Jira MCP 401 — acli fallback used.
+- Auto-advances: 0
+- Flags: 🔴 #1588 CONFLICTING+pre-commit ❌, 🔴 #1606 CONFLICTING+e2e ❌, ⚠️ 2 Jira mismatches (JN-5717/5794), fix-dashboard ZOMBIE, jira-operations stale
+- Next: Joseph to rebase #1588/#1606 or close; update JN-5717+JN-5794 → Done; check Jira MCP auth
+
+---
