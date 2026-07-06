@@ -4322,3 +4322,18 @@
 - Auto-advances: 0
 - Flags: 🟡 #1588 actively worked but still CONFLICTING (needs rebase), 🔴 #1606 CONFLICTING+e2e ❌, ⚠️ 2 Jira mismatches (JN-5717/5794), ⚠️ monitoring gap ~5h, fix-dashboard ZOMBIE, jira-operations stale
 - Next: #1588 rebase to clear conflict + full CI run; Joseph to update JN-5717+JN-5794 → Done; investigate failed heartbeat sessions
+
+---
+## 00:00 IDT — Overnight Advance Heartbeat (2026-07-07)
+
+**Session:** 019f393b-30ed | http://127.0.0.1:3030/ui/s/019f393b30ed7d5b8805424b/
+- PRs checked: #1588 (OPEN, **now MERGEABLE** — rebased overnight! pre-commit ❌ run 28822455546), #1596 (DRAFT CONFLICTING — unchanged), #1606 (OPEN CONFLICTING + e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌ run 28527509341 — unchanged)
+- Merges detected: none — board static since #1631 Jul 6 09:19 IDT
+- CI changes: **#1588 MAJOR**: was CONFLICTING → now MERGEABLE. CI run 28822455546: build ✅, integration ✅, e2e ✅, tox ✅, nox ✅ — **pre-commit ❌ still failing** (4m28s, job 85477327366). #1606 no new CI since Jul 2.
+- Zone changes: jn-5546 moved Code Review → Respond zone overnight
+- Jira: JN-5717 still "Backlog" (PR #1631 merged Jul 6); JN-5794 still "In Review" (PR #1643 merged Jul 1) — confirmed via acli. Jira MCP still 401.
+- ⚠️ BOARD_STATE.md was ~3h old at run start (21:02 IDT Jul 6 → 00:00 IDT Jul 7)
+- Auto-advances: 0
+- Flags: 🟢 #1588 REBASED (MERGEABLE) but pre-commit ❌, 🔴 #1606 CONFLICTING+e2e ❌, ⚠️ 2 Jira mismatches (JN-5717/5794), ⚠️ Jira MCP 401
+- Next: Fix pre-commit on #1588 to clear all-checks; rebase #1606 or close; update JN-5717+JN-5794 → Done in Jira
+

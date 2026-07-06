@@ -1,6 +1,24 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-07 00:00 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "⚠️ ~3h gap (21:02→00:00 IDT); 🟢 #1588 REBASED overnight — now MERGEABLE (was CONFLICTING), pre-commit ❌ still; jn-5546 zone Code Review→Respond; #1606 CONFLICTING+e2e ❌ unchanged; 2 Jira mismatches (JN-5717/5794) unchanged; 0 auto-advances, 5 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f393b30ed7d5b8805424b/",
+  },
+  {
+    type: "advance",
+    timestamp: "2026-07-06 21:02 IDT",
+    actions: 0,
+    findings: 7,
+    status: "ok",
+    summary: "⚠️ 5h gap (16:00→21:02, 2 sessions FAILED); 🟡 #1588 ACTIVELY WORKED (3 new commits, build CI ✅, still CONFLICTING needs rebase); #1606 CONFLICTING+e2e ❌ unchanged; 2 Jira mismatches (JN-5717/5794) unchanged; 0 auto-advances, 7 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f389687ae74bea5ef988b/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-06 16:00 IDT",
     actions: 0,
     findings: 8,

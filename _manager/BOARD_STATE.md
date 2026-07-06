@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-06 21:02 IDT (advance heartbeat — weekday daytime)*
+*Last updated: 2026-07-07 00:00 IDT (advance heartbeat — overnight)*
 
 ---
 
@@ -8,7 +8,7 @@
 
 | Worktree | Zone | PR | CI | Jira | Status |
 |---------|------|----|----|------|--------|
-| jn-5546-docs-document-module-layout-convention-and-3 | Code Review | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | ⚠️ Build ✅ new runs (28811377xxx) — full CI not triggered (CONFLICTING) | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) — In Progress | 🟡 CONFLICTING — actively worked! 3 new commits since 16:00 IDT (latest 19:46 IDT). Build CI passing. Still needs rebase. |
+| jn-5546-docs-document-module-layout-convention-and-3 | **Respond** (was Code Review) | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | 🟡 MERGEABLE ✅ (rebased!) — Build ✅, integration ✅, e2e ✅, tox ✅, nox ✅ — **pre-commit ❌** (run 28822455546) | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) — In Progress | 🟡 REBASED OVERNIGHT — now MERGEABLE. Zone moved to Respond. Pre-commit still failing — fix needed before merge. |
 | jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | CONFLICTING | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) | 🔴 DRAFT CONFLICTING; frozen |
 | jn-5672-dal-ext-dashboard | BLOCKED | — | — | [JN-5672](https://redhat.atlassian.net/browse/JN-5672) | On hold — after notebooks complete |
 | model-packaging-cr | Code Review | — | — | — | ⚠️ model-packaging-pipeline repo. Created Jun 15. No PR URL set, stagnant 21+ days. Needs investigation or archive. |
@@ -61,16 +61,18 @@
 
 ---
 
-## Key Changes Since Last Run (16:00 IDT Jul 6)
+## Key Changes Since Last Run (21:02 IDT Jul 6)
 
 | What observed | Status |
 |---|---|
-| **⚠️ Monitoring gap detected** | ~5h gap in coverage (16:00 → 21:02 IDT). Sessions at 16:00 IDT (019f3829) and 17:00 IDT (019f3861) FAILED. Multiple runs missed. |
-| **🟡 PR #1588 ACTIVELY WORKED** | Joseph pushed 3 new commits: 16:13 IDT (`docs(slack-notify): add notification setup section`), 16:21 IDT (`docs: internal CR` + merge), 19:46 IDT (`docs(jbenchmark): address PR review feedback` — removes AI attribution HTML, fixes api_server description). Build CI (runs 28811377xxx) passing at 20:43 IDT. Full test suite not triggered (CONFLICTING state prevents merged-state test run). **PR still CONFLICTING — rebase needed.** |
-| **PR #1606: unchanged** | 🔴 Still CONFLICTING + e2e ❌ (run 28527509341). No new CI. |
+| **🟢 PR #1588 REBASED** | Joseph rebased overnight — now MERGEABLE (was CONFLICTING). CI run 28822455546: Build ✅, Integration ✅, e2e-tests ✅, tox ✅, nox ✅. **pre-commit ❌ (4m28s)** — still blocking all-checks. Zone moved from Code Review → Respond. |
+| **⚠️ #1588 pre-commit ❌** | CI run 28822455546 job 85477327366 fails at pre-commit-run step. Fix needed before merge. |
+| **jn-5546 zone: Code Review → Respond** | Worktree moved zones overnight. Consistent with PR review received + addressing feedback cycle. |
+| **PR #1606: unchanged** | 🔴 Still CONFLICTING + e2e ❌ (old run 28527509341). No new CI since Jul 2. |
 | **PR #1596: unchanged** | DRAFT CONFLICTING. No activity. |
-| **Jira mismatches: unchanged** | JN-5717 still Backlog (PR #1631 merged Jul 6); JN-5794 still In Review (PR #1643 merged Jul 1) — confirmed via acli. |
-| **Board otherwise static** | No new merges, no worktree zone changes since 16:00 IDT. |
+| **Jira mismatches: unchanged** | JN-5717 still Backlog (PR #1631 merged Jul 6); JN-5794 still In Review (PR #1643 merged Jul 1) — confirmed via acli. Jira MCP still 401. |
+| **No new merges** | Board static (no merges) since #1631 Jul 6 09:19 IDT. |
+| **~3h gap since last run** | 21:02 IDT Jul 6 → 00:00 IDT Jul 7. Only change detected: #1588 rebased. |
 
 ---
 
@@ -101,16 +103,23 @@ PR [#1631](https://github.com/Jounce-IO/jounce/pull/1631): `feat(jbenchmark): ca
 
 ---
 
-### 🟡 PR #1588 (JN-5546) — ACTIVELY WORKED, still CONFLICTING
+### 🟢 PR #1588 (JN-5546) — REBASED OVERNIGHT, pre-commit ❌
 
 PR [#1588](https://github.com/Jounce-IO/jounce/pull/1588): `docs(jbenchmark): add CONTRIBUTING.md and service READMEs`
-- **Status:** CONFLICTING (unchanged) but **3 new commits pushed since 16:00 IDT**
-- **New commits (latest head: `674026720279`):**
-  - 16:13 IDT Jul 6: `docs(slack-notify): add notification setup section to README (JN-5546)`
-  - 16:21 IDT Jul 6: `docs: internal CR` + merge commit
-  - 19:46 IDT Jul 6: `docs(jbenchmark): address PR review feedback (JN-5546)` — removes AI attribution HTML comments from service READMEs + CONTRIBUTING.md; fixes api_server README purpose description; removes stale Libraries dependency bullets; adds just pf explanation; adds valid Dockerfile target names
-- **CI for new head (runs 28811377xxx, started 20:43 IDT):** Build checks ✅ passing. Full test suite (pre-commit, tox, e2e) NOT triggered — CONFLICTING state prevents testing merged state.
-- **Action needed:** Rebase on main to clear conflict → full CI will run on merged state
+- **Status:** **MERGEABLE** ✅ (rebased overnight — was CONFLICTING)
+- **Latest commit:** Merge commit from main (`jn-5546-docs-module-layout`)
+- **Zone:** Moved from Code Review → **Respond**
+- **CI run 28822455546** (triggered after rebase):
+  - Build: ✅ all 7 service images passing
+  - Integration: ✅ (3m9s)
+  - e2e-tests: ✅ (3s)
+  - tox: ✅ (3m31s)
+  - nox: ✅ (4s)
+  - deploy: ✅
+  - **pre-commit: ❌ FAILING** (4m28s, job 85477327366)
+  - **all-checks: ❌** (blocked by pre-commit)
+  - e2e-smoke / e2e-api / e2e-product: skipping (requires merge)
+- **Action needed:** Fix pre-commit failure → full CI will pass → ready to merge
 
 ---
 
