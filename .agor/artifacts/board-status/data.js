@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-06 08:32 IDT";
+export const LAST_UPDATED = "2026-07-06 10:32 IDT";
 
 export const WORKTREES = [
   {
@@ -156,7 +156,7 @@ export const WORKTREES = [
     zone: "NO ZONE",
     pr: null,
     prUrl: null,
-    status: "⚠️ Still exists in Agor (uid=249, last updated Jun 25). Stale 11+ days — no sessions, no PR. Propose archive if no longer needed.",
+    status: "⚠️ Still exists in Agor (uid=249, last updated Jun 25). Stale 12+ days — no sessions, no PR. Propose archive if no longer needed.",
     blockedOn: "Stale, no activity",
     blockedType: "blocked",
     sessionUrl: null,
@@ -173,7 +173,7 @@ export const WORKTREES = [
     zone: "Plan",
     pr: "MR#887 (GitLab)",
     prUrl: "https://gitlab.com/redhat/rhel-ai/agentic-ci/autofix/-/merge_requests/887",
-    status: "ℹ️ jira-autofix repo (not jounce). Session done Jun 28 09:20 IDT. GitLab MR#887 pushed. Needs MR title fix (JN-5780: prefix). Idle.",
+    status: "ℹ️ jira-autofix repo (unregistered in Agor scan). Session done Jun 28 09:20 IDT. GitLab MR#887 pushed. Needs MR title fix (JN-5780: prefix). Idle.",
     blockedOn: null,
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f0d5ea7227d949e5baa9c/",
@@ -216,8 +216,8 @@ export const WORKTREES = [
     zone: "Plan",
     pr: null,
     prUrl: null,
-    status: "🔴 ZOMBIE: agor-openclaw repo, filesystem_status=FAILED. Created Jun 17 — 19+ days stale. Error: 'fatal: invalid reference: origin/private-julie'. No Jira, no PR. PROPOSAL: archive.",
-    blockedOn: "Filesystem FAILED",
+    status: "🔴 ZOMBIE: agor-openclaw repo — not found in Agor scan. Created Jun 17 — 19+ days stale. Error: 'fatal: invalid reference: origin/private-julie'. No Jira, no PR. PROPOSAL: archive.",
+    blockedOn: "Filesystem FAILED / unregistered repo",
     blockedType: "blocked",
     sessionUrl: null,
     sessionLabel: null,
@@ -228,13 +228,22 @@ export const WORKTREES = [
 
 export const MERGED = [
   {
+    ticket: "JN-5717",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5717",
+    title: "feat(jbenchmark): canonical export hash for release diff",
+    pr: "#1631",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1631",
+    mergedDate: "2026-07-06",
+    note: "Merged 09:19 IDT Jul 6 — off-board PR (no board worktree). All CI ✅, APPROVED. JN-5717 Jira still 'Backlog' → needs Done.",
+  },
+  {
     ticket: "JN-5794",
     ticketUrl: "https://redhat.atlassian.net/browse/JN-5794",
     title: "fix(ci): add all-checks aggregator gate to prevent auto-merge bypass",
     pr: "#1643",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1643",
     mergedDate: "2026-07-01",
-    note: "Merged 09:16 IDT Jul 1 — jn-5794-required-checks worktree auto-archived at 09:21 IDT. Reviewer APPROVED. JN-5794 Jira status unverifiable (access error) → verify manually.",
+    note: "Merged 09:16 IDT Jul 1 — jn-5794-required-checks worktree auto-archived at 09:21 IDT. Reviewer APPROVED. JN-5794 Jira still 'In Review' → needs Done.",
   },
   {
     ticket: "JN-5714",
@@ -252,7 +261,7 @@ export const MERGED = [
     pr: "#1639",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1639",
     mergedDate: "2026-06-30",
-    note: "Merged 10:41 IDT Jun 30 — worktree archived 11:00 IDT. All CI green + reviewer approved. Jira cannot verify (old instance error).",
+    note: "Merged 10:41 IDT Jun 30 — worktree archived 11:00 IDT. All CI green + reviewer approved. JN-5793 Jira: Done ✅ (confirmed Jul 6).",
   },
   {
     ticket: "JN-5677",
@@ -270,7 +279,7 @@ export const MERGED = [
     pr: "#1623",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1623",
     mergedDate: "2026-06-29",
-    note: "Merged 13:45 IDT Jun 29 — worktree archived 14:00 IDT. Jira still 'In Review' → needs 'Done'.",
+    note: "Merged 13:45 IDT Jun 29 — worktree archived 14:00 IDT. JN-5616 Jira: Done ✅ (confirmed Jul 6 via acli).",
   },
   {
     ticket: "JN-5612",
@@ -279,7 +288,7 @@ export const MERGED = [
     pr: "#1627",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1627",
     mergedDate: "2026-06-29",
-    note: "Merged 10:42 IDT Jun 29 — worktree archived 11:00 IDT. Jira still 'In Progress' → needs 'Done'.",
+    note: "Merged 10:42 IDT Jun 29 — worktree archived 11:00 IDT. JN-5612 Jira: Done ✅ (confirmed Jul 6 via acli).",
   },
   {
     ticket: "JN-5724",
@@ -288,7 +297,7 @@ export const MERGED = [
     pr: "#1622",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1622",
     mergedDate: "2026-06-29",
-    note: "Merged 10:17 IDT Jun 29 — worktree archived 10:30 IDT. Jira still 'In Review' → needs 'Done'.",
+    note: "Merged 10:17 IDT Jun 29 — worktree archived 10:30 IDT. JN-5724 Jira: Done ✅ (confirmed Jul 6 via acli).",
   },
   {
     ticket: "JN-5759",
@@ -367,7 +376,7 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "green",
-    message: "🟢 PR #1631 (JN-5717, off-board): NEW CI run 28753729034 — all checks ✅ (all-checks ✅, e2e-smoke ✅, e2e-api ✅, e2e-tests ✅, pre-commit ✅, integration ✅, tox ✅). Still OPEN/MERGEABLE. Awaiting merge.",
+    message: "🎉 PR #1631 (JN-5717, off-board) MERGED at 09:19 IDT Jul 6 ✅ — all CI passed, APPROVED. No board worktree to archive. Update JN-5717 Jira → Done (currently 'Backlog').",
   },
   {
     level: "red",
@@ -375,23 +384,27 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 fix-dashboard-syntax-error (Plan zone): ZOMBIE WORKTREE — agor-openclaw repo, filesystem FAILED since Jun 17 (19+ days). Error: 'fatal: invalid reference: origin/private-julie'. No PR, no Jira. PROPOSAL: archive this worktree.",
-  },
-  {
-    level: "red",
     message: "🔴 PR #1588 (JN-5546, Code Review zone): CONFLICTING + pre-commit ❌ — unchanged since Jul 1 10:30 IDT. CI run 28469578445: pre-commit ❌ + pre-commit-run ❌. Needs rebase + pre-commit fix.",
   },
   {
-    level: "yellow",
-    message: "⚠️ jira-operations still EXISTS in Agor (uid=249, NO ZONE, last updated Jun 25). Stale 11+ days — propose archive if no longer needed.",
+    level: "red",
+    message: "🔴 fix-dashboard-syntax-error (Plan zone): ZOMBIE WORKTREE — not found in Agor scan (agor-openclaw repo unregistered). Created Jun 17 — 19+ days stale. No PR, no Jira. PROPOSAL: archive this worktree.",
   },
   {
     level: "yellow",
-    message: "⚠️ Jira mismatches (3 confirmed + 2 unverifiable): JN-5612 (PR #1627 MERGED Jun 29, still 'In Progress'), JN-5616 (PR #1623 MERGED Jun 29, still 'In Review'), JN-5724 (PR #1622 MERGED Jun 29, still 'In Review'), JN-5794 (unverifiable — access error), JN-5793 (unverifiable — old instance error).",
+    message: "⚠️ Jira mismatches (2 active): JN-5717 (PR #1631 MERGED Jul 6, Jira 'Backlog' — NEW), JN-5794 (PR #1643 MERGED Jul 1, Jira 'In Review'). Cleared this run: JN-5612 ✅, JN-5616 ✅, JN-5724 ✅, JN-5793 ✅.",
   },
   {
-    level: "green",
-    message: "🎉 PR #1643 (JN-5794) MERGED at 09:16 IDT Jul 1 ✅ — jn-5794-required-checks auto-archived at 09:21 IDT. Verify JN-5794 Jira → Done (Jira MCP access error — check manually).",
+    level: "yellow",
+    message: "⚠️ jira-operations still EXISTS in Agor (uid=249, NO ZONE, last updated Jun 25). Stale 12+ days — propose archive if no longer needed.",
+  },
+  {
+    level: "yellow",
+    message: "⚠️ Jira MCP auth failure (HTTP 401) — used acli as fallback (works). May need to re-authenticate Jira MCP credentials.",
+  },
+  {
+    level: "yellow",
+    message: "⚠️ model-packaging-cr (Code Review zone, model-packaging-pipeline repo): Created Jun 15 — stagnant 21+ days. No PR URL set. Needs investigation or archive.",
   },
   {
     level: "info",
@@ -403,10 +416,6 @@ export const ALERTS = [
   },
   {
     level: "info",
-    message: "ℹ️ jn-5780-add-jn-project (Plan zone): jira-autofix repo, GitLab MR#887 pushed Jun 28. Needs MR title fix. Idle.",
-  },
-  {
-    level: "yellow",
-    message: "⚠️ model-packaging-cr (Code Review zone, model-packaging-pipeline repo): Created Jun 15 — stagnant 21+ days. No PR URL set. Needs investigation or archive.",
+    message: "ℹ️ jn-5780-add-jn-project (Plan zone): jira-autofix repo (unregistered in Agor scan), GitLab MR#887 pushed Jun 28. Needs MR title fix. Idle.",
   },
 ];

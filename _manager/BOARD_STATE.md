@@ -1,8 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-06 08:32 IDT (advance heartbeat — weekday daytime)*
-
-⚠️ Previous BOARD_STATE.md was 11.5 hours old (last updated 21:00 IDT Jul 5) — performed full refresh.
+*Last updated: 2026-07-06 10:32 IDT (advance heartbeat — weekday daytime)*
 
 ---
 
@@ -15,12 +13,12 @@
 | jn-5672-dal-ext-dashboard | BLOCKED | — | — | [JN-5672](https://redhat.atlassian.net/browse/JN-5672) | On hold — after notebooks complete |
 | model-packaging-cr | Code Review | — | — | — | ⚠️ model-packaging-pipeline repo. Created Jun 15. No PR URL set, stagnant 21+ days. Needs investigation or archive. |
 | jn-5244-cli-flags | Ingest | — | — | [JN-5244](https://redhat.atlassian.net/browse/JN-5244) | ℹ️ No sessions yet. Ready to ingest. |
-| jn-5841-agents-md-root | Ingest | — | — | [JN-5841](https://redhat.atlassian.net/browse/JN-5841) | 🆕 NEW as of 19:07 IDT Jul 5. Ingest session (019f3236) idle/completed. No PR yet. Ready for Plan phase. |
+| jn-5841-agents-md-root | Ingest | — | — | [JN-5841](https://redhat.atlassian.net/browse/JN-5841) | Ingest session (019f3236) idle/completed. No PR yet. Ready for Plan phase. |
 | jn-5795-upgrade-to-guidellm-v070 | NO ZONE | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — Backlog | ℹ️ Design session done (idle Jun 30 12:45 IDT). No zone assigned. Proposal: move to Plan zone. |
-| jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 11+ days with no session or PR. |
-| jn-5780-add-jn-project | Plan | GitLab [MR#887](https://gitlab.com/redhat/rhel-ai/agentic-ci/autofix/-/merge_requests/887) | — | [JN-5780](https://redhat.atlassian.net/browse/JN-5780) | ℹ️ jira-autofix repo. Session done Jun 28 09:20 IDT. MR pushed to GitLab. Needs title fix (JN-5780: prefix). |
-| fix-dashboard-syntax-error | Plan | — | — | — | 🔴 ZOMBIE: agor-openclaw repo, filesystem_status=FAILED. Created Jun 17, error: "fatal: invalid reference: origin/private-julie". 19+ days stale. No Jira, no PR. PROPOSAL: archive. |
-| sprint-planning-jul | Plan | — | — | — | ℹ️ Updated 06:50 IDT Jul 2. No sessions, no PR, no Jira. Sprint planning for July? Needs context. |
+| jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 12+ days with no session or PR. |
+| jn-5780-add-jn-project | Plan | GitLab [MR#887](https://gitlab.com/redhat/rhel-ai/agentic-ci/autofix/-/merge_requests/887) | — | [JN-5780](https://redhat.atlassian.net/browse/JN-5780) | ℹ️ jira-autofix repo (unregistered in Agor scan). Session done Jun 28. MR pushed. Idle. |
+| fix-dashboard-syntax-error | Plan | — | — | — | 🔴 ZOMBIE: agor-openclaw repo, not found in Agor scan. Created Jun 17, 19+ days stale. PROPOSAL: archive. |
+| sprint-planning-jul | Plan | — | — | — | ℹ️ Updated 06:50 IDT Jul 2. No sessions, no PR, no Jira. Sprint planning for July? |
 
 ---
 
@@ -29,7 +27,6 @@
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
 | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌ (run 28527509341) | 🔴 CONFLICTING | 🔴 CONFLICTING (since 10:00 IDT Jul 2). e2e failures persist. Jira Done. Needs rebase + fix e2e or close PR. |
-| [#1631](https://github.com/Jounce-IO/jounce/pull/1631) | jn-5717-export-hash-rehash | [JN-5717](https://redhat.atlassian.net/browse/JN-5717) — Backlog (Uri Shaket) | ✅ all CI ✅ (run 28753729034 — NEW since last heartbeat) | 🟢 MERGEABLE | All checks pass. New CI run since 21:00 IDT Jul 5. Awaiting merge. |
 
 ---
 
@@ -56,37 +53,35 @@
 
 | Ticket | PR | PR Status | Jira Status | Action |
 |--------|-----|-----------|-------------|--------|
-| [JN-5794](https://redhat.atlassian.net/browse/JN-5794) | [#1643](https://github.com/Jounce-IO/jounce/pull/1643) | MERGED Jul 1 09:16 IDT | **Cannot verify** (Jira MCP access error) | ❌ Verify in Jira → Done |
-| [JN-5612](https://redhat.atlassian.net/browse/JN-5612) | [#1627](https://github.com/Jounce-IO/jounce/pull/1627) | MERGED Jun 29 | **In Progress** | ❌ Update Jira → Done |
-| [JN-5616](https://redhat.atlassian.net/browse/JN-5616) | [#1623](https://github.com/Jounce-IO/jounce/pull/1623) | MERGED Jun 29 | **In Review** | ❌ Update Jira → Done |
-| [JN-5724](https://redhat.atlassian.net/browse/JN-5724) | [#1622](https://github.com/Jounce-IO/jounce/pull/1622) | MERGED Jun 29 | **In Review** | ❌ Update Jira → Done |
+| [JN-5717](https://redhat.atlassian.net/browse/JN-5717) | [#1631](https://github.com/Jounce-IO/jounce/pull/1631) | MERGED 09:19 IDT Jul 6 | **Backlog** | ❌ NEW: Update Jira → Done |
+| [JN-5794](https://redhat.atlassian.net/browse/JN-5794) | [#1643](https://github.com/Jounce-IO/jounce/pull/1643) | MERGED Jul 1 09:16 IDT | **In Review** | ❌ Update Jira → Done |
 | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | OPEN, CONFLICTING, e2e ❌ | **Done** | ⚠️ Ticket marked Done but PR open + conflicting |
-| [JN-5793](https://redhat.atlassian.net/browse/JN-5793) | [#1639](https://github.com/Jounce-IO/jounce/pull/1639) | MERGED Jun 30 10:41 IDT | **Cannot check** (old Jira instance error) | ⚠️ PR merged — verify Jira is Done |
+
+**Resolved this run:** JN-5612 ✅ Done, JN-5616 ✅ Done, JN-5724 ✅ Done, JN-5793 ✅ Done (all confirmed via acli).
 
 ---
 
-## Key Changes Since Last Run (21:00 IDT Jul 5)
+## Key Changes Since Last Run (08:32 IDT Jul 6)
 
 | What observed | Status |
 |---|---|
-| **PR #1631: new CI run** | 🆕 New CI run 28753729034 (vs 28744609795). All checks ✅ — still MERGEABLE. |
+| **PR #1631 MERGED** | 🎉 Merged at 09:19 IDT Jul 6 — off-board PR, no worktree to archive. JN-5717 Jira "Backlog" → needs Done. |
 | **PR #1606: unchanged** | 🔴 Still CONFLICTING + e2e ❌ (run 28527509341). No new CI. |
 | **PR #1588: unchanged** | 🔴 Still CONFLICTING + pre-commit ❌ (run 28469578445). No new CI. |
 | **PR #1596: unchanged** | DRAFT CONFLICTING. No activity. |
-| **No new merges** | No new merges since #1643 on Jul 1. |
-| **Jira mismatches: unchanged** | JN-5612 still "In Progress", JN-5616 still "In Review", JN-5724 still "In Review" (all PRs merged Jun 29). |
-| **Board worktree count** | 11 active worktrees confirmed (zones: Ingest×2, CodeReview×2, BLOCKED×2, Plan×3, NO ZONE×2) |
+| **Jira mismatches: 4 cleared!** | JN-5612, JN-5616, JN-5724, JN-5793 all now Done ✅ (confirmed via acli). 2 remain: JN-5717 (new) + JN-5794. |
+| **Jira MCP: 401 auth error** | Jira MCP returned 401 — used acli as fallback (works fine). |
+| **Board worktree scan** | 9 worktrees found in Agor scan. jn-5780 and fix-dashboard on unregistered repos (jira-autofix / agor-openclaw). |
 
 ---
 
 ## Attention Items
 
-### 🟢 PR #1631 (JN-5717) — NEW CI RUN, all ✅, awaiting merge (Off-board)
+### 🎉 PR #1631 (JN-5717) — MERGED 09:19 IDT Jul 6
 
 PR [#1631](https://github.com/Jounce-IO/jounce/pull/1631): `feat(jbenchmark): canonical export hash for release diff (JN-5717)`
-- **State:** OPEN, MERGEABLE — new CI run 28753729034 (triggered since 21:00 IDT Jul 5)
-- **CI:** all-checks ✅, e2e-smoke ✅, e2e-api ✅, e2e-tests ✅, pre-commit ✅, integration ✅, tox ✅
-- **Action:** Ready to merge once review is complete.
+- **State:** MERGED at 2026-07-06T06:19:21Z (09:19 IDT)
+- **Action:** Update [JN-5717](https://redhat.atlassian.net/browse/JN-5717) Jira → Done (currently "Backlog")
 
 ---
 
@@ -108,9 +103,18 @@ PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer):
 
 ---
 
+### ❌ Jira Mismatches (2 active)
+
+- [JN-5717](https://redhat.atlassian.net/browse/JN-5717): PR [#1631](https://github.com/Jounce-IO/jounce/pull/1631) MERGED 09:19 IDT Jul 6 → Jira still "Backlog" — **NEW this run**
+- [JN-5794](https://redhat.atlassian.net/browse/JN-5794): PR [#1643](https://github.com/Jounce-IO/jounce/pull/1643) MERGED Jul 1 → Jira still "In Review"
+
+**Cleared this run:** JN-5612 ✅, JN-5616 ✅, JN-5724 ✅, JN-5793 ✅
+
+---
+
 ### 🔴 fix-dashboard-syntax-error — ZOMBIE WORKTREE in Plan Zone
 
-- **Filesystem status:** FAILED — `fatal: invalid reference: origin/private-julie`
+- **Status:** Not found in current Agor scan (agor-openclaw repo — may be unregistered)
 - **Created:** Jun 17 2026 (19+ days stale)
 - **No PR, no Jira ticket**
 - **Action needed:** Archive this worktree
@@ -119,34 +123,25 @@ PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer):
 
 ### ⚠️ jira-operations — Stale (NO ZONE)
 
-- uid=249, last_used Jun 25 2026 (11+ days stale)
+- uid=249, last_used Jun 25 2026 (12+ days stale)
 - NO ZONE, no sessions, no PR
 - Still present but stale. If no longer needed, propose archive.
 
 ---
 
-### 🆕 jn-5841-agents-md-root — Ready for Plan (Ingest zone)
+### ⚠️ Jira MCP Auth Failure
 
-- Created 19:07 IDT Jul 5 by ingest session (019f3236, title: "Implement ingest — JN-5841 AGENTS.md + model-packaging-pipeline")
-- Jira: [JN-5841](https://redhat.atlassian.net/browse/JN-5841) — issue_url set
-- Session idle/completed. No PR yet. Ready for Plan phase.
-
----
-
-### ❌ Jira Mismatches (3 confirmed + 2 unverifiable)
-
-- [JN-5612](https://redhat.atlassian.net/browse/JN-5612): PR [#1627](https://github.com/Jounce-IO/jounce/pull/1627) MERGED Jun 29 → still "In Progress"
-- [JN-5616](https://redhat.atlassian.net/browse/JN-5616): PR [#1623](https://github.com/Jounce-IO/jounce/pull/1623) MERGED Jun 29 → still "In Review"
-- [JN-5724](https://redhat.atlassian.net/browse/JN-5724): PR [#1622](https://github.com/Jounce-IO/jounce/pull/1622) MERGED Jun 29 → still "In Review"
-- [JN-5794](https://redhat.atlassian.net/browse/JN-5794): PR [#1643](https://github.com/Jounce-IO/jounce/pull/1643) MERGED Jul 1 09:16 IDT → Jira unverifiable (access error)
-- [JN-5793](https://redhat.atlassian.net/browse/JN-5793): PR [#1639](https://github.com/Jounce-IO/jounce/pull/1639) MERGED Jun 30 → unverifiable (old Jira instance error)
+- Jira MCP returned HTTP 401 on all calls this run
+- **Fallback:** acli worked fine for all Jira lookups
+- **Action:** May need to re-authenticate Jira MCP credentials
 
 ---
 
-## Recently Merged (2026-07-01 / 2026-06-29)
+## Recently Merged (2026-07-06 / 2026-07-01 / 2026-06-29)
 
 | PR | Ticket | Merged | Worktree |
 |----|--------|--------|---------|
+| [#1631](https://github.com/Jounce-IO/jounce/pull/1631) | [JN-5717](https://redhat.atlassian.net/browse/JN-5717) | 09:19 IDT Jul 6 | Off-board PR — no worktree |
 | [#1643](https://github.com/Jounce-IO/jounce/pull/1643) | [JN-5794](https://redhat.atlassian.net/browse/JN-5794) | 09:16 IDT Jul 1 | Archived 09:21 IDT Jul 1 |
 | [#1628](https://github.com/Jounce-IO/jounce/pull/1628) | [JN-5714](https://redhat.atlassian.net/browse/JN-5714) | 15:39 IDT Jun 30 | Archived Jun 30 16:00 IDT |
 | [#1639](https://github.com/Jounce-IO/jounce/pull/1639) | [JN-5793](https://redhat.atlassian.net/browse/JN-5793) | 10:41 IDT Jun 30 | Archived Jun 30 11:00 IDT |

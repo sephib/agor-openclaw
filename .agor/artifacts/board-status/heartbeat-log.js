@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-06 10:32 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "PR #1631 MERGED 09:19 IDT Jul 6 (JN-5717, off-board, no worktree); 4 Jira mismatches cleared (JN-5612/5616/5724/5793 all Done via acli); 2 mismatches remain (JN-5717 new + JN-5794); #1606 CONFLICTING+e2e ❌ unchanged; #1588 CONFLICTING+pre-commit ❌ unchanged; Jira MCP 401, acli fallback used",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f3655957172fca1c0ada0/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-06 08:32 IDT",
     actions: 0,
     findings: 6,
