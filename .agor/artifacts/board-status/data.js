@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-06 13:03 IDT";
+export const LAST_UPDATED = "2026-07-06 13:33 IDT";
 
 export const WORKTREES = [
   {
@@ -163,32 +163,6 @@ export const WORKTREES = [
     sessionLabel: null,
     recentSessions: [],
     lastActive: "2026-06-25 07:41 IDT",
-  },
-  {
-    ticket: "JN-5780",
-    ticketUrl: "https://redhat.atlassian.net/browse/JN-5780",
-    title: "Add JN project to jira-autofix",
-    branch: "jn-5780-add-jn-project",
-    worktreePath: "/Users/josephberry/.agor/worktrees/redhat/jira-autofix/jn-5780-add-jn-project",
-    zone: "Plan",
-    pr: "MR#887 (GitLab)",
-    prUrl: "https://gitlab.com/redhat/rhel-ai/agentic-ci/autofix/-/merge_requests/887",
-    status: "ℹ️ jira-autofix repo (unregistered in Agor scan). Session done Jun 28 09:20 IDT. GitLab MR#887 pushed. Needs MR title fix (JN-5780: prefix). Idle.",
-    blockedOn: null,
-    blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f0d5ea7227d949e5baa9c/",
-    sessionLabel: "implement",
-    recentSessions: [
-      {
-        sessionId: "019f0d5e-a722-7d94-9e5b-aa9cbc71aa67",
-        url: "http://127.0.0.1:3030/ui/s/019f0d5ea7227d949e5baa9c/",
-        title: "implement",
-        status: "idle",
-        timestamp: "2026-06-28 09:20 IDT",
-        outputFile: null,
-      },
-    ],
-    lastActive: "2026-06-28 09:20 IDT",
   },
   {
     ticket: null,
@@ -405,8 +379,8 @@ export const ALERTS = [
     message: "⚠️ JN-5788 status changed Backlog → Waiting/Blocked ('Verify Visibility Notebook in Production Environment'). No board worktree. Flag for triage.",
   },
   {
-    level: "yellow",
-    message: "⚠️ jn-5780-add-jn-project (Plan zone): JN-5780 Jira is 'Done'. Worktree inactive since Jun 28. GitLab MR#887 was pushed — likely merged. PROPOSAL: archive worktree.",
+    level: "green",
+    message: "✅ jn-5780-add-jn-project ARCHIVED 13:34 IDT Jul 6 — JN-5780 Jira Done + 8+ days inactive (autonomous archive).",
   },
   {
     level: "green",
@@ -451,9 +425,5 @@ export const ALERTS = [
   {
     level: "info",
     message: "ℹ️ jn-5795-upgrade-to-guidellm-v070 (NO ZONE): Design session done Jun 30. Proposal: move to Plan zone.",
-  },
-  {
-    level: "info",
-    message: "ℹ️ jn-5780-add-jn-project (Plan zone): jira-autofix repo (unregistered in Agor scan), GitLab MR#887 pushed Jun 28. Needs MR title fix. Idle.",
   },
 ];

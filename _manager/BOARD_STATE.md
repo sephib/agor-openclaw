@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-06 13:03 IDT (advance heartbeat — weekday daytime)*
+*Last updated: 2026-07-06 13:33 IDT (advance heartbeat — weekday daytime)*
 
 ---
 
@@ -16,7 +16,7 @@
 | jn-5841-agents-md-root | Ingest | — | — | [JN-5841](https://redhat.atlassian.net/browse/JN-5841) | Ingest session (019f3236) idle/completed. No PR yet. Ready for Plan phase. |
 | jn-5795-upgrade-to-guidellm-v070 | NO ZONE | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — Backlog | ℹ️ Design session done (idle Jun 30 12:45 IDT). No zone assigned. Proposal: move to Plan zone. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 12+ days with no session or PR. |
-| jn-5780-add-jn-project | Plan | GitLab [MR#887](https://gitlab.com/redhat/rhel-ai/agentic-ci/autofix/-/merge_requests/887) | — | [JN-5780](https://redhat.atlassian.net/browse/JN-5780) | ℹ️ jira-autofix repo (unregistered in Agor scan). Session done Jun 28. MR pushed. Idle. |
+| ~~jn-5780-add-jn-project~~ | ~~Plan~~ | ~~GitLab MR#887~~ | — | [JN-5780](https://redhat.atlassian.net/browse/JN-5780) — Done | ✅ ARCHIVED 13:34 IDT Jul 6 — JN-5780 Done + inactive 8+ days (autonomous) |
 | fix-dashboard-syntax-error | Plan | — | — | — | 🔴 ZOMBIE: agor-openclaw repo, not found in Agor scan. Created Jun 17, 19+ days stale. PROPOSAL: archive. |
 | sprint-planning-jul | Plan | — | — | — | ℹ️ Updated 06:50 IDT Jul 2. No sessions, no PR, no Jira. Sprint planning for July? |
 | jn-5827-git-tagging-workflow | Ingest | — | — | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) — Backlog | 🆕 NEW (first detected this run). Created 09:06 IDT Jul 6. Session 019f36af idle 09:11 IDT, 59 msgs — plan written. Still in Ingest zone. Consider moving to Plan zone. |
@@ -62,23 +62,30 @@
 
 ---
 
-## Key Changes Since Last Run (12:33 IDT Jul 6)
+## Key Changes Since Last Run (13:03 IDT Jul 6)
 
 | What observed | Status |
 |---|---|
-| **🆕 JN-5788 status change** | Jira status changed Backlog → **Waiting/Blocked** ("Verify Visibility Notebook in Production Environment"). No worktree. |
-| **🆕 JN-5780 Jira Done** | JN-5780 ("Add JN project to autofix.json") now "Done" in Jira. Worktree jn-5780-add-jn-project still in Plan zone. Inactive since Jun 28. Propose archive. |
+| **✅ jn-5780 ARCHIVED** | jn-5780-add-jn-project archived autonomously 13:34 IDT — JN-5780 Jira Done + 8+ days inactive. Removed from active worktrees. |
+| **fix-dashboard confirmed FAILED** | fix-dashboard-syntax-error confirmed in agor-openclaw repo with filesystem_status: "failed" (error: fatal: invalid reference: origin/private-julie). No PR, no Jira. 19+ days stale. Proposal to archive remains open. |
 | **PR #1606: unchanged** | 🔴 Still CONFLICTING + e2e ❌ (run 28527509341). No new CI. |
 | **PR #1588: unchanged** | 🔴 Still CONFLICTING + pre-commit ❌ (run 28469578445). No new CI. |
 | **PR #1596: unchanged** | DRAFT CONFLICTING. No activity. |
 | **Jira mismatches: unchanged** | JN-5717 still Backlog (PR #1631 merged); JN-5794 still In Review (PR #1643 merged) — confirmed via acli. |
-| **Board static** | No new merges, no CI changes since 12:33 IDT. |
+| **Board otherwise static** | No new merges, no CI changes since 13:03 IDT. |
 
 ---
 
 ## Attention Items
 
-### 🆕 jn-5827-git-tagging-workflow — NEW WORKTREE (Ingest zone, plan written)
+### ✅ jn-5780-add-jn-project — ARCHIVED 13:34 IDT Jul 6
+
+- **Reason:** JN-5780 Jira status: Done. Worktree inactive since Jun 28 (8+ days). Per protocol: autonomous archive for Jira-Done + 24h+ inactive worktrees.
+- **Action taken:** `agor_branches_archive` called — confirmed archived.
+
+---
+
+### 🆕 jn-5827-git-tagging-workflow — Ingest zone (plan written)
 
 - **Created:** 09:06 IDT Jul 6 2026
 - **Session:** 019f36af (idle 09:11 IDT, 59 messages) — plan written and ready
@@ -145,6 +152,14 @@ PR [#1606](https://github.com/Jounce-IO/jounce/pull/1606): `feat(vllm-analyzer):
 - Jira MCP returned HTTP 401 on all calls this run
 - **Fallback:** acli worked fine for all Jira lookups
 - **Action:** May need to re-authenticate Jira MCP credentials
+
+---
+
+## Archived This Run
+
+| Worktree | Reason | Archived At |
+|---------|--------|------------|
+| jn-5780-add-jn-project | JN-5780 Jira Done + inactive 8+ days (autonomous) | 13:34 IDT Jul 6 |
 
 ---
 

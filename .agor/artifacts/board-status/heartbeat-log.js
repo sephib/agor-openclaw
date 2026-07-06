@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-06 13:33 IDT",
+    actions: 1,
+    findings: 8,
+    status: "ok",
+    summary: "jn-5780 ARCHIVED (JN-5780 Done + 8d inactive); fix-dashboard filesystem FAILED confirmed; board otherwise static since 13:03 IDT; #1606 CONFLICTING+e2e ❌ unchanged; #1588 CONFLICTING+pre-commit ❌ unchanged; 2 Jira mismatches remain (JN-5717/5794); 1 auto-advance, 8 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f373163ab727a9673b81c/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-06 13:03 IDT",
     actions: 0,
     findings: 7,

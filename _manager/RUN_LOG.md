@@ -4,6 +4,21 @@
 
 ---
 
+## 13:33 IDT — Weekday Daytime Advance Heartbeat (2026-07-06)
+
+**Session:** 019f3731-63ab | http://127.0.0.1:3030/ui/s/019f373163ab727a9673b81c/
+- PRs checked: #1588 (OPEN CONFLICTING, pre-commit ❌ run 28469578445 — unchanged), #1606 (OPEN CONFLICTING + e2e ❌ run 28527509341 — unchanged), #1596 (DRAFT CONFLICTING — unchanged)
+- Merges detected: none — no new merges since #1631 (09:19 IDT Jul 6)
+- CI changes: none
+- Jira: JN-5717 still "Backlog" (PR #1631 merged Jul 6), JN-5794 still "In Review" (PR #1643 merged Jul 1) — both unchanged; JN-5780 confirmed Done
+- Board scan: 10 Agor worktrees (9 jounce + 1 model-packaging + fix-dashboard agor-openclaw) + jira-operations NO ZONE + jn-5795 NO ZONE = 12 tracked. fix-dashboard confirmed filesystem_status: failed.
+- **Auto-archive: jn-5780-add-jn-project** — JN-5780 Jira Done + inactive 8+ days → archived autonomously at 13:34 IDT
+- Flags: 🔴 #1588 CONFLICTING+pre-commit ❌, 🔴 #1606 CONFLICTING+e2e ❌, ⚠️ 2 Jira mismatches (JN-5717/5794), fix-dashboard zombie FAILED, jira-operations stale
+- Auto-advances: 1 (jn-5780 archived)
+- Next: wait for Joseph to rebase #1606/#1588; Jira updates for JN-5717/5794 need manual action; fix-dashboard archive proposal remains open
+
+---
+
 ## 12:03 IDT — Weekday Daytime Advance Heartbeat (2026-07-06)
 
 **Session:** 019f36a7-fc19 | http://127.0.0.1:3030/ui/s/019f36a7fc197603aca22272/
