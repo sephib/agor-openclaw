@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-07 21:00 IDT";
+export const LAST_UPDATED = "2026-07-07 21:30 IDT";
 
 export const WORKTREES = [
   {
@@ -341,8 +341,8 @@ export const ALERTS = [
     message: "🟡 jn-5841 (JN-5841): Validate session 019f3d82 COMPLETE — IDLE + ready_for_prompt:TRUE (~20:03 IDT). Joseph needs to review validate output and advance to Publish (or revise).",
   },
   {
-    level: "yellow",
-    message: "🟡 PR #1638 — NEW CI run 28887503203 IN PROGRESS (21:00 IDT): tox ⏳ / e2e-api ⏳ / integration ⏳ / pre-commit ⏳ pending. bake ✅ / check-changes ✅ / atlas-validate ✅. Previous run 28885456652 had tox ❌ + nox ❌ — fix commit pushed. Monitoring.",
+    level: "red",
+    message: "🔴 PR #1638 — PERSISTENT FAILURE run 28888776070 (21:30 IDT): tox ❌ (4m41s) + nox ❌ + e2e-smoke ❌ (6m15s) + e2e-tests ❌ + all-checks ❌. pre-commit ✅ / e2e-api ✅ / integration ✅ / bake ✅. 3 consecutive tox+nox failures — fix attempts not resolving root cause.",
   },
   {
     level: "red",

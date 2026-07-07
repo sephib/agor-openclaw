@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-07 21:30 IDT",
+    actions: 0,
+    findings: 4,
+    status: "ok",
+    summary: "#1638 run 28888776070 FAILED AGAIN (tox ❌+nox ❌+e2e-smoke ❌ — 3 consecutive failures, fix attempts not working); jn-5841 validate IDLE+ready_for_prompt:TRUE (PASSED, awaiting Publish advance); #1648 DRAFT CI ALL PASS unchanged; #1647 ❌+#1632 ✅ unchanged; Jira MCP 401; 0 auto-advances",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f3dd8758a7b0ba2ab7cf8/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-07 21:00 IDT",
     actions: 0,
     findings: 4,
