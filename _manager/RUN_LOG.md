@@ -317,3 +317,10 @@
 - Flags: 🟡 #1638 e2e-smoke PENDING (watch next run), 🟢 #1632 clean+ready, 🔴 #1606 CONFLICTING (5d+), 3 Jira mismatches, fix-dashboard ZOMBIE, jira-operations stale
 - Auto-advances: 0
 - Next: watch #1638 e2e-smoke result; monitor jn-5827 for PR; #1632 propose merge
+
+## 14:02 IDT — Weekday Daytime Heartbeat
+- PRs checked: #1638 (OPEN, e2e-smoke ❌ run 28860142915), #1647 (OPEN, pre-commit ❌ run 28859743579), #1632 (OPEN, all-checks ✅), #1606 (OPEN, CONFLICTING)
+- Merges detected: none
+- CI changes: #1638 e2e-smoke CONFIRMED FAIL (was PENDING last run); #1647 e2e NOW PASS but pre-commit NEW FAILURE
+- Flags: jn-5841 MOVED→Code zone; implement session 019f3c21 TIMED_OUT with DIRTY git state (ready_for_prompt: true); Jira MCP 401 + acli silent (3 mismatches unverifiable)
+- Next: Watch jn-5841 timed_out session; Joseph to review jn-5827 dirty state; fix pre-commit on #1647; investigate e2e on #1638

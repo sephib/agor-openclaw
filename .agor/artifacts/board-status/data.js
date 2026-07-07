@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-07 13:00 IDT";
+export const LAST_UPDATED = "2026-07-07 14:02 IDT";
 
 export const WORKTREES = [
   {
@@ -58,21 +58,29 @@ export const WORKTREES = [
     title: "AGENTS.md + model-packaging-pipeline (JN-5841)",
     branch: "jn-5841-agents-md-root",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5841-agents-md-root",
-    zone: "Ingest",
+    zone: "Code",
     pr: null,
     prUrl: null,
-    status: "Plan revision session 019f3ba0 ('Revise JN-5841 plan — PR #1588 merged') — idle 08:39 IDT Jul 7. ready_for_prompt: true. Awaiting next action.",
-    blockedOn: null,
-    blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f3ba0711d7cc5b4df3e9c/",
-    sessionLabel: "plan-revision",
+    status: "🔴 MOVED TO CODE ZONE. Implement session 019f3c21 TIMED OUT — git DIRTY, ready_for_prompt: true. Plan revision session 019f3ba0 idle (ready_for_prompt: false). Needs review.",
+    blockedOn: "Session timed out mid-work",
+    blockedType: "blocked",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f3c219a667dc09a7dcdad/",
+    sessionLabel: "implement (timed_out)",
     recentSessions: [
+      {
+        sessionId: "019f3c219a667dc09a7dcdad",
+        url: "http://127.0.0.1:3030/ui/s/019f3c219a667dc09a7dcdad/",
+        title: "implement (timed_out)",
+        status: "timed_out",
+        timestamp: "2026-07-07 13:47 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f3ba0711d7cc5b4df3e9c",
         url: "http://127.0.0.1:3030/ui/s/019f3ba0711d7cc5b4df3e9c/",
         title: "plan-revision",
         status: "idle",
-        timestamp: "2026-07-07 08:39 IDT",
+        timestamp: "2026-07-07 09:58 IDT",
         outputFile: null,
       },
       {
@@ -84,7 +92,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-07 08:39 IDT",
+    lastActive: "2026-07-07 13:47 IDT",
   },
   {
     ticket: "JN-5244",
@@ -112,7 +120,7 @@ export const WORKTREES = [
     zone: "Ingest",
     pr: null,
     prUrl: null,
-    status: "🆕 MOVED TO INGEST (was NO ZONE). Design session done Jun 30. Ready for /implement:plan trigger.",
+    status: "Design session done Jun 30. Ready for /implement:plan trigger.",
     blockedOn: null,
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f185c2c687ed7bbdd1902/",
@@ -155,7 +163,7 @@ export const WORKTREES = [
     zone: "Code",
     pr: null,
     prUrl: null,
-    status: "Code session 019f3b88 — ready_for_prompt changed true→false at 12:41 IDT (may have received prompt from Joseph). Git DIRTY (uncommitted changes). No PR yet.",
+    status: "Code session 019f3b88 idle since 09:41 IDT Jul 7. Git DIRTY (uncommitted changes). ready_for_prompt: false. No PR yet. Awaiting Joseph review/next prompt.",
     blockedOn: null,
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f3b8835787ddbb7b645b5/",
@@ -166,7 +174,7 @@ export const WORKTREES = [
         url: "http://127.0.0.1:3030/ui/s/019f3b8835787ddbb7b645b5/",
         title: "code",
         status: "idle",
-        timestamp: "2026-07-07 12:41 IDT",
+        timestamp: "2026-07-07 09:41 IDT",
         outputFile: null,
       },
       {
@@ -178,7 +186,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-07 08:32 IDT",
+    lastActive: "2026-07-07 09:41 IDT",
   },
   {
     ticket: null,
@@ -285,51 +293,43 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "yellow",
-    message: "🟡 PR #1638 (NEW run 28856989908): NEAR GREEN! All critical checks PASS (e2e-api ✅, integration ✅, pre-commit ✅, tox ✅, nox ✅, bake ✅). Only e2e-smoke ⏳ PENDING (was ❌). If passes → merge candidate. Watch next heartbeat.",
+    level: "red",
+    message: "🔴 jn-5841 (JN-5841): MOVED TO CODE ZONE. Implement session 019f3c21 TIMED OUT with git DIRTY state — ready_for_prompt: true. Plan-revision session 019f3ba0 idle. Review needed.",
+  },
+  {
+    level: "red",
+    message: "🔴 PR #1638 (run 28860142915): e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌. Was near-green last run (PENDING). Confirmed failing. Needs e2e investigation.",
   },
   {
     level: "yellow",
-    message: "🟡 PR #1647 (new run 28857608952): e2e-api ❌, e2e-tests ❌ (same pattern). Integration/tox/nox ✅.",
+    message: "🟡 PR #1647 (run 28859743579): pre-commit ❌ + all-checks ❌. e2e NOW PASS (smoke ✅, api ✅, tests ✅). Fix pre-commit to unblock.",
   },
   {
     level: "yellow",
-    message: "🔔 jn-5827 (JN-5827): Code session 019f3b88 — ready_for_prompt changed true→false at 12:41 IDT Jul 7. May have received a prompt from Joseph. Git DIRTY. No PR yet.",
-  },
-  {
-    level: "yellow",
-    message: "🟡 jn-5841 (JN-5841): Plan revision session 019f3ba0 — ready_for_prompt: true, last updated 12:58 IDT Jul 7. Awaiting review or next session trigger.",
+    message: "🔔 jn-5827 (JN-5827): Code session 019f3b88 idle since 09:41 IDT Jul 7. Git DIRTY. ready_for_prompt: false. No PR yet. Awaiting Joseph review.",
   },
   {
     level: "green",
-    message: "🆕 jn-5795 (JN-5795): MOVED TO INGEST zone (was NO ZONE). Design done Jun 30. Ready for /implement:plan trigger.",
+    message: "✅ PR #1632 (JN-5719): All CI ✅ (run 28775331183), REVIEW_REQUIRED, MERGEABLE. Ready to merge. Unchanged.",
   },
   {
     level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): CONFLICTING (since 10:00 IDT Jul 2, 5+ days). e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌ (run 28527509341). Jira Done. Needs rebase + e2e fix or close PR.",
+    message: "🔴 PR #1606 (JN-5725, off-board): CONFLICTING (since 10:00 IDT Jul 2, 5+ days). e2e ❌ + all-checks ❌. Jira Done. Needs rebase + e2e fix or close PR.",
   },
   {
     level: "red",
-    message: "❌ Jira mismatches (3, confirmed via acli): JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5794 'In Review' (PR #1643 merged Jul 1), JN-5546 'In Progress' (PR #1588 merged Jul 7). Jira MCP 401.",
-  },
-  {
-    level: "green",
-    message: "✅ PR #1632 (JN-5719, off-board): All CI ✅ (run 28775331183), REVIEW_REQUIRED, MERGEABLE. Ready to merge. Unchanged.",
+    message: "❌ Jira mismatches (3, unverifiable — MCP 401 + acli silent): JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5794 'In Review' (PR #1643 merged Jul 1), JN-5546 'In Progress' (PR #1588 merged Jul 7).",
   },
   {
     level: "red",
-    message: "🔴 fix-dashboard-syntax-error (Plan zone): ZOMBIE WORKTREE — not found in Agor scan (agor-openclaw repo unregistered). Created Jun 17 — 20+ days stale. No PR, no Jira. PROPOSAL: archive.",
+    message: "🔴 fix-dashboard-syntax-error (Plan zone): ZOMBIE WORKTREE — agor-openclaw repo. Created Jun 17 — 20+ days stale. No PR, no Jira. PROPOSAL: archive.",
   },
   {
     level: "yellow",
-    message: "⚠️ sprint-planning-jul: NOT FOUND in Plan zone scan this run (Plan zone returned 0). May have been archived by Joseph or moved to unzoned.",
+    message: "⚠️ jira-operations: NO ZONE, stale 12+ days (last Jun 25). No sessions, no PR. Propose archive.",
   },
   {
     level: "yellow",
-    message: "⚠️ jira-operations still EXISTS in Agor (uid=249, NO ZONE, last updated Jun 25). Stale 12+ days — propose archive if no longer needed.",
-  },
-  {
-    level: "yellow",
-    message: "⚠️ model-packaging-cr (Code Review zone, model-packaging-pipeline repo): Created Jun 15 — stagnant 22+ days. No PR URL set. Needs investigation or archive.",
+    message: "⚠️ model-packaging-cr (Code Review zone): stagnant 22+ days. No PR URL set. Needs investigation or archive.",
   },
 ];
