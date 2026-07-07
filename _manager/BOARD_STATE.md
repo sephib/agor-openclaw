@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-07 21:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-07 22:00 IDT (advance heartbeat)*
 
 ---
 
@@ -15,7 +15,6 @@
 | jn-5841-agents-md-root | **Validate** | — | — | [JN-5841](https://redhat.atlassian.net/browse/JN-5841) | 🟡 Validate session [019f3d82](http://127.0.0.1:3030/ui/s/019f3d8216db751081637244/) "Validate JN-5841 — AGENTS.md + CLAUDE.md refactor" **IDLE + ready_for_prompt: TRUE** (completed ~20:03 IDT). Joseph needs to review validate output and advance. |
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — Backlog | Design session done Jun 30. Ready for Plan phase. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 12+ days with no session or PR. |
-| fix-dashboard-syntax-error | Plan | — | — | — | 🔴 ZOMBIE: agor-openclaw repo, filesystem_status=FAILED. 20+ days stale. PROPOSAL: archive. |
 | jn-5827-git-tagging-workflow | **Publish** | [#1648 DRAFT](https://github.com/Jounce-IO/jounce/pull/1648) | 🟢 **ALL PASS** (run 28885455833) | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) | 🟢 **CI ALL PASS** (run 28885455833): pre-commit ✅, tox ✅, nox ✅, all-checks ✅. e2e/bake SKIPPING (DRAFT). **Ready to remove DRAFT flag** → triggers full e2e. |
 
 ---
@@ -26,7 +25,7 @@
 |----|--------|------|----|-------|-------|
 | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ CONFLICTING | 🔴 CONFLICTING | 🔴 CONFLICTING 5+ days. Needs rebase + fix e2e or close PR. |
 | [#1647](https://github.com/Jounce-IO/jounce/pull/1647) | feat/migrate-dev-to-openshift-gcp | [JN-5445](https://redhat.atlassian.net/browse/JN-5445) (likely) | 🔴 **pre-commit ❌ + e2e-product ❌** (run 28869593069) | MERGEABLE | 🔴 **DEGRADED**: run 28869593069 — e2e-product ❌ (32m25s, FAILED) + pre-commit ❌. Two blockers. Unchanged. |
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | 🔴 **tox ❌ + nox ❌** NEW run 28885456652 + e2e-smoke ⏳ | MERGEABLE | 🔴 **NEW RUN REGRESSION** (run 28885456652): tox ❌ (5m4s) + nox ❌. e2e-smoke PENDING. pre-commit ✅ / e2e-api ✅ / integration ✅ / bake ✅. Previous run 28864329208 had e2e-product ❌; now tox+nox also failing. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | 🟡 **NEW run 28890999091** — tox ✅ nox ✅ bake ✅ e2e-api ✅ integration ✅; pre-commit ⏳ e2e-smoke ⏳ | MERGEABLE | 🟡 **RECOVERY**: run 28890999091 — tox ✅ (4m39s) + nox ✅ + bake ✅ + e2e-api ✅ + integration ✅. **tox+nox now PASSING** after 3 consecutive failures. pre-commit ⏳ PENDING + e2e-smoke ⏳ PENDING. Watch next run. |
 | [#1632](https://github.com/Jounce-IO/jounce/pull/1632) | jn-5719-release-diff | [JN-5719](https://redhat.atlassian.net/browse/JN-5719) | ✅ all-checks ✅ (run 28775331183) | MERGEABLE | 🟢 CLEAN! All CI passing. REVIEW_REQUIRED. Ready to merge. |
 
 ---
@@ -54,16 +53,17 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes Since Last Run (21:00 IDT Jul 7)
+## Key Changes Since Last Run (21:30 IDT Jul 7)
 
 | What observed | Status |
 |---|---|
-| **🔴 #1638 run 28888776070 FAILED AGAIN** | Run 28887503203 (IN PROGRESS at 21:00 IDT) completed and was superseded by run 28888776070: tox ❌ (4m41s) + nox ❌ + e2e-smoke ❌ (6m15s) + e2e-tests ❌ + all-checks ❌. pre-commit ✅ / e2e-api ✅ / integration ✅ / bake ✅. Fix attempts not working — 3rd+ consecutive tox+nox failure. Persistent blocker. |
-| **jn-5841 — Unchanged** | Validate session [019f3d82](http://127.0.0.1:3030/ui/s/019f3d8216db751081637244/) IDLE + ready_for_prompt: TRUE (confirmed). Validate PASSED (pre-commit, hooks, docs all green). Joseph needs to review and advance to Publish. |
-| **#1648 (jn-5827) — Unchanged** | DRAFT, CI ALL PASS (run 28885455833 unchanged). Remove DRAFT flag to trigger full e2e. |
-| **#1647 — Unchanged** | pre-commit ❌ + e2e-product ❌ (run 28869593069). |
+| **🟡 #1638 RECOVERY — new CI run 28890999091** | **tox ✅ + nox ✅** NOW PASSING after 3 consecutive failures! bake ✅, e2e-api ✅, integration ✅ also PASS. pre-commit ⏳ PENDING + e2e-smoke ⏳ PENDING. If pre-commit+e2e-smoke pass → #1638 back to near-clean. Watch next run. |
+| **fix-dashboard-syntax-error GONE** | No longer appears in Agor MCP board scan. Appears Joseph archived it between 21:30 and 22:00 IDT. Removing from Active Worktrees. |
+| **jn-5841 — Unchanged** | Validate session [019f3d82](http://127.0.0.1:3030/ui/s/019f3d8216db751081637244/) IDLE + ready_for_prompt: TRUE (confirmed). Joseph needs to review and advance to Publish. |
+| **#1648 (jn-5827) — Unchanged** | DRAFT, CI ALL PASS (run 28885455833 unchanged). Internal CR retry session ready_for_prompt: TRUE. |
+| **#1647 — Unchanged** | pre-commit ❌ + e2e-product ❌ (run 28869593069). No new run. |
 | **#1632 — Unchanged** | All CI ✅, REVIEW_REQUIRED. Ready to merge. |
-| **Jira mismatches** | Jira MCP 401 error this run. Last confirmed 18:32 IDT Jul 7 — unchanged (JN-5717/5794/5546 all still need Done). |
+| **Jira mismatches** | Confirmed via acli 22:00 IDT Jul 7 — JN-5717 "Backlog", JN-5794 "In Review", JN-5546 "In Progress". All need → Done. |
 | **No merges detected** | 0 auto-archives this run. |
 
 ---
@@ -89,14 +89,13 @@ Worktree `jn-5841-agents-md-root` in **Validate** zone:
 
 ---
 
-### 🔴 PR #1638 — PERSISTENT FAILURE: tox ❌ + nox ❌ + e2e-smoke ❌ (Run 28888776070)
+### 🟡 PR #1638 — RECOVERING: tox ✅ + nox ✅ NOW PASSING (Run 28890999091)
 
-PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): `chore(infra): vLLM analyzer prerequisites`
-- **Latest CI run 28888776070** (21:30 IDT): tox ❌ (4m41s) + nox ❌ + e2e-smoke ❌ (6m15s) + e2e-tests ❌ + all-checks ❌
-- pre-commit ✅, e2e-api ✅, integration ✅, bake ✅
-- Run 28887503203 (tracked at 21:00 IDT as "IN PROGRESS") completed and was superseded by 28888776070 — both failed.
-- **Pattern:** 3 consecutive runs (28885456652, 28887503203, 28888776070) all failing on tox+nox. Fix attempts not resolving the root cause.
-- **Action:** Flag to ticket owner. Tox+nox failures need direct debugging — the root cause is unresolved.
+PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): `chore(infra): vLLM analyzer prerequisites - workflow improvements`
+- **Latest CI run 28890999091** (detected 22:00 IDT): **tox ✅ (4m39s) + nox ✅** — PASSING after 3 consecutive failures
+- bake ✅, e2e-api ✅ (3m43s), integration ✅ (2m53s), atlas-validate ✅, check-changes ✅, integration-tests ✅
+- **Still PENDING:** pre-commit ⏳ + e2e-smoke ⏳
+- **Action:** Watch next CI run for pre-commit and e2e-smoke results. If both pass → #1638 back to near-mergeable.
 
 ---
 
@@ -126,12 +125,11 @@ PR [#1632](https://github.com/Jounce-IO/jounce/pull/1632): `feat(jbenchmark): re
 
 ---
 
-### 🔴 fix-dashboard-syntax-error — ZOMBIE WORKTREE in Plan Zone
+### ✅ fix-dashboard-syntax-error — GONE (Archived by Joseph)
 
-- **Status:** agor-openclaw repo, filesystem_status=FAILED, 20+ days stale
-- **Created:** Jun 17 2026
-- **No PR, no Jira ticket**
-- **Action needed:** Archive this worktree (proposal pending)
+- No longer appears in Agor MCP board scan as of 22:00 IDT Jul 7
+- Appears Joseph archived this between 21:30 and 22:00 IDT
+- Removed from Active Worktrees tracking
 
 ---
 
@@ -147,9 +145,9 @@ PR [#1632](https://github.com/Jounce-IO/jounce/pull/1632): `feat(jbenchmark): re
 
 | Worktree | Reason | Archived At |
 |---------|--------|------------|
-| None | No merged/closed PRs detected | — |
+| fix-dashboard-syntax-error | No longer in Agor board scan — archived by Joseph | 21:30–22:00 IDT Jul 7 (approximate) |
 
-(jn-5780-add-jn-project archived 13:34 IDT Jul 6 in prior run)
+(jn-5780-add-jn-project archived 13:34 IDT Jul 6; fix-dashboard gone between 21:30–22:00 IDT Jul 7)
 
 ---
 

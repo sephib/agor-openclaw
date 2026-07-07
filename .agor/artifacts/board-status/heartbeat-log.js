@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-07 22:00 IDT",
+    actions: 0,
+    findings: 7,
+    status: "ok",
+    summary: "#1638 RECOVERING — run 28890999091: tox ✅+nox ✅ NOW PASSING (after 3 consecutive fails); pre-commit+e2e-smoke still PENDING. fix-dashboard-syntax-error GONE (archived by Joseph). jn-5841 validate still ready. #1648 CI green. Jira 3 mismatches confirmed acli. 0 auto-advances.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f3df3ed1977b797ca0f2e/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-07 21:30 IDT",
     actions: 0,
     findings: 4,

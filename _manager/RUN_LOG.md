@@ -440,3 +440,15 @@
 - Flags: 🟢 #1648 CI ALL PASS (remove DRAFT flag!), 🟡 jn-5841 validate COMPLETE (ready_for_prompt:TRUE — review needed), 🔴 #1638 REGRESSION (tox+nox), 🔴 #1647 pre-commit+e2e ❌, 🟢 #1632 ready to merge, 3 Jira mismatches, fix-dashboard ZOMBIE
 - Auto-advances: 0 (no merged PRs; jn-5841 validate session complete but review pending — not autonomous)
 - Next: Joseph removes #1648 DRAFT flag; Joseph reviews jn-5841 validate output; investigate #1638 tox+nox regression; merge #1632
+
+## 22:00 IDT — Overnight Advance Heartbeat (2026-07-07)
+
+**Session:** 019f3df3-ed19 | http://127.0.0.1:3030/ui/s/019f3df3ed1977b797ca0f2e/
+- PRs checked: #1648 (DRAFT OPEN — CI ALL PASS run 28885455833 — unchanged), #1638 (OPEN — NEW run 28890999091: tox ✅ nox ✅ RECOVERY + pre-commit ⏳ + e2e-smoke ⏳), #1647 (OPEN — pre-commit ❌ + e2e-product ❌ run 28869593069 — unchanged), #1632 (OPEN — all ✅ run 28775331183 REVIEW_REQUIRED — unchanged)
+- Merges detected: none — #1588 still last merge (08:10 IDT Jul 7)
+- CI changes: 🟡 #1638 NEW run 28890999091: tox ✅ + nox ✅ NOW PASSING after 3 consecutive failures. bake ✅ / e2e-api ✅ / integration ✅. pre-commit ⏳ + e2e-smoke ⏳ still pending.
+- Board: 8 worktrees confirmed (fix-dashboard-syntax-error GONE — no longer in Agor MCP scan, archived by Joseph). jn-5841 validate session IDLE+ready_for_prompt:TRUE (unchanged). jn-5827 internal CR retry ready_for_prompt:TRUE (unchanged).
+- Jira: 3 mismatches confirmed via acli 22:00 IDT — JN-5717 "Backlog", JN-5794 "In Review", JN-5546 "In Progress". All need → Done.
+- Flags: 🟡 #1638 RECOVERING (tox+nox pass, awaiting pre-commit+e2e-smoke), 🟡 jn-5841 validate awaiting review, 🟢 jn-5827/PR #1648 CI green (remove DRAFT), 🔴 #1647 two blockers, 🟢 #1632 ready to merge, 3 Jira mismatches, jira-operations stale, model-packaging-cr stale
+- Auto-advances: 0 (fix-dashboard archived by Joseph — not auto-archive by Julie; no merged PRs)
+- Next: watch #1638 pre-commit+e2e-smoke; jn-5841 needs Joseph's review; Joseph removes #1648 DRAFT flag; merge #1632

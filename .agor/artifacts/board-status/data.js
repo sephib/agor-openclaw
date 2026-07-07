@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-07 21:30 IDT";
+export const LAST_UPDATED = "2026-07-07 22:00 IDT";
 
 export const WORKTREES = [
   {
@@ -228,23 +228,6 @@ export const WORKTREES = [
     ],
     lastActive: "2026-07-07 19:59 IDT",
   },
-  {
-    ticket: null,
-    ticketUrl: null,
-    title: "fix-dashboard-syntax-error (ZOMBIE)",
-    branch: "fix-dashboard-syntax-error",
-    worktreePath: "/Users/josephberry/.agor/worktrees/local/agor-openclaw/fix-dashboard-syntax-error",
-    zone: "Plan",
-    pr: null,
-    prUrl: null,
-    status: "🔴 ZOMBIE: agor-openclaw repo — filesystem_status=FAILED. Created Jun 17 — 20+ days stale. No Jira, no PR. PROPOSAL: archive.",
-    blockedOn: "Filesystem FAILED / unregistered repo",
-    blockedType: "blocked",
-    sessionUrl: null,
-    sessionLabel: null,
-    recentSessions: [],
-    lastActive: "2026-06-17 10:22 IDT",
-  },
 ];
 
 export const MERGED = [
@@ -341,8 +324,8 @@ export const ALERTS = [
     message: "🟡 jn-5841 (JN-5841): Validate session 019f3d82 COMPLETE — IDLE + ready_for_prompt:TRUE (~20:03 IDT). Joseph needs to review validate output and advance to Publish (or revise).",
   },
   {
-    level: "red",
-    message: "🔴 PR #1638 — PERSISTENT FAILURE run 28888776070 (21:30 IDT): tox ❌ (4m41s) + nox ❌ + e2e-smoke ❌ (6m15s) + e2e-tests ❌ + all-checks ❌. pre-commit ✅ / e2e-api ✅ / integration ✅ / bake ✅. 3 consecutive tox+nox failures — fix attempts not resolving root cause.",
+    level: "yellow",
+    message: "🟡 PR #1638 — RECOVERING: run 28890999091 — tox ✅ (4m39s) + nox ✅ NOW PASSING after 3 consecutive failures. bake ✅ / e2e-api ✅ / integration ✅ also pass. pre-commit ⏳ + e2e-smoke ⏳ still PENDING. Watch next run.",
   },
   {
     level: "red",
@@ -358,11 +341,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "❌ Jira mismatches (3, confirmed acli 18:32 IDT Jul 7): JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5794 'In Review' (PR #1643 merged Jul 1), JN-5546 'In Progress' (PR #1588 merged Jul 7). All need → Done.",
-  },
-  {
-    level: "red",
-    message: "🔴 fix-dashboard-syntax-error (Plan zone): ZOMBIE WORKTREE — filesystem_status=FAILED. agor-openclaw repo. Created Jun 17 — 20+ days stale. No PR, no Jira. PROPOSAL: archive.",
+    message: "❌ Jira mismatches (3, confirmed acli 22:00 IDT Jul 7): JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5794 'In Review' (PR #1643 merged Jul 1), JN-5546 'In Progress' (PR #1588 merged Jul 7). All need → Done.",
   },
   {
     level: "yellow",
