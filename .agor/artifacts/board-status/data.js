@@ -1,32 +1,6 @@
-export const LAST_UPDATED = "2026-07-07 11:03 IDT";
+export const LAST_UPDATED = "2026-07-07 11:33 IDT";
 
 export const WORKTREES = [
-  {
-    ticket: "JN-5546",
-    ticketUrl: "https://redhat.atlassian.net/browse/JN-5546",
-    title: "Document module layout convention",
-    branch: "jn-5546-docs",
-    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5546-docs-document-module-layout-convention-and-3",
-    zone: "Respond",
-    pr: "#1588",
-    prUrl: "https://github.com/Jounce-IO/jounce/pull/1588",
-    status: "🟡 2 commits pushed today (09:44+10:30 IDT Jul 7). CI run 28850119657 — pre-commit ⏳ PENDING (still running 11:03 IDT). integration ✅ tox ✅ nox ✅ e2e ✅ atlas ✅ deploy ✅. PR: APPROVED ✅ MERGEABLE ✅. Once pre-commit passes → ready to merge.",
-    blockedOn: "CI run 28850119657 in progress (pre-commit pending at 11:03 IDT)",
-    blockedType: "active",
-    sessionUrl: "http://localhost:3030/ui/s/019ed01e5624752fbade0eab/",
-    sessionLabel: "fix session",
-    recentSessions: [
-      {
-        sessionId: "019ed01e5624752fbade0eab",
-        url: "http://127.0.0.1:3030/ui/s/019ed01e5624752fbade0eab/",
-        title: "fix",
-        status: "completed",
-        timestamp: "2026-06-17 10:14 IDT",
-        outputFile: null,
-      },
-    ],
-    lastActive: "2026-07-07 10:30 IDT",
-  },
   {
     ticket: null,
     ticketUrl: null,
@@ -87,12 +61,20 @@ export const WORKTREES = [
     zone: "Ingest",
     pr: null,
     prUrl: null,
-    status: "🆕 Ingest session completed (019f3236, 'Implement ingest — JN-5841 AGENTS.md + model-packaging-pipeline'). No PR yet. Ready for Plan phase.",
+    status: "🆕 NEW: Plan revision session 019f3ba0 ('Revise JN-5841 plan — PR #1588 merged, deduplicate content') — idle 08:36 IDT Jul 7. Adjusting scope now that JN-5546 (PR #1588) merged.",
     blockedOn: null,
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f3236cdab755bade4395a/",
-    sessionLabel: "ingest",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f3ba0711d7cc5b4df3e9c/",
+    sessionLabel: "plan-revision",
     recentSessions: [
+      {
+        sessionId: "019f3ba0711d7cc5b4df3e9c",
+        url: "http://127.0.0.1:3030/ui/s/019f3ba0711d7cc5b4df3e9c/",
+        title: "plan-revision",
+        status: "idle",
+        timestamp: "2026-07-07 08:36 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f3236cdab755bade4395a",
         url: "http://127.0.0.1:3030/ui/s/019f3236cdab755bade4395a/",
@@ -102,7 +84,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-05 19:07 IDT",
+    lastActive: "2026-07-07 08:36 IDT",
   },
   {
     ticket: "JN-5244",
@@ -190,12 +172,20 @@ export const WORKTREES = [
     zone: "Code",
     pr: null,
     prUrl: null,
-    status: "🆕 ZONE CHANGE: Ingest → Code (detected 11:03 IDT Jul 7). Plan session 019f36af idle 09:11 IDT Jul 6 (59 msgs). Implementation underway or queued. No PR yet.",
+    status: "🆕 NEW CODE SESSION 019f3b88 ('verify gh workflow + update justfile') — idle 08:32 IDT Jul 7. Git state DIRTY (uncommitted changes). Fork of plan session. Implementation underway. No PR yet.",
     blockedOn: null,
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f36afb2567e2b9f7d473b/",
-    sessionLabel: "plan",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f3b8835787ddbb7b645b5/",
+    sessionLabel: "code",
     recentSessions: [
+      {
+        sessionId: "019f3b8835787ddbb7b645b5",
+        url: "http://127.0.0.1:3030/ui/s/019f3b8835787ddbb7b645b5/",
+        title: "code",
+        status: "idle",
+        timestamp: "2026-07-07 08:32 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f36afb2567e2b9f7d473b",
         url: "http://127.0.0.1:3030/ui/s/019f36afb2567e2b9f7d473b/",
@@ -205,7 +195,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-06 09:11 IDT",
+    lastActive: "2026-07-07 08:32 IDT",
   },
   {
     ticket: null,
@@ -227,6 +217,15 @@ export const WORKTREES = [
 ];
 
 export const MERGED = [
+  {
+    ticket: "JN-5546",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5546",
+    title: "docs(jbenchmark): add CONTRIBUTING.md and service READMEs",
+    pr: "#1588",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1588",
+    mergedDate: "2026-07-07",
+    note: "Merged 11:10 IDT Jul 7. APPROVED ✅. Agor worktree (jn-5546-...-3) already deleted from Agor by Joseph. JN-5841 plan being revised to dedup content.",
+  },
   {
     ticket: "JN-5717",
     ticketUrl: "https://redhat.atlassian.net/browse/JN-5717",
@@ -261,7 +260,7 @@ export const MERGED = [
     pr: "#1639",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1639",
     mergedDate: "2026-06-30",
-    note: "Merged 10:41 IDT Jun 30 — worktree archived 11:00 IDT. All CI green + reviewer approved. JN-5793 Jira: Done ✅ (confirmed Jul 6).",
+    note: "Merged 10:41 IDT Jun 30 — worktree archived 11:00 IDT. All CI green + reviewer approved. JN-5793 Jira: Done ✅.",
   },
   {
     ticket: "JN-5677",
@@ -279,7 +278,7 @@ export const MERGED = [
     pr: "#1623",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1623",
     mergedDate: "2026-06-29",
-    note: "Merged 13:45 IDT Jun 29 — worktree archived 14:00 IDT. JN-5616 Jira: Done ✅ (confirmed Jul 6 via acli).",
+    note: "Merged 13:45 IDT Jun 29 — worktree archived 14:00 IDT. JN-5616 Jira: Done ✅.",
   },
   {
     ticket: "JN-5612",
@@ -288,7 +287,7 @@ export const MERGED = [
     pr: "#1627",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1627",
     mergedDate: "2026-06-29",
-    note: "Merged 10:42 IDT Jun 29 — worktree archived 11:00 IDT. JN-5612 Jira: Done ✅ (confirmed Jul 6 via acli).",
+    note: "Merged 10:42 IDT Jun 29 — worktree archived 11:00 IDT. JN-5612 Jira: Done ✅.",
   },
   {
     ticket: "JN-5724",
@@ -297,118 +296,38 @@ export const MERGED = [
     pr: "#1622",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1622",
     mergedDate: "2026-06-29",
-    note: "Merged 10:17 IDT Jun 29 — worktree archived 10:30 IDT. JN-5724 Jira: Done ✅ (confirmed Jul 6 via acli).",
-  },
-  {
-    ticket: "JN-5759",
-    ticketUrl: null,
-    title: "fix(validator): add missing detail field to responses multimodal test",
-    pr: "#1619",
-    prUrl: "https://github.com/Jounce-IO/jounce/pull/1619",
-    mergedDate: "2026-06-23",
-    note: "Merged 12:30 IDT Jun 23 — off-board PR; caused #1606 to re-conflict",
-  },
-  {
-    ticket: "JN-5676",
-    ticketUrl: "https://redhat.atlassian.net/browse/JN-5676",
-    title: "Notebook scaffold + operational mode",
-    pr: "#1604",
-    prUrl: "https://github.com/Jounce-IO/jounce/pull/1604",
-    mergedDate: "2026-06-23",
-    note: "Merged 10:51 IDT Jun 23 — worktree archived 11:30 IDT heartbeat",
-  },
-  {
-    ticket: "JN-5685/JN-5679",
-    ticketUrl: "https://redhat.atlassian.net/browse/JN-5685",
-    title: "Monotonicity verdict persistence tables and ingestion",
-    pr: "#1602",
-    prUrl: "https://github.com/Jounce-IO/jounce/pull/1602",
-    mergedDate: "2026-06-22",
-    note: "Merged 14:34 IDT Jun 22 — off-board PR by Uri Shaket",
-  },
-  {
-    ticket: "JN-5675",
-    ticketUrl: "https://redhat.atlassian.net/browse/JN-5675",
-    title: "Historical visibility functions",
-    pr: "#1601",
-    prUrl: "https://github.com/Jounce-IO/jounce/pull/1601",
-    mergedDate: "2026-06-21",
-    note: "Merged 16:15 IDT Jun 21 — worktree archived 14:30 IDT",
-  },
-  {
-    ticket: "JN-5730",
-    ticketUrl: "https://redhat.atlassian.net/browse/JN-5730",
-    title: "Auto apply jbenchmark and argocd labels",
-    pr: "#1605",
-    prUrl: "https://github.com/Jounce-IO/jounce/pull/1605",
-    mergedDate: "2026-06-21",
-    note: "Merged 10:50 IDT Jun 21 by ushaket — off-board PR",
-  },
-  {
-    ticket: "JN-5729",
-    ticketUrl: "https://redhat.atlassian.net/browse/JN-5729",
-    title: "Hotfix: pin uv default Python to 3.13",
-    pr: "#1608",
-    prUrl: "https://github.com/Jounce-IO/jounce/pull/1608",
-    mergedDate: "2026-06-21",
-    note: "Merged 09:37 IDT Jun 21 — worktrees archived 12:00 IDT",
-  },
-  {
-    ticket: "JN-5674",
-    ticketUrl: "https://redhat.atlassian.net/browse/JN-5674",
-    title: "Operational visibility functions",
-    pr: "#1599",
-    prUrl: "https://github.com/Jounce-IO/jounce/pull/1599",
-    mergedDate: "2026-06-18",
-    note: "Merged 23:55 IDT Jun 18 — Jira Done confirmed Jun 23",
-  },
-  {
-    ticket: "JN-5673",
-    ticketUrl: "https://redhat.atlassian.net/browse/JN-5673",
-    title: "Visibility module scaffold",
-    pr: "#1595",
-    prUrl: "https://github.com/Jounce-IO/jounce/pull/1595",
-    mergedDate: "2026-06-17",
-    note: "Jira Done confirmed Jun 23 (was stale In Review for 6 days)",
+    note: "Merged 10:17 IDT Jun 29 — worktree archived 10:30 IDT. JN-5724 Jira: Done ✅.",
   },
 ];
 
 export const ALERTS = [
   {
-    level: "info",
-    message: "🆕 jn-5827 ZONE CHANGE: Ingest → Code (detected 11:03 IDT Jul 7). Plan session (59 msgs) already done. Implementation underway. Watch for new session or PR.",
-  },
-  {
-    level: "yellow",
-    message: "🟡 PR #1588 (JN-5546): CI run 28850119657 — pre-commit ⏳ PENDING (still running at 11:03 IDT). integration ✅ tox ✅ nox ✅ e2e ✅ atlas ✅. APPROVED ✅ MERGEABLE ✅. Once pre-commit passes → ready to merge.",
+    level: "green",
+    message: "🎉 PR #1588 (JN-5546) MERGED at 11:10 IDT Jul 7! docs(jbenchmark): add CONTRIBUTING.md and service READMEs. APPROVED ✅. Agor worktree already deleted by Joseph. JN-5841 plan being revised to dedup content.",
   },
   {
     level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): CONFLICTING (since 10:00 IDT Jul 2). e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌ (run 28527509341). Jira Done. Needs rebase + e2e fix or close PR.",
+    message: "🔴 PR #1638 ESCALATED: New CI run 28852129751 — pre-commit ❌ + tox ❌ + nox ❌ (was only e2e failures in run 28808026450). New regressions introduced. e2e-smoke still pending.",
   },
   {
     level: "yellow",
-    message: "⚠️ Jira mismatches (2 active): JN-5717 (PR #1631 MERGED Jul 6, Jira 'Backlog'), JN-5794 (PR #1643 MERGED Jul 1, Jira 'In Review' — 5 days stale). Cleared earlier: JN-5612 ✅, JN-5616 ✅, JN-5724 ✅, JN-5793 ✅.",
-  },
-  {
-    level: "green",
-    message: "✅ Sprint cleanup 14:03 IDT Jul 6: JN-5783 (Define git tagging workflow) → Done; JN-5789 (HOTFIX search_experiments JSONB path mismatch) → Done. Cleared from sprint tracking.",
+    message: "🟡 jn-5827 (JN-5827): Code session 019f3b88 ('verify gh workflow + update justfile') idle since 08:32 IDT Jul 7. Git DIRTY (uncommitted changes). No PR yet. Implementation in progress.",
   },
   {
     level: "yellow",
-    message: "⚠️ JN-5788 ('Verify Visibility Notebook in Production Environment'): Waiting/Blocked, no board worktree. Flag for triage.",
+    message: "🟡 jn-5841 (JN-5841): Plan revision session 019f3ba0 ('Revise plan — PR #1588 merged, deduplicate content') idle since 08:36 IDT Jul 7. Scope being adjusted.",
+  },
+  {
+    level: "red",
+    message: "🔴 PR #1606 (JN-5725, off-board): CONFLICTING (since 10:00 IDT Jul 2, 5+ days). e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌ (run 28527509341). Jira Done. Needs rebase + e2e fix or close PR.",
+  },
+  {
+    level: "yellow",
+    message: "⚠️ Jira mismatches (3 active): JN-5717 (PR #1631 MERGED Jul 6, Jira 'Backlog'), JN-5794 (PR #1643 MERGED Jul 1, Jira 'In Review'), JN-5546 (PR #1588 MERGED Jul 7 — verify Jira → Done).",
   },
   {
     level: "green",
-    message: "✅ jn-5780-add-jn-project ARCHIVED 13:34 IDT Jul 6 — JN-5780 Jira Done + 8+ days inactive (autonomous archive).",
-  },
-  {
-    level: "green",
-    message: "ℹ️ jn-5827-git-tagging-workflow: moved to Code zone 11:03 IDT Jul 7. Plan session idle 09:11 IDT Jul 6 (59 msgs). Implementation underway.",
-  },
-  {
-    level: "green",
-    message: "🎉 PR #1631 (JN-5717, off-board) MERGED at 09:19 IDT Jul 6 ✅ — all CI passed, APPROVED. No board worktree to archive. Update JN-5717 Jira → Done (currently 'Backlog').",
+    message: "✅ PR #1632 (JN-5719, off-board): All CI ✅ (run 28775331183), REVIEW_REQUIRED, MERGEABLE. Ready to merge. Unchanged since Jul 6.",
   },
   {
     level: "red",
@@ -420,15 +339,11 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⚠️ Jira MCP auth failure (HTTP 401) — used acli as fallback (works). May need to re-authenticate Jira MCP credentials.",
+    message: "⚠️ Jira MCP auth failure (HTTP 401) — can't verify Jira statuses this run. 3 mismatches (JN-5717/5794/5546) unverifiable via MCP.",
   },
   {
     level: "yellow",
     message: "⚠️ model-packaging-cr (Code Review zone, model-packaging-pipeline repo): Created Jun 15 — stagnant 22+ days. No PR URL set. Needs investigation or archive.",
-  },
-  {
-    level: "info",
-    message: "🆕 jn-5841-agents-md-root (Ingest zone): Ingest session 019f3236 idle/done. JN-5841 Jira set. Ready for Plan phase.",
   },
   {
     level: "info",
