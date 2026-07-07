@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-07 14:32 IDT (advance heartbeat)*
+*Last updated: 2026-07-07 16:03 IDT (advance heartbeat)*
 
 ---
 
@@ -54,29 +54,28 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes Since Last Run (14:02 IDT Jul 7)
+## Key Changes Since Last Run (14:32 IDT Jul 7)
 
 | What observed | Status |
 |---|---|
-| **🟢 PR #1638: MAJOR CI IMPROVEMENT** | New run 28861813002: e2e-smoke ✅, pre-commit ✅, e2e-api ✅, tox ✅, nox ✅, integration ✅, bake ✅. ONLY e2e-product PENDING. Was failing e2e-smoke last run. |
-| **PR #1647: pre-commit still FAIL** | Unchanged. Run 28859743579: pre-commit ❌. e2e all pass. |
+| **🔴 PR #1638: e2e-product FAILED** | NEW run 28864329208: e2e-product ❌ (15m37s — ran and FAILED). e2e-tests ❌. All other checks pass: e2e-smoke ✅, e2e-api ✅, pre-commit ✅, tox ✅, nox ✅, integration ✅, bake ✅. DOWNGRADE from "near-green" — was PENDING last run. |
+| **PR #1647: pre-commit still FAIL** | Unchanged. Same run 28859743579: pre-commit ❌. Everything else passes including e2e-product ✅. |
 | **jn-5841: no change** | Session 019f3c21 still timed_out, ready_for_prompt=true, git DIRTY. No new activity. |
-| **jn-5827: no change** | Session 019f3b88 idle 09:41 IDT, git DIRTY, no PR. Unchanged. |
-| **Jira mismatches: confirmed via acli** | acli working this run. All 3 mismatches confirmed: JN-5717 Backlog, JN-5794 In Review, JN-5546 In Progress. |
+| **jn-5827: no change** | Session 019f3b88 idle 09:41 IDT, git DIRTY, ready_for_prompt: false. Unchanged. |
+| **Jira mismatches: confirmed via acli** | All 3 mismatches confirmed: JN-5717 Backlog, JN-5794 In Review, JN-5546 In Progress. |
 | **PR #1632: unchanged** | All CI ✅, REVIEW_REQUIRED. Ready to merge. |
-| **model-packaging-cr: filesystem_status corrected** | Agor shows filesystem_status=ready (not failed). Still stale 22+ days, no PR. |
 
 ---
 
 ## Attention Items
 
-### 🟢 PR #1638 — NEAR-GREEN (e2e-product pending)
+### 🔴 PR #1638 — e2e-product FAILED (new run complete)
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): `chore(infra): vLLM analyzer prerequisites`
-- **CI run 28861813002:** e2e-smoke ✅, e2e-api ✅, pre-commit ✅, tox ✅, nox ✅, integration ✅, bake ✅
-- **e2e-product: PENDING** (only remaining check)
-- **Major improvement** from 14:02 run (e2e-smoke was failing)
-- **Action:** Monitor e2e-product. If it passes, PR is merge-ready.
+- **CI run 28864329208** (new, was PENDING last run): e2e-product ❌ (15m37s — ran and FAILED), e2e-tests ❌, all-checks ❌
+- **Passing:** e2e-smoke ✅, e2e-api ✅, pre-commit ✅, tox ✅, nox ✅, integration ✅, bake ✅
+- **Downgrade from near-green:** e2e-product is not a flake — it ran for 15m and failed. Needs investigation.
+- **Action:** Investigate e2e-product failure. PR is NOT merge-ready until resolved.
 
 ---
 

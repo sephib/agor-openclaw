@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-07 14:32 IDT";
+export const LAST_UPDATED = "2026-07-07 16:03 IDT";
 
 export const WORKTREES = [
   {
@@ -297,8 +297,8 @@ export const ALERTS = [
     message: "🔴 jn-5841 (JN-5841): MOVED TO CODE ZONE. Implement session 019f3c21 TIMED OUT with git DIRTY state — ready_for_prompt: true. Plan-revision session 019f3ba0 idle. Review needed.",
   },
   {
-    level: "green",
-    message: "🟢 PR #1638 (NEW run 28861813002): NEAR-GREEN — e2e-smoke ✅, e2e-api ✅, pre-commit ✅, tox ✅, nox ✅, integration ✅, bake ✅. ONLY e2e-product PENDING. Major improvement from 14:02 (was e2e-smoke ❌). Watch e2e-product — merge-ready once it passes.",
+    level: "red",
+    message: "🔴 PR #1638 (NEW run 28864329208): e2e-product ❌ FAILED (15m37s — ran and failed). e2e-tests ❌. all-checks ❌. e2e-smoke ✅ / e2e-api ✅ / pre-commit ✅ / tox ✅ / nox ✅ / integration ✅ / bake ✅. DOWNGRADE — was near-green when e2e-product was PENDING. Needs investigation.",
   },
   {
     level: "yellow",
