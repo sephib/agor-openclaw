@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-07 12:30 IDT";
+export const LAST_UPDATED = "2026-07-07 13:00 IDT";
 
 export const WORKTREES = [
   {
@@ -155,7 +155,7 @@ export const WORKTREES = [
     zone: "Code",
     pr: null,
     prUrl: null,
-    status: "Code session 019f3b88 ('verify gh workflow + update justfile') — idle 08:32 IDT Jul 7. ready_for_prompt: true. Git DIRTY (uncommitted changes). No PR yet.",
+    status: "Code session 019f3b88 — ready_for_prompt changed true→false at 12:41 IDT (may have received prompt from Joseph). Git DIRTY (uncommitted changes). No PR yet.",
     blockedOn: null,
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f3b8835787ddbb7b645b5/",
@@ -166,7 +166,7 @@ export const WORKTREES = [
         url: "http://127.0.0.1:3030/ui/s/019f3b8835787ddbb7b645b5/",
         title: "code",
         status: "idle",
-        timestamp: "2026-07-07 08:32 IDT",
+        timestamp: "2026-07-07 12:41 IDT",
         outputFile: null,
       },
       {
@@ -286,15 +286,19 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "yellow",
-    message: "🟡 PR #1638 (run 28854238947): Significant improvement from ESCALATED — pre-commit ✅, tox ✅, nox ✅, e2e-api ✅, integration ✅ all now PASS. Still failing: e2e-smoke ❌ + e2e-tests ❌ → all-checks ❌. Same e2e pattern as #1647. Investigate e2e infra issue.",
+    message: "🟡 PR #1638 (NEW run 28856989908): NEAR GREEN! All critical checks PASS (e2e-api ✅, integration ✅, pre-commit ✅, tox ✅, nox ✅, bake ✅). Only e2e-smoke ⏳ PENDING (was ❌). If passes → merge candidate. Watch next heartbeat.",
   },
   {
     level: "yellow",
-    message: "🟡 jn-5827 (JN-5827): Code session 019f3b88 ('verify gh workflow + update justfile') idle since 08:32 IDT Jul 7. ready_for_prompt: true. Git DIRTY (uncommitted changes). No PR yet.",
+    message: "🟡 PR #1647 (new run 28857608952): e2e-api ❌, e2e-tests ❌ (same pattern). Integration/tox/nox ✅.",
   },
   {
     level: "yellow",
-    message: "🟡 jn-5841 (JN-5841): Plan revision session 019f3ba0 idle since 08:39 IDT Jul 7. ready_for_prompt: true. Scope deduplication from JN-5546 (PR #1588 merged) complete.",
+    message: "🔔 jn-5827 (JN-5827): Code session 019f3b88 — ready_for_prompt changed true→false at 12:41 IDT Jul 7. May have received a prompt from Joseph. Git DIRTY. No PR yet.",
+  },
+  {
+    level: "yellow",
+    message: "🟡 jn-5841 (JN-5841): Plan revision session 019f3ba0 — ready_for_prompt: true, last updated 12:58 IDT Jul 7. Awaiting review or next session trigger.",
   },
   {
     level: "green",

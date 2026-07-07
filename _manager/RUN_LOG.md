@@ -302,3 +302,18 @@
 - Flags: 🎉 #1588 MERGED; 🔴 #1638 ESCALATED (new pre-commit+tox+nox failures); 🔴 #1606 CONFLICTING (5d stale); 3 Jira mismatches (JN-5717/5794/5546); fix-dashboard ZOMBIE; jira-operations stale
 - Auto-advances: 0 (jn-5546 worktree already removed from Agor by Joseph)
 - Next: Monitor jn-5827 for PR creation; watch #1638 e2e-smoke result; flag #1638 pre-commit regression
+
+---
+
+## 13:00 IDT — Weekday Daytime Advance Heartbeat (2026-07-07)
+
+**Session:** 019f3c05-7073 | http://127.0.0.1:3030/ui/s/019f3c0570737b70bcbba73f/
+- PRs checked: #1638 (OPEN MERGEABLE, e2e-smoke ⏳ PENDING new run 28856989908 — **NEAR GREEN**), #1647 (OPEN, e2e-api ❌ new run 28857608952 — same pattern), #1632 (OPEN MERGEABLE, all CI ✅ run 28775331183 — unchanged), #1606 (OPEN CONFLICTING + e2e ❌ run 28527509341 — unchanged), #1596 (DRAFT CONFLICTING — unchanged)
+- Merges detected: none — gh pr list (assignee + review-requested joberry) shows no new merges since #1588 (08:10 IDT Jul 7)
+- CI changes: 🟡 #1638 NEW run 28856989908: all critical checks PASS, e2e-smoke PENDING (was ❌). 🟡 #1647 NEW run 28857608952: same e2e pattern.
+- Board scan: 8 worktrees confirmed — Code×1 (jn-5827), Ingest×3 (jn-5244, jn-5795, jn-5841), BLOCKED×2 (jn-5672, jn-5695), Code Review×1 (model-packaging-cr), Plan×1 (fix-dashboard zombie). No zone changes.
+- Jira: MCP 401 — 3 mismatches still unverifiable (JN-5717 "Backlog", JN-5794 "In Review", JN-5546 "In Progress")
+- Session changes: jn-5827 session `ready_for_prompt` changed true→false (last updated 12:41 IDT — may have received prompt from Joseph). jn-5841 still ready_for_prompt: true.
+- Flags: 🟡 #1638 e2e-smoke PENDING (watch next run), 🟢 #1632 clean+ready, 🔴 #1606 CONFLICTING (5d+), 3 Jira mismatches, fix-dashboard ZOMBIE, jira-operations stale
+- Auto-advances: 0
+- Next: watch #1638 e2e-smoke result; monitor jn-5827 for PR; #1632 propose merge

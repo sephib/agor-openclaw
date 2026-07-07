@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-07 13:00 IDT",
+    actions: 0,
+    findings: 7,
+    status: "ok",
+    summary: "#1638 NEW run 28856989908 near-green (e2e-smoke PENDING); jn-5827 ready_for_prompt→false at 12:41 IDT; 3 Jira mismatches unchanged; 0 auto-advances",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f3c0570737b70bcbba73f/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-07 12:30 IDT",
     actions: 0,
     findings: 7,
