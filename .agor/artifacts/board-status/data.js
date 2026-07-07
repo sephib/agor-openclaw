@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-07 14:02 IDT";
+export const LAST_UPDATED = "2026-07-07 14:32 IDT";
 
 export const WORKTREES = [
   {
@@ -297,8 +297,8 @@ export const ALERTS = [
     message: "🔴 jn-5841 (JN-5841): MOVED TO CODE ZONE. Implement session 019f3c21 TIMED OUT with git DIRTY state — ready_for_prompt: true. Plan-revision session 019f3ba0 idle. Review needed.",
   },
   {
-    level: "red",
-    message: "🔴 PR #1638 (run 28860142915): e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌. Was near-green last run (PENDING). Confirmed failing. Needs e2e investigation.",
+    level: "green",
+    message: "🟢 PR #1638 (NEW run 28861813002): NEAR-GREEN — e2e-smoke ✅, e2e-api ✅, pre-commit ✅, tox ✅, nox ✅, integration ✅, bake ✅. ONLY e2e-product PENDING. Major improvement from 14:02 (was e2e-smoke ❌). Watch e2e-product — merge-ready once it passes.",
   },
   {
     level: "yellow",
@@ -318,7 +318,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "❌ Jira mismatches (3, unverifiable — MCP 401 + acli silent): JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5794 'In Review' (PR #1643 merged Jul 1), JN-5546 'In Progress' (PR #1588 merged Jul 7).",
+    message: "❌ Jira mismatches (3, confirmed acli 14:32 IDT Jul 7): JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5794 'In Review' (PR #1643 merged Jul 1), JN-5546 'In Progress' (PR #1588 merged Jul 7). All need → Done.",
   },
   {
     level: "red",

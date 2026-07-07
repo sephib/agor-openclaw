@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-07 14:02 IDT (advance heartbeat)*
+*Last updated: 2026-07-07 14:32 IDT (advance heartbeat)*
 
 ---
 
@@ -10,13 +10,13 @@
 |---------|------|----|----|------|--------|
 | jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | CONFLICTING | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) | 🔴 DRAFT CONFLICTING; frozen |
 | jn-5672-dal-ext-dashboard | BLOCKED | — | — | [JN-5672](https://redhat.atlassian.net/browse/JN-5672) | On hold — after notebooks complete |
-| model-packaging-cr | Code Review | — | — | — | ⚠️ model-packaging-pipeline repo. Created Jun 15. No PR URL set, stagnant 22+ days. Needs investigation or archive. |
+| model-packaging-cr | Code Review | — | — | — | ⚠️ model-packaging-pipeline repo. Created Jun 15. No PR URL set, no sessions. filesystem_status=ready. Stale 22+ days. Needs investigation or archive. |
 | jn-5244-cli-flags | Ingest | — | — | [JN-5244](https://redhat.atlassian.net/browse/JN-5244) | ℹ️ No sessions yet. Ready to ingest. |
-| jn-5841-agents-md-root | **Code** | — | — | [JN-5841](https://redhat.atlassian.net/browse/JN-5841) | 🔴 **MOVED TO CODE ZONE** (was Ingest). Implement session 019f3c21 **TIMED OUT**, git DIRTY, ready_for_prompt: true. Plan revision session 019f3ba0: idle, ready_for_prompt: false. |
+| jn-5841-agents-md-root | **Code** | — | — | [JN-5841](https://redhat.atlassian.net/browse/JN-5841) | 🔴 Session 019f3c21 **TIMED OUT**, git DIRTY (SHA: a99bdef), ready_for_prompt: true. Session 019f3ba0 idle (plan-revise). Needs resume or retry. |
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — Backlog | Design session done Jun 30. Ready for Plan phase. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 12+ days with no session or PR. |
-| fix-dashboard-syntax-error | Plan | — | — | — | 🔴 ZOMBIE: agor-openclaw repo, filesystem_status=failed. Created Jun 17, 20+ days stale. PROPOSAL: archive. |
-| jn-5827-git-tagging-workflow | Code | — | — | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) — Backlog | Code session 019f3b88 — idle, last updated 09:41 IDT Jul 7. Git DIRTY. ready_for_prompt: false. No PR yet. Likely waiting for Joseph review/prompt. |
+| fix-dashboard-syntax-error | Plan | — | — | — | 🔴 ZOMBIE: agor-openclaw repo, 20+ days stale. PROPOSAL: archive. |
+| jn-5827-git-tagging-workflow | Code | — | — | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) — Backlog | Session 019f3b88 idle since 09:41 IDT Jul 7, ready_for_prompt: false. Git DIRTY. No PR yet. Waiting for Joseph review/prompt. |
 
 ---
 
@@ -24,10 +24,10 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ all-checks ❌ (run 28527509341) | 🔴 CONFLICTING | 🔴 CONFLICTING (since 10:00 IDT Jul 2, 5+ days). e2e failures persist. Jira Done. Needs rebase + fix e2e or close PR. |
-| [#1647](https://github.com/Jounce-IO/jounce/pull/1647) | feat/migrate-dev-to-openshift-gcp | [JN-5445](https://redhat.atlassian.net/browse/JN-5445) (likely) | 🟡 **pre-commit ❌** + all-checks ❌ (run 28859743579) | MERGEABLE | 🟡 **CHANGE**: e2e now PASS (e2e-smoke ✅, e2e-tests ✅, e2e-api ✅). But pre-commit FAIL. integration/tox/nox ✅. Pre-commit failure blocks merge. |
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | 🔴 **e2e-smoke ❌ + e2e-tests ❌** (run 28860142915) | MERGEABLE | 🔴 **REGRESSION**: Was near-green (e2e-smoke PENDING) last run. New run 28860142915 confirms e2e-smoke FAIL, e2e-tests FAIL, all-checks FAIL. Other checks still pass. |
-| [#1632](https://github.com/Jounce-IO/jounce/pull/1632) | jn-5719-release-diff | [JN-5719](https://redhat.atlassian.net/browse/JN-5719) | ✅ all-checks ✅ (run 28775331183) | MERGEABLE | 🟢 CLEAN! All CI passing. REVIEW_REQUIRED. Unchanged. Ready to merge. |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ CONFLICTING | 🔴 CONFLICTING | 🔴 CONFLICTING 5+ days. Needs rebase + fix e2e or close PR. |
+| [#1647](https://github.com/Jounce-IO/jounce/pull/1647) | feat/migrate-dev-to-openshift-gcp | [JN-5445](https://redhat.atlassian.net/browse/JN-5445) (likely) | 🟡 **pre-commit ❌** (run 28859743579) | MERGEABLE | 🟡 e2e all ✅, integration/tox/nox ✅. pre-commit still FAIL. One blocker remains. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | 🟡 **e2e-product PENDING** (run 28861813002) | MERGEABLE | 🟢 **MAJOR IMPROVEMENT**: New run — e2e-smoke ✅, e2e-api ✅, pre-commit ✅, tox ✅, nox ✅, integration ✅, bake ✅. ONLY e2e-product still PENDING. Near merge-ready. |
+| [#1632](https://github.com/Jounce-IO/jounce/pull/1632) | jn-5719-release-diff | [JN-5719](https://redhat.atlassian.net/browse/JN-5719) | ✅ all-checks ✅ (run 28775331183) | MERGEABLE | 🟢 CLEAN! All CI passing. REVIEW_REQUIRED. Ready to merge. |
 
 ---
 
@@ -48,51 +48,51 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 | Ticket | PR | PR Status | Jira Status | Action |
 |--------|-----|-----------|-------------|--------|
-| [JN-5717](https://redhat.atlassian.net/browse/JN-5717) | [#1631](https://github.com/Jounce-IO/jounce/pull/1631) | MERGED 09:19 IDT Jul 6 | **Backlog** (MCP 401 + acli silent this run) | ❌ Update Jira → Done |
-| [JN-5794](https://redhat.atlassian.net/browse/JN-5794) | [#1643](https://github.com/Jounce-IO/jounce/pull/1643) | MERGED Jul 1 09:16 IDT | **In Review** (MCP 401 + acli silent this run) | ❌ Update Jira → Done |
-| [JN-5546](https://redhat.atlassian.net/browse/JN-5546) | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | MERGED 08:10 IDT Jul 7 | **In Progress** (MCP 401 + acli silent this run) | ❌ Update Jira → Done |
+| [JN-5717](https://redhat.atlassian.net/browse/JN-5717) | [#1631](https://github.com/Jounce-IO/jounce/pull/1631) | MERGED 09:19 IDT Jul 6 | **Backlog** (confirmed acli Jul 7 14:32 IDT) | ❌ Update Jira → Done |
+| [JN-5794](https://redhat.atlassian.net/browse/JN-5794) | [#1643](https://github.com/Jounce-IO/jounce/pull/1643) | MERGED Jul 1 09:16 IDT | **In Review** (confirmed acli Jul 7 14:32 IDT) | ❌ Update Jira → Done |
+| [JN-5546](https://redhat.atlassian.net/browse/JN-5546) | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | MERGED 08:10 IDT Jul 7 | **In Progress** (confirmed acli Jul 7 14:32 IDT) | ❌ Update Jira → Done |
 
 ---
 
-## Key Changes Since Last Run (13:00 IDT Jul 7)
+## Key Changes Since Last Run (14:02 IDT Jul 7)
 
 | What observed | Status |
 |---|---|
-| **🔴 PR #1638: e2e-smoke FAILED** | Run 28860142915 resolved: e2e-smoke ❌, e2e-tests ❌, all-checks ❌. Was PENDING last run. Not merge-ready. |
-| **🟡 PR #1647: e2e NOW PASS, pre-commit NOW FAIL** | Run 28859743579: e2e-smoke ✅, e2e-api ✅, e2e-tests ✅ — but pre-commit ❌. Shifted failure mode. |
-| **🔴 jn-5841: MOVED TO CODE ZONE** | Worktree moved from Ingest → Code. Implement session 019f3c21 TIMED OUT with DIRTY git state. ready_for_prompt: true. |
-| **jn-5827: still idle, DIRTY** | Session 019f3b88 idle since 09:41 IDT. Git DIRTY. No PR created yet. ready_for_prompt: false. |
-| **Jira mismatches: still unverifiable** | Jira MCP 401 + acli silent. 3 mismatches assumed unchanged. |
+| **🟢 PR #1638: MAJOR CI IMPROVEMENT** | New run 28861813002: e2e-smoke ✅, pre-commit ✅, e2e-api ✅, tox ✅, nox ✅, integration ✅, bake ✅. ONLY e2e-product PENDING. Was failing e2e-smoke last run. |
+| **PR #1647: pre-commit still FAIL** | Unchanged. Run 28859743579: pre-commit ❌. e2e all pass. |
+| **jn-5841: no change** | Session 019f3c21 still timed_out, ready_for_prompt=true, git DIRTY. No new activity. |
+| **jn-5827: no change** | Session 019f3b88 idle 09:41 IDT, git DIRTY, no PR. Unchanged. |
+| **Jira mismatches: confirmed via acli** | acli working this run. All 3 mismatches confirmed: JN-5717 Backlog, JN-5794 In Review, JN-5546 In Progress. |
 | **PR #1632: unchanged** | All CI ✅, REVIEW_REQUIRED. Ready to merge. |
+| **model-packaging-cr: filesystem_status corrected** | Agor shows filesystem_status=ready (not failed). Still stale 22+ days, no PR. |
 
 ---
 
 ## Attention Items
 
-### 🔴 jn-5841 — Implement Session TIMED OUT (Code Zone)
-
-Worktree `jn-5841-agents-md-root` moved to **Code zone**:
-- **Session 019f3c21** ("Implement JN-5841 — write AGENTS.md + refactor CLAUDE.md"): **timed_out**, `ready_for_prompt: true`, git DIRTY
-- **Session 019f3ba0** ("Revise JN-5841 plan — PR #1588 merged"): idle, `ready_for_prompt: false`
-- **Action:** Session 019f3c21 timed out mid-work. Review what it did and decide: resume, retry, or check what's in the DIRTY state.
-
----
-
-### 🔴 PR #1638 — e2e-smoke FAILED (Regression)
+### 🟢 PR #1638 — NEAR-GREEN (e2e-product pending)
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): `chore(infra): vLLM analyzer prerequisites`
-- **CI run 28860142915:** e2e-smoke ❌, e2e-tests ❌, all-checks ❌
-- Other checks pass (e2e-api ✅, integration ✅, pre-commit ✅, tox ✅, nox ✅, bake ✅)
-- **Was PENDING last run** — now confirmed failed. Not merge-ready.
-- **Action:** Investigate e2e failures. May need rebase or e2e fix.
+- **CI run 28861813002:** e2e-smoke ✅, e2e-api ✅, pre-commit ✅, tox ✅, nox ✅, integration ✅, bake ✅
+- **e2e-product: PENDING** (only remaining check)
+- **Major improvement** from 14:02 run (e2e-smoke was failing)
+- **Action:** Monitor e2e-product. If it passes, PR is merge-ready.
 
 ---
 
-### 🟡 PR #1647 — Pre-commit FAILING (e2e now passing)
+### 🔴 jn-5841 — Implement Session TIMED OUT (Code Zone)
+
+Worktree `jn-5841-agents-md-root` in Code zone:
+- **Session [019f3c21](http://127.0.0.1:3030/ui/s/019f3c219a667dc09a7dcdad/)** ("Implement JN-5841"): **timed_out**, `ready_for_prompt: true`, git DIRTY (has commits)
+- **Session [019f3ba0](http://127.0.0.1:3030/ui/s/019f3ba0711d7cc5b4df3e9c/)** ("Revise JN-5841 plan"): idle, `ready_for_prompt: false`
+- **Action:** Session 019f3c21 timed out mid-work with dirty git. Review what it did and decide: resume or check what's committed.
+
+---
+
+### 🟡 PR #1647 — Pre-commit FAILING
 
 PR [#1647](https://github.com/Jounce-IO/jounce/pull/1647): `test: testing-dev-before-migration JN-5445`
-- **CI run 28859743579:** pre-commit ❌ + all-checks ❌. But e2e-smoke ✅, e2e-api ✅, e2e-tests ✅ now pass!
-- e2e failures resolved, new pre-commit failure appeared
+- **CI run 28859743579:** pre-commit ❌ + all-checks ❌. e2e ✅, integration ✅, tox ✅, nox ✅
 - **Action:** Fix pre-commit failure. One blocker remains before merge.
 
 ---
@@ -109,14 +109,14 @@ PR [#1632](https://github.com/Jounce-IO/jounce/pull/1632): `feat(jbenchmark): re
 ### 🔔 jn-5827 — Idle, Git DIRTY, No PR
 
 Worktree `jn-5827-git-tagging-workflow` in Code zone:
-- Session 019f3b88 idle since 09:41 IDT Jul 7, ready_for_prompt: false
+- Session [019f3b88](http://127.0.0.1:3030/ui/s/019f3b8835787ddbb7b645b5/) idle since 09:41 IDT Jul 7, ready_for_prompt: false
 - Git state DIRTY (uncommitted changes)
 - **No PR yet.** Implementation may be done but not committed/pushed.
 - **Action:** Monitor — check if Joseph needs to review and push.
 
 ---
 
-### ❌ Jira Mismatches (3 active — unverifiable, Jira down)
+### ❌ Jira Mismatches (3 active — confirmed via acli)
 
 - [JN-5717](https://redhat.atlassian.net/browse/JN-5717): PR [#1631](https://github.com/Jounce-IO/jounce/pull/1631) MERGED Jul 6 → Jira **"Backlog"** (should be Done)
 - [JN-5794](https://redhat.atlassian.net/browse/JN-5794): PR [#1643](https://github.com/Jounce-IO/jounce/pull/1643) MERGED Jul 1 → Jira **"In Review"** (should be Done)
@@ -126,8 +126,8 @@ Worktree `jn-5827-git-tagging-workflow` in Code zone:
 
 ### 🔴 fix-dashboard-syntax-error — ZOMBIE WORKTREE in Plan Zone
 
-- **Status:** filesystem_status=failed (agor-openclaw repo)
-- **Created:** Jun 17 2026 (20+ days stale)
+- **Status:** agor-openclaw repo, 20+ days stale
+- **Created:** Jun 17 2026
 - **No PR, no Jira ticket**
 - **Action needed:** Archive this worktree (proposal pending)
 
@@ -145,7 +145,7 @@ Worktree `jn-5827-git-tagging-workflow` in Code zone:
 
 | Worktree | Reason | Archived At |
 |---------|--------|------------|
-| None | No new merges or closures detected | — |
+| None | No merged/closed PRs detected | — |
 
 (jn-5780-add-jn-project archived 13:34 IDT Jul 6 in prior run)
 

@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-07 14:32 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "#1638 NEAR-GREEN (new run 28861813002: only e2e-product PENDING); #1647 pre-commit still FAIL; jn-5841 still TIMED_OUT DIRTY; jn-5827 idle DIRTY no PR; 3 Jira mismatches confirmed via acli; 0 auto-advances",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f3c57d84c726aac532d40/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-07 14:02 IDT",
     actions: 0,
     findings: 7,
