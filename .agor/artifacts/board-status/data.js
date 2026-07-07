@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-07 16:03 IDT";
+export const LAST_UPDATED = "2026-07-07 18:32 IDT";
 
 export const WORKTREES = [
   {
@@ -61,7 +61,7 @@ export const WORKTREES = [
     zone: "Code",
     pr: null,
     prUrl: null,
-    status: "🔴 MOVED TO CODE ZONE. Implement session 019f3c21 TIMED OUT — git DIRTY, ready_for_prompt: true. Plan revision session 019f3ba0 idle (ready_for_prompt: false). Needs review.",
+    status: "🔴 Implement session 019f3c21 TIMED OUT — git DIRTY, ready_for_prompt: false. Plan revision session 019f3ba0 idle (ready_for_prompt: false). Needs review.",
     blockedOn: "Session timed out mid-work",
     blockedType: "blocked",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f3c219a667dc09a7dcdad/",
@@ -163,18 +163,18 @@ export const WORKTREES = [
     zone: "Code",
     pr: null,
     prUrl: null,
-    status: "Code session 019f3b88 idle since 09:41 IDT Jul 7. Git DIRTY (uncommitted changes). ready_for_prompt: false. No PR yet. Awaiting Joseph review/next prompt.",
+    status: "🟡 NEW: Session 019f3b88 last updated 18:28 IDT — ready_for_prompt: TRUE. Joseph prompted it between runs. Git DIRTY. Waiting for next input from Joseph.",
     blockedOn: null,
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f3b8835787ddbb7b645b5/",
-    sessionLabel: "code",
+    sessionLabel: "code (ready)",
     recentSessions: [
       {
         sessionId: "019f3b8835787ddbb7b645b5",
         url: "http://127.0.0.1:3030/ui/s/019f3b8835787ddbb7b645b5/",
-        title: "code",
+        title: "verify gh workflow + justfile",
         status: "idle",
-        timestamp: "2026-07-07 09:41 IDT",
+        timestamp: "2026-07-07 18:28 IDT",
         outputFile: null,
       },
       {
@@ -186,7 +186,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-07 09:41 IDT",
+    lastActive: "2026-07-07 18:28 IDT",
   },
   {
     ticket: null,
@@ -197,7 +197,7 @@ export const WORKTREES = [
     zone: "Plan",
     pr: null,
     prUrl: null,
-    status: "🔴 ZOMBIE: agor-openclaw repo — not found in Agor scan. Created Jun 17 — 20+ days stale. No Jira, no PR. PROPOSAL: archive.",
+    status: "🔴 ZOMBIE: agor-openclaw repo — filesystem_status=FAILED. Created Jun 17 — 20+ days stale. No Jira, no PR. PROPOSAL: archive.",
     blockedOn: "Filesystem FAILED / unregistered repo",
     blockedType: "blocked",
     sessionUrl: null,
@@ -293,20 +293,20 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "red",
-    message: "🔴 jn-5841 (JN-5841): MOVED TO CODE ZONE. Implement session 019f3c21 TIMED OUT with git DIRTY state — ready_for_prompt: true. Plan-revision session 019f3ba0 idle. Review needed.",
-  },
-  {
-    level: "red",
-    message: "🔴 PR #1638 (NEW run 28864329208): e2e-product ❌ FAILED (15m37s — ran and failed). e2e-tests ❌. all-checks ❌. e2e-smoke ✅ / e2e-api ✅ / pre-commit ✅ / tox ✅ / nox ✅ / integration ✅ / bake ✅. DOWNGRADE — was near-green when e2e-product was PENDING. Needs investigation.",
-  },
-  {
     level: "yellow",
-    message: "🟡 PR #1647 (run 28859743579): pre-commit ❌ + all-checks ❌. e2e NOW PASS (smoke ✅, api ✅, tests ✅). Fix pre-commit to unblock.",
+    message: "🟡 jn-5827 (JN-5827): Session 019f3b88 last updated 18:28 IDT — ready_for_prompt: TRUE. Joseph prompted it between runs. Waiting for next input. Git DIRTY. No PR yet.",
   },
   {
-    level: "yellow",
-    message: "🔔 jn-5827 (JN-5827): Code session 019f3b88 idle since 09:41 IDT Jul 7. Git DIRTY. ready_for_prompt: false. No PR yet. Awaiting Joseph review.",
+    level: "red",
+    message: "🔴 PR #1647 (NEW run 28869593069): DEGRADED — both pre-commit ❌ (4m38s) AND e2e-product ❌ (32m25s FAILED). Was just pre-commit before. e2e-smoke ✅ / e2e-api ✅ / integration ✅ / tox ✅ / nox ✅. Two blockers now.",
+  },
+  {
+    level: "red",
+    message: "🔴 PR #1638 (run 28864329208 — unchanged): e2e-product ❌ FAILED (15m37s). e2e-tests ❌. all-checks ❌. e2e-smoke ✅ / e2e-api ✅ / pre-commit ✅ / tox ✅ / nox ✅ / integration ✅ / bake ✅. No new CI run triggered.",
+  },
+  {
+    level: "red",
+    message: "🔴 jn-5841 (JN-5841): Implement session 019f3c21 TIMED OUT — git DIRTY, ready_for_prompt: false (was true at 16:03). Plan-revision session 019f3ba0 idle. Review needed.",
   },
   {
     level: "green",
@@ -318,11 +318,11 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "❌ Jira mismatches (3, confirmed acli 14:32 IDT Jul 7): JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5794 'In Review' (PR #1643 merged Jul 1), JN-5546 'In Progress' (PR #1588 merged Jul 7). All need → Done.",
+    message: "❌ Jira mismatches (3, confirmed acli 18:32 IDT Jul 7): JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5794 'In Review' (PR #1643 merged Jul 1), JN-5546 'In Progress' (PR #1588 merged Jul 7). All need → Done.",
   },
   {
     level: "red",
-    message: "🔴 fix-dashboard-syntax-error (Plan zone): ZOMBIE WORKTREE — agor-openclaw repo. Created Jun 17 — 20+ days stale. No PR, no Jira. PROPOSAL: archive.",
+    message: "🔴 fix-dashboard-syntax-error (Plan zone): ZOMBIE WORKTREE — filesystem_status=FAILED. agor-openclaw repo. Created Jun 17 — 20+ days stale. No PR, no Jira. PROPOSAL: archive.",
   },
   {
     level: "yellow",
