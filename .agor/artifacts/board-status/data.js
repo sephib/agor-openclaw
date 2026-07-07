@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-07 12:00 IDT";
+export const LAST_UPDATED = "2026-07-07 12:30 IDT";
 
 export const WORKTREES = [
   {
@@ -286,7 +286,7 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "yellow",
-    message: "🟡 PR #1638: NEW CI run 28854238947 — all critical checks PENDING (e2e-api⏳/integration⏳/pre-commit⏳/tox⏳). New commits pushed after ESCALATED state (run 28852129751: pre-commit❌/tox❌/nox❌). bake ✅, atlas-validate ✅. Watching for results.",
+    message: "🟡 PR #1638 (run 28854238947): Significant improvement from ESCALATED — pre-commit ✅, tox ✅, nox ✅, e2e-api ✅, integration ✅ all now PASS. Still failing: e2e-smoke ❌ + e2e-tests ❌ → all-checks ❌. Same e2e pattern as #1647. Investigate e2e infra issue.",
   },
   {
     level: "yellow",

@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-07 12:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-07 12:30 IDT (advance heartbeat)*
 
 ---
 
@@ -35,7 +35,16 @@
 
 ## Sprint Tickets Without Worktrees
 
-(Awaiting acli jira workitem search — tool syntax verification in progress)
+Active sprint tickets assigned to Joseph with no board worktree:
+
+| Ticket | Status | Summary |
+|--------|--------|---------|
+| [JN-5790](https://redhat.atlassian.net/browse/JN-5790) | Waiting/Blocked | Add integration-run to GitHub required status checks |
+| [JN-5788](https://redhat.atlassian.net/browse/JN-5788) | Waiting/Blocked | Verify Visibility Notebook in Production Environment |
+| [JN-5678](https://redhat.atlassian.net/browse/JN-5678) | Backlog | Dashboard README and setup instructions |
+| [JN-5462](https://redhat.atlassian.net/browse/JN-5462) | Backlog | Agentic Jira → PR workflow — Forge |
+
+(JN-5670 "Benchmark Visibility Dashboard" is the parent epic; JN-5539 "Dependency & Build Standardization" is also a parent. JN-5672 has a worktree in BLOCKED. JN-5695 has a worktree in BLOCKED.)
 
 ---
 
@@ -49,16 +58,16 @@
 
 ---
 
-## Key Changes Since Last Run (11:33 IDT Jul 7)
+## Key Changes Since Last Run (12:00 IDT Jul 7)
 
 | What observed | Status |
 |---|---|
-| **🟡 PR #1638: NEW CI run 28854238947** | New CI run triggered (new commits pushed after ESCALATED state). All critical checks PENDING: e2e-api, integration, pre-commit, tox. bake ✅, atlas-validate ✅, CodeRabbit ✅. Watching for results. |
-| **🆕 jn-5795: MOVED TO INGEST zone** | Previously NO ZONE — Joseph moved it to Ingest. Ready for Plan phase. |
-| **⚠️ sprint-planning-jul: NOT FOUND in Plan zone** | Plan zone scan returned 0 results. Previously tracked in Plan zone. May have been archived by Joseph or moved to unzoned. |
-| **jn-5827 code session: unchanged** | Still idle/ready_for_prompt since 08:32 IDT (~3.5h). Git DIRTY. Waiting. |
-| **jn-5841 plan revision: unchanged** | Still idle/ready_for_prompt since 08:39 IDT (~3.5h). Waiting. |
-| **Jira mismatches: confirmed via acli** | All 3 confirmed: JN-5717 "Backlog", JN-5794 "In Review", JN-5546 "In Progress". Jira MCP still 401. |
+| **🟡 PR #1638: CI results in — improvement!** | Run 28854238947 complete. Pre-commit ✅, tox ✅, nox ✅, e2e-api ✅, integration ✅ — all now PASS. **Still failing:** e2e-smoke ❌ + e2e-tests ❌ → all-checks ❌. Significant improvement from ESCALATED (pre-commit/tox/nox all failed). Only e2e pattern remains. |
+| **🟡 PR #1647: new CI run 28855862557** | e2e-api ❌, e2e-tests ❌, pre-commit PENDING. Integration ✅, tox ✅, nox ✅. Same e2e pattern. |
+| **jn-5827 code session: ~4h idle** | Still idle/ready_for_prompt since 08:32 IDT (4h). Git DIRTY. No PR. |
+| **jn-5841 plan revision: ~4h idle** | Still idle/ready_for_prompt since 08:39 IDT (4h). Waiting. |
+| **Jira mismatches: unchanged** | All 3 confirmed via acli: JN-5717 "Backlog", JN-5794 "In Review", JN-5546 "In Progress". |
+| **Sprint scan completed** | JN-5790 (Waiting/Blocked — no worktree), JN-5788 (Waiting/Blocked — no worktree) flagged. |
 | **PR #1606: unchanged** | Still CONFLICTING + e2e ❌ (run 28527509341). 5+ days stale. |
 | **PR #1632: unchanged** | All CI ✅, REVIEW_REQUIRED. Ready to merge. |
 
@@ -66,13 +75,14 @@
 
 ## Attention Items
 
-### 🟡 PR #1638 — New CI Run Pending
+### 🟡 PR #1638 — e2e Still Failing (Improvement: pre-commit/tox/nox now PASS)
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): `chore(infra): vLLM analyzer prerequisites - workflow improvements`
-- **New CI run 28854238947** triggered after previous ESCALATED failures (28852129751: pre-commit ❌/tox ❌/nox ❌)
-- **Status:** e2e-api ⏳ + integration ⏳ + pre-commit ⏳ + tox ⏳ (PENDING)
-- **Already passing:** bake ✅, atlas-validate ✅, CodeRabbit ✅, JIRA Association ✅
-- **Action:** Watch for CI results. If pre-commit + tox + nox now pass, ESCALATED status can be downgraded.
+- **CI run 28854238947** complete. **Significant improvement** from ESCALATED state:
+- **Now PASSING:** e2e-api ✅, integration ✅, pre-commit ✅, tox ✅, nox ✅, bake ✅, atlas-validate ✅, CodeRabbit ✅
+- **Still FAILING:** e2e-smoke ❌ + e2e-tests ❌ → all-checks ❌
+- Same e2e failure pattern as PR #1647 (possibly environment/infra issue, not code issue)
+- **Action:** Investigate e2e-smoke failure — same pattern as #1647, may be flaky/infra. If so, re-run CI or seek admin merge.
 
 ---
 

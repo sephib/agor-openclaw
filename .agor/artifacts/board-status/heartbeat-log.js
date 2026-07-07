@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-07 12:30 IDT",
+    actions: 0,
+    findings: 7,
+    status: "ok",
+    summary: "#1638 CI run complete: pre-commit/tox/nox/e2e-api/integration ✅ — e2e-smoke+e2e-tests ❌ remain; jn-5827 4h idle+DIRTY; jn-5841 4h idle; 3 Jira mismatches unchanged; #1632 ready to merge; sprint scan added JN-5790/5788 no-worktree",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f3be9f9c47b4287081c7c/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-07 12:00 IDT",
     actions: 0,
     findings: 7,
