@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-07 11:33 IDT";
+export const LAST_UPDATED = "2026-07-07 12:00 IDT";
 
 export const WORKTREES = [
   {
@@ -61,7 +61,7 @@ export const WORKTREES = [
     zone: "Ingest",
     pr: null,
     prUrl: null,
-    status: "🆕 NEW: Plan revision session 019f3ba0 ('Revise JN-5841 plan — PR #1588 merged, deduplicate content') — idle 08:36 IDT Jul 7. Adjusting scope now that JN-5546 (PR #1588) merged.",
+    status: "Plan revision session 019f3ba0 ('Revise JN-5841 plan — PR #1588 merged') — idle 08:39 IDT Jul 7. ready_for_prompt: true. Awaiting next action.",
     blockedOn: null,
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f3ba0711d7cc5b4df3e9c/",
@@ -72,7 +72,7 @@ export const WORKTREES = [
         url: "http://127.0.0.1:3030/ui/s/019f3ba0711d7cc5b4df3e9c/",
         title: "plan-revision",
         status: "idle",
-        timestamp: "2026-07-07 08:36 IDT",
+        timestamp: "2026-07-07 08:39 IDT",
         outputFile: null,
       },
       {
@@ -84,7 +84,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-07 08:36 IDT",
+    lastActive: "2026-07-07 08:39 IDT",
   },
   {
     ticket: "JN-5244",
@@ -109,10 +109,10 @@ export const WORKTREES = [
     title: "Upgrade to GuideLLM v0.7.0",
     branch: "jn-5795-upgrade-to-guidellm-v070",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5795-upgrade-to-guidellm-v070",
-    zone: "NO ZONE",
+    zone: "Ingest",
     pr: null,
     prUrl: null,
-    status: "ℹ️ Design session done (143 msgs, idle Jun 30 12:45 IDT). No zone assigned. Proposal: assign to Plan zone.",
+    status: "🆕 MOVED TO INGEST (was NO ZONE). Design session done Jun 30. Ready for /implement:plan trigger.",
     blockedOn: null,
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f185c2c687ed7bbdd1902/",
@@ -147,23 +147,6 @@ export const WORKTREES = [
     lastActive: "2026-06-25 07:41 IDT",
   },
   {
-    ticket: null,
-    ticketUrl: null,
-    title: "Sprint planning July",
-    branch: "sprint-planning-jul",
-    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/sprint-planning-jul",
-    zone: "Plan",
-    pr: null,
-    prUrl: null,
-    status: "ℹ️ No sessions, no PR, no Jira. Updated 06:50 IDT Jul 2. Purpose unclear — sprint planning for July?",
-    blockedOn: "No context",
-    blockedType: "active",
-    sessionUrl: null,
-    sessionLabel: null,
-    recentSessions: [],
-    lastActive: "2026-07-02 06:50 IDT",
-  },
-  {
     ticket: "JN-5827",
     ticketUrl: "https://redhat.atlassian.net/browse/JN-5827",
     title: "Implement git tagging workflow for 3.5GA release",
@@ -172,7 +155,7 @@ export const WORKTREES = [
     zone: "Code",
     pr: null,
     prUrl: null,
-    status: "🆕 NEW CODE SESSION 019f3b88 ('verify gh workflow + update justfile') — idle 08:32 IDT Jul 7. Git state DIRTY (uncommitted changes). Fork of plan session. Implementation underway. No PR yet.",
+    status: "Code session 019f3b88 ('verify gh workflow + update justfile') — idle 08:32 IDT Jul 7. ready_for_prompt: true. Git DIRTY (uncommitted changes). No PR yet.",
     blockedOn: null,
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f3b8835787ddbb7b645b5/",
@@ -206,7 +189,7 @@ export const WORKTREES = [
     zone: "Plan",
     pr: null,
     prUrl: null,
-    status: "🔴 ZOMBIE: agor-openclaw repo — not found in Agor scan. Created Jun 17 — 20+ days stale. Error: 'fatal: invalid reference: origin/private-julie'. No Jira, no PR. PROPOSAL: archive.",
+    status: "🔴 ZOMBIE: agor-openclaw repo — not found in Agor scan. Created Jun 17 — 20+ days stale. No Jira, no PR. PROPOSAL: archive.",
     blockedOn: "Filesystem FAILED / unregistered repo",
     blockedType: "blocked",
     sessionUrl: null,
@@ -224,7 +207,7 @@ export const MERGED = [
     pr: "#1588",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1588",
     mergedDate: "2026-07-07",
-    note: "Merged 11:10 IDT Jul 7. APPROVED ✅. Agor worktree (jn-5546-...-3) already deleted from Agor by Joseph. JN-5841 plan being revised to dedup content.",
+    note: "Merged 08:10 IDT Jul 7. APPROVED ✅. Agor worktree (jn-5546-...-3) already deleted by Joseph. JN-5546 Jira still 'In Progress' → needs Done.",
   },
   {
     ticket: "JN-5717",
@@ -302,36 +285,40 @@ export const MERGED = [
 
 export const ALERTS = [
   {
+    level: "yellow",
+    message: "🟡 PR #1638: NEW CI run 28854238947 — all critical checks PENDING (e2e-api⏳/integration⏳/pre-commit⏳/tox⏳). New commits pushed after ESCALATED state (run 28852129751: pre-commit❌/tox❌/nox❌). bake ✅, atlas-validate ✅. Watching for results.",
+  },
+  {
+    level: "yellow",
+    message: "🟡 jn-5827 (JN-5827): Code session 019f3b88 ('verify gh workflow + update justfile') idle since 08:32 IDT Jul 7. ready_for_prompt: true. Git DIRTY (uncommitted changes). No PR yet.",
+  },
+  {
+    level: "yellow",
+    message: "🟡 jn-5841 (JN-5841): Plan revision session 019f3ba0 idle since 08:39 IDT Jul 7. ready_for_prompt: true. Scope deduplication from JN-5546 (PR #1588 merged) complete.",
+  },
+  {
     level: "green",
-    message: "🎉 PR #1588 (JN-5546) MERGED at 11:10 IDT Jul 7! docs(jbenchmark): add CONTRIBUTING.md and service READMEs. APPROVED ✅. Agor worktree already deleted by Joseph. JN-5841 plan being revised to dedup content.",
-  },
-  {
-    level: "red",
-    message: "🔴 PR #1638 ESCALATED: New CI run 28852129751 — pre-commit ❌ + tox ❌ + nox ❌ (was only e2e failures in run 28808026450). New regressions introduced. e2e-smoke still pending.",
-  },
-  {
-    level: "yellow",
-    message: "🟡 jn-5827 (JN-5827): Code session 019f3b88 ('verify gh workflow + update justfile') idle since 08:32 IDT Jul 7. Git DIRTY (uncommitted changes). No PR yet. Implementation in progress.",
-  },
-  {
-    level: "yellow",
-    message: "🟡 jn-5841 (JN-5841): Plan revision session 019f3ba0 ('Revise plan — PR #1588 merged, deduplicate content') idle since 08:36 IDT Jul 7. Scope being adjusted.",
+    message: "🆕 jn-5795 (JN-5795): MOVED TO INGEST zone (was NO ZONE). Design done Jun 30. Ready for /implement:plan trigger.",
   },
   {
     level: "red",
     message: "🔴 PR #1606 (JN-5725, off-board): CONFLICTING (since 10:00 IDT Jul 2, 5+ days). e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌ (run 28527509341). Jira Done. Needs rebase + e2e fix or close PR.",
   },
   {
-    level: "yellow",
-    message: "⚠️ Jira mismatches (3 active): JN-5717 (PR #1631 MERGED Jul 6, Jira 'Backlog'), JN-5794 (PR #1643 MERGED Jul 1, Jira 'In Review'), JN-5546 (PR #1588 MERGED Jul 7 — verify Jira → Done).",
+    level: "red",
+    message: "❌ Jira mismatches (3, confirmed via acli): JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5794 'In Review' (PR #1643 merged Jul 1), JN-5546 'In Progress' (PR #1588 merged Jul 7). Jira MCP 401.",
   },
   {
     level: "green",
-    message: "✅ PR #1632 (JN-5719, off-board): All CI ✅ (run 28775331183), REVIEW_REQUIRED, MERGEABLE. Ready to merge. Unchanged since Jul 6.",
+    message: "✅ PR #1632 (JN-5719, off-board): All CI ✅ (run 28775331183), REVIEW_REQUIRED, MERGEABLE. Ready to merge. Unchanged.",
   },
   {
     level: "red",
-    message: "🔴 fix-dashboard-syntax-error (Plan zone): ZOMBIE WORKTREE — not found in Agor scan (agor-openclaw repo unregistered). Created Jun 17 — 20+ days stale. No PR, no Jira. PROPOSAL: archive this worktree.",
+    message: "🔴 fix-dashboard-syntax-error (Plan zone): ZOMBIE WORKTREE — not found in Agor scan (agor-openclaw repo unregistered). Created Jun 17 — 20+ days stale. No PR, no Jira. PROPOSAL: archive.",
+  },
+  {
+    level: "yellow",
+    message: "⚠️ sprint-planning-jul: NOT FOUND in Plan zone scan this run (Plan zone returned 0). May have been archived by Joseph or moved to unzoned.",
   },
   {
     level: "yellow",
@@ -339,14 +326,6 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⚠️ Jira MCP auth failure (HTTP 401) — can't verify Jira statuses this run. 3 mismatches (JN-5717/5794/5546) unverifiable via MCP.",
-  },
-  {
-    level: "yellow",
     message: "⚠️ model-packaging-cr (Code Review zone, model-packaging-pipeline repo): Created Jun 15 — stagnant 22+ days. No PR URL set. Needs investigation or archive.",
-  },
-  {
-    level: "info",
-    message: "ℹ️ jn-5795-upgrade-to-guidellm-v070 (NO ZONE): Design session done Jun 30. Proposal: move to Plan zone.",
   },
 ];
