@@ -207,3 +207,17 @@
 - Flags: #1606 CONFLICTING+e2e ❌, #1588 CONFLICTING+pre-commit ❌, fix-dashboard ZOMBIE (18+ days), 3 Jira mismatches (JN-5612/5616/5724) + 2 unverifiable
 - Auto-advances: 0
 - Next: 13:30 IDT Jul 5 daytime heartbeat
+
+---
+
+## 09:30 IDT — Weekday Daytime Advance Heartbeat (2026-07-07)
+
+**Session:** 019f3b44-f42b | http://127.0.0.1:3030/ui/s/019f3b44f42b7904bf130f1d/
+- PRs checked: #1588 (OPEN MERGEABLE, pre-commit ❌ run 28822455546 — unchanged), #1596 (DRAFT CONFLICTING — unchanged), #1606 (OPEN CONFLICTING + e2e ❌ run 28527509341 — unchanged), #1632 (OPEN MERGEABLE, all CI ✅ run 28775331183 — unchanged), #1638 (OPEN MERGEABLE, e2e-smoke ❌ run 28808026450 — unchanged), #1647 (OPEN MERGEABLE, e2e-api ❌ run 28801725588 — unchanged)
+- Merges detected: none — gh pr list (assignee + review-requested joberry) both empty. Board static since 09:00 IDT Jul 7.
+- CI changes: none — all CI run IDs unchanged from 09:00 IDT run
+- Board scan: 9 worktrees confirmed on board 019eb849 + model-packaging-cr. No zone changes.
+- Jira: MCP auth 401 — JN-5717/JN-5794 mismatches persist (unverifiable this run). acli syntax unknown flag.
+- Flags: 🔴 #1588 MERGEABLE+pre-commit ❌ (13h stale), 🔴 #1606 CONFLICTING+e2e ❌ (5d stale), 2 Jira mismatches (JN-5717/5794), fix-dashboard ZOMBIE, jira-operations stale
+- Auto-advances: 0
+- Next: monitor for #1588 pre-commit fix; #1632 clean ready to merge

@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-07 09:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-07 09:30 IDT (advance heartbeat)*
 
 ---
 
@@ -50,16 +50,16 @@
 
 ---
 
-## Key Changes Since Last Run (09:00 IDT Jul 7)
+## Key Changes Since Last Run (09:30 IDT Jul 7)
 
 | What observed | Status |
 |---|---|
-| **Board static since 08:33 IDT Jul 7** | No PR merges, no zone moves, no new CI runs since 08:33 IDT run. Fully static. |
-| **#1588 pre-commit ❌ persists** | CI run 28822455546 still failing (job 85477327366, 4m28s). Unchanged since 20:52 IDT Jul 6 (~12h). Needs fix before merge. |
+| **Board static since 09:00 IDT Jul 7** | No PR merges, no zone moves, no new CI runs. Fully static (30-min delta). |
+| **#1588 pre-commit ❌ persists** | CI run 28822455546 still failing (job 85477327366, 4m28s). Unchanged since 20:52 IDT Jul 6 (~13h). Needs fix before merge. |
 | **PR #1606: unchanged** | Still CONFLICTING + e2e ❌ (run 28527509341). No new CI since Jul 2 (5+ days stale). |
 | **PR #1596: unchanged** | DRAFT CONFLICTING. No activity. |
-| **Off-board PRs unchanged** | #1632 (✅ CLEAN, REVIEW_REQUIRED), #1638 (e2e ❌ run 28808026450), #1647 (e2e ❌+REVIEW_REQUIRED run 28801725588). |
-| **Jira mismatches: unchanged** | JN-5717 still Backlog (PR #1631 merged Jul 6); JN-5794 still In Review (PR #1643 merged Jul 1). |
+| **Off-board PRs unchanged** | #1632 (✅ CLEAN, REVIEW_REQUIRED), #1638 (e2e ❌ run 28808026450), #1647 (e2e-api ❌+REVIEW_REQUIRED run 28801725588). |
+| **Jira mismatches: unchanged** | JN-5717 still Backlog (PR #1631 merged Jul 6); JN-5794 still In Review (PR #1643 merged Jul 1). Jira MCP 401 — unverifiable via MCP. |
 
 ---
 
