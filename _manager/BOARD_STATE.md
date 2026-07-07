@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-07 19:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-07 20:00 IDT (advance heartbeat)*
 
 ---
 
@@ -12,11 +12,11 @@
 | jn-5672-dal-ext-dashboard | BLOCKED | — | — | [JN-5672](https://redhat.atlassian.net/browse/JN-5672) | On hold — after notebooks complete |
 | model-packaging-cr | Code Review | — | — | — | ⚠️ model-packaging-pipeline repo. Created Jun 15. No PR URL set, no sessions. Stale 22+ days. |
 | jn-5244-cli-flags | Ingest | — | — | [JN-5244](https://redhat.atlassian.net/browse/JN-5244) | ℹ️ No sessions yet. Ready to ingest. |
-| jn-5841-agents-md-root | **Code** | — | — | [JN-5841](https://redhat.atlassian.net/browse/JN-5841) | 🟡 Session [019f3d35](http://127.0.0.1:3030/ui/s/019f3d35877277f2bff66999/) "continue" IDLE, **ready_for_prompt: TRUE** (SHA: e08834bf, last updated 19:28 IDT). Session 019f3c21 TIMED OUT (parent). Waiting for Joseph. |
+| jn-5841-agents-md-root | **Validate** | — | — | [JN-5841](https://redhat.atlassian.net/browse/JN-5841) | 🟢 Session [019f3d82](http://127.0.0.1:3030/ui/s/019f3d8216db751081637244/) "Validate JN-5841 — AGENTS.md + CLAUDE.md refactor" **RUNNING** (created 19:56 IDT, SHA: e08834bf). Joseph advanced worktree to Validate zone. "continue" session 019f3d35 IDLE, ready_for_prompt=false. |
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — Backlog | Design session done Jun 30. Ready for Plan phase. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 12+ days with no session or PR. |
 | fix-dashboard-syntax-error | Plan | — | — | — | 🔴 ZOMBIE: agor-openclaw repo, filesystem_status=FAILED. 20+ days stale. PROPOSAL: archive. |
-| jn-5827-git-tagging-workflow | **Code Review** | — | — | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) | 🔴 ZONE NOW Code Review. Validate PASS ✅ (16:13 IDT). Internal CR retry [019f3d66](http://127.0.0.1:3030/ui/s/019f3d66ffeb7154a64feb80/) IDLE **ready_for_prompt: TRUE** — **HIGH severity bug** (tag format mismatch). |
+| jn-5827-git-tagging-workflow | **Publish** | [#1648 DRAFT](https://github.com/Jounce-IO/jounce/pull/1648) | 🟡 pre-commit+tox PENDING (run 28883996510) | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) | 🟡 **ZONE NOW Publish. PR [#1648](https://github.com/Jounce-IO/jounce/pull/1648) created (DRAFT).** Joseph fixed tag format bug (dash not plus) and created DRAFT PR. CI: pre-commit+tox PENDING, e2e-product+bake SKIPPING (DRAFT). Internal CR retry session 019f3d66 still ready_for_prompt (stale context — PR created after). |
 
 ---
 
@@ -54,39 +54,36 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes Since Last Run (19:00 IDT Jul 7)
+## Key Changes Since Last Run (19:30 IDT Jul 7)
 
 | What observed | Status |
 |---|---|
-| **🔴 jn-5827 ZONE NOW Code Review** | Validate session 019f3d4a completed 16:13 IDT — ALL PASS (pre-commit ✅, tag tests ✅, 3349 unit tests ✅, coverage 93.31% ✅). Joseph moved worktree to Code Review zone. |
-| **🔴 jn-5827 Internal CR: HIGH severity bug** | CR session [019f3d65](http://127.0.0.1:3030/ui/s/019f3d6526927b6f8a623928/) (16:25 IDT) + retry [019f3d66](http://127.0.0.1:3030/ui/s/019f3d66ffeb7154a64feb80/) (16:29 IDT, **ready_for_prompt: TRUE**): HIGH bug found — `version-pr` job writes CalVer tag `3.5.0+20260705` into `values-prd.yaml` image tags, but images built with `image_tag` format `3.5.0-20260705`. `+` is invalid in Docker tags — Kubernetes would fail to pull images. |
-| **🟡 jn-5841: continue session still ready** | Session [019f3d35](http://127.0.0.1:3030/ui/s/019f3d35877277f2bff66999/) last updated 19:28 IDT — still IDLE, **ready_for_prompt: TRUE**. SHA e08834bf. No new prompt received. |
-| **CI unchanged** | #1647 pre-commit ❌ + e2e-product ❌, #1638 e2e-product ❌, #1632 all ✅ — no new runs. |
-| **Jira mismatches: unchanged** | All 3 still unresolved (JN-5717/5794/5546). |
+| **🟢 jn-5827 ZONE NOW Publish — PR [#1648](https://github.com/Jounce-IO/jounce/pull/1648) CREATED** | Joseph fixed HIGH severity tag format bug (dash not plus) and created DRAFT PR #1648: "feat(release): implement git tagging workflow for 3.5GA (JN-5827)". CI: pre-commit+tox PENDING; e2e/bake SKIPPING (DRAFT mode). Branch last_updated 19:59 IDT. |
+| **🟢 jn-5841: NOW Validate zone — session RUNNING** | Session [019f3d82](http://127.0.0.1:3030/ui/s/019f3d8216db751081637244/) "Validate JN-5841 — AGENTS.md + CLAUDE.md refactor" RUNNING (created 19:56 IDT). Joseph prompted 019f3d35 (ready_for_prompt now FALSE) and advanced worktree to Validate zone. |
+| **CI unchanged** | #1647 pre-commit ❌ + e2e-product ❌ (run 28869593069), #1638 e2e-product ❌ (run 28864329208), #1632 all ✅ — no new runs. |
+| **Jira mismatches: unchanged** | All 3 still unresolved (JN-5717/5794/5546). Jira MCP auth failed + acli empty — last confirmed 18:32 IDT Jul 7. |
 | **No merges detected** | 0 auto-archives this run. |
 
 ---
 
 ## Attention Items
 
-### 🔴 jn-5827 — HIGH Severity Bug in Internal CR (Code Review Zone)
+### 🟡 jn-5827 — PR #1648 DRAFT: Awaiting CI + Ready-for-Review (Publish Zone)
 
-Worktree `jn-5827-git-tagging-workflow` now in **Code Review** zone:
-- **Validate session [019f3d4a](http://127.0.0.1:3030/ui/s/019f3d4a4733779fa8b91bd1/)** COMPLETED 16:13 IDT — ALL PASS: pre-commit ✅, tag tests 26/26 ✅, 3349 unit tests ✅, coverage 93.31% ✅
-- **Internal CR retry [019f3d66](http://127.0.0.1:3030/ui/s/019f3d66ffeb7154a64feb80/)** IDLE, **ready_for_prompt: TRUE** — **HIGH severity bug found:**
-  - `version-pr` job (line 386) writes git tag `3.5.0+20260705` into `values-prd.yaml` image tags
-  - But images are built with `image_tag` format `3.5.0-20260705` (dash, not plus)
-  - Docker/OCI tags don't accept `+` — Kubernetes would fail to pull images
-- **Action:** Must fix tag format mismatch before creating PR. Joseph to review CR findings and fix before pushing.
+Worktree `jn-5827-git-tagging-workflow` now in **Publish** zone:
+- **PR [#1648 DRAFT](https://github.com/Jounce-IO/jounce/pull/1648)**: "feat(release): implement git tagging workflow for 3.5GA (JN-5827)" — DRAFT, MERGEABLE, REVIEW_REQUIRED
+- **CI run 28883996510**: pre-commit+tox **PENDING** — e2e-product/bake SKIPPING (DRAFT). JIRA Association ✅, atlas-validate ✅, check-changes ✅, deploy ✅.
+- **HIGH severity bug FIX confirmed**: Joseph resolved the tag format mismatch (+/- issue found by internal CR) before creating the PR.
+- **Action:** Wait for CI to complete. Once pre-commit+tox pass → mark READY (remove DRAFT flag). Then needs external code review.
 
 ---
 
-### 🟡 jn-5841 — "Continue" Session Ready for Input
+### 🟢 jn-5841 — Validate Session RUNNING (Validate Zone)
 
-Worktree `jn-5841-agents-md-root` in Code zone:
-- **Session [019f3d35](http://127.0.0.1:3030/ui/s/019f3d35877277f2bff66999/)** ("continue", forked from 019f3c21): **IDLE, ready_for_prompt: TRUE**. SHA: e08834bf (new commits). Last updated 19:28 IDT.
-- Session [019f3c21](http://127.0.0.1:3030/ui/s/019f3c219a667dc09a7dcdad/) (parent): still timed_out.
-- **Action:** Session has made progress and is waiting for Joseph. Review committed work (SHA e08834bf) and decide next prompt.
+Worktree `jn-5841-agents-md-root` in **Validate** zone:
+- **Session [019f3d82](http://127.0.0.1:3030/ui/s/019f3d8216db751081637244/)** "Validate JN-5841 — AGENTS.md + CLAUDE.md refactor": **RUNNING** as of 19:56 IDT.
+- "continue" session [019f3d35](http://127.0.0.1:3030/ui/s/019f3d35877277f2bff66999/) IDLE, ready_for_prompt: FALSE — prompt received, work delivered.
+- **Action:** Monitor validate session. When complete, Joseph reviews and advances to Publish.
 
 ---
 
