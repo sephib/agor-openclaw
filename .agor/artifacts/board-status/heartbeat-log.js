@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-07 21:00 IDT",
+    actions: 0,
+    findings: 4,
+    status: "ok",
+    summary: "#1638 NEW CI run 28887503203 IN PROGRESS (fix attempt after tox+nox ❌); jn-5841 validate still IDLE+ready_for_prompt:TRUE; #1648 DRAFT CI ALL PASS unchanged; #1647 ❌+#1632 ✅ unchanged; Jira MCP 401; 0 auto-advances",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f3dbcfdcd71c6ac3d9e17/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-07 20:30 IDT",
     actions: 0,
     findings: 5,

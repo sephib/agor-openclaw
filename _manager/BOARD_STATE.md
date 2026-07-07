@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-07 20:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-07 21:00 IDT (advance heartbeat)*
 
 ---
 
@@ -54,15 +54,16 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes Since Last Run (20:00 IDT Jul 7)
+## Key Changes Since Last Run (20:30 IDT Jul 7)
 
 | What observed | Status |
 |---|---|
-| **🟢 #1648 CI ALL PASS — NEW run 28885455833** | MAJOR: pre-commit ✅, tox ✅, nox ✅, all-checks ✅. e2e/bake SKIPPING (DRAFT mode). **PR is CI-clean — Joseph should remove DRAFT flag** to trigger full e2e and request review. |
-| **🟡 jn-5841 validate session COMPLETE — ready_for_prompt: TRUE** | Session [019f3d82](http://127.0.0.1:3030/ui/s/019f3d8216db751081637244/) completed ~20:03 IDT. Was RUNNING at last run (19:56 IDT). Joseph needs to review validate output and decide: advance to Publish or revise. |
-| **🔴 #1638 NEW run 28885456652 — tox ❌ + nox ❌ REGRESSION** | Previous run 28864329208 had e2e-product ❌ only. New run 28885456652 shows tox ❌ (5m4s) + nox ❌ — regression in checks that were previously passing. e2e-smoke PENDING. |
-| **CI unchanged** | #1647 pre-commit ❌ + e2e-product ❌ (run 28869593069), #1632 all ✅ — no new runs. |
-| **Jira mismatches: unchanged** | All 3 still unresolved (JN-5717/5794/5546). acli syntax error this run — last confirmed 18:32 IDT Jul 7. |
+| **🟡 #1638 NEW CI run 28887503203 IN PROGRESS** | Someone pushed a fix commit after run 28885456652 (tox ❌ + nox ❌). New run 28887503203: tox ⏳ / e2e-api ⏳ / integration ⏳ / pre-commit ⏳ all PENDING. bake ✅ / check-changes ✅ / atlas-validate ✅. Monitoring — result pending next heartbeat. |
+| **jn-5841 — Unchanged** | Validate session [019f3d82](http://127.0.0.1:3030/ui/s/019f3d8216db751081637244/) IDLE + ready_for_prompt: TRUE. Joseph still needs to review validate output. |
+| **#1648 (jn-5827) — Unchanged** | DRAFT, CI ALL PASS (run 28885455833 unchanged). Remove DRAFT flag to trigger full e2e. |
+| **#1647 — Unchanged** | pre-commit ❌ + e2e-product ❌ (run 28869593069). |
+| **#1632 — Unchanged** | All CI ✅, REVIEW_REQUIRED. Ready to merge. |
+| **Jira mismatches** | Jira MCP 401 error this run; acli has no issue-view command. Last confirmed 18:32 IDT Jul 7 — assumed unchanged (JN-5717/5794/5546 all still need Done). |
 | **No merges detected** | 0 auto-archives this run. |
 
 ---
@@ -88,14 +89,13 @@ Worktree `jn-5841-agents-md-root` in **Validate** zone:
 
 ---
 
-### 🔴 PR #1638 — REGRESSION: tox + nox NOW FAILING (New Run 28885456652)
+### 🟡 PR #1638 — NEW CI Run 28887503203 IN PROGRESS (Fix Attempt)
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): `chore(infra): vLLM analyzer prerequisites`
-- **NEW CI run 28885456652:** tox ❌ (5m4s) + nox ❌. e2e-smoke PENDING.
-- Previous run 28864329208 had: e2e-product ❌ — tox/nox were **passing**.
-- **Regression**: tox and nox now failing in addition to whatever e2e result comes back.
-- **Passing (still):** pre-commit ✅, e2e-api ✅, integration ✅, bake ✅, atlas-validate ✅
-- **Action:** Investigate tox + nox regression. Also monitor e2e-smoke pending result.
+- **NEW CI run 28887503203** (21:00 IDT): tox ⏳ + e2e-api ⏳ + integration ⏳ + pre-commit ⏳ all PENDING.
+- bake ✅, check-changes ✅, atlas-validate ✅ already passing in new run.
+- Previous run 28885456652 had: tox ❌ (5m4s) + nox ❌ — someone pushed a fix commit.
+- **Action:** Monitor next heartbeat for run 28887503203 results. If tox ✅ + nox ✅ → regression resolved.
 
 ---
 
