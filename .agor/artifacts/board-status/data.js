@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-07 09:30 IDT";
+export const LAST_UPDATED = "2026-07-07 10:33 IDT";
 
 export const WORKTREES = [
   {
@@ -10,8 +10,8 @@ export const WORKTREES = [
     zone: "Respond",
     pr: "#1588",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1588",
-    status: "🟢 REBASED OVERNIGHT — now MERGEABLE ✅. Zone moved Code Review → Respond. CI run 28822455546: Build ✅ Integration ✅ e2e ✅ tox ✅ nox ✅ — pre-commit ❌ still failing (job 85477327366). Fix pre-commit → ready to merge.",
-    blockedOn: "pre-commit ❌ (run 28822455546)",
+    status: "🟡 2 new commits pushed (09:44+10:30 IDT Jul 7). New CI run 28849373099 IN PROGRESS: pre-commit ⏳ PENDING (was ❌). e2e ✅ atlas ✅ deploy ✅. PR: APPROVED ✅ MERGEABLE ✅. Watch: if pre-commit passes → ready to merge.",
+    blockedOn: "CI run 28849373099 in progress (pre-commit pending)",
     blockedType: "active",
     sessionUrl: "http://localhost:3030/ui/s/019ed01e5624752fbade0eab/",
     sessionLabel: "fix session",
@@ -25,7 +25,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-07 00:00 IDT",
+    lastActive: "2026-07-07 10:30 IDT",
   },
   {
     ticket: null,
@@ -375,12 +375,8 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "green",
-    message: "🟢 PR #1588 (JN-5546) REBASED OVERNIGHT — now MERGEABLE ✅. Joseph rebased between 21:02 IDT Jul 6 and 00:00 IDT Jul 7. Zone moved Code Review → Respond. CI run 28822455546: Build/Integration/e2e/tox/nox all ✅. pre-commit ❌ still failing — fix needed to clear all-checks and merge.",
-  },
-  {
     level: "yellow",
-    message: "⚠️ #1588 pre-commit ❌: CI run 28822455546 job 85477327366 (pre-commit-run / pre-commit) failed at 4m28s. Must be fixed before all-checks will pass and PR can merge.",
+    message: "🟡 PR #1588 (JN-5546): 2 new commits pushed today (bb001660 09:44 IDT + d1e7b985 10:30 IDT). New CI run 28849373099 IN PROGRESS. pre-commit ⏳ PENDING (was ❌ in run 28822455546). e2e ✅, atlas ✅, deploy ✅. APPROVED ✅ MERGEABLE ✅. If pre-commit passes → ready to merge.",
   },
   {
     level: "red",

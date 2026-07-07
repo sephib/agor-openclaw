@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-07 09:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-07 10:33 IDT (advance heartbeat)*
 
 ---
 
@@ -8,7 +8,7 @@
 
 | Worktree | Zone | PR | CI | Jira | Status |
 |---------|------|----|----|------|--------|
-| jn-5546-docs-document-module-layout-convention-and-3 | **Respond** | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | **🔴 pre-commit ❌** (run 28822455546 — 20:52 IDT Jul 6) | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) — In Progress | 🔴 MERGEABLE but pre-commit still failing. Latest run 28822455546: Build ✅, Integration ✅, e2e ✅, tox ✅, nox ✅, **pre-commit ❌** (4m28s job 85477327366). Unchanged since 00:00 IDT run. |
+| jn-5546-docs-document-module-layout-convention-and-3 | **Respond** | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | **🟡 CI IN PROGRESS** (run 28849373099 — 10:30 IDT Jul 7) | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) — In Progress | 🟡 2 new commits pushed this morning (09:44+10:30 IDT). New CI run 28849373099 in progress: pre-commit ⏳ PENDING (was ❌), integration ⏳, tox ⏳. e2e-tests ✅, atlas-validate ✅, deploy ✅. PR: APPROVED ✅, MERGEABLE ✅. |
 | jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | CONFLICTING | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) | 🔴 DRAFT CONFLICTING; frozen |
 | jn-5672-dal-ext-dashboard | BLOCKED | — | — | [JN-5672](https://redhat.atlassian.net/browse/JN-5672) | On hold — after notebooks complete |
 | model-packaging-cr | Code Review | — | — | — | ⚠️ model-packaging-pipeline repo. Created Jun 15. No PR URL set, stagnant 21+ days. Needs investigation or archive. |
@@ -50,37 +50,36 @@
 
 ---
 
-## Key Changes Since Last Run (09:30 IDT Jul 7)
+## Key Changes Since Last Run (10:33 IDT Jul 7)
 
 | What observed | Status |
 |---|---|
-| **Board static since 09:00 IDT Jul 7** | No PR merges, no zone moves, no new CI runs. Fully static (30-min delta). |
-| **#1588 pre-commit ❌ persists** | CI run 28822455546 still failing (job 85477327366, 4m28s). Unchanged since 20:52 IDT Jul 6 (~13h). Needs fix before merge. |
+| **🟡 #1588: 2 new commits + new CI run** | Commits bb001660 (09:44 IDT) + d1e7b985 (10:30 IDT) pushed. New CI run 28849373099 triggered at 10:30 IDT. pre-commit now PENDING (was ❌ FAILING since Jul 6). If pre-commit passes → PR ready to merge. |
 | **PR #1606: unchanged** | Still CONFLICTING + e2e ❌ (run 28527509341). No new CI since Jul 2 (5+ days stale). |
 | **PR #1596: unchanged** | DRAFT CONFLICTING. No activity. |
 | **Off-board PRs unchanged** | #1632 (✅ CLEAN, REVIEW_REQUIRED), #1638 (e2e ❌ run 28808026450), #1647 (e2e-api ❌+REVIEW_REQUIRED run 28801725588). |
-| **Jira mismatches: unchanged** | JN-5717 still Backlog (PR #1631 merged Jul 6); JN-5794 still In Review (PR #1643 merged Jul 1). Jira MCP 401 — unverifiable via MCP. |
+| **Jira mismatches: unchanged** | JN-5717 still Backlog (PR #1631 merged Jul 6); JN-5794 still In Review (PR #1643 merged Jul 1). Jira MCP 401 + acli returned empty — unverifiable. |
 
 ---
 
 ## Attention Items
 
-### 🔴 PR #1588 (JN-5546) — pre-commit ❌ persists
+### 🟡 PR #1588 (JN-5546) — New CI run IN PROGRESS (pre-commit pending)
 
 PR [#1588](https://github.com/Jounce-IO/jounce/pull/1588): `docs(jbenchmark): add CONTRIBUTING.md and service READMEs`
-- **Status:** **MERGEABLE** ✅ (rebased overnight Jul 6→7 — was CONFLICTING)
+- **Status:** **MERGEABLE** ✅, **APPROVED** ✅
 - **Zone:** **Respond**
-- **CI run 28822455546** (triggered 20:52 IDT Jul 6):
-  - Build: ✅ all 7 service images passing
-  - Integration: ✅ (3m9s)
-  - e2e-tests: ✅ (3s)
-  - tox: ✅ (3m31s)
-  - nox: ✅ (4s)
-  - deploy: ✅
-  - **pre-commit: ❌ FAILING** (4m28s, job 85477327366)
-  - **all-checks: ❌** (blocked by pre-commit)
-  - e2e-smoke / e2e-api / e2e-product: skipping (requires merge)
-- **Action needed:** Fix pre-commit failure → full CI will pass → ready to merge
+- **2 new commits pushed today:**
+  - `bb001660` (09:44 IDT Jul 7): "docs(jbenchmark): add Helm template references to service READMEs"
+  - `d1e7b985` (10:30 IDT Jul 7): "docs: reorder"
+- **CI run 28849373099** (triggered 10:30 IDT Jul 7 — IN PROGRESS):
+  - e2e-tests: ✅, atlas-validate: ✅, deploy: ✅
+  - **pre-commit: ⏳ IN PROGRESS** (was ❌ in previous run)
+  - integration: ⏳ IN PROGRESS
+  - tox: ⏳ IN PROGRESS
+  - all-checks: ⏳ (pending pre-commit)
+- **Previous CI run 28822455546** (20:52 IDT Jul 6): pre-commit ❌ — now superseded
+- **Watch:** If pre-commit passes this run → all-checks will pass → PR ready to merge
 
 ---
 
