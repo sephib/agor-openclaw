@@ -1,6 +1,24 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-07 19:30 IDT",
+    actions: 0,
+    findings: 7,
+    status: "ok",
+    summary: "jn-5827 validate PASS→Code Review; internal CR found HIGH bug (tag format +/- mismatch, Kubernetes would fail); jn-5841 continue still ready; #1638 e2e-product ❌+#1647 pre-commit ❌+e2e ❌ unchanged; #1632 ✅ ready; 3 Jira mismatches unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f3d6a96797454af8a6d0c/",
+  },
+  {
+    type: "advance",
+    timestamp: "2026-07-07 19:00 IDT",
+    actions: 0,
+    findings: 7,
+    status: "ok",
+    summary: "jn-5827 Code→Validate (session 019f3d4a RUNNING); jn-5841 continue session IDLE+ready (e08834bf); #1647 pre-commit+e2e-product ❌+#1638 e2e-product ❌ unchanged; #1632 ✅ ready to merge; 3 Jira mismatches confirmed; 0 auto-advances",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f3d4f22c77f0ab7063c17/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-07 18:32 IDT",
     actions: 0,
     findings: 7,

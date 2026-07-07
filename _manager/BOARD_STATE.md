@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-07 19:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-07 19:30 IDT (advance heartbeat)*
 
 ---
 
@@ -12,11 +12,11 @@
 | jn-5672-dal-ext-dashboard | BLOCKED | — | — | [JN-5672](https://redhat.atlassian.net/browse/JN-5672) | On hold — after notebooks complete |
 | model-packaging-cr | Code Review | — | — | — | ⚠️ model-packaging-pipeline repo. Created Jun 15. No PR URL set, no sessions. Stale 22+ days. |
 | jn-5244-cli-flags | Ingest | — | — | [JN-5244](https://redhat.atlassian.net/browse/JN-5244) | ℹ️ No sessions yet. Ready to ingest. |
-| jn-5841-agents-md-root | **Code** | — | — | [JN-5841](https://redhat.atlassian.net/browse/JN-5841) | 🟡 Session 019f3d35 "continue" IDLE, **ready_for_prompt: TRUE** (new commits SHA: 441d8e0). Session 019f3c21 TIMED OUT (parent). Waiting for Joseph. |
+| jn-5841-agents-md-root | **Code** | — | — | [JN-5841](https://redhat.atlassian.net/browse/JN-5841) | 🟡 Session [019f3d35](http://127.0.0.1:3030/ui/s/019f3d35877277f2bff66999/) "continue" IDLE, **ready_for_prompt: TRUE** (SHA: e08834bf, last updated 19:28 IDT). Session 019f3c21 TIMED OUT (parent). Waiting for Joseph. |
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — Backlog | Design session done Jun 30. Ready for Plan phase. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 12+ days with no session or PR. |
 | fix-dashboard-syntax-error | Plan | — | — | — | 🔴 ZOMBIE: agor-openclaw repo, filesystem_status=FAILED. 20+ days stale. PROPOSAL: archive. |
-| jn-5827-git-tagging-workflow | **Validate** | — | — | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) — Backlog | 🔵 ZONE MOVED Code→Validate. Session [019f3d4a](http://127.0.0.1:3030/ui/s/019f3d4a4733779fa8b91bd1/) **RUNNING** (validate, created 18:55 IDT). Session [019f3b88](http://127.0.0.1:3030/ui/s/019f3b8835787ddbb7b645b5/) idle, ready_for_prompt: TRUE. |
+| jn-5827-git-tagging-workflow | **Code Review** | — | — | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) | 🔴 ZONE NOW Code Review. Validate PASS ✅ (16:13 IDT). Internal CR retry [019f3d66](http://127.0.0.1:3030/ui/s/019f3d66ffeb7154a64feb80/) IDLE **ready_for_prompt: TRUE** — **HIGH severity bug** (tag format mismatch). |
 
 ---
 
@@ -54,35 +54,39 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes Since Last Run (18:32 IDT Jul 7)
+## Key Changes Since Last Run (19:00 IDT Jul 7)
 
 | What observed | Status |
 |---|---|
-| **🔵 jn-5827 ZONE MOVED: Code → Validate** | Joseph moved to Validate. NEW session [019f3d4a](http://127.0.0.1:3030/ui/s/019f3d4a4733779fa8b91bd1/) **RUNNING** ("Validate JN-5827 — git tagging workflow", created 18:55 IDT). Session 019f3b88 still idle, ready_for_prompt=TRUE. |
-| **🟡 jn-5841: "continue" session now ready** | NEW session [019f3d35](http://127.0.0.1:3030/ui/s/019f3d35877277f2bff66999/) ("continue", forked from 019f3c21): IDLE, **ready_for_prompt: TRUE**, SHA=441d8e0 (new commits committed). Last updated 15:57 IDT. |
-| **CI unchanged** | #1647 pre-commit ❌ + e2e-product ❌, #1638 e2e-product ❌, #1632 all ✅ — no new runs triggered. |
-| **Jira mismatches: unchanged** | All 3 still unresolved. |
+| **🔴 jn-5827 ZONE NOW Code Review** | Validate session 019f3d4a completed 16:13 IDT — ALL PASS (pre-commit ✅, tag tests ✅, 3349 unit tests ✅, coverage 93.31% ✅). Joseph moved worktree to Code Review zone. |
+| **🔴 jn-5827 Internal CR: HIGH severity bug** | CR session [019f3d65](http://127.0.0.1:3030/ui/s/019f3d6526927b6f8a623928/) (16:25 IDT) + retry [019f3d66](http://127.0.0.1:3030/ui/s/019f3d66ffeb7154a64feb80/) (16:29 IDT, **ready_for_prompt: TRUE**): HIGH bug found — `version-pr` job writes CalVer tag `3.5.0+20260705` into `values-prd.yaml` image tags, but images built with `image_tag` format `3.5.0-20260705`. `+` is invalid in Docker tags — Kubernetes would fail to pull images. |
+| **🟡 jn-5841: continue session still ready** | Session [019f3d35](http://127.0.0.1:3030/ui/s/019f3d35877277f2bff66999/) last updated 19:28 IDT — still IDLE, **ready_for_prompt: TRUE**. SHA e08834bf. No new prompt received. |
+| **CI unchanged** | #1647 pre-commit ❌ + e2e-product ❌, #1638 e2e-product ❌, #1632 all ✅ — no new runs. |
+| **Jira mismatches: unchanged** | All 3 still unresolved (JN-5717/5794/5546). |
 | **No merges detected** | 0 auto-archives this run. |
 
 ---
 
 ## Attention Items
 
-### 🔵 jn-5827 — Validate Session RUNNING
+### 🔴 jn-5827 — HIGH Severity Bug in Internal CR (Code Review Zone)
 
-Worktree `jn-5827-git-tagging-workflow` moved to **Validate** zone:
-- **Session [019f3d4a](http://127.0.0.1:3030/ui/s/019f3d4a4733779fa8b91bd1/)** ("Validate JN-5827 — git tagging workflow"): **RUNNING** since 18:55 IDT (5 min ago). Has callback to session 019f19eb.
-- **Session [019f3b88](http://127.0.0.1:3030/ui/s/019f3b8835787ddbb7b645b5/)** ("verify gh workflow + justfile"): idle, ready_for_prompt: **TRUE**. Git DIRTY.
-- **Action:** Validate session is running — await its completion. Session 019f3b88 also still ready if Joseph wants to send a prompt.
+Worktree `jn-5827-git-tagging-workflow` now in **Code Review** zone:
+- **Validate session [019f3d4a](http://127.0.0.1:3030/ui/s/019f3d4a4733779fa8b91bd1/)** COMPLETED 16:13 IDT — ALL PASS: pre-commit ✅, tag tests 26/26 ✅, 3349 unit tests ✅, coverage 93.31% ✅
+- **Internal CR retry [019f3d66](http://127.0.0.1:3030/ui/s/019f3d66ffeb7154a64feb80/)** IDLE, **ready_for_prompt: TRUE** — **HIGH severity bug found:**
+  - `version-pr` job (line 386) writes git tag `3.5.0+20260705` into `values-prd.yaml` image tags
+  - But images are built with `image_tag` format `3.5.0-20260705` (dash, not plus)
+  - Docker/OCI tags don't accept `+` — Kubernetes would fail to pull images
+- **Action:** Must fix tag format mismatch before creating PR. Joseph to review CR findings and fix before pushing.
 
 ---
 
 ### 🟡 jn-5841 — "Continue" Session Ready for Input
 
 Worktree `jn-5841-agents-md-root` in Code zone:
-- **Session [019f3d35](http://127.0.0.1:3030/ui/s/019f3d35877277f2bff66999/)** ("continue", forked from 019f3c21): **IDLE, ready_for_prompt: TRUE**. New commits (SHA: 441d8e0, up from a99bdef-dirty). Last updated 15:57 IDT.
+- **Session [019f3d35](http://127.0.0.1:3030/ui/s/019f3d35877277f2bff66999/)** ("continue", forked from 019f3c21): **IDLE, ready_for_prompt: TRUE**. SHA: e08834bf (new commits). Last updated 19:28 IDT.
 - Session [019f3c21](http://127.0.0.1:3030/ui/s/019f3c219a667dc09a7dcdad/) (parent): still timed_out.
-- **Action:** The "continue" session made progress and is waiting for Joseph. Review what was committed (SHA 441d8e0) and decide next prompt.
+- **Action:** Session has made progress and is waiting for Joseph. Review committed work (SHA e08834bf) and decide next prompt.
 
 ---
 

@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-07 19:00 IDT";
+export const LAST_UPDATED = "2026-07-07 19:30 IDT";
 
 export const WORKTREES = [
   {
@@ -61,7 +61,7 @@ export const WORKTREES = [
     zone: "Code",
     pr: null,
     prUrl: null,
-    status: "🟡 'continue' session 019f3d35 IDLE — ready_for_prompt: TRUE. New commits (SHA: 441d8e0). Forked from timed-out 019f3c21. Waiting for Joseph.",
+    status: "🟡 'continue' session 019f3d35 IDLE — ready_for_prompt: TRUE. New commits (SHA: e08834bf). Forked from timed-out 019f3c21. Waiting for Joseph.",
     blockedOn: null,
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f3d35877277f2bff66999/",
@@ -72,7 +72,7 @@ export const WORKTREES = [
         url: "http://127.0.0.1:3030/ui/s/019f3d35877277f2bff66999/",
         title: "continue",
         status: "idle",
-        timestamp: "2026-07-07 15:57 IDT",
+        timestamp: "2026-07-07 19:28 IDT",
         outputFile: null,
       },
       {
@@ -80,7 +80,7 @@ export const WORKTREES = [
         url: "http://127.0.0.1:3030/ui/s/019f3c219a667dc09a7dcdad/",
         title: "implement (timed_out)",
         status: "timed_out",
-        timestamp: "2026-07-07 13:47 IDT",
+        timestamp: "2026-07-07 18:32 IDT",
         outputFile: null,
       },
       {
@@ -100,7 +100,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-07 15:57 IDT",
+    lastActive: "2026-07-07 19:28 IDT",
   },
   {
     ticket: "JN-5244",
@@ -168,21 +168,37 @@ export const WORKTREES = [
     title: "Implement git tagging workflow for 3.5GA release",
     branch: "jn-5827-git-tagging-workflow",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5827-git-tagging-workflow",
-    zone: "Validate",
+    zone: "Code Review",
     pr: null,
     prUrl: null,
-    status: "🔵 ZONE MOVED Code→Validate. Session 019f3d4a RUNNING ('Validate JN-5827', created 18:55 IDT). Session 019f3b88 idle, ready_for_prompt: TRUE.",
-    blockedOn: null,
+    status: "🔴 ZONE NOW Code Review. Validate PASS (16:13 IDT) ✅. Internal CR retry [019f3d66] IDLE ready_for_prompt: TRUE — HIGH severity bug: version-pr job writes CalVer tag (3.5.0+20260705) to values-prd.yaml but images built with dash format (3.5.0-20260705). Kubernetes would fail to pull. Needs fix before PR.",
+    blockedOn: "HIGH severity bug in internal CR — tag format mismatch",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f3d4a4733779fa8b91bd1/",
-    sessionLabel: "validate (running)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f3d66ffeb7154a64feb80/",
+    sessionLabel: "internal-cr (ready)",
     recentSessions: [
+      {
+        sessionId: "019f3d66ffeb7154a64feb80",
+        url: "http://127.0.0.1:3030/ui/s/019f3d66ffeb7154a64feb80/",
+        title: "internal-cr retry (ready)",
+        status: "idle",
+        timestamp: "2026-07-07 19:29 IDT",
+        outputFile: null,
+      },
+      {
+        sessionId: "019f3d6526927b6f8a623928",
+        url: "http://127.0.0.1:3030/ui/s/019f3d6526927b6f8a623928/",
+        title: "internal-cr (idle)",
+        status: "idle",
+        timestamp: "2026-07-07 19:25 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f3d4a4733779fa8b91bd1",
         url: "http://127.0.0.1:3030/ui/s/019f3d4a4733779fa8b91bd1/",
-        title: "validate",
-        status: "running",
-        timestamp: "2026-07-07 18:55 IDT",
+        title: "validate (PASS)",
+        status: "idle",
+        timestamp: "2026-07-07 19:13 IDT",
         outputFile: null,
       },
       {
@@ -202,7 +218,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-07 18:55 IDT",
+    lastActive: "2026-07-07 19:29 IDT",
   },
   {
     ticket: null,
@@ -309,12 +325,12 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "blue",
-    message: "🔵 jn-5827 (JN-5827): ZONE MOVED Code→Validate. Session 019f3d4a RUNNING ('Validate JN-5827', created 18:55 IDT). Session 019f3b88 idle, ready_for_prompt: TRUE. Git DIRTY. No PR yet.",
+    level: "red",
+    message: "🔴 jn-5827 (JN-5827): NOW Code Review zone. Validate PASS ✅ (16:13 IDT). Internal CR retry [019f3d66] IDLE ready_for_prompt: TRUE — HIGH severity bug found: version-pr job writes CalVer '+' tag (3.5.0+20260705) to values-prd.yaml image tags, but images are built with dash format (3.5.0-20260705). Kubernetes would fail to pull images. Must fix before creating PR.",
   },
   {
     level: "yellow",
-    message: "🟡 jn-5841 (JN-5841): 'continue' session 019f3d35 IDLE, ready_for_prompt: TRUE. New commits (SHA: 441d8e0). Forked from timed-out implement session. Waiting for Joseph.",
+    message: "🟡 jn-5841 (JN-5841): 'continue' session 019f3d35 IDLE, ready_for_prompt: TRUE (19:28 IDT). New commits (SHA: e08834bf). Forked from timed-out 019f3c21. Waiting for Joseph.",
   },
   {
     level: "red",
