@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-07 10:33 IDT (advance heartbeat)*
+*Last updated: 2026-07-07 11:03 IDT (advance heartbeat)*
 
 ---
 
@@ -19,7 +19,7 @@
 | ~~jn-5780-add-jn-project~~ | ~~Plan~~ | ~~GitLab MR#887~~ | — | [JN-5780](https://redhat.atlassian.net/browse/JN-5780) — Done | ✅ ARCHIVED 13:34 IDT Jul 6 — JN-5780 Done + inactive 8+ days (autonomous) |
 | fix-dashboard-syntax-error | Plan | — | — | — | 🔴 ZOMBIE: agor-openclaw repo, not found in Agor scan. Created Jun 17, 19+ days stale. PROPOSAL: archive. |
 | sprint-planning-jul | Plan | — | — | — | ℹ️ Updated 06:50 IDT Jul 2. No sessions, no PR, no Jira. Sprint planning for July? |
-| jn-5827-git-tagging-workflow | Ingest | — | — | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) — Backlog | ℹ️ Created 09:06 IDT Jul 6. Session 019f36af idle 09:11 IDT, 59 msgs — plan written. Still in Ingest zone. Consider moving to Plan zone. |
+| jn-5827-git-tagging-workflow | **Code** (was Ingest) | — | — | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) — Backlog | 🆕 **ZONE CHANGE**: Moved Ingest → Code zone (detected 11:03 IDT Jul 7). Plan session 019f36af idle 09:11 IDT. Likely actively being worked. |
 
 ---
 
@@ -50,36 +50,45 @@
 
 ---
 
-## Key Changes Since Last Run (10:33 IDT Jul 7)
+## Key Changes Since Last Run (11:03 IDT Jul 7)
 
 | What observed | Status |
 |---|---|
-| **🟡 #1588: 2 new commits + new CI run** | Commits bb001660 (09:44 IDT) + d1e7b985 (10:30 IDT) pushed. New CI run 28849373099 triggered at 10:30 IDT. pre-commit now PENDING (was ❌ FAILING since Jul 6). If pre-commit passes → PR ready to merge. |
+| **🆕 jn-5827: Ingest → Code zone** | Detected at 11:03 IDT. Joseph moved branch to Code zone. Plan session (019f36af, 59 msgs) already completed 09:11 IDT Jul 6. Implementation underway or queued. |
+| **🟡 #1588: pre-commit still pending** | CI run 28850119657 — pre-commit ⏳ still running. integration ✅ (3m11s), tox ✅ (3m23s), e2e-tests ✅, atlas ✅, deploy ✅. APPROVED ✅ MERGEABLE ✅. Once pre-commit passes → ready to merge. |
 | **PR #1606: unchanged** | Still CONFLICTING + e2e ❌ (run 28527509341). No new CI since Jul 2 (5+ days stale). |
 | **PR #1596: unchanged** | DRAFT CONFLICTING. No activity. |
-| **Off-board PRs unchanged** | #1632 (✅ CLEAN, REVIEW_REQUIRED), #1638 (e2e ❌ run 28808026450), #1647 (e2e-api ❌+REVIEW_REQUIRED run 28801725588). |
-| **Jira mismatches: unchanged** | JN-5717 still Backlog (PR #1631 merged Jul 6); JN-5794 still In Review (PR #1643 merged Jul 1). Jira MCP 401 + acli returned empty — unverifiable. |
+| **Off-board PRs unchanged** | #1632 (✅ CLEAN, REVIEW_REQUIRED), #1638 (e2e ❌), #1647 (e2e-api ❌+REVIEW_REQUIRED). |
+| **Jira mismatches: unverifiable** | JN-5717 still Backlog (PR #1631 merged Jul 6); JN-5794 still In Review (PR #1643 merged Jul 1). Jira MCP 401 + acli failed this run. |
 
 ---
 
 ## Attention Items
 
-### 🟡 PR #1588 (JN-5546) — New CI run IN PROGRESS (pre-commit pending)
+### 🆕 jn-5827 (JN-5827) — Moved to Code Zone
+
+Worktree `jn-5827-git-tagging-workflow` moved from **Ingest → Code zone** (detected 11:03 IDT Jul 7).
+- Plan session 019f36af idle 09:11 IDT Jul 6 (59 msgs). Plan written.
+- No PR yet. Implementation presumably starting.
+- Next: watch for new session or PR creation.
+
+---
+
+### 🟡 PR #1588 (JN-5546) — CI pre-commit still pending
 
 PR [#1588](https://github.com/Jounce-IO/jounce/pull/1588): `docs(jbenchmark): add CONTRIBUTING.md and service READMEs`
 - **Status:** **MERGEABLE** ✅, **APPROVED** ✅
 - **Zone:** **Respond**
-- **2 new commits pushed today:**
+- **2 commits pushed today:**
   - `bb001660` (09:44 IDT Jul 7): "docs(jbenchmark): add Helm template references to service READMEs"
   - `d1e7b985` (10:30 IDT Jul 7): "docs: reorder"
-- **CI run 28849373099** (triggered 10:30 IDT Jul 7 — IN PROGRESS):
-  - e2e-tests: ✅, atlas-validate: ✅, deploy: ✅
-  - **pre-commit: ⏳ IN PROGRESS** (was ❌ in previous run)
-  - integration: ⏳ IN PROGRESS
-  - tox: ⏳ IN PROGRESS
+- **CI run 28850119657** (triggered 10:30 IDT Jul 7 — IN PROGRESS at 11:03 IDT):
+  - e2e-tests: ✅, atlas-validate: ✅, deploy: ✅, JIRA Association: ✅
+  - integration-run: ✅ (3m11s), tox-run: ✅ (3m23s), nox: ✅
+  - **pre-commit-run: ⏳ PENDING** (still running at 11:03 IDT)
+  - e2e-smoke: ⏭️ skipping (docs-only, correct)
   - all-checks: ⏳ (pending pre-commit)
-- **Previous CI run 28822455546** (20:52 IDT Jul 6): pre-commit ❌ — now superseded
-- **Watch:** If pre-commit passes this run → all-checks will pass → PR ready to merge
+- **Watch:** Once pre-commit passes → all-checks will pass → PR ready to merge
 
 ---
 

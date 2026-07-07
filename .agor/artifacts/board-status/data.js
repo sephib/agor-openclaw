@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-07 10:33 IDT";
+export const LAST_UPDATED = "2026-07-07 11:03 IDT";
 
 export const WORKTREES = [
   {
@@ -10,8 +10,8 @@ export const WORKTREES = [
     zone: "Respond",
     pr: "#1588",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1588",
-    status: "🟡 2 new commits pushed (09:44+10:30 IDT Jul 7). New CI run 28849373099 IN PROGRESS: pre-commit ⏳ PENDING (was ❌). e2e ✅ atlas ✅ deploy ✅. PR: APPROVED ✅ MERGEABLE ✅. Watch: if pre-commit passes → ready to merge.",
-    blockedOn: "CI run 28849373099 in progress (pre-commit pending)",
+    status: "🟡 2 commits pushed today (09:44+10:30 IDT Jul 7). CI run 28850119657 — pre-commit ⏳ PENDING (still running 11:03 IDT). integration ✅ tox ✅ nox ✅ e2e ✅ atlas ✅ deploy ✅. PR: APPROVED ✅ MERGEABLE ✅. Once pre-commit passes → ready to merge.",
+    blockedOn: "CI run 28850119657 in progress (pre-commit pending at 11:03 IDT)",
     blockedType: "active",
     sessionUrl: "http://localhost:3030/ui/s/019ed01e5624752fbade0eab/",
     sessionLabel: "fix session",
@@ -187,10 +187,10 @@ export const WORKTREES = [
     title: "Implement git tagging workflow for 3.5GA release",
     branch: "jn-5827-git-tagging-workflow",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5827-git-tagging-workflow",
-    zone: "Ingest",
+    zone: "Code",
     pr: null,
     prUrl: null,
-    status: "🆕 NEW (first detected 12:33 IDT Jul 6). Created 09:06 IDT Jul 6. Session 019f36af idle 09:11 IDT, 59 msgs — plan written. Still in Ingest zone. Jira: Backlog. Ready to move to Plan zone.",
+    status: "🆕 ZONE CHANGE: Ingest → Code (detected 11:03 IDT Jul 7). Plan session 019f36af idle 09:11 IDT Jul 6 (59 msgs). Implementation underway or queued. No PR yet.",
     blockedOn: null,
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f36afb2567e2b9f7d473b/",
@@ -375,8 +375,12 @@ export const MERGED = [
 
 export const ALERTS = [
   {
+    level: "info",
+    message: "🆕 jn-5827 ZONE CHANGE: Ingest → Code (detected 11:03 IDT Jul 7). Plan session (59 msgs) already done. Implementation underway. Watch for new session or PR.",
+  },
+  {
     level: "yellow",
-    message: "🟡 PR #1588 (JN-5546): 2 new commits pushed today (bb001660 09:44 IDT + d1e7b985 10:30 IDT). New CI run 28849373099 IN PROGRESS. pre-commit ⏳ PENDING (was ❌ in run 28822455546). e2e ✅, atlas ✅, deploy ✅. APPROVED ✅ MERGEABLE ✅. If pre-commit passes → ready to merge.",
+    message: "🟡 PR #1588 (JN-5546): CI run 28850119657 — pre-commit ⏳ PENDING (still running at 11:03 IDT). integration ✅ tox ✅ nox ✅ e2e ✅ atlas ✅. APPROVED ✅ MERGEABLE ✅. Once pre-commit passes → ready to merge.",
   },
   {
     level: "red",
@@ -400,7 +404,7 @@ export const ALERTS = [
   },
   {
     level: "green",
-    message: "ℹ️ jn-5827-git-tagging-workflow (Ingest zone): plan session idle 09:11 IDT Jul 6 (59 msgs). JN-5827 Backlog. Ready to move to Plan zone.",
+    message: "ℹ️ jn-5827-git-tagging-workflow: moved to Code zone 11:03 IDT Jul 7. Plan session idle 09:11 IDT Jul 6 (59 msgs). Implementation underway.",
   },
   {
     level: "green",
