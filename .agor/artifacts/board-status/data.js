@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-07 18:32 IDT";
+export const LAST_UPDATED = "2026-07-07 19:00 IDT";
 
 export const WORKTREES = [
   {
@@ -61,12 +61,20 @@ export const WORKTREES = [
     zone: "Code",
     pr: null,
     prUrl: null,
-    status: "🔴 Implement session 019f3c21 TIMED OUT — git DIRTY, ready_for_prompt: false. Plan revision session 019f3ba0 idle (ready_for_prompt: false). Needs review.",
-    blockedOn: "Session timed out mid-work",
-    blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f3c219a667dc09a7dcdad/",
-    sessionLabel: "implement (timed_out)",
+    status: "🟡 'continue' session 019f3d35 IDLE — ready_for_prompt: TRUE. New commits (SHA: 441d8e0). Forked from timed-out 019f3c21. Waiting for Joseph.",
+    blockedOn: null,
+    blockedType: "active",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f3d35877277f2bff66999/",
+    sessionLabel: "continue (ready)",
     recentSessions: [
+      {
+        sessionId: "019f3d35877277f2bff66999",
+        url: "http://127.0.0.1:3030/ui/s/019f3d35877277f2bff66999/",
+        title: "continue",
+        status: "idle",
+        timestamp: "2026-07-07 15:57 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f3c219a667dc09a7dcdad",
         url: "http://127.0.0.1:3030/ui/s/019f3c219a667dc09a7dcdad/",
@@ -92,7 +100,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-07 13:47 IDT",
+    lastActive: "2026-07-07 15:57 IDT",
   },
   {
     ticket: "JN-5244",
@@ -160,21 +168,29 @@ export const WORKTREES = [
     title: "Implement git tagging workflow for 3.5GA release",
     branch: "jn-5827-git-tagging-workflow",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5827-git-tagging-workflow",
-    zone: "Code",
+    zone: "Validate",
     pr: null,
     prUrl: null,
-    status: "🟡 NEW: Session 019f3b88 last updated 18:28 IDT — ready_for_prompt: TRUE. Joseph prompted it between runs. Git DIRTY. Waiting for next input from Joseph.",
+    status: "🔵 ZONE MOVED Code→Validate. Session 019f3d4a RUNNING ('Validate JN-5827', created 18:55 IDT). Session 019f3b88 idle, ready_for_prompt: TRUE.",
     blockedOn: null,
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f3b8835787ddbb7b645b5/",
-    sessionLabel: "code (ready)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f3d4a4733779fa8b91bd1/",
+    sessionLabel: "validate (running)",
     recentSessions: [
+      {
+        sessionId: "019f3d4a4733779fa8b91bd1",
+        url: "http://127.0.0.1:3030/ui/s/019f3d4a4733779fa8b91bd1/",
+        title: "validate",
+        status: "running",
+        timestamp: "2026-07-07 18:55 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f3b8835787ddbb7b645b5",
         url: "http://127.0.0.1:3030/ui/s/019f3b8835787ddbb7b645b5/",
         title: "verify gh workflow + justfile",
         status: "idle",
-        timestamp: "2026-07-07 18:28 IDT",
+        timestamp: "2026-07-07 15:53 IDT",
         outputFile: null,
       },
       {
@@ -186,7 +202,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-07 18:28 IDT",
+    lastActive: "2026-07-07 18:55 IDT",
   },
   {
     ticket: null,
@@ -293,20 +309,20 @@ export const MERGED = [
 
 export const ALERTS = [
   {
+    level: "blue",
+    message: "🔵 jn-5827 (JN-5827): ZONE MOVED Code→Validate. Session 019f3d4a RUNNING ('Validate JN-5827', created 18:55 IDT). Session 019f3b88 idle, ready_for_prompt: TRUE. Git DIRTY. No PR yet.",
+  },
+  {
     level: "yellow",
-    message: "🟡 jn-5827 (JN-5827): Session 019f3b88 last updated 18:28 IDT — ready_for_prompt: TRUE. Joseph prompted it between runs. Waiting for next input. Git DIRTY. No PR yet.",
+    message: "🟡 jn-5841 (JN-5841): 'continue' session 019f3d35 IDLE, ready_for_prompt: TRUE. New commits (SHA: 441d8e0). Forked from timed-out implement session. Waiting for Joseph.",
   },
   {
     level: "red",
-    message: "🔴 PR #1647 (NEW run 28869593069): DEGRADED — both pre-commit ❌ (4m38s) AND e2e-product ❌ (32m25s FAILED). Was just pre-commit before. e2e-smoke ✅ / e2e-api ✅ / integration ✅ / tox ✅ / nox ✅. Two blockers now.",
+    message: "🔴 PR #1647 (run 28869593069): DEGRADED — both pre-commit ❌ (4m38s) AND e2e-product ❌ (32m25s FAILED). Was just pre-commit before. e2e-smoke ✅ / e2e-api ✅ / integration ✅ / tox ✅ / nox ✅. Two blockers now.",
   },
   {
     level: "red",
     message: "🔴 PR #1638 (run 28864329208 — unchanged): e2e-product ❌ FAILED (15m37s). e2e-tests ❌. all-checks ❌. e2e-smoke ✅ / e2e-api ✅ / pre-commit ✅ / tox ✅ / nox ✅ / integration ✅ / bake ✅. No new CI run triggered.",
-  },
-  {
-    level: "red",
-    message: "🔴 jn-5841 (JN-5841): Implement session 019f3c21 TIMED OUT — git DIRTY, ready_for_prompt: false (was true at 16:03). Plan-revision session 019f3ba0 idle. Review needed.",
   },
   {
     level: "green",

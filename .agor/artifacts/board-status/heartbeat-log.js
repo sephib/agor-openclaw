@@ -2909,4 +2909,13 @@ export const HEARTBEAT_RUNS = [
     summary: "⚠️ 5h monitoring gap (16:00→21:02 IDT, sessions 16:00+17:00 FAILED); 🟡 #1588 ACTIVELY WORKED (3 new commits since 16:00 IDT, build CI ✅, still CONFLICTING needs rebase); #1606 CONFLICTING+e2e ❌ unchanged; 2 Jira mismatches (JN-5717/5794) unchanged; 0 auto-advances, 7 findings",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f389687ae74bea5ef988b/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-07-07 19:00 IDT",
+    actions: 0,
+    findings: 7,
+    status: "ok",
+    summary: "jn-5827 Code→Validate (new RUNNING validate session 019f3d4a); jn-5841 continue-session IDLE+ready (441d8e0); CI unchanged (#1647 pre-commit+e2e-product ❌, #1638 e2e-product ❌, #1632 all ✅); 3 Jira mismatches confirmed; 0 auto-advances, 7 findings",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f3d4f22c77f0ab7063c17/",
+  },
 ];
