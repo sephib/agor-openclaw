@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-07 20:00 IDT";
+export const LAST_UPDATED = "2026-07-07 20:30 IDT";
 
 export const WORKTREES = [
   {
@@ -61,18 +61,18 @@ export const WORKTREES = [
     zone: "Validate",
     pr: null,
     prUrl: null,
-    status: "🟢 Session 019f3d82 RUNNING — 'Validate JN-5841 — AGENTS.md + CLAUDE.md refactor' (created 19:56 IDT). Worktree advanced to Validate zone. 'continue' session 019f3d35 IDLE, ready_for_prompt=FALSE.",
+    status: "🟡 Validate session 019f3d82 IDLE + ready_for_prompt: TRUE (~20:03 IDT). Validate run COMPLETE — Joseph needs to review output and advance to Publish (or revise).",
     blockedOn: null,
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f3d8216db751081637244/",
-    sessionLabel: "validate (running)",
+    sessionLabel: "validate (complete, awaiting review)",
     recentSessions: [
       {
         sessionId: "019f3d8216db751081637244",
         url: "http://127.0.0.1:3030/ui/s/019f3d8216db751081637244/",
-        title: "validate (running)",
-        status: "running",
-        timestamp: "2026-07-07 19:56 IDT",
+        title: "validate (complete)",
+        status: "idle",
+        timestamp: "2026-07-07 20:03 IDT",
         outputFile: null,
       },
       {
@@ -108,7 +108,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-07 19:56 IDT",
+    lastActive: "2026-07-07 20:03 IDT",
   },
   {
     ticket: "JN-5244",
@@ -179,8 +179,8 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1648 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1648",
-    status: "🟡 PR #1648 DRAFT created — 'feat(release): implement git tagging workflow for 3.5GA (JN-5827)'. HIGH severity bug (tag format +/-) FIXED by Joseph before creating PR. CI: pre-commit+tox PENDING (run 28883996510); e2e/bake SKIPPING (DRAFT). Awaiting CI pass → mark ready.",
-    blockedOn: "CI pending (pre-commit+tox PENDING)",
+    status: "🟢 CI ALL PASS (run 28885455833): pre-commit ✅ tox ✅ nox ✅ all-checks ✅. e2e/bake SKIPPING (DRAFT). Remove DRAFT flag to trigger full e2e + request review.",
+    blockedOn: null,
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f3d66ffeb7154a64feb80/",
     sessionLabel: "internal-cr (stale/idle)",
@@ -333,20 +333,20 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "yellow",
-    message: "🟡 jn-5827 (JN-5827): PR #1648 DRAFT created (Publish zone). HIGH severity tag format bug FIXED. CI run 28883996510 — pre-commit+tox PENDING; e2e/bake SKIPPING (DRAFT). Awaiting CI pass → mark ready for review.",
-  },
-  {
     level: "green",
-    message: "🟢 jn-5841 (JN-5841): Validate session 019f3d82 RUNNING (19:56 IDT). Joseph advanced worktree to Validate zone and sent prompt to 'continue' session. Progress underway.",
+    message: "🟢 jn-5827 (JN-5827): PR #1648 — CI ALL PASS! run 28885455833: pre-commit ✅ tox ✅ nox ✅ all-checks ✅. e2e/bake SKIPPING (DRAFT). Remove DRAFT flag → triggers full e2e + enables review.",
+  },
+  {
+    level: "yellow",
+    message: "🟡 jn-5841 (JN-5841): Validate session 019f3d82 COMPLETE — IDLE + ready_for_prompt:TRUE (~20:03 IDT). Joseph needs to review validate output and advance to Publish (or revise).",
   },
   {
     level: "red",
-    message: "🔴 PR #1647 (run 28869593069): DEGRADED — both pre-commit ❌ (4m38s) AND e2e-product ❌ (32m25s FAILED). Was just pre-commit before. e2e-smoke ✅ / e2e-api ✅ / integration ✅ / tox ✅ / nox ✅. Two blockers now.",
+    message: "🔴 PR #1638 — NEW RUN REGRESSION (run 28885456652): tox ❌ (5m4s) + nox ❌. e2e-smoke PENDING. Previously passing checks now failing. pre-commit ✅ / e2e-api ✅ / integration ✅ / bake ✅.",
   },
   {
     level: "red",
-    message: "🔴 PR #1638 (run 28864329208 — unchanged): e2e-product ❌ FAILED (15m37s). e2e-tests ❌. all-checks ❌. e2e-smoke ✅ / e2e-api ✅ / pre-commit ✅ / tox ✅ / nox ✅ / integration ✅ / bake ✅. No new CI run triggered.",
+    message: "🔴 PR #1647 (run 28869593069): DEGRADED — both pre-commit ❌ (4m38s) AND e2e-product ❌ (32m25s FAILED). Unchanged. e2e-smoke ✅ / e2e-api ✅ / integration ✅ / tox ✅ / nox ✅.",
   },
   {
     level: "green",

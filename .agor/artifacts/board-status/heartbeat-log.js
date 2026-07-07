@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-07 20:30 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "#1648 CI ALL PASS (run 28885455833, remove DRAFT flag!); jn-5841 validate COMPLETE (ready_for_prompt:TRUE); #1638 REGRESSION tox+nox ❌ (new run 28885456652); #1647 pre-commit+e2e ❌+#1632 ✅ unchanged; 3 Jira mismatches unchanged; 0 auto-advances",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f3da185ce7cc983992220/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-07 20:00 IDT",
     actions: 0,
     findings: 5,
