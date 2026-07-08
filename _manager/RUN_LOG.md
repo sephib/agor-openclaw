@@ -556,3 +556,11 @@
 - Flags: 🔴 #1638 e2e-smoke persistent (7th+ run), 🟡 #1647 e2e-product pending (watch for pass), 🟡 #1632 new run in progress, 🟢 #1649/#1648 unchanged + ready to merge, 2 new ingest sessions still ready_for_prompt, 3 Jira mismatches
 - Auto-advances: 0 (no merged PRs)
 - Next: Watch #1647 e2e-product result — if passes → push for merge (APPROVED!); watch #1632 new run; investigate #1638 e2e-smoke root cause; get LGTMs for #1649/#1648; Joseph reviews jn-5842 + jn-5824 ingest outputs
+
+## 15:00 IDT — Weekday Daytime Heartbeat
+- PRs checked: #1649 (OPEN, CI ALL PASS, REVIEW_REQUIRED), #1648 (OPEN, CI ALL PASS), #1632 (OPEN, CI ALL PASS), #1647 (OPEN, APPROVED, e2e-product ❌), #1638 (OPEN, e2e-smoke ❌), #1606 (OPEN, CONFLICTING), #1596 (DRAFT, CONFLICTING)
+- Merges detected: none
+- CI changes: none since 14:30 IDT run (all runs same as before)
+- Flags: #1647 e2e-product ❌ (unchanged); #1638 e2e-smoke ❌ 8th+ consecutive; #1632 ready to merge (needs LGTM); Jira mismatches x3 (JN-5717 Backlog, JN-5546 In Progress, JN-5827 Backlog) — confirmed acli 15:00 IDT
+- Board static — no zone moves, no merges, no CI changes
+- Next: #1647 e2e-product needs investigation; #1638 e2e-smoke needs investigation; #1632 needs human LGTM; Jira updates needed

@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-08 14:30 IDT";
+export const LAST_UPDATED = "2026-07-08 15:00 IDT";
 
 export const WORKTREES = [
   {
@@ -373,7 +373,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 PR #1638 — conflict RESOLVED ✅ (was CONFLICTING at 13:30, now MERGEABLE). But e2e-smoke still ❌ (run 28936147296 — 7th+ consecutive). Other checks ✅. Only blocker: e2e-smoke. Investigate root cause.",
+    message: "🔴 PR #1638 — conflict RESOLVED ✅ (was CONFLICTING at 13:30, now MERGEABLE). But e2e-smoke still ❌ (run 28936147296 — 8th+ consecutive). Other checks ✅. Only blocker: e2e-smoke. Investigate root cause.",
   },
   {
     level: "green",
@@ -401,7 +401,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "❌ Jira mismatches (3, confirmed acli 14:30 IDT Jul 8; Jira MCP 401): JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5546 'In Progress' (PR #1588 merged Jul 7) — both need Done. JN-5827 'Backlog' (PR #1648 open CI pass) — needs In Review.",
+    message: "❌ Jira mismatches (3, confirmed acli 15:00 IDT Jul 8; Jira MCP 401): JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5546 'In Progress' (PR #1588 merged Jul 7) — both need Done. JN-5827 'Backlog' (PR #1648 open CI pass) — needs In Review.",
   },
   {
     level: "yellow",

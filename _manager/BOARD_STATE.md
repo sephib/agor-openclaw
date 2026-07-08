@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-08 14:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-08 15:00 IDT (advance heartbeat)*
 
 ---
 
@@ -55,20 +55,21 @@ Active sprint tickets assigned to Joseph with no board worktree:
 | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | MERGED Jul 7 | **In Progress** (last confirmed acli 13:30 IDT Jul 8) | ❌ Update Jira → Done |
 | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) | [#1648](https://github.com/Jounce-IO/jounce/pull/1648) | OPEN — CI ALL PASS | **Backlog** (last confirmed acli 13:30 IDT Jul 8) | ⚠️ Should be → In Review |
 
-*Note: Jira MCP 401. Status confirmed via acli at 14:30 IDT.*
+*Note: Jira MCP 401. Status confirmed via acli at 15:00 IDT.*
 
 ---
 
-## Key Changes Since Last Run (14:00 IDT Jul 8)
+## Key Changes Since Last Run (14:30 IDT Jul 8)
 
 | What observed | Status |
 |---|---|
-| **🔴 #1647 — e2e-product FAILED** | Was ⏳ PENDING at 14:00 IDT → run 28936822803 completed: e2e-product ❌ (28m15s). all-checks ❌. PR is APPROVED but CI still blocking. |
-| **🟢 #1632 — NOW ALL PASS** | Was IN PROGRESS (run 28937425260) at 14:00 IDT → run now COMPLETE: ALL PASS ✅. pre-commit ✅, e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅, all-checks ✅. **READY TO MERGE — needs LGTM.** |
-| **🔴 #1638 — e2e-smoke still ❌** | No change. Run 28936147296: e2e-smoke ❌ (8th+ consecutive). Other checks ✅. |
-| **🟢 #1649 unchanged** | CI run 28932482752 ALL PASS. REVIEW_REQUIRED. Unchanged. |
-| **🟢 #1648 unchanged** | CI run 28922899326 ALL PASS. Needs LGTM. Unchanged. |
-| **Jira confirmed via acli 14:30 IDT** | JN-5717 Backlog, JN-5546 In Progress, JN-5827 Backlog — mismatches persist. |
+| **Board is static** | No PR merges, no CI state changes, no zone moves since 14:30 IDT. |
+| **🔴 #1647 — e2e-product FAILED (unchanged)** | run 28936822803: e2e-product ❌ (28m15s). APPROVED but all-checks ❌. |
+| **🔴 #1638 — e2e-smoke still ❌** | Run 28936147296: e2e-smoke ❌ (8th+ consecutive). No new run. |
+| **🟢 #1632 — ALL PASS (unchanged)** | Run 28937425260 ALL PASS. READY TO MERGE — needs LGTM. |
+| **🟢 #1649 unchanged** | CI run 28932482752 ALL PASS. REVIEW_REQUIRED. |
+| **🟢 #1648 unchanged** | CI run 28922899326 ALL PASS. Needs LGTM. |
+| **Jira confirmed via acli 15:00 IDT** | JN-5717 Backlog, JN-5546 In Progress, JN-5827 Backlog — all 3 mismatches persist. |
 
 ---
 
