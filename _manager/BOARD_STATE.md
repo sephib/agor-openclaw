@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-08 10:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-08 11:00 IDT (advance heartbeat)*
 
 ---
 
@@ -14,8 +14,8 @@
 | jn-5244-cli-flags | Ingest | — | — | [JN-5244](https://redhat.atlassian.net/browse/JN-5244) | ℹ️ No sessions yet. Ready to ingest. |
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — Backlog | Design session done Jun 30. Ready for Plan phase. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 13+ days with no session or PR. |
-| jn-5841-agents-md-root | **Publish** | — | — | [JN-5841](https://redhat.atlassian.net/browse/JN-5841) | 🟡 **Publish session IDLE** — [019f3e01](http://127.0.0.1:3030/ui/s/019f3e01ee07703caf8b9576/) status: idle, ready_for_prompt: false (last updated 22:19 IDT Jul 7). No PR created yet. Session ran 4 min then stopped. Joseph needs to resume publish session to create PR. |
-| jn-5827-git-tagging-workflow | **Publish** | [#1648](https://github.com/Jounce-IO/jounce/pull/1648) | 🟢 **ALL PASS** run 28922899326 | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) | 🟢 **DRAFT REMOVED — PR #1648 now OPEN with ALL CI PASSING.** Run 28922899326: all required checks ✅ (JIRA, all-checks, atlas-validate, check-changes, deploy, e2e-api, e2e-smoke, e2e-tests, integration, nox, pre-commit, tox). CodeRabbit pending. **Action: Request external code review.** |
+| jn-5841-agents-md-root | **Publish** | [#1649 DRAFT](https://github.com/Jounce-IO/jounce/pull/1649) | 🟢 **CI PASS** run 28924179820 | [JN-5841](https://redhat.atlassian.net/browse/JN-5841) | 🟡 **DRAFT PR created 10:04 IDT Jul 8.** CI run 28924179820: pre-commit ✅, tox ✅, nox ✅, all-checks ✅ (docs-only; e2e/deploy/api skipping). Session [019f3e01](http://127.0.0.1:3030/ui/s/019f3e01ee07703caf8b9576/) IDLE + **ready_for_prompt: TRUE**. **Action: Review PR, remove DRAFT, request reviewer.** |
+| jn-5827-git-tagging-workflow | **Publish** | [#1648](https://github.com/Jounce-IO/jounce/pull/1648) | 🟢 **ALL PASS** run 28922899326 | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) | 🟢 **PR #1648 OPEN — CI ALL PASS.** Run 28922899326: all required checks ✅. CodeRabbit review completed ✅. reviewDecision: "" (no required-reviewer policy). **Action: Get human LGTM to merge.** |
 
 ---
 
@@ -47,37 +47,49 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 | Ticket | PR | PR Status | Jira Status | Action |
 |--------|-----|-----------|-------------|--------|
-| [JN-5717](https://redhat.atlassian.net/browse/JN-5717) | [#1631](https://github.com/Jounce-IO/jounce/pull/1631) | MERGED Jul 6 | **Backlog** (confirmed acli Jul 8 10:00 IDT) | ❌ Update Jira → Done |
-| [JN-5794](https://redhat.atlassian.net/browse/JN-5794) | [#1643](https://github.com/Jounce-IO/jounce/pull/1643) | MERGED Jul 1 | **In Review** (confirmed acli Jul 8 10:00 IDT) | ❌ Update Jira → Done |
-| [JN-5546](https://redhat.atlassian.net/browse/JN-5546) | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | MERGED Jul 7 | **In Progress** (confirmed acli Jul 8 10:00 IDT) | ❌ Update Jira → Done |
+| [JN-5717](https://redhat.atlassian.net/browse/JN-5717) | [#1631](https://github.com/Jounce-IO/jounce/pull/1631) | MERGED Jul 6 | **Backlog** (confirmed acli Jul 8) | ❌ Update Jira → Done |
+| [JN-5794](https://redhat.atlassian.net/browse/JN-5794) | [#1643](https://github.com/Jounce-IO/jounce/pull/1643) | MERGED Jul 1 | **In Review** (confirmed acli Jul 8) | ❌ Update Jira → Done |
+| [JN-5546](https://redhat.atlassian.net/browse/JN-5546) | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | MERGED Jul 7 | **In Progress** (confirmed acli Jul 8) | ❌ Update Jira → Done |
+| [JN-5827](https://redhat.atlassian.net/browse/JN-5827) | [#1648](https://github.com/Jounce-IO/jounce/pull/1648) | OPEN — CI ALL PASS | **Backlog** (confirmed acli Jul 8) | ⚠️ Should be → In Review |
+| [JN-5841](https://redhat.atlassian.net/browse/JN-5841) | [#1649 DRAFT](https://github.com/Jounce-IO/jounce/pull/1649) | OPEN DRAFT | **Backlog** (confirmed acli Jul 8) | ⚠️ Should be → In Progress |
 
 ---
 
-## Key Changes Since Last Run (09:30 IDT Jul 8)
+## Key Changes Since Last Run (10:00 IDT Jul 8)
 
 | What observed | Status |
 |---|---|
-| **🟢 #1648 (jn-5827) — DRAFT REMOVED, CI ALL PASS** | PR #1648 is no longer a DRAFT. CI run 28922899326: ALL required checks pass (JIRA ✅, all-checks ✅, atlas-validate ✅, deploy ✅, e2e-smoke ✅, e2e-tests ✅, integration ✅, nox ✅, pre-commit ✅, tox ✅). CodeRabbit review in progress. **Request external review now.** |
-| **🟢 #1632 — CI ALL PASS + CodeRabbit ✅ READY TO MERGE** | New run 28922685430: all CI ✅ + CodeRabbit complete ✅. Previous run 28922557096 completed/superseded. MERGEABLE, REVIEW_REQUIRED → **needs final reviewer LGTM to merge.** |
+| **🟡 NEW: jn-5841 — PR #1649 CREATED 10:04 IDT** | Publish session [019f3e01](http://127.0.0.1:3030/ui/s/019f3e01ee07703caf8b9576/) completed — created DRAFT PR #1649 "docs: add root AGENTS.md and refactor CLAUDE.md (JN-5841)". CI run 28924179820: all-checks ✅, pre-commit ✅, tox ✅, nox ✅ (docs-only; e2e skipping). Session now IDLE + ready_for_prompt: TRUE. **Needs: remove DRAFT, request reviewer.** |
+| **🟢 #1648 (jn-5827) — unchanged** | CI run 28922899326 ALL PASS. CodeRabbit completed ✅. reviewDecision now "" (was REVIEW_REQUIRED). No new runs. |
+| **🟢 #1632 — unchanged** | Run 28922685430 ALL PASS + CodeRabbit ✅. REVIEW_REQUIRED. Still needs final LGTM. |
 | **🔴 #1638 — Unchanged REGRESSION** | e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌ (run 28900734572). No new run. |
 | **#1647 — Unchanged** | pre-commit ❌ + e2e-product ❌ (run 28869593069). No new run. |
-| **jn-5841 — Unchanged** | Publish session [019f3e01](http://127.0.0.1:3030/ui/s/019f3e01ee07703caf8b9576/) IDLE, ready_for_prompt:false (last updated 22:19 IDT Jul 7). No PR created. |
-| **Jira mismatches — confirmed via acli** | All 3 active: JN-5717 "Backlog", JN-5794 "In Review", JN-5546 "In Progress" — all need → Done. |
+| **Jira mismatches — 5 now tracked** | 3 original: JN-5717 "Backlog", JN-5794 "In Review", JN-5546 "In Progress". Plus JN-5827 "Backlog" (has open PR) and JN-5841 "Backlog" (has draft PR). All confirmed via acli. |
 | **No merges detected** | 0 auto-archives this run. |
+| **10:30 IDT run** | Prior session staged data.js changes but didn't commit. This 11:00 IDT run completes and commits. |
 
 ---
 
 ## Attention Items
 
-### 🟢 #1648 (jn-5827) — PR OPEN, CI ALL PASS — Request External Review NOW
+### 🟡 jn-5841 — PR #1649 CREATED (DRAFT) — Needs Review
+
+Worktree `jn-5841-agents-md-root` in **Publish** zone:
+- **PR [#1649](https://github.com/Jounce-IO/jounce/pull/1649)** "docs: add root AGENTS.md and refactor CLAUDE.md (JN-5841)" created **10:04 IDT Jul 8**
+- **DRAFT** — needs to be promoted to ready for review
+- **CI run 28924179820**: all-checks ✅, pre-commit ✅, tox ✅, nox ✅ (docs-only; e2e/deploy/integration/api all skipping)
+- **Session [019f3e01](http://127.0.0.1:3030/ui/s/019f3e01ee07703caf8b9576/)**: IDLE, **ready_for_prompt: TRUE**
+- **Action:** Review the PR content. If satisfied, remove DRAFT flag and request reviewer.
+
+---
+
+### 🟢 #1648 (jn-5827) — PR OPEN, CI ALL PASS — Get Human LGTM
 
 PR [#1648](https://github.com/Jounce-IO/jounce/pull/1648): "feat(release): implement git tagging workflow for Jounce repo (JN-5827)"
-- **DRAFT removed** between 09:30 and 10:00 IDT Jul 8
-- **CI run 28922899326**: ALL required checks PASS — JIRA ✅, all-checks ✅, atlas-validate ✅, check-changes ✅, deploy ✅, e2e-api ✅, e2e-smoke ✅, e2e-tests ✅, integration-run ✅, integration-tests ✅, nox ✅, pre-commit-run ✅, pre-commit ✅, tox-run ✅
-- atlas-validate-run/bake/e2e-product: skipping
-- CodeRabbit: review in progress
-- **reviewDecision: REVIEW_REQUIRED** — needs an external reviewer to LGTM
-- **Action: Request external code review on #1648 immediately.**
+- **CI run 28922899326**: ALL required checks PASS
+- **CodeRabbit**: Review completed ✅
+- **reviewDecision**: "" (no required-reviewer policy currently blocking)
+- **Action: Get a human reviewer to LGTM and merge.**
 
 ---
 
@@ -88,16 +100,6 @@ PR [#1632](https://github.com/Jounce-IO/jounce/pull/1632): `feat(jbenchmark): re
 - **CodeRabbit ✅** complete
 - State: OPEN, MERGEABLE, REVIEW_REQUIRED
 - **Action:** Get final reviewer LGTM → merge.
-
----
-
-### 🟡 jn-5841 — Publish Session Stalled — No PR Created
-
-Worktree `jn-5841-agents-md-root` in **Publish** zone:
-- **Session [019f3e01](http://127.0.0.1:3030/ui/s/019f3e01ee07703caf8b9576/)** "Publish JN-5841 — create PR": **IDLE, ready_for_prompt:false** (ran 4 min at 22:15-22:19 IDT Jul 7, then stopped)
-- **No PR created yet** — session stalled before completing PR creation
-- Session has been idle for 11+ hours since Jul 7 22:19 IDT
-- **Action:** Resume the Publish session or create a new Publish session to create the PR.
 
 ---
 
@@ -120,11 +122,16 @@ PR [#1647](https://github.com/Jounce-IO/jounce/pull/1647): `test: testing-dev-be
 
 ---
 
-### ❌ Jira Mismatches (3 active — confirmed via acli 10:00 IDT Jul 8)
+### ❌ Jira Mismatches (5 active)
 
+**Merged PRs not reflected in Jira (3):**
 - [JN-5717](https://redhat.atlassian.net/browse/JN-5717): PR [#1631](https://github.com/Jounce-IO/jounce/pull/1631) MERGED Jul 6 → Jira **"Backlog"** (should be Done)
 - [JN-5794](https://redhat.atlassian.net/browse/JN-5794): PR [#1643](https://github.com/Jounce-IO/jounce/pull/1643) MERGED Jul 1 → Jira **"In Review"** (should be Done)
 - [JN-5546](https://redhat.atlassian.net/browse/JN-5546): PR [#1588](https://github.com/Jounce-IO/jounce/pull/1588) MERGED Jul 7 → Jira **"In Progress"** (should be Done)
+
+**Active PRs not reflected in Jira (2 — lower priority):**
+- [JN-5827](https://redhat.atlassian.net/browse/JN-5827): PR [#1648](https://github.com/Jounce-IO/jounce/pull/1648) OPEN, CI ALL PASS → Jira **"Backlog"** (should be In Review)
+- [JN-5841](https://redhat.atlassian.net/browse/JN-5841): PR [#1649 DRAFT](https://github.com/Jounce-IO/jounce/pull/1649) OPEN DRAFT → Jira **"Backlog"** (should be In Progress)
 
 ---
 

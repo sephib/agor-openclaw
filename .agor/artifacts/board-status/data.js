@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-08 10:00 IDT";
+export const LAST_UPDATED = "2026-07-08 11:00 IDT";
 
 export const WORKTREES = [
   {
@@ -55,24 +55,24 @@ export const WORKTREES = [
   {
     ticket: "JN-5841",
     ticketUrl: "https://redhat.atlassian.net/browse/JN-5841",
-    title: "AGENTS.md + model-packaging-pipeline (JN-5841)",
+    title: "AGENTS.md + CLAUDE.md refactor (JN-5841)",
     branch: "jn-5841-agents-md-root",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5841-agents-md-root",
     zone: "Publish",
-    pr: null,
-    prUrl: null,
-    status: "🟡 Publish session STALLED — session 019f3e01 ran 4 min (22:15-22:19 IDT Jul 7), now idle. No PR created. Needs resume to create PR.",
-    blockedOn: "Publish session stalled — no PR created",
+    pr: "#1649 DRAFT",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1649",
+    status: "🟢 PR #1649 CREATED at 10:04 IDT Jul 8 — DRAFT. CI run 28924179820: pre-commit ✅, tox ✅, nox ✅, all-checks ✅ (docs-only change; e2e/deploy/api skipping). JIRA ✅. CodeRabbit skipped (draft). Session 019f3e01 completed, ready_for_prompt:true. Needs: remove draft, get reviewer.",
+    blockedOn: "DRAFT — needs review",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f3e01ee07703caf8b9576/",
-    sessionLabel: "publish (stalled — no PR)",
+    sessionLabel: "publish (completed — PR #1649 created)",
     recentSessions: [
       {
         sessionId: "019f3e01ee07703caf8b9576",
         url: "http://127.0.0.1:3030/ui/s/019f3e01ee07703caf8b9576/",
-        title: "publish (stalled)",
+        title: "publish (completed — PR #1649 created 10:04 IDT)",
         status: "idle",
-        timestamp: "2026-07-07 22:19 IDT",
+        timestamp: "2026-07-08 10:04 IDT",
         outputFile: null,
       },
       {
@@ -179,7 +179,7 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1648",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1648",
-    status: "🟢 DRAFT REMOVED! PR #1648 OPEN — CI run 28922899326 ALL PASS ✅. CodeRabbit review in progress. REVIEW_REQUIRED — request external reviewer LGTM.",
+    status: "🟢 PR #1648 OPEN — CI run 28922899326 ALL PASS ✅. CodeRabbit COMMENTED (8 actionable). reviewDecision: '' (no required reviewer policy). Needs human LGTM to merge.",
     blockedOn: "Awaiting external code review",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f3d66ffeb7154a64feb80/",
@@ -317,15 +317,15 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "green",
-    message: "🟢 #1648 (jn-5827 JN-5827): DRAFT REMOVED — PR now OPEN with CI ALL PASS (run 28922899326). CodeRabbit review in progress. REVIEW_REQUIRED — request external reviewer LGTM now.",
+    message: "🟢 jn-5841 (JN-5841): PR #1649 CREATED 10:04 IDT Jul 8 — DRAFT. CI run 28924179820 ALL PASS (docs-only, e2e/deploy skipping). Session 019f3e01 completed. Action: remove DRAFT flag, request reviewer.",
+  },
+  {
+    level: "green",
+    message: "🟢 #1648 (jn-5827 JN-5827): PR OPEN — CI run 28922899326 ALL PASS. CodeRabbit review completed ✅. reviewDecision '' (no required reviewer policy). Needs human LGTM to merge.",
   },
   {
     level: "green",
     message: "🟢 PR #1632 (JN-5719): READY TO MERGE — run 28922685430 ALL PASS + CodeRabbit ✅ complete. REVIEW_REQUIRED — get final reviewer LGTM to merge.",
-  },
-  {
-    level: "yellow",
-    message: "🟡 jn-5841 (JN-5841): Publish session 019f3e01 STALLED — ran 4 min (22:15-22:19 IDT Jul 7), idle since. No PR created. Resume session to complete PR creation.",
   },
   {
     level: "red",
