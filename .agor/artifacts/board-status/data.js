@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-08 13:00 IDT";
+export const LAST_UPDATED = "2026-07-08 13:30 IDT";
 
 export const WORKTREES = [
   {
@@ -61,7 +61,7 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1649",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1649",
-    status: "🟢 CI ALL PASS — run 28932482752: pre-commit ✅, e2e-smoke ✅, tox ✅, nox ✅, all-checks ✅. REVIEW_REQUIRED. Action: get reviewer LGTM to merge.",
+    status: "🟢 CI ALL PASS — run 28932482752: pre-commit ✅, e2e-smoke ✅, tox ✅, nox ✅, all-checks ✅. REVIEW_REQUIRED. JN-5841 Jira now In Review ✅. Action: get reviewer LGTM to merge.",
     blockedOn: "Awaiting reviewer LGTM",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f3e01ee07703caf8b9576/",
@@ -152,6 +152,58 @@ export const WORKTREES = [
       },
     ],
     lastActive: "2026-06-30 12:45 IDT",
+  },
+  {
+    ticket: "JN-5842",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5842",
+    title: "Refactor jbenchmark AGENTS.md (JN-5842)",
+    branch: "jn-5842-jbenchmark-agents-md",
+    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5842-jbenchmark-agents-md",
+    zone: "Ingest",
+    pr: null,
+    prUrl: null,
+    status: "🆕 NEW — Ingest session 019f4126-8305 IDLE + ready_for_prompt:TRUE. Joseph to review ingest output → trigger /implement:plan.",
+    blockedOn: "Awaiting Joseph review",
+    blockedType: "active",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f412683057d20b481a4b9/",
+    sessionLabel: "ingest (ready_for_prompt: TRUE)",
+    recentSessions: [
+      {
+        sessionId: "019f412683057d20b481a4b9",
+        url: "http://127.0.0.1:3030/ui/s/019f412683057d20b481a4b9/",
+        title: "ingest (completed ~10:00 IDT)",
+        status: "idle",
+        timestamp: "2026-07-08 10:00 IDT",
+        outputFile: null,
+      },
+    ],
+    lastActive: "2026-07-08 10:00 IDT",
+  },
+  {
+    ticket: "JN-5824",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5824",
+    title: "Benchmark run configs for IBM hardware (JN-5824)",
+    branch: "jn-5824-benchmark-run-configs",
+    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5824-benchmark-run-configs",
+    zone: "Ingest",
+    pr: null,
+    prUrl: null,
+    status: "🆕 NEW — Ingest session 019f4138-3c41 IDLE + ready_for_prompt:TRUE. Joseph to review ingest output → trigger /implement:plan.",
+    blockedOn: "Awaiting Joseph review",
+    blockedType: "active",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f41383c4176578b17ac7a/",
+    sessionLabel: "ingest (ready_for_prompt: TRUE)",
+    recentSessions: [
+      {
+        sessionId: "019f41383c4176578b17ac7a",
+        url: "http://127.0.0.1:3030/ui/s/019f41383c4176578b17ac7a/",
+        title: "ingest (completed ~10:22 IDT)",
+        status: "idle",
+        timestamp: "2026-07-08 10:22 IDT",
+        outputFile: null,
+      },
+    ],
+    lastActive: "2026-07-08 10:22 IDT",
   },
   {
     ticket: null,
@@ -256,7 +308,7 @@ export const MERGED = [
     pr: "#1643",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1643",
     mergedDate: "2026-07-01",
-    note: "Merged 09:16 IDT Jul 1 — jn-5794-required-checks worktree auto-archived at 09:21 IDT. Reviewer APPROVED. JN-5794 Jira still 'In Review' → needs Done.",
+    note: "Merged 09:16 IDT Jul 1 — jn-5794-required-checks worktree auto-archived at 09:21 IDT. Reviewer APPROVED. JN-5794 Jira now Done ✅ (resolved 13:30 IDT Jul 8).",
   },
   {
     ticket: "JN-5714",
@@ -316,8 +368,12 @@ export const MERGED = [
 
 export const ALERTS = [
   {
+    level: "red",
+    message: "🔴 PR #1638 — NOW CONFLICTING (since ~13:00 IDT Jul 8) + 6th+ consecutive e2e-smoke ❌ (run 28931312110). Double-blocked: must rebase first, then fix e2e-smoke.",
+  },
+  {
     level: "green",
-    message: "🟢 #1649 (jn-5841 JN-5841): CI ALL PASS — run 28932482752: pre-commit ✅, e2e-smoke ✅, all-checks ✅. OPEN + REVIEW_REQUIRED. Needs reviewer LGTM to merge. (Previous run 28931349732 pre-commit ❌ — resolved.)",
+    message: "🟢 #1649 (jn-5841 JN-5841): CI ALL PASS — run 28932482752. OPEN + REVIEW_REQUIRED. JN-5841 Jira now In Review ✅. Needs reviewer LGTM to merge.",
   },
   {
     level: "green",
@@ -328,8 +384,12 @@ export const ALERTS = [
     message: "🟢 PR #1632 (JN-5719): READY TO MERGE — run 28922685430 ALL PASS + CodeRabbit ✅ complete. REVIEW_REQUIRED — get final reviewer LGTM to merge.",
   },
   {
-    level: "red",
-    message: "🔴 PR #1638 — 5th CONSECUTIVE CI FAILURE (e2e-smoke ❌ persistent). Runs 28930566279 + 28931312110 both FAILED. Pre-commit/tox/nox/bake now ✅ — only e2e-smoke blocks. Investigate e2e-smoke root cause.",
+    level: "yellow",
+    message: "🆕 jn-5842-jbenchmark-agents-md (JN-5842): NEW worktree in Ingest. Ingest session ready_for_prompt:TRUE. Joseph to review → trigger /implement:plan.",
+  },
+  {
+    level: "yellow",
+    message: "🆕 jn-5824-benchmark-run-configs (JN-5824): NEW worktree in Ingest. Ingest session ready_for_prompt:TRUE. Joseph to review → trigger /implement:plan.",
   },
   {
     level: "yellow",
@@ -341,7 +401,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "❌ Jira mismatches (3, Jira MCP 401 — assumed unchanged): JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5794 'In Review' (PR #1643 merged Jul 1), JN-5546 'In Progress' (PR #1588 merged Jul 7). All need → Done.",
+    message: "❌ Jira mismatches (3, confirmed via acli 13:30 IDT Jul 8): JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5546 'In Progress' (PR #1588 merged Jul 7) — both need Done. JN-5827 'Backlog' (PR #1648 open CI pass) — needs In Review.",
   },
   {
     level: "yellow",

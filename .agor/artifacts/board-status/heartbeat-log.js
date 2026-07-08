@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-08 13:30 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "#1638 NOW CONFLICTING (new) + e2e-smoke ❌ 6th+; 2 NEW worktrees (jn-5842, jn-5824) both ingest ready_for_prompt:TRUE; JN-5794→Done ✅ + JN-5841→In Review ✅ (2 Jira mismatches resolved); 3 mismatches remain; #1649/#1648/#1632 all CI ALL PASS unchanged; 0 auto-advances",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f414727ca71cc88dad206/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-08 13:00 IDT",
     actions: 0,
     findings: 4,
