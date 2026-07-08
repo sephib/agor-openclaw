@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-08 13:30 IDT";
+export const LAST_UPDATED = "2026-07-08 14:00 IDT";
 
 export const WORKTREES = [
   {
@@ -368,8 +368,16 @@ export const MERGED = [
 
 export const ALERTS = [
   {
+    level: "yellow",
+    message: "🟡 PR #1647 — APPROVED + NEW run 28936822803: pre-commit ✅ RECOVERED! e2e-smoke ✅ + tox ✅ + nox ✅. **e2e-product ⏳ PENDING** — if passes → merge-ready (APPROVED + all-checks ✅). Watch for result.",
+  },
+  {
     level: "red",
-    message: "🔴 PR #1638 — NOW CONFLICTING (since ~13:00 IDT Jul 8) + 6th+ consecutive e2e-smoke ❌ (run 28931312110). Double-blocked: must rebase first, then fix e2e-smoke.",
+    message: "🔴 PR #1638 — conflict RESOLVED ✅ (was CONFLICTING at 13:30, now MERGEABLE). But e2e-smoke still ❌ (run 28936147296 — 7th+ consecutive). Other checks ✅. Only blocker: e2e-smoke. Investigate root cause.",
+  },
+  {
+    level: "yellow",
+    message: "🟡 PR #1632 (JN-5719): NEW CI run 28937425260 IN PROGRESS (was ALL PASS run 28922685430). Pending: pre-commit, e2e-api, integration, tox. Watch for outcome.",
   },
   {
     level: "green",
@@ -380,20 +388,12 @@ export const ALERTS = [
     message: "🟢 #1648 (jn-5827 JN-5827): PR OPEN — CI run 28922899326 ALL PASS. CodeRabbit review completed ✅. reviewDecision '' (no required reviewer policy). Needs human LGTM to merge.",
   },
   {
-    level: "green",
-    message: "🟢 PR #1632 (JN-5719): READY TO MERGE — run 28922685430 ALL PASS + CodeRabbit ✅ complete. REVIEW_REQUIRED — get final reviewer LGTM to merge.",
+    level: "yellow",
+    message: "🆕 jn-5842-jbenchmark-agents-md (JN-5842): Ingest complete, ready_for_prompt:TRUE. Joseph to review → trigger /implement:plan.",
   },
   {
     level: "yellow",
-    message: "🆕 jn-5842-jbenchmark-agents-md (JN-5842): NEW worktree in Ingest. Ingest session ready_for_prompt:TRUE. Joseph to review → trigger /implement:plan.",
-  },
-  {
-    level: "yellow",
-    message: "🆕 jn-5824-benchmark-run-configs (JN-5824): NEW worktree in Ingest. Ingest session ready_for_prompt:TRUE. Joseph to review → trigger /implement:plan.",
-  },
-  {
-    level: "yellow",
-    message: "🟡 PR #1647 — APPROVED (reviewDecision APPROVED since 12:00 IDT Jul 8). But CI still failing (run 28869593069: pre-commit ❌ + e2e-product ❌). all-checks ❌ — cannot merge despite approval. Fix pre-commit + e2e-product.",
+    message: "🆕 jn-5824-benchmark-run-configs (JN-5824): Ingest complete, ready_for_prompt:TRUE. Joseph to review → trigger /implement:plan.",
   },
   {
     level: "red",
@@ -401,7 +401,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "❌ Jira mismatches (3, confirmed via acli 13:30 IDT Jul 8): JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5546 'In Progress' (PR #1588 merged Jul 7) — both need Done. JN-5827 'Backlog' (PR #1648 open CI pass) — needs In Review.",
+    message: "❌ Jira mismatches (3, last acli 13:30 IDT Jul 8; Jira MCP 401 at 14:00): JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5546 'In Progress' (PR #1588 merged Jul 7) — both need Done. JN-5827 'Backlog' (PR #1648 open CI pass) — needs In Review.",
   },
   {
     level: "yellow",
