@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-08 18:00 IDT";
+export const LAST_UPDATED = "2026-07-08 18:30 IDT";
 
 export const WORKTREES = [
   {
@@ -136,18 +136,18 @@ export const WORKTREES = [
     zone: "Code",
     pr: null,
     prUrl: null,
-    status: "🚀 ACTIVELY CODING — Zone moved Ingest→Code. Code session 019f41f8-e32a 'Code JN-5401 — runner subcommands + JN-5244 flags' RUNNING as of 17:54 IDT. ready_for_prompt:FALSE.",
-    blockedOn: null,
+    status: "✅ Code session COMPLETED 18:06 IDT — IDLE, ready_for_prompt:TRUE. Session 019f41f8-e32a 'Code JN-5401 — runner subcommands + JN-5244 flags' done. SHA changed (bc35e060, dirty). Action: Joseph review output → trigger next phase.",
+    blockedOn: "Awaiting Joseph review",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f41f8e32a7446919063bb/",
-    sessionLabel: "code — runner subcommands + JN-5244 flags (RUNNING)",
+    sessionLabel: "code — runner subcommands + JN-5244 flags (COMPLETED 18:06 IDT)",
     recentSessions: [
       {
         sessionId: "019f41f8e32a7446919063bb",
         url: "http://127.0.0.1:3030/ui/s/019f41f8e32a7446919063bb/",
-        title: "code — runner subcommands + JN-5244 flags (RUNNING ~17:54 IDT)",
-        status: "running",
-        timestamp: "2026-07-08 17:54 IDT",
+        title: "code — runner subcommands + JN-5244 flags (COMPLETED 18:06 IDT)",
+        status: "idle",
+        timestamp: "2026-07-08 18:06 IDT",
         outputFile: null,
       },
       {
@@ -159,7 +159,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-08 17:54 IDT",
+    lastActive: "2026-07-08 18:06 IDT",
   },
   {
     ticket: "JN-5795",
@@ -289,9 +289,9 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1648",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1648",
-    status: "🟢 PR #1648 OPEN — CI run 28922899326 ALL PASS ✅. CodeRabbit COMPLETED ✅. reviewDecision: '' (no required reviewer policy). Needs human LGTM to merge.",
-    blockedOn: "Awaiting external code review",
-    blockedType: "active",
+    status: "🔴 PR #1648 NOW CONFLICTING — was MERGEABLE at 18:00 IDT, now CONFLICTING. Needs rebase before merge. CI was ALL PASS (run 28922899326) but stale due to conflict.",
+    blockedOn: "Conflict — needs rebase",
+    blockedType: "blocked",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f3d66ffeb7154a64feb80/",
     sessionLabel: "internal-cr retry (ready_for_prompt: TRUE)",
     recentSessions: [
@@ -445,23 +445,23 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "red",
-    message: "🔴 PR #1638 (JN-5725): CONFLICT RESOLVED but CI NOW FAILING on run 28952284174 — nox ❌, pre-commit ❌, tox ❌; e2e-smoke ⏳ pending. e2e-api ✅, integration ✅. Rebase fixed the conflict but introduced test failures. Action: investigate nox/pre-commit/tox failures and fix.",
+    message: "🔴 PR #1648 (jn-5827 JN-5827): NOW CONFLICTING — was MERGEABLE+CI ALL PASS at 18:00 IDT. Needs rebase onto latest main before merge.",
+  },
+  {
+    level: "red",
+    message: "🟡 PR #1638 (JN-5725): e2e-smoke FAILING on run 28953186080. Progress: nox ✅, pre-commit ✅, tox ✅ (were failing). Blockers: e2e-smoke ❌, all-checks ❌. Action: investigate e2e-smoke failure.",
   },
   {
     level: "green",
-    message: "🟢 #1649 (jn-5841 JN-5841): CI ALL PASS — run 28932482752. OPEN + REVIEW_REQUIRED. JN-5841 Jira now In Review ✅. Needs reviewer LGTM to merge.",
-  },
-  {
-    level: "green",
-    message: "🟢 #1648 (jn-5827 JN-5827): PR OPEN — CI run 28922899326 ALL PASS. CodeRabbit review completed ✅. reviewDecision '' (no required reviewer policy). Needs human LGTM to merge.",
+    message: "🟢 #1649 (jn-5841 JN-5841): CI ALL PASS — run 28932482752. OPEN + REVIEW_REQUIRED. JN-5841 Jira In Review ✅. Needs reviewer LGTM to merge.",
   },
   {
     level: "yellow",
-    message: "🚀 jn-5401-runner-subcommands (JN-5401): Zone moved Ingest→Code. Code session 019f41f8-e32a 'Code JN-5401 — runner subcommands + JN-5244 flags' RUNNING as of 17:54 IDT. Monitor for completion.",
+    message: "✅ jn-5401-runner-subcommands (JN-5401): Code session COMPLETED 18:06 IDT. IDLE, ready_for_prompt:TRUE. SHA changed (bc35e060, dirty). Action: Joseph review output → trigger next phase.",
   },
   {
     level: "yellow",
-    message: "🚀 jn-5824-benchmark-run-configs (JN-5824): IDLE in Code zone. Latest session 019f416c-2d55 'Revise plan' completed ~13:55 IDT (ready_for_prompt:TRUE). SHA changed — commits made. Action: Joseph review + trigger next phase.",
+    message: "🚀 jn-5824-benchmark-run-configs (JN-5824): IDLE in Code zone. Session 019f416c-2d55 'Revise plan' completed ~13:55 IDT (ready_for_prompt:TRUE). SHA changed — commits made. Action: Joseph review + trigger next phase.",
   },
   {
     level: "yellow",
@@ -473,11 +473,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "❌ Jira mismatches (5, confirmed acli 18:00 IDT Jul 8; Jira MCP 401): JN-5719 'Backlog' (PR #1632 merged 17:10 IDT Jul 8 — NEW), JN-5445 'In Progress' (PR #1647 merged 15:03 IDT Jul 8), JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5546 'In Progress' (PR #1588 merged Jul 7) — all 4 need Done. JN-5827 'Backlog' (PR #1648 open CI pass) — needs In Review.",
-  },
-  {
-    level: "yellow",
-    message: "⚠️ 17:30 IDT heartbeat FAILED (session 019f4222) — 2.5h gap between 15:30 IDT and 18:00 IDT. Full refresh performed.",
+    message: "❌ Jira mismatches (5, confirmed acli 18:00 IDT Jul 8; Jira MCP 401): JN-5719 'Backlog' (PR #1632 merged 17:10 IDT Jul 8), JN-5445 'In Progress' (PR #1647 merged 15:03 IDT Jul 8), JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5546 'In Progress' (PR #1588 merged Jul 7) — all 4 need Done. JN-5827 'Backlog' (PR #1648 CONFLICTING) — needs In Review.",
   },
   {
     level: "yellow",
