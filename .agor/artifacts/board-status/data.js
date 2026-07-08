@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-08 19:30 IDT";
+export const LAST_UPDATED = "2026-07-08 20:30 IDT";
 
 export const WORKTREES = [
   {
@@ -136,18 +136,26 @@ export const WORKTREES = [
     zone: "Code",
     pr: null,
     prUrl: null,
-    status: "✅ Code session COMPLETED 18:06 IDT — IDLE, ready_for_prompt:TRUE. Session 019f41f8-e32a 'Code JN-5401 — runner subcommands + JN-5244 flags' done. SHA changed (bc35e060, dirty). Action: Joseph review output → trigger next phase.",
-    blockedOn: "Awaiting Joseph review",
+    status: "🟢 'contiue' fork session COMPLETE — IDLE, ready_for_prompt:TRUE. Session 019f4295-ccc9 forked from code session. SHA 53e4435e (clean). 3 commits ahead of main: arg parsing + tests + subcommand handlers (cmd_generate, cmd_plan, cmd_execute, cmd_run). Pre-commit ✅. Action: Push + open PR.",
+    blockedOn: "Awaiting push+PR",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f41f8e32a7446919063bb/",
-    sessionLabel: "code — runner subcommands + JN-5244 flags (COMPLETED 18:06 IDT)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f4295ccc975139ebd2be4/",
+    sessionLabel: "contiue (ready_for_prompt:TRUE — 3 commits ahead, push+PR needed)",
     recentSessions: [
+      {
+        sessionId: "019f4295ccc975139ebd2be4",
+        url: "http://127.0.0.1:3030/ui/s/019f4295ccc975139ebd2be4/",
+        title: "contiue — 3 commits ahead (SHA 53e4435e), ready to push PR",
+        status: "idle",
+        timestamp: "2026-07-08 19:37 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f41f8e32a7446919063bb",
         url: "http://127.0.0.1:3030/ui/s/019f41f8e32a7446919063bb/",
-        title: "code — runner subcommands + JN-5244 flags (COMPLETED 18:06 IDT)",
+        title: "code — runner subcommands + JN-5244 flags",
         status: "idle",
-        timestamp: "2026-07-08 18:06 IDT",
+        timestamp: "2026-07-08 16:35 IDT",
         outputFile: null,
       },
       {
@@ -155,11 +163,11 @@ export const WORKTREES = [
         url: "http://127.0.0.1:3030/ui/s/019f41ab23cf70d8a8650b8f/",
         title: "ingest (completed)",
         status: "idle",
-        timestamp: "2026-07-08 15:38 IDT",
+        timestamp: "2026-07-08 13:38 IDT",
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-08 18:06 IDT",
+    lastActive: "2026-07-08 19:37 IDT",
   },
   {
     ticket: "JN-5795",
@@ -222,8 +230,8 @@ export const WORKTREES = [
     zone: "Code",
     pr: null,
     prUrl: null,
-    status: "🔄 Child session 019f4290 ('continuew') IDLE ready_for_prompt:TRUE. 2 commits made: ibm_models.json (8 models) + README. Remaining: generate 24 configs to temp/, rebase on main, create PR. Waiting for Joseph direction.",
-    blockedOn: "Awaiting Joseph direction (generate configs, rebase, PR)",
+    status: "🔄 'continuew' session [019f4290-43d4](http://127.0.0.1:3030/ui/s/019f429043d4745c9c0f66fc/) IDLE ready_for_prompt:FALSE. SHA 16ec44ea (2 commits: ibm_models.json + README). Remaining: generate 24 configs to temp/, rebase on main, create PR. Fork a new session to continue.",
+    blockedOn: "Awaiting direction (fork new session to generate configs, rebase, PR)",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f429043d4745c9c0f66fc/",
     sessionLabel: "continuew (IDLE, ready_for_prompt — 2 commits done, awaiting direction)",
@@ -456,8 +464,8 @@ export const ALERTS = [
     message: "🔴 PR #1648 (jn-5827 JN-5827): NOW CONFLICTING — was MERGEABLE+CI ALL PASS at 18:00 IDT. Needs rebase onto latest main before merge.",
   },
   {
-    level: "yellow",
-    message: "🟡 PR #1638 (JN-5725): New CI run 28958685118 ACTIVE at 19:30 IDT — integration-run ✅ (newly), e2e-smoke/pre-commit/tox PENDING. Cannot confirm pass/fail yet. Check next heartbeat.",
+    level: "red",
+    message: "🔴 PR #1638 (JN-5725): CI run 28962414724 ACTIVE — e2e-api ❌, e2e-tests ❌ (persistent). pre-commit + tox PENDING. integration ✅, bake ✅. e2e-api has failed across multiple consecutive runs.",
   },
   {
     level: "green",

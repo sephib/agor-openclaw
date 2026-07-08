@@ -4,6 +4,15 @@
 
 ---
 
+## 20:30 IDT — Weekday Daytime Heartbeat (Jul 8)
+- PRs checked: #1649 (OPEN, ALL PASS run 28932482752, REVIEW_REQUIRED), #1648 (OPEN, CONFLICTING), #1638 (OPEN, MERGEABLE, new CI run 28962414724 ACTIVE: e2e-api ❌, e2e-tests ❌, pre-commit/tox PENDING), #1606 (OPEN, CONFLICTING, e2e-smoke ❌), #1596 (DRAFT, CONFLICTING)
+- Merges detected: none (0 auto-archives)
+- CI changes: **#1638 new run 28962414724 active** — e2e-api ❌ persistent. pre-commit + tox still PENDING. integration ✅, bake ✅. Pattern: e2e-api has failed across many consecutive runs.
+- Board changes: **none** — all worktrees unchanged since 20:00 IDT. jn-5401 "contiue" (019f4295) still IDLE ready_for_prompt:TRUE, SHA 53e4435e. jn-5824 "continuew" (019f4290-43d4) still IDLE ready_for_prompt:FALSE, SHA 16ec44ea.
+- Jira: 5 mismatches persist. No new resolution. Jira MCP 401 ongoing.
+- Flags: jn-5401 ready for push+PR (waiting on Joseph). jn-5824 needs direction (fork new session). jn-5842 ingest awaiting plan trigger. #1648 CONFLICTING. #1638 e2e-api persistent failure. #1649 needs LGTM.
+- Next: Confirm #1638 CI result (pre-commit/tox). Push PR for jn-5401. Get direction for jn-5824. Get LGTM on #1649.
+
 ## 19:30 IDT — Weekday Daytime Heartbeat (Jul 8)
 - PRs checked: #1649 (OPEN, ALL PASS run 28932482752, REVIEW_REQUIRED), #1648 (OPEN, CONFLICTING), #1638 (OPEN, MERGEABLE, new CI run 28958685118 PENDING — integration-run ✅ newly; e2e-smoke/pre-commit/tox still running), #1606 (OPEN, CONFLICTING), #1596 (DRAFT, CONFLICTING)
 - Merges detected: none (0 auto-archives)

@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-08 19:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-08 20:30 IDT (advance heartbeat)*
 
 ---
 
@@ -13,11 +13,11 @@
 | jn-5244-cli-flags | Ingest | — | — | [JN-5244](https://redhat.atlassian.net/browse/JN-5244) | ℹ️ No sessions yet. Ready to ingest. |
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — Backlog | Design session done Jun 30. Ready for Plan phase. |
 | jn-5842-jbenchmark-agents-md | Ingest | — | — | [JN-5842](https://redhat.atlassian.net/browse/JN-5842) — Backlog | Ingest session [019f4126-8305](http://127.0.0.1:3030/ui/s/019f412683057d20b481a4b9/) IDLE ready_for_prompt:TRUE. Joseph to review → trigger /implement:plan. |
-| jn-5401-runner-subcommands | **Code** | — | — | [JN-5401](https://redhat.atlassian.net/browse/JN-5401) — Backlog | ✅ **Code session COMPLETED 18:06 IDT.** Session [019f41f8-e32a](http://127.0.0.1:3030/ui/s/019f41f8e32a7446919063bb/) IDLE; ready_for_prompt:TRUE. SHA changed (bc35e060, dirty). Review output → trigger next phase. |
-| jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — Backlog | 🔄 Child session [019f4290](http://127.0.0.1:3030/ui/s/019f429043d4745c9c0f66fc/) ("continuew") IDLE ready_for_prompt:TRUE. 2 commits made (ibm_models.json + README). Needs: generate 24 configs, rebase main, create PR. Waiting for Joseph direction. |
+| jn-5401-runner-subcommands | **Code** | — | — | [JN-5401](https://redhat.atlassian.net/browse/JN-5401) — Backlog | 🟢 **"contiue" session COMPLETE.** Session [019f4295-ccc9](http://127.0.0.1:3030/ui/s/019f4295ccc975139ebd2be4/) IDLE ready_for_prompt:TRUE. SHA 53e4435e (clean). **3 commits ahead of main** (arg parsing + tests + subcommand handlers: cmd_generate, cmd_plan, cmd_execute, cmd_run + tests). Pre-commit ✅. **Action: Push + open PR.** |
+| jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — Backlog | 🔄 "continuew" session [019f4290-43d4](http://127.0.0.1:3030/ui/s/019f429043d4745c9c0f66fc/) IDLE ready_for_prompt:FALSE. SHA 16ec44ea (2 commits: ibm_models.json + README). Needs: generate 24 configs, rebase main, create PR. Fork a new session to continue. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 13+ days with no session or PR. |
 | jn-5841-agents-md-root | **Publish** | [#1649](https://github.com/Jounce-IO/jounce/pull/1649) | 🟢 **run 28932482752: ALL PASS** | [JN-5841](https://redhat.atlassian.net/browse/JN-5841) — **In Review** ✅ | 🟢 **READY FOR REVIEW.** CI run 28932482752: all checks ✅. reviewDecision: REVIEW_REQUIRED. **Action: Get reviewer LGTM to merge.** |
-| jn-5827-git-tagging-workflow | **Publish** | [#1648](https://github.com/Jounce-IO/jounce/pull/1648) | 🟡 CI stale (was ALL PASS run 28922899326) | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) — Backlog | 🔴 **PR #1648 NOW CONFLICTING** (was MERGEABLE at 18:00 IDT). Needs rebase before merge. |
+| jn-5827-git-tagging-workflow | **Publish** | [#1648](https://github.com/Jounce-IO/jounce/pull/1648) | 🟡 CI stale (was ALL PASS run 28922899326) | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) — Backlog | 🔴 **PR #1648 CONFLICTING** (since 18:00 IDT). Needs rebase before merge. |
 
 ---
 
@@ -26,7 +26,7 @@
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
 | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ CONFLICTING | 🔴 CONFLICTING | 🔴 CONFLICTING 6+ days. Needs rebase + fix e2e or close PR. |
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | 🟡 **CI PENDING** (run 28958685118; integration-run ✅ newly passing; e2e-smoke/pre-commit/tox still running) | MERGEABLE | 🟡 **NEW CI RUN ACTIVE** — run 28958685118. integration-run now ✅. e2e-smoke, pre-commit, tox still PENDING. Can't call pass/fail yet. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | 🔴 **CI run 28962414724 ACTIVE: e2e-api ❌, e2e-tests ❌; pre-commit+tox PENDING** | MERGEABLE | 🔴 **e2e-api persistently failing** — new run 28962414724 active. integration ✅, bake ✅, others ✅. |
 
 ---
 
@@ -59,17 +59,17 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes Since Last Run (19:30 IDT Jul 8)
+## Key Changes Since Last Run (20:00 IDT Jul 8)
 
 | What observed | Status |
 |---|---|
-| **🔄 jn-5824 child session done** | Session `019f4290` ("continuew") IDLE + ready_for_prompt:TRUE. 2 commits made (ibm_models.json + README). Needs generate configs, rebase, PR. Waiting for Joseph. |
-| **🟡 #1638 CI PENDING** | New run 28958685118 active. integration-run now ✅. e2e-smoke/pre-commit/tox still running. |
+| **🔴 #1638 CI — NEW run 28962414724 ACTIVE** | e2e-api ❌, e2e-tests ❌; pre-commit + tox PENDING. integration ✅, atlas ✅, bake ✅, check-changes ✅, JIRA ✅, CodeRabbit ✅. Pattern: e2e-api has been failing persistently across multiple consecutive runs. |
 | **🟢 #1649 unchanged** | CI run 28932482752 ALL PASS. REVIEW_REQUIRED unchanged. |
 | **🔴 #1648 unchanged** | Still CONFLICTING. Needs rebase. |
-| **No new merges** | Sweep clean. |
-| **jn-5401 unchanged** | Code session COMPLETED 18:06 IDT, still IDLE, ready_for_prompt:TRUE. |
-| **5 Jira mismatches persist** | acli syntax error; MCP 401 ongoing. Status unchanged from 18:00 IDT. |
+| **jn-5401 unchanged** | "contiue" session 019f4295 still IDLE ready_for_prompt:TRUE. SHA 53e4435e. 3 commits ahead of main. |
+| **jn-5824 unchanged** | "continuew" session 019f4290-43d4 still IDLE ready_for_prompt:FALSE. SHA 16ec44ea. Needs direction. |
+| **No new merges** | Merged sweep clean. |
+| **5 Jira mismatches persist** | No resolution. |
 
 ---
 
@@ -78,19 +78,20 @@ Active sprint tickets assigned to Joseph with no board worktree:
 ### 🔴 PR #1648 NOW CONFLICTING — Rebase Needed
 
 PR [#1648](https://github.com/Jounce-IO/jounce/pull/1648): "feat(release): implement git tagging workflow (JN-5827)"
-- **State**: OPEN → **CONFLICTING** (was MERGEABLE at 18:00 IDT)
+- **State**: OPEN → **CONFLICTING** (since 18:00 IDT)
 - Was CI ALL PASS and needing LGTM. Now needs rebase first.
 - **Action:** Rebase onto latest main, push, re-check CI, then get LGTM.
 
 ---
 
-### ✅ jn-5401 Code Session COMPLETED — Review + Next Phase
+### 🟢 jn-5401 — "contiue" Session COMPLETE — Ready to Push PR
 
 Worktree `jn-5401-runner-subcommands` (Code zone):
 - **JN-5401**: "Add subcommands to jbenchmark runner for stage-level modular execution" — Backlog
-- Code session [019f41f8-e32a](http://127.0.0.1:3030/ui/s/019f41f8e32a7446919063bb/) **COMPLETED** at 18:06 IDT (was RUNNING at 17:54 IDT). ready_for_prompt:TRUE.
-- SHA changed (bc35e060, dirty) — commits made.
-- **Action:** Joseph review code output → trigger next phase (Verify or Validate).
+- "contiue" session [019f4295-ccc9](http://127.0.0.1:3030/ui/s/019f4295ccc975139ebd2be4/) **COMPLETED** (16:37 IDT). ready_for_prompt:TRUE.
+- SHA: 53e4435e (clean). **3 commits ahead of main:** arg parsing + tests + subcommand handlers (cmd_generate, cmd_plan, cmd_execute, cmd_run) + their tests. All clean through pre-commit.
+- Last message: "Committed. The branch now has 3 commits ahead of main... Would you like to push and open a PR, or is there more work to do?"
+- **Action:** Push + open PR. Tell session to push and create PR.
 
 ---
 
@@ -104,15 +105,17 @@ Worktree `jn-5841-agents-md-root` in **Publish** zone:
 
 ---
 
-### 🟡 #1638 — CI PENDING on new run 28958685118
+### 🔴 #1638 — e2e-api FAILING — New Run 28962414724 Active
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): `chore(infra): vLLM analyzer prerequisites`
 - **State**: MERGEABLE
-- **CI run 28958685118** (active at 19:30 IDT):
-  - ✅ integration-run (newly passing — was pending at 19:00 IDT), e2e-api, atlas-validate, bake, check-changes, CodeRabbit, JIRA Association, integration-tests
-  - 🟡 PENDING: e2e-smoke, pre-commit-run, tox-run — still running
-- Previous run 28955327177 had e2e-smoke FAIL. This run is still in progress — cannot confirm pass/fail yet.
-- **Action:** Wait for this CI run to complete. Check next heartbeat for result.
+- **CI run 28962414724** (ACTIVE — replacing 28960360091):
+  - ❌ FAIL: e2e-api, e2e-tests
+  - ⏳ PENDING: pre-commit-run, tox-run
+  - ✅ PASS: integration-run, atlas-validate, bake, check-changes, JIRA Association, CodeRabbit
+  - ⏭ SKIPPED: e2e-smoke, e2e-product, atlas-validate-run
+- e2e-api failing persistently across consecutive runs.
+- **Action:** Fix e2e-api failures in #1638. Check pre-commit/tox result next heartbeat.
 
 ---
 
@@ -125,14 +128,14 @@ Worktree `jn-5842-jbenchmark-agents-md` (Ingest zone):
 
 ---
 
-### 🔄 jn-5824-benchmark-run-configs — Waiting for Joseph's direction
+### 🔄 jn-5824-benchmark-run-configs — Waiting for direction (session not accepting prompts)
 
 Worktree `jn-5824-benchmark-run-configs` (Code zone):
 - **JN-5824**: "[DEV] Prepare benchmark run configs for IBM hardware (H100, A100-80, H200)"
-- Child session [019f4290](http://127.0.0.1:3030/ui/s/019f429043d4745c9c0f66fc/) ("continuew") IDLE + **ready_for_prompt:TRUE**.
-- **2 commits made** (ibm_models.json with 8 IBM models + README). SHA: 16ec44ea.
-- **Last message:** "Done: Task 1 (IBM model list) + docs committed. Remaining: Task 2 — generate 24 configs to temp/. Branch 3 commits behind main — needs rebase. No PR yet."
-- **Action:** Joseph review → tell session to: rebase on main, generate configs, create PR.
+- "continuew" session [019f4290-43d4](http://127.0.0.1:3030/ui/s/019f429043d4745c9c0f66fc/) IDLE **ready_for_prompt:FALSE**. SHA: 16ec44ea.
+- **2 commits done** (ibm_models.json with 8 IBM models + README). Branch 3 commits behind main.
+- **Last message:** "Done: 2 commits (IBM models + README). Remaining: generate 24 configs, rebase, PR. What would you like me to do next?"
+- **Action:** Fork a new session from the continuew session to continue. Tell it to: rebase on main, generate 24 configs to temp/, create PR.
 
 ---
 
