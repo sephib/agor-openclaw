@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-08 20:30 IDT";
+export const LAST_UPDATED = "2026-07-08 21:00 IDT";
 
 export const WORKTREES = [
   {
@@ -34,23 +34,6 @@ export const WORKTREES = [
     sessionLabel: null,
     recentSessions: [],
     lastActive: "2026-06-15 17:23 IDT",
-  },
-  {
-    ticket: "JN-5672",
-    ticketUrl: "https://redhat.atlassian.net/browse/JN-5672",
-    title: "DAL extensions for dashboard queries",
-    branch: "jn-5672-dal-ext-dashboard",
-    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5672-dal-ext-dashboard",
-    zone: "BLOCKED",
-    pr: null,
-    prUrl: null,
-    status: "On hold — after notebooks complete",
-    blockedOn: "On hold",
-    blockedType: "blocked",
-    sessionUrl: null,
-    sessionLabel: null,
-    recentSessions: [],
-    lastActive: "2026-06-14 15:00 IDT",
   },
   {
     ticket: "JN-5841",
@@ -109,23 +92,6 @@ export const WORKTREES = [
       },
     ],
     lastActive: "2026-07-08 12:30 IDT",
-  },
-  {
-    ticket: "JN-5244",
-    ticketUrl: "https://redhat.atlassian.net/browse/JN-5244",
-    title: "Add --user, --no-cache, --skip-estimator CLI flags to run_jbenchmark_runner",
-    branch: "jn-5244-cli-flags",
-    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5244-cli-flags",
-    zone: "Ingest",
-    pr: null,
-    prUrl: null,
-    status: "ℹ️ No sessions yet. Ready to ingest JN-5244.",
-    blockedOn: null,
-    blockedType: "active",
-    sessionUrl: null,
-    sessionLabel: null,
-    recentSessions: [],
-    lastActive: "2026-06-28 14:49 IDT",
   },
   {
     ticket: "JN-5401",
@@ -288,7 +254,7 @@ export const WORKTREES = [
     zone: "NO ZONE",
     pr: null,
     prUrl: null,
-    status: "⚠️ Still exists in Agor (uid=249, last updated Jun 25). Stale 13+ days — no sessions, no PR. Propose archive if no longer needed.",
+    status: "⚠️ Still exists in Agor (uid=249, last updated Jun 25). Stale 14+ days — no sessions, no PR. Propose archive if no longer needed.",
     blockedOn: "Stale, no activity",
     blockedType: "blocked",
     sessionUrl: null,
@@ -464,8 +430,8 @@ export const ALERTS = [
     message: "🔴 PR #1648 (jn-5827 JN-5827): NOW CONFLICTING — was MERGEABLE+CI ALL PASS at 18:00 IDT. Needs rebase onto latest main before merge.",
   },
   {
-    level: "red",
-    message: "🔴 PR #1638 (JN-5725): CI run 28962414724 ACTIVE — e2e-api ❌, e2e-tests ❌ (persistent). pre-commit + tox PENDING. integration ✅, bake ✅. e2e-api has failed across multiple consecutive runs.",
+    level: "yellow",
+    message: "🔄 PR #1638 (JN-5725): New CI run 28964385136 PENDING — e2e-api, integration, pre-commit, tox all PENDING. Atlas ✅, bake ✅, check-changes ✅. Previous run (28962414724) had e2e-api ❌. Awaiting result.",
   },
   {
     level: "green",
@@ -489,7 +455,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "❌ Jira mismatches (5, last confirmed acli 19:00 IDT Jul 8; Jira MCP 401 ongoing; acli syntax errors at 19:30): JN-5719 'Backlog' (PR #1632 merged 17:10 IDT Jul 8), JN-5445 'In Progress' (PR #1647 merged 15:03 IDT Jul 8), JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5546 'In Progress' (PR #1588 merged Jul 7) — all 4 need Done. JN-5827 'Backlog' (PR #1648 CONFLICTING) — needs In Review.",
+    message: "❌ Jira mismatches (5, confirmed acli 21:00 IDT Jul 8; Jira MCP 401 ongoing): JN-5719 'Backlog' (PR #1632 merged 17:10 IDT Jul 8), JN-5445 'In Progress' (PR #1647 merged 15:03 IDT Jul 8), JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5546 'In Progress' (PR #1588 merged Jul 7) — all 4 need Done. JN-5827 'Backlog' (PR #1648 CONFLICTING) — needs In Review.",
   },
   {
     level: "yellow",

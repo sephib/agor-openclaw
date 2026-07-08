@@ -4,6 +4,15 @@
 
 ---
 
+## 21:00 IDT — Weekday Daytime Heartbeat (Jul 8)
+- PRs checked: #1649 (OPEN, ALL PASS run 28932482752, REVIEW_REQUIRED), #1648 (OPEN, CONFLICTING), #1638 (OPEN, MERGEABLE, new CI run 28964385136: e2e-api+integration+pre-commit+tox PENDING; atlas/bake/check-changes/JIRA/CodeRabbit PASS), #1606 (OPEN, CONFLICTING), #1596 (DRAFT, CONFLICTING)
+- Merges detected: none (0 auto-archives)
+- CI changes: **#1638 new run 28964385136 started** — replaces run 28962414724 (which had e2e-api ❌). All major checks PENDING. Result unknown — check next heartbeat.
+- Board changes: **jn-5244 and jn-5672 removed from active tracking** — jn-5244 found on different board (ee6dc34a, Done zone), jn-5672 not found in Agor. All other worktrees static. jn-5401 "contiue" still IDLE ready_for_prompt:TRUE. jn-5824 "continuew" still IDLE ready_for_prompt:FALSE.
+- Jira: 5 mismatches persist (JN-5719/5445/5717/5546 → Done; JN-5827 → In Review after conflict resolved). Confirmed via acli 21:00 IDT. Jira MCP 401 ongoing.
+- Flags: #1638 e2e-api result unknown (new run pending). jn-5401 ready for push+PR (waiting on Joseph). jn-5824 needs direction. jn-5842 ingest awaiting plan trigger. #1648 still CONFLICTING. #1649 needs LGTM.
+- Next: Confirm #1638 CI result. Push PR for jn-5401. Get direction for jn-5824.
+
 ## 20:30 IDT — Weekday Daytime Heartbeat (Jul 8)
 - PRs checked: #1649 (OPEN, ALL PASS run 28932482752, REVIEW_REQUIRED), #1648 (OPEN, CONFLICTING), #1638 (OPEN, MERGEABLE, new CI run 28962414724 ACTIVE: e2e-api ❌, e2e-tests ❌, pre-commit/tox PENDING), #1606 (OPEN, CONFLICTING, e2e-smoke ❌), #1596 (DRAFT, CONFLICTING)
 - Merges detected: none (0 auto-archives)

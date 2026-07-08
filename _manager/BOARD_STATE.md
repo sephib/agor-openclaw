@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-08 20:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-08 21:00 IDT (advance heartbeat)*
 
 ---
 
@@ -9,8 +9,6 @@
 | Worktree | Zone | PR | CI | Jira | Status |
 |---------|------|----|----|------|--------|
 | jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | CONFLICTING | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) | 🔴 DRAFT CONFLICTING; frozen |
-| jn-5672-dal-ext-dashboard | BLOCKED | — | — | [JN-5672](https://redhat.atlassian.net/browse/JN-5672) | On hold — after notebooks complete |
-| jn-5244-cli-flags | Ingest | — | — | [JN-5244](https://redhat.atlassian.net/browse/JN-5244) | ℹ️ No sessions yet. Ready to ingest. |
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — Backlog | Design session done Jun 30. Ready for Plan phase. |
 | jn-5842-jbenchmark-agents-md | Ingest | — | — | [JN-5842](https://redhat.atlassian.net/browse/JN-5842) — Backlog | Ingest session [019f4126-8305](http://127.0.0.1:3030/ui/s/019f412683057d20b481a4b9/) IDLE ready_for_prompt:TRUE. Joseph to review → trigger /implement:plan. |
 | jn-5401-runner-subcommands | **Code** | — | — | [JN-5401](https://redhat.atlassian.net/browse/JN-5401) — Backlog | 🟢 **"contiue" session COMPLETE.** Session [019f4295-ccc9](http://127.0.0.1:3030/ui/s/019f4295ccc975139ebd2be4/) IDLE ready_for_prompt:TRUE. SHA 53e4435e (clean). **3 commits ahead of main** (arg parsing + tests + subcommand handlers: cmd_generate, cmd_plan, cmd_execute, cmd_run + tests). Pre-commit ✅. **Action: Push + open PR.** |
@@ -26,7 +24,7 @@
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
 | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ CONFLICTING | 🔴 CONFLICTING | 🔴 CONFLICTING 6+ days. Needs rebase + fix e2e or close PR. |
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | 🔴 **CI run 28962414724 ACTIVE: e2e-api ❌, e2e-tests ❌; pre-commit+tox PENDING** | MERGEABLE | 🔴 **e2e-api persistently failing** — new run 28962414724 active. integration ✅, bake ✅, others ✅. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | 🟡 **CI run 28964385136 PENDING: e2e-api+integration+pre-commit+tox all PENDING** | MERGEABLE | 🔄 **New CI run started** — run 28964385136. All major checks PENDING. Atlas ✅, bake ✅, check-changes ✅, JIRA ✅, CodeRabbit ✅. Previous run (28962414724) had e2e-api ❌. |
 
 ---
 
@@ -55,21 +53,23 @@ Active sprint tickets assigned to Joseph with no board worktree:
 | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | MERGED Jul 7 | **In Progress** (confirmed acli 18:00 IDT Jul 8) | ❌ Update Jira → Done |
 | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) | [#1648](https://github.com/Jounce-IO/jounce/pull/1648) | OPEN — CONFLICTING | **Backlog** (confirmed acli 18:00 IDT Jul 8) | ⚠️ Should be → In Review (after conflict resolved) |
 
-*Note: Jira MCP 401 (ongoing). Status confirmed via acli at 19:00 IDT.*
+*Note: Jira MCP 401 (ongoing). Status confirmed via acli at 21:00 IDT Jul 8.*
 
 ---
 
-## Key Changes Since Last Run (20:00 IDT Jul 8)
+## Key Changes Since Last Run (20:30 IDT Jul 8)
 
 | What observed | Status |
 |---|---|
-| **🔴 #1638 CI — NEW run 28962414724 ACTIVE** | e2e-api ❌, e2e-tests ❌; pre-commit + tox PENDING. integration ✅, atlas ✅, bake ✅, check-changes ✅, JIRA ✅, CodeRabbit ✅. Pattern: e2e-api has been failing persistently across multiple consecutive runs. |
+| **🔄 #1638 CI — NEW run 28964385136 PENDING** | All major checks PENDING (e2e-api, integration, pre-commit, tox). Atlas ✅, bake ✅, check-changes ✅. Previous run 28962414724 had e2e-api ❌. Watch next heartbeat. |
 | **🟢 #1649 unchanged** | CI run 28932482752 ALL PASS. REVIEW_REQUIRED unchanged. |
 | **🔴 #1648 unchanged** | Still CONFLICTING. Needs rebase. |
 | **jn-5401 unchanged** | "contiue" session 019f4295 still IDLE ready_for_prompt:TRUE. SHA 53e4435e. 3 commits ahead of main. |
 | **jn-5824 unchanged** | "continuew" session 019f4290-43d4 still IDLE ready_for_prompt:FALSE. SHA 16ec44ea. Needs direction. |
+| **jn-5244-cli-flags REMOVED from tracking** | Found on different board (ee6dc34a, Done zone) — was never on jounce-workflow-ai board. Removed from active tracking. |
+| **jn-5672-dal-ext-dashboard REMOVED from tracking** | Not found in Agor at all. Removed from active tracking. |
 | **No new merges** | Merged sweep clean. |
-| **5 Jira mismatches persist** | No resolution. |
+| **5 Jira mismatches persist** | No resolution. All confirmed via acli 21:00 IDT. |
 
 ---
 
@@ -105,17 +105,16 @@ Worktree `jn-5841-agents-md-root` in **Publish** zone:
 
 ---
 
-### 🔴 #1638 — e2e-api FAILING — New Run 28962414724 Active
+### 🔄 #1638 — New CI Run 28964385136 PENDING
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): `chore(infra): vLLM analyzer prerequisites`
 - **State**: MERGEABLE
-- **CI run 28962414724** (ACTIVE — replacing 28960360091):
-  - ❌ FAIL: e2e-api, e2e-tests
-  - ⏳ PENDING: pre-commit-run, tox-run
-  - ✅ PASS: integration-run, atlas-validate, bake, check-changes, JIRA Association, CodeRabbit
-  - ⏭ SKIPPED: e2e-smoke, e2e-product, atlas-validate-run
-- e2e-api failing persistently across consecutive runs.
-- **Action:** Fix e2e-api failures in #1638. Check pre-commit/tox result next heartbeat.
+- **CI run 28964385136** (PENDING — replacing 28962414724):
+  - ⏳ PENDING: e2e-api, integration-run, pre-commit-run, tox-run
+  - ✅ PASS: atlas-validate, bake, check-changes, JIRA Association, CodeRabbit
+  - ⏭ SKIPPED: atlas-validate-run
+- Previous run (28962414724) had e2e-api ❌. This new run is retrying.
+- **Action:** Watch next heartbeat for e2e-api result. If ❌ again, flag for e2e-api root cause investigation.
 
 ---
 
