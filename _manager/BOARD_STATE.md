@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-08 09:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-08 09:30 IDT (advance heartbeat)*
 
 ---
 
@@ -15,7 +15,7 @@
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — Backlog | Design session done Jun 30. Ready for Plan phase. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 13+ days with no session or PR. |
 | jn-5841-agents-md-root | **Publish** | — | — | [JN-5841](https://redhat.atlassian.net/browse/JN-5841) | 🟡 **ADVANCED to Publish** (from Validate). Publish session [019f3e01](http://127.0.0.1:3030/ui/s/019f3e01ee07703caf8b9576/) "Publish JN-5841 — create PR" IDLE + **ready_for_prompt: TRUE** (created 22:15 IDT Jul 7). No PR created yet. Joseph needs to resume the Publish session to create the PR. |
-| jn-5827-git-tagging-workflow | **Publish** | [#1648 DRAFT](https://github.com/Jounce-IO/jounce/pull/1648) | 🟢 **ALL PASS** (run 28885455833) | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) | 🟢 **CI ALL PASS** (run 28885455833): pre-commit ✅, tox ✅, nox ✅, all-checks ✅. e2e/bake SKIPPING (DRAFT). **Ready to remove DRAFT flag** → triggers full e2e. |
+| jn-5827-git-tagging-workflow | **Publish** | [#1648 DRAFT](https://github.com/Jounce-IO/jounce/pull/1648) | 🟡 **NEW run 28922381668 IN PROGRESS** | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) | 🟡 **NEW CI RUN** (28922381668): deploy ✅, JIRA ✅, atlas-validate ✅, build ✅, e2e-tests ✅, integration-tests ✅ — pre-commit-run still PENDING. e2e/bake SKIPPING (DRAFT). Previous run 28885455833 ALL PASS. |
 
 ---
 
@@ -26,7 +26,7 @@
 | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ CONFLICTING | 🔴 CONFLICTING | 🔴 CONFLICTING 6+ days. Needs rebase + fix e2e or close PR. |
 | [#1647](https://github.com/Jounce-IO/jounce/pull/1647) | feat/migrate-dev-to-openshift-gcp | [JN-5445](https://redhat.atlassian.net/browse/JN-5445) (likely) | 🔴 **pre-commit ❌ + e2e-product ❌** (run 28869593069) | MERGEABLE | 🔴 **DEGRADED**: run 28869593069 — e2e-product ❌ (32m25s, FAILED) + pre-commit ❌. Unchanged. |
 | [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | 🔴 **NEW run 28900734572 — e2e-smoke ❌** (10m24s FAILED) | MERGEABLE | 🔴 **REGRESSION**: run 28900734572 — e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌. pre-commit ✅ / tox ✅ / nox ✅ / bake ✅ / e2e-api ✅ / integration ✅ pass. Previous "RECOVERY" was premature — e2e-smoke confirmed FAILED. |
-| [#1632](https://github.com/Jounce-IO/jounce/pull/1632) | jn-5719-release-diff | [JN-5719](https://redhat.atlassian.net/browse/JN-5719) | ✅ all-checks ✅ (run 28775331183) | MERGEABLE | 🟢 CLEAN! All CI passing. REVIEW_REQUIRED. Ready to merge. |
+| [#1632](https://github.com/Jounce-IO/jounce/pull/1632) | jn-5719-release-diff | [JN-5719](https://redhat.atlassian.net/browse/JN-5719) | 🟡 **NEW run 28922557096 IN PROGRESS** | MERGEABLE | 🟡 **NEW CI RUN TRIGGERED** (28922557096): Very early — JIRA/check-changes/CodeRabbit all pending. Previous run 28775331183 was all ✅. Investigating why new run triggered. |
 
 ---
 
@@ -53,16 +53,16 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes Since Last Run (22:00 IDT Jul 7)
+## Key Changes Since Last Run (09:00 IDT Jul 8)
 
 | What observed | Status |
 |---|---|
-| **🟡 jn-5841 — ADVANCED to Publish** | Zone moved Validate → Publish. Publish session [019f3e01](http://127.0.0.1:3030/ui/s/019f3e01ee07703caf8b9576/) created 22:15 IDT Jul 7 — IDLE + **ready_for_prompt: TRUE**. No PR created yet. Joseph needs to resume the session to create the PR. |
-| **🔴 #1638 — REGRESSION (e2e-smoke ❌)** | New CI run 28900734572 — **e2e-smoke ❌ FAILED** (10m24s). Previous "RECOVERY" was premature — e2e-smoke was pending at 22:00 IDT and has now confirmed FAILED. pre-commit ✅ now passes, but e2e-smoke remains a blocker. |
-| **#1648 (jn-5827) — Unchanged** | DRAFT, CI ALL PASS (run 28885455833 — same as 22:00 IDT). Internal CR retry session still ready_for_prompt: TRUE. |
+| **🟡 #1648 (jn-5827) — New CI run in progress** | New CI run 28922381668 triggered. Most checks pass (deploy ✅, atlas-validate ✅, build ✅, e2e-tests ✅, integration-tests ✅) — `pre-commit-run` still PENDING. Previous run 28885455833 was ALL PASS. |
+| **🟡 #1632 — New CI run triggered** | New CI run 28922557096 just started — early (only JIRA/check-changes/CodeRabbit pending). Previous run 28775331183 was all ✅. Cause unclear (possible main merge or scheduled retrigger). |
+| **🔴 #1638 — Unchanged REGRESSION** | e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌ (run 28900734572). No new run. |
 | **#1647 — Unchanged** | pre-commit ❌ + e2e-product ❌ (run 28869593069). No new run. |
-| **#1632 — Unchanged** | All CI ✅, REVIEW_REQUIRED. Ready to merge. |
-| **Jira mismatches — Unchanged** | 3 active: JN-5717, JN-5794, JN-5546. All need → Done. |
+| **jn-5841 — Unchanged** | Publish session [019f3e01](http://127.0.0.1:3030/ui/s/019f3e01ee07703caf8b9576/) IDLE + ready_for_prompt:TRUE. No PR created yet. |
+| **Jira mismatches — Unverifiable** | MCP 401 + acli no output. 3 mismatches assumed unchanged: JN-5717, JN-5794, JN-5546. |
 | **No merges detected** | 0 auto-archives this run. |
 
 ---
@@ -79,13 +79,14 @@ Worktree `jn-5841-agents-md-root` in **Publish** zone:
 
 ---
 
-### 🟢 jn-5827 — PR #1648: CI ALL PASS — Remove DRAFT Flag!
+### 🟡 jn-5827 — PR #1648: New CI Run In Progress (28922381668)
 
 Worktree `jn-5827-git-tagging-workflow` in **Publish** zone:
 - **PR [#1648 DRAFT](https://github.com/Jounce-IO/jounce/pull/1648)**: "feat(release): implement git tagging workflow for 3.5GA (JN-5827)"
-- **CI run 28885455833**: **ALL PASS** ✅ — pre-commit ✅, tox ✅, nox ✅, all-checks ✅, deploy ✅
-- e2e-product, e2e-smoke, e2e-api, integration-run, bake: all **SKIPPING** (DRAFT PR)
-- **Action:** Remove DRAFT flag → triggers full e2e run. Request external code review.
+- **NEW CI run 28922381668**: deploy ✅, JIRA ✅, atlas-validate ✅, build ✅, e2e-tests ✅, integration-tests ✅ — `pre-commit-run` still **PENDING**
+- e2e-product, e2e-smoke, bake: all SKIPPING (DRAFT PR)
+- Previous run 28885455833 was ALL PASS ✅
+- **Action:** Wait for `pre-commit-run` to complete. If passes → remove DRAFT flag → triggers full e2e run. Request external code review.
 
 ---
 
@@ -108,12 +109,13 @@ PR [#1647](https://github.com/Jounce-IO/jounce/pull/1647): `test: testing-dev-be
 
 ---
 
-### 🟢 PR #1632 (JN-5719) — CLEAN, Ready to Merge
+### 🟡 PR #1632 (JN-5719) — New CI Run Triggered (28922557096)
 
 PR [#1632](https://github.com/Jounce-IO/jounce/pull/1632): `feat(jbenchmark): release diff layer`
 - **State:** MERGEABLE, REVIEW_REQUIRED
-- **CI:** all-checks ✅ — all CI passing (unchanged run 28775331183)
-- **Action:** READY TO MERGE.
+- **NEW CI run 28922557096** just started — JIRA Association / check-changes / CodeRabbit all pending (very early)
+- Previous run 28775331183: all CI ✅ — still the last complete result
+- **Action:** Monitor new CI run. If it passes → READY TO MERGE.
 
 ---
 

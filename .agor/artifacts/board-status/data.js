@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-08 09:00 IDT";
+export const LAST_UPDATED = "2026-07-08 09:30 IDT";
 
 export const WORKTREES = [
   {
@@ -179,7 +179,7 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1648 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1648",
-    status: "🟢 CI ALL PASS (run 28885455833): pre-commit ✅ tox ✅ nox ✅ all-checks ✅. e2e/bake SKIPPING (DRAFT). Remove DRAFT flag to trigger full e2e + request review.",
+    status: "🟡 New CI run 28922381668 in progress: deploy ✅ atlas ✅ build ✅ e2e-tests ✅ integration ✅ — pre-commit-run PENDING. e2e/bake SKIPPING (DRAFT). Previous run 28885455833 ALL PASS. Remove DRAFT flag when pre-commit-run confirms green.",
     blockedOn: null,
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f3d66ffeb7154a64feb80/",
@@ -320,8 +320,8 @@ export const ALERTS = [
     message: "🟡 jn-5841 (JN-5841): ADVANCED to Publish! Publish session 019f3e01 IDLE + ready_for_prompt:TRUE (22:15 IDT Jul 7). No PR created yet — resume Publish session to create PR.",
   },
   {
-    level: "green",
-    message: "🟢 jn-5827 (JN-5827): PR #1648 — CI ALL PASS! run 28885455833: pre-commit ✅ tox ✅ nox ✅ all-checks ✅. e2e/bake SKIPPING (DRAFT). Remove DRAFT flag → triggers full e2e + enables review.",
+    level: "yellow",
+    message: "🟡 jn-5827 (JN-5827): PR #1648 — New CI run 28922381668 IN PROGRESS. deploy ✅ atlas ✅ build ✅ e2e-tests ✅ integration ✅ — pre-commit-run PENDING. Previous run 28885455833 ALL PASS. Remove DRAFT flag once pre-commit-run confirms green.",
   },
   {
     level: "red",
@@ -332,8 +332,8 @@ export const ALERTS = [
     message: "🔴 PR #1647 (run 28869593069): DEGRADED — both pre-commit ❌ (4m38s) AND e2e-product ❌ (32m25s FAILED). Unchanged. e2e-smoke ✅ / e2e-api ✅ / integration ✅ / tox ✅ / nox ✅.",
   },
   {
-    level: "green",
-    message: "✅ PR #1632 (JN-5719): All CI ✅ (run 28775331183), REVIEW_REQUIRED, MERGEABLE. Ready to merge. Unchanged.",
+    level: "yellow",
+    message: "🟡 PR #1632 (JN-5719): New CI run 28922557096 just triggered (cause unclear — very early, all pending). Previous run 28775331183 all ✅, REVIEW_REQUIRED, MERGEABLE. Monitor new run.",
   },
   {
     level: "red",
