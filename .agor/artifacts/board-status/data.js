@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-08 11:30 IDT";
+export const LAST_UPDATED = "2026-07-08 12:00 IDT";
 
 export const WORKTREES = [
   {
@@ -328,12 +328,12 @@ export const ALERTS = [
     message: "🟢 PR #1632 (JN-5719): READY TO MERGE — run 28922685430 ALL PASS + CodeRabbit ✅ complete. REVIEW_REQUIRED — get final reviewer LGTM to merge.",
   },
   {
-    level: "yellow",
-    message: "🟡 PR #1638 — NEW CI RUN 28928793754 IN PROGRESS (started 11:29 IDT Jul 8). bake ✅, atlas-validate ✅, check-changes ✅; e2e-api/integration/pre-commit-run/tox PENDING. Previous run 28900734572 had e2e-smoke ❌. Watch for result.",
+    level: "red",
+    message: "🔴 PR #1638 — 3rd CONSECUTIVE CI FAILURE. Run 28928793754 FAILED (tox ❌, e2e-smoke ❌, nox ❌, e2e-tests ❌). NEW run 28930566279 IN PROGRESS (bake pending). Pattern: 3 runs all failing — investigate root cause.",
   },
   {
-    level: "red",
-    message: "🔴 PR #1647 (run 28869593069): DEGRADED — both pre-commit ❌ (4m38s) AND e2e-product ❌ (32m25s FAILED). Unchanged. e2e-smoke ✅ / e2e-api ✅ / integration ✅ / tox ✅ / nox ✅.",
+    level: "yellow",
+    message: "🟡 PR #1647 — NOW APPROVED (reviewDecision changed 12:00 IDT Jul 8). But CI still failing (run 28869593069: pre-commit ❌ + e2e-product ❌). all-checks ❌ — cannot merge despite approval. Fix pre-commit + e2e-product.",
   },
   {
     level: "red",

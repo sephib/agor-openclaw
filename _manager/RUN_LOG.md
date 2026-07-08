@@ -4,6 +4,16 @@
 
 ---
 
+## 12:00 IDT — Weekday Daytime Heartbeat (Jul 8)
+- PRs checked: #1649 (DRAFT, CI 28924179820 all ✅), #1648 (OPEN, ALL PASS 28922899326), #1632 (OPEN, ALL PASS 28922685430, REVIEW_REQUIRED), #1638 (run 28928793754 FAILED; run 28930566279 IN PROGRESS), #1647 (pre-commit ❌ + e2e-product ❌, NEW: reviewDecision APPROVED), #1596 (DRAFT CONFLICTING), #1606 (CONFLICTING)
+- Merges detected: none (0 auto-archives)
+- CI changes: **#1638 — run 28928793754 COMPLETED FAILURE** (tox ❌, e2e-smoke ❌, nox ❌, e2e-tests ❌). New run 28930566279 in progress. 3rd consecutive failure. **#1647 — reviewDecision → APPROVED** (new this run; but CI still failing).
+- Zone changes: none
+- Flags: #1638 3rd consecutive CI failure (systemic issue?); #1647 APPROVED but cannot merge (pre-commit ❌ + e2e-product ❌); #1649 still DRAFT (remove draft + get reviewer); #1648 needs LGTM; #1632 READY TO MERGE; Jira API (MCP 401 + acli failed) — 5 mismatches assumed unchanged
+- Next: Investigate #1638 tox/nox/e2e-smoke failures; fix #1647 pre-commit+e2e-product; remove DRAFT from #1649; get LGTM on #1648 and #1632
+
+---
+
 ## 11:30 IDT — Weekday Daytime Heartbeat (Jul 8)
 - PRs checked: #1649 (DRAFT, CI 28924179820 all ✅ docs-only), #1648 (OPEN, CI ALL PASS run 28922899326, CodeRabbit ✅), #1632 (OPEN, ALL PASS run 28922685430, REVIEW_REQUIRED), #1638 (NEW run 28928793754 IN PROGRESS since 11:29 IDT), #1647 (pre-commit ❌ + e2e-product ❌ unchanged), #1596 (DRAFT CONFLICTING), #1606 (CONFLICTING)
 - Merges detected: none (0 auto-archives)

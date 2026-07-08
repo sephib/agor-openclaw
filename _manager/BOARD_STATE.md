@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-08 11:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-08 12:00 IDT (advance heartbeat)*
 
 ---
 
@@ -25,8 +25,9 @@
 |----|--------|------|----|-------|-------|
 | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ CONFLICTING | 🔴 CONFLICTING | 🔴 CONFLICTING 6+ days. Needs rebase + fix e2e or close PR. |
 | [#1647](https://github.com/Jounce-IO/jounce/pull/1647) | feat/migrate-dev-to-openshift-gcp | [JN-5445](https://redhat.atlassian.net/browse/JN-5445) (likely) | 🔴 **pre-commit ❌ + e2e-product ❌** (run 28869593069) | MERGEABLE | 🔴 **DEGRADED**: run 28869593069 — e2e-product ❌ (32m25s, FAILED) + pre-commit ❌. Unchanged. |
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | 🟡 **NEW run 28928793754 IN PROGRESS** (started 11:29 IDT) | MERGEABLE | 🟡 **NEW CI RUN**: run 28928793754 started 11:29 IDT — bake ✅, atlas-validate ✅, check-changes ✅; e2e-api/integration/pre-commit-run/tox PENDING. Was: run 28900734572 e2e-smoke ❌. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | 🔴 **run 28928793754 FAILED** (tox ❌, e2e-smoke ❌, nox ❌); 🟡 **NEW run 28930566279 IN PROGRESS** | MERGEABLE | 🔴 **3rd consecutive CI failure.** Run 28928793754: tox ❌, e2e-smoke ❌, nox ❌, e2e-tests ❌. NEW run 28930566279 in progress: bake PENDING, CodeRabbit ✅, JIRA ✅, check-changes ✅. Pattern: 3 runs all failing. |
 | [#1632](https://github.com/Jounce-IO/jounce/pull/1632) | jn-5719-release-diff | [JN-5719](https://redhat.atlassian.net/browse/JN-5719) | 🟢 **run 28922685430 ALL PASS + CodeRabbit ✅** | MERGEABLE | 🟢 **READY TO MERGE.** Run 28922685430: all CI ✅ including e2e-smoke ✅, CodeRabbit ✅ complete. REVIEW_REQUIRED — needs final reviewer LGTM. |
+| [#1647](https://github.com/Jounce-IO/jounce/pull/1647) | feat/migrate-dev-to-openshift-gcp | [JN-5445](https://redhat.atlassian.net/browse/JN-5445) (likely) | 🔴 **pre-commit ❌ + e2e-product ❌** (run 28869593069) | MERGEABLE | 🟡 **NEW: reviewDecision APPROVED** (changed this run). But all-checks still FAIL — cannot merge. Pre-commit ❌ + e2e-product ❌ still blocking. |
 
 ---
 
@@ -55,16 +56,16 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes Since Last Run (11:00 IDT Jul 8)
+## Key Changes Since Last Run (11:30 IDT Jul 8)
 
 | What observed | Status |
 |---|---|
-| **🟡 #1638 — NEW CI RUN 28928793754 IN PROGRESS** | New run started 11:29 IDT. bake ✅, atlas-validate ✅, check-changes ✅; e2e-api/integration/pre-commit-run/tox PENDING. Was: run 28900734572 e2e-smoke ❌. Watch for result. |
-| **🟡 jn-5841 — PR #1649 DRAFT unchanged** | CI run 28924179820 ALL PASS. Still DRAFT. Session [019f3e01](http://127.0.0.1:3030/ui/s/019f3e01ee07703caf8b9576/) IDLE + ready_for_prompt: TRUE. **Action: Remove DRAFT, request reviewer.** |
-| **🟢 #1648 (jn-5827) — unchanged** | CI run 28922899326 ALL PASS. CodeRabbit completed ✅. reviewDecision "". Needs human LGTM. |
-| **🟢 #1632 — unchanged** | Run 28922685430 ALL PASS + CodeRabbit ✅. REVIEW_REQUIRED. Still needs final LGTM. |
-| **#1647 — Unchanged** | pre-commit ❌ + e2e-product ❌ (run 28869593069). No new run. |
-| **Jira mismatches — 5 active** | JN-5717 "Backlog", JN-5794 "In Review", JN-5546 "In Progress" (need Done). JN-5827 "Backlog" + JN-5841 "Backlog" (active PRs). All confirmed. |
+| **🔴 #1638 — run 28928793754 FAILED + NEW run 28930566279 IN PROGRESS** | Run 28928793754 completed with FAILURE: tox ❌, e2e-smoke ❌, nox ❌, e2e-tests ❌. Now 3rd consecutive CI failure. New run 28930566279 in progress: bake PENDING. |
+| **🟡 #1647 — reviewDecision changed to APPROVED** | NEW: Someone approved PR #1647 this period. But CI still failing (run 28869593069: pre-commit ❌ + e2e-product ❌). Cannot merge despite approval. |
+| **🟡 jn-5841 — PR #1649 DRAFT unchanged** | CI run 28924179820 ALL PASS. Still DRAFT. Session IDLE + ready_for_prompt: TRUE. **Action: Remove DRAFT, request reviewer.** |
+| **🟢 #1648 (jn-5827) — unchanged** | CI run 28922899326 ALL PASS. CodeRabbit ✅. reviewDecision "". Needs human LGTM. |
+| **🟢 #1632 — unchanged** | Run 28922685430 ALL PASS + CodeRabbit ✅. REVIEW_REQUIRED. Needs LGTM. |
+| **Jira mismatches — 5 active (Jira API/acli both failed)** | MCP 401 + acli failed — mismatches assumed unchanged. |
 | **No merges detected** | 0 auto-archives this run. |
 
 ---
@@ -102,21 +103,23 @@ PR [#1632](https://github.com/Jounce-IO/jounce/pull/1632): `feat(jbenchmark): re
 
 ---
 
-### 🟡 PR #1638 — NEW CI RUN 28928793754 IN PROGRESS (started 11:29 IDT)
+### 🔴 PR #1638 — 3rd CONSECUTIVE CI FAILURE + NEW RUN 28930566279 IN PROGRESS
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): `chore(infra): vLLM analyzer prerequisites - workflow improvements`
-- **Previous run 28900734572**: e2e-smoke ❌ FAILED (10m24s)
-- **NEW run 28928793754**: started 11:29 IDT, IN PROGRESS — bake ✅, atlas-validate ✅, check-changes ✅; e2e-api/integration/pre-commit-run/tox PENDING
-- **Action:** Wait for run 28928793754 to complete. If e2e-smoke passes, PR may be ready.
+- **Run 28928793754** (completed ~11:30-12:00 IDT): FAILED — tox ❌, e2e-smoke ❌, nox ❌, e2e-tests ❌
+- **Run 28930566279** (NOW IN PROGRESS): bake PENDING, CodeRabbit ✅, JIRA ✅, check-changes ✅
+- Pattern: 3 consecutive CI failures (28900734572 → 28928793754 → 28930566279 in progress)
+- **Action:** Investigate root cause — tox + nox + e2e-smoke all failing suggests a systemic issue. Inspect run 28928793754 logs.
 
 ---
 
-### 🔴 PR #1647 — DEGRADED: Both Pre-commit AND e2e-product FAILING
+### 🟡 PR #1647 — APPROVED but CI STILL FAILING
 
 PR [#1647](https://github.com/Jounce-IO/jounce/pull/1647): `test: testing-dev-before-migration JN-5445`
-- **CI run 28869593069:** pre-commit ❌ (4m38s) + e2e-product ❌ (32m25s — FAILED) — unchanged
-- e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅
-- **Action:** Both pre-commit AND e2e-product need fixing.
+- **NEW (12:00 IDT):** reviewDecision changed to **APPROVED** — someone approved the PR
+- **CI run 28869593069:** pre-commit ❌ (4m38s) + e2e-product ❌ (32m25s) — still failing, unchanged
+- all-checks ❌ — cannot merge despite approval
+- **Action:** Fix pre-commit + e2e-product failures before this can merge.
 
 ---
 
