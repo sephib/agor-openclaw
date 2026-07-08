@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-08 19:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-08 19:30 IDT (advance heartbeat)*
 
 ---
 
@@ -14,7 +14,7 @@
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — Backlog | Design session done Jun 30. Ready for Plan phase. |
 | jn-5842-jbenchmark-agents-md | Ingest | — | — | [JN-5842](https://redhat.atlassian.net/browse/JN-5842) — Backlog | Ingest session [019f4126-8305](http://127.0.0.1:3030/ui/s/019f412683057d20b481a4b9/) IDLE ready_for_prompt:TRUE. Joseph to review → trigger /implement:plan. |
 | jn-5401-runner-subcommands | **Code** | — | — | [JN-5401](https://redhat.atlassian.net/browse/JN-5401) — Backlog | ✅ **Code session COMPLETED 18:06 IDT.** Session [019f41f8-e32a](http://127.0.0.1:3030/ui/s/019f41f8e32a7446919063bb/) IDLE; ready_for_prompt:TRUE. SHA changed (bc35e060, dirty). Review output → trigger next phase. |
-| jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — Backlog | Revise session [019f416c-2d55](http://127.0.0.1:3030/ui/s/019f416c2d557b2a9480b6c1/) now ready_for_prompt:FALSE — child session 019f4202-b614 spawned. Code work may be active. |
+| jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — Backlog | 🔄 Child session [019f4290](http://127.0.0.1:3030/ui/s/019f429043d4745c9c0f66fc/) ("continuew") IDLE ready_for_prompt:TRUE. 2 commits made (ibm_models.json + README). Needs: generate 24 configs, rebase main, create PR. Waiting for Joseph direction. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 13+ days with no session or PR. |
 | jn-5841-agents-md-root | **Publish** | [#1649](https://github.com/Jounce-IO/jounce/pull/1649) | 🟢 **run 28932482752: ALL PASS** | [JN-5841](https://redhat.atlassian.net/browse/JN-5841) — **In Review** ✅ | 🟢 **READY FOR REVIEW.** CI run 28932482752: all checks ✅. reviewDecision: REVIEW_REQUIRED. **Action: Get reviewer LGTM to merge.** |
 | jn-5827-git-tagging-workflow | **Publish** | [#1648](https://github.com/Jounce-IO/jounce/pull/1648) | 🟡 CI stale (was ALL PASS run 28922899326) | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) — Backlog | 🔴 **PR #1648 NOW CONFLICTING** (was MERGEABLE at 18:00 IDT). Needs rebase before merge. |
@@ -26,7 +26,7 @@
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
 | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ CONFLICTING | 🔴 CONFLICTING | 🔴 CONFLICTING 6+ days. Needs rebase + fix e2e or close PR. |
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | ❌ **e2e-smoke FAILING** (run 28953186080; nox ✅, pre-commit ✅, tox ✅ now passing) | MERGEABLE | 🟡 **CI PARTIALLY RECOVERED** — nox/pre-commit/tox now PASSING (were failing 18:00 IDT). But e2e-smoke ❌, all-checks ❌ still FAILING. Progress made. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | 🟡 **CI PENDING** (run 28958685118; integration-run ✅ newly passing; e2e-smoke/pre-commit/tox still running) | MERGEABLE | 🟡 **NEW CI RUN ACTIVE** — run 28958685118. integration-run now ✅. e2e-smoke, pre-commit, tox still PENDING. Can't call pass/fail yet. |
 
 ---
 
@@ -59,16 +59,17 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes Since Last Run (19:00 IDT Jul 8)
+## Key Changes Since Last Run (19:30 IDT Jul 8)
 
 | What observed | Status |
 |---|---|
-| **🟡 #1638 new CI run** | Run 28955327177 (was 28953186080 at 18:30). e2e-smoke ❌ still failing. Net: no improvement. |
-| **jn-5824 ready_for_prompt flipped** | Revise session `019f416c-2d55` now `ready_for_prompt:FALSE` — child session `019f4202-b614` spawned. Code work may be active. |
+| **🔄 jn-5824 child session done** | Session `019f4290` ("continuew") IDLE + ready_for_prompt:TRUE. 2 commits made (ibm_models.json + README). Needs generate configs, rebase, PR. Waiting for Joseph. |
+| **🟡 #1638 CI PENDING** | New run 28958685118 active. integration-run now ✅. e2e-smoke/pre-commit/tox still running. |
 | **🟢 #1649 unchanged** | CI run 28932482752 ALL PASS. REVIEW_REQUIRED unchanged. |
 | **🔴 #1648 unchanged** | Still CONFLICTING. Needs rebase. |
 | **No new merges** | Sweep clean. |
 | **jn-5401 unchanged** | Code session COMPLETED 18:06 IDT, still IDLE, ready_for_prompt:TRUE. |
+| **5 Jira mismatches persist** | acli syntax error; MCP 401 ongoing. Status unchanged from 18:00 IDT. |
 
 ---
 
@@ -103,15 +104,15 @@ Worktree `jn-5841-agents-md-root` in **Publish** zone:
 
 ---
 
-### 🟡 #1638 — e2e-smoke Still Failing (new CI run — same result)
+### 🟡 #1638 — CI PENDING on new run 28958685118
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): `chore(infra): vLLM analyzer prerequisites`
 - **State**: MERGEABLE
-- **CI run 28955327177** (new since 18:30 IDT — someone pushed new commits):
-  - ✅ nox, pre-commit, tox, e2e-api, integration-run, atlas-validate, bake, check-changes
-  - ❌ e2e-smoke, all-checks, e2e-tests
-- Status: e2e-smoke ❌ unchanged despite new push. 9th+ failing run.
-- **Action:** Investigate e2e-smoke failure root cause. Fix and re-push.
+- **CI run 28958685118** (active at 19:30 IDT):
+  - ✅ integration-run (newly passing — was pending at 19:00 IDT), e2e-api, atlas-validate, bake, check-changes, CodeRabbit, JIRA Association, integration-tests
+  - 🟡 PENDING: e2e-smoke, pre-commit-run, tox-run — still running
+- Previous run 28955327177 had e2e-smoke FAIL. This run is still in progress — cannot confirm pass/fail yet.
+- **Action:** Wait for this CI run to complete. Check next heartbeat for result.
 
 ---
 
@@ -124,13 +125,14 @@ Worktree `jn-5842-jbenchmark-agents-md` (Ingest zone):
 
 ---
 
-### 🔄 jn-5824-benchmark-run-configs — Child session active (code work possibly running)
+### 🔄 jn-5824-benchmark-run-configs — Waiting for Joseph's direction
 
 Worktree `jn-5824-benchmark-run-configs` (Code zone):
 - **JN-5824**: "[DEV] Prepare benchmark run configs for IBM hardware (H100, A100-80, H200)"
-- Revise session [019f416c-2d55](http://127.0.0.1:3030/ui/s/019f416c2d557b2a9480b6c1/) now `ready_for_prompt:FALSE` — child session `019f4202-b614` was spawned.
-- SHA: 16ec44ea. Code work may be in progress.
-- **Action:** Monitor — child session `019f4202` may be a code session. Check next heartbeat.
+- Child session [019f4290](http://127.0.0.1:3030/ui/s/019f429043d4745c9c0f66fc/) ("continuew") IDLE + **ready_for_prompt:TRUE**.
+- **2 commits made** (ibm_models.json with 8 IBM models + README). SHA: 16ec44ea.
+- **Last message:** "Done: Task 1 (IBM model list) + docs committed. Remaining: Task 2 — generate 24 configs to temp/. Branch 3 commits behind main — needs rebase. No PR yet."
+- **Action:** Joseph review → tell session to: rebase on main, generate configs, create PR.
 
 ---
 

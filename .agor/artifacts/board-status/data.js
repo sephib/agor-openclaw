@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-08 19:00 IDT";
+export const LAST_UPDATED = "2026-07-08 19:30 IDT";
 
 export const WORKTREES = [
   {
@@ -222,12 +222,28 @@ export const WORKTREES = [
     zone: "Code",
     pr: null,
     prUrl: null,
-    status: "🔄 Revise session 019f416c-2d55 ready_for_prompt:FALSE — child session 019f4202-b614 spawned. Code work may be active. SHA: 16ec44ea. Monitor next heartbeat.",
-    blockedOn: "Code child session active",
+    status: "🔄 Child session 019f4290 ('continuew') IDLE ready_for_prompt:TRUE. 2 commits made: ibm_models.json (8 models) + README. Remaining: generate 24 configs to temp/, rebase on main, create PR. Waiting for Joseph direction.",
+    blockedOn: "Awaiting Joseph direction (generate configs, rebase, PR)",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f416c2d557b2a9480b6c1/",
-    sessionLabel: "revise plan — no CLI, regional clusters, temp output (child code session spawned)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f429043d4745c9c0f66fc/",
+    sessionLabel: "continuew (IDLE, ready_for_prompt — 2 commits done, awaiting direction)",
     recentSessions: [
+      {
+        sessionId: "019f429043d4745c9c0f66fc",
+        url: "http://127.0.0.1:3030/ui/s/019f429043d4745c9c0f66fc/",
+        title: "continuew — 2 commits done (ibm_models.json + README), awaiting direction",
+        status: "idle",
+        timestamp: "2026-07-08 19:31 IDT",
+        outputFile: null,
+      },
+      {
+        sessionId: "019f4202b61479cbbb22e657",
+        url: "http://127.0.0.1:3030/ui/s/019f4202b61479cbbb22e657/",
+        title: "/design:decompose (completed ~19:29 IDT, spawned continuew)",
+        status: "idle",
+        timestamp: "2026-07-08 19:29 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f416c2d557b2a9480b6c1",
         url: "http://127.0.0.1:3030/ui/s/019f416c2d557b2a9480b6c1/",
@@ -252,16 +268,8 @@ export const WORKTREES = [
         timestamp: "2026-07-08 10:56 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f41383c4176578b17ac7a",
-        url: "http://127.0.0.1:3030/ui/s/019f41383c4176578b17ac7a/",
-        title: "ingest (completed ~10:22 IDT)",
-        status: "idle",
-        timestamp: "2026-07-08 10:22 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-08 13:55 IDT",
+    lastActive: "2026-07-08 19:31 IDT",
   },
   {
     ticket: null,
@@ -448,8 +456,8 @@ export const ALERTS = [
     message: "🔴 PR #1648 (jn-5827 JN-5827): NOW CONFLICTING — was MERGEABLE+CI ALL PASS at 18:00 IDT. Needs rebase onto latest main before merge.",
   },
   {
-    level: "red",
-    message: "🟡 PR #1638 (JN-5725): e2e-smoke FAILING — new run 28955327177 (commits pushed since 18:30 IDT, same result). nox ✅, pre-commit ✅, tox ✅ but e2e-smoke ❌, all-checks ❌. 9th+ failing run. Action: investigate e2e-smoke root cause.",
+    level: "yellow",
+    message: "🟡 PR #1638 (JN-5725): New CI run 28958685118 ACTIVE at 19:30 IDT — integration-run ✅ (newly), e2e-smoke/pre-commit/tox PENDING. Cannot confirm pass/fail yet. Check next heartbeat.",
   },
   {
     level: "green",
@@ -461,7 +469,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "🔄 jn-5824-benchmark-run-configs (JN-5824): Revise session 019f416c-2d55 now ready_for_prompt:FALSE — child code session 019f4202-b614 spawned. Code work may be active. Monitor next heartbeat.",
+    message: "🔄 jn-5824-benchmark-run-configs (JN-5824): Child session 019f4290 IDLE ready_for_prompt:TRUE. 2 commits done (ibm_models.json + README). Needs: generate 24 configs to temp/, rebase on main, create PR. Action: Joseph review → direct session.",
   },
   {
     level: "yellow",
@@ -473,7 +481,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "❌ Jira mismatches (5, confirmed acli 19:00 IDT Jul 8; Jira MCP 401): JN-5719 'Backlog' (PR #1632 merged 17:10 IDT Jul 8), JN-5445 'In Progress' (PR #1647 merged 15:03 IDT Jul 8), JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5546 'In Progress' (PR #1588 merged Jul 7) — all 4 need Done. JN-5827 'Backlog' (PR #1648 CONFLICTING) — needs In Review.",
+    message: "❌ Jira mismatches (5, last confirmed acli 19:00 IDT Jul 8; Jira MCP 401 ongoing; acli syntax errors at 19:30): JN-5719 'Backlog' (PR #1632 merged 17:10 IDT Jul 8), JN-5445 'In Progress' (PR #1647 merged 15:03 IDT Jul 8), JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5546 'In Progress' (PR #1588 merged Jul 7) — all 4 need Done. JN-5827 'Backlog' (PR #1648 CONFLICTING) — needs In Review.",
   },
   {
     level: "yellow",
