@@ -4,6 +4,13 @@
 
 ---
 
+## 13:00 IDT — Weekday Daytime Heartbeat (Jul 8)
+- PRs checked: #1649 (OPEN, CI run 28932482752 ALL PASS ✅), #1648 (OPEN, ALL PASS 28922899326), #1632 (OPEN, ALL PASS 28922685430, REVIEW_REQUIRED), #1638 (run 28931312110 FAILED, e2e-smoke ❌ persistent), #1647 (APPROVED, CI run 28869593069 still failing), #1596 (DRAFT CONFLICTING), #1606 (CONFLICTING)
+- Merges detected: none (0 auto-archives)
+- CI changes: **#1649 CI NOW ALL PASS** — new run 28932482752: pre-commit ✅, e2e-smoke ✅, tox ✅, nox ✅, all-checks ✅. Previous run 28931349732 had pre-commit ❌ — RESOLVED. All others unchanged.
+- Flags: #1638 e2e-smoke persistent (5+ consecutive). #1648/#1632 awaiting human LGTM. #1647 APPROVED but CI fails. Jira MCP 401 — 5 mismatches assumed unchanged.
+- Next: #1649 ready for reviewer LGTM. #1648/#1632 need LGTM. #1638 e2e-smoke diagnosis.
+
 ## 12:30 IDT — Weekday Daytime Heartbeat (Jul 8)
 - PRs checked: #1649 (READY — draft removed; CI run 28931349732 pre-commit ❌), #1648 (OPEN, ALL PASS), #1632 (OPEN, ALL PASS, REVIEW_REQUIRED), #1638 (runs 28930566279 + 28931312110 both FAILED, e2e-smoke ❌ persistent), #1647 (APPROVED, CI still failing), #1596 (DRAFT CONFLICTING), #1606 (CONFLICTING)
 - Merges detected: none (0 auto-archives)

@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-08 12:30 IDT";
+export const LAST_UPDATED = "2026-07-08 13:00 IDT";
 
 export const WORKTREES = [
   {
@@ -61,8 +61,8 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1649",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1649",
-    status: "🔴 DRAFT REMOVED ✅ (isDraft: false) — but NEW CI run 28931349732 triggered: pre-commit ❌, all-checks ❌ (tox ✅, nox ✅, e2e ✅). Previous run 28924179820 was ALL PASS. Action: check pre-commit failure + fix.",
-    blockedOn: "CI pre-commit failing",
+    status: "🟢 CI ALL PASS — run 28932482752: pre-commit ✅, e2e-smoke ✅, tox ✅, nox ✅, all-checks ✅. REVIEW_REQUIRED. Action: get reviewer LGTM to merge.",
+    blockedOn: "Awaiting reviewer LGTM",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f3e01ee07703caf8b9576/",
     sessionLabel: "publish (completed — PR #1649 created, draft removed)",
@@ -316,8 +316,8 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "red",
-    message: "🔴 #1649 (jn-5841 JN-5841): DRAFT REMOVED ✅ but NEW CI run 28931349732 triggered — pre-commit ❌, all-checks ❌ (tox ✅, nox ✅). Previous run 28924179820 was ALL PASS. Check pre-commit failure and fix before this can be reviewed.",
+    level: "green",
+    message: "🟢 #1649 (jn-5841 JN-5841): CI ALL PASS — run 28932482752: pre-commit ✅, e2e-smoke ✅, all-checks ✅. OPEN + REVIEW_REQUIRED. Needs reviewer LGTM to merge. (Previous run 28931349732 pre-commit ❌ — resolved.)",
   },
   {
     level: "green",
