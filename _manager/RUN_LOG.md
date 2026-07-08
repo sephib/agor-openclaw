@@ -4,6 +4,16 @@
 
 ---
 
+## 10:00 IDT — Weekday Daytime Heartbeat (Jul 8)
+- PRs checked: #1648 (OPEN not-DRAFT, CI run 28922899326 ALL PASS ✅ — CodeRabbit pending), #1632 (run 28922685430 ALL PASS + CodeRabbit ✅ — READY TO MERGE), #1638 (e2e-smoke ❌ unchanged), #1647 (pre-commit ❌ + e2e-product ❌ unchanged), #1596 (DRAFT CONFLICTING), #1606 (CONFLICTING)
+- Merges detected: none (0 auto-archives)
+- CI changes: #1648 — **DRAFT REMOVED + CI ALL PASS** (run 28922899326: all required checks ✅); #1632 — **READY TO MERGE** (run 28922685430 all ✅ + CodeRabbit ✅)
+- Zone changes: none
+- Flags: jn-5841 Publish session [019f3e01](http://127.0.0.1:3030/ui/s/019f3e01ee07703caf8b9576/) idle, ready_for_prompt:false — no PR created (unchanged 11+ hrs); Jira mismatches confirmed via acli: JN-5717/JN-5794/JN-5546 all unchanged
+- Next: Request external review on #1648; get reviewer LGTM on #1632 to merge; resume jn-5841 Publish to create PR
+
+---
+
 ## 09:30 IDT — Weekday Daytime Heartbeat (Jul 8)
 - PRs checked: #1648 (new CI run 28922381668 in progress — pre-commit-run pending, others ✅), #1638 (e2e-smoke ❌ unchanged), #1647 (pre-commit ❌ + e2e-product ❌ unchanged), #1632 (new CI run 28922557096 just started — prev 28775331183 all ✅), #1596 (DRAFT CONFLICTING), #1606 (CONFLICTING)
 - Merges detected: none (0 auto-archives)

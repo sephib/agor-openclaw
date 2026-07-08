@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-08 09:30 IDT";
+export const LAST_UPDATED = "2026-07-08 10:00 IDT";
 
 export const WORKTREES = [
   {
@@ -61,16 +61,16 @@ export const WORKTREES = [
     zone: "Publish",
     pr: null,
     prUrl: null,
-    status: "🟡 ADVANCED to Publish. Publish session 019f3e01 IDLE + ready_for_prompt:TRUE (22:15 IDT Jul 7). No PR created yet — resume Publish session to create PR.",
-    blockedOn: null,
+    status: "🟡 Publish session STALLED — session 019f3e01 ran 4 min (22:15-22:19 IDT Jul 7), now idle. No PR created. Needs resume to create PR.",
+    blockedOn: "Publish session stalled — no PR created",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f3e01ee07703caf8b9576/",
-    sessionLabel: "publish (ready_for_prompt: TRUE)",
+    sessionLabel: "publish (stalled — no PR)",
     recentSessions: [
       {
         sessionId: "019f3e01ee07703caf8b9576",
         url: "http://127.0.0.1:3030/ui/s/019f3e01ee07703caf8b9576/",
-        title: "publish (ready)",
+        title: "publish (stalled)",
         status: "idle",
         timestamp: "2026-07-07 22:19 IDT",
         outputFile: null,
@@ -177,18 +177,18 @@ export const WORKTREES = [
     branch: "jn-5827-git-tagging-workflow",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5827-git-tagging-workflow",
     zone: "Publish",
-    pr: "#1648 DRAFT",
+    pr: "#1648",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1648",
-    status: "🟡 New CI run 28922381668 in progress: deploy ✅ atlas ✅ build ✅ e2e-tests ✅ integration ✅ — pre-commit-run PENDING. e2e/bake SKIPPING (DRAFT). Previous run 28885455833 ALL PASS. Remove DRAFT flag when pre-commit-run confirms green.",
-    blockedOn: null,
+    status: "🟢 DRAFT REMOVED! PR #1648 OPEN — CI run 28922899326 ALL PASS ✅. CodeRabbit review in progress. REVIEW_REQUIRED — request external reviewer LGTM.",
+    blockedOn: "Awaiting external code review",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f3d66ffeb7154a64feb80/",
-    sessionLabel: "internal-cr (stale/idle)",
+    sessionLabel: "internal-cr retry (ready_for_prompt: TRUE)",
     recentSessions: [
       {
         sessionId: "019f3d66ffeb7154a64feb80",
         url: "http://127.0.0.1:3030/ui/s/019f3d66ffeb7154a64feb80/",
-        title: "internal-cr retry (stale)",
+        title: "internal-cr retry (ready)",
         status: "idle",
         timestamp: "2026-07-07 19:29 IDT",
         outputFile: null,
@@ -316,24 +316,24 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "yellow",
-    message: "🟡 jn-5841 (JN-5841): ADVANCED to Publish! Publish session 019f3e01 IDLE + ready_for_prompt:TRUE (22:15 IDT Jul 7). No PR created yet — resume Publish session to create PR.",
+    level: "green",
+    message: "🟢 #1648 (jn-5827 JN-5827): DRAFT REMOVED — PR now OPEN with CI ALL PASS (run 28922899326). CodeRabbit review in progress. REVIEW_REQUIRED — request external reviewer LGTM now.",
+  },
+  {
+    level: "green",
+    message: "🟢 PR #1632 (JN-5719): READY TO MERGE — run 28922685430 ALL PASS + CodeRabbit ✅ complete. REVIEW_REQUIRED — get final reviewer LGTM to merge.",
   },
   {
     level: "yellow",
-    message: "🟡 jn-5827 (JN-5827): PR #1648 — New CI run 28922381668 IN PROGRESS. deploy ✅ atlas ✅ build ✅ e2e-tests ✅ integration ✅ — pre-commit-run PENDING. Previous run 28885455833 ALL PASS. Remove DRAFT flag once pre-commit-run confirms green.",
+    message: "🟡 jn-5841 (JN-5841): Publish session 019f3e01 STALLED — ran 4 min (22:15-22:19 IDT Jul 7), idle since. No PR created. Resume session to complete PR creation.",
   },
   {
     level: "red",
-    message: "🔴 PR #1638 — REGRESSION: run 28900734572 — e2e-smoke ❌ FAILED (10m24s). pre-commit ✅ now passes, tox/nox/bake/e2e-api/integration ✅ — but e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌. Previous 'RECOVERY' was premature.",
+    message: "🔴 PR #1638 — REGRESSION: run 28900734572 — e2e-smoke ❌ FAILED (10m24s). pre-commit ✅ now passes, tox/nox/bake/e2e-api/integration ✅ — but e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌. Unchanged.",
   },
   {
     level: "red",
     message: "🔴 PR #1647 (run 28869593069): DEGRADED — both pre-commit ❌ (4m38s) AND e2e-product ❌ (32m25s FAILED). Unchanged. e2e-smoke ✅ / e2e-api ✅ / integration ✅ / tox ✅ / nox ✅.",
-  },
-  {
-    level: "yellow",
-    message: "🟡 PR #1632 (JN-5719): New CI run 28922557096 just triggered (cause unclear — very early, all pending). Previous run 28775331183 all ✅, REVIEW_REQUIRED, MERGEABLE. Monitor new run.",
   },
   {
     level: "red",
@@ -341,7 +341,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "❌ Jira mismatches (3, confirmed acli 22:00 IDT Jul 7): JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5794 'In Review' (PR #1643 merged Jul 1), JN-5546 'In Progress' (PR #1588 merged Jul 7). All need → Done.",
+    message: "❌ Jira mismatches (3, confirmed acli 10:00 IDT Jul 8): JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5794 'In Review' (PR #1643 merged Jul 1), JN-5546 'In Progress' (PR #1588 merged Jul 7). All need → Done.",
   },
   {
     level: "yellow",
