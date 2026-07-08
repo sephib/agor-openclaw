@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-08 18:30 IDT";
+export const LAST_UPDATED = "2026-07-08 19:00 IDT";
 
 export const WORKTREES = [
   {
@@ -222,11 +222,11 @@ export const WORKTREES = [
     zone: "Code",
     pr: null,
     prUrl: null,
-    status: "🚀 IDLE — Latest session 019f416c-2d55 'Revise JN-5824 plan — no CLI, regional clusters, temp output' completed ~13:55 IDT. ready_for_prompt:TRUE. SHA changed (16ec44ea). Action: Joseph review + trigger next phase.",
-    blockedOn: "Awaiting Joseph review",
+    status: "🔄 Revise session 019f416c-2d55 ready_for_prompt:FALSE — child session 019f4202-b614 spawned. Code work may be active. SHA: 16ec44ea. Monitor next heartbeat.",
+    blockedOn: "Code child session active",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f416c2d557b2a9480b6c1/",
-    sessionLabel: "revise plan — no CLI, regional clusters, temp output (ready_for_prompt: TRUE)",
+    sessionLabel: "revise plan — no CLI, regional clusters, temp output (child code session spawned)",
     recentSessions: [
       {
         sessionId: "019f416c2d557b2a9480b6c1",
@@ -449,7 +449,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🟡 PR #1638 (JN-5725): e2e-smoke FAILING on run 28953186080. Progress: nox ✅, pre-commit ✅, tox ✅ (were failing). Blockers: e2e-smoke ❌, all-checks ❌. Action: investigate e2e-smoke failure.",
+    message: "🟡 PR #1638 (JN-5725): e2e-smoke FAILING — new run 28955327177 (commits pushed since 18:30 IDT, same result). nox ✅, pre-commit ✅, tox ✅ but e2e-smoke ❌, all-checks ❌. 9th+ failing run. Action: investigate e2e-smoke root cause.",
   },
   {
     level: "green",
@@ -461,7 +461,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "🚀 jn-5824-benchmark-run-configs (JN-5824): IDLE in Code zone. Session 019f416c-2d55 'Revise plan' completed ~13:55 IDT (ready_for_prompt:TRUE). SHA changed — commits made. Action: Joseph review + trigger next phase.",
+    message: "🔄 jn-5824-benchmark-run-configs (JN-5824): Revise session 019f416c-2d55 now ready_for_prompt:FALSE — child code session 019f4202-b614 spawned. Code work may be active. Monitor next heartbeat.",
   },
   {
     level: "yellow",
@@ -473,7 +473,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "❌ Jira mismatches (5, confirmed acli 18:00 IDT Jul 8; Jira MCP 401): JN-5719 'Backlog' (PR #1632 merged 17:10 IDT Jul 8), JN-5445 'In Progress' (PR #1647 merged 15:03 IDT Jul 8), JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5546 'In Progress' (PR #1588 merged Jul 7) — all 4 need Done. JN-5827 'Backlog' (PR #1648 CONFLICTING) — needs In Review.",
+    message: "❌ Jira mismatches (5, confirmed acli 19:00 IDT Jul 8; Jira MCP 401): JN-5719 'Backlog' (PR #1632 merged 17:10 IDT Jul 8), JN-5445 'In Progress' (PR #1647 merged 15:03 IDT Jul 8), JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5546 'In Progress' (PR #1588 merged Jul 7) — all 4 need Done. JN-5827 'Backlog' (PR #1648 CONFLICTING) — needs In Review.",
   },
   {
     level: "yellow",

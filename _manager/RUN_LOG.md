@@ -4,7 +4,16 @@
 
 ---
 
-## 15:30 IDT — Weekday Daytime Heartbeat (Jul 8)
+## 19:00 IDT — Weekday Daytime Heartbeat (Jul 8)
+- PRs checked: #1649 (OPEN, ALL PASS run 28932482752, REVIEW_REQUIRED), #1648 (OPEN, CONFLICTING), #1638 (OPEN, MERGEABLE, new run 28955327177 e2e-smoke ❌), #1606 (OPEN, UNKNOWN), #1596 (DRAFT, UNKNOWN)
+- Merges detected: none (0 auto-archives)
+- CI changes: **#1638 new CI run 28955327177** (commits pushed since 18:30 IDT). e2e-smoke ❌ still failing — 9th+ run. No improvement.
+- Board changes: **jn-5824 revise session `019f416c-2d55` `ready_for_prompt:FALSE`** — child `019f4202-b614` spawned (code work may be active). All other worktrees unchanged.
+- Jira: All 5 mismatches persist — confirmed via acli 19:00 IDT. No changes since 18:30.
+- Flags: #1649 needs reviewer LGTM. #1648 CONFLICTING. #1638 e2e-smoke persistent failure. jn-5401 awaiting Joseph review. jn-5824 code child session active. jn-5842 ingest awaiting plan trigger. 5 Jira mismatches.
+- Next: Monitor jn-5824 code session. #1638 e2e-smoke needs investigation. Get LGTM on #1649.
+
+## 18:30 IDT — Weekday Daytime Heartbeat (Jul 8)
 - PRs checked: #1649 (OPEN, ALL PASS 28932482752, REVIEW_REQUIRED), #1648 (OPEN, ALL PASS 28922899326), #1632 (OPEN → NOW CONFLICTING), #1638 (OPEN → NOW CONFLICTING), #1647 (MERGED 15:03 IDT Jul 8)
 - Merges detected: **PR #1647 MERGED** (mergedAt 2026-07-08T12:03:40Z). Off-board PR — no worktree to archive. (0 auto-archives)
 - CI changes: **#1632 NOW CONFLICTING** (was ALL PASS READY TO MERGE). **#1638 NOW CONFLICTING** (was e2e-smoke ❌ MERGEABLE). #1649 ALL PASS unchanged. #1648 ALL PASS unchanged.
