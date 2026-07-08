@@ -647,3 +647,13 @@
 - Flags: #1648 NEWLY CONFLICTING; jn-5401 code done (needs review); 5 Jira mismatches persist
 - Auto-advances: 0
 - Next: Joseph review jn-5401 output; rebase #1648; get LGTM on #1649; fix e2e-smoke on #1638; update 5 Jira tickets
+
+## 00:01 IDT — Overnight Heartbeat
+- PRs checked: #1649 (OPEN, ALL PASS, REVIEW_REQUIRED), #1648 (OPEN, CONFLICTING), #1638 (OPEN, NEW run 28972013790 e2e-smoke ❌), #1596 (DRAFT, CONFLICTING)
+- Merges detected: none (sweep clean — assignee + review-requested)
+- CI changes: #1638 new run 28972013790 (replaced 28964385136) — same result: e2e-smoke ❌, e2e-api ✅. #1649 unchanged ALL PASS.
+- Zone changes: 5 NEW worktrees added ~22:54 IDT: jn-5865 (Ingest), jn-5867 (Verify), jn-5869 (Verify), jn-5870 (Code — RUNNING), jn-5871 (Ingest)
+- Session changes: jn-5870 Code session RUNNING (23:52 IDT); jn-5867 Code DONE (c0ef0a98, committed, rp:TRUE); jn-5869 Code DONE (dirty SHA, rp:TRUE); jn-5865 Plan DONE (rp:TRUE); jn-5871 Plan DONE (rp:TRUE)
+- Flags: jn-5869 dirty SHA needs commit before validate; jn-5865+jn-5871 in Ingest zone despite Plan done (zone mismatch); jn-5401 still awaiting push+PR; 5 Jira mismatches persist
+- Auto-advances: 0
+- Next: Review jn-5870 code session output when done; trigger validate for jn-5867; commit dirty SHA for jn-5869 before validate; move jn-5865/jn-5871 to Code zone; push PR for jn-5401; get LGTM on #1649; rebase #1648; investigate #1638 e2e-smoke; update 5 Jira tickets
