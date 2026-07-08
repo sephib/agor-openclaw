@@ -4,6 +4,15 @@
 
 ---
 
+## 15:30 IDT — Weekday Daytime Heartbeat (Jul 8)
+- PRs checked: #1649 (OPEN, ALL PASS 28932482752, REVIEW_REQUIRED), #1648 (OPEN, ALL PASS 28922899326), #1632 (OPEN → NOW CONFLICTING), #1638 (OPEN → NOW CONFLICTING), #1647 (MERGED 15:03 IDT Jul 8)
+- Merges detected: **PR #1647 MERGED** (mergedAt 2026-07-08T12:03:40Z). Off-board PR — no worktree to archive. (0 auto-archives)
+- CI changes: **#1632 NOW CONFLICTING** (was ALL PASS READY TO MERGE). **#1638 NOW CONFLICTING** (was e2e-smoke ❌ MERGEABLE). #1649 ALL PASS unchanged. #1648 ALL PASS unchanged.
+- Jira: **4 mismatches** (added JN-5445 "In Progress" — PR #1647 now merged). JN-5717 Backlog, JN-5546 In Progress, JN-5827 Backlog persist. Jira MCP 401 — confirmed via acli 15:30 IDT.
+- Board changes: **jn-5401-runner-subcommands** new worktree in Ingest (created 15:19 IDT). **jn-5824** advanced to Code zone, code session completed (ready_for_prompt:TRUE).
+- Flags: 2 conflicting off-board PRs (#1632, #1638) need rebase. 4 Jira mismatches. JN-5445 needs Done. #1649/#1648 need LGTM. jn-5842 ingest awaiting review. jn-5824 code session awaiting review.
+- Next: Rebase #1632 and #1638. Update JN-5445 → Done. Get LGTM on #1649, #1648. Check jn-5401 ingest status next run.
+
 ## 14:30 IDT — Weekday Daytime Heartbeat (Jul 8)
 - PRs checked: #1649 (OPEN, ALL PASS run 28932482752, REVIEW_REQUIRED), #1648 (OPEN, ALL PASS run 28922899326), #1632 (OPEN, run 28937425260 NOW ALL PASS ✅), #1638 (OPEN, run 28936147296 e2e-smoke ❌), #1647 (OPEN, run 28936822803 e2e-product ❌ FAILED, APPROVED), #1596 (DRAFT CONFLICTING), #1606 (CONFLICTING)
 - Merges detected: none (0 auto-archives)
