@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-08 14:00 IDT";
+export const LAST_UPDATED = "2026-07-08 14:30 IDT";
 
 export const WORKTREES = [
   {
@@ -368,16 +368,16 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "yellow",
-    message: "🟡 PR #1647 — APPROVED + NEW run 28936822803: pre-commit ✅ RECOVERED! e2e-smoke ✅ + tox ✅ + nox ✅. **e2e-product ⏳ PENDING** — if passes → merge-ready (APPROVED + all-checks ✅). Watch for result.",
+    level: "red",
+    message: "🔴 PR #1647 — APPROVED but CI blocking. Run 28936822803 COMPLETE: pre-commit ✅ e2e-smoke ✅ tox ✅ nox ✅ — but e2e-product ❌ FAILED (28m15s). all-checks ❌. Action: investigate e2e-product failure.",
   },
   {
     level: "red",
     message: "🔴 PR #1638 — conflict RESOLVED ✅ (was CONFLICTING at 13:30, now MERGEABLE). But e2e-smoke still ❌ (run 28936147296 — 7th+ consecutive). Other checks ✅. Only blocker: e2e-smoke. Investigate root cause.",
   },
   {
-    level: "yellow",
-    message: "🟡 PR #1632 (JN-5719): NEW CI run 28937425260 IN PROGRESS (was ALL PASS run 28922685430). Pending: pre-commit, e2e-api, integration, tox. Watch for outcome.",
+    level: "green",
+    message: "🟢 PR #1632 (JN-5719): run 28937425260 ALL PASS ✅ — pre-commit ✅ e2e-smoke ✅ e2e-api ✅ integration ✅ tox ✅ nox ✅ all-checks ✅. Off-board PR. READY TO MERGE — needs LGTM.",
   },
   {
     level: "green",
@@ -401,7 +401,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "❌ Jira mismatches (3, last acli 13:30 IDT Jul 8; Jira MCP 401 at 14:00): JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5546 'In Progress' (PR #1588 merged Jul 7) — both need Done. JN-5827 'Backlog' (PR #1648 open CI pass) — needs In Review.",
+    message: "❌ Jira mismatches (3, confirmed acli 14:30 IDT Jul 8; Jira MCP 401): JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5546 'In Progress' (PR #1588 merged Jul 7) — both need Done. JN-5827 'Backlog' (PR #1648 open CI pass) — needs In Review.",
   },
   {
     level: "yellow",

@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-08 14:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-08 14:30 IDT (advance heartbeat)*
 
 ---
 
@@ -26,9 +26,9 @@
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
 | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ CONFLICTING | 🔴 CONFLICTING | 🔴 CONFLICTING 6+ days. Needs rebase + fix e2e or close PR. |
-| [#1647](https://github.com/Jounce-IO/jounce/pull/1647) | feat/migrate-dev-to-openshift-gcp | [JN-5445](https://redhat.atlassian.net/browse/JN-5445) (likely) | 🟡 **NEW run 28936822803: pre-commit ✅ RECOVERED! e2e-product ⏳ PENDING** | APPROVED | 🟡 **APPROVED.** NEW run 28936822803: pre-commit ✅ + e2e-smoke ✅ + tox ✅ + nox ✅ + most checks ✅. Only **e2e-product still PENDING** — if it passes, this is merge-ready! Was failing since run 28869593069. |
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | 🔴 **run 28936147296: e2e-smoke ❌** | 🟡 **NOW MERGEABLE** | 🟢 **CONFLICT RESOLVED** (was CONFLICTING at 13:30). But e2e-smoke still ❌ (run 28936147296 — 7th+ consecutive). Most other checks ✅. Only blocker: e2e-smoke. |
-| [#1632](https://github.com/Jounce-IO/jounce/pull/1632) | jn-5719-release-diff | [JN-5719](https://redhat.atlassian.net/browse/JN-5719) | 🟡 **NEW run 28937425260 IN PROGRESS** | MERGEABLE | 🟡 **NEW CI run triggered** (28937425260). Pre-commit, e2e-api, integration, tox all ⏳ PENDING. Atlas-validate ✅. Was ALL PASS (run 28922685430) — watching for outcome. |
+| [#1647](https://github.com/Jounce-IO/jounce/pull/1647) | feat/migrate-dev-to-openshift-gcp | [JN-5445](https://redhat.atlassian.net/browse/JN-5445) (likely) | 🔴 **run 28936822803: e2e-product ❌ FAILED (28m15s)** | APPROVED | 🔴 **APPROVED but CI blocking.** Run 28936822803 COMPLETE: pre-commit ✅, e2e-smoke ✅, tox ✅, nox ✅ — but **e2e-product ❌ FAILED**. all-checks ❌. Action: investigate e2e-product. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | 🔴 **run 28936147296: e2e-smoke ❌** | MERGEABLE | 🔴 **e2e-smoke ❌** (run 28936147296 — 8th+ consecutive). All other checks ✅. Only blocker: e2e-smoke. |
+| [#1632](https://github.com/Jounce-IO/jounce/pull/1632) | jn-5719-release-diff | [JN-5719](https://redhat.atlassian.net/browse/JN-5719) | 🟢 **run 28937425260 ALL PASS** | MERGEABLE | 🟢 **READY TO MERGE.** Run 28937425260 COMPLETE: ALL PASS ✅. Needs LGTM. Off-board PR, no worktree. |
 
 ---
 
@@ -55,33 +55,33 @@ Active sprint tickets assigned to Joseph with no board worktree:
 | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | MERGED Jul 7 | **In Progress** (last confirmed acli 13:30 IDT Jul 8) | ❌ Update Jira → Done |
 | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) | [#1648](https://github.com/Jounce-IO/jounce/pull/1648) | OPEN — CI ALL PASS | **Backlog** (last confirmed acli 13:30 IDT Jul 8) | ⚠️ Should be → In Review |
 
-*Note: Jira MCP returned 401 at 14:00 IDT — status unverified this run. Using last confirmed values from acli 13:30 IDT.*
+*Note: Jira MCP 401. Status confirmed via acli at 14:30 IDT.*
 
 ---
 
-## Key Changes Since Last Run (13:30 IDT Jul 8)
+## Key Changes Since Last Run (14:00 IDT Jul 8)
 
 | What observed | Status |
 |---|---|
-| **🟢 #1638 — CONFLICT RESOLVED** | Was CONFLICTING at 13:30 IDT → NOW MERGEABLE. Rebase applied between 13:30–14:00. NEW run 28936147296: e2e-smoke still ❌ (7th+ consecutive). **Only 1 blocker remains.** |
-| **🟡 #1647 — PRE-COMMIT RECOVERED** | NEW run 28936822803: pre-commit NOW ✅ (was ❌ since run 28869593069). e2e-smoke ✅, tox ✅, nox ✅. **e2e-product still ⏳ PENDING** — if passes → merge-ready (APPROVED). |
-| **🟡 #1632 — NEW CI RUN IN PROGRESS** | NEW run 28937425260 triggered (was run 28922685430 ALL PASS). Likely rebase/refresh. Pending outcome. |
+| **🔴 #1647 — e2e-product FAILED** | Was ⏳ PENDING at 14:00 IDT → run 28936822803 completed: e2e-product ❌ (28m15s). all-checks ❌. PR is APPROVED but CI still blocking. |
+| **🟢 #1632 — NOW ALL PASS** | Was IN PROGRESS (run 28937425260) at 14:00 IDT → run now COMPLETE: ALL PASS ✅. pre-commit ✅, e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅, all-checks ✅. **READY TO MERGE — needs LGTM.** |
+| **🔴 #1638 — e2e-smoke still ❌** | No change. Run 28936147296: e2e-smoke ❌ (8th+ consecutive). Other checks ✅. |
 | **🟢 #1649 unchanged** | CI run 28932482752 ALL PASS. REVIEW_REQUIRED. Unchanged. |
 | **🟢 #1648 unchanged** | CI run 28922899326 ALL PASS. Needs LGTM. Unchanged. |
-| **Jira MCP 401** | Can't verify — using last acli values from 13:30 IDT. |
+| **Jira confirmed via acli 14:30 IDT** | JN-5717 Backlog, JN-5546 In Progress, JN-5827 Backlog — mismatches persist. |
 
 ---
 
 ## Attention Items
 
-### 🟡 #1647 — WATCH: e2e-product PENDING (all other checks ✅, APPROVED)
+### 🔴 #1647 — e2e-product FAILED (APPROVED but CI still blocking)
 
 PR [#1647](https://github.com/Jounce-IO/jounce/pull/1647): `test: testing-dev-before-migration JN-5445`
 - **reviewDecision: APPROVED** ✅
-- **NEW run 28936822803**: pre-commit ✅ RECOVERED! e2e-smoke ✅, tox ✅, nox ✅, integration ✅, e2e-api ✅
-- **e2e-product: ⏳ PENDING** — only remaining check
-- **If e2e-product passes → this is merge-ready (APPROVED + all-checks ✅)**
-- **Action:** Watch e2e-product result. If passes, approve merge immediately.
+- **Run 28936822803 COMPLETED**: pre-commit ✅, e2e-smoke ✅, tox ✅, nox ✅, integration ✅, e2e-api ✅
+- **e2e-product: ❌ FAILED** (28m15s) — all-checks ❌
+- **Status: APPROVED + CI blocking (e2e-product)**
+- **Action:** Investigate e2e-product failure; re-trigger or fix to unblock merge.
 
 ---
 
@@ -96,13 +96,13 @@ PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): `chore(infra): vLLM a
 
 ---
 
-### 🟡 #1632 — NEW CI RUN IN PROGRESS
+### 🟢 #1632 — NOW ALL PASS — READY TO MERGE
 
 PR [#1632](https://github.com/Jounce-IO/jounce/pull/1632): `feat(jbenchmark): release diff layer (JN-5719)`
-- **NEW run 28937425260**: pre-commit ⏳, e2e-api ⏳, integration ⏳, tox ⏳ — all pending
+- **Run 28937425260 COMPLETE**: ALL PASS ✅ — pre-commit ✅, e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅, all-checks ✅
 - Atlas-validate ✅, CodeRabbit ✅
-- Was previously ALL PASS (run 28922685430)
-- **Action:** Wait for new run to complete; if ALL PASS → push for merge LGTM.
+- **reviewDecision: ""** (no required-reviewer policy)
+- **Action: Get human LGTM to merge. Off-board PR — no worktree needed.**
 
 ---
 
@@ -144,7 +144,7 @@ Worktree `jn-5824-benchmark-run-configs` (Ingest zone):
 
 ---
 
-### ❌ Jira Mismatches (3 active — Jira MCP 401 at 14:00; last confirmed acli 13:30 IDT)
+### ❌ Jira Mismatches (3 active — Jira MCP 401; confirmed via acli 14:30 IDT)
 
 **Merged PRs not reflected in Jira (2):**
 - [JN-5717](https://redhat.atlassian.net/browse/JN-5717): PR [#1631](https://github.com/Jounce-IO/jounce/pull/1631) MERGED Jul 6 → Jira **"Backlog"** (should be Done)
