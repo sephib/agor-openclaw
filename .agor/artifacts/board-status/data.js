@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-07 22:00 IDT";
+export const LAST_UPDATED = "2026-07-08 09:00 IDT";
 
 export const WORKTREES = [
   {
@@ -10,8 +10,8 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: null,
     prUrl: null,
-    status: "⚠️ model-packaging-pipeline repo. Created Jun 15 — stagnant 22+ days. No PR URL set. In Code Review zone with no visible work. Needs investigation or archive.",
-    blockedOn: "No PR, stagnant 22+ days",
+    status: "⚠️ model-packaging-pipeline repo. Created Jun 15 — stagnant 23+ days. No PR URL set. In Code Review zone with no visible work. Needs investigation or archive.",
+    blockedOn: "No PR, stagnant 23+ days",
     blockedType: "blocked",
     sessionUrl: null,
     sessionLabel: null,
@@ -58,15 +58,23 @@ export const WORKTREES = [
     title: "AGENTS.md + model-packaging-pipeline (JN-5841)",
     branch: "jn-5841-agents-md-root",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5841-agents-md-root",
-    zone: "Validate",
+    zone: "Publish",
     pr: null,
     prUrl: null,
-    status: "🟡 Validate session 019f3d82 IDLE + ready_for_prompt: TRUE (~20:03 IDT). Validate run COMPLETE — Joseph needs to review output and advance to Publish (or revise).",
+    status: "🟡 ADVANCED to Publish. Publish session 019f3e01 IDLE + ready_for_prompt:TRUE (22:15 IDT Jul 7). No PR created yet — resume Publish session to create PR.",
     blockedOn: null,
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f3d8216db751081637244/",
-    sessionLabel: "validate (complete, awaiting review)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f3e01ee07703caf8b9576/",
+    sessionLabel: "publish (ready_for_prompt: TRUE)",
     recentSessions: [
+      {
+        sessionId: "019f3e01ee07703caf8b9576",
+        url: "http://127.0.0.1:3030/ui/s/019f3e01ee07703caf8b9576/",
+        title: "publish (ready)",
+        status: "idle",
+        timestamp: "2026-07-07 22:19 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f3d8216db751081637244",
         url: "http://127.0.0.1:3030/ui/s/019f3d8216db751081637244/",
@@ -99,16 +107,8 @@ export const WORKTREES = [
         timestamp: "2026-07-07 09:58 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f3236cdab755bade4395a",
-        url: "http://127.0.0.1:3030/ui/s/019f3236cdab755bade4395a/",
-        title: "ingest",
-        status: "idle",
-        timestamp: "2026-07-05 19:07 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-07 20:03 IDT",
+    lastActive: "2026-07-07 22:19 IDT",
   },
   {
     ticket: "JN-5244",
@@ -162,7 +162,7 @@ export const WORKTREES = [
     zone: "NO ZONE",
     pr: null,
     prUrl: null,
-    status: "⚠️ Still exists in Agor (uid=249, last updated Jun 25). Stale 12+ days — no sessions, no PR. Propose archive if no longer needed.",
+    status: "⚠️ Still exists in Agor (uid=249, last updated Jun 25). Stale 13+ days — no sessions, no PR. Propose archive if no longer needed.",
     blockedOn: "Stale, no activity",
     blockedType: "blocked",
     sessionUrl: null,
@@ -316,16 +316,16 @@ export const MERGED = [
 
 export const ALERTS = [
   {
+    level: "yellow",
+    message: "🟡 jn-5841 (JN-5841): ADVANCED to Publish! Publish session 019f3e01 IDLE + ready_for_prompt:TRUE (22:15 IDT Jul 7). No PR created yet — resume Publish session to create PR.",
+  },
+  {
     level: "green",
     message: "🟢 jn-5827 (JN-5827): PR #1648 — CI ALL PASS! run 28885455833: pre-commit ✅ tox ✅ nox ✅ all-checks ✅. e2e/bake SKIPPING (DRAFT). Remove DRAFT flag → triggers full e2e + enables review.",
   },
   {
-    level: "yellow",
-    message: "🟡 jn-5841 (JN-5841): Validate session 019f3d82 COMPLETE — IDLE + ready_for_prompt:TRUE (~20:03 IDT). Joseph needs to review validate output and advance to Publish (or revise).",
-  },
-  {
-    level: "yellow",
-    message: "🟡 PR #1638 — RECOVERING: run 28890999091 — tox ✅ (4m39s) + nox ✅ NOW PASSING after 3 consecutive failures. bake ✅ / e2e-api ✅ / integration ✅ also pass. pre-commit ⏳ + e2e-smoke ⏳ still PENDING. Watch next run.",
+    level: "red",
+    message: "🔴 PR #1638 — REGRESSION: run 28900734572 — e2e-smoke ❌ FAILED (10m24s). pre-commit ✅ now passes, tox/nox/bake/e2e-api/integration ✅ — but e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌. Previous 'RECOVERY' was premature.",
   },
   {
     level: "red",
@@ -337,7 +337,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): CONFLICTING (since 10:00 IDT Jul 2, 5+ days). e2e ❌ + all-checks ❌. Jira Done. Needs rebase + e2e fix or close PR.",
+    message: "🔴 PR #1606 (JN-5725, off-board): CONFLICTING (since 10:00 IDT Jul 2, 6+ days). e2e ❌ + all-checks ❌. Jira Done. Needs rebase + e2e fix or close PR.",
   },
   {
     level: "red",
@@ -345,10 +345,10 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⚠️ jira-operations: NO ZONE, stale 12+ days (last Jun 25). No sessions, no PR. Propose archive.",
+    message: "⚠️ jira-operations: NO ZONE, stale 13+ days (last Jun 25). No sessions, no PR. Propose archive.",
   },
   {
     level: "yellow",
-    message: "⚠️ model-packaging-cr (Code Review zone): stagnant 22+ days. No PR URL set. Needs investigation or archive.",
+    message: "⚠️ model-packaging-cr (Code Review zone): stagnant 23+ days. No PR URL set. Needs investigation or archive.",
   },
 ];

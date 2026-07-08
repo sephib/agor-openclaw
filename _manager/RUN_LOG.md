@@ -4,6 +4,16 @@
 
 ---
 
+## 09:00 IDT — Weekday Daytime Heartbeat (Jul 8)
+- PRs checked: #1648 (OPEN DRAFT, CI pass unchanged), #1638 (OPEN, new run 28900734572), #1647 (OPEN, unchanged), #1632 (OPEN, all CI ✅ unchanged), #1596 (DRAFT CONFLICTING), #1606 (CONFLICTING)
+- Merges detected: none (0 auto-archives)
+- CI changes: #1638 REGRESSION — run 28900734572: e2e-smoke ❌ FAILED (10m24s); pre-commit ✅ now passes; previous "RECOVERY" was premature
+- Zone changes: jn-5841 moved Validate → Publish; Publish session 019f3e01 IDLE + ready_for_prompt:TRUE (created 22:15 IDT Jul 7); no PR yet
+- Flags: jn-5841 Publish session awaiting prompt; #1638 e2e-smoke blocker; #1647 pre-commit+e2e-product blockers; #1632 ready to merge; 3 Jira mismatches unchanged; jira-operations stale 13+ days
+- Next: Watch #1638 CI; resume jn-5841 Publish session to create PR; remove DRAFT from #1648; merge #1632
+
+---
+
 ## 21:30 IDT — Weekday Daytime Advance Heartbeat (2026-07-07)
 
 **Session:** 019f3dd8-758a | http://127.0.0.1:3030/ui/s/019f3dd8758a7b0ba2ab7cf8/
