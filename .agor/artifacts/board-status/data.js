@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-08 15:30 IDT";
+export const LAST_UPDATED = "2026-07-08 18:00 IDT";
 
 export const WORKTREES = [
   {
@@ -133,25 +133,33 @@ export const WORKTREES = [
     title: "Add subcommands to jbenchmark runner (JN-5401)",
     branch: "jn-5401-runner-subcommands",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5401-runner-subcommands",
-    zone: "Ingest",
+    zone: "Code",
     pr: null,
     prUrl: null,
-    status: "🆕 NEW — Created 15:19 IDT Jul 8. Ingest session 019f41ab-23cf IDLE + ready_for_prompt:FALSE. JN-5401 Backlog. Monitor next heartbeat.",
-    blockedOn: "Ingest in progress",
+    status: "🚀 ACTIVELY CODING — Zone moved Ingest→Code. Code session 019f41f8-e32a 'Code JN-5401 — runner subcommands + JN-5244 flags' RUNNING as of 17:54 IDT. ready_for_prompt:FALSE.",
+    blockedOn: null,
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f41ab23cf70d8a8650b8f/",
-    sessionLabel: "ingest (running — ready_for_prompt: FALSE)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f41f8e32a7446919063bb/",
+    sessionLabel: "code — runner subcommands + JN-5244 flags (RUNNING)",
     recentSessions: [
+      {
+        sessionId: "019f41f8e32a7446919063bb",
+        url: "http://127.0.0.1:3030/ui/s/019f41f8e32a7446919063bb/",
+        title: "code — runner subcommands + JN-5244 flags (RUNNING ~17:54 IDT)",
+        status: "running",
+        timestamp: "2026-07-08 17:54 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f41ab23cf70d8a8650b8f",
         url: "http://127.0.0.1:3030/ui/s/019f41ab23cf70d8a8650b8f/",
-        title: "ingest (15:19 IDT — in progress)",
+        title: "ingest (completed)",
         status: "idle",
-        timestamp: "2026-07-08 15:19 IDT",
+        timestamp: "2026-07-08 15:38 IDT",
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-08 15:19 IDT",
+    lastActive: "2026-07-08 17:54 IDT",
   },
   {
     ticket: "JN-5795",
@@ -214,26 +222,26 @@ export const WORKTREES = [
     zone: "Code",
     pr: null,
     prUrl: null,
-    status: "🚀 ACTIVE — Zone moved Ingest→Code. Code session 019f419a-96f5 completed ~15:08 IDT (ready_for_prompt:TRUE). Git SHA changed — commits made. Action: Joseph review + trigger next phase.",
+    status: "🚀 IDLE — Latest session 019f416c-2d55 'Revise JN-5824 plan — no CLI, regional clusters, temp output' completed ~13:55 IDT. ready_for_prompt:TRUE. SHA changed (16ec44ea). Action: Joseph review + trigger next phase.",
     blockedOn: "Awaiting Joseph review",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f419a96f570fb90fdb959/",
-    sessionLabel: "code — model list + config generation (ready_for_prompt: TRUE)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f416c2d557b2a9480b6c1/",
+    sessionLabel: "revise plan — no CLI, regional clusters, temp output (ready_for_prompt: TRUE)",
     recentSessions: [
+      {
+        sessionId: "019f416c2d557b2a9480b6c1",
+        url: "http://127.0.0.1:3030/ui/s/019f416c2d557b2a9480b6c1/",
+        title: "revise plan — no CLI, regional clusters, temp output (completed ~13:55 IDT)",
+        status: "idle",
+        timestamp: "2026-07-08 13:55 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f419a96f570fb90fdb959",
         url: "http://127.0.0.1:3030/ui/s/019f419a96f570fb90fdb959/",
         title: "code — model list + config generation (completed ~15:08 IDT)",
         status: "idle",
         timestamp: "2026-07-08 15:08 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f416c2d557b2a9480b6c1",
-        url: "http://127.0.0.1:3030/ui/s/019f416c2d557b2a9480b6c1/",
-        title: "revise plan — no CLI, regional clusters, temp output (completed ~15:22 IDT)",
-        status: "idle",
-        timestamp: "2026-07-08 15:22 IDT",
         outputFile: null,
       },
       {
@@ -253,7 +261,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-08 15:22 IDT",
+    lastActive: "2026-07-08 13:55 IDT",
   },
   {
     ticket: null,
@@ -333,6 +341,15 @@ export const WORKTREES = [
 ];
 
 export const MERGED = [
+  {
+    ticket: "JN-5719",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5719",
+    title: "feat(jbenchmark): release diff layer",
+    pr: "#1632",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1632",
+    mergedDate: "2026-07-08",
+    note: "Merged 17:10 IDT Jul 8 (was CONFLICTING at 15:30 IDT — rebased+merged in the gap). APPROVED. Off-board PR, no worktree. JN-5719 Jira 'Backlog' → needs Done.",
+  },
   {
     ticket: "JN-5445",
     ticketUrl: "https://redhat.atlassian.net/browse/JN-5445",
@@ -428,11 +445,7 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "red",
-    message: "🔴 PR #1632 (JN-5719): NOW CONFLICTING — was ALL PASS APPROVED READY TO MERGE at 15:00 IDT. mergeable: CONFLICTING as of 15:30 IDT. Needs rebase to restore CI. Off-board PR, no worktree.",
-  },
-  {
-    level: "red",
-    message: "🔴 PR #1638 (JN-5725): NOW CONFLICTING — was MERGEABLE + e2e-smoke ❌ at 15:00 IDT. Only CodeRabbit running; CI not executing. Compound problem: rebase needed, then fix persistent e2e-smoke.",
+    message: "🔴 PR #1638 (JN-5725): CONFLICT RESOLVED but CI NOW FAILING on run 28952284174 — nox ❌, pre-commit ❌, tox ❌; e2e-smoke ⏳ pending. e2e-api ✅, integration ✅. Rebase fixed the conflict but introduced test failures. Action: investigate nox/pre-commit/tox failures and fix.",
   },
   {
     level: "green",
@@ -444,11 +457,11 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "🚀 jn-5824-benchmark-run-configs (JN-5824): Advanced to Code zone. Code session completed ~15:08 IDT (ready_for_prompt:TRUE). Git SHA changed — commits made. Review + trigger next phase.",
+    message: "🚀 jn-5401-runner-subcommands (JN-5401): Zone moved Ingest→Code. Code session 019f41f8-e32a 'Code JN-5401 — runner subcommands + JN-5244 flags' RUNNING as of 17:54 IDT. Monitor for completion.",
   },
   {
     level: "yellow",
-    message: "🆕 jn-5401-runner-subcommands (JN-5401): New worktree in Ingest zone created 15:19 IDT Jul 8. Ingest session idle, ready_for_prompt:FALSE. Monitor next heartbeat.",
+    message: "🚀 jn-5824-benchmark-run-configs (JN-5824): IDLE in Code zone. Latest session 019f416c-2d55 'Revise plan' completed ~13:55 IDT (ready_for_prompt:TRUE). SHA changed — commits made. Action: Joseph review + trigger next phase.",
   },
   {
     level: "yellow",
@@ -460,7 +473,11 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "❌ Jira mismatches (4, confirmed acli 15:30 IDT Jul 8; Jira MCP 401): JN-5445 'In Progress' (PR #1647 merged 15:03 IDT Jul 8 — NEW), JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5546 'In Progress' (PR #1588 merged Jul 7) — all 3 need Done. JN-5827 'Backlog' (PR #1648 open CI pass) — needs In Review.",
+    message: "❌ Jira mismatches (5, confirmed acli 18:00 IDT Jul 8; Jira MCP 401): JN-5719 'Backlog' (PR #1632 merged 17:10 IDT Jul 8 — NEW), JN-5445 'In Progress' (PR #1647 merged 15:03 IDT Jul 8), JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5546 'In Progress' (PR #1588 merged Jul 7) — all 4 need Done. JN-5827 'Backlog' (PR #1648 open CI pass) — needs In Review.",
+  },
+  {
+    level: "yellow",
+    message: "⚠️ 17:30 IDT heartbeat FAILED (session 019f4222) — 2.5h gap between 15:30 IDT and 18:00 IDT. Full refresh performed.",
   },
   {
     level: "yellow",

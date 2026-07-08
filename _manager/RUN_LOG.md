@@ -573,3 +573,13 @@
 - Flags: #1647 e2e-product ❌ (unchanged); #1638 e2e-smoke ❌ 8th+ consecutive; #1632 ready to merge (needs LGTM); Jira mismatches x3 (JN-5717 Backlog, JN-5546 In Progress, JN-5827 Backlog) — confirmed acli 15:00 IDT
 - Board static — no zone moves, no merges, no CI changes
 - Next: #1647 e2e-product needs investigation; #1638 e2e-smoke needs investigation; #1632 needs human LGTM; Jira updates needed
+
+## 18:00 IDT — Weekday Daytime Heartbeat
+- ⚠️ BOARD_STATE.md was 2.5h old (17:30 IDT session 019f4222 FAILED — gap)
+- PRs checked: #1649 (OPEN, CI ALL PASS), #1648 (OPEN, CI ALL PASS), #1638 (MERGEABLE, CI FAILING run 28952284174), #1632 (MERGED 17:10 IDT), #1606 (CONFLICTING)
+- Merges detected: PR #1632 (JN-5719) merged 17:10 IDT Jul 8 (was CONFLICTING at 15:30 IDT) — off-board, no worktree archived
+- CI changes: #1638 conflict RESOLVED but now nox ❌ / pre-commit ❌ / tox ❌ / e2e-smoke ⏳ on run 28952284174. #1649/#1648 unchanged ALL PASS.
+- Zone changes: jn-5401-runner-subcommands moved Ingest→Code; code session RUNNING ~17:54 IDT
+- Jira: 5 mismatches (JN-5719 added — PR #1632 merged, Jira "Backlog"). Confirmed acli.
+- Flags: #1638 CI now failing (nox/pre-commit/tox), 5 Jira mismatches, 17:30 IDT heartbeat gap
+- Next: Monitor jn-5401 code session completion; watch #1638 CI run; get LGTM on #1649/#1648; update 5 Jira tickets

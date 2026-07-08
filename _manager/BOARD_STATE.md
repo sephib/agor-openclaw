@@ -1,6 +1,8 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-08 15:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-08 18:00 IDT (advance heartbeat)*
+
+> ⚠️ BOARD_STATE.md was 2.5 hours old — the 17:30 IDT heartbeat FAILED (session 019f4222 failed). Full refresh performed.
 
 ---
 
@@ -12,10 +14,10 @@
 | jn-5672-dal-ext-dashboard | BLOCKED | — | — | [JN-5672](https://redhat.atlassian.net/browse/JN-5672) | On hold — after notebooks complete |
 | model-packaging-cr | Code Review | — | — | — | ⚠️ model-packaging-pipeline repo. Created Jun 15. No PR URL set, no sessions. Stale 23+ days. |
 | jn-5244-cli-flags | Ingest | — | — | [JN-5244](https://redhat.atlassian.net/browse/JN-5244) | ℹ️ No sessions yet. Ready to ingest. |
-| jn-5401-runner-subcommands | **Ingest** | — | — | [JN-5401](https://redhat.atlassian.net/browse/JN-5401) — Backlog | 🆕 Created 15:19 IDT Jul 8. Ingest session [019f41ab-23cf](http://127.0.0.1:3030/ui/s/019f41ab23cf70d8a8650b8f/) IDLE + **ready_for_prompt:FALSE** (still in progress or just completed). |
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — Backlog | Design session done Jun 30. Ready for Plan phase. |
-| jn-5842-jbenchmark-agents-md | **Ingest** | — | — | [JN-5842](https://redhat.atlassian.net/browse/JN-5842) — Backlog | Ingest session [019f4126-8305](http://127.0.0.1:3030/ui/s/019f412683057d20b481a4b9/) IDLE + **ready_for_prompt:TRUE** (completed ~10:00 IDT). Joseph to review ingest output. |
-| jn-5824-benchmark-run-configs | **Code** | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — Backlog | 🚀 **Actively progressing.** Moved Ingest→Code. Latest session [019f419a-96f5](http://127.0.0.1:3030/ui/s/019f419a96f570fb90fdb959/) "Code JN-5824 — model list + config generation" IDLE ready_for_prompt:TRUE (completed ~15:08 IDT). Git SHA changed (commits made). |
+| jn-5842-jbenchmark-agents-md | Ingest | — | — | [JN-5842](https://redhat.atlassian.net/browse/JN-5842) — Backlog | Ingest session [019f4126-8305](http://127.0.0.1:3030/ui/s/019f412683057d20b481a4b9/) IDLE ready_for_prompt:TRUE. Joseph to review → trigger /implement:plan. |
+| jn-5401-runner-subcommands | **Code** | — | — | [JN-5401](https://redhat.atlassian.net/browse/JN-5401) — Backlog | 🚀 **ACTIVELY RUNNING.** Zone moved Ingest→Code. Code session [019f41f8-e32a](http://127.0.0.1:3030/ui/s/019f41f8e32a7446919063bb/) "Code JN-5401 — runner subcommands + JN-5244 flags" RUNNING as of 17:54 IDT. |
+| jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — Backlog | IDLE ready_for_prompt:TRUE. Latest session [019f416c-2d55](http://127.0.0.1:3030/ui/s/019f416c2d557b2a9480b6c1/) "Revise JN-5824 plan" completed ~13:55 IDT. SHA changed (16ec44ea). Action: Joseph review + trigger next phase. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 13+ days with no session or PR. |
 | jn-5841-agents-md-root | **Publish** | [#1649](https://github.com/Jounce-IO/jounce/pull/1649) | 🟢 **run 28932482752: ALL PASS** | [JN-5841](https://redhat.atlassian.net/browse/JN-5841) — **In Review** ✅ | 🟢 **READY FOR REVIEW.** CI run 28932482752: all checks ✅. reviewDecision: REVIEW_REQUIRED. **Action: Get reviewer LGTM to merge.** |
 | jn-5827-git-tagging-workflow | **Publish** | [#1648](https://github.com/Jounce-IO/jounce/pull/1648) | 🟢 **ALL PASS** run 28922899326 | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) — Backlog | 🟢 **PR #1648 OPEN — CI ALL PASS.** CodeRabbit review completed ✅. reviewDecision: "" (no required-reviewer policy). **Action: Get human LGTM to merge.** |
@@ -27,8 +29,7 @@
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
 | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ CONFLICTING | 🔴 CONFLICTING | 🔴 CONFLICTING 6+ days. Needs rebase + fix e2e or close PR. |
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | ❌ **CONFLICTING (CI not running)** | CONFLICTING | 🔴 **NOW CONFLICTING** (was MERGEABLE + e2e-smoke ❌ at 15:00 IDT). Only CodeRabbit running. Needs rebase to unblock CI. |
-| [#1632](https://github.com/Jounce-IO/jounce/pull/1632) | jn-5719-release-diff | [JN-5719](https://redhat.atlassian.net/browse/JN-5719) | 🟢 **run 28937425260 ALL PASS** (prior run) | 🔴 **CONFLICTING** | 🔴 **NOW CONFLICTING** — was ALL PASS READY TO MERGE at 15:00 IDT. mergeable: CONFLICTING as of 15:30 IDT. APPROVED. Needs rebase to restore CI. Off-board PR, no worktree. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | ❌ **CI FAILING** (nox ❌, pre-commit ❌, tox ❌; e2e-smoke ⏳) run 28952284174 | MERGEABLE | 🔴 **CONFLICT RESOLVED (was CONFLICTING 15:30 IDT) but CI NOW FAILING** — nox ❌, pre-commit ❌, tox ❌ on run 28952284174. e2e-smoke ⏳ pending. New failures introduced by the rebase/conflict resolution. |
 
 ---
 
@@ -51,58 +52,67 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 | Ticket | PR | PR Status | Jira Status | Action |
 |--------|-----|-----------|-------------|--------|
-| [JN-5717](https://redhat.atlassian.net/browse/JN-5717) | [#1631](https://github.com/Jounce-IO/jounce/pull/1631) | MERGED Jul 6 | **Backlog** (confirmed acli 15:30 IDT Jul 8) | ❌ Update Jira → Done |
-| [JN-5546](https://redhat.atlassian.net/browse/JN-5546) | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | MERGED Jul 7 | **In Progress** (confirmed acli 15:30 IDT Jul 8) | ❌ Update Jira → Done |
-| [JN-5445](https://redhat.atlassian.net/browse/JN-5445) | [#1647](https://github.com/Jounce-IO/jounce/pull/1647) | **MERGED 15:03 IDT Jul 8** | **In Progress** (confirmed acli 15:30 IDT Jul 8) | ❌ **NEW** Update Jira → Done |
-| [JN-5827](https://redhat.atlassian.net/browse/JN-5827) | [#1648](https://github.com/Jounce-IO/jounce/pull/1648) | OPEN — CI ALL PASS | **Backlog** (confirmed acli 15:30 IDT Jul 8) | ⚠️ Should be → In Review |
+| [JN-5719](https://redhat.atlassian.net/browse/JN-5719) | [#1632](https://github.com/Jounce-IO/jounce/pull/1632) | MERGED 17:10 IDT Jul 8 | **Backlog** (confirmed acli 18:00 IDT Jul 8) | ❌ **NEW** Update Jira → Done |
+| [JN-5445](https://redhat.atlassian.net/browse/JN-5445) | [#1647](https://github.com/Jounce-IO/jounce/pull/1647) | MERGED 15:03 IDT Jul 8 | **In Progress** (confirmed acli 18:00 IDT Jul 8) | ❌ Update Jira → Done |
+| [JN-5717](https://redhat.atlassian.net/browse/JN-5717) | [#1631](https://github.com/Jounce-IO/jounce/pull/1631) | MERGED Jul 6 | **Backlog** (confirmed acli 18:00 IDT Jul 8) | ❌ Update Jira → Done |
+| [JN-5546](https://redhat.atlassian.net/browse/JN-5546) | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | MERGED Jul 7 | **In Progress** (confirmed acli 18:00 IDT Jul 8) | ❌ Update Jira → Done |
+| [JN-5827](https://redhat.atlassian.net/browse/JN-5827) | [#1648](https://github.com/Jounce-IO/jounce/pull/1648) | OPEN — CI ALL PASS | **Backlog** (confirmed acli 18:00 IDT Jul 8) | ⚠️ Should be → In Review |
 
-*Note: Jira MCP 401. Status confirmed via acli at 15:30 IDT.*
+*Note: Jira MCP 401 (ongoing). Status confirmed via acli at 18:00 IDT.*
 
 ---
 
-## Key Changes Since Last Run (15:00 IDT Jul 8)
+## Key Changes Since Last Run (15:30 IDT Jul 8)
 
 | What observed | Status |
 |---|---|
-| **🚀 #1647 MERGED** | Merged at 15:03 IDT Jul 8 (mergedAt: 2026-07-08T12:03:40Z). Was APPROVED + e2e-product ❌. Off-board PR — no worktree to archive. **JN-5445 Jira "In Progress" → needs Done (4th mismatch).** |
-| **🔴 #1632 NOW CONFLICTING** | Was ALL PASS APPROVED READY TO MERGE at 15:00 IDT. Now `mergeable: CONFLICTING`. Needs rebase to restore CI. |
-| **🔴 #1638 NOW CONFLICTING** | Was MERGEABLE + e2e-smoke ❌ at 15:00 IDT. Now `mergeable: CONFLICTING`. Only CodeRabbit running — CI not executing. |
+| **⚠️ 17:30 IDT heartbeat FAILED** | Session 019f4222 failed — 2.5 hour gap since last update. Full refresh performed. |
+| **🚀 #1632 MERGED at 17:10 IDT** | mergedAt: 2026-07-08T14:10:44Z (17:10 IDT). Was CONFLICTING at 15:30 IDT — must have been rebased and merged between 15:30–17:10. Off-board PR — no worktree. JN-5719 "Backlog" → needs Done (5th mismatch). |
+| **🔴 #1638 conflict RESOLVED but CI FAILING** | Was CONFLICTING at 15:30 IDT. Now MERGEABLE. But CI run 28952284174: nox ❌, pre-commit ❌, tox ❌ FAILING. e2e-smoke ⏳ pending. Rebase triggered new CI failures. |
+| **🚀 jn-5401 moved Ingest→Code** | Code session [019f41f8-e32a](http://127.0.0.1:3030/ui/s/019f41f8e32a7446919063bb/) "Code JN-5401 — runner subcommands + JN-5244 flags" RUNNING as of 17:54 IDT. |
 | **🟢 #1649 unchanged** | CI run 28932482752 ALL PASS. REVIEW_REQUIRED. |
 | **🟢 #1648 unchanged** | CI run 28922899326 ALL PASS. Needs LGTM. |
-| **🆕 jn-5401-runner-subcommands** | New worktree in Ingest zone (created 15:19 IDT Jul 8). Ingest session running. JN-5401 Backlog. |
-| **🚀 jn-5824 advanced to Code zone** | Zone moved Ingest→Code. Code session completed ~15:08 IDT (ready_for_prompt:TRUE). Git SHA changed — commits made. |
-| **Jira mismatches now 4** | JN-5445 "In Progress" added (PR #1647 merged). JN-5717, JN-5546, JN-5827 persist. Confirmed acli 15:30 IDT. Jira MCP still 401. |
+| **🔴 Jira mismatches now 5** | JN-5719 "Backlog" added (PR #1632 merged). Others persist. |
 
 ---
 
 ## Attention Items
 
-### 🚀 #1647 MERGED at 15:03 IDT Jul 8
+### ⚠️ 17:30 IDT Heartbeat Failed — 2.5-Hour Gap
 
-PR [#1647](https://github.com/Jounce-IO/jounce/pull/1647): `test: testing-dev-before-migration JN-5445`
-- **MERGED** at 2026-07-08T12:03:40Z (15:03 IDT). Off-board PR — no worktree to archive.
-- **JN-5445 Jira**: "In Progress" → **needs Done** (4th mismatch)
-- No further CI action needed.
+The 17:30 IDT heartbeat session (019f4222) failed. Gap between 15:30 IDT and 18:00 IDT.
+Full refresh performed. No state was lost — the 15:30 IDT commit captured the prior state.
 
 ---
 
-### 🔴 #1632 NOW CONFLICTING — Was READY TO MERGE
+### 🚀 #1632 MERGED at 17:10 IDT Jul 8
 
 PR [#1632](https://github.com/Jounce-IO/jounce/pull/1632): `feat(jbenchmark): release diff layer (JN-5719)`
-- **Was**: ALL PASS run 28937425260, APPROVED, READY TO MERGE at 15:00 IDT
-- **Now**: `mergeable: CONFLICTING` as of 15:30 IDT — conflict introduced since last run
-- **reviewDecision: APPROVED** (no required-reviewer policy)
-- **Action:** Rebase branch to resolve conflict, then CI will re-run. Off-board PR — no worktree.
+- **MERGED** at 2026-07-08T14:10:44Z (17:10 IDT). Was showing CONFLICTING at 15:30 IDT — was rebased and merged in the 2.5-hour gap.
+- **reviewDecision: APPROVED** — was already approved before the conflict.
+- **JN-5719 Jira**: "Backlog" → **needs Done** (5th mismatch)
+- Off-board PR — no worktree to archive.
 
 ---
 
-### 🔴 #1638 NOW CONFLICTING (was e2e-smoke failing)
+### 🔴 #1638 — Conflict Resolved but CI NOW FAILING
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): `chore(infra): vLLM analyzer prerequisites - workflow improvements`
-- **Now**: `mergeable: CONFLICTING` — CI not running (only CodeRabbit shows)
-- **Before**: MERGEABLE + e2e-smoke ❌ (8th+ consecutive)
-- Compound problem: conflict blocks CI from running, e2e-smoke was already failing
-- **Action:** Rebase to resolve conflict; then investigate persistent e2e-smoke failure.
+- **State**: MERGEABLE (conflict resolved since 15:30 IDT)
+- **CI run 28952284174**: nox ❌, pre-commit ❌, tox ❌ FAILING; e2e-smoke ⏳ pending
+- **Passing**: e2e-api ✅, atlas-validate ✅, check-changes ✅, bake ✅, integration-run ✅, JIRA Association ✅
+- Compound problem: conflict was resolved (progress) but rebase introduced test failures
+- **Action:** Investigate nox/pre-commit/tox failures on run 28952284174. Fix and re-push.
+
+---
+
+### 🚀 jn-5401-runner-subcommands — Code Session RUNNING
+
+Worktree `jn-5401-runner-subcommands` (now **Code** zone):
+- **JN-5401**: "Add subcommands to jbenchmark runner for stage-level modular execution" — Backlog
+- Zone moved Ingest→Code between 15:30–18:00 IDT.
+- Code session [019f41f8-e32a](http://127.0.0.1:3030/ui/s/019f41f8e32a7446919063bb/) "Code JN-5401 — runner subcommands + JN-5244 flags" **RUNNING** as of 17:54 IDT. ready_for_prompt:FALSE.
+- Monitor next heartbeat for completion.
 
 ---
 
@@ -126,15 +136,6 @@ PR [#1648](https://github.com/Jounce-IO/jounce/pull/1648): "feat(release): imple
 
 ---
 
-### 🆕 jn-5401-runner-subcommands — New worktree, ingest in progress
-
-Worktree `jn-5401-runner-subcommands` (Ingest zone):
-- **JN-5401**: "Add subcommands to jbenchmark runner for stage-level modular execution" — Backlog
-- Created 15:19 IDT Jul 8. Ingest session [019f41ab-23cf](http://127.0.0.1:3030/ui/s/019f41ab23cf70d8a8650b8f/) IDLE + **ready_for_prompt:FALSE**
-- **Action:** Monitor — ingest may still be running; check next heartbeat.
-
----
-
 ### 🆕 jn-5842-jbenchmark-agents-md — Ingest complete, review needed
 
 Worktree `jn-5842-jbenchmark-agents-md` (Ingest zone):
@@ -144,20 +145,21 @@ Worktree `jn-5842-jbenchmark-agents-md` (Ingest zone):
 
 ---
 
-### 🚀 jn-5824-benchmark-run-configs — Advanced to Code zone
+### 🚀 jn-5824-benchmark-run-configs — IDLE in Code zone, awaiting next phase
 
-Worktree `jn-5824-benchmark-run-configs` (now **Code** zone):
+Worktree `jn-5824-benchmark-run-configs` (Code zone):
 - **JN-5824**: "[DEV] Prepare benchmark run configs for IBM hardware (H100, A100-80, H200)"
-- Zone: moved Ingest→Code. Latest session [019f419a-96f5](http://127.0.0.1:3030/ui/s/019f419a96f570fb90fdb959/) "Code JN-5824 — model list + config generation" IDLE + **ready_for_prompt:TRUE** (completed ~15:08 IDT)
-- Git SHA changed — commits were made. Active progress.
-- **Action:** Joseph review code session output → trigger next phase.
+- Latest session [019f416c-2d55](http://127.0.0.1:3030/ui/s/019f416c2d557b2a9480b6c1/) "Revise JN-5824 plan — no CLI, regional clusters, temp output" IDLE, completed ~13:55 IDT. ready_for_prompt:TRUE.
+- SHA changed (16ec44ea) — commits were made. Active progress.
+- **Action:** Joseph review session output → trigger next phase.
 
 ---
 
-### ❌ Jira Mismatches (4 active — Jira MCP 401; confirmed via acli 15:30 IDT)
+### ❌ Jira Mismatches (5 active — Jira MCP 401; confirmed via acli 18:00 IDT)
 
-**Merged PRs not reflected in Jira (3):**
-- [JN-5445](https://redhat.atlassian.net/browse/JN-5445): PR [#1647](https://github.com/Jounce-IO/jounce/pull/1647) MERGED 15:03 IDT Jul 8 → Jira **"In Progress"** (should be Done) 🆕
+**Merged PRs not reflected in Jira (4):**
+- [JN-5719](https://redhat.atlassian.net/browse/JN-5719): PR [#1632](https://github.com/Jounce-IO/jounce/pull/1632) MERGED 17:10 IDT Jul 8 → Jira **"Backlog"** (should be Done) 🆕
+- [JN-5445](https://redhat.atlassian.net/browse/JN-5445): PR [#1647](https://github.com/Jounce-IO/jounce/pull/1647) MERGED 15:03 IDT Jul 8 → Jira **"In Progress"** (should be Done)
 - [JN-5717](https://redhat.atlassian.net/browse/JN-5717): PR [#1631](https://github.com/Jounce-IO/jounce/pull/1631) MERGED Jul 6 → Jira **"Backlog"** (should be Done)
 - [JN-5546](https://redhat.atlassian.net/browse/JN-5546): PR [#1588](https://github.com/Jounce-IO/jounce/pull/1588) MERGED Jul 7 → Jira **"In Progress"** (should be Done)
 
@@ -176,7 +178,7 @@ Worktree `jn-5824-benchmark-run-configs` (now **Code** zone):
 
 ## Archived This Run
 
-None. (PR #1647 was off-board — no worktree to archive.)
+None. (PR #1632 was off-board — no worktree to archive.)
 
 (jn-5780-add-jn-project archived 13:34 IDT Jul 6; fix-dashboard gone between 21:30–22:00 IDT Jul 7)
 
@@ -186,7 +188,8 @@ None. (PR #1647 was off-board — no worktree to archive.)
 
 | PR | Ticket | Merged | Worktree |
 |----|--------|--------|---------|
-| [#1647](https://github.com/Jounce-IO/jounce/pull/1647) | [JN-5445](https://redhat.atlassian.net/browse/JN-5445) | **15:03 IDT Jul 8** | Off-board PR — no worktree. JN-5445 Jira "In Progress" → needs Done. |
+| [#1632](https://github.com/Jounce-IO/jounce/pull/1632) | [JN-5719](https://redhat.atlassian.net/browse/JN-5719) | **17:10 IDT Jul 8** | Off-board PR — no worktree. JN-5719 Jira "Backlog" → needs Done. |
+| [#1647](https://github.com/Jounce-IO/jounce/pull/1647) | [JN-5445](https://redhat.atlassian.net/browse/JN-5445) | 15:03 IDT Jul 8 | Off-board PR — no worktree. JN-5445 Jira "In Progress" → needs Done. |
 | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) | 08:10 IDT Jul 7 | jn-5546-...-3 (already deleted from Agor) |
 | [#1631](https://github.com/Jounce-IO/jounce/pull/1631) | [JN-5717](https://redhat.atlassian.net/browse/JN-5717) | 09:19 IDT Jul 6 | Off-board PR — no worktree |
 | [#1643](https://github.com/Jounce-IO/jounce/pull/1643) | [JN-5794](https://redhat.atlassian.net/browse/JN-5794) | 09:16 IDT Jul 1 | Archived 09:21 IDT Jul 1 |
@@ -195,7 +198,6 @@ None. (PR #1647 was off-board — no worktree to archive.)
 | [#1627](https://github.com/Jounce-IO/jounce/pull/1627) | [JN-5612](https://redhat.atlassian.net/browse/JN-5612) | 10:42 IDT Jun 29 | Archived Jun 29 |
 | [#1622](https://github.com/Jounce-IO/jounce/pull/1622) | [JN-5724](https://redhat.atlassian.net/browse/JN-5724) | 10:17 IDT Jun 29 | Archived Jun 29 |
 | [#1623](https://github.com/Jounce-IO/jounce/pull/1623) | [JN-5616](https://redhat.atlassian.net/browse/JN-5616) | 13:45 IDT Jun 29 | Archived Jun 29 |
-| [#1615](https://github.com/Jounce-IO/jounce/pull/1615) | [JN-5677](https://redhat.atlassian.net/browse/JN-5677) | 15:08 IDT Jun 29 | Archived Jun 29 |
 
 ---
 
