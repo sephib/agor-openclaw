@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-08 11:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-08 11:30 IDT (advance heartbeat)*
 
 ---
 
@@ -25,7 +25,7 @@
 |----|--------|------|----|-------|-------|
 | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ CONFLICTING | 🔴 CONFLICTING | 🔴 CONFLICTING 6+ days. Needs rebase + fix e2e or close PR. |
 | [#1647](https://github.com/Jounce-IO/jounce/pull/1647) | feat/migrate-dev-to-openshift-gcp | [JN-5445](https://redhat.atlassian.net/browse/JN-5445) (likely) | 🔴 **pre-commit ❌ + e2e-product ❌** (run 28869593069) | MERGEABLE | 🔴 **DEGRADED**: run 28869593069 — e2e-product ❌ (32m25s, FAILED) + pre-commit ❌. Unchanged. |
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | 🔴 **run 28900734572 — e2e-smoke ❌** (10m24s FAILED) | MERGEABLE | 🔴 **REGRESSION**: run 28900734572 — e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌. pre-commit ✅ / tox ✅ / nox ✅ / bake ✅ / e2e-api ✅ / integration ✅ pass. Unchanged. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | 🟡 **NEW run 28928793754 IN PROGRESS** (started 11:29 IDT) | MERGEABLE | 🟡 **NEW CI RUN**: run 28928793754 started 11:29 IDT — bake ✅, atlas-validate ✅, check-changes ✅; e2e-api/integration/pre-commit-run/tox PENDING. Was: run 28900734572 e2e-smoke ❌. |
 | [#1632](https://github.com/Jounce-IO/jounce/pull/1632) | jn-5719-release-diff | [JN-5719](https://redhat.atlassian.net/browse/JN-5719) | 🟢 **run 28922685430 ALL PASS + CodeRabbit ✅** | MERGEABLE | 🟢 **READY TO MERGE.** Run 28922685430: all CI ✅ including e2e-smoke ✅, CodeRabbit ✅ complete. REVIEW_REQUIRED — needs final reviewer LGTM. |
 
 ---
@@ -55,18 +55,17 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes Since Last Run (10:00 IDT Jul 8)
+## Key Changes Since Last Run (11:00 IDT Jul 8)
 
 | What observed | Status |
 |---|---|
-| **🟡 NEW: jn-5841 — PR #1649 CREATED 10:04 IDT** | Publish session [019f3e01](http://127.0.0.1:3030/ui/s/019f3e01ee07703caf8b9576/) completed — created DRAFT PR #1649 "docs: add root AGENTS.md and refactor CLAUDE.md (JN-5841)". CI run 28924179820: all-checks ✅, pre-commit ✅, tox ✅, nox ✅ (docs-only; e2e skipping). Session now IDLE + ready_for_prompt: TRUE. **Needs: remove DRAFT, request reviewer.** |
-| **🟢 #1648 (jn-5827) — unchanged** | CI run 28922899326 ALL PASS. CodeRabbit completed ✅. reviewDecision now "" (was REVIEW_REQUIRED). No new runs. |
+| **🟡 #1638 — NEW CI RUN 28928793754 IN PROGRESS** | New run started 11:29 IDT. bake ✅, atlas-validate ✅, check-changes ✅; e2e-api/integration/pre-commit-run/tox PENDING. Was: run 28900734572 e2e-smoke ❌. Watch for result. |
+| **🟡 jn-5841 — PR #1649 DRAFT unchanged** | CI run 28924179820 ALL PASS. Still DRAFT. Session [019f3e01](http://127.0.0.1:3030/ui/s/019f3e01ee07703caf8b9576/) IDLE + ready_for_prompt: TRUE. **Action: Remove DRAFT, request reviewer.** |
+| **🟢 #1648 (jn-5827) — unchanged** | CI run 28922899326 ALL PASS. CodeRabbit completed ✅. reviewDecision "". Needs human LGTM. |
 | **🟢 #1632 — unchanged** | Run 28922685430 ALL PASS + CodeRabbit ✅. REVIEW_REQUIRED. Still needs final LGTM. |
-| **🔴 #1638 — Unchanged REGRESSION** | e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌ (run 28900734572). No new run. |
 | **#1647 — Unchanged** | pre-commit ❌ + e2e-product ❌ (run 28869593069). No new run. |
-| **Jira mismatches — 5 now tracked** | 3 original: JN-5717 "Backlog", JN-5794 "In Review", JN-5546 "In Progress". Plus JN-5827 "Backlog" (has open PR) and JN-5841 "Backlog" (has draft PR). All confirmed via acli. |
+| **Jira mismatches — 5 active** | JN-5717 "Backlog", JN-5794 "In Review", JN-5546 "In Progress" (need Done). JN-5827 "Backlog" + JN-5841 "Backlog" (active PRs). All confirmed. |
 | **No merges detected** | 0 auto-archives this run. |
-| **10:30 IDT run** | Prior session staged data.js changes but didn't commit. This 11:00 IDT run completes and commits. |
 
 ---
 
@@ -103,13 +102,12 @@ PR [#1632](https://github.com/Jounce-IO/jounce/pull/1632): `feat(jbenchmark): re
 
 ---
 
-### 🔴 PR #1638 — REGRESSION: e2e-smoke FAILED (Run 28900734572)
+### 🟡 PR #1638 — NEW CI RUN 28928793754 IN PROGRESS (started 11:29 IDT)
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): `chore(infra): vLLM analyzer prerequisites - workflow improvements`
-- **Latest CI run 28900734572**: **e2e-smoke ❌ FAILED** (10m24s)
-- pre-commit ✅, tox ✅, nox ✅, bake ✅, e2e-api ✅, integration ✅ all pass
-- **e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌** — unchanged
-- **Action:** Investigate e2e-smoke failure in run 28900734572.
+- **Previous run 28900734572**: e2e-smoke ❌ FAILED (10m24s)
+- **NEW run 28928793754**: started 11:29 IDT, IN PROGRESS — bake ✅, atlas-validate ✅, check-changes ✅; e2e-api/integration/pre-commit-run/tox PENDING
+- **Action:** Wait for run 28928793754 to complete. If e2e-smoke passes, PR may be ready.
 
 ---
 

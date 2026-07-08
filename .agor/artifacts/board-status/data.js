@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-08 11:00 IDT";
+export const LAST_UPDATED = "2026-07-08 11:30 IDT";
 
 export const WORKTREES = [
   {
@@ -328,8 +328,8 @@ export const ALERTS = [
     message: "🟢 PR #1632 (JN-5719): READY TO MERGE — run 28922685430 ALL PASS + CodeRabbit ✅ complete. REVIEW_REQUIRED — get final reviewer LGTM to merge.",
   },
   {
-    level: "red",
-    message: "🔴 PR #1638 — REGRESSION: run 28900734572 — e2e-smoke ❌ FAILED (10m24s). pre-commit ✅ now passes, tox/nox/bake/e2e-api/integration ✅ — but e2e-smoke ❌ + e2e-tests ❌ + all-checks ❌. Unchanged.",
+    level: "yellow",
+    message: "🟡 PR #1638 — NEW CI RUN 28928793754 IN PROGRESS (started 11:29 IDT Jul 8). bake ✅, atlas-validate ✅, check-changes ✅; e2e-api/integration/pre-commit-run/tox PENDING. Previous run 28900734572 had e2e-smoke ❌. Watch for result.",
   },
   {
     level: "red",
@@ -341,7 +341,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "❌ Jira mismatches (3, confirmed acli 10:00 IDT Jul 8): JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5794 'In Review' (PR #1643 merged Jul 1), JN-5546 'In Progress' (PR #1588 merged Jul 7). All need → Done.",
+    message: "❌ Jira mismatches (3, confirmed acli 11:30 IDT Jul 8): JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5794 'In Review' (PR #1643 merged Jul 1), JN-5546 'In Progress' (PR #1588 merged Jul 7). All need → Done.",
   },
   {
     level: "yellow",
