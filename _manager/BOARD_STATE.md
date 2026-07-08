@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-08 12:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-08 12:30 IDT (advance heartbeat)*
 
 ---
 
@@ -14,7 +14,7 @@
 | jn-5244-cli-flags | Ingest | — | — | [JN-5244](https://redhat.atlassian.net/browse/JN-5244) | ℹ️ No sessions yet. Ready to ingest. |
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — Backlog | Design session done Jun 30. Ready for Plan phase. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 13+ days with no session or PR. |
-| jn-5841-agents-md-root | **Publish** | [#1649 DRAFT](https://github.com/Jounce-IO/jounce/pull/1649) | 🟢 **CI PASS** run 28924179820 | [JN-5841](https://redhat.atlassian.net/browse/JN-5841) | 🟡 **DRAFT PR created 10:04 IDT Jul 8.** CI run 28924179820: pre-commit ✅, tox ✅, nox ✅, all-checks ✅ (docs-only; e2e/deploy/api skipping). Session [019f3e01](http://127.0.0.1:3030/ui/s/019f3e01ee07703caf8b9576/) IDLE + **ready_for_prompt: TRUE**. **Action: Review PR, remove DRAFT, request reviewer.** |
+| jn-5841-agents-md-root | **Publish** | [#1649](https://github.com/Jounce-IO/jounce/pull/1649) | 🔴 **run 28931349732: pre-commit ❌, all-checks ❌** (tox ✅, nox ✅) | [JN-5841](https://redhat.atlassian.net/browse/JN-5841) | 🔴 **DRAFT REMOVED** (isDraft: false ✅). BUT **NEW CI run 28931349732 triggered — pre-commit ❌**. Previous run 28924179820 was ALL PASS. **Action: Check pre-commit failure — fix or re-trigger.** |
 | jn-5827-git-tagging-workflow | **Publish** | [#1648](https://github.com/Jounce-IO/jounce/pull/1648) | 🟢 **ALL PASS** run 28922899326 | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) | 🟢 **PR #1648 OPEN — CI ALL PASS.** Run 28922899326: all required checks ✅. CodeRabbit review completed ✅. reviewDecision: "" (no required-reviewer policy). **Action: Get human LGTM to merge.** |
 
 ---
@@ -24,10 +24,9 @@
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
 | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ CONFLICTING | 🔴 CONFLICTING | 🔴 CONFLICTING 6+ days. Needs rebase + fix e2e or close PR. |
-| [#1647](https://github.com/Jounce-IO/jounce/pull/1647) | feat/migrate-dev-to-openshift-gcp | [JN-5445](https://redhat.atlassian.net/browse/JN-5445) (likely) | 🔴 **pre-commit ❌ + e2e-product ❌** (run 28869593069) | MERGEABLE | 🔴 **DEGRADED**: run 28869593069 — e2e-product ❌ (32m25s, FAILED) + pre-commit ❌. Unchanged. |
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | 🔴 **run 28928793754 FAILED** (tox ❌, e2e-smoke ❌, nox ❌); 🟡 **NEW run 28930566279 IN PROGRESS** | MERGEABLE | 🔴 **3rd consecutive CI failure.** Run 28928793754: tox ❌, e2e-smoke ❌, nox ❌, e2e-tests ❌. NEW run 28930566279 in progress: bake PENDING, CodeRabbit ✅, JIRA ✅, check-changes ✅. Pattern: 3 runs all failing. |
+| [#1647](https://github.com/Jounce-IO/jounce/pull/1647) | feat/migrate-dev-to-openshift-gcp | [JN-5445](https://redhat.atlassian.net/browse/JN-5445) (likely) | 🔴 **pre-commit ❌ + e2e-product ❌** (run 28869593069) | APPROVED | 🟡 **APPROVED** (changed 12:00 IDT Jul 8). But all-checks still FAIL — cannot merge. Pre-commit ❌ + e2e-product ❌ still blocking. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | 🔴 **run 28931312110 FAILED** (e2e-smoke ❌); run 28930566279 also FAILED | MERGEABLE | 🔴 **5th consecutive CI failure** (e2e-smoke ❌ persistent). Runs 28930566279 + 28931312110 both FAILED. Pre-commit now ✅, tox ✅, nox ✅, bake ✅ — but e2e-smoke ❌ blocks all-checks. |
 | [#1632](https://github.com/Jounce-IO/jounce/pull/1632) | jn-5719-release-diff | [JN-5719](https://redhat.atlassian.net/browse/JN-5719) | 🟢 **run 28922685430 ALL PASS + CodeRabbit ✅** | MERGEABLE | 🟢 **READY TO MERGE.** Run 28922685430: all CI ✅ including e2e-smoke ✅, CodeRabbit ✅ complete. REVIEW_REQUIRED — needs final reviewer LGTM. |
-| [#1647](https://github.com/Jounce-IO/jounce/pull/1647) | feat/migrate-dev-to-openshift-gcp | [JN-5445](https://redhat.atlassian.net/browse/JN-5445) (likely) | 🔴 **pre-commit ❌ + e2e-product ❌** (run 28869593069) | MERGEABLE | 🟡 **NEW: reviewDecision APPROVED** (changed this run). But all-checks still FAIL — cannot merge. Pre-commit ❌ + e2e-product ❌ still blocking. |
 
 ---
 
@@ -48,38 +47,51 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 | Ticket | PR | PR Status | Jira Status | Action |
 |--------|-----|-----------|-------------|--------|
-| [JN-5717](https://redhat.atlassian.net/browse/JN-5717) | [#1631](https://github.com/Jounce-IO/jounce/pull/1631) | MERGED Jul 6 | **Backlog** (confirmed acli Jul 8) | ❌ Update Jira → Done |
-| [JN-5794](https://redhat.atlassian.net/browse/JN-5794) | [#1643](https://github.com/Jounce-IO/jounce/pull/1643) | MERGED Jul 1 | **In Review** (confirmed acli Jul 8) | ❌ Update Jira → Done |
-| [JN-5546](https://redhat.atlassian.net/browse/JN-5546) | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | MERGED Jul 7 | **In Progress** (confirmed acli Jul 8) | ❌ Update Jira → Done |
-| [JN-5827](https://redhat.atlassian.net/browse/JN-5827) | [#1648](https://github.com/Jounce-IO/jounce/pull/1648) | OPEN — CI ALL PASS | **Backlog** (confirmed acli Jul 8) | ⚠️ Should be → In Review |
-| [JN-5841](https://redhat.atlassian.net/browse/JN-5841) | [#1649 DRAFT](https://github.com/Jounce-IO/jounce/pull/1649) | OPEN DRAFT | **Backlog** (confirmed acli Jul 8) | ⚠️ Should be → In Progress |
+| [JN-5717](https://redhat.atlassian.net/browse/JN-5717) | [#1631](https://github.com/Jounce-IO/jounce/pull/1631) | MERGED Jul 6 | **Backlog** (assumed unchanged — Jira MCP 401) | ❌ Update Jira → Done |
+| [JN-5794](https://redhat.atlassian.net/browse/JN-5794) | [#1643](https://github.com/Jounce-IO/jounce/pull/1643) | MERGED Jul 1 | **In Review** (assumed unchanged — Jira MCP 401) | ❌ Update Jira → Done |
+| [JN-5546](https://redhat.atlassian.net/browse/JN-5546) | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | MERGED Jul 7 | **In Progress** (assumed unchanged — Jira MCP 401) | ❌ Update Jira → Done |
+| [JN-5827](https://redhat.atlassian.net/browse/JN-5827) | [#1648](https://github.com/Jounce-IO/jounce/pull/1648) | OPEN — CI ALL PASS | **Backlog** (assumed unchanged — Jira MCP 401) | ⚠️ Should be → In Review |
+| [JN-5841](https://redhat.atlassian.net/browse/JN-5841) | [#1649](https://github.com/Jounce-IO/jounce/pull/1649) | OPEN (was DRAFT, now READY) | **Backlog** (assumed unchanged — Jira MCP 401) | ⚠️ Should be → In Review |
 
 ---
 
-## Key Changes Since Last Run (11:30 IDT Jul 8)
+## Key Changes Since Last Run (12:00 IDT Jul 8)
 
 | What observed | Status |
 |---|---|
-| **🔴 #1638 — run 28928793754 FAILED + NEW run 28930566279 IN PROGRESS** | Run 28928793754 completed with FAILURE: tox ❌, e2e-smoke ❌, nox ❌, e2e-tests ❌. Now 3rd consecutive CI failure. New run 28930566279 in progress: bake PENDING. |
-| **🟡 #1647 — reviewDecision changed to APPROVED** | NEW: Someone approved PR #1647 this period. But CI still failing (run 28869593069: pre-commit ❌ + e2e-product ❌). Cannot merge despite approval. |
-| **🟡 jn-5841 — PR #1649 DRAFT unchanged** | CI run 28924179820 ALL PASS. Still DRAFT. Session IDLE + ready_for_prompt: TRUE. **Action: Remove DRAFT, request reviewer.** |
-| **🟢 #1648 (jn-5827) — unchanged** | CI run 28922899326 ALL PASS. CodeRabbit ✅. reviewDecision "". Needs human LGTM. |
-| **🟢 #1632 — unchanged** | Run 28922685430 ALL PASS + CodeRabbit ✅. REVIEW_REQUIRED. Needs LGTM. |
-| **Jira mismatches — 5 active (Jira API/acli both failed)** | MCP 401 + acli failed — mismatches assumed unchanged. |
+| **🟢 #1649 — DRAFT REMOVED** | isDraft changed from true → false. PR is now READY FOR REVIEW. |
+| **🔴 #1649 — NEW CI run 28931349732 triggered — pre-commit ❌** | New run triggered (likely by draft→ready promotion). pre-commit ❌, all-checks ❌. But tox ✅, nox ✅, e2e ✅. Previous run 28924179820 was ALL PASS (docs-only). Need to check what changed. |
+| **🔴 #1638 — run 28930566279 FAILED + NEW run 28931312110 ALSO FAILED** | Run 28930566279 (was in-progress at 12:00) completed with FAILURE. Then NEW run 28931312110 also completed FAILED. e2e-smoke ❌ persistent. But pre-commit ✅, tox ✅, nox ✅, bake ✅ now passing. 5th consecutive CI failure counting. |
+| **🟢 #1648 (jn-5827) — unchanged** | CI run 28922899326 ALL PASS. Needs human LGTM. |
+| **🟢 #1632 — unchanged** | Run 28922685430 ALL PASS + CodeRabbit ✅. Needs LGTM. |
+| **🟡 #1647 — unchanged** | APPROVED (since 12:00 IDT). CI still run 28869593069 — pre-commit ❌ + e2e-product ❌. |
+| **Jira MCP — 401 again** | MCP 401. acli unavailable. 5 mismatches assumed unchanged. |
 | **No merges detected** | 0 auto-archives this run. |
 
 ---
 
 ## Attention Items
 
-### 🟡 jn-5841 — PR #1649 CREATED (DRAFT) — Needs Review
+### 🔴 #1649 — DRAFT REMOVED but CI pre-commit FAILING
 
 Worktree `jn-5841-agents-md-root` in **Publish** zone:
-- **PR [#1649](https://github.com/Jounce-IO/jounce/pull/1649)** "docs: add root AGENTS.md and refactor CLAUDE.md (JN-5841)" created **10:04 IDT Jul 8**
-- **DRAFT** — needs to be promoted to ready for review
-- **CI run 28924179820**: all-checks ✅, pre-commit ✅, tox ✅, nox ✅ (docs-only; e2e/deploy/integration/api all skipping)
-- **Session [019f3e01](http://127.0.0.1:3030/ui/s/019f3e01ee07703caf8b9576/)**: IDLE, **ready_for_prompt: TRUE**
-- **Action:** Review the PR content. If satisfied, remove DRAFT flag and request reviewer.
+- **PR [#1649](https://github.com/Jounce-IO/jounce/pull/1649)** — DRAFT removed (isDraft: false) ✅
+- **NEW CI run 28931349732** triggered after draft removal:
+  - pre-commit ❌ (3s), pre-commit-run/pre-commit ❌ (4m59s), all-checks ❌
+  - tox ✅, nox ✅, e2e-tests ✅, integration-tests ✅ (docs-only: e2e/deploy skipping)
+- Previous run 28924179820 was ALL PASS — something in pre-commit is failing now
+- **Action:** Check what pre-commit check is failing in run 28931349732. May be lychee link check or trailing whitespace. Fix and push.
+
+---
+
+### 🔴 PR #1638 — 5th CONSECUTIVE CI FAILURE (e2e-smoke persistent)
+
+PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): `chore(infra): vLLM analyzer prerequisites - workflow improvements`
+- **Run 28930566279** (was in-progress at 12:00 IDT): completed — FAILURE
+- **Run 28931312110** (newer, current): FAILED — e2e-smoke ❌ (11m4s), e2e-tests ❌, all-checks ❌
+- GOOD NEWS: pre-commit ✅, tox ✅, nox ✅, bake ✅, integration ✅, e2e-api ✅ — all pass now
+- e2e-smoke is the sole persistent blocker
+- **Action:** Investigate e2e-smoke failure in run 28931312110 — is it a flaky test or a code issue?
 
 ---
 
@@ -103,20 +115,10 @@ PR [#1632](https://github.com/Jounce-IO/jounce/pull/1632): `feat(jbenchmark): re
 
 ---
 
-### 🔴 PR #1638 — 3rd CONSECUTIVE CI FAILURE + NEW RUN 28930566279 IN PROGRESS
-
-PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): `chore(infra): vLLM analyzer prerequisites - workflow improvements`
-- **Run 28928793754** (completed ~11:30-12:00 IDT): FAILED — tox ❌, e2e-smoke ❌, nox ❌, e2e-tests ❌
-- **Run 28930566279** (NOW IN PROGRESS): bake PENDING, CodeRabbit ✅, JIRA ✅, check-changes ✅
-- Pattern: 3 consecutive CI failures (28900734572 → 28928793754 → 28930566279 in progress)
-- **Action:** Investigate root cause — tox + nox + e2e-smoke all failing suggests a systemic issue. Inspect run 28928793754 logs.
-
----
-
 ### 🟡 PR #1647 — APPROVED but CI STILL FAILING
 
 PR [#1647](https://github.com/Jounce-IO/jounce/pull/1647): `test: testing-dev-before-migration JN-5445`
-- **NEW (12:00 IDT):** reviewDecision changed to **APPROVED** — someone approved the PR
+- **reviewDecision: APPROVED** (since 12:00 IDT Jul 8)
 - **CI run 28869593069:** pre-commit ❌ (4m38s) + e2e-product ❌ (32m25s) — still failing, unchanged
 - all-checks ❌ — cannot merge despite approval
 - **Action:** Fix pre-commit + e2e-product failures before this can merge.
@@ -132,7 +134,7 @@ PR [#1647](https://github.com/Jounce-IO/jounce/pull/1647): `test: testing-dev-be
 
 **Active PRs not reflected in Jira (2 — lower priority):**
 - [JN-5827](https://redhat.atlassian.net/browse/JN-5827): PR [#1648](https://github.com/Jounce-IO/jounce/pull/1648) OPEN, CI ALL PASS → Jira **"Backlog"** (should be In Review)
-- [JN-5841](https://redhat.atlassian.net/browse/JN-5841): PR [#1649 DRAFT](https://github.com/Jounce-IO/jounce/pull/1649) OPEN DRAFT → Jira **"Backlog"** (should be In Progress)
+- [JN-5841](https://redhat.atlassian.net/browse/JN-5841): PR [#1649](https://github.com/Jounce-IO/jounce/pull/1649) OPEN READY → Jira **"Backlog"** (should be In Review)
 
 ---
 

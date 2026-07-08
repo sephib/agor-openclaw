@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-08 12:00 IDT";
+export const LAST_UPDATED = "2026-07-08 12:30 IDT";
 
 export const WORKTREES = [
   {
@@ -59,13 +59,13 @@ export const WORKTREES = [
     branch: "jn-5841-agents-md-root",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5841-agents-md-root",
     zone: "Publish",
-    pr: "#1649 DRAFT",
+    pr: "#1649",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1649",
-    status: "🟢 PR #1649 CREATED at 10:04 IDT Jul 8 — DRAFT. CI run 28924179820: pre-commit ✅, tox ✅, nox ✅, all-checks ✅ (docs-only change; e2e/deploy/api skipping). JIRA ✅. CodeRabbit skipped (draft). Session 019f3e01 completed, ready_for_prompt:true. Needs: remove draft, get reviewer.",
-    blockedOn: "DRAFT — needs review",
+    status: "🔴 DRAFT REMOVED ✅ (isDraft: false) — but NEW CI run 28931349732 triggered: pre-commit ❌, all-checks ❌ (tox ✅, nox ✅, e2e ✅). Previous run 28924179820 was ALL PASS. Action: check pre-commit failure + fix.",
+    blockedOn: "CI pre-commit failing",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f3e01ee07703caf8b9576/",
-    sessionLabel: "publish (completed — PR #1649 created)",
+    sessionLabel: "publish (completed — PR #1649 created, draft removed)",
     recentSessions: [
       {
         sessionId: "019f3e01ee07703caf8b9576",
@@ -108,7 +108,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-07 22:19 IDT",
+    lastActive: "2026-07-08 12:30 IDT",
   },
   {
     ticket: "JN-5244",
@@ -179,7 +179,7 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1648",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1648",
-    status: "🟢 PR #1648 OPEN — CI run 28922899326 ALL PASS ✅. CodeRabbit COMMENTED (8 actionable). reviewDecision: '' (no required reviewer policy). Needs human LGTM to merge.",
+    status: "🟢 PR #1648 OPEN — CI run 28922899326 ALL PASS ✅. CodeRabbit COMPLETED ✅. reviewDecision: '' (no required reviewer policy). Needs human LGTM to merge.",
     blockedOn: "Awaiting external code review",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f3d66ffeb7154a64feb80/",
@@ -316,8 +316,8 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "green",
-    message: "🟢 jn-5841 (JN-5841): PR #1649 CREATED 10:04 IDT Jul 8 — DRAFT. CI run 28924179820 ALL PASS (docs-only, e2e/deploy skipping). Session 019f3e01 completed. Action: remove DRAFT flag, request reviewer.",
+    level: "red",
+    message: "🔴 #1649 (jn-5841 JN-5841): DRAFT REMOVED ✅ but NEW CI run 28931349732 triggered — pre-commit ❌, all-checks ❌ (tox ✅, nox ✅). Previous run 28924179820 was ALL PASS. Check pre-commit failure and fix before this can be reviewed.",
   },
   {
     level: "green",
@@ -329,11 +329,11 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 PR #1638 — 3rd CONSECUTIVE CI FAILURE. Run 28928793754 FAILED (tox ❌, e2e-smoke ❌, nox ❌, e2e-tests ❌). NEW run 28930566279 IN PROGRESS (bake pending). Pattern: 3 runs all failing — investigate root cause.",
+    message: "🔴 PR #1638 — 5th CONSECUTIVE CI FAILURE (e2e-smoke ❌ persistent). Runs 28930566279 + 28931312110 both FAILED. Pre-commit/tox/nox/bake now ✅ — only e2e-smoke blocks. Investigate e2e-smoke root cause.",
   },
   {
     level: "yellow",
-    message: "🟡 PR #1647 — NOW APPROVED (reviewDecision changed 12:00 IDT Jul 8). But CI still failing (run 28869593069: pre-commit ❌ + e2e-product ❌). all-checks ❌ — cannot merge despite approval. Fix pre-commit + e2e-product.",
+    message: "🟡 PR #1647 — APPROVED (reviewDecision APPROVED since 12:00 IDT Jul 8). But CI still failing (run 28869593069: pre-commit ❌ + e2e-product ❌). all-checks ❌ — cannot merge despite approval. Fix pre-commit + e2e-product.",
   },
   {
     level: "red",
@@ -341,7 +341,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "❌ Jira mismatches (3, confirmed acli 11:30 IDT Jul 8): JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5794 'In Review' (PR #1643 merged Jul 1), JN-5546 'In Progress' (PR #1588 merged Jul 7). All need → Done.",
+    message: "❌ Jira mismatches (3, Jira MCP 401 — assumed unchanged): JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5794 'In Review' (PR #1643 merged Jul 1), JN-5546 'In Progress' (PR #1588 merged Jul 7). All need → Done.",
   },
   {
     level: "yellow",
