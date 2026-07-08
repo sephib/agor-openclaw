@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-08 21:00 IDT";
+export const LAST_UPDATED = "2026-07-08 21:30 IDT";
 
 export const WORKTREES = [
   {
@@ -430,8 +430,8 @@ export const ALERTS = [
     message: "🔴 PR #1648 (jn-5827 JN-5827): NOW CONFLICTING — was MERGEABLE+CI ALL PASS at 18:00 IDT. Needs rebase onto latest main before merge.",
   },
   {
-    level: "yellow",
-    message: "🔄 PR #1638 (JN-5725): New CI run 28964385136 PENDING — e2e-api, integration, pre-commit, tox all PENDING. Atlas ✅, bake ✅, check-changes ✅. Previous run (28962414724) had e2e-api ❌. Awaiting result.",
+    level: "red",
+    message: "🔴 PR #1638 (JN-5725): CI run 28964385136 COMPLETED — e2e-smoke ❌, all-checks ❌. e2e-api ✅ (fixed from prev run), integration/pre-commit/tox all ✅. Failure pattern shifting (e2e-api→e2e-smoke). Persistent e2e issue — needs root cause investigation.",
   },
   {
     level: "green",

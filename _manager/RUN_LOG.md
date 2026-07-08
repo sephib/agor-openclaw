@@ -4,6 +4,15 @@
 
 ---
 
+## 21:30 IDT — Weekday Daytime Heartbeat (Jul 8)
+- PRs checked: #1649 (OPEN, ALL PASS run 28932482752, REVIEW_REQUIRED), #1648 (OPEN, CONFLICTING), #1638 (OPEN, MERGEABLE, CI run 28964385136 COMPLETED: e2e-smoke ❌ all-checks ❌, e2e-api ✅ fixed), #1606 (OPEN, CONFLICTING), #1596 (DRAFT, CONFLICTING)
+- Merges detected: none (0 auto-archives)
+- CI changes: **#1638 CI run 28964385136 COMPLETED** — e2e-smoke ❌ (NEW), e2e-api ✅ (FIXED from prev run), integration/pre-commit/tox/nox all ✅. all-checks ❌. Failure pattern shifting: e2e-api→e2e-smoke. Persistent e2e issue — not transient.
+- Board changes: none — all worktrees unchanged. jn-5401 "contiue" still IDLE rfp:TRUE. jn-5824 "continuew" still IDLE rfp:FALSE.
+- Jira: 5 mismatches persist. Jira MCP 401 ongoing. No change from 21:00 IDT.
+- Flags: #1638 e2e failure now e2e-smoke (not e2e-api). Needs root cause investigation. jn-5401 push+PR still pending. jn-5824 direction still pending. #1649 needs LGTM. #1648 needs rebase.
+- Next: Investigate e2e-smoke failure on #1638. Get Joseph direction on jn-5401 push and jn-5824 configs.
+
 ## 21:00 IDT — Weekday Daytime Heartbeat (Jul 8)
 - PRs checked: #1649 (OPEN, ALL PASS run 28932482752, REVIEW_REQUIRED), #1648 (OPEN, CONFLICTING), #1638 (OPEN, MERGEABLE, new CI run 28964385136: e2e-api+integration+pre-commit+tox PENDING; atlas/bake/check-changes/JIRA/CodeRabbit PASS), #1606 (OPEN, CONFLICTING), #1596 (DRAFT, CONFLICTING)
 - Merges detected: none (0 auto-archives)
