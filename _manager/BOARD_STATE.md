@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-08 21:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-08 22:00 IDT (advance heartbeat)*
 
 ---
 
@@ -57,17 +57,18 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes Since Last Run (21:00 IDT Jul 8)
+## Key Changes Since Last Run (21:30 IDT Jul 8)
 
 | What observed | Status |
 |---|---|
-| **🔴 #1638 CI run 28964385136 COMPLETED** | e2e-smoke ❌ (NEW failure), e2e-api ✅ (FIXED from last run), all-checks ❌. Persistent e2e failure — pattern shifted from e2e-api to e2e-smoke. Likely a test suite issue, not transient. Needs root cause investigation. |
+| **Board static** | No new merges, no CI changes, no session changes since 21:30 IDT. |
 | **🟢 #1649 unchanged** | CI run 28932482752 ALL PASS. REVIEW_REQUIRED unchanged. |
-| **🔴 #1648 unchanged** | Still CONFLICTING. Needs rebase. |
+| **🔴 #1648 unchanged** | Still CONFLICTING. No new CI run. Needs rebase. |
+| **🔴 #1638 unchanged** | run 28964385136 COMPLETED: e2e-smoke ❌, e2e-api ✅, all-checks ❌. No new run. |
 | **jn-5401 unchanged** | "contiue" session 019f4295 still IDLE ready_for_prompt:TRUE. SHA 53e4435e. 3 commits ahead of main. |
 | **jn-5824 unchanged** | "continuew" session 019f4290-43d4 still IDLE ready_for_prompt:FALSE. SHA 16ec44ea. Needs direction. |
-| **No new merges** | Merged sweep clean. |
-| **5 Jira mismatches persist** | No resolution. Jira MCP 401 ongoing. Last confirmed via acli 21:00 IDT. |
+| **No new merges** | Overnight sweep clean. |
+| **5 Jira mismatches persist** | Overnight — no human action expected. Last confirmed via acli 21:00 IDT Jul 8. |
 
 ---
 

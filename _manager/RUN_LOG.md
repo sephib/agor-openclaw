@@ -4,6 +4,15 @@
 
 ---
 
+## 22:00 IDT — Weekday Overnight Heartbeat (Jul 8)
+- PRs checked: #1649 (OPEN, ALL PASS run 28932482752, REVIEW_REQUIRED), #1648 (OPEN, CONFLICTING, CI stale run 28922899326), #1638 (OPEN, MERGEABLE, run 28964385136 COMPLETE: e2e-smoke ❌ all-checks ❌ — NO new run), #1606 (OPEN, CONFLICTING), #1596 (DRAFT, CONFLICTING)
+- Merges detected: none (0 auto-archives)
+- CI changes: none — all runs unchanged from 21:30 IDT. #1638 run 28964385136 still the latest (e2e-smoke ❌, e2e-api ✅, all-checks ❌).
+- Board changes: none — all worktrees and sessions static overnight. jn-5401 "contiue" IDLE rfp:TRUE (SHA 53e4435e). jn-5824 "continuew" IDLE rfp:FALSE (SHA 16ec44ea).
+- Jira: 5 mismatches persist — overnight, no human action expected. Last confirmed acli 21:00 IDT.
+- Flags: #1638 e2e-smoke persistent (needs investigation when Joseph is active). jn-5401 ready for push+PR. jn-5824 needs direction. #1649 needs reviewer LGTM. #1648 needs rebase.
+- Next: Morning scan — check for overnight CI runs on #1638. Get Joseph direction on jn-5401 push and jn-5824 configs. Jira mismatches remain unresolved.
+
 ## 21:30 IDT — Weekday Daytime Heartbeat (Jul 8)
 - PRs checked: #1649 (OPEN, ALL PASS run 28932482752, REVIEW_REQUIRED), #1648 (OPEN, CONFLICTING), #1638 (OPEN, MERGEABLE, CI run 28964385136 COMPLETED: e2e-smoke ❌ all-checks ❌, e2e-api ✅ fixed), #1606 (OPEN, CONFLICTING), #1596 (DRAFT, CONFLICTING)
 - Merges detected: none (0 auto-archives)
