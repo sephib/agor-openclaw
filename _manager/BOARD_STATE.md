@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-09 13:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-09 14:00 IDT (advance heartbeat)*
 
 ---
 
@@ -29,7 +29,7 @@
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
 | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ CONFLICTING | 🔴 CONFLICTING | 🔴 CONFLICTING 7+ days. Needs rebase + fix e2e or close PR. |
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | ❌ **run 29010157672: tox ❌ e2e-smoke ❌ nox ❌ e2e-tests ❌** | MERGEABLE | 🔴 **Run 29010157672 COMPLETE** (was PENDING at 13:00 IDT): pre-commit ✅, e2e-api ✅, bake ✅, integration ✅ — BUT tox ❌, e2e-smoke ❌, nox ❌, e2e-tests ❌. PR blocked. Multiple test failures. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | ❌ **run 29012874092: tox ❌ nox ❌ e2e-smoke PENDING** | MERGEABLE | 🔴 **NEW run 29012874092** (new push since 13:30 IDT): pre-commit ✅, bake ✅, e2e-api ✅, integration ✅ — BUT tox ❌, nox ❌, e2e-smoke PENDING. PR still blocked. |
 
 ---
 
@@ -58,24 +58,24 @@ Active sprint tickets assigned to Joseph with no board worktree:
 | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) | [#1648](https://github.com/Jounce-IO/jounce/pull/1648) | OPEN — MERGEABLE (conflict resolved) | **Backlog** | ⚠️ Should be → In Review |
 | [JN-5401](https://redhat.atlassian.net/browse/JN-5401) | [#1654](https://github.com/Jounce-IO/jounce/pull/1654) | OPEN — pre-commit ❌ | **Backlog** | ⚠️ Should be → In Review — **NEW this run** |
 
-*5 mismatches confirmed via acli 13:00 IDT Jul 9. Jira MCP 401 (ongoing).*
+*5 mismatches confirmed via acli 14:00 IDT Jul 9. Jira MCP 401 (ongoing).*
 
 ---
 
-## Key Changes Since Last Run (13:30 IDT Jul 9 — delta from 13:00 IDT)
+## Key Changes Since Last Run (14:00 IDT Jul 9 — delta from 13:30 IDT)
 
 | What observed | Status |
 |---|---|
-| **🔴 #1638 run 29010157672 COMPLETE** | Was PENDING at 13:00 IDT. Now COMPLETE: tox ❌, e2e-smoke ❌, nox ❌, e2e-tests ❌. pre-commit ✅, e2e-api ✅, bake ✅, integration ✅. Multiple failures — PR blocked. |
-| **✅ #1654 e2e-tests RESOLVED** | Run 29009328799: e2e-tests was PENDING at 13:00, now ✅ PASS. Only pre-commit ❌ remains. |
-| **✅ #1648 e2e-smoke RESOLVED** | Run 29009789704: e2e-smoke was PENDING at 13:00, now ✅ PASS. Only pre-commit ❌ remains. |
+| **🔄 #1638 NEW run 29012874092** | New push since 13:30 IDT. Run 29012874092: pre-commit ✅, bake ✅, e2e-api ✅, integration ✅ — BUT tox ❌, nox ❌, e2e-smoke PENDING. PR still blocked. tox/nox failures persist. |
+| **#1654 unchanged** | pre-commit ❌ only (run 29009328799). No new push. |
+| **#1648 unchanged** | pre-commit ❌ only (run 29009789704). No new push. |
 | **#1649 unchanged** | CI ALL PASS run 28932482752. REVIEW_REQUIRED. No new push. |
 | **jn-5867 PR #1655 unchanged** | pre-commit ❌ CI still failing (run 28998302625). No new push. |
 | **jn-5869 PR #1657 unchanged** | DRAFT CONFLICTING. |
 | **jn-5870 PR #1656 unchanged** | DRAFT CONFLICTING. |
 | **jn-5865 zone mismatch persists** | Still Ingest. Plan done Jul 8. No code session triggered. |
 | **jn-5871 zone mismatch persists** | Still Code, implementation done 00:58 IDT Jul 9. |
-| **5 Jira mismatches persist unchanged** | JN-5445, JN-5717, JN-5546 (merged PRs), JN-5827, JN-5401 (open PRs). Confirmed acli 13:00 IDT. |
+| **5 Jira mismatches persist unchanged** | JN-5445 In Progress (merged), JN-5717 Backlog (merged), JN-5546 In Progress (merged), JN-5827 Backlog (open PR), JN-5401 Backlog (open PR). Confirmed acli 14:00 IDT. |
 
 ---
 
@@ -125,13 +125,14 @@ PR [#1656](https://github.com/Jounce-IO/jounce/pull/1656): "feat(jbenchmark): ad
 
 ---
 
-### 🔴 #1638 — CI run 29010157672 COMPLETE: tox/e2e-smoke/nox FAILING
+### 🔴 #1638 — NEW CI run 29012874092: tox/nox FAILING, e2e-smoke PENDING
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): `chore(infra): vLLM analyzer prerequisites`
-- **Run 29010157672 COMPLETE** (was PENDING at 13:00 IDT):
-  - ✅ pre-commit, e2e-api, bake, integration, check-changes — all passing
-  - ❌ **tox, e2e-smoke, nox, e2e-tests** — all failing
-- **Action:** Investigate tox/nox/e2e-smoke failures in feat/vllm-analyzer-prerequisites branch.
+- **NEW run 29012874092** (new push since 13:30 IDT):
+  - ✅ pre-commit, bake, e2e-api, integration — all passing
+  - ❌ **tox, nox** — still failing
+  - ⏳ **e2e-smoke PENDING** (was ❌ in prior run — may resolve)
+- **Action:** Await e2e-smoke result. Investigate tox/nox failures in feat/vllm-analyzer-prerequisites branch.
 
 ---
 

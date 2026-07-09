@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-09 13:30 IDT";
+export const LAST_UPDATED = "2026-07-09 14:00 IDT";
 
 export const WORKTREES = [
   {
@@ -673,7 +673,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 PR #1638 (JN-5725): Run 29010157672 COMPLETE — tox ❌, e2e-smoke ❌, nox ❌, e2e-tests ❌. pre-commit ✅, e2e-api ✅, bake ✅, integration ✅. Multiple test failures — PR blocked.",
+    message: "🔴 PR #1638 (JN-5725): NEW run 29012874092 (new push 13:30→14:00 IDT) — tox ❌, nox ❌ still failing; e2e-smoke PENDING. pre-commit ✅, bake ✅, e2e-api ✅, integration ✅. PR blocked.",
   },
   {
     level: "green",
