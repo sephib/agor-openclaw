@@ -4,6 +4,15 @@
 
 ---
 
+## 12:00 IDT — Weekday Daytime Heartbeat (Jul 9)
+- PRs checked: #1654 (OPEN, MERGEABLE, CI run 29004789831 **COMPLETE**: pre-commit ❌, all-checks ❌; e2e-smoke ✅, tox ✅, nox ✅), #1649 (OPEN, ALL PASS, REVIEW_REQUIRED), #1648 (OPEN, CONFLICTING), #1638 (OPEN, run 28999848314: e2e-smoke ❌), #1655 (OPEN, pre-commit ❌), #1656 (DRAFT, CONFLICTING), #1657 (DRAFT, CONFLICTING), #1606 (OPEN, CONFLICTING), #1596 (DRAFT, CONFLICTING)
+- Merges detected: none (0 auto-archives)
+- CI changes: **#1654 CI run 29004789831 COMPLETE** — pre-commit ❌ (4m53s fail), all-checks ❌; e2e-smoke ✅, tox ✅, nox ✅, integration ✅, e2e-api ✅. All-e2e passing — only pre-commit blocking. #1638 unchanged (e2e-smoke ❌). #1655 pre-commit ❌ unchanged. #1648 still CONFLICTING.
+- Board changes: **✅ jn-5401 Code Review session COMPLETED** (019f4601-4a66 idle since ~08:36 IDT, ready_for_prompt:TRUE). **⚠️ jn-5827 zone CORRECTED** — Agor shows Respond zone (was logged as Publish). All other worktrees static.
+- Jira: **✅ JN-5719 RESOLVED** — confirmed Done via acli 12:00 IDT. 4 mismatches remain (JN-5445, JN-5717, JN-5546, JN-5827). Jira MCP still 401.
+- Flags: **#1654 pre-commit ❌** needs fix session in jn-5401. #1638 e2e-smoke persistent. #1655 pre-commit ❌ persists. #1657/#1656 DRAFT CONFLICTING. #1649 needs reviewer LGTM. #1648 needs rebase. jn-5865/jn-5871 zone mismatches persist. 4 Jira mismatches.
+- Next: Start pre-commit fix session in jn-5401. Joseph to action zone moves (jn-5865→Code, jn-5871→Verify). Pre-commit fix for #1655. Rebase #1648. Get LGTM on #1649.
+
 ## 11:00 IDT — Weekday Daytime Heartbeat (Jul 9)
 - PRs checked: #1654 (OPEN, MERGEABLE, REVIEW_REQUIRED, CI run 29003329554 PENDING — **NEW**), #1649 (OPEN, ALL PASS, REVIEW_REQUIRED), #1648 (OPEN, CONFLICTING), #1638 (OPEN, run 28999848314 COMPLETE: **e2e-smoke ❌ CONFIRMED**), #1655 (OPEN, pre-commit ❌), #1656 (DRAFT, CONFLICTING), #1657 (DRAFT, CONFLICTING), #1606 (OPEN, CONFLICTING), #1596 (DRAFT, CONFLICTING)
 - Merges detected: none (0 auto-archives)

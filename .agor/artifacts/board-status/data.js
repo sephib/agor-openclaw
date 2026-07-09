@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-09 11:30 IDT";
+export const LAST_UPDATED = "2026-07-09 12:00 IDT";
 
 export const WORKTREES = [
   {
@@ -102,18 +102,18 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1654",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1654",
-    status: "✅ Zone mismatch RESOLVED — now in Code Review (moved 07:40 IDT Jul 9). 🔄 Code Review session RUNNING (019f4601-4a66, since 08:32 IDT). PR #1654 OPEN MERGEABLE REVIEW_REQUIRED. New CI run 29004789831 PENDING (integration/pre-commit/tox/e2e-api pending, CodeRabbit in progress).",
-    blockedOn: "CI pending — awaiting run 29004789831 result",
-    blockedType: "active",
+    status: "🔴 Code Review done (08:36 IDT). CI run 29004789831 COMPLETE: pre-commit ❌, all-checks ❌ — e2e-smoke ✅, tox ✅, nox ✅, integration ✅, e2e-api ✅. Needs pre-commit fix + push.",
+    blockedOn: "pre-commit CI failing — needs fix session",
+    blockedType: "blocked",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f4601a6677024a6a10075/",
-    sessionLabel: "code-review (RUNNING since 08:32 IDT)",
+    sessionLabel: "code-review (COMPLETED 08:36 IDT — pre-commit issues, ready for fix)",
     recentSessions: [
       {
         sessionId: "019f46014a667024a6a10075",
         url: "http://127.0.0.1:3030/ui/s/019f4601a6677024a6a10075/",
-        title: "code-review (RUNNING — started 08:32 IDT)",
-        status: "running",
-        timestamp: "2026-07-09 08:32 IDT",
+        title: "Internal CR — completed ~08:36 IDT (pre-commit ❌ detected)",
+        status: "idle",
+        timestamp: "2026-07-09 08:36 IDT",
         outputFile: null,
       },
       {
@@ -149,7 +149,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-09 08:32 IDT",
+    lastActive: "2026-07-09 08:36 IDT",
   },
   {
     ticket: "JN-5870",
@@ -494,10 +494,10 @@ export const WORKTREES = [
     title: "Implement git tagging workflow for 3.5GA release",
     branch: "jn-5827-git-tagging-workflow",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5827-git-tagging-workflow",
-    zone: "Publish",
+    zone: "Respond",
     pr: "#1648",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1648",
-    status: "🔴 PR #1648 CONFLICTING (since 18:00 IDT Jul 8). Needs rebase before merge. CI stale (was ALL PASS run 28922899326).",
+    status: "🔴 PR #1648 CONFLICTING (since 18:00 IDT Jul 8). Needs rebase before merge. ⚠️ Zone corrected: Respond (not Publish). CI stale (was ALL PASS run 28922899326).",
     blockedOn: "Conflict — needs rebase",
     blockedType: "blocked",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f3d66ffeb7154a64feb80/",
@@ -676,8 +676,8 @@ export const ALERTS = [
     message: "🟢 #1649 (jn-5841 JN-5841): CI ALL PASS — run 28932482752. OPEN + REVIEW_REQUIRED. JN-5841 Jira In Review ✅. Needs reviewer LGTM to merge.",
   },
   {
-    level: "green",
-    message: "✅ jn-5401 zone mismatch RESOLVED — now in Code Review (moved 07:40 IDT Jul 9). Code Review session RUNNING (08:32 IDT). PR #1654 OPEN REVIEW_REQUIRED. CI run 29004789831 PENDING.",
+    level: "red",
+    message: "🔴 PR #1654 (jn-5401 JN-5401): CI run 29004789831 COMPLETE — pre-commit ❌, all-checks ❌; e2e-smoke ✅, tox ✅, nox ✅. Internal CR completed ~08:36 IDT. Needs pre-commit fix session + push.",
   },
   {
     level: "yellow",
@@ -701,7 +701,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "❌ Jira mismatches (5, last confirmed acli 21:00 IDT Jul 8): JN-5719 'Backlog' (PR #1632 merged Jul 8), JN-5445 'In Progress' (PR #1647 merged Jul 8), JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5546 'In Progress' (PR #1588 merged Jul 7) — all 4 need Done. JN-5827 'Backlog' (PR #1648 CONFLICTING) — needs In Review.",
+    message: "❌ Jira mismatches (4, confirmed acli 12:00 IDT Jul 9): JN-5445 'In Progress' (PR #1647 merged Jul 8), JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5546 'In Progress' (PR #1588 merged Jul 7) — all need Done. JN-5827 'Backlog' (PR #1648 CONFLICTING) — needs In Review. ✅ JN-5719 resolved (now Done).",
   },
   {
     level: "yellow",
