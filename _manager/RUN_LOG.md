@@ -4,6 +4,16 @@
 
 ---
 
+## 16:00 IDT — Weekday Daytime Heartbeat (Jul 9)
+- PRs checked: #1638 (OPEN, run 29015905820 COMPLETE — e2e-smoke ❌ UNCHANGED), #1648 (OPEN, **NEW PUSH ~15:33 IDT** — "chore: Restructure based on folder structure"; **NEW run 29018558666: e2e-api ❌ REGRESSION**, e2e-tests ❌, pre-commit-run ❌, pre-commit ⏳ PENDING), #1649 (OPEN, ALL PASS REVIEW_REQUIRED unchanged), #1654 (OPEN, run 29018371235: **e2e-smoke ❌ e2e-tests ❌ NEW FAILURES**, pre-commit ⏳ PENDING), #1655 (OPEN, run 29016539122 COMPLETE — pre-commit ❌ STILL, UNCHANGED), #1656 (DRAFT, CONFLICTING unchanged), #1657 (DRAFT, CONFLICTING unchanged)
+- Merges detected: none (0 auto-archives)
+- CI changes: **#1648 REGRESSION** — new push introduced e2e-api failure (was passing, now ❌). **#1654 NEW e2e FAILURES** — e2e-smoke ❌, e2e-tests ❌ in run 29018371235 (pre-commit still pending). #1655 pre-commit ❌ unchanged. #1638 unchanged. #1649 unchanged.
+- Board changes: None. jn-5865 zone mismatch persists (Ingest). jn-5871 zone mismatch persists (Code).
+- Flags: ⚠️ PATTERN — both #1648 and #1654 new runs show e2e failures (possible flaky CI or independent regressions); 5 Jira mismatches persist; 2 zone mismatches persist
+- Next: Investigate e2e-api regression in #1648 (restructure commit). Wait for pre-commit result in #1654. Targeted pre-commit fix for #1655. Move jn-5865→Code, jn-5871→Verify.
+
+---
+
 ## 15:30 IDT — Weekday Daytime Heartbeat (Jul 9)
 - PRs checked: #1638 (OPEN, run 29015905820 COMPLETE — e2e-smoke ❌ FAIL confirmed), #1648 (OPEN, pre-commit ❌ run 29009789704 unchanged), #1649 (OPEN, ALL PASS REVIEW_REQUIRED unchanged), #1654 (OPEN, **NEW run 29018371096 PENDING** — fix pushed), #1655 (OPEN, run 29016539122 COMPLETE — pre-commit ❌ STILL), #1656 (DRAFT, CONFLICTING unchanged), #1657 (DRAFT, CONFLICTING unchanged)
 - Merges detected: none (0 auto-archives)
