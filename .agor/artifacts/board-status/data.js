@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-09 14:30 IDT";
+export const LAST_UPDATED = "2026-07-09 15:00 IDT";
 
 export const WORKTREES = [
   {
@@ -210,11 +210,11 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1655",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1655",
-    status: "🆕 MOVED to Publish. PR #1655 OPEN MERGEABLE — but ❌ pre-commit CI FAILING (run 28998302625: pre-commit-run ❌, all-checks ❌). Needs pre-commit fix + push.",
-    blockedOn: "pre-commit CI failing — needs fix session",
-    blockedType: "blocked",
+    status: "🟡 PR #1655 OPEN MERGEABLE — fix pushed (SHA 22c1ec70). NEW run 29016539122 PENDING: integration ✅, atlas ✅, e2e-api ✅. pre-commit-run ⏳, tox ⏳, integration-tests ⏳, e2e-smoke ⏳. Monitor next run.",
+    blockedOn: "CI run 29016539122 PENDING — awaiting pre-commit result",
+    blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f435774e971fc89cd2ee5/",
-    sessionLabel: "publish (PR #1655 created — pre-commit ❌)",
+    sessionLabel: "publish (PR #1655 created — fix pushed, CI pending)",
     recentSessions: [
       {
         sessionId: "019f435774e971fc89cd2ee5",
@@ -660,8 +660,8 @@ export const ALERTS = [
     message: "🔴 PR #1654 (jn-5401 JN-5401): Run 29009328799 — pre-commit ❌ ONLY failure. e2e-tests ✅ RESOLVED (13:30 IDT). Zone: Respond. JN-5401 Jira Backlog mismatch. Needs pre-commit fix.",
   },
   {
-    level: "red",
-    message: "🔴 PR #1655 (jn-5867 JN-5867): OPEN MERGEABLE but pre-commit CI ❌ (run 28998302625). Needs pre-commit fix session + push.",
+    level: "yellow",
+    message: "🟡 PR #1655 (jn-5867 JN-5867): Fix pushed (SHA 22c1ec70) — NEW run 29016539122 PENDING. integration ✅, atlas ✅, e2e-api ✅. pre-commit-run ⏳, tox ⏳, e2e-smoke ⏳. Monitor 15:30 IDT.",
   },
   {
     level: "red",
@@ -673,7 +673,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "🟡 PR #1638 (JN-5725): NEW run 29014648291 (14:30 IDT) — tox ✅, nox ✅ NOW PASSING (were ❌). pre-commit ✅, bake ✅, e2e-api ✅, integration ✅ — only e2e-smoke ⏳ PENDING. Near-green! Monitor next run.",
+    message: "🟡 PR #1638 (JN-5725): run 29015905820 (15:00 IDT) — pre-commit ✅, tox ✅, nox ✅, bake ✅, e2e-api ✅, integration ✅ — only e2e-smoke ⏳ PENDING. Consistent with 14:30 run. Monitor next.",
   },
   {
     level: "green",
@@ -701,7 +701,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "❌ Jira mismatches (5, confirmed acli 14:30 IDT Jul 9): JN-5445 'In Progress' (PR #1647 merged), JN-5717 'Backlog' (PR #1631 merged), JN-5546 'In Progress' (PR #1588 merged) — all need Done. JN-5827 'Backlog' (PR #1648 MERGEABLE), JN-5401 'Backlog' (PR #1654 open) — both need In Review.",
+    message: "❌ Jira mismatches (5, confirmed acli 15:00 IDT Jul 9): JN-5445 'In Progress' (PR #1647 merged), JN-5717 'Backlog' (PR #1631 merged), JN-5546 'In Progress' (PR #1588 merged) — all need Done. JN-5827 'Backlog' (PR #1648 MERGEABLE), JN-5401 'Backlog' (PR #1654 open) — both need In Review.",
   },
   {
     level: "yellow",

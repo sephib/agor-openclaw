@@ -4,6 +4,15 @@
 
 ---
 
+## 15:00 IDT — Weekday Daytime Heartbeat (Jul 9)
+- PRs checked: #1638 (OPEN, NEW run 29015905820 — all PASS, e2e-smoke ⏳), #1648 (OPEN, pre-commit ❌ run 29009789704 unchanged), #1649 (OPEN, ALL PASS REVIEW_REQUIRED unchanged), #1654 (OPEN, pre-commit ❌ run 29009328799 unchanged), #1655 (OPEN, **NEW run 29016539122 PENDING** — fix pushed SHA 22c1ec70), #1656 (DRAFT, CONFLICTING unchanged), #1657 (DRAFT, CONFLICTING/UNKNOWN unchanged)
+- Merges detected: none (0 auto-archives)
+- CI changes: **#1655 fix pushed** — new run 29016539122 PENDING (pre-commit-run ⏳, tox ⏳, integration-tests ⏳, e2e-smoke ⏳; integration ✅, atlas ✅, e2e-api ✅). **#1638 new run 29015905820** — same pattern, e2e-smoke PENDING. All others static.
+- Flags: 5 Jira mismatches persist (acli confirmed); 2 zone mismatches persist (jn-5865 Ingest, jn-5871 Code)
+- Next: Monitor #1655 run 29016539122 result + #1638 e2e-smoke at 15:30 IDT
+
+---
+
 ## 12:30 IDT — Weekday Daytime Heartbeat (Jul 9)
 - PRs checked: #1654 (OPEN, pre-commit ❌ CI run 29004789831 unchanged), #1649 (OPEN, ALL PASS, REVIEW_REQUIRED unchanged), #1648 (OPEN, **CONFLICT RESOLVED → MERGEABLE** — new CI run 29007994457: e2e-api ❌, e2e-tests ❌, all-checks ❌; pre-commit ✅, tox ✅, nox ✅), #1638 (OPEN, **new CI run 29008145173 PENDING** — e2e-api ✅, integration ✅ so far), #1655 (OPEN, pre-commit ❌ unchanged), #1656 (DRAFT, CONFLICTING unchanged), #1657 (DRAFT, CONFLICTING unchanged), #1606 (OPEN, CONFLICTING unchanged), #1596 (DRAFT, CONFLICTING unchanged)
 - Merges detected: none (0 auto-archives)
