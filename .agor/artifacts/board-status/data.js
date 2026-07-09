@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-09 13:00 IDT";
+export const LAST_UPDATED = "2026-07-09 13:30 IDT";
 
 export const WORKTREES = [
   {
@@ -102,8 +102,8 @@ export const WORKTREES = [
     zone: "Respond",
     pr: "#1654",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1654",
-    status: "🔴 NEW CI run 29009328799 (new push): pre-commit ❌ persists. e2e-smoke ✅, tox ✅, nox ✅, integration ✅, e2e-api ✅; e2e-tests PENDING. Respond zone. JN-5401 Jira: Backlog — mismatch (open PR → In Review).",
-    blockedOn: "pre-commit CI failing despite new push — needs fix",
+    status: "🔴 Run 29009328799: pre-commit ❌ ONLY failure. e2e-smoke ✅, tox ✅, nox ✅, integration ✅, e2e-api ✅, e2e-tests ✅ (RESOLVED 13:30 IDT). Respond zone. JN-5401 Jira: Backlog — mismatch (open PR → In Review).",
+    blockedOn: "pre-commit CI failing — needs fix",
     blockedType: "blocked",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f4601a6677024a6a10075/",
     sessionLabel: "code-review (COMPLETED 08:36 IDT — pre-commit issues, ready for fix)",
@@ -497,8 +497,8 @@ export const WORKTREES = [
     zone: "Respond",
     pr: "#1648",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1648",
-    status: "🔴 NEW CI run 29009789704 (new push): pre-commit ❌ NEW failure; e2e-api ✅ FIXED; tox ✅, nox ✅, integration ✅; e2e-smoke PENDING. MERGEABLE. Push fixed e2e-api but introduced pre-commit fail.",
-    blockedOn: "pre-commit CI newly failing (run 29009789704) — needs fix",
+    status: "🔴 Run 29009789704: pre-commit ❌ ONLY failure. e2e-api ✅, tox ✅, nox ✅, integration ✅, e2e-smoke ✅ (RESOLVED 13:30 IDT). MERGEABLE. Needs pre-commit fix.",
+    blockedOn: "pre-commit CI failing (run 29009789704) — needs fix",
     blockedType: "blocked",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f3d66ffeb7154a64feb80/",
     sessionLabel: "internal-cr retry (ready_for_prompt: TRUE)",
@@ -653,11 +653,11 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "red",
-    message: "🔴 PR #1648 (jn-5827 JN-5827): NEW run 29009789704 — pre-commit ❌ (NEW failure). e2e-api ✅ FIXED. e2e-smoke PENDING. MERGEABLE. New push swapped e2e-api fix for pre-commit failure. Needs pre-commit fix + push.",
+    message: "🔴 PR #1648 (jn-5827 JN-5827): Run 29009789704 — pre-commit ❌ ONLY failure. e2e-smoke ✅ RESOLVED (13:30 IDT). MERGEABLE. Needs pre-commit fix + push.",
   },
   {
     level: "red",
-    message: "🔴 PR #1654 (jn-5401 JN-5401): NEW run 29009328799 (new push) — pre-commit ❌ persists. e2e-smoke ✅, tox ✅, nox ✅. Zone: Respond. JN-5401 Jira Backlog mismatch. Needs pre-commit fix.",
+    message: "🔴 PR #1654 (jn-5401 JN-5401): Run 29009328799 — pre-commit ❌ ONLY failure. e2e-tests ✅ RESOLVED (13:30 IDT). Zone: Respond. JN-5401 Jira Backlog mismatch. Needs pre-commit fix.",
   },
   {
     level: "red",
@@ -672,8 +672,8 @@ export const ALERTS = [
     message: "🔴 PR #1656 (jn-5870 JN-5870): DRAFT CONFLICTING. 5 commits ahead. Needs rebase onto main + undraft.",
   },
   {
-    level: "yellow",
-    message: "🔄 PR #1638 (JN-5725): NEW run 29010157672 (new push, replaces 29008145173) — ALL checks PENDING. bake ✅, check-changes ✅. Slow checks (tox/pre-commit/e2e) still running. Monitor next run.",
+    level: "red",
+    message: "🔴 PR #1638 (JN-5725): Run 29010157672 COMPLETE — tox ❌, e2e-smoke ❌, nox ❌, e2e-tests ❌. pre-commit ✅, e2e-api ✅, bake ✅, integration ✅. Multiple test failures — PR blocked.",
   },
   {
     level: "green",
