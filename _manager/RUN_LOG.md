@@ -4,6 +4,14 @@
 
 ---
 
+## 18:30 IDT — Weekday Daytime Heartbeat (Jul 9)
+- PRs checked: #1638 (OPEN, **NEW run 29029026149** — pre-commit ✅ FIXED!, tox ✅, nox ✅, e2e-api ✅, bake ✅, integration ✅; e2e-smoke ⏳ PENDING — MAJOR improvement), #1648 (OPEN, run 29022206171 UNCHANGED — pre-commit ❌ only, no new push), #1649 (OPEN, ALL PASS REVIEW_REQUIRED unchanged), #1654 (OPEN, **NEW run 29028976922** — new push! pre-commit ❌ STILL; tox ✅, nox ✅, e2e-api ✅; e2e-smoke ⏳ PENDING), #1655 (OPEN, run 29016539122 UNCHANGED — pre-commit ❌ still, no new push), #1656 (DRAFT, CONFLICTING unchanged), #1657 (DRAFT, CONFLICTING unchanged), #1658 (DRAFT CI PASS unchanged), #1659 (DRAFT CONFLICTING unchanged)
+- Merges detected: none (0 auto-archives)
+- CI changes: **#1638 pre-commit ✅ FIXED** (was ❌) — new push, e2e-smoke ⏳ pending (critical). **#1654 new push** — pre-commit ❌ still (another attempt), e2e-smoke ⏳ pending.
+- Board changes: None. jn-5865 zone mismatch persists (Ingest). jn-5871 zone mismatch persists (Code).
+- Flags: 6 Jira mismatches persist (Jira MCP 401, acli unavailable this run); 2 zone mismatches persist
+- Next: watch #1638 e2e-smoke (near-merge if passes!); watch #1654 CI result; fix pre-commit on #1648/#1655; undraft #1658; rebase #1659/#1656/#1657
+
 ## 17:30 IDT — Weekday Daytime Heartbeat (Jul 9)
 - PRs checked: #1638 (OPEN, NEW run 29024482822 — near-full recovery: pre-commit ✅, tox ✅, bake ✅, e2e-api ✅, integration ✅; e2e-smoke ⏳ PENDING), #1648 (OPEN, NEW run 29022206171 — e2e REGRESSION RESOLVED: e2e-api ✅, e2e-smoke ✅, e2e-tests ✅; only pre-commit ❌ remains), #1649 (OPEN, ALL PASS REVIEW_REQUIRED unchanged), #1654 (OPEN, NEW run 29022595830 — e2e-smoke ✅ e2e-tests ✅ FIXED; BUT tox ❌ nox ❌ NEW; pre-commit ❌ persists), #1655 (OPEN, run 29016539122 UNCHANGED — pre-commit ❌ still), #1656 (DRAFT, CONFLICTING unchanged), #1657 (DRAFT, CONFLICTING unchanged), #1658 NEW DRAFT PASS (jn-5842), #1659 NEW DRAFT CONFLICTING (jn-5868)
 - Merges detected: none (0 auto-archives)
