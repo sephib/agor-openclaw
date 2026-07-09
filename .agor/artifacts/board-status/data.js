@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-09 12:00 IDT";
+export const LAST_UPDATED = "2026-07-09 12:30 IDT";
 
 export const WORKTREES = [
   {
@@ -99,10 +99,10 @@ export const WORKTREES = [
     title: "Add subcommands to jbenchmark runner (JN-5401)",
     branch: "jn-5401-runner-subcommands",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5401-runner-subcommands",
-    zone: "Code Review",
+    zone: "Respond",
     pr: "#1654",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1654",
-    status: "🔴 Code Review done (08:36 IDT). CI run 29004789831 COMPLETE: pre-commit ❌, all-checks ❌ — e2e-smoke ✅, tox ✅, nox ✅, integration ✅, e2e-api ✅. Needs pre-commit fix + push.",
+    status: "🔴 CR done (08:36 IDT) — zone moved to Respond. CI run 29004789831: pre-commit ❌, all-checks ❌; e2e-smoke ✅, tox ✅, nox ✅, integration ✅, e2e-api ✅. JN-5401 Jira: Backlog — mismatch (should be In Review). Needs pre-commit fix + push.",
     blockedOn: "pre-commit CI failing — needs fix session",
     blockedType: "blocked",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f4601a6677024a6a10075/",
@@ -497,8 +497,8 @@ export const WORKTREES = [
     zone: "Respond",
     pr: "#1648",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1648",
-    status: "🔴 PR #1648 CONFLICTING (since 18:00 IDT Jul 8). Needs rebase before merge. ⚠️ Zone corrected: Respond (not Publish). CI stale (was ALL PASS run 28922899326).",
-    blockedOn: "Conflict — needs rebase",
+    status: "⚠️ ✅ CONFLICT RESOLVED — now MERGEABLE. New CI run 29007994457: e2e-api ❌ (3m8s), e2e-tests ❌, all-checks ❌; pre-commit ✅, tox ✅, nox ✅. e2e-smoke SKIPPED. New blocker: e2e-api failure. Needs fix + push.",
+    blockedOn: "e2e-api CI failing in run 29007994457 — needs investigation",
     blockedType: "blocked",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f3d66ffeb7154a64feb80/",
     sessionLabel: "internal-cr retry (ready_for_prompt: TRUE)",
@@ -653,31 +653,31 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "red",
+    message: "🔴 PR #1648 (jn-5827 JN-5827): CONFLICT RESOLVED ✅ — now MERGEABLE. BUT new CI run 29007994457: e2e-api ❌ (3m8s), e2e-tests ❌, all-checks ❌. pre-commit ✅, tox ✅. Needs e2e-api fix + push.",
+  },
+  {
+    level: "red",
+    message: "🔴 PR #1654 (jn-5401 JN-5401): CI run 29004789831 — pre-commit ❌, all-checks ❌; e2e-smoke ✅, tox ✅, nox ✅. Zone moved to Respond. JN-5401 Jira Backlog mismatch (open PR → In Review). Needs pre-commit fix session + push.",
+  },
+  {
+    level: "red",
     message: "🔴 PR #1655 (jn-5867 JN-5867): OPEN MERGEABLE but pre-commit CI ❌ (run 28998302625). Needs pre-commit fix session + push.",
   },
   {
     level: "red",
-    message: "🔴 PR #1657 (jn-5869 JN-5869): DRAFT CONFLICTING. Worktree still dirty (lcov.info 13h+). Needs commit + rebase + undraft.",
+    message: "🔴 PR #1657 (jn-5869 JN-5869): DRAFT CONFLICTING. Worktree still dirty (lcov.info 15h+). Needs commit + rebase + undraft.",
   },
   {
     level: "red",
     message: "🔴 PR #1656 (jn-5870 JN-5870): DRAFT CONFLICTING. 5 commits ahead. Needs rebase onto main + undraft.",
   },
   {
-    level: "red",
-    message: "🔴 PR #1638 (JN-5725): CI run 28999848314 COMPLETE — tox ✅ nox ✅ recovered but e2e-smoke ❌ FAILED (8m55s), e2e-tests ❌, all-checks ❌. Regression confirmed. Needs investigation.",
-  },
-  {
-    level: "red",
-    message: "🔴 PR #1648 (jn-5827 JN-5827): CONFLICTING since 18:00 IDT Jul 8. Needs rebase onto latest main before merge.",
+    level: "yellow",
+    message: "🔄 PR #1638 (JN-5725): New CI run 29008145173 PENDING — e2e-api ✅, integration ✅ so far. tox/pre-commit/e2e-smoke pending. Monitor next run.",
   },
   {
     level: "green",
     message: "🟢 #1649 (jn-5841 JN-5841): CI ALL PASS — run 28932482752. OPEN + REVIEW_REQUIRED. JN-5841 Jira In Review ✅. Needs reviewer LGTM to merge.",
-  },
-  {
-    level: "red",
-    message: "🔴 PR #1654 (jn-5401 JN-5401): CI run 29004789831 COMPLETE — pre-commit ❌, all-checks ❌; e2e-smoke ✅, tox ✅, nox ✅. Internal CR completed ~08:36 IDT. Needs pre-commit fix session + push.",
   },
   {
     level: "yellow",
@@ -701,7 +701,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "❌ Jira mismatches (4, confirmed acli 12:00 IDT Jul 9): JN-5445 'In Progress' (PR #1647 merged Jul 8), JN-5717 'Backlog' (PR #1631 merged Jul 6), JN-5546 'In Progress' (PR #1588 merged Jul 7) — all need Done. JN-5827 'Backlog' (PR #1648 CONFLICTING) — needs In Review. ✅ JN-5719 resolved (now Done).",
+    message: "❌ Jira mismatches (5, confirmed acli 12:30 IDT Jul 9): JN-5445 'In Progress' (PR #1647 merged), JN-5717 'Backlog' (PR #1631 merged), JN-5546 'In Progress' (PR #1588 merged) — all need Done. JN-5827 'Backlog' (PR #1648 MERGEABLE), JN-5401 'Backlog' (PR #1654 open) — both need In Review.",
   },
   {
     level: "yellow",

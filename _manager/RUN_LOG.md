@@ -4,6 +4,15 @@
 
 ---
 
+## 12:30 IDT — Weekday Daytime Heartbeat (Jul 9)
+- PRs checked: #1654 (OPEN, pre-commit ❌ CI run 29004789831 unchanged), #1649 (OPEN, ALL PASS, REVIEW_REQUIRED unchanged), #1648 (OPEN, **CONFLICT RESOLVED → MERGEABLE** — new CI run 29007994457: e2e-api ❌, e2e-tests ❌, all-checks ❌; pre-commit ✅, tox ✅, nox ✅), #1638 (OPEN, **new CI run 29008145173 PENDING** — e2e-api ✅, integration ✅ so far), #1655 (OPEN, pre-commit ❌ unchanged), #1656 (DRAFT, CONFLICTING unchanged), #1657 (DRAFT, CONFLICTING unchanged), #1606 (OPEN, CONFLICTING unchanged), #1596 (DRAFT, CONFLICTING unchanged)
+- Merges detected: none (0 auto-archives)
+- CI changes: **#1648 conflict RESOLVED** — now MERGEABLE; new CI run 29007994457 shows e2e-api ❌ (3m8s), e2e-tests ❌, all-checks ❌ but pre-commit ✅, tox ✅ (new blocker). **#1638 new CI run 29008145173** PENDING — something changed/rebased. #1654 pre-commit ❌ unchanged. #1655 pre-commit ❌ unchanged.
+- Board changes: **jn-5401 zone changed to Respond** (Agor shows zone-1781435255368 = Respond, was Code Review). CR completed 08:36 IDT, zone advanced.
+- Jira: **🆕 JN-5401 new mismatch** — Jira Backlog but PR #1654 open (should be In Review). **5 mismatches total** (JN-5445, JN-5717, JN-5546, JN-5827, JN-5401). Jira MCP still 401.
+- Flags: **#1648 e2e-api ❌ new failure** (rebase triggered, conflict gone but e2e broken). **JN-5401 Jira mismatch** (new). #1654 pre-commit ❌ needs fix. #1655 pre-commit ❌ needs fix. #1638 new CI PENDING — monitor. #1649 needs reviewer LGTM. jn-5865/jn-5871 zone mismatches persist. 5 Jira mismatches.
+- Next: Fix e2e-api on #1648. Pre-commit fix on #1654 (jn-5401). Pre-commit fix on #1655 (jn-5867). Monitor #1638 new CI run. Joseph: zone moves jn-5865→Code, jn-5871→Verify.
+
 ## 12:00 IDT — Weekday Daytime Heartbeat (Jul 9)
 - PRs checked: #1654 (OPEN, MERGEABLE, CI run 29004789831 **COMPLETE**: pre-commit ❌, all-checks ❌; e2e-smoke ✅, tox ✅, nox ✅), #1649 (OPEN, ALL PASS, REVIEW_REQUIRED), #1648 (OPEN, CONFLICTING), #1638 (OPEN, run 28999848314: e2e-smoke ❌), #1655 (OPEN, pre-commit ❌), #1656 (DRAFT, CONFLICTING), #1657 (DRAFT, CONFLICTING), #1606 (OPEN, CONFLICTING), #1596 (DRAFT, CONFLICTING)
 - Merges detected: none (0 auto-archives)

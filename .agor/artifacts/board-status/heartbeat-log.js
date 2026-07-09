@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-09 12:30 IDT",
+    actions: 0,
+    findings: 3,
+    status: "ok",
+    summary: "PR #1648 conflict RESOLVED → MERGEABLE; new CI run 29007994457 shows e2e-api ❌ (new blocker); jn-5401 zone changed to Respond; JN-5401 new Jira mismatch (Backlog vs open PR); #1638 new CI run 29008145173 PENDING; 5 Jira mismatches total",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f46369fe27310958c4904/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-09 12:00 IDT",
     actions: 0,
     findings: 3,
