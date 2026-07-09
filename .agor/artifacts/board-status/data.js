@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-09 14:00 IDT";
+export const LAST_UPDATED = "2026-07-09 14:30 IDT";
 
 export const WORKTREES = [
   {
@@ -672,8 +672,8 @@ export const ALERTS = [
     message: "🔴 PR #1656 (jn-5870 JN-5870): DRAFT CONFLICTING. 5 commits ahead. Needs rebase onto main + undraft.",
   },
   {
-    level: "red",
-    message: "🔴 PR #1638 (JN-5725): NEW run 29012874092 (new push 13:30→14:00 IDT) — tox ❌, nox ❌ still failing; e2e-smoke PENDING. pre-commit ✅, bake ✅, e2e-api ✅, integration ✅. PR blocked.",
+    level: "yellow",
+    message: "🟡 PR #1638 (JN-5725): NEW run 29014648291 (14:30 IDT) — tox ✅, nox ✅ NOW PASSING (were ❌). pre-commit ✅, bake ✅, e2e-api ✅, integration ✅ — only e2e-smoke ⏳ PENDING. Near-green! Monitor next run.",
   },
   {
     level: "green",
@@ -701,7 +701,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "❌ Jira mismatches (5, confirmed acli 13:00 IDT Jul 9): JN-5445 'In Progress' (PR #1647 merged), JN-5717 'Backlog' (PR #1631 merged), JN-5546 'In Progress' (PR #1588 merged) — all need Done. JN-5827 'Backlog' (PR #1648 MERGEABLE), JN-5401 'Backlog' (PR #1654 open) — both need In Review.",
+    message: "❌ Jira mismatches (5, confirmed acli 14:30 IDT Jul 9): JN-5445 'In Progress' (PR #1647 merged), JN-5717 'Backlog' (PR #1631 merged), JN-5546 'In Progress' (PR #1588 merged) — all need Done. JN-5827 'Backlog' (PR #1648 MERGEABLE), JN-5401 'Backlog' (PR #1654 open) — both need In Review.",
   },
   {
     level: "yellow",
