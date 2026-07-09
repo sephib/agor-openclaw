@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-09 17:30 IDT";
+export const LAST_UPDATED = "2026-07-09 18:00 IDT";
 
 export const WORKTREES = [
   {
@@ -102,18 +102,18 @@ export const WORKTREES = [
     zone: "Respond",
     pr: "#1654",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1654",
-    status: "🔴 Run 29022595830 NEW: tox ❌ NEW, nox ❌ NEW, pre-commit ❌. e2e-smoke ✅ FIXED, e2e-tests ✅ FIXED. Mixed: e2e resolved but tox/nox regressions appeared. JN-5401 Jira: Backlog — mismatch.",
-    blockedOn: "tox ❌ + nox ❌ NEW regressions + pre-commit ❌ in run 29022595830",
-    blockedType: "blocked",
+    status: "🔄 Run 29026628253 NEW: tox ✅ FIXED!, nox ✅ FIXED! — only pre-commit ❌ remains. e2e-smoke ✅, e2e-tests ✅, integration ✅, e2e-api ✅. Near-merge! JN-5401 Jira: Backlog — mismatch.",
+    blockedOn: "pre-commit ❌ only — near-merge condition",
+    blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f4601a6677024a6a10075/",
     sessionLabel: "code-review (COMPLETED 08:36 IDT — pre-commit issues, ready for fix)",
     recentSessions: [
       {
         sessionId: "019f47494b9276a2b59d64ca",
         url: "http://127.0.0.1:3030/ui/s/019f47494b9276a2b59d64ca/",
-        title: "heartbeat 17:30 IDT — run 29022595830: e2e FIXED but tox/nox ❌ NEW",
-        status: "running",
-        timestamp: "2026-07-09 17:30 IDT",
+        title: "heartbeat 18:00 IDT — run 29026628253: tox ✅ FIXED nox ✅ FIXED — pre-commit ❌ only",
+        status: "idle",
+        timestamp: "2026-07-09 18:00 IDT",
         outputFile: null,
       },
       {
@@ -523,9 +523,9 @@ export const WORKTREES = [
       {
         sessionId: "019f47494b9276a2b59d64ca",
         url: "http://127.0.0.1:3030/ui/s/019f47494b9276a2b59d64ca/",
-        title: "heartbeat 17:30 IDT — run 29022206171: e2e REGRESSION RESOLVED, pre-commit ❌ only",
-        status: "running",
-        timestamp: "2026-07-09 17:30 IDT",
+        title: "heartbeat 18:00 IDT — run 29022206171: pre-commit ❌ only, no new push",
+        status: "idle",
+        timestamp: "2026-07-09 18:00 IDT",
         outputFile: null,
       },
       {
@@ -669,8 +669,8 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "red",
-    message: "🔴 PR #1654 (jn-5401 JN-5401): Run 29022595830 NEW — tox ❌ NEW, nox ❌ NEW, pre-commit ❌. e2e-smoke ✅ FIXED, e2e-tests ✅ FIXED. Three failures need fixing.",
+    level: "yellow",
+    message: "🔄 PR #1654 (jn-5401 JN-5401): Run 29026628253 NEW — tox ✅ FIXED!, nox ✅ FIXED! Only pre-commit ❌ remains. Near-merge — fix pre-commit to unblock.",
   },
   {
     level: "yellow",
@@ -689,8 +689,8 @@ export const ALERTS = [
     message: "🔴 PR #1656 (jn-5870 JN-5870): DRAFT CONFLICTING. 5 commits ahead. Needs rebase onto main + undraft.",
   },
   {
-    level: "yellow",
-    message: "⚠️ PR #1638 (JN-5725): Run 29024482822 — near-complete recovery: pre-commit ✅, tox ✅, bake ✅, e2e-api ✅, integration ✅. Only e2e-smoke ⏳ PENDING. Watch result.",
+    level: "red",
+    message: "🔴 PR #1638 (JN-5725): Run 29024482822 COMPLETE — e2e-smoke ❌ FAILED, e2e-tests ❌ (was PENDING). pre-commit ✅, tox ✅, nox ✅, e2e-api ✅. Needs new push to fix e2e-smoke.",
   },
   {
     level: "yellow",

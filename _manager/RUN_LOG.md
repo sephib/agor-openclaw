@@ -807,3 +807,13 @@
 - Jira: 6 mismatches now (JN-5867 newly identified: Backlog with PR #1655 OPEN). Jira MCP 401 — acli used. JN-5445/5717/5546 still need Done; JN-5827/5401/5867 need In Review.
 - Flags: 2 zone mismatches persist (jn-5865 still Ingest, jn-5871 still Code). 6 Jira mismatches.
 - Next: Watch #1638 new run e2e result (PENDING). #1654 needs fix for pre-commit+e2e-smoke. #1648 needs fix for e2e-api regression. #1655 needs fix for pre-commit.
+
+## 18:00 IDT — Weekday Daytime Heartbeat (Jul 9)
+- PRs checked: #1654 (OPEN, **NEW run 29026628253**: tox ✅ FIXED nox ✅ FIXED — pre-commit ❌ only!), #1648 (OPEN, pre-commit ❌ run 29022206171 UNCHANGED), #1649 (OPEN, ALL PASS run 28932482752 UNCHANGED), #1655 (OPEN, pre-commit ❌ run 29016539122 UNCHANGED — no new push), #1638 (OPEN, run 29024482822 COMPLETE: e2e-smoke ❌ FAILED, e2e-tests ❌), #1658 (DRAFT MERGEABLE, all-checks ✅ unchanged), #1659 (DRAFT CONFLICTING unchanged), #1656 (DRAFT CONFLICTING unchanged), #1657 (DRAFT CONFLICTING unchanged)
+- Merges detected: none (sweep clean — assignee + review-requested, 0 auto-archives)
+- CI changes: **#1654 MAJOR**: new run 29026628253 — tox ✅ + nox ✅ FIXED (were ❌), only pre-commit ❌ remains. **#1638**: e2e-smoke ❌ FAILED (was PENDING at 17:30 IDT) + e2e-tests ❌.
+- Board: all zones static (no zone changes detected via Agor MCP). 2 zone mismatches persist (jn-5865 Ingest, jn-5871 Code).
+- Jira: 6 mismatches confirmed via acli 18:00 IDT — unchanged.
+- Flags: 🔴 #1638 e2e-smoke regression; 🔴 #1655 pre-commit ❌ no new push; 🔴 #1648 pre-commit ❌; 🟡 #1654 near-merge (pre-commit only); zone mismatches persist; 6 Jira mismatches
+- Auto-advances: 0
+- Next: watch for pre-commit fix push on #1654, #1648, #1655; investigate #1638 e2e-smoke failure; trigger code on jn-5865; move jn-5871 to Verify.
