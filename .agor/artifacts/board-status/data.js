@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-09 16:00 IDT";
+export const LAST_UPDATED = "2026-07-09 16:30 IDT";
 
 export const WORKTREES = [
   {
@@ -102,17 +102,25 @@ export const WORKTREES = [
     zone: "Respond",
     pr: "#1654",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1654",
-    status: "🔴 Run 29018371235: e2e-smoke ❌ FAIL, e2e-tests ❌ FAIL (early failures). pre-commit ⏳ PENDING, tox ⏳ PENDING. atlas ✅, e2e-api ✅. Fix from 15:00 IDT may have introduced e2e regressions. JN-5401 Jira: Backlog — mismatch.",
-    blockedOn: "e2e-smoke ❌ + e2e-tests ❌ in run 29018371235 — possible e2e regression from fix",
+    status: "🔴 Run 29018371235 COMPLETE: e2e-smoke ❌ FAIL, e2e-tests ❌ FAIL, pre-commit ❌ FAIL. JIRA Association ❌, check-changes ❌. e2e-api ✅, integration ✅, tox ✅, nox ✅. JN-5401 Jira: Backlog — mismatch.",
+    blockedOn: "pre-commit ❌ + e2e-smoke ❌ + e2e-tests ❌ + JIRA Association ❌ in run 29018371235 COMPLETE",
     blockedType: "blocked",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f4601a6677024a6a10075/",
     sessionLabel: "code-review (COMPLETED 08:36 IDT — pre-commit issues, ready for fix)",
     recentSessions: [
       {
+        sessionId: "019f47125bf17240a85a104b",
+        url: "http://127.0.0.1:3030/ui/s/019f47125bf17240a85a104b/",
+        title: "heartbeat 16:30 IDT — run 29018371235 COMPLETE (pre-commit ❌ + e2e-smoke ❌ confirmed)",
+        status: "running",
+        timestamp: "2026-07-09 16:30 IDT",
+        outputFile: null,
+      },
+      {
         sessionId: "019f46f6e4897a01bdac4fec",
         url: "http://127.0.0.1:3030/ui/s/019f46f6e4897a01bdac4fec/",
         title: "heartbeat 16:00 IDT — e2e ❌ flagged in run 29018371235",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-09 16:00 IDT",
         outputFile: null,
       },
@@ -514,17 +522,25 @@ export const WORKTREES = [
     zone: "Respond",
     pr: "#1648",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1648",
-    status: "🔴 NEW push ~15:33 IDT ('chore: Restructure based on folder structure'). Run 29018558666: e2e-api ❌ REGRESSION (was ✅!), e2e-tests ❌, pre-commit-run ❌. pre-commit ⏳ PENDING, nox ⏳ PENDING. tox ✅, integration ✅. REGRESSION from restructure commit.",
-    blockedOn: "e2e-api REGRESSION in run 29018558666 — restructure commit likely broke e2e",
+    status: "🔴 Run 29018558666 COMPLETE: e2e-api ❌ REGRESSION (was ✅!), e2e-tests ❌, pre-commit ❌. e2e-smoke SKIPPING (check-changes determined no smoke-path changes). tox ✅, integration ✅. JIRA Association ❌, check-changes ❌, deploy ❌. REGRESSION from ~15:33 IDT restructure commit.",
+    blockedOn: "e2e-api REGRESSION + pre-commit ❌ in run 29018558666 — restructure commit broke e2e-api",
     blockedType: "blocked",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f3d66ffeb7154a64feb80/",
     sessionLabel: "internal-cr retry (ready_for_prompt: TRUE) — new push at 15:33 IDT",
     recentSessions: [
       {
+        sessionId: "019f47125bf17240a85a104b",
+        url: "http://127.0.0.1:3030/ui/s/019f47125bf17240a85a104b/",
+        title: "heartbeat 16:30 IDT — run 29018558666 COMPLETE (e2e-smoke SKIPPING, e2e-api ❌ confirmed)",
+        status: "running",
+        timestamp: "2026-07-09 16:30 IDT",
+        outputFile: null,
+      },
+      {
         sessionId: "019f46f6e4897a01bdac4fec",
         url: "http://127.0.0.1:3030/ui/s/019f46f6e4897a01bdac4fec/",
         title: "heartbeat 16:00 IDT — e2e-api ❌ REGRESSION flagged (run 29018558666)",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-09 16:00 IDT",
         outputFile: null,
       },
@@ -670,11 +686,11 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "red",
-    message: "🔴 PR #1648 (jn-5827 JN-5827): NEW PUSH ~15:33 IDT — 'chore: Restructure based on folder structure'. Run 29018558666: e2e-api ❌ REGRESSION (was ✅!), e2e-tests ❌, pre-commit-run ❌. pre-commit ⏳ PENDING. REGRESSION — restructure commit likely broke e2e-api.",
+    message: "🔴 PR #1648 (jn-5827 JN-5827): Run 29018558666 COMPLETE — e2e-api ❌ REGRESSION (was ✅!), e2e-tests ❌, pre-commit ❌. e2e-smoke SKIPPING. JIRA Association ❌. Restructure commit broke e2e-api.",
   },
   {
     level: "red",
-    message: "🔴 PR #1654 (jn-5401 JN-5401): Run 29018371235: e2e-smoke ❌, e2e-tests ❌ (NEW failures). pre-commit ⏳ PENDING. Fix from 15:00 IDT may have introduced e2e regressions. Zone: Respond. JN-5401 Jira Backlog mismatch.",
+    message: "🔴 PR #1654 (jn-5401 JN-5401): Run 29018371235 COMPLETE — pre-commit ❌ + e2e-smoke ❌ + e2e-tests ❌ confirmed. JIRA Association ❌, check-changes ❌. e2e-api ✅, tox ✅. JN-5401 Jira Backlog mismatch.",
   },
   {
     level: "red",
@@ -690,11 +706,11 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 PR #1638 (JN-5725): run 29015905820 COMPLETE — e2e-smoke ❌ FAIL, e2e-tests ❌ FAIL. pre-commit ✅, tox ✅, nox ✅, bake ✅, e2e-api ✅. Off-board PR. Investigate e2e-smoke failure.",
+    message: "🔴 PR #1638 (JN-5725): NEW run 29021658801 in progress — bake ✅, atlas ✅, JIRA ✅, check-changes ✅. e2e-api ⏳, pre-commit ⏳, tox ⏳, integration ⏳ PENDING. Off-board PR. Watch for e2e result.",
   },
   {
     level: "yellow",
-    message: "⚠️ PATTERN: Both #1648 (new push) and #1654 (new run) show e2e failures this cycle. Could be flaky CI or independent regressions. Cross-check e2e failures across PRs.",
+    message: "⚠️ PATTERN: #1648 (e2e-api ❌), #1654 (e2e-smoke ❌), #1638 (e2e pending) — cross-PR e2e failures persist. Possible shared infra issue or independent regressions. Monitor #1638 new run.",
   },
   {
     level: "yellow",
@@ -726,7 +742,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "❌ Jira mismatches (5, persist): JN-5445 'In Progress' (PR #1647 merged), JN-5717 'Backlog' (PR #1631 merged), JN-5546 'In Progress' (PR #1588 merged) — all need Done. JN-5827 'Backlog' (PR #1648 OPEN), JN-5401 'Backlog' (PR #1654 OPEN) — both need In Review.",
+    message: "❌ Jira mismatches (6): JN-5445 'In Progress' (#1647 merged), JN-5717 'Backlog' (#1631 merged), JN-5546 'In Progress' (#1588 merged) — need Done. JN-5827 'Backlog' (#1648 OPEN), JN-5401 'Backlog' (#1654 OPEN), JN-5867 'Backlog' (#1655 OPEN) — need In Review.",
   },
   {
     level: "yellow",

@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-09 16:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-09 16:30 IDT (advance heartbeat)*
 
 ---
 
@@ -56,26 +56,26 @@ Active sprint tickets assigned to Joseph with no board worktree:
 | [JN-5445](https://redhat.atlassian.net/browse/JN-5445) | [#1647](https://github.com/Jounce-IO/jounce/pull/1647) | MERGED 15:03 IDT Jul 8 | **In Progress** | ❌ Update Jira → Done |
 | [JN-5717](https://redhat.atlassian.net/browse/JN-5717) | [#1631](https://github.com/Jounce-IO/jounce/pull/1631) | MERGED Jul 6 | **Backlog** | ❌ Update Jira → Done |
 | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | MERGED Jul 7 | **In Progress** | ❌ Update Jira → Done |
-| [JN-5827](https://redhat.atlassian.net/browse/JN-5827) | [#1648](https://github.com/Jounce-IO/jounce/pull/1648) | OPEN — NEW run with regressions | **Backlog** | ⚠️ Should be → In Review |
-| [JN-5401](https://redhat.atlassian.net/browse/JN-5401) | [#1654](https://github.com/Jounce-IO/jounce/pull/1654) | OPEN — e2e failures in latest run | **Backlog** | ⚠️ Should be → In Review |
+| [JN-5827](https://redhat.atlassian.net/browse/JN-5827) | [#1648](https://github.com/Jounce-IO/jounce/pull/1648) | OPEN — run 29018558666 COMPLETE (e2e-api ❌) | **Backlog** | ⚠️ Should be → In Review |
+| [JN-5401](https://redhat.atlassian.net/browse/JN-5401) | [#1654](https://github.com/Jounce-IO/jounce/pull/1654) | OPEN — run 29018371235 COMPLETE (e2e-smoke ❌) | **Backlog** | ⚠️ Should be → In Review |
+| [JN-5867](https://redhat.atlassian.net/browse/JN-5867) | [#1655](https://github.com/Jounce-IO/jounce/pull/1655) | OPEN — run 29016539122 (pre-commit ❌) | **Backlog** | ⚠️ NEW mismatch — should be → In Review |
 
-*5 mismatches persist. acli/Jira MCP unavailable this run. Last confirmed acli 15:00 IDT Jul 9.*
+*6 mismatches persist (JN-5867 newly added). Jira MCP 401 — acli used. Last confirmed acli 16:30 IDT Jul 9.*
 
 ---
 
-## Key Changes Since Last Run (16:00 IDT Jul 9 — delta from 15:30 IDT)
+## Key Changes Since Last Run (16:30 IDT Jul 9 — delta from 16:00 IDT)
 
 | What observed | Status |
 |---|---|
-| **🔴 #1648 NEW PUSH ~15:33 IDT — e2e-api REGRESSION** | Commit "chore: Restructure based on folder structure" (12:33 UTC). New CI run 29018558666: e2e-api ❌ FAIL (was ✅ before!). e2e-tests ❌, pre-commit-run ❌. tox ✅, integration ✅. pre-commit ⏳ PENDING. |
-| **🔴 #1654 NEW run — e2e-smoke ❌ + e2e-tests ❌ NEW FAILURES** | Run 29018371235: e2e-smoke ❌, e2e-tests ❌ already failed early. pre-commit ⏳ still PENDING. The "fix" for pre-commit appears to have introduced e2e regressions, or e2e is flaky. |
-| **🔴 #1655 run 29016539122 — pre-commit ❌ UNCHANGED** | No new push. Status unchanged from 15:30 IDT. |
+| **🔴 #1654 run 29018371235 NOW COMPLETE** | Confirmed: pre-commit ❌ + e2e-smoke ❌ + e2e-tests ❌ + JIRA Association ❌ + check-changes ❌. e2e-api ✅, integration ✅, tox ✅, nox ✅. Was pending pre-commit at 16:00 IDT. |
+| **🔴 #1638 NEW run 29021658801 STARTED** | bake ✅, atlas ✅, JIRA ✅, check-changes ✅. e2e-api ⏳, pre-commit ⏳, tox ⏳, integration ⏳ PENDING. |
+| **🔴 #1648 run 29018558666 — e2e-smoke SKIPPING (was ❌)** | e2e-smoke now SKIPPING (check-changes determined no smoke-relevant path changes). e2e-api ❌, e2e-tests ❌, pre-commit ❌ persist. COMPLETE. |
+| **🔴 #1655 run 29016539122 — pre-commit ❌ UNCHANGED** | No new push. Status unchanged from 16:00 IDT. |
 | **🟢 #1649 UNCHANGED** | CI ALL PASS. Awaiting reviewer LGTM. |
-| **🔴 #1638 UNCHANGED** | e2e-smoke ❌, e2e-tests ❌ confirmed. |
 | **jn-5865 zone mismatch PERSISTS** | Still Ingest. Plan done Jul 8. |
 | **jn-5871 zone mismatch PERSISTS** | Still Code. Code done 00:58 IDT Jul 9. |
-| **5 Jira mismatches PERSIST** | Unchanged. |
-| **⚠️ PATTERN**: Both #1648 and #1654 new runs show e2e failures | Could be flaky CI environment or independent regressions from recent commits. |
+| **6 Jira mismatches** | NEW: JN-5867 Backlog with PR #1655 OPEN. Previous 5 unchanged. |
 
 ---
 
@@ -93,14 +93,13 @@ PR [#1648](https://github.com/Jounce-IO/jounce/pull/1648): "feat(release): imple
 
 ---
 
-### 🔴 #1654 (jn-5401) — e2e-smoke + e2e-tests FAIL in new run
+### 🔴 #1654 (jn-5401) — e2e-smoke + e2e-tests + pre-commit ALL FAIL (run complete)
 
 PR [#1654](https://github.com/Jounce-IO/jounce/pull/1654): "feat(jbenchmark): add subcommands to runner"
-- **Run 29018371235** (latest): e2e-smoke ❌ FAIL, e2e-tests ❌ FAIL (failed early)
-- pre-commit-run ⏳ PENDING, tox ⏳ PENDING, integration ⏳ PENDING
-- atlas ✅, e2e-api ✅, CodeRabbit ✅
-- **The fix pushed for pre-commit may have introduced e2e regressions** (or CI is flaky)
-- **Action:** Wait for pre-commit result to complete. If pre-commit ✅ but e2e ❌ → investigate e2e failures specifically.
+- **Run 29018371235 COMPLETE**: e2e-smoke ❌ FAIL, e2e-tests ❌ FAIL, pre-commit ❌ FAIL, pre-commit-run ❌ FAIL
+- JIRA Association ❌, check-changes ❌ (JIRA key not linked in PR title?)
+- e2e-api ✅, integration ✅, tox ✅, nox ✅, atlas ✅, CodeRabbit ✅
+- **Action:** Needs targeted fix: pre-commit AND e2e-smoke/tests. Investigate JIRA Association failure (check PR title for JN- key).
 
 ---
 
@@ -181,16 +180,17 @@ Worktree `jn-5824-benchmark-run-configs` (Code zone):
 
 ---
 
-### ❌ Jira Mismatches (5 active)
+### ❌ Jira Mismatches (6 active)
 
 **Merged PRs not reflected in Jira (3):**
 - [JN-5445](https://redhat.atlassian.net/browse/JN-5445): PR [#1647](https://github.com/Jounce-IO/jounce/pull/1647) MERGED → Jira **"In Progress"** (should be Done)
 - [JN-5717](https://redhat.atlassian.net/browse/JN-5717): PR [#1631](https://github.com/Jounce-IO/jounce/pull/1631) MERGED → Jira **"Backlog"** (should be Done)
 - [JN-5546](https://redhat.atlassian.net/browse/JN-5546): PR [#1588](https://github.com/Jounce-IO/jounce/pull/1588) MERGED → Jira **"In Progress"** (should be Done)
 
-**Active PRs not reflected in Jira (2):**
+**Active PRs not reflected in Jira (3):**
 - [JN-5827](https://redhat.atlassian.net/browse/JN-5827): PR [#1648](https://github.com/Jounce-IO/jounce/pull/1648) OPEN → Jira **"Backlog"** (should be In Review)
 - [JN-5401](https://redhat.atlassian.net/browse/JN-5401): PR [#1654](https://github.com/Jounce-IO/jounce/pull/1654) OPEN → Jira **"Backlog"** (should be In Review)
+- [JN-5867](https://redhat.atlassian.net/browse/JN-5867): PR [#1655](https://github.com/Jounce-IO/jounce/pull/1655) OPEN → Jira **"Backlog"** (should be In Review) 🆕
 
 ---
 
