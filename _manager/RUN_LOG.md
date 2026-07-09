@@ -4,6 +4,15 @@
 
 ---
 
+## 17:30 IDT — Weekday Daytime Heartbeat (Jul 9)
+- PRs checked: #1638 (OPEN, NEW run 29024482822 — near-full recovery: pre-commit ✅, tox ✅, bake ✅, e2e-api ✅, integration ✅; e2e-smoke ⏳ PENDING), #1648 (OPEN, NEW run 29022206171 — e2e REGRESSION RESOLVED: e2e-api ✅, e2e-smoke ✅, e2e-tests ✅; only pre-commit ❌ remains), #1649 (OPEN, ALL PASS REVIEW_REQUIRED unchanged), #1654 (OPEN, NEW run 29022595830 — e2e-smoke ✅ e2e-tests ✅ FIXED; BUT tox ❌ nox ❌ NEW; pre-commit ❌ persists), #1655 (OPEN, run 29016539122 UNCHANGED — pre-commit ❌ still), #1656 (DRAFT, CONFLICTING unchanged), #1657 (DRAFT, CONFLICTING unchanged), #1658 NEW DRAFT PASS (jn-5842), #1659 NEW DRAFT CONFLICTING (jn-5868)
+- Merges detected: none (0 auto-archives)
+- CI changes: **#1648 e2e REGRESSION RESOLVED** (e2e-api ✅, e2e-smoke ✅, e2e-tests ✅). **#1654 e2e FIXED** but tox/nox now ❌ (new regressions). **#1638 major recovery** — most now ✅, e2e-smoke ⏳.
+- New PRs: jn-5842 created PR #1658 DRAFT (CI PASS, docs-only); jn-5868 created PR #1659 DRAFT (CONFLICTING)
+- Zone advances: jn-5842 Code→Publish; jn-5868 Code→Publish
+- Flags: 6 Jira mismatches persist; 2 zone mismatches persist (jn-5865 Ingest, jn-5871 Code)
+- Next: watch #1638 e2e-smoke; fix pre-commit on #1648 (near-merge!); fix tox/nox on #1654; fix pre-commit on #1655; undraft #1658; rebase #1659
+
 ## 16:00 IDT — Weekday Daytime Heartbeat (Jul 9)
 - PRs checked: #1638 (OPEN, run 29015905820 COMPLETE — e2e-smoke ❌ UNCHANGED), #1648 (OPEN, **NEW PUSH ~15:33 IDT** — "chore: Restructure based on folder structure"; **NEW run 29018558666: e2e-api ❌ REGRESSION**, e2e-tests ❌, pre-commit-run ❌, pre-commit ⏳ PENDING), #1649 (OPEN, ALL PASS REVIEW_REQUIRED unchanged), #1654 (OPEN, run 29018371235: **e2e-smoke ❌ e2e-tests ❌ NEW FAILURES**, pre-commit ⏳ PENDING), #1655 (OPEN, run 29016539122 COMPLETE — pre-commit ❌ STILL, UNCHANGED), #1656 (DRAFT, CONFLICTING unchanged), #1657 (DRAFT, CONFLICTING unchanged)
 - Merges detected: none (0 auto-archives)
