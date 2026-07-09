@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-09 09:30 IDT";
+export const LAST_UPDATED = "2026-07-09 10:00 IDT";
 
 export const WORKTREES = [
   {
@@ -102,11 +102,11 @@ export const WORKTREES = [
     zone: "Code",
     pr: null,
     prUrl: null,
-    status: "🟢 Code done — SHA 4a0443b75 CLEAN. 7 commits ahead of main (last commit 23:20 IDT Jul 8: arg parsing + handlers + refactor + docs + tests). Pre-commit ✅. Action: Push + open PR.",
+    status: "🟢 Code done — SHA 9012c354c CLEAN. 8 commits ahead of main (docs commit added since 09:30 IDT Jul 9). Pre-commit ✅. Action: Push + open PR.",
     blockedOn: "Awaiting push+PR",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f4295ccc975139ebd2be4/",
-    sessionLabel: "code done (7 commits ahead, push+PR needed)",
+    sessionLabel: "code done (8 commits ahead, push+PR needed)",
     recentSessions: [
       {
         sessionId: "019f4295ccc975139ebd2be4",
@@ -141,27 +141,27 @@ export const WORKTREES = [
     title: "Cluster selection CLI + config loading (JN-5870)",
     branch: "jn-5870",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5870",
-    zone: "Verify",
-    pr: null,
-    prUrl: null,
-    status: "🔄 NEW commit at 09:17 IDT Jul 9 — SHA f29ad1a70 (was 6a9f3830). Fix: 'raise error when registry present but no cluster selection'. 5 commits ahead. Session was active — validate may be running. Monitor next heartbeat.",
-    blockedOn: "Validate session in progress — monitoring",
-    blockedType: "active",
+    zone: "Publish",
+    pr: "#1656 DRAFT",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1656",
+    status: "🆕 MOVED to Publish. PR #1656 DRAFT CONFLICTING (no CI — draft). 5 commits ahead. SHA f29ad1a70. Needs rebase onto main + undraft.",
+    blockedOn: "DRAFT CONFLICTING — needs rebase + undraft",
+    blockedType: "blocked",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f439a103572a0bccea12a/",
-    sessionLabel: "validate (new commit at 09:17 IDT — active)",
+    sessionLabel: "publish (PR #1656 created DRAFT — CONFLICTING)",
     recentSessions: [
       {
         sessionId: "019f439a103572a0bccea12a",
         url: "http://127.0.0.1:3030/ui/s/019f439a103572a0bccea12a/",
-        title: "Validate JN-5870 — new fix commit at 09:17 IDT (f29ad1a70)",
-        status: "running",
-        timestamp: "2026-07-09 09:17 IDT",
+        title: "Publish JN-5870 — PR #1656 created DRAFT (CONFLICTING)",
+        status: "idle",
+        timestamp: "2026-07-09 09:45 IDT",
         outputFile: null,
       },
       {
         sessionId: "019f43813deb79509428af41",
         url: "http://127.0.0.1:3030/ui/s/019f43813deb79509428af41/",
-        title: "Code JN-5870 — cluster selection CLI (dirty — led to retry)",
+        title: "Code JN-5870 — cluster selection CLI",
         status: "idle",
         timestamp: "2026-07-08 23:52 IDT",
         outputFile: null,
@@ -183,7 +183,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-09 09:17 IDT",
+    lastActive: "2026-07-09 09:45 IDT",
   },
   {
     ticket: "JN-5867",
@@ -191,21 +191,21 @@ export const WORKTREES = [
     title: "Platform enum + ClusterConfig refactor (JN-5867)",
     branch: "jn-5867",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5867",
-    zone: "Verify",
-    pr: null,
-    prUrl: null,
-    status: "🆕 NEW — Code session DONE (IDLE rp:TRUE). SHA c0ef0a98 (committed). In Verify zone — ready for /implement:validate trigger.",
-    blockedOn: "Awaiting validate trigger",
-    blockedType: "active",
+    zone: "Publish",
+    pr: "#1655",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1655",
+    status: "🆕 MOVED to Publish. PR #1655 OPEN MERGEABLE — but ❌ pre-commit CI FAILING (run 28998302625: pre-commit-run ❌, all-checks ❌). Needs pre-commit fix + push.",
+    blockedOn: "pre-commit CI failing — needs fix session",
+    blockedType: "blocked",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f435774e971fc89cd2ee5/",
-    sessionLabel: "code (completed, ready_for_prompt:TRUE)",
+    sessionLabel: "publish (PR #1655 created — pre-commit ❌)",
     recentSessions: [
       {
         sessionId: "019f435774e971fc89cd2ee5",
         url: "http://127.0.0.1:3030/ui/s/019f435774e971fc89cd2ee5/",
-        title: "Code JN-5867 — Platform enum + ClusterConfig (done, SHA c0ef0a98)",
+        title: "Publish JN-5867 — PR #1655 created (pre-commit ❌)",
         status: "idle",
-        timestamp: "2026-07-08 23:32 IDT",
+        timestamp: "2026-07-09 09:45 IDT",
         outputFile: null,
       },
       {
@@ -225,7 +225,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-08 23:32 IDT",
+    lastActive: "2026-07-09 09:45 IDT",
   },
   {
     ticket: "JN-5869",
@@ -233,21 +233,21 @@ export const WORKTREES = [
     title: "IBM connect_to_cluster (JN-5869)",
     branch: "jn-5869",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5869",
-    zone: "Verify",
-    pr: null,
-    prUrl: null,
-    status: "🆕 NEW — Code session IDLE rp:TRUE. ⚠️ SHA DIRTY (f4ac355a-dirty — uncommitted changes). In Verify zone — needs commit before /implement:validate.",
-    blockedOn: "Dirty SHA — needs commit",
+    zone: "Publish",
+    pr: "#1657 DRAFT",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1657",
+    status: "🆕 MOVED to Publish. PR #1657 DRAFT CONFLICTING (no CI — draft). ⚠️ Worktree STILL DIRTY (lcov.info, 13h+). Needs: commit dirty file, rebase, undraft PR.",
+    blockedOn: "DRAFT CONFLICTING + dirty worktree — needs commit + rebase + undraft",
     blockedType: "blocked",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f436fd37d76d8a118ddc5/",
-    sessionLabel: "code (IDLE, dirty SHA — needs commit)",
+    sessionLabel: "publish (PR #1657 created DRAFT — CONFLICTING + dirty)",
     recentSessions: [
       {
         sessionId: "019f436fd37d76d8a118ddc5",
         url: "http://127.0.0.1:3030/ui/s/019f436fd37d76d8a118ddc5/",
-        title: "Code JN-5869 — IBM connect_to_cluster (IDLE, dirty SHA)",
+        title: "Publish JN-5869 — PR #1657 created DRAFT (CONFLICTING, dirty)",
         status: "idle",
-        timestamp: "2026-07-08 23:51 IDT",
+        timestamp: "2026-07-09 09:45 IDT",
         outputFile: null,
       },
       {
@@ -267,7 +267,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-08 23:51 IDT",
+    lastActive: "2026-07-09 09:45 IDT",
   },
   {
     ticket: "JN-5865",
@@ -636,24 +636,24 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "yellow",
-    message: "📋 5 Jul 8 worktrees — jn-5870 (Verify, ACTIVE — new fix commit at 09:17 IDT), jn-5867 (Verify ✅ CLEAN, awaiting validate), jn-5869 (Verify ⚠️ dirty SHA lcov.info 12h+, needs commit+validate), jn-5865 (Ingest ⚠️ plan done — needs Code zone move), jn-5871 (Code ⚠️ code done — needs Verify move + validate).",
+    level: "red",
+    message: "🔴 PR #1655 (jn-5867 JN-5867): OPEN MERGEABLE but pre-commit CI ❌ (run 28998302625). Needs pre-commit fix session + push.",
   },
   {
     level: "red",
-    message: "⚠️ jn-5869 (JN-5869): Code session IDLE with DIRTY SHA (f4ac355a-dirty). Uncommitted changes — must commit before triggering /implement:validate.",
+    message: "🔴 PR #1657 (jn-5869 JN-5869): DRAFT CONFLICTING. Worktree still dirty (lcov.info 13h+). Needs commit + rebase + undraft.",
+  },
+  {
+    level: "red",
+    message: "🔴 PR #1656 (jn-5870 JN-5870): DRAFT CONFLICTING. 5 commits ahead. Needs rebase onto main + undraft.",
   },
   {
     level: "yellow",
-    message: "📍 jn-5865 (JN-5865) + jn-5871 (JN-5871): Both in Ingest zone despite Plan sessions completed. Zone mismatch — propose moving to Code zone + triggering /implement:code.",
+    message: "🟡 PR #1638 (JN-5725): New CI run 28999848314 — tox ✅ nox ✅ RECOVERED. e2e-smoke PENDING. Awaiting result.",
   },
   {
     level: "red",
     message: "🔴 PR #1648 (jn-5827 JN-5827): CONFLICTING since 18:00 IDT Jul 8. Needs rebase onto latest main before merge.",
-  },
-  {
-    level: "red",
-    message: "🔴 PR #1638 (JN-5725): NEW CI run 28993369633 — REGRESSION vs prev run: e2e-smoke ❌, tox-run ❌ (NEW), nox ❌ (NEW), all-checks ❌. e2e-api ✅. Previously tox/nox were passing — now failing. Needs root cause investigation urgently.",
   },
   {
     level: "green",
@@ -661,7 +661,15 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "✅ jn-5401-runner-subcommands (JN-5401): Code COMPLETE — SHA 4a0443b75 (clean). 7 commits ahead of main (arg parsing + handlers + refactor + docs + tests, completed 23:20 IDT Jul 8). Action: Push + open PR.",
+    message: "✅ jn-5401-runner-subcommands (JN-5401): Code COMPLETE — SHA 9012c354c (clean). 8 commits ahead (docs commit added since 09:30 IDT Jul 9). Action: Push + open PR.",
+  },
+  {
+    level: "yellow",
+    message: "📍 jn-5865 (JN-5865): Still Ingest zone — plan done Jul 8. Zone mismatch persists. Propose move to Code + trigger /implement:code.",
+  },
+  {
+    level: "yellow",
+    message: "📍 jn-5871 (JN-5871): Still Code zone — 4 commits ahead, code done since 00:58 IDT Jul 9. Zone mismatch. Propose move to Verify + trigger /implement:validate.",
   },
   {
     level: "yellow",
@@ -673,7 +681,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): CONFLICTING (7+ days). e2e ❌ + all-checks ❌. Jira Done. Needs rebase + e2e fix or close PR.",
+    message: "🔴 PR #1606 (JN-5725, off-board): CONFLICTING (7+ days). Needs rebase + e2e fix or close PR.",
   },
   {
     level: "red",

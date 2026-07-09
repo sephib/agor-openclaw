@@ -685,3 +685,12 @@
 - Flags: jn-5869 dirty SHA needs commit before validate; jn-5865+jn-5871 in Ingest zone despite Plan done (zone mismatch); jn-5401 still awaiting push+PR; 5 Jira mismatches persist
 - Auto-advances: 0
 - Next: Review jn-5870 code session output when done; trigger validate for jn-5867; commit dirty SHA for jn-5869 before validate; move jn-5865/jn-5871 to Code zone; push PR for jn-5401; get LGTM on #1649; rebase #1648; investigate #1638 e2e-smoke; update 5 Jira tickets
+
+## 10:00 IDT — Weekday Daytime Heartbeat
+- PRs checked: #1649 (ALL PASS, REVIEW_REQUIRED), #1648 (CONFLICTING), #1655 NEW (pre-commit ❌), #1656 NEW (DRAFT CONFLICTING), #1657 NEW (DRAFT CONFLICTING), #1638 (run 28999848314: tox ✅ nox ✅ e2e-smoke PENDING), #1606 (CONFLICTING), #1596 (DRAFT CONFLICTING)
+- Merges detected: none
+- CI changes: #1638 regression resolving — new run 28999848314 has tox+nox ✅ (was ❌ last run); e2e-smoke PENDING. #1655 pre-commit CI failing (new PR)
+- New PRs: #1655 (jn-5867 OPEN MERGEABLE pre-commit ❌), #1656 (jn-5870 DRAFT CONFLICTING), #1657 (jn-5869 DRAFT CONFLICTING) — all published between 09:30–10:00 IDT
+- Zone changes: jn-5867 Verify→Publish, jn-5869 Verify→Publish, jn-5870 Verify→Publish (all moved by publish sessions)
+- Flags: jn-5867 pre-commit failing; jn-5869 dirty+conflicting; jn-5870 draft+conflicting; jn-5865 zone mismatch (Ingest); jn-5871 zone mismatch (Code done); jn-5401 8 commits no PR; 5 Jira mismatches persist
+- Next: monitor #1638 e2e-smoke; fix jn-5867 pre-commit; rebase jn-5870+jn-5869; trigger jn-5871 validate; move jn-5865 to Code

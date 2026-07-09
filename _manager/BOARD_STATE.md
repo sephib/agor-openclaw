@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-09 09:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-09 10:00 IDT (advance heartbeat)*
 
 ---
 
@@ -11,15 +11,15 @@
 | jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | CONFLICTING | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) | 🔴 DRAFT CONFLICTING; frozen |
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — Backlog | Design session done Jun 30. Ready for Plan phase. |
 | jn-5842-jbenchmark-agents-md | Ingest | — | — | [JN-5842](https://redhat.atlassian.net/browse/JN-5842) — Backlog | Ingest session [019f4126-8305](http://127.0.0.1:3030/ui/s/019f412683057d20b481a4b9/) IDLE ready_for_prompt:TRUE. Joseph to review → trigger /implement:plan. |
-| jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) | Plan done ~23:06 IDT Jul 8 ([019f4351-d110](http://127.0.0.1:3030/ui/s/019f4351d110788ba7254ee1/)). Still in Ingest zone — **zone mismatch persists**. Propose: move to Code zone + trigger /implement:code. |
-| jn-5871 | **Code** | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) | Code session [019f43a6-79b5](http://127.0.0.1:3030/ui/s/019f43a679b57ca5918a79ca/) DONE at ~00:58 IDT Jul 9. SHA fc6e5f77 (CLEAN). **Zone mismatch — in Code but code is done. Propose: move to Verify + trigger /implement:validate.** |
-| jn-5401-runner-subcommands | **Code** | — | — | [JN-5401](https://redhat.atlassian.net/browse/JN-5401) — Backlog | 🟢 Session [019f4295-ccc9](http://127.0.0.1:3030/ui/s/019f4295ccc975139ebd2be4/) IDLE. SHA 4a0443b75 (clean). **7 commits ahead of main** (last commit 23:20 IDT Jul 8: arg parsing + handlers + refactor + docs + tests). Pre-commit ✅. **Action: Push + open PR.** |
-| jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — Backlog | 🔄 "continuew" session [019f4290-43d4](http://127.0.0.1:3030/ui/s/019f429043d4745c9c0f66fc/) IDLE ready_for_prompt:FALSE. SHA 16ec44ea (2 commits: ibm_models.json + README). Needs: generate 24 configs, rebase main, create PR. Fork a new session to continue. |
-| jn-5870 | **Verify** | — | — | [JN-5870](https://redhat.atlassian.net/browse/JN-5870) | 🆕 **NEW commit at 09:17 IDT** — SHA changed to f29ad1a70 (was 6a9f3830). New commit: "fix(jbenchmark): raise error when registry present but no cluster selection". 5 commits ahead of main. A session ran (or is running) between 09:00–09:30 IDT. Zone Verify. |
-| jn-5867 | **Verify** | — | — | [JN-5867](https://redhat.atlassian.net/browse/JN-5867) | Code session [019f4357-74e9](http://127.0.0.1:3030/ui/s/019f435774e971fc89cd2ee5/) IDLE rp:TRUE. SHA c0ef0a98 (CLEAN). In Verify zone — ready for /implement:validate trigger. |
-| jn-5869 | **Verify** | — | — | [JN-5869](https://redhat.atlassian.net/browse/JN-5869) | Code session [019f436f-d37d](http://127.0.0.1:3030/ui/s/019f436fd37d76d8a118ddc5/) IDLE rp:TRUE. **SHA STILL dirty** (f4ac355a-dirty — lcov.info modified, 9h+ idle). ⚠️ Needs commit before validate. |
+| jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) | Plan done ~23:06 IDT Jul 8. Still Ingest zone — **zone mismatch persists**. Propose: move to Code + trigger /implement:code. |
+| jn-5871 | **Code** | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) | Code session done ~00:58 IDT Jul 9. SHA fc6e5f77 (CLEAN). **4 commits ahead. Zone mismatch — done in Code, should move to Verify**. |
+| jn-5401-runner-subcommands | **Code** | — | — | [JN-5401](https://redhat.atlassian.net/browse/JN-5401) — Backlog | SHA 9012c354c (CLEAN). **8 commits ahead of main** (docs commit added since 09:30). Pre-commit ✅. **Action: Push + open PR.** |
+| jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — Backlog | "continuew" session [019f4290-43d4](http://127.0.0.1:3030/ui/s/019f429043d4745c9c0f66fc/) IDLE ready_for_prompt:FALSE. SHA 16ec44ea (2 commits). Needs: generate 24 configs, rebase main, create PR. |
+| jn-5870 | **Publish** | [#1656 DRAFT](https://github.com/Jounce-IO/jounce/pull/1656) | CONFLICTING (no CI yet — draft) | [JN-5870](https://redhat.atlassian.net/browse/JN-5870) | 🆕 Moved to Publish. PR #1656 DRAFT CONFLICTING. 5 commits ahead. Needs rebase + undraft. |
+| jn-5867 | **Publish** | [#1655](https://github.com/Jounce-IO/jounce/pull/1655) | ❌ pre-commit FAIL (run 28998302625) | [JN-5867](https://redhat.atlassian.net/browse/JN-5867) | 🆕 Moved to Publish. PR OPEN MERGEABLE but **pre-commit ❌**. Needs fix + push. |
+| jn-5869 | **Publish** | [#1657 DRAFT](https://github.com/Jounce-IO/jounce/pull/1657) | CONFLICTING (no CI yet — draft) | [JN-5869](https://redhat.atlassian.net/browse/JN-5869) | 🆕 Moved to Publish. PR #1657 DRAFT CONFLICTING. **Still dirty (lcov.info)**. Needs commit + rebase + undraft. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 14+ days with no session or PR. |
-| jn-5841-agents-md-root | **Publish** | [#1649](https://github.com/Jounce-IO/jounce/pull/1649) | 🟢 **run 28932482752: ALL PASS** | [JN-5841](https://redhat.atlassian.net/browse/JN-5841) — **In Review** ✅ | 🟢 **READY FOR REVIEW.** CI run 28932482752: all checks ✅. reviewDecision: REVIEW_REQUIRED. **Action: Get reviewer LGTM to merge.** |
+| jn-5841-agents-md-root | **Publish** | [#1649](https://github.com/Jounce-IO/jounce/pull/1649) | 🟢 **run 28932482752: ALL PASS** | [JN-5841](https://redhat.atlassian.net/browse/JN-5841) — **In Review** ✅ | 🟢 **READY FOR REVIEW.** CI ALL PASS. reviewDecision: REVIEW_REQUIRED. **Action: Get reviewer LGTM to merge.** |
 | jn-5827-git-tagging-workflow | **Publish** | [#1648](https://github.com/Jounce-IO/jounce/pull/1648) | 🟡 CI stale (was ALL PASS run 28922899326) | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) — Backlog | 🔴 **PR #1648 CONFLICTING** (since 18:00 IDT Jul 8). Needs rebase before merge. |
 
 ---
@@ -29,7 +29,7 @@
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
 | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ CONFLICTING | 🔴 CONFLICTING | 🔴 CONFLICTING 7+ days. Needs rebase + fix e2e or close PR. |
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | ❌ **run 28972013790: e2e-smoke ❌** (e2e-api ✅, all-checks ❌) | MERGEABLE | 🔴 **Persistent e2e failure** — run 28972013790: e2e-smoke ❌, e2e-api ✅. Same pattern. No new run overnight. Root cause unchanged — needs investigation. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | 🟡 **run 28999848314: e2e-smoke PENDING** (tox ✅, nox ✅) | MERGEABLE | 🟡 **Regression resolving** — new run 28999848314: tox ✅ nox ✅, e2e-smoke PENDING. Previous run (28993369633) had tox+nox failing. Awaiting e2e-smoke result. |
 
 ---
 
@@ -58,52 +58,71 @@ Active sprint tickets assigned to Joseph with no board worktree:
 | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | MERGED Jul 7 | **In Progress** | ❌ Update Jira → Done |
 | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) | [#1648](https://github.com/Jounce-IO/jounce/pull/1648) | OPEN — CONFLICTING | **Backlog** | ⚠️ Should be → In Review (after conflict resolved) |
 
-*Note: Jira MCP 401 (ongoing). Status last confirmed via acli 21:00 IDT Jul 8. No change expected overnight.*
+*Note: Jira MCP 401 (ongoing). Status last confirmed via acli 21:00 IDT Jul 8. No change expected.*
 
 ---
 
-## Key Changes Since Last Run (09:00 IDT Jul 9)
+## Key Changes Since Last Run (09:30 IDT Jul 9)
 
 | What observed | Status |
 |---|---|
-| **jn-5870 NEW COMMIT** | SHA changed from 6a9f3830 → **f29ad1a70** at 09:17 IDT. New commit: "fix(jbenchmark): raise error when registry present but no cluster selection". Session was active between 09:00–09:30 IDT. |
-| **#1649 unchanged** | CI run 28932482752 ALL PASS. REVIEW_REQUIRED unchanged. |
-| **#1648 unchanged** | Still CONFLICTING. No new CI run. |
-| **#1638 unchanged** | No new CI run. Still run 28993369633: e2e-smoke ❌, tox ❌, nox ❌. e2e-api ✅. |
-| **jn-5401 corrected** | SHA 4a0443b75 CLEAN unchanged. **7 commits ahead** (was misreported as 3 — origin/main updated after #1632 merge). All code done since 23:20 IDT Jul 8. Push+PR still needed. |
-| **jn-5871 still Code zone** | SHA fc6e5f77 CLEAN. Zone mismatch persists. |
-| **jn-5869 still dirty** | f4ac355a-dirty (lcov.info). 12h+ stale. |
-| **jn-5867 in Verify** | SHA c0ef0a98 CLEAN. rp:TRUE. Ready for validate. |
-| **jn-5865 still Ingest** | SHA 2b72a738 CLEAN, 0 ahead. Zone mismatch persists. |
-| **5 Jira mismatches persist** | Confirmed via acli. No human action. |
+| **jn-5867 → Publish, PR #1655** | OPEN MERGEABLE — but **pre-commit ❌** CI failing. |
+| **jn-5869 → Publish, PR #1657** | DRAFT CONFLICTING — still dirty (lcov.info). |
+| **jn-5870 → Publish, PR #1656** | DRAFT CONFLICTING — SHA f29ad1a70 (5 commits ahead). Needs rebase. |
+| **#1638 regression resolving** | New CI run 28999848314: tox ✅ nox ✅, e2e-smoke PENDING. |
+| **jn-5401 new commit** | 8 commits ahead (was 7). Docs commit added. SHA 9012c354c. Still no PR. |
+| **jn-5865 zone mismatch persists** | Still Ingest. Plan done Jul 8. No code session triggered. |
+| **jn-5871 zone mismatch persists** | Still Code, 4 commits ahead, done since 00:58 IDT Jul 9. |
+| **#1649 unchanged** | CI ALL PASS. REVIEW_REQUIRED unchanged. |
+| **#1648 unchanged** | Still CONFLICTING. No new CI. |
+| **5 Jira mismatches persist** | No human action. |
 
 ---
 
 ## Attention Items
 
-### 🔄 jn-5870 — NEW COMMIT at 09:17 IDT (Session Active/Recent)
+### 🔴 jn-5867 — PR #1655 pre-commit FAILING
 
-Worktree `jn-5870` (Verify zone):
-- SHA changed from 6a9f3830 → **f29ad1a70** at 09:17 IDT Jul 9.
-- New commit: "fix(jbenchmark): raise error when registry present but no cluster selection" — suggests validate triggered a fix commit.
-- 5 commits ahead of main. Zone Verify.
-- **Action:** Monitor — session may still be running (validate phase). Check again next run.
+PR [#1655](https://github.com/Jounce-IO/jounce/pull/1655): "feat(jbenchmark): add Platform enum and refactor ClusterConfig for IBM support"
+- CI run 28998302625: **pre-commit ❌** — all-checks ❌, pre-commit-run ❌
+- OPEN (not draft), MERGEABLE — conflict-free, just needs pre-commit fixed.
+- **Action:** Start a session in jn-5867 to fix the pre-commit failure, push fix.
 
 ---
 
-### ✅ jn-5871 — Code Done, Wrong Zone (Code, should be Verify)
+### 🔴 jn-5869 — PR #1657 DRAFT CONFLICTING + dirty worktree
 
-Worktree `jn-5871` (Code zone, but code is done):
-- Code session [019f43a6-79b5](http://127.0.0.1:3030/ui/s/019f43a679b57ca5918a79ca/) completed ~00:58 IDT Jul 9.
-- SHA fc6e5f77 (CLEAN). Zone still Code.
+PR [#1657](https://github.com/Jounce-IO/jounce/pull/1657): "feat(jbenchmark): add IBM cluster connection support"
+- DRAFT, CONFLICTING. Worktree still has `lcov.info` modified (dirty since 20:51 IDT Jul 8, 13h+).
+- **Action:** Commit/clean lcov.info, rebase on main, undraft PR.
+
+---
+
+### 🔴 jn-5870 — PR #1656 DRAFT CONFLICTING
+
+PR [#1656](https://github.com/Jounce-IO/jounce/pull/1656): "feat(jbenchmark): add cluster selection CLI and config loading"
+- DRAFT, CONFLICTING. 5 commits ahead. SHA f29ad1a70.
+- Likely conflicts with jn-5867 changes (these PRs are related IBM cluster work).
+- **Action:** Rebase on main (or on jn-5867 branch), undraft PR.
+
+---
+
+### 🟡 #1638 — CI Regression Resolving (e2e-smoke PENDING)
+
+PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): `chore(infra): vLLM analyzer prerequisites`
+- **New CI run 28999848314**:
+  - ✅ tox-run, nox — RECOVERED (were ❌ in last run 28993369633)
+  - 🟡 e2e-smoke — **PENDING** (not yet complete)
+  - ✅ everything else passing
+- **Action:** Monitor e2e-smoke result next run.
+
+---
+
+### ✅ jn-5871 — Code Done, Wrong Zone
+
+Worktree `jn-5871` (Code zone, code done):
+- 4 commits ahead. SHA fc6e5f77 CLEAN.
 - **Action:** Move to Verify zone + trigger /implement:validate.
-
----
-
-### ⚠️ jn-5869 — Dirty SHA in Verify Zone (9h+ stale)
-
-Code session [019f436f-d37d](http://127.0.0.1:3030/ui/s/019f436fd37d76d8a118ddc5/) IDLE with `f4ac355a-dirty` (lcov.info modified). Last updated 20:51 IDT Jul 8 (9h+ ago).
-- **Action:** Resume session and commit before triggering /implement:validate.
 
 ---
 
@@ -115,22 +134,11 @@ Worktree `jn-5865-ibm-cluster-connect` (Ingest zone):
 
 ---
 
-### 🟢 jn-5401 — Ready to Push PR (7 commits ahead)
+### 🟢 jn-5401 — Ready to Push PR (8 commits ahead)
 
 Worktree `jn-5401-runner-subcommands` (Code zone):
-- Session [019f4295-ccc9](http://127.0.0.1:3030/ui/s/019f4295ccc975139ebd2be4/) IDLE.
-- SHA 4a0443b75 (clean). **7 commits ahead of main** (last commit 23:20 IDT Jul 8). Pre-commit ✅.
-- Commits include: arg parsing, subcommand handlers (cmd_generate/plan/execute/run), refactor, docs, tests.
+- SHA 9012c354c (CLEAN). **8 commits ahead** (latest: docs commit added since last run).
 - **Action:** Push + open PR.
-
----
-
-### 🟢 jn-5867 — Ready for Validate
-
-Worktree `jn-5867` (Verify zone):
-- Code session [019f4357-74e9](http://127.0.0.1:3030/ui/s/019f435774e971fc89cd2ee5/) IDLE rp:TRUE.
-- SHA c0ef0a98 (CLEAN).
-- **Action:** Trigger /implement:validate.
 
 ---
 
@@ -139,7 +147,6 @@ Worktree `jn-5867` (Verify zone):
 Worktree `jn-5841-agents-md-root` in **Publish** zone:
 - **PR [#1649](https://github.com/Jounce-IO/jounce/pull/1649)** — OPEN, REVIEW_REQUIRED
 - **CI run 28932482752**: ALL PASS ✅
-- **JN-5841 Jira: In Review** ✅
 - **Action:** Get reviewer LGTM to merge.
 
 ---
@@ -149,17 +156,6 @@ Worktree `jn-5841-agents-md-root` in **Publish** zone:
 PR [#1648](https://github.com/Jounce-IO/jounce/pull/1648): "feat(release): implement git tagging workflow (JN-5827)"
 - **State**: OPEN → **CONFLICTING** (since 18:00 IDT Jul 8)
 - **Action:** Rebase onto latest main, push, re-check CI, then get LGTM.
-
----
-
-### 🔴 #1638 — CI Regression (run 28993369633: e2e-smoke ❌ + tox ❌ + nox ❌)
-
-PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): `chore(infra): vLLM analyzer prerequisites`
-- **CI run 28993369633** (NEW — replaces 28972013790):
-  - ❌ FAIL: all-checks, e2e-smoke, e2e-tests, **tox-run** (NEW), **nox** (NEW)
-  - ✅ PASS: e2e-api, integration-run, pre-commit-run, bake, atlas-validate, check-changes, JIRA Association, CodeRabbit, pre-commit
-- **Regression:** Previous run 28972013790 had tox-run ✅ and nox ✅. Both now failing.
-- **Action:** Root cause investigation — tox/nox failures likely reveal test or dependency issue.
 
 ---
 
@@ -188,7 +184,7 @@ Worktree `jn-5824-benchmark-run-configs` (Code zone):
 - [JN-5546](https://redhat.atlassian.net/browse/JN-5546): PR [#1588](https://github.com/Jounce-IO/jounce/pull/1588) MERGED → Jira **"In Progress"** (should be Done)
 
 **Active PR not reflected in Jira (1):**
-- [JN-5827](https://redhat.atlassian.net/browse/JN-5827): PR [#1648](https://github.com/Jounce-IO/jounce/pull/1648) OPEN, CONFLICTING → Jira **"Backlog"** (should be In Review after conflict resolved)
+- [JN-5827](https://redhat.atlassian.net/browse/JN-5827): PR [#1648](https://github.com/Jounce-IO/jounce/pull/1648) OPEN, CONFLICTING → Jira **"Backlog"**
 
 ---
 
