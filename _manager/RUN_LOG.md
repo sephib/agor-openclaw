@@ -4,6 +4,15 @@
 
 ---
 
+## 11:00 IDT — Weekday Daytime Heartbeat (Jul 9)
+- PRs checked: #1654 (OPEN, MERGEABLE, REVIEW_REQUIRED, CI run 29003329554 PENDING — **NEW**), #1649 (OPEN, ALL PASS, REVIEW_REQUIRED), #1648 (OPEN, CONFLICTING), #1638 (OPEN, run 28999848314 COMPLETE: **e2e-smoke ❌ CONFIRMED**), #1655 (OPEN, pre-commit ❌), #1656 (DRAFT, CONFLICTING), #1657 (DRAFT, CONFLICTING), #1606 (OPEN, CONFLICTING), #1596 (DRAFT, CONFLICTING)
+- Merges detected: none (0 auto-archives)
+- CI changes: **#1638 run 28999848314 COMPLETE** — e2e-smoke ❌ FAILED (was PENDING). tox ✅ nox ✅ recovered but e2e-smoke still blocking. **Regression confirmed.** #1655 pre-commit ❌ unchanged. #1648 still CONFLICTING.
+- Board changes: **🆕 jn-5401 PR #1654 OPENED** — "feat(jbenchmark): add subcommands to runner for stage-level execution" — OPEN MERGEABLE REVIEW_REQUIRED; CI PENDING. Zone mismatch (Code → needs Code Review). All other worktrees static.
+- Jira: 5 mismatches persist — no human action. Last confirmed acli 21:00 IDT Jul 8.
+- Flags: #1654 NEW PR CI pending — monitor next run. #1638 e2e-smoke regression confirmed — needs investigation. #1655 pre-commit ❌ persists. #1657/#1656 DRAFT CONFLICTING. #1649 needs reviewer LGTM. #1648 needs rebase. 5 Jira mismatches. jn-5865/jn-5871 zone mismatches persist.
+- Next: Monitor #1654 CI. Investigate #1638 e2e-smoke. Joseph to action zone moves + pre-commit fix for #1655.
+
 ## 09:00 IDT — Weekday Daytime Heartbeat (Jul 9)
 - PRs checked: #1649 (OPEN, ALL PASS run 28932482752, REVIEW_REQUIRED), #1648 (OPEN, CONFLICTING), #1638 (OPEN, **NEW run 28993369633: e2e-smoke ❌, tox-run ❌, nox ❌** — regression from 28972013790), #1606 (OPEN, CONFLICTING), #1596 (DRAFT, CONFLICTING)
 - Merges detected: none (0 auto-archives)

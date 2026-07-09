@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-09 10:00 IDT";
+export const LAST_UPDATED = "2026-07-09 11:00 IDT";
 
 export const WORKTREES = [
   {
@@ -100,13 +100,13 @@ export const WORKTREES = [
     branch: "jn-5401-runner-subcommands",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5401-runner-subcommands",
     zone: "Code",
-    pr: null,
-    prUrl: null,
-    status: "🟢 Code done — SHA 9012c354c CLEAN. 8 commits ahead of main (docs commit added since 09:30 IDT Jul 9). Pre-commit ✅. Action: Push + open PR.",
-    blockedOn: "Awaiting push+PR",
+    pr: "#1654",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1654",
+    status: "🆕 PR #1654 OPENED — 'feat(jbenchmark): add subcommands to runner for stage-level execution (JN-5401, JN-5244)'. OPEN MERGEABLE REVIEW_REQUIRED. CI run 29003329554 PENDING. Zone mismatch (Code → needs Code Review).",
+    blockedOn: "CI pending — awaiting run 29003329554 result",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f4295ccc975139ebd2be4/",
-    sessionLabel: "code done (8 commits ahead, push+PR needed)",
+    sessionLabel: "code done (PR #1654 opened, CI pending)",
     recentSessions: [
       {
         sessionId: "019f4295ccc975139ebd2be4",
@@ -648,8 +648,8 @@ export const ALERTS = [
     message: "🔴 PR #1656 (jn-5870 JN-5870): DRAFT CONFLICTING. 5 commits ahead. Needs rebase onto main + undraft.",
   },
   {
-    level: "yellow",
-    message: "🟡 PR #1638 (JN-5725): New CI run 28999848314 — tox ✅ nox ✅ RECOVERED. e2e-smoke PENDING. Awaiting result.",
+    level: "red",
+    message: "🔴 PR #1638 (JN-5725): CI run 28999848314 COMPLETE — tox ✅ nox ✅ recovered but e2e-smoke ❌ FAILED (8m55s), e2e-tests ❌, all-checks ❌. Regression confirmed. Needs investigation.",
   },
   {
     level: "red",
@@ -661,7 +661,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "✅ jn-5401-runner-subcommands (JN-5401): Code COMPLETE — SHA 9012c354c (clean). 8 commits ahead (docs commit added since 09:30 IDT Jul 9). Action: Push + open PR.",
+    message: "🆕 jn-5401-runner-subcommands (JN-5401): PR #1654 OPENED — OPEN MERGEABLE REVIEW_REQUIRED. CI run 29003329554 PENDING. Zone mismatch (Code → Code Review). Monitor CI next run.",
   },
   {
     level: "yellow",
