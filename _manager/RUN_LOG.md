@@ -666,6 +666,16 @@
 - Auto-advances: 0
 - Next: Joseph review jn-5401 output; rebase #1648; get LGTM on #1649; fix e2e-smoke on #1638; update 5 Jira tickets
 
+## 09:30 IDT — Weekday Daytime Heartbeat
+- PRs checked: #1649 (OPEN, ALL PASS, REVIEW_REQUIRED), #1648 (OPEN, CONFLICTING), #1638 (OPEN, run 28993369633: e2e-smoke ❌ + tox ❌ + nox ❌ — no new CI run), #1596 (DRAFT, CONFLICTING), #1606 (CONFLICTING)
+- Merges detected: none (sweep clean — assignee + review-requested)
+- CI changes: none since 09:00 IDT run. #1638 CI unchanged (run 28993369633, same failures).
+- Worktree changes: **jn-5870 NEW COMMIT at 09:17 IDT** — SHA f29ad1a70 (was 6a9f3830). Fix commit: "raise error when registry present but no cluster selection". Session was active. jn-5401 corrected: 7 commits ahead (was misreported as 3 due to origin/main fetch).
+- Jira: 5 mismatches persist — confirmed via acli (JN-5719 Backlog, JN-5445 In Progress, JN-5717 Backlog, JN-5546 In Progress, JN-5827 Backlog). Jira MCP still 401.
+- Flags: jn-5870 session active (monitor next run); jn-5869 dirty SHA persists (12h+); jn-5871 zone mismatch; jn-5865 zone mismatch; jn-5401 push+PR still needed; 5 Jira mismatches
+- Auto-advances: 0
+- Next: Monitor jn-5870 (validate session may be running); push PR for jn-5401; move jn-5871 to Verify + trigger validate; commit dirty SHA on jn-5869; trigger validate on jn-5867; get LGTM on #1649; rebase #1648; fix #1638 e2e; update 5 Jira tickets
+
 ## 00:01 IDT — Overnight Heartbeat
 - PRs checked: #1649 (OPEN, ALL PASS, REVIEW_REQUIRED), #1648 (OPEN, CONFLICTING), #1638 (OPEN, NEW run 28972013790 e2e-smoke ❌), #1596 (DRAFT, CONFLICTING)
 - Merges detected: none (sweep clean — assignee + review-requested)

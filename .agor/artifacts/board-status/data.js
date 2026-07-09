@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-09 09:00 IDT";
+export const LAST_UPDATED = "2026-07-09 09:30 IDT";
 
 export const WORKTREES = [
   {
@@ -102,11 +102,11 @@ export const WORKTREES = [
     zone: "Code",
     pr: null,
     prUrl: null,
-    status: "🟢 'contiue' fork session COMPLETE — IDLE, ready_for_prompt:TRUE. Session 019f4295-ccc9. SHA 53e4435e (clean). 3 commits ahead of main: arg parsing + tests + subcommand handlers (cmd_generate, cmd_plan, cmd_execute, cmd_run). Pre-commit ✅. Action: Push + open PR.",
+    status: "🟢 Code done — SHA 4a0443b75 CLEAN. 7 commits ahead of main (last commit 23:20 IDT Jul 8: arg parsing + handlers + refactor + docs + tests). Pre-commit ✅. Action: Push + open PR.",
     blockedOn: "Awaiting push+PR",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f4295ccc975139ebd2be4/",
-    sessionLabel: "contiue (ready_for_prompt:TRUE — 3 commits ahead, push+PR needed)",
+    sessionLabel: "code done (7 commits ahead, push+PR needed)",
     recentSessions: [
       {
         sessionId: "019f4295ccc975139ebd2be4",
@@ -144,18 +144,18 @@ export const WORKTREES = [
     zone: "Verify",
     pr: null,
     prUrl: null,
-    status: "✅ Code done — retry session 019f439a-1035 IDLE rp:TRUE (~00:32 IDT Jul 9). SHA 6a9f3830 (CLEAN). In Verify zone. Action: trigger /implement:validate.",
-    blockedOn: "Awaiting validate trigger",
+    status: "🔄 NEW commit at 09:17 IDT Jul 9 — SHA f29ad1a70 (was 6a9f3830). Fix: 'raise error when registry present but no cluster selection'. 5 commits ahead. Session was active — validate may be running. Monitor next heartbeat.",
+    blockedOn: "Validate session in progress — monitoring",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f439a103572a0bccea12a/",
-    sessionLabel: "code retry (done, ready_for_prompt:TRUE)",
+    sessionLabel: "validate (new commit at 09:17 IDT — active)",
     recentSessions: [
       {
         sessionId: "019f439a103572a0bccea12a",
         url: "http://127.0.0.1:3030/ui/s/019f439a103572a0bccea12a/",
-        title: "Code JN-5870 retry (done, SHA 6a9f3830 CLEAN)",
-        status: "idle",
-        timestamp: "2026-07-09 00:32 IDT",
+        title: "Validate JN-5870 — new fix commit at 09:17 IDT (f29ad1a70)",
+        status: "running",
+        timestamp: "2026-07-09 09:17 IDT",
         outputFile: null,
       },
       {
@@ -183,7 +183,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-09 00:32 IDT",
+    lastActive: "2026-07-09 09:17 IDT",
   },
   {
     ticket: "JN-5867",
@@ -637,7 +637,7 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "yellow",
-    message: "📋 5 worktrees from Jul 8 overnight — 2 code-done in wrong zones: jn-5870 (Verify ✅ CLEAN, awaiting validate), jn-5867 (Verify ✅ CLEAN, awaiting validate), jn-5869 (Verify ⚠️ dirty SHA, needs commit), jn-5865 (Ingest ⚠️ plan done — needs Code), jn-5871 (Code ⚠️ code done — needs Verify).",
+    message: "📋 5 Jul 8 worktrees — jn-5870 (Verify, ACTIVE — new fix commit at 09:17 IDT), jn-5867 (Verify ✅ CLEAN, awaiting validate), jn-5869 (Verify ⚠️ dirty SHA lcov.info 12h+, needs commit+validate), jn-5865 (Ingest ⚠️ plan done — needs Code zone move), jn-5871 (Code ⚠️ code done — needs Verify move + validate).",
   },
   {
     level: "red",
@@ -661,7 +661,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "✅ jn-5401-runner-subcommands (JN-5401): Code COMPLETE — IDLE, ready_for_prompt:TRUE. SHA 53e4435e (clean). 3 commits ahead. Action: Push + open PR.",
+    message: "✅ jn-5401-runner-subcommands (JN-5401): Code COMPLETE — SHA 4a0443b75 (clean). 7 commits ahead of main (arg parsing + handlers + refactor + docs + tests, completed 23:20 IDT Jul 8). Action: Push + open PR.",
   },
   {
     level: "yellow",

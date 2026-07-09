@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-09 09:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-09 09:30 IDT (advance heartbeat)*
 
 ---
 
@@ -13,9 +13,9 @@
 | jn-5842-jbenchmark-agents-md | Ingest | — | — | [JN-5842](https://redhat.atlassian.net/browse/JN-5842) — Backlog | Ingest session [019f4126-8305](http://127.0.0.1:3030/ui/s/019f412683057d20b481a4b9/) IDLE ready_for_prompt:TRUE. Joseph to review → trigger /implement:plan. |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) | Plan done ~23:06 IDT Jul 8 ([019f4351-d110](http://127.0.0.1:3030/ui/s/019f4351d110788ba7254ee1/)). Still in Ingest zone — **zone mismatch persists**. Propose: move to Code zone + trigger /implement:code. |
 | jn-5871 | **Code** | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) | Code session [019f43a6-79b5](http://127.0.0.1:3030/ui/s/019f43a679b57ca5918a79ca/) DONE at ~00:58 IDT Jul 9. SHA fc6e5f77 (CLEAN). **Zone mismatch — in Code but code is done. Propose: move to Verify + trigger /implement:validate.** |
-| jn-5401-runner-subcommands | **Code** | — | — | [JN-5401](https://redhat.atlassian.net/browse/JN-5401) — Backlog | 🟢 "contiue" session [019f4295-ccc9](http://127.0.0.1:3030/ui/s/019f4295ccc975139ebd2be4/) IDLE ready_for_prompt:TRUE. SHA 4a0443b7 (clean). **3 commits ahead of main.** Pre-commit ✅. **Action: Push + open PR.** |
+| jn-5401-runner-subcommands | **Code** | — | — | [JN-5401](https://redhat.atlassian.net/browse/JN-5401) — Backlog | 🟢 Session [019f4295-ccc9](http://127.0.0.1:3030/ui/s/019f4295ccc975139ebd2be4/) IDLE. SHA 4a0443b75 (clean). **7 commits ahead of main** (last commit 23:20 IDT Jul 8: arg parsing + handlers + refactor + docs + tests). Pre-commit ✅. **Action: Push + open PR.** |
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — Backlog | 🔄 "continuew" session [019f4290-43d4](http://127.0.0.1:3030/ui/s/019f429043d4745c9c0f66fc/) IDLE ready_for_prompt:FALSE. SHA 16ec44ea (2 commits: ibm_models.json + README). Needs: generate 24 configs, rebase main, create PR. Fork a new session to continue. |
-| jn-5870 | **Verify** | — | — | [JN-5870](https://redhat.atlassian.net/browse/JN-5870) | ✅ **Code retry DONE** — session [019f439a-1035](http://127.0.0.1:3030/ui/s/019f439a103572a0bccea12a/) IDLE at ~00:32 IDT Jul 9. SHA 6a9f3830 (CLEAN). Zone in Verify. **Ready for /implement:validate.** |
+| jn-5870 | **Verify** | — | — | [JN-5870](https://redhat.atlassian.net/browse/JN-5870) | 🆕 **NEW commit at 09:17 IDT** — SHA changed to f29ad1a70 (was 6a9f3830). New commit: "fix(jbenchmark): raise error when registry present but no cluster selection". 5 commits ahead of main. A session ran (or is running) between 09:00–09:30 IDT. Zone Verify. |
 | jn-5867 | **Verify** | — | — | [JN-5867](https://redhat.atlassian.net/browse/JN-5867) | Code session [019f4357-74e9](http://127.0.0.1:3030/ui/s/019f435774e971fc89cd2ee5/) IDLE rp:TRUE. SHA c0ef0a98 (CLEAN). In Verify zone — ready for /implement:validate trigger. |
 | jn-5869 | **Verify** | — | — | [JN-5869](https://redhat.atlassian.net/browse/JN-5869) | Code session [019f436f-d37d](http://127.0.0.1:3030/ui/s/019f436fd37d76d8a118ddc5/) IDLE rp:TRUE. **SHA STILL dirty** (f4ac355a-dirty — lcov.info modified, 9h+ idle). ⚠️ Needs commit before validate. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 14+ days with no session or PR. |
@@ -62,32 +62,32 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes Since Last Run (02:30 IDT Jul 9)
+## Key Changes Since Last Run (09:00 IDT Jul 9)
 
 | What observed | Status |
 |---|---|
-| **#1638 NEW CI run** | Run 28993369633 — **regression: e2e-smoke ❌, tox-run ❌, nox ❌** (previous run 28972013790 had tox/nox passing). e2e-api ✅ unchanged. |
+| **jn-5870 NEW COMMIT** | SHA changed from 6a9f3830 → **f29ad1a70** at 09:17 IDT. New commit: "fix(jbenchmark): raise error when registry present but no cluster selection". Session was active between 09:00–09:30 IDT. |
 | **#1649 unchanged** | CI run 28932482752 ALL PASS. REVIEW_REQUIRED unchanged. |
 | **#1648 unchanged** | Still CONFLICTING. No new CI run. |
-| **All worktrees static** | No new merges, no zone moves, no new sessions since 02:30 IDT. |
-| **jn-5870 in Verify** | SHA 6a9f3830 CLEAN. Session 019f439a-1035 IDLE rp:TRUE. Ready for /implement:validate. |
-| **jn-5871 still Code zone** | SHA fc6e5f77 CLEAN. Code done 9h+ ago. Zone mismatch persists — needs move to Verify. |
-| **jn-5869 still dirty** | f4ac355a-dirty, 11h+ stale. No new session. Session rp:FALSE. |
-| **jn-5867 in Verify** | SHA c0ef0a98 CLEAN. Session rp:TRUE. Ready for /implement:validate. |
-| **jn-5865 still Ingest** | Plan done ~23:06 IDT Jul 8. No code session triggered. Zone mismatch persists. |
-| **jn-5401 unchanged** | 3 commits ahead. Clean. No push/PR yet. |
-| **5 Jira mismatches persist** | No human action overnight. |
+| **#1638 unchanged** | No new CI run. Still run 28993369633: e2e-smoke ❌, tox ❌, nox ❌. e2e-api ✅. |
+| **jn-5401 corrected** | SHA 4a0443b75 CLEAN unchanged. **7 commits ahead** (was misreported as 3 — origin/main updated after #1632 merge). All code done since 23:20 IDT Jul 8. Push+PR still needed. |
+| **jn-5871 still Code zone** | SHA fc6e5f77 CLEAN. Zone mismatch persists. |
+| **jn-5869 still dirty** | f4ac355a-dirty (lcov.info). 12h+ stale. |
+| **jn-5867 in Verify** | SHA c0ef0a98 CLEAN. rp:TRUE. Ready for validate. |
+| **jn-5865 still Ingest** | SHA 2b72a738 CLEAN, 0 ahead. Zone mismatch persists. |
+| **5 Jira mismatches persist** | Confirmed via acli. No human action. |
 
 ---
 
 ## Attention Items
 
-### ✅ jn-5870 — Code Done, In Verify — Ready for Validate
+### 🔄 jn-5870 — NEW COMMIT at 09:17 IDT (Session Active/Recent)
 
 Worktree `jn-5870` (Verify zone):
-- Code retry session [019f439a-1035](http://127.0.0.1:3030/ui/s/019f439a103572a0bccea12a/) completed ~00:32 IDT Jul 9.
-- SHA 6a9f3830 (CLEAN). Zone is Verify.
-- **Action:** Trigger /implement:validate.
+- SHA changed from 6a9f3830 → **f29ad1a70** at 09:17 IDT Jul 9.
+- New commit: "fix(jbenchmark): raise error when registry present but no cluster selection" — suggests validate triggered a fix commit.
+- 5 commits ahead of main. Zone Verify.
+- **Action:** Monitor — session may still be running (validate phase). Check again next run.
 
 ---
 
@@ -115,11 +115,12 @@ Worktree `jn-5865-ibm-cluster-connect` (Ingest zone):
 
 ---
 
-### 🟢 jn-5401 — Ready to Push PR
+### 🟢 jn-5401 — Ready to Push PR (7 commits ahead)
 
 Worktree `jn-5401-runner-subcommands` (Code zone):
-- "contiue" session [019f4295-ccc9](http://127.0.0.1:3030/ui/s/019f4295ccc975139ebd2be4/) IDLE rp:TRUE.
-- SHA 4a0443b7 (clean). **3 commits ahead of main.** Pre-commit ✅.
+- Session [019f4295-ccc9](http://127.0.0.1:3030/ui/s/019f4295ccc975139ebd2be4/) IDLE.
+- SHA 4a0443b75 (clean). **7 commits ahead of main** (last commit 23:20 IDT Jul 8). Pre-commit ✅.
+- Commits include: arg parsing, subcommand handlers (cmd_generate/plan/execute/run), refactor, docs, tests.
 - **Action:** Push + open PR.
 
 ---
