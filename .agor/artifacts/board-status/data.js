@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-09 00:01 IDT";
+export const LAST_UPDATED = "2026-07-09 09:00 IDT";
 
 export const WORKTREES = [
   {
@@ -141,20 +141,28 @@ export const WORKTREES = [
     title: "Cluster selection CLI + config loading (JN-5870)",
     branch: "jn-5870",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5870",
-    zone: "Code",
+    zone: "Verify",
     pr: null,
     prUrl: null,
-    status: "🆕 NEW — Code session RUNNING since ~23:52 IDT. Ingest + Plan completed earlier. SHA unchanged (code in progress).",
-    blockedOn: null,
+    status: "✅ Code done — retry session 019f439a-1035 IDLE rp:TRUE (~00:32 IDT Jul 9). SHA 6a9f3830 (CLEAN). In Verify zone. Action: trigger /implement:validate.",
+    blockedOn: "Awaiting validate trigger",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f43813deb79509428af41/",
-    sessionLabel: "code (RUNNING)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f439a103572a0bccea12a/",
+    sessionLabel: "code retry (done, ready_for_prompt:TRUE)",
     recentSessions: [
+      {
+        sessionId: "019f439a103572a0bccea12a",
+        url: "http://127.0.0.1:3030/ui/s/019f439a103572a0bccea12a/",
+        title: "Code JN-5870 retry (done, SHA 6a9f3830 CLEAN)",
+        status: "idle",
+        timestamp: "2026-07-09 00:32 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f43813deb79509428af41",
         url: "http://127.0.0.1:3030/ui/s/019f43813deb79509428af41/",
-        title: "Code JN-5870 — cluster selection CLI + config loading (RUNNING)",
-        status: "running",
+        title: "Code JN-5870 — cluster selection CLI (dirty — led to retry)",
+        status: "idle",
         timestamp: "2026-07-08 23:52 IDT",
         outputFile: null,
       },
@@ -175,7 +183,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-08 23:52 IDT",
+    lastActive: "2026-07-09 00:32 IDT",
   },
   {
     ticket: "JN-5867",
@@ -301,15 +309,23 @@ export const WORKTREES = [
     title: "Integrate IBM into runner main (JN-5871)",
     branch: "jn-5871",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5871",
-    zone: "Ingest",
+    zone: "Code",
     pr: null,
     prUrl: null,
-    status: "🆕 NEW — Plan session DONE (IDLE rp:TRUE). Still in Ingest zone — zone mismatch. Propose move to Code zone + trigger /implement:code.",
-    blockedOn: "Zone mismatch — needs move to Code",
+    status: "✅ Code done — session 019f43a6-79b5 IDLE rp:TRUE (~00:58 IDT Jul 9). SHA fc6e5f77 (CLEAN). ⚠️ Zone mismatch — still in Code, should be Verify. Action: move to Verify + trigger /implement:validate.",
+    blockedOn: "Zone mismatch — needs move to Verify",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f4354f5e978e29979452a/",
-    sessionLabel: "plan (done, ready_for_prompt:TRUE)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f43a679b57ca5918a79ca/",
+    sessionLabel: "code (done, ready_for_prompt:TRUE — zone mismatch, move to Verify)",
     recentSessions: [
+      {
+        sessionId: "019f43a679b57ca5918a79ca",
+        url: "http://127.0.0.1:3030/ui/s/019f43a679b57ca5918a79ca/",
+        title: "Code JN-5871 — integrate IBM into runner main (done, SHA fc6e5f77)",
+        status: "idle",
+        timestamp: "2026-07-09 00:58 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f4354f5e978e29979452a",
         url: "http://127.0.0.1:3030/ui/s/019f4354f5e978e29979452a/",
@@ -327,7 +343,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-08 23:09 IDT",
+    lastActive: "2026-07-09 00:58 IDT",
   },
   {
     ticket: "JN-5795",
@@ -621,7 +637,7 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "yellow",
-    message: "🆕 5 NEW worktrees added ~22:54 IDT Jul 8: jn-5870 (Code, RUNNING), jn-5867 (Verify, Code done), jn-5869 (Verify, dirty SHA), jn-5865 (Ingest, Plan done — zone mismatch), jn-5871 (Ingest, Plan done — zone mismatch).",
+    message: "📋 5 worktrees from Jul 8 overnight — 2 code-done in wrong zones: jn-5870 (Verify ✅ CLEAN, awaiting validate), jn-5867 (Verify ✅ CLEAN, awaiting validate), jn-5869 (Verify ⚠️ dirty SHA, needs commit), jn-5865 (Ingest ⚠️ plan done — needs Code), jn-5871 (Code ⚠️ code done — needs Verify).",
   },
   {
     level: "red",
@@ -637,7 +653,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 PR #1638 (JN-5725): NEW CI run 28972013790 — e2e-smoke ❌, all-checks ❌. e2e-api ✅, integration/pre-commit/tox all ✅. Same pattern as prev run. Persistent e2e-smoke failure — needs root cause investigation.",
+    message: "🔴 PR #1638 (JN-5725): NEW CI run 28993369633 — REGRESSION vs prev run: e2e-smoke ❌, tox-run ❌ (NEW), nox ❌ (NEW), all-checks ❌. e2e-api ✅. Previously tox/nox were passing — now failing. Needs root cause investigation urgently.",
   },
   {
     level: "green",

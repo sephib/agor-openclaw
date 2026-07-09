@@ -4,6 +4,24 @@
 
 ---
 
+## 09:00 IDT — Weekday Daytime Heartbeat (Jul 9)
+- PRs checked: #1649 (OPEN, ALL PASS run 28932482752, REVIEW_REQUIRED), #1648 (OPEN, CONFLICTING), #1638 (OPEN, **NEW run 28993369633: e2e-smoke ❌, tox-run ❌, nox ❌** — regression from 28972013790), #1606 (OPEN, CONFLICTING), #1596 (DRAFT, CONFLICTING)
+- Merges detected: none (0 auto-archives)
+- CI changes: **#1638 new CI run 28993369633** — worse than previous. Now failing tox-run and nox in addition to e2e-smoke. e2e-api ✅ unchanged. Regression: prev run 28972013790 had tox/nox passing.
+- Board changes: none — all worktrees and sessions unchanged from 02:30 IDT. jn-5870 (Verify, CLEAN), jn-5871 (Code zone — mismatch, CLEAN), jn-5869 (Verify, dirty SHA persists 11h+), jn-5867 (Verify, CLEAN), jn-5865 (Ingest — zone mismatch, plan done).
+- Jira: 5 mismatches persist — no human action overnight. Last confirmed acli 21:00 IDT Jul 8.
+- Flags: **#1638 CI deteriorating** (tox+nox added to failures). jn-5870 + jn-5867 ready for /implement:validate. jn-5871 code done but wrong zone. jn-5869 dirty SHA. jn-5865 plan done but in Ingest. jn-5401 ready for push+PR. #1649 needs reviewer LGTM. #1648 needs rebase.
+- Next: Joseph morning action — trigger validates for jn-5870+5867; move jn-5871→Verify; commit jn-5869; move jn-5865→Code; push+PR for jn-5401. Investigate #1638 tox/nox failure regression.
+
+## 02:00 IDT — Weekday Overnight Heartbeat (Jul 9)
+- PRs checked: #1649 (OPEN, ALL PASS run 28932482752, REVIEW_REQUIRED), #1648 (OPEN, CONFLICTING), #1638 (OPEN, run 28972013790: e2e-smoke ❌ — no new run overnight), #1606 (OPEN, CONFLICTING), #1596 (DRAFT, CONFLICTING)
+- Merges detected: none (0 auto-archives)
+- CI changes: none — all runs unchanged from 00:01 IDT. #1638 run 28972013790 still latest (e2e-smoke ❌).
+- Board changes: **jn-5870 Code DONE** (retry session completed ~00:32 IDT, SHA 6a9f3830 clean, zone auto-moved to Verify); **jn-5871 Code DONE** (session completed ~00:58 IDT, SHA fc6e5f77 clean, zone still Code — zone mismatch to Verify). jn-5869 still dirty (no new session). jn-5865 still in Ingest (no code triggered). All other worktrees static.
+- Jira: 5 mismatches persist — overnight, no human action. Last confirmed acli 21:00 IDT Jul 8.
+- Flags: jn-5870 + jn-5867 ready for /implement:validate. jn-5871 code done but in Code zone (needs move to Verify + validate). jn-5869 dirty SHA (needs commit). jn-5865 plan done but still in Ingest (needs code trigger). jn-5401 ready for push+PR. #1649 needs reviewer LGTM. #1648 needs rebase. #1638 e2e-smoke persistent.
+- Next: Morning — Joseph to action: move jn-5871→Verify+validate, commit jn-5869, move jn-5865→Code. Push+PR for jn-5401. Validate jn-5870+jn-5867.
+
 ## 22:00 IDT — Weekday Overnight Heartbeat (Jul 8)
 - PRs checked: #1649 (OPEN, ALL PASS run 28932482752, REVIEW_REQUIRED), #1648 (OPEN, CONFLICTING, CI stale run 28922899326), #1638 (OPEN, MERGEABLE, run 28964385136 COMPLETE: e2e-smoke ❌ all-checks ❌ — NO new run), #1606 (OPEN, CONFLICTING), #1596 (DRAFT, CONFLICTING)
 - Merges detected: none (0 auto-archives)
