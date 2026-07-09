@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-09 11:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-09 11:30 IDT (advance heartbeat)*
 
 ---
 
@@ -13,7 +13,7 @@
 | jn-5842-jbenchmark-agents-md | Ingest | — | — | [JN-5842](https://redhat.atlassian.net/browse/JN-5842) — Backlog | Ingest session [019f4126-8305](http://127.0.0.1:3030/ui/s/019f412683057d20b481a4b9/) IDLE ready_for_prompt:TRUE. Joseph to review → trigger /implement:plan. |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) | Plan done ~23:06 IDT Jul 8. Still Ingest zone — **zone mismatch persists**. Propose: move to Code + trigger /implement:code. |
 | jn-5871 | **Code** | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) | Code session done ~00:58 IDT Jul 9. SHA fc6e5f77 (CLEAN). **4 commits ahead. Zone mismatch — done in Code, should move to Verify**. |
-| jn-5401-runner-subcommands | **Code** | [#1654](https://github.com/Jounce-IO/jounce/pull/1654) | 🟡 PENDING (run 29003329554) | [JN-5401](https://redhat.atlassian.net/browse/JN-5401) — Backlog | 🆕 **PR #1654 OPENED** (OPEN, MERGEABLE, REVIEW_REQUIRED). CI run 29003329554 PENDING. Zone mismatch — still Code, should move to Code Review. |
+| jn-5401-runner-subcommands | **Code Review** ✅ | [#1654](https://github.com/Jounce-IO/jounce/pull/1654) | 🟡 PENDING (run 29004789831) | [JN-5401](https://redhat.atlassian.net/browse/JN-5401) — Backlog | ✅ **Zone mismatch RESOLVED** — now in Code Review (moved 07:40 IDT Jul 9). 🔄 **Code Review session RUNNING** (019f4601-4a66, since 08:32 IDT). New CI run 29004789831 PENDING. |
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — Backlog | "continuew" session [019f4290-43d4](http://127.0.0.1:3030/ui/s/019f429043d4745c9c0f66fc/) IDLE ready_for_prompt:FALSE. SHA 16ec44ea (2 commits). Needs: generate 24 configs, rebase main, create PR. |
 | jn-5870 | **Publish** | [#1656 DRAFT](https://github.com/Jounce-IO/jounce/pull/1656) | CONFLICTING (no CI yet — draft) | [JN-5870](https://redhat.atlassian.net/browse/JN-5870) | 🆕 Moved to Publish. PR #1656 DRAFT CONFLICTING. 5 commits ahead. Needs rebase + undraft. |
 | jn-5867 | **Publish** | [#1655](https://github.com/Jounce-IO/jounce/pull/1655) | ❌ pre-commit FAIL (run 28998302625) | [JN-5867](https://redhat.atlassian.net/browse/JN-5867) | 🆕 Moved to Publish. PR OPEN MERGEABLE but **pre-commit ❌**. Needs fix + push. |
@@ -62,17 +62,18 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes Since Last Run (10:30 IDT Jul 9)
+## Key Changes Since Last Run (11:00 IDT Jul 9)
 
 | What observed | Status |
 |---|---|
-| **🆕 jn-5401 → PR #1654 OPENED** | OPEN, MERGEABLE, REVIEW_REQUIRED. CI run 29003329554 PENDING. Zone mismatch (Code, should be Code Review). |
-| **🔴 #1638 e2e-smoke FAILED** | Run 28999848314 COMPLETE: tox ✅ nox ✅ (recovered) but e2e-smoke ❌ e2e-tests ❌ all-checks ❌. Regression confirmed. |
+| **✅ jn-5401 zone mismatch RESOLVED** | Now in **Code Review** zone (moved 07:40 IDT Jul 9 — missed by 11:00 scan). Zone mismatch cleared. |
+| **🔄 jn-5401 Code Review session RUNNING** | Session 019f4601-4a66 started 08:32 IDT — Code Review session active. |
+| **PR #1654 new CI run 29004789831 PENDING** | Replaces 29003329554; integration/pre-commit/tox/e2e-api pending, atlas-validate ✅, CodeRabbit in progress. |
 | **jn-5867 PR #1655 unchanged** | pre-commit ❌ CI still failing (run 28998302625). No new push. |
-| **jn-5869 PR #1657 unchanged** | DRAFT CONFLICTING. Dirty worktree persists. |
-| **jn-5870 PR #1656 unchanged** | DRAFT CONFLICTING. Needs rebase + undraft. |
+| **jn-5869 PR #1657 unchanged** | DRAFT CONFLICTING. |
+| **jn-5870 PR #1656 unchanged** | DRAFT CONFLICTING. |
 | **jn-5865 zone mismatch persists** | Still Ingest. Plan done Jul 8. No code session triggered. |
-| **jn-5871 zone mismatch persists** | Still Code, 4 commits ahead, done since 00:58 IDT Jul 9. |
+| **jn-5871 zone mismatch persists** | Still Code, implementation done 21:58 IDT Jul 8. No PR created. |
 | **#1649 unchanged** | CI ALL PASS. REVIEW_REQUIRED unchanged. |
 | **#1648 unchanged** | Still CONFLICTING. No new CI. |
 | **5 Jira mismatches persist** | No human action. |
@@ -137,13 +138,14 @@ Worktree `jn-5865-ibm-cluster-connect` (Ingest zone):
 
 ---
 
-### 🆕 jn-5401 — PR #1654 OPENED (CI Pending)
+### ✅ jn-5401 — Now in Code Review, CI Pending
 
-Worktree `jn-5401-runner-subcommands` (Code zone):
-- **PR [#1654](https://github.com/Jounce-IO/jounce/pull/1654)** OPENED between heartbeats: "feat(jbenchmark): add subcommands to runner for stage-level execution (JN-5401, JN-5244)"
-- OPEN, MERGEABLE, REVIEW_REQUIRED (not draft). CI run 29003329554 PENDING.
-- Zone mismatch — still in Code zone, should move to Code Review.
-- **Action:** Propose zone move to Code Review. Monitor CI run 29003329554.
+Worktree `jn-5401-runner-subcommands` (**Code Review** zone):
+- **PR [#1654](https://github.com/Jounce-IO/jounce/pull/1654)** OPEN, MERGEABLE, REVIEW_REQUIRED (not draft).
+- Zone mismatch **RESOLVED** — moved to Code Review at 07:40 IDT Jul 9.
+- **Code Review session RUNNING**: [019f4601-4a66](http://127.0.0.1:3030/ui/s/019f4601a6677024a6a10075/) since 08:32 IDT.
+- New CI run **29004789831 PENDING**: integration/pre-commit/tox/e2e-api pending; atlas-validate ✅; CodeRabbit in progress.
+- **Action:** Monitor CI run 29004789831. Await session result.
 
 ---
 

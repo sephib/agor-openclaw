@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-09 11:00 IDT";
+export const LAST_UPDATED = "2026-07-09 11:30 IDT";
 
 export const WORKTREES = [
   {
@@ -99,21 +99,37 @@ export const WORKTREES = [
     title: "Add subcommands to jbenchmark runner (JN-5401)",
     branch: "jn-5401-runner-subcommands",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5401-runner-subcommands",
-    zone: "Code",
+    zone: "Code Review",
     pr: "#1654",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1654",
-    status: "🆕 PR #1654 OPENED — 'feat(jbenchmark): add subcommands to runner for stage-level execution (JN-5401, JN-5244)'. OPEN MERGEABLE REVIEW_REQUIRED. CI run 29003329554 PENDING. Zone mismatch (Code → needs Code Review).",
-    blockedOn: "CI pending — awaiting run 29003329554 result",
+    status: "✅ Zone mismatch RESOLVED — now in Code Review (moved 07:40 IDT Jul 9). 🔄 Code Review session RUNNING (019f4601-4a66, since 08:32 IDT). PR #1654 OPEN MERGEABLE REVIEW_REQUIRED. New CI run 29004789831 PENDING (integration/pre-commit/tox/e2e-api pending, CodeRabbit in progress).",
+    blockedOn: "CI pending — awaiting run 29004789831 result",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f4295ccc975139ebd2be4/",
-    sessionLabel: "code done (PR #1654 opened, CI pending)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f4601a6677024a6a10075/",
+    sessionLabel: "code-review (RUNNING since 08:32 IDT)",
     recentSessions: [
+      {
+        sessionId: "019f46014a667024a6a10075",
+        url: "http://127.0.0.1:3030/ui/s/019f4601a6677024a6a10075/",
+        title: "code-review (RUNNING — started 08:32 IDT)",
+        status: "running",
+        timestamp: "2026-07-09 08:32 IDT",
+        outputFile: null,
+      },
+      {
+        sessionId: "019f4596a5727cf9a1ba5e4f",
+        url: "http://127.0.0.1:3030/ui/s/019f4596a5727cf9a1ba5e4f/",
+        title: "link PR #1654 to branch (done 07:40 IDT)",
+        status: "idle",
+        timestamp: "2026-07-09 07:40 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f4295ccc975139ebd2be4",
         url: "http://127.0.0.1:3030/ui/s/019f4295ccc975139ebd2be4/",
-        title: "contiue — 3 commits ahead (SHA 53e4435e), ready to push PR",
+        title: "validate (PASS — SHA CLEAN, PR #1654 opened)",
         status: "idle",
-        timestamp: "2026-07-08 19:37 IDT",
+        timestamp: "2026-07-08 20:21 IDT",
         outputFile: null,
       },
       {
@@ -133,7 +149,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-08 19:37 IDT",
+    lastActive: "2026-07-09 08:32 IDT",
   },
   {
     ticket: "JN-5870",
@@ -660,8 +676,8 @@ export const ALERTS = [
     message: "🟢 #1649 (jn-5841 JN-5841): CI ALL PASS — run 28932482752. OPEN + REVIEW_REQUIRED. JN-5841 Jira In Review ✅. Needs reviewer LGTM to merge.",
   },
   {
-    level: "yellow",
-    message: "🆕 jn-5401-runner-subcommands (JN-5401): PR #1654 OPENED — OPEN MERGEABLE REVIEW_REQUIRED. CI run 29003329554 PENDING. Zone mismatch (Code → Code Review). Monitor CI next run.",
+    level: "green",
+    message: "✅ jn-5401 zone mismatch RESOLVED — now in Code Review (moved 07:40 IDT Jul 9). Code Review session RUNNING (08:32 IDT). PR #1654 OPEN REVIEW_REQUIRED. CI run 29004789831 PENDING.",
   },
   {
     level: "yellow",

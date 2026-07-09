@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-09 11:30 IDT",
+    actions: 0,
+    findings: 2,
+    status: "ok",
+    summary: "jn-5401 zone mismatch RESOLVED (now Code Review, moved 07:40 IDT); Code Review session 019f4601 RUNNING since 08:32 IDT; PR #1654 new CI run 29004789831 PENDING; board otherwise static; 1 zone mismatch remains (jn-5871); 5 Jira mismatches persist",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f45ffb00770eda253acf9/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-09 11:00 IDT",
     actions: 0,
     findings: 2,

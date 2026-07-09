@@ -703,3 +703,12 @@
 - Zone changes: jn-5867 Verify→Publish, jn-5869 Verify→Publish, jn-5870 Verify→Publish (all moved by publish sessions)
 - Flags: jn-5867 pre-commit failing; jn-5869 dirty+conflicting; jn-5870 draft+conflicting; jn-5865 zone mismatch (Ingest); jn-5871 zone mismatch (Code done); jn-5401 8 commits no PR; 5 Jira mismatches persist
 - Next: monitor #1638 e2e-smoke; fix jn-5867 pre-commit; rebase jn-5870+jn-5869; trigger jn-5871 validate; move jn-5865 to Code
+
+## 11:30 IDT — Weekday Daytime Heartbeat (Jul 9)
+- PRs checked: #1654 (OPEN, MERGEABLE, REVIEW_REQUIRED, CI run 29004789831 PENDING), #1649 (OPEN, ALL PASS, REVIEW_REQUIRED), #1648 (OPEN, CONFLICTING), #1638 (OPEN, e2e-smoke ❌), #1655 (OPEN, pre-commit ❌), #1656 (DRAFT, CONFLICTING), #1657 (DRAFT, CONFLICTING), #1606 (OPEN, CONFLICTING), #1596 (DRAFT, CONFLICTING)
+- Merges detected: none (0 auto-archives)
+- CI changes: #1654 new CI run 29004789831 PENDING (replaces 29003329554 — likely triggered by push at 07:40 IDT). All others unchanged.
+- Board changes: **✅ jn-5401 zone mismatch RESOLVED** — branch confirmed in Code Review zone (moved 07:40 IDT Jul 9, missed by 11:00 IDT scan). **Code Review session 019f4601-4a66 RUNNING** since 08:32 IDT. All other worktrees static.
+- Jira: 5 mismatches persist — no human action.
+- Flags: #1654 CI run 29004789831 PENDING — monitor next run. jn-5871 zone mismatch persists (Code, done, no PR yet). jn-5865 zone mismatch persists (Ingest, plan done). #1638 e2e-smoke ❌ regression. #1655 pre-commit ❌. #1657/#1656 DRAFT CONFLICTING. #1649 needs reviewer LGTM. #1648 needs rebase. 5 Jira mismatches.
+- Next: Monitor #1654 CI + Code Review session result. Monitor jn-5871 for PR creation. Joseph to action #1655 fix / #1648 rebase / jn-5865 code trigger.
