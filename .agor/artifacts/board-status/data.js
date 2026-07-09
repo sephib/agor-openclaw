@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-09 18:30 IDT";
+export const LAST_UPDATED = "2026-07-09 19:00 IDT";
 
 export const WORKTREES = [
   {
@@ -102,12 +102,20 @@ export const WORKTREES = [
     zone: "Respond",
     pr: "#1654",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1654",
-    status: "🔄 Run 29028976922 NEW (new push!): pre-commit ❌ STILL (another fix attempt). tox ✅, nox ✅, e2e-api ✅, integration ✅. e2e-smoke ⏳ PENDING. Near-merge pending e2e result. JN-5401 Jira: Backlog — mismatch.",
-    blockedOn: "pre-commit ❌ — new push, e2e-smoke ⏳ PENDING",
+    status: "🔴 Run 29028976922 COMPLETE: pre-commit ❌ STILL only remaining. e2e-smoke ✅ RESOLVED (was PENDING at 18:30). tox ✅, nox ✅, e2e-api ✅, integration ✅ all pass. JN-5401 Jira: Backlog — mismatch. Near-merge once pre-commit fixed.",
+    blockedOn: "pre-commit ❌ — only remaining block (e2e-smoke now ✅)",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f4601a6677024a6a10075/",
-    sessionLabel: "code-review (COMPLETED 08:36 IDT — pre-commit issues, new push at 18:30)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f4825-3ea3-7852-b8d3-26d282a6b619/",
+    sessionLabel: "heartbeat 19:00 IDT — run 29028976922 COMPLETE: e2e-smoke ✅ RESOLVED, pre-commit ❌ only",
     recentSessions: [
+      {
+        sessionId: "019f48253ea37852b8d326d2",
+        url: "http://127.0.0.1:3030/ui/s/019f48253ea37852b8d326d2/",
+        title: "heartbeat 19:00 IDT — run 29028976922 COMPLETE: e2e-smoke ✅ RESOLVED, pre-commit ❌ only",
+        status: "running",
+        timestamp: "2026-07-09 19:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f47803b3b7b0699d5b61f",
         url: "http://127.0.0.1:3030/ui/s/019f47803b3b7b0699d5b61f/",
@@ -522,12 +530,20 @@ export const WORKTREES = [
     zone: "Respond",
     pr: "#1648",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1648",
-    status: "🔄 Run 29022206171 UNCHANGED: e2e-api ✅, e2e-smoke ✅, e2e-tests ✅. Only pre-commit ❌ + all-checks ❌ remain. Near-merge. No new push since 18:00. JN-5827 Jira: Backlog — mismatch.",
+    status: "🔴 Run 29022206171 UNCHANGED: e2e-api ✅, e2e-smoke ✅, e2e-tests ✅. Only pre-commit ❌ + all-checks ❌ remain. Near-merge. No new push since ~15:33 IDT. JN-5827 Jira: Backlog — mismatch.",
     blockedOn: "pre-commit ❌ only — all e2e resolved, near-merge condition",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f3d66ffeb7154a64feb80/",
     sessionLabel: "internal-cr retry (ready_for_prompt: TRUE) — e2e now passing",
     recentSessions: [
+      {
+        sessionId: "019f48253ea37852b8d326d2",
+        url: "http://127.0.0.1:3030/ui/s/019f48253ea37852b8d326d2/",
+        title: "heartbeat 19:00 IDT — run 29022206171 UNCHANGED: pre-commit ❌ only, no new push",
+        status: "running",
+        timestamp: "2026-07-09 19:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f47803b3b7b0699d5b61f",
         url: "http://127.0.0.1:3030/ui/s/019f47803b3b7b0699d5b61f/",
@@ -685,8 +701,8 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "yellow",
-    message: "🔄 PR #1654 (jn-5401 JN-5401): Run 29028976922 NEW (new push!) — pre-commit ❌ STILL (another attempt). tox ✅, nox ✅, e2e-api ✅. e2e-smoke ⏳ PENDING. Watch result.",
+    level: "red",
+    message: "🔴 PR #1654 (jn-5401 JN-5401): Run 29028976922 COMPLETE — e2e-smoke ✅ RESOLVED (was PENDING). pre-commit ❌ only remaining. Near-merge — fix pre-commit.",
   },
   {
     level: "yellow",
@@ -705,8 +721,8 @@ export const ALERTS = [
     message: "🔴 PR #1656 (jn-5870 JN-5870): DRAFT CONFLICTING. 5 commits ahead. Needs rebase onto main + undraft.",
   },
   {
-    level: "yellow",
-    message: "🟢 PR #1638 (JN-5725): Run 29029026149 NEW (new push!) — pre-commit ✅ FIXED! tox ✅, nox ✅, e2e-api ✅, bake ✅, integration ✅. e2e-smoke ⏳ PENDING — critical check. Near-merge if passes.",
+    level: "red",
+    message: "🔴 PR #1638 (JN-5725, off-board): Run 29037032061 NEW — REGRESSION: pre-commit ❌ FAILED again (was ✅ in run 29029026149) + e2e-smoke ❌ FAILED. Setback. Investigate pre-commit regression.",
   },
   {
     level: "yellow",

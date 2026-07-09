@@ -825,3 +825,10 @@
 - Flags: 🔴 #1638 e2e-smoke regression; 🔴 #1655 pre-commit ❌ no new push; 🔴 #1648 pre-commit ❌; 🟡 #1654 near-merge (pre-commit only); zone mismatches persist; 6 Jira mismatches
 - Auto-advances: 0
 - Next: watch for pre-commit fix push on #1654, #1648, #1655; investigate #1638 e2e-smoke failure; trigger code on jn-5865; move jn-5871 to Verify.
+
+## 19:00 IDT — Weekday Daytime Heartbeat
+- PRs checked: #1654 (OPEN, pre-commit ❌ only — e2e-smoke ✅ RESOLVED), #1648 (OPEN, pre-commit ❌ only, UNCHANGED), #1655 (OPEN, pre-commit ❌ only, UNCHANGED), #1649 (OPEN, ALL PASS), #1638 (OPEN, NEW RUN 29037032061 — REGRESSION), #1658/#1659/#1656/#1657 (DRAFT)
+- Merges detected: none
+- CI changes: #1654 run 29028976922 now COMPLETE — e2e-smoke ✅ RESOLVED (was PENDING). pre-commit ❌ only remains. #1638 NEW RUN 29037032061 — REGRESSION: pre-commit ❌ FAILED again (was ✅ in run 29029026149), e2e-smoke ❌ FAILED.
+- Flags: 6 Jira mismatches (confirmed via acli, Jira MCP still 401); 2 zone mismatches (jn-5865 Ingest, jn-5871 Code); #1638 REGRESSION is key blocker
+- Next: Watch if new push on #1654 or #1638 within next 30min. Flag #1655/#1648 pre-commit issues for Joseph's review.
