@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-09 19:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-10 18:00 IDT (advance heartbeat)*
 
 ---
 
@@ -14,14 +14,14 @@
 | jn-5868 | **Publish** | [#1659 DRAFT](https://github.com/Jounce-IO/jounce/pull/1659) | CONFLICTING | [JN-5868](https://redhat.atlassian.net/browse/JN-5868) — Backlog | PR #1659 DRAFT CONFLICTING — needs rebase on main (or jn-5867). |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) | Plan done ~23:06 IDT Jul 8. **Zone mismatch persists** (still Ingest). Propose: move to Code + trigger /implement:code. |
 | jn-5871 | **Code** | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) | Code done ~00:58 IDT Jul 9. SHA fc6e5f77 CLEAN. **Zone mismatch persists** (still Code, should be Verify). |
-| jn-5401-runner-subcommands | **Respond** | [#1654](https://github.com/Jounce-IO/jounce/pull/1654) | 🔴 **run 29028976922 COMPLETE: pre-commit ❌ STILL. e2e-smoke ✅ RESOLVED!** | [JN-5401](https://redhat.atlassian.net/browse/JN-5401) — Backlog | Run 29028976922 now complete. e2e-smoke ✅ PASSED (was pending). pre-commit ❌ still only remaining block. JN-5401 Jira: Backlog — mismatch. |
+| jn-5401-runner-subcommands | **Respond** | [#1654](https://github.com/Jounce-IO/jounce/pull/1654) | 🔴 **run 29028976922 COMPLETE: pre-commit ❌ STILL. All others ✅.** | [JN-5401](https://redhat.atlassian.net/browse/JN-5401) — Backlog | pre-commit ❌ only remaining block. No new push since Jul 9. JN-5401 Jira: Backlog — mismatch. |
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | "continuew" session IDLE ready_for_prompt:FALSE. SHA 16ec44ea (2 commits). Needs: generate 24 configs, rebase main, create PR. Fork a new session to continue. |
 | jn-5870 | **Publish** | [#1656 DRAFT](https://github.com/Jounce-IO/jounce/pull/1656) | CONFLICTING | [JN-5870](https://redhat.atlassian.net/browse/JN-5870) | PR #1656 DRAFT CONFLICTING. 5 commits ahead. Needs rebase + undraft. |
-| jn-5867 | **Publish** | [#1655](https://github.com/Jounce-IO/jounce/pull/1655) | 🔴 pre-commit ❌ run 29016539122 (UNCHANGED, no new push since 16:30 IDT) | [JN-5867](https://redhat.atlassian.net/browse/JN-5867) | pre-commit ❌ still. No new push. 4+ complete runs with pre-commit failing. Needs targeted diagnosis. |
+| jn-5867 | **Publish** | [#1655](https://github.com/Jounce-IO/jounce/pull/1655) | 🔴 pre-commit ❌ run 29016539122 (UNCHANGED, no new push since Jul 9) | [JN-5867](https://redhat.atlassian.net/browse/JN-5867) | pre-commit ❌ still. No new push. 4+ complete runs with pre-commit failing. Needs targeted diagnosis. |
 | jn-5869 | **Publish** | [#1657 DRAFT](https://github.com/Jounce-IO/jounce/pull/1657) | CONFLICTING | [JN-5869](https://redhat.atlassian.net/browse/JN-5869) | PR #1657 DRAFT CONFLICTING. Dirty (lcov.info). Needs commit + rebase + undraft. |
-| jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 14+ days with no session or PR. |
+| jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 15+ days with no session or PR. |
 | jn-5841-agents-md-root | **Publish** | [#1649](https://github.com/Jounce-IO/jounce/pull/1649) | 🟢 **run 28932482752: ALL PASS** | [JN-5841](https://redhat.atlassian.net/browse/JN-5841) — **In Review** ✅ | 🟢 **READY FOR REVIEW.** CI ALL PASS. reviewDecision: REVIEW_REQUIRED. **Action: Get reviewer LGTM to merge.** |
-| jn-5827-git-tagging-workflow | **Respond** | [#1648](https://github.com/Jounce-IO/jounce/pull/1648) | ⚠️ **run 29022206171: pre-commit ❌ only; all e2e ✅ (UNCHANGED)** | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) — Backlog | pre-commit ❌ only remains. Near-merge — fix pre-commit. No new push. JN-5827 Jira: Backlog — mismatch. |
+| jn-5827-git-tagging-workflow | **Respond** | [#1648](https://github.com/Jounce-IO/jounce/pull/1648) | ⚠️ **run 29022206171: pre-commit ❌ only; all e2e ✅ (UNCHANGED)** | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) — Backlog | pre-commit ❌ only remains. Near-merge — fix pre-commit. No new push since Jul 9. JN-5827 Jira: Backlog — mismatch. |
 
 ---
 
@@ -29,8 +29,8 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ CONFLICTING | 🔴 CONFLICTING | 🔴 CONFLICTING 7+ days. Needs rebase + fix e2e or close PR. |
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | 🔴 **run 29037032061 NEW: pre-commit ❌ FAILED AGAIN + e2e-smoke ❌ FAILED** | MERGEABLE | 🔴 **REGRESSION**: pre-commit ❌ FAILED again (was ✅ in run 29029026149). e2e-smoke ❌ FAILED. New push triggered new run. Setback from 18:30 optimism. |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ CONFLICTING | 🔴 CONFLICTING | 🔴 CONFLICTING 8+ days. Needs rebase + fix e2e or close PR. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | 🔴 **run 29099722572 NEW: pre-commit ✅ FIXED! tox ✅ nox ✅ e2e-api ✅ integration ✅ — e2e-smoke ❌ + e2e-tests ❌ STILL** | MERGEABLE | 🔄 **IMPROVEMENT**: pre-commit REGRESSION from 29037032061 is now FIXED. e2e-smoke still failing. One persistent blocker remains. |
 
 ---
 
@@ -60,42 +60,42 @@ Active sprint tickets assigned to Joseph with no board worktree:
 | [JN-5401](https://redhat.atlassian.net/browse/JN-5401) | [#1654](https://github.com/Jounce-IO/jounce/pull/1654) | OPEN — pre-commit ❌ only (run 29028976922 COMPLETE) | **Backlog** | ⚠️ Should be → In Review |
 | [JN-5867](https://redhat.atlassian.net/browse/JN-5867) | [#1655](https://github.com/Jounce-IO/jounce/pull/1655) | OPEN — pre-commit ❌ (run 29016539122) | **Backlog** | ⚠️ Should be → In Review |
 
-*6 mismatches persist. Confirmed via acli at 19:00 IDT Jul 9.*
+*6 mismatches persist. Confirmed via acli at 18:00 IDT Jul 10. Jira MCP 401 persists.*
 
 ---
 
-## Key Changes Since Last Run (19:00 IDT Jul 9 — delta from 18:30 IDT)
+## Key Changes Since Last Run (18:00 IDT Jul 10 — delta from 19:00 IDT Jul 9)
 
 | What observed | Status |
 |---|---|
-| **✅ #1654 run 29028976922 NOW COMPLETE** | e2e-smoke ✅ RESOLVED (was ⏳ PENDING). pre-commit ❌ only remains. **Improvement: was pre-commit ❌ + e2e-smoke ⏳; now pre-commit ❌ only.** |
-| **🔴 #1638 NEW RUN 29037032061 — REGRESSION** | pre-commit ❌ FAILED again (was ✅ FIXED in run 29029026149). e2e-smoke ❌ FAILED. **SETBACK** from 18:30 optimism. New push triggered new run. |
-| **#1655 (jn-5867) UNCHANGED** | Same run 29016539122. pre-commit ❌ still, no new push. |
-| **#1648 (jn-5827) UNCHANGED** | Same run 29022206171. pre-commit ❌ only, all else ✅. No new push. |
-| **#1649 (jn-5841) UNCHANGED** | CI ALL PASS. Awaiting reviewer LGTM. |
-| **jn-5865, jn-5871 zone mismatches PERSIST** | Still Ingest/Code respectively. No change. |
+| **🔄 #1638 NEW RUN 29099722572** | pre-commit ✅ FIXED (was REGRESSION in 29037032061). tox ✅, nox ✅, e2e-api ✅, integration ✅ all pass. e2e-smoke ❌ + e2e-tests ❌ still failing. Net: pre-commit regression resolved; e2e-smoke remains the sole blocker. |
+| **#1654 UNCHANGED** | Same run 29028976922. pre-commit ❌ only. No new push overnight. |
+| **#1648 UNCHANGED** | Same run 29022206171. pre-commit ❌ only. No new push overnight. |
+| **#1655 UNCHANGED** | Same run 29016539122. pre-commit ❌. No new push overnight. |
+| **#1649 UNCHANGED** | CI ALL PASS. Awaiting reviewer LGTM. |
+| **Weekend 12:00 IDT session FAILED** | Morning heartbeat (019f4b42-d9cd-76a8-b22e-cc22dc0df909) shows status: failed. |
+| **jn-5865, jn-5871 zone mismatches PERSIST** | Still Ingest/Code respectively. No change. Weekend — no action taken. |
 | **6 Jira mismatches** | Confirmed via acli (Jira MCP still 401). Unchanged. |
 
 ---
 
 ## Attention Items
 
-### 🔴 #1638 (off-board) — NEW RUN 29037032061 — REGRESSION: pre-commit ❌ + e2e-smoke ❌
+### 🔄 #1638 (off-board) — NEW RUN 29099722572 — pre-commit ✅ FIXED, e2e-smoke ❌ persists
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites"
-- **Run 29037032061 NEW**: pre-commit ❌ FAILED again, e2e-smoke ❌ FAILED, e2e-tests ❌ FAILED
-- bake ✅, e2e-api ✅, tox ✅, nox ✅, integration ✅
-- **REGRESSION from run 29029026149** which showed pre-commit ✅ FIXED
-- **Action:** Investigate pre-commit regression. What changed between run 29029026149 (PASS) and 29037032061 (FAIL)?
+- **Run 29099722572 NEW**: pre-commit ✅ FIXED, bake ✅, tox ✅, nox ✅, e2e-api ✅, integration ✅
+- **e2e-smoke ❌ FAILED, e2e-tests ❌ FAILED** — persistent blocker
+- **Improvement from run 29037032061** which regressed pre-commit — that regression is now resolved
+- **Action:** Investigate e2e-smoke failure — this is now the sole remaining CI blocker
 
 ---
 
 ### 🔴 #1654 (jn-5401) — run 29028976922 COMPLETE — pre-commit ❌ only
 
 PR [#1654](https://github.com/Jounce-IO/jounce/pull/1654): "feat(jbenchmark): add subcommands to runner"
-- **Run 29028976922 COMPLETE**: e2e-smoke ✅ RESOLVED (was PENDING). All e2e ✅, tox ✅, nox ✅, integration ✅
-- pre-commit ❌ STILL the only failing check
-- **Improvement:** Was "pre-commit ❌ + e2e-smoke ⏳" → now "pre-commit ❌ only"
+- **Run 29028976922 COMPLETE**: e2e-smoke ✅, tox ✅, nox ✅, e2e-api ✅, integration ✅ all pass
+- pre-commit ❌ STILL the only failing check. No new push since Jul 9.
 - **Action:** Fix pre-commit issue — near-merge condition once resolved.
 
 ---
@@ -104,17 +104,15 @@ PR [#1654](https://github.com/Jounce-IO/jounce/pull/1654): "feat(jbenchmark): ad
 
 PR [#1648](https://github.com/Jounce-IO/jounce/pull/1648): "feat(release): implement git tagging workflow"
 - **Run 29022206171**: e2e-api ✅, e2e-smoke ✅, e2e-tests ✅ — all e2e FIXED
-- Only: pre-commit ❌, all-checks ❌ (depends on pre-commit)
-- **Near-merge** — just one pre-commit issue remaining. No new push.
+- Only: pre-commit ❌. No new push since Jul 9.
 - **Action:** Fix pre-commit issue then ready for review.
 
 ---
 
-### 🔴 jn-5867 — PR #1655 pre-commit ❌ (no new push since 16:30 IDT)
+### 🔴 jn-5867 — PR #1655 pre-commit ❌ (no new push since Jul 9)
 
 PR [#1655](https://github.com/Jounce-IO/jounce/pull/1655): "feat(jbenchmark): add Platform enum and refactor ClusterConfig for IBM support"
-- **Run 29016539122**: pre-commit ❌ ONLY (4+ consecutive runs, unchanged)
-- All others ✅: e2e-smoke ✅, tox ✅, nox ✅, integration ✅, e2e-api ✅
+- **Run 29016539122**: pre-commit ❌ ONLY (5+ consecutive runs, unchanged)
 - **Action:** Need a new fix attempt for pre-commit. Check what hook is failing.
 
 ---
@@ -122,7 +120,7 @@ PR [#1655](https://github.com/Jounce-IO/jounce/pull/1655): "feat(jbenchmark): ad
 ### 🔴 jn-5869 — PR #1657 DRAFT CONFLICTING + dirty worktree
 
 PR [#1657](https://github.com/Jounce-IO/jounce/pull/1657): "feat(jbenchmark): add IBM cluster connection support"
-- DRAFT, CONFLICTING. Worktree dirty (lcov.info, 20h+).
+- DRAFT, CONFLICTING. Worktree dirty (lcov.info, 36h+).
 - **Action:** Commit/clean lcov.info, rebase on main, undraft PR.
 
 ---
@@ -138,7 +136,7 @@ PR [#1656](https://github.com/Jounce-IO/jounce/pull/1656): "feat(jbenchmark): ad
 ### 🆕 jn-5842 — PR #1658 DRAFT CI PASS — needs undraft + review
 
 PR [#1658](https://github.com/Jounce-IO/jounce/pull/1658): "docs(jbenchmark): add app-level AGENTS.md with benchmark platform context"
-- DRAFT, MERGEABLE. CI all-checks PASS (docs-only — e2e/integration all skipped).
+- DRAFT, MERGEABLE. CI all-checks PASS (docs-only).
 - **Action:** Undraft PR, request review.
 
 ---
@@ -146,7 +144,7 @@ PR [#1658](https://github.com/Jounce-IO/jounce/pull/1658): "docs(jbenchmark): ad
 ### 🆕 jn-5868 — PR #1659 DRAFT CONFLICTING — needs rebase
 
 PR [#1659](https://github.com/Jounce-IO/jounce/pull/1659): "feat(jbenchmark): add ClusterRegistry loader and clusters.json"
-- DRAFT, CONFLICTING. Likely needs to be rebased on jn-5867 (which adds Platform enum it depends on).
+- DRAFT, CONFLICTING. Needs rebase on jn-5867 (Platform enum dependency).
 - **Action:** Rebase on jn-5867 or main once jn-5867 merges.
 
 ---
@@ -200,7 +198,7 @@ Worktree `jn-5824-benchmark-run-configs` (Code zone):
 
 ### ⚠️ jira-operations — Stale (NO ZONE)
 
-- uid=249, last_used Jun 25 2026 (14+ days stale)
+- uid=249, last_used Jun 25 2026 (15+ days stale)
 - NO ZONE, no sessions, no PR
 - Propose archive if no longer needed.
 

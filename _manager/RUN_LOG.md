@@ -832,3 +832,12 @@
 - CI changes: #1654 run 29028976922 now COMPLETE — e2e-smoke ✅ RESOLVED (was PENDING). pre-commit ❌ only remains. #1638 NEW RUN 29037032061 — REGRESSION: pre-commit ❌ FAILED again (was ✅ in run 29029026149), e2e-smoke ❌ FAILED.
 - Flags: 6 Jira mismatches (confirmed via acli, Jira MCP still 401); 2 zone mismatches (jn-5865 Ingest, jn-5871 Code); #1638 REGRESSION is key blocker
 - Next: Watch if new push on #1654 or #1638 within next 30min. Flag #1655/#1648 pre-commit issues for Joseph's review.
+
+## 18:00 IDT — Weekend Heartbeat (Jul 10)
+- PRs checked: #1654 (OPEN, run 29028976922 pre-commit ❌ UNCHANGED), #1648 (OPEN, run 29022206171 pre-commit ❌ UNCHANGED), #1649 (OPEN, ALL PASS run 28932482752 UNCHANGED), #1655 (OPEN, pre-commit ❌ run 29016539122 UNCHANGED), #1656 (DRAFT CONFLICTING), #1657 (DRAFT CONFLICTING), #1658 (DRAFT MERGEABLE CI PASS), #1659 (DRAFT CONFLICTING), #1638 (OPEN, **NEW run 29099722572: pre-commit ✅ FIXED! tox ✅ nox ✅ e2e-api ✅ — e2e-smoke ❌ + e2e-tests ❌ STILL**), #1606 (OPEN CONFLICTING)
+- Merges detected: none (0 auto-archives)
+- CI changes: **#1638 pre-commit REGRESSION RESOLVED** in run 29099722572 (was ❌ in 29037032061). Now only e2e-smoke ❌ + e2e-tests ❌ blocking. All other PRs static — no new pushes overnight.
+- Weekend note: Morning 12:00 IDT session (019f4b42-d9cd) FAILED. This is the first successful completion of weekend heartbeat.
+- Flags: 6 Jira mismatches (JN-5445/5717/5546 need Done; JN-5827/5401/5867 need In Review); 2 zone mismatches (jn-5865 Ingest, jn-5871 Code); #1638 e2e-smoke still blocking; #1654/#1648/#1655 pre-commit still blocking; 5 DRAFT PRs needing rebase/undraft
+- Auto-advances: 0
+- Next: Monitor if #1638 e2e-smoke gets a fix push. #1654/#1648/#1655 need pre-commit fix — weekend, may wait until Mon. Flag zone mismatches + Jira mismatches for Joseph's attention.
