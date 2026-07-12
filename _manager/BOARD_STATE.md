@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-12 18:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-12 19:00 IDT (advance heartbeat)*
 
 ---
 
@@ -16,7 +16,7 @@
 | jn-5871 | **Code** | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) | Code done ~00:58 IDT Jul 9. SHA fc6e5f77 CLEAN. **Zone mismatch persists** (still Code, should be Verify, Day 6). |
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | "continuew" session IDLE ready_for_prompt:FALSE. SHA 16ec44ea (2 commits). Needs: generate 24 configs, rebase main, create PR. Fork a new session to continue. |
 | jn-5870 | **Publish** | [#1656 DRAFT](https://github.com/Jounce-IO/jounce/pull/1656) | CONFLICTING | [JN-5870](https://redhat.atlassian.net/browse/JN-5870) | PR #1656 DRAFT CONFLICTING. 5 commits ahead. Needs rebase + undraft. |
-| jn-5867 | **Publish** | [#1655](https://github.com/Jounce-IO/jounce/pull/1655) | **🔴 run 29198110448: pre-commit ❌ + e2e-api ❌** (integration ✅, tox ✅, nox ✅) | [JN-5867](https://redhat.atlassian.net/browse/JN-5867) — Backlog | **🆕 REBASED** — now MERGEABLE (was CONFLICTING). NEW CI run 29198110448 triggered. **pre-commit ❌ + e2e-api ❌** — blocker persists. Integration/tox/nox pass. |
+| jn-5867 | **Publish** | [#1655](https://github.com/Jounce-IO/jounce/pull/1655) | **🟡 run 29198902176: pre-commit ❌ only** (e2e-api ✅ NOW PASS, e2e-smoke ✅, integration ✅, tox ✅, nox ✅, e2e-tests PENDING) | [JN-5867](https://redhat.atlassian.net/browse/JN-5867) — Backlog | **🆕 CI IMPROVED** — e2e-api now ✅ PASS (was ❌). Only **pre-commit ❌** remains as blocker. e2e-tests aggregator still PENDING. |
 | jn-5869 | **Publish** | [#1657 DRAFT](https://github.com/Jounce-IO/jounce/pull/1657) | **✅ MERGEABLE** (was CONFLICTING) | [JN-5869](https://redhat.atlassian.net/browse/JN-5869) | **🆕 PR #1657 now MERGEABLE** — conflict resolved. Still DRAFT. Needs undraft. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 17+ days with no session or PR. |
 | ~~jn-5401-runner-subcommands~~ | **ARCHIVED** | [#1654](https://github.com/Jounce-IO/jounce/pull/1654) MERGED **17:12 IDT Jul 12** | ALL PASS ✅ | [JN-5401](https://redhat.atlassian.net/browse/JN-5401) — **Backlog** ⚠️ | **🎉 PR #1654 MERGED 17:12 IDT** — CI all pass (run 29195415951). Worktree already archived. JN-5401 Jira still Backlog → **needs Done!** |
@@ -73,19 +73,16 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes Since Last Run (18:30 IDT Jul 12 — delta from 16:30 IDT Jul 12)
-
-⚠️ BOARD_STATE.md was 2 hours old (16:30 IDT last commit) — full refresh performed.
+## Key Changes Since Last Run (19:00 IDT Jul 12 — delta from 18:30 IDT Jul 12)
 
 | What observed | Status |
 |---|---|
-| **🎉 PR #1654 MERGED at 17:12 IDT** | CI all pass (run 29195415951). jn-5401-runner-subcommands already archived. JN-5401 still Backlog in Jira → needs Done! |
-| **🆕 PR #1655 REBASED** — now MERGEABLE | Was CONFLICTING. NEW CI run 29198110448: pre-commit ❌ + e2e-api ❌. Integration/tox/nox pass. |
-| **🆕 PR #1657 now MERGEABLE** | Was CONFLICTING — conflict resolved. Still DRAFT. |
-| **🔴 PR #1658 now CONFLICTING** | Was MERGEABLE+CI ALL PASS. Conflict introduced by #1654 merge updating main. |
-| **#1638 CI improving** | Run 29196923676: all pass except e2e-smoke PENDING (was e2e-product ❌). Near all-pass! |
-| **jn-5865, jn-5871 zone mismatches PERSIST** | Day 6 now. |
-| **No additional archives** | jn-5401 was already archived by prior session. |
+| **🆕 PR #1655 CI IMPROVED** — e2e-api now ✅ | Run 29198902176: pre-commit ❌ only. e2e-api ✅ (was ❌), e2e-smoke ✅, integration ✅, tox ✅, nox ✅. Only pre-commit blocks now. |
+| **🔴 PR #1638 CI WORSENED** — e2e-smoke ❌ FAIL | Run 29196923676 completed: e2e-smoke ❌ FAIL (was PENDING last run). All other checks pass. |
+| **PR #1657 mergeable: UNKNOWN** | Was MERGEABLE at 18:30 IDT — GitHub API may be slow. Still DRAFT, no CI triggered yet. |
+| **PR #1659 mergeable: UNKNOWN** | Was CONFLICTING — may be resolving. Still DRAFT. |
+| **No new merges** | Nothing since #1654 at 17:12 IDT. |
+| **jn-5865, jn-5871 zone mismatches PERSIST** | Day 4+ still wrong zone. |
 
 ---
 
@@ -100,12 +97,12 @@ PR [#1654](https://github.com/Jounce-IO/jounce/pull/1654): "feat(jbenchmark): ad
 
 ---
 
-### 🔴 #1655 (jn-5867) — REBASED but CI failing (pre-commit ❌ + e2e-api ❌)
+### 🟡 #1655 (jn-5867) — pre-commit ❌ only (e2e-api now ✅)
 
 PR [#1655](https://github.com/Jounce-IO/jounce/pull/1655): "feat(jbenchmark): Platform enum + ClusterConfig refactor"
-- **REBASED** — now MERGEABLE (was CONFLICTING). NEW CI run 29198110448 triggered.
-- **pre-commit ❌ + e2e-api ❌** — integration ✅, tox ✅, nox ✅, atlas-validate ✅.
-- **Action:** Diagnose pre-commit + e2e-api failures in run 29198110448.
+- **CI improved** (run 29198902176): **e2e-api ✅ PASS** (was ❌ last run). Only pre-commit ❌ remains.
+- e2e-smoke ✅, integration ✅, tox ✅, nox ✅, atlas-validate ✅. e2e-tests aggregator PENDING.
+- **Action:** Diagnose and fix pre-commit failure. One failing check away from merge-ready.
 
 ---
 
@@ -118,12 +115,12 @@ PR [#1658](https://github.com/Jounce-IO/jounce/pull/1658): "docs(jbenchmark): ad
 
 ---
 
-### 🔴 #1638 (off-board) — e2e-smoke PENDING (all others pass)
+### 🔴 #1638 (off-board) — e2e-smoke ❌ FAIL
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites"
-- **Run 29196923676**: pre-commit ✅, e2e-api ✅, integration ✅, tox ✅, bake ✅, nox ✅ — only e2e-smoke PENDING.
-- Near CI all-pass! MERGEABLE.
-- **Action:** Wait for e2e-smoke result; if passes → ready for review/merge.
+- **Run 29196923676 COMPLETED**: e2e-smoke ❌ FAIL (was PENDING — now complete and failed). all-checks ❌.
+- Other checks: pre-commit ✅, e2e-api ✅, integration ✅, tox ✅, bake ✅, nox ✅. MERGEABLE.
+- **Action:** Diagnose e2e-smoke failure. This was the last pending check — now a new blocker.
 
 ---
 

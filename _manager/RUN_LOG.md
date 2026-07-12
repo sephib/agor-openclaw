@@ -4,6 +4,16 @@
 
 ---
 
+## 19:00 IDT — Weekday Daytime Heartbeat (Jul 12 2026)
+- PRs checked: #1655 (OPEN MERGEABLE), #1656 (DRAFT CONFLICTING), #1657 (DRAFT UNKNOWN), #1658 (OPEN CONFLICTING+CR), #1659 (DRAFT UNKNOWN), #1596 (DRAFT CONFLICTING), #1638 (OPEN MERGEABLE, off-board)
+- Merges detected: none (last merge was #1654 at 17:12 IDT)
+- CI changes: #1655 run 29198902176 — **e2e-api now ✅ PASS** (was ❌); only pre-commit ❌ remains; #1638 run 29196923676 completed — **e2e-smoke ❌ FAIL** (was PENDING)
+- Flags: #1655 one check away from CI pass; #1638 worsened (new blocker); zone mismatches jn-5865/jn-5871 Day 4+ persist
+- Archives: none
+- Next: Pre-commit fix on #1655 most actionable; e2e-smoke on #1638 needs investigation
+
+---
+
 ## 18:30 IDT — Weekday Daytime Heartbeat (Jul 12)
 - PRs checked: #1654 (🎉 MERGED 17:12 IDT — CI ALL PASS), #1655 (REBASED → now MERGEABLE — NEW CI run 29198110448: pre-commit ❌ + e2e-api ❌), #1656 (DRAFT CONFLICTING), #1657 (DRAFT MERGEABLE — was CONFLICTING), #1658 (now CONFLICTING — was MERGEABLE — #1654 merge updated main), #1659 (DRAFT CONFLICTING), #1596 (DRAFT CONFLICTING), #1638 (run 29196923676: all pass except e2e-smoke PENDING)
 - Merges detected: **PR #1654 MERGED 17:12 IDT** — jn-5401-runner-subcommands already archived by prior session. 1 effective archive.

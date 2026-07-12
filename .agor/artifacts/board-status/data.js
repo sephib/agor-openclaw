@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-12 18:30 IDT";
+export const LAST_UPDATED = "2026-07-12 19:00 IDT";
 
 export const WORKTREES = [
   {
@@ -79,17 +79,25 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1655",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1655",
-    status: "🆕 REBASED — now MERGEABLE (was CONFLICTING). NEW CI run 29198110448: pre-commit ❌ + e2e-api ❌ (integration ✅, tox ✅, nox ✅, atlas-validate ✅). Pre-commit has been failing 7+ consecutive runs.",
-    blockedOn: "pre-commit ❌ + e2e-api ❌ (run 29198110448)",
+    status: "🆕 CI IMPROVED (run 29198902176): e2e-api ✅ PASS (was ❌). Only pre-commit ❌ remains. e2e-smoke ✅, integration ✅, tox ✅, nox ✅. One check away from CI all-pass.",
+    blockedOn: "pre-commit ❌ only (run 29198902176)",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f56f350407868a2a40d13/",
-    sessionLabel: "heartbeat 18:30 IDT Jul 12 — REBASED, MERGEABLE, NEW CI: pre-commit ❌ + e2e-api ❌",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f570efe9b7ec9b5783a70/",
+    sessionLabel: "heartbeat 19:00 IDT Jul 12 — CI improved: e2e-api ✅, only pre-commit ❌",
     recentSessions: [
+      {
+        sessionId: "019f570efe9b7ec9b5783a70",
+        url: "http://127.0.0.1:3030/ui/s/019f570efe9b7ec9b5783a70/",
+        title: "heartbeat 19:00 IDT Jul 12 — CI improved: e2e-api ✅ PASS; only pre-commit ❌",
+        status: "running",
+        timestamp: "2026-07-12 19:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f56f350407868a2a40d13",
         url: "http://127.0.0.1:3030/ui/s/019f56f350407868a2a40d13/",
         title: "heartbeat 18:30 IDT Jul 12 — REBASED+MERGEABLE; NEW CI run 29198110448: pre-commit ❌ + e2e-api ❌",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-12 18:30 IDT",
         outputFile: null,
       },
@@ -126,7 +134,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-12 18:30 IDT",
+    lastActive: "2026-07-12 19:00 IDT",
   },
   {
     ticket: "JN-5869",
@@ -244,14 +252,22 @@ export const WORKTREES = [
     status: "🔴 CHANGES_REQUESTED from markVaykhansky (15:41 IDT Jul 12) + NEW: now CONFLICTING (was MERGEABLE — #1654 merge updated main). Must fix conflict first, then address review comments.",
     blockedOn: "CONFLICTING + CHANGES_REQUESTED — rebase first, then address review",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f56f350407868a2a40d13/",
-    sessionLabel: "heartbeat 18:30 IDT Jul 12 — now CONFLICTING (was MERGEABLE — #1654 merge)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f570efe9b7ec9b5783a70/",
+    sessionLabel: "heartbeat 19:00 IDT Jul 12 — CONFLICTING+CHANGES_REQUESTED unchanged",
     recentSessions: [
+      {
+        sessionId: "019f570efe9b7ec9b5783a70",
+        url: "http://127.0.0.1:3030/ui/s/019f570efe9b7ec9b5783a70/",
+        title: "heartbeat 19:00 IDT Jul 12 — CONFLICTING+CHANGES_REQUESTED unchanged",
+        status: "running",
+        timestamp: "2026-07-12 19:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f56f350407868a2a40d13",
         url: "http://127.0.0.1:3030/ui/s/019f56f350407868a2a40d13/",
         title: "heartbeat 18:30 IDT Jul 12 — now CONFLICTING (was MERGEABLE — #1654 merged into main)",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-12 18:30 IDT",
         outputFile: null,
       },
@@ -447,8 +463,8 @@ export const ALERTS = [
     message: "🔴 JN-5401 Jira still 'Backlog' → needs Done (PR #1654 MERGED). Update Jira now.",
   },
   {
-    level: "red",
-    message: "🔴 #1655 (jn-5867 JN-5867): REBASED → MERGEABLE. NEW CI run 29198110448: pre-commit ❌ + e2e-api ❌ (pre-commit failing 7+ consecutive). Integration/tox/nox pass.",
+    level: "yellow",
+    message: "🟡 #1655 (jn-5867 JN-5867): CI IMPROVED — e2e-api ✅ PASS (was ❌). Only pre-commit ❌ remains (run 29198902176). One fix away from CI all-pass.",
   },
   {
     level: "red",
@@ -459,8 +475,8 @@ export const ALERTS = [
     message: "🆕 PR #1657 (jn-5869 JN-5869): now MERGEABLE (was CONFLICTING — conflict resolved!). Still DRAFT. Action: undraft.",
   },
   {
-    level: "green",
-    message: "✅ PR #1638 (off-board): run 29196923676 all pass except e2e-smoke PENDING. Near CI all-pass — was e2e-product ❌!",
+    level: "red",
+    message: "🔴 PR #1638 (off-board): run 29196923676 COMPLETED — e2e-smoke ❌ FAIL (was PENDING). All other checks pass. MERGEABLE but CI failing.",
   },
   {
     level: "red",
