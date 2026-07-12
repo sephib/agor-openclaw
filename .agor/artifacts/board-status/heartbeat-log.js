@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-12 18:30 IDT",
+    actions: 1,
+    findings: 4,
+    status: "ok",
+    summary: "PR #1654 (JN-5401) MERGED 17:12 IDT — CI all pass, worktree already archived; #1655 rebased+MERGEABLE but pre-commit ❌+e2e-api ❌; #1657 now MERGEABLE; #1658 now CONFLICTING after #1654 merge; #1638 near CI pass",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f56f350407868a2a40d13/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-12 16:30 IDT",
     actions: 0,
     findings: 3,
