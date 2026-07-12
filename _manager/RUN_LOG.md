@@ -981,3 +981,12 @@
 - Jira: **JN-5841 now Done** (acli confirmed — was "In Review"); mismatches: 7 → 6. Jira MCP still 401. 8 new sprint tickets surfaced (JN-5844–5851, AGENTS.md batch + 3.5GA).
 - Flags: #1654 near merge pending CI pass; #1658 needs review response; #1655/#1656/#1657 need rebases; zone mismatches jn-5865/jn-5871 persist (Day 5)
 - Next: Monitor CI run 29195415951 for #1654 — if all pass → merge candidate
+
+## 22:00 IDT — Overnight Heartbeat (Jul 12)
+- PRs checked: #1638 (OPEN, run 29196923676 UNCHANGED — e2e-smoke ❌ + e2e-tests ❌), #1655 (OPEN, **NEW PUSH → run 29204508309**: pre-commit ❌ STILL + e2e-smoke ⏳ PENDING; e2e-api ✅), #1656 (DRAFT, **CONFLICT RESOLVED → MERGEABLE**, new CI run 29204964531 build images ✅), #1657 (DRAFT, **NEW PUSH → run 29204328037**: pre-commit ❌ FAIL), #1658 (OPEN, CHANGES_REQUESTED + CONFLICTING + CI ALL PASS run 29191881552 UNCHANGED), #1659 (DRAFT, **CONFLICT RESOLVED → MERGEABLE** + NEW PUSH → run 29204617290: pre-commit ❌)
+- Merges detected: none (0 auto-archives)
+- CI changes: **#1655 NEW PUSH** (run 29204508309 — pre-commit ❌ still); **#1656 CONFLICT RESOLVED → MERGEABLE** (new CI started); **#1657 NEW PUSH** (run 29204328037 — pre-commit ❌ new failure); **#1659 CONFLICT RESOLVED → MERGEABLE** (run 29204617290 — pre-commit ❌); #1638 UNCHANGED (e2e-smoke ❌ + e2e-tests ❌)
+- Jira: **JN-5867 → Done ✅** (was Backlog — mismatch resolved!). **JN-5445 now Backlog** (was In Progress — still needs Done). JN-5401/JN-5827/JN-5717/JN-5546 unchanged. Total mismatches: 5 (down from 6).
+- Flags: 2 zone mismatches persist (jn-5865 Ingest Day 7, jn-5871 Code Day 7); 5 Jira mismatches; #1658 CHANGES_REQUESTED+CONFLICTING unchanged; #1638 e2e-smoke+e2e-tests ❌ unchanged; pre-commit failures on #1655/#1657/#1659
+- Auto-advances: 0
+- Next: Fix pre-commit in #1655/#1657/#1659 (common root cause likely). Resolve #1658 conflict + review. Diagnose #1638 e2e-smoke. Update JN-5401 → Done in Jira.
