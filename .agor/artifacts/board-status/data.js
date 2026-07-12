@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-12 16:00 IDT";
+export const LAST_UPDATED = "2026-07-12 16:30 IDT";
 
 export const WORKTREES = [
   {
@@ -44,17 +44,33 @@ export const WORKTREES = [
     zone: "Respond",
     pr: "#1654",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1654",
-    status: "🎉 RUN 29190326639 ALL CI PASS — pre-commit ✅ e2e-api ✅ e2e-smoke ✅ e2e-tests ✅ all-checks ✅ ALL GREEN! BUT CONFLICTING (main moved after #1648 merge). Only needs rebase! JN-5401 Jira: Backlog — mismatch.",
-    blockedOn: "CONFLICTING — needs rebase on main after #1648 merge (all CI green!)",
+    status: "🎉 APPROVED + MERGEABLE — rebased since 16:00 IDT. CI run 29195415951 IN PROGRESS (pre-commit/e2e-api/integration/tox PENDING; atlas-validate ✅). Near merge pending CI pass! JN-5401 Jira: Backlog — mismatch.",
+    blockedOn: "CI run 29195415951 in progress — waiting for results",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5617ad217f00af2801ed/",
-    sessionLabel: "heartbeat 14:30 IDT Jul 12 — run 29190326639 ALL PASS but CONFLICTING! Needs rebase.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f56a102cb7d0da5e30672/",
+    sessionLabel: "heartbeat 16:30 IDT Jul 12 — APPROVED + MERGEABLE! CI run 29195415951 IN PROGRESS",
     recentSessions: [
+      {
+        sessionId: "019f56a102cb7d0da5e30672",
+        url: "http://127.0.0.1:3030/ui/s/019f56a102cb7d0da5e30672/",
+        title: "heartbeat 16:30 IDT Jul 12 — #1654 APPROVED + MERGEABLE! CI run 29195415951 IN PROGRESS",
+        status: "running",
+        timestamp: "2026-07-12 16:30 IDT",
+        outputFile: null,
+      },
+      {
+        sessionId: "019f566a133771dcb82c00de",
+        url: "http://127.0.0.1:3030/ui/s/019f566a133771dcb82c00de/",
+        title: "heartbeat 16:00 IDT Jul 12 — CI ALL PASS run 29190326639 but CONFLICTING (needs rebase)",
+        status: "idle",
+        timestamp: "2026-07-12 16:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f5617ad217f00af2801ed",
         url: "http://127.0.0.1:3030/ui/s/019f5617ad217f00af2801ed/",
         title: "heartbeat 14:30 IDT Jul 12 — run 29190326639 ALL CI PASS! CONFLICTING (needs rebase after #1648 merge)",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-12 14:30 IDT",
         outputFile: null,
       },
@@ -74,24 +90,8 @@ export const WORKTREES = [
         timestamp: "2026-07-12 12:30 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f55a9cef5715d83d91ef0",
-        url: "http://127.0.0.1:3030/ui/s/019f55a9cef5715d83d91ef0/",
-        title: "heartbeat 12:00 IDT Jul 12 — run 29186096807 NEW: pre-commit ❌ + e2e-api ❌ REGRESSION",
-        status: "idle",
-        timestamp: "2026-07-12 12:00 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f5572df607662a744a25d",
-        url: "http://127.0.0.1:3030/ui/s/019f5572df607662a744a25d/",
-        title: "heartbeat 11:30 IDT Jul 12 — run 29185143612 COMPLETE: pre-commit ❌ STILL",
-        status: "idle",
-        timestamp: "2026-07-12 11:30 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-12 14:30 IDT",
+    lastActive: "2026-07-12 16:30 IDT",
   },
   {
     ticket: "JN-5870",
@@ -136,17 +136,25 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1655",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1655",
-    status: "🔴 run 29191069313 COMPLETE — pre-commit ❌ STILL (7+ consecutive) + e2e-api ❌ NEW. validate-tag.yml ❌ × 2 (side-effect of #1648, not main gate). Needs pre-commit + e2e-api diagnosis.",
-    blockedOn: "pre-commit ❌ (7+ consecutive) + e2e-api ❌ (newly failing)",
+    status: "🔴 CONFLICTING — no CI runs triggering (conflict blocks CI). Previous run 29191069313: pre-commit ❌ (7+ consecutive) + e2e-api ❌. Needs rebase on main first, then diagnose failures.",
+    blockedOn: "CONFLICTING + pre-commit ❌ (7+) + e2e-api ❌",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f564e9bf57a4d8aea2124/",
-    sessionLabel: "heartbeat 15:30 IDT Jul 12 — run 29191069313: pre-commit ❌ + e2e-api ❌ WORSENED",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f56a102cb7d0da5e30672/",
+    sessionLabel: "heartbeat 16:30 IDT Jul 12 — still CONFLICTING, no new CI",
     recentSessions: [
+      {
+        sessionId: "019f56a102cb7d0da5e30672",
+        url: "http://127.0.0.1:3030/ui/s/019f56a102cb7d0da5e30672/",
+        title: "heartbeat 16:30 IDT Jul 12 — still CONFLICTING, no new CI runs",
+        status: "running",
+        timestamp: "2026-07-12 16:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f564e9bf57a4d8aea2124",
         url: "http://127.0.0.1:3030/ui/s/019f564e9bf57a4d8aea2124/",
         title: "heartbeat 15:30 IDT Jul 12 — run 29191069313: pre-commit ❌ + e2e-api ❌ WORSENED",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-12 15:30 IDT",
         outputFile: null,
       },
@@ -156,14 +164,6 @@ export const WORKTREES = [
         title: "heartbeat 15:00 IDT Jul 12 — run 29190967716 COMPLETE: pre-commit ❌ STILL",
         status: "idle",
         timestamp: "2026-07-12 15:00 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f5617ad217f00af2801ed",
-        url: "http://127.0.0.1:3030/ui/s/019f5617ad217f00af2801ed/",
-        title: "heartbeat 14:30 IDT Jul 12 — new CI run 29190967716 PENDING (triggered by #1648 merge)",
-        status: "idle",
-        timestamp: "2026-07-12 14:30 IDT",
         outputFile: null,
       },
       {
@@ -183,7 +183,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-12 14:30 IDT",
+    lastActive: "2026-07-12 16:30 IDT",
   },
   {
     ticket: "JN-5869",
@@ -220,7 +220,7 @@ export const WORKTREES = [
     zone: "Ingest",
     pr: null,
     prUrl: null,
-    status: "Plan done ~23:06 IDT Jul 8. Still Ingest zone — zone mismatch persists. Propose move to Code zone + trigger /implement:code.",
+    status: "Plan done ~23:06 IDT Jul 8. Still Ingest zone — zone mismatch persists (Day 5). Propose move to Code zone + trigger /implement:code.",
     blockedOn: "Zone mismatch — needs move to Code",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f4351d110788ba7254ee1/",
@@ -296,28 +296,28 @@ export const WORKTREES = [
     branch: "jn-5842-jbenchmark-agents-md",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5842-jbenchmark-agents-md",
     zone: "NO ZONE",
-    pr: "#1658 ✅ UNDRAFTED",
+    pr: "#1658",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1658",
     status: "🔴 CHANGES_REQUESTED from markVaykhansky (15:41 IDT Jul 12). CI ALL PASS (run 29191881552) + MERGEABLE. Must address review comments before merge.",
     blockedOn: "CHANGES_REQUESTED — must address markVaykhansky review",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f566a133771dcb82c00de/",
-    sessionLabel: "heartbeat 16:00 IDT Jul 12 — CHANGES_REQUESTED from markVaykhansky at 15:41 IDT",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f56a102cb7d0da5e30672/",
+    sessionLabel: "heartbeat 16:30 IDT Jul 12 — CHANGES_REQUESTED unchanged",
     recentSessions: [
+      {
+        sessionId: "019f56a102cb7d0da5e30672",
+        url: "http://127.0.0.1:3030/ui/s/019f56a102cb7d0da5e30672/",
+        title: "heartbeat 16:30 IDT Jul 12 — CHANGES_REQUESTED from markVaykhansky (unchanged)",
+        status: "running",
+        timestamp: "2026-07-12 16:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f566a133771dcb82c00de",
         url: "http://127.0.0.1:3030/ui/s/019f566a133771dcb82c00de/",
         title: "heartbeat 16:00 IDT Jul 12 — CHANGES_REQUESTED from markVaykhansky at 15:41 IDT",
-        status: "running",
-        timestamp: "2026-07-12 16:00 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f564e9bf57a4d8aea2124",
-        url: "http://127.0.0.1:3030/ui/s/019f564e9bf57a4d8aea2124/",
-        title: "heartbeat 15:30 IDT Jul 12 — PR #1658 UNDRAFTED detected, CI ALL PASS + MERGEABLE",
         status: "idle",
-        timestamp: "2026-07-12 15:30 IDT",
+        timestamp: "2026-07-12 16:00 IDT",
         outputFile: null,
       },
       {
@@ -329,7 +329,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-12 16:00 IDT",
+    lastActive: "2026-07-12 16:30 IDT",
   },
   {
     ticket: "JN-5868",
@@ -401,7 +401,7 @@ export const MERGED = [
     pr: "#1649",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1649",
     mergedDate: "2026-07-12",
-    note: "Merged 14:45 IDT Jul 12. jn-5841-agents-md-root ARCHIVED 16:00 IDT Jul 12 (was in Agor as NO ZONE — found via branchId scan). JN-5841 Jira 'In Review' → needs Done.",
+    note: "Merged 14:45 IDT Jul 12. jn-5841-agents-md-root ARCHIVED 16:00 IDT Jul 12. JN-5841 Jira → Done ✅ (confirmed 16:30 IDT Jul 12 via acli).",
   },
   {
     ticket: "JN-5827",
@@ -479,28 +479,36 @@ export const MERGED = [
 
 export const ALERTS = [
   {
+    level: "green",
+    message: "🎉 PR #1654 (jn-5401 JN-5401): APPROVED + MERGEABLE — rebased since 16:00 IDT! CI run 29195415951 IN PROGRESS. Near merge pending CI pass!",
+  },
+  {
     level: "red",
     message: "🔴 #1658 (jn-5842 JN-5842): CHANGES_REQUESTED from markVaykhansky (15:41 IDT Jul 12). CI ALL PASS + MERGEABLE. Must address review comments — then re-request review.",
   },
   {
     level: "green",
-    message: "✅ jn-5841-agents-md-root ARCHIVED 16:00 IDT Jul 12 — PR #1649 MERGED 14:45 IDT. Branch was in Agor (NO ZONE) — found via branchId scan and archived. JN-5841 Jira 'In Review' → needs Done.",
+    message: "✅ JN-5841 Jira → Done confirmed 16:30 IDT Jul 12 (acli). Mismatch count: 7 → 6.",
+  },
+  {
+    level: "green",
+    message: "✅ PR #1638: pre-commit REGRESSION FIXED in run 29193793106 (pre-commit ✅). New blocker: e2e-product ❌. MERGEABLE.",
+  },
+  {
+    level: "green",
+    message: "✅ jn-5841-agents-md-root ARCHIVED 16:00 IDT Jul 12 — PR #1649 MERGED 14:45 IDT. Branch was NO ZONE — found via branchId scan.",
   },
   {
     level: "green",
     message: "🎉 PR #1648 (jn-5827 JN-5827) MERGED 14:27 IDT Jul 12 — worktree archived autonomously. JN-5827 Jira 'Backlog' → needs Done.",
   },
   {
-    level: "green",
-    message: "🎉 #1654 (jn-5401 JN-5401): run 29190326639 ALL CI PASS — pre-commit ✅ e2e-api ✅ e2e-smoke ✅ e2e-tests ✅ all-checks ✅! CONFLICTING (needs rebase after #1648 merge). ACTION: rebase jn-5401 on main → near merge!",
+    level: "red",
+    message: "🔴 PR #1655 (jn-5867 JN-5867): CONFLICTING — no CI triggering. Previous: pre-commit ❌ (7+ consecutive) + e2e-api ❌. Needs rebase first.",
   },
   {
     level: "red",
-    message: "🔴 PR #1655 (jn-5867 JN-5867): run 29191069313 — pre-commit ❌ (7+ consecutive) + e2e-api ❌ NEW. validate-tag.yml ❌ × 2 (side-effect, not main gate). Needs pre-commit + e2e-api diagnosis.",
-  },
-  {
-    level: "red",
-    message: "🔴 PR #1638 (JN-5725, off-board): NEW run 29193273509 — pre-commit ❌ REGRESSION (new push broke linting). e2e-smoke ⏳ PENDING. Needs pre-commit diagnosis.",
+    message: "🔴 PR #1638 (JN-5725, off-board): run 29193793106 — e2e-product ❌ (new blocker). pre-commit ✅ FIXED. Needs e2e-product diagnosis.",
   },
   {
     level: "red",
@@ -516,19 +524,19 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⚠️ validate-tag.yml side-effects: New workflow from #1648 (git tagging) now fires on all open PR branches. Causing extra ❌ runs on jn-5867, jn-5842. NOT the main CI gate — pre-commit/e2e/all-checks are the gate.",
+    message: "⚠️ validate-tag.yml side-effects: New workflow from #1648 (git tagging) now fires on all open PR branches. NOT the main CI gate.",
   },
   {
     level: "yellow",
-    message: "📍 jn-5865 (JN-5865): Still Ingest zone — plan done Jul 8. Zone mismatch persists (Day 5). Propose move to Code + trigger /implement:code.",
+    message: "📍 jn-5865 (JN-5865): Still Ingest zone — plan done Jul 8 (Day 5). Propose move to Code + trigger /implement:code.",
   },
   {
     level: "yellow",
-    message: "📍 jn-5871 (JN-5871): Still Code zone — code done since 00:58 IDT Jul 9. Zone mismatch (Day 5). Propose move to Verify + trigger /implement:validate.",
+    message: "📍 jn-5871 (JN-5871): Still Code zone — code done since 00:58 IDT Jul 9 (Day 5). Propose move to Verify + trigger /implement:validate.",
   },
   {
     level: "yellow",
-    message: "🔄 jn-5824-benchmark-run-configs (JN-5824): 'continuew' session IDLE ready_for_prompt:FALSE. 2 commits done. Needs: generate 24 configs, rebase, PR. Action: fork new session.",
+    message: "🔄 jn-5824-benchmark-run-configs (JN-5824): 'continuew' session IDLE ready_for_prompt:FALSE. 2 commits done. Needs: generate 24 configs, rebase, PR.",
   },
   {
     level: "red",
@@ -536,11 +544,11 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "❌ Jira mismatches (7): JN-5445/5717/5546/5827/5841 PRs merged — needs Done. JN-5401/5867 PRs open — needs In Review. Jira MCP 401 + acli empty — carried forward 16:00 IDT Jul 12.",
+    message: "❌ Jira mismatches (6): JN-5445/5717/5546/5827 PRs merged — needs Done. JN-5401/5867 PRs open — needs In Review. acli working but Jira MCP 401.",
   },
   {
     level: "yellow",
-    message: "⚠️ jn-5842 has NO ZONE in Agor (confirmed via branchId scan). PR #1658 has CHANGES_REQUESTED — zone assignment secondary to fixing review.",
+    message: "⚠️ jn-5842 has NO ZONE in Agor. PR #1658 has CHANGES_REQUESTED — zone assignment secondary to fixing review.",
   },
   {
     level: "yellow",
@@ -549,5 +557,9 @@ export const ALERTS = [
   {
     level: "yellow",
     message: "⚠️ model-packaging-cr (Code Review zone): stagnant 24+ days. No PR URL set. Needs investigation or archive.",
+  },
+  {
+    level: "yellow",
+    message: "🆕 8 new sprint tickets identified (AGENTS.md batch + 3.5GA): JN-5844 through JN-5851. All Backlog, no worktrees.",
   },
 ];
