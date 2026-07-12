@@ -876,3 +876,12 @@
 - CI changes: **#1638 e2e-smoke ✅ FIXED** (was ❌) but **e2e-product ❌ NEW** in run 29143033663. **#1648 new push** → run 29105010549 but pre-commit ❌ still.
 - Flags: ⚠️ BOARD_STATE ~34h stale (2 weekend heartbeats failed Jul 11 03:00 + 09:00); zone mismatches jn-5865/jn-5871 persist; 6 Jira mismatches carry forward (Jira MCP 401 not re-verified)
 - Next: Check #1638 e2e-product failure, #1648/#1654/#1655 pre-commit fix, #1649 reviewer LGTM
+
+## 11:30 IDT — Weekday Daytime Heartbeat (Jul 12)
+- PRs checked: #1654 (OPEN, run 29185143612 COMPLETE: pre-commit ❌ STILL — new push did NOT fix it), #1638 (OPEN, ANOTHER NEW PUSH → run 29185758594: pre-commit ✅ PASS! bake ✅ tox ✅ nox ✅ e2e-api ✅ integration ✅; e2e-smoke ⏳ PENDING — near-merge!), #1648 (OPEN, ANOTHER NEW PUSH → run 29185689618: pre-commit ❌ STILL, e2e-api ✅ integration ✅ tox ✅, e2e-smoke ⏳ PENDING), #1649 (OPEN, ALL PASS run 28932482752 UNCHANGED), #1655 (OPEN, run 29016539122 pre-commit ❌ UNCHANGED no new push)
+- Merges detected: none (sweep clean — 0 auto-archives)
+- CI changes: **#1654 run COMPLETE pre-commit ❌ PERSISTENT** (new push didn't fix); **#1638 ANOTHER NEW PUSH pre-commit ✅ FIXED** (was ❌) — e2e-smoke pending; **#1648 ANOTHER NEW PUSH pre-commit ❌ STILL**
+- Jira: 6 mismatches confirmed via acli 11:30 IDT — all unchanged (JN-5445 In Progress, JN-5717 Backlog, JN-5546 In Progress, JN-5827 Backlog, JN-5401 Backlog, JN-5867 Backlog)
+- Flags: 2 zone mismatches persist (jn-5865 Ingest, jn-5871 Code); 6 Jira mismatches; #1654/#1648 pre-commit persistent failures; #1655 no new push
+- Auto-advances: 0
+- Next: Watch #1638 e2e-smoke (near-merge if passes). Diagnose #1654 pre-commit (persistent, multiple pushes haven't fixed). #1648 pre-commit also persistent. #1649 still needs LGTM.

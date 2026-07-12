@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-12 11:00 IDT";
+export const LAST_UPDATED = "2026-07-12 11:30 IDT";
 
 export const WORKTREES = [
   {
@@ -102,17 +102,25 @@ export const WORKTREES = [
     zone: "Respond",
     pr: "#1654",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1654",
-    status: "⏳ ANOTHER NEW PUSH → run 29185143612 IN PROGRESS. Prior push (09:55 IDT, run 29183505715) had pre-commit ❌. Awaiting result. JN-5401 Jira: Backlog — mismatch. Near-merge if pre-commit passes.",
-    blockedOn: "CI run 29185143612 in_progress — pre-commit result pending",
-    blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f55576bf975af8b489add/",
-    sessionLabel: "heartbeat 11:00 IDT Jul 12 — run 29185143612 in_progress; prior push pre-commit ❌",
+    status: "🔴 Run 29185143612 COMPLETE: pre-commit ❌ PERSISTENT — new push at ~11:00 IDT did NOT fix it. all-checks ❌. All others pass (e2e-api ✅ e2e-smoke ✅ integration ✅ tox ✅). Needs targeted pre-commit diagnosis. JN-5401 Jira: Backlog — mismatch.",
+    blockedOn: "pre-commit ❌ persistent (run 29185143612 COMPLETE — multiple pushes failed to fix)",
+    blockedType: "blocked",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5572df607662a744a25d/",
+    sessionLabel: "heartbeat 11:30 IDT Jul 12 — run 29185143612 COMPLETE: pre-commit ❌ PERSISTENT",
     recentSessions: [
+      {
+        sessionId: "019f5572df607662a744a25d",
+        url: "http://127.0.0.1:3030/ui/s/019f5572df607662a744a25d/",
+        title: "heartbeat 11:30 IDT Jul 12 — run 29185143612 COMPLETE: pre-commit ❌ STILL",
+        status: "running",
+        timestamp: "2026-07-12 11:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f55576bf975af8b489add",
         url: "http://127.0.0.1:3030/ui/s/019f55576bf975af8b489add/",
         title: "heartbeat 11:00 IDT Jul 12 — ANOTHER NEW PUSH, run 29185143612 in_progress",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-12 11:00 IDT",
         outputFile: null,
       },
@@ -570,17 +578,25 @@ export const WORKTREES = [
     zone: "Respond",
     pr: "#1648",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1648",
-    status: "🔴 Run 29105010549 UNCHANGED: pre-commit ❌ STILL the only failure. e2e-api ✅, e2e-smoke ✅, e2e-tests ✅, integration ✅, tox ✅, nox ✅ all pass. No new push since Jul 12 04:02. Near-merge — fix pre-commit. JN-5827 Jira: Backlog — mismatch.",
-    blockedOn: "pre-commit ❌ only — no new push since Jul 12 04:02. Near-merge.",
+    status: "🔴 ANOTHER NEW PUSH → run 29185689618: pre-commit ❌ STILL the only failure. e2e-api ✅, integration ✅, tox ✅, nox ✅ all pass; e2e-smoke ⏳ PENDING. Near-merge — fix pre-commit. JN-5827 Jira: Backlog — mismatch.",
+    blockedOn: "pre-commit ❌ persistent — run 29185689618 (ANOTHER NEW PUSH). Near-merge.",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f55576bf975af8b489add/",
-    sessionLabel: "heartbeat 11:00 IDT Jul 12 — run 29105010549 UNCHANGED: pre-commit ❌ only, no new push",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5572df607662a744a25d/",
+    sessionLabel: "heartbeat 11:30 IDT Jul 12 — ANOTHER NEW PUSH → run 29185689618: pre-commit ❌ STILL",
     recentSessions: [
+      {
+        sessionId: "019f5572df607662a744a25d",
+        url: "http://127.0.0.1:3030/ui/s/019f5572df607662a744a25d/",
+        title: "heartbeat 11:30 IDT Jul 12 — ANOTHER NEW PUSH → run 29185689618: pre-commit ❌ STILL",
+        status: "running",
+        timestamp: "2026-07-12 11:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f55576bf975af8b489add",
         url: "http://127.0.0.1:3030/ui/s/019f55576bf975af8b489add/",
         title: "heartbeat 11:00 IDT Jul 12 — run 29105010549 UNCHANGED: pre-commit ❌ only, no new push",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-12 11:00 IDT",
         outputFile: null,
       },
@@ -782,15 +798,19 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "yellow",
-    message: "⏳ PR #1654 (jn-5401 JN-5401): ANOTHER NEW PUSH — run 29185143612 IN PROGRESS. Prior push (09:55 IDT) had pre-commit ❌. Awaiting CI result. Near-merge if pre-commit passes.",
-  },
-  {
-    level: "yellow",
-    message: "🔄 PR #1648 (jn-5827 JN-5827): Run 29105010549 — pre-commit ❌ STILL. No new push since Jul 12 04:02. All others ✅. Near-merge.",
+    message: "🔄 PR #1638 (JN-5725, off-board): ANOTHER NEW PUSH → run 29185758594: pre-commit ✅ PASS! bake ✅ tox ✅ nox ✅ e2e-api ✅ integration ✅. e2e-smoke ⏳ PENDING — NEAR MERGE if e2e-smoke passes!",
   },
   {
     level: "red",
-    message: "🔴 PR #1655 (jn-5867 JN-5867): Run 29016539122 UNCHANGED — pre-commit ❌ STILL (4+ consecutive complete runs). All others ✅. Needs targeted pre-commit diagnosis.",
+    message: "🔴 PR #1654 (jn-5401 JN-5401): run 29185143612 COMPLETE — pre-commit ❌ PERSISTENT. Multiple new pushes have NOT fixed it. all-checks ❌. All others pass. Needs targeted pre-commit diagnosis.",
+  },
+  {
+    level: "red",
+    message: "🔴 PR #1648 (jn-5827 JN-5827): ANOTHER NEW PUSH → run 29185689618: pre-commit ❌ STILL. e2e-api ✅ integration ✅ tox ✅. e2e-smoke ⏳ PENDING. Multiple pushes not fixing pre-commit.",
+  },
+  {
+    level: "red",
+    message: "🔴 PR #1655 (jn-5867 JN-5867): Run 29016539122 UNCHANGED — pre-commit ❌ STILL (5+ consecutive complete runs, no new push since Jul 9). Needs targeted pre-commit diagnosis.",
   },
   {
     level: "red",
@@ -802,15 +822,11 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⏳ PR #1638 (JN-5725, off-board): NEW PUSH (fix type errors in mock tests). Run 29184496946 IN PROGRESS — e2e-product ⏳ PENDING (was ❌). All others ✅. Potential fix — awaiting result!",
+    message: "🆕 jn-5842 (JN-5842): PR #1658 DRAFT CI PASS (docs-only). Needs undraft + review.",
   },
   {
     level: "yellow",
-    message: "🆕 jn-5842 (JN-5842): ADVANCED Code→Publish. PR #1658 DRAFT CI PASS (docs-only). Needs undraft + review.",
-  },
-  {
-    level: "yellow",
-    message: "🆕 jn-5868 (JN-5868): ADVANCED Code→Publish. PR #1659 DRAFT CONFLICTING. Needs rebase (depends on jn-5867 Platform enum).",
+    message: "🆕 jn-5868 (JN-5868): PR #1659 DRAFT CONFLICTING. Needs rebase (depends on jn-5867 Platform enum).",
   },
   {
     level: "green",
