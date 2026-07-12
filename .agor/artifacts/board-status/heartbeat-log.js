@@ -1,7 +1,16 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
-    timestamp: "2026-07-12 12:30 IDT",
+    timestamp: "2026-07-12 14:00 IDT",
+    actions: 0,
+    findings: 2,
+    status: "ok",
+    summary: "#1649 APPROVED! Ready to merge (was REVIEW_REQUIRED); #1648 ANOTHER NEW PUSH run 29190015288 IN PROGRESS e2e-api ✅; #1638 run 29189499882 all pass except e2e-product ⏳; #1654 unchanged ❌; #1655 unchanged ❌; Jira auth failed both channels",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f55fc36327ccdbf3ef1be/",
+  },
+  {
+    type: "advance",
+    timestamp: "2026-07-12 13:00 IDT",
     actions: 0,
     findings: 3,
     status: "ok",

@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-12 13:00 IDT";
+export const LAST_UPDATED = "2026-07-12 14:00 IDT";
 
 export const WORKTREES = [
   {
@@ -44,12 +44,20 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1649",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1649",
-    status: "🟢 CI ALL PASS — run 28932482752: pre-commit ✅, e2e-smoke ✅, tox ✅, nox ✅, all-checks ✅. REVIEW_REQUIRED. JN-5841 Jira In Review ✅. Action: get reviewer LGTM to merge.",
-    blockedOn: "Awaiting reviewer LGTM",
+    status: "🎉 APPROVED + CI ALL PASS = READY TO MERGE. reviewDecision APPROVED (changed from REVIEW_REQUIRED at 13:00 IDT Jul 12). CI run 28932482752: ALL PASS ✅. MERGEABLE. Action: MERGE #1649 NOW.",
+    blockedOn: null,
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f3e01ee07703caf8b9576/",
-    sessionLabel: "publish (completed — PR #1649 created, draft removed)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f55fc36327ccdbf3ef1be/",
+    sessionLabel: "heartbeat 14:00 IDT Jul 12 — #1649 APPROVED! Ready to merge.",
     recentSessions: [
+      {
+        sessionId: "019f55fc36327ccdbf3ef1be",
+        url: "http://127.0.0.1:3030/ui/s/019f55fc36327ccdbf3ef1be/",
+        title: "heartbeat 14:00 IDT Jul 12 — #1649 APPROVED! Ready to merge",
+        status: "running",
+        timestamp: "2026-07-12 14:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f3e01ee07703caf8b9576",
         url: "http://127.0.0.1:3030/ui/s/019f3e01ee07703caf8b9576/",
@@ -102,18 +110,18 @@ export const WORKTREES = [
     zone: "Respond",
     pr: "#1654",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1654",
-    status: "🔴 Run 29187705809 ANOTHER NEW PUSH: pre-commit ❌ + e2e-api ❌ + e2e-tests ❌ PERSIST. integration ✅ tox ✅ nox ✅. Unlike #1648 (e2e-api was infra flake), #1654's e2e-api failure is code-level regression — persists across multiple pushes. JN-5401 Jira: Backlog — mismatch. UNCHANGED 13:00 IDT.",
+    status: "🔴 Run 29187705809 UNCHANGED 14:00 IDT: pre-commit ❌ + e2e-api ❌ + e2e-tests ❌ PERSIST. integration ✅ tox ✅ nox ✅. e2e-api is code regression (not infra flake — persists across multiple pushes). JN-5401 Jira: Backlog — mismatch.",
     blockedOn: "pre-commit ❌ + e2e-api ❌ code regression (run 29187705809) — multiple pushes, no improvement",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f55e0be2f709d8a39ec34/",
-    sessionLabel: "heartbeat 13:00 IDT Jul 12 — run 29187705809 UNCHANGED: pre-commit ❌ + e2e-api ❌ + e2e-tests ❌ STILL",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f55fc36327ccdbf3ef1be/",
+    sessionLabel: "heartbeat 14:00 IDT Jul 12 — run 29187705809 UNCHANGED: pre-commit ❌ + e2e-api ❌ + e2e-tests ❌ STILL",
     recentSessions: [
       {
-        sessionId: "019f55e0be2f709d8a39ec34",
-        url: "http://127.0.0.1:3030/ui/s/019f55e0be2f709d8a39ec34/",
-        title: "heartbeat 13:00 IDT Jul 12 — run 29187705809 UNCHANGED: pre-commit ❌ + e2e-api ❌ + e2e-tests ❌ STILL",
+        sessionId: "019f55fc36327ccdbf3ef1be",
+        url: "http://127.0.0.1:3030/ui/s/019f55fc36327ccdbf3ef1be/",
+        title: "heartbeat 14:00 IDT Jul 12 — run 29187705809 UNCHANGED: pre-commit ❌ + e2e-api ❌ + e2e-tests ❌ STILL",
         status: "running",
-        timestamp: "2026-07-12 13:00 IDT",
+        timestamp: "2026-07-12 14:00 IDT",
         outputFile: null,
       },
       {
@@ -602,17 +610,25 @@ export const WORKTREES = [
     zone: "Respond",
     pr: "#1648",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1648",
-    status: "🟡 ANOTHER NEW PUSH → run 29189222730 (ALL PENDING: pre-commit, e2e-api, integration, tox). Prior run 29187983912: pre-commit ❌ only (e2e-api ✅ RESOLVED — was infra flake). Watch: if pre-commit passes in new run → near-merge! JN-5827 Jira: Backlog — mismatch.",
-    blockedOn: "ANOTHER NEW PUSH → run 29189222730 PENDING (prior run: pre-commit ❌ only)",
+    status: "🟡 ANOTHER NEW PUSH → run 29190015288 IN PROGRESS (started ~13:57 IDT). e2e-api ✅ PASS (good!), pre-commit ⏳ PENDING. If pre-commit passes → near-merge! JN-5827 Jira: Backlog — mismatch.",
+    blockedOn: "ANOTHER NEW PUSH → run 29190015288 IN PROGRESS — pre-commit ⏳ pending (critical)",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f55e0be2f709d8a39ec34/",
-    sessionLabel: "heartbeat 13:00 IDT Jul 12 — ANOTHER NEW PUSH → run 29189222730 PENDING",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f55fc36327ccdbf3ef1be/",
+    sessionLabel: "heartbeat 14:00 IDT Jul 12 — ANOTHER NEW PUSH → run 29190015288 IN PROGRESS, e2e-api ✅",
     recentSessions: [
+      {
+        sessionId: "019f55fc36327ccdbf3ef1be",
+        url: "http://127.0.0.1:3030/ui/s/019f55fc36327ccdbf3ef1be/",
+        title: "heartbeat 14:00 IDT Jul 12 — ANOTHER NEW PUSH → run 29190015288 IN PROGRESS, e2e-api ✅",
+        status: "running",
+        timestamp: "2026-07-12 14:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f55e0be2f709d8a39ec34",
         url: "http://127.0.0.1:3030/ui/s/019f55e0be2f709d8a39ec34/",
         title: "heartbeat 13:00 IDT Jul 12 — ANOTHER NEW PUSH → run 29189222730: all PENDING",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-12 13:00 IDT",
         outputFile: null,
       },
@@ -845,16 +861,20 @@ export const MERGED = [
 
 export const ALERTS = [
   {
+    level: "green",
+    message: "🎉 #1649 (jn-5841 JN-5841): APPROVED at 14:00 IDT Jul 12 (was REVIEW_REQUIRED). CI ALL PASS run 28932482752. MERGEABLE. ACTION REQUIRED: MERGE NOW.",
+  },
+  {
     level: "yellow",
-    message: "🟡 PR #1638 (JN-5725, off-board): run 29188195716 — e2e-smoke ✅ PASSED (was PENDING). Only e2e-product ⏳ PENDING remains. All others ✅. NEAR MERGE if e2e-product passes.",
+    message: "🟡 PR #1638 (JN-5725, off-board): run 29189499882 — pre-commit ✅ bake ✅ e2e-api ✅ tox ✅ e2e-smoke ✅ ALL PASS. Only e2e-product ⏳ PENDING. NEAR MERGE if e2e-product passes.",
+  },
+  {
+    level: "yellow",
+    message: "🟡 PR #1648 (jn-5827 JN-5827): ANOTHER NEW PUSH → run 29190015288 IN PROGRESS (13:57 IDT). e2e-api ✅ PASS! pre-commit ⏳ PENDING (critical). If pre-commit passes → near-merge!",
   },
   {
     level: "red",
-    message: "🔴 PR #1654 (jn-5401 JN-5401): ANOTHER NEW PUSH → run 29187705809 — pre-commit ❌ + e2e-api ❌ + e2e-tests ❌ PERSIST. integration ✅ tox ✅. e2e-api is code regression (not infra flake — persists across pushes unlike #1648).",
-  },
-  {
-    level: "red",
-    message: "🟡 PR #1648 (jn-5827 JN-5827): ANOTHER NEW PUSH → run 29189222730 (ALL PENDING: pre-commit, e2e-api, integration, tox). Prior run 29187983912: pre-commit ❌ only (e2e-api ✅ — was infra flake). Watch: if pre-commit passes → near-merge!",
+    message: "🔴 PR #1654 (jn-5401 JN-5401): UNCHANGED run 29187705809 — pre-commit ❌ + e2e-api ❌ + e2e-tests ❌ PERSIST. integration ✅ tox ✅. e2e-api is code regression (not infra flake — persists across pushes).",
   },
   {
     level: "red",
@@ -877,16 +897,12 @@ export const ALERTS = [
     message: "🆕 jn-5868 (JN-5868): PR #1659 DRAFT CONFLICTING. Needs rebase (depends on jn-5867 Platform enum).",
   },
   {
-    level: "green",
-    message: "🟢 #1649 (jn-5841 JN-5841): CI ALL PASS — run 28932482752. OPEN + REVIEW_REQUIRED. JN-5841 Jira In Review ✅. Needs reviewer LGTM to merge.",
+    level: "yellow",
+    message: "📍 jn-5865 (JN-5865): Still Ingest zone — plan done Jul 8. Zone mismatch persists (4+ days). Propose move to Code + trigger /implement:code.",
   },
   {
     level: "yellow",
-    message: "📍 jn-5865 (JN-5865): Still Ingest zone — plan done Jul 8. Zone mismatch persists. Propose move to Code + trigger /implement:code.",
-  },
-  {
-    level: "yellow",
-    message: "📍 jn-5871 (JN-5871): Still Code zone — 4 commits ahead, code done since 00:58 IDT Jul 9. Zone mismatch. Propose move to Verify + trigger /implement:validate.",
+    message: "📍 jn-5871 (JN-5871): Still Code zone — code done since 00:58 IDT Jul 9. Zone mismatch. Propose move to Verify + trigger /implement:validate.",
   },
   {
     level: "yellow",
@@ -898,7 +914,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "❌ Jira mismatches (6): JN-5445 'In Progress' (#1647 merged), JN-5717 'Backlog' (#1631 merged), JN-5546 'In Progress' (#1588 merged) — need Done. JN-5827 'Backlog' (#1648 OPEN), JN-5401 'Backlog' (#1654 OPEN), JN-5867 'Backlog' (#1655 OPEN) — need In Review.",
+    message: "❌ Jira mismatches (6, assumed unchanged — auth failed this run): JN-5445 'In Progress' (#1647 merged), JN-5717 'Backlog' (#1631 merged), JN-5546 'In Progress' (#1588 merged) — need Done. JN-5827 'Backlog' (#1648 OPEN), JN-5401 'Backlog' (#1654 OPEN), JN-5867 'Backlog' (#1655 OPEN) — need In Review.",
   },
   {
     level: "yellow",
