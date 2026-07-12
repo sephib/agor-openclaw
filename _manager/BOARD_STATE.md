@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-12 04:02 IDT (advance heartbeat)*
+*Last updated: 2026-07-12 06:00 IDT (advance heartbeat)*
 
 ---
 
@@ -64,17 +64,17 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes Since Last Run (04:02 IDT Jul 12 — delta from 18:00 IDT Jul 10)
+## Key Changes Since Last Run (06:00 IDT Jul 12 — delta from 04:02 IDT Jul 12)
 
 | What observed | Status |
 |---|---|
-| **🔄 #1648 NEW RUN 29105010549** | New push to jn-5827-git-tagging-workflow! pre-commit ❌ STILL the only failure. All other checks pass. Near-merge condition. |
-| **🔄 #1638 NEW RUN 29143033663** | e2e-smoke ✅ FIXED (was ❌ in prior run). But e2e-product / e2e ❌ NEW blocker, e2e-tests ❌. pre-commit ✅, tox ✅, nox ✅. Net: e2e-smoke resolved, e2e-product now the blocker. |
+| **#1649 UNCHANGED** | CI ALL PASS run 28932482752. Awaiting reviewer LGTM. |
 | **#1654 UNCHANGED** | Same run 29028976922. pre-commit ❌ only. No new push since Jul 9. |
 | **#1655 UNCHANGED** | Same run 29016539122. pre-commit ❌. No new push since Jul 9. |
-| **#1649 UNCHANGED** | CI ALL PASS run 28932482752. Awaiting reviewer LGTM. |
-| **Weekend heartbeats FAILED** | Jul 11 03:00 and 09:00 sessions failed. Jul 11 15:00 idle (ok). Board state gap: 34+ hours without successful scan. |
+| **#1648 UNCHANGED** | Same run 29105010549. pre-commit ❌. No new push since Jul 12 04:02. |
+| **#1638 UNCHANGED** | Same run 29143033663. e2e-product ❌. No new push since Jul 12 04:02. |
 | **No merges detected** | All tracked PRs remain OPEN. |
+| **Board static** | No new CI runs, no new pushes, no zone changes since 04:02 IDT. |
 | **jn-5865, jn-5871 zone mismatches PERSIST** | Still Ingest/Code respectively. No action taken overnight. |
 | **6 Jira mismatches** | Carry forward (Jira MCP 401 — not re-verified this run). |
 

@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-12 06:00 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "Board static — all PRs UNCHANGED: #1649 ALL PASS awaiting LGTM; #1654/#1655/#1648 pre-commit ❌ no new push; #1638 e2e-product ❌ no new push; 6 Jira mismatches; 2 zone mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5444de6073a78ebfffb5/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-12 04:02 IDT",
     actions: 0,
     findings: 8,

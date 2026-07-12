@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-12 04:02 IDT";
+export const LAST_UPDATED = "2026-07-12 06:00 IDT";
 
 export const WORKTREES = [
   {
@@ -103,16 +103,24 @@ export const WORKTREES = [
     pr: "#1654",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1654",
     status: "🔴 Run 29028976922 COMPLETE: pre-commit ❌ STILL only remaining. e2e-smoke ✅, tox ✅, nox ✅, e2e-api ✅, integration ✅ all pass. JN-5401 Jira: Backlog — mismatch. No new push since Jul 9. Near-merge once pre-commit fixed.",
-    blockedOn: "pre-commit ❌ — only remaining block. No new push (Jul 9 → Jul 12).",
+    blockedOn: "pre-commit ❌ — only remaining block. No new push (Jul 9 → Jul 12 06:00).",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f53d6aeed757bb473adfd/",
-    sessionLabel: "heartbeat 04:02 IDT Jul 12 — run 29028976922 UNCHANGED: pre-commit ❌ only, no new push",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5444de6073a78ebfffb5/",
+    sessionLabel: "heartbeat 06:00 IDT Jul 12 — run 29028976922 UNCHANGED: pre-commit ❌ only, no new push",
     recentSessions: [
+      {
+        sessionId: "019f5444de6073a78ebfffb5",
+        url: "http://127.0.0.1:3030/ui/s/019f5444de6073a78ebfffb5/",
+        title: "heartbeat 06:00 IDT Jul 12 — run 29028976922 UNCHANGED: pre-commit ❌ only, no new push",
+        status: "running",
+        timestamp: "2026-07-12 06:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f53d6aeed757bb473adfd",
         url: "http://127.0.0.1:3030/ui/s/019f53d6aeed757bb473adfd/",
         title: "heartbeat 04:02 IDT Jul 12 — run 29028976922 UNCHANGED: pre-commit ❌ only, no new push",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-12 04:02 IDT",
         outputFile: null,
       },
@@ -546,17 +554,25 @@ export const WORKTREES = [
     zone: "Respond",
     pr: "#1648",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1648",
-    status: "🔴 NEW RUN 29105010549 — new push detected! pre-commit ❌ STILL the only failure. e2e-api ✅, e2e-smoke ✅, e2e-tests ✅, integration ✅, tox ✅, nox ✅ all pass. Near-merge — fix pre-commit. JN-5827 Jira: Backlog — mismatch.",
-    blockedOn: "pre-commit ❌ only — new push but still failing. Near-merge.",
+    status: "🔴 Run 29105010549 (new push Jul 12): pre-commit ❌ STILL the only failure. e2e-api ✅, e2e-smoke ✅, e2e-tests ✅, integration ✅, tox ✅, nox ✅ all pass. No new push since Jul 12 04:02. Near-merge — fix pre-commit. JN-5827 Jira: Backlog — mismatch.",
+    blockedOn: "pre-commit ❌ only — no new push since Jul 12 04:02. Near-merge.",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f53d6aeed757bb473adfd/",
-    sessionLabel: "heartbeat 04:02 IDT Jul 12 — NEW RUN 29105010549: new push! pre-commit ❌ still",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5444de6073a78ebfffb5/",
+    sessionLabel: "heartbeat 06:00 IDT Jul 12 — run 29105010549 UNCHANGED: pre-commit ❌ only, no new push",
     recentSessions: [
+      {
+        sessionId: "019f5444de6073a78ebfffb5",
+        url: "http://127.0.0.1:3030/ui/s/019f5444de6073a78ebfffb5/",
+        title: "heartbeat 06:00 IDT Jul 12 — run 29105010549 UNCHANGED: pre-commit ❌ only, no new push",
+        status: "running",
+        timestamp: "2026-07-12 06:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f53d6aeed757bb473adfd",
         url: "http://127.0.0.1:3030/ui/s/019f53d6aeed757bb473adfd/",
         title: "heartbeat 04:02 IDT Jul 12 — NEW RUN 29105010549: new push! pre-commit ❌ STILL",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-12 04:02 IDT",
         outputFile: null,
       },

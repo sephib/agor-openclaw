@@ -4,6 +4,16 @@
 
 ---
 
+## 06:00 IDT — Overnight Heartbeat (Jul 12)
+- PRs checked: #1649 (OPEN, ALL PASS run 28932482752 UNCHANGED — REVIEW_REQUIRED), #1654 (OPEN, pre-commit ❌ run 29028976922 UNCHANGED — no new push Jul 9→Jul 12), #1655 (OPEN, pre-commit ❌ run 29016539122 UNCHANGED — no new push Jul 9→Jul 12), #1648 (OPEN, pre-commit ❌ run 29105010549 UNCHANGED — no new push since 04:02 IDT Jul 12), #1638 (OPEN, e2e-product ❌ run 29143033663 UNCHANGED — no new push)
+- Merges detected: none (0 auto-archives)
+- CI changes: None. Board static since 04:02 IDT run. No new pushes to any branch.
+- Board changes: None. jn-5865 zone mismatch persists (Ingest). jn-5871 zone mismatch persists (Code).
+- Flags: 6 Jira mismatches carry forward (Jira MCP 401 — not re-verified); 2 zone mismatches persist; 3 near-merge PRs (pre-commit ❌ only): #1648, #1654, #1655
+- Next: Developer activity expected during workday; watch for pre-commit fixes on #1648/#1654/#1655; get LGTM on #1649; investigate e2e-product on #1638
+
+---
+
 ## 18:30 IDT — Weekday Daytime Heartbeat (Jul 9)
 - PRs checked: #1638 (OPEN, **NEW run 29029026149** — pre-commit ✅ FIXED!, tox ✅, nox ✅, e2e-api ✅, bake ✅, integration ✅; e2e-smoke ⏳ PENDING — MAJOR improvement), #1648 (OPEN, run 29022206171 UNCHANGED — pre-commit ❌ only, no new push), #1649 (OPEN, ALL PASS REVIEW_REQUIRED unchanged), #1654 (OPEN, **NEW run 29028976922** — new push! pre-commit ❌ STILL; tox ✅, nox ✅, e2e-api ✅; e2e-smoke ⏳ PENDING), #1655 (OPEN, run 29016539122 UNCHANGED — pre-commit ❌ still, no new push), #1656 (DRAFT, CONFLICTING unchanged), #1657 (DRAFT, CONFLICTING unchanged), #1658 (DRAFT CI PASS unchanged), #1659 (DRAFT CONFLICTING unchanged)
 - Merges detected: none (0 auto-archives)
