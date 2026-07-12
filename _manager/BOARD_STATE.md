@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-12 11:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-12 12:00 IDT (advance heartbeat)*
 
 ---
 
@@ -14,7 +14,7 @@
 | jn-5868 | **Publish** | [#1659 DRAFT](https://github.com/Jounce-IO/jounce/pull/1659) | CONFLICTING | [JN-5868](https://redhat.atlassian.net/browse/JN-5868) — Backlog | PR #1659 DRAFT CONFLICTING — needs rebase on main (or jn-5867). |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) | Plan done ~23:06 IDT Jul 8. **Zone mismatch persists** (still Ingest). Propose: move to Code + trigger /implement:code. |
 | jn-5871 | **Code** | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) | Code done ~00:58 IDT Jul 9. SHA fc6e5f77 CLEAN. **Zone mismatch persists** (still Code, should be Verify). |
-| jn-5401-runner-subcommands | **Respond** | [#1654](https://github.com/Jounce-IO/jounce/pull/1654) | 🔴 **run 29185143612 COMPLETE: pre-commit ❌ STILL** | [JN-5401](https://redhat.atlassian.net/browse/JN-5401) — Backlog | Run 29185143612 COMPLETE — pre-commit ❌ PERSISTS despite new push at ~11:00 IDT. all-checks ❌. All others pass. Needs targeted pre-commit diagnosis. |
+| jn-5401-runner-subcommands | **Respond** | [#1654](https://github.com/Jounce-IO/jounce/pull/1654) | 🔴 **run 29186096807 NEW: pre-commit ❌ STILL + e2e-api ❌ NEW** | [JN-5401](https://redhat.atlassian.net/browse/JN-5401) — Backlog | NEW run 29186096807: pre-commit ❌ + e2e-api ❌ NEW regression. integration ✅ tox ✅ nox ✅. e2e-api was passing in last run — new push may have introduced regression. |
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | "continuew" session IDLE ready_for_prompt:FALSE. SHA 16ec44ea (2 commits). Needs: generate 24 configs, rebase main, create PR. Fork a new session to continue. |
 | jn-5870 | **Publish** | [#1656 DRAFT](https://github.com/Jounce-IO/jounce/pull/1656) | CONFLICTING | [JN-5870](https://redhat.atlassian.net/browse/JN-5870) | PR #1656 DRAFT CONFLICTING. 5 commits ahead. Needs rebase + undraft. |
 | jn-5867 | **Publish** | [#1655](https://github.com/Jounce-IO/jounce/pull/1655) | 🔴 pre-commit ❌ run 29016539122 (UNCHANGED, no new push since Jul 9) | [JN-5867](https://redhat.atlassian.net/browse/JN-5867) | pre-commit ❌ still. No new push. 4+ complete runs with pre-commit failing. Needs targeted diagnosis. |
@@ -30,7 +30,7 @@
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
 | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ CONFLICTING | 🔴 CONFLICTING | 🔴 CONFLICTING 10+ days. Needs rebase + fix e2e or close PR. |
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | 🟡 **run 29185758594 IN PROGRESS: pre-commit ✅ e2e-smoke ⏳ PENDING** | MERGEABLE | **ANOTHER NEW PUSH** — pre-commit ✅ PASS! bake ✅ tox ✅ nox ✅ e2e-api ✅ integration ✅ all pass. e2e-smoke ⏳ PENDING — potential near-merge if e2e-smoke passes! |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | 🔴 **run 29185758594 COMPLETE: e2e-product ❌ FAIL** | MERGEABLE | Run COMPLETE — **e2e-product ❌** (24m12s) blocks merge. pre-commit ✅ bake ✅ e2e-api ✅ e2e-smoke ✅ all pass. Was "NEAR MERGE!" — retracted. |
 
 ---
 
@@ -60,52 +60,54 @@ Active sprint tickets assigned to Joseph with no board worktree:
 | [JN-5401](https://redhat.atlassian.net/browse/JN-5401) | [#1654](https://github.com/Jounce-IO/jounce/pull/1654) | OPEN — pre-commit ❌ (run 29185143612 COMPLETE) | **Backlog** | ⚠️ Should be → In Review |
 | [JN-5867](https://redhat.atlassian.net/browse/JN-5867) | [#1655](https://github.com/Jounce-IO/jounce/pull/1655) | OPEN — pre-commit ❌ (run 29016539122) | **Backlog** | ⚠️ Should be → In Review |
 
-*6 mismatches confirmed via acli 11:30 IDT Jul 12.*
+*6 mismatches last confirmed via acli 11:30 IDT Jul 12. Jira MCP returned 401 at 12:00 IDT — count held from last confirmed run.*
 
 ---
 
-## Key Changes Since Last Run (11:30 IDT Jul 12 — delta from 11:00 IDT Jul 12)
+## Key Changes Since Last Run (12:00 IDT Jul 12 — delta from 11:30 IDT Jul 12)
 
 | What observed | Status |
 |---|---|
-| **#1654 run 29185143612 COMPLETE** | pre-commit ❌ STILL. The new push at ~11:00 IDT did NOT fix the issue. All others pass. Persistent failure. |
-| **#1638 ANOTHER NEW PUSH → run 29185758594** | Another new push happened! pre-commit ✅ PASS, bake ✅ tox ✅ nox ✅ e2e-api ✅ integration ✅. e2e-smoke ⏳ PENDING. If e2e-smoke passes, #1638 is near-merge! |
-| **#1648 ANOTHER NEW PUSH → run 29185689618** | Another new push! pre-commit ❌ STILL. All others pass (e2e-api ✅ integration ✅ tox ✅). e2e-smoke ⏳ PENDING. Pre-commit persists. |
+| **#1638 run 29185758594 COMPLETE** | e2e-smoke came back — but **e2e-product ❌ FAIL** (24m12s). Was "NEAR MERGE!" — NOT near-merge. pre-commit ✅ bake ✅ e2e-api ✅ e2e-smoke ✅ still pass. Only e2e-product failing. |
+| **#1654 NEW RUN 29186096807** | ANOTHER new push. pre-commit ❌ STILL + **e2e-api ❌ NEW**. Regression — e2e-api was ✅ in prior run. integration ✅ tox ✅ nox ✅. |
+| **#1648 NEW RUN 29186814181** | ANOTHER new push. pre-commit ❌ STILL + **e2e-api ❌ NEW** (19s — fast fail). Pattern matches #1654. Possible infra flakiness or code regression. |
 | **#1649 UNCHANGED** | CI ALL PASS run 28932482752. Awaiting reviewer LGTM. |
 | **#1655 UNCHANGED** | Same run 29016539122. pre-commit ❌. No new push since Jul 9. |
 | **No merges detected** | All tracked PRs remain OPEN. |
 | **jn-5865, jn-5871 zone mismatches PERSIST** | Still Ingest/Code respectively. No action taken. |
-| **6 Jira mismatches CONFIRMED** | Re-verified via acli 11:30 IDT. All unchanged. |
+| **6 Jira mismatches ASSUMED UNCHANGED** | Jira MCP returned 401; acli unavailable. Count held from last confirmed run. |
 
 ---
 
 ## Attention Items
 
-### 🔄 #1638 (off-board) — Run 29185758594 — e2e-smoke ⏳ PENDING — NEAR MERGE!
+### 🔴 #1638 (off-board) — Run 29185758594 COMPLETE — e2e-product ❌ FAIL
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites"
-- **ANOTHER NEW PUSH** — pre-commit ✅ PASS (was ❌ in prior run 29184496946)
-- **Run 29185758594 IN PROGRESS**: pre-commit ✅, bake ✅, tox ✅, nox ✅, e2e-api ✅, integration ✅ all pass
-- **e2e-smoke ⏳ PENDING** — only remaining check
-- **Action:** Await e2e-smoke result — if passes, #1638 may be near-merge.
+- **Run 29185758594 COMPLETE**: pre-commit ✅, bake ✅, e2e-api ✅, e2e-smoke ✅, integration ✅, tox ✅ all pass
+- **e2e-product ❌ FAIL** (24m12s) + e2e-tests ❌ + all-checks ❌
+- Previously reported "NEAR MERGE" — that was premature. e2e-product failure gates merge.
+- **Action:** Fix e2e-product failure or investigate if it's flaky.
 
 ---
 
-### 🔴 #1654 (jn-5401) — Run 29185143612 COMPLETE — pre-commit ❌ PERSISTENT
+### 🔴 #1654 (jn-5401) — Run 29186096807 NEW — pre-commit ❌ + e2e-api ❌ NEW REGRESSION
 
 PR [#1654](https://github.com/Jounce-IO/jounce/pull/1654): "feat(jbenchmark): add subcommands to runner"
-- **Run 29185143612 COMPLETE**: pre-commit ❌, all-checks ❌
-- Multiple consecutive new pushes have NOT fixed pre-commit
-- e2e-api ✅, e2e-smoke ✅, integration ✅, tox ✅, nox ✅ all pass
-- **Action:** Need targeted diagnosis of which pre-commit hook is failing.
+- **Run 29186096807**: pre-commit ❌, e2e-api ❌ (2m48s), e2e-tests ❌, all-checks ❌
+- **e2e-api ❌ is NEW** — was passing in run 29185143612. New push may have introduced regression.
+- integration ✅, tox ✅, nox ✅ still pass
+- **Action:** Investigate both pre-commit and e2e-api failures. e2e-api regression is new.
 
 ---
 
-### 🔴 #1648 (jn-5827) — ANOTHER NEW PUSH — run 29185689618 — pre-commit ❌ STILL
+### 🔴 #1648 (jn-5827) — Run 29186814181 NEW — pre-commit ❌ + e2e-api ❌ NEW REGRESSION
 
 PR [#1648](https://github.com/Jounce-IO/jounce/pull/1648): "feat(release): implement git tagging workflow"
-- **Run 29185689618**: pre-commit ❌ STILL; e2e-api ✅, integration ✅, tox ✅, nox ✅; e2e-smoke ⏳ PENDING
-- **Action:** Fix pre-commit — all other checks pass; near-merge once resolved.
+- **Run 29186814181**: pre-commit ❌, e2e-api ❌ (19s — fast fail), e2e-tests ❌, all-checks ❌
+- **e2e-api ❌ is NEW** — was passing before. Fast (19s) fail suggests possible connection issue.
+- ⚠️ Pattern: BOTH #1654 and #1648 show e2e-api ❌ in new runs — could be shared infra issue.
+- **Action:** Check if e2e-api failure is shared infra flakiness or code regression.
 
 ---
 

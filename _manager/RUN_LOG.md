@@ -885,3 +885,10 @@
 - Flags: 2 zone mismatches persist (jn-5865 Ingest, jn-5871 Code); 6 Jira mismatches; #1654/#1648 pre-commit persistent failures; #1655 no new push
 - Auto-advances: 0
 - Next: Watch #1638 e2e-smoke (near-merge if passes). Diagnose #1654 pre-commit (persistent, multiple pushes haven't fixed). #1648 pre-commit also persistent. #1649 still needs LGTM.
+
+## 12:00 IDT — Weekday Daytime Heartbeat
+- PRs checked: #1638 (OPEN, e2e-product ❌ COMPLETE), #1648 (OPEN, pre-commit ❌ + e2e-api ❌ NEW run 29186814181), #1649 (OPEN, CI ALL PASS REVIEW_REQUIRED), #1654 (OPEN, pre-commit ❌ + e2e-api ❌ NEW run 29186096807), #1655 (OPEN, pre-commit ❌ UNCHANGED), #1656 (DRAFT, CONFLICTING), #1657 (DRAFT, CONFLICTING), #1658 (DRAFT, all-checks ✅), #1659 (DRAFT, CONFLICTING)
+- Merges detected: none
+- CI changes: #1638 run 29185758594 COMPLETE — e2e-product ❌ (was PENDING); #1654 NEW run 29186096807 — e2e-api ❌ NEW; #1648 NEW run 29186814181 — e2e-api ❌ NEW (19s fast fail); #1649/#1655 UNCHANGED
+- Flags: e2e-api ❌ on BOTH #1654 and #1648 in new runs (possible shared infra issue); #1638 e2e-product ❌ blocks merge; Jira MCP 401 — mismatches assumed unchanged (6)
+- Next: Monitor if e2e-api on #1654/#1648 is infra flakiness (check if re-run clears); #1638 needs e2e-product fix; #1655 pre-commit still needs push
