@@ -892,3 +892,12 @@
 - CI changes: #1638 run 29185758594 COMPLETE — e2e-product ❌ (was PENDING); #1654 NEW run 29186096807 — e2e-api ❌ NEW; #1648 NEW run 29186814181 — e2e-api ❌ NEW (19s fast fail); #1649/#1655 UNCHANGED
 - Flags: e2e-api ❌ on BOTH #1654 and #1648 in new runs (possible shared infra issue); #1638 e2e-product ❌ blocks merge; Jira MCP 401 — mismatches assumed unchanged (6)
 - Next: Monitor if e2e-api on #1654/#1648 is infra flakiness (check if re-run clears); #1638 needs e2e-product fix; #1655 pre-commit still needs push
+
+## 12:30 IDT — Weekday Daytime Heartbeat (Jul 12)
+- PRs checked: #1638 (OPEN, ANOTHER NEW PUSH → run 29188195716: e2e-smoke ⏳ PENDING, all others ✅, NO e2e-product job — NEAR MERGE!), #1648 (OPEN, run 29187983912: e2e-api ✅ RESOLVED was infra flake, pre-commit ❌ ONLY), #1649 (OPEN, ALL PASS run 28932482752 UNCHANGED), #1654 (OPEN, ANOTHER NEW PUSH → run 29187705809: pre-commit ❌ + e2e-api ❌ + e2e-tests ❌ STILL), #1655 (OPEN, pre-commit ❌ run 29016539122 UNCHANGED), #1656/#1657/#1658/#1659 (DRAFT, CONFLICTING/MERGEABLE unchanged)
+- Merges detected: none (0 auto-archives)
+- CI changes: **#1638 ANOTHER NEW PUSH** e2e-smoke pending (all others pass, no e2e-product); **#1648 e2e-api ✅ RESOLVED** (was infra flake, pre-commit only remains); **#1654 ANOTHER NEW PUSH** all same failures persist
+- Jira: 6 mismatches confirmed via acli — JN-5445 In Progress, JN-5717 Backlog, JN-5546 In Progress (merged PRs); JN-5827 Backlog, JN-5401 Backlog, JN-5867 Backlog (open PRs)
+- Flags: 2 zone mismatches persist (jn-5865 Ingest, jn-5871 Code); 6 Jira mismatches; #1654 pre-commit + e2e-api persistent (not infra flake unlike #1648); #1655 no new push still
+- Auto-advances: 0
+- Next: Watch #1638 e2e-smoke (NEAR MERGE if passes). Diagnose #1654 e2e-api (code regression vs infra flake — now clear it's code-level since #1648 e2e-api cleared). Fix #1648 pre-commit → near merge.
