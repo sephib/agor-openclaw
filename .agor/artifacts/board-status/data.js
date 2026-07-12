@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-10 18:00 IDT";
+export const LAST_UPDATED = "2026-07-12 04:02 IDT";
 
 export const WORKTREES = [
   {
@@ -103,16 +103,24 @@ export const WORKTREES = [
     pr: "#1654",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1654",
     status: "🔴 Run 29028976922 COMPLETE: pre-commit ❌ STILL only remaining. e2e-smoke ✅, tox ✅, nox ✅, e2e-api ✅, integration ✅ all pass. JN-5401 Jira: Backlog — mismatch. No new push since Jul 9. Near-merge once pre-commit fixed.",
-    blockedOn: "pre-commit ❌ — only remaining block. No new push overnight (weekend).",
+    blockedOn: "pre-commit ❌ — only remaining block. No new push (Jul 9 → Jul 12).",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f4c8b33897c59b48602fc/",
-    sessionLabel: "heartbeat 18:00 IDT Jul 10 — run 29028976922 UNCHANGED: pre-commit ❌ only, no new push",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f53d6aeed757bb473adfd/",
+    sessionLabel: "heartbeat 04:02 IDT Jul 12 — run 29028976922 UNCHANGED: pre-commit ❌ only, no new push",
     recentSessions: [
+      {
+        sessionId: "019f53d6aeed757bb473adfd",
+        url: "http://127.0.0.1:3030/ui/s/019f53d6aeed757bb473adfd/",
+        title: "heartbeat 04:02 IDT Jul 12 — run 29028976922 UNCHANGED: pre-commit ❌ only, no new push",
+        status: "running",
+        timestamp: "2026-07-12 04:02 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f4c8b33897c59b48602fc",
         url: "http://127.0.0.1:3030/ui/s/019f4c8b33897c59b48602fc/",
         title: "heartbeat 18:00 IDT Jul 10 — run 29028976922 UNCHANGED: pre-commit ❌ only, no new push",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-10 18:00 IDT",
         outputFile: null,
       },
@@ -538,17 +546,25 @@ export const WORKTREES = [
     zone: "Respond",
     pr: "#1648",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1648",
-    status: "🔴 Run 29022206171 UNCHANGED: e2e-api ✅, e2e-smoke ✅, e2e-tests ✅. Only pre-commit ❌ remains. Near-merge. No new push since Jul 9 (weekend). JN-5827 Jira: Backlog — mismatch.",
-    blockedOn: "pre-commit ❌ only — all e2e resolved, near-merge condition. No new push overnight.",
+    status: "🔴 NEW RUN 29105010549 — new push detected! pre-commit ❌ STILL the only failure. e2e-api ✅, e2e-smoke ✅, e2e-tests ✅, integration ✅, tox ✅, nox ✅ all pass. Near-merge — fix pre-commit. JN-5827 Jira: Backlog — mismatch.",
+    blockedOn: "pre-commit ❌ only — new push but still failing. Near-merge.",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f4c8b33897c59b48602fc/",
-    sessionLabel: "heartbeat 18:00 IDT Jul 10 — run 29022206171 UNCHANGED: pre-commit ❌ only, no new push",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f53d6aeed757bb473adfd/",
+    sessionLabel: "heartbeat 04:02 IDT Jul 12 — NEW RUN 29105010549: new push! pre-commit ❌ still",
     recentSessions: [
+      {
+        sessionId: "019f53d6aeed757bb473adfd",
+        url: "http://127.0.0.1:3030/ui/s/019f53d6aeed757bb473adfd/",
+        title: "heartbeat 04:02 IDT Jul 12 — NEW RUN 29105010549: new push! pre-commit ❌ STILL",
+        status: "running",
+        timestamp: "2026-07-12 04:02 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f4c8b33897c59b48602fc",
         url: "http://127.0.0.1:3030/ui/s/019f4c8b33897c59b48602fc/",
         title: "heartbeat 18:00 IDT Jul 10 — run 29022206171 UNCHANGED: pre-commit ❌ only, no new push",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-10 18:00 IDT",
         outputFile: null,
       },
@@ -718,19 +734,19 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "red",
-    message: "🔴 PR #1654 (jn-5401 JN-5401): Run 29028976922 COMPLETE — e2e-smoke ✅ RESOLVED (was PENDING). pre-commit ❌ only remaining. Near-merge — fix pre-commit.",
+    message: "🔴 PR #1654 (jn-5401 JN-5401): Run 29028976922 COMPLETE — pre-commit ❌ only remaining. No new push Jul 9→Jul 12. Near-merge — fix pre-commit.",
   },
   {
     level: "yellow",
-    message: "⚠️ PR #1648 (jn-5827 JN-5827): Run 29022206171 — e2e REGRESSION RESOLVED (e2e-api ✅, e2e-smoke ✅, e2e-tests ✅). Only pre-commit ❌ remains. Near-merge — fix pre-commit.",
+    message: "🔄 PR #1648 (jn-5827 JN-5827): NEW RUN 29105010549 — new push detected! pre-commit ❌ STILL. All others ✅. Near-merge — pre-commit fix not landing.",
   },
   {
     level: "red",
-    message: "🔴 PR #1655 (jn-5867 JN-5867): Run 29016539122 UNCHANGED — pre-commit ❌ STILL (3 consecutive complete runs). All others ✅. Needs targeted pre-commit diagnosis.",
+    message: "🔴 PR #1655 (jn-5867 JN-5867): Run 29016539122 UNCHANGED — pre-commit ❌ STILL (4+ consecutive complete runs). All others ✅. Needs targeted pre-commit diagnosis.",
   },
   {
     level: "red",
-    message: "🔴 PR #1657 (jn-5869 JN-5869): DRAFT CONFLICTING. Worktree still dirty (lcov.info 20h+). Needs commit + rebase + undraft.",
+    message: "🔴 PR #1657 (jn-5869 JN-5869): DRAFT CONFLICTING. Worktree still dirty (lcov.info 60h+). Needs commit + rebase + undraft.",
   },
   {
     level: "red",
@@ -738,7 +754,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "🔄 PR #1638 (JN-5725, off-board): Run 29099722572 NEW — pre-commit ✅ FIXED (regression from 29037032061 resolved!). tox ✅, nox ✅, e2e-api ✅, integration ✅. e2e-smoke ❌ + e2e-tests ❌ still failing. One blocker remains.",
+    message: "🔄 PR #1638 (JN-5725, off-board): Run 29143033663 NEW — e2e-smoke ✅ FIXED! pre-commit ✅, tox ✅, nox ✅, e2e-api ✅. But e2e-product / e2e ❌ NEW blocker. One blocker remains (shifted).",
   },
   {
     level: "yellow",
@@ -766,7 +782,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 PR #1606 (JN-5725, off-board): CONFLICTING (7+ days). Needs rebase + e2e fix or close PR.",
+    message: "🔴 PR #1606 (JN-5725, off-board): CONFLICTING (10+ days). Needs rebase + e2e fix or close PR.",
   },
   {
     level: "red",
@@ -774,7 +790,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⚠️ jira-operations: NO ZONE, stale 14+ days (last Jun 25). No sessions, no PR. Propose archive.",
+    message: "⚠️ jira-operations: NO ZONE, stale 17+ days (last Jun 25). No sessions, no PR. Propose archive.",
   },
   {
     level: "yellow",

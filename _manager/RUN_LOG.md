@@ -841,3 +841,10 @@
 - Flags: 6 Jira mismatches (JN-5445/5717/5546 need Done; JN-5827/5401/5867 need In Review); 2 zone mismatches (jn-5865 Ingest, jn-5871 Code); #1638 e2e-smoke still blocking; #1654/#1648/#1655 pre-commit still blocking; 5 DRAFT PRs needing rebase/undraft
 - Auto-advances: 0
 - Next: Monitor if #1638 e2e-smoke gets a fix push. #1654/#1648/#1655 need pre-commit fix — weekend, may wait until Mon. Flag zone mismatches + Jira mismatches for Joseph's attention.
+
+## 04:02 IDT — Overnight Heartbeat (Jul 12)
+- PRs checked: #1638 (OPEN, **NEW run 29143033663** — e2e-smoke ✅ FIXED!, pre-commit ✅, tox ✅, nox ✅, e2e-api ✅; **e2e-product ❌ NEW blocker**), #1648 (OPEN, **NEW run 29105010549** — new push! pre-commit ❌ STILL; all others ✅), #1649 (OPEN, ALL PASS run 28932482752 UNCHANGED), #1654 (OPEN, run 29028976922 UNCHANGED — pre-commit ❌ only, no new push), #1655 (OPEN, run 29016539122 UNCHANGED — pre-commit ❌ still), #1656 (DRAFT, CONFLICTING unchanged), #1657 (DRAFT, CONFLICTING unchanged), #1658 (DRAFT CI PASS unchanged), #1659 (DRAFT CONFLICTING unchanged), #1606 (CONFLICTING unchanged run 28527509341)
+- Merges detected: none (0 auto-archives)
+- CI changes: **#1638 e2e-smoke ✅ FIXED** (was ❌) but **e2e-product ❌ NEW** in run 29143033663. **#1648 new push** → run 29105010549 but pre-commit ❌ still.
+- Flags: ⚠️ BOARD_STATE ~34h stale (2 weekend heartbeats failed Jul 11 03:00 + 09:00); zone mismatches jn-5865/jn-5871 persist; 6 Jira mismatches carry forward (Jira MCP 401 not re-verified)
+- Next: Check #1638 e2e-product failure, #1648/#1654/#1655 pre-commit fix, #1649 reviewer LGTM
