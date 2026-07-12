@@ -3422,4 +3422,13 @@ export const HEARTBEAT_RUNS = [
     summary: "jn-5827 Code→Validate (new RUNNING validate session 019f3d4a); jn-5841 continue-session IDLE+ready (441d8e0); CI unchanged (#1647 pre-commit+e2e-product ❌, #1638 e2e-product ❌, #1632 all ✅); 3 Jira mismatches confirmed; 0 auto-advances, 7 findings",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f3d4f22c77f0ab7063c17/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-07-12 13:00 IDT",
+    actions: 0,
+    findings: 9,
+    status: "ok",
+    summary: "#1638 e2e-smoke ✅ PASSED (only e2e-product ⏳ pending — NEAR MERGE); #1648 ANOTHER NEW PUSH → run 29189222730 all pending; #1654 pre-commit+e2e-api+e2e-tests ❌ STILL; #1655 pre-commit ❌ unchanged; #1649 ALL PASS needs LGTM; 6 Jira mismatches; 0 auto-archives",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f55e0be2f709d8a39ec34/",
+  },
 ];

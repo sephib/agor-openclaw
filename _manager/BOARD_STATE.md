@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-12 12:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-12 13:00 IDT (advance heartbeat)*
 
 ---
 
@@ -21,7 +21,7 @@
 | jn-5869 | **Publish** | [#1657 DRAFT](https://github.com/Jounce-IO/jounce/pull/1657) | CONFLICTING | [JN-5869](https://redhat.atlassian.net/browse/JN-5869) | PR #1657 DRAFT CONFLICTING. Dirty (lcov.info). Needs commit + rebase + undraft. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 17+ days with no session or PR. |
 | jn-5841-agents-md-root | **Publish** | [#1649](https://github.com/Jounce-IO/jounce/pull/1649) | 🟢 **run 28932482752: ALL PASS** | [JN-5841](https://redhat.atlassian.net/browse/JN-5841) — **In Review** ✅ | 🟢 **READY FOR REVIEW.** CI ALL PASS. reviewDecision: REVIEW_REQUIRED. **Action: Get reviewer LGTM to merge.** |
-| jn-5827-git-tagging-workflow | **Respond** | [#1648](https://github.com/Jounce-IO/jounce/pull/1648) | 🔴 **run 29187983912: pre-commit ❌ ONLY — e2e-api ✅ RESOLVED** | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) — Backlog | Run 29187983912: pre-commit ❌ only. **e2e-api ✅ RESOLVED** (was ❌ in run 29186814181 — confirmed infra flake). e2e-smoke ✅, tox ✅, nox ✅ all pass. Near-merge if pre-commit fixed. JN-5827 Jira: Backlog — mismatch. |
+| jn-5827-git-tagging-workflow | **Respond** | [#1648](https://github.com/Jounce-IO/jounce/pull/1648) | 🟡 **ANOTHER NEW PUSH → run 29189222730: all PENDING (pre-commit, e2e-api, integration, tox)** | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) — Backlog | ANOTHER NEW PUSH → run 29189222730 (PENDING). Prior run 29187983912: pre-commit ❌ only (e2e-api ✅ RESOLVED — was infra flake). Near-merge if pre-commit fixed in this new run. JN-5827 Jira: Backlog — mismatch. |
 
 ---
 
@@ -30,7 +30,7 @@
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
 | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ CONFLICTING | 🔴 CONFLICTING | 🔴 CONFLICTING 10+ days. Needs rebase + fix e2e or close PR. |
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | 🟡 **run 29188195716 ANOTHER NEW PUSH: e2e-smoke ⏳ PENDING — all others ✅** | MERGEABLE | ANOTHER NEW PUSH → run 29188195716: pre-commit ✅ bake ✅ e2e-api ✅ integration ✅ tox ✅ nox ✅. **No e2e-product job in this run!** e2e-smoke ⏳ PENDING. **NEAR MERGE if e2e-smoke passes.** |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | 🟡 **run 29188195716: e2e-smoke ✅ PASSED — e2e-product ⏳ STILL PENDING** | MERGEABLE | run 29188195716: pre-commit ✅ bake ✅ e2e-api ✅ integration ✅ tox ✅ nox ✅ **e2e-smoke ✅ PASSED**. **Only e2e-product ⏳ PENDING.** NEAR MERGE if e2e-product passes. |
 
 ---
 
@@ -64,30 +64,31 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes Since Last Run (12:30 IDT Jul 12 — delta from 12:00 IDT Jul 12)
+## Key Changes Since Last Run (13:00 IDT Jul 12 — delta from 12:30 IDT Jul 12)
 
 | What observed | Status |
 |---|---|
-| **#1638 ANOTHER NEW PUSH → run 29188195716** | e2e-smoke ⏳ PENDING. All others ✅ (pre-commit ✅, bake ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅). **No e2e-product job!** NEAR MERGE if e2e-smoke passes. |
-| **#1648 run 29187983912** | **e2e-api ✅ RESOLVED** (was ❌ in run 29186814181 — confirmed infra flake). pre-commit ❌ ONLY remains. Near-merge if pre-commit fixed. |
-| **#1654 ANOTHER NEW PUSH → run 29187705809** | pre-commit ❌ + e2e-api ❌ + e2e-tests ❌ STILL ALL FAILING. Multiple pushes, no improvement. |
+| **#1638 run 29188195716: e2e-smoke ✅ PASSED** | e2e-smoke ✅ PASSED (was ⏳ PENDING at 12:30). **Only e2e-product ⏳ PENDING** remains. NEAR MERGE if e2e-product passes. |
+| **#1648 ANOTHER NEW PUSH → run 29189222730** | ANOTHER NEW PUSH — all main jobs pending (pre-commit, e2e-api, integration, tox). Prior run 29187983912 had pre-commit ❌ only. |
+| **#1654 UNCHANGED** | pre-commit ❌ + e2e-api ❌ + e2e-tests ❌ STILL ALL FAILING. Run 29187705809 unchanged. |
 | **#1649 UNCHANGED** | CI ALL PASS run 28932482752. Awaiting reviewer LGTM. |
 | **#1655 UNCHANGED** | Same run 29016539122. pre-commit ❌. No new push since Jul 9. |
 | **No merges detected** | All tracked PRs remain OPEN. |
 | **jn-5865, jn-5871 zone mismatches PERSIST** | Still Ingest/Code respectively. No action taken. |
-| **6 Jira mismatches confirmed** | Confirmed via acli 12:30 IDT — all 6 unchanged. |
+| **6 Jira mismatches** | acli unresponsive this run — assume unchanged (confirmed 12:30 IDT). |
 
 ---
 
 ## Attention Items
 
-### 🟡 #1638 (off-board) — Run 29188195716 ANOTHER NEW PUSH — e2e-smoke ⏳ PENDING (NEAR MERGE!)
+### 🟡 #1638 (off-board) — Run 29188195716 — e2e-smoke ✅ PASSED — e2e-product ⏳ PENDING (NEAR MERGE!)
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites"
-- **ANOTHER NEW PUSH → run 29188195716**: pre-commit ✅, bake ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅ ALL PASS
-- **e2e-smoke ⏳ PENDING** — only remaining check. **No e2e-product job triggered in this run.**
-- **NEAR MERGE if e2e-smoke passes.** Prior e2e-product ❌ (run 29185758594) was in a different run; this push may have removed that path.
-- **Action:** Monitor e2e-smoke result. If passes → ready to merge or undraft.
+- **Run 29188195716**: pre-commit ✅, bake ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅ ALL PASS
+- **e2e-smoke ✅ PASSED** (was ⏳ PENDING at 12:30 IDT — 12m56s runtime)
+- **e2e-product ⏳ STILL PENDING** — only remaining check.
+- **NEAR MERGE if e2e-product passes.** All other checks done and green.
+- **Action:** Monitor e2e-product result. If passes → ready to merge.
 
 ---
 
@@ -101,13 +102,14 @@ PR [#1654](https://github.com/Jounce-IO/jounce/pull/1654): "feat(jbenchmark): ad
 
 ---
 
-### 🔴 #1648 (jn-5827) — Run 29187983912 — pre-commit ❌ ONLY (e2e-api ✅ RESOLVED — was infra flake)
+### 🟡 #1648 (jn-5827) — ANOTHER NEW PUSH → run 29189222730 (ALL PENDING)
 
 PR [#1648](https://github.com/Jounce-IO/jounce/pull/1648): "feat(release): implement git tagging workflow"
-- **Run 29187983912**: pre-commit ❌, e2e-smoke ✅, e2e-api ✅, e2e-tests ✅, integration ✅, tox ✅, nox ✅
-- **e2e-api ✅ RESOLVED** — prior ❌ (run 29186814181) confirmed as infra flake (now fixed without code change)
-- **Only pre-commit ❌ blocking.** Fix pre-commit → near-merge.
-- **Action:** Fix pre-commit failure. Then ready for review/merge.
+- **ANOTHER NEW PUSH → run 29189222730**: pre-commit ⏳, e2e-api ⏳, integration ⏳, tox ⏳ ALL PENDING
+- atlas-validate ✅, check-changes ✅, deploy ✅ already done
+- Prior run 29187983912: pre-commit ❌ ONLY (e2e-api ✅ RESOLVED — confirmed infra flake)
+- **Watch: if pre-commit passes in run 29189222730 → near-merge!**
+- **Action:** Monitor run 29189222730 result for pre-commit. Fix if still ❌.
 
 ---
 
