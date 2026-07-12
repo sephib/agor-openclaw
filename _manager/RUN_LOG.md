@@ -990,3 +990,14 @@
 - Flags: 2 zone mismatches persist (jn-5865 Ingest Day 7, jn-5871 Code Day 7); 5 Jira mismatches; #1658 CHANGES_REQUESTED+CONFLICTING unchanged; #1638 e2e-smoke+e2e-tests ❌ unchanged; pre-commit failures on #1655/#1657/#1659
 - Auto-advances: 0
 - Next: Fix pre-commit in #1655/#1657/#1659 (common root cause likely). Resolve #1658 conflict + review. Diagnose #1638 e2e-smoke. Update JN-5401 → Done in Jira.
+
+---
+
+## 00:00 IDT — Overnight Heartbeat (Jul 13 2026)
+- PRs checked: #1655 (OPEN MERGEABLE REVIEW_REQUIRED), #1656 (DRAFT MERGEABLE), #1657 (DRAFT MERGEABLE), #1658 (OPEN CONFLICTING+CHANGES_REQUESTED), #1659 (DRAFT MERGEABLE), #1596 (DRAFT CONFLICTING), #1638 (OPEN MERGEABLE, off-board)
+- Merges detected: none
+- CI changes: **#1655 e2e-smoke ✅ NOW PASSING** (was PENDING at 22:00 IDT — only pre-commit ❌ remains); **#1638 NEW CI run 29205506205** (new push overnight — e2e-smoke ✅ fixed, pre-commit ✅ fixed, but e2e-product ❌ + e2e-tests ❌ now failing)
+- Jira: JN-5445 now Done ✅ (resolved!). Correction: previous run incorrectly claimed JN-5867 Done — PR #1655 still OPEN, Jira "Backlog" is correct (not a mismatch). 4 mismatches remain: JN-5401/5717/5546/5827
+- Flags: #1655 one pre-commit fix away from CI-pass; #1638 improved but still has e2e-product failures; zone mismatches jn-5865/jn-5871 Day 8
+- Archives: none
+- Next: Pre-commit fix on #1655 (#1656/#1657/#1658/#1659) most actionable; e2e-product on #1638 needs investigation; Jira cleanup (4 tickets need Done)
