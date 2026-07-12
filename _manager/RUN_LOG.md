@@ -4,6 +4,15 @@
 
 ---
 
+## 15:30 IDT — Weekday Daytime Heartbeat (Jul 12)
+- PRs checked: #1658 (🎉 UNDRAFTED — isDraft now false, CI ALL PASS + MERGEABLE), #1655 (OPEN CONFLICTING — run 29191069313: pre-commit ❌ + e2e-api ❌ WORSENED; validate-tag.yml ❌ × 2 new side-effect runs), #1654 (OPEN CONFLICTING — CI ALL PASS run 29190326639 UNCHANGED), #1638 (OPEN CONFLICTING — e2e-product ❌ UNCHANGED)
+- Merges detected: none (0 auto-archives)
+- CI changes: **#1658 UNDRAFTED** — ready for review and merge. **#1655 e2e-api ❌ NEW** (was passing, now also failing alongside pre-commit). validate-tag.yml from #1648 now triggering on jn-5867 (2x) and jn-5842 (1x) — NOT main CI gate.
+- Flags: ⚠️ jn-5842 NOT in Agor Publish zone (NO ZONE). 7 Jira mismatches persist (Jira MCP 401 + acli empty). Zone mismatches (jn-5865 Ingest, jn-5871 Code) Day 5.
+- Next: Get review + LGTM on #1658. Diagnose pre-commit + e2e-api on #1655. Rebase #1654 on main. Diagnose e2e-product on #1638.
+
+---
+
 ## 14:00 IDT — Weekday Daytime Heartbeat (Jul 12)
 - PRs checked: #1649 (🎉 APPROVED! Was REVIEW_REQUIRED), #1648 (ANOTHER NEW PUSH → run 29190015288 IN PROGRESS, e2e-api ✅), #1654 (UNCHANGED — run 29187705809: pre-commit ❌ + e2e-api ❌ + e2e-tests ❌), #1655 (UNCHANGED — run 29016539122: pre-commit ❌), #1638 (run 29189499882: all pass except e2e-product ⏳ PENDING)
 - Merges detected: none (0 auto-archives)
@@ -928,3 +937,12 @@
 - Flags: 2 zone mismatches persist (jn-5865 Ingest, jn-5871 Code); 6 Jira mismatches; #1654 needs rebase (CI fixed!); #1649 CI pending; #1655 CI pending; #1638 e2e-api pending
 - Auto-advances: 1 (archived jn-5827-git-tagging-workflow — PR #1648 MERGED)
 - Next: Watch #1649 run 29190992096 (APPROVED — should merge after CI passes). Watch #1655 run 29190967716 (was failing pre-commit — new run may fix). Rebase #1654 on main (CI all green, just needs rebase). Monitor #1638 e2e-api.
+
+## 15:00 IDT — Weekday Daytime Heartbeat (Jul 12)
+- PRs checked: #1649 (MERGED 14:45 IDT — DETECTED!), #1638 (OPEN, run 29190760650 COMPLETE: e2e-product ❌ + e2e-tests ❌ — NOT near merge), #1654 (OPEN, ALL CI PASS run 29190326639 UNCHANGED — still CONFLICTING), #1655 (OPEN, run 29190967716 COMPLETE: pre-commit ❌ STILL — no improvement), #1658 (DRAFT, new run 29191881552 STARTING), #1656/#1657/#1659 (DRAFT CONFLICTING unchanged)
+- Merges detected: **#1649 MERGED 14:45 IDT Jul 12** — jn-5841-agents-md-root ⚠️ NOT FOUND in Agor board (cannot archive autonomously)
+- CI changes: **#1638 e2e-api ✅ RESOLVED** (was pending) but e2e-product ❌ blocker remains; **#1655 run 29190967716 COMPLETE** — pre-commit ❌ STILL (no fix); **#1658 new run 29191881552** starting; #1654 unchanged
+- Jira: MCP 401 + acli unresponsive — 7 mismatches assumed (JN-5841 added: merged PR → needs Done)
+- Flags: ⚠️ jn-5841-agents-md-root NOT IN AGOR — manual cleanup needed; #1655 pre-commit persistent (6+ fails); #1638 e2e-product blocking; 2 zone mismatches persist (jn-5865 Ingest, jn-5871 Code); 7 Jira mismatches
+- Auto-advances: 0 (cannot archive jn-5841 — not in Agor board)
+- Next: Joseph manually clean jn-5841-agents-md-root. Rebase #1654. Diagnose #1655 pre-commit + #1638 e2e-product. Update JN-5841/JN-5827 → Done in Jira.
