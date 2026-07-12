@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-12 10:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-12 11:00 IDT (advance heartbeat)*
 
 ---
 
@@ -14,7 +14,7 @@
 | jn-5868 | **Publish** | [#1659 DRAFT](https://github.com/Jounce-IO/jounce/pull/1659) | CONFLICTING | [JN-5868](https://redhat.atlassian.net/browse/JN-5868) — Backlog | PR #1659 DRAFT CONFLICTING — needs rebase on main (or jn-5867). |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) | Plan done ~23:06 IDT Jul 8. **Zone mismatch persists** (still Ingest). Propose: move to Code + trigger /implement:code. |
 | jn-5871 | **Code** | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) | Code done ~00:58 IDT Jul 9. SHA fc6e5f77 CLEAN. **Zone mismatch persists** (still Code, should be Verify). |
-| jn-5401-runner-subcommands | **Respond** | [#1654](https://github.com/Jounce-IO/jounce/pull/1654) | 🔴 **run 29183505715 NEW: pre-commit ❌ STILL. All others ✅.** | [JN-5401](https://redhat.atlassian.net/browse/JN-5401) — Backlog | **NEW PUSH ~09:55 IDT Jul 12** (3 commits: fix(lcov) + 2 auto-updates). New CI run 29183505715. pre-commit ❌ STILL. Near-merge once fixed. JN-5401 Jira: Backlog — mismatch. |
+| jn-5401-runner-subcommands | **Respond** | [#1654](https://github.com/Jounce-IO/jounce/pull/1654) | ⏳ **run 29185143612 IN PROGRESS** | [JN-5401](https://redhat.atlassian.net/browse/JN-5401) — Backlog | **ANOTHER NEW PUSH** → new CI run 29185143612 (in_progress). Previous push (09:55 IDT) had pre-commit ❌. Near-merge — awaiting new run result. JN-5401 Jira: Backlog — mismatch. |
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | "continuew" session IDLE ready_for_prompt:FALSE. SHA 16ec44ea (2 commits). Needs: generate 24 configs, rebase main, create PR. Fork a new session to continue. |
 | jn-5870 | **Publish** | [#1656 DRAFT](https://github.com/Jounce-IO/jounce/pull/1656) | CONFLICTING | [JN-5870](https://redhat.atlassian.net/browse/JN-5870) | PR #1656 DRAFT CONFLICTING. 5 commits ahead. Needs rebase + undraft. |
 | jn-5867 | **Publish** | [#1655](https://github.com/Jounce-IO/jounce/pull/1655) | 🔴 pre-commit ❌ run 29016539122 (UNCHANGED, no new push since Jul 9) | [JN-5867](https://redhat.atlassian.net/browse/JN-5867) | pre-commit ❌ still. No new push. 4+ complete runs with pre-commit failing. Needs targeted diagnosis. |
@@ -30,7 +30,7 @@
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
 | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ CONFLICTING | 🔴 CONFLICTING | 🔴 CONFLICTING 10+ days. Needs rebase + fix e2e or close PR. |
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | 🔴 **run 29183086166 NEW: e2e-product ❌ STILL. pre-commit ✅, tox ✅, nox ✅, e2e-smoke ✅, e2e-api ✅** | MERGEABLE | 🔄 Run 29183086166 (re-run, no new push since Jul 5). e2e-product ❌ persists as sole blocker. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) (likely) | ⏳ **run 29184496946 IN PROGRESS: e2e-product ⏳ PENDING** | MERGEABLE | **NEW PUSH** (fix type errors in mock-based unit tests). New CI run 29184496946 (in_progress). All others ✅ (pre-commit ✅, tox ✅, nox ✅, e2e-smoke ✅, e2e-api ✅, bake ✅). e2e-product pending — potential fix! |
 
 ---
 
@@ -64,12 +64,12 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes Since Last Run (10:30 IDT Jul 12 — delta from 06:00 IDT Jul 12)
+## Key Changes Since Last Run (11:00 IDT Jul 12 — delta from 10:30 IDT Jul 12)
 
 | What observed | Status |
 |---|---|
-| **#1654 NEW PUSH** | 3 commits at 09:55-10:00 IDT Jul 12 ("fix(lcov): updated lcov.info" + 2 auto-updates). New CI run 29183505715. pre-commit ❌ STILL. |
-| **#1638 New CI run** | Run 29183086166 (re-run, no new push since Jul 5). e2e-product ❌ persists. |
+| **#1654 ANOTHER NEW PUSH** | NEW CI run 29185143612 (in_progress). Checks pending: e2e-api, integration, pre-commit, tox. Prior push (09:55 IDT) had pre-commit ❌. Awaiting result. |
+| **#1638 NEW PUSH** | NEW CI run 29184496946 (in_progress). 3 new commits (fix type errors in mock tests). ALL others ✅; e2e-product now PENDING (was ❌). Potential fix! |
 | **#1649 UNCHANGED** | CI ALL PASS run 28932482752. Awaiting reviewer LGTM. |
 | **#1655 UNCHANGED** | Same run 29016539122. pre-commit ❌. No new push since Jul 9. |
 | **#1648 UNCHANGED** | Same run 29105010549. pre-commit ❌. No new push since Jul 12 04:02. |
@@ -81,13 +81,13 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ## Attention Items
 
-### 🔄 #1638 (off-board) — Run 29183086166 — e2e-product ❌ persists
+### 🔄 #1638 (off-board) — Run 29184496946 — e2e-product ⏳ PENDING (was ❌)
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites"
-- **Run 29183086166 NEW** (re-run, no new push since Jul 5): pre-commit ✅, bake ✅, tox ✅, nox ✅, e2e-smoke ✅, e2e-api ✅, integration ✅
-- **e2e-product / e2e ❌ STILL** (19m33s — ran to completion)
-- **e2e-tests ❌** — companion failure
-- **Action:** e2e-product is the sole remaining blocker. No new push since Jul 5 — investigation/fix needed.
+- **NEW PUSH** (3 commits: fix(tests): suppress type errors in mock-based unit tests; update coverage line numbers; use Any type for mocked k8s_client fixture)
+- **Run 29184496946 IN PROGRESS**: pre-commit ✅, bake ✅, tox ✅, nox ✅, e2e-smoke ✅, e2e-api ✅, integration ✅ all pass
+- **e2e-product ⏳ PENDING** — was ❌ in prior run. Potential fix!
+- **Action:** Await run completion — if e2e-product passes this run, #1638 may be unblocked.
 
 ---
 
@@ -101,13 +101,13 @@ PR [#1648](https://github.com/Jounce-IO/jounce/pull/1648): "feat(release): imple
 
 ---
 
-### 🔄 #1654 (jn-5401) — NEW PUSH 09:55 IDT Jul 12 — run 29183505715 — pre-commit ❌ still
+### 🔄 #1654 (jn-5401) — ANOTHER NEW PUSH — run 29185143612 IN PROGRESS
 
 PR [#1654](https://github.com/Jounce-IO/jounce/pull/1654): "feat(jbenchmark): add subcommands to runner"
-- **NEW PUSH** at 09:55-10:00 IDT Jul 12: 3 commits ("fix(lcov): updated lcov.info" + 2 auto-update commits)
-- **Run 29183505715 NEW**: e2e-smoke ✅, tox ✅, nox ✅, e2e-api ✅, integration ✅ all pass
-- pre-commit ❌ STILL the only failing check — fix attempt did not resolve it.
-- **Action:** Investigate why pre-commit continues to fail despite fix attempts. Check which specific hook is failing.
+- **ANOTHER NEW PUSH** after 09:55 IDT Jul 12 push (which had pre-commit ❌)
+- **Run 29185143612 IN PROGRESS** (in_progress): e2e-api ⏳ pending, integration ⏳ pending, pre-commit ⏳ pending, tox ⏳ pending
+- Latest commits: "fix lcov" + 2 build auto-updates
+- **Action:** Await run completion — if pre-commit passes, #1654 will be near-merge.
 
 ---
 
