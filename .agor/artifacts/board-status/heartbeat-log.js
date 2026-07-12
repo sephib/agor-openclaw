@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-12 16:00 IDT",
+    actions: 1,
+    findings: 2,
+    status: "ok",
+    summary: "jn-5841 ARCHIVED (found in Agor as NO ZONE via branchId scan — PR #1649 MERGED); #1658 CHANGES_REQUESTED from markVaykhansky at 15:41 IDT; #1638 pre-commit ❌ REGRESSION in NEW run 29193273509; no new merges; 7 Jira mismatches carried forward",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f566a133771dcb82c00de/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-12 15:30 IDT",
     actions: 0,
     findings: 3,

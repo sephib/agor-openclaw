@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-12 15:30 IDT";
+export const LAST_UPDATED = "2026-07-12 16:00 IDT";
 
 export const WORKTREES = [
   {
@@ -295,20 +295,28 @@ export const WORKTREES = [
     title: "jbenchmark app-level AGENTS.md (JN-5842)",
     branch: "jn-5842-jbenchmark-agents-md",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5842-jbenchmark-agents-md",
-    zone: "NO ZONE (was Publish)",
+    zone: "NO ZONE",
     pr: "#1658 ✅ UNDRAFTED",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1658",
-    status: "🎉 PR #1658 UNDRAFTED (15:00–15:30 IDT Jul 12). CI ALL PASS (run 29191881552) + MERGEABLE. validate-tag.yml ❌ side-effect of #1648 — not blocking. ⚠️ Not found in Agor Publish zone. Needs LGTM to merge.",
-    blockedOn: "Needs reviewer LGTM to merge",
-    blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f564e9bf57a4d8aea2124/",
-    sessionLabel: "heartbeat 15:30 IDT Jul 12 — PR UNDRAFTED! CI ALL PASS + MERGEABLE — needs review",
+    status: "🔴 CHANGES_REQUESTED from markVaykhansky (15:41 IDT Jul 12). CI ALL PASS (run 29191881552) + MERGEABLE. Must address review comments before merge.",
+    blockedOn: "CHANGES_REQUESTED — must address markVaykhansky review",
+    blockedType: "blocked",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f566a133771dcb82c00de/",
+    sessionLabel: "heartbeat 16:00 IDT Jul 12 — CHANGES_REQUESTED from markVaykhansky at 15:41 IDT",
     recentSessions: [
+      {
+        sessionId: "019f566a133771dcb82c00de",
+        url: "http://127.0.0.1:3030/ui/s/019f566a133771dcb82c00de/",
+        title: "heartbeat 16:00 IDT Jul 12 — CHANGES_REQUESTED from markVaykhansky at 15:41 IDT",
+        status: "running",
+        timestamp: "2026-07-12 16:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f564e9bf57a4d8aea2124",
         url: "http://127.0.0.1:3030/ui/s/019f564e9bf57a4d8aea2124/",
         title: "heartbeat 15:30 IDT Jul 12 — PR #1658 UNDRAFTED detected, CI ALL PASS + MERGEABLE",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-12 15:30 IDT",
         outputFile: null,
       },
@@ -321,7 +329,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-12 15:30 IDT",
+    lastActive: "2026-07-12 16:00 IDT",
   },
   {
     ticket: "JN-5868",
@@ -393,7 +401,7 @@ export const MERGED = [
     pr: "#1649",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1649",
     mergedDate: "2026-07-12",
-    note: "Merged 14:45 IDT Jul 12. jn-5841-agents-md-root NOT FOUND in Agor board — needs manual cleanup. JN-5841 Jira 'In Review' → needs Done.",
+    note: "Merged 14:45 IDT Jul 12. jn-5841-agents-md-root ARCHIVED 16:00 IDT Jul 12 (was in Agor as NO ZONE — found via branchId scan). JN-5841 Jira 'In Review' → needs Done.",
   },
   {
     ticket: "JN-5827",
@@ -471,8 +479,12 @@ export const MERGED = [
 
 export const ALERTS = [
   {
+    level: "red",
+    message: "🔴 #1658 (jn-5842 JN-5842): CHANGES_REQUESTED from markVaykhansky (15:41 IDT Jul 12). CI ALL PASS + MERGEABLE. Must address review comments — then re-request review.",
+  },
+  {
     level: "green",
-    message: "🎉 #1658 (jn-5842 JN-5842): PR UNDRAFTED (15:00–15:30 IDT Jul 12). CI ALL PASS (run 29191881552) + MERGEABLE. validate-tag.yml ❌ side-effect only. ACTION: get LGTM + merge!",
+    message: "✅ jn-5841-agents-md-root ARCHIVED 16:00 IDT Jul 12 — PR #1649 MERGED 14:45 IDT. Branch was in Agor (NO ZONE) — found via branchId scan and archived. JN-5841 Jira 'In Review' → needs Done.",
   },
   {
     level: "green",
@@ -488,7 +500,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 PR #1638 (JN-5725, off-board): run 29190760650 — e2e-product ❌ STILL (16m54s). NOT near merge. Needs e2e-product diagnosis.",
+    message: "🔴 PR #1638 (JN-5725, off-board): NEW run 29193273509 — pre-commit ❌ REGRESSION (new push broke linting). e2e-smoke ⏳ PENDING. Needs pre-commit diagnosis.",
   },
   {
     level: "red",
@@ -524,11 +536,11 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "❌ Jira mismatches (7): JN-5445/5717/5546/5827/5841 PRs merged — needs Done. JN-5401/5867 PRs open — needs In Review. Jira MCP 401 + acli empty — carried forward 15:30 IDT Jul 12.",
+    message: "❌ Jira mismatches (7): JN-5445/5717/5546/5827/5841 PRs merged — needs Done. JN-5401/5867 PRs open — needs In Review. Jira MCP 401 + acli empty — carried forward 16:00 IDT Jul 12.",
   },
   {
     level: "yellow",
-    message: "⚠️ jn-5842 NOT in Agor Publish zone (NO ZONE in board scan). PR #1658 undrafted — may need zone assignment in Agor.",
+    message: "⚠️ jn-5842 has NO ZONE in Agor (confirmed via branchId scan). PR #1658 has CHANGES_REQUESTED — zone assignment secondary to fixing review.",
   },
   {
     level: "yellow",
