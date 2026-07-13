@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-13 17:00 IDT",
+    actions: 0,
+    findings: 4,
+    status: "ok",
+    summary: "#1655 (jn-5867) ALL CI GREEN — READY TO MERGE (cascade blocker CLEARED); #1659 ALL GREEN (awaits #1655); #1657 e2e-smoke pending; #1638 NOW MERGEABLE but new nox+tox failures",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5bc71d397def87ef1edd/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-13 16:30 IDT",
     actions: 0,
     findings: 4,

@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-13 16:30 IDT";
+export const LAST_UPDATED = "2026-07-13 17:00 IDT";
 
 export const WORKTREES = [
   {
@@ -44,12 +44,20 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1656 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1656",
-    status: "🔴 CONFLICTING + DRAFT + pre-commit ❌ (unchanged). Rebase on main + fix pre-commit + undraft.",
-    blockedOn: "CONFLICTING + DRAFT + pre-commit ❌",
+    status: "🔴 DRAFT + UNKNOWN (unchanged). Rebase on main + fix pre-commit + undraft.",
+    blockedOn: "DRAFT + UNKNOWN",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5baba5ad72a2bc02dd3c/",
-    sessionLabel: "heartbeat 16:30 IDT Jul 13 — #1656 DRAFT + CONFLICTING + pre-commit ❌ (unchanged)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5bc71d397def87ef1edd/",
+    sessionLabel: "heartbeat 17:00 IDT Jul 13 — #1656 DRAFT + UNKNOWN (unchanged)",
     recentSessions: [
+      {
+        sessionId: "019f5bc71d397def87ef1edd",
+        url: "http://127.0.0.1:3030/ui/s/019f5bc71d397def87ef1edd/",
+        title: "heartbeat 17:00 IDT Jul 13 — #1656 DRAFT + UNKNOWN (unchanged)",
+        status: "completed",
+        timestamp: "2026-07-13 17:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f5baba5ad72a2bc02dd3c",
         url: "http://127.0.0.1:3030/ui/s/019f5baba5ad72a2bc02dd3c/",
@@ -82,14 +90,6 @@ export const WORKTREES = [
         timestamp: "2026-07-13 14:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f5b06d84b7f2199f13769",
-        url: "http://127.0.0.1:3030/ui/s/019f5b06d84b7f2199f13769/",
-        title: "heartbeat 13:30 IDT Jul 13 — #1656 DRAFT + CONFLICTING + pre-commit ❌ (unchanged)",
-        status: "idle",
-        timestamp: "2026-07-13 13:30 IDT",
-        outputFile: null,
-      },
     ],
     lastActive: "2026-07-13 11:00 IDT",
   },
@@ -102,12 +102,20 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1655",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1655",
-    status: "✅ NOW MERGEABLE (was CONFLICTING at 16:00). NEW CI run 29252812787 — JIRA Association ❌ (Jira migration artifact?), pre-commit PENDING; all other checks passing. Cascade blocker.",
-    blockedOn: "JIRA Association ❌ + pre-commit PENDING (run 29252812787) — cascade blocker for #1657, #1659",
-    blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5baba5ad72a2bc02dd3c/",
-    sessionLabel: "heartbeat 16:30 IDT Jul 13 — #1655 MERGEABLE; JIRA Assoc ❌ NEW; pre-commit PENDING",
+    status: "🎉 ALL CI GREEN + MERGEABLE. READY TO MERGE! Run 29252812787 COMPLETE: JIRA Association ✅ (RECOVERED), pre-commit ✅, all-checks ✅, all suites pass. Cascade blocker CLEARED — unblocks #1657 + #1659.",
+    blockedOn: null,
+    blockedType: "active",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5bc71d397def87ef1edd/",
+    sessionLabel: "heartbeat 17:00 IDT Jul 13 — #1655 ALL GREEN + READY TO MERGE (cascade blocker CLEARED)",
     recentSessions: [
+      {
+        sessionId: "019f5bc71d397def87ef1edd",
+        url: "http://127.0.0.1:3030/ui/s/019f5bc71d397def87ef1edd/",
+        title: "heartbeat 17:00 IDT Jul 13 — #1655 ALL CI GREEN; READY TO MERGE (cascade blocker CLEARED)",
+        status: "completed",
+        timestamp: "2026-07-13 17:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f5baba5ad72a2bc02dd3c",
         url: "http://127.0.0.1:3030/ui/s/019f5baba5ad72a2bc02dd3c/",
@@ -140,16 +148,8 @@ export const WORKTREES = [
         timestamp: "2026-07-13 15:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f5b2250677356a864e81b",
-        url: "http://127.0.0.1:3030/ui/s/019f5b2250677356a864e81b/",
-        title: "heartbeat 14:00 IDT Jul 13 — #1655 reviewDecision cleared; pre-commit ❌ unchanged",
-        status: "idle",
-        timestamp: "2026-07-13 14:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-13 16:30 IDT",
+    lastActive: "2026-07-13 17:00 IDT",
   },
   {
     ticket: "JN-5869",
@@ -160,12 +160,20 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1657",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1657",
-    status: "🔄 NEW CI run 29253907911 PENDING (just started). MERGEABLE. Previous run had pre-commit ❌. Awaiting results.",
-    blockedOn: "CI PENDING (run 29253907911) — pre-commit ❌ from prior run",
+    status: "🟡 Run 29255496217 — JIRA ✅, pre-commit ✅, e2e-api ✅, integration ✅, nox ✅, tox ✅; e2e-smoke ⏳ PENDING. MERGEABLE. Almost clean.",
+    blockedOn: "e2e-smoke pending (run 29255496217)",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5baba5ad72a2bc02dd3c/",
-    sessionLabel: "heartbeat 16:30 IDT Jul 13 — #1657 NEW run 29253907911 PENDING; MERGEABLE",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5bc71d397def87ef1edd/",
+    sessionLabel: "heartbeat 17:00 IDT Jul 13 — #1657 run 29255496217: all pass, e2e-smoke PENDING",
     recentSessions: [
+      {
+        sessionId: "019f5bc71d397def87ef1edd",
+        url: "http://127.0.0.1:3030/ui/s/019f5bc71d397def87ef1edd/",
+        title: "heartbeat 17:00 IDT Jul 13 — #1657 run 29255496217: all pass, e2e-smoke ⏳ PENDING",
+        status: "completed",
+        timestamp: "2026-07-13 17:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f5baba5ad72a2bc02dd3c",
         url: "http://127.0.0.1:3030/ui/s/019f5baba5ad72a2bc02dd3c/",
@@ -198,16 +206,8 @@ export const WORKTREES = [
         timestamp: "2026-07-13 14:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f5b06d84b7f2199f13769",
-        url: "http://127.0.0.1:3030/ui/s/019f5b06d84b7f2199f13769/",
-        title: "heartbeat 13:30 IDT Jul 13 — #1657 NOW MERGEABLE; pre-commit ❌ still",
-        status: "idle",
-        timestamp: "2026-07-13 13:30 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-13 13:30 IDT",
+    lastActive: "2026-07-13 17:00 IDT",
   },
   {
     ticket: "JN-5865",
@@ -296,12 +296,20 @@ export const WORKTREES = [
     zone: "NO ZONE",
     pr: "#1658",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1658",
-    status: "🔴 NOW CONFLICTING (was MERGEABLE at 16:00). CI still green from run 29238532071. Still CHANGES_REQUESTED from markVaykhansky. Must rebase + address review comments.",
-    blockedOn: "NOW CONFLICTING + CHANGES_REQUESTED (markVaykhansky) — needs rebase + review response",
+    status: "🔴 CONFLICTING (since 16:00 IDT Jul 13). CI still green from run 29238532071 (no new run). Still CHANGES_REQUESTED from markVaykhansky. Must rebase + address review comments.",
+    blockedOn: "CONFLICTING + CHANGES_REQUESTED (markVaykhansky) — needs rebase + review response",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5baba5ad72a2bc02dd3c/",
-    sessionLabel: "heartbeat 16:30 IDT Jul 13 — #1658 NOW CONFLICTING; CHANGES_REQUESTED (markVaykhansky)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5bc71d397def87ef1edd/",
+    sessionLabel: "heartbeat 17:00 IDT Jul 13 — #1658 CONFLICTING + CHANGES_REQUESTED (unchanged)",
     recentSessions: [
+      {
+        sessionId: "019f5bc71d397def87ef1edd",
+        url: "http://127.0.0.1:3030/ui/s/019f5bc71d397def87ef1edd/",
+        title: "heartbeat 17:00 IDT Jul 13 — #1658 CONFLICTING + CHANGES_REQUESTED (unchanged)",
+        status: "completed",
+        timestamp: "2026-07-13 17:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f5baba5ad72a2bc02dd3c",
         url: "http://127.0.0.1:3030/ui/s/019f5baba5ad72a2bc02dd3c/",
@@ -334,14 +342,6 @@ export const WORKTREES = [
         timestamp: "2026-07-13 14:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f5b06d84b7f2199f13769",
-        url: "http://127.0.0.1:3030/ui/s/019f5b06d84b7f2199f13769/",
-        title: "heartbeat 13:30 IDT Jul 13 — #1658 CI GREEN; CHANGES_REQUESTED (no new push)",
-        status: "idle",
-        timestamp: "2026-07-13 13:30 IDT",
-        outputFile: null,
-      },
     ],
     lastActive: "2026-07-13 12:32 IDT",
   },
@@ -354,12 +354,20 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1659",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1659",
-    status: "⏳ NOW MERGEABLE (was UNKNOWN). NEW CI run 29253921069 just started. Previous pre-commit ❌ still unresolved. Depends on jn-5867 (#1655) merging first.",
-    blockedOn: "CI PENDING (run 29253921069) — depends on jn-5867 (#1655) merge",
+    status: "✅ ALL CI GREEN (run 29254605349): all-checks ✅, all suites pass. MERGEABLE. Awaits #1655 (jn-5867) merge first.",
+    blockedOn: "Awaiting jn-5867 (#1655) merge — ordering constraint",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5baba5ad72a2bc02dd3c/",
-    sessionLabel: "heartbeat 16:30 IDT Jul 13 — #1659 NOW MERGEABLE; NEW run 29253921069 PENDING",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5bc71d397def87ef1edd/",
+    sessionLabel: "heartbeat 17:00 IDT Jul 13 — #1659 ALL CI GREEN (run 29254605349); awaits #1655 merge",
     recentSessions: [
+      {
+        sessionId: "019f5bc71d397def87ef1edd",
+        url: "http://127.0.0.1:3030/ui/s/019f5bc71d397def87ef1edd/",
+        title: "heartbeat 17:00 IDT Jul 13 — #1659 ALL CI GREEN (run 29254605349); awaits #1655 merge",
+        status: "completed",
+        timestamp: "2026-07-13 17:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f5baba5ad72a2bc02dd3c",
         url: "http://127.0.0.1:3030/ui/s/019f5baba5ad72a2bc02dd3c/",
@@ -392,16 +400,8 @@ export const WORKTREES = [
         timestamp: "2026-07-13 14:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f5b06d84b7f2199f13769",
-        url: "http://127.0.0.1:3030/ui/s/019f5b06d84b7f2199f13769/",
-        title: "heartbeat 13:30 IDT Jul 13 — #1659 run 29241018713 COMPLETE: pre-commit ❌",
-        status: "idle",
-        timestamp: "2026-07-13 13:30 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-13 12:02 IDT",
+    lastActive: "2026-07-13 17:00 IDT",
   },
   {
     ticket: "JN-5824",
@@ -561,28 +561,28 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "red",
-    message: "🔴 #1655 (jn-5867 JN-5867): MERGEABLE now (was CONFLICTING). NEW run 29252812787 — JIRA Association ❌ (Jira migration artifact?), pre-commit PENDING. Cascade blocker for #1657, #1659.",
+    level: "green",
+    message: "🎉 #1655 (jn-5867 JN-5867): ALL CI GREEN + MERGEABLE — READY TO MERGE! Run 29252812787 COMPLETE: JIRA Association ✅ (RECOVERED), pre-commit ✅, all suites pass. Cascade blocker CLEARED — unblocks #1657 + #1659.",
   },
   {
-    level: "red",
-    message: "🔴 #1658 (jn-5842 JN-5842): NOW CONFLICTING (was MERGEABLE at 16:00). Still CHANGES_REQUESTED (markVaykhansky). Needs rebase + address review comments.",
-  },
-  {
-    level: "red",
-    message: "🔴 #1638 (JN-5725, off-board): run 29247131982 COMPLETE — e2e-product ❌ CONFIRMED FAILED (24 min) + NOW CONFLICTING. Two consecutive confirmed failures. Needs investigation.",
+    level: "green",
+    message: "✅ #1659 (jn-5868 JN-5868): ALL CI GREEN (run 29254605349). MERGEABLE. Awaits #1655 merge first.",
   },
   {
     level: "yellow",
-    message: "⏳ #1657 (jn-5869 JN-5869): NEW CI run 29253907911 PENDING (just started). MERGEABLE. Previous pre-commit ❌ unresolved.",
-  },
-  {
-    level: "yellow",
-    message: "⏳ #1659 (jn-5868 JN-5868): NOW MERGEABLE (was UNKNOWN). NEW CI run 29253921069 PENDING. Depends on #1655 merging first.",
+    message: "🟡 #1657 (jn-5869 JN-5869): Run 29255496217 — all pass; e2e-smoke ⏳ PENDING. MERGEABLE. Almost clean.",
   },
   {
     level: "red",
-    message: "🔴 #1656 (jn-5870 JN-5870): DRAFT + CONFLICTING + pre-commit ❌. Rebase + fix pre-commit + undraft.",
+    message: "🔴 #1638 (JN-5725, off-board): NOW MERGEABLE (conflicts resolved!) but new nox ❌ + tox ❌ FAIL in run 29255620232. e2e-smoke pending. Two new test failures.",
+  },
+  {
+    level: "red",
+    message: "🔴 #1658 (jn-5842 JN-5842): CONFLICTING (since 16:00 IDT) + CHANGES_REQUESTED (markVaykhansky). Needs rebase + address review comments.",
+  },
+  {
+    level: "red",
+    message: "🔴 #1656 (jn-5870 JN-5870): DRAFT + UNKNOWN (unchanged). Rebase + fix pre-commit + undraft.",
   },
   {
     level: "green",
