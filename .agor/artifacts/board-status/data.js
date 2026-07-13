@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-13 17:00 IDT";
+export const LAST_UPDATED = "2026-07-13 17:30 IDT";
 
 export const WORKTREES = [
   {
@@ -47,9 +47,17 @@ export const WORKTREES = [
     status: "🔴 DRAFT + UNKNOWN (unchanged). Rebase on main + fix pre-commit + undraft.",
     blockedOn: "DRAFT + UNKNOWN",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5bc71d397def87ef1edd/",
-    sessionLabel: "heartbeat 17:00 IDT Jul 13 — #1656 DRAFT + UNKNOWN (unchanged)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5be294f07596accdb24a/",
+    sessionLabel: "heartbeat 17:30 IDT Jul 13 — #1656 DRAFT + CONFLICTING + pre-commit ❌ (unchanged)",
     recentSessions: [
+      {
+        sessionId: "019f5be294f07596accdb24a",
+        url: "http://127.0.0.1:3030/ui/s/019f5be294f07596accdb24a/",
+        title: "heartbeat 17:30 IDT Jul 13 — #1656 DRAFT + CONFLICTING + pre-commit ❌ (unchanged)",
+        status: "completed",
+        timestamp: "2026-07-13 17:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f5bc71d397def87ef1edd",
         url: "http://127.0.0.1:3030/ui/s/019f5bc71d397def87ef1edd/",
@@ -105,9 +113,17 @@ export const WORKTREES = [
     status: "🎉 ALL CI GREEN + MERGEABLE. READY TO MERGE! Run 29252812787 COMPLETE: JIRA Association ✅ (RECOVERED), pre-commit ✅, all-checks ✅, all suites pass. Cascade blocker CLEARED — unblocks #1657 + #1659.",
     blockedOn: null,
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5bc71d397def87ef1edd/",
-    sessionLabel: "heartbeat 17:00 IDT Jul 13 — #1655 ALL GREEN + READY TO MERGE (cascade blocker CLEARED)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5be294f07596accdb24a/",
+    sessionLabel: "heartbeat 17:30 IDT Jul 13 — #1655 ALL GREEN + READY TO MERGE (unchanged)",
     recentSessions: [
+      {
+        sessionId: "019f5be294f07596accdb24a",
+        url: "http://127.0.0.1:3030/ui/s/019f5be294f07596accdb24a/",
+        title: "heartbeat 17:30 IDT Jul 13 — #1655 ALL CI GREEN; READY TO MERGE (unchanged from 17:00)",
+        status: "completed",
+        timestamp: "2026-07-13 17:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f5bc71d397def87ef1edd",
         url: "http://127.0.0.1:3030/ui/s/019f5bc71d397def87ef1edd/",
@@ -160,12 +176,20 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1657",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1657",
-    status: "🟡 Run 29255496217 — JIRA ✅, pre-commit ✅, e2e-api ✅, integration ✅, nox ✅, tox ✅; e2e-smoke ⏳ PENDING. MERGEABLE. Almost clean.",
-    blockedOn: "e2e-smoke pending (run 29255496217)",
+    status: "✅ ALL CI GREEN (run 29255496217 COMPLETE): JIRA ✅, pre-commit ✅, e2e-api ✅, e2e-smoke ✅, integration ✅, nox ✅, tox ✅. MERGEABLE. Ready to merge after #1655.",
+    blockedOn: "Awaiting jn-5867 (#1655) merge — ordering constraint",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5bc71d397def87ef1edd/",
-    sessionLabel: "heartbeat 17:00 IDT Jul 13 — #1657 run 29255496217: all pass, e2e-smoke PENDING",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5be294f07596accdb24a/",
+    sessionLabel: "heartbeat 17:30 IDT Jul 13 — #1657 ALL CI GREEN (run 29255496217 COMPLETE: e2e-smoke ✅)",
     recentSessions: [
+      {
+        sessionId: "019f5be294f07596accdb24a",
+        url: "http://127.0.0.1:3030/ui/s/019f5be294f07596accdb24a/",
+        title: "heartbeat 17:30 IDT Jul 13 — #1657 ALL CI GREEN (run 29255496217: e2e-smoke ✅ PASSED)",
+        status: "completed",
+        timestamp: "2026-07-13 17:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f5bc71d397def87ef1edd",
         url: "http://127.0.0.1:3030/ui/s/019f5bc71d397def87ef1edd/",
@@ -299,9 +323,17 @@ export const WORKTREES = [
     status: "🔴 CONFLICTING (since 16:00 IDT Jul 13). CI still green from run 29238532071 (no new run). Still CHANGES_REQUESTED from markVaykhansky. Must rebase + address review comments.",
     blockedOn: "CONFLICTING + CHANGES_REQUESTED (markVaykhansky) — needs rebase + review response",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5bc71d397def87ef1edd/",
-    sessionLabel: "heartbeat 17:00 IDT Jul 13 — #1658 CONFLICTING + CHANGES_REQUESTED (unchanged)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5be294f07596accdb24a/",
+    sessionLabel: "heartbeat 17:30 IDT Jul 13 — #1658 CONFLICTING + CHANGES_REQUESTED (unchanged)",
     recentSessions: [
+      {
+        sessionId: "019f5be294f07596accdb24a",
+        url: "http://127.0.0.1:3030/ui/s/019f5be294f07596accdb24a/",
+        title: "heartbeat 17:30 IDT Jul 13 — #1658 CONFLICTING + CHANGES_REQUESTED (unchanged)",
+        status: "completed",
+        timestamp: "2026-07-13 17:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f5bc71d397def87ef1edd",
         url: "http://127.0.0.1:3030/ui/s/019f5bc71d397def87ef1edd/",
@@ -354,12 +386,20 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1659",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1659",
-    status: "✅ ALL CI GREEN (run 29254605349): all-checks ✅, all suites pass. MERGEABLE. Awaits #1655 (jn-5867) merge first.",
-    blockedOn: "Awaiting jn-5867 (#1655) merge — ordering constraint",
+    status: "✅ ALL CI GREEN (run 29254605349): all-checks ✅, all suites pass. MERGEABLE. Awaits #1655 then #1657 merge (ordering constraint).",
+    blockedOn: "Awaiting jn-5867 (#1655) + jn-5869 (#1657) merge — ordering constraint",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5bc71d397def87ef1edd/",
-    sessionLabel: "heartbeat 17:00 IDT Jul 13 — #1659 ALL CI GREEN (run 29254605349); awaits #1655 merge",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5be294f07596accdb24a/",
+    sessionLabel: "heartbeat 17:30 IDT Jul 13 — #1659 ALL CI GREEN (run 29254605349); awaits #1655+#1657 merge",
     recentSessions: [
+      {
+        sessionId: "019f5be294f07596accdb24a",
+        url: "http://127.0.0.1:3030/ui/s/019f5be294f07596accdb24a/",
+        title: "heartbeat 17:30 IDT Jul 13 — #1659 ALL CI GREEN (run 29254605349); awaits #1655+#1657 merge",
+        status: "completed",
+        timestamp: "2026-07-13 17:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f5bc71d397def87ef1edd",
         url: "http://127.0.0.1:3030/ui/s/019f5bc71d397def87ef1edd/",
@@ -569,8 +609,8 @@ export const ALERTS = [
     message: "✅ #1659 (jn-5868 JN-5868): ALL CI GREEN (run 29254605349). MERGEABLE. Awaits #1655 merge first.",
   },
   {
-    level: "yellow",
-    message: "🟡 #1657 (jn-5869 JN-5869): Run 29255496217 — all pass; e2e-smoke ⏳ PENDING. MERGEABLE. Almost clean.",
+    level: "green",
+    message: "✅ #1657 (jn-5869 JN-5869): ALL CI GREEN (run 29255496217 COMPLETE: e2e-smoke ✅). MERGEABLE. Ready to merge after #1655.",
   },
   {
     level: "red",

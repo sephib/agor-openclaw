@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-13 17:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-13 17:30 IDT (advance heartbeat)*
 
 ---
 
@@ -17,7 +17,7 @@
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | "continuew" session IDLE ready_for_prompt:FALSE. SHA 16ec44ea (2 commits). Needs: generate 24 configs, rebase main, create PR. Fork a new session to continue. |
 | jn-5870 | **Publish** | [#1656 DRAFT](https://github.com/Jounce-IO/jounce/pull/1656) | **🔴 DRAFT UNKNOWN** | [JN-5870](https://redhat.atlassian.net/browse/JN-5870) | **DRAFT + UNKNOWN** (unchanged). Rebase on main + fix pre-commit + undraft. |
 | jn-5867 | **Publish** | [#1655](https://github.com/Jounce-IO/jounce/pull/1655) | **✅ ALL PASSING** (run 29252812787) — JIRA Association ✅, pre-commit ✅, all-checks ✅, e2e-api ✅, e2e-smoke ✅, integration ✅, tox ✅, nox ✅ | [JN-5867](https://redhat.atlassian.net/browse/JN-5867) — Backlog | **🎉 ALL CI GREEN + MERGEABLE. READY TO MERGE!** Cascade blocker resolved. Unblocks #1657 (jn-5869) and #1659 (jn-5868). |
-| jn-5869 | **Publish** | [#1657](https://github.com/Jounce-IO/jounce/pull/1657) | **🟡 MOSTLY PASSING** (run 29255496217) — all pass; e2e-smoke ⏳ PENDING | [JN-5869](https://redhat.atlassian.net/browse/JN-5869) | MERGEABLE. Run 29255496217 almost done — e2e-smoke still pending, all others pass. |
+| jn-5869 | **Publish** | [#1657](https://github.com/Jounce-IO/jounce/pull/1657) | **✅ ALL PASSING** (run 29255496217) — all pass including e2e-smoke ✅ | [JN-5869](https://redhat.atlassian.net/browse/JN-5869) | **✅ ALL CI GREEN. MERGEABLE.** After #1655 merges. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 18+ days with no session or PR. |
 | ~~jn-5877-api-server-replicas~~ | **ARCHIVED** | [#1663](https://github.com/Jounce-IO/jounce/pull/1663) MERGED **15:16 IDT Jul 13** | ALL PASS ✅ (run 29244989261) | [JN-5877](https://redhat.atlassian.net/browse/JN-5877) — **In Review** ⚠️ | **🎉 PR #1663 MERGED 15:16 IDT Jul 13** — Worktree **ARCHIVED 15:30 IDT Jul 13**. JN-5877 Jira needs Done! |
 | ~~jn-5874-values-prd-image-tags~~ | **ARCHIVED** | [#1662](https://github.com/Jounce-IO/jounce/pull/1662) MERGED **12:10 IDT Jul 13** | ALL PASS ✅ | [JN-5874](https://redhat.atlassian.net/browse/JN-5874) — **Backlog** ⚠️ | **🎉 PR #1662 MERGED** — Worktree **ARCHIVED 12:32 IDT Jul 13**. JN-5874 Jira still Backlog → **needs Done!** |
@@ -74,14 +74,14 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes Since Last Run (17:00 IDT Jul 13 — delta from 16:30 IDT Jul 13)
+## Key Changes Since Last Run (17:30 IDT Jul 13 — delta from 17:00 IDT Jul 13)
 
 | What observed | Status |
 |---|---|
-| **🎉 #1655 (jn-5867) ALL CHECKS GREEN** | Run 29252812787 COMPLETE: JIRA Association ✅ (RECOVERED from ❌), pre-commit ✅, all-checks ✅, e2e-api ✅, e2e-smoke ✅, integration ✅, tox ✅, nox ✅. MERGEABLE. **READY TO MERGE — cascade blocker CLEARED!** |
-| **✅ #1659 (jn-5868) ALL CHECKS GREEN** | Run 29254605349 COMPLETE: all-checks ✅, all suites passing. MERGEABLE. Awaits #1655 merge. |
-| **🟡 #1657 (jn-5869) almost done** | Run 29255496217 in progress: all pass, e2e-smoke ⏳ PENDING. MERGEABLE. |
-| **🔴 #1638 (off-board) NOW MERGEABLE but new nox ❌ + tox ❌** | Was CONFLICTING at 16:30 → MERGEABLE now. But new run 29255620232: nox ❌ FAIL, tox ❌ FAIL. New test failures. |
+| **🎉 #1657 (jn-5869) e2e-smoke NOW PASSED** | Run 29255496217 COMPLETE: all-checks ✅, e2e-api ✅, e2e-smoke ✅, integration ✅, nox ✅, tox ✅, pre-commit ✅. **ALL CI GREEN. READY TO MERGE** (after #1655). |
+| **#1655 (jn-5867) unchanged** | Still ALL CI GREEN (run 29252812787). MERGEABLE. READY TO MERGE — cascade blocker still waiting on human. |
+| **#1659 (jn-5868) unchanged** | Still ALL CI GREEN (run 29254605349). MERGEABLE. Awaits #1655 merge. |
+| **#1638 (off-board) unchanged** | nox ❌ + tox ❌ + e2e-product ❌ FAIL in run 29255620232. e2e-tests ⏳ PENDING. Still failing. |
 | **#1658 (jn-5842) unchanged** | Still CONFLICTING + CHANGES_REQUESTED. No new CI run. |
 | **No new merges** | Board composition unchanged. |
 
@@ -109,12 +109,12 @@ PR [#1659](https://github.com/Jounce-IO/jounce/pull/1659): "feat(jbenchmark): ad
 
 ---
 
-### 🟡 #1657 (jn-5869) — e2e-smoke pending, all else passing
+### ✅ #1657 (jn-5869) — ALL CI GREEN, READY TO MERGE (after #1655)
 
 PR [#1657](https://github.com/Jounce-IO/jounce/pull/1657): "feat(jbenchmark): add IBM cluster connection support"
-- Run 29255496217: JIRA ✅, pre-commit ✅, e2e-api ✅, integration ✅, nox ✅, tox ✅ — e2e-smoke ⏳ PENDING
+- Run 29255496217 COMPLETE: JIRA ✅, pre-commit ✅, e2e-api ✅, e2e-smoke ✅, integration ✅, nox ✅, tox ✅ — **ALL PASS**
 - **MERGEABLE**
-- **Action:** Wait for e2e-smoke to complete. If passes → READY TO MERGE.
+- **Action:** Merge after #1655 (ordering constraint). Can merge immediately following #1655.
 
 ---
 

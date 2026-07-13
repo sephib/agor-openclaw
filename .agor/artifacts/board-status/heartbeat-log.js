@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-13 17:30 IDT",
+    actions: 0,
+    findings: 3,
+    status: "ok",
+    summary: "#1657 (jn-5869) e2e-smoke NOW PASSED — ALL THREE cascade PRs fully green (#1655, #1657, #1659); #1638 still nox+tox+e2e-product failing; no merges",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5be294f07596accdb24a/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-13 17:00 IDT",
     actions: 0,
     findings: 4,
