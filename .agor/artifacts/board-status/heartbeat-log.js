@@ -1,7 +1,16 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
-    timestamp: "2026-07-13 15:30 IDT",
+    timestamp: "2026-07-13 16:30 IDT",
+    actions: 0,
+    findings: 4,
+    status: "ok",
+    summary: "#1655 (jn-5867) MERGEABLE now (was CONFLICTING) + JIRA Association ❌ NEW; #1658 (jn-5842) NOW CONFLICTING (was MERGEABLE); #1659 MERGEABLE + new run; #1657 new run; no merges",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5baba5ad72a2bc02dd3c/",
+  },
+  {
+    type: "advance",
+    timestamp: "2026-07-13 16:00 IDT",
     actions: 1,
     findings: 3,
     status: "ok",
