@@ -3584,4 +3584,22 @@ export const HEARTBEAT_RUNS = [
     summary: "#1638 e2e-smoke ✅ PASSED (only e2e-product ⏳ pending — NEAR MERGE); #1648 ANOTHER NEW PUSH → run 29189222730 all pending; #1654 pre-commit+e2e-api+e2e-tests ❌ STILL; #1655 pre-commit ❌ unchanged; #1649 ALL PASS needs LGTM; 6 Jira mismatches; 0 auto-archives",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f55e0be2f709d8a39ec34/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-07-13 11:30 IDT",
+    actions: 0,
+    findings: 2,
+    status: "ok",
+    summary: "#1638 NEW CI run 29234035509 (e2e ❌ persistent); #1662 CodeRabbit COMPLETED ✅; board otherwise static",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5a98faff74628013da8a/",
+  },
+  {
+    type: "advance",
+    timestamp: "2026-07-13 12:02 IDT",
+    actions: 0,
+    findings: 3,
+    status: "ok",
+    summary: "#1662 APPROVED ✅ (NEW CI run 29237336506 PENDING — merge imminent if CI passes); #1657 NOW CONFLICTING; #1655 NEW CI run pre-commit ❌ still; #1658 now MERGEABLE",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5ab471db71b9a99f6a9c/",
+  },
 ];
