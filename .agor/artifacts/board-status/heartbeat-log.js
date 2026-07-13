@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-13 13:30 IDT",
+    actions: 0,
+    findings: 4,
+    status: "ok",
+    summary: "#1655 CORRECTION: e2e-api ✅ (not ❌ as prev run said); #1657 NOW MERGEABLE (conflict resolved); #1659 run 29241018713 COMPLETE pre-commit ❌; #1638 e2e-product ❌ CONFIRMED",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5b06d84b7f2199f13769/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-13 13:00 IDT",
     actions: 0,
     findings: 3,
