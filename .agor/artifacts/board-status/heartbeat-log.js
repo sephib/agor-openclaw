@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-13 14:00 IDT",
+    actions: 0,
+    findings: 3,
+    status: "ok",
+    summary: "🆕 PR #1663 (jn-5877) first detected — CI ALL PASS; #1638 NEW run 29243749351 e2e-product PENDING (was ❌); #1655 reviewDecision cleared",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5b2250677356a864e81b/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-13 13:30 IDT",
     actions: 0,
     findings: 4,
