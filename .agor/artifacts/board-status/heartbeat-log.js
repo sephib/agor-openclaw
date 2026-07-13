@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-13 13:00 IDT",
+    actions: 0,
+    findings: 3,
+    status: "ok",
+    summary: "#1658 CI FULLY GREEN (run 29238532071 — e2e-smoke ✅ confirmed); #1659 NEW CI run 29241018713 PENDING; #1638 improved (e2e-product PENDING was ❌); #1655 cascade blocker unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5aeb60f67e00a6c91cdd/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-13 12:32 IDT",
     actions: 1,
     findings: 4,
