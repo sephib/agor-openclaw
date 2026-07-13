@@ -1013,3 +1013,13 @@
   - #1638: e2e-product ❌ + e2e-tests ❌ (run 29205506205 — UNCHANGED)
 - Flags: 4 Jira mismatches unchanged (JN-5401/5717/5546/5827 need Done); zone mismatches jn-5865 (Day 9 Ingest) + jn-5871 (Day 9 Code); Jira MCP 401 — using acli
 - Next: Joseph to fix pre-commit on #1655 → merge; then cascade fix #1656/#1657/#1659; fix e2e-product on #1638; update 4 Jira tickets to Done
+
+---
+
+## 04:00 IDT — Overnight Heartbeat (Jul 13 2026)
+- PRs checked: #1655 (OPEN MERGEABLE REVIEW_REQUIRED), #1656 (DRAFT MERGEABLE), #1657 (DRAFT MERGEABLE), #1658 (OPEN CONFLICTING CHANGES_REQUESTED), #1659 (DRAFT MERGEABLE), #1638 (OPEN MERGEABLE off-board), #1606 (OPEN CONFLICTING off-board)
+- Merges detected: none
+- CI changes: #1655 pre-commit ❌ (run 29204508309 — UNCHANGED); #1656 pre-commit ❌ (run 29204964531 — UNCHANGED); #1657 pre-commit ❌ (run 29204328037 — UNCHANGED); #1659 pre-commit ❌ (run 29204617290 — UNCHANGED); #1638 e2e-product ❌ + e2e-tests ❌ (run 29205506205 — UNCHANGED)
+- Flags: 4 Jira mismatches (JN-5401/5717/5546/5827) — Jira MCP 401 + acli failing; zone mismatches jn-5865/jn-5871 Day 9
+- Archives: none
+- Next: Board enters morning — pre-commit fix on #1655 is top priority (one check from all-pass)

@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-13 02:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-13 04:00 IDT (advance heartbeat)*
 
 ---
 
@@ -71,15 +71,15 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes Since Last Run (02:00 IDT Jul 13 — delta from 00:00 IDT Jul 13)
+## Key Changes Since Last Run (04:00 IDT Jul 13 — delta from 02:00 IDT Jul 13)
 
 | What observed | Status |
 |---|---|
-| **Board static** | No new merges, no new PR pushes, no CI changes overnight |
-| **#1655 CI** | pre-commit ❌ only (run 29204508309) — UNCHANGED from 00:00 IDT |
-| **#1638 CI** | e2e-product ❌ + e2e-tests ❌ (run 29205506205) — UNCHANGED from 00:00 IDT |
+| **Board static** | No new merges, no new PR pushes, no CI changes |
+| **#1655 CI** | pre-commit ❌ only (run 29204508309) — UNCHANGED from 02:00 IDT |
+| **#1638 CI** | e2e-product ❌ + e2e-tests ❌ (run 29205506205) — UNCHANGED from 02:00 IDT |
 | **#1656/#1657/#1659** | pre-commit ❌ on all three — UNCHANGED |
-| **Jira mismatches** | 4 active — unchanged (JN-5401/5717/5546/5827 need Done) |
+| **Jira mismatches** | 4 active — unchanged (JN-5401/5717/5546/5827 need Done) — Jira MCP 401 + acli failing |
 | **Zone mismatches** | jn-5865 (Day 9 in Ingest), jn-5871 (Day 9 in Code) — unchanged |
 
 ---
