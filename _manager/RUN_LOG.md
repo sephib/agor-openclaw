@@ -1173,3 +1173,12 @@
 - CI changes: #1638 NEW run 29247131982 — e2e-product PENDING (was ❌ CONFIRMED FAILED on 29243749351 — recovery in progress); #1655 NEW run 29247904493 — pre-commit ❌ STILL (e2e-smoke pending); #1663 unchanged (APPROVED + CI ALL PASS)
 - Flags: #1663 still READY TO MERGE (unchanged); #1638 e2e-product PENDING (watching); #1655 cascade blocker pre-commit ❌ persistent; 5 Jira mismatches; jn-5865/jn-5871 zone mismatches (Day 13)
 - Next: Watch #1638 e2e-product result. Fix #1655 pre-commit (cascade blocker). Merge #1663. Update Jira mismatches.
+
+## 16:00 IDT — Weekday Daytime Heartbeat (Jul 13 2026)
+- PRs checked: #1655 NEW run 29251390844 (pre-commit ❌ REGRESSION, e2e-api ✅ RECOVERED, NOW CONFLICTING), #1657 run 29238446686 (pre-commit ❌ unchanged), #1658 run 29238532071 (ALL PASS; CHANGES_REQUESTED unchanged), #1659 run 29241018713 (pre-commit ❌; mergeable UNKNOWN — was CONFLICTING), #1638 run 29247131982 (e2e-product ❌ CONFIRMED — unchanged), #1606 (off-board CONFLICTING — unchanged)
+- Merges detected: none (0 auto-archives)
+- CI changes: **#1655 NEW run 29251390844** — pre-commit ❌ REGRESSION (was ✅ last run); e2e-api ✅ RECOVERED (was ❌ 19s last run); e2e-smoke PENDING. **State NOW CONFLICTING** (was MERGEABLE at 15:30). Cascade blocker oscillating pre-commit/e2e-api failures (4th consecutive run with a different failure mode). **#1659 mergeable UNKNOWN** (was CONFLICTING at 15:30 — may have auto-cleared). All other PRs unchanged.
+- Flags: 6 Jira mismatches unchanged. Zone mismatches jn-5865/jn-5871 Day 13 persist. jn-5867 cascade blocker degrading — both CONFLICTING and oscillating CI failures.
+- Next: #1655 needs systematic fix — resolve BOTH pre-commit AND e2e-api simultaneously, then rebase to clear CONFLICTING state.
+
+---

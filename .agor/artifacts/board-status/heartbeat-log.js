@@ -3664,5 +3664,14 @@ export const HEARTBEAT_RUNS = [
     status: "ok",
     summary: "#1662 APPROVED ✅ (NEW CI run 29237336506 PENDING — merge imminent if CI passes); #1657 NOW CONFLICTING; #1655 NEW CI run pre-commit ❌ still; #1658 now MERGEABLE",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f5ab471db71b9a99f6a9c/",
+  },,
+  {
+    type: "advance",
+    timestamp: "2026-07-13 16:00 IDT",
+    actions: 0,
+    findings: 2,
+    status: "ok",
+    summary: "#1655 (jn-5867) NEW run 29251390844 — pre-commit ❌ REGRESSION (was ✅); e2e-api ✅ RECOVERED; NOW CONFLICTING (was MERGEABLE); cascade blocker oscillating. All other PRs unchanged.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5b902e8775d2a89c90dd/",
   },
 ];
