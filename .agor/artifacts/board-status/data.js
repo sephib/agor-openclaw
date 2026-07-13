@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-13 09:30 IDT";
+export const LAST_UPDATED = "2026-07-13 10:00 IDT";
 
 export const WORKTREES = [
   {
@@ -37,6 +37,23 @@ export const WORKTREES = [
   },
   // jn-5401-runner-subcommands MERGED + ARCHIVED — moved to MERGED array below
   {
+    ticket: "JN-5874",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5874",
+    title: "Add missing image.tag entries to values-prd.yaml (JN-5874)",
+    branch: "jn-5874-values-prd-image-tags",
+    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5874-values-prd-image-tags",
+    zone: "Ingest",
+    pr: null,
+    prUrl: null,
+    status: "🆕 NEW worktree created 09:36 IDT Jul 13. Sub-task: add image.tag entries for 7 services missing from values-prd.yaml. Status: Backlog. Awaiting ingest session.",
+    blockedOn: null,
+    blockedType: "active",
+    sessionUrl: null,
+    sessionLabel: null,
+    recentSessions: [],
+    lastActive: "2026-07-13 09:36 IDT",
+  },
+  {
     ticket: "JN-5870",
     ticketUrl: "https://redhat.atlassian.net/browse/JN-5870",
     title: "Cluster selection CLI + config loading (JN-5870)",
@@ -48,14 +65,22 @@ export const WORKTREES = [
     status: "MERGEABLE. pre-commit ❌ UNCHANGED (run 29204964531). Still DRAFT — needs fix pre-commit + undraft.",
     blockedOn: "DRAFT + pre-commit ❌ (UNCHANGED)",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5a2b1caa7e098451a425/",
-    sessionLabel: "heartbeat 09:30 IDT Jul 13 — #1638 new CI run; board PRs unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5a4693e3726fa5d15839/",
+    sessionLabel: "heartbeat 10:00 IDT Jul 13 — jn-5874 NEW; #1638 e2e-product ❌ FAILED",
     recentSessions: [
+      {
+        sessionId: "019f5a4693e3726fa5d15839",
+        url: "http://127.0.0.1:3030/ui/s/019f5a4693e3726fa5d15839/",
+        title: "heartbeat 10:00 IDT Jul 13 — jn-5874 NEW; #1638 e2e-product ❌ FAILED",
+        status: "running",
+        timestamp: "2026-07-13 10:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f5a2b1caa7e098451a425",
         url: "http://127.0.0.1:3030/ui/s/019f5a2b1caa7e098451a425/",
         title: "heartbeat 09:30 IDT Jul 13 — #1638 new CI run 29227923993; board PRs unchanged",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-13 09:30 IDT",
         outputFile: null,
       },
@@ -83,16 +108,8 @@ export const WORKTREES = [
         timestamp: "2026-07-13 02:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f582169aa7dd49aa06a4c",
-        url: "http://127.0.0.1:3030/ui/s/019f582169aa7dd49aa06a4c/",
-        title: "heartbeat 00:00 IDT Jul 13 — pre-commit ❌ UNCHANGED",
-        status: "idle",
-        timestamp: "2026-07-13 00:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-13 09:30 IDT",
+    lastActive: "2026-07-13 10:00 IDT",
   },
   {
     ticket: "JN-5867",
@@ -106,14 +123,22 @@ export const WORKTREES = [
     status: "e2e-smoke ✅ passing. Only pre-commit ❌ remains (run 29204508309 — UNCHANGED). REVIEW_REQUIRED + MERGEABLE. Fix pre-commit → merge.",
     blockedOn: "pre-commit ❌ (run 29204508309 — UNCHANGED)",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5a2b1caa7e098451a425/",
-    sessionLabel: "heartbeat 09:30 IDT Jul 13 — #1638 new CI run; board PRs unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5a4693e3726fa5d15839/",
+    sessionLabel: "heartbeat 10:00 IDT Jul 13 — jn-5874 NEW; #1638 e2e-product ❌ FAILED",
     recentSessions: [
+      {
+        sessionId: "019f5a4693e3726fa5d15839",
+        url: "http://127.0.0.1:3030/ui/s/019f5a4693e3726fa5d15839/",
+        title: "heartbeat 10:00 IDT Jul 13 — jn-5874 NEW; #1638 e2e-product ❌ FAILED",
+        status: "running",
+        timestamp: "2026-07-13 10:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f5a2b1caa7e098451a425",
         url: "http://127.0.0.1:3030/ui/s/019f5a2b1caa7e098451a425/",
         title: "heartbeat 09:30 IDT Jul 13 — #1638 new CI run; board PRs unchanged",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-13 09:30 IDT",
         outputFile: null,
       },
@@ -134,14 +159,6 @@ export const WORKTREES = [
         outputFile: null,
       },
       {
-        sessionId: "019f588f47a47c079945a42e",
-        url: "http://127.0.0.1:3030/ui/s/019f588f47a47c079945a42e/",
-        title: "heartbeat 02:00 IDT Jul 13 — board static, CI unchanged",
-        status: "idle",
-        timestamp: "2026-07-13 02:00 IDT",
-        outputFile: null,
-      },
-      {
         sessionId: "019f582169aa7dd49aa06a4c",
         url: "http://127.0.0.1:3030/ui/s/019f582169aa7dd49aa06a4c/",
         title: "heartbeat 00:00 IDT Jul 13 — e2e-smoke ✅ NOW PASSING; only pre-commit ❌",
@@ -150,7 +167,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-13 09:30 IDT",
+    lastActive: "2026-07-13 10:00 IDT",
   },
   {
     ticket: "JN-5869",
@@ -164,23 +181,23 @@ export const WORKTREES = [
     status: "MERGEABLE. pre-commit ❌ UNCHANGED (run 29204328037). Still DRAFT.",
     blockedOn: "DRAFT + pre-commit ❌ (UNCHANGED)",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5a2b1caa7e098451a425/",
-    sessionLabel: "heartbeat 09:30 IDT Jul 13 — #1638 new CI run; board PRs unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5a4693e3726fa5d15839/",
+    sessionLabel: "heartbeat 10:00 IDT Jul 13 — jn-5874 NEW; #1638 e2e-product ❌ FAILED",
     recentSessions: [
+      {
+        sessionId: "019f5a4693e3726fa5d15839",
+        url: "http://127.0.0.1:3030/ui/s/019f5a4693e3726fa5d15839/",
+        title: "heartbeat 10:00 IDT Jul 13 — jn-5874 NEW; #1638 e2e-product ❌ FAILED",
+        status: "running",
+        timestamp: "2026-07-13 10:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f5a2b1caa7e098451a425",
         url: "http://127.0.0.1:3030/ui/s/019f5a2b1caa7e098451a425/",
         title: "heartbeat 09:30 IDT Jul 13 — #1638 new CI run; board PRs unchanged",
-        status: "running",
-        timestamp: "2026-07-13 09:30 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f596b0455773586ad0687",
-        url: "http://127.0.0.1:3030/ui/s/019f596b0455773586ad0687/",
-        title: "heartbeat 06:00 IDT Jul 13 — board static, CI unchanged",
         status: "idle",
-        timestamp: "2026-07-13 06:00 IDT",
+        timestamp: "2026-07-13 09:30 IDT",
         outputFile: null,
       },
       {
@@ -208,7 +225,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-13 09:30 IDT",
+    lastActive: "2026-07-13 10:00 IDT",
   },
   {
     ticket: "JN-5865",
@@ -219,7 +236,7 @@ export const WORKTREES = [
     zone: "Ingest",
     pr: null,
     prUrl: null,
-    status: "Plan done ~23:06 IDT Jul 8. Still Ingest zone — zone mismatch persists (Day 8). Propose move to Code zone + trigger /implement:code.",
+    status: "Plan done ~23:06 IDT Jul 8. Still Ingest zone — zone mismatch persists (Day 10). Propose move to Code zone + trigger /implement:code.",
     blockedOn: "Zone mismatch — needs move to Code",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f4351d110788ba7254ee1/",
@@ -245,7 +262,7 @@ export const WORKTREES = [
     zone: "Code",
     pr: null,
     prUrl: null,
-    status: "✅ Code done — session IDLE (~00:58 IDT Jul 9). SHA fc6e5f77 (CLEAN). ⚠️ Zone mismatch — still in Code, should be Verify (Day 8). Action: move to Verify + trigger /implement:validate.",
+    status: "✅ Code done — session IDLE (~00:58 IDT Jul 9). SHA fc6e5f77 (CLEAN). ⚠️ Zone mismatch — still in Code, should be Verify (Day 10). Action: move to Verify + trigger /implement:validate.",
     blockedOn: "Zone mismatch — needs move to Verify",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f43a679b57ca5918a79ca/",
@@ -300,23 +317,23 @@ export const WORKTREES = [
     status: "🔴 CHANGES_REQUESTED from markVaykhansky + CONFLICTING (UNCHANGED). No CI (CONFLICTING). Must rebase first, then address review comments.",
     blockedOn: "CONFLICTING + CHANGES_REQUESTED — rebase first, then address review",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5a2b1caa7e098451a425/",
-    sessionLabel: "heartbeat 09:30 IDT Jul 13 — #1638 new CI run; board PRs unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5a4693e3726fa5d15839/",
+    sessionLabel: "heartbeat 10:00 IDT Jul 13 — jn-5874 NEW; #1638 e2e-product ❌ FAILED",
     recentSessions: [
+      {
+        sessionId: "019f5a4693e3726fa5d15839",
+        url: "http://127.0.0.1:3030/ui/s/019f5a4693e3726fa5d15839/",
+        title: "heartbeat 10:00 IDT Jul 13 — jn-5874 NEW; #1638 e2e-product ❌ FAILED",
+        status: "running",
+        timestamp: "2026-07-13 10:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f5a2b1caa7e098451a425",
         url: "http://127.0.0.1:3030/ui/s/019f5a2b1caa7e098451a425/",
         title: "heartbeat 09:30 IDT Jul 13 — #1638 new CI run; board PRs unchanged",
-        status: "running",
-        timestamp: "2026-07-13 09:30 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f596b0455773586ad0687",
-        url: "http://127.0.0.1:3030/ui/s/019f596b0455773586ad0687/",
-        title: "heartbeat 06:00 IDT Jul 13 — board static, CI unchanged",
         status: "idle",
-        timestamp: "2026-07-13 06:00 IDT",
+        timestamp: "2026-07-13 09:30 IDT",
         outputFile: null,
       },
       {
@@ -344,7 +361,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-13 09:30 IDT",
+    lastActive: "2026-07-13 10:00 IDT",
   },
   {
     ticket: "JN-5868",
@@ -358,23 +375,23 @@ export const WORKTREES = [
     status: "MERGEABLE. pre-commit ❌ UNCHANGED (run 29204617290). Still DRAFT. Depends on jn-5867 merging first.",
     blockedOn: "DRAFT + pre-commit ❌ — depends on jn-5867 merge",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5a2b1caa7e098451a425/",
-    sessionLabel: "heartbeat 09:30 IDT Jul 13 — #1638 new CI run; board PRs unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5a4693e3726fa5d15839/",
+    sessionLabel: "heartbeat 10:00 IDT Jul 13 — jn-5874 NEW; #1638 e2e-product ❌ FAILED",
     recentSessions: [
+      {
+        sessionId: "019f5a4693e3726fa5d15839",
+        url: "http://127.0.0.1:3030/ui/s/019f5a4693e3726fa5d15839/",
+        title: "heartbeat 10:00 IDT Jul 13 — jn-5874 NEW; #1638 e2e-product ❌ FAILED",
+        status: "running",
+        timestamp: "2026-07-13 10:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f5a2b1caa7e098451a425",
         url: "http://127.0.0.1:3030/ui/s/019f5a2b1caa7e098451a425/",
         title: "heartbeat 09:30 IDT Jul 13 — #1638 new CI run; board PRs unchanged",
-        status: "running",
-        timestamp: "2026-07-13 09:30 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f596b0455773586ad0687",
-        url: "http://127.0.0.1:3030/ui/s/019f596b0455773586ad0687/",
-        title: "heartbeat 06:00 IDT Jul 13 — board static, CI unchanged",
         status: "idle",
-        timestamp: "2026-07-13 06:00 IDT",
+        timestamp: "2026-07-13 09:30 IDT",
         outputFile: null,
       },
       {
@@ -402,7 +419,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-13 09:30 IDT",
+    lastActive: "2026-07-13 10:00 IDT",
   },
   {
     ticket: "JN-5824",
@@ -544,6 +561,14 @@ export const MERGED = [
 
 export const ALERTS = [
   {
+    level: "red",
+    message: "🔴 #1638 (off-board): CI run 29227923993 COMPLETE — e2e-product ❌ FAILED + e2e-tests ❌ FAILED. pre-commit ✅. Not mergeable. Investigate e2e-product failures.",
+  },
+  {
+    level: "yellow",
+    message: "🆕 jn-5874-values-prd-image-tags: NEW worktree in Ingest (created 09:36 IDT Jul 13). JN-5874 sub-task — add image.tag for 7 missing services in values-prd.yaml.",
+  },
+  {
     level: "yellow",
     message: "🆕 #1655 (jn-5867 JN-5867): e2e-smoke NOW ✅ PASSING — only pre-commit ❌ remains (run 29204508309). REVIEW_REQUIRED + MERGEABLE. Fix pre-commit → merge.",
   },
@@ -554,10 +579,6 @@ export const ALERTS = [
   {
     level: "red",
     message: "🔴 #1658 (jn-5842 JN-5842): CHANGES_REQUESTED (markVaykhansky) + CONFLICTING (UNCHANGED). Fix conflict first, then address review.",
-  },
-  {
-    level: "yellow",
-    message: "🟡 #1638 (off-board): NEW CI RUN 29227923993 — most checks ✅, e2e-product ⏳ PENDING (was ❌ on prior run 29205506205). Improvement! Watch for result. MERGEABLE.",
   },
   {
     level: "yellow",
@@ -573,11 +594,11 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "📍 jn-5865 (JN-5865): Still Ingest zone — plan done Jul 8 (Day 8). Propose move to Code + trigger /implement:code.",
+    message: "📍 jn-5865 (JN-5865): Still Ingest zone — plan done Jul 8 (Day 10). Propose move to Code + trigger /implement:code.",
   },
   {
     level: "yellow",
-    message: "📍 jn-5871 (JN-5871): Still Code zone — code done since 00:58 IDT Jul 9 (Day 8). Propose move to Verify + trigger /implement:validate.",
+    message: "📍 jn-5871 (JN-5871): Still Code zone — code done since 00:58 IDT Jul 9 (Day 10). Propose move to Verify + trigger /implement:validate.",
   },
   {
     level: "yellow",
