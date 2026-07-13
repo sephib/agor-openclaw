@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-13 11:30 IDT",
+    actions: 0,
+    findings: 2,
+    status: "ok",
+    summary: "#1638 NEW CI run 29234035509 (e2e ❌ persistent); #1662 CodeRabbit COMPLETED ✅; board otherwise static",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5a98faff74628013da8a/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-13 11:00 IDT",
     actions: 0,
     findings: 3,
