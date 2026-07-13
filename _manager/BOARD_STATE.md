@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-13 17:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-13 18:00 IDT (advance heartbeat)*
 
 ---
 
@@ -31,7 +31,7 @@
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
 | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ UNKNOWN | 🔴 UNKNOWN | 🔴 CONFLICTING 10+ days. Needs rebase + fix e2e or close PR. |
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | **🔴 nox ❌ + tox ❌** (run 29255620232); e2e-smoke ⏳ PENDING | **NOW MERGEABLE** (was CONFLICTING at 16:30) | **🔴 NEW nox ❌ + tox ❌ failures in run 29255620232.** Conflicts resolved — NOW MERGEABLE. But two test suites now failing. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | **🔴 e2e-smoke ❌** (run 29259367493); nox ✅ tox ✅ RECOVERED | **MERGEABLE** | **🔴 NEW run 29259367493**: nox ✅ + tox ✅ RECOVERED but **e2e-smoke ❌ NEW FAILURE** + e2e-tests ❌. Oscillating failures — nox/tox fixed, e2e-smoke now broke. |
 
 ---
 
@@ -74,14 +74,14 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes Since Last Run (17:30 IDT Jul 13 — delta from 17:00 IDT Jul 13)
+## Key Changes Since Last Run (18:00 IDT Jul 13 — delta from 17:30 IDT Jul 13)
 
 | What observed | Status |
 |---|---|
-| **🎉 #1657 (jn-5869) e2e-smoke NOW PASSED** | Run 29255496217 COMPLETE: all-checks ✅, e2e-api ✅, e2e-smoke ✅, integration ✅, nox ✅, tox ✅, pre-commit ✅. **ALL CI GREEN. READY TO MERGE** (after #1655). |
 | **#1655 (jn-5867) unchanged** | Still ALL CI GREEN (run 29252812787). MERGEABLE. READY TO MERGE — cascade blocker still waiting on human. |
-| **#1659 (jn-5868) unchanged** | Still ALL CI GREEN (run 29254605349). MERGEABLE. Awaits #1655 merge. |
-| **#1638 (off-board) unchanged** | nox ❌ + tox ❌ + e2e-product ❌ FAIL in run 29255620232. e2e-tests ⏳ PENDING. Still failing. |
+| **#1657 (jn-5869) unchanged** | Still ALL CI GREEN (run 29255496217). MERGEABLE. Ready after #1655. |
+| **#1659 (jn-5868) unchanged** | Still ALL CI GREEN (run 29254605349). MERGEABLE. Awaits #1655+#1657 merge. |
+| **🔴 #1638 (off-board) NEW CI run 29259367493** | nox ✅ + tox ✅ RECOVERED (were ❌). BUT **e2e-smoke ❌ NEW FAILURE** + e2e-tests ❌. Oscillating failures — different mode each run. |
 | **#1658 (jn-5842) unchanged** | Still CONFLICTING + CHANGES_REQUESTED. No new CI run. |
 | **No new merges** | Board composition unchanged. |
 
@@ -118,12 +118,13 @@ PR [#1657](https://github.com/Jounce-IO/jounce/pull/1657): "feat(jbenchmark): ad
 
 ---
 
-### 🔴 #1638 (off-board) — NOW MERGEABLE but nox ❌ + tox ❌
+### 🔴 #1638 (off-board) — MERGEABLE but e2e-smoke ❌ (oscillating)
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites"
-- **NOW MERGEABLE** (conflicts resolved since 16:30 IDT)
-- New run 29255620232: **nox ❌ FAIL**, **tox ❌ FAIL**, e2e-smoke ⏳ PENDING; bake ✅, e2e-api ✅, integration ✅, pre-commit ✅
-- **Action:** Diagnose nox + tox failures in new run 29255620232.
+- **MERGEABLE** (conflicts resolved)
+- **NEW run 29259367493**: nox ✅ RECOVERED, tox ✅ RECOVERED, but **e2e-smoke ❌ FAIL** + e2e-tests ❌ FAIL; e2e-api ✅, integration ✅, pre-commit ✅, bake ✅
+- Oscillating: was nox+tox ❌ (run 29255620232), now e2e-smoke ❌ (run 29259367493)
+- **Action:** Diagnose e2e-smoke failure in run 29259367493 (different failure mode from prior run).
 
 ---
 
