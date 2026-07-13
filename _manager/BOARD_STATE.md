@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-13 10:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-13 11:00 IDT (advance heartbeat)*
 
 ---
 
@@ -10,14 +10,14 @@
 |---------|------|----|----|------|--------|
 | jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | CONFLICTING | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) | 🔴 DRAFT CONFLICTING; frozen |
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — Backlog | Design session done Jun 30. Ready for Plan phase. |
-| **jn-5874-values-prd-image-tags** | **Code Review** | — | — | [JN-5874](https://redhat.atlassian.net/browse/JN-5874) — Backlog | **🔄 FAST-TRACKED**: Ingest→Code→Code Review all completed 06:33–07:25 IDT. CR done (2 minor findings). No PR yet. Ready for Publish (needs PR). |
+| **jn-5874-values-prd-image-tags** | **Publish** | [#1662](https://github.com/Jounce-IO/jounce/pull/1662) OPEN | **🟡 pre-commit ❌** (run 29233015784) | [JN-5874](https://redhat.atlassian.net/browse/JN-5874) — Backlog | **🆕 PR #1662 CREATED** (since 10:30 IDT). REVIEW_REQUIRED + MERGEABLE. pre-commit ❌. CodeRabbit pending. |
 | jn-5842-jbenchmark-agents-md | **NO ZONE** | [#1658](https://github.com/Jounce-IO/jounce/pull/1658) | **CONFLICTING** (no CI) | [JN-5842](https://redhat.atlassian.net/browse/JN-5842) — Backlog | **🔴 CHANGES_REQUESTED** from markVaykhansky. **CONFLICTING**. Must fix conflict + address review. |
-| jn-5868 | **Publish** | [#1659 DRAFT](https://github.com/Jounce-IO/jounce/pull/1659) | **🟡 pre-commit ❌** (run 29204617290 — UNCHANGED) | [JN-5868](https://redhat.atlassian.net/browse/JN-5868) — Backlog | MERGEABLE. pre-commit ❌ UNCHANGED. Still DRAFT. Depends on jn-5867 merging first. |
+| jn-5868 | **Publish** | [#1659](https://github.com/Jounce-IO/jounce/pull/1659) | **🟡 pre-commit ❌** (run 29233022956 — NEW) | [JN-5868](https://redhat.atlassian.net/browse/JN-5868) — Backlog | **🆕 UNDRAFTED** (was DRAFT). New CI run 29233022956: pre-commit ❌ still failing. Other checks ✅. Depends on jn-5867 merging first. |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — Backlog | Plan done ~23:06 IDT Jul 8. **Zone mismatch persists** (still Ingest, Day 10). Propose: move to Code + trigger /implement:code. |
 | jn-5871 | **Code** | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) | Code done ~00:58 IDT Jul 9. SHA fc6e5f77 CLEAN. **Zone mismatch persists** (still Code, should be Verify, Day 10). |
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | "continuew" session IDLE ready_for_prompt:FALSE. SHA 16ec44ea (2 commits). Needs: generate 24 configs, rebase main, create PR. Fork a new session to continue. |
 | jn-5870 | **Publish** | [#1656 DRAFT](https://github.com/Jounce-IO/jounce/pull/1656) | **🟡 pre-commit ❌** (run 29204964531 — UNCHANGED) | [JN-5870](https://redhat.atlassian.net/browse/JN-5870) | MERGEABLE. pre-commit ❌ UNCHANGED. Still DRAFT — needs undraft + fix pre-commit. |
-| jn-5867 | **Publish** | [#1655](https://github.com/Jounce-IO/jounce/pull/1655) | **🔄 NEW run 29232244421 IN PROGRESS** (new push 10:29 IDT) — pre-commit/tox/integration/e2e-api all pending | [JN-5867](https://redhat.atlassian.net/browse/JN-5867) — Backlog | **NEW PUSH 10:29 IDT** ("chore: updates following rebuild container"). New CI run 29232244421 IN PROGRESS. REVIEW_REQUIRED. |
+| jn-5867 | **Publish** | [#1655](https://github.com/Jounce-IO/jounce/pull/1655) | **🔴 pre-commit ❌** (run 29232357890 — COMPLETE) | [JN-5867](https://redhat.atlassian.net/browse/JN-5867) — Backlog | Push at 10:29 IDT — run 29232357890 COMPLETE: pre-commit ❌ STILL FAILING. tox/integration/e2e-api/e2e-smoke/e2e-tests all ✅. e2e-product SKIPPING. REVIEW_REQUIRED. |
 | jn-5869 | **Publish** | [#1657 DRAFT](https://github.com/Jounce-IO/jounce/pull/1657) | **🟡 pre-commit ❌** (run 29204328037 — UNCHANGED) | [JN-5869](https://redhat.atlassian.net/browse/JN-5869) | MERGEABLE. pre-commit ❌ UNCHANGED. Still DRAFT. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 18+ days with no session or PR. |
 | ~~jn-5401-runner-subcommands~~ | **ARCHIVED** | [#1654](https://github.com/Jounce-IO/jounce/pull/1654) MERGED **17:12 IDT Jul 12** | ALL PASS ✅ | [JN-5401](https://redhat.atlassian.net/browse/JN-5401) — **Backlog** ⚠️ | **🎉 PR #1654 MERGED** — Worktree archived. JN-5401 Jira still Backlog → **needs Done!** |
@@ -72,16 +72,17 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes Since Last Run (10:30 IDT Jul 13 — delta from 10:00 IDT Jul 13)
+## Key Changes Since Last Run (11:00 IDT Jul 13 — delta from 10:30 IDT Jul 13)
 
 | What observed | Status |
 |---|---|
-| **🔄 jn-5874 FAST-TRACKED** | Moved from Ingest → Code Review. All phases completed 06:33–07:25 IDT: Ingest (07:06), Code (07:17), Code Review CR (07:25). CR found 2 minor findings. No PR yet — ready for Publish. |
-| **🟡 #1655 NEW PUSH 10:29 IDT** | Commit "chore: updates following rebuild container". New CI run 29232244421 **IN PROGRESS** — pre-commit/tox/integration/e2e-api all pending. |
-| **#1638 CI** | Run 29227923993 CONFIRMED: e2e-product ❌ + e2e-tests ❌ UNCHANGED from 10:00 run. |
-| **#1656/#1657/#1659** | pre-commit ❌ — UNCHANGED |
+| **🆕 #1662 CREATED** | jn-5874-values-prd-image-tags published PR [#1662](https://github.com/Jounce-IO/jounce/pull/1662). Zone moved to Publish. OPEN, REVIEW_REQUIRED, MERGEABLE. pre-commit ❌ (run 29233015784). CodeRabbit pending. |
+| **#1655 CI run 29232357890 COMPLETE** | pre-commit ❌ STILL FAILING despite new push at 10:29 IDT. tox/integration/e2e-api/e2e-smoke/e2e-tests all ✅. e2e-product SKIPPING. |
+| **🆕 #1659 UNDRAFTED** | #1659 (jn-5868) is no longer a DRAFT. New CI run 29233022956: pre-commit ❌ still failing, all other checks ✅. |
+| **#1656/#1657** | pre-commit ❌ — UNCHANGED (old CI runs) |
+| **#1638 CI** | e2e-product ❌ + e2e-tests ❌ — UNCHANGED |
 | **Board PRs** | No new merges since last run |
-| **Jira mismatches** | 4 active — unchanged (JN-5401/5717/5546/5827 need Done) |
+| **Jira mismatches** | 4 active — acli + MCP auth failing; cannot verify |
 | **Zone mismatches** | jn-5865 (Day 10+ in Ingest), jn-5871 (Day 10+ in Code) — unchanged |
 
 ---
@@ -111,13 +112,23 @@ Worktree created 09:36 IDT, completed Ingest→Code→Code Review by 07:25 IDT t
 
 ---
 
-### 🟡 #1655 (jn-5867) — NEW PUSH 10:29 IDT, CI IN PROGRESS
+### 🆕 #1662 (jn-5874) — NEW PR, pre-commit ❌
+
+PR [#1662](https://github.com/Jounce-IO/jounce/pull/1662): "fix(helm): add missing image.tag entries to values-prd.yaml (JN-5874)"
+- Created since 10:30 IDT. OPEN, REVIEW_REQUIRED, MERGEABLE.
+- CI run 29233015784: **pre-commit ❌** (tox/integration/e2e-tests ✅, e2e-api/e2e-product SKIPPING).
+- CodeRabbit review: PENDING.
+- **Action:** Fix pre-commit. Await CodeRabbit review. Then request human review.
+
+---
+
+### 🔴 #1655 (jn-5867) — CI COMPLETE, pre-commit ❌ STILL FAILING
 
 PR [#1655](https://github.com/Jounce-IO/jounce/pull/1655): "feat(jbenchmark): Platform enum + ClusterConfig refactor"
-- **New push at 10:29 IDT** ("chore: updates following rebuild container").
-- New CI run **29232244421 IN PROGRESS** — pre-commit/tox/integration/e2e-api all pending.
+- Push at 10:29 IDT ("chore: updates following rebuild container").
+- CI run **29232357890 COMPLETE**: pre-commit ❌ STILL FAILING. tox/integration/e2e-api/e2e-smoke/e2e-tests all ✅.
 - REVIEW_REQUIRED + MERGEABLE.
-- **Action:** Watch CI result. If pre-commit ✅ passes → major unblock. Then all-checks ✅ → ready for merge after LGTM.
+- **Action:** Fix pre-commit failure. This is the blocker for the entire jn-5867→jn-5868→jn-5869→jn-5870 cascade.
 
 ---
 
@@ -152,11 +163,12 @@ PR [#1657](https://github.com/Jounce-IO/jounce/pull/1657): "feat(jbenchmark): ad
 
 ---
 
-### 🟡 jn-5868 — #1659 DRAFT, pre-commit ❌ (unchanged)
+### 🆕 jn-5868 — #1659 UNDRAFTED, pre-commit ❌ (new CI run)
 
 PR [#1659](https://github.com/Jounce-IO/jounce/pull/1659): "feat(jbenchmark): add ClusterRegistry loader"
-- MERGEABLE. pre-commit ❌ UNCHANGED. Still DRAFT. Depends on jn-5867 merging first.
-- **Action:** Fix pre-commit; undraft after jn-5867 merges.
+- **UNDRAFTED** since last heartbeat. New CI run 29233022956: pre-commit ❌ still failing. tox/integration/e2e-api/e2e-smoke/e2e-tests ✅.
+- Depends on jn-5867 (#1655) merging first.
+- **Action:** Fix pre-commit; wait for jn-5867 to merge first.
 
 ---
 

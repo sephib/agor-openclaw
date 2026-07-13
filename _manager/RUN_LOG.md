@@ -1066,3 +1066,17 @@
 - CI changes: **🔴 #1638 run 29227923993 COMPLETE** — e2e-product ❌ FAILED + e2e-tests ❌ FAILED (was PENDING at 09:30 IDT); pre-commit ✅. #1655/#1656/#1657/#1659 unchanged.
 - Flags: 🆕 NEW worktree jn-5874-values-prd-image-tags (Ingest, JN-5874 sub-task, created 09:36 IDT); #1638 e2e-product ❌ confirmed failed; 4 Jira mismatches persist; zone mismatches jn-5865/jn-5871 Day 10
 - Next: Monitor jn-5874 for ingest session; watch if #1638 gets a new push to fix e2e; pre-commit fixes still needed on #1655-#1659
+
+## 11:00 IDT — Weekday Daytime Heartbeat (Jul 13 2026)
+- PRs checked: #1655 (OPEN REVIEW_REQUIRED MERGEABLE), #1656 (DRAFT MERGEABLE), #1657 (DRAFT MERGEABLE), #1658 (OPEN CONFLICTING CHANGES_REQUESTED), #1659 (OPEN MERGEABLE — UNDRAFTED), #1662 (OPEN REVIEW_REQUIRED MERGEABLE NEW), #1638 (OPEN MERGEABLE, off-board), #1606 (OPEN CONFLICTING, off-board)
+- Merges detected: none
+- CI changes:
+  - **🆕 #1662 NEW** (jn-5874): PR created since 10:30 IDT. CI run 29233015784: pre-commit ❌, others ✅ (tox/integration/e2e-tests). CodeRabbit PENDING.
+  - **#1655 CI CONFIRMED ❌**: Run 29232357890 COMPLETE — pre-commit ❌ STILL FAILING despite 10:29 IDT push. tox/integration/e2e-api/e2e-smoke/e2e-tests all ✅. e2e-product SKIPPING.
+  - **🆕 #1659 UNDRAFTED**: Was DRAFT — now OPEN. New CI run 29233022956: pre-commit ❌ still failing, others ✅.
+  - #1656/#1657: pre-commit ❌ — UNCHANGED (old CI runs)
+  - #1638: e2e-product ❌ + e2e-tests ❌ — UNCHANGED
+- Jira: 4 mismatches unchanged (JN-5401/5717/5546/5827 need Done) — acli + MCP auth failing
+- Flags: zone mismatches jn-5865 (Day 10 Ingest) + jn-5871 (Day 10 Code) — unchanged; #1658 CHANGES_REQUESTED+CONFLICTING unchanged; #1662 pre-commit ❌
+- Auto-advances: 0
+- Next: Fix pre-commit on #1655 (blocks cascade to #1656/#1657/#1659). Fix pre-commit on #1662 (jn-5874). Fix #1658 conflict. Investigate #1638 e2e-product. Update 4 Jira tickets to Done.
