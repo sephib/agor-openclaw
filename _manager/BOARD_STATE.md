@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-13 06:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-13 09:30 IDT (advance heartbeat)*
 
 ---
 
@@ -16,7 +16,7 @@
 | jn-5871 | **Code** | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) | Code done ~00:58 IDT Jul 9. SHA fc6e5f77 CLEAN. **Zone mismatch persists** (still Code, should be Verify, Day 9). |
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | "continuew" session IDLE ready_for_prompt:FALSE. SHA 16ec44ea (2 commits). Needs: generate 24 configs, rebase main, create PR. Fork a new session to continue. |
 | jn-5870 | **Publish** | [#1656 DRAFT](https://github.com/Jounce-IO/jounce/pull/1656) | **🟡 pre-commit ❌** (run 29204964531 — UNCHANGED) | [JN-5870](https://redhat.atlassian.net/browse/JN-5870) | MERGEABLE. pre-commit ❌ UNCHANGED. Still DRAFT — needs undraft + fix pre-commit. |
-| jn-5867 | **Publish** | [#1655](https://github.com/Jounce-IO/jounce/pull/1655) | **🟡 run 29204508309**: pre-commit ❌, e2e-smoke ✅, all others ✅ (UNCHANGED) | [JN-5867](https://redhat.atlassian.net/browse/JN-5867) — Backlog | e2e-smoke ✅ passing. Only **pre-commit ❌** remains. REVIEW_REQUIRED. CI UNCHANGED from 00:00 IDT run. |
+| jn-5867 | **Publish** | [#1655](https://github.com/Jounce-IO/jounce/pull/1655) | **🟡 run 29204508309**: pre-commit ❌, e2e-smoke ✅, all others ✅ (UNCHANGED) | [JN-5867](https://redhat.atlassian.net/browse/JN-5867) — Backlog | e2e-smoke ✅ passing. Only **pre-commit ❌** remains. REVIEW_REQUIRED. CI UNCHANGED from 06:00 IDT run. |
 | jn-5869 | **Publish** | [#1657 DRAFT](https://github.com/Jounce-IO/jounce/pull/1657) | **🟡 pre-commit ❌** (run 29204328037 — UNCHANGED) | [JN-5869](https://redhat.atlassian.net/browse/JN-5869) | MERGEABLE. pre-commit ❌ UNCHANGED. Still DRAFT. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 18+ days with no session or PR. |
 | ~~jn-5401-runner-subcommands~~ | **ARCHIVED** | [#1654](https://github.com/Jounce-IO/jounce/pull/1654) MERGED **17:12 IDT Jul 12** | ALL PASS ✅ | [JN-5401](https://redhat.atlassian.net/browse/JN-5401) — **Backlog** ⚠️ | **🎉 PR #1654 MERGED** — Worktree archived. JN-5401 Jira still Backlog → **needs Done!** |
@@ -29,7 +29,7 @@
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
 | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ CONFLICTING | 🔴 CONFLICTING | 🔴 CONFLICTING 10+ days. Needs rebase + fix e2e or close PR. |
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🔴 **run 29205506205 (UNCHANGED)** — e2e-product ❌ + e2e-tests ❌ (e2e-smoke ✅, pre-commit ✅) | OPEN | No new push overnight. CI unchanged. e2e-product + e2e-tests still failing. MERGEABLE. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🟡 **run 29227923993 (NEW RUN)** — e2e-product ⏳ PENDING, all others ✅ | OPEN | **NEW CI RUN** 29227923993. Most checks ✅. e2e-product PENDING. Improvement from prior run (e2e-product ❌ + e2e-tests ❌ on 29205506205). MERGEABLE. |
 
 ---
 
@@ -71,16 +71,16 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes Since Last Run (06:00 IDT Jul 13 — delta from 04:00 IDT Jul 13)
+## Key Changes Since Last Run (09:30 IDT Jul 13 — delta from 06:00 IDT Jul 13)
 
 | What observed | Status |
 |---|---|
-| **Board static** | No new merges, no new PR pushes, no CI changes |
-| **#1655 CI** | pre-commit ❌ only (run 29204508309) — UNCHANGED from 04:00 IDT |
-| **#1638 CI** | e2e-product ❌ + e2e-tests ❌ (run 29205506205) — UNCHANGED from 04:00 IDT |
+| **Board PRs** | No new merges, no new pushes on tracked worktrees |
+| **#1655 CI** | pre-commit ❌ only (run 29204508309) — UNCHANGED from 06:00 IDT |
+| **#1638 CI** | **🆕 NEW CI RUN 29227923993** — e2e-product ⏳ PENDING, all others ✅. Prior run 29205506205 had e2e-product ❌ + e2e-tests ❌. Improvement! |
 | **#1656/#1657/#1659** | pre-commit ❌ on all three — UNCHANGED |
-| **Jira mismatches** | 4 active — unchanged (JN-5401/5717/5546/5827 need Done) — acli confirmed |
-| **Zone mismatches** | jn-5865 (Day 9 in Ingest), jn-5871 (Day 9 in Code) — unchanged |
+| **Jira mismatches** | 4 active — unchanged (JN-5401/5717/5546/5827 need Done) |
+| **Zone mismatches** | jn-5865 (Day 9+ in Ingest), jn-5871 (Day 9+ in Code) — unchanged |
 
 ---
 
@@ -111,14 +111,14 @@ PR [#1658](https://github.com/Jounce-IO/jounce/pull/1658): "docs(jbenchmark): ad
 
 ---
 
-### 🔴 #1638 (off-board) — e2e-product ❌ + e2e-tests ❌ (unchanged overnight)
+### 🟡 #1638 (off-board) — NEW CI RUN 29227923993 — e2e-product PENDING
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites"
-- CI run 29205506205 — UNCHANGED overnight. No new push.
-- e2e-smoke ✅, pre-commit ✅ (fixed in prior push)
-- **e2e-product ❌ + e2e-tests ❌** still failing
+- **NEW CI RUN** 29227923993 (vs prior 29205506205). Not authored by Joseph.
+- e2e-smoke ✅, pre-commit ✅, e2e-api ✅, integration ✅, bake ✅, nox ✅ — all passing.
+- **e2e-product / e2e ⏳ PENDING** — still running.
 - MERGEABLE.
-- **Action:** Fix e2e-product / e2e-tests failures.
+- **Watch:** If e2e-product ✅ on this run, PR may be ready to merge.
 
 ---
 
