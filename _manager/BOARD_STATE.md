@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-13 14:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-13 14:30 IDT (advance heartbeat)*
 
 ---
 
@@ -8,17 +8,17 @@
 
 | Worktree | Zone | PR | CI | Jira | Status |
 |---------|------|----|----|------|--------|
-| **jn-5877-api-server-replicas** | **Code Review** | **[#1663](https://github.com/Jounce-IO/jounce/pull/1663) NEW** | **✅ ALL PASS** (run 29241970101) | [JN-5877](https://redhat.atlassian.net/browse/JN-5877) | **🆕 NEW this run** — fix(jbenchmark): increase API server replicas to 2 for zero-downtime rollouts. Created ~13:13 IDT Jul 13. CI fully green. REVIEW_REQUIRED. CodeRabbit ✅. |
+| **jn-5877-api-server-replicas** | **Code Review** | **[#1663](https://github.com/Jounce-IO/jounce/pull/1663) APPROVED ✅** | **✅ ALL PASS** (run 29244989261) | [JN-5877](https://redhat.atlassian.net/browse/JN-5877) | **🎉 APPROVED + CI ALL PASS = READY TO MERGE!** reviewDecision: APPROVED (was REVIEW_REQUIRED at 14:00 IDT). New CI run 29244989261 all pass. MERGEABLE. |
 | jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | CONFLICTING | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) | 🔴 DRAFT CONFLICTING; frozen |
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — Backlog | Design session done Jun 30. Ready for Plan phase. |
-| jn-5842-jbenchmark-agents-md | **NO ZONE** | [#1658](https://github.com/Jounce-IO/jounce/pull/1658) | **✅ ALL PASSING** (run 29238532071) | [JN-5842](https://redhat.atlassian.net/browse/JN-5842) — Backlog | **🔴 CHANGES_REQUESTED** from markVaykhansky. CI FULLY GREEN. MERGEABLE. Must address review comments. |
+| jn-5842-jbenchmark-agents-md | **NO ZONE** | [#1658](https://github.com/Jounce-IO/jounce/pull/1658) | **✅ ALL PASSING** (run 29238532071) | [JN-5842](https://redhat.atlassian.net/browse/JN-5842) — Backlog | **🔴 CHANGES_REQUESTED** from markVaykhansky. CI FULLY GREEN. UNKNOWN mergeable. Must address review comments. |
 | jn-5868 | **Publish** | [#1659](https://github.com/Jounce-IO/jounce/pull/1659) | **🔴 pre-commit ❌** (run 29241018713 COMPLETE) | [JN-5868](https://redhat.atlassian.net/browse/JN-5868) — Backlog | pre-commit ❌. e2e-api ✅, e2e-smoke ✅, integration ✅, tox ✅. MERGEABLE. Depends on jn-5867 merging first. |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — Backlog | Plan done ~23:06 IDT Jul 8. **Zone mismatch persists** (still Ingest, Day 13). Propose: move to Code + trigger /implement:code. |
 | jn-5871 | **Code** | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) | Code done ~00:58 IDT Jul 9. SHA fc6e5f77 CLEAN. **Zone mismatch persists** (still Code, should be Verify, Day 13). |
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | "continuew" session IDLE ready_for_prompt:FALSE. SHA 16ec44ea (2 commits). Needs: generate 24 configs, rebase main, create PR. Fork a new session to continue. |
 | jn-5870 | **Publish** | [#1656 DRAFT](https://github.com/Jounce-IO/jounce/pull/1656) | **🔴 pre-commit ❌** (UNCHANGED) | [JN-5870](https://redhat.atlassian.net/browse/JN-5870) | **CONFLICTING + DRAFT + pre-commit ❌** (unchanged). |
-| jn-5867 | **Publish** | [#1655](https://github.com/Jounce-IO/jounce/pull/1655) | **🔴 pre-commit ❌** (run 29238852823) | [JN-5867](https://redhat.atlassian.net/browse/JN-5867) — Backlog | pre-commit ❌ ONLY. tox/integration/e2e-api/e2e-smoke ✅. **reviewDecision cleared** (was REVIEW_REQUIRED — markVaykhansky + Joseph commented 10:44–10:59 IDT Jul 13). Cascade blocker. |
-| jn-5869 | **Publish** | [#1657](https://github.com/Jounce-IO/jounce/pull/1657) | **🔴 pre-commit ❌** (run 29238446686) | [JN-5869](https://redhat.atlassian.net/browse/JN-5869) | MERGEABLE (conflict resolved ✅). pre-commit ❌ STILL. |
+| jn-5867 | **Publish** | [#1655](https://github.com/Jounce-IO/jounce/pull/1655) | **🔴 pre-commit ❌** (run 29238852823) | [JN-5867](https://redhat.atlassian.net/browse/JN-5867) — Backlog | pre-commit ❌ ONLY. tox/integration/e2e-api/e2e-smoke ✅. reviewDecision cleared. Cascade blocker. |
+| jn-5869 | **Publish** | [#1657](https://github.com/Jounce-IO/jounce/pull/1657) | **🔴 pre-commit ❌** (run 29238446686) | [JN-5869](https://redhat.atlassian.net/browse/JN-5869) | MERGEABLE. pre-commit ❌ STILL. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 18+ days with no session or PR. |
 | ~~jn-5874-values-prd-image-tags~~ | **ARCHIVED** | [#1662](https://github.com/Jounce-IO/jounce/pull/1662) MERGED **12:10 IDT Jul 13** | ALL PASS ✅ | [JN-5874](https://redhat.atlassian.net/browse/JN-5874) — **Backlog** ⚠️ | **🎉 PR #1662 MERGED** — Worktree **ARCHIVED 12:32 IDT Jul 13**. JN-5874 Jira still Backlog → **needs Done!** |
 | ~~jn-5401-runner-subcommands~~ | **ARCHIVED** | [#1654](https://github.com/Jounce-IO/jounce/pull/1654) MERGED **17:12 IDT Jul 12** | ALL PASS ✅ | [JN-5401](https://redhat.atlassian.net/browse/JN-5401) — **Backlog** ⚠️ | PR MERGED. ARCHIVED. JN-5401 Jira still Backlog → **needs Done!** |
@@ -31,7 +31,7 @@
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
 | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ CONFLICTING | 🔴 CONFLICTING | 🔴 CONFLICTING 10+ days. Needs rebase + fix e2e or close PR. |
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🟡 **NEW run 29243749351** — pre-commit ✅, e2e-api ✅, e2e-smoke ✅, bake ✅, tox ✅, nox ✅. **e2e-product ⏳ PENDING** | OPEN | **🟡 MAJOR IMPROVEMENT** — near-full recovery! e2e-product was ❌ CONFIRMED at 13:30 IDT; new run shows only e2e-product pending. If e2e-product passes → MERGEABLE! |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | **🔴 e2e-product ❌** (run 29243749351 COMPLETE) | OPEN | **🔴 e2e-product ❌ CONFIRMED** — Was PENDING at 14:00 IDT. FAILED at ~14:20 IDT. Recovery attempt failed. pre-commit ✅, e2e-api ✅, e2e-smoke ✅, integration ✅, tox ✅. Only e2e-product failing. |
 
 ---
 
@@ -70,53 +70,40 @@ Active sprint tickets assigned to Joseph with no board worktree:
 | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) | [#1648](https://github.com/Jounce-IO/jounce/pull/1648) | MERGED 14:27 IDT Jul 12 | **Backlog** | ❌ Update Jira → Done |
 | ~~[JN-5445](https://redhat.atlassian.net/browse/JN-5445)~~ | ~~[#1647](https://github.com/Jounce-IO/jounce/pull/1647)~~ | MERGED Jul 8 | **Done ✅** | ✅ RESOLVED |
 
-*5 mismatches (unchanged from 13:00 IDT run). Jira MCP 401 — use acli.*
+*5 mismatches (unchanged). Jira MCP 401 — use acli.*
 
 ---
 
-## Key Changes Since Last Run (14:00 IDT Jul 13 — delta from 13:30 IDT Jul 13)
+## Key Changes Since Last Run (14:30 IDT Jul 13 — delta from 14:00 IDT Jul 13)
 
 | What observed | Status |
 |---|---|
-| **🆕 NEW: jn-5877 + PR #1663** | First detection — fix(jbenchmark): increase API server replicas. Code Review zone. CI ALL PASS (run 29241970101). REVIEW_REQUIRED. CodeRabbit done. |
-| **🟡 #1638 NEW CI RUN 29243749351** | MAJOR improvement — e2e-product now ⏳ PENDING (was ❌ CONFIRMED at 13:30 IDT). All other checks pass. Near-full recovery! |
-| **✅ #1655 reviewDecision cleared** | Was REVIEW_REQUIRED at 13:30 IDT. Now "" — markVaykhansky + Joseph commented 10:44–10:59 IDT. pre-commit ❌ still. |
-| **#1655 CI unchanged** | pre-commit ❌ (run 29238852823) — no new push. |
-| **#1656 UNCHANGED** | DRAFT + CONFLICTING + pre-commit ❌. No new push. |
-| **#1657 UNCHANGED** | pre-commit ❌ (run 29238446686). MERGEABLE. |
-| **#1658 UNCHANGED** | CI FULLY GREEN (run 29238532071). CHANGES_REQUESTED still. |
-| **#1659 UNCHANGED** | pre-commit ❌ (run 29241018713). MERGEABLE. |
+| **🎉 #1663 (jn-5877) APPROVED** | reviewDecision: APPROVED (was REVIEW_REQUIRED at 14:00 IDT). NEW CI run 29244989261 ALL PASS. MERGEABLE. **Ready to merge!** |
+| **🔴 #1638 e2e-product ❌ CONFIRMED** | Run 29243749351 COMPLETE — e2e-product FAILED. Was PENDING at 14:00. Recovery attempt failed. All other checks pass. |
+| **#1655, #1657, #1658, #1659 UNCHANGED** | All CI states unchanged from 14:00 IDT run. |
+| **#1656 UNCHANGED** | DRAFT + CONFLICTING (unchanged). |
 
 ---
 
 ## Attention Items
 
-### 🆕 #1663 (jn-5877) — NEW PR, CI ALL PASS, REVIEW_REQUIRED
+### 🎉 #1663 (jn-5877) — APPROVED ✅ + CI ALL PASS — READY TO MERGE
 
 PR [#1663](https://github.com/Jounce-IO/jounce/pull/1663): "fix(jbenchmark): increase API server replicas to 2 for zero-downtime rollouts JN-5877"
-- **Created:** ~13:13 IDT Jul 13. Not previously tracked.
-- **CI run 29241970101**: ALL PASS — pre-commit ✅, tox ✅, integration ✅, nox ✅, all-checks ✅. (e2e-api/e2e-smoke/e2e-product skipping — Helm-only change)
-- **CodeRabbit**: COMPLETED ✅. REVIEW_REQUIRED (no human reviewer yet).
-- **Zone:** Code Review ✅ (correct zone).
-- **Action:** Get human reviewer LGTM → merge.
+- **reviewDecision: APPROVED** (changed from REVIEW_REQUIRED at 14:00 IDT)
+- **NEW CI run 29244989261**: ALL PASS — pre-commit ✅, tox ✅, integration ✅, e2e-api ✅, e2e-smoke ✅, nox ✅, all-checks ✅. (e2e-product/bake skipping — Helm-only change)
+- **MERGEABLE** ✅
+- **Action:** PR is approved and CI is green — **READY TO MERGE**.
 
 ---
 
-### 🟡 #1638 (off-board) — MAJOR IMPROVEMENT: e2e-product ⏳ PENDING
+### 🔴 #1638 (off-board) — e2e-product ❌ CONFIRMED FAILED
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites"
-- **NEW CI run 29243749351**: pre-commit ✅, e2e-api ✅, e2e-smoke ✅, integration ✅, tox ✅, nox ✅, bake ✅. **e2e-product ⏳ PENDING**.
-- Was ❌ CONFIRMED at 13:30 IDT. Recovery — new push triggered new run.
-- **Action:** Monitor e2e-product result. If passes → MERGEABLE!
-
----
-
-### 🎉 #1662 (jn-5874) — MERGED ✅ — ARCHIVED
-
-PR [#1662](https://github.com/Jounce-IO/jounce/pull/1662): "fix(helm): add missing image.tag entries to values-prd.yaml (JN-5874)"
-- **MERGED 12:10 IDT Jul 13** — all CI passed.
-- Worktree **ARCHIVED 12:32 IDT Jul 13** ✅ (autonomous archive — PR MERGED).
-- **Action:** Update JN-5874 Jira → Done.
+- **CI run 29243749351 COMPLETE**: e2e-product ❌ FAILED. Was pending at 14:00 IDT.
+- pre-commit ✅, e2e-api ✅, e2e-smoke ✅, integration ✅, tox ✅, nox ✅, bake ✅.
+- **Recovery from previous ❌ failed** — new run still breaks on e2e-product.
+- **Action:** Diagnose e2e-product failure in run 29243749351. Fix + push.
 
 ---
 
@@ -133,42 +120,41 @@ PR [#1655](https://github.com/Jounce-IO/jounce/pull/1655): "feat(jbenchmark): ad
 ### 🟢 #1658 (jn-5842) — CI FULLY GREEN (run 29238532071)
 
 PR [#1658](https://github.com/Jounce-IO/jounce/pull/1658): "docs(jbenchmark): add app-level AGENTS.md"
-- **CI FULLY GREEN** (run 29238532071): pre-commit ✅, tox ✅, integration ✅, e2e-api ✅, **e2e-smoke ✅**, all-checks ✅.
+- **CI FULLY GREEN** (run 29238532071): pre-commit ✅, tox ✅, integration ✅, e2e-api ✅, e2e-smoke ✅, all-checks ✅.
 - **Still CHANGES_REQUESTED** from markVaykhansky — review comments need addressing.
-- MERGEABLE.
 - **Action:** Address markVaykhansky review comments → push → re-request review.
 
 ---
 
-### 🔴 #1656 (jn-5870) — NOW CONFLICTING (new regression)
+### 🔴 #1656 (jn-5870) — CONFLICTING + DRAFT + pre-commit ❌
 
 PR [#1656](https://github.com/Jounce-IO/jounce/pull/1656): "feat(jbenchmark): add cluster selection CLI"
-- **NOW CONFLICTING** (was MERGEABLE at 12:02 IDT). DRAFT + pre-commit ❌.
+- **CONFLICTING + DRAFT + pre-commit ❌** (unchanged).
 - **Action:** Rebase on main + fix pre-commit + undraft.
 
 ---
 
-### 🔴 #1657 (jn-5869) — pre-commit ❌ + NOW MERGEABLE ✅
+### 🔴 #1657 (jn-5869) — pre-commit ❌ + MERGEABLE ✅
 
 PR [#1657](https://github.com/Jounce-IO/jounce/pull/1657): "feat(jbenchmark): add IBM cluster connection support (JN-5869)"
 - CI run 29238446686 COMPLETE — pre-commit ❌ STILL. e2e-api ✅, e2e-smoke ✅.
-- **NOW MERGEABLE** (conflict was resolved — was CONFLICTING at 12:02 IDT).
+- **MERGEABLE** (conflict resolved).
 - **Action:** Fix pre-commit.
 
 ---
 
-### 🔴 Jira Mismatches (5 active — JN-5874 newly added)
+### 🔴 Jira Mismatches (5 active)
 
 **Merged PRs not reflected in Jira (5):**
-- [JN-5874](https://redhat.atlassian.net/browse/JN-5874): PR [#1662](https://github.com/Jounce-IO/jounce/pull/1662) MERGED 12:10 IDT Jul 13 → Jira **"Backlog"** (NEW)
-- [JN-5401](https://redhat.atlassian.net/browse/JN-5401): PR [#1654](https://github.com/Jounce-IO/jounce/pull/1654) MERGED 17:12 IDT Jul 12 → Jira **"Backlog"**
+- [JN-5874](https://redhat.atlassian.net/browse/JN-5874): PR [#1662](https://github.com/Jounce-IO/jounce/pull/1662) MERGED → Jira **"Backlog"**
+- [JN-5401](https://redhat.atlassian.net/browse/JN-5401): PR [#1654](https://github.com/Jounce-IO/jounce/pull/1654) MERGED → Jira **"Backlog"**
 - [JN-5717](https://redhat.atlassian.net/browse/JN-5717): PR [#1631](https://github.com/Jounce-IO/jounce/pull/1631) MERGED → Jira **"Backlog"**
 - [JN-5546](https://redhat.atlassian.net/browse/JN-5546): PR [#1588](https://github.com/Jounce-IO/jounce/pull/1588) MERGED → Jira **"In Progress"**
-- [JN-5827](https://redhat.atlassian.net/browse/JN-5827): PR [#1648](https://github.com/Jounce-IO/jounce/pull/1648) MERGED 14:27 IDT Jul 12 → Jira **"Backlog"**
+- [JN-5827](https://redhat.atlassian.net/browse/JN-5827): PR [#1648](https://github.com/Jounce-IO/jounce/pull/1648) MERGED → Jira **"Backlog"**
 
 ---
 
-### 🔴 jn-5868 — #1659 CI COMPLETE: pre-commit ❌
+### 🔴 jn-5868 — #1659 CI pre-commit ❌
 
 PR [#1659](https://github.com/Jounce-IO/jounce/pull/1659):
 - CI run 29241018713 COMPLETE — **pre-commit ❌**. e2e-api ✅, e2e-smoke ✅, integration ✅, tox ✅.
@@ -177,14 +163,14 @@ PR [#1659](https://github.com/Jounce-IO/jounce/pull/1659):
 
 ---
 
-### 📋 jn-5865 — Zone Mismatch (Ingest, Plan Done — Day 12)
+### 📋 jn-5865 — Zone Mismatch (Ingest, Plan Done — Day 13)
 
 - Plan session done ~23:06 IDT Jul 8. No code session triggered.
 - **Action:** Move to Code zone + trigger /implement:code.
 
 ---
 
-### ✅ jn-5871 — Code Done, Wrong Zone (Day 12)
+### ✅ jn-5871 — Code Done, Wrong Zone (Day 13)
 
 - 4 commits ahead. SHA fc6e5f77 CLEAN.
 - **Action:** Move to Verify zone + trigger /implement:validate.
@@ -198,8 +184,6 @@ PR [#1659](https://github.com/Jounce-IO/jounce/pull/1659):
 
 ---
 
----
-
 ### ⚠️ jira-operations — Stale (NO ZONE)
 
 - uid=249, last_used Jun 25 2026 (18+ days stale)
@@ -208,12 +192,15 @@ PR [#1659](https://github.com/Jounce-IO/jounce/pull/1659):
 
 ---
 
-## Archived This Run (12:32 IDT Jul 13)
+## Archived This Run
 
+*(no archives this run)*
+
+Previously archived:
 | Branch | PR | Reason | Time |
 |--------|-----|--------|------|
 | jn-5874-values-prd-image-tags | [#1662](https://github.com/Jounce-IO/jounce/pull/1662) | PR MERGED 12:10 IDT Jul 13 | 12:32 IDT Jul 13 |
-| jn-5401-runner-subcommands | [#1654](https://github.com/Jounce-IO/jounce/pull/1654) | PR MERGED 17:12 IDT Jul 12 — archived prior session | ~17:12 IDT Jul 12 |
+| jn-5401-runner-subcommands | [#1654](https://github.com/Jounce-IO/jounce/pull/1654) | PR MERGED 17:12 IDT Jul 12 | ~17:12 IDT Jul 12 |
 | jn-5841-agents-md-root | [#1649](https://github.com/Jounce-IO/jounce/pull/1649) | PR MERGED 14:45 IDT Jul 12 | 16:00 IDT Jul 12 |
 | jn-5827-git-tagging-workflow | [#1648](https://github.com/Jounce-IO/jounce/pull/1648) | PR MERGED 14:27 IDT Jul 12 | 14:30 IDT Jul 12 |
 
