@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-13 10:00 IDT";
+export const LAST_UPDATED = "2026-07-13 10:30 IDT";
 
 export const WORKTREES = [
   {
@@ -42,16 +42,41 @@ export const WORKTREES = [
     title: "Add missing image.tag entries to values-prd.yaml (JN-5874)",
     branch: "jn-5874-values-prd-image-tags",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5874-values-prd-image-tags",
-    zone: "Ingest",
+    zone: "Code Review",
     pr: null,
     prUrl: null,
-    status: "🆕 NEW worktree created 09:36 IDT Jul 13. Sub-task: add image.tag entries for 7 services missing from values-prd.yaml. Status: Backlog. Awaiting ingest session.",
-    blockedOn: null,
+    status: "🔄 FAST-TRACKED: Ingest→Code→Code Review completed 06:33–07:25 IDT. CR done (2 minor findings: Low correctness in release.yml grep + Nit unquoted tag). No PR yet. Ready for Publish.",
+    blockedOn: "CR findings (Low + Nit) — needs PR",
     blockedType: "active",
-    sessionUrl: null,
-    sessionLabel: null,
-    recentSessions: [],
-    lastActive: "2026-07-13 09:36 IDT",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5a5b1fc3715a82907610/",
+    sessionLabel: "code-review (done — 2 minor findings, no PR yet)",
+    recentSessions: [
+      {
+        sessionId: "019f5a5b1fc3715a82907610",
+        url: "http://127.0.0.1:3030/ui/s/019f5a5b1fc3715a82907610/",
+        title: "code-review — CR done, 2 minor findings (Low+Nit)",
+        status: "idle",
+        timestamp: "2026-07-13 07:25 IDT",
+        outputFile: "temp/cr-jn-5874.md",
+      },
+      {
+        sessionId: "019f5a50421e77aeb6cdc579",
+        url: "http://127.0.0.1:3030/ui/s/019f5a50421e77aeb6cdc579/",
+        title: "code — values-prd.yaml + release.yml edits (all 11 services)",
+        status: "idle",
+        timestamp: "2026-07-13 07:17 IDT",
+        outputFile: null,
+      },
+      {
+        sessionId: "019f5a48f94970803aa38553",
+        url: "http://127.0.0.1:3030/ui/s/019f5a48f94970803aa38553/",
+        title: "ingest — scope compiled (9 services, release.yml extend)",
+        status: "idle",
+        timestamp: "2026-07-13 07:06 IDT",
+        outputFile: null,
+      },
+    ],
+    lastActive: "2026-07-13 07:25 IDT",
   },
   {
     ticket: "JN-5870",
@@ -120,17 +145,25 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1655",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1655",
-    status: "e2e-smoke ✅ passing. Only pre-commit ❌ remains (run 29204508309 — UNCHANGED). REVIEW_REQUIRED + MERGEABLE. Fix pre-commit → merge.",
-    blockedOn: "pre-commit ❌ (run 29204508309 — UNCHANGED)",
-    blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5a4693e3726fa5d15839/",
-    sessionLabel: "heartbeat 10:00 IDT Jul 13 — jn-5874 NEW; #1638 e2e-product ❌ FAILED",
+    status: "🟡 NEW PUSH 10:29 IDT ('chore: updates following rebuild container'). New CI run 29232244421 IN PROGRESS — pre-commit/tox/integration/e2e-api all pending. REVIEW_REQUIRED + MERGEABLE.",
+    blockedOn: "CI 29232244421 IN PROGRESS (pre-commit/tox/integration/e2e-api pending)",
+    blockedType: "active",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5a620b1879f08d1f76cc/",
+    sessionLabel: "heartbeat 10:30 IDT Jul 13 — jn-5874 Code Review done; #1655 NEW PUSH + CI PENDING",
     recentSessions: [
+      {
+        sessionId: "019f5a620b1879f08d1f76cc",
+        url: "http://127.0.0.1:3030/ui/s/019f5a620b1879f08d1f76cc/",
+        title: "heartbeat 10:30 IDT Jul 13 — jn-5874 Code Review done; #1655 NEW PUSH + CI PENDING",
+        status: "running",
+        timestamp: "2026-07-13 10:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f5a4693e3726fa5d15839",
         url: "http://127.0.0.1:3030/ui/s/019f5a4693e3726fa5d15839/",
         title: "heartbeat 10:00 IDT Jul 13 — jn-5874 NEW; #1638 e2e-product ❌ FAILED",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-13 10:00 IDT",
         outputFile: null,
       },
@@ -158,16 +191,8 @@ export const WORKTREES = [
         timestamp: "2026-07-13 04:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f582169aa7dd49aa06a4c",
-        url: "http://127.0.0.1:3030/ui/s/019f582169aa7dd49aa06a4c/",
-        title: "heartbeat 00:00 IDT Jul 13 — e2e-smoke ✅ NOW PASSING; only pre-commit ❌",
-        status: "idle",
-        timestamp: "2026-07-13 00:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-13 10:00 IDT",
+    lastActive: "2026-07-13 10:30 IDT",
   },
   {
     ticket: "JN-5869",
@@ -562,15 +587,15 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "red",
-    message: "🔴 #1638 (off-board): CI run 29227923993 COMPLETE — e2e-product ❌ FAILED + e2e-tests ❌ FAILED. pre-commit ✅. Not mergeable. Investigate e2e-product failures.",
+    message: "🔴 #1638 (off-board): CI run 29227923993 COMPLETE — e2e-product ❌ FAILED + e2e-tests ❌ FAILED. pre-commit ✅. Investigate e2e-product failures.",
   },
   {
     level: "yellow",
-    message: "🆕 jn-5874-values-prd-image-tags: NEW worktree in Ingest (created 09:36 IDT Jul 13). JN-5874 sub-task — add image.tag for 7 missing services in values-prd.yaml.",
+    message: "🟡 #1655 (jn-5867 JN-5867): NEW PUSH 10:29 IDT Jul 13 — CI run 29232244421 IN PROGRESS (pre-commit/tox/integration/e2e-api all pending). REVIEW_REQUIRED + MERGEABLE.",
   },
   {
     level: "yellow",
-    message: "🆕 #1655 (jn-5867 JN-5867): e2e-smoke NOW ✅ PASSING — only pre-commit ❌ remains (run 29204508309). REVIEW_REQUIRED + MERGEABLE. Fix pre-commit → merge.",
+    message: "🔄 jn-5874 (JN-5874): FAST-TRACKED Ingest→Code→Code Review (06:33–07:25 IDT). CR done — 2 minor findings. No PR yet. Next: address CR → move to Publish → create PR.",
   },
   {
     level: "red",
