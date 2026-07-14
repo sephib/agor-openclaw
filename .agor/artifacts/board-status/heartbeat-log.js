@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-14 10:30 IDT",
+    actions: 0,
+    findings: 4,
+    status: "ok",
+    summary: "#1655 STILL CONFLICTING (cascade blocked); #1659 REGRESSION pre-commit ❌ (run 29313293534 — tox modified files); #1658 NOW ALL CI GREEN (e2e-smoke PASSED); #1638 new CI run 29314599070 PENDING",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5f88a3377c24ad1d96e1/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-14 10:00 IDT",
     actions: 0,
     findings: 4,
