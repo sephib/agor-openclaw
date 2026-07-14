@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-14 17:00 IDT";
+export const LAST_UPDATED = "2026-07-14 17:30 IDT";
 
 export const WORKTREES = [
   {
@@ -44,17 +44,25 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1656",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1656",
-    status: "🎉 READY TO MERGE: ALL CI ✅ PASS (run 29332701969) + OPEN + APPROVED + MERGEABLE. Was CI PENDING at 15:30 IDT — now fully green. Waiting for #1655 cascade to merge first.",
-    blockedOn: "Cascade — waiting for #1655 to merge first",
-    blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f60edb4d37b5a9b682c51/",
-    sessionLabel: "heartbeat 17:00 IDT Jul 14 — #1656 ALL CI ✅ unchanged — READY TO MERGE",
+    status: "🔴 REGRESSION: New commit 'normalize GPU type lookup' at 14:00 IDT triggered CI run 29339185218 → pre-commit ❌ FAIL. Was READY TO MERGE at 17:00 IDT. All other checks ✅. Still OPEN + APPROVED + MERGEABLE. Needs pre-commit fix.",
+    blockedOn: "pre-commit FAIL (new run 29339185218) — fix needed",
+    blockedType: "blocked",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f61092c657eb2b5167286/",
+    sessionLabel: "heartbeat 17:30 IDT Jul 14 — #1656 REGRESSION: pre-commit ❌ FAIL (new commit at 14:00 IDT)",
     recentSessions: [
+      {
+        sessionId: "019f61092c657eb2b5167286",
+        url: "http://127.0.0.1:3030/ui/s/019f61092c657eb2b5167286/",
+        title: "heartbeat 17:30 IDT Jul 14 — #1656 REGRESSION: pre-commit ❌ FAIL (new commit at 14:00 IDT)",
+        status: "running",
+        timestamp: "2026-07-14 17:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f60edb4d37b5a9b682c51",
         url: "http://127.0.0.1:3030/ui/s/019f60edb4d37b5a9b682c51/",
         title: "heartbeat 17:00 IDT Jul 14 — #1656 ALL CI ✅ unchanged — READY TO MERGE",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-14 17:00 IDT",
         outputFile: null,
       },
@@ -121,14 +129,22 @@ export const WORKTREES = [
     status: "🔴 DOUBLE-BLOCKED: pre-commit ❌ FAIL (run 29329734574) + NOW CONFLICTING (was MERGEABLE at 15:30 IDT). All functional tests ✅. Sibling 'Plan GCP dev cluster' now IDLE. Fix: rebase on main (fix conflicts) + run pre-commit --all-files, push again.",
     blockedOn: "pre-commit FAIL + CONFLICTING — rebase + pre-commit fix needed",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f60edb4d37b5a9b682c51/",
-    sessionLabel: "heartbeat 17:00 IDT Jul 14 — #1655 DOUBLE-BLOCKED: pre-commit ❌ + CONFLICTING (unchanged)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f61092c657eb2b5167286/",
+    sessionLabel: "heartbeat 17:30 IDT Jul 14 — #1655 DOUBLE-BLOCKED: pre-commit ❌ + CONFLICTING (unchanged)",
     recentSessions: [
+      {
+        sessionId: "019f61092c657eb2b5167286",
+        url: "http://127.0.0.1:3030/ui/s/019f61092c657eb2b5167286/",
+        title: "heartbeat 17:30 IDT Jul 14 — #1655 DOUBLE-BLOCKED: pre-commit ❌ + CONFLICTING (unchanged)",
+        status: "running",
+        timestamp: "2026-07-14 17:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f60edb4d37b5a9b682c51",
         url: "http://127.0.0.1:3030/ui/s/019f60edb4d37b5a9b682c51/",
         title: "heartbeat 17:00 IDT Jul 14 — #1655 DOUBLE-BLOCKED: pre-commit ❌ + CONFLICTING (unchanged)",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-14 17:00 IDT",
         outputFile: null,
       },
@@ -331,14 +347,22 @@ export const WORKTREES = [
     status: "🟡 PR #1667 CREATED (DRAFT). pre-commit ❌ FAIL (run 29334114324). tox/nox ✅. Most e2e SKIPPING (draft). Fix: run pre-commit in worktree, push fix, then undraft.",
     blockedOn: "pre-commit FAIL — fix needed, then undraft",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f60edb4d37b5a9b682c51/",
-    sessionLabel: "heartbeat 17:00 IDT Jul 14 — #1667 DRAFT pre-commit ❌ (unchanged)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f61092c657eb2b5167286/",
+    sessionLabel: "heartbeat 17:30 IDT Jul 14 — #1667 DRAFT + pre-commit ❌ (unchanged)",
     recentSessions: [
+      {
+        sessionId: "019f61092c657eb2b5167286",
+        url: "http://127.0.0.1:3030/ui/s/019f61092c657eb2b5167286/",
+        title: "heartbeat 17:30 IDT Jul 14 — #1667 DRAFT + pre-commit ❌ FAIL (unchanged)",
+        status: "running",
+        timestamp: "2026-07-14 17:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f60edb4d37b5a9b682c51",
         url: "http://127.0.0.1:3030/ui/s/019f60edb4d37b5a9b682c51/",
         title: "heartbeat 17:00 IDT Jul 14 — #1667 DRAFT + pre-commit ❌ FAIL (unchanged)",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-14 17:00 IDT",
         outputFile: null,
       },
@@ -561,23 +585,23 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "red",
-    message: "🔴 #1655 (jn-5867 JN-5867): DOUBLE-BLOCKED — pre-commit ❌ FAIL (run 29329734574) + NOW CONFLICTING (was MERGEABLE at 15:30 IDT). Fix: rebase on main, then run `pre-commit run --all-files`, push → cascade unblocks #1656.",
+    message: "🔴 #1656 (jn-5870 JN-5870): REGRESSION — new commit 'normalize GPU type lookup' at 14:00 IDT triggered CI run 29339185218 → pre-commit ❌ FAIL. Was READY TO MERGE. All other checks ✅. Fix pre-commit in jn-5870 worktree, push.",
   },
   {
-    level: "green",
-    message: "🎉 #1656 (jn-5870 JN-5870): ALL CI ✅ PASS (run 29332701969) + OPEN + APPROVED + MERGEABLE. READY TO MERGE — waiting for #1655 cascade first.",
+    level: "red",
+    message: "🔴 #1655 (jn-5867 JN-5867): DOUBLE-BLOCKED — pre-commit ❌ FAIL (run 29329734574) + CONFLICTING. Fix: rebase on main, then run pre-commit, push.",
   },
   {
     level: "yellow",
-    message: "🟡 #1667 (jn-5845 JN-5845): NEW DRAFT PR — pre-commit ❌ FAIL (run 29334114324). tox/nox ✅. Fix pre-commit in jn-5845 worktree, push, then undraft.",
+    message: "🟡 #1667 (jn-5845 JN-5845): DRAFT PR — pre-commit ❌ FAIL (run 29334114324). tox/nox ✅. Fix pre-commit in jn-5845 worktree, push, then undraft.",
   },
   {
     level: "yellow",
     message: "⚠️ jn-5844 (JN-5844): Code+CR done (10:46 IDT) but still NO PR. Needs PR creation session.",
   },
   {
-    level: "yellow",
-    message: "🟡 #1638 (JN-5725, off-board): REBASED → MERGEABLE (17:00 IDT). New CI run 29338938226 IN PROGRESS: bake ✅ check-changes ✅ atlas-validate ✅; integration/tox/pre-commit/e2e-api ⏳. Monitor for completion.",
+    level: "red",
+    message: "🔴 #1638 (JN-5725, off-board): CI run 29338938226 DONE — pre-commit ✅ but e2e-smoke ❌ FAIL. all-checks ❌. Investigate e2e-smoke failure.",
   },
   {
     level: "red",

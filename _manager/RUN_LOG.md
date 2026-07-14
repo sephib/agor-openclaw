@@ -1356,3 +1356,10 @@
 - Jira sync: acli confirms JN-5880=Backlog, JN-5401=Backlog, JN-5827=Backlog — all 9 mismatches unchanged.
 - Flags: #1655 still DOUBLE-BLOCKED (rebase + pre-commit fix needed). #1656 READY TO MERGE when cascade resolves. jn-5865/jn-5871 zone mismatches Day 14+ persist. jn-5844 still no PR.
 - Next: Watch for Joseph to rebase #1655 + fix pre-commit → cascade merges. Monitor #1667 pre-commit fix.
+
+## 17:30 IDT — Weekday Daytime Heartbeat
+- PRs checked: #1656 (OPEN/APPROVED/MERGEABLE — NEW pre-commit ❌ FAIL run 29339185218), #1655 (OPEN/CONFLICTING — pre-commit ❌ unchanged), #1667 (DRAFT — pre-commit ❌ unchanged), #1638 (OPEN/MERGEABLE — CI done: pre-commit ✅ but e2e-smoke ❌), #1596 (DRAFT/CONFLICTING — frozen)
+- Merges detected: none
+- CI changes: **#1656 REGRESSION** — new commit "normalize GPU type lookup" at 14:00 IDT triggered CI run 29339185218 → pre-commit ❌. Was READY TO MERGE at 17:00. #1638 CI complete (29338938226): pre-commit now ✅ but e2e-smoke ❌ FAIL
+- Flags: 2 new issues (#1656 pre-commit regression, #1638 e2e-smoke failure)
+- Next: #1656 pre-commit fix needed; #1638 e2e-smoke investigation; #1655 still needs rebase+pre-commit fix
