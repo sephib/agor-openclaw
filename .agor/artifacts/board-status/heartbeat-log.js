@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-14 14:00 IDT",
+    actions: 0,
+    findings: 1,
+    status: "ok",
+    summary: "#1655 REBASED → MERGEABLE but e2e-api ❌ FAILING (run 29326613213); cascade still blocked; no new merges",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6048e777773f9fb7be2d/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-14 13:30 IDT",
     actions: 1,
     findings: 2,

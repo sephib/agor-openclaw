@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-14 13:30 IDT";
+export const LAST_UPDATED = "2026-07-14 14:00 IDT";
 
 export const WORKTREES = [
   {
@@ -47,14 +47,22 @@ export const WORKTREES = [
     status: "🔴 DRAFT + CONFLICTING (unchanged). Rebase on main + fix pre-commit + undraft.",
     blockedOn: "DRAFT + CONFLICTING",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f602d702571f39151baf0/",
-    sessionLabel: "heartbeat 13:30 IDT Jul 14 — #1656 DRAFT + CONFLICTING (unchanged)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6048e777773f9fb7be2d/",
+    sessionLabel: "heartbeat 14:00 IDT Jul 14 — #1656 DRAFT + CONFLICTING (unchanged)",
     recentSessions: [
+      {
+        sessionId: "019f6048e777773f9fb7be2d",
+        url: "http://127.0.0.1:3030/ui/s/019f6048e777773f9fb7be2d/",
+        title: "heartbeat 14:00 IDT Jul 14 — #1656 DRAFT + CONFLICTING (unchanged)",
+        status: "running",
+        timestamp: "2026-07-14 14:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f602d702571f39151baf0",
         url: "http://127.0.0.1:3030/ui/s/019f602d702571f39151baf0/",
         title: "heartbeat 13:30 IDT Jul 14 — #1656 DRAFT + CONFLICTING (unchanged)",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-14 13:30 IDT",
         outputFile: null,
       },
@@ -102,17 +110,25 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1655",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1655",
-    status: "🔴 CONFLICTING — no active CI run (only CodeRabbit pass). Needs rebase. This is the 4th conflict today. Cascade still blocked.",
-    blockedOn: "CONFLICTING — needs rebase",
+    status: "🔴 MERGEABLE (rebased!) but e2e-api ❌ FAILING (run 29326613213). pre-commit/tox/integration ✅. Fix e2e-api to unblock cascade.",
+    blockedOn: "e2e-api ❌ FAILING — fix needed",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f602d702571f39151baf0/",
-    sessionLabel: "heartbeat 13:30 IDT Jul 14 — #1655 CONFLICTING (no CI, needs rebase)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6048e777773f9fb7be2d/",
+    sessionLabel: "heartbeat 14:00 IDT Jul 14 — #1655 MERGEABLE + e2e-api ❌ FAIL (run 29326613213)",
     recentSessions: [
+      {
+        sessionId: "019f6048e777773f9fb7be2d",
+        url: "http://127.0.0.1:3030/ui/s/019f6048e777773f9fb7be2d/",
+        title: "heartbeat 14:00 IDT Jul 14 — #1655 MERGEABLE + e2e-api ❌ FAIL (run 29326613213)",
+        status: "running",
+        timestamp: "2026-07-14 14:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f602d702571f39151baf0",
         url: "http://127.0.0.1:3030/ui/s/019f602d702571f39151baf0/",
         title: "heartbeat 13:30 IDT Jul 14 — #1655 CONFLICTING (no CI, needs rebase)",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-14 13:30 IDT",
         outputFile: null,
       },
@@ -140,16 +156,8 @@ export const WORKTREES = [
         timestamp: "2026-07-14 12:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f5fbf920c72e7b66dbd2d",
-        url: "http://127.0.0.1:3030/ui/s/019f5fbf920c72e7b66dbd2d/",
-        title: "heartbeat 11:30 IDT Jul 14 — #1655 STILL CONFLICTING (unchanged; needs rebase)",
-        status: "idle",
-        timestamp: "2026-07-14 11:30 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-14 12:00 IDT",
+    lastActive: "2026-07-14 14:00 IDT",
   },
   {
     ticket: "JN-5869",
@@ -163,14 +171,22 @@ export const WORKTREES = [
     status: "🔴 CONFLICTING + APPROVED (unchanged). All CI ✅ GREEN (run 29313871650). Needs rebase after #1655 merges.",
     blockedOn: "CONFLICTING — rebase needed after #1655 merges",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f602d702571f39151baf0/",
-    sessionLabel: "heartbeat 13:30 IDT Jul 14 — #1657 CONFLICTING + APPROVED (unchanged)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6048e777773f9fb7be2d/",
+    sessionLabel: "heartbeat 14:00 IDT Jul 14 — #1657 CONFLICTING + APPROVED (unchanged)",
     recentSessions: [
+      {
+        sessionId: "019f6048e777773f9fb7be2d",
+        url: "http://127.0.0.1:3030/ui/s/019f6048e777773f9fb7be2d/",
+        title: "heartbeat 14:00 IDT Jul 14 — #1657 CONFLICTING + APPROVED (unchanged)",
+        status: "running",
+        timestamp: "2026-07-14 14:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f602d702571f39151baf0",
         url: "http://127.0.0.1:3030/ui/s/019f602d702571f39151baf0/",
         title: "heartbeat 13:30 IDT Jul 14 — #1657 CONFLICTING + APPROVED (unchanged)",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-14 13:30 IDT",
         outputFile: null,
       },
@@ -522,40 +538,36 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "green",
-    message: "🎉 #1658 (jn-5842 JN-5842): MERGED 13:29 IDT Jul 14. jn-5842-jbenchmark-agents-md ARCHIVED ✅. JN-5842 → needs Jira Done.",
+    level: "red",
+    message: "🔴 #1655 (jn-5867 JN-5867): REBASED → MERGEABLE but e2e-api ❌ FAILING (run 29326613213, 19s). pre-commit/tox/integration/nox ✅. Fix e2e-api to unblock cascade (#1657 → #1656).",
   },
   {
     level: "red",
-    message: "🔴 #1638 (JN-5725, off-board): e2e-product ❌ FAILED (run 29322557233, took 24m21s). Was PENDING at 13:00 IDT. Also CONFLICTING. Needs e2e-product fix + rebase.",
-  },
-  {
-    level: "green",
-    message: "✅ jn-5844 (JN-5844) + jn-5845 (JN-5845): Moved to Code zone ~13:30 IDT Jul 14. Plan done. Code sessions triggered.",
+    message: "🔴 #1638 (JN-5725, off-board): e2e-product ❌ FAILED (run 29322557233) + CONFLICTING. Needs e2e-product fix + rebase.",
   },
   {
     level: "red",
-    message: "🔴 #1655 (jn-5867 JN-5867): CONFLICTING — no active CI run (only CodeRabbit pass). Needs rebase. 4th conflict today. Cascade blocked.",
+    message: "🔴 #1657 (jn-5869 JN-5869): CONFLICTING + APPROVED. All CI ✅ GREEN (run 29313871650). Awaits #1655 merge → rebase.",
   },
   {
     level: "red",
-    message: "🔴 #1657 (jn-5869 JN-5869): CONFLICTING + APPROVED (unchanged). All CI ✅ GREEN (run 29313871650). Awaits #1655 merge then rebase.",
-  },
-  {
-    level: "red",
-    message: "🔴 #1656 (jn-5870 JN-5870): DRAFT + CONFLICTING (unchanged). Rebase + fix pre-commit + undraft.",
+    message: "🔴 #1656 (jn-5870 JN-5870): DRAFT + CONFLICTING (unchanged). Rebase + fix pre-commit + undraft after #1655+#1657 merge.",
   },
   {
     level: "red",
     message: "🔴 Jira mismatches (9): JN-5842, JN-5880, JN-5879, JN-5877, JN-5874, JN-5401, JN-5717, JN-5546, JN-5827 — PRs merged but Jira not Done.",
   },
   {
-    level: "yellow",
-    message: "📍 jn-5865 (JN-5865): Still Ingest zone — plan done Jul 8 (Day 14). Propose move to Code + trigger /implement:code.",
+    level: "green",
+    message: "✅ jn-5844 (JN-5844) + jn-5845 (JN-5845): In Code zone. Plan done. Code sessions running.",
   },
   {
     level: "yellow",
-    message: "📍 jn-5871 (JN-5871): Still Code zone — code done since 00:58 IDT Jul 9 (Day 14). Propose move to Verify + trigger /implement:validate.",
+    message: "📍 jn-5865 (JN-5865): Still Ingest zone — plan done Jul 8 (Day 14+). Propose move to Code + trigger /implement:code.",
+  },
+  {
+    level: "yellow",
+    message: "📍 jn-5871 (JN-5871): Still Code zone — code done since 00:58 IDT Jul 9 (Day 14+). Propose move to Verify + trigger /implement:validate.",
   },
   {
     level: "yellow",
@@ -574,7 +586,7 @@ export const ALERTS = [
     message: "⚠️ model-packaging-cr (Code Review zone): stagnant 29+ days. No PR URL set. Needs investigation or archive.",
   },
   {
-    level: "red",
-    message: "⚠️ 4 consecutive overnight session failures (19:00+21:00 IDT Jul 13, 03:00+06:00 IDT Jul 14). Daytime sessions 09:00–13:30 IDT Jul 14 all successful. Investigate overnight failure pattern.",
+    level: "yellow",
+    message: "⚠️ 4 consecutive overnight session failures (19:00+21:00 IDT Jul 13, 03:00+06:00 IDT Jul 14). Daytime sessions successful. Investigate overnight failure pattern.",
   },
 ];
