@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-14 18:30 IDT",
+    actions: 0,
+    findings: 2,
+    status: "ok",
+    summary: "#1667 CI COMPLETE — pre-commit ❌ FAIL (run 29343394531, all else ✅); #1638 new CI run 29345288862 (e2e-api ✅ integration ✅ bake ✅ — e2e-smoke/pre-commit/tox ⏳); #1655 still DOUBLE-BLOCKED; no new merges",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f61401b1c7d118de0bdf2/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-14 18:00 IDT",
     actions: 1,
     findings: 3,

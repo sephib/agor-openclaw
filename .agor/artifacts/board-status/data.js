@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-14 18:00 IDT";
+export const LAST_UPDATED = "2026-07-14 18:30 IDT";
 
 export const WORKTREES = [
   {
@@ -27,7 +27,7 @@ export const WORKTREES = [
     zone: "BLOCKED",
     pr: "#1596 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1596",
-    status: "Frozen — solved locally with Docker DB; PR DRAFT UNKNOWN (stale)",
+    status: "Frozen — solved locally with Docker DB; PR DRAFT CONFLICTING (stale)",
     blockedOn: "Frozen",
     blockedType: "blocked",
     sessionUrl: null,
@@ -44,17 +44,25 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1655",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1655",
-    status: "🔴 DOUBLE-BLOCKED: pre-commit ❌ FAIL (run 29329734574) + CONFLICTING. All functional tests ✅. Sibling 'Plan GCP dev cluster' now IDLE. Fix: rebase on main (fix conflicts) + run pre-commit --all-files, push again.",
+    status: "🔴 DOUBLE-BLOCKED: pre-commit ❌ FAIL (run 29329734574) + CONFLICTING. All functional tests ✅. Fix: rebase on main (fix conflicts) + run pre-commit --all-files, push again.",
     blockedOn: "pre-commit FAIL + CONFLICTING — rebase + pre-commit fix needed",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6124a3c6763588b20153/",
-    sessionLabel: "heartbeat 18:00 IDT Jul 14 — #1655 DOUBLE-BLOCKED: pre-commit ❌ + CONFLICTING (unchanged)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f61401b1c7d118de0bdf2/",
+    sessionLabel: "heartbeat 18:30 IDT Jul 14 — #1655 DOUBLE-BLOCKED: pre-commit ❌ + CONFLICTING (unchanged)",
     recentSessions: [
+      {
+        sessionId: "019f61401b1c7d118de0bdf2",
+        url: "http://127.0.0.1:3030/ui/s/019f61401b1c7d118de0bdf2/",
+        title: "heartbeat 18:30 IDT Jul 14 — #1655 DOUBLE-BLOCKED: pre-commit ❌ + CONFLICTING (unchanged)",
+        status: "running",
+        timestamp: "2026-07-14 18:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f6124a3c6763588b20153",
         url: "http://127.0.0.1:3030/ui/s/019f6124a3c6763588b20153/",
         title: "heartbeat 18:00 IDT Jul 14 — #1655 DOUBLE-BLOCKED: pre-commit ❌ + CONFLICTING (unchanged)",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-14 18:00 IDT",
         outputFile: null,
       },
@@ -80,14 +88,6 @@ export const WORKTREES = [
         title: "heartbeat 16:30 IDT Jul 14 — #1655 DOUBLE-BLOCKED: pre-commit ❌ + CONFLICTING (unchanged)",
         status: "idle",
         timestamp: "2026-07-14 16:30 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f60b6c5c57fa1a087e894",
-        url: "http://127.0.0.1:3030/ui/s/019f60b6c5c57fa1a087e894/",
-        title: "heartbeat 16:00 IDT Jul 14 — #1655 DOUBLE-BLOCKED: pre-commit ❌ + CONFLICTING",
-        status: "idle",
-        timestamp: "2026-07-14 16:00 IDT",
         outputFile: null,
       },
     ],
@@ -230,17 +230,25 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1667",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1667",
-    status: "🟢 UNDRAFTED (since 17:30 IDT) — PR now open, reviewDecision: REVIEW_REQUIRED. New CI run 29343394531 IN PROGRESS (all checks pending). Watching for result.",
-    blockedOn: "CI pending — awaiting result of run 29343394531",
-    blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6124a3c6763588b20153/",
-    sessionLabel: "heartbeat 18:00 IDT Jul 14 — #1667 UNDRAFTED, CI run 29343394531 pending",
+    status: "🔴 CI run 29343394531 COMPLETE — pre-commit ❌ FAIL (both jobs). All other checks ✅: e2e-api ✅ e2e-smoke ✅ integration ✅ tox ✅ atlas-validate ✅. Needs pre-commit fix.",
+    blockedOn: "pre-commit ❌ FAIL — needs fix and re-push",
+    blockedType: "blocked",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f61401b1c7d118de0bdf2/",
+    sessionLabel: "heartbeat 18:30 IDT Jul 14 — #1667 CI complete, pre-commit ❌ FAIL",
     recentSessions: [
+      {
+        sessionId: "019f61401b1c7d118de0bdf2",
+        url: "http://127.0.0.1:3030/ui/s/019f61401b1c7d118de0bdf2/",
+        title: "heartbeat 18:30 IDT Jul 14 — #1667 CI complete, pre-commit ❌ FAIL",
+        status: "running",
+        timestamp: "2026-07-14 18:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f6124a3c6763588b20153",
         url: "http://127.0.0.1:3030/ui/s/019f6124a3c6763588b20153/",
         title: "heartbeat 18:00 IDT Jul 14 — #1667 UNDRAFTED, CI run 29343394531 pending",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-14 18:00 IDT",
         outputFile: null,
       },
@@ -268,16 +276,8 @@ export const WORKTREES = [
         timestamp: "2026-07-14 16:30 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f60b6c5c57fa1a087e894",
-        url: "http://127.0.0.1:3030/ui/s/019f60b6c5c57fa1a087e894/",
-        title: "heartbeat 16:00 IDT Jul 14 — #1667 DRAFT + pre-commit ❌ FAIL (new PR)",
-        status: "idle",
-        timestamp: "2026-07-14 16:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-14 18:00 IDT",
+    lastActive: "2026-07-14 18:30 IDT",
   },
   {
     ticket: "JN-5824",
@@ -368,7 +368,7 @@ export const MERGED = [
     pr: "#1663",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1663",
     mergedDate: "2026-07-13",
-    note: "Merged 15:16 IDT Jul 13. All CI passed (run 29244989261). jn-5877-api-server-replicas archived 15:30 IDT. JN-5877 Jira 'In Review' → needs Done.",
+    note: "Merged 15:16 IDT Jul 13. All CI passed. jn-5877-api-server-replicas archived 15:30 IDT. JN-5877 Jira → needs Done.",
   },
   {
     ticket: "JN-5874",
@@ -377,7 +377,7 @@ export const MERGED = [
     pr: "#1662",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1662",
     mergedDate: "2026-07-13",
-    note: "Merged 12:10 IDT Jul 13. All CI passed. jn-5874-values-prd-image-tags archived 12:32 IDT. JN-5874 Jira 'Backlog' → needs Done.",
+    note: "Merged 12:10 IDT Jul 13. All CI passed. jn-5874-values-prd-image-tags archived 12:32 IDT. JN-5874 Jira → needs Done.",
   },
   {
     ticket: "JN-5401",
@@ -386,7 +386,7 @@ export const MERGED = [
     pr: "#1654",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1654",
     mergedDate: "2026-07-12",
-    note: "Merged 17:12 IDT Jul 12. CI all pass (run 29195415951). jn-5401-runner-subcommands archived. JN-5401 Jira 'Backlog' → needs Done.",
+    note: "Merged 17:12 IDT Jul 12. CI all pass. jn-5401-runner-subcommands archived. JN-5401 Jira → needs Done.",
   },
   {
     ticket: "JN-5841",
@@ -395,7 +395,7 @@ export const MERGED = [
     pr: "#1649",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1649",
     mergedDate: "2026-07-12",
-    note: "Merged 14:45 IDT Jul 12. jn-5841-agents-md-root ARCHIVED 16:00 IDT Jul 12. JN-5841 Jira → Done ✅ (confirmed 16:30 IDT Jul 12 via acli).",
+    note: "Merged 14:45 IDT Jul 12. jn-5841-agents-md-root ARCHIVED 16:00 IDT Jul 12. JN-5841 Jira → Done ✅.",
   },
   {
     ticket: "JN-5827",
@@ -404,7 +404,7 @@ export const MERGED = [
     pr: "#1648",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1648",
     mergedDate: "2026-07-12",
-    note: "Merged 14:27 IDT Jul 12. Worktree jn-5827-git-tagging-workflow archived 14:30 IDT. JN-5827 Jira 'Backlog' → needs Done.",
+    note: "Merged 14:27 IDT Jul 12. jn-5827-git-tagging-workflow archived. JN-5827 Jira → needs Done.",
   },
   {
     ticket: "JN-5719",
@@ -413,7 +413,7 @@ export const MERGED = [
     pr: "#1632",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1632",
     mergedDate: "2026-07-08",
-    note: "Merged 17:10 IDT Jul 8. Off-board PR, no worktree. JN-5719 Jira 'Backlog' → needs Done.",
+    note: "Merged 17:10 IDT Jul 8. Off-board PR, no worktree. JN-5719 Jira → needs Done.",
   },
   {
     ticket: "JN-5445",
@@ -422,7 +422,7 @@ export const MERGED = [
     pr: "#1647",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1647",
     mergedDate: "2026-07-08",
-    note: "Merged 15:03 IDT Jul 8. Off-board PR, no worktree. JN-5445 Jira now Done ✅ (confirmed Jul 13 00:00 IDT via acli).",
+    note: "Merged 15:03 IDT Jul 8. JN-5445 Jira → Done ✅.",
   },
   {
     ticket: "JN-5546",
@@ -431,7 +431,7 @@ export const MERGED = [
     pr: "#1588",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1588",
     mergedDate: "2026-07-07",
-    note: "Merged 08:10 IDT Jul 7. APPROVED ✅. Agor worktree already deleted. JN-5546 Jira still 'In Progress' → needs Done.",
+    note: "Merged 08:10 IDT Jul 7. JN-5546 Jira still 'In Progress' → needs Done.",
   },
   {
     ticket: "JN-5717",
@@ -440,7 +440,7 @@ export const MERGED = [
     pr: "#1631",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1631",
     mergedDate: "2026-07-06",
-    note: "Merged 09:19 IDT Jul 6 — off-board PR. JN-5717 Jira still 'Backlog' → needs Done.",
+    note: "Merged 09:19 IDT Jul 6. Off-board PR. JN-5717 Jira → needs Done.",
   },
   {
     ticket: "JN-5794",
@@ -449,18 +449,14 @@ export const MERGED = [
     pr: "#1643",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1643",
     mergedDate: "2026-07-01",
-    note: "Merged 09:16 IDT Jul 1 — worktree auto-archived at 09:21 IDT. JN-5794 Jira Done ✅.",
+    note: "Merged 09:16 IDT Jul 1 — worktree auto-archived. JN-5794 Jira Done ✅.",
   },
 ];
 
 export const ALERTS = [
   {
-    level: "green",
-    message: "🎉 #1656 (jn-5870 JN-5870): MERGED at 17:53 IDT Jul 14! JN-5870 Jira → needs Done.",
-  },
-  {
-    level: "yellow",
-    message: "🟢 #1667 (jn-5845 JN-5845): UNDRAFTED (since 17:30 IDT) — CI run 29343394531 IN PROGRESS. Watching for result.",
+    level: "red",
+    message: "🔴 #1667 (jn-5845 JN-5845): CI COMPLETE — pre-commit ❌ FAIL (run 29343394531, both pre-commit jobs). All other checks ✅. Needs pre-commit fix and re-push.",
   },
   {
     level: "red",
@@ -468,15 +464,19 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⏳ #1638 (JN-5725, off-board): CI run 29343027544 IN PROGRESS — pre-commit ✅ bake ✅ integration ✅ tox ✅ nox ✅ — e2e-api ⏳. Watching for result.",
+    message: "⏳ #1638 (JN-5725, off-board): CI run 29345288862 — e2e-api ✅ integration ✅ bake ✅ — e2e-smoke ⏳ pre-commit ⏳ tox ⏳ still running.",
   },
   {
     level: "yellow",
     message: "⚠️ jn-5844 (JN-5844): Code+CR done (10:46 IDT) but still NO PR. Needs PR creation session.",
   },
   {
+    level: "green",
+    message: "🎉 #1656 (jn-5870 JN-5870): MERGED at 17:53 IDT Jul 14! JN-5870 Jira → needs Done.",
+  },
+  {
     level: "red",
-    message: "🔴 Jira mismatches (10): JN-5870 (new), JN-5842, JN-5880, JN-5879, JN-5877, JN-5874, JN-5401, JN-5717, JN-5546, JN-5827 — PRs merged but Jira not Done.",
+    message: "🔴 Jira mismatches (10): JN-5870, JN-5842, JN-5880, JN-5879, JN-5877, JN-5874, JN-5401, JN-5717, JN-5546, JN-5827 — PRs merged but Jira not Done.",
   },
   {
     level: "yellow",
