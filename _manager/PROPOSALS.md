@@ -1,6 +1,17 @@
 # Proposals — jounce-workflow-ai Board
 
-*Last updated: 2026-07-07 ~09:00 IDT*
+*Last updated: 2026-07-14 20:00 IDT*
+
+---
+
+## Proposal: Move jn-5845 to Code Review Zone (NEW — 20:00 IDT Jul 14)
+
+- **Action:** Move worktree `jn-5845-helm-cicd-agents-md` from Publish zone to Code Review zone via `agor_branches_set_zone`
+- **Reason:** PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667) CI run 29356096050 is COMPLETE with ALL checks passing ✅ (pre-commit ✅ tox ✅ integration ✅ e2e-api ✅ e2e-smoke ✅ all-checks ✅). PR is OPEN, MERGEABLE, REVIEW_REQUIRED. Ready for code review.
+- **Risk:** Low — zone move is reversible
+- **Worktree:** `jn-5845-helm-cicd-agents-md` (branch_id: `019f5ffb-a84e-7b98-b48e-d0373337ad2f`)
+- **Zone:** Code Review (zone-1781430099126)
+- **Status:** PENDING
 
 ---
 

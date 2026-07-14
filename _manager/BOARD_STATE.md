@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-14 19:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-14 20:00 IDT (advance heartbeat)*
 
 ---
 
@@ -11,11 +11,11 @@
 | jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | UNKNOWN (stale) | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) | 🔴 DRAFT + UNKNOWN; frozen since Jun 14 |
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — Backlog | Design session done Jun 30. Ready for Plan phase. |
 | jn-5844-service-lib-sql-agents-md | **Code** | — | — | [JN-5844](https://redhat.atlassian.net/browse/JN-5844) | ✅ Code done (SHA 86fb06b1). Internal CR done 10:46 IDT. **Still no PR** — needs PR creation. |
-| jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | **⏳ NEW run 29356096050 in progress** — Joseph pushed a fix commit. pre-commit/tox/integration/e2e-api all ⏳ pending. atlas ✅. | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) | **🟡 New CI run in progress** — Joseph pushed a fix for pre-commit. Awaiting results. |
+| jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | **✅ run 29356096050 — ALL PASS** — pre-commit ✅, tox ✅, integration ✅, e2e-api ✅, e2e-smoke ✅, all-checks ✅. | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) | **🟢 ALL CI PASS — REVIEW_REQUIRED — ready for Code Review zone!** Propose: move to Code Review. |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — Backlog | Plan done ~23:06 IDT Jul 8. **Zone mismatch persists** (still Ingest, Day 14+). Propose: move to Code + trigger /implement:code. |
 | jn-5871 | **Code** | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) | Code done ~00:58 IDT Jul 9. SHA fc6e5f77 CLEAN. **Zone mismatch persists** (still Code, should be Verify, Day 14+). |
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | Last session Jul 8 IDLE. SHA 16ec44ea (2 commits). Needs: generate 24 configs, rebase main, create PR. |
-| jn-5867 | **Publish** | [#1655](https://github.com/Jounce-IO/jounce/pull/1655) | **🔴 pre-commit ❌ FAIL** — run 29355432018 (new). e2e-smoke ⏳. All else ✅. | [JN-5867](https://redhat.atlassian.net/browse/JN-5867) — Backlog | **🟡→🔴 CONFLICT RESOLVED** (now MERGEABLE). New CI run 29355432018. pre-commit ❌ FAIL still. Single-blocked (only pre-commit). |
+| jn-5867 | **Publish** | [#1655](https://github.com/Jounce-IO/jounce/pull/1655) | **⏳ run 29356344363 — pre-commit-run ⏳ PENDING**, all else ✅ (tox ✅ e2e-api ✅ e2e-smoke ✅ integration ✅ nox ✅). | [JN-5867](https://redhat.atlassian.net/browse/JN-5867) — Backlog | **🟡 New CI run 29356344363 mostly passing** — pre-commit-run ⏳ still pending. Awaiting result. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 19+ days with no session or PR. |
 
 ---
@@ -25,7 +25,7 @@
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
 | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ UNKNOWN | 🔴 UNKNOWN | 🔴 CONFLICTING 11+ days. Needs rebase + fix e2e or close PR. |
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | **⏳ run 29345288862 — e2e-product ⏳ pending** — ALL OTHER CHECKS ✅ (pre-commit ✅ e2e-smoke ✅ tox ✅ e2e-api ✅ integration ✅ bake ✅ atlas ✅) | **OPEN, MERGEABLE** | Run 29345288862 nearly done — only e2e-product ⏳ remains. All core checks ✅. Ready to merge once e2e-product passes. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | **⏳ run 29353569062 — e2e-product ⏳ still pending** — ALL OTHER CHECKS ✅ (pre-commit ✅ e2e-smoke ✅ tox ✅ e2e-api ✅ integration ✅ bake ✅ atlas ✅) | **OPEN, MERGEABLE** | Run 29353569062 — only e2e-product ⏳ still running. All core checks ✅. Unchanged from last run. |
 
 ---
 
@@ -70,15 +70,14 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes Since Last Run (19:30 IDT Jul 14 — delta from 19:00 IDT Jul 14)
+## Key Changes Since Last Run (20:00 IDT Jul 14 — delta from 19:30 IDT Jul 14)
 
 | What observed | Status |
 |---|---|
-| **🎉 jn-5870 ARCHIVED** | jn-5870 confirmed as Agor-registered branch (branch_id 019f434c). Archived now — PR #1656 was MERGED at 17:53 IDT. Previous runs incorrectly stated "not an Agor branch." |
-| **🟡 #1655 (jn-5867): CONFLICT RESOLVED → SINGLE-BLOCKED** | Rebase done — now MERGEABLE (was CONFLICTING). NEW CI run 29355432018 in progress. pre-commit ❌ still FAIL (both jobs). e2e-smoke ⏳. All else ✅. Status: SINGLE-BLOCKED (only pre-commit). |
-| **🟡 #1667 (jn-5845): NEW CI run in progress** | Joseph pushed a fix commit. New run 29356096050 started. pre-commit/tox/integration/e2e-api all ⏳ pending. Don't yet know if pre-commit passes. |
-| **⏳ #1638 (off-board): e2e-product still pending** | Run 29353569062 — same as before. All other checks ✅. Only e2e-product ⏳ remaining. |
-| **No new merges** | No additional merges since 19:00 IDT. |
+| **🟢 #1667 (jn-5845): ALL CI PASS ✅** | Run 29356096050 COMPLETE — ALL checks pass: pre-commit ✅ pre-commit-run ✅ tox ✅ integration ✅ e2e-api ✅ e2e-smoke ✅ all-checks ✅ atlas ✅. MERGEABLE, REVIEW_REQUIRED. **Ready for Code Review zone — propose move.** |
+| **🟡 #1655 (jn-5867): New CI run 29356344363 mostly passing** | Most checks ✅ (tox ✅ e2e-api ✅ e2e-smoke ✅ integration ✅ nox ✅) but pre-commit-run ⏳ still PENDING. Awaiting result. |
+| **⏳ #1638 (off-board): e2e-product still pending** | Run 29353569062 — same as before. Only e2e-product ⏳ remaining (all core checks ✅). |
+| **No new merges** | No additional merges since 19:30 IDT. |
 
 ---
 
@@ -93,31 +92,31 @@ PR [#1656](https://github.com/Jounce-IO/jounce/pull/1656): "feat(jbenchmark): ad
 
 ---
 
-### 🟡 #1667 (jn-5845) — NEW CI run in progress (29356096050)
+### 🟢 #1667 (jn-5845) — ALL CI PASS ✅ — READY FOR CODE REVIEW
 
 PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): add Helm and CI/CD domain AGENTS.md files (JN-5845)"
-- **Joseph pushed a fix commit.** New CI run 29356096050 in progress.
-- pre-commit/tox/integration/e2e-api all ⏳ pending. atlas ✅.
-- **Action:** Wait for run to complete — check next heartbeat.
+- Run 29356096050 COMPLETE — ALL checks pass: pre-commit ✅ pre-commit-run ✅ tox ✅ integration ✅ e2e-api ✅ e2e-smoke ✅ all-checks ✅ atlas ✅.
+- PR state: OPEN, MERGEABLE, REVIEW_REQUIRED.
+- **Action:** Move jn-5845 to Code Review zone + request review from Joseph.
 
 ---
 
-### 🔴 #1655 (jn-5867) — SINGLE-BLOCKED: pre-commit ❌ FAIL (conflict resolved!)
+### 🟡 #1655 (jn-5867) — New CI run 29356344363 — pre-commit ⏳ PENDING
 
 PR [#1655](https://github.com/Jounce-IO/jounce/pull/1655): "feat(jbenchmark): add Platform enum and remove gcloud from cluster prerequisites"
-- **CONFLICT RESOLVED** — now MERGEABLE (was CONFLICTING).
-- New CI run 29355432018 in progress. pre-commit ❌ FAIL (both jobs). e2e-smoke ⏳. All else ✅.
-- **Action:** Fix pre-commit failure and push again.
+- CONFLICT RESOLVED — MERGEABLE. New CI run 29356344363.
+- tox ✅ e2e-api ✅ e2e-smoke ✅ integration ✅ nox ✅ atlas ✅. pre-commit-run ⏳ PENDING.
+- **Action:** Wait for pre-commit result — check next heartbeat.
 
 ---
 
-### 🟢 #1638 (off-board JN-5725) — e2e-product still pending (unchanged)
+### 🟢 #1638 (off-board JN-5725) — e2e-product still pending (unchanged × 2)
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements (JN-5725)"
 - CI run 29353569062: ALL core checks ✅ — pre-commit ✅ e2e-smoke ✅ tox ✅ e2e-api ✅ integration ✅ bake ✅ atlas-validate ✅ CodeRabbit ✅ JIRA ✅.
-- Only `e2e-product` ⏳ still pending.
-- State: OPEN, MERGEABLE. No review required (reviewDecision: "").
-- **Action:** Wait for e2e-product to complete — PR ready to merge once it passes.
+- Only `e2e-product` ⏳ still pending (long-running test).
+- State: OPEN, MERGEABLE. No review required.
+- **Action:** Wait for e2e-product — PR ready to merge once it passes.
 
 ---
 

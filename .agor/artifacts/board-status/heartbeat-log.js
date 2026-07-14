@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-14 20:00 IDT",
+    actions: 0,
+    findings: 2,
+    status: "ok",
+    summary: "#1667 CI run 29356096050 ALL PASS ✅ — ready for Code Review zone (REVIEW_REQUIRED); #1655 new run 29356344363 mostly passing (pre-commit-run ⏳ pending); #1638 e2e-product still pending",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f61e50e0f7067aba35f8e/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-14 19:30 IDT",
     actions: 1,
     findings: 3,

@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-14 19:30 IDT";
+export const LAST_UPDATED = "2026-07-14 20:00 IDT";
 
 export const WORKTREES = [
   {
@@ -44,24 +44,32 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1655",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1655",
-    status: "🔴→🟡 CONFLICT RESOLVED (now MERGEABLE). New CI run 29355432018 in progress. pre-commit ❌ FAIL (both jobs). e2e-smoke ⏳. All else ✅. SINGLE-BLOCKED — only pre-commit needs fixing.",
-    blockedOn: "pre-commit ❌ FAIL only (conflict resolved!) — run pre-commit --all-files, push",
+    status: "🟡 New CI run 29356344363 mostly passing — tox ✅ e2e-api ✅ e2e-smoke ✅ integration ✅ nox ✅ atlas ✅. pre-commit-run ⏳ PENDING. MERGEABLE (conflict resolved). Awaiting pre-commit result.",
+    blockedOn: "pre-commit-run ⏳ PENDING in run 29356344363 — awaiting result",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f61c9960e70c187b064ba/",
-    sessionLabel: "heartbeat 19:30 IDT Jul 14 — #1655 CONFLICT RESOLVED → SINGLE-BLOCKED (pre-commit only)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f61e50e0f7067aba35f8e/",
+    sessionLabel: "heartbeat 20:00 IDT Jul 14 — #1655 new CI run 29356344363, pre-commit ⏳ pending",
     recentSessions: [
+      {
+        sessionId: "019f61e50e0f7067aba35f8e",
+        url: "http://127.0.0.1:3030/ui/s/019f61e50e0f7067aba35f8e/",
+        title: "heartbeat 20:00 IDT Jul 14 — #1655 new CI run 29356344363, pre-commit ⏳ pending",
+        status: "running",
+        timestamp: "2026-07-14 20:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f61c9960e70c187b064ba",
         url: "http://127.0.0.1:3030/ui/s/019f61c9960e70c187b064ba/",
         title: "heartbeat 19:30 IDT Jul 14 — #1655 CONFLICT RESOLVED → SINGLE-BLOCKED",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-14 19:30 IDT",
         outputFile: null,
       },
       {
         sessionId: "019f615b95367a7cb547b017",
         url: "http://127.0.0.1:3030/ui/s/019f615b95367a7cb547b017/",
-        title: "heartbeat 19:00 IDT Jul 14 — #1655 DOUBLE-BLOCKED: pre-commit ❌ + CONFLICTING (unchanged)",
+        title: "heartbeat 19:00 IDT Jul 14 — #1655 DOUBLE-BLOCKED: pre-commit ❌ + CONFLICTING",
         status: "idle",
         timestamp: "2026-07-14 19:00 IDT",
         outputFile: null,
@@ -69,7 +77,7 @@ export const WORKTREES = [
       {
         sessionId: "019f61401b1c7d118de0bdf2",
         url: "http://127.0.0.1:3030/ui/s/019f61401b1c7d118de0bdf2/",
-        title: "heartbeat 18:30 IDT Jul 14 — #1655 DOUBLE-BLOCKED: pre-commit ❌ + CONFLICTING (unchanged)",
+        title: "heartbeat 18:30 IDT Jul 14 — #1655 DOUBLE-BLOCKED unchanged",
         status: "idle",
         timestamp: "2026-07-14 18:30 IDT",
         outputFile: null,
@@ -77,21 +85,13 @@ export const WORKTREES = [
       {
         sessionId: "019f6124a3c6763588b20153",
         url: "http://127.0.0.1:3030/ui/s/019f6124a3c6763588b20153/",
-        title: "heartbeat 18:00 IDT Jul 14 — #1655 DOUBLE-BLOCKED: pre-commit ❌ + CONFLICTING (unchanged)",
+        title: "heartbeat 18:00 IDT Jul 14 — #1655 DOUBLE-BLOCKED unchanged",
         status: "idle",
         timestamp: "2026-07-14 18:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f61092c657eb2b5167286",
-        url: "http://127.0.0.1:3030/ui/s/019f61092c657eb2b5167286/",
-        title: "heartbeat 17:30 IDT Jul 14 — #1655 DOUBLE-BLOCKED: pre-commit ❌ + CONFLICTING (unchanged)",
-        status: "idle",
-        timestamp: "2026-07-14 17:30 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-14 19:30 IDT",
+    lastActive: "2026-07-14 20:00 IDT",
   },
   {
     ticket: "JN-5865",
@@ -230,17 +230,25 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1667",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1667",
-    status: "🟡 NEW CI run 29356096050 in progress — Joseph pushed a fix commit (19:30 IDT). pre-commit/tox/integration/e2e-api ⏳ pending. atlas ✅. Awaiting results.",
-    blockedOn: "New CI run in progress — awaiting pre-commit results",
+    status: "🟢 ALL CI PASS ✅ — run 29356096050 COMPLETE (pre-commit ✅ tox ✅ integration ✅ e2e-api ✅ e2e-smoke ✅ all-checks ✅). MERGEABLE, REVIEW_REQUIRED. Ready for Code Review zone!",
+    blockedOn: null,
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f61c9960e70c187b064ba/",
-    sessionLabel: "heartbeat 19:30 IDT Jul 14 — #1667 NEW CI run 29356096050 in progress",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f61e50e0f7067aba35f8e/",
+    sessionLabel: "heartbeat 20:00 IDT Jul 14 — #1667 ALL CI PASS ✅ — ready for Code Review",
     recentSessions: [
+      {
+        sessionId: "019f61e50e0f7067aba35f8e",
+        url: "http://127.0.0.1:3030/ui/s/019f61e50e0f7067aba35f8e/",
+        title: "heartbeat 20:00 IDT Jul 14 — #1667 ALL CI PASS ✅ — ready for Code Review zone",
+        status: "running",
+        timestamp: "2026-07-14 20:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f61c9960e70c187b064ba",
         url: "http://127.0.0.1:3030/ui/s/019f61c9960e70c187b064ba/",
         title: "heartbeat 19:30 IDT Jul 14 — #1667 NEW CI run 29356096050 in progress",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-14 19:30 IDT",
         outputFile: null,
       },
@@ -268,16 +276,8 @@ export const WORKTREES = [
         timestamp: "2026-07-14 18:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f61092c657eb2b5167286",
-        url: "http://127.0.0.1:3030/ui/s/019f61092c657eb2b5167286/",
-        title: "heartbeat 17:30 IDT Jul 14 — #1667 DRAFT + pre-commit ❌ FAIL (unchanged)",
-        status: "idle",
-        timestamp: "2026-07-14 17:30 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-14 19:30 IDT",
+    lastActive: "2026-07-14 20:00 IDT",
   },
   {
     ticket: "JN-5824",
@@ -455,16 +455,16 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "yellow",
-    message: "🟡 #1667 (jn-5845 JN-5845): NEW CI run 29356096050 in progress — Joseph pushed a pre-commit fix. pre-commit/tox/integration/e2e-api ⏳ pending. Check next heartbeat.",
-  },
-  {
-    level: "red",
-    message: "🔴 #1655 (jn-5867 JN-5867): SINGLE-BLOCKED — conflict resolved (now MERGEABLE!) but pre-commit ❌ still FAIL (run 29355432018). Fix: run pre-commit --all-files, push.",
+    level: "green",
+    message: "🟢 #1667 (jn-5845 JN-5845): ALL CI PASS ✅ — run 29356096050 COMPLETE. pre-commit ✅ tox ✅ integration ✅ e2e-api ✅ e2e-smoke ✅ all-checks ✅. MERGEABLE, REVIEW_REQUIRED. Propose: move to Code Review zone.",
   },
   {
     level: "yellow",
-    message: "🟢 #1638 (JN-5725, off-board): CI run 29353569062 — ALL core checks ✅. Only e2e-product ⏳ pending. MERGEABLE once e2e-product passes.",
+    message: "🟡 #1655 (jn-5867 JN-5867): New CI run 29356344363 — most checks ✅ but pre-commit-run ⏳ PENDING. Conflict resolved (MERGEABLE). Awaiting pre-commit result.",
+  },
+  {
+    level: "yellow",
+    message: "🟢 #1638 (JN-5725, off-board): CI run 29353569062 — ALL core checks ✅. Only e2e-product ⏳ still pending. MERGEABLE once e2e-product passes.",
   },
   {
     level: "yellow",
