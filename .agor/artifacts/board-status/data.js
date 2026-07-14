@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-14 14:00 IDT";
+export const LAST_UPDATED = "2026-07-14 14:30 IDT";
 
 export const WORKTREES = [
   {
@@ -47,14 +47,22 @@ export const WORKTREES = [
     status: "🔴 DRAFT + CONFLICTING (unchanged). Rebase on main + fix pre-commit + undraft.",
     blockedOn: "DRAFT + CONFLICTING",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6048e777773f9fb7be2d/",
-    sessionLabel: "heartbeat 14:00 IDT Jul 14 — #1656 DRAFT + CONFLICTING (unchanged)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f60645f0e7c828bf78496/",
+    sessionLabel: "heartbeat 14:30 IDT Jul 14 — #1656 DRAFT + CONFLICTING (unchanged)",
     recentSessions: [
+      {
+        sessionId: "019f60645f0e7c828bf78496",
+        url: "http://127.0.0.1:3030/ui/s/019f60645f0e7c828bf78496/",
+        title: "heartbeat 14:30 IDT Jul 14 — #1656 DRAFT + CONFLICTING (unchanged)",
+        status: "running",
+        timestamp: "2026-07-14 14:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f6048e777773f9fb7be2d",
         url: "http://127.0.0.1:3030/ui/s/019f6048e777773f9fb7be2d/",
         title: "heartbeat 14:00 IDT Jul 14 — #1656 DRAFT + CONFLICTING (unchanged)",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-14 14:00 IDT",
         outputFile: null,
       },
@@ -110,17 +118,25 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1655",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1655",
-    status: "🔴 MERGEABLE (rebased!) but e2e-api ❌ FAILING (run 29326613213). pre-commit/tox/integration ✅. Fix e2e-api to unblock cascade.",
-    blockedOn: "e2e-api ❌ FAILING — fix needed",
-    blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6048e777773f9fb7be2d/",
-    sessionLabel: "heartbeat 14:00 IDT Jul 14 — #1655 MERGEABLE + e2e-api ❌ FAIL (run 29326613213)",
+    status: "🎉 e2e-api FIXED (run 29328016742 ALL ✅). Joseph pushed again → new run 29329217216 ⏳ PENDING. MERGEABLE. When 29329217216 passes → ready to merge + cascade #1657 → #1656.",
+    blockedOn: null,
+    blockedType: "active",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f60645f0e7c828bf78496/",
+    sessionLabel: "heartbeat 14:30 IDT Jul 14 — #1655 e2e-api FIXED, new run 29329217216 ⏳ PENDING",
     recentSessions: [
+      {
+        sessionId: "019f60645f0e7c828bf78496",
+        url: "http://127.0.0.1:3030/ui/s/019f60645f0e7c828bf78496/",
+        title: "heartbeat 14:30 IDT Jul 14 — #1655 e2e-api FIXED (run 29328016742 ALL ✅), new run 29329217216 ⏳",
+        status: "running",
+        timestamp: "2026-07-14 14:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f6048e777773f9fb7be2d",
         url: "http://127.0.0.1:3030/ui/s/019f6048e777773f9fb7be2d/",
         title: "heartbeat 14:00 IDT Jul 14 — #1655 MERGEABLE + e2e-api ❌ FAIL (run 29326613213)",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-14 14:00 IDT",
         outputFile: null,
       },
@@ -148,16 +164,8 @@ export const WORKTREES = [
         timestamp: "2026-07-14 12:30 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f5fdb097c741f93d57534",
-        url: "http://127.0.0.1:3030/ui/s/019f5fdb097c741f93d57534/",
-        title: "heartbeat 12:00 IDT Jul 14 — #1655 NOW MERGEABLE (rebased! CI run 29319609925, e2e-smoke ⏳)",
-        status: "idle",
-        timestamp: "2026-07-14 12:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-14 14:00 IDT",
+    lastActive: "2026-07-14 14:30 IDT",
   },
   {
     ticket: "JN-5869",
@@ -168,17 +176,25 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1657",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1657",
-    status: "🔴 CONFLICTING + APPROVED (unchanged). All CI ✅ GREEN (run 29313871650). Needs rebase after #1655 merges.",
-    blockedOn: "CONFLICTING — rebase needed after #1655 merges",
+    status: "🔴 UNKNOWN mergeable + APPROVED (unchanged). All CI ✅ GREEN (run 29313871650). Ready to rebase + merge once #1655 lands.",
+    blockedOn: "UNKNOWN — rebase needed after #1655 merges",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6048e777773f9fb7be2d/",
-    sessionLabel: "heartbeat 14:00 IDT Jul 14 — #1657 CONFLICTING + APPROVED (unchanged)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f60645f0e7c828bf78496/",
+    sessionLabel: "heartbeat 14:30 IDT Jul 14 — #1657 UNKNOWN+APPROVED (unchanged; awaits #1655 merge)",
     recentSessions: [
+      {
+        sessionId: "019f60645f0e7c828bf78496",
+        url: "http://127.0.0.1:3030/ui/s/019f60645f0e7c828bf78496/",
+        title: "heartbeat 14:30 IDT Jul 14 — #1657 UNKNOWN+APPROVED (unchanged; awaits #1655 merge)",
+        status: "running",
+        timestamp: "2026-07-14 14:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f6048e777773f9fb7be2d",
         url: "http://127.0.0.1:3030/ui/s/019f6048e777773f9fb7be2d/",
         title: "heartbeat 14:00 IDT Jul 14 — #1657 CONFLICTING + APPROVED (unchanged)",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-14 14:00 IDT",
         outputFile: null,
       },
@@ -538,8 +554,8 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "red",
-    message: "🔴 #1655 (jn-5867 JN-5867): REBASED → MERGEABLE but e2e-api ❌ FAILING (run 29326613213, 19s). pre-commit/tox/integration/nox ✅. Fix e2e-api to unblock cascade (#1657 → #1656).",
+    level: "green",
+    message: "🎉 #1655 (jn-5867 JN-5867): e2e-api FIXED — run 29328016742 ALL ✅. Joseph pushed again → new run 29329217216 ⏳ PENDING. MERGEABLE. When 29329217216 passes → merge #1655 → rebase #1657 → merge → cascade!",
   },
   {
     level: "red",

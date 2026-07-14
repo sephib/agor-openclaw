@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-14 14:30 IDT",
+    actions: 0,
+    findings: 1,
+    status: "ok",
+    summary: "#1655 e2e-api FIXED (run 29328016742 ALL ✅); Joseph pushed again → new run 29329217216 ⏳ PENDING; cascade ready when CI passes",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f60645f0e7c828bf78496/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-14 14:00 IDT",
     actions: 0,
     findings: 1,
