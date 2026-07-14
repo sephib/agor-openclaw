@@ -1,8 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-14 09:00 IDT (advance heartbeat)*
-
-> ⚠️ BOARD_STATE.md was 24.5 hours old — 3 overnight sessions failed (19:00, 21:00 IDT Jul 13; 03:00 IDT Jul 14). Full refresh performed.
+*Last updated: 2026-07-14 09:30 IDT (advance heartbeat)*
 
 ---
 
@@ -72,17 +70,16 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes Since Last Run (09:00 IDT Jul 14 — delta from 18:00 IDT Jul 13)
+## Key Changes Since Last Run (09:30 IDT Jul 14 — delta from 09:00 IDT Jul 14)
 
 | What observed | Status |
 |---|---|
-| **🔴 #1655 (jn-5867) NOW CONFLICTING** | Was MERGEABLE+ALL GREEN at 18:00 IDT Jul 13. Something merged into main overnight causing conflict. Old CI run 29252812787 still shows green but state is CONFLICTING — needs rebase. **Cascade chain head BLOCKED.** |
-| **#1657 (jn-5869) unchanged** | Still ALL CI GREEN (run 29255496217). MERGEABLE. Awaits #1655 rebase + merge. |
+| **#1655 (jn-5867) STILL CONFLICTING** | No change. Old CI run 29252812787 still green but PR is CONFLICTING. Needs rebase. **Cascade chain head BLOCKED.** |
+| **#1657 (jn-5869) unchanged** | Still ALL CI GREEN (run 29255496217). MERGEABLE. Awaits #1655. |
 | **#1659 (jn-5868) unchanged** | Still ALL CI GREEN (run 29254605349). MERGEABLE. Awaits #1655+#1657. |
-| **#1638 (off-board) changed to CONFLICTING** | Last run showed CONFLICTING. Only CodeRabbit visible in CI (no new run triggered). |
+| **#1638 (off-board) unchanged** | Still CONFLICTING. Only CodeRabbit in CI — no new run. |
 | **#1658 (jn-5842) unchanged** | Still CONFLICTING + CHANGES_REQUESTED. No new CI run. |
 | **No new merges** | Board composition unchanged. |
-| **⚠️ 3 overnight sessions FAILED** | Sessions at 19:00+21:00 IDT Jul 13 and 03:00 IDT Jul 14 all failed — caused 24.5h board state gap. |
 
 ---
 
