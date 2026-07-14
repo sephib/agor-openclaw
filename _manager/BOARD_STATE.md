@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-14 16:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-14 17:00 IDT (advance heartbeat)*
 
 ---
 
@@ -26,7 +26,7 @@
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
 | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ UNKNOWN | 🔴 UNKNOWN | 🔴 CONFLICTING 11+ days. Needs rebase + fix e2e or close PR. |
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | **🔴 e2e-product ❌ FAIL** (run 29331266058 — all others ✅; e2e-product FAILED) | **OPEN, CONFLICTING** | e2e-product FAILED + now CONFLICTING (was UNKNOWN mergeable at 16:00 IDT). |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | **🟡 CI IN PROGRESS** (run 29338938226 — bake ✅ check-changes ✅ atlas-validate ✅; integration/tox/pre-commit/e2e-api ⏳) | **OPEN, MERGEABLE** | **🆕 REBASED** at 17:00 IDT (was CONFLICTING at 16:30 IDT). New CI run in progress. |
 
 ---
 
@@ -70,16 +70,15 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes Since Last Run (16:30 IDT Jul 14 — delta from 16:00 IDT Jul 14)
+## Key Changes Since Last Run (17:00 IDT Jul 14 — delta from 16:30 IDT Jul 14)
 
 | What observed | Status |
 |---|---|
 | **🎉 #1656 (jn-5870): ALL CI ✅ PASS (unchanged)** | Still OPEN + APPROVED + MERGEABLE + ALL CI ✅. Waiting for #1655 cascade. |
 | **🔴 #1655 (jn-5867): still DOUBLE-BLOCKED (unchanged)** | pre-commit ❌ FAIL + CONFLICTING. No new CI runs. |
 | **🟡 #1667 (jn-5845): still DRAFT + pre-commit ❌ (unchanged)** | No new CI runs or pushes. |
-| **🔴 #1638 (off-board): now CONFLICTING** | Was UNKNOWN mergeable at 16:00 IDT. Now confirmed CONFLICTING. e2e-product ❌ FAIL unchanged. |
-| **📊 Jira acli sync** | acli confirms: JN-5880=Backlog, JN-5401=Backlog, JN-5827=Backlog — all need Done. |
-| **No new merges, 0 auto-archives** | Board stable since 16:00 IDT. |
+| **🆕 #1638 (off-board): REBASED → MERGEABLE** | Was CONFLICTING at 16:30 IDT. **Now MERGEABLE**. New CI run 29338938226 IN PROGRESS: bake ✅ check-changes ✅ atlas-validate ✅; integration/tox/pre-commit/e2e-api ⏳ in progress. |
+| **No new merges, 0 auto-archives** | Board stable since 16:30 IDT. |
 
 ---
 
@@ -120,11 +119,12 @@ PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): ad
 
 ---
 
-### 🔴 #1638 (off-board JN-5725) — e2e-product ❌ FAIL
+### 🟡 #1638 (off-board JN-5725) — REBASED, CI IN PROGRESS
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites"
-- e2e-product ❌ FAIL (run 29331266058 — was PENDING, now FAILED). All other checks ✅.
-- **Action:** Investigate e2e-product failure. Fix and re-push or re-run.
+- **🆕 REBASED at 17:00 IDT** — was CONFLICTING at 16:30 IDT, now MERGEABLE.
+- New CI run `29338938226` IN PROGRESS: bake ✅, check-changes ✅, atlas-validate ✅; integration/tox/pre-commit/e2e-api ⏳ still running.
+- **Action:** Wait for CI run 29338938226 to complete. If all green → ready to merge.
 
 ---
 
@@ -171,7 +171,7 @@ Sessions at 19:00 IDT Jul 13, 21:00 IDT Jul 13, 03:00 IDT Jul 14, and 06:00 IDT 
 
 ---
 
-## Archived This Run (16:30 IDT Jul 14)
+## Archived This Run (17:00 IDT Jul 14)
 
 None — no new merges or closures detected.
 
