@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-14 18:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-14 19:00 IDT (advance heartbeat)*
 
 ---
 
@@ -25,7 +25,7 @@
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
 | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ UNKNOWN | 🔴 UNKNOWN | 🔴 CONFLICTING 11+ days. Needs rebase + fix e2e or close PR. |
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | **⏳ run 29345288862 — e2e-smoke ⏳ pre-commit ⏳ tox ⏳** — e2e-api ✅ integration ✅ bake ✅ atlas ✅ | **OPEN, MERGEABLE** | New run 29345288862 (new push). e2e-api ✅ integration ✅ bake ✅ — e2e-smoke/pre-commit/tox still pending. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | **⏳ run 29345288862 — e2e-product ⏳ pending** — ALL OTHER CHECKS ✅ (pre-commit ✅ e2e-smoke ✅ tox ✅ e2e-api ✅ integration ✅ bake ✅ atlas ✅) | **OPEN, MERGEABLE** | Run 29345288862 nearly done — only e2e-product ⏳ remains. All core checks ✅. Ready to merge once e2e-product passes. |
 
 ---
 
@@ -70,13 +70,13 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes Since Last Run (18:30 IDT Jul 14 — delta from 18:00 IDT Jul 14)
+## Key Changes Since Last Run (19:00 IDT Jul 14 — delta from 18:30 IDT Jul 14)
 
 | What observed | Status |
 |---|---|
-| **🔴 #1667 (jn-5845): CI COMPLETED — pre-commit ❌ FAIL** | CI run 29343394531 completed. pre-commit ❌ (both jobs). All other checks ✅: e2e-api ✅, e2e-smoke ✅, integration ✅, tox ✅, atlas-validate ✅. Was "ALL PENDING" at 18:00 IDT. Needs pre-commit fix. |
-| **⏳ #1638 (off-board): New run 29345288862** | New push triggered run 29345288862. e2e-api ✅ integration ✅ bake ✅ atlas ✅ — e2e-smoke ⏳ pre-commit ⏳ tox ⏳ still pending. |
-| **🔴 #1655 (jn-5867): still DOUBLE-BLOCKED (unchanged)** | pre-commit ❌ FAIL + CONFLICTING. No new CI runs or pushes. |
+| **🟡→🟢 #1638 (off-board): CI nearly complete** | Run 29345288862 — previously e2e-smoke ⏳ pre-commit ⏳ tox ⏳ pending → **ALL NOW ✅**: pre-commit ✅, e2e-smoke ✅, tox ✅, e2e-api ✅, integration ✅, bake ✅. Only `e2e-product` ⏳ remains. MERGEABLE once e2e-product passes. |
+| **🔴 #1667 (jn-5845): pre-commit ❌ FAIL — unchanged** | Same run 29343394531, same failure. No new push or fix. |
+| **🔴 #1655 (jn-5867): DOUBLE-BLOCKED — unchanged** | pre-commit ❌ FAIL + CONFLICTING. No new CI runs or pushes. |
 | **Board otherwise stable** | No new merges. No other PR changes. |
 
 ---
@@ -111,12 +111,13 @@ PR [#1655](https://github.com/Jounce-IO/jounce/pull/1655): "feat(jbenchmark): ad
 
 ---
 
-### ⏳ #1638 (off-board JN-5725) — CI run 29345288862 in progress
+### 🟢 #1638 (off-board JN-5725) — Nearly CI-complete (e2e-product only remaining)
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements (JN-5725)"
-- New CI run 29345288862 (new push). e2e-api ✅ integration ✅ bake ✅ atlas-validate ✅ CodeRabbit ✅ JIRA ✅ — e2e-smoke ⏳ pre-commit ⏳ tox ⏳ still running.
-- State: OPEN, MERGEABLE.
-- **Action:** Wait for e2e-smoke, pre-commit, tox to complete.
+- CI run 29345288862: ALL core checks ✅ — pre-commit ✅ e2e-smoke ✅ tox ✅ e2e-api ✅ integration ✅ bake ✅ atlas-validate ✅ CodeRabbit ✅ JIRA ✅.
+- Only `e2e-product` ⏳ still pending.
+- State: OPEN, MERGEABLE. No review required (reviewDecision: "").
+- **Action:** Wait for e2e-product to complete — PR ready to merge once it passes.
 
 ---
 

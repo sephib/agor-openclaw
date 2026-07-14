@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-14 18:30 IDT";
+export const LAST_UPDATED = "2026-07-14 19:00 IDT";
 
 export const WORKTREES = [
   {
@@ -47,14 +47,22 @@ export const WORKTREES = [
     status: "🔴 DOUBLE-BLOCKED: pre-commit ❌ FAIL (run 29329734574) + CONFLICTING. All functional tests ✅. Fix: rebase on main (fix conflicts) + run pre-commit --all-files, push again.",
     blockedOn: "pre-commit FAIL + CONFLICTING — rebase + pre-commit fix needed",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f61401b1c7d118de0bdf2/",
-    sessionLabel: "heartbeat 18:30 IDT Jul 14 — #1655 DOUBLE-BLOCKED: pre-commit ❌ + CONFLICTING (unchanged)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f615b95367a7cb547b017/",
+    sessionLabel: "heartbeat 19:00 IDT Jul 14 — #1655 DOUBLE-BLOCKED: pre-commit ❌ + CONFLICTING (unchanged)",
     recentSessions: [
+      {
+        sessionId: "019f615b95367a7cb547b017",
+        url: "http://127.0.0.1:3030/ui/s/019f615b95367a7cb547b017/",
+        title: "heartbeat 19:00 IDT Jul 14 — #1655 DOUBLE-BLOCKED: pre-commit ❌ + CONFLICTING (unchanged)",
+        status: "running",
+        timestamp: "2026-07-14 19:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f61401b1c7d118de0bdf2",
         url: "http://127.0.0.1:3030/ui/s/019f61401b1c7d118de0bdf2/",
         title: "heartbeat 18:30 IDT Jul 14 — #1655 DOUBLE-BLOCKED: pre-commit ❌ + CONFLICTING (unchanged)",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-14 18:30 IDT",
         outputFile: null,
       },
@@ -80,14 +88,6 @@ export const WORKTREES = [
         title: "heartbeat 17:00 IDT Jul 14 — #1655 DOUBLE-BLOCKED: pre-commit ❌ + CONFLICTING (unchanged)",
         status: "idle",
         timestamp: "2026-07-14 17:00 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f60d23d6f7e598235952c",
-        url: "http://127.0.0.1:3030/ui/s/019f60d23d6f7e598235952c/",
-        title: "heartbeat 16:30 IDT Jul 14 — #1655 DOUBLE-BLOCKED: pre-commit ❌ + CONFLICTING (unchanged)",
-        status: "idle",
-        timestamp: "2026-07-14 16:30 IDT",
         outputFile: null,
       },
     ],
@@ -233,14 +233,22 @@ export const WORKTREES = [
     status: "🔴 CI run 29343394531 COMPLETE — pre-commit ❌ FAIL (both jobs). All other checks ✅: e2e-api ✅ e2e-smoke ✅ integration ✅ tox ✅ atlas-validate ✅. Needs pre-commit fix.",
     blockedOn: "pre-commit ❌ FAIL — needs fix and re-push",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f61401b1c7d118de0bdf2/",
-    sessionLabel: "heartbeat 18:30 IDT Jul 14 — #1667 CI complete, pre-commit ❌ FAIL",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f615b95367a7cb547b017/",
+    sessionLabel: "heartbeat 19:00 IDT Jul 14 — #1667 pre-commit ❌ FAIL (unchanged)",
     recentSessions: [
+      {
+        sessionId: "019f615b95367a7cb547b017",
+        url: "http://127.0.0.1:3030/ui/s/019f615b95367a7cb547b017/",
+        title: "heartbeat 19:00 IDT Jul 14 — #1667 pre-commit ❌ FAIL (unchanged)",
+        status: "running",
+        timestamp: "2026-07-14 19:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f61401b1c7d118de0bdf2",
         url: "http://127.0.0.1:3030/ui/s/019f61401b1c7d118de0bdf2/",
         title: "heartbeat 18:30 IDT Jul 14 — #1667 CI complete, pre-commit ❌ FAIL",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-14 18:30 IDT",
         outputFile: null,
       },
@@ -268,16 +276,8 @@ export const WORKTREES = [
         timestamp: "2026-07-14 17:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f60d23d6f7e598235952c",
-        url: "http://127.0.0.1:3030/ui/s/019f60d23d6f7e598235952c/",
-        title: "heartbeat 16:30 IDT Jul 14 — #1667 DRAFT + pre-commit ❌ FAIL (unchanged)",
-        status: "idle",
-        timestamp: "2026-07-14 16:30 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-14 18:30 IDT",
+    lastActive: "2026-07-14 19:00 IDT",
   },
   {
     ticket: "JN-5824",
@@ -464,7 +464,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⏳ #1638 (JN-5725, off-board): CI run 29345288862 — e2e-api ✅ integration ✅ bake ✅ — e2e-smoke ⏳ pre-commit ⏳ tox ⏳ still running.",
+    message: "🟢 #1638 (JN-5725, off-board): CI run 29345288862 — ALL core checks ✅ (pre-commit ✅ e2e-smoke ✅ tox ✅ e2e-api ✅ integration ✅ bake ✅). Only e2e-product ⏳ pending. MERGEABLE once e2e-product passes.",
   },
   {
     level: "yellow",
