@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-14 19:30 IDT",
+    actions: 1,
+    findings: 3,
+    status: "ok",
+    summary: "jn-5870 ARCHIVED (PR #1656 MERGED — was missed as 'not Agor branch'); #1655 CONFLICT RESOLVED → SINGLE-BLOCKED; #1667 NEW CI run 29356096050 in progress (Joseph pushed fix); #1638 e2e-product ⏳ unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f61c9960e70c187b064ba/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-14 19:00 IDT",
     actions: 0,
     findings: 2,
