@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-14 16:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-14 16:30 IDT (advance heartbeat)*
 
 ---
 
@@ -26,7 +26,7 @@
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
 | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ UNKNOWN | 🔴 UNKNOWN | 🔴 CONFLICTING 11+ days. Needs rebase + fix e2e or close PR. |
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | **🔴 e2e-product ❌ FAIL** (run 29331266058 — all others ✅; e2e-product FAILED) | **OPEN, UNKNOWN mergeable** | e2e-product FAILED (was PENDING at 15:30 IDT). |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | **🔴 e2e-product ❌ FAIL** (run 29331266058 — all others ✅; e2e-product FAILED) | **OPEN, CONFLICTING** | e2e-product FAILED + now CONFLICTING (was UNKNOWN mergeable at 16:00 IDT). |
 
 ---
 
@@ -66,19 +66,20 @@ Active sprint tickets assigned to Joseph with no board worktree:
 | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | MERGED Jul 7 | **In Progress** | ❌ Update Jira → Done |
 | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) | [#1648](https://github.com/Jounce-IO/jounce/pull/1648) | MERGED 14:27 IDT Jul 12 | **Backlog** | ❌ Update Jira → Done |
 
-*9 mismatches (unchanged). Jira MCP 401 — use acli.*
+*9 mismatches (unchanged). Jira MCP 401 — acli confirms: JN-5880 Backlog, JN-5401 Backlog, JN-5827 Backlog — all need Done.*
 
 ---
 
-## Key Changes Since Last Run (16:00 IDT Jul 14 — delta from 15:30 IDT Jul 14)
+## Key Changes Since Last Run (16:30 IDT Jul 14 — delta from 16:00 IDT Jul 14)
 
 | What observed | Status |
 |---|---|
-| **🎉 #1656 (jn-5870): ALL CI ✅ PASS** | CI run 29332701969: ALL checks pass (pre-commit, integration, e2e-api, e2e-smoke, tox, nox all ✅). APPROVED + MERGEABLE. **Ready to merge** — waiting for #1655 cascade first. |
-| **🔴 #1655 (jn-5867): now CONFLICTING** | Was MERGEABLE at 15:30 IDT. Now CONFLICTING. Combined with pre-commit FAIL → **double-blocked**. Sibling "Plan GCP dev cluster + --dev flag" now IDLE (was RUNNING). |
-| **🟡 #1667 (jn-5845): PR CREATED** | jn-5845 moved to Publish zone in Agor. PR #1667 created — "docs(jbenchmark): add Helm and CI/CD domain AGENTS.md files". DRAFT. pre-commit ❌ FAIL (run 29334114324). tox/nox ✅. Fix pre-commit then undraft. |
-| **🔴 #1638 (off-board): e2e-product FAILED** | Was PENDING. Now e2e-product ❌ FAIL (run 29331266058). All other checks ✅. |
-| **No new merges, 0 auto-archives** | No new merges detected since 15:30 IDT. |
+| **🎉 #1656 (jn-5870): ALL CI ✅ PASS (unchanged)** | Still OPEN + APPROVED + MERGEABLE + ALL CI ✅. Waiting for #1655 cascade. |
+| **🔴 #1655 (jn-5867): still DOUBLE-BLOCKED (unchanged)** | pre-commit ❌ FAIL + CONFLICTING. No new CI runs. |
+| **🟡 #1667 (jn-5845): still DRAFT + pre-commit ❌ (unchanged)** | No new CI runs or pushes. |
+| **🔴 #1638 (off-board): now CONFLICTING** | Was UNKNOWN mergeable at 16:00 IDT. Now confirmed CONFLICTING. e2e-product ❌ FAIL unchanged. |
+| **📊 Jira acli sync** | acli confirms: JN-5880=Backlog, JN-5401=Backlog, JN-5827=Backlog — all need Done. |
+| **No new merges, 0 auto-archives** | Board stable since 16:00 IDT. |
 
 ---
 
@@ -170,7 +171,7 @@ Sessions at 19:00 IDT Jul 13, 21:00 IDT Jul 13, 03:00 IDT Jul 14, and 06:00 IDT 
 
 ---
 
-## Archived This Run (16:00 IDT Jul 14)
+## Archived This Run (16:30 IDT Jul 14)
 
 None — no new merges or closures detected.
 

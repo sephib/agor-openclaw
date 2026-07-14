@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-14 16:00 IDT";
+export const LAST_UPDATED = "2026-07-14 16:30 IDT";
 
 export const WORKTREES = [
   {
@@ -47,14 +47,22 @@ export const WORKTREES = [
     status: "🎉 READY TO MERGE: ALL CI ✅ PASS (run 29332701969) + OPEN + APPROVED + MERGEABLE. Was CI PENDING at 15:30 IDT — now fully green. Waiting for #1655 cascade to merge first.",
     blockedOn: "Cascade — waiting for #1655 to merge first",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f60b6c5c57fa1a087e894/",
-    sessionLabel: "heartbeat 16:00 IDT Jul 14 — #1656 ALL CI ✅ PASS — READY TO MERGE",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f60d23d6f7e598235952c/",
+    sessionLabel: "heartbeat 16:30 IDT Jul 14 — #1656 ALL CI ✅ unchanged — READY TO MERGE",
     recentSessions: [
+      {
+        sessionId: "019f60d23d6f7e598235952c",
+        url: "http://127.0.0.1:3030/ui/s/019f60d23d6f7e598235952c/",
+        title: "heartbeat 16:30 IDT Jul 14 — #1656 ALL CI ✅ unchanged — READY TO MERGE",
+        status: "running",
+        timestamp: "2026-07-14 16:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f60b6c5c57fa1a087e894",
         url: "http://127.0.0.1:3030/ui/s/019f60b6c5c57fa1a087e894/",
         title: "heartbeat 16:00 IDT Jul 14 — #1656 ALL CI ✅ PASS — READY TO MERGE",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-14 16:00 IDT",
         outputFile: null,
       },
@@ -105,14 +113,22 @@ export const WORKTREES = [
     status: "🔴 DOUBLE-BLOCKED: pre-commit ❌ FAIL (run 29329734574) + NOW CONFLICTING (was MERGEABLE at 15:30 IDT). All functional tests ✅. Sibling 'Plan GCP dev cluster' now IDLE. Fix: rebase on main (fix conflicts) + run pre-commit --all-files, push again.",
     blockedOn: "pre-commit FAIL + CONFLICTING — rebase + pre-commit fix needed",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f60b6c5c57fa1a087e894/",
-    sessionLabel: "heartbeat 16:00 IDT Jul 14 — #1655 DOUBLE-BLOCKED: pre-commit ❌ + CONFLICTING",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f60d23d6f7e598235952c/",
+    sessionLabel: "heartbeat 16:30 IDT Jul 14 — #1655 DOUBLE-BLOCKED: pre-commit ❌ + CONFLICTING (unchanged)",
     recentSessions: [
+      {
+        sessionId: "019f60d23d6f7e598235952c",
+        url: "http://127.0.0.1:3030/ui/s/019f60d23d6f7e598235952c/",
+        title: "heartbeat 16:30 IDT Jul 14 — #1655 DOUBLE-BLOCKED: pre-commit ❌ + CONFLICTING (unchanged)",
+        status: "running",
+        timestamp: "2026-07-14 16:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f60b6c5c57fa1a087e894",
         url: "http://127.0.0.1:3030/ui/s/019f60b6c5c57fa1a087e894/",
         title: "heartbeat 16:00 IDT Jul 14 — #1655 DOUBLE-BLOCKED: pre-commit ❌ + CONFLICTING",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-14 16:00 IDT",
         outputFile: null,
       },
@@ -299,14 +315,22 @@ export const WORKTREES = [
     status: "🟡 PR #1667 CREATED (DRAFT). pre-commit ❌ FAIL (run 29334114324). tox/nox ✅. Most e2e SKIPPING (draft). Fix: run pre-commit in worktree, push fix, then undraft.",
     blockedOn: "pre-commit FAIL — fix needed, then undraft",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f60b6c5c57fa1a087e894/",
-    sessionLabel: "heartbeat 16:00 IDT Jul 14 — #1667 DRAFT pre-commit ❌",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f60d23d6f7e598235952c/",
+    sessionLabel: "heartbeat 16:30 IDT Jul 14 — #1667 DRAFT pre-commit ❌ (unchanged)",
     recentSessions: [
+      {
+        sessionId: "019f60d23d6f7e598235952c",
+        url: "http://127.0.0.1:3030/ui/s/019f60d23d6f7e598235952c/",
+        title: "heartbeat 16:30 IDT Jul 14 — #1667 DRAFT + pre-commit ❌ FAIL (unchanged)",
+        status: "running",
+        timestamp: "2026-07-14 16:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f60b6c5c57fa1a087e894",
         url: "http://127.0.0.1:3030/ui/s/019f60b6c5c57fa1a087e894/",
         title: "heartbeat 16:00 IDT Jul 14 — #1667 DRAFT + pre-commit ❌ FAIL (new PR)",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-14 16:00 IDT",
         outputFile: null,
       },
@@ -529,7 +553,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 #1638 (JN-5725, off-board): e2e-product ❌ FAIL (run 29331266058 — was PENDING at 15:30 IDT, now FAILED). All other checks ✅. Investigate failure.",
+    message: "🔴 #1638 (JN-5725, off-board): e2e-product ❌ FAIL (run 29331266058) + now CONFLICTING (was UNKNOWN mergeable at 16:00 IDT). All other checks ✅. Needs rebase + investigate e2e-product.",
   },
   {
     level: "red",
