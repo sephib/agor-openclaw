@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-14 18:00 IDT",
+    actions: 1,
+    findings: 3,
+    status: "ok",
+    summary: "#1656 (jn-5870 JN-5870) MERGED at 17:53 IDT 🎉; #1667 UNDRAFTED (CI run 29343394531 pending); #1638 new CI run 29343027544 (pre-commit ✅ most ✅, e2e-api ⏳); #1655 still DOUBLE-BLOCKED",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6124a3c6763588b20153/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-14 17:30 IDT",
     actions: 0,
     findings: 2,
