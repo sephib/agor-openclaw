@@ -3755,4 +3755,22 @@ export const HEARTBEAT_RUNS = [
     summary: "#1655+#1657+#1659 cascade ALL CI GREEN (unchanged, awaiting human merge); #1638 NEW run 29259367493: nox+tox RECOVERED but e2e-smoke ❌ NEW FAILURE; no merges",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f5c6c25ac738c9da3401e/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-07-14 11:00 IDT",
+    actions: 1,
+    findings: 3,
+    status: "ok",
+    summary: "PR #1665 (JN-5879) MERGED 10:48 IDT — new mismatch added; #1638 e2e-api NOW PASSING (run 29315853355); #1655 STILL CONFLICTING (cascade blocked); #1659 REGRESSION unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5fa41d32703487a026c9/",
+  },
+  {
+    type: "advance",
+    timestamp: "2026-07-14 11:30 IDT",
+    actions: 1,
+    findings: 4,
+    status: "ok",
+    summary: "Archived jn-5879 (PR #1665 merged); NEW jn-5880 worktree (PR #1666 DRAFT CI running); #1658 NOW CONFLICTING (was MERGEABLE — regression from #1665 merge); #1638 e2e-product ❌ FAIL (run complete)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5fbf920c72e7b66dbd2d/",
+  },
 ];

@@ -1257,3 +1257,12 @@
 - CI changes: #1638 run 29315853355 — e2e-api NOW PASSING (was ❌). e2e-smoke ⏳ still pending. Significant improvement.
 - Flags: JN-5879 Jira needs Done (7th mismatch). #1655 cascade blocker unchanged. #1659 regression unchanged.
 - Next: Wait for #1638 e2e-smoke result. Priority: #1655 needs rebase by Joseph.
+
+## 11:30 IDT — Weekday Daytime Heartbeat
+- PRs checked: #1658 (OPEN, CONFLICTING — was MERGEABLE at 11:00 IDT), #1659 (OPEN, pre-commit ❌, UNKNOWN), #1657 (OPEN, ALL CI GREEN, APPROVED, UNKNOWN), #1655 (OPEN, CONFLICTING), #1656 DRAFT (OPEN, CONFLICTING), #1638 (OPEN, CONFLICTING — e2e-product ❌), #1666 NEW DRAFT (OPEN, MERGEABLE, CI running), #1665 (MERGED 10:48 IDT Jul 14), #1596 DRAFT (OPEN)
+- Merges detected: none new (jn-5879 already tracked as merged)
+- Actions: 1 — archived jn-5879-justfile-skip-helm (PR #1665 MERGED)
+- New worktree discovered: jn-5880-validate-tag-glob-fix (PR #1666 DRAFT, CI running, JN-5880)
+- CI changes: #1658 NOW CONFLICTING (was MERGEABLE — regression, likely caused by #1665 merge to main); #1638 run 29315853355 COMPLETE: e2e-smoke ✅ but e2e-product ❌ FAIL (was PENDING at 11:00 IDT); #1666 CI run 29318255402 in progress
+- Flags: 🔴 #1658 new conflict (priority fix); 🔴 #1655 still cascade blocker; 🔴 #1638 e2e-product fail; 🆕 jn-5880 new worktree; 4 Jira mismatches still open
+- Next: Watch #1666 CI (ETA next heartbeat); Rebase #1658 + #1655; Fix #1638 e2e-product
