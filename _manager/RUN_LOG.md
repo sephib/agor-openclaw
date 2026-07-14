@@ -4,6 +4,15 @@
 
 ---
 
+## 15:00 IDT — Weekday Daytime Heartbeat (Jul 14 2026)
+- PRs checked: #1655 (pre-commit ❌ FAIL run 29329734574 — regression from Joseph's latest push; e2e-api/tox/smoke/integration/nox all ✅), #1657 (MERGEABLE + APPROVED — no new checks, unchanged), #1656 (DRAFT CONFLICTING — unchanged), #1638 (CONFLICTING — Docker build pending, unchanged), #1596 (DRAFT CONFLICTING — unchanged)
+- Merges detected: none (0 auto-archives)
+- CI changes: **#1655 REGRESSION** — run 29329217216 completed as run 29329734574: pre-commit ❌ FAIL (pre-commit-all hook). All functional tests still passing. Cascade blocked again.
+- Flags: #1655 cascade-head blocked by pre-commit failure (fix needed before cascade #1657→#1656 can proceed). 9 Jira mismatches unchanged. Zone mismatches jn-5865/jn-5871 Day 14+ persist.
+- Next: Joseph must fix pre-commit on #1655 (run `pre-commit run --all-files`, push fix) → then cascade #1657 rebase+merge → #1656 rebase+undraft+merge.
+
+---
+
 ## 10:30 IDT — Weekday Daytime Heartbeat (Jul 14 2026)
 - PRs checked: #1655 (STILL CONFLICTING — unchanged), #1657 (NEW CI run 29313871650 — ALL GREEN), #1659 (NEW CI run 29313293534 — **🔴 pre-commit ❌ FAIL**: tox modified files; all-checks ❌), #1658 (run 29312738364 COMPLETE — **✅ ALL CI GREEN, e2e-smoke PASSED**), #1638 (NEW CI run 29314599070 PENDING — e2e-api/integration/pre-commit/tox pending), #1656 (DRAFT CONFLICTING — unchanged)
 - Merges detected: none (0 auto-archives)

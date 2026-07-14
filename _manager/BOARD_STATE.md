@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-14 14:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-14 15:00 IDT (advance heartbeat)*
 
 ---
 
@@ -16,7 +16,7 @@
 | jn-5871 | **Code** | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) | Code done ~00:58 IDT Jul 9. SHA fc6e5f77 CLEAN. **Zone mismatch persists** (still Code, should be Verify, Day 14+). |
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | "continuew" session IDLE ready_for_prompt:FALSE. SHA 16ec44ea (2 commits). Needs: generate 24 configs, rebase main, create PR. |
 | jn-5870 | **Publish** | [#1656 DRAFT](https://github.com/Jounce-IO/jounce/pull/1656) | **🔴 DRAFT CONFLICTING** | [JN-5870](https://redhat.atlassian.net/browse/JN-5870) | **DRAFT + CONFLICTING** (unchanged). Rebase on main + fix pre-commit + undraft. |
-| jn-5867 | **Publish** | [#1655](https://github.com/Jounce-IO/jounce/pull/1655) | **⏳ CI PENDING** — new run 29329217216 (prev run 29328016742 ALL ✅) | [JN-5867](https://redhat.atlassian.net/browse/JN-5867) — Backlog | **✅ MERGEABLE + e2e-api FIXED** (run 29328016742 ALL PASSING). Joseph pushed again → new run 29329217216 ⏳ PENDING. |
+| jn-5867 | **Publish** | [#1655](https://github.com/Jounce-IO/jounce/pull/1655) | **🔴 pre-commit ❌ FAIL** — run 29329734574 (e2e-api ✅, tox ✅, smoke ✅ but pre-commit ❌) | [JN-5867](https://redhat.atlassian.net/browse/JN-5867) — Backlog | **MERGEABLE** but **pre-commit regression** in Joseph's latest push. Run 29329217216→29329734574 complete. Cascade BLOCKED again. |
 | jn-5869 | **Publish** | [#1657](https://github.com/Jounce-IO/jounce/pull/1657) | **✅ ALL PASSING** (run 29313871650) | [JN-5869](https://redhat.atlassian.net/browse/JN-5869) | **🔴 CONFLICTING** (unchanged). All CI ✅ APPROVED. Needs rebase after #1655 merges. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 19+ days with no session or PR. |
 
@@ -71,14 +71,14 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes Since Last Run (14:30 IDT Jul 14 — delta from 14:00 IDT Jul 14)
+## Key Changes Since Last Run (15:00 IDT Jul 14 — delta from 14:30 IDT Jul 14)
 
 | What observed | Status |
 |---|---|
-| **🎉 #1655 (jn-5867) e2e-api FIXED** | Was ❌ FAILING at 14:00 IDT (run 29326613213). Joseph pushed fix → run 29328016742: **ALL PASSING ✅** (e2e-api ✅, e2e-smoke ✅, all-checks ✅, pre-commit ✅, tox ✅, integration ✅, nox ✅). Then pushed **again** → new run 29329217216 now ⏳ PENDING. State: MERGEABLE. |
-| **#1657 (jn-5869) UNKNOWN + APPROVED (unchanged)** | All CI ✅ (run 29313871650). Awaiting #1655. |
+| **🔴 #1655 (jn-5867) pre-commit REGRESSION** | Run 29329217216 (was ⏳ PENDING at 14:30) completed as **run 29329734574**: **pre-commit ❌ FAIL**, all-checks ❌. ALL functional tests still ✅ (e2e-api ✅, e2e-smoke ✅, tox ✅, integration ✅, nox ✅). Joseph's latest push introduced a pre-commit hook failure. Cascade BLOCKED again. |
+| **#1657 (jn-5869) MERGEABLE + APPROVED (unchanged)** | All CI ✅ (run 29313871650). "no checks reported" = no new push since last green run. Still awaiting #1655. |
 | **#1656 (jn-5870) DRAFT + CONFLICTING (unchanged)** | No changes. |
-| **#1638 e2e-product ❌ FAILED (unchanged)** | Run 29322557233 — e2e-product FAILED + CONFLICTING. |
+| **#1638 e2e-product ❌ FAILED (unchanged)** | Run 29322557233 — e2e-product FAILED + CONFLICTING. Docker build ⏳ PENDING (separate workflow). |
 | **No new merges, 0 auto-archives** | Board static since 13:30 IDT Jul 14. |
 
 ---
@@ -102,13 +102,14 @@ PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM a
 
 ---
 
-### 🎉 #1655 (jn-5867) — e2e-api FIXED, NEW CI RUN PENDING
+### 🔴 #1655 (jn-5867) — pre-commit REGRESSION (cascade BLOCKED)
 
 PR [#1655](https://github.com/Jounce-IO/jounce/pull/1655): "feat(jbenchmark): add Platform enum and remove gcloud from cluster prerequisites"
-- **MERGEABLE** (rebased). Joseph fixed e2e-api — run 29328016742: **ALL PASSING ✅** (e2e-api ✅, e2e-smoke ✅, all-checks ✅, pre-commit ✅, tox ✅, integration ✅, nox ✅).
-- Joseph then pushed **again** → new run 29329217216 ⏳ PENDING (atlas-validate ✅, check-changes ✅, e2e-api/integration/pre-commit/tox ⏳).
+- **MERGEABLE**. Run 29329217216 completed as **run 29329734574**: **pre-commit ❌ FAIL** (pre-commit-all hook failed), all-checks ❌.
+- Functional tests all passing: e2e-api ✅, e2e-smoke ✅, tox ✅, integration ✅, nox ✅, atlas-validate ✅, JIRA Association ✅.
+- Joseph's latest push introduced a pre-commit hook failure — likely trailing whitespace, import sort, or formatting issue.
 - reviewDecision: "" (no review required)
-- **Action:** Watch run 29329217216. When all-green → merge #1655 → rebase #1657 → merge → rebase #1656 → undraft → merge (cascade).
+- **Action:** Fix pre-commit issue (run `pre-commit run --all-files` locally, fix failures, push again).
 
 ---
 
@@ -191,7 +192,7 @@ Sessions at 19:00 IDT Jul 13, 21:00 IDT Jul 13, 03:00 IDT Jul 14, and 06:00 IDT 
 
 ---
 
-## Archived This Run (14:30 IDT Jul 14)
+## Archived This Run (15:00 IDT Jul 14)
 
 None — no new merges since 13:30 IDT.
 

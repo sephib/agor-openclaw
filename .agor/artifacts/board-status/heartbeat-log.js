@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-14 15:00 IDT",
+    actions: 0,
+    findings: 1,
+    status: "ok",
+    summary: "#1655 pre-commit ❌ REGRESSION (run 29329734574) — cascade blocked again; all functional tests still ✅; fix needed",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f607fd93e733f8bfec96a/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-14 14:30 IDT",
     actions: 0,
     findings: 1,
