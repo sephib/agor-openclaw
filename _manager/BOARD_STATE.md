@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-14 12:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-14 13:00 IDT (advance heartbeat)*
 
 ---
 
@@ -10,13 +10,15 @@
 |---------|------|----|----|------|--------|
 | jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | UNKNOWN (stale) | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) | 🔴 DRAFT + UNKNOWN; frozen since Jun 14 |
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — Backlog | Design session done Jun 30. Ready for Plan phase. |
-| jn-5842-jbenchmark-agents-md | **NO ZONE** | [#1658](https://github.com/Jounce-IO/jounce/pull/1658) | **🔴 NEW REGRESSION: pre-commit ❌ FAIL** (run 29320664948; was green at 29312738364) | [JN-5842](https://redhat.atlassian.net/browse/JN-5842) — Backlog | **🔴 pre-commit ❌ + CONFLICTING** — regression triggered by #1666 merge to main. Needs pre-commit fix + rebase. |
-| jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — Backlog | Plan done ~23:06 IDT Jul 8. **Zone mismatch persists** (still Ingest, Day 14). Propose: move to Code + trigger /implement:code. |
-| jn-5871 | **Code** | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) | Code done ~00:58 IDT Jul 9. SHA fc6e5f77 CLEAN. **Zone mismatch persists** (still Code, should be Verify, Day 14). |
+| jn-5842-jbenchmark-agents-md | **NO ZONE** | [#1658](https://github.com/Jounce-IO/jounce/pull/1658) | **🔴 REGRESSION: pre-commit ❌ FAIL** (run 29320664948; was green at 29312738364) | [JN-5842](https://redhat.atlassian.net/browse/JN-5842) — Backlog | **🔴 APPROVED + pre-commit ❌ + CONFLICTING** — regression triggered by #1666 merge to main. Needs pre-commit fix + rebase. |
+| jn-5844-service-lib-sql-agents-md | **Ingest** | — | — | [JN-5844](https://redhat.atlassian.net/browse/JN-5844) | **NEW** — Ingest + Plan sessions done (~12:44/12:50 IDT Jul 14). SHA UNCHANGED (no code commits). Zone mismatch: still Ingest, should move to Code + trigger /implement:code. |
+| jn-5845-helm-cicd-agents-md | **Ingest** | — | — | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) | **NEW** — Ingest + Plan sessions done (~12:41/12:48 IDT Jul 14). SHA UNCHANGED (no code commits). Zone mismatch: still Ingest, should move to Code + trigger /implement:code. |
+| jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — Backlog | Plan done ~23:06 IDT Jul 8. **Zone mismatch persists** (still Ingest, Day 14+). Propose: move to Code + trigger /implement:code. |
+| jn-5871 | **Code** | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) | Code done ~00:58 IDT Jul 9. SHA fc6e5f77 CLEAN. **Zone mismatch persists** (still Code, should be Verify, Day 14+). |
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | "continuew" session IDLE ready_for_prompt:FALSE. SHA 16ec44ea (2 commits). Needs: generate 24 configs, rebase main, create PR. |
 | jn-5870 | **Publish** | [#1656 DRAFT](https://github.com/Jounce-IO/jounce/pull/1656) | **🔴 DRAFT CONFLICTING** | [JN-5870](https://redhat.atlassian.net/browse/JN-5870) | **DRAFT + CONFLICTING** (unchanged). Rebase on main + fix pre-commit + undraft. |
-| jn-5867 | **Publish** | [#1655](https://github.com/Jounce-IO/jounce/pull/1655) | **✅ ALL CI GREEN** (run 29319609925 — all checks ✅ incl. e2e-smoke) but **🔴 NOW CONFLICTING AGAIN** | [JN-5867](https://redhat.atlassian.net/browse/JN-5867) — Backlog | **🔴 CONFLICTING AGAIN** — e2e-smoke DID pass! But #1666 merge to main created new conflict. Needs another rebase (3rd today). |
-| jn-5869 | **Publish** | [#1657](https://github.com/Jounce-IO/jounce/pull/1657) | **✅ ALL PASSING** (run 29313871650) | [JN-5869](https://redhat.atlassian.net/browse/JN-5869) | **🔴 CONFLICTING** (unchanged from 12:00 IDT). All CI ✅ APPROVED. Needs rebase after #1655 merges. |
+| jn-5867 | **Publish** | [#1655](https://github.com/Jounce-IO/jounce/pull/1655) | **✅ ALL CI GREEN** (run 29319609925 — all checks ✅ incl. e2e-smoke) but **🔴 CONFLICTING** | [JN-5867](https://redhat.atlassian.net/browse/JN-5867) — Backlog | **🔴 CONFLICTING** (unchanged from 12:30 IDT). e2e-smoke DID pass. Needs another rebase (3rd today). |
+| jn-5869 | **Publish** | [#1657](https://github.com/Jounce-IO/jounce/pull/1657) | **✅ ALL PASSING** (run 29313871650) | [JN-5869](https://redhat.atlassian.net/browse/JN-5869) | **🔴 CONFLICTING** (unchanged from 12:30 IDT). All CI ✅ APPROVED. Needs rebase after #1655 merges. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 19+ days with no session or PR. |
 
 ---
@@ -26,7 +28,7 @@
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
 | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ UNKNOWN | 🔴 UNKNOWN | 🔴 CONFLICTING 11+ days. Needs rebase + fix e2e or close PR. |
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | **🔴 e2e-product ❌ FAIL** (run 29320529066) | **OPEN, CONFLICTING** | **🔴 e2e-product FAIL + CONFLICTING** (new run 29320529066 — same result). Needs fix + rebase. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | **🟡 e2e-product PENDING** (new run 29322557233 — all others ✅) | **OPEN, MERGEABLE** | **🟡 MERGEABLE + e2e-product PENDING** (was CONFLICTING + e2e-product ❌ at 12:30 IDT — rebased!). All other checks pass. Wait for e2e-product result. |
 
 ---
 
@@ -47,8 +49,8 @@ Active sprint tickets assigned to Joseph with no board worktree:
 | [JN-5848](https://redhat.atlassian.net/browse/JN-5848) | Backlog | [QE] Cross-tool validation of hierarchical AGENTS.md |
 | [JN-5847](https://redhat.atlassian.net/browse/JN-5847) | Backlog | [DEV] Refine existing tests/e2e/AGENTS.md |
 | [JN-5846](https://redhat.atlassian.net/browse/JN-5846) | Backlog | [DEV] Write peripheral app AGENTS.md files |
-| [JN-5845](https://redhat.atlassian.net/browse/JN-5845) | Backlog | [DEV] Write Helm and CI/CD AGENTS.md files |
-| [JN-5844](https://redhat.atlassian.net/browse/JN-5844) | Backlog | [DEV] Write service/lib/sql domain AGENTS.md files |
+| [JN-5845](https://redhat.atlassian.net/browse/JN-5845) | Backlog | [DEV] Write Helm and CI/CD AGENTS.md files — **WORKTREE CREATED 12:35 IDT Jul 14, plan done** |
+| [JN-5844](https://redhat.atlassian.net/browse/JN-5844) | Backlog | [DEV] Write service/lib/sql domain AGENTS.md files — **WORKTREE CREATED 12:35 IDT Jul 14, plan done** |
 | [JN-5826](https://redhat.atlassian.net/browse/JN-5826) | Backlog | [DEV] Execute and monitor benchmark runs on IBM cluster |
 | [JN-5825](https://redhat.atlassian.net/browse/JN-5825) | Backlog | [DOCS] Update apps/jbenchmark/README.md for IBM cluster |
 
@@ -67,26 +69,49 @@ Active sprint tickets assigned to Joseph with no board worktree:
 | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | MERGED Jul 7 | **In Progress** | ❌ Update Jira → Done |
 | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) | [#1648](https://github.com/Jounce-IO/jounce/pull/1648) | MERGED 14:27 IDT Jul 12 | **Backlog** | ❌ Update Jira → Done |
 
-*8 mismatches (+1 JN-5880 added). Note: PR #1659 CLOSED (not merged) — JN-5868 status TBD (work abandoned or to be reopened). Jira MCP 401 — use acli.*
+*8 mismatches (unchanged). Note: PR #1659 CLOSED (not merged) — JN-5868 status TBD (work abandoned or to be reopened). Jira MCP 401 — use acli.*
 
 ---
 
-## Key Changes Since Last Run (12:30 IDT Jul 14 — delta from 12:00 IDT Jul 14)
+## Key Changes Since Last Run (13:00 IDT Jul 14 — delta from 12:30 IDT Jul 14)
 
 | What observed | Status |
 |---|---|
-| **🎉 #1666 (jn-5880) MERGED 12:20 IDT** | jn-5880-validate-tag-glob-fix **ARCHIVED ✅** — JN-5880 → needs Jira Done. |
-| **🔴 #1659 (jn-5868) CLOSED 12:26 IDT** | jn-5868 **ARCHIVED ✅** — PR closed without merging. JN-5868 work abandoned or to be reopened. |
-| **🔴 #1655 (jn-5867) CONFLICTING AGAIN** | Was MERGEABLE at 12:00 IDT; e2e-smoke DID pass (run 29319609925 all ✅). #1666 merge to main created new conflict. Needs 3rd rebase today. |
-| **🔴 #1658 (jn-5842) NEW REGRESSION: pre-commit ❌** | New CI run 29320664948 triggered by #1666 merge — pre-commit ❌ FAIL. Was green at 29312738364. |
-| **#1657 (jn-5869) CONFLICTING (unchanged)** | No change from 12:00 IDT. |
-| **#1638 (off-board) e2e-product ❌ (unchanged)** | New run 29320529066 — same failure. |
+| **🆕 jn-5844-service-lib-sql-agents-md NEW** | Created ~12:35 IDT. Ingest + Plan sessions done (~12:44/12:50 IDT). SHA UNCHANGED — no code commits yet. Zone mismatch: still Ingest. |
+| **🆕 jn-5845-helm-cicd-agents-md NEW** | Created ~12:35 IDT. Ingest + Plan sessions done (~12:41/12:48 IDT). SHA UNCHANGED — no code commits yet. Zone mismatch: still Ingest. |
+| **🟡 #1638 (off-board) MAJOR CHANGE: MERGEABLE + e2e-product PENDING** | Was CONFLICTING + e2e-product ❌ at 12:30 IDT. Now MERGEABLE — rebased between 12:30–13:00 IDT! New CI run 29322557233: all checks ✅ except e2e-product **PENDING**. |
+| **#1655 (jn-5867) CONFLICTING (unchanged)** | Still CONFLICTING from 12:30 IDT. No new CI run. |
+| **#1657 (jn-5869) CONFLICTING + APPROVED (unchanged)** | No change from 12:30 IDT. |
+| **#1658 (jn-5842) APPROVED + pre-commit ❌ CONFLICTING (unchanged)** | Now confirmed APPROVED review decision. pre-commit ❌ + CONFLICTING unchanged. |
 
 ---
 
 ## Attention Items
 
-### 🎉 #1666 (jn-5880) — MERGED 12:20 IDT — ARCHIVED
+### 🆕 jn-5844 + jn-5845 — NEW Worktrees, Plan Done, Awaiting Code
+
+**jn-5844-service-lib-sql-agents-md** ([JN-5844](https://redhat.atlassian.net/browse/JN-5844)):
+- Created ~12:35 IDT Jul 14. Sessions: Ingest (done 12:44) + Plan (done 12:50) — both IDLE, ready_for_prompt:TRUE.
+- SHA UNCHANGED (c960b2bb) — no code commits yet.
+- **Action:** Move to Plan or Code zone + trigger /implement:code.
+
+**jn-5845-helm-cicd-agents-md** ([JN-5845](https://redhat.atlassian.net/browse/JN-5845)):
+- Created ~12:35 IDT Jul 14. Sessions: Ingest (done 12:41) + Plan (done 12:48) — both IDLE, ready_for_prompt:TRUE.
+- SHA UNCHANGED (c960b2bb) — no code commits yet.
+- **Action:** Move to Plan or Code zone + trigger /implement:code.
+
+---
+
+### 🟡 #1638 (off-board JN-5725) — REBASED → MERGEABLE, e2e-product PENDING
+
+PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites"
+- **MAJOR CHANGE**: Was CONFLICTING + e2e-product ❌ at 12:30 IDT. Now **MERGEABLE** — rebased between 12:30–13:00 IDT.
+- New CI run 29322557233: pre-commit ✅, e2e-api ✅, e2e-smoke ✅, tox ✅, integration ✅ — **e2e-product PENDING**.
+- **Action:** Watch for e2e-product result. If ✅ → all CI green, can merge.
+
+---
+
+### 🎉 #1666 (jn-5880) — MERGED 12:20 IDT — ARCHIVED (from previous run)
 
 PR [#1666](https://github.com/Jounce-IO/jounce/pull/1666): "fix(ci): escape + in validate-tag.yml glob pattern (JN-5880)"
 - **MERGED 12:20 IDT Jul 14** — worktree jn-5880-validate-tag-glob-fix **ARCHIVED ✅**
@@ -94,31 +119,29 @@ PR [#1666](https://github.com/Jounce-IO/jounce/pull/1666): "fix(ci): escape + in
 
 ---
 
-### 🔴 #1659 (jn-5868) — CLOSED 12:26 IDT — ARCHIVED
+### 🔴 #1659 (jn-5868) — CLOSED 12:26 IDT — ARCHIVED (from previous run)
 
 PR [#1659](https://github.com/Jounce-IO/jounce/pull/1659): "feat(jbenchmark): add ClusterRegistry loader and clusters.json (JN-5868)"
 - **CLOSED (not merged) 12:26 IDT Jul 14** — worktree jn-5868 **ARCHIVED ✅**
-- Was REGRESSION (pre-commit ❌) + CONFLICTING since 10:30 IDT.
 - **Action:** Determine if JN-5868 work is abandoned or needs rework. Flag for human decision.
 
 ---
 
-### 🔴 #1655 (jn-5867) — CONFLICTING AGAIN (3rd conflict today)
+### 🔴 #1655 (jn-5867) — CONFLICTING (3rd conflict today, unchanged)
 
 PR [#1655](https://github.com/Jounce-IO/jounce/pull/1655): "feat(jbenchmark): add Platform enum and remove gcloud from cluster prerequisites"
 - **e2e-smoke DID PASS** (run 29319609925 — all CI ✅ green).
-- **NOW CONFLICTING** — #1666 merge to main created new conflict. This is the 3rd conflict today.
+- **CONFLICTING** (unchanged from 12:30 IDT). This is the 3rd conflict today.
 - reviewDecision: "" (no reviewer assigned or review cleared)
 - **Action:** Rebase again on main (after #1666). Cascade chain is still blocked.
 
 ---
 
-### 🔴 #1658 (jn-5842) — REGRESSION: pre-commit ❌ (NEW since 12:00 IDT)
+### 🔴 #1658 (jn-5842) — APPROVED + pre-commit ❌ REGRESSION + CONFLICTING (unchanged)
 
 PR [#1658](https://github.com/Jounce-IO/jounce/pull/1658): "docs(jbenchmark): add app-level AGENTS.md with benchmark platform context (JN-5842)"
-- **NEW REGRESSION**: pre-commit ❌ FAIL (run 29320664948 — triggered by #1666 merge to main).
-- Was ALL GREEN (run 29312738364). all-checks ❌.
-- e2e-api ✅, e2e-smoke ✅, integration ✅, tox ✅ — only pre-commit failing.
+- REGRESSION: pre-commit ❌ FAIL (run 29320664948 — triggered by #1666 merge to main, unchanged from 12:30 IDT).
+- **APPROVED** (reviewDecision confirmed). e2e-api ✅, e2e-smoke ✅, integration ✅, tox ✅ — only pre-commit failing.
 - Also CONFLICTING.
 - **Action:** Investigate pre-commit failure (likely trailing whitespace or line endings in AGENTS.md). Fix + rebase.
 
@@ -132,13 +155,6 @@ PR [#1657](https://github.com/Jounce-IO/jounce/pull/1657): "feat(jbenchmark): ad
 - **Action:** After #1655 merges → rebase #1657 on new main → merge.
 
 ---
-
-### 🔴 #1638 (off-board) — e2e-product ❌ FAIL + CONFLICTING
-
-PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites"
-- e2e-product ❌ FAIL (new run 29320529066 — same failure pattern).
-- Also CONFLICTING.
-- **Action:** Fix e2e-product failure + rebase.
 
 ---
 
@@ -188,7 +204,7 @@ PR [#1656](https://github.com/Jounce-IO/jounce/pull/1656): "feat(jbenchmark): ad
 ### ⚠️ Overnight Session Failures (4 consecutive — no new failures since 09:00 IDT)
 
 Sessions at 19:00 IDT Jul 13, 21:00 IDT Jul 13, 03:00 IDT Jul 14, and 06:00 IDT Jul 14 all failed.
-- Daytime sessions 09:00–12:30 IDT Jul 14 all successful.
+- Daytime sessions 09:00–13:00 IDT Jul 14 all successful.
 - **Action:** Investigate why overnight sessions are failing. Flag for human review.
 
 ---

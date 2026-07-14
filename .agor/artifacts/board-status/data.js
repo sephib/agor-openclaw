@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-14 12:30 IDT";
+export const LAST_UPDATED = "2026-07-14 13:00 IDT";
 
 export const WORKTREES = [
   {
@@ -47,15 +47,15 @@ export const WORKTREES = [
     status: "🔴 DRAFT + CONFLICTING (unchanged). Rebase on main + fix pre-commit + undraft.",
     blockedOn: "DRAFT + CONFLICTING",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5ff6815d7399b55e1efb/",
-    sessionLabel: "heartbeat 12:30 IDT Jul 14 — #1656 DRAFT + CONFLICTING (unchanged)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6011f8677318b00c6b82/",
+    sessionLabel: "heartbeat 13:00 IDT Jul 14 — #1656 DRAFT + CONFLICTING (unchanged)",
     recentSessions: [
       {
-        sessionId: "019f5ff6815d7399b55e1efb",
-        url: "http://127.0.0.1:3030/ui/s/019f5ff6815d7399b55e1efb/",
-        title: "heartbeat 12:30 IDT Jul 14 — #1656 DRAFT + CONFLICTING (unchanged)",
+        sessionId: "019f6011f8677318b00c6b82",
+        url: "http://127.0.0.1:3030/ui/s/019f6011f8677318b00c6b82/",
+        title: "heartbeat 13:00 IDT Jul 14 — #1656 DRAFT + CONFLICTING (unchanged)",
         status: "running",
-        timestamp: "2026-07-14 12:30 IDT",
+        timestamp: "2026-07-14 13:00 IDT",
         outputFile: null,
       },
       {
@@ -105,14 +105,22 @@ export const WORKTREES = [
     status: "🔴 CONFLICTING AGAIN — e2e-smoke DID PASS (run 29319609925 all ✅). But #1666 merge created new conflict. Needs 3rd rebase today. Cascade still blocked.",
     blockedOn: "CONFLICTING — needs rebase after #1666 merge to main",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5ff6815d7399b55e1efb/",
-    sessionLabel: "heartbeat 12:30 IDT Jul 14 — #1655 CONFLICTING AGAIN (e2e-smoke ✅ but #1666 broke main)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6011f8677318b00c6b82/",
+    sessionLabel: "heartbeat 13:00 IDT Jul 14 — #1655 CONFLICTING (unchanged from 12:30 IDT)",
     recentSessions: [
+      {
+        sessionId: "019f6011f8677318b00c6b82",
+        url: "http://127.0.0.1:3030/ui/s/019f6011f8677318b00c6b82/",
+        title: "heartbeat 13:00 IDT Jul 14 — #1655 CONFLICTING (unchanged from 12:30 IDT)",
+        status: "running",
+        timestamp: "2026-07-14 13:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f5ff6815d7399b55e1efb",
         url: "http://127.0.0.1:3030/ui/s/019f5ff6815d7399b55e1efb/",
         title: "heartbeat 12:30 IDT Jul 14 — #1655 CONFLICTING AGAIN (e2e-smoke ✅; #1666 merge conflict)",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-14 12:30 IDT",
         outputFile: null,
       },
@@ -163,15 +171,15 @@ export const WORKTREES = [
     status: "🔴 CONFLICTING + APPROVED (unchanged from 12:00 IDT). All CI ✅ GREEN (run 29313871650). Needs rebase after #1655 merges.",
     blockedOn: "CONFLICTING — rebase needed after #1655 merges",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5ff6815d7399b55e1efb/",
-    sessionLabel: "heartbeat 12:30 IDT Jul 14 — #1657 CONFLICTING + APPROVED (unchanged)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6011f8677318b00c6b82/",
+    sessionLabel: "heartbeat 13:00 IDT Jul 14 — #1657 CONFLICTING + APPROVED (unchanged)",
     recentSessions: [
       {
-        sessionId: "019f5ff6815d7399b55e1efb",
-        url: "http://127.0.0.1:3030/ui/s/019f5ff6815d7399b55e1efb/",
-        title: "heartbeat 12:30 IDT Jul 14 — #1657 CONFLICTING + APPROVED (unchanged)",
+        sessionId: "019f6011f8677318b00c6b82",
+        url: "http://127.0.0.1:3030/ui/s/019f6011f8677318b00c6b82/",
+        title: "heartbeat 13:00 IDT Jul 14 — #1657 CONFLICTING + APPROVED (unchanged)",
         status: "running",
-        timestamp: "2026-07-14 12:30 IDT",
+        timestamp: "2026-07-14 13:00 IDT",
         outputFile: null,
       },
       {
@@ -288,6 +296,74 @@ export const WORKTREES = [
     lastActive: "2026-06-30 12:45 IDT",
   },
   {
+    ticket: "JN-5844",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5844",
+    title: "service/lib/sql domain AGENTS.md (JN-5844)",
+    branch: "jn-5844-service-lib-sql-agents-md",
+    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5844-service-lib-sql-agents-md",
+    zone: "Ingest",
+    pr: null,
+    prUrl: null,
+    status: "🆕 NEW — Ingest + Plan sessions done (~12:44/12:50 IDT Jul 14). SHA UNCHANGED — no code commits yet. Zone mismatch: still Ingest, needs Code + /implement:code trigger.",
+    blockedOn: "Zone mismatch — plan done, needs Code trigger",
+    blockedType: "active",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f60038538724888887253/",
+    sessionLabel: "Plan JN-5844 (done, ready_for_prompt:TRUE)",
+    recentSessions: [
+      {
+        sessionId: "019f60038538724888887253",
+        url: "http://127.0.0.1:3030/ui/s/019f60038538724888887253/",
+        title: "Plan JN-5844 — service/lib/sql AGENTS.md (done)",
+        status: "idle",
+        timestamp: "2026-07-14 12:50 IDT",
+        outputFile: null,
+      },
+      {
+        sessionId: "019f5ffc0ef371f7af6a753c",
+        url: "http://127.0.0.1:3030/ui/s/019f5ffc0ef371f7af6a753c/",
+        title: "Ingest JN-5844 — service/lib/sql AGENTS.md (done)",
+        status: "idle",
+        timestamp: "2026-07-14 12:44 IDT",
+        outputFile: null,
+      },
+    ],
+    lastActive: "2026-07-14 12:50 IDT",
+  },
+  {
+    ticket: "JN-5845",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5845",
+    title: "Helm + CI/CD AGENTS.md (JN-5845)",
+    branch: "jn-5845-helm-cicd-agents-md",
+    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5845-helm-cicd-agents-md",
+    zone: "Ingest",
+    pr: null,
+    prUrl: null,
+    status: "🆕 NEW — Ingest + Plan sessions done (~12:41/12:48 IDT Jul 14). SHA UNCHANGED — no code commits yet. Zone mismatch: still Ingest, needs Code + /implement:code trigger.",
+    blockedOn: "Zone mismatch — plan done, needs Code trigger",
+    blockedType: "active",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f60018c447a40bbf6c152/",
+    sessionLabel: "Plan JN-5845 (done, ready_for_prompt:TRUE)",
+    recentSessions: [
+      {
+        sessionId: "019f60018c447a40bbf6c152",
+        url: "http://127.0.0.1:3030/ui/s/019f60018c447a40bbf6c152/",
+        title: "Plan JN-5845 — Helm + CI/CD AGENTS.md (done)",
+        status: "idle",
+        timestamp: "2026-07-14 12:48 IDT",
+        outputFile: null,
+      },
+      {
+        sessionId: "019f5ffc1fe87adabd290fed",
+        url: "http://127.0.0.1:3030/ui/s/019f5ffc1fe87adabd290fed/",
+        title: "Ingest JN-5845 — Helm + CI/CD AGENTS.md (done)",
+        status: "idle",
+        timestamp: "2026-07-14 12:41 IDT",
+        outputFile: null,
+      },
+    ],
+    lastActive: "2026-07-14 12:48 IDT",
+  },
+  {
     ticket: "JN-5842",
     ticketUrl: "https://redhat.atlassian.net/browse/JN-5842",
     title: "jbenchmark app-level AGENTS.md (JN-5842)",
@@ -296,18 +372,18 @@ export const WORKTREES = [
     zone: "NO ZONE",
     pr: "#1658",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1658",
-    status: "🔴 NEW REGRESSION: pre-commit ❌ FAIL (run 29320664948 — triggered by #1666 merge to main). Was ALL GREEN at 29312738364. Also CONFLICTING. Needs pre-commit fix + rebase.",
+    status: "🔴 APPROVED + REGRESSION: pre-commit ❌ FAIL (run 29320664948 — triggered by #1666 merge). Also CONFLICTING. Needs pre-commit fix + rebase. (unchanged from 12:30 IDT)",
     blockedOn: "pre-commit ❌ REGRESSION + CONFLICTING",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5ff6815d7399b55e1efb/",
-    sessionLabel: "heartbeat 12:30 IDT Jul 14 — #1658 NEW REGRESSION pre-commit ❌ (run 29320664948)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6011f8677318b00c6b82/",
+    sessionLabel: "heartbeat 13:00 IDT Jul 14 — #1658 APPROVED + pre-commit ❌ + CONFLICTING (unchanged)",
     recentSessions: [
       {
-        sessionId: "019f5ff6815d7399b55e1efb",
-        url: "http://127.0.0.1:3030/ui/s/019f5ff6815d7399b55e1efb/",
-        title: "heartbeat 12:30 IDT Jul 14 — #1658 NEW REGRESSION: pre-commit ❌ (run 29320664948)",
+        sessionId: "019f6011f8677318b00c6b82",
+        url: "http://127.0.0.1:3030/ui/s/019f6011f8677318b00c6b82/",
+        title: "heartbeat 13:00 IDT Jul 14 — #1658 APPROVED + pre-commit ❌ + CONFLICTING (unchanged)",
         status: "running",
-        timestamp: "2026-07-14 12:30 IDT",
+        timestamp: "2026-07-14 13:00 IDT",
         outputFile: null,
       },
       {
@@ -503,6 +579,14 @@ export const MERGED = [
 
 export const ALERTS = [
   {
+    level: "yellow",
+    message: "🆕 jn-5844 (JN-5844) + jn-5845 (JN-5845): NEW worktrees created ~12:35 IDT Jul 14. Plan done. Still Ingest zone — needs move to Code + /implement:code trigger.",
+  },
+  {
+    level: "yellow",
+    message: "🟡 #1638 (JN-5725, off-board): MAJOR CHANGE — REBASED between 12:30–13:00 IDT! Now MERGEABLE. New CI run 29322557233: all checks ✅ except e2e-product PENDING. Watch for result.",
+  },
+  {
     level: "green",
     message: "🎉 #1666 (jn-5880 JN-5880): MERGED 12:20 IDT Jul 14. jn-5880-validate-tag-glob-fix ARCHIVED ✅. JN-5880 → needs Jira Done.",
   },
@@ -512,19 +596,15 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 #1655 (jn-5867 JN-5867): CONFLICTING AGAIN (3rd conflict today). e2e-smoke ✅ DID PASS (run 29319609925 all green). But #1666 merge created new conflict. Needs rebase.",
+    message: "🔴 #1655 (jn-5867 JN-5867): CONFLICTING (3rd conflict today, unchanged from 12:30 IDT). e2e-smoke ✅ DID PASS (run 29319609925 all green). Needs rebase.",
   },
   {
     level: "red",
-    message: "🔴 #1658 (jn-5842 JN-5842): NEW REGRESSION — pre-commit ❌ FAIL (run 29320664948, triggered by #1666 merge). Was green at 29312738364. Also CONFLICTING. Fix: pre-commit + rebase.",
+    message: "🔴 #1658 (jn-5842 JN-5842): APPROVED + REGRESSION — pre-commit ❌ FAIL (run 29320664948, unchanged from 12:30 IDT). Also CONFLICTING. Fix: pre-commit + rebase.",
   },
   {
     level: "red",
     message: "🔴 #1657 (jn-5869 JN-5869): CONFLICTING + APPROVED (unchanged). All CI ✅ GREEN (run 29313871650). Awaits #1655 merge then rebase.",
-  },
-  {
-    level: "red",
-    message: "🔴 #1638 (JN-5725, off-board): CI run 29320529066 — e2e-product ❌ FAIL (same failure). Also CONFLICTING. Fix: e2e-product + rebase.",
   },
   {
     level: "red",

@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-14 13:00 IDT",
+    actions: 0,
+    findings: 3,
+    status: "ok",
+    summary: "2 NEW worktrees (jn-5844, jn-5845) — Ingest+Plan done, need Code trigger; #1638 REBASED → MERGEABLE + e2e-product PENDING (new run 29322557233); #1655/#1657/#1658 cascade still CONFLICTING (unchanged)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6011f8677318b00c6b82/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-14 12:30 IDT",
     actions: 2,
     findings: 4,
