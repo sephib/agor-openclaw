@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-14 09:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-14 10:00 IDT (advance heartbeat)*
 
 ---
 
@@ -10,7 +10,7 @@
 |---------|------|----|----|------|--------|
 | jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | UNKNOWN (stale) | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) | 🔴 DRAFT + UNKNOWN; frozen since Jun 14 |
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — Backlog | Design session done Jun 30. Ready for Plan phase. |
-| jn-5842-jbenchmark-agents-md | **NO ZONE** | [#1658](https://github.com/Jounce-IO/jounce/pull/1658) | CONFLICTING (no new run) | [JN-5842](https://redhat.atlassian.net/browse/JN-5842) — Backlog | **🔴 CHANGES_REQUESTED** from markVaykhansky. **CONFLICTING**. Must address review comments + rebase. |
+| jn-5842-jbenchmark-agents-md | **NO ZONE** | [#1658](https://github.com/Jounce-IO/jounce/pull/1658) | **🔄 CI RUNNING** (run 29312738364, e2e-smoke ⏳ PENDING) | [JN-5842](https://redhat.atlassian.net/browse/JN-5842) — Backlog | **🟡 CONFLICT RESOLVED — MERGEABLE. CI running (e2e-smoke pending). reviewDecision cleared.** Was CONFLICTING+CHANGES_REQUESTED. |
 | jn-5868 | **Publish** | [#1659](https://github.com/Jounce-IO/jounce/pull/1659) | **✅ ALL PASSING** (run 29254605349) | [JN-5868](https://redhat.atlassian.net/browse/JN-5868) — Backlog | **✅ ALL CI GREEN. MERGEABLE.** Depends on jn-5867 (#1655) + jn-5869 (#1657) merging first. |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — Backlog | Plan done ~23:06 IDT Jul 8. **Zone mismatch persists** (still Ingest, Day 14). Propose: move to Code + trigger /implement:code. |
 | jn-5871 | **Code** | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) | Code done ~00:58 IDT Jul 9. SHA fc6e5f77 CLEAN. **Zone mismatch persists** (still Code, should be Verify, Day 14). |
@@ -27,7 +27,7 @@
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
 | [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ UNKNOWN | 🔴 UNKNOWN | 🔴 CONFLICTING 11+ days. Needs rebase + fix e2e or close PR. |
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | **❓ Only CodeRabbit visible** (no new CI run triggered) | **CONFLICTING** | CONFLICTING since overnight. Last known CI: run 29259367493 — nox ✅ tox ✅ but e2e-smoke ❌. No new run visible yet. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | **❌ FAILING** (run 29312605152: e2e-api ❌, all-checks ❌) | **OPEN, MERGEABLE** | **CONFLICT RESOLVED** — new CI run 29312605152: e2e-api ❌ FAIL (5m9s), e2e-tests ❌ FAIL. nox/tox/integration/pre-commit all pass. **e2e-api is the blocker.** |
 
 ---
 
@@ -70,15 +70,16 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes Since Last Run (09:30 IDT Jul 14 — delta from 09:00 IDT Jul 14)
+## Key Changes Since Last Run (10:00 IDT Jul 14 — delta from 09:30 IDT Jul 14)
 
 | What observed | Status |
 |---|---|
 | **#1655 (jn-5867) STILL CONFLICTING** | No change. Old CI run 29252812787 still green but PR is CONFLICTING. Needs rebase. **Cascade chain head BLOCKED.** |
 | **#1657 (jn-5869) unchanged** | Still ALL CI GREEN (run 29255496217). MERGEABLE. Awaits #1655. |
 | **#1659 (jn-5868) unchanged** | Still ALL CI GREEN (run 29254605349). MERGEABLE. Awaits #1655+#1657. |
-| **#1638 (off-board) unchanged** | Still CONFLICTING. Only CodeRabbit in CI — no new run. |
-| **#1658 (jn-5842) unchanged** | Still CONFLICTING + CHANGES_REQUESTED. No new CI run. |
+| **🟡 #1638 (off-board) — CONFLICT RESOLVED** | Was CONFLICTING. Now MERGEABLE — new CI run 29312605152: **e2e-api ❌ FAIL** (was e2e-smoke before). nox/tox/integration/pre-commit all pass. |
+| **🟡 #1658 (jn-5842) — CONFLICT RESOLVED** | Was CONFLICTING + CHANGES_REQUESTED. Now MERGEABLE — reviewDecision cleared. New CI run 29312738364: **e2e-smoke ⏳ PENDING**, all others passing. |
+| **⚠️ 4th overnight session failure** | Session 019f5e92 (06:00 IDT Jul 14) also failed — 4 consecutive, not 3. |
 | **No new merges** | Board composition unchanged. |
 
 ---
@@ -113,21 +114,23 @@ PR [#1659](https://github.com/Jounce-IO/jounce/pull/1659): "feat(jbenchmark): ad
 
 ---
 
-### 🔴 #1638 (off-board) — CONFLICTING (last CI: e2e-smoke ❌)
+### 🔴 #1638 (off-board) — CONFLICT RESOLVED but e2e-api ❌ FAILING
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites"
-- **CONFLICTING** (state changed overnight)
-- Last known CI run 29259367493: nox ✅ tox ✅ but **e2e-smoke ❌** + e2e-tests ❌
-- No new CI run visible (only CodeRabbit showing)
-- **Action:** Diagnose e2e-smoke failure, rebase to resolve conflict.
+- **CONFLICT RESOLVED** — now MERGEABLE (someone rebased)
+- New CI run 29312605152: **all-checks ❌ FAIL, e2e-api ❌ FAIL (5m9s), e2e-tests ❌ FAIL**
+- Passing: nox ✅, tox ✅, integration ✅, pre-commit ✅, bake ✅
+- **Action:** Diagnose e2e-api failure in run 29312605152. Fix and re-push.
 
 ---
 
-### 🔴 #1658 (jn-5842) — CONFLICTING + CHANGES_REQUESTED (unchanged)
+### 🟡 #1658 (jn-5842) — CONFLICT RESOLVED, CI Running (e2e-smoke pending)
 
 PR [#1658](https://github.com/Jounce-IO/jounce/pull/1658): "docs(jbenchmark): add app-level AGENTS.md"
-- **CONFLICTING** + CHANGES_REQUESTED from markVaykhansky
-- **Action:** Address review comments + rebase on main.
+- **CONFLICT RESOLVED** — now MERGEABLE (was CONFLICTING since Jul 13)
+- reviewDecision now empty (was CHANGES_REQUESTED from markVaykhansky — may have been dismissed)
+- New CI run 29312738364: e2e-smoke ⏳ PENDING; all other checks passing (e2e-api ✅, integration ✅, nox ✅, tox ✅, pre-commit ✅)
+- **Action:** Wait for e2e-smoke to complete. Verify reviewDecision is truly cleared.
 
 ---
 
@@ -172,10 +175,10 @@ PR [#1656](https://github.com/Jounce-IO/jounce/pull/1656): "feat(jbenchmark): ad
 
 ---
 
-### ⚠️ Overnight Session Failures (3 consecutive)
+### ⚠️ Overnight Session Failures (4 consecutive confirmed)
 
-Sessions at 19:00 IDT Jul 13, 21:00 IDT Jul 13, and 03:00 IDT Jul 14 all failed.
-- Caused 24.5-hour board state gap — #1655 went from "READY TO MERGE" to CONFLICTING without detection.
+Sessions at 19:00 IDT Jul 13, 21:00 IDT Jul 13, 03:00 IDT Jul 14, and 06:00 IDT Jul 14 all failed.
+- 4th failure: session 019f5e92 (Weekday Overnight — 2026-07-14T03:00:00.000Z = 06:00 IDT Jul 14) — confirmed failed.
 - **Action:** Investigate why overnight sessions are failing. Flag for human review.
 
 ---

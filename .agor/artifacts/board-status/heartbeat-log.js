@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-14 10:00 IDT",
+    actions: 0,
+    findings: 4,
+    status: "ok",
+    summary: "#1655 still CONFLICTING (cascade blocked); #1658 conflict RESOLVED (CI running, e2e-smoke pending); #1638 conflict RESOLVED (e2e-api ❌ failing); 4th overnight session failure confirmed",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5f6d2b927fa3af57afac/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-14 09:30 IDT",
     actions: 0,
     findings: 5,

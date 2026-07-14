@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-14 09:30 IDT";
+export const LAST_UPDATED = "2026-07-14 10:00 IDT";
 
 export const WORKTREES = [
   {
@@ -47,9 +47,17 @@ export const WORKTREES = [
     status: "🔴 DRAFT + CONFLICTING (unchanged). Rebase on main + fix pre-commit + undraft.",
     blockedOn: "DRAFT + CONFLICTING",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5f51b39b71c8a4764eba/",
-    sessionLabel: "heartbeat 09:30 IDT Jul 14 — #1656 DRAFT + CONFLICTING (unchanged)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5f6d2b927fa3af57afac/",
+    sessionLabel: "heartbeat 10:00 IDT Jul 14 — #1656 DRAFT + CONFLICTING (unchanged)",
     recentSessions: [
+      {
+        sessionId: "019f5f6d2b927fa3af57afac",
+        url: "http://127.0.0.1:3030/ui/s/019f5f6d2b927fa3af57afac/",
+        title: "heartbeat 10:00 IDT Jul 14 — #1656 DRAFT + CONFLICTING (unchanged)",
+        status: "completed",
+        timestamp: "2026-07-14 10:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f5f51b39b71c8a4764eba",
         url: "http://127.0.0.1:3030/ui/s/019f5f51b39b71c8a4764eba/",
@@ -105,9 +113,17 @@ export const WORKTREES = [
     status: "🔴 NOW CONFLICTING — was MERGEABLE+ALL GREEN at 18:00 IDT Jul 13. Something merged into main overnight. Old CI run 29252812787 all pass but state is CONFLICTING. Needs rebase + new CI run. CASCADE CHAIN HEAD BLOCKED.",
     blockedOn: "CONFLICTING — needs rebase on main",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5f51b39b71c8a4764eba/",
-    sessionLabel: "heartbeat 09:30 IDT Jul 14 — #1655 STILL CONFLICTING (cascade chain blocked)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5f6d2b927fa3af57afac/",
+    sessionLabel: "heartbeat 10:00 IDT Jul 14 — #1655 STILL CONFLICTING (cascade chain blocked)",
     recentSessions: [
+      {
+        sessionId: "019f5f6d2b927fa3af57afac",
+        url: "http://127.0.0.1:3030/ui/s/019f5f6d2b927fa3af57afac/",
+        title: "heartbeat 10:00 IDT Jul 14 — #1655 STILL CONFLICTING (unchanged; needs rebase)",
+        status: "completed",
+        timestamp: "2026-07-14 10:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f5f51b39b71c8a4764eba",
         url: "http://127.0.0.1:3030/ui/s/019f5f51b39b71c8a4764eba/",
@@ -163,9 +179,17 @@ export const WORKTREES = [
     status: "✅ ALL CI GREEN (run 29255496217 COMPLETE): JIRA ✅, pre-commit ✅, e2e-api ✅, e2e-smoke ✅, integration ✅, nox ✅, tox ✅. MERGEABLE. Ready to merge after #1655 rebase + merge.",
     blockedOn: "Awaiting jn-5867 (#1655) rebase + merge — ordering constraint",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5f51b39b71c8a4764eba/",
-    sessionLabel: "heartbeat 09:30 IDT Jul 14 — #1657 ALL CI GREEN (run 29255496217 unchanged); awaits #1655",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5f6d2b927fa3af57afac/",
+    sessionLabel: "heartbeat 10:00 IDT Jul 14 — #1657 ALL CI GREEN (run 29255496217 unchanged); awaits #1655",
     recentSessions: [
+      {
+        sessionId: "019f5f6d2b927fa3af57afac",
+        url: "http://127.0.0.1:3030/ui/s/019f5f6d2b927fa3af57afac/",
+        title: "heartbeat 10:00 IDT Jul 14 — #1657 ALL CI GREEN (run 29255496217 unchanged); awaits #1655",
+        status: "completed",
+        timestamp: "2026-07-14 10:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f5f51b39b71c8a4764eba",
         url: "http://127.0.0.1:3030/ui/s/019f5f51b39b71c8a4764eba/",
@@ -296,12 +320,20 @@ export const WORKTREES = [
     zone: "NO ZONE",
     pr: "#1658",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1658",
-    status: "🔴 CONFLICTING (since Jul 13). Still CHANGES_REQUESTED from markVaykhansky. Must rebase + address review comments.",
-    blockedOn: "CONFLICTING + CHANGES_REQUESTED (markVaykhansky) — needs rebase + review response",
+    status: "🟡 CONFLICT RESOLVED — now MERGEABLE. CI run 29312738364: e2e-smoke ⏳ PENDING (all others passing). reviewDecision cleared. Was CONFLICTING+CHANGES_REQUESTED.",
+    blockedOn: "Awaiting e2e-smoke CI result (run 29312738364)",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5f51b39b71c8a4764eba/",
-    sessionLabel: "heartbeat 09:30 IDT Jul 14 — #1658 CONFLICTING + CHANGES_REQUESTED (unchanged)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5f6d2b927fa3af57afac/",
+    sessionLabel: "heartbeat 10:00 IDT Jul 14 — #1658 CONFLICT RESOLVED, CI running (e2e-smoke pending)",
     recentSessions: [
+      {
+        sessionId: "019f5f6d2b927fa3af57afac",
+        url: "http://127.0.0.1:3030/ui/s/019f5f6d2b927fa3af57afac/",
+        title: "heartbeat 10:00 IDT Jul 14 — #1658 CONFLICT RESOLVED, CI run 29312738364 (e2e-smoke pending)",
+        status: "completed",
+        timestamp: "2026-07-14 10:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f5f51b39b71c8a4764eba",
         url: "http://127.0.0.1:3030/ui/s/019f5f51b39b71c8a4764eba/",
@@ -334,14 +366,6 @@ export const WORKTREES = [
         timestamp: "2026-07-13 17:30 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f5bc71d397def87ef1edd",
-        url: "http://127.0.0.1:3030/ui/s/019f5bc71d397def87ef1edd/",
-        title: "heartbeat 17:00 IDT Jul 13 — #1658 CONFLICTING + CHANGES_REQUESTED (unchanged)",
-        status: "completed",
-        timestamp: "2026-07-13 17:00 IDT",
-        outputFile: null,
-      },
     ],
     lastActive: "2026-07-13 12:32 IDT",
   },
@@ -357,9 +381,17 @@ export const WORKTREES = [
     status: "✅ ALL CI GREEN (run 29254605349): all-checks ✅, all suites pass. MERGEABLE. Awaits #1655 rebase+merge then #1657 merge (ordering constraint).",
     blockedOn: "Awaiting jn-5867 (#1655) rebase+merge + jn-5869 (#1657) merge — ordering constraint",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5f51b39b71c8a4764eba/",
-    sessionLabel: "heartbeat 09:30 IDT Jul 14 — #1659 ALL CI GREEN (run 29254605349 unchanged); awaits #1655+#1657",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5f6d2b927fa3af57afac/",
+    sessionLabel: "heartbeat 10:00 IDT Jul 14 — #1659 ALL CI GREEN (run 29254605349 unchanged); awaits #1655+#1657",
     recentSessions: [
+      {
+        sessionId: "019f5f6d2b927fa3af57afac",
+        url: "http://127.0.0.1:3030/ui/s/019f5f6d2b927fa3af57afac/",
+        title: "heartbeat 10:00 IDT Jul 14 — #1659 ALL CI GREEN (run 29254605349 unchanged); awaits #1655+#1657",
+        status: "completed",
+        timestamp: "2026-07-14 10:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f5f51b39b71c8a4764eba",
         url: "http://127.0.0.1:3030/ui/s/019f5f51b39b71c8a4764eba/",
@@ -574,11 +606,11 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 #1638 (JN-5725, off-board): NOW CONFLICTING. Last CI run 29259367493: nox ✅ tox ✅ but e2e-smoke ❌. No new run visible. Needs rebase + e2e-smoke fix.",
+    message: "🔴 #1638 (JN-5725, off-board): CONFLICT RESOLVED — now MERGEABLE. New CI run 29312605152: e2e-api ❌ FAIL (5m9s), all-checks ❌. nox/tox/integration/pre-commit all pass. Fix e2e-api.",
   },
   {
-    level: "red",
-    message: "🔴 #1658 (jn-5842 JN-5842): CONFLICTING (since Jul 13) + CHANGES_REQUESTED (markVaykhansky). Needs rebase + address review comments.",
+    level: "yellow",
+    message: "🟡 #1658 (jn-5842 JN-5842): CONFLICT RESOLVED — now MERGEABLE. CI run 29312738364: e2e-smoke ⏳ PENDING (all others pass). reviewDecision cleared. Await e2e-smoke result.",
   },
   {
     level: "red",
@@ -586,7 +618,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "⚠️ 3 consecutive overnight session failures (19:00+21:00 IDT Jul 13, 03:00 IDT Jul 14) — caused 24.5h board state gap. Investigate why overnight sessions are failing.",
+    message: "⚠️ 4 consecutive session failures (19:00+21:00 IDT Jul 13, 03:00+06:00 IDT Jul 14) — 4th confirmed this run (019f5e92). Investigate why overnight sessions are failing.",
   },
   {
     level: "red",
