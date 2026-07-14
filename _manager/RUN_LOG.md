@@ -1273,3 +1273,12 @@
 - CI changes: #1655 — new run 29319609925 (rebased, MERGEABLE; e2e-smoke ⏳); #1657 — CONFLICTING (was UNKNOWN); #1666 — new CI run 29320059539 (no longer DRAFT); #1659 — still pre-commit ❌; #1638 — still e2e-product ❌
 - Flags: #1655 CASCADE CHAIN PROGRESS (MERGEABLE again); #1657 newly CONFLICTING; #1666 undrafted; 7 Jira mismatches unchanged; zone mismatch jn-5865 (Day 14); zone mismatch jn-5871 (Day 14)
 - Next: Watch #1655 e2e-smoke; when passes → merge → rebase #1657 → merge; watch #1666 CI; fix #1659 pre-commit + rebase; fix #1658 rebase
+
+## 12:30 IDT — Weekday Daytime Heartbeat (Jul 14 2026)
+- PRs checked: #1666 (MERGED 12:20 IDT — **ARCHIVED jn-5880** ✅), #1659 (CLOSED 12:26 IDT — **ARCHIVED jn-5868** ✅), #1655 (CONFLICTING AGAIN — e2e-smoke DID pass run 29319609925; #1666 merge created new conflict), #1658 (NEW REGRESSION: pre-commit ❌ run 29320664948 — triggered by #1666 merge), #1657 (CONFLICTING + APPROVED — unchanged), #1638 (e2e-product ❌ new run 29320529066 — unchanged), #1656 (DRAFT + CONFLICTING — unchanged)
+- Merges detected: **#1666 MERGED 12:20 IDT** (jn-5880). Closures: **#1659 CLOSED 12:26 IDT** (jn-5868).
+- Auto-archives: **jn-5880-validate-tag-glob-fix** (PR #1666 MERGED), **jn-5868** (PR #1659 CLOSED) — 2 total
+- CI changes: **#1655 e2e-smoke ✅ PASSED** (run 29319609925 all green) but NOW CONFLICTING again from #1666 merge. **#1658 NEW REGRESSION: pre-commit ❌** (run 29320664948). **#1638 new run 29320529066** e2e-product ❌ (same failure).
+- Jira mismatches: 8 total (+1 JN-5880 from #1666 merge). Jira MCP 401 — acli required.
+- Flags: 🔴 JN-5868 PR CLOSED (not merged) — work abandoned or needs rework; human decision needed. 🔴 cascade chain still blocked (#1655 conflicting again). 🔴 #1658 pre-commit regression.
+- Next: #1655 needs rebase (3rd today after #1666 merge). Then #1657 can rebase. #1658 needs pre-commit fix. JN-5868 needs human decision.
