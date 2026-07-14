@@ -1,6 +1,8 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-13 18:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-14 09:00 IDT (advance heartbeat)*
+
+> ⚠️ BOARD_STATE.md was 24.5 hours old — 3 overnight sessions failed (19:00, 21:00 IDT Jul 13; 03:00 IDT Jul 14). Full refresh performed.
 
 ---
 
@@ -8,21 +10,17 @@
 
 | Worktree | Zone | PR | CI | Jira | Status |
 |---------|------|----|----|------|--------|
-| jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | CONFLICTING | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) | 🔴 DRAFT CONFLICTING; frozen |
+| jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | UNKNOWN (stale) | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) | 🔴 DRAFT + UNKNOWN; frozen since Jun 14 |
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — Backlog | Design session done Jun 30. Ready for Plan phase. |
-| jn-5842-jbenchmark-agents-md | **NO ZONE** | [#1658](https://github.com/Jounce-IO/jounce/pull/1658) | CONFLICTING (no new run) | [JN-5842](https://redhat.atlassian.net/browse/JN-5842) — Backlog | **🔴 CHANGES_REQUESTED** from markVaykhansky. **CONFLICTING** (since 16:00 IDT). Must address review comments + rebase. |
-| jn-5868 | **Publish** | [#1659](https://github.com/Jounce-IO/jounce/pull/1659) | **✅ ALL PASSING** (run 29254605349) | [JN-5868](https://redhat.atlassian.net/browse/JN-5868) — Backlog | **✅ ALL CI GREEN. MERGEABLE.** Depends on jn-5867 (#1655) merging first. |
-| jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — Backlog | Plan done ~23:06 IDT Jul 8. **Zone mismatch persists** (still Ingest, Day 13). Propose: move to Code + trigger /implement:code. |
-| jn-5871 | **Code** | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) | Code done ~00:58 IDT Jul 9. SHA fc6e5f77 CLEAN. **Zone mismatch persists** (still Code, should be Verify, Day 13). |
-| jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | "continuew" session IDLE ready_for_prompt:FALSE. SHA 16ec44ea (2 commits). Needs: generate 24 configs, rebase main, create PR. Fork a new session to continue. |
-| jn-5870 | **Publish** | [#1656 DRAFT](https://github.com/Jounce-IO/jounce/pull/1656) | **🔴 DRAFT UNKNOWN** | [JN-5870](https://redhat.atlassian.net/browse/JN-5870) | **DRAFT + UNKNOWN** (unchanged). Rebase on main + fix pre-commit + undraft. |
-| jn-5867 | **Publish** | [#1655](https://github.com/Jounce-IO/jounce/pull/1655) | **✅ ALL PASSING** (run 29252812787) — JIRA Association ✅, pre-commit ✅, all-checks ✅, e2e-api ✅, e2e-smoke ✅, integration ✅, tox ✅, nox ✅ | [JN-5867](https://redhat.atlassian.net/browse/JN-5867) — Backlog | **🎉 ALL CI GREEN + MERGEABLE. READY TO MERGE!** Cascade blocker resolved. Unblocks #1657 (jn-5869) and #1659 (jn-5868). |
-| jn-5869 | **Publish** | [#1657](https://github.com/Jounce-IO/jounce/pull/1657) | **✅ ALL PASSING** (run 29255496217) — all pass including e2e-smoke ✅ | [JN-5869](https://redhat.atlassian.net/browse/JN-5869) | **✅ ALL CI GREEN. MERGEABLE.** After #1655 merges. |
-| jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 18+ days with no session or PR. |
-| ~~jn-5877-api-server-replicas~~ | **ARCHIVED** | [#1663](https://github.com/Jounce-IO/jounce/pull/1663) MERGED **15:16 IDT Jul 13** | ALL PASS ✅ (run 29244989261) | [JN-5877](https://redhat.atlassian.net/browse/JN-5877) — **In Review** ⚠️ | **🎉 PR #1663 MERGED 15:16 IDT Jul 13** — Worktree **ARCHIVED 15:30 IDT Jul 13**. JN-5877 Jira needs Done! |
-| ~~jn-5874-values-prd-image-tags~~ | **ARCHIVED** | [#1662](https://github.com/Jounce-IO/jounce/pull/1662) MERGED **12:10 IDT Jul 13** | ALL PASS ✅ | [JN-5874](https://redhat.atlassian.net/browse/JN-5874) — **Backlog** ⚠️ | **🎉 PR #1662 MERGED** — Worktree **ARCHIVED 12:32 IDT Jul 13**. JN-5874 Jira still Backlog → **needs Done!** |
-| ~~jn-5401-runner-subcommands~~ | **ARCHIVED** | [#1654](https://github.com/Jounce-IO/jounce/pull/1654) MERGED **17:12 IDT Jul 12** | ALL PASS ✅ | [JN-5401](https://redhat.atlassian.net/browse/JN-5401) — **Backlog** ⚠️ | PR MERGED. ARCHIVED. JN-5401 Jira still Backlog → **needs Done!** |
-| ~~jn-5841-agents-md-root~~ | **ARCHIVED** | [#1649](https://github.com/Jounce-IO/jounce/pull/1649) MERGED 14:45 IDT Jul 12 | — | [JN-5841](https://redhat.atlassian.net/browse/JN-5841) — **Done ✅** | PR MERGED. ARCHIVED 16:00 IDT Jul 12. |
+| jn-5842-jbenchmark-agents-md | **NO ZONE** | [#1658](https://github.com/Jounce-IO/jounce/pull/1658) | CONFLICTING (no new run) | [JN-5842](https://redhat.atlassian.net/browse/JN-5842) — Backlog | **🔴 CHANGES_REQUESTED** from markVaykhansky. **CONFLICTING**. Must address review comments + rebase. |
+| jn-5868 | **Publish** | [#1659](https://github.com/Jounce-IO/jounce/pull/1659) | **✅ ALL PASSING** (run 29254605349) | [JN-5868](https://redhat.atlassian.net/browse/JN-5868) — Backlog | **✅ ALL CI GREEN. MERGEABLE.** Depends on jn-5867 (#1655) + jn-5869 (#1657) merging first. |
+| jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — Backlog | Plan done ~23:06 IDT Jul 8. **Zone mismatch persists** (still Ingest, Day 14). Propose: move to Code + trigger /implement:code. |
+| jn-5871 | **Code** | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) | Code done ~00:58 IDT Jul 9. SHA fc6e5f77 CLEAN. **Zone mismatch persists** (still Code, should be Verify, Day 14). |
+| jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | "continuew" session IDLE ready_for_prompt:FALSE. SHA 16ec44ea (2 commits). Needs: generate 24 configs, rebase main, create PR. |
+| jn-5870 | **Publish** | [#1656 DRAFT](https://github.com/Jounce-IO/jounce/pull/1656) | **🔴 DRAFT CONFLICTING** | [JN-5870](https://redhat.atlassian.net/browse/JN-5870) | **DRAFT + CONFLICTING** (unchanged). Rebase on main + fix pre-commit + undraft. |
+| jn-5867 | **Publish** | [#1655](https://github.com/Jounce-IO/jounce/pull/1655) | **⚠️ OLD CI GREEN** (run 29252812787) — but now **CONFLICTING** | [JN-5867](https://redhat.atlassian.net/browse/JN-5867) — Backlog | **🔴 NOW CONFLICTING** — was MERGEABLE+GREEN at last successful run (18:00 IDT Jul 13). Something merged into main overnight. Needs rebase + new CI run. Cascade chain head **BLOCKED**. |
+| jn-5869 | **Publish** | [#1657](https://github.com/Jounce-IO/jounce/pull/1657) | **✅ ALL PASSING** (run 29255496217) | [JN-5869](https://redhat.atlassian.net/browse/JN-5869) | **✅ ALL CI GREEN. MERGEABLE.** After #1655 merges. |
+| jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 19+ days with no session or PR. |
 
 ---
 
@@ -30,8 +28,8 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ UNKNOWN | 🔴 UNKNOWN | 🔴 CONFLICTING 10+ days. Needs rebase + fix e2e or close PR. |
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | **🔴 e2e-smoke ❌** (run 29259367493); nox ✅ tox ✅ RECOVERED | **MERGEABLE** | **🔴 NEW run 29259367493**: nox ✅ + tox ✅ RECOVERED but **e2e-smoke ❌ NEW FAILURE** + e2e-tests ❌. Oscillating failures — nox/tox fixed, e2e-smoke now broke. |
+| [#1606](https://github.com/Jounce-IO/jounce/pull/1606) | feat/jn-5725-integrate-vllm-log-analyzer | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — Done | ❌ UNKNOWN | 🔴 UNKNOWN | 🔴 CONFLICTING 11+ days. Needs rebase + fix e2e or close PR. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | **❓ Only CodeRabbit visible** (no new CI run triggered) | **CONFLICTING** | CONFLICTING since overnight. Last known CI: run 29259367493 — nox ✅ tox ✅ but e2e-smoke ❌. No new run visible yet. |
 
 ---
 
@@ -74,57 +72,57 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes Since Last Run (18:00 IDT Jul 13 — delta from 17:30 IDT Jul 13)
+## Key Changes Since Last Run (09:00 IDT Jul 14 — delta from 18:00 IDT Jul 13)
 
 | What observed | Status |
 |---|---|
-| **#1655 (jn-5867) unchanged** | Still ALL CI GREEN (run 29252812787). MERGEABLE. READY TO MERGE — cascade blocker still waiting on human. |
-| **#1657 (jn-5869) unchanged** | Still ALL CI GREEN (run 29255496217). MERGEABLE. Ready after #1655. |
-| **#1659 (jn-5868) unchanged** | Still ALL CI GREEN (run 29254605349). MERGEABLE. Awaits #1655+#1657 merge. |
-| **🔴 #1638 (off-board) NEW CI run 29259367493** | nox ✅ + tox ✅ RECOVERED (were ❌). BUT **e2e-smoke ❌ NEW FAILURE** + e2e-tests ❌. Oscillating failures — different mode each run. |
+| **🔴 #1655 (jn-5867) NOW CONFLICTING** | Was MERGEABLE+ALL GREEN at 18:00 IDT Jul 13. Something merged into main overnight causing conflict. Old CI run 29252812787 still shows green but state is CONFLICTING — needs rebase. **Cascade chain head BLOCKED.** |
+| **#1657 (jn-5869) unchanged** | Still ALL CI GREEN (run 29255496217). MERGEABLE. Awaits #1655 rebase + merge. |
+| **#1659 (jn-5868) unchanged** | Still ALL CI GREEN (run 29254605349). MERGEABLE. Awaits #1655+#1657. |
+| **#1638 (off-board) changed to CONFLICTING** | Last run showed CONFLICTING. Only CodeRabbit visible in CI (no new run triggered). |
 | **#1658 (jn-5842) unchanged** | Still CONFLICTING + CHANGES_REQUESTED. No new CI run. |
 | **No new merges** | Board composition unchanged. |
+| **⚠️ 3 overnight sessions FAILED** | Sessions at 19:00+21:00 IDT Jul 13 and 03:00 IDT Jul 14 all failed — caused 24.5h board state gap. |
 
 ---
 
 ## Attention Items
 
-### 🎉 #1655 (jn-5867) — READY TO MERGE — CASCADE BLOCKER CLEARED
+### 🔴 #1655 (jn-5867) — NOW CONFLICTING — CASCADE BLOCKER REINSTATED
 
 PR [#1655](https://github.com/Jounce-IO/jounce/pull/1655): "feat(jbenchmark): add Platform enum and refactor ClusterConfig for IBM support"
-- **ALL CI GREEN** (run 29252812787): JIRA Association ✅, pre-commit ✅, all-checks ✅, all suites pass
-- **MERGEABLE**
-- **Cascade unblock:** merging this unblocks [#1657](https://github.com/Jounce-IO/jounce/pull/1657) (jn-5869) and [#1659](https://github.com/Jounce-IO/jounce/pull/1659) (jn-5868)
-- **Action:** **MERGE NOW** ✅
+- **NOW CONFLICTING** — was MERGEABLE+ALL GREEN as of 18:00 IDT Jul 13. Something landed in main overnight.
+- Old CI (run 29252812787) still shows green, but won't re-run until rebased.
+- **Cascade impact:** #1657 and #1659 cannot merge until #1655 is rebased and merges.
+- **Action:** **REBASE on main + re-trigger CI. Priority #1.**
 
 ---
 
-### ✅ #1659 (jn-5868) — ALL GREEN, Awaiting #1655
-
-PR [#1659](https://github.com/Jounce-IO/jounce/pull/1659): "feat(jbenchmark): add ClusterRegistry loader and clusters.json"
-- **ALL CI GREEN** (run 29254605349): all-checks ✅, all suites pass
-- **MERGEABLE**
-- Depends on #1655 merging first (ordering constraint)
-- **Action:** Merge after #1655.
-
----
-
-### ✅ #1657 (jn-5869) — ALL CI GREEN, READY TO MERGE (after #1655)
+### ✅ #1657 (jn-5869) — ALL GREEN, Awaiting #1655 Rebase
 
 PR [#1657](https://github.com/Jounce-IO/jounce/pull/1657): "feat(jbenchmark): add IBM cluster connection support"
 - Run 29255496217 COMPLETE: JIRA ✅, pre-commit ✅, e2e-api ✅, e2e-smoke ✅, integration ✅, nox ✅, tox ✅ — **ALL PASS**
 - **MERGEABLE**
-- **Action:** Merge after #1655 (ordering constraint). Can merge immediately following #1655.
+- **Action:** Merge after #1655 lands.
 
 ---
 
-### 🔴 #1638 (off-board) — MERGEABLE but e2e-smoke ❌ (oscillating)
+### ✅ #1659 (jn-5868) — ALL CI GREEN, Awaiting #1655+#1657
+
+PR [#1659](https://github.com/Jounce-IO/jounce/pull/1659): "feat(jbenchmark): add ClusterRegistry loader and clusters.json"
+- **ALL CI GREEN** (run 29254605349): all-checks ✅, all suites pass
+- **MERGEABLE**
+- **Action:** Merge after #1655 then #1657.
+
+---
+
+### 🔴 #1638 (off-board) — CONFLICTING (last CI: e2e-smoke ❌)
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites"
-- **MERGEABLE** (conflicts resolved)
-- **NEW run 29259367493**: nox ✅ RECOVERED, tox ✅ RECOVERED, but **e2e-smoke ❌ FAIL** + e2e-tests ❌ FAIL; e2e-api ✅, integration ✅, pre-commit ✅, bake ✅
-- Oscillating: was nox+tox ❌ (run 29255620232), now e2e-smoke ❌ (run 29259367493)
-- **Action:** Diagnose e2e-smoke failure in run 29259367493 (different failure mode from prior run).
+- **CONFLICTING** (state changed overnight)
+- Last known CI run 29259367493: nox ✅ tox ✅ but **e2e-smoke ❌** + e2e-tests ❌
+- No new CI run visible (only CodeRabbit showing)
+- **Action:** Diagnose e2e-smoke failure, rebase to resolve conflict.
 
 ---
 
@@ -136,10 +134,10 @@ PR [#1658](https://github.com/Jounce-IO/jounce/pull/1658): "docs(jbenchmark): ad
 
 ---
 
-### 🔴 #1656 (jn-5870) — DRAFT + UNKNOWN (unchanged)
+### 🔴 #1656 (jn-5870) — DRAFT + CONFLICTING (unchanged)
 
 PR [#1656](https://github.com/Jounce-IO/jounce/pull/1656): "feat(jbenchmark): add cluster selection CLI"
-- **DRAFT + UNKNOWN** (unchanged)
+- **DRAFT + CONFLICTING** (unchanged)
 - **Action:** Rebase on main + fix pre-commit + undraft.
 
 ---
@@ -156,14 +154,14 @@ PR [#1656](https://github.com/Jounce-IO/jounce/pull/1656): "feat(jbenchmark): ad
 
 ---
 
-### 📋 jn-5865 — Zone Mismatch (Ingest, Plan Done — Day 13)
+### 📋 jn-5865 — Zone Mismatch (Ingest, Plan Done — Day 14)
 
 - Plan session done ~23:06 IDT Jul 8. No code session triggered.
 - **Action:** Move to Code zone + trigger /implement:code.
 
 ---
 
-### ✅ jn-5871 — Code Done, Wrong Zone (Day 13)
+### ✅ jn-5871 — Code Done, Wrong Zone (Day 14)
 
 - 4 commits ahead. SHA fc6e5f77 CLEAN.
 - **Action:** Move to Verify zone + trigger /implement:validate.
@@ -177,9 +175,17 @@ PR [#1656](https://github.com/Jounce-IO/jounce/pull/1656): "feat(jbenchmark): ad
 
 ---
 
+### ⚠️ Overnight Session Failures (3 consecutive)
+
+Sessions at 19:00 IDT Jul 13, 21:00 IDT Jul 13, and 03:00 IDT Jul 14 all failed.
+- Caused 24.5-hour board state gap — #1655 went from "READY TO MERGE" to CONFLICTING without detection.
+- **Action:** Investigate why overnight sessions are failing. Flag for human review.
+
+---
+
 ### ⚠️ jira-operations — Stale (NO ZONE)
 
-- uid=249, last_used Jun 25 2026 (18+ days stale)
+- uid=249, last_used Jun 25 2026 (19+ days stale)
 - NO ZONE, no sessions, no PR
 - Propose archive if no longer needed.
 

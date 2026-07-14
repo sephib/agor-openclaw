@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-14 09:00 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "#1655 (jn-5867) NOW CONFLICTING (cascade chain blocked); 3 overnight sessions failed causing 24.5h state gap; #1657+#1659 still all green; #1638 also CONFLICTING; no merges",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f5f379b8d789582d7bdd4/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-13 17:30 IDT",
     actions: 0,
     findings: 3,
