@@ -4,6 +4,24 @@
 
 ---
 
+## 16:00 IDT — Weekday Daytime Heartbeat (Jul 14 2026)
+- PRs checked: #1655 (pre-commit ❌ FAIL + **NOW CONFLICTING** — double-blocked), #1656 (ALL CI ✅ PASS run 29332701969 — **READY TO MERGE**), #1638 (**e2e-product ❌ FAIL** — was PENDING), #1667 NEW (jn-5845, DRAFT, pre-commit ❌ FAIL run 29334114324)
+- Merges detected: none (0 auto-archives)
+- CI changes: **#1656 BIG CHANGE** — CI run 29332701969 completed ALL GREEN (pre-commit, integration, e2e-api, e2e-smoke, tox, nox all ✅). **#1655 NEW BLOCKER** — now CONFLICTING (was MERGEABLE). **#1638 REGRESSED** — e2e-product FAILED (was PENDING). **#1667 NEW PR** for jn-5845 — pre-commit failing.
+- Flags: #1656 ready to merge (after #1655 cascade). #1655 double-blocked (conflicts + pre-commit). #1638 e2e-product failed. #1667 needs pre-commit fix + undraft. jn-5844 still no PR. Zone mismatches jn-5865/jn-5871 Day 14+ persist. 9 Jira mismatches unchanged.
+- Next: Joseph must fix #1655 (rebase + pre-commit fix, push) → then #1656 can merge. Fix #1667 pre-commit in jn-5845 worktree. Investigate #1638 e2e-product failure.
+
+---
+
+## 15:30 IDT — Weekday Daytime Heartbeat (Jul 14 2026)
+- PRs checked: #1655 (pre-commit ❌ FAIL — unchanged; sibling session RUNNING), #1656 (was DRAFT+CONFLICTING → **NOW OPEN+APPROVED+MERGEABLE**, CI PENDING run 29332701969), #1638 (e2e-product PENDING run 29331266058 — all others ✅), #1596 (DRAFT CONFLICTING — stale)
+- Merges detected: none. jn-5869 correction noted (pre-archived at 12:08 IDT — jn-5869 removed from active table).
+- CI changes: **#1656 BIG CHANGE** — Joseph undrafted + pushed. CI PENDING (new run 29332701969). **#1638** — e2e-product still running (new run vs previous FAILED run 29322557233).
+- Flags: #1655 cascade-head blocked by pre-commit. #1656 CI PENDING (may unblock cascade soon). #1638 e2e-product re-running. 9 Jira mismatches unchanged. Zone mismatches Day 14+. jn-5844+jn-5845 code+CR done, ready for Publish.
+- Next: Watch #1656 CI result. Fix pre-commit on #1655. Watch #1638 e2e-product.
+
+---
+
 ## 15:00 IDT — Weekday Daytime Heartbeat (Jul 14 2026)
 - PRs checked: #1655 (pre-commit ❌ FAIL run 29329734574 — regression from Joseph's latest push; e2e-api/tox/smoke/integration/nox all ✅), #1657 (MERGEABLE + APPROVED — no new checks, unchanged), #1656 (DRAFT CONFLICTING — unchanged), #1638 (CONFLICTING — Docker build pending, unchanged), #1596 (DRAFT CONFLICTING — unchanged)
 - Merges detected: none (0 auto-archives)

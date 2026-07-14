@@ -1,6 +1,24 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-14 16:00 IDT",
+    actions: 0,
+    findings: 4,
+    status: "ok",
+    summary: "#1656 ALL CI ✅ PASS (READY TO MERGE); #1655 DOUBLE-BLOCKED (pre-commit ❌ + CONFLICTING); #1667 new DRAFT PR pre-commit ❌; #1638 e2e-product FAILED",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f60b6c5c57fa1a087e894/",
+  },
+  {
+    type: "advance",
+    timestamp: "2026-07-14 15:30 IDT",
+    actions: 0,
+    findings: 1,
+    status: "ok",
+    summary: "#1656 BIG CHANGE — now OPEN+APPROVED+MERGEABLE (CI PENDING run 29332701969); #1655 pre-commit ❌ unchanged; sibling planning session RUNNING",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f609b4e3475b0aab36ffa/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-14 15:00 IDT",
     actions: 0,
     findings: 1,
