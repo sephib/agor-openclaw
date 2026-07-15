@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-15 10:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-15 11:00 IDT (advance heartbeat)*
 
 ---
 
@@ -46,7 +46,7 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 | Ticket | PR | PR Status | Jira Status | Action |
 |--------|-----|-----------|-------------|--------|
-| **[JN-5867](https://redhat.atlassian.net/browse/JN-5867)** | **[#1655](https://github.com/Jounce-IO/jounce/pull/1655)** | **MERGED 18:49 IDT Jul 14** | **Backlog** | ❌ Update Jira → Done |
+| [JN-5867](https://redhat.atlassian.net/browse/JN-5867) | [#1655](https://github.com/Jounce-IO/jounce/pull/1655) | MERGED 18:49 IDT Jul 14 | **Done ✅** (confirmed 11:00 IDT Jul 15) | ✅ Resolved |
 | **[JN-5842](https://redhat.atlassian.net/browse/JN-5842)** | **[#1658](https://github.com/Jounce-IO/jounce/pull/1658)** | **MERGED 13:29 IDT Jul 14** | **Backlog** | ❌ Update Jira → Done |
 | **[JN-5877](https://redhat.atlassian.net/browse/JN-5877)** | **[#1663](https://github.com/Jounce-IO/jounce/pull/1663)** | **MERGED 15:16 IDT Jul 13** | **Backlog** | ❌ Update Jira → Done |
 | **[JN-5874](https://redhat.atlassian.net/browse/JN-5874)** | **[#1662](https://github.com/Jounce-IO/jounce/pull/1662)** | **MERGED 12:10 IDT Jul 13** | **Backlog** | ❌ Update Jira → Done |
@@ -55,18 +55,19 @@ Active sprint tickets assigned to Joseph with no board worktree:
 | [JN-5717](https://redhat.atlassian.net/browse/JN-5717) | [#1631](https://github.com/Jounce-IO/jounce/pull/1631) | MERGED Jul 6 | **Backlog** | ❌ Update Jira → Done |
 | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | MERGED Jul 7 | **In Progress** | ❌ Update Jira → Done |
 
-*JN-5870: Done ✅. JN-5880: Done ✅. JN-5879: Done ✅ (confirmed 10:00 IDT Jul 15). JN-5841: Done ✅. Jira MCP 401 — use acli for updates.*
+*JN-5870: Done ✅. JN-5880: Done ✅. JN-5879: Done ✅ (confirmed 10:00 IDT Jul 15). JN-5841: Done ✅. JN-5867: Done ✅ (confirmed 11:00 IDT Jul 15). Jira MCP 401 — use acli for updates.*
 
 ---
 
-## Key Changes (10:30 IDT Jul 15 vs 10:00 IDT Jul 15)
+## Key Changes (11:00 IDT Jul 15 vs 10:30 IDT Jul 15)
 
 | What changed | Delta |
 |---|---|
-| **#1667 MERGEABLE + ALL CI PASS** | 🎉 Rebase happened between runs! PR #1667 was CONFLICTING at 10:00 IDT — now MERGEABLE. CI run 29396571335: all-checks ✅, pre-commit ✅, e2e-api ✅, e2e-smoke ✅, integration ✅, tox ✅, nox ✅. Ready for reviewer approval. |
+| **JN-5867 now Done ✅** | Confirmed via acli at 11:00 IDT. Was showing Backlog — now Done. Mismatches: 8 → 7. |
+| **#1667 unchanged** | OPEN, MERGEABLE, REVIEW_REQUIRED, ALL CI PASS (run 29396571335). No new reviewer activity. |
 | **#1638 unchanged** | e2e-product still ❌ FAIL. Same run IDs (29364311223). No change. |
-| **No new merges** | Step 1 sweep: no merges since 10:00 IDT. Board stable. |
-| **Jira mismatches** | 8 active — unchanged since 10:00 IDT run. |
+| **No new merges** | Step 1 sweep: no merges since 10:30 IDT. Board stable. |
+| **Jira mismatches** | 7 active (was 8 — JN-5867 resolved). Remaining: JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5717, JN-5546. |
 
 ---
 
@@ -75,7 +76,7 @@ Active sprint tickets assigned to Joseph with no board worktree:
 ### 🟡 #1667 (jn-5845) — MERGEABLE, Awaiting Review
 
 PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): add Helm and CI/CD domain AGENTS.md files (JN-5845)"
-- State: OPEN, REVIEW_REQUIRED, **MERGEABLE** ✅ (rebase done since 10:00 IDT run)
+- State: OPEN, REVIEW_REQUIRED, **MERGEABLE** ✅ (rebase done since 10:00 IDT run; unchanged at 11:00 IDT)
 - CI run 29396571335: ALL PASS ✅ (all-checks ✅, pre-commit ✅, e2e-api ✅, e2e-smoke ✅, tox ✅, integration ✅, nox ✅)
 - **Action:** Awaiting reviewer approval — nothing blocking merge technically.
 
@@ -98,9 +99,9 @@ PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM a
 
 ---
 
-### 🔴 Jira Mismatches (8 active)
+### 🟡 Jira Mismatches (7 active)
 
-JN-5879 resolved (Done ✅). Remaining 8: JN-5867, JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5717, JN-5546.
+JN-5879 ✅, JN-5867 ✅ (confirmed Done 11:00 IDT Jul 15). Remaining 7: JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5717, JN-5546.
 Use `acli jira workitem transition` to update. Jira MCP 401.
 
 ---

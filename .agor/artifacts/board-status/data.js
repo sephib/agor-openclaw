@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-15 10:30 IDT";
+export const LAST_UPDATED = "2026-07-15 11:00 IDT";
 
 export const WORKTREES = [
   {
@@ -47,14 +47,22 @@ export const WORKTREES = [
     status: "🟡 CI ALL PASS ✅ (run 29396571335) — MERGEABLE ✅ (rebase done since 10:00 IDT). REVIEW_REQUIRED. Ready for reviewer approval.",
     blockedOn: null,
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f64af15d67bef820f6770/",
-    sessionLabel: "heartbeat 10:30 IDT Jul 15 — #1667 MERGEABLE + ALL CI PASS ✅",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f64ca90807c4c82a3010f/",
+    sessionLabel: "heartbeat 11:00 IDT Jul 15 — #1667 MERGEABLE + ALL CI PASS ✅ (unchanged); JN-5867 Done ✅",
     recentSessions: [
+      {
+        sessionId: "019f64ca90807c4c82a3010f",
+        url: "http://127.0.0.1:3030/ui/s/019f64ca90807c4c82a3010f/",
+        title: "heartbeat 11:00 IDT Jul 15 — board static; JN-5867 Done ✅ (7 mismatches); #1667 MERGEABLE unchanged",
+        status: "running",
+        timestamp: "2026-07-15 11:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f64af15d67bef820f6770",
         url: "http://127.0.0.1:3030/ui/s/019f64af15d67bef820f6770/",
         title: "heartbeat 10:30 IDT Jul 15 — #1667 MERGEABLE + ALL CI PASS ✅ (run 29396571335)",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-15 10:30 IDT",
         outputFile: null,
       },
@@ -82,16 +90,8 @@ export const WORKTREES = [
         timestamp: "2026-07-14 20:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f61c9960e70c187b064ba",
-        url: "http://127.0.0.1:3030/ui/s/019f61c9960e70c187b064ba/",
-        title: "heartbeat 19:30 IDT Jul 14 — #1667 NEW CI run 29356096050 in progress",
-        status: "idle",
-        timestamp: "2026-07-14 19:30 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-15 10:30 IDT",
+    lastActive: "2026-07-15 11:00 IDT",
   },
   {
     ticket: "JN-5865",
@@ -274,7 +274,7 @@ export const MERGED = [
     pr: "#1655",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1655",
     mergedDate: "2026-07-14",
-    note: "Merged 18:49 IDT Jul 14 🎉 jn-5867 was git-only (not in Agor). JN-5867 Jira → needs Done!",
+    note: "Merged 18:49 IDT Jul 14 🎉 jn-5867 was git-only (not in Agor). JN-5867 Jira → Done ✅ (confirmed 11:00 IDT Jul 15).",
   },
   {
     ticket: "JN-5870",
@@ -374,11 +374,11 @@ export const ALERTS = [
   },
   {
     level: "green",
-    message: "🎉 #1655 (jn-5867 JN-5867): MERGED 18:49 IDT Jul 14! jn-5867 was git-only (no Agor archive needed). JN-5867 Jira → needs Done.",
+    message: "🎉 #1655 (jn-5867 JN-5867): MERGED 18:49 IDT Jul 14! jn-5867 was git-only (no Agor archive needed). JN-5867 Jira → Done ✅ (confirmed 11:00 IDT Jul 15).",
   },
   {
     level: "red",
-    message: "🔴 Jira mismatches (8): JN-5867, JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5717, JN-5546 — PRs merged but Jira not Done. JN-5870 ✅, JN-5880 ✅, JN-5879 ✅, JN-5841 ✅ already Done.",
+    message: "🔴 Jira mismatches (7): JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5717, JN-5546 — PRs merged but Jira not Done. JN-5870 ✅, JN-5880 ✅, JN-5879 ✅, JN-5841 ✅, JN-5867 ✅ already Done.",
   },
   {
     level: "yellow",
