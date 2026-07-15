@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-15 11:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-15 11:30 IDT (advance heartbeat)*
 
 ---
 
@@ -12,7 +12,8 @@
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — Backlog | Design session done Jun 30. Ready for Plan phase. |
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | Last session Jul 8 IDLE. SHA 16ec44ea (2 commits). Needs: configs, rebase, PR. |
 | jn-5844-service-lib-sql-agents-md | **Code** | — | — | [JN-5844](https://redhat.atlassian.net/browse/JN-5844) — Backlog | ✅ Code done (SHA 86fb06b1). Internal CR done. **Still no PR** — needs PR creation. |
-| jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | ✅ ALL CI PASS (run 29396571335) — **MERGEABLE** ✅ (rebase done since 10:00 IDT) | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) — Backlog | 🟡 CI ALL PASS + MERGEABLE. REVIEW_REQUIRED. **Ready for merge** — awaiting reviewer approval. |
+| jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | ✅ ALL CI PASS (run 29396571335) — **MERGEABLE** ✅ | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) — Backlog | 🟡 CI ALL PASS + MERGEABLE. markVaykhansky COMMENTED 08:05 IDT (no APPROVE yet). reviewDecision now "". Awaiting formal approval. |
+| jn-5872 | **Ingest** | — | — | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — [Backlog] | 🆕 NEW. "[QE] E2E validation of IBM cluster connection". Sub-task of JN-5824. Ingest done 08:14 IDT Jul 15. Awaiting Plan phase. |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — Backlog | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 17+** (still Ingest, should be Code). |
 | jn-5871 | **Code** | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) — Backlog | Code done ~00:58 IDT Jul 9. SHA fc6e5f77 CLEAN. **Zone mismatch Day 17+** (still Code, should be Verify). |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 20+ days. Propose archive. |
@@ -59,26 +60,26 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (11:00 IDT Jul 15 vs 10:30 IDT Jul 15)
+## Key Changes (11:30 IDT Jul 15 vs 11:00 IDT Jul 15)
 
 | What changed | Delta |
 |---|---|
-| **JN-5867 now Done ✅** | Confirmed via acli at 11:00 IDT. Was showing Backlog — now Done. Mismatches: 8 → 7. |
-| **#1667 unchanged** | OPEN, MERGEABLE, REVIEW_REQUIRED, ALL CI PASS (run 29396571335). No new reviewer activity. |
+| **jn-5872 NEW** | New worktree in Ingest zone: JN-5872 "[QE] E2E validation of IBM cluster connection workflows" (sub-task of JN-5824). Ingest session idle since 08:14 IDT — completed before this heartbeat period. |
+| **#1667 reviewDecision cleared** | Changed from REVIEW_REQUIRED to "" — markVaykhansky submitted a COMMENT review at 08:05 IDT (not an APPROVE). Still waiting for formal merge approval. CI unchanged: ALL PASS (run 29396571335). |
 | **#1638 unchanged** | e2e-product still ❌ FAIL. Same run IDs (29364311223). No change. |
-| **No new merges** | Step 1 sweep: no merges since 10:30 IDT. Board stable. |
-| **Jira mismatches** | 7 active (was 8 — JN-5867 resolved). Remaining: JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5717, JN-5546. |
+| **No new merges** | Step 1 sweep: no merges since 11:00 IDT. Board stable otherwise. |
+| **Jira mismatches** | 7 active — unchanged from 11:00 IDT run. |
 
 ---
 
 ## Attention Items
 
-### 🟡 #1667 (jn-5845) — MERGEABLE, Awaiting Review
+### 🟡 #1667 (jn-5845) — MERGEABLE, Awaiting Formal Approval
 
 PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): add Helm and CI/CD domain AGENTS.md files (JN-5845)"
-- State: OPEN, REVIEW_REQUIRED, **MERGEABLE** ✅ (rebase done since 10:00 IDT run; unchanged at 11:00 IDT)
+- State: OPEN, **MERGEABLE** ✅, reviewDecision: "" (was REVIEW_REQUIRED — markVaykhansky COMMENTED at 08:05 IDT Jul 15, not an APPROVE)
 - CI run 29396571335: ALL PASS ✅ (all-checks ✅, pre-commit ✅, e2e-api ✅, e2e-smoke ✅, tox ✅, integration ✅, nox ✅)
-- **Action:** Awaiting reviewer approval — nothing blocking merge technically.
+- **Action:** Awaiting formal APPROVE from a required reviewer — nothing blocking merge technically once approved.
 
 ---
 
@@ -120,6 +121,14 @@ Use `acli jira workitem transition` to update. Jira MCP 401.
 
 ---
 
+### 🆕 jn-5872 — New Ticket, Ingest Done (awaiting Plan)
+
+- JN-5872 "[QE] E2E validation of IBM cluster connection workflows" — sub-task of JN-5824.
+- Ingest session completed 08:14 IDT Jul 15. Context at `.artifacts/implement/JN-5872/01-context.md`.
+- **Action:** Trigger `/implement:plan` in jn-5872 worktree.
+
+---
+
 ### 🔄 jn-5824 — Waiting for direction
 
 - Last session Jul 8 IDLE. SHA 16ec44ea (2 commits).
@@ -142,7 +151,7 @@ This creates git state gaps. Investigate overnight schedule reliability.
 
 ## Archived This Session
 
-None — 0 auto-archives (no new merges since 10:00 IDT run).
+None — 0 auto-archives (no new merges since 11:00 IDT run).
 
 Previously archived (Jul 14):
 | Branch | PR | Reason | Time |

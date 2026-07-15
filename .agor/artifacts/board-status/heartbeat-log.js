@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-15 11:30 IDT",
+    actions: 0,
+    findings: 2,
+    status: "ok",
+    summary: "jn-5872 NEW (JN-5872 QE E2E IBM cluster, ingest done 08:14 IDT); markVaykhansky COMMENTED #1667 (reviewDecision cleared to ''); #1638 e2e-product ❌ unchanged; 7 Jira mismatches unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f64e604f47a77917811ce/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-15 11:00 IDT",
     actions: 0,
     findings: 1,

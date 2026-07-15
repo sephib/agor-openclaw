@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-15 11:00 IDT";
+export const LAST_UPDATED = "2026-07-15 11:30 IDT";
 
 export const WORKTREES = [
   {
@@ -44,17 +44,25 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1667",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1667",
-    status: "🟡 CI ALL PASS ✅ (run 29396571335) — MERGEABLE ✅ (rebase done since 10:00 IDT). REVIEW_REQUIRED. Ready for reviewer approval.",
+    status: "🟡 CI ALL PASS ✅ (run 29396571335) — MERGEABLE ✅. markVaykhansky COMMENTED 08:05 IDT (no formal APPROVE yet). reviewDecision now ''. Awaiting formal reviewer approval.",
     blockedOn: null,
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f64ca90807c4c82a3010f/",
-    sessionLabel: "heartbeat 11:00 IDT Jul 15 — #1667 MERGEABLE + ALL CI PASS ✅ (unchanged); JN-5867 Done ✅",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f64e604f47a77917811ce/",
+    sessionLabel: "heartbeat 11:30 IDT Jul 15 — markVaykhansky commented #1667 (no APPROVE); jn-5872 new in Ingest",
     recentSessions: [
+      {
+        sessionId: "019f64e604f47a77917811ce",
+        url: "http://127.0.0.1:3030/ui/s/019f64e604f47a77917811ce/",
+        title: "heartbeat 11:30 IDT Jul 15 — markVaykhansky COMMENTED #1667 (no approve); jn-5872 new",
+        status: "running",
+        timestamp: "2026-07-15 11:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f64ca90807c4c82a3010f",
         url: "http://127.0.0.1:3030/ui/s/019f64ca90807c4c82a3010f/",
         title: "heartbeat 11:00 IDT Jul 15 — board static; JN-5867 Done ✅ (7 mismatches); #1667 MERGEABLE unchanged",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-15 11:00 IDT",
         outputFile: null,
       },
@@ -82,16 +90,34 @@ export const WORKTREES = [
         timestamp: "2026-07-15 09:00 IDT",
         outputFile: null,
       },
+    ],
+    lastActive: "2026-07-15 11:30 IDT",
+  },
+  {
+    ticket: "JN-5872",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5872",
+    title: "[QE] E2E validation of IBM cluster connection (JN-5872)",
+    branch: "jn-5872",
+    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5872",
+    zone: "Ingest",
+    pr: null,
+    prUrl: null,
+    status: "🆕 Ingest done 08:14 IDT Jul 15. Context at .artifacts/implement/JN-5872/01-context.md. Sub-task of JN-5824 (IBM cluster connection). Awaiting Plan phase.",
+    blockedOn: null,
+    blockedType: "active",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f64d1ba4c7524932533cc/",
+    sessionLabel: "ingest (done, ready_for_prompt:TRUE)",
+    recentSessions: [
       {
-        sessionId: "019f61e50e0f7067aba35f8e",
-        url: "http://127.0.0.1:3030/ui/s/019f61e50e0f7067aba35f8e/",
-        title: "heartbeat 20:00 IDT Jul 14 — #1667 ALL CI PASS ✅ — ready for Code Review zone",
+        sessionId: "019f64d1ba4c7524932533cc",
+        url: "http://127.0.0.1:3030/ui/s/019f64d1ba4c7524932533cc/",
+        title: "Ingest JN-5872 — QE E2E validation IBM cluster connection (done 08:14 IDT)",
         status: "idle",
-        timestamp: "2026-07-14 20:00 IDT",
-        outputFile: null,
+        timestamp: "2026-07-15 08:14 IDT",
+        outputFile: ".artifacts/implement/JN-5872/01-context.md",
       },
     ],
-    lastActive: "2026-07-15 11:00 IDT",
+    lastActive: "2026-07-15 08:14 IDT",
   },
   {
     ticket: "JN-5865",
@@ -361,8 +387,12 @@ export const MERGED = [
 
 export const ALERTS = [
   {
+    level: "yellow",
+    message: "🟡 #1667 (jn-5845 JN-5845): MERGEABLE ✅ + ALL CI PASS (run 29396571335). markVaykhansky COMMENTED at 08:05 IDT Jul 15 — reviewDecision cleared to '' (no formal APPROVE yet). Still awaiting approval to merge.",
+  },
+  {
     level: "green",
-    message: "🎉 #1667 (jn-5845 JN-5845): MERGEABLE ✅ + ALL CI PASS (run 29396571335). Rebase completed since 10:00 IDT. REVIEW_REQUIRED — awaiting reviewer approval. Nothing blocking merge.",
+    message: "🆕 jn-5872 (JN-5872): New worktree — '[QE] E2E validation of IBM cluster connection workflows' (subtask of JN-5824). Ingest done 08:14 IDT Jul 15. Awaiting /implement:plan.",
   },
   {
     level: "red",
