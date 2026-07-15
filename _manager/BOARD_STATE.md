@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-15 12:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-15 13:00 IDT (advance heartbeat)*
 
 ---
 
@@ -11,11 +11,11 @@
 | jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | UNKNOWN (stale) | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) — Waiting/Blocked | 🔴 DRAFT + CONFLICTING; frozen since Jun 14. No change. |
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — Backlog | Design session done Jun 30. Ready for Plan phase. |
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | Last session Jul 8 IDLE. SHA 16ec44ea (2 commits). Needs: configs, rebase, PR. |
-| jn-5844-service-lib-sql-agents-md | **Code** | — | — | [JN-5844](https://redhat.atlassian.net/browse/JN-5844) — Backlog | ✅ Code done (SHA 86fb06b1). Internal CR done. **Still no PR** — needs PR creation. |
-| jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | ✅ ALL CI PASS (run 29402877354 complete) | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) — Backlog | ✅ ALL CI PASS as of ~12:30 IDT. OPEN + MERGEABLE + reviewDecision:"". Awaiting formal reviewer APPROVE to merge. |
-| jn-5872 | **Ingest** | — | — | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — [Backlog] | 🆕 NEW. "[QE] E2E validation of IBM cluster connection". Sub-task of JN-5824. Ingest done 08:14 IDT Jul 15. Awaiting Plan phase. |
+| jn-5844-service-lib-sql-agents-md | **Publish** | [#1670 DRAFT](https://github.com/Jounce-IO/jounce/pull/1670) | ✅ ALL CI PASS (run 29403233416) | [JN-5844](https://redhat.atlassian.net/browse/JN-5844) — Backlog | 🆕 DRAFT PR #1670 created. "docs(jbenchmark): add service, libs, SQL domain AGENTS.md". isDraft:true. CI all pass. Needs: mark ready for review. |
+| jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | ✅ ALL CI PASS (run 29402877354 complete) | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) — Backlog | ✅ ALL CI PASS. OPEN + MERGEABLE + reviewDecision:"". Awaiting formal reviewer APPROVE to merge. |
+| jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | ✅ ALL CI PASS (run 29401501634) | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — Backlog | 🆕 NEW PR #1669 "feat(jbenchmark): improve dev-connect". OPEN + MERGEABLE + reviewDecision:"". ALL CI PASS ✅. Awaiting reviewer APPROVE. PR URL set in Agor. |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — Backlog | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 17+** (still Ingest, should be Code). |
-| jn-5871 | **Code** | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) — Backlog | Code done ~00:58 IDT Jul 9. SHA fc6e5f77 CLEAN. **Zone mismatch Day 17+** (still Code, should be Verify). |
+| jn-5871 | **Code** (git-only) | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) — Backlog | Code done ~00:58 IDT Jul 9. SHA fc6e5f77. ⚠️ NOT in Agor board — no Agor worktree registered. Git branch only. No PR created. Needs investigation. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 20+ days. Propose archive. |
 
 ---
@@ -60,14 +60,17 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (12:30 IDT Jul 15 vs 12:00 IDT Jul 15)
+## Key Changes (13:00 IDT Jul 15 vs 12:30 IDT Jul 15)
 
 | What changed | Delta |
 |---|---|
-| **#1667 ALL CI PASS ✅** | Run 29402877354 COMPLETE. All mandatory checks pass: atlas-validate ✅, check-changes ✅, JIRA ✅, all-checks ✅, e2e-api ✅, e2e-smoke ✅, e2e-tests ✅, integration ✅, integration-tests ✅, nox ✅, pre-commit ✅, tox ✅, CodeRabbit ✅. OPEN + MERGEABLE + reviewDecision:"". Ready to merge — awaiting formal reviewer APPROVE. |
-| **#1638 NEW CI RUN** | New run 29403906203: nox ✅ + tox ✅ — previous failures RESOLVED. bake ✅, pre-commit ✅, e2e-api ✅, e2e-smoke ✅, integration ✅, JIRA ✅. Only e2e-product/e2e PENDING. Major improvement from run 29402122746. |
-| **No new merges** | Step 1 sweep: no merges since 12:00 IDT. Board static otherwise. |
-| **Jira mismatches** | 7 active — unchanged. Jira MCP 401 + acli failed this run. |
+| **🆕 jn-5872 → NEW PR #1669 ALL CI PASS** | "feat(jbenchmark): improve dev-connect with namespace/service checks (JN-5872)". OPEN + MERGEABLE + reviewDecision:"". ALL CI PASS (all-checks ✅, integration ✅, nox ✅, tox ✅, pre-commit ✅, e2e-api ✅, e2e-smoke ✅). Agor zone: Code. PR URL set in Agor ✅. Awaiting reviewer APPROVE. |
+| **🆕 jn-5844 → DRAFT PR #1670 (Publish zone)** | "docs(jbenchmark): add service, libs, and SQL domain AGENTS.md files (JN-5844)". isDraft:true. OPEN + MERGEABLE. CI all pass (run 29403233416). In Publish zone (was tracked as Code in previous state). Needs: mark ready for review. |
+| **#1667 unchanged** | ALL CI PASS ✅. OPEN + MERGEABLE. Still awaiting reviewer APPROVE. |
+| **#1638 e2e-product still PENDING** | Run 29403906203: e2e-product still ⏳ PENDING. No change from 12:30 IDT. |
+| **No new merges** | Step 1 sweep: no merges since 12:30 IDT. |
+| **jn-5871 NOT in Agor** | Discovered: jn-5871 has no Agor worktree registered — git-only branch. No PR. |
+| **Jira mismatches** | 7 active — unchanged. Jira MCP 401. |
 
 ---
 
@@ -77,7 +80,7 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): add Helm and CI/CD domain AGENTS.md files (JN-5845)"
 - State: OPEN, **MERGEABLE** ✅, reviewDecision: ""
-- **CI run 29402877354 COMPLETE ✅**: atlas-validate ✅, check-changes ✅, JIRA ✅, all-checks ✅, e2e-api ✅, e2e-smoke ✅, e2e-tests ✅, integration ✅, integration-tests ✅, nox ✅, pre-commit ✅, tox ✅, CodeRabbit ✅
+- **CI run 29402877354 COMPLETE ✅**: all mandatory checks pass.
 - Responded to markVaykhansky's COMMENT from 08:05 IDT with 2 commits (11:46+12:00 IDT).
 - **Action:** Await formal APPROVE from markVaykhansky (or other required reviewer) — CI is green, PR is mergeable.
 
@@ -93,11 +96,20 @@ PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM a
 
 ---
 
-### ⚠️ jn-5844 — Still No PR
+### 🟡 jn-5844 — DRAFT PR #1670 (needs mark ready)
 
 **jn-5844-service-lib-sql-agents-md** ([JN-5844](https://redhat.atlassian.net/browse/JN-5844)):
-- Code done (SHA 86fb06b1). Internal CR done. Still in Code zone, no PR.
-- **Propose:** Create PR creation session.
+- DRAFT PR [#1670](https://github.com/Jounce-IO/jounce/pull/1670) exists: "docs(jbenchmark): add service, libs, and SQL domain AGENTS.md files". isDraft:true. CI all pass (run 29403233416). In Publish zone (Agor).
+- **Action:** Mark PR ready for review (remove draft status). Awaiting Joseph to approve readiness.
+
+---
+
+### ✅ jn-5872 — NEW PR #1669, ALL CI PASS
+
+**jn-5872** ([JN-5872](https://redhat.atlassian.net/browse/JN-5872)):
+- PR [#1669](https://github.com/Jounce-IO/jounce/pull/1669): "feat(jbenchmark): improve dev-connect with namespace/service checks". OPEN + MERGEABLE + reviewDecision:"". ALL CI PASS ✅.
+- PR URL set in Agor ✅.
+- **Action:** Await formal APPROVE from reviewer — CI is green, PR is mergeable.
 
 ---
 
@@ -115,18 +127,19 @@ Use `acli jira workitem transition` to update. Jira MCP 401.
 
 ---
 
-### ✅ jn-5871 — Code Done, Wrong Zone (Day 17+)
+### ⚠️ jn-5871 — NOT in Agor (git-only, no PR, Day 17+)
 
-- 4 commits ahead. SHA fc6e5f77 CLEAN.
-- **Propose:** Move to Verify zone + trigger /implement:validate.
+- Code done ~00:58 IDT Jul 9. SHA fc6e5f77. 
+- **DISCOVERY**: jn-5871 is NOT registered as an Agor worktree. No branch found in Agor board. Git-only branch.
+- No PR created. Needs investigation: is there a PR needed? Should this be registered in Agor?
+- **Flag for Joseph:** What should happen with jn-5871? Create PR? Register in Agor?
 
 ---
 
-### 🆕 jn-5872 — New Ticket, Ingest Done (awaiting Plan)
+### ✅ jn-5872 — NOW IN CODE ZONE + PR #1669 ALL CI PASS
 
-- JN-5872 "[QE] E2E validation of IBM cluster connection workflows" — sub-task of JN-5824.
-- Ingest session completed 08:14 IDT Jul 15. Context at `.artifacts/implement/JN-5872/01-context.md`.
-- **Action:** Trigger `/implement:plan` in jn-5872 worktree.
+- PR [#1669](https://github.com/Jounce-IO/jounce/pull/1669): "feat(jbenchmark): improve dev-connect with namespace/service checks". ALL CI PASS. Agor zone updated to Code. PR URL set in Agor.
+- **Action:** Await reviewer APPROVE (CI green, mergeable).
 
 ---
 
@@ -152,7 +165,7 @@ This creates git state gaps. Investigate overnight schedule reliability.
 
 ## Archived This Session
 
-None — 0 auto-archives (no new merges since 12:00 IDT run).
+None — 0 auto-archives (no new merges since 12:30 IDT run).
 
 Previously archived (Jul 14):
 | Branch | PR | Reason | Time |

@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-15 12:30 IDT";
+export const LAST_UPDATED = "2026-07-15 13:00 IDT";
 
 export const WORKTREES = [
   {
@@ -47,14 +47,22 @@ export const WORKTREES = [
     status: "✅ #1667 ALL CI PASS — run 29402877354 COMPLETE. OPEN + MERGEABLE + reviewDecision:\"\". Awaiting formal reviewer APPROVE to merge.",
     blockedOn: null,
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f65383f777aee864bb886/",
-    sessionLabel: "heartbeat 12:30 IDT Jul 15 — #1667 ALL CI PASS ✅; #1638 nox+tox resolved",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6553b684717caa3f4750/",
+    sessionLabel: "heartbeat 13:00 IDT Jul 15 — #1669 NEW ALL CI PASS ✅; #1670 DRAFT; jn-5871 NOT in Agor",
     recentSessions: [
+      {
+        sessionId: "019f6553b684717caa3f4750",
+        url: "http://127.0.0.1:3030/ui/s/019f6553b684717caa3f4750/",
+        title: "heartbeat 13:00 IDT Jul 15 — #1669 ALL CI PASS ✅ (jn-5872); #1670 DRAFT (jn-5844); #1638 e2e-product pending; 0 merges; 7 Jira mismatches",
+        status: "running",
+        timestamp: "2026-07-15 13:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f65383f777aee864bb886",
         url: "http://127.0.0.1:3030/ui/s/019f65383f777aee864bb886/",
         title: "heartbeat 12:30 IDT Jul 15 — #1667 ALL CI PASS ✅ (run 29402877354); #1638 nox+tox resolved (run 29403906203)",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-15 12:30 IDT",
         outputFile: null,
       },
@@ -82,31 +90,23 @@ export const WORKTREES = [
         timestamp: "2026-07-15 11:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f64af15d67bef820f6770",
-        url: "http://127.0.0.1:3030/ui/s/019f64af15d67bef820f6770/",
-        title: "heartbeat 10:30 IDT Jul 15 — #1667 MERGEABLE + ALL CI PASS ✅ (run 29396571335)",
-        status: "idle",
-        timestamp: "2026-07-15 10:30 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-15 12:30 IDT",
+    lastActive: "2026-07-15 13:00 IDT",
   },
   {
     ticket: "JN-5872",
     ticketUrl: "https://redhat.atlassian.net/browse/JN-5872",
-    title: "[QE] E2E validation of IBM cluster connection (JN-5872)",
+    title: "improve dev-connect with namespace/service checks (JN-5872)",
     branch: "jn-5872",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5872",
-    zone: "Ingest",
-    pr: null,
-    prUrl: null,
-    status: "🆕 Ingest done 08:14 IDT Jul 15. Context at .artifacts/implement/JN-5872/01-context.md. Sub-task of JN-5824 (IBM cluster connection). Awaiting Plan phase.",
+    zone: "Code",
+    pr: "#1669",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1669",
+    status: "✅ PR #1669 ALL CI PASS — 'feat(jbenchmark): improve dev-connect with namespace/service checks'. OPEN + MERGEABLE + reviewDecision:\"\". Awaiting reviewer APPROVE.",
     blockedOn: null,
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f64d1ba4c7524932533cc/",
-    sessionLabel: "ingest (done, ready_for_prompt:TRUE)",
+    sessionLabel: "code (PR #1669 ALL CI PASS — awaiting APPROVE)",
     recentSessions: [
       {
         sessionId: "019f64d1ba4c7524932533cc",
@@ -117,7 +117,7 @@ export const WORKTREES = [
         outputFile: ".artifacts/implement/JN-5872/01-context.md",
       },
     ],
-    lastActive: "2026-07-15 08:14 IDT",
+    lastActive: "2026-07-15 13:00 IDT",
   },
   {
     ticket: "JN-5865",
@@ -154,11 +154,11 @@ export const WORKTREES = [
     zone: "Code",
     pr: null,
     prUrl: null,
-    status: "✅ Code done — session IDLE (~00:58 IDT Jul 9). SHA fc6e5f77 (CLEAN). ⚠️ Zone mismatch — still in Code, should be Verify (Day 17+). Action: move to Verify + trigger /implement:validate.",
-    blockedOn: "Zone mismatch — needs move to Verify",
-    blockedType: "active",
+    status: "⚠️ Code done (~00:58 IDT Jul 9, SHA fc6e5f77). NOT in Agor board — no worktree registered. No PR created. Git-only branch. Needs investigation: create PR? Register in Agor?",
+    blockedOn: "Not in Agor — needs investigation",
+    blockedType: "blocked",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f43a679b57ca5918a79ca/",
-    sessionLabel: "code (done, ready_for_prompt:TRUE — zone mismatch, move to Verify)",
+    sessionLabel: "code (done — but NOT in Agor, no PR)",
     recentSessions: [
       {
         sessionId: "019f43a679b57ca5918a79ca",
@@ -203,14 +203,14 @@ export const WORKTREES = [
     title: "service/lib/sql domain AGENTS.md (JN-5844)",
     branch: "jn-5844-service-lib-sql-agents-md",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5844-service-lib-sql-agents-md",
-    zone: "Code",
-    pr: null,
-    prUrl: null,
-    status: "✅ Code done (SHA 86fb06b1). Internal CR done at 10:46 IDT. Ready for Publish zone — needs PR creation session.",
-    blockedOn: null,
+    zone: "Publish",
+    pr: "#1670 DRAFT",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1670",
+    status: "🟡 DRAFT PR #1670 — 'docs(jbenchmark): add service, libs, and SQL domain AGENTS.md'. isDraft:true. CI all pass (run 29403233416). Needs: mark ready for review.",
+    blockedOn: "Draft PR — needs mark ready",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f60377abb7d9aa3e2e233/",
-    sessionLabel: "Internal CR — JN-5844 (done, ready for Publish)",
+    sessionLabel: "Publish — DRAFT PR #1670 (needs mark ready for review)",
     recentSessions: [
       {
         sessionId: "019f60377abb7d9aa3e2e233",
@@ -388,35 +388,31 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "green",
-    message: "✅ #1667 (jn-5845 JN-5845): ALL CI PASS — run 29402877354 COMPLETE. atlas-validate ✅, all-checks ✅, e2e-api ✅, e2e-smoke ✅, integration ✅, nox ✅, tox ✅, pre-commit ✅, CodeRabbit ✅. OPEN + MERGEABLE + reviewDecision:\"\". Awaiting formal reviewer APPROVE to merge.",
+    message: "✅ #1669 (jn-5872 JN-5872): ALL CI PASS — 'feat(jbenchmark): improve dev-connect with namespace/service checks'. OPEN + MERGEABLE + reviewDecision:\"\". all-checks ✅, integration ✅, nox ✅, tox ✅, pre-commit ✅, e2e-api ✅, e2e-smoke ✅. Awaiting reviewer APPROVE.",
   },
   {
     level: "green",
-    message: "🆕 jn-5872 (JN-5872): New worktree — '[QE] E2E validation of IBM cluster connection workflows' (subtask of JN-5824). Ingest done 08:14 IDT Jul 15. Awaiting /implement:plan.",
+    message: "✅ #1667 (jn-5845 JN-5845): ALL CI PASS — run 29402877354 COMPLETE. OPEN + MERGEABLE + reviewDecision:\"\". Awaiting formal reviewer APPROVE to merge.",
   },
   {
     level: "yellow",
-    message: "🟡 #1638 (JN-5725, off-board): NEW CI RUN 29403906203 — nox ✅ + tox ✅ (previous failures RESOLVED). bake ✅, pre-commit ✅, e2e-api ✅, e2e-smoke ✅, integration ✅. Only e2e-product/e2e ⏳ PENDING. Major improvement. State: OPEN, MERGEABLE.",
+    message: "🟡 #1670 DRAFT (jn-5844 JN-5844): 'docs(jbenchmark): add service, libs, and SQL domain AGENTS.md'. isDraft:true. CI all pass (run 29403233416). Needs: mark ready for review.",
   },
   {
     level: "yellow",
-    message: "⚠️ jn-5844 (JN-5844): Code+CR done (10:46 IDT Jul 14) but still NO PR. Needs PR creation session.",
-  },
-  {
-    level: "green",
-    message: "🎉 #1655 (jn-5867 JN-5867): MERGED 18:49 IDT Jul 14! jn-5867 was git-only (no Agor archive needed). JN-5867 Jira → Done ✅ (confirmed 11:00 IDT Jul 15).",
+    message: "🟡 #1638 (JN-5725, off-board): e2e-product ⏳ PENDING (run 29403906203). nox ✅, tox ✅, bake ✅, e2e-api ✅, e2e-smoke ✅, integration ✅. Waiting on e2e-product.",
   },
   {
     level: "red",
-    message: "🔴 Jira mismatches (7): JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5717, JN-5546 — PRs merged but Jira not Done. JN-5870 ✅, JN-5880 ✅, JN-5879 ✅, JN-5841 ✅, JN-5867 ✅ already Done.",
+    message: "🔴 Jira mismatches (7): JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5717, JN-5546 — PRs merged but Jira not Done. JN-5870 ✅, JN-5880 ✅, JN-5879 ✅, JN-5841 ✅, JN-5867 ✅ already Done. Jira MCP 401.",
+  },
+  {
+    level: "red",
+    message: "⚠️ jn-5871 (JN-5871): NOT in Agor board — no worktree registered. Code done ~00:58 IDT Jul 9 (SHA fc6e5f77), git-only branch, no PR. Needs investigation.",
   },
   {
     level: "yellow",
     message: "📍 jn-5865 (JN-5865): Still Ingest zone — plan done Jul 8 (Day 17+). Propose move to Code + trigger /implement:code.",
-  },
-  {
-    level: "yellow",
-    message: "📍 jn-5871 (JN-5871): Still Code zone — code done since 00:58 IDT Jul 9 (Day 17+). Propose move to Verify + trigger /implement:validate.",
   },
   {
     level: "yellow",
@@ -429,9 +425,5 @@ export const ALERTS = [
   {
     level: "yellow",
     message: "⚠️ model-packaging-cr (Code Review zone): stagnant 30+ days. No PR URL set. Needs investigation or archive.",
-  },
-  {
-    level: "yellow",
-    message: "⚠️ Overnight/morning commit gap: multiple sessions (23:00 IDT, 21:00 IDT Jul 14 FAILED; 00:00 IDT Jul 15 updated files but no commit; 05:30 IDT Jul 15 idle no commit; 06:00 IDT Jul 15 FAILED). Protocol violations accumulating.",
   },
 ];
