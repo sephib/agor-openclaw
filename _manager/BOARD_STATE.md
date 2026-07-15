@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-15 16:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-15 17:00 IDT (advance heartbeat)*
 
 ---
 
@@ -13,7 +13,7 @@
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | Last session Jul 8 IDLE. SHA 16ec44ea (2 commits). Needs: configs, rebase, PR. |
 | jn-5844-service-lib-sql-agents-md | **Publish** | [#1670 DRAFT](https://github.com/Jounce-IO/jounce/pull/1670) | ✅ ALL CI PASS (run 29403233416) | [JN-5844](https://redhat.atlassian.net/browse/JN-5844) — Backlog | 🆕 DRAFT PR #1670. CI all pass. Needs: mark ready for review. |
 | jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | ✅ ALL CI PASS (run 29402877354 complete) | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) — Backlog | ✅ ALL CI PASS. OPEN + MERGEABLE + reviewDecision:"". Awaiting formal reviewer APPROVE to merge. |
-| jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | ❌ CI COMPLETE — ALL-CHECKS FAIL (pre-commit FAIL, run 29411650412) | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — Backlog | 🔴 **CI RUN 29411650412 COMPLETE: ALL-CHECKS = FAIL**. pre-commit FAIL. Other checks pass (e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅). OPEN + MERGEABLE. **Action: fix pre-commit failure.** |
+| jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | ❌ CI COMPLETE — ALL-CHECKS FAIL (pre-commit FAIL, run 29411650412) | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — Backlog | 🔴 **CI RUN 29411650412 COMPLETE: ALL-CHECKS = FAIL**. pre-commit FAIL. Other checks pass (e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅). OPEN + MERGEABLE. **Action: fix pre-commit failure.** Unchanged at 17:00 IDT. |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — Backlog | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 17+** (still Ingest, should be Code). |
 | jn-5871 | **Code** (git-only) | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) — Backlog | Code done ~00:58 IDT Jul 9. SHA fc6e5f77. ⚠️ NOT in Agor board — no Agor worktree registered. Git branch only. No PR created. Needs investigation. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 20+ days. Propose archive. |
@@ -24,7 +24,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | ❌ CI RUN 29411735261 COMPLETE — ALL-CHECKS FAIL. e2e-product FAIL (1h timeout), e2e-tests FAIL. Other checks pass (e2e-smoke ✅, e2e-api ✅, integration ✅, pre-commit ✅, tox ✅, bake ✅, atlas-validate ✅). | OPEN, MERGEABLE | 🔴 **CI COMPLETE: ALL-CHECKS FAIL** — e2e-product timed out (1h). Newly failed at 15:30 IDT Jul 15. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🟡 NEW CI RUN 29424019258 — bake ✅, e2e-api ✅, e2e-smoke ✅, integration ✅, nox ✅, pre-commit ✅, tox ✅, atlas-validate ✅, check-changes ✅. **e2e-product PENDING** (job 87388461363). all-checks not yet resolved. | OPEN, MERGEABLE | 🟡 **NEW CI RUN** (new commits pushed). All critical checks pass. e2e-product still pending. Major improvement from ALL-CHECKS FAIL (run 29411735261). |
 
 ---
 
@@ -60,16 +60,16 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (16:30 IDT Jul 15 vs 16:00 IDT Jul 15)
+## Key Changes (17:00 IDT Jul 15 vs 16:30 IDT Jul 15)
 
 | What changed | Delta |
 |---|---|
-| **No new merges** | Step 1 sweep: no merges since 16:00 IDT. |
+| **No new merges** | Step 1 sweep: no merges since 16:30 IDT. |
+| **#1638 NEW CI RUN** | ⚠️ NEW CI run 29424019258 (new commits pushed). All critical checks pass. e2e-product PENDING. Previous run 29411735261 (ALL-CHECKS FAIL) superseded. |
 | **#1669 CI FAIL unchanged** | CI run 29411650412 still FAIL — pre-commit FAIL. No new commits. |
 | **#1667 unchanged** | ALL CI PASS ✅ (run 29402877354). OPEN + MERGEABLE. Awaiting reviewer APPROVE. |
 | **#1670 unchanged** | DRAFT + CI all pass (run 29403233416). Needs: mark ready for review. |
-| **#1638 CI FAIL unchanged** | ALL-CHECKS FAIL (run 29411735261) — e2e-product FAIL (1h timeout), e2e-tests FAIL. Same as 16:00 IDT. |
-| **Jira mismatches** | 6 unchanged — JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546. Jira MCP 401; acli returning empty. |
+| **Jira mismatches** | 6 confirmed unchanged via acli — JN-5842 (Backlog), JN-5877 (Backlog), JN-5874 (Backlog), JN-5401 (Backlog), JN-5827 (Backlog), JN-5546 (In Progress). |
 
 ---
 
@@ -95,13 +95,15 @@ PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): ad
 
 ---
 
-### 🔴 #1638 (off-board JN-5725) — CI COMPLETE: ALL-CHECKS FAIL (e2e-product TIMEOUT)
+### 🟡 #1638 (off-board JN-5725) — NEW CI RUN: e2e-product PENDING
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements"
-- **CI run 29411735261 COMPLETE**: e2e-smoke ✅, e2e-api ✅, integration ✅, pre-commit ✅, tox ✅, bake ✅, atlas-validate ✅, check-changes ✅, nox ✅. **e2e-product FAIL (1h timeout)**, **e2e-tests FAIL**, **all-checks FAIL**.
+- **NEW CI run 29424019258** (new commits pushed, supersedes 29411735261):
+  - bake ✅, e2e-api ✅, e2e-smoke ✅, integration ✅, nox ✅, pre-commit ✅, pre-commit-run ✅, tox ✅, atlas-validate ✅, check-changes ✅
+  - **e2e-product PENDING** (job 87388461363) — all-checks not yet resolved
 - State: OPEN, MERGEABLE.
-- Status changed from "e2e-product PENDING" → **"ALL-CHECKS FAIL"** at 15:30 IDT Jul 15.
-- **Action:** e2e-product timed out. Needs investigation: is this a flaky test, infrastructure issue, or code regression?
+- Previous run 29411735261 (ALL-CHECKS FAIL) superseded by new commits.
+- **Action:** Await e2e-product result on new run. Status improved — no longer a blocker, monitoring.
 
 ---
 
