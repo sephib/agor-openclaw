@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-15 10:00 IDT";
+export const LAST_UPDATED = "2026-07-15 10:30 IDT";
 
 export const WORKTREES = [
   {
@@ -44,17 +44,25 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1667",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1667",
-    status: "🔴 CI ALL PASS ✅ (run 29356096050) — but #1655 merged to main → PR now CONFLICTING. Needs rebase. NOT DRAFT. REVIEW_REQUIRED.",
-    blockedOn: "CONFLICTING — needs rebase after #1655 merged to main",
-    blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f649375b77171bc0e25b0/",
-    sessionLabel: "heartbeat 10:00 IDT Jul 15 — #1667 CONFLICTING, board static",
+    status: "🟡 CI ALL PASS ✅ (run 29396571335) — MERGEABLE ✅ (rebase done since 10:00 IDT). REVIEW_REQUIRED. Ready for reviewer approval.",
+    blockedOn: null,
+    blockedType: "active",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f64af15d67bef820f6770/",
+    sessionLabel: "heartbeat 10:30 IDT Jul 15 — #1667 MERGEABLE + ALL CI PASS ✅",
     recentSessions: [
+      {
+        sessionId: "019f64af15d67bef820f6770",
+        url: "http://127.0.0.1:3030/ui/s/019f64af15d67bef820f6770/",
+        title: "heartbeat 10:30 IDT Jul 15 — #1667 MERGEABLE + ALL CI PASS ✅ (run 29396571335)",
+        status: "running",
+        timestamp: "2026-07-15 10:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f649375b77171bc0e25b0",
         url: "http://127.0.0.1:3030/ui/s/019f649375b77171bc0e25b0/",
         title: "heartbeat 10:00 IDT Jul 15 — #1667 CONFLICTING, board static",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-15 10:00 IDT",
         outputFile: null,
       },
@@ -82,16 +90,8 @@ export const WORKTREES = [
         timestamp: "2026-07-14 19:30 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f615b95367a7cb547b017",
-        url: "http://127.0.0.1:3030/ui/s/019f615b95367a7cb547b017/",
-        title: "heartbeat 19:00 IDT Jul 14 — #1667 pre-commit ❌ FAIL (unchanged)",
-        status: "idle",
-        timestamp: "2026-07-14 19:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-15 10:00 IDT",
+    lastActive: "2026-07-15 10:30 IDT",
   },
   {
     ticket: "JN-5865",
@@ -361,8 +361,8 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "red",
-    message: "🔴 #1667 (jn-5845 JN-5845): CONFLICTING after #1655 merged to main. Needs rebase. CI was ALL PASS ✅ on pre-conflict SHA (run 29356096050). NOT DRAFT, REVIEW_REQUIRED. Action: trigger rebase session in jn-5845 worktree.",
+    level: "green",
+    message: "🎉 #1667 (jn-5845 JN-5845): MERGEABLE ✅ + ALL CI PASS (run 29396571335). Rebase completed since 10:00 IDT. REVIEW_REQUIRED — awaiting reviewer approval. Nothing blocking merge.",
   },
   {
     level: "red",

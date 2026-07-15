@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-15 10:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-15 10:30 IDT (advance heartbeat)*
 
 ---
 
@@ -12,7 +12,7 @@
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — Backlog | Design session done Jun 30. Ready for Plan phase. |
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | Last session Jul 8 IDLE. SHA 16ec44ea (2 commits). Needs: configs, rebase, PR. |
 | jn-5844-service-lib-sql-agents-md | **Code** | — | — | [JN-5844](https://redhat.atlassian.net/browse/JN-5844) — Backlog | ✅ Code done (SHA 86fb06b1). Internal CR done. **Still no PR** — needs PR creation. |
-| jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | ✅ ALL PASS on pre-conflict SHA (run 29356096050) — but **CONFLICTING after #1655 merged** | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) — Backlog | 🔴 CI ALL PASS but main moved. **Needs rebase** before merge. NOT DRAFT. REVIEW_REQUIRED. |
+| jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | ✅ ALL CI PASS (run 29396571335) — **MERGEABLE** ✅ (rebase done since 10:00 IDT) | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) — Backlog | 🟡 CI ALL PASS + MERGEABLE. REVIEW_REQUIRED. **Ready for merge** — awaiting reviewer approval. |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — Backlog | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 17+** (still Ingest, should be Code). |
 | jn-5871 | **Code** | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) — Backlog | Code done ~00:58 IDT Jul 9. SHA fc6e5f77 CLEAN. **Zone mismatch Day 17+** (still Code, should be Verify). |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 20+ days. Propose archive. |
@@ -59,27 +59,25 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (10:00 IDT Jul 15 vs 09:00 IDT Jul 15)
+## Key Changes (10:30 IDT Jul 15 vs 10:00 IDT Jul 15)
 
 | What changed | Delta |
 |---|---|
-| **JN-5879 → Done ✅** | Confirmed via acli — was "Unknown" in mismatch table. Jira mismatches: 9 → 8. |
-| **Board static** | No new merges, no new CI runs, no new sessions since 09:00 IDT. |
-| **#1667 CI verified** | Still ALL PASS ✅ on pre-conflict SHA (run 29356096050). Still CONFLICTING. |
-| **#1638 CI confirmed** | e2e-product still ❌ FAIL. Same check-run IDs as overnight. |
-| **Jira mismatches confirmed** | JN-5877, JN-5874, JN-5867, JN-5842, JN-5401, JN-5827, JN-5717 → Backlog; JN-5546 → In Progress. All 8 confirmed via acli. |
+| **#1667 MERGEABLE + ALL CI PASS** | 🎉 Rebase happened between runs! PR #1667 was CONFLICTING at 10:00 IDT — now MERGEABLE. CI run 29396571335: all-checks ✅, pre-commit ✅, e2e-api ✅, e2e-smoke ✅, integration ✅, tox ✅, nox ✅. Ready for reviewer approval. |
+| **#1638 unchanged** | e2e-product still ❌ FAIL. Same run IDs (29364311223). No change. |
+| **No new merges** | Step 1 sweep: no merges since 10:00 IDT. Board stable. |
+| **Jira mismatches** | 8 active — unchanged since 10:00 IDT run. |
 
 ---
 
 ## Attention Items
 
-### 🔴 #1667 (jn-5845) — Needs Rebase
+### 🟡 #1667 (jn-5845) — MERGEABLE, Awaiting Review
 
 PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): add Helm and CI/CD domain AGENTS.md files (JN-5845)"
-- State: OPEN, REVIEW_REQUIRED, **CONFLICTING** (mergeable=false, isDraft=false)
-- CI on current SHA: ALL PASS ✅ (all-checks ✅, pre-commit ✅, e2e-api ✅, e2e-smoke ✅, tox ✅, integration ✅)
-- Needs rebase on main (main moved when #1655 merged at 18:49 IDT Jul 14)
-- **Propose:** Trigger rebase session in jn-5845 worktree.
+- State: OPEN, REVIEW_REQUIRED, **MERGEABLE** ✅ (rebase done since 10:00 IDT run)
+- CI run 29396571335: ALL PASS ✅ (all-checks ✅, pre-commit ✅, e2e-api ✅, e2e-smoke ✅, tox ✅, integration ✅, nox ✅)
+- **Action:** Awaiting reviewer approval — nothing blocking merge technically.
 
 ---
 
@@ -143,7 +141,7 @@ This creates git state gaps. Investigate overnight schedule reliability.
 
 ## Archived This Session
 
-None — 0 auto-archives (no new merges since 09:00 IDT run).
+None — 0 auto-archives (no new merges since 10:00 IDT run).
 
 Previously archived (Jul 14):
 | Branch | PR | Reason | Time |
