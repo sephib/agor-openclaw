@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-15 11:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-15 12:00 IDT (advance heartbeat)*
 
 ---
 
@@ -12,7 +12,7 @@
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — Backlog | Design session done Jun 30. Ready for Plan phase. |
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | Last session Jul 8 IDLE. SHA 16ec44ea (2 commits). Needs: configs, rebase, PR. |
 | jn-5844-service-lib-sql-agents-md | **Code** | — | — | [JN-5844](https://redhat.atlassian.net/browse/JN-5844) — Backlog | ✅ Code done (SHA 86fb06b1). Internal CR done. **Still no PR** — needs PR creation. |
-| jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | ✅ ALL CI PASS (run 29396571335) — **MERGEABLE** ✅ | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) — Backlog | 🟡 CI ALL PASS + MERGEABLE. markVaykhansky COMMENTED 08:05 IDT (no APPROVE yet). reviewDecision now "". Awaiting formal approval. |
+| jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | ⏳ CI RE-RUNNING (run 29402877354 — e2e/integration/tox/pre-commit pending) | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) — Backlog | 🟡 Joseph pushed 2 new commits at 11:46+12:00 IDT addressing markVaykhansky's review. New CI run 29402877354 pending. Still OPEN + MERGEABLE. |
 | jn-5872 | **Ingest** | — | — | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — [Backlog] | 🆕 NEW. "[QE] E2E validation of IBM cluster connection". Sub-task of JN-5824. Ingest done 08:14 IDT Jul 15. Awaiting Plan phase. |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — Backlog | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 17+** (still Ingest, should be Code). |
 | jn-5871 | **Code** | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) — Backlog | Code done ~00:58 IDT Jul 9. SHA fc6e5f77 CLEAN. **Zone mismatch Day 17+** (still Code, should be Verify). |
@@ -24,7 +24,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | **❌ e2e-product ❌ FAIL** (all-checks FAIL, all others ✅). run IDs: 87199313923 (e2e-product FAIL), 87209582058 (all-checks FAIL). | OPEN, MERGEABLE | 🔴 e2e-product still failing. Unchanged since overnight. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | **❌ nox FAIL + tox FAIL** (run 29402122746). e2e-smoke PENDING. e2e-api/integration/pre-commit/bake all ✅. | OPEN, MERGEABLE | 🔴 CI changed: e2e-product no longer listed; nox+tox now FAIL (new failures in run 29402122746). Still blocking merge. |
 
 ---
 
@@ -60,35 +60,38 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (11:30 IDT Jul 15 vs 11:00 IDT Jul 15)
+## Key Changes (12:00 IDT Jul 15 vs 11:30 IDT Jul 15)
 
 | What changed | Delta |
 |---|---|
-| **jn-5872 NEW** | New worktree in Ingest zone: JN-5872 "[QE] E2E validation of IBM cluster connection workflows" (sub-task of JN-5824). Ingest session idle since 08:14 IDT — completed before this heartbeat period. |
-| **#1667 reviewDecision cleared** | Changed from REVIEW_REQUIRED to "" — markVaykhansky submitted a COMMENT review at 08:05 IDT (not an APPROVE). Still waiting for formal merge approval. CI unchanged: ALL PASS (run 29396571335). |
-| **#1638 unchanged** | e2e-product still ❌ FAIL. Same run IDs (29364311223). No change. |
-| **No new merges** | Step 1 sweep: no merges since 11:00 IDT. Board stable otherwise. |
-| **Jira mismatches** | 7 active — unchanged from 11:00 IDT run. |
+| **#1667 NEW COMMITS** | Joseph pushed 2 commits at 11:46 IDT ("docs: address PR #1667 review feedback — Add experiment pipeline flow overview") and ~12:00 IDT ("docs: restore lcov.info"). This responds to markVaykhansky's COMMENT from 08:05 IDT. New CI run 29402877354 triggered — e2e-api/integration/pre-commit/tox PENDING. Previous run 29396571335 superseded. |
+| **#1638 CI CHANGED** | New CI run 29402122746: nox FAIL ❌ + tox FAIL ❌ (new failures). e2e-smoke PENDING. e2e-product no longer listed as failing. All other checks PASS. State still OPEN, MERGEABLE. |
+| **No new merges** | Step 1 sweep: no merges since 11:30 IDT. Board static otherwise. |
+| **Jira mismatches** | 7 active — unchanged from 11:30 IDT run. |
 
 ---
 
 ## Attention Items
 
-### 🟡 #1667 (jn-5845) — MERGEABLE, Awaiting Formal Approval
+### 🟡 #1667 (jn-5845) — New Commits Pushed, CI Re-running
 
 PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): add Helm and CI/CD domain AGENTS.md files (JN-5845)"
-- State: OPEN, **MERGEABLE** ✅, reviewDecision: "" (was REVIEW_REQUIRED — markVaykhansky COMMENTED at 08:05 IDT Jul 15, not an APPROVE)
-- CI run 29396571335: ALL PASS ✅ (all-checks ✅, pre-commit ✅, e2e-api ✅, e2e-smoke ✅, tox ✅, integration ✅, nox ✅)
-- **Action:** Awaiting formal APPROVE from a required reviewer — nothing blocking merge technically once approved.
+- State: OPEN, **MERGEABLE** ✅, reviewDecision: ""
+- Joseph pushed 2 new commits at 11:46 IDT and ~12:00 IDT responding to markVaykhansky's COMMENT from 08:05 IDT:
+  - `84014e06`: "docs: address PR #1667 review feedback — Add experiment pipeline flow overview"
+  - `7f7bdf4f`: "docs: restore lcov.info"
+- **New CI run 29402877354**: atlas-validate ✅, check-changes ✅, JIRA ✅ — e2e-api/integration/pre-commit/tox ⏳ PENDING. Previous run 29396571335 now superseded.
+- **Action:** Wait for CI to complete. Then await formal APPROVE from markVaykhansky (or other required reviewer).
 
 ---
 
-### 🔴 #1638 (off-board JN-5725) — e2e-product ❌
+### 🔴 #1638 (off-board JN-5725) — nox+tox ❌ (CI changed)
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements"
-- CI: all-checks ❌, e2e-product ❌ FAIL. All other checks ✅.
+- **CI run 29402122746**: nox ❌ FAIL + tox ❌ FAIL (new failures). e2e-smoke ⏳ PENDING. e2e-api ✅, integration ✅, pre-commit ✅, bake ✅, atlas-validate ✅, check-changes ✅, JIRA ✅.
+- Note: e2e-product no longer listed as failing — may have been fixed or removed.
 - State: OPEN, MERGEABLE (not conflicting).
-- **Action:** Investigate e2e-product failure or retrigger.
+- **Action:** Investigate nox+tox failures in new run. May be a code change pushed to branch causing regressions.
 
 ---
 
@@ -151,7 +154,7 @@ This creates git state gaps. Investigate overnight schedule reliability.
 
 ## Archived This Session
 
-None — 0 auto-archives (no new merges since 11:00 IDT run).
+None — 0 auto-archives (no new merges since 11:30 IDT run).
 
 Previously archived (Jul 14):
 | Branch | PR | Reason | Time |
