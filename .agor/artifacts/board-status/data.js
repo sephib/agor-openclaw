@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-15 09:00 IDT";
+export const LAST_UPDATED = "2026-07-15 10:00 IDT";
 
 export const WORKTREES = [
   {
@@ -44,17 +44,25 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1667",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1667",
-    status: "🔴 CI was ALL PASS ✅ (pre-commit ✅ all-checks ✅) — but #1655 merged to main → PR now CONFLICTING. Needs rebase. NOT DRAFT. REVIEW_REQUIRED.",
+    status: "🔴 CI ALL PASS ✅ (run 29356096050) — but #1655 merged to main → PR now CONFLICTING. Needs rebase. NOT DRAFT. REVIEW_REQUIRED.",
     blockedOn: "CONFLICTING — needs rebase after #1655 merged to main",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f645c6ff67e0dad104e84/",
-    sessionLabel: "heartbeat 09:00 IDT Jul 15 — #1667 CONFLICTING, needs rebase",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f649375b77171bc0e25b0/",
+    sessionLabel: "heartbeat 10:00 IDT Jul 15 — #1667 CONFLICTING, board static",
     recentSessions: [
+      {
+        sessionId: "019f649375b77171bc0e25b0",
+        url: "http://127.0.0.1:3030/ui/s/019f649375b77171bc0e25b0/",
+        title: "heartbeat 10:00 IDT Jul 15 — #1667 CONFLICTING, board static",
+        status: "running",
+        timestamp: "2026-07-15 10:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f645c6ff67e0dad104e84",
         url: "http://127.0.0.1:3030/ui/s/019f645c6ff67e0dad104e84/",
         title: "heartbeat 09:00 IDT Jul 15 — #1667 CONFLICTING, needs rebase",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-15 09:00 IDT",
         outputFile: null,
       },
@@ -82,16 +90,8 @@ export const WORKTREES = [
         timestamp: "2026-07-14 19:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f61401b1c7d118de0bdf2",
-        url: "http://127.0.0.1:3030/ui/s/019f61401b1c7d118de0bdf2/",
-        title: "heartbeat 18:30 IDT Jul 14 — #1667 CI complete, pre-commit ❌ FAIL",
-        status: "idle",
-        timestamp: "2026-07-14 18:30 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-15 09:00 IDT",
+    lastActive: "2026-07-15 10:00 IDT",
   },
   {
     ticket: "JN-5865",
@@ -102,7 +102,7 @@ export const WORKTREES = [
     zone: "Ingest",
     pr: null,
     prUrl: null,
-    status: "Plan done ~23:06 IDT Jul 8. Still Ingest zone — zone mismatch persists (Day 16+). Propose move to Code zone + trigger /implement:code.",
+    status: "Plan done ~23:06 IDT Jul 8. Still Ingest zone — zone mismatch persists (Day 17+). Propose move to Code zone + trigger /implement:code.",
     blockedOn: "Zone mismatch — needs move to Code",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f4351d110788ba7254ee1/",
@@ -128,7 +128,7 @@ export const WORKTREES = [
     zone: "Code",
     pr: null,
     prUrl: null,
-    status: "✅ Code done — session IDLE (~00:58 IDT Jul 9). SHA fc6e5f77 (CLEAN). ⚠️ Zone mismatch — still in Code, should be Verify (Day 16+). Action: move to Verify + trigger /implement:validate.",
+    status: "✅ Code done — session IDLE (~00:58 IDT Jul 9). SHA fc6e5f77 (CLEAN). ⚠️ Zone mismatch — still in Code, should be Verify (Day 17+). Action: move to Verify + trigger /implement:validate.",
     blockedOn: "Zone mismatch — needs move to Verify",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f43a679b57ca5918a79ca/",
@@ -274,7 +274,7 @@ export const MERGED = [
     pr: "#1655",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1655",
     mergedDate: "2026-07-14",
-    note: "Merged 18:49 IDT Jul 14 🎉 jn-5867 was git-only (not in Agor). JN-5867 Jira → needs Done! Missed by 20:00 heartbeat, caught by overnight run.",
+    note: "Merged 18:49 IDT Jul 14 🎉 jn-5867 was git-only (not in Agor). JN-5867 Jira → needs Done!",
   },
   {
     ticket: "JN-5870",
@@ -310,7 +310,7 @@ export const MERGED = [
     pr: "#1665",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1665",
     mergedDate: "2026-07-14",
-    note: "Merged 10:48 IDT Jul 14. jn-5879-justfile-skip-helm ARCHIVED 11:30 IDT Jul 14. JN-5879 Jira → needs Done.",
+    note: "Merged 10:48 IDT Jul 14. jn-5879-justfile-skip-helm ARCHIVED 11:30 IDT Jul 14. JN-5879 Done ✅ (confirmed 10:00 IDT Jul 15).",
   },
   {
     ticket: "JN-5877",
@@ -362,7 +362,7 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "red",
-    message: "🔴 #1667 (jn-5845 JN-5845): CONFLICTING after #1655 merged to main. Needs rebase. CI was ALL PASS ✅ on pre-conflict SHA. NOT DRAFT, REVIEW_REQUIRED. Action: trigger rebase session in jn-5845 worktree.",
+    message: "🔴 #1667 (jn-5845 JN-5845): CONFLICTING after #1655 merged to main. Needs rebase. CI was ALL PASS ✅ on pre-conflict SHA (run 29356096050). NOT DRAFT, REVIEW_REQUIRED. Action: trigger rebase session in jn-5845 worktree.",
   },
   {
     level: "red",
@@ -378,15 +378,15 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 Jira mismatches (9): JN-5867, JN-5842, JN-5879, JN-5877, JN-5874, JN-5401, JN-5717, JN-5546, JN-5827 — PRs merged but Jira not Done. JN-5870 ✅, JN-5880 ✅ already Done.",
+    message: "🔴 Jira mismatches (8): JN-5867, JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5717, JN-5546 — PRs merged but Jira not Done. JN-5870 ✅, JN-5880 ✅, JN-5879 ✅, JN-5841 ✅ already Done.",
   },
   {
     level: "yellow",
-    message: "📍 jn-5865 (JN-5865): Still Ingest zone — plan done Jul 8 (Day 16+). Propose move to Code + trigger /implement:code.",
+    message: "📍 jn-5865 (JN-5865): Still Ingest zone — plan done Jul 8 (Day 17+). Propose move to Code + trigger /implement:code.",
   },
   {
     level: "yellow",
-    message: "📍 jn-5871 (JN-5871): Still Code zone — code done since 00:58 IDT Jul 9 (Day 16+). Propose move to Verify + trigger /implement:validate.",
+    message: "📍 jn-5871 (JN-5871): Still Code zone — code done since 00:58 IDT Jul 9 (Day 17+). Propose move to Verify + trigger /implement:validate.",
   },
   {
     level: "yellow",
@@ -402,6 +402,6 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⚠️ Overnight/morning commit gap: 00:00 IDT Jul 15 session updated files but failed to commit. 05:30 IDT session ran (idle) but also no commit. Board state existed only on disk for 9h. Protocol violations.",
+    message: "⚠️ Overnight/morning commit gap: multiple sessions (23:00 IDT, 21:00 IDT Jul 14 FAILED; 00:00 IDT Jul 15 updated files but no commit; 05:30 IDT Jul 15 idle no commit; 06:00 IDT Jul 15 FAILED). Protocol violations accumulating.",
   },
 ];
