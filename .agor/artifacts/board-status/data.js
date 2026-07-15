@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-15 16:00 IDT";
+export const LAST_UPDATED = "2026-07-15 16:30 IDT";
 
 export const WORKTREES = [
   {
@@ -47,14 +47,22 @@ export const WORKTREES = [
     status: "✅ #1667 ALL CI PASS — run 29402877354 COMPLETE. OPEN + MERGEABLE + reviewDecision:\"\". Awaiting formal reviewer APPROVE to merge.",
     blockedOn: null,
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6613e28070dd8c933af8/",
-    sessionLabel: "heartbeat 16:00 IDT Jul 15 — CI unchanged; 0 merges; 6 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f662f59e17eea9f3f031d/",
+    sessionLabel: "heartbeat 16:30 IDT Jul 15 — CI unchanged; 0 merges; 6 Jira mismatches",
     recentSessions: [
+      {
+        sessionId: "019f662f59e17eea9f3f031d",
+        url: "http://127.0.0.1:3030/ui/s/019f662f59e17eea9f3f031d/",
+        title: "heartbeat 16:30 IDT Jul 15 — CI unchanged; 0 merges; 6 Jira mismatches",
+        status: "running",
+        timestamp: "2026-07-15 16:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f6613e28070dd8c933af8",
         url: "http://127.0.0.1:3030/ui/s/019f6613e28070dd8c933af8/",
         title: "heartbeat 16:00 IDT Jul 15 — CI unchanged; 0 merges; 6 Jira mismatches",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-15 16:00 IDT",
         outputFile: null,
       },
@@ -69,7 +77,7 @@ export const WORKTREES = [
       {
         sessionId: "019f65c19538779c8e975fb3",
         url: "http://127.0.0.1:3030/ui/s/019f65c19538779c8e975fb3/",
-        title: "heartbeat 15:00 IDT Jul 15 — JN-5717 resolved; #1669 CI FAIL unchanged; #1638 e2e-product pending; 0 merges; 6 Jira mismatches",
+        title: "heartbeat 15:00 IDT Jul 15 — JN-5717 resolved; #1669 CI FAIL unchanged; #1638 e2e-product pending; 0 merges",
         status: "idle",
         timestamp: "2026-07-15 15:00 IDT",
         outputFile: null,
@@ -77,21 +85,13 @@ export const WORKTREES = [
       {
         sessionId: "019f65a620d0716ebc814467",
         url: "http://127.0.0.1:3030/ui/s/019f65a620d0716ebc814467/",
-        title: "heartbeat 14:30 IDT Jul 15 — #1669 CI FAIL (pre-commit); #1638 critical CI PASS, e2e-product pending; 0 merges",
+        title: "heartbeat 14:30 IDT Jul 15 — #1669 CI FAIL (pre-commit); #1638 critical CI PASS; 0 merges",
         status: "idle",
         timestamp: "2026-07-15 14:30 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f658aa66e744ea6d42558",
-        url: "http://127.0.0.1:3030/ui/s/019f658aa66e744ea6d42558/",
-        title: "heartbeat 14:00 IDT Jul 15 — #1669 NEW CI RUN 29411650412; #1638 NEW CI RUN 29411735261; 0 merges",
-        status: "idle",
-        timestamp: "2026-07-15 14:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-15 16:00 IDT",
+    lastActive: "2026-07-15 16:30 IDT",
   },
   {
     ticket: "JN-5872",
@@ -105,14 +105,22 @@ export const WORKTREES = [
     status: "🔴 CI RUN 29411650412 COMPLETE — ALL-CHECKS FAIL. pre-commit FAIL. Other checks pass (e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅). OPEN + MERGEABLE. Action: fix pre-commit failure.",
     blockedOn: "CI failure — pre-commit",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6613e28070dd8c933af8/",
-    sessionLabel: "heartbeat 16:00 IDT Jul 15 — #1669 CI FAIL (pre-commit) unchanged; #1638 CI FAIL (e2e-product timeout); 6 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f662f59e17eea9f3f031d/",
+    sessionLabel: "heartbeat 16:30 IDT Jul 15 — #1669 CI FAIL (pre-commit) unchanged; 0 merges; 6 Jira mismatches",
     recentSessions: [
+      {
+        sessionId: "019f662f59e17eea9f3f031d",
+        url: "http://127.0.0.1:3030/ui/s/019f662f59e17eea9f3f031d/",
+        title: "heartbeat 16:30 IDT Jul 15 — CI unchanged; 0 merges; 6 Jira mismatches",
+        status: "running",
+        timestamp: "2026-07-15 16:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f6613e28070dd8c933af8",
         url: "http://127.0.0.1:3030/ui/s/019f6613e28070dd8c933af8/",
         title: "heartbeat 16:00 IDT Jul 15 — CI unchanged; 0 merges; 6 Jira mismatches",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-15 16:00 IDT",
         outputFile: null,
       },
@@ -140,16 +148,8 @@ export const WORKTREES = [
         timestamp: "2026-07-15 14:30 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f64d1ba4c7524932533cc",
-        url: "http://127.0.0.1:3030/ui/s/019f64d1ba4c7524932533cc/",
-        title: "Ingest JN-5872 — QE E2E validation IBM cluster connection (done 08:14 IDT)",
-        status: "idle",
-        timestamp: "2026-07-15 08:14 IDT",
-        outputFile: ".artifacts/implement/JN-5872/01-context.md",
-      },
     ],
-    lastActive: "2026-07-15 16:00 IDT",
+    lastActive: "2026-07-15 16:30 IDT",
   },
   {
     ticket: "JN-5865",
@@ -432,7 +432,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 #1638 (JN-5725, off-board): CI run 29411735261 COMPLETE — ALL-CHECKS FAIL. e2e-product FAIL (1h timeout), e2e-tests FAIL. Other checks pass (e2e-smoke ✅, e2e-api ✅, integration ✅, pre-commit ✅, tox ✅, bake ✅, atlas-validate ✅). First failed 15:30 IDT Jul 15. Unchanged at 16:00 IDT. Needs: investigate e2e-product timeout (flaky vs regression).",
+    message: "🔴 #1638 (JN-5725, off-board): CI run 29411735261 COMPLETE — ALL-CHECKS FAIL. e2e-product FAIL (1h timeout), e2e-tests FAIL. Other checks pass (e2e-smoke ✅, e2e-api ✅, integration ✅, pre-commit ✅, tox ✅, bake ✅, atlas-validate ✅). First failed 15:30 IDT Jul 15. Unchanged at 16:30 IDT. Needs: investigate e2e-product timeout (flaky vs regression).",
   },
   {
     level: "red",

@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-15 16:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-15 16:30 IDT (advance heartbeat)*
 
 ---
 
@@ -60,16 +60,16 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (16:00 IDT Jul 15 vs 15:30 IDT Jul 15)
+## Key Changes (16:30 IDT Jul 15 vs 16:00 IDT Jul 15)
 
 | What changed | Delta |
 |---|---|
-| **No new merges** | Step 1 sweep: no merges since 15:30 IDT. |
+| **No new merges** | Step 1 sweep: no merges since 16:00 IDT. |
 | **#1669 CI FAIL unchanged** | CI run 29411650412 still FAIL — pre-commit FAIL. No new commits. |
 | **#1667 unchanged** | ALL CI PASS ✅ (run 29402877354). OPEN + MERGEABLE. Awaiting reviewer APPROVE. |
 | **#1670 unchanged** | DRAFT + CI all pass (run 29403233416). Needs: mark ready for review. |
-| **#1638 CI FAIL unchanged** | ALL-CHECKS FAIL (run 29411735261) — e2e-product FAIL (1h timeout), e2e-tests FAIL. Same as 15:30 IDT. |
-| **Jira mismatches** | 6 confirmed via acli — JN-5842 Backlog, JN-5877 Backlog, JN-5874 Backlog, JN-5401 Backlog, JN-5827 Backlog, JN-5546 In Progress. Unchanged. |
+| **#1638 CI FAIL unchanged** | ALL-CHECKS FAIL (run 29411735261) — e2e-product FAIL (1h timeout), e2e-tests FAIL. Same as 16:00 IDT. |
+| **Jira mismatches** | 6 unchanged — JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546. Jira MCP 401; acli returning empty. |
 
 ---
 
