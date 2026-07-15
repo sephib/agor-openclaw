@@ -3926,4 +3926,13 @@ export const HEARTBEAT_RUNS = [
     summary: "Archived jn-5879 (PR #1665 merged); NEW jn-5880 worktree (PR #1666 DRAFT CI running); #1658 NOW CONFLICTING (was MERGEABLE — regression from #1665 merge); #1638 e2e-product ❌ FAIL (run complete)",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f5fbf920c72e7b66dbd2d/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-07-15 09:00 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "Board static 9h (overnight commit gap). #1655 MERGED confirmed. #1667 CONFLICTING (needs rebase, CI was ALL PASS). #1638 e2e-product ❌ unchanged. 9 Jira mismatches. Jira MCP 401.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f645c6ff67e0dad104e84/",
+  },
 ];
