@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-15 17:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-15 17:30 IDT (advance heartbeat)*
 
 ---
 
@@ -24,7 +24,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🟡 NEW CI RUN 29424019258 — bake ✅, e2e-api ✅, e2e-smoke ✅, integration ✅, nox ✅, pre-commit ✅, tox ✅, atlas-validate ✅, check-changes ✅. **e2e-product PENDING** (job 87388461363). all-checks not yet resolved. | OPEN, MERGEABLE | 🟡 **NEW CI RUN** (new commits pushed). All critical checks pass. e2e-product still pending. Major improvement from ALL-CHECKS FAIL (run 29411735261). |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🟡 **NEW CI RUN 29430527639** (supersedes 29424019258) — bake ✅, check-changes ✅, atlas-validate ✅. pre-commit-run, integration, tox, e2e-api **RUNNING** (in progress ~17:28 IDT). | OPEN, MERGEABLE | 🟡 **ANOTHER NEW CI RUN** (yet more commits pushed). Run 29430527639 very early — 4 checks done, rest running. |
 
 ---
 
@@ -60,12 +60,12 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (17:00 IDT Jul 15 vs 16:30 IDT Jul 15)
+## Key Changes (17:30 IDT Jul 15 vs 17:00 IDT Jul 15)
 
 | What changed | Delta |
 |---|---|
-| **No new merges** | Step 1 sweep: no merges since 16:30 IDT. |
-| **#1638 NEW CI RUN** | ⚠️ NEW CI run 29424019258 (new commits pushed). All critical checks pass. e2e-product PENDING. Previous run 29411735261 (ALL-CHECKS FAIL) superseded. |
+| **No new merges** | Step 1 sweep: no merges since 17:00 IDT. |
+| **#1638 ANOTHER NEW CI RUN** | ⚠️ NEW CI run 29430527639 (yet more commits pushed, supersedes 29424019258). Very early run: bake ✅, check-changes ✅, atlas-validate ✅. pre-commit-run/integration/tox/e2e-api RUNNING (~17:28 IDT). |
 | **#1669 CI FAIL unchanged** | CI run 29411650412 still FAIL — pre-commit FAIL. No new commits. |
 | **#1667 unchanged** | ALL CI PASS ✅ (run 29402877354). OPEN + MERGEABLE. Awaiting reviewer APPROVE. |
 | **#1670 unchanged** | DRAFT + CI all pass (run 29403233416). Needs: mark ready for review. |
@@ -95,15 +95,16 @@ PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): ad
 
 ---
 
-### 🟡 #1638 (off-board JN-5725) — NEW CI RUN: e2e-product PENDING
+### 🟡 #1638 (off-board JN-5725) — ANOTHER NEW CI RUN: Jobs Running
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements"
-- **NEW CI run 29424019258** (new commits pushed, supersedes 29411735261):
-  - bake ✅, e2e-api ✅, e2e-smoke ✅, integration ✅, nox ✅, pre-commit ✅, pre-commit-run ✅, tox ✅, atlas-validate ✅, check-changes ✅
-  - **e2e-product PENDING** (job 87388461363) — all-checks not yet resolved
+- **NEW CI run 29430527639** (yet more commits pushed ~17:28 IDT, supersedes 29424019258):
+  - bake ✅, check-changes ✅, atlas-validate ✅
+  - pre-commit-run **RUNNING**, integration **RUNNING**, tox **RUNNING**, e2e-api **RUNNING**
+  - atlas-validate-run skipping
 - State: OPEN, MERGEABLE.
-- Previous run 29411735261 (ALL-CHECKS FAIL) superseded by new commits.
-- **Action:** Await e2e-product result on new run. Status improved — no longer a blocker, monitoring.
+- Previous run 29424019258 (e2e-product PENDING) superseded by yet more new commits.
+- **Action:** Await CI completion on run 29430527639. Active development ongoing.
 
 ---
 
