@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-15 13:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-15 14:00 IDT (advance heartbeat)*
 
 ---
 
@@ -13,7 +13,7 @@
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | Last session Jul 8 IDLE. SHA 16ec44ea (2 commits). Needs: configs, rebase, PR. |
 | jn-5844-service-lib-sql-agents-md | **Publish** | [#1670 DRAFT](https://github.com/Jounce-IO/jounce/pull/1670) | ✅ ALL CI PASS (run 29403233416) | [JN-5844](https://redhat.atlassian.net/browse/JN-5844) — Backlog | 🆕 DRAFT PR #1670 created. "docs(jbenchmark): add service, libs, SQL domain AGENTS.md". isDraft:true. CI all pass. Needs: mark ready for review. |
 | jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | ✅ ALL CI PASS (run 29402877354 complete) | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) — Backlog | ✅ ALL CI PASS. OPEN + MERGEABLE + reviewDecision:"". Awaiting formal reviewer APPROVE to merge. |
-| jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | ✅ ALL CI PASS (run 29401501634) | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — Backlog | 🆕 NEW PR #1669 "feat(jbenchmark): improve dev-connect". OPEN + MERGEABLE + reviewDecision:"". ALL CI PASS ✅. Awaiting reviewer APPROVE. PR URL set in Agor. |
+| jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | ⏳ NEW CI run 29411650412 (e2e-smoke/nox/pre-commit PENDING; e2e-api ✅, integration ✅, tox ✅) | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — Backlog | 🔄 NEW CI RUN 29411650412 triggered (new commits pushed). e2e-smoke/nox/pre-commit ⏳ PENDING. e2e-api ✅, integration ✅, tox ✅, atlas-validate ✅. OPEN + MERGEABLE + reviewDecision:"". |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — Backlog | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 17+** (still Ingest, should be Code). |
 | jn-5871 | **Code** (git-only) | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) — Backlog | Code done ~00:58 IDT Jul 9. SHA fc6e5f77. ⚠️ NOT in Agor board — no Agor worktree registered. Git branch only. No PR created. Needs investigation. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 20+ days. Propose archive. |
@@ -24,7 +24,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | **⏳ e2e-product PENDING** (run 29403906203). nox ✅ tox ✅ all others ✅. | OPEN, MERGEABLE | 🟡 NEW CI RUN 29403906203: nox ✅ + tox ✅ (previous failures RESOLVED). Only e2e-product/e2e still PENDING. Major improvement. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | **⏳ NEW CI run 29411735261** (e2e-api/integration/pre-commit/tox PENDING; atlas-validate ✅, bake ✅, check-changes ✅). | OPEN, MERGEABLE | 🔄 NEW CI RUN 29411735261 (new commits pushed). e2e-api/integration/pre-commit/tox ⏳ PENDING. atlas-validate ✅, bake ✅, JIRA Association ✅, check-changes ✅. |
 
 ---
 
@@ -60,16 +60,16 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (13:30 IDT Jul 15 vs 13:00 IDT Jul 15)
+## Key Changes (14:00 IDT Jul 15 vs 13:30 IDT Jul 15)
 
 | What changed | Delta |
 |---|---|
-| **🔄 #1638 → NEW CI RUN 29409644090** | New commits pushed to feat/vllm-analyzer-prerequisites. Previous run 29403906203 had e2e-product ⏳ PENDING. New run 29409644090: e2e-smoke ⏳ PENDING; nox ✅, tox ✅, e2e-api ✅, integration ✅, bake ✅, pre-commit ✅. all-checks not yet visible (CI still running). |
-| **#1667 unchanged** | ALL CI PASS ✅ (run 29402877354). OPEN + MERGEABLE. Still awaiting reviewer APPROVE. |
-| **#1669 unchanged** | ALL CI PASS ✅ (run 29401501634). OPEN + MERGEABLE. Awaiting reviewer APPROVE. |
+| **🔄 #1669 → NEW CI RUN 29411650412** | New commits pushed to jn-5872 branch. New run: e2e-smoke/nox/pre-commit ⏳ PENDING; atlas-validate ✅, e2e-api ✅, integration ✅, tox ✅, check-changes ✅. CI still running. |
+| **🔄 #1638 → NEW CI RUN 29411735261** | New commits pushed to feat/vllm-analyzer-prerequisites. Supersedes run 29409644090. e2e-api/integration/pre-commit/tox ⏳ PENDING; atlas-validate ✅, bake ✅, check-changes ✅. CI still running. |
+| **#1667 unchanged** | ALL CI PASS ✅ (run 29402877354 COMPLETE). OPEN + MERGEABLE. Awaiting reviewer APPROVE. |
 | **#1670 unchanged** | DRAFT + CI all pass (run 29403233416). Needs: mark ready for review. |
-| **No new merges** | Step 1 sweep: no merges since 13:00 IDT. |
-| **Jira mismatches** | 7 active — unchanged (acli confirmed). Jira MCP 401. |
+| **No new merges** | Step 1 sweep: no merges since 13:30 IDT. |
+| **Jira mismatches** | 7 active — unchanged. Jira MCP 401. |
 
 ---
 
@@ -85,13 +85,12 @@ PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): ad
 
 ---
 
-### 🟡 #1638 (off-board JN-5725) — NEW CI RUN, e2e-smoke PENDING
+### 🟡 #1638 (off-board JN-5725) — NEW CI RUN 29411735261, multiple PENDING
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements"
-- **NEW CI run 29409644090** (new commits pushed): e2e-smoke ⏳ PENDING. nox ✅, tox ✅, e2e-api ✅, integration ✅, bake ✅, pre-commit ✅, atlas-validate ✅. all-checks not yet visible (CI still in progress).
-- Previous run 29403906203 had e2e-product ⏳ PENDING; that run superseded by new commits.
+- **NEW CI run 29411735261** (new commits pushed, supersedes 29409644090): e2e-api ⏳ PENDING, integration ⏳ PENDING, pre-commit ⏳ PENDING, tox ⏳ PENDING. atlas-validate ✅, bake ✅, JIRA Association ✅, check-changes ✅.
 - State: OPEN, MERGEABLE.
-- **Action:** Wait for CI run 29409644090 to complete (e2e-smoke ⏳). If all-checks passes, PR is CI-green.
+- **Action:** Wait for CI run 29411735261 to complete. Early passing checks (atlas, bake) are green.
 
 ---
 
@@ -103,12 +102,12 @@ PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM a
 
 ---
 
-### ✅ jn-5872 — NEW PR #1669, ALL CI PASS
+### 🔄 jn-5872 — PR #1669, NEW CI RUN (new commits pushed)
 
 **jn-5872** ([JN-5872](https://redhat.atlassian.net/browse/JN-5872)):
-- PR [#1669](https://github.com/Jounce-IO/jounce/pull/1669): "feat(jbenchmark): improve dev-connect with namespace/service checks". OPEN + MERGEABLE + reviewDecision:"". ALL CI PASS ✅.
-- PR URL set in Agor ✅.
-- **Action:** Await formal APPROVE from reviewer — CI is green, PR is mergeable.
+- PR [#1669](https://github.com/Jounce-IO/jounce/pull/1669): "feat(jbenchmark): improve dev-connect with namespace/service checks". OPEN + MERGEABLE + reviewDecision:"".
+- **NEW CI run 29411650412** triggered (new commits pushed): e2e-smoke ⏳ PENDING, nox ⏳ PENDING, pre-commit ⏳ PENDING. atlas-validate ✅, e2e-api ✅, integration ✅, tox ✅, check-changes ✅.
+- **Action:** Wait for CI run 29411650412 to complete. Early results strongly positive.
 
 ---
 
@@ -135,10 +134,10 @@ Use `acli jira workitem transition` to update. Jira MCP 401.
 
 ---
 
-### ✅ jn-5872 — NOW IN CODE ZONE + PR #1669 ALL CI PASS
+### 🔄 jn-5872 — PR #1669 NEW CI RUN 29411650412
 
-- PR [#1669](https://github.com/Jounce-IO/jounce/pull/1669): "feat(jbenchmark): improve dev-connect with namespace/service checks". ALL CI PASS. Agor zone updated to Code. PR URL set in Agor.
-- **Action:** Await reviewer APPROVE (CI green, mergeable).
+- PR [#1669](https://github.com/Jounce-IO/jounce/pull/1669): "feat(jbenchmark): improve dev-connect". New commits pushed, CI re-running.
+- **Action:** Monitor CI run 29411650412. If all-checks passes, await reviewer APPROVE.
 
 ---
 
@@ -164,7 +163,7 @@ This creates git state gaps. Investigate overnight schedule reliability.
 
 ## Archived This Session
 
-None — 0 auto-archives (no new merges since 12:30 IDT run).
+None — 0 auto-archives (no new merges since 13:30 IDT run).
 
 Previously archived (Jul 14):
 | Branch | PR | Reason | Time |

@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-15 13:30 IDT";
+export const LAST_UPDATED = "2026-07-15 14:00 IDT";
 
 export const WORKTREES = [
   {
@@ -47,14 +47,22 @@ export const WORKTREES = [
     status: "✅ #1667 ALL CI PASS — run 29402877354 COMPLETE. OPEN + MERGEABLE + reviewDecision:\"\". Awaiting formal reviewer APPROVE to merge.",
     blockedOn: null,
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f656f2ed17939abbd0d95/",
-    sessionLabel: "heartbeat 13:30 IDT Jul 15 — #1638 NEW CI RUN 29409644090 (e2e-smoke ⏳); 0 merges; 7 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f658aa66e744ea6d42558/",
+    sessionLabel: "heartbeat 14:00 IDT Jul 15 — #1669 NEW CI RUN 29411650412; #1638 NEW CI RUN 29411735261; 0 merges",
     recentSessions: [
+      {
+        sessionId: "019f658aa66e744ea6d42558",
+        url: "http://127.0.0.1:3030/ui/s/019f658aa66e744ea6d42558/",
+        title: "heartbeat 14:00 IDT Jul 15 — #1669 NEW CI RUN 29411650412; #1638 NEW CI RUN 29411735261; 0 merges",
+        status: "running",
+        timestamp: "2026-07-15 14:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f656f2ed17939abbd0d95",
         url: "http://127.0.0.1:3030/ui/s/019f656f2ed17939abbd0d95/",
         title: "heartbeat 13:30 IDT Jul 15 — #1638 NEW CI RUN 29409644090 (e2e-smoke ⏳); 0 merges; 7 Jira mismatches",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-15 13:30 IDT",
         outputFile: null,
       },
@@ -102,12 +110,20 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1669",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1669",
-    status: "✅ PR #1669 ALL CI PASS — 'feat(jbenchmark): improve dev-connect with namespace/service checks'. OPEN + MERGEABLE + reviewDecision:\"\". Awaiting reviewer APPROVE.",
+    status: "🔄 PR #1669 NEW CI RUN 29411650412 (new commits pushed). e2e-smoke/nox/pre-commit ⏳ PENDING; atlas-validate ✅, e2e-api ✅, integration ✅, tox ✅. OPEN + MERGEABLE + reviewDecision:\"\".",
     blockedOn: null,
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f64d1ba4c7524932533cc/",
-    sessionLabel: "code (PR #1669 ALL CI PASS — awaiting APPROVE)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f658aa66e744ea6d42558/",
+    sessionLabel: "heartbeat 14:00 IDT Jul 15 — #1669 NEW CI RUN 29411650412; #1638 NEW CI RUN 29411735261; 0 merges",
     recentSessions: [
+      {
+        sessionId: "019f658aa66e744ea6d42558",
+        url: "http://127.0.0.1:3030/ui/s/019f658aa66e744ea6d42558/",
+        title: "heartbeat 14:00 IDT Jul 15 — #1669 NEW CI RUN 29411650412; #1638 NEW CI RUN 29411735261; 0 merges",
+        status: "running",
+        timestamp: "2026-07-15 14:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f64d1ba4c7524932533cc",
         url: "http://127.0.0.1:3030/ui/s/019f64d1ba4c7524932533cc/",
@@ -117,7 +133,7 @@ export const WORKTREES = [
         outputFile: ".artifacts/implement/JN-5872/01-context.md",
       },
     ],
-    lastActive: "2026-07-15 13:00 IDT",
+    lastActive: "2026-07-15 14:00 IDT",
   },
   {
     ticket: "JN-5865",
@@ -387,8 +403,8 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "green",
-    message: "✅ #1669 (jn-5872 JN-5872): ALL CI PASS — 'feat(jbenchmark): improve dev-connect with namespace/service checks'. OPEN + MERGEABLE + reviewDecision:\"\". all-checks ✅, integration ✅, nox ✅, tox ✅, pre-commit ✅, e2e-api ✅, e2e-smoke ✅. Awaiting reviewer APPROVE.",
+    level: "yellow",
+    message: "🔄 #1669 (jn-5872 JN-5872): NEW CI RUN 29411650412 (new commits pushed). e2e-smoke/nox/pre-commit ⏳ PENDING; atlas-validate ✅, e2e-api ✅, integration ✅, tox ✅. OPEN + MERGEABLE + reviewDecision:\"\". CI in progress.",
   },
   {
     level: "green",
@@ -400,7 +416,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "🟡 #1638 (JN-5725, off-board): NEW CI RUN 29409644090 (new commits). e2e-smoke ⏳ PENDING. nox ✅, tox ✅, bake ✅, e2e-api ✅, integration ✅. all-checks not yet visible (CI still running).",
+    message: "🔄 #1638 (JN-5725, off-board): NEW CI RUN 29411735261 (new commits, supersedes 29409644090). e2e-api/integration/pre-commit/tox ⏳ PENDING; atlas-validate ✅, bake ✅, check-changes ✅. CI in progress.",
   },
   {
     level: "red",
