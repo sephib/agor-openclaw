@@ -4016,4 +4016,13 @@ export const HEARTBEAT_RUNS = [
     summary: "Board static 9h (overnight commit gap). #1655 MERGED confirmed. #1667 CONFLICTING (needs rebase, CI was ALL PASS). #1638 e2e-product ❌ unchanged. 9 Jira mismatches. Jira MCP 401.",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f645c6ff67e0dad104e84/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-07-15 14:30 IDT",
+    actions: 0,
+    findings: 2,
+    status: "ok",
+    summary: "#1669 CI RUN 29411650412 COMPLETE → ALL-CHECKS FAIL (pre-commit); #1638 critical CI now PASS (e2e-product pending); 0 merges; 7 Jira mismatches unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f65a620d0716ebc814467/",
+  },
 ];

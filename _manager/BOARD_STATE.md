@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-15 14:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-15 14:30 IDT (advance heartbeat)*
 
 ---
 
@@ -11,9 +11,9 @@
 | jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | UNKNOWN (stale) | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) — Waiting/Blocked | 🔴 DRAFT + CONFLICTING; frozen since Jun 14. No change. |
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — Backlog | Design session done Jun 30. Ready for Plan phase. |
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | Last session Jul 8 IDLE. SHA 16ec44ea (2 commits). Needs: configs, rebase, PR. |
-| jn-5844-service-lib-sql-agents-md | **Publish** | [#1670 DRAFT](https://github.com/Jounce-IO/jounce/pull/1670) | ✅ ALL CI PASS (run 29403233416) | [JN-5844](https://redhat.atlassian.net/browse/JN-5844) — Backlog | 🆕 DRAFT PR #1670 created. "docs(jbenchmark): add service, libs, SQL domain AGENTS.md". isDraft:true. CI all pass. Needs: mark ready for review. |
+| jn-5844-service-lib-sql-agents-md | **Publish** | [#1670 DRAFT](https://github.com/Jounce-IO/jounce/pull/1670) | ✅ ALL CI PASS (run 29403233416) | [JN-5844](https://redhat.atlassian.net/browse/JN-5844) — Backlog | 🆕 DRAFT PR #1670. CI all pass. Needs: mark ready for review. |
 | jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | ✅ ALL CI PASS (run 29402877354 complete) | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) — Backlog | ✅ ALL CI PASS. OPEN + MERGEABLE + reviewDecision:"". Awaiting formal reviewer APPROVE to merge. |
-| jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | ⏳ NEW CI run 29411650412 (e2e-smoke/nox/pre-commit PENDING; e2e-api ✅, integration ✅, tox ✅) | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — Backlog | 🔄 NEW CI RUN 29411650412 triggered (new commits pushed). e2e-smoke/nox/pre-commit ⏳ PENDING. e2e-api ✅, integration ✅, tox ✅, atlas-validate ✅. OPEN + MERGEABLE + reviewDecision:"". |
+| jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | ❌ CI COMPLETE — ALL-CHECKS FAIL (pre-commit FAIL, run 29411650412) | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — Backlog | 🔴 **CI RUN 29411650412 COMPLETE: ALL-CHECKS = FAIL**. pre-commit FAIL. Other checks pass (e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅). OPEN + MERGEABLE. **Action: fix pre-commit failure.** |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — Backlog | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 17+** (still Ingest, should be Code). |
 | jn-5871 | **Code** (git-only) | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) — Backlog | Code done ~00:58 IDT Jul 9. SHA fc6e5f77. ⚠️ NOT in Agor board — no Agor worktree registered. Git branch only. No PR created. Needs investigation. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 20+ days. Propose archive. |
@@ -24,7 +24,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | **⏳ NEW CI run 29411735261** (e2e-api/integration/pre-commit/tox PENDING; atlas-validate ✅, bake ✅, check-changes ✅). | OPEN, MERGEABLE | 🔄 NEW CI RUN 29411735261 (new commits pushed). e2e-api/integration/pre-commit/tox ⏳ PENDING. atlas-validate ✅, bake ✅, JIRA Association ✅, check-changes ✅. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | ✅ Critical checks PASS — e2e-smoke ✅, e2e-api ✅, integration ✅, pre-commit ✅, tox ✅, bake ✅, atlas-validate ✅. **e2e-product PENDING** (run 29411735261). | OPEN, MERGEABLE | 🟡 CI run 29411735261 near-complete: all critical checks pass, e2e-product still pending. |
 
 ---
 
@@ -60,54 +60,55 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (14:00 IDT Jul 15 vs 13:30 IDT Jul 15)
+## Key Changes (14:30 IDT Jul 15 vs 14:00 IDT Jul 15)
 
 | What changed | Delta |
 |---|---|
-| **🔄 #1669 → NEW CI RUN 29411650412** | New commits pushed to jn-5872 branch. New run: e2e-smoke/nox/pre-commit ⏳ PENDING; atlas-validate ✅, e2e-api ✅, integration ✅, tox ✅, check-changes ✅. CI still running. |
-| **🔄 #1638 → NEW CI RUN 29411735261** | New commits pushed to feat/vllm-analyzer-prerequisites. Supersedes run 29409644090. e2e-api/integration/pre-commit/tox ⏳ PENDING; atlas-validate ✅, bake ✅, check-changes ✅. CI still running. |
+| **🔴 #1669 → CI RUN 29411650412 COMPLETE, ALL-CHECKS FAIL** | pre-commit FAIL. Was PENDING at 14:00 IDT. Other checks pass (e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅). **Action needed: fix pre-commit failure.** |
+| **🟡 #1638 → Critical CI checks now PASS** | Run 29411735261: e2e-smoke ✅, e2e-api ✅, integration ✅, pre-commit ✅, tox ✅, bake ✅. Only e2e-product still PENDING. Significant progress from 14:00 IDT. |
 | **#1667 unchanged** | ALL CI PASS ✅ (run 29402877354 COMPLETE). OPEN + MERGEABLE. Awaiting reviewer APPROVE. |
 | **#1670 unchanged** | DRAFT + CI all pass (run 29403233416). Needs: mark ready for review. |
-| **No new merges** | Step 1 sweep: no merges since 13:30 IDT. |
+| **No new merges** | Step 1 sweep: no merges since 14:00 IDT. |
 | **Jira mismatches** | 7 active — unchanged. Jira MCP 401. |
 
 ---
 
 ## Attention Items
 
+### 🔴 #1669 (jn-5872) — CI FAIL: pre-commit failure
+
+PR [#1669](https://github.com/Jounce-IO/jounce/pull/1669): "feat(jbenchmark): improve dev-connect with namespace/service checks"
+- State: OPEN, **MERGEABLE** ✅, reviewDecision: ""
+- **CI run 29411650412 COMPLETE: ALL-CHECKS = FAIL**
+- pre-commit FAIL, pre-commit-run/pre-commit FAIL
+- Other checks: e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅, e2e-tests ✅
+- **Action:** Fix pre-commit failure. Push fix → CI will re-run.
+
+---
+
 ### ✅ #1667 (jn-5845) — ALL CI PASS, Awaiting Reviewer APPROVE
 
 PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): add Helm and CI/CD domain AGENTS.md files (JN-5845)"
 - State: OPEN, **MERGEABLE** ✅, reviewDecision: ""
 - **CI run 29402877354 COMPLETE ✅**: all mandatory checks pass.
-- Responded to markVaykhansky's COMMENT from 08:05 IDT with 2 commits (11:46+12:00 IDT).
 - **Action:** Await formal APPROVE from markVaykhansky (or other required reviewer) — CI is green, PR is mergeable.
 
 ---
 
-### 🟡 #1638 (off-board JN-5725) — NEW CI RUN 29411735261, multiple PENDING
+### 🟡 #1638 (off-board JN-5725) — Critical CI PASS, e2e-product PENDING
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements"
-- **NEW CI run 29411735261** (new commits pushed, supersedes 29409644090): e2e-api ⏳ PENDING, integration ⏳ PENDING, pre-commit ⏳ PENDING, tox ⏳ PENDING. atlas-validate ✅, bake ✅, JIRA Association ✅, check-changes ✅.
+- **CI run 29411735261**: e2e-smoke ✅, e2e-api ✅, integration ✅, pre-commit ✅, tox ✅, bake ✅, atlas-validate ✅, check-changes ✅, nox ✅. **e2e-product PENDING**.
 - State: OPEN, MERGEABLE.
-- **Action:** Wait for CI run 29411735261 to complete. Early passing checks (atlas, bake) are green.
+- **Action:** Wait for e2e-product to complete. All critical checks now passing.
 
 ---
 
 ### 🟡 jn-5844 — DRAFT PR #1670 (needs mark ready)
 
 **jn-5844-service-lib-sql-agents-md** ([JN-5844](https://redhat.atlassian.net/browse/JN-5844)):
-- DRAFT PR [#1670](https://github.com/Jounce-IO/jounce/pull/1670) exists: "docs(jbenchmark): add service, libs, and SQL domain AGENTS.md files". isDraft:true. CI all pass (run 29403233416). In Publish zone (Agor).
+- DRAFT PR [#1670](https://github.com/Jounce-IO/jounce/pull/1670) exists. isDraft:true. CI all pass (run 29403233416). In Publish zone (Agor).
 - **Action:** Mark PR ready for review (remove draft status). Awaiting Joseph to approve readiness.
-
----
-
-### 🔄 jn-5872 — PR #1669, NEW CI RUN (new commits pushed)
-
-**jn-5872** ([JN-5872](https://redhat.atlassian.net/browse/JN-5872)):
-- PR [#1669](https://github.com/Jounce-IO/jounce/pull/1669): "feat(jbenchmark): improve dev-connect with namespace/service checks". OPEN + MERGEABLE + reviewDecision:"".
-- **NEW CI run 29411650412** triggered (new commits pushed): e2e-smoke ⏳ PENDING, nox ⏳ PENDING, pre-commit ⏳ PENDING. atlas-validate ✅, e2e-api ✅, integration ✅, tox ✅, check-changes ✅.
-- **Action:** Wait for CI run 29411650412 to complete. Early results strongly positive.
 
 ---
 
@@ -127,17 +128,10 @@ Use `acli jira workitem transition` to update. Jira MCP 401.
 
 ### ⚠️ jn-5871 — NOT in Agor (git-only, no PR, Day 17+)
 
-- Code done ~00:58 IDT Jul 9. SHA fc6e5f77. 
+- Code done ~00:58 IDT Jul 9. SHA fc6e5f77.
 - **DISCOVERY**: jn-5871 is NOT registered as an Agor worktree. No branch found in Agor board. Git-only branch.
 - No PR created. Needs investigation: is there a PR needed? Should this be registered in Agor?
 - **Flag for Joseph:** What should happen with jn-5871? Create PR? Register in Agor?
-
----
-
-### 🔄 jn-5872 — PR #1669 NEW CI RUN 29411650412
-
-- PR [#1669](https://github.com/Jounce-IO/jounce/pull/1669): "feat(jbenchmark): improve dev-connect". New commits pushed, CI re-running.
-- **Action:** Monitor CI run 29411650412. If all-checks passes, await reviewer APPROVE.
 
 ---
 
@@ -163,7 +157,7 @@ This creates git state gaps. Investigate overnight schedule reliability.
 
 ## Archived This Session
 
-None — 0 auto-archives (no new merges since 13:30 IDT run).
+None — 0 auto-archives (no new merges since 14:00 IDT run).
 
 Previously archived (Jul 14):
 | Branch | PR | Reason | Time |
@@ -186,7 +180,7 @@ Previously archived (Jul 14):
 
 | PR | Ticket | Merged | Worktree |
 |----|--------|--------|---------|
-| [#1655](https://github.com/Jounce-IO/jounce/pull/1655) | [JN-5867](https://redhat.atlassian.net/browse/JN-5867) | **18:49 IDT Jul 14** 🎉 | jn-5867 (git-only, not Agor). JN-5867 Jira → needs Done! |
+| [#1655](https://github.com/Jounce-IO/jounce/pull/1655) | [JN-5867](https://redhat.atlassian.net/browse/JN-5867) | **18:49 IDT Jul 14** 🎉 | jn-5867 (git-only, not Agor). JN-5867 Done ✅ |
 | [#1656](https://github.com/Jounce-IO/jounce/pull/1656) | [JN-5870](https://redhat.atlassian.net/browse/JN-5870) | 17:53 IDT Jul 14 🎉 | ARCHIVED 19:30 Jul 14. JN-5870 Done ✅ |
 | [#1658](https://github.com/Jounce-IO/jounce/pull/1658) | [JN-5842](https://redhat.atlassian.net/browse/JN-5842) | 13:29 IDT Jul 14 🎉 | ARCHIVED 13:30 Jul 14 |
 | [#1666](https://github.com/Jounce-IO/jounce/pull/1666) | [JN-5880](https://redhat.atlassian.net/browse/JN-5880) | 12:20 IDT Jul 14 🎉 | ARCHIVED 12:30 Jul 14. JN-5880 Done ✅ |
