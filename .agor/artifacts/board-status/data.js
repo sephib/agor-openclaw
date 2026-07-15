@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-15 12:00 IDT";
+export const LAST_UPDATED = "2026-07-15 12:30 IDT";
 
 export const WORKTREES = [
   {
@@ -44,17 +44,25 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1667",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1667",
-    status: "🟡 Joseph pushed 2 new commits at 11:46+12:00 IDT responding to markVaykhansky's review. New CI run 29402877354 — e2e/integration/tox/pre-commit PENDING. OPEN + MERGEABLE.",
+    status: "✅ #1667 ALL CI PASS — run 29402877354 COMPLETE. OPEN + MERGEABLE + reviewDecision:\"\". Awaiting formal reviewer APPROVE to merge.",
     blockedOn: null,
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f650117c747da99fc20748/",
-    sessionLabel: "heartbeat 12:00 IDT Jul 15 — #1667 new commits + CI re-running; #1638 nox+tox now FAIL",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f65383f777aee864bb886/",
+    sessionLabel: "heartbeat 12:30 IDT Jul 15 — #1667 ALL CI PASS ✅; #1638 nox+tox resolved",
     recentSessions: [
+      {
+        sessionId: "019f65383f777aee864bb886",
+        url: "http://127.0.0.1:3030/ui/s/019f65383f777aee864bb886/",
+        title: "heartbeat 12:30 IDT Jul 15 — #1667 ALL CI PASS ✅ (run 29402877354); #1638 nox+tox resolved (run 29403906203)",
+        status: "running",
+        timestamp: "2026-07-15 12:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f65017c747da99fc20748",
         url: "http://127.0.0.1:3030/ui/s/019f65017c747da99fc20748/",
         title: "heartbeat 12:00 IDT Jul 15 — #1667 new commits (review feedback); CI re-running; #1638 nox+tox FAIL",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-15 12:00 IDT",
         outputFile: null,
       },
@@ -69,7 +77,7 @@ export const WORKTREES = [
       {
         sessionId: "019f64ca90807c4c82a3010f",
         url: "http://127.0.0.1:3030/ui/s/019f64ca90807c4c82a3010f/",
-        title: "heartbeat 11:00 IDT Jul 15 — board static; JN-5867 Done ✅ (7 mismatches); #1667 MERGEABLE unchanged",
+        title: "heartbeat 11:00 IDT Jul 15 — board static; JN-5867 Done ✅ (7 mismatches)",
         status: "idle",
         timestamp: "2026-07-15 11:00 IDT",
         outputFile: null,
@@ -82,24 +90,8 @@ export const WORKTREES = [
         timestamp: "2026-07-15 10:30 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f649375b77171bc0e25b0",
-        url: "http://127.0.0.1:3030/ui/s/019f649375b77171bc0e25b0/",
-        title: "heartbeat 10:00 IDT Jul 15 — #1667 CONFLICTING, board static",
-        status: "idle",
-        timestamp: "2026-07-15 10:00 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f645c6ff67e0dad104e84",
-        url: "http://127.0.0.1:3030/ui/s/019f645c6ff67e0dad104e84/",
-        title: "heartbeat 09:00 IDT Jul 15 — #1667 CONFLICTING, needs rebase",
-        status: "idle",
-        timestamp: "2026-07-15 09:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-15 11:30 IDT",
+    lastActive: "2026-07-15 12:30 IDT",
   },
   {
     ticket: "JN-5872",
@@ -395,16 +387,16 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "yellow",
-    message: "🟡 #1667 (jn-5845 JN-5845): Joseph pushed 2 new commits at 11:46+12:00 IDT responding to markVaykhansky's review feedback. New CI run 29402877354 triggered — e2e-api/integration/pre-commit/tox PENDING. Previous run 29396571335 superseded. OPEN, MERGEABLE. Awaiting CI completion + formal APPROVE.",
+    level: "green",
+    message: "✅ #1667 (jn-5845 JN-5845): ALL CI PASS — run 29402877354 COMPLETE. atlas-validate ✅, all-checks ✅, e2e-api ✅, e2e-smoke ✅, integration ✅, nox ✅, tox ✅, pre-commit ✅, CodeRabbit ✅. OPEN + MERGEABLE + reviewDecision:\"\". Awaiting formal reviewer APPROVE to merge.",
   },
   {
     level: "green",
     message: "🆕 jn-5872 (JN-5872): New worktree — '[QE] E2E validation of IBM cluster connection workflows' (subtask of JN-5824). Ingest done 08:14 IDT Jul 15. Awaiting /implement:plan.",
   },
   {
-    level: "red",
-    message: "🔴 #1638 (JN-5725, off-board): CI CHANGED — run 29402122746: nox ❌ FAIL + tox ❌ FAIL (new failures). e2e-smoke ⏳ pending. e2e-product no longer listed (may be fixed). e2e-api/integration/pre-commit all ✅. State: OPEN, MERGEABLE. Investigate nox+tox failures.",
+    level: "yellow",
+    message: "🟡 #1638 (JN-5725, off-board): NEW CI RUN 29403906203 — nox ✅ + tox ✅ (previous failures RESOLVED). bake ✅, pre-commit ✅, e2e-api ✅, e2e-smoke ✅, integration ✅. Only e2e-product/e2e ⏳ PENDING. Major improvement. State: OPEN, MERGEABLE.",
   },
   {
     level: "yellow",
