@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-15 13:00 IDT";
+export const LAST_UPDATED = "2026-07-15 13:30 IDT";
 
 export const WORKTREES = [
   {
@@ -47,14 +47,22 @@ export const WORKTREES = [
     status: "✅ #1667 ALL CI PASS — run 29402877354 COMPLETE. OPEN + MERGEABLE + reviewDecision:\"\". Awaiting formal reviewer APPROVE to merge.",
     blockedOn: null,
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6553b684717caa3f4750/",
-    sessionLabel: "heartbeat 13:00 IDT Jul 15 — #1669 NEW ALL CI PASS ✅; #1670 DRAFT; jn-5871 NOT in Agor",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f656f2ed17939abbd0d95/",
+    sessionLabel: "heartbeat 13:30 IDT Jul 15 — #1638 NEW CI RUN 29409644090 (e2e-smoke ⏳); 0 merges; 7 Jira mismatches",
     recentSessions: [
+      {
+        sessionId: "019f656f2ed17939abbd0d95",
+        url: "http://127.0.0.1:3030/ui/s/019f656f2ed17939abbd0d95/",
+        title: "heartbeat 13:30 IDT Jul 15 — #1638 NEW CI RUN 29409644090 (e2e-smoke ⏳); 0 merges; 7 Jira mismatches",
+        status: "running",
+        timestamp: "2026-07-15 13:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f6553b684717caa3f4750",
         url: "http://127.0.0.1:3030/ui/s/019f6553b684717caa3f4750/",
         title: "heartbeat 13:00 IDT Jul 15 — #1669 ALL CI PASS ✅ (jn-5872); #1670 DRAFT (jn-5844); #1638 e2e-product pending; 0 merges; 7 Jira mismatches",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-15 13:00 IDT",
         outputFile: null,
       },
@@ -82,16 +90,8 @@ export const WORKTREES = [
         timestamp: "2026-07-15 11:30 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f64ca90807c4c82a3010f",
-        url: "http://127.0.0.1:3030/ui/s/019f64ca90807c4c82a3010f/",
-        title: "heartbeat 11:00 IDT Jul 15 — board static; JN-5867 Done ✅ (7 mismatches)",
-        status: "idle",
-        timestamp: "2026-07-15 11:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-15 13:00 IDT",
+    lastActive: "2026-07-15 13:30 IDT",
   },
   {
     ticket: "JN-5872",
@@ -400,7 +400,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "🟡 #1638 (JN-5725, off-board): e2e-product ⏳ PENDING (run 29403906203). nox ✅, tox ✅, bake ✅, e2e-api ✅, e2e-smoke ✅, integration ✅. Waiting on e2e-product.",
+    message: "🟡 #1638 (JN-5725, off-board): NEW CI RUN 29409644090 (new commits). e2e-smoke ⏳ PENDING. nox ✅, tox ✅, bake ✅, e2e-api ✅, integration ✅. all-checks not yet visible (CI still running).",
   },
   {
     level: "red",
