@@ -1585,3 +1585,10 @@
 - Key CI change: #1638 — BIG PROGRESS: pre-commit ✅, pre-commit-run ✅, integration ✅, tox ✅, e2e-api ✅, e2e-smoke ✅, integration-tests ✅, nox ✅ all now pass. Only e2e-product PENDING (not started). At 17:30 IDT, 4 of these were still RUNNING.
 - Flags: #1669 pre-commit FAIL unchanged; #1667 PASS awaiting APPROVE unchanged; jn-5865 zone mismatch (Day 17+); jn-5871 not in Agor (Day 17+); 6 Jira mismatches persist
 - Next: Await e2e-product for #1638 — if pass, should trigger all-checks gate + merge readiness. Fix #1669 pre-commit. Get reviewer APPROVE on #1667.
+
+## 20:30 IDT — Weekday Daytime Heartbeat
+- PRs checked: #1638 (OPEN, ALL-CHECKS FAIL — e2e-product FAIL), #1667 (OPEN, ALL CI PASS), #1669 (OPEN, ALL-CHECKS FAIL — pre-commit FAIL), #1670 (OPEN DRAFT, CI pass)
+- Merges detected: none
+- CI changes: 🔴 **#1638 e2e-product FAILED** (was PENDING at 18:30 IDT) — run 29430527639 now complete; e2e-product job 87409556708 FAIL (44m43s). all-checks FAIL, e2e-tests FAIL. Action: investigate e2e-product.
+- Flags: BOARD_STATE.md was 2h stale (4 intermediate sessions 19:00-20:00 IDT ran without committing); #1669 pre-commit FAIL unchanged; #1667 all pass awaiting APPROVE; #1670 DRAFT needs mark ready; 6 Jira mismatches (MCP 401)
+- Next: Joseph to investigate e2e-product failure on #1638; fix pre-commit on #1669; approve mark-ready for #1670; APPROVE #1667
