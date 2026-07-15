@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-15 15:30 IDT";
+export const LAST_UPDATED = "2026-07-15 16:00 IDT";
 
 export const WORKTREES = [
   {
@@ -47,14 +47,22 @@ export const WORKTREES = [
     status: "✅ #1667 ALL CI PASS — run 29402877354 COMPLETE. OPEN + MERGEABLE + reviewDecision:\"\". Awaiting formal reviewer APPROVE to merge.",
     blockedOn: null,
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f65dd0cb07bf3a136bda7/",
-    sessionLabel: "heartbeat 15:30 IDT Jul 15 — #1638 CI FAIL (e2e-product timeout); #1669 CI FAIL unchanged; 0 merges; 6 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6613e28070dd8c933af8/",
+    sessionLabel: "heartbeat 16:00 IDT Jul 15 — CI unchanged; 0 merges; 6 Jira mismatches",
     recentSessions: [
+      {
+        sessionId: "019f6613e28070dd8c933af8",
+        url: "http://127.0.0.1:3030/ui/s/019f6613e28070dd8c933af8/",
+        title: "heartbeat 16:00 IDT Jul 15 — CI unchanged; 0 merges; 6 Jira mismatches",
+        status: "running",
+        timestamp: "2026-07-15 16:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f65dd0cb07bf3a136bda7",
         url: "http://127.0.0.1:3030/ui/s/019f65dd0cb07bf3a136bda7/",
         title: "heartbeat 15:30 IDT Jul 15 — #1638 CI FAIL (e2e-product timeout); #1669 CI FAIL unchanged; 0 merges; 6 Jira mismatches",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-15 15:30 IDT",
         outputFile: null,
       },
@@ -82,16 +90,8 @@ export const WORKTREES = [
         timestamp: "2026-07-15 14:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f656f2ed17939abbd0d95",
-        url: "http://127.0.0.1:3030/ui/s/019f656f2ed17939abbd0d95/",
-        title: "heartbeat 13:30 IDT Jul 15 — #1638 NEW CI RUN 29409644090 (e2e-smoke ⏳); 0 merges; 7 Jira mismatches",
-        status: "idle",
-        timestamp: "2026-07-15 13:30 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-15 15:30 IDT",
+    lastActive: "2026-07-15 16:00 IDT",
   },
   {
     ticket: "JN-5872",
@@ -105,14 +105,22 @@ export const WORKTREES = [
     status: "🔴 CI RUN 29411650412 COMPLETE — ALL-CHECKS FAIL. pre-commit FAIL. Other checks pass (e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅). OPEN + MERGEABLE. Action: fix pre-commit failure.",
     blockedOn: "CI failure — pre-commit",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f65dd0cb07bf3a136bda7/",
-    sessionLabel: "heartbeat 15:30 IDT Jul 15 — #1669 CI FAIL (pre-commit) unchanged; #1638 CI FAIL (e2e-product timeout); 6 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6613e28070dd8c933af8/",
+    sessionLabel: "heartbeat 16:00 IDT Jul 15 — #1669 CI FAIL (pre-commit) unchanged; #1638 CI FAIL (e2e-product timeout); 6 Jira mismatches",
     recentSessions: [
+      {
+        sessionId: "019f6613e28070dd8c933af8",
+        url: "http://127.0.0.1:3030/ui/s/019f6613e28070dd8c933af8/",
+        title: "heartbeat 16:00 IDT Jul 15 — CI unchanged; 0 merges; 6 Jira mismatches",
+        status: "running",
+        timestamp: "2026-07-15 16:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f65dd0cb07bf3a136bda7",
         url: "http://127.0.0.1:3030/ui/s/019f65dd0cb07bf3a136bda7/",
         title: "heartbeat 15:30 IDT Jul 15 — #1638 CI FAIL (e2e-product timeout); #1669 CI FAIL unchanged; 0 merges; 6 Jira mismatches",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-15 15:30 IDT",
         outputFile: null,
       },
@@ -141,7 +149,7 @@ export const WORKTREES = [
         outputFile: ".artifacts/implement/JN-5872/01-context.md",
       },
     ],
-    lastActive: "2026-07-15 15:30 IDT",
+    lastActive: "2026-07-15 16:00 IDT",
   },
   {
     ticket: "JN-5865",
@@ -424,7 +432,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 #1638 (JN-5725, off-board): CI run 29411735261 COMPLETE — ALL-CHECKS FAIL. e2e-product FAIL (1h timeout), e2e-tests FAIL. Other checks pass (e2e-smoke ✅, e2e-api ✅, integration ✅, pre-commit ✅, tox ✅, bake ✅, atlas-validate ✅). Newly failed 15:30 IDT Jul 15. Needs: investigate e2e-product timeout (flaky vs regression).",
+    message: "🔴 #1638 (JN-5725, off-board): CI run 29411735261 COMPLETE — ALL-CHECKS FAIL. e2e-product FAIL (1h timeout), e2e-tests FAIL. Other checks pass (e2e-smoke ✅, e2e-api ✅, integration ✅, pre-commit ✅, tox ✅, bake ✅, atlas-validate ✅). First failed 15:30 IDT Jul 15. Unchanged at 16:00 IDT. Needs: investigate e2e-product timeout (flaky vs regression).",
   },
   {
     level: "red",
