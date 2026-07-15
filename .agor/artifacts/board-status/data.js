@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-15 15:00 IDT";
+export const LAST_UPDATED = "2026-07-15 15:30 IDT";
 
 export const WORKTREES = [
   {
@@ -47,14 +47,22 @@ export const WORKTREES = [
     status: "✅ #1667 ALL CI PASS — run 29402877354 COMPLETE. OPEN + MERGEABLE + reviewDecision:\"\". Awaiting formal reviewer APPROVE to merge.",
     blockedOn: null,
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f65c19538779c8e975fb3/",
-    sessionLabel: "heartbeat 15:00 IDT Jul 15 — JN-5717 resolved; #1669 CI FAIL unchanged; #1638 e2e-product pending; 0 merges; 6 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f65dd0cb07bf3a136bda7/",
+    sessionLabel: "heartbeat 15:30 IDT Jul 15 — #1638 CI FAIL (e2e-product timeout); #1669 CI FAIL unchanged; 0 merges; 6 Jira mismatches",
     recentSessions: [
+      {
+        sessionId: "019f65dd0cb07bf3a136bda7",
+        url: "http://127.0.0.1:3030/ui/s/019f65dd0cb07bf3a136bda7/",
+        title: "heartbeat 15:30 IDT Jul 15 — #1638 CI FAIL (e2e-product timeout); #1669 CI FAIL unchanged; 0 merges; 6 Jira mismatches",
+        status: "running",
+        timestamp: "2026-07-15 15:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f65c19538779c8e975fb3",
         url: "http://127.0.0.1:3030/ui/s/019f65c19538779c8e975fb3/",
         title: "heartbeat 15:00 IDT Jul 15 — JN-5717 resolved; #1669 CI FAIL unchanged; #1638 e2e-product pending; 0 merges; 6 Jira mismatches",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-15 15:00 IDT",
         outputFile: null,
       },
@@ -82,16 +90,8 @@ export const WORKTREES = [
         timestamp: "2026-07-15 13:30 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f6553b684717caa3f4750",
-        url: "http://127.0.0.1:3030/ui/s/019f6553b684717caa3f4750/",
-        title: "heartbeat 13:00 IDT Jul 15 — #1669 ALL CI PASS ✅ (jn-5872); #1670 DRAFT (jn-5844); #1638 e2e-product pending; 0 merges; 7 Jira mismatches",
-        status: "idle",
-        timestamp: "2026-07-15 13:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-15 15:00 IDT",
+    lastActive: "2026-07-15 15:30 IDT",
   },
   {
     ticket: "JN-5872",
@@ -105,14 +105,22 @@ export const WORKTREES = [
     status: "🔴 CI RUN 29411650412 COMPLETE — ALL-CHECKS FAIL. pre-commit FAIL. Other checks pass (e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅). OPEN + MERGEABLE. Action: fix pre-commit failure.",
     blockedOn: "CI failure — pre-commit",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f65c19538779c8e975fb3/",
-    sessionLabel: "heartbeat 15:00 IDT Jul 15 — #1669 CI FAIL (pre-commit) unchanged; 6 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f65dd0cb07bf3a136bda7/",
+    sessionLabel: "heartbeat 15:30 IDT Jul 15 — #1669 CI FAIL (pre-commit) unchanged; #1638 CI FAIL (e2e-product timeout); 6 Jira mismatches",
     recentSessions: [
+      {
+        sessionId: "019f65dd0cb07bf3a136bda7",
+        url: "http://127.0.0.1:3030/ui/s/019f65dd0cb07bf3a136bda7/",
+        title: "heartbeat 15:30 IDT Jul 15 — #1638 CI FAIL (e2e-product timeout); #1669 CI FAIL unchanged; 0 merges; 6 Jira mismatches",
+        status: "running",
+        timestamp: "2026-07-15 15:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f65c19538779c8e975fb3",
         url: "http://127.0.0.1:3030/ui/s/019f65c19538779c8e975fb3/",
         title: "heartbeat 15:00 IDT Jul 15 — #1669 CI FAIL (pre-commit) unchanged; 6 Jira mismatches",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-15 15:00 IDT",
         outputFile: null,
       },
@@ -133,7 +141,7 @@ export const WORKTREES = [
         outputFile: ".artifacts/implement/JN-5872/01-context.md",
       },
     ],
-    lastActive: "2026-07-15 15:00 IDT",
+    lastActive: "2026-07-15 15:30 IDT",
   },
   {
     ticket: "JN-5865",
@@ -415,8 +423,8 @@ export const ALERTS = [
     message: "🟡 #1670 DRAFT (jn-5844 JN-5844): 'docs(jbenchmark): add service, libs, and SQL domain AGENTS.md'. isDraft:true. CI all pass (run 29403233416). Needs: mark ready for review.",
   },
   {
-    level: "yellow",
-    message: "🟡 #1638 (JN-5725, off-board): CI run 29411735261 near-complete — e2e-smoke ✅, e2e-api ✅, integration ✅, pre-commit ✅, tox ✅, bake ✅, atlas-validate ✅. Only e2e-product still PENDING.",
+    level: "red",
+    message: "🔴 #1638 (JN-5725, off-board): CI run 29411735261 COMPLETE — ALL-CHECKS FAIL. e2e-product FAIL (1h timeout), e2e-tests FAIL. Other checks pass (e2e-smoke ✅, e2e-api ✅, integration ✅, pre-commit ✅, tox ✅, bake ✅, atlas-validate ✅). Newly failed 15:30 IDT Jul 15. Needs: investigate e2e-product timeout (flaky vs regression).",
   },
   {
     level: "red",
