@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-15 17:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-15 18:00 IDT (advance heartbeat)*
 
 ---
 
@@ -13,7 +13,7 @@
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | Last session Jul 8 IDLE. SHA 16ec44ea (2 commits). Needs: configs, rebase, PR. |
 | jn-5844-service-lib-sql-agents-md | **Publish** | [#1670 DRAFT](https://github.com/Jounce-IO/jounce/pull/1670) | ✅ ALL CI PASS (run 29403233416) | [JN-5844](https://redhat.atlassian.net/browse/JN-5844) — Backlog | 🆕 DRAFT PR #1670. CI all pass. Needs: mark ready for review. |
 | jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | ✅ ALL CI PASS (run 29402877354 complete) | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) — Backlog | ✅ ALL CI PASS. OPEN + MERGEABLE + reviewDecision:"". Awaiting formal reviewer APPROVE to merge. |
-| jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | ❌ CI COMPLETE — ALL-CHECKS FAIL (pre-commit FAIL, run 29411650412) | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — Backlog | 🔴 **CI RUN 29411650412 COMPLETE: ALL-CHECKS = FAIL**. pre-commit FAIL. Other checks pass (e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅). OPEN + MERGEABLE. **Action: fix pre-commit failure.** Unchanged at 17:00 IDT. |
+| jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | ❌ CI COMPLETE — ALL-CHECKS FAIL (pre-commit FAIL, run 29411650412) | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — Backlog | 🔴 **CI RUN 29411650412 COMPLETE: ALL-CHECKS = FAIL**. pre-commit FAIL. Other checks pass (e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅). OPEN + MERGEABLE. **Action: fix pre-commit failure.** Unchanged at 18:00 IDT. |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — Backlog | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 17+** (still Ingest, should be Code). |
 | jn-5871 | **Code** (git-only) | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) — Backlog | Code done ~00:58 IDT Jul 9. SHA fc6e5f77. ⚠️ NOT in Agor board — no Agor worktree registered. Git branch only. No PR created. Needs investigation. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 20+ days. Propose archive. |
@@ -24,7 +24,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🟡 **NEW CI RUN 29430527639** (supersedes 29424019258) — bake ✅, check-changes ✅, atlas-validate ✅. pre-commit-run, integration, tox, e2e-api **RUNNING** (in progress ~17:28 IDT). | OPEN, MERGEABLE | 🟡 **ANOTHER NEW CI RUN** (yet more commits pushed). Run 29430527639 very early — 4 checks done, rest running. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🟡 **CI RUN 29430527639 NEARLY COMPLETE** — bake ✅, check-changes ✅, atlas-validate ✅, pre-commit ✅, pre-commit-run ✅, integration ✅, tox ✅, e2e-api ✅, e2e-smoke ✅, integration-tests ✅, nox ✅. **e2e-product PENDING** (not yet started). all-checks not yet aggregated. | OPEN, MERGEABLE | 🟡 **CI near-complete**: 11 checks pass, only e2e-product PENDING. Big progress since 17:30 IDT. Awaiting e2e-product. |
 
 ---
 
@@ -60,16 +60,16 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (17:30 IDT Jul 15 vs 17:00 IDT Jul 15)
+## Key Changes (18:00 IDT Jul 15 vs 17:30 IDT Jul 15)
 
 | What changed | Delta |
 |---|---|
-| **No new merges** | Step 1 sweep: no merges since 17:00 IDT. |
-| **#1638 ANOTHER NEW CI RUN** | ⚠️ NEW CI run 29430527639 (yet more commits pushed, supersedes 29424019258). Very early run: bake ✅, check-changes ✅, atlas-validate ✅. pre-commit-run/integration/tox/e2e-api RUNNING (~17:28 IDT). |
+| **No new merges** | Step 1 sweep: no merges since 17:30 IDT. |
+| **#1638 CI nearly complete** | 🟡 Run 29430527639: 11 checks now pass (bake ✅, check-changes ✅, atlas-validate ✅, pre-commit ✅, pre-commit-run ✅, integration ✅, tox ✅, e2e-api ✅, e2e-smoke ✅, integration-tests ✅, nox ✅). **Only e2e-product PENDING** (not started yet). Major progress from 17:30 when pre-commit/integration/tox/e2e-api were still RUNNING. |
 | **#1669 CI FAIL unchanged** | CI run 29411650412 still FAIL — pre-commit FAIL. No new commits. |
 | **#1667 unchanged** | ALL CI PASS ✅ (run 29402877354). OPEN + MERGEABLE. Awaiting reviewer APPROVE. |
 | **#1670 unchanged** | DRAFT + CI all pass (run 29403233416). Needs: mark ready for review. |
-| **Jira mismatches** | 6 confirmed unchanged via acli — JN-5842 (Backlog), JN-5877 (Backlog), JN-5874 (Backlog), JN-5401 (Backlog), JN-5827 (Backlog), JN-5546 (In Progress). |
+| **Jira mismatches unchanged** | 6 confirmed unchanged — JN-5842 (Backlog), JN-5877 (Backlog), JN-5874 (Backlog), JN-5401 (Backlog), JN-5827 (Backlog), JN-5546 (In Progress). |
 
 ---
 
@@ -95,16 +95,16 @@ PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): ad
 
 ---
 
-### 🟡 #1638 (off-board JN-5725) — ANOTHER NEW CI RUN: Jobs Running
+### 🟡 #1638 (off-board JN-5725) — CI Nearly Complete: e2e-product PENDING
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements"
-- **NEW CI run 29430527639** (yet more commits pushed ~17:28 IDT, supersedes 29424019258):
-  - bake ✅, check-changes ✅, atlas-validate ✅
-  - pre-commit-run **RUNNING**, integration **RUNNING**, tox **RUNNING**, e2e-api **RUNNING**
-  - atlas-validate-run skipping
+- **CI run 29430527639** — 11/12 checks pass:
+  - bake ✅, check-changes ✅, atlas-validate ✅, pre-commit ✅, pre-commit-run ✅, integration ✅, tox ✅, e2e-api ✅, e2e-smoke ✅, integration-tests ✅, nox ✅
+  - **e2e-product: PENDING** (not started yet)
+  - all-checks gate: not yet aggregated
 - State: OPEN, MERGEABLE.
-- Previous run 29424019258 (e2e-product PENDING) superseded by yet more new commits.
-- **Action:** Await CI completion on run 29430527639. Active development ongoing.
+- **Big progress from 17:30 IDT** — previously 4 checks were still running; now 11 pass.
+- **Action:** Await e2e-product completion. If it passes → all-checks should aggregate → PR ready.
 
 ---
 
@@ -161,7 +161,7 @@ This creates git state gaps. Investigate overnight schedule reliability.
 
 ## Archived This Session
 
-None — 0 auto-archives (no new merges since 14:00 IDT run).
+None — 0 auto-archives (no new merges since 17:30 IDT run).
 
 Previously archived (Jul 14):
 | Branch | PR | Reason | Time |
