@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-15 14:30 IDT";
+export const LAST_UPDATED = "2026-07-15 15:00 IDT";
 
 export const WORKTREES = [
   {
@@ -47,14 +47,22 @@ export const WORKTREES = [
     status: "✅ #1667 ALL CI PASS — run 29402877354 COMPLETE. OPEN + MERGEABLE + reviewDecision:\"\". Awaiting formal reviewer APPROVE to merge.",
     blockedOn: null,
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f65a620d0716ebc814467/",
-    sessionLabel: "heartbeat 14:30 IDT Jul 15 — #1669 CI FAIL (pre-commit); #1638 critical CI PASS, e2e-product pending; 0 merges",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f65c19538779c8e975fb3/",
+    sessionLabel: "heartbeat 15:00 IDT Jul 15 — JN-5717 resolved; #1669 CI FAIL unchanged; #1638 e2e-product pending; 0 merges; 6 Jira mismatches",
     recentSessions: [
+      {
+        sessionId: "019f65c19538779c8e975fb3",
+        url: "http://127.0.0.1:3030/ui/s/019f65c19538779c8e975fb3/",
+        title: "heartbeat 15:00 IDT Jul 15 — JN-5717 resolved; #1669 CI FAIL unchanged; #1638 e2e-product pending; 0 merges; 6 Jira mismatches",
+        status: "running",
+        timestamp: "2026-07-15 15:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f65a620d0716ebc814467",
         url: "http://127.0.0.1:3030/ui/s/019f65a620d0716ebc814467/",
         title: "heartbeat 14:30 IDT Jul 15 — #1669 CI FAIL (pre-commit); #1638 critical CI PASS, e2e-product pending; 0 merges",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-15 14:30 IDT",
         outputFile: null,
       },
@@ -82,16 +90,8 @@ export const WORKTREES = [
         timestamp: "2026-07-15 13:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f65383f777aee864bb886",
-        url: "http://127.0.0.1:3030/ui/s/019f65383f777aee864bb886/",
-        title: "heartbeat 12:30 IDT Jul 15 — #1667 ALL CI PASS ✅ (run 29402877354); #1638 nox+tox resolved (run 29403906203)",
-        status: "idle",
-        timestamp: "2026-07-15 12:30 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-15 14:30 IDT",
+    lastActive: "2026-07-15 15:00 IDT",
   },
   {
     ticket: "JN-5872",
@@ -105,14 +105,22 @@ export const WORKTREES = [
     status: "🔴 CI RUN 29411650412 COMPLETE — ALL-CHECKS FAIL. pre-commit FAIL. Other checks pass (e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅). OPEN + MERGEABLE. Action: fix pre-commit failure.",
     blockedOn: "CI failure — pre-commit",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f65a620d0716ebc814467/",
-    sessionLabel: "heartbeat 14:30 IDT Jul 15 — #1669 CI FAIL (pre-commit); #1638 critical CI PASS, e2e-product pending; 0 merges",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f65c19538779c8e975fb3/",
+    sessionLabel: "heartbeat 15:00 IDT Jul 15 — #1669 CI FAIL (pre-commit) unchanged; 6 Jira mismatches",
     recentSessions: [
+      {
+        sessionId: "019f65c19538779c8e975fb3",
+        url: "http://127.0.0.1:3030/ui/s/019f65c19538779c8e975fb3/",
+        title: "heartbeat 15:00 IDT Jul 15 — #1669 CI FAIL (pre-commit) unchanged; 6 Jira mismatches",
+        status: "running",
+        timestamp: "2026-07-15 15:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f65a620d0716ebc814467",
         url: "http://127.0.0.1:3030/ui/s/019f65a620d0716ebc814467/",
         title: "heartbeat 14:30 IDT Jul 15 — #1669 CI FAIL (pre-commit); #1638 critical CI PASS; 0 merges",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-15 14:30 IDT",
         outputFile: null,
       },
@@ -125,7 +133,7 @@ export const WORKTREES = [
         outputFile: ".artifacts/implement/JN-5872/01-context.md",
       },
     ],
-    lastActive: "2026-07-15 14:30 IDT",
+    lastActive: "2026-07-15 15:00 IDT",
   },
   {
     ticket: "JN-5865",
@@ -412,7 +420,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 Jira mismatches (7): JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5717, JN-5546 — PRs merged but Jira not Done. JN-5870 ✅, JN-5880 ✅, JN-5879 ✅, JN-5841 ✅, JN-5867 ✅ already Done. Jira MCP 401.",
+    message: "🔴 Jira mismatches (6): JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546 — PRs merged but Jira not Done. JN-5717 ✅ (confirmed Done 15:00 IDT Jul 15). JN-5870 ✅, JN-5880 ✅, JN-5879 ✅, JN-5841 ✅, JN-5867 ✅ already Done. Jira MCP 401.",
   },
   {
     level: "red",

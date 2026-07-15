@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-15 14:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-15 15:00 IDT (advance heartbeat)*
 
 ---
 
@@ -53,23 +53,23 @@ Active sprint tickets assigned to Joseph with no board worktree:
 | **[JN-5874](https://redhat.atlassian.net/browse/JN-5874)** | **[#1662](https://github.com/Jounce-IO/jounce/pull/1662)** | **MERGED 12:10 IDT Jul 13** | **Backlog** | ❌ Update Jira → Done |
 | **[JN-5401](https://redhat.atlassian.net/browse/JN-5401)** | **[#1654](https://github.com/Jounce-IO/jounce/pull/1654)** | **MERGED 17:12 IDT Jul 12** | **Backlog** | ❌ Update Jira → Done |
 | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) | [#1648](https://github.com/Jounce-IO/jounce/pull/1648) | MERGED Jul 12 | **Backlog** | ❌ Update Jira → Done |
-| [JN-5717](https://redhat.atlassian.net/browse/JN-5717) | [#1631](https://github.com/Jounce-IO/jounce/pull/1631) | MERGED Jul 6 | **Backlog** | ❌ Update Jira → Done |
+| [JN-5717](https://redhat.atlassian.net/browse/JN-5717) | [#1631](https://github.com/Jounce-IO/jounce/pull/1631) | MERGED Jul 6 | **Done ✅** (confirmed 15:00 IDT Jul 15) | ✅ Resolved |
 | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | MERGED Jul 7 | **In Progress** | ❌ Update Jira → Done |
 
-*JN-5870: Done ✅. JN-5880: Done ✅. JN-5879: Done ✅ (confirmed 10:00 IDT Jul 15). JN-5841: Done ✅. JN-5867: Done ✅ (confirmed 11:00 IDT Jul 15). Jira MCP 401 — use acli for updates.*
+*JN-5870: Done ✅. JN-5880: Done ✅. JN-5879: Done ✅ (confirmed 10:00 IDT Jul 15). JN-5841: Done ✅. JN-5867: Done ✅ (confirmed 11:00 IDT Jul 15). JN-5717: Done ✅ (confirmed 15:00 IDT Jul 15). Jira MCP 401 — use acli for updates.*
 
 ---
 
-## Key Changes (14:30 IDT Jul 15 vs 14:00 IDT Jul 15)
+## Key Changes (15:00 IDT Jul 15 vs 14:30 IDT Jul 15)
 
 | What changed | Delta |
 |---|---|
-| **🔴 #1669 → CI RUN 29411650412 COMPLETE, ALL-CHECKS FAIL** | pre-commit FAIL. Was PENDING at 14:00 IDT. Other checks pass (e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅). **Action needed: fix pre-commit failure.** |
-| **🟡 #1638 → Critical CI checks now PASS** | Run 29411735261: e2e-smoke ✅, e2e-api ✅, integration ✅, pre-commit ✅, tox ✅, bake ✅. Only e2e-product still PENDING. Significant progress from 14:00 IDT. |
+| **✅ JN-5717 Jira mismatch RESOLVED** | acli confirmed JN-5717 status = Done. Mismatch count drops from 7 to 6. |
+| **#1669 CI FAIL unchanged** | CI run 29411650412 still FAIL — pre-commit FAIL. Other checks pass. No new commits pushed. |
+| **#1638 e2e-product still PENDING** | Run 29411735261: e2e-product job 87344765108 still PENDING. All other checks pass. |
 | **#1667 unchanged** | ALL CI PASS ✅ (run 29402877354 COMPLETE). OPEN + MERGEABLE. Awaiting reviewer APPROVE. |
 | **#1670 unchanged** | DRAFT + CI all pass (run 29403233416). Needs: mark ready for review. |
-| **No new merges** | Step 1 sweep: no merges since 14:00 IDT. |
-| **Jira mismatches** | 7 active — unchanged. Jira MCP 401. |
+| **No new merges** | Step 1 sweep: no merges since 14:30 IDT. |
 
 ---
 
@@ -112,9 +112,9 @@ PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM a
 
 ---
 
-### 🟡 Jira Mismatches (7 active)
+### 🟡 Jira Mismatches (6 active)
 
-JN-5879 ✅, JN-5867 ✅ (confirmed Done 11:00 IDT Jul 15). Remaining 7: JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5717, JN-5546.
+JN-5879 ✅, JN-5867 ✅ (confirmed 11:00 IDT Jul 15), JN-5717 ✅ (confirmed 15:00 IDT Jul 15). Remaining 6: JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546.
 Use `acli jira workitem transition` to update. Jira MCP 401.
 
 ---
