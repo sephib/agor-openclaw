@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-16 15:15 IDT";
+export const LAST_UPDATED = "2026-07-16 15:45 IDT";
 
 export const WORKTREES = [
   {
@@ -47,14 +47,22 @@ export const WORKTREES = [
     status: "🔴 #1667 CONFLICTING — needs rebase on main. CI stale (run 29402877354 all-pass, pre-conflict). markVaykhansky COMMENTED only (no APPROVE).",
     blockedOn: "CONFLICTING — needs rebase",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6acc8ff777a4942b984b/",
-    sessionLabel: "advance heartbeat 15:15 IDT Jul 16 — #1667 still CONFLICTING; #1638 CI all pass; #1669 new CI run",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6ae804c971e9846de35f/",
+    sessionLabel: "advance heartbeat 15:45 IDT Jul 16 — #1667 still CONFLICTING; #1669 CI FAILED; #1638 new CI run",
     recentSessions: [
+      {
+        sessionId: "019f6ae804c971e9846de35f",
+        url: "http://127.0.0.1:3030/ui/s/019f6ae804c971e9846de35f/",
+        title: "advance heartbeat 15:45 IDT Jul 16 — #1667 still CONFLICTING unchanged",
+        status: "running",
+        timestamp: "2026-07-16 15:45 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f6acc8ff777a4942b984b",
         url: "http://127.0.0.1:3030/ui/s/019f6acc8ff777a4942b984b/",
         title: "advance heartbeat 15:15 IDT Jul 16 — #1667 still CONFLICTING unchanged",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-16 15:15 IDT",
         outputFile: null,
       },
@@ -110,17 +118,25 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1669",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1669",
-    status: "🟡 NEW PUSH — someone pushed fix! Mergeable UNKNOWN→MERGEABLE ✅. NEW CI run 29496530265 PENDING (pre-commit/integration/e2e-api). Was double-blocked. Monitor results.",
-    blockedOn: "CI pending — new run 29496530265 in progress",
-    blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6acc8ff777a4942b984b/",
-    sessionLabel: "advance heartbeat 15:15 IDT Jul 16 — #1669 NEW PUSH + CI run 29496530265 PENDING",
+    status: "🔴 CI FAILED — run 29496967425 FAIL (pre-commit, e2e-api, nox, tox, all-checks). Fix push was not enough. MERGEABLE but CI blocks.",
+    blockedOn: "CI FAILED — pre-commit, nox, tox, e2e-api all fail",
+    blockedType: "blocked",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6ae804c971e9846de35f/",
+    sessionLabel: "advance heartbeat 15:45 IDT Jul 16 — #1669 CI FAILED run 29496967425",
     recentSessions: [
+      {
+        sessionId: "019f6ae804c971e9846de35f",
+        url: "http://127.0.0.1:3030/ui/s/019f6ae804c971e9846de35f/",
+        title: "advance heartbeat 15:45 IDT Jul 16 — #1669 CI FAILED (run 29496967425); #1638 new CI run e2e-smoke pending",
+        status: "running",
+        timestamp: "2026-07-16 15:45 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f6acc8ff777a4942b984b",
         url: "http://127.0.0.1:3030/ui/s/019f6acc8ff777a4942b984b/",
         title: "advance heartbeat 15:15 IDT Jul 16 — #1669 NEW PUSH, CI run 29496530265 PENDING; #1638 ALL CI PASS",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-16 15:15 IDT",
         outputFile: null,
       },
@@ -423,12 +439,12 @@ export const ALERTS = [
     message: "🎉 #1673 (jn-5891 JN-5891) MERGED at 14:14 IDT Jul 16! fix(jbenchmark): set GuideLLM max_seconds default to 1200. Worktree ARCHIVED. JN-5891 Jira → needs Done.",
   },
   {
-    level: "green",
-    message: "🟢 #1638 (JN-5725, off-board): ALL CRITICAL CI PASS (run 29493930678: e2e-smoke ✅ NOW PASS). e2e-product still pending. PR MERGEABLE. JN-5725 Done ✅ — MERGE OR CLOSE DECISION NEEDED.",
+    level: "yellow",
+    message: "🟡 #1638 (JN-5725, off-board): NEW CI run 29497619223 — all critical PASS, e2e-smoke ⏳ PENDING. PR MERGEABLE. JN-5725 Done ✅ — MERGE OR CLOSE DECISION NEEDED.",
   },
   {
-    level: "yellow",
-    message: "🟡 #1669 (jn-5872 JN-5872): NEW PUSH — someone fixed it! Mergeable UNKNOWN→MERGEABLE ✅. NEW CI run 29496530265 PENDING. Was double-blocked (pre-commit FAIL). Monitor results.",
+    level: "red",
+    message: "🔴 #1669 (jn-5872 JN-5872): CI FAILED run 29496967425 — pre-commit, e2e-api, nox, tox, all-checks FAIL. Fix push was not enough. MERGEABLE but CI blocks. Needs another fix.",
   },
   {
     level: "red",
