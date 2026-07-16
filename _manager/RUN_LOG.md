@@ -1742,3 +1742,11 @@
 - Archives: 0 — no new merges
 - Flags: (1) #1673 jn-5891 CI FAIL (pre-commit + e2e-api); (2) #1638 rotating e2e failures; (3) #1669 pre-commit FAIL; (4) #1667 awaiting APPROVE; (5) #1670 DRAFT needs mark ready; (6) 6 Jira mismatches
 - Next: Fix pre-commit + e2e-api on #1673; investigate rotating e2e failures on #1638; #1667 awaiting reviewer
+
+## 13:15 IDT — Weekday Daytime Heartbeat (Jul 16)
+- PRs checked: #1673 (OPEN, APPROVED), #1669 (OPEN, CI FAIL pre-commit), #1667 (OPEN, CI PASS, no APPROVE), #1670 (OPEN, DRAFT), #1638 (OPEN, new CI run in progress), #1596 (OPEN, DRAFT, CONFLICTING)
+- Merges detected: none
+- CI changes: #1673 → new run 29488750857: pre-commit ✅ (fixed!), e2e-api ✅, e2e-smoke PENDING. #1638 → new run 29488442571: most passing, e2e-smoke PENDING.
+- Key delta: #1673 APPROVED by ushaket (09:28 IDT). Zone correction: jn-5891 is Code zone in Agor (not Publish as recorded). #1667 markVaykhansky COMMENTED only, no APPROVE.
+- Flags: #1673 awaiting e2e-smoke completion (if passes → MERGE-READY); #1669 pre-commit still failing; #1638 e2e-smoke flakiness pattern persists; 6 Jira mismatches unchanged
+- Next: Monitor #1673 e2e-smoke result. Fix #1669 pre-commit. Get APPROVE on #1667.

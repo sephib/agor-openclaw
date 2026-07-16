@@ -1,6 +1,24 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-16 13:15 IDT",
+    actions: 0,
+    findings: 3,
+    status: "ok",
+    summary: "#1673 APPROVED by ushaket (09:28 IDT) + new CI run 29488750857 (pre-commit ✅, e2e-smoke PENDING); jn-5891 zone corrected Code (not Publish); #1638 new CI run 29488442571 (e2e-smoke pending); 0 merges; 6 Jira mismatches unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6a5eaf0d7cc98be6a5cf/",
+  },
+  {
+    type: "advance",
+    timestamp: "2026-07-16 12:45 IDT",
+    actions: 0,
+    findings: 9,
+    status: "ok",
+    summary: "#1673 PR created 12:17 IDT CI FAIL (pre-commit ❌, e2e-api ❌); #1638 run 29485473923 COMPLETE (e2e-smoke ❌); #1669 pre-commit FAIL unchanged; #1667 CI PASS awaiting APPROVE; 0 merges; 6 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6a4337e2705f9789a427/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-16 12:15 IDT",
     actions: 0,
     findings: 9,
