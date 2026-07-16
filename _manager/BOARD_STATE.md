@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-16 14:45 IDT (advance heartbeat)*
+*Last updated: 2026-07-16 15:15 IDT (advance heartbeat)*
 
 ---
 
@@ -13,7 +13,7 @@
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | Last session Jul 8 IDLE. SHA 16ec44ea (2 commits). Needs: configs, rebase, PR. |
 | jn-5844-service-lib-sql-agents-md | **Publish** | [#1670 DRAFT](https://github.com/Jounce-IO/jounce/pull/1670) | ✅ ALL CI PASS (run 29403233416 — stale) | [JN-5844](https://redhat.atlassian.net/browse/JN-5844) — Backlog | DRAFT PR #1670. CI all pass. Needs: mark ready for review. |
 | jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | ✅ CI PASS (run 29402877354 — stale, pre-conflict) | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) — Backlog | 🔴 **CONFLICTING** — needs rebase on main. CI stale. |
-| jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | ❌ CI COMPLETE — ALL-CHECKS FAIL (pre-commit FAIL, run 29411650412) | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — Backlog | 🔴 **DOUBLE-BLOCKED**: mergeable UNKNOWN + pre-commit FAIL. No new push. |
+| jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | 🟡 NEW run 29496530265 PENDING (pre-commit/integration/e2e-api) | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — Backlog | 🟡 **NEW PUSH** — someone pushed fix! Mergeable: UNKNOWN→MERGEABLE ✅. New CI run in progress. |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — Backlog | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 8+** (still Ingest, should be Code). |
 | jn-5871 | **Code** (git-only) | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) — Backlog | Code done ~00:58 IDT Jul 9. SHA fc6e5f77. ⚠️ NOT in Agor board — git branch only. No PR created. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 21+ days. Propose archive. |
@@ -24,7 +24,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🟡 run 29493930678: most PASS, e2e-smoke ⏳ PENDING | OPEN, **MERGEABLE** ✅ | 🟡 New CI run in progress. JN-5725 Jira Done. Assess: fix e2e-smoke or close PR. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | ✅ run 29493930678: ALL CRITICAL PASS (e2e-smoke ✅ NOW PASS). e2e-product ⏳ pending | OPEN, **MERGEABLE** ✅ | 🟢 **ALL CRITICAL CI PASS** — e2e-smoke NOW ✅. e2e-product still pending. **MERGE OR CLOSE DECISION NEEDED.** |
 
 ---
 
@@ -60,16 +60,16 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (14:45 IDT Jul 16 advance heartbeat vs 14:15 IDT Jul 16)
+## Key Changes (15:15 IDT Jul 16 advance heartbeat vs 14:45 IDT Jul 16)
 
 | What changed | Delta |
 |---|---|
-| **🎉 #1673 MERGED** | PR #1673 (jn-5891) merged at 14:14 IDT — caught by this run. Previous 14:15 IDT run missed it by ~1 minute (race condition). |
-| **jn-5891 ARCHIVED** | Worktree archived autonomously (PR MERGED). |
-| **JN-5891 new Jira mismatch** | Jira still Backlog — now 7 total mismatches (was 6). |
-| **#1638 new CI run** | Run 29493930678: most checks pass, e2e-smoke ⏳ PENDING. Was FAIL run 29492058613. |
-| **#1667 still CONFLICTING** | No change — still needs rebase. |
-| **#1669 still pre-commit FAIL** | No change — still double-blocked. |
+| **#1638 e2e-smoke NOW PASS** | Run 29493930678: e2e-smoke ✅ PASS (was PENDING). All critical CI pass. e2e-product still pending. **Merge or close decision needed.** |
+| **#1669 NEW PUSH + NEW CI run** | NEW CI run 29496530265 PENDING. Mergeable changed UNKNOWN → MERGEABLE ✅. Someone pushed a fix to jn-5872. Was double-blocked. |
+| **#1667 still CONFLICTING** | No change — still needs rebase on main. |
+| **#1670 still DRAFT** | No change. |
+| **No new merges** | 0 merges detected this run. |
+| **Jira mismatches** | 7 unchanged — JN-5891 🆕, JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546. |
 
 ---
 
@@ -93,22 +93,23 @@ PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): ad
 
 ---
 
-### 🔴 #1669 (jn-5872) — DOUBLE-BLOCKED: mergeable UNKNOWN + pre-commit FAIL
+### 🟡 #1669 (jn-5872) — NEW PUSH + NEW CI RUN IN PROGRESS
 
 PR [#1669](https://github.com/Jounce-IO/jounce/pull/1669): "feat(jbenchmark): improve dev-connect with namespace/service checks (JN-5872)"
-- State: OPEN, mergeable UNKNOWN ❌
-- **CI run 29411650412 COMPLETE: ALL-CHECKS = FAIL** — pre-commit FAIL (other checks pass)
-- **Action:** Fix pre-commit failure, then rebase on main. Push fix → CI will re-run.
+- State: OPEN, **mergeable UNKNOWN→MERGEABLE ✅** (changed this run!)
+- **NEW CI run 29496530265** PENDING: pre-commit-run ⏳, integration ⏳, e2e-api ⏳, atlas-validate ✅, check-changes ✅, JIRA-Association ✅.
+- Was: DOUBLE-BLOCKED (mergeable UNKNOWN + pre-commit FAIL run 29411650412). Someone pushed a fix!
+- **Action:** Monitor new CI run 29496530265. If pre-commit passes → major unblock.
 
 ---
 
-### 🟡 #1638 (off-board JN-5725) — CI e2e-smoke PENDING
+### 🟢 #1638 (off-board JN-5725) — ALL CRITICAL CI PASS → MERGE OR CLOSE NEEDED
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements"
 - State: OPEN, **MERGEABLE** ✅
-- **CI run 29493930678**: pre-commit ✅, e2e-api ✅, bake ✅, integration ✅, tox ✅, nox ✅, pre-commit-run ✅ — e2e-smoke ⏳ PENDING.
-- JN-5725 Jira → **Done** ✅. Assess: fix e2e-smoke or close PR if abandoned.
-- **Action:** Monitor e2e-smoke result. If passes → MERGEABLE + CI green → merge decision needed.
+- **CI run 29493930678**: pre-commit ✅, e2e-api ✅, bake ✅, integration ✅, tox ✅, nox ✅, pre-commit-run ✅, **e2e-smoke ✅ PASS** (was PENDING last run!). e2e-product ⏳ still pending (non-blocking?).
+- JN-5725 Jira → **Done** ✅.
+- **Action:** **MERGE OR CLOSE DECISION NEEDED.** All critical CI passes. Joseph: merge this PR or close it (if abandoned since JN-5725 is Done).
 
 ---
 

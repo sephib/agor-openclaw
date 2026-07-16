@@ -1778,3 +1778,12 @@
 - Jira mismatches: 7 total (was 6 — JN-5891 added: Backlog, PR MERGED). Others: JN-5842/5877/5874/5401/5827 Backlog, JN-5546 In Progress.
 - Flags: (1) JN-5891 Jira needs Done (PR merged today); (2) #1667 CONFLICTING needs rebase; (3) #1669 DOUBLE-BLOCKED pre-commit+conflict; (4) #1670 DRAFT needs mark ready; (5) #1638 monitoring e2e-smoke; (6) 7 Jira mismatches
 - Next: Monitor #1638 e2e-smoke. Joseph: merge decision on #1638 (Jira Done). Fix #1669 pre-commit. Rebase #1667. Update JN-5891 Jira → Done.
+
+## 15:15 IDT — Weekday Daytime Heartbeat
+- PRs checked: #1638 (OPEN, MERGEABLE), #1667 (OPEN, CONFLICTING), #1669 (OPEN, MERGEABLE), #1670 (OPEN, DRAFT)
+- Merges detected: none
+- CI changes: #1638 run 29493930678 — e2e-smoke ✅ NOW PASS (was PENDING). All critical CI pass. e2e-product still pending. #1669 — NEW CI run 29496530265 LAUNCHED (pre-commit/integration/e2e-api PENDING). Mergeable changed UNKNOWN→MERGEABLE — someone pushed a fix! #1667 — stale CI, still CONFLICTING.
+- Archives: 0
+- Jira mismatches: 7 unchanged (JN-5891 🆕, JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546)
+- Flags: (1) #1638 ALL CI PASS — merge or close decision needed (JN-5725 Done); (2) #1669 new push detected — monitor CI run 29496530265; (3) #1667 still CONFLICTING needs rebase; (4) 7 Jira mismatches still need acli updates
+- Next: Monitor #1669 CI run result. Joseph: merge/close #1638 decision. Rebase #1667. Update Jira mismatches.
