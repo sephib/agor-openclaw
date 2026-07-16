@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-16 11:15 IDT (advance heartbeat)*
+*Last updated: 2026-07-16 11:45 IDT (advance heartbeat)*
 
 ---
 
@@ -24,7 +24,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🟡 **CI RUN 29480722054 IN PROGRESS** — bake ✅, atlas-validate ✅, check-changes ✅, pre-commit ✅, pre-commit-run ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅ PASS. **e2e-smoke ⏳ PENDING**. Run 29480097135 was CANCELLED. | OPEN, MERGEABLE | 🟡 **Run 29480097135 CANCELLED → new run 29480722054** most checks PASS (11:15 IDT). Only e2e-smoke pending. No new commits since Jul 7. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🔴 **e2e-smoke STUCK** — run 29480722054 (created 10:40 IDT), e2e-smoke in_progress 65+ min at 11:45 IDT. Last run update: 10:47 IDT. All other checks PASS. | OPEN, MERGEABLE | 🔴 **e2e-smoke job stuck** (65+ min, started 10:40 IDT, last update 10:47 IDT). May need manual re-run or cancel+restart. |
 
 ---
 
@@ -61,12 +61,12 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (11:15 IDT Jul 16 advance heartbeat vs 10:45 IDT Jul 16)
+## Key Changes (11:45 IDT Jul 16 advance heartbeat vs 11:15 IDT Jul 16)
 
 | What changed | Delta |
 |---|---|
 | **No new merges** | PR sweep: no new merges. Board static. |
-| **#1638 CI — run 29480097135 CANCELLED → NEW run 29480722054** | 🟡 Run 29480097135 cancelled. New run 29480722054 IN PROGRESS: pre-commit ✅, pre-commit-run ✅, bake ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅, integration-tests ✅, atlas-validate ✅ PASS. **e2e-smoke ⏳ PENDING.** No new commits since Jul 7. |
+| **#1638 — e2e-smoke STUCK 🔴** | Run 29480722054 (created 10:40 IDT): e2e-smoke job still `in_progress` at 11:45 IDT (65+ minutes). Last run update was 10:47 IDT. Normal runtime ~9-10 min. Job may be hung. Monitor or re-run. |
 | **#1669 (jn-5872) unchanged** | pre-commit FAIL, CI run 29411650412 — no new push. |
 | **#1667 (jn-5845) unchanged** | All CI PASS, awaiting APPROVE — no new activity. |
 | **#1670 (jn-5844) unchanged** | DRAFT, all CI PASS — no change. |
@@ -97,17 +97,17 @@ PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): ad
 
 ---
 
-### 🟡 #1638 (off-board JN-5725) — CI RUN 29480722054 IN PROGRESS (near-complete)
+### 🔴 #1638 (off-board JN-5725) — e2e-smoke STUCK (65+ min, run 29480722054)
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements"
-- **CI run 29480722054** (active as of 11:15 IDT Jul 16 — run 29480097135 CANCELLED):
+- **CI run 29480722054** (created 10:40 IDT Jul 16 — still in_progress as of 11:45 IDT):
   - bake ✅ PASS (27s), atlas-validate ✅ PASS (3s), check-changes ✅ PASS (7s)
   - pre-commit ✅ PASS (3s), pre-commit-run ✅ PASS (6m32s)
   - e2e-api ✅ PASS (3m21s), integration ✅ PASS (3m11s), integration-tests ✅ PASS, tox ✅ PASS (5m9s), nox ✅ PASS
-  - **e2e-smoke ⏳ PENDING** (only remaining check)
+  - **e2e-smoke 🔴 STUCK (in_progress 65+ minutes)** — last run update 10:47 IDT; normal runtime ~9-10 min
   - atlas-validate-run: skipping
 - State: OPEN, MERGEABLE.
-- **Action:** Await e2e-smoke result. If it passes, all-checks will pass → ready to merge.
+- **Action:** Monitor — if e2e-smoke stays stuck, Joseph may need to manually re-run the job or cancel+restart the run.
 
 ---
 
