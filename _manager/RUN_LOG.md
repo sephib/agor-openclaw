@@ -1730,3 +1730,15 @@
 - Jira: JN-5842 Backlog ❌, JN-5827 Backlog ❌, JN-5546 In Progress ❌ (verified via acli). 6 mismatches unchanged.
 - Flags: NEW jn-5891 worktree; #1638 e2e-api/e2e-tests FAIL on new run; #1669 pre-commit still failing; #1667 awaiting APPROVE; #1670 DRAFT needs mark ready
 - Next: monitor run 29485473923 for #1638; flag jn-5891 for PR creation
+
+## 12:45 IDT — Weekday Daytime Heartbeat (Jul 16 2026)
+- PRs checked: #1673 (NEW), #1638 (OPEN), #1667 (OPEN), #1669 (OPEN), #1670 (OPEN DRAFT)
+- Merges detected: none (PR sweep: no new merges)
+- CI changes: 
+  - #1638 run 29485473923 COMPLETE (was in_progress at 12:15): e2e-smoke ❌ FAIL (15m49s), e2e-tests ❌, all-checks ❌. e2e-api PASS ✅ (flipped from previous run). Rotating e2e failure pattern.
+  - #1673 (jn-5891) NEW PR — run 29486961479 COMPLETE: pre-commit ❌ FAIL (6m32s), e2e-api ❌ FAIL (3m13s), all-checks ❌. integration ✅, tox ✅, nox ✅.
+- New PRs: #1673 for jn-5891-max-seconds-1200 "fix(jbenchmark): set GuideLLM max_seconds default to 1200" — created 12:17 IDT
+- Jira: Not checked this run (acli format issue). 6 mismatches unchanged.
+- Archives: 0 — no new merges
+- Flags: (1) #1673 jn-5891 CI FAIL (pre-commit + e2e-api); (2) #1638 rotating e2e failures; (3) #1669 pre-commit FAIL; (4) #1667 awaiting APPROVE; (5) #1670 DRAFT needs mark ready; (6) 6 Jira mismatches
+- Next: Fix pre-commit + e2e-api on #1673; investigate rotating e2e failures on #1638; #1667 awaiting reviewer

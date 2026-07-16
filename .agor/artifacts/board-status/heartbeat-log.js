@@ -4205,4 +4205,22 @@ export const HEARTBEAT_RUNS = [
     summary: "#1669 CI RUN 29411650412 COMPLETE → ALL-CHECKS FAIL (pre-commit); #1638 critical CI now PASS (e2e-product pending); 0 merges; 7 Jira mismatches unchanged",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f65a620d0716ebc814467/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-07-16 12:15 IDT",
+    actions: 0,
+    findings: 9,
+    status: "ok",
+    summary: "NEW jn-5891-max-seconds-1200 worktree (Code zone, JN-5891); #1638 stuck e2e-smoke resolved — new CI run 29485314694 FAIL (e2e-api ❌, e2e-tests ❌), run 29485473923 in_progress; 0 merges; 6 Jira mismatches unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6a27c0727945a40615a2/",
+  },
+  {
+    type: "advance",
+    timestamp: "2026-07-16 12:45 IDT",
+    actions: 0,
+    findings: 10,
+    status: "ok",
+    summary: "🆕 PR #1673 for jn-5891 created 12:17 IDT (CI FAIL: pre-commit ❌ e2e-api ❌); #1638 run 29485473923 COMPLETE (e2e-smoke ❌, e2e-api now PASS — rotating failures); 0 merges; 6 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6a4337e2705f9789a427/",
+  },
 ];
