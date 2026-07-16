@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-16 13:15 IDT (advance heartbeat)*
+*Last updated: 2026-07-16 13:45 IDT (advance heartbeat)*
 
 ---
 
@@ -16,7 +16,7 @@
 | jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | ❌ CI COMPLETE — ALL-CHECKS FAIL (pre-commit FAIL, run 29411650412) | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — Backlog | 🔴 pre-commit FAIL. Other checks pass. OPEN + MERGEABLE. **Action: fix pre-commit failure.** No new push since last run. |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — Backlog | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 8+** (still Ingest, should be Code). |
 | jn-5871 | **Code** (git-only) | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) — Backlog | Code done ~00:58 IDT Jul 9. SHA fc6e5f77. ⚠️ NOT in Agor board — git branch only. No PR created. |
-| **jn-5891-max-seconds-1200** | **Code** (Agor) | [#1673](https://github.com/Jounce-IO/jounce/pull/1673) | ⏳ CI run 29488750857 IN PROGRESS: pre-commit ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅, **e2e-smoke PENDING** | [JN-5891](https://redhat.atlassian.net/browse/JN-5891) — Backlog | 🟡 PR #1673 **APPROVED by ushaket** (09:28 IDT Jul 16). New CI run 29488750857: pre-commit ✅ (was ❌). e2e-smoke pending. If e2e-smoke passes → READY TO MERGE. Zone correction: Agor says Code (not Publish). |
+| **jn-5891-max-seconds-1200** | **Code** (Agor) | [#1673](https://github.com/Jounce-IO/jounce/pull/1673) | ✅ CI run 29490006440 COMPLETE — ALL CHECKS PASS (e2e-smoke ✅) | [JN-5891](https://redhat.atlassian.net/browse/JN-5891) — Backlog | 🔑 **APPROVED by ushaket + ALL CI GREEN → READY TO MERGE!** Run 29490006440: pre-commit ✅, e2e-api ✅, e2e-smoke ✅, integration ✅, tox ✅, nox ✅. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 20+ days. Propose archive. |
 
 ---
@@ -25,7 +25,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | ⏳ New CI run 29488442571 IN PROGRESS: pre-commit ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅, bake ✅, **e2e-smoke PENDING** | OPEN, MERGEABLE | 🟡 New CI run 29488442571. Most checks passing. e2e-smoke pending. Pattern: persistent e2e flakiness between runs. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | Only CodeRabbit ✅ visible | OPEN, **CONFLICTING** ❌ | 🔴 **NEW: CONFLICTING** (was MERGEABLE). Needs rebase on main. JN-5725 Jira → Done ✅ (manually updated, mismatch resolved). |
 
 ---
 
@@ -60,28 +60,26 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (13:15 IDT Jul 16 advance heartbeat vs 12:45 IDT Jul 16)
+## Key Changes (13:45 IDT Jul 16 advance heartbeat vs 13:15 IDT Jul 16)
 
 | What changed | Delta |
 |---|---|
 | **No new merges** | PR sweep: no new merges detected. |
-| **🔑 #1673 APPROVED by ushaket** | reviewDecision flipped to APPROVED (09:28 IDT Jul 16). ushaket = MEMBER. |
-| **#1673 new CI run 29488750857** | pre-commit now ✅ PASS (was ❌ FAIL in run 29486961479). e2e-smoke PENDING. If e2e-smoke passes → READY TO MERGE. |
-| **jn-5891 zone correction** | BOARD_STATE.md had "Publish" — Agor MCP confirms zone_label="Code". Corrected. |
-| **#1638 new CI run 29488442571** | Most checks passing. e2e-smoke pending. Rotating e2e pattern continues. |
-| **#1667 — no APPROVE** | reviewDecision still "". markVaykhansky COMMENTED only. No human APPROVE yet. |
+| **🔑 #1673 ALL CI GREEN → READY TO MERGE** | e2e-smoke ✅ PASS (run 29490006440 complete). APPROVED (ushaket) + ALL CI PASS. **Merge-ready!** |
+| **🔴 #1638 now CONFLICTING** | Was MERGEABLE — now `mergeable: CONFLICTING`. Needs rebase on main. |
+| **JN-5725 → Done** | JN-5725 Jira status was In Progress, now Done (manually updated). Off-board mismatch resolved. |
+| **#1667, #1669 unchanged** | CI state and review state unchanged. |
 
 ---
 
 ## Attention Items
 
-### 🔑 #1673 (jn-5891) — APPROVED, CI nearly clear (e2e-smoke pending)
+### 🔑 #1673 (jn-5891) — APPROVED + ALL CI GREEN → **READY TO MERGE**
 
 PR [#1673](https://github.com/Jounce-IO/jounce/pull/1673): "fix(jbenchmark): set GuideLLM max_seconds default to 1200 (JN-5891)"
-- State: OPEN, **MERGEABLE** ✅, **reviewDecision: APPROVED** (ushaket, 09:28 IDT)
-- **CI run 29488750857** (IN PROGRESS): pre-commit ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅, **e2e-smoke PENDING**
-- Previous run 29486961479: pre-commit ❌ (now fixed), e2e-api ❌ (now passing)
-- **Action:** Monitor e2e-smoke completion. If passes → PR is ready to merge (APPROVED + CI green).
+- State: OPEN, **APPROVED** (ushaket, 09:28 IDT), isDraft: false
+- **CI run 29490006440 COMPLETE**: pre-commit ✅, e2e-api ✅, e2e-smoke ✅, integration ✅, tox ✅, nox ✅, integration-tests ✅, check-changes ✅
+- **Action: MERGE PR #1673 now.** All gates cleared — APPROVED + CI all green.
 
 ---
 
@@ -107,13 +105,13 @@ PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): ad
 
 ---
 
-### 🔴 #1638 (off-board JN-5725) — CI run in progress (e2e-smoke pending)
+### 🔴 #1638 (off-board JN-5725) — **CONFLICTING** (needs rebase)
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements"
-- **CI run 29488442571** (IN PROGRESS): pre-commit ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅, bake ✅. **e2e-smoke PENDING**.
-- Pattern: persistent rotating e2e flakiness across runs.
-- State: OPEN, MERGEABLE.
-- **Action:** Monitor e2e-smoke result. If fails again → investigate root cause.
+- State: OPEN, **mergeable: CONFLICTING** ❌ (was MERGEABLE at 13:15 IDT — new conflict!)
+- Only CodeRabbit ✅ visible in CI checks — no active CI run.
+- JN-5725 Jira → **Done** ✅ (manually updated — may indicate ticket is being closed regardless of PR state).
+- **Action:** Rebase feat/vllm-analyzer-prerequisites on main to resolve conflict, or assess if PR should be closed (Jira is Done).
 
 ---
 
