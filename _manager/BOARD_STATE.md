@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-16 21:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-16 21:30 IDT (advance heartbeat)*
 
 ---
 
@@ -60,7 +60,7 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (21:00 IDT Jul 16 advance heartbeat vs 20:30 IDT Jul 16)
+## Key Changes (21:30 IDT Jul 16 advance heartbeat vs 21:00 IDT Jul 16)
 
 | What changed | Delta |
 |---|---|
