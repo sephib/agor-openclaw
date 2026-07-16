@@ -4,6 +4,16 @@
 
 ---
 
+## 08:03 IDT — Daily External Sync (Jul 16 2026)
+- Jira tickets checked: 25 (via acli — Jira MCP 401 ongoing)
+- Mismatches found: 6 unchanged — JN-5842 (Backlog, PR #1658 MERGED), JN-5877 (Backlog, PR #1663 MERGED), JN-5874 (Backlog, PR #1662 MERGED), JN-5401 (Backlog, PR #1654 MERGED), JN-5827 (Backlog, PR #1648 MERGED), JN-5546 (In Progress, PR #1588 MERGED)
+- PR state discrepancies: #1638 has a new CI run (29452271237) completed overnight — e2e-product CANCELLED, e2e-tests FAIL, all-checks FAIL. Effectively same failure state.
+- New in sprint: JN-5851 (v0.7.0 Container Image & Argo Integration), JN-5852 (v0.7.0 Report Ingestion) — no worktrees
+- Updates made to BOARD_STATE.md: yes — timestamp, #1638 CI run ID, new sprint tickets JN-5851/5852, Key Changes section
+- Actions: 0 autonomous actions; board static; no new merges since 21:30 IDT Jul 15
+
+---
+
 ## 21:30 IDT — Weekday Daytime Heartbeat (Jul 15 2026)
 - PRs checked: #1638 (OPEN, MERGEABLE — e2e-product FAIL, run 29430527639 complete), #1667 (OPEN, ALL CI PASS, run 29402877354), #1669 (OPEN, CI FAIL pre-commit, run 29411650412), #1670 (DRAFT, CI pass, REVIEW_REQUIRED), #1596 (DRAFT CONFLICTING)
 - Merges detected: none since 21:00 IDT
@@ -1614,3 +1624,16 @@
 - Next: Await reviewer APPROVE for #1667. Joseph to fix pre-commit in #1669 and investigate e2e-product in #1638. Mark #1670 ready. Update 6 Jira stale tickets via acli.
 
 ---
+
+---
+
+## ~09:00 IDT — Manual Run by Joseph (Jul 16 2026)
+- PRs checked: #1596 (DRAFT CONFLICTING unchanged), #1670 (DRAFT CI PASS MERGEABLE unchanged), #1667 (OPEN CI PASS MERGEABLE unchanged), #1669 (OPEN pre-commit FAIL MERGEABLE unchanged), #1638 (OPEN e2e-tests FAIL — matches 08:03 external sync)
+- Merges detected: none since Jul 14
+- Auto-archives: 0
+- CI changes: All PRs match 08:03 external sync state. #1669 still pre-commit FAIL, #1667 still CI PASS awaiting APPROVE, #1670 still DRAFT CI PASS, #1638 still e2e-tests FAIL
+- Board changes: Static — no zone moves, no new worktrees
+- Jira: MCP 401 (cannot query). acli failed. All Jira status unavailable.
+- Flags: 6 Jira mismatches carry forward (JN-5842/5877/5874/5401/5827/5546); jn-5865 zone mismatch Day 17+; jn-5871 git-only no Agor worktree; jira-operations stale 21d+
+- Actions: 0 autonomous actions (board static, supervised mode)
+- Next: Joseph to fix #1669 pre-commit; get APPROVE on #1667; mark #1670 ready; move jn-5865→Code; investigate jn-5871 registration; update 6 Jira tickets to Done

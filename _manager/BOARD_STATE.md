@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-15 21:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-16 08:03 IDT (daily external sync)*
 
 ---
 
@@ -24,7 +24,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🔴 **CI RUN 29430527639 COMPLETE — ALL-CHECKS FAIL** — e2e-product FAIL (job 87409556708, 44m43s), e2e-tests FAIL (aggregator), all-checks FAIL. Other checks: bake ✅, pre-commit ✅, pre-commit-run ✅, integration ✅, tox ✅, e2e-api ✅, e2e-smoke ✅, integration-tests ✅, nox ✅. | OPEN, MERGEABLE | 🔴 **e2e-product FAILED** (completed at ~20:30 IDT). Run 29430527639 complete — ALL-CHECKS FAIL. Unchanged at 21:00 IDT. Action: investigate e2e-product failure. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🔴 **CI RUN 29452271237 COMPLETE — ALL-CHECKS FAIL** — e2e-product CANCELLED, e2e-tests FAIL (aggregator), all-checks FAIL. Other checks: bake ✅, pre-commit ✅, pre-commit-run ✅, integration ✅, tox ✅, e2e-api ✅, e2e-smoke ✅, integration-tests ✅, nox ✅. | OPEN, MERGEABLE | 🔴 **New CI run overnight** (started 00:32 IDT Jul 16, completed 01:57 IDT Jul 16). e2e-product CANCELLED (vs FAIL in prior run), e2e-tests still FAIL, all-checks FAIL. Action: investigate e2e-tests failure. |
 
 ---
 
@@ -39,6 +39,8 @@ Active sprint tickets assigned to Joseph with no board worktree:
 | [JN-5401](https://redhat.atlassian.net/browse/JN-5401) | Backlog | Add subcommands to runner — PR #1654 MERGED Jul 12, Jira stale! |
 | [JN-5244](https://redhat.atlassian.net/browse/JN-5244) | In Progress | Add CLI flags (jn-5244-cli-flags archived in Agor) |
 | [JN-4393](https://redhat.atlassian.net/browse/JN-4393) | In Progress | Upgrade AGENTS.md Standard |
+| [JN-5851](https://redhat.atlassian.net/browse/JN-5851) | Backlog | 🆕 Implement v0.7.0 Container Image & Argo Integration (new in sprint) |
+| [JN-5852](https://redhat.atlassian.net/browse/JN-5852) | Backlog | 🆕 Implement v0.7.0 Report Ingestion (new in sprint) |
 
 ---
 
@@ -59,16 +61,17 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (21:30 IDT Jul 15 vs 21:00 IDT Jul 15)
+## Key Changes (08:03 IDT Jul 16 daily sync vs 21:30 IDT Jul 15)
 
 | What changed | Delta |
 |---|---|
-| **No new merges** | Step 1 sweep: no merges since 21:00 IDT. |
-| **#1669 CI FAIL unchanged** | CI run 29411650412 still FAIL — pre-commit FAIL. No new commits. |
-| **#1638 e2e-product FAIL unchanged** | Run 29430527639 still COMPLETE with all-checks FAIL (e2e-product FAIL). No new push. |
-| **#1667 unchanged** | ALL CI PASS ✅ (run 29402877354). OPEN + MERGEABLE. Awaiting reviewer APPROVE. |
-| **#1670 unchanged** | DRAFT + CI all pass (run 29403233416). Needs: mark ready for review. |
-| **Jira mismatches unchanged** | 6 active — JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546. Jira MCP 401. |
+| **No new merges** | PR sweep: no new merges since 21:30 IDT Jul 15. |
+| **#1638 — new CI run overnight** | New run 29452271237 triggered ~00:32 IDT Jul 16 (pull_request event). e2e-product CANCELLED (not FAIL), e2e-tests FAIL, all-checks FAIL. Still failing, different failure mode. |
+| **#1669 CI FAIL unchanged** | CI run 29411650412 — pre-commit FAIL. No new commits. |
+| **#1667 unchanged** | ALL CI PASS ✅ (run 29402877354). Only COMMENTED reviews, no APPROVE yet. |
+| **#1670 unchanged** | DRAFT + CI pass (run 29403233416). Needs: mark ready for review. |
+| **Jira mismatches — 6 still active** | JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546 — all confirmed via acli. Jira MCP 401. |
+| **🆕 JN-5851, JN-5852 in sprint** | Two new Stories found in active sprint — no worktrees yet. |
 
 ---
 
@@ -95,16 +98,16 @@ PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): ad
 
 ---
 
-### 🔴 #1638 (off-board JN-5725) — e2e-product FAILED
+### 🔴 #1638 (off-board JN-5725) — e2e-tests FAIL (new run overnight)
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements"
-- **CI run 29430527639 COMPLETE — ALL-CHECKS FAIL**:
-  - e2e-product / e2e: **FAIL** (job 87409556708, 44m43s) ← was PENDING at 18:30 IDT
+- **NEW CI run 29452271237** (started 00:32 IDT Jul 16, completed 01:57 IDT Jul 16):
+  - e2e-product / e2e: **CANCELLED** ← changed from FAIL in prev run
   - e2e-tests: **FAIL** (aggregator)
   - all-checks: **FAIL**
   - bake ✅, check-changes ✅, atlas-validate ✅, pre-commit ✅, pre-commit-run ✅, integration ✅, tox ✅, e2e-api ✅, e2e-smoke ✅, integration-tests ✅, nox ✅
-- State: OPEN, MERGEABLE.
-- **Action:** Investigate e2e-product failure. Push fix → CI will re-run.
+- State: OPEN, MERGEABLE. Run triggered by `pull_request` event (possibly base branch update).
+- **Action:** Investigate e2e-tests aggregator failure. Push fix → CI will re-run.
 
 ---
 
