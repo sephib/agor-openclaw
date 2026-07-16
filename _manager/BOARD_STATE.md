@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-16 09:15 IDT (advance heartbeat)*
+*Last updated: 2026-07-16 09:45 IDT (advance heartbeat)*
 
 ---
 
@@ -24,7 +24,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🔴 **CI RUN 29452271237 COMPLETE — ALL-CHECKS FAIL** — e2e-product CANCELLED, e2e-tests FAIL (aggregator), all-checks FAIL. Other checks: bake ✅, pre-commit ✅, pre-commit-run ✅, integration ✅, tox ✅, e2e-api ✅, e2e-smoke ✅, integration-tests ✅, nox ✅. | OPEN, MERGEABLE | 🔴 **New CI run overnight** (started 00:32 IDT Jul 16, completed 01:57 IDT Jul 16). e2e-product CANCELLED (vs FAIL in prior run), e2e-tests still FAIL, all-checks FAIL. Action: investigate e2e-tests failure. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🟡 **NEW CI RUN 29476208989 IN PROGRESS** — pre-commit ✅, bake ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅. e2e-smoke ⏳ PENDING. all-checks/e2e-product/e2e-tests not yet visible. Triggered 09:16 IDT (new push to branch). | OPEN, MERGEABLE | 🟡 **New CI run 29476208989** started 09:16 IDT — looking much better than prior run (was all-checks FAIL). Awaiting e2e-smoke + downstream checks to complete. |
 
 ---
 
@@ -61,14 +61,16 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (09:15 IDT Jul 16 advance heartbeat vs 08:45 IDT Jul 16)
+## Key Changes (09:45 IDT Jul 16 advance heartbeat vs 09:15 IDT Jul 16)
 
 | What changed | Delta |
 |---|---|
 | **No new merges** | PR sweep: no new merges. Board static. |
-| **All PRs unchanged** | #1638 e2e FAIL, #1669 pre-commit FAIL, #1667 CI PASS awaiting APPROVE, #1670 DRAFT CI PASS — all same as 08:45 IDT. |
-| **Jira acli working** | acli sprint query succeeded. JN-5842 Backlog ❌ (confirmed), JN-5827 Backlog ❌ (confirmed). JN-5877/5874/5401/5546 not in sprint results (possibly resolved or removed from sprint). Carry forward 6 mismatches. |
-| **JN-5851, JN-5852 — no worktrees** | Both Backlog in sprint, unchanged. |
+| **#1638 NEW CI RUN 29476208989** | 🟡 New push to feat/vllm-analyzer-prerequisites triggered new CI run at 09:16 IDT. pre-commit ✅, bake ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅. e2e-smoke ⏳ PENDING. Much better than prior run (was all-checks FAIL). |
+| **#1669 (jn-5872) unchanged** | pre-commit FAIL, CI run 29411650412 — no new push. |
+| **#1667 (jn-5845) unchanged** | All CI PASS, awaiting APPROVE — no new activity. |
+| **#1670 (jn-5844) unchanged** | DRAFT, all CI PASS — no change. |
+| **Jira mismatches — 6 confirmed** | acli individual checks: JN-5877 Backlog ❌, JN-5874 Backlog ❌, JN-5827 Backlog ❌, JN-5546 In Progress ❌, JN-5842 Backlog ❌, JN-5401 Backlog ❌ — all 6 unchanged. |
 
 ---
 
@@ -95,16 +97,16 @@ PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): ad
 
 ---
 
-### 🔴 #1638 (off-board JN-5725) — e2e-product + e2e-tests FAIL
+### 🟡 #1638 (off-board JN-5725) — NEW CI RUN 29476208989 IN PROGRESS
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements"
-- **CI run 29452271237** (started 00:32 IDT Jul 16, completed 01:57 IDT Jul 16):
-  - e2e-product / e2e: **FAIL (1h0m8s timeout)** ← confirmed FAIL (not CANCELLED as previously reported)
-  - e2e-tests: **FAIL** (aggregator)
-  - all-checks: **FAIL**
-  - bake ✅, check-changes ✅, atlas-validate ✅, pre-commit ✅, pre-commit-run ✅, integration ✅, tox ✅, e2e-api ✅, e2e-smoke ✅, integration-tests ✅, nox ✅
+- **NEW CI run 29476208989** triggered 09:16 IDT Jul 16 (new push to branch):
+  - pre-commit ✅, bake ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅, atlas-validate ✅
+  - e2e-smoke ⏳ PENDING
+  - e2e-tests, all-checks, e2e-product — not yet visible (awaiting e2e-smoke to complete)
+- Previous run 29452271237: all-checks FAIL (e2e-product timeout, e2e-tests FAIL)
 - State: OPEN, MERGEABLE.
-- **Action:** Investigate e2e-product timeout + e2e-tests aggregator failure. Push fix → CI will re-run.
+- **Action:** Await CI completion — current run looks promising. If e2e-smoke passes, all critical checks may go green.
 
 ---
 
