@@ -4,6 +4,16 @@
 
 ---
 
+## 14:15 IDT — Weekday Daytime Heartbeat (Jul 16 2026)
+- PRs checked: #1673 (OPEN, APPROVED, new CI run 29491362151 ALL PASS), #1667 (OPEN, NEW CONFLICTING), #1669 (OPEN, NEW CONFLICTING + pre-commit FAIL), #1638 (OPEN, MERGEABLE — conflict resolved, but CI run 29492058613 e2e-smoke ❌), #1670 (DRAFT, CI pass unchanged)
+- Merges detected: none
+- CI changes: #1673 — new CI run 29491362151, ALL PASS ✅ (confirmed second run). #1638 — new CI run 29492058613: pre-commit ✅, bake ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅, but e2e-smoke ❌ e2e-tests ❌ all-checks ❌.
+- Flags: #1673 READY TO MERGE 🔑; #1667 NEW CONFLICT 🔴 (needs rebase); #1669 DOUBLE-BLOCKED 🔴 (CONFLICT + pre-commit fail); #1638 conflict resolved but CI still failing 🟡; 6 Jira mismatches unchanged
+- Auto-archives: 0
+- Next: merge #1673; rebase #1667 and #1669; assess #1638 (fix e2e-smoke or close PR since JN-5725 is Done)
+
+---
+
 ## 11:45 IDT — Weekday Daytime Heartbeat (Jul 16 2026)
 - PRs checked: #1638 (OPEN, run 29480722054 — e2e-smoke STUCK 65+ min), #1667 (OPEN, all CI pass unchanged), #1669 (OPEN, pre-commit FAIL unchanged), #1670 (DRAFT, all CI pass unchanged)
 - Merges detected: none — board static
