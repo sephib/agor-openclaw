@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-16 09:45 IDT (advance heartbeat)*
+*Last updated: 2026-07-16 10:15 IDT (advance heartbeat)*
 
 ---
 
@@ -61,16 +61,16 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (09:45 IDT Jul 16 advance heartbeat vs 09:15 IDT Jul 16)
+## Key Changes (10:15 IDT Jul 16 advance heartbeat vs 09:45 IDT Jul 16)
 
 | What changed | Delta |
 |---|---|
 | **No new merges** | PR sweep: no new merges. Board static. |
-| **#1638 NEW CI RUN 29476208989** | 🟡 New push to feat/vllm-analyzer-prerequisites triggered new CI run at 09:16 IDT. pre-commit ✅, bake ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅. e2e-smoke ⏳ PENDING. Much better than prior run (was all-checks FAIL). |
+| **#1638 CI — e2e-smoke ✅ PASS** | 🟡→🟢 e2e-smoke completed PASS (17m56s). e2e-product now ⏳ RUNNING. All prior checks still pass. Final gate: e2e-product. If it passes, all-checks goes green. |
 | **#1669 (jn-5872) unchanged** | pre-commit FAIL, CI run 29411650412 — no new push. |
 | **#1667 (jn-5845) unchanged** | All CI PASS, awaiting APPROVE — no new activity. |
 | **#1670 (jn-5844) unchanged** | DRAFT, all CI PASS — no change. |
-| **Jira mismatches — 6 confirmed** | acli individual checks: JN-5877 Backlog ❌, JN-5874 Backlog ❌, JN-5827 Backlog ❌, JN-5546 In Progress ❌, JN-5842 Backlog ❌, JN-5401 Backlog ❌ — all 6 unchanged. |
+| **Jira mismatches — 6 confirmed** | acli batch check: JN-5877/5874/5842/5827/5401 Backlog ❌, JN-5546 In Progress ❌ — all 6 unchanged. |
 
 ---
 
@@ -97,16 +97,17 @@ PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): ad
 
 ---
 
-### 🟡 #1638 (off-board JN-5725) — NEW CI RUN 29476208989 IN PROGRESS
+### 🟡 #1638 (off-board JN-5725) — CI RUN 29476208989 IN PROGRESS (e2e-product PENDING)
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements"
-- **NEW CI run 29476208989** triggered 09:16 IDT Jul 16 (new push to branch):
-  - pre-commit ✅, bake ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅, atlas-validate ✅
-  - e2e-smoke ⏳ PENDING
-  - e2e-tests, all-checks, e2e-product — not yet visible (awaiting e2e-smoke to complete)
+- **CI run 29476208989** (triggered 09:16 IDT Jul 16):
+  - pre-commit ✅, bake ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅, atlas-validate ✅, integration-tests ✅
+  - **e2e-smoke ✅ PASS (17m56s)** — completed since 09:45 IDT run
+  - **e2e-product ⏳ RUNNING** — final gate
+  - all-checks not yet visible (awaiting e2e-product)
 - Previous run 29452271237: all-checks FAIL (e2e-product timeout, e2e-tests FAIL)
 - State: OPEN, MERGEABLE.
-- **Action:** Await CI completion — current run looks promising. If e2e-smoke passes, all critical checks may go green.
+- **Action:** Await e2e-product completion — if it passes, all-checks goes green and PR becomes mergeable.
 
 ---
 
