@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-16 08:45 IDT (advance heartbeat)*
+*Last updated: 2026-07-16 09:15 IDT (advance heartbeat)*
 
 ---
 
@@ -12,8 +12,8 @@
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — Backlog | Design session done Jun 30. Ready for Plan phase. |
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | Last session Jul 8 IDLE. SHA 16ec44ea (2 commits). Needs: configs, rebase, PR. |
 | jn-5844-service-lib-sql-agents-md | **Publish** | [#1670 DRAFT](https://github.com/Jounce-IO/jounce/pull/1670) | ✅ ALL CI PASS (run 29403233416) | [JN-5844](https://redhat.atlassian.net/browse/JN-5844) — Backlog | 🆕 DRAFT PR #1670. CI all pass. Needs: mark ready for review. |
-| jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | ✅ ALL CI PASS (run 29402877354 complete) | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) — Backlog | ✅ ALL CI PASS. OPEN + MERGEABLE + reviewDecision:"". Awaiting formal reviewer APPROVE to merge. Unchanged at 21:30 IDT. |
-| jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | ❌ CI COMPLETE — ALL-CHECKS FAIL (pre-commit FAIL, run 29411650412) | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — Backlog | 🔴 **CI RUN 29411650412 COMPLETE: ALL-CHECKS = FAIL**. pre-commit FAIL. Other checks pass (e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅). OPEN + MERGEABLE. **Action: fix pre-commit failure.** Unchanged at 21:30 IDT. |
+| jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | ✅ ALL CI PASS (run 29402877354 complete) | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) — Backlog | ✅ ALL CI PASS. OPEN + MERGEABLE + reviewDecision:"". Awaiting formal reviewer APPROVE to merge. Unchanged at 09:15 IDT. |
+| jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | ❌ CI COMPLETE — ALL-CHECKS FAIL (pre-commit FAIL, run 29411650412) | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — Backlog | 🔴 **CI RUN 29411650412 COMPLETE: ALL-CHECKS = FAIL**. pre-commit FAIL. Other checks pass (e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅). OPEN + MERGEABLE. **Action: fix pre-commit failure.** Unchanged at 09:15 IDT. |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — Backlog | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 17+** (still Ingest, should be Code). |
 | jn-5871 | **Code** (git-only) | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) — Backlog | Code done ~00:58 IDT Jul 9. SHA fc6e5f77. ⚠️ NOT in Agor board — no Agor worktree registered. Git branch only. No PR created. Needs investigation. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 20+ days. Propose archive. |
@@ -61,16 +61,13 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (08:45 IDT Jul 16 advance heartbeat vs 08:15 IDT Jul 16)
+## Key Changes (09:15 IDT Jul 16 advance heartbeat vs 08:45 IDT Jul 16)
 
 | What changed | Delta |
 |---|---|
 | **No new merges** | PR sweep: no new merges. Board static. |
-| **#1638 — e2e-product FAIL confirmed** | CI run 29452271237: e2e-product/e2e FAIL (1h0m8s timeout) confirmed — not CANCELLED as external sync reported. e2e-tests FAIL, all-checks FAIL. All other checks pass. Unchanged. |
-| **#1669 CI FAIL unchanged** | CI run 29411650412 — pre-commit FAIL. No new commits. |
-| **#1667 unchanged** | ALL CI PASS ✅ (run 29402877354). No APPROVE yet. |
-| **#1670 unchanged** | DRAFT + CI pass (run 29403233416). Needs mark ready for review. |
-| **Jira mismatches — 6 unchanged** | JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546. |
+| **All PRs unchanged** | #1638 e2e FAIL, #1669 pre-commit FAIL, #1667 CI PASS awaiting APPROVE, #1670 DRAFT CI PASS — all same as 08:45 IDT. |
+| **Jira acli working** | acli sprint query succeeded. JN-5842 Backlog ❌ (confirmed), JN-5827 Backlog ❌ (confirmed). JN-5877/5874/5401/5546 not in sprint results (possibly resolved or removed from sprint). Carry forward 6 mismatches. |
 | **JN-5851, JN-5852 — no worktrees** | Both Backlog in sprint, unchanged. |
 
 ---
@@ -94,7 +91,7 @@ PR [#1669](https://github.com/Jounce-IO/jounce/pull/1669): "feat(jbenchmark): im
 PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): add Helm and CI/CD domain AGENTS.md files (JN-5845)"
 - State: OPEN, **MERGEABLE** ✅, reviewDecision: ""
 - **CI run 29402877354 COMPLETE ✅**: all mandatory checks pass.
-- **Action:** Await formal APPROVE from markVaykhansky (or other required reviewer) — CI is green, PR is mergeable.
+- **Action:** Await formal APPROVE from markVaykhansky (or other required reviewer) — CI is green, PR is mergeable. Unchanged at 09:15 IDT.
 
 ---
 
@@ -122,7 +119,7 @@ PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM a
 ### 🟡 Jira Mismatches (6 active)
 
 JN-5879 ✅, JN-5867 ✅ (confirmed 11:00 IDT Jul 15), JN-5717 ✅ (confirmed 15:00 IDT Jul 15). Remaining 6: JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546.
-Use `acli jira workitem transition` to update. Jira MCP 401.
+Use `acli jira workitem transition` to update. Jira MCP 401. acli working (09:15 IDT Jul 16). JN-5842 Backlog ❌ confirmed, JN-5827 Backlog ❌ confirmed. JN-5877/5874/5401/5546 not in sprint results (possibly resolved or removed from sprint).
 
 ---
 
