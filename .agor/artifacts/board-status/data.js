@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-16 14:15 IDT";
+export const LAST_UPDATED = "2026-07-16 14:45 IDT";
 
 export const WORKTREES = [
   {
@@ -44,17 +44,25 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1667",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1667",
-    status: "🔴 #1667 CONFLICTING (was MERGEABLE at 13:45 IDT — new conflict!). CI run 29402877354 stale. Needs rebase on main. markVaykhansky COMMENTED only (no APPROVE).",
+    status: "🔴 #1667 CONFLICTING — needs rebase on main. CI stale (run 29402877354 all-pass, pre-conflict). markVaykhansky COMMENTED only (no APPROVE).",
     blockedOn: "CONFLICTING — needs rebase",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6a959e6772b9880a96cf/",
-    sessionLabel: "advance heartbeat 14:15 IDT Jul 16 — #1667 NEW CONFLICT; #1669 NEW CONFLICT; #1638 resolved MERGEABLE (CI fail); #1673 all CI green",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6ab116067c369841cc56/",
+    sessionLabel: "advance heartbeat 14:45 IDT Jul 16 — #1673 MERGED; #1667 CONFLICTING unchanged; 7 Jira mismatches",
     recentSessions: [
+      {
+        sessionId: "019f6ab116067c369841cc56",
+        url: "http://127.0.0.1:3030/ui/s/019f6ab116067c369841cc56/",
+        title: "advance heartbeat 14:45 IDT Jul 16 — #1673 MERGED 14:14 IDT; jn-5891 ARCHIVED; 7 Jira mismatches",
+        status: "running",
+        timestamp: "2026-07-16 14:45 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f6a959e6772b9880a96cf",
         url: "http://127.0.0.1:3030/ui/s/019f6a959e6772b9880a96cf/",
         title: "advance heartbeat 14:15 IDT Jul 16 — #1667 NEW CONFLICT; #1669 NEW CONFLICT; #1638 MERGEABLE (CI fail); #1673 ALL CI ✅",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-16 14:15 IDT",
         outputFile: null,
       },
@@ -69,7 +77,7 @@ export const WORKTREES = [
       {
         sessionId: "019f6a5eaf0d7cc98be6a5cf",
         url: "http://127.0.0.1:3030/ui/s/019f6a5eaf0d7cc98be6a5cf/",
-        title: "advance heartbeat 13:15 IDT Jul 16 — #1673 APPROVED (ushaket); new CI run pre-commit ✅; e2e-smoke pending",
+        title: "advance heartbeat 13:15 IDT Jul 16 — APPROVED by ushaket; new CI run pre-commit ✅; e2e-smoke pending",
         status: "idle",
         timestamp: "2026-07-16 13:15 IDT",
         outputFile: null,
@@ -82,32 +90,8 @@ export const WORKTREES = [
         timestamp: "2026-07-16 12:45 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f6a27c0727945a40615a2",
-        url: "http://127.0.0.1:3030/ui/s/019f6a27c0727945a40615a2/",
-        title: "advance heartbeat 12:15 IDT Jul 16 — jn-5891 NEW; #1638 e2e-api FAIL; 0 merges; 6 Jira mismatches",
-        status: "idle",
-        timestamp: "2026-07-16 12:15 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f6a0c49427469a571dfc7",
-        url: "http://127.0.0.1:3030/ui/s/019f6a0c49427469a571dfc7/",
-        title: "advance heartbeat 11:45 IDT Jul 16 — #1638 e2e-smoke STUCK 65+ min; 0 merges; 6 Jira mismatches",
-        status: "idle",
-        timestamp: "2026-07-16 11:45 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f69f0ad5970809d5aeb98",
-        url: "http://127.0.0.1:3030/ui/s/019f69f0ad5970809d5aeb98/",
-        title: "advance heartbeat 11:15 IDT Jul 16 — #1638 run 29480722054 near-complete; 0 merges; 6 Jira mismatches",
-        status: "idle",
-        timestamp: "2026-07-16 11:15 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-16 13:45 IDT",
+    lastActive: "2026-07-16 14:15 IDT",
   },
   {
     ticket: "JN-5872",
@@ -118,17 +102,25 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1669",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1669",
-    status: "🔴 DOUBLE-BLOCKED: CONFLICTING (new at 14:15 IDT!) + CI FAIL (pre-commit FAIL, run 29411650412). Needs rebase AND pre-commit fix. OPEN.",
-    blockedOn: "CONFLICTING + CI failure — pre-commit",
+    status: "🔴 DOUBLE-BLOCKED: mergeable UNKNOWN + pre-commit FAIL (run 29411650412). Needs rebase AND pre-commit fix. OPEN.",
+    blockedOn: "mergeable UNKNOWN + CI failure — pre-commit",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6a959e6772b9880a96cf/",
-    sessionLabel: "advance heartbeat 14:15 IDT Jul 16 — #1669 NOW CONFLICTING + pre-commit FAIL (double-blocked)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6ab116067c369841cc56/",
+    sessionLabel: "advance heartbeat 14:45 IDT Jul 16 — #1669 double-blocked (mergeable UNKNOWN + pre-commit FAIL)",
     recentSessions: [
+      {
+        sessionId: "019f6ab116067c369841cc56",
+        url: "http://127.0.0.1:3030/ui/s/019f6ab116067c369841cc56/",
+        title: "advance heartbeat 14:45 IDT Jul 16 — #1669 double-blocked unchanged",
+        status: "running",
+        timestamp: "2026-07-16 14:45 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f6a959e6772b9880a96cf",
         url: "http://127.0.0.1:3030/ui/s/019f6a959e6772b9880a96cf/",
         title: "advance heartbeat 14:15 IDT Jul 16 — #1669 NOW CONFLICTING + pre-commit FAIL (double-blocked)",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-16 14:15 IDT",
         outputFile: null,
       },
@@ -156,66 +148,8 @@ export const WORKTREES = [
         timestamp: "2026-07-16 12:45 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f6a27c0727945a40615a2",
-        url: "http://127.0.0.1:3030/ui/s/019f6a27c0727945a40615a2/",
-        title: "advance heartbeat 12:15 IDT Jul 16 — #1669 pre-commit FAIL unchanged",
-        status: "idle",
-        timestamp: "2026-07-16 12:15 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-16 13:45 IDT",
-  },
-  {
-    ticket: "JN-5891",
-    ticketUrl: "https://redhat.atlassian.net/browse/JN-5891",
-    title: "Increase GuideLLM max_seconds 600→1200 (JN-5891)",
-    branch: "jn-5891-max-seconds-1200",
-    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5891-max-seconds-1200",
-    zone: "Code",
-    pr: "#1673",
-    prUrl: "https://github.com/Jounce-IO/jounce/pull/1673",
-    status: "🔑 PR #1673 APPROVED (ushaket 09:28 IDT) + ALL CI GREEN (run 29491362151): pre-commit ✅, e2e-api ✅, e2e-smoke ✅, integration ✅, tox ✅, nox ✅. READY TO MERGE!",
-    blockedOn: null,
-    blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6a959e6772b9880a96cf/",
-    sessionLabel: "advance heartbeat 14:15 IDT Jul 16 — #1673 new CI run 29491362151 ALL PASS; still READY TO MERGE",
-    recentSessions: [
-      {
-        sessionId: "019f6a959e6772b9880a96cf",
-        url: "http://127.0.0.1:3030/ui/s/019f6a959e6772b9880a96cf/",
-        title: "advance heartbeat 14:15 IDT Jul 16 — #1673 new CI run 29491362151 ALL PASS; APPROVED → READY TO MERGE",
-        status: "running",
-        timestamp: "2026-07-16 14:15 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f6a7a26e977619911be0b",
-        url: "http://127.0.0.1:3030/ui/s/019f6a7a26e977619911be0b/",
-        title: "advance heartbeat 13:45 IDT Jul 16 — #1673 e2e-smoke ✅ PASS → ALL CI GREEN + APPROVED → READY TO MERGE",
-        status: "idle",
-        timestamp: "2026-07-16 13:45 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f6a5eaf0d7cc98be6a5cf",
-        url: "http://127.0.0.1:3030/ui/s/019f6a5eaf0d7cc98be6a5cf/",
-        title: "advance heartbeat 13:15 IDT Jul 16 — APPROVED by ushaket; new CI run 29488750857 (pre-commit ✅, e2e-smoke pending)",
-        status: "idle",
-        timestamp: "2026-07-16 13:15 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f6a4337e2705f9789a427",
-        url: "http://127.0.0.1:3030/ui/s/019f6a4337e2705f9789a427/",
-        title: "advance heartbeat 12:45 IDT Jul 16 — PR #1673 CI FAIL (pre-commit + e2e-api)",
-        status: "idle",
-        timestamp: "2026-07-16 12:45 IDT",
-        outputFile: null,
-      },
-    ],
-    lastActive: "2026-07-16 13:45 IDT",
+    lastActive: "2026-07-16 14:15 IDT",
   },
   {
     ticket: "JN-5865",
@@ -334,14 +268,6 @@ export const WORKTREES = [
         timestamp: "2026-07-14 09:50 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f5ffc0ef371f7af6a753c",
-        url: "http://127.0.0.1:3030/ui/s/019f5ffc0ef371f7af6a753c/",
-        title: "Ingest JN-5844 — service/lib/sql AGENTS.md (done)",
-        status: "idle",
-        timestamp: "2026-07-14 09:44 IDT",
-        outputFile: null,
-      },
     ],
     lastActive: "2026-07-14 10:46 IDT",
   },
@@ -380,7 +306,7 @@ export const WORKTREES = [
     zone: "NO ZONE",
     pr: null,
     prUrl: null,
-    status: "⚠️ Still exists in Agor (uid=249, last updated Jun 25). Stale 20+ days — no sessions, no PR. Propose archive if no longer needed.",
+    status: "⚠️ Still exists in Agor (uid=249, last updated Jun 25). Stale 21+ days — no sessions, no PR. Propose archive if no longer needed.",
     blockedOn: "Stale, no activity",
     blockedType: "blocked",
     sessionUrl: null,
@@ -391,6 +317,15 @@ export const WORKTREES = [
 ];
 
 export const MERGED = [
+  {
+    ticket: "JN-5891",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5891",
+    title: "fix(jbenchmark): set GuideLLM max_seconds default to 1200 (JN-5891)",
+    pr: "#1673",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1673",
+    mergedDate: "2026-07-16",
+    note: "Merged 14:14 IDT Jul 16 🎉 jn-5891-max-seconds-1200 ARCHIVED 14:45 IDT Jul 16. JN-5891 Jira → still Backlog (needs Done).",
+  },
   {
     ticket: "JN-5867",
     ticketUrl: "https://redhat.atlassian.net/browse/JN-5867",
@@ -434,7 +369,7 @@ export const MERGED = [
     pr: "#1665",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1665",
     mergedDate: "2026-07-14",
-    note: "Merged 10:48 IDT Jul 14. jn-5879-justfile-skip-helm ARCHIVED 11:30 IDT Jul 14. JN-5879 Done ✅ (confirmed 10:00 IDT Jul 15).",
+    note: "Merged 10:48 IDT Jul 14. jn-5879-justfile-skip-helm ARCHIVED 11:30 IDT Jul 14. JN-5879 Done ✅.",
   },
   {
     ticket: "JN-5877",
@@ -464,15 +399,6 @@ export const MERGED = [
     note: "Merged 17:12 IDT Jul 12. CI all pass. jn-5401-runner-subcommands archived. JN-5401 Jira → needs Done.",
   },
   {
-    ticket: "JN-5841",
-    ticketUrl: "https://redhat.atlassian.net/browse/JN-5841",
-    title: "docs: add root AGENTS.md and refactor CLAUDE.md",
-    pr: "#1649",
-    prUrl: "https://github.com/Jounce-IO/jounce/pull/1649",
-    mergedDate: "2026-07-12",
-    note: "Merged 14:45 IDT Jul 12. jn-5841-agents-md-root ARCHIVED 16:00 IDT Jul 12. JN-5841 Jira → Done ✅.",
-  },
-  {
     ticket: "JN-5827",
     ticketUrl: "https://redhat.atlassian.net/browse/JN-5827",
     title: "feat(release): implement git tagging workflow for Jounce repo",
@@ -486,19 +412,19 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "green",
-    message: "🔑 #1673 (jn-5891 JN-5891): APPROVED (ushaket 09:28 IDT) + ALL CI GREEN (run 29491362151): pre-commit ✅, e2e-api ✅, e2e-smoke ✅, integration ✅, tox ✅, nox ✅. READY TO MERGE NOW.",
+    message: "🎉 #1673 (jn-5891 JN-5891) MERGED at 14:14 IDT Jul 16! fix(jbenchmark): set GuideLLM max_seconds default to 1200. Worktree ARCHIVED. JN-5891 Jira → needs Done.",
   },
   {
     level: "red",
-    message: "🔴 #1667 (jn-5845 JN-5845): NEW CONFLICT (was MERGEABLE at 13:45 IDT) — needs rebase on main. CI run 29402877354 is stale. markVaykhansky COMMENTED only (no APPROVE).",
+    message: "🔴 #1667 (jn-5845 JN-5845): CONFLICTING — needs rebase on main. CI run 29402877354 stale (all-pass, pre-conflict). markVaykhansky COMMENTED only (no APPROVE).",
   },
   {
     level: "red",
-    message: "🔴 #1669 (jn-5872 JN-5872): DOUBLE-BLOCKED — NEW CONFLICT (was MERGEABLE at 13:45 IDT) + pre-commit FAIL (run 29411650412). Needs rebase AND pre-commit fix.",
+    message: "🔴 #1669 (jn-5872 JN-5872): DOUBLE-BLOCKED — mergeable UNKNOWN + pre-commit FAIL (run 29411650412). Needs rebase AND pre-commit fix.",
   },
   {
     level: "yellow",
-    message: "🟡 #1638 (JN-5725, off-board): CONFLICT RESOLVED → MERGEABLE (was CONFLICTING at 13:45 IDT). But CI FAIL: e2e-smoke ❌ (run 29492058613). JN-5725 Jira Done ✅ — assess: fix CI or close PR.",
+    message: "🟡 #1638 (JN-5725, off-board): OPEN, MERGEABLE. New CI run 29493930678 — most pass, e2e-smoke ⏳ PENDING. JN-5725 Jira Done ✅ — assess: merge or close PR.",
   },
   {
     level: "yellow",
@@ -506,7 +432,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 Jira mismatches (6): JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546 — PRs merged but Jira not Done. Jira MCP 401 — use acli.",
+    message: "🔴 Jira mismatches (7): JN-5891 🆕, JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546 — PRs merged but Jira not Done. Jira MCP 401 — use acli.",
   },
   {
     level: "red",
@@ -522,7 +448,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "⚠️ jira-operations: NO ZONE, stale 20+ days (last Jun 25). No sessions, no PR. Propose archive.",
+    message: "⚠️ jira-operations: NO ZONE, stale 21+ days (last Jun 25). No sessions, no PR. Propose archive.",
   },
   {
     level: "yellow",
