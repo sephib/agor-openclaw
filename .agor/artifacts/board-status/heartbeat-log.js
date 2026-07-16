@@ -4403,4 +4403,13 @@ export const HEARTBEAT_RUNS = [
     summary: "🆕 PR #1673 for jn-5891 created 12:17 IDT (CI FAIL: pre-commit ❌ e2e-api ❌); #1638 run 29485473923 COMPLETE (e2e-smoke ❌, e2e-api now PASS — rotating failures); 0 merges; 6 Jira mismatches",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f6a4337e2705f9789a427/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-07-17 00:00 IDT",
+    actions: 0,
+    findings: 6,
+    status: "ok",
+    summary: "board static overnight (13h); #1669 pre-commit ❌ only (run 29509136918 unchanged); #1638 CI FAIL (run 29501833549 unchanged); 0 merges; 6 Jira mismatches unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6cbaf4fc76588ab3a82c/",
+  },
 ];

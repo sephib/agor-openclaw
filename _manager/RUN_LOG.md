@@ -1920,3 +1920,11 @@
 - CI changes: Board static. #1669 unchanged — run 29509136918 (pre-commit ❌ only; nox ✅ tox ✅ e2e ✅). #1638 unchanged — run 29501833549 (nox ❌ tox ❌ e2e-smoke ❌ e2e-tests ❌). No new CI runs.
 - Flags: 6 Jira mismatches (JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546). #1667 CONFLICTING. #1670 DRAFT.
 - Next: Await Joseph action on pre-commit fix for #1669 or direction on #1638.
+
+## 00:00 IDT — Weekend Heartbeat (Jul 17 2026)
+- PRs checked: #1669 (OPEN, MERGEABLE — run 29509136918 UNCHANGED: pre-commit ❌ only), #1667 (OPEN, CONFLICTING), #1670 (DRAFT, MERGEABLE — CI all pass, stale), #1638 (OPEN, MERGEABLE — off-board, run 29501833549 UNCHANGED: nox/tox/e2e-smoke/e2e-tests ❌), #1596 (DRAFT, CONFLICTING)
+- Merges detected: none — 0 merges this run
+- CI changes: none — board static 13+ hours overnight. #1669 same run 29509136918. #1638 same run 29501833549. No new CI runs or pushes.
+- Flags: #1669 pre-commit ❌ blocker unchanged; #1667 CONFLICTING unchanged; #1638 CI FAIL unchanged; 6 Jira mismatches unchanged (JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546)
+- Auto-archives: 0
+- Next: Joseph to fix pre-commit on #1669 (unblocks merge). Rebase #1667. Decide on #1638 (JN-5725 Done — close or fix CI?).
