@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-16 11:15 IDT",
+    actions: 0,
+    findings: 7,
+    status: "ok",
+    summary: "#1638 CI run 29480097135 CANCELLED → new run 29480722054 near-complete (pre-commit/e2e-api/integration/tox/nox ✅, e2e-smoke ⏳); board static; 6 Jira mismatches unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f69f0ad5970809d5aeb98/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-16 10:45 IDT",
     actions: 0,
     findings: 6,

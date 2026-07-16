@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-16 10:45 IDT (advance heartbeat)*
+*Last updated: 2026-07-16 11:15 IDT (advance heartbeat)*
 
 ---
 
@@ -24,7 +24,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🟡 **NEW CI RUN 29480097135 IN PROGRESS** — bake ✅, atlas-validate ✅, check-changes ✅. integration ⏳, pre-commit ⏳, tox ⏳, e2e-api ⏳ PENDING. Run 29476208989 superseded (e2e-product completed, triggered re-run). | OPEN, MERGEABLE | 🟡 **New CI run 29480097135** in progress (10:45 IDT). Previous run 29476208989 e2e-product result caused re-run. No new commits since Jul 7. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🟡 **CI RUN 29480722054 IN PROGRESS** — bake ✅, atlas-validate ✅, check-changes ✅, pre-commit ✅, pre-commit-run ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅ PASS. **e2e-smoke ⏳ PENDING**. Run 29480097135 was CANCELLED. | OPEN, MERGEABLE | 🟡 **Run 29480097135 CANCELLED → new run 29480722054** most checks PASS (11:15 IDT). Only e2e-smoke pending. No new commits since Jul 7. |
 
 ---
 
@@ -61,16 +61,16 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (10:45 IDT Jul 16 advance heartbeat vs 10:15 IDT Jul 16)
+## Key Changes (11:15 IDT Jul 16 advance heartbeat vs 10:45 IDT Jul 16)
 
 | What changed | Delta |
 |---|---|
 | **No new merges** | PR sweep: no new merges. Board static. |
-| **#1638 CI — NEW run 29480097135** | 🟡 Run 29476208989 (e2e-product was RUNNING at 10:15) is superseded by run 29480097135. No new commits since Jul 7. bake ✅, atlas-validate ✅, check-changes ✅ — integration ⏳, pre-commit ⏳, tox ⏳, e2e-api ⏳ PENDING. |
+| **#1638 CI — run 29480097135 CANCELLED → NEW run 29480722054** | 🟡 Run 29480097135 cancelled. New run 29480722054 IN PROGRESS: pre-commit ✅, pre-commit-run ✅, bake ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅, integration-tests ✅, atlas-validate ✅ PASS. **e2e-smoke ⏳ PENDING.** No new commits since Jul 7. |
 | **#1669 (jn-5872) unchanged** | pre-commit FAIL, CI run 29411650412 — no new push. |
 | **#1667 (jn-5845) unchanged** | All CI PASS, awaiting APPROVE — no new activity. |
 | **#1670 (jn-5844) unchanged** | DRAFT, all CI PASS — no change. |
-| **Jira mismatches — 6 confirmed** | acli batch check: JN-5877/5874/5842/5827/5401 Backlog ❌, JN-5546 In Progress ❌ — all 6 unchanged. |
+| **Jira mismatches — 6 confirmed** | JN-5877/5874/5842/5827/5401 Backlog ❌, JN-5546 In Progress ❌ — all 6 unchanged. |
 
 ---
 
@@ -97,16 +97,17 @@ PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): ad
 
 ---
 
-### 🟡 #1638 (off-board JN-5725) — CI RUN 29480097135 IN PROGRESS
+### 🟡 #1638 (off-board JN-5725) — CI RUN 29480722054 IN PROGRESS (near-complete)
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements"
-- **CI run 29480097135** (active as of 10:45 IDT Jul 16 — no new commits since Jul 7):
-  - bake ✅ PASS (28s), atlas-validate ✅ PASS (3s), check-changes ✅ PASS (6s)
-  - integration ⏳ PENDING, pre-commit ⏳ PENDING, tox ⏳ PENDING, e2e-api ⏳ PENDING
-- Previous run 29476208989 (09:16 IDT): e2e-smoke ✅ completed, e2e-product ran → result triggered this new run
-- Previous run 29452271237: all-checks FAIL (e2e-product timeout, e2e-tests FAIL)
+- **CI run 29480722054** (active as of 11:15 IDT Jul 16 — run 29480097135 CANCELLED):
+  - bake ✅ PASS (27s), atlas-validate ✅ PASS (3s), check-changes ✅ PASS (7s)
+  - pre-commit ✅ PASS (3s), pre-commit-run ✅ PASS (6m32s)
+  - e2e-api ✅ PASS (3m21s), integration ✅ PASS (3m11s), integration-tests ✅ PASS, tox ✅ PASS (5m9s), nox ✅ PASS
+  - **e2e-smoke ⏳ PENDING** (only remaining check)
+  - atlas-validate-run: skipping
 - State: OPEN, MERGEABLE.
-- **Action:** Await run 29480097135 completion — watch pre-commit and e2e results.
+- **Action:** Await e2e-smoke result. If it passes, all-checks will pass → ready to merge.
 
 ---
 
@@ -164,7 +165,7 @@ This creates git state gaps. Overnight schedule consistently failing. Daytime se
 
 ## Archived This Session
 
-None — 0 auto-archives (no new merges since 21:00 IDT run).
+None — 0 auto-archives (no new merges).
 
 Previously archived (Jul 14):
 | Branch | PR | Reason | Time |
