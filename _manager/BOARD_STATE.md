@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-16 18:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-16 19:00 IDT (advance heartbeat)*
 
 ---
 
@@ -60,11 +60,12 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (18:30 IDT Jul 16 advance heartbeat vs 18:00 IDT Jul 16)
+## Key Changes (19:00 IDT Jul 16 advance heartbeat vs 18:30 IDT Jul 16)
 
 | What changed | Delta |
 |---|---|
-| **🔴 #1669 CI run 29509136918 COMPLETE** | **pre-commit ❌ only** — nox ✅, tox ✅, e2e-smoke ✅, e2e-api ✅, integration ✅ all PASS. Progress: was 3 failures (pre-commit+nox+tox), now 1 (pre-commit). |
+| **Board static** | No changes from prior run. |
+| **#1669 unchanged** | Same run 29509136918: pre-commit ❌ only. nox ✅ tox ✅ e2e ✅ unchanged. |
 | **#1638 unchanged** | Same run 29501833549: nox ❌, tox ❌, e2e-smoke ❌, e2e-tests ❌. No new push or CI run. |
 | **#1667 still CONFLICTING** | No change — still needs rebase on main. |
 | **#1670 still DRAFT** | No change — CI all pass (stale run). |

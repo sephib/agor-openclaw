@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-16 18:30 IDT";
+export const LAST_UPDATED = "2026-07-16 19:00 IDT";
 
 export const WORKTREES = [
   {
@@ -47,14 +47,22 @@ export const WORKTREES = [
     status: "🔴 #1667 CONFLICTING — needs rebase on main. CI stale (run 29402877354 all-pass, pre-conflict). markVaykhansky COMMENTED only (no APPROVE).",
     blockedOn: "CONFLICTING — needs rebase",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6b8cd263781c8c259373/",
-    sessionLabel: "advance heartbeat 18:30 IDT Jul 16 — #1667 still CONFLICTING; #1669 run 29509136918 COMPLETE",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6ba84ca57b1696ec4fe7/",
+    sessionLabel: "advance heartbeat 19:00 IDT Jul 16 — board static; #1667 still CONFLICTING; #1669 pre-commit ❌ unchanged",
     recentSessions: [
+      {
+        sessionId: "019f6ba84ca57b1696ec4fe7",
+        url: "http://127.0.0.1:3030/ui/s/019f6ba84ca57b1696ec4fe7/",
+        title: "advance heartbeat 19:00 IDT Jul 16 — board static; #1667 still CONFLICTING; #1669 pre-commit ❌ unchanged",
+        status: "completed",
+        timestamp: "2026-07-16 19:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f6b8cd263781c8c259373",
         url: "http://127.0.0.1:3030/ui/s/019f6b8cd263781c8c259373/",
         title: "advance heartbeat 18:30 IDT Jul 16 — #1667 still CONFLICTING; #1669 run 29509136918 COMPLETE (pre-commit ❌)",
-        status: "completed",
+        status: "idle",
         timestamp: "2026-07-16 18:30 IDT",
         outputFile: null,
       },
@@ -82,16 +90,8 @@ export const WORKTREES = [
         timestamp: "2026-07-16 17:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f6b1ef44e722da4300312",
-        url: "http://127.0.0.1:3030/ui/s/019f6b1ef44e722da4300312/",
-        title: "advance heartbeat 16:30 IDT Jul 16 — #1638 CI REGRESSION; #1667 still CONFLICTING",
-        status: "idle",
-        timestamp: "2026-07-16 16:30 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-16 18:30 IDT",
+    lastActive: "2026-07-16 19:00 IDT",
   },
   {
     ticket: "JN-5872",
@@ -105,14 +105,22 @@ export const WORKTREES = [
     status: "🔴 CI run 29509136918 COMPLETE: pre-commit ❌ only (all-checks ❌). PROGRESS: nox ✅ tox ✅ e2e ✅ now pass. Was 3 failures (pre-commit+nox+tox), now 1. Fix pre-commit to unblock merge.",
     blockedOn: "CI FAIL — pre-commit only (run 29509136918 complete)",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6b8cd263781c8c259373/",
-    sessionLabel: "advance heartbeat 18:30 IDT Jul 16 — #1669 run 29509136918 COMPLETE: pre-commit ❌ only (progress!)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6ba84ca57b1696ec4fe7/",
+    sessionLabel: "advance heartbeat 19:00 IDT Jul 16 — board static; #1669 pre-commit ❌ unchanged (run 29509136918)",
     recentSessions: [
+      {
+        sessionId: "019f6ba84ca57b1696ec4fe7",
+        url: "http://127.0.0.1:3030/ui/s/019f6ba84ca57b1696ec4fe7/",
+        title: "advance heartbeat 19:00 IDT Jul 16 — board static; #1669 pre-commit ❌ unchanged (run 29509136918)",
+        status: "completed",
+        timestamp: "2026-07-16 19:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f6b8cd263781c8c259373",
         url: "http://127.0.0.1:3030/ui/s/019f6b8cd263781c8c259373/",
         title: "advance heartbeat 18:30 IDT Jul 16 — #1669 run 29509136918 COMPLETE: pre-commit ❌ only (nox ✅ tox ✅)",
-        status: "completed",
+        status: "idle",
         timestamp: "2026-07-16 18:30 IDT",
         outputFile: null,
       },
@@ -140,16 +148,8 @@ export const WORKTREES = [
         timestamp: "2026-07-16 17:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f6b1ef44e722da4300312",
-        url: "http://127.0.0.1:3030/ui/s/019f6b1ef44e722da4300312/",
-        title: "advance heartbeat 16:30 IDT Jul 16 — #1669 unchanged; #1638 CI REGRESSION (new run nox/tox FAIL)",
-        status: "idle",
-        timestamp: "2026-07-16 16:30 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-16 18:30 IDT",
+    lastActive: "2026-07-16 19:00 IDT",
   },
   {
     ticket: "JN-5865",
