@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-16 16:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-16 17:00 IDT (advance heartbeat)*
 
 ---
 
@@ -24,7 +24,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🔴 **REGRESSION** run 29501833549 — nox ❌, tox ❌, pre-commit ✅, e2e-smoke ⏳ PENDING | OPEN, **MERGEABLE** ✅ | 🔴 **CI REGRESSION** — was ALL CRITICAL PASS (run 29497619223), new run 29501833549 shows nox+tox FAIL. Same nox/tox failure pattern as #1669 — possible systemic issue. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🔴 run 29501833549 COMPLETE: nox ❌, tox ❌, e2e-smoke ❌, e2e-tests ❌; pre-commit ✅, e2e-api ✅, integration ✅ | OPEN, **MERGEABLE** ✅ | 🔴 **CI FAILING** — run 29501833549 complete: nox/tox/e2e-smoke/e2e-tests ❌. Different from #1669 (pre-commit ✅ here). JN-5725 Done ✅. |
 
 ---
 
@@ -60,12 +60,12 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (16:30 IDT Jul 16 advance heartbeat vs 16:00 IDT Jul 16)
+## Key Changes (17:00 IDT Jul 16 advance heartbeat vs 16:30 IDT Jul 16)
 
 | What changed | Delta |
 |---|---|
-| **#1638 CI REGRESSION — new run 29501833549** | Was ALL CRITICAL PASS (run 29497619223). New run 29501833549: nox ❌ FAIL, tox ❌ FAIL, pre-commit ✅ PASS, e2e-api ✅ PASS, e2e-smoke ⏳ PENDING. nox+tox failures now on BOTH #1638 AND #1669 — possible systemic issue. |
-| **#1669 unchanged** | Same CI run 29498649988: pre-commit/nox/tox FAIL, e2e ✅ PASS. No new push since 15:34 IDT. |
+| **#1638 CI run 29501833549 NOW COMPLETE** | e2e-smoke ❌ NOW FAIL (was ⏳ PENDING). Full results: nox ❌, tox ❌, e2e-smoke ❌, e2e-tests ❌. Pre-commit ✅, e2e-api ✅, integration ✅ still pass. Different failure profile from #1669 (pre-commit passes on #1638, fails on #1669) — **NOT systemic**. |
+| **#1669 unchanged** | Same CI run 29498649988: pre-commit/nox/tox FAIL, e2e ✅ PASS. No new push. |
 | **#1667 still CONFLICTING** | No change — still needs rebase on main. |
 | **#1670 still DRAFT** | No change. |
 | **No new merges** | 0 merges detected this run. |
@@ -95,15 +95,15 @@ PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): ad
 
 ---
 
-### 🔴 #1638 (off-board JN-5725) — CI REGRESSION (new run 29501833549)
+### 🔴 #1638 (off-board JN-5725) — CI FAILING (run 29501833549 COMPLETE)
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements"
 - State: OPEN, **MERGEABLE** ✅
-- **NEW CI run 29501833549**: nox ❌ FAIL, tox ❌ FAIL, pre-commit ✅ PASS, e2e-api ✅ PASS, e2e-smoke ⏳ PENDING, integration ✅ PASS
-- **REGRESSION from run 29497619223** which had ALL CRITICAL PASS. A new CI run was triggered (likely a push to the branch).
+- **CI run 29501833549 COMPLETE**: nox ❌, tox ❌, e2e-smoke ❌, e2e-tests ❌; pre-commit ✅, e2e-api ✅, integration ✅, bake ✅
+- **REGRESSION from run 29497619223** which had ALL CRITICAL PASS.
 - JN-5725 Jira → **Done** ✅.
-- ⚠️ nox + tox failing on BOTH #1638 AND #1669 — possible systemic test infrastructure issue.
-- **Action:** Investigate nox/tox failure. May need code fix or may resolve when e2e-smoke completes.
+- Note: **different profile from #1669** — pre-commit PASSES on #1638 (fails on #1669), but e2e-smoke FAILS on #1638 (passes on #1669). Not a simple shared infra issue.
+- **Action:** Investigate separately: nox/tox failure + e2e-smoke failure on #1638. Consider closing since JN-5725 Done.
 
 ---
 

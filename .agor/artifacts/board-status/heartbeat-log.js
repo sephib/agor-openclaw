@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-16 17:00 IDT",
+    actions: 0,
+    findings: 2,
+    status: "ok",
+    summary: "🔴 #1638 CI run 29501833549 COMPLETE — e2e-smoke NOW FAIL (was pending); nox/tox/e2e-smoke/e2e-tests all ❌; NOT systemic (different profile from #1669); 🟡 #1669 unchanged (run 29498649988); 0 merges; 6 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6b3a6bca7c2cacdad243/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-16 16:30 IDT",
     actions: 0,
     findings: 2,

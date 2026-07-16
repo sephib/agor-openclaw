@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-16 16:30 IDT";
+export const LAST_UPDATED = "2026-07-16 17:00 IDT";
 
 export const WORKTREES = [
   {
@@ -47,14 +47,22 @@ export const WORKTREES = [
     status: "🔴 #1667 CONFLICTING — needs rebase on main. CI stale (run 29402877354 all-pass, pre-conflict). markVaykhansky COMMENTED only (no APPROVE).",
     blockedOn: "CONFLICTING — needs rebase",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6b1ef44e722da4300312/",
-    sessionLabel: "advance heartbeat 16:30 IDT Jul 16 — #1667 still CONFLICTING unchanged; #1638 CI REGRESSION (new run nox/tox FAIL)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6b3a6bca7c2cacdad243/",
+    sessionLabel: "advance heartbeat 17:00 IDT Jul 16 — #1667 still CONFLICTING unchanged; #1638 e2e-smoke NOW FAIL",
     recentSessions: [
+      {
+        sessionId: "019f6b3a6bca7c2cacdad243",
+        url: "http://127.0.0.1:3030/ui/s/019f6b3a6bca7c2cacdad243/",
+        title: "advance heartbeat 17:00 IDT Jul 16 — #1667 still CONFLICTING; #1638 run 29501833549 COMPLETE (e2e-smoke FAIL)",
+        status: "completed",
+        timestamp: "2026-07-16 17:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f6b1ef44e722da4300312",
         url: "http://127.0.0.1:3030/ui/s/019f6b1ef44e722da4300312/",
         title: "advance heartbeat 16:30 IDT Jul 16 — #1638 CI REGRESSION; #1667 still CONFLICTING",
-        status: "completed",
+        status: "idle",
         timestamp: "2026-07-16 16:30 IDT",
         outputFile: null,
       },
@@ -82,16 +90,8 @@ export const WORKTREES = [
         timestamp: "2026-07-16 15:15 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f6ab116067c369841cc56",
-        url: "http://127.0.0.1:3030/ui/s/019f6ab116067c369841cc56/",
-        title: "advance heartbeat 14:45 IDT Jul 16 — #1673 MERGED 14:14 IDT; jn-5891 ARCHIVED; 7 Jira mismatches",
-        status: "idle",
-        timestamp: "2026-07-16 14:45 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-16 16:30 IDT",
+    lastActive: "2026-07-16 17:00 IDT",
   },
   {
     ticket: "JN-5872",
@@ -102,17 +102,25 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1669",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1669",
-    status: "🟡 CI PARTIAL PROGRESS — new run 29498649988: e2e ✅ NOW PASS; pre-commit/nox/tox still FAIL. MERGEABLE but CI blocks.",
-    blockedOn: "CI FAILING — pre-commit, nox, tox still fail (e2e now PASS)",
+    status: "🟡 CI PARTIAL PROGRESS — run 29498649988: e2e ✅ PASS; pre-commit/nox/tox still FAIL. MERGEABLE but CI blocks.",
+    blockedOn: "CI FAILING — pre-commit, nox, tox still fail (e2e PASS)",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6b1ef44e722da4300312/",
-    sessionLabel: "advance heartbeat 16:30 IDT Jul 16 — #1669 unchanged (same run 29498649988, pre-commit/nox/tox still FAIL)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6b3a6bca7c2cacdad243/",
+    sessionLabel: "advance heartbeat 17:00 IDT Jul 16 — #1669 unchanged (run 29498649988); #1638 e2e-smoke NOW FAIL",
     recentSessions: [
+      {
+        sessionId: "019f6b3a6bca7c2cacdad243",
+        url: "http://127.0.0.1:3030/ui/s/019f6b3a6bca7c2cacdad243/",
+        title: "advance heartbeat 17:00 IDT Jul 16 — #1669 unchanged; #1638 run 29501833549 COMPLETE (e2e-smoke FAIL)",
+        status: "completed",
+        timestamp: "2026-07-16 17:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f6b1ef44e722da4300312",
         url: "http://127.0.0.1:3030/ui/s/019f6b1ef44e722da4300312/",
         title: "advance heartbeat 16:30 IDT Jul 16 — #1669 unchanged; #1638 CI REGRESSION (new run nox/tox FAIL)",
-        status: "completed",
+        status: "idle",
         timestamp: "2026-07-16 16:30 IDT",
         outputFile: null,
       },
@@ -140,16 +148,8 @@ export const WORKTREES = [
         timestamp: "2026-07-16 15:15 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f6ab116067c369841cc56",
-        url: "http://127.0.0.1:3030/ui/s/019f6ab116067c369841cc56/",
-        title: "advance heartbeat 14:45 IDT Jul 16 — #1669 double-blocked unchanged",
-        status: "idle",
-        timestamp: "2026-07-16 14:45 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-16 16:30 IDT",
+    lastActive: "2026-07-16 17:00 IDT",
   },
   {
     ticket: "JN-5865",
@@ -416,7 +416,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 #1638 (JN-5725, off-board): CI REGRESSION — new run 29501833549: nox ❌ FAIL, tox ❌ FAIL, pre-commit ✅ PASS, e2e-smoke ⏳ PENDING. Was ALL CRITICAL PASS (run 29497619223). nox+tox failing on BOTH #1638 AND #1669 — possible systemic issue. MERGEABLE. JN-5725 Done ✅.",
+    message: "🔴 #1638 (JN-5725, off-board): CI FAILING — run 29501833549 COMPLETE: nox ❌, tox ❌, e2e-smoke ❌, e2e-tests ❌. Pre-commit ✅, e2e-api ✅, integration ✅ pass. Different failure profile from #1669 (not systemic). MERGEABLE. JN-5725 Done ✅.",
   },
   {
     level: "yellow",

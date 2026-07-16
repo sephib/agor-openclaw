@@ -1811,3 +1811,13 @@
 - Flags: #1669 pre-commit/nox/tox still failing 🟡 (improved from 🔴 — e2e now green); #1638 ready for merge/close decision 🟢; #1667 still CONFLICTING 🔴; JN-5891 confirmed Done in Jira ✅ (6 mismatches remain)
 - Auto-archives: 0
 - Next: fix pre-commit/nox/tox in #1669; Joseph to decide merge vs close #1638; rebase #1667
+
+## 17:00 IDT — Weekday Daytime Heartbeat (Jul 16 2026)
+- PRs checked: #1669 (OPEN, MERGEABLE), #1667 (OPEN, CONFLICTING), #1670 (DRAFT, MERGEABLE), #1638 (OPEN, MERGEABLE — off-board), #1596 (DRAFT, CONFLICTING)
+- Merges detected: none (0 merges this run)
+- CI changes: #1638 CI run 29501833549 NOW COMPLETE — e2e-smoke ❌ FAIL (was ⏳ PENDING last run), nox ❌, tox ❌, e2e-tests ❌. Pre-commit ✅ PASS, e2e-api ✅, integration ✅. Different profile from #1669 — not systemic shared issue. #1669 unchanged (same run 29498649988).
+- Flags: #1638 CI now fully failed (nox+tox+e2e-smoke all ❌). #1667 still CONFLICTING. #1669 still pre-commit/nox/tox FAIL. 6 Jira mismatches unchanged.
+- Auto-archives: 0
+- Next: #1638 needs triage (close since JN-5725 Done, or fix CI). #1669 fix pre-commit/nox/tox. #1667 rebase.
+
+---
