@@ -1794,3 +1794,11 @@
 - CI changes: #1669 — PENDING→FAIL (run 29496967425: pre-commit, e2e-api, nox, tox, all-checks all FAIL); #1638 — new CI run 29497619223 triggered, e2e-smoke PENDING (was PASS in prior run)
 - Flags: #1669 fix push failed CI again (double-blocked status restored); #1638 e2e-smoke pending in new run; 7 Jira mismatches unchanged; 0 archives
 - Next: Wait for #1638 e2e-smoke result; Joseph needs to fix #1669 pre-commit/nox/tox failures; #1667 rebase needed
+
+## 16:00 IDT — Weekday Daytime Heartbeat (Jul 16 2026)
+- PRs checked: #1669 (OPEN, MERGEABLE — NEW CI run 29498649988 partial progress), #1638 (OPEN, MERGEABLE — e2e-smoke NOW PASS, all critical green), #1667 (OPEN, CONFLICTING unchanged), #1670 (DRAFT, CI pass unchanged), #1596 (DRAFT, CONFLICTING unchanged)
+- Merges detected: none
+- CI changes: #1669 — new run 29498649988: e2e-api ✅ e2e-smoke ✅ e2e-tests ✅ NOW PASS; still FAILING: all-checks ❌ nox ❌ pre-commit ❌ tox ❌ (partial progress). #1638 — e2e-smoke ✅ NOW PASS in run 29497619223; only e2e-product ⏳ PENDING (non-blocking); all critical green.
+- Flags: #1669 pre-commit/nox/tox still failing 🟡 (improved from 🔴 — e2e now green); #1638 ready for merge/close decision 🟢; #1667 still CONFLICTING 🔴; JN-5891 confirmed Done in Jira ✅ (6 mismatches remain)
+- Auto-archives: 0
+- Next: fix pre-commit/nox/tox in #1669; Joseph to decide merge vs close #1638; rebase #1667
