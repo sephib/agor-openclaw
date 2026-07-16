@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-16 16:30 IDT",
+    actions: 0,
+    findings: 2,
+    status: "ok",
+    summary: "🔴 #1638 CI REGRESSION — new run 29501833549: nox/tox FAIL (was ALL CRITICAL PASS); 🟡 #1669 unchanged (same run 29498649988, pre-commit/nox/tox FAIL); ⚠️ nox+tox failing on BOTH PRs — possible systemic issue; 0 merges; 6 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6b1ef44e722da4300312/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-16 16:00 IDT",
     actions: 0,
     findings: 3,

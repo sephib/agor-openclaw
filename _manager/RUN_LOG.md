@@ -4,6 +4,15 @@
 
 ---
 
+## 16:30 IDT — Weekday Daytime Heartbeat (Jul 16 2026)
+- PRs checked: #1669 (OPEN, MERGEABLE), #1667 (OPEN, CONFLICTING), #1670 (DRAFT, MERGEABLE), #1638 (OPEN, MERGEABLE — off-board), #1596 (DRAFT, CONFLICTING)
+- Merges detected: none (0 merges this run)
+- CI changes: #1638 **NEW CI RUN 29501833549** — REGRESSION from prior "ALL CRITICAL PASS" (run 29497619223). nox ❌, tox ❌, pre-commit ✅, e2e-api ✅, e2e-smoke ⏳ PENDING. #1669 unchanged (same run 29498649988 — pre-commit/nox/tox FAIL, e2e ✅ PASS).
+- Flags: ⚠️ nox+tox failing on BOTH #1638 AND #1669 simultaneously — possible systemic test infrastructure issue, not PR-specific. #1667 still CONFLICTING.
+- Next: Monitor #1638 e2e-smoke result. If nox/tox pattern persists on both PRs, flag to Joseph as possible shared infra issue.
+
+---
+
 ## 14:15 IDT — Weekday Daytime Heartbeat (Jul 16 2026)
 - PRs checked: #1673 (OPEN, APPROVED, new CI run 29491362151 ALL PASS), #1667 (OPEN, NEW CONFLICTING), #1669 (OPEN, NEW CONFLICTING + pre-commit FAIL), #1638 (OPEN, MERGEABLE — conflict resolved, but CI run 29492058613 e2e-smoke ❌), #1670 (DRAFT, CI pass unchanged)
 - Merges detected: none
