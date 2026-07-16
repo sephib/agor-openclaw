@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-16 12:15 IDT",
+    actions: 0,
+    findings: 9,
+    status: "ok",
+    summary: "NEW jn-5891-max-seconds-1200 worktree (Code zone, JN-5891); #1638 stuck e2e-smoke resolved — new CI run 29485314694 FAIL (e2e-api ❌, e2e-tests ❌), run 29485473923 in_progress; 0 merges; 6 Jira mismatches unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6a27c0727945a40615a2/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-16 11:45 IDT",
     actions: 0,
     findings: 8,

@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-16 11:45 IDT (advance heartbeat)*
+*Last updated: 2026-07-16 12:15 IDT (advance heartbeat)*
 
 ---
 
@@ -16,6 +16,7 @@
 | jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | ❌ CI COMPLETE — ALL-CHECKS FAIL (pre-commit FAIL, run 29411650412) | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — Backlog | 🔴 **CI RUN 29411650412 COMPLETE: ALL-CHECKS = FAIL**. pre-commit FAIL. Other checks pass (e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅). OPEN + MERGEABLE. **Action: fix pre-commit failure.** Unchanged at 09:15 IDT. |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — Backlog | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 17+** (still Ingest, should be Code). |
 | jn-5871 | **Code** (git-only) | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) — Backlog | Code done ~00:58 IDT Jul 9. SHA fc6e5f77. ⚠️ NOT in Agor board — no Agor worktree registered. Git branch only. No PR created. Needs investigation. |
+| **jn-5891-max-seconds-1200** | **Code** 🆕 | — | — | [JN-5891](https://redhat.atlassian.net/browse/JN-5891) — Backlog | 🆕 NEW worktree (Jul 16). "Increase GuideLLM max_seconds default from 600 to 1200." No PR yet. Unassigned in Jira. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 20+ days. Propose archive. |
 
 ---
@@ -24,7 +25,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🔴 **e2e-smoke STUCK** — run 29480722054 (created 10:40 IDT), e2e-smoke in_progress 65+ min at 11:45 IDT. Last run update: 10:47 IDT. All other checks PASS. | OPEN, MERGEABLE | 🔴 **e2e-smoke job stuck** (65+ min, started 10:40 IDT, last update 10:47 IDT). May need manual re-run or cancel+restart. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🔴 **NEW CI FAILURE** — run 29485314694 (11:57 IDT) COMPLETED FAIL: e2e-api ❌, e2e-tests ❌, all-checks ❌. Run 29485473923 (11:59 IDT) in_progress. e2e-smoke was SKIPPED in last run. | OPEN, MERGEABLE | 🔴 **e2e-api and e2e-tests FAIL** (run 29485314694). New run 29485473923 in_progress at 12:15 IDT. |
 
 ---
 
@@ -61,16 +62,17 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (11:45 IDT Jul 16 advance heartbeat vs 11:15 IDT Jul 16)
+## Key Changes (12:15 IDT Jul 16 advance heartbeat vs 11:45 IDT Jul 16)
 
 | What changed | Delta |
 |---|---|
-| **No new merges** | PR sweep: no new merges. Board static. |
-| **#1638 — e2e-smoke STUCK 🔴** | Run 29480722054 (created 10:40 IDT): e2e-smoke job still `in_progress` at 11:45 IDT (65+ minutes). Last run update was 10:47 IDT. Normal runtime ~9-10 min. Job may be hung. Monitor or re-run. |
+| **No new merges** | PR sweep: no new merges. |
+| **🆕 jn-5891-max-seconds-1200 NEW** | New worktree appeared in Code zone. JN-5891 (Backlog, unassigned): "Increase GuideLLM max_seconds default from 600 to 1200." No PR yet. |
+| **#1638 — CI changed 🔴** | Stuck run 29480722054 superseded. NEW run 29485314694 (11:57 IDT): COMPLETED FAILED — e2e-api ❌, e2e-tests ❌, all-checks ❌. NEW run 29485473923 (11:59 IDT): in_progress. e2e-smoke SKIPPED (not stuck). |
 | **#1669 (jn-5872) unchanged** | pre-commit FAIL, CI run 29411650412 — no new push. |
 | **#1667 (jn-5845) unchanged** | All CI PASS, awaiting APPROVE — no new activity. |
 | **#1670 (jn-5844) unchanged** | DRAFT, all CI PASS — no change. |
-| **Jira mismatches — 6 confirmed** | JN-5877/5874/5842/5827/5401 Backlog ❌, JN-5546 In Progress ❌ — all 6 unchanged. |
+| **Jira mismatches — 6 confirmed** | JN-5842 Backlog ❌, JN-5827 Backlog ❌, JN-5546 In Progress ❌ (verified via acli). JN-5877/5874/5401 not checked this run but known stale. |
 
 ---
 
@@ -97,17 +99,19 @@ PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): ad
 
 ---
 
-### 🔴 #1638 (off-board JN-5725) — e2e-smoke STUCK (65+ min, run 29480722054)
+### 🔴 #1638 (off-board JN-5725) — NEW CI FAILURE (e2e-api + e2e-tests, run 29485314694)
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements"
-- **CI run 29480722054** (created 10:40 IDT Jul 16 — still in_progress as of 11:45 IDT):
-  - bake ✅ PASS (27s), atlas-validate ✅ PASS (3s), check-changes ✅ PASS (7s)
-  - pre-commit ✅ PASS (3s), pre-commit-run ✅ PASS (6m32s)
-  - e2e-api ✅ PASS (3m21s), integration ✅ PASS (3m11s), integration-tests ✅ PASS, tox ✅ PASS (5m9s), nox ✅ PASS
-  - **e2e-smoke 🔴 STUCK (in_progress 65+ minutes)** — last run update 10:47 IDT; normal runtime ~9-10 min
-  - atlas-validate-run: skipping
+- **CI run 29485314694** (11:57 IDT Jul 16 — COMPLETED FAIL):
+  - check-changes ✅, bake ✅, integration ✅, pre-commit ✅, tox ✅, nox ✅, atlas-validate ✅, integration-tests ✅
+  - **e2e-api ❌ FAIL**, **e2e-tests ❌ FAIL**, **all-checks ❌ FAIL**
+  - e2e-smoke: SKIPPED (not stuck anymore — previous stuck run was superseded)
+- **CI run 29485473923** (11:59 IDT Jul 16 — in_progress at 12:15 IDT):
+  - check-changes ✅, bake ✅, atlas-validate ✅
+  - pre-commit / tox / integration / e2e-api: in_progress
+- Previous stuck run 29480722054 superseded by these two new runs.
 - State: OPEN, MERGEABLE.
-- **Action:** Monitor — if e2e-smoke stays stuck, Joseph may need to manually re-run the job or cancel+restart the run.
+- **Action:** Monitor run 29485473923. If e2e-api fails again, investigate e2e-api failures on the feat/vllm-analyzer-prerequisites branch.
 
 ---
 
@@ -142,6 +146,15 @@ Use `acli jira workitem transition` to update. Jira MCP 401. acli working (09:15
 
 ---
 
+### 🆕 jn-5891-max-seconds-1200 — New worktree, no PR
+
+**jn-5891-max-seconds-1200** ([JN-5891](https://redhat.atlassian.net/browse/JN-5891)):
+- JN-5891: "Increase GuideLLM max_seconds default from 600 to 1200" — Backlog, unassigned.
+- Appeared in Code zone today (Jul 16). No PR created yet. Branch was updated 2026-07-16.
+- **Action:** Monitor — await PR creation. Likely recently started coding.
+
+---
+
 ### 🔄 jn-5824 — Waiting for direction
 
 - Last session Jul 8 IDLE. SHA 16ec44ea (2 commits).
@@ -163,7 +176,7 @@ This creates git state gaps. Overnight schedule consistently failing. Daytime se
 
 ---
 
-## Archived This Session
+## Archived This Session (12:15 IDT Jul 16)
 
 None — 0 auto-archives (no new merges).
 

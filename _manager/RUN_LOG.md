@@ -1721,3 +1721,12 @@
 - Archives: 0 — no new merges
 - Flags: (1) #1638 near-green — e2e-smoke outstanding; (2) #1669 pre-commit FAIL (action needed); (3) #1667 awaiting APPROVE; (4) #1670 DRAFT needs mark ready; (5) 6 Jira mismatches; (6) jn-5865 zone mismatch Day 17+; (7) jn-5871 git-only no PR
 - Next: Monitor e2e-smoke on #1638 — if passes, all-checks green → ready for merge review
+
+## 12:15 IDT — Weekday Daytime Heartbeat
+- PRs checked: #1638 (OPEN, new CI runs), #1667 (OPEN, CI PASS), #1669 (OPEN, pre-commit FAIL), #1670 (OPEN DRAFT, CI PASS), #1596 (OPEN DRAFT, CONFLICTING)
+- Merges detected: none
+- CI changes: #1638 — stuck run 29480722054 superseded; run 29485314694 (11:57 IDT) COMPLETED FAIL (e2e-api ❌, e2e-tests ❌, all-checks ❌); run 29485473923 (11:59 IDT) in_progress. e2e-smoke was SKIPPED (not stuck).
+- New worktrees: jn-5891-max-seconds-1200 (Code zone, JN-5891: "Increase GuideLLM max_seconds 600→1200", Backlog, no PR)
+- Jira: JN-5842 Backlog ❌, JN-5827 Backlog ❌, JN-5546 In Progress ❌ (verified via acli). 6 mismatches unchanged.
+- Flags: NEW jn-5891 worktree; #1638 e2e-api/e2e-tests FAIL on new run; #1669 pre-commit still failing; #1667 awaiting APPROVE; #1670 DRAFT needs mark ready
+- Next: monitor run 29485473923 for #1638; flag jn-5891 for PR creation
