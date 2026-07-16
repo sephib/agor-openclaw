@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-16 08:15 IDT (advance heartbeat + daily external sync)*
+*Last updated: 2026-07-16 08:45 IDT (advance heartbeat)*
 
 ---
 
@@ -61,17 +61,17 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (08:03 IDT Jul 16 daily sync vs 21:30 IDT Jul 15)
+## Key Changes (08:45 IDT Jul 16 advance heartbeat vs 08:15 IDT Jul 16)
 
 | What changed | Delta |
 |---|---|
-| **No new merges** | PR sweep: no new merges since 21:30 IDT Jul 15. |
-| **#1638 — new CI run overnight** | New run 29452271237 triggered ~00:32 IDT Jul 16 (pull_request event). e2e-product CANCELLED (not FAIL), e2e-tests FAIL, all-checks FAIL. Still failing, different failure mode. |
+| **No new merges** | PR sweep: no new merges. Board static. |
+| **#1638 — e2e-product FAIL confirmed** | CI run 29452271237: e2e-product/e2e FAIL (1h0m8s timeout) confirmed — not CANCELLED as external sync reported. e2e-tests FAIL, all-checks FAIL. All other checks pass. Unchanged. |
 | **#1669 CI FAIL unchanged** | CI run 29411650412 — pre-commit FAIL. No new commits. |
-| **#1667 unchanged** | ALL CI PASS ✅ (run 29402877354). Only COMMENTED reviews, no APPROVE yet. |
-| **#1670 unchanged** | DRAFT + CI pass (run 29403233416). Needs: mark ready for review. |
-| **Jira mismatches — 6 still active** | JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546 — all confirmed via acli. Jira MCP 401. |
-| **🆕 JN-5851, JN-5852 in sprint** | Two new Stories found in active sprint — no worktrees yet. |
+| **#1667 unchanged** | ALL CI PASS ✅ (run 29402877354). No APPROVE yet. |
+| **#1670 unchanged** | DRAFT + CI pass (run 29403233416). Needs mark ready for review. |
+| **Jira mismatches — 6 unchanged** | JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546. |
+| **JN-5851, JN-5852 — no worktrees** | Both Backlog in sprint, unchanged. |
 
 ---
 
@@ -98,16 +98,16 @@ PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): ad
 
 ---
 
-### 🔴 #1638 (off-board JN-5725) — e2e-tests FAIL (new run overnight)
+### 🔴 #1638 (off-board JN-5725) — e2e-product + e2e-tests FAIL
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements"
-- **NEW CI run 29452271237** (started 00:32 IDT Jul 16, completed 01:57 IDT Jul 16):
-  - e2e-product / e2e: **CANCELLED** ← changed from FAIL in prev run
+- **CI run 29452271237** (started 00:32 IDT Jul 16, completed 01:57 IDT Jul 16):
+  - e2e-product / e2e: **FAIL (1h0m8s timeout)** ← confirmed FAIL (not CANCELLED as previously reported)
   - e2e-tests: **FAIL** (aggregator)
   - all-checks: **FAIL**
   - bake ✅, check-changes ✅, atlas-validate ✅, pre-commit ✅, pre-commit-run ✅, integration ✅, tox ✅, e2e-api ✅, e2e-smoke ✅, integration-tests ✅, nox ✅
-- State: OPEN, MERGEABLE. Run triggered by `pull_request` event (possibly base branch update).
-- **Action:** Investigate e2e-tests aggregator failure. Push fix → CI will re-run.
+- State: OPEN, MERGEABLE.
+- **Action:** Investigate e2e-product timeout + e2e-tests aggregator failure. Push fix → CI will re-run.
 
 ---
 
