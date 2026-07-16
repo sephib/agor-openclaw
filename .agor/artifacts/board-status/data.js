@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-16 18:00 IDT";
+export const LAST_UPDATED = "2026-07-16 18:30 IDT";
 
 export const WORKTREES = [
   {
@@ -47,14 +47,22 @@ export const WORKTREES = [
     status: "🔴 #1667 CONFLICTING — needs rebase on main. CI stale (run 29402877354 all-pass, pre-conflict). markVaykhansky COMMENTED only (no APPROVE).",
     blockedOn: "CONFLICTING — needs rebase",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6b715aef793f908d43d9/",
-    sessionLabel: "advance heartbeat 18:00 IDT Jul 16 — #1667 still CONFLICTING; #1669 NEW CI run",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6b8cd263781c8c259373/",
+    sessionLabel: "advance heartbeat 18:30 IDT Jul 16 — #1667 still CONFLICTING; #1669 run 29509136918 COMPLETE",
     recentSessions: [
+      {
+        sessionId: "019f6b8cd263781c8c259373",
+        url: "http://127.0.0.1:3030/ui/s/019f6b8cd263781c8c259373/",
+        title: "advance heartbeat 18:30 IDT Jul 16 — #1667 still CONFLICTING; #1669 run 29509136918 COMPLETE (pre-commit ❌)",
+        status: "completed",
+        timestamp: "2026-07-16 18:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f6b715aef793f908d43d9",
         url: "http://127.0.0.1:3030/ui/s/019f6b715aef793f908d43d9/",
         title: "advance heartbeat 18:00 IDT Jul 16 — #1667 still CONFLICTING; #1669 NEW CI run 29509136918",
-        status: "completed",
+        status: "idle",
         timestamp: "2026-07-16 18:00 IDT",
         outputFile: null,
       },
@@ -82,16 +90,8 @@ export const WORKTREES = [
         timestamp: "2026-07-16 16:30 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f6b037cc07e3e9c5b0fb0",
-        url: "http://127.0.0.1:3030/ui/s/019f6b037cc07e3e9c5b0fb0/",
-        title: "advance heartbeat 16:00 IDT Jul 16 — #1667 still CONFLICTING unchanged",
-        status: "idle",
-        timestamp: "2026-07-16 16:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-16 18:00 IDT",
+    lastActive: "2026-07-16 18:30 IDT",
   },
   {
     ticket: "JN-5872",
@@ -102,17 +102,25 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1669",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1669",
-    status: "🔄 NEW CI RUN 29509136918 IN PROGRESS — new push since 17:30. atlas-validate ✅, check-changes ✅, JIRA ✅; e2e-api/integration/pre-commit/tox PENDING. Prior run 29498649988: e2e ✅ but pre-commit/nox/tox ❌.",
-    blockedOn: "CI IN PROGRESS — run 29509136918 pending (was: pre-commit/nox/tox fail)",
+    status: "🔴 CI run 29509136918 COMPLETE: pre-commit ❌ only (all-checks ❌). PROGRESS: nox ✅ tox ✅ e2e ✅ now pass. Was 3 failures (pre-commit+nox+tox), now 1. Fix pre-commit to unblock merge.",
+    blockedOn: "CI FAIL — pre-commit only (run 29509136918 complete)",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6b715aef793f908d43d9/",
-    sessionLabel: "advance heartbeat 18:00 IDT Jul 16 — #1669 NEW CI run 29509136918 IN PROGRESS",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6b8cd263781c8c259373/",
+    sessionLabel: "advance heartbeat 18:30 IDT Jul 16 — #1669 run 29509136918 COMPLETE: pre-commit ❌ only (progress!)",
     recentSessions: [
+      {
+        sessionId: "019f6b8cd263781c8c259373",
+        url: "http://127.0.0.1:3030/ui/s/019f6b8cd263781c8c259373/",
+        title: "advance heartbeat 18:30 IDT Jul 16 — #1669 run 29509136918 COMPLETE: pre-commit ❌ only (nox ✅ tox ✅)",
+        status: "completed",
+        timestamp: "2026-07-16 18:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f6b715aef793f908d43d9",
         url: "http://127.0.0.1:3030/ui/s/019f6b715aef793f908d43d9/",
         title: "advance heartbeat 18:00 IDT Jul 16 — #1669 NEW CI run 29509136918 IN PROGRESS",
-        status: "completed",
+        status: "idle",
         timestamp: "2026-07-16 18:00 IDT",
         outputFile: null,
       },
@@ -133,14 +141,6 @@ export const WORKTREES = [
         outputFile: null,
       },
       {
-        sessionId: "019f6b3a6bca7c2cacdad243",
-        url: "http://127.0.0.1:3030/ui/s/019f6b3a6bca7c2cacdad243/",
-        title: "advance heartbeat 17:00 IDT Jul 16 — #1669 unchanged; #1638 run 29501833549 COMPLETE (e2e-smoke FAIL)",
-        status: "idle",
-        timestamp: "2026-07-16 17:00 IDT",
-        outputFile: null,
-      },
-      {
         sessionId: "019f6b1ef44e722da4300312",
         url: "http://127.0.0.1:3030/ui/s/019f6b1ef44e722da4300312/",
         title: "advance heartbeat 16:30 IDT Jul 16 — #1669 unchanged; #1638 CI REGRESSION (new run nox/tox FAIL)",
@@ -148,16 +148,8 @@ export const WORKTREES = [
         timestamp: "2026-07-16 16:30 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f6b037cc07e3e9c5b0fb0",
-        url: "http://127.0.0.1:3030/ui/s/019f6b037cc07e3e9c5b0fb0/",
-        title: "advance heartbeat 16:00 IDT Jul 16 — #1669 new run 29498649988: e2e PASS but pre-commit/nox/tox still FAIL",
-        status: "idle",
-        timestamp: "2026-07-16 16:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-16 18:00 IDT",
+    lastActive: "2026-07-16 18:30 IDT",
   },
   {
     ticket: "JN-5865",
@@ -427,8 +419,8 @@ export const ALERTS = [
     message: "🔴 #1638 (JN-5725, off-board): CI FAILING — run 29501833549 COMPLETE: nox ❌, tox ❌, e2e-smoke ❌, e2e-tests ❌. Pre-commit ✅, e2e-api ✅, integration ✅ pass. Different failure profile from #1669 (not systemic). MERGEABLE. JN-5725 Done ✅.",
   },
   {
-    level: "yellow",
-    message: "🔄 #1669 (jn-5872 JN-5872): NEW CI RUN 29509136918 IN PROGRESS — new push since 17:30. atlas-validate ✅, check-changes ✅; e2e-api/integration/pre-commit/tox PENDING. Prior run had e2e ✅ but pre-commit/nox/tox ❌. Next heartbeat will show result.",
+    level: "red",
+    message: "🔴 #1669 (jn-5872 JN-5872): CI run 29509136918 COMPLETE — pre-commit ❌ (only failure). PROGRESS: nox ✅ tox ✅ e2e ✅ now pass. Was 3 failures (pre-commit+nox+tox), now 1. Fix pre-commit to unblock merge.",
   },
   {
     level: "red",

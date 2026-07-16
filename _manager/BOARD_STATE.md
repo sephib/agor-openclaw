@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-16 18:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-16 18:30 IDT (advance heartbeat)*
 
 ---
 
@@ -13,7 +13,7 @@
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | Last session Jul 8 IDLE. SHA 16ec44ea (2 commits). Needs: configs, rebase, PR. |
 | jn-5844-service-lib-sql-agents-md | **Publish** | [#1670 DRAFT](https://github.com/Jounce-IO/jounce/pull/1670) | ✅ ALL CI PASS (run 29403233416 — stale) | [JN-5844](https://redhat.atlassian.net/browse/JN-5844) — Backlog | DRAFT PR #1670. CI all pass. Needs: mark ready for review. |
 | jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | ✅ CI PASS (run 29402877354 — stale, pre-conflict) | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) — Backlog | 🔴 **CONFLICTING** — needs rebase on main. CI stale. |
-| jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | 🔄 **NEW run 29509136918 IN PROGRESS** (atlas-validate ✅, check-changes ✅, JIRA ✅; e2e-api/integration/pre-commit/tox PENDING) | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — In Progress | 🔄 **NEW CI RUN PENDING** — new push detected since 17:30. Run 29509136918 in progress. Prior run 29498649988 had e2e ✅ but pre-commit/nox/tox ❌. |
+| jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | 🔴 run 29509136918 COMPLETE: pre-commit ❌; nox ✅ tox ✅ e2e ✅ (was 3 fails, now 1) | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — In Progress | 🔴 **CI FAIL — pre-commit only.** Progress: nox+tox now PASS. One blocker remains. |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — Backlog | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 9+** (still Ingest, should be Code). |
 | jn-5871 | **Code** (git-only) | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) — Backlog | Code done ~00:58 IDT Jul 9. SHA fc6e5f77. ⚠️ NOT in Agor board — git branch only. No PR created. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 21+ days. Propose archive. |
@@ -60,12 +60,12 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (18:00 IDT Jul 16 advance heartbeat vs 17:30 IDT Jul 16)
+## Key Changes (18:30 IDT Jul 16 advance heartbeat vs 18:00 IDT Jul 16)
 
 | What changed | Delta |
 |---|---|
-| **🔄 #1669 NEW CI RUN** | **NEW run 29509136918 IN PROGRESS** — new push since 17:30 heartbeat. atlas-validate ✅, check-changes ✅, JIRA ✅; e2e-api/integration-run/pre-commit-run/tox-run PENDING. |
-| **#1638 unchanged** | Same run 29501833549 (latest): nox ❌, tox ❌, e2e-smoke ❌, e2e-tests ❌. Pre-commit ✅, e2e-api ✅, integration ✅. No new push or CI run. |
+| **🔴 #1669 CI run 29509136918 COMPLETE** | **pre-commit ❌ only** — nox ✅, tox ✅, e2e-smoke ✅, e2e-api ✅, integration ✅ all PASS. Progress: was 3 failures (pre-commit+nox+tox), now 1 (pre-commit). |
+| **#1638 unchanged** | Same run 29501833549: nox ❌, tox ❌, e2e-smoke ❌, e2e-tests ❌. No new push or CI run. |
 | **#1667 still CONFLICTING** | No change — still needs rebase on main. |
 | **#1670 still DRAFT** | No change — CI all pass (stale run). |
 | **No new merges** | 0 merges detected this run. |
@@ -75,15 +75,16 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ## Attention Items
 
-### 🔄 #1669 (jn-5872) — NEW CI RUN IN PROGRESS (run 29509136918)
+### 🔴 #1669 (jn-5872) — CI run 29509136918 COMPLETE — pre-commit ❌ only
 
 PR [#1669](https://github.com/Jounce-IO/jounce/pull/1669): "feat(jbenchmark): improve dev-connect with namespace/service checks (JN-5872)"
 - State: OPEN, **MERGEABLE** ✅
-- **NEW run 29509136918 IN PROGRESS** — new push detected since 17:30 heartbeat
-  - PASS so far: atlas-validate ✅, check-changes ✅, JIRA Association ✅
-  - PENDING: e2e-api, integration-run, pre-commit-run, tox-run (not yet complete)
-- Prior run 29498649988: e2e ✅ PASS; pre-commit/nox/tox ❌ FAIL
-- **Action:** Monitor run 29509136918 for result — next heartbeat should show full outcome.
+- **Run 29509136918 COMPLETE:**
+  - FAIL: all-checks ❌, pre-commit ❌ (fast 3s + full 6m22s)
+  - PASS: JIRA ✅, atlas-validate ✅, check-changes ✅, e2e-api ✅, e2e-smoke ✅, integration-run ✅, integration-tests ✅, nox ✅, tox-run ✅, e2e-tests ✅
+  - SKIP: bake, atlas-validate-run, e2e-priority, e2e-product
+- **Progress:** Prior run 29498649988 had pre-commit+nox+tox ❌ (3 failures). Now only pre-commit ❌ (1 failure). nox and tox now PASS.
+- **Action:** Fix pre-commit failure to unblock merge.
 
 ---
 
