@@ -4,6 +4,18 @@
 
 ---
 
+## 08:15 IDT — Weekday Daytime Heartbeat (Jul 16 2026)
+- PRs checked: #1638 (OPEN, new CI run 29452271237), #1667 (OPEN, all pass), #1669 (OPEN, pre-commit FAIL), #1670 (DRAFT, all pass), #1596 (DRAFT, CONFLICTING)
+- Merges detected: none — no new merges since 21:30 IDT Jul 15
+- CI changes: #1638 new run 29452271237 triggered overnight by Alon Kellner (latest commit: "fix(helm): use when conditions for daemon template selection"). e2e-product FAIL 1h0m8s (or CANCELLED per External Sync). e2e-tests FAIL. All-checks FAIL. Same failure mode as previous run.
+- Overnight failure: session 019f6870-093f (01:00 IDT Jul 16) FAILED — continuing overnight schedule reliability issue
+- New findings: JN-5851 and JN-5852 found in sprint (by External Sync) — no worktrees
+- Flags: #1669 pre-commit FAIL unchanged; #1667 awaiting APPROVE; Jira mismatches 6 unchanged; jn-5865 zone mismatch Day 18+; jn-5871 not in Agor
+- Auto-archives: 0
+- Next: monitor for #1667 reviewer APPROVE; watch if Joseph pushes #1638/#1669 fix
+
+---
+
 ## 08:03 IDT — Daily External Sync (Jul 16 2026)
 - Jira tickets checked: 25 (via acli — Jira MCP 401 ongoing)
 - Mismatches found: 6 unchanged — JN-5842 (Backlog, PR #1658 MERGED), JN-5877 (Backlog, PR #1663 MERGED), JN-5874 (Backlog, PR #1662 MERGED), JN-5401 (Backlog, PR #1654 MERGED), JN-5827 (Backlog, PR #1648 MERGED), JN-5546 (In Progress, PR #1588 MERGED)

@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-15 21:30 IDT";
+export const LAST_UPDATED = "2026-07-16 08:15 IDT";
 
 export const WORKTREES = [
   {
@@ -44,17 +44,25 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1667",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1667",
-    status: "✅ #1667 ALL CI PASS — run 29402877354 COMPLETE. OPEN + MERGEABLE + reviewDecision:\"\". Awaiting formal reviewer APPROVE to merge. Unchanged at 21:30 IDT.",
+    status: "✅ #1667 ALL CI PASS — run 29402877354 COMPLETE. OPEN + MERGEABLE + reviewDecision:\"\". Awaiting formal reviewer APPROVE to merge. Unchanged at 08:15 IDT Jul 16.",
     blockedOn: null,
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f670b1230723b92ec4ded/",
-    sessionLabel: "heartbeat 21:30 IDT Jul 15 — board static; 0 merges; 6 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f694bdc14785cb49ca920/",
+    sessionLabel: "advance heartbeat 08:15 IDT Jul 16 — #1638 new CI run (e2e-tests FAIL); 0 merges; 6 Jira mismatches",
     recentSessions: [
+      {
+        sessionId: "019f694bdc14785cb49ca920",
+        url: "http://127.0.0.1:3030/ui/s/019f694bdc14785cb49ca920/",
+        title: "advance heartbeat 08:15 IDT Jul 16 — #1638 new CI run; 0 merges; 6 Jira mismatches",
+        status: "running",
+        timestamp: "2026-07-16 08:15 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f670b1230723b92ec4ded",
         url: "http://127.0.0.1:3030/ui/s/019f670b1230723b92ec4ded/",
         title: "heartbeat 21:30 IDT Jul 15 — board static; 0 merges; 6 Jira mismatches",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-15 21:30 IDT",
         outputFile: null,
       },
@@ -82,16 +90,8 @@ export const WORKTREES = [
         timestamp: "2026-07-15 18:30 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f669d37147d458640b4ed",
-        url: "http://127.0.0.1:3030/ui/s/019f669d37147d458640b4ed/",
-        title: "heartbeat 18:00 IDT Jul 15 — #1638 CI nearly complete (e2e-product pending); #1669 CI FAIL unchanged; 0 merges; 6 Jira mismatches",
-        status: "idle",
-        timestamp: "2026-07-15 18:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-15 21:30 IDT",
+    lastActive: "2026-07-16 08:15 IDT",
   },
   {
     ticket: "JN-5872",
@@ -102,17 +102,25 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1669",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1669",
-    status: "🔴 CI RUN 29411650412 COMPLETE — ALL-CHECKS FAIL. pre-commit FAIL. Other checks pass (e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅). OPEN + MERGEABLE. Action: fix pre-commit failure. Unchanged at 21:30 IDT.",
+    status: "🔴 CI RUN 29411650412 COMPLETE — ALL-CHECKS FAIL. pre-commit FAIL. Other checks pass (e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅). OPEN + MERGEABLE. Action: fix pre-commit failure. Unchanged at 08:15 IDT Jul 16.",
     blockedOn: "CI failure — pre-commit",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f670b1230723b92ec4ded/",
-    sessionLabel: "heartbeat 21:30 IDT Jul 15 — board static; 0 merges; 6 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f694bdc14785cb49ca920/",
+    sessionLabel: "advance heartbeat 08:15 IDT Jul 16 — #1638 new CI run; 0 merges; 6 Jira mismatches",
     recentSessions: [
+      {
+        sessionId: "019f694bdc14785cb49ca920",
+        url: "http://127.0.0.1:3030/ui/s/019f694bdc14785cb49ca920/",
+        title: "advance heartbeat 08:15 IDT Jul 16 — #1638 new CI run; 0 merges; 6 Jira mismatches",
+        status: "running",
+        timestamp: "2026-07-16 08:15 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f670b1230723b92ec4ded",
         url: "http://127.0.0.1:3030/ui/s/019f670b1230723b92ec4ded/",
         title: "heartbeat 21:30 IDT Jul 15 — board static; 0 merges; 6 Jira mismatches",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-15 21:30 IDT",
         outputFile: null,
       },
@@ -140,16 +148,8 @@ export const WORKTREES = [
         timestamp: "2026-07-15 18:30 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f669d37147d458640b4ed",
-        url: "http://127.0.0.1:3030/ui/s/019f669d37147d458640b4ed/",
-        title: "heartbeat 18:00 IDT Jul 15 — #1638 CI nearly complete (e2e-product pending); #1669 CI FAIL unchanged; 0 merges; 6 Jira mismatches",
-        status: "idle",
-        timestamp: "2026-07-15 18:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-15 21:30 IDT",
+    lastActive: "2026-07-16 08:15 IDT",
   },
   {
     ticket: "JN-5865",
@@ -432,7 +432,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 #1638 (JN-5725, off-board): CI run 29430527639 COMPLETE — ALL-CHECKS FAIL. e2e-product FAIL (job 87409556708, 44m43s — was PENDING at 18:30 IDT). e2e-tests FAIL, all-checks FAIL. Other checks pass. Action: investigate e2e-product failure + push fix.",
+    message: "🔴 #1638 (JN-5725, off-board): NEW CI run 29452271237 (completed 01:57 IDT Jul 16). e2e-product CANCELLED, e2e-tests FAIL (aggregator), all-checks FAIL. All other checks pass. Action: investigate e2e-tests failure + push fix.",
   },
   {
     level: "red",
@@ -457,5 +457,9 @@ export const ALERTS = [
   {
     level: "yellow",
     message: "⚠️ model-packaging-cr (Code Review zone): stagnant 30+ days. No PR URL set. Needs investigation or archive.",
+  },
+  {
+    level: "yellow",
+    message: "🆕 JN-5851 + JN-5852: Two new Stories found in active sprint — no worktrees. JN-5851: v0.7.0 Container Image & Argo Integration. JN-5852: v0.7.0 Report Ingestion. Both Backlog.",
   },
 ];
