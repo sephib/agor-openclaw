@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-16 17:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-16 17:30 IDT (advance heartbeat)*
 
 ---
 
@@ -60,14 +60,14 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (17:00 IDT Jul 16 advance heartbeat vs 16:30 IDT Jul 16)
+## Key Changes (17:30 IDT Jul 16 advance heartbeat vs 17:00 IDT Jul 16)
 
 | What changed | Delta |
 |---|---|
-| **#1638 CI run 29501833549 NOW COMPLETE** | e2e-smoke ❌ NOW FAIL (was ⏳ PENDING). Full results: nox ❌, tox ❌, e2e-smoke ❌, e2e-tests ❌. Pre-commit ✅, e2e-api ✅, integration ✅ still pass. Different failure profile from #1669 (pre-commit passes on #1638, fails on #1669) — **NOT systemic**. |
+| **#1638 unchanged** | Same run 29501833549 (latest): nox ❌, tox ❌, e2e-smoke ❌, e2e-tests ❌. Pre-commit ✅, e2e-api ✅, integration ✅. No new push or CI run. |
 | **#1669 unchanged** | Same CI run 29498649988: pre-commit/nox/tox FAIL, e2e ✅ PASS. No new push. |
 | **#1667 still CONFLICTING** | No change — still needs rebase on main. |
-| **#1670 still DRAFT** | No change. |
+| **#1670 still DRAFT** | No change — CI all pass (stale run). |
 | **No new merges** | 0 merges detected this run. |
 | **6 Jira mismatches** | Unchanged (JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546). |
 

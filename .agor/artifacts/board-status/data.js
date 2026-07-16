@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-16 17:00 IDT";
+export const LAST_UPDATED = "2026-07-16 17:30 IDT";
 
 export const WORKTREES = [
   {
@@ -47,14 +47,22 @@ export const WORKTREES = [
     status: "🔴 #1667 CONFLICTING — needs rebase on main. CI stale (run 29402877354 all-pass, pre-conflict). markVaykhansky COMMENTED only (no APPROVE).",
     blockedOn: "CONFLICTING — needs rebase",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6b3a6bca7c2cacdad243/",
-    sessionLabel: "advance heartbeat 17:00 IDT Jul 16 — #1667 still CONFLICTING unchanged; #1638 e2e-smoke NOW FAIL",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6b55e372708f83567725/",
+    sessionLabel: "advance heartbeat 17:30 IDT Jul 16 — #1667 still CONFLICTING; board static",
     recentSessions: [
+      {
+        sessionId: "019f6b55e372708f83567725",
+        url: "http://127.0.0.1:3030/ui/s/019f6b55e372708f83567725/",
+        title: "advance heartbeat 17:30 IDT Jul 16 — #1667 still CONFLICTING; board static",
+        status: "completed",
+        timestamp: "2026-07-16 17:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f6b3a6bca7c2cacdad243",
         url: "http://127.0.0.1:3030/ui/s/019f6b3a6bca7c2cacdad243/",
         title: "advance heartbeat 17:00 IDT Jul 16 — #1667 still CONFLICTING; #1638 run 29501833549 COMPLETE (e2e-smoke FAIL)",
-        status: "completed",
+        status: "idle",
         timestamp: "2026-07-16 17:00 IDT",
         outputFile: null,
       },
@@ -82,16 +90,8 @@ export const WORKTREES = [
         timestamp: "2026-07-16 15:45 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f6acc8ff777a4942b984b",
-        url: "http://127.0.0.1:3030/ui/s/019f6acc8ff777a4942b984b/",
-        title: "advance heartbeat 15:15 IDT Jul 16 — #1667 still CONFLICTING unchanged",
-        status: "idle",
-        timestamp: "2026-07-16 15:15 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-16 17:00 IDT",
+    lastActive: "2026-07-16 17:30 IDT",
   },
   {
     ticket: "JN-5872",
@@ -105,14 +105,22 @@ export const WORKTREES = [
     status: "🟡 CI PARTIAL PROGRESS — run 29498649988: e2e ✅ PASS; pre-commit/nox/tox still FAIL. MERGEABLE but CI blocks.",
     blockedOn: "CI FAILING — pre-commit, nox, tox still fail (e2e PASS)",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6b3a6bca7c2cacdad243/",
-    sessionLabel: "advance heartbeat 17:00 IDT Jul 16 — #1669 unchanged (run 29498649988); #1638 e2e-smoke NOW FAIL",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6b55e372708f83567725/",
+    sessionLabel: "advance heartbeat 17:30 IDT Jul 16 — #1669 unchanged (run 29498649988); board static",
     recentSessions: [
+      {
+        sessionId: "019f6b55e372708f83567725",
+        url: "http://127.0.0.1:3030/ui/s/019f6b55e372708f83567725/",
+        title: "advance heartbeat 17:30 IDT Jul 16 — #1669 unchanged; board static",
+        status: "completed",
+        timestamp: "2026-07-16 17:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f6b3a6bca7c2cacdad243",
         url: "http://127.0.0.1:3030/ui/s/019f6b3a6bca7c2cacdad243/",
         title: "advance heartbeat 17:00 IDT Jul 16 — #1669 unchanged; #1638 run 29501833549 COMPLETE (e2e-smoke FAIL)",
-        status: "completed",
+        status: "idle",
         timestamp: "2026-07-16 17:00 IDT",
         outputFile: null,
       },
@@ -140,16 +148,8 @@ export const WORKTREES = [
         timestamp: "2026-07-16 15:45 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f6acc8ff777a4942b984b",
-        url: "http://127.0.0.1:3030/ui/s/019f6acc8ff777a4942b984b/",
-        title: "advance heartbeat 15:15 IDT Jul 16 — #1669 NEW PUSH, CI run 29496530265 PENDING; #1638 ALL CI PASS",
-        status: "idle",
-        timestamp: "2026-07-16 15:15 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-16 17:00 IDT",
+    lastActive: "2026-07-16 17:30 IDT",
   },
   {
     ticket: "JN-5865",
