@@ -4,6 +4,15 @@
 
 ---
 
+## 12:00 IDT — Weekend Heartbeat (Jul 17 2026)
+- PRs checked: #1669 (OPEN, MERGEABLE), #1667 (OPEN, CONFLICTING), #1670 (DRAFT, MERGEABLE), #1638 (OPEN, MERGEABLE — off-board), #1596 (DRAFT, CONFLICTING)
+- Merges detected: none (0 merges this run)
+- CI changes: **🟡 #1638 NEW CI run 29568472479 IN PROGRESS** (triggered since 06:00 IDT). 4 jobs pending: e2e-api, integration-run, pre-commit-run, tox-run. Passing so far: atlas-validate, bake, check-changes, JIRA. Prior run 29539497542 (all-checks ✅) remains the last complete. #1669 unchanged — same run 29509136918 (pre-commit ❌ only).
+- Flags: 6 Jira mismatches unchanged (JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546). #1667 still CONFLICTING. #1670 still DRAFT. 0 archives.
+- Next: Wait for #1638 run 29568472479 to complete. Fix pre-commit on #1669.
+
+---
+
 ## 06:00 IDT — Weekend Heartbeat (Jul 17 2026)
 - PRs checked: #1669 (OPEN, MERGEABLE), #1667 (OPEN, CONFLICTING), #1670 (DRAFT, MERGEABLE), #1638 (OPEN, MERGEABLE — off-board), #1596 (DRAFT, CONFLICTING)
 - Merges detected: none (0 merges this run)

@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-17 06:00 IDT (advance heartbeat — weekend)*
+*Last updated: 2026-07-17 12:00 IDT (advance heartbeat — weekend)*
 
 ---
 
@@ -24,7 +24,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🟡 **NEW** run 29539497542: all-checks ✅ PASS; pre-commit ✅, nox ✅, tox ✅, integration ✅, e2e-tests ✅; check-changes ❌ (non-blocking); e2e-smoke SKIP | OPEN, **MERGEABLE** ✅ | 🟡 **CI IMPROVED** — run 29539497542 (new since 00:00 IDT): all-checks ✅ PASS. Was: nox/tox/e2e-smoke ❌. Now only check-changes ❌ (non-blocking). JN-5725 Done ✅. Consider merging. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🟡 **IN PROGRESS** run 29568472479: e2e-api ⏳, integration-run ⏳, pre-commit-run ⏳, tox-run ⏳; atlas-validate ✅, bake ✅, check-changes ✅, JIRA ✅. Prior complete run 29539497542: all-checks ✅ | OPEN, **MERGEABLE** ✅ | 🟡 **NEW CI run 29568472479 IN PROGRESS** (since 06:00 IDT). 4 jobs pending. Prior complete run was all-pass. JN-5725 Done ✅. Wait for new run to complete before merging. |
 
 ---
 
@@ -60,14 +60,14 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (06:00 IDT Jul 17 weekend heartbeat vs 00:00 IDT Jul 17)
+## Key Changes (12:00 IDT Jul 17 weekend heartbeat vs 06:00 IDT Jul 17)
 
 | What changed | Delta |
 |---|---|
-| **🟡 #1638 CI IMPROVED** | **NEW run 29539497542**: all-checks ✅ PASS. Was: nox ❌, tox ❌, e2e-smoke ❌, e2e-tests ❌ (run 29501833549). Now: all-checks ✅, pre-commit ✅, nox ✅, tox ✅, integration ✅, e2e-tests ✅. Only check-changes ❌ (non-blocking). PR may be merge-ready. |
+| **🟡 #1638 NEW CI run IN PROGRESS** | **NEW run 29568472479** started since 06:00 IDT. 4 jobs pending: e2e-api, integration-run, pre-commit-run, tox-run. Passing: atlas-validate, bake, check-changes, JIRA. Prior passing run 29539497542 still the last complete (all-checks ✅). |
 | **#1669 unchanged** | Same run 29509136918: pre-commit ❌ only. nox ✅ tox ✅ e2e ✅ unchanged. |
 | **#1667 still CONFLICTING** | No change — still needs rebase on main. |
-| **#1670 still DRAFT** | No change — CI all pass (stale run). |
+| **#1670 still DRAFT** | No change — CI stale (run 29403233416 all-pass). |
 | **No new merges** | 0 merges detected this run. |
 | **6 Jira mismatches** | Unchanged (JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546). |
 
@@ -97,16 +97,17 @@ PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): ad
 
 ---
 
-### 🟡 #1638 (off-board JN-5725) — CI IMPROVED (run 29539497542) — 🆕 since 00:00 IDT
+### 🟡 #1638 (off-board JN-5725) — NEW CI run 29568472479 IN PROGRESS — 🆕 since 06:00 IDT
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements"
 - State: OPEN, **MERGEABLE** ✅
-- **NEW CI run 29539497542** (appeared since 00:00 IDT Jul 17):
-  - ✅ PASS: all-checks, pre-commit, nox, tox, integration-run, integration-tests, e2e-tests, atlas-validate, JIRA
-  - ❌ FAIL: check-changes (non-blocking — e2e-smoke/e2e-api/bake SKIP due to no relevant changes)
-- **Prior run 29501833549 had**: nox ❌, tox ❌, e2e-smoke ❌, e2e-tests ❌. Now all pass.
+- **NEW CI run 29568472479** (appeared since 06:00 IDT Jul 17 — STILL RUNNING):
+  - ⏳ PENDING: e2e-api, integration-run, pre-commit-run, tox-run
+  - ✅ PASS so far: atlas-validate, bake, check-changes, JIRA
+  - ⏭️ SKIP: atlas-validate-run
+- **Prior run 29539497542** (completed): all-checks ✅, pre-commit ✅, nox ✅, tox ✅, integration ✅, e2e-tests ✅. check-changes ❌ non-blocking.
 - JN-5725 Jira → **Done** ✅.
-- **Action:** Consider merging — CI gate (all-checks) now PASSES. check-changes failure is non-blocking (downstream jobs just skip).
+- **Action:** Wait for run 29568472479 to complete. If all pass: consider merging.
 
 ---
 
