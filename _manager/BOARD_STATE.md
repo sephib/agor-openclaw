@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-17 00:00 IDT (advance heartbeat — weekend)*
+*Last updated: 2026-07-17 06:00 IDT (advance heartbeat — weekend)*
 
 ---
 
@@ -24,7 +24,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🔴 run 29501833549 COMPLETE: nox ❌, tox ❌, e2e-smoke ❌, e2e-tests ❌; pre-commit ✅, e2e-api ✅, integration ✅ | OPEN, **MERGEABLE** ✅ | 🔴 **CI FAILING** — run 29501833549 complete: nox/tox/e2e-smoke/e2e-tests ❌. Different from #1669 (pre-commit ✅ here). JN-5725 Done ✅. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🟡 **NEW** run 29539497542: all-checks ✅ PASS; pre-commit ✅, nox ✅, tox ✅, integration ✅, e2e-tests ✅; check-changes ❌ (non-blocking); e2e-smoke SKIP | OPEN, **MERGEABLE** ✅ | 🟡 **CI IMPROVED** — run 29539497542 (new since 00:00 IDT): all-checks ✅ PASS. Was: nox/tox/e2e-smoke ❌. Now only check-changes ❌ (non-blocking). JN-5725 Done ✅. Consider merging. |
 
 ---
 
@@ -60,13 +60,12 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (00:00 IDT Jul 17 weekend heartbeat vs 22:00 IDT Jul 16)
+## Key Changes (06:00 IDT Jul 17 weekend heartbeat vs 00:00 IDT Jul 17)
 
 | What changed | Delta |
 |---|---|
-| **Board static overnight** | No changes in 13+ hours since 22:00 IDT Jul 16 daytime run. |
+| **🟡 #1638 CI IMPROVED** | **NEW run 29539497542**: all-checks ✅ PASS. Was: nox ❌, tox ❌, e2e-smoke ❌, e2e-tests ❌ (run 29501833549). Now: all-checks ✅, pre-commit ✅, nox ✅, tox ✅, integration ✅, e2e-tests ✅. Only check-changes ❌ (non-blocking). PR may be merge-ready. |
 | **#1669 unchanged** | Same run 29509136918: pre-commit ❌ only. nox ✅ tox ✅ e2e ✅ unchanged. |
-| **#1638 unchanged** | Same run 29501833549: nox ❌, tox ❌, e2e-smoke ❌, e2e-tests ❌. No new push or CI run. |
 | **#1667 still CONFLICTING** | No change — still needs rebase on main. |
 | **#1670 still DRAFT** | No change — CI all pass (stale run). |
 | **No new merges** | 0 merges detected this run. |
@@ -98,15 +97,16 @@ PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): ad
 
 ---
 
-### 🔴 #1638 (off-board JN-5725) — CI FAILING (run 29501833549 COMPLETE)
+### 🟡 #1638 (off-board JN-5725) — CI IMPROVED (run 29539497542) — 🆕 since 00:00 IDT
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements"
 - State: OPEN, **MERGEABLE** ✅
-- **CI run 29501833549 COMPLETE**: nox ❌, tox ❌, e2e-smoke ❌, e2e-tests ❌; pre-commit ✅, e2e-api ✅, integration ✅, bake ✅
-- **REGRESSION from run 29497619223** which had ALL CRITICAL PASS.
+- **NEW CI run 29539497542** (appeared since 00:00 IDT Jul 17):
+  - ✅ PASS: all-checks, pre-commit, nox, tox, integration-run, integration-tests, e2e-tests, atlas-validate, JIRA
+  - ❌ FAIL: check-changes (non-blocking — e2e-smoke/e2e-api/bake SKIP due to no relevant changes)
+- **Prior run 29501833549 had**: nox ❌, tox ❌, e2e-smoke ❌, e2e-tests ❌. Now all pass.
 - JN-5725 Jira → **Done** ✅.
-- Note: **different profile from #1669** — pre-commit PASSES on #1638 (fails on #1669), but e2e-smoke FAILS on #1638 (passes on #1669). Not a simple shared infra issue.
-- **Action:** Investigate separately: nox/tox failure + e2e-smoke failure on #1638. Consider closing since JN-5725 Done.
+- **Action:** Consider merging — CI gate (all-checks) now PASSES. check-changes failure is non-blocking (downstream jobs just skip).
 
 ---
 

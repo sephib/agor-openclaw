@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-17 00:00 IDT";
+export const LAST_UPDATED = "2026-07-17 06:00 IDT";
 
 export const WORKTREES = [
   {
@@ -47,9 +47,17 @@ export const WORKTREES = [
     status: "🔴 #1667 CONFLICTING — needs rebase on main. CI stale (run 29402877354 all-pass, pre-conflict). markVaykhansky COMMENTED only (no APPROVE).",
     blockedOn: "CONFLICTING — needs rebase",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6cbaf4fc76588ab3a82c/",
-    sessionLabel: "weekend heartbeat 00:00 IDT Jul 17 — board static overnight; #1667 still CONFLICTING; #1669 pre-commit ❌ unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6e0490687cf6ae34c0c2/",
+    sessionLabel: "weekend heartbeat 06:00 IDT Jul 17 — #1638 CI IMPROVED (all-checks ✅ new run); #1667 still CONFLICTING; #1669 pre-commit ❌ unchanged",
     recentSessions: [
+      {
+        sessionId: "019f6e0490687cf6ae34c0c2",
+        url: "http://127.0.0.1:3030/ui/s/019f6e0490687cf6ae34c0c2/",
+        title: "weekend heartbeat 06:00 IDT Jul 17 — #1638 CI improved (all-checks ✅); #1667 CONFLICTING; #1669 pre-commit ❌ unchanged",
+        status: "running",
+        timestamp: "2026-07-17 06:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f6cbaf4fc76588ab3a82c",
         url: "http://127.0.0.1:3030/ui/s/019f6cbaf4fc76588ab3a82c/",
@@ -82,16 +90,8 @@ export const WORKTREES = [
         timestamp: "2026-07-16 21:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f6bfab0387dd28baf1a90",
-        url: "http://127.0.0.1:3030/ui/s/019f6bfab0387dd28baf1a90/",
-        title: "advance heartbeat 20:30 IDT Jul 16 — board static; #1667 still CONFLICTING; #1669 pre-commit ❌ unchanged",
-        status: "idle",
-        timestamp: "2026-07-16 20:30 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-17 00:00 IDT",
+    lastActive: "2026-07-17 06:00 IDT",
   },
   {
     ticket: "JN-5872",
@@ -105,9 +105,17 @@ export const WORKTREES = [
     status: "🔴 CI run 29509136918 COMPLETE: pre-commit ❌ only (all-checks ❌). PROGRESS: nox ✅ tox ✅ e2e ✅ now pass. Was 3 failures (pre-commit+nox+tox), now 1. Fix pre-commit to unblock merge.",
     blockedOn: "CI FAIL — pre-commit only (run 29509136918 complete)",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6cbaf4fc76588ab3a82c/",
-    sessionLabel: "weekend heartbeat 00:00 IDT Jul 17 — board static overnight; #1669 pre-commit ❌ unchanged (run 29509136918)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6e0490687cf6ae34c0c2/",
+    sessionLabel: "weekend heartbeat 06:00 IDT Jul 17 — #1669 pre-commit ❌ unchanged (run 29509136918)",
     recentSessions: [
+      {
+        sessionId: "019f6e0490687cf6ae34c0c2",
+        url: "http://127.0.0.1:3030/ui/s/019f6e0490687cf6ae34c0c2/",
+        title: "weekend heartbeat 06:00 IDT Jul 17 — #1669 pre-commit ❌ unchanged (run 29509136918)",
+        status: "running",
+        timestamp: "2026-07-17 06:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f6cbaf4fc76588ab3a82c",
         url: "http://127.0.0.1:3030/ui/s/019f6cbaf4fc76588ab3a82c/",
@@ -140,16 +148,8 @@ export const WORKTREES = [
         timestamp: "2026-07-16 21:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f6bfab0387dd28baf1a90",
-        url: "http://127.0.0.1:3030/ui/s/019f6bfab0387dd28baf1a90/",
-        title: "advance heartbeat 20:30 IDT Jul 16 — board static; #1669 pre-commit ❌ unchanged (run 29509136918)",
-        status: "idle",
-        timestamp: "2026-07-16 20:30 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-17 00:00 IDT",
+    lastActive: "2026-07-17 06:00 IDT",
   },
   {
     ticket: "JN-5865",
@@ -415,8 +415,8 @@ export const ALERTS = [
     message: "🎉 #1673 (jn-5891 JN-5891) MERGED at 14:14 IDT Jul 16! fix(jbenchmark): set GuideLLM max_seconds default to 1200. Worktree ARCHIVED. JN-5891 Jira → Done ✅ CONFIRMED 16:00 IDT.",
   },
   {
-    level: "red",
-    message: "🔴 #1638 (JN-5725, off-board): CI FAILING — run 29501833549 COMPLETE: nox ❌, tox ❌, e2e-smoke ❌, e2e-tests ❌. Pre-commit ✅, e2e-api ✅, integration ✅ pass. Different failure profile from #1669 (not systemic). MERGEABLE. JN-5725 Done ✅.",
+    level: "yellow",
+    message: "🟡 #1638 (JN-5725, off-board): CI IMPROVED — NEW run 29539497542: all-checks ✅ PASS. Pre-commit ✅, nox ✅, tox ✅, integration ✅, e2e-tests ✅. check-changes ❌ non-blocking (e2e-smoke/bake SKIP). MERGEABLE. JN-5725 Done ✅. Consider merging.",
   },
   {
     level: "red",

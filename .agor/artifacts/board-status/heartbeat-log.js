@@ -1,6 +1,24 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-17 06:00 IDT",
+    actions: 0,
+    findings: 1,
+    status: "ok",
+    summary: "#1638 CI IMPROVED — new run 29539497542: all-checks ✅ PASS (was nox/tox/e2e FAIL); #1669 unchanged (pre-commit ❌ only); 0 merges; 6 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6e0490687cf6ae34c0c2/",
+  },
+  {
+    type: "advance",
+    timestamp: "2026-07-17 00:00 IDT",
+    actions: 0,
+    findings: 0,
+    status: "ok",
+    summary: "Board static overnight — 0 merges; #1669 unchanged (run 29509136918: pre-commit ❌ only); #1638 unchanged (run 29501833549 FAIL); 6 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f6cbaf4fc76588ab3a82c/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-16 22:00 IDT",
     actions: 0,
     findings: 0,
