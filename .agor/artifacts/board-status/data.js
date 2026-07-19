@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-19 13:00 IDT";
+export const LAST_UPDATED = "2026-07-19 13:30 IDT";
 
 export const WORKTREES = [
   {
@@ -30,9 +30,17 @@ export const WORKTREES = [
     status: "🔴 #1667 CONFLICTING — needs rebase on main. CI stale (run 29402877354 all-pass, pre-conflict). Unchanged since Jul 17.",
     blockedOn: "CONFLICTING — needs rebase",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f79d1876f76d1ac947041/",
-    sessionLabel: "advance heartbeat 13:00 IDT Jul 19 — board static; no CI changes; 0 merges",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f79ecfec47a8ca696a5cb/",
+    sessionLabel: "advance heartbeat 13:30 IDT Jul 19 — #1638 bake ❌ new run 29683041833 (same verdict); board otherwise static",
     recentSessions: [
+      {
+        sessionId: "019f79ecfec47a8ca696a5cb",
+        url: "http://127.0.0.1:3030/ui/s/019f79ecfec47a8ca696a5cb/",
+        title: "advance heartbeat 13:30 IDT Jul 19 — #1638 new CI run 29683041833; board static",
+        status: "completed",
+        timestamp: "2026-07-19 13:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f79d1876f76d1ac947041",
         url: "http://127.0.0.1:3030/ui/s/019f79d1876f76d1ac947041/",
@@ -65,16 +73,8 @@ export const WORKTREES = [
         timestamp: "2026-07-19 11:30 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f7963ab7975d2bd42efb9",
-        url: "http://127.0.0.1:3030/ui/s/019f7963ab7975d2bd42efb9/",
-        title: "advance heartbeat 11:00 IDT Jul 19 — board static; #1667 CONFLICTING unchanged",
-        status: "completed",
-        timestamp: "2026-07-19 11:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-19 13:00 IDT",
+    lastActive: "2026-07-19 13:30 IDT",
   },
   {
     ticket: "JN-5872",
@@ -88,9 +88,17 @@ export const WORKTREES = [
     status: "🔴 CI run 29509136918 COMPLETE (Jul 16): pre-commit ❌ only (all-checks ❌). PROGRESS: nox ✅ tox ✅ e2e ✅ pass. No new CI in 3+ days. Fix pre-commit to unblock merge.",
     blockedOn: "CI FAIL — pre-commit only (run 29509136918, stale 3+ days)",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f79d1876f76d1ac947041/",
-    sessionLabel: "advance heartbeat 13:00 IDT Jul 19 — #1669 pre-commit ❌ unchanged (run 29509136918, stale 3+ days)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f79ecfec47a8ca696a5cb/",
+    sessionLabel: "advance heartbeat 13:30 IDT Jul 19 — #1669 pre-commit ❌ unchanged (run 29509136918, stale 3+ days)",
     recentSessions: [
+      {
+        sessionId: "019f79ecfec47a8ca696a5cb",
+        url: "http://127.0.0.1:3030/ui/s/019f79ecfec47a8ca696a5cb/",
+        title: "advance heartbeat 13:30 IDT Jul 19 — #1669 pre-commit ❌ unchanged (run 29509136918)",
+        status: "completed",
+        timestamp: "2026-07-19 13:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f79d1876f76d1ac947041",
         url: "http://127.0.0.1:3030/ui/s/019f79d1876f76d1ac947041/",
@@ -123,16 +131,8 @@ export const WORKTREES = [
         timestamp: "2026-07-19 11:30 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f7963ab7975d2bd42efb9",
-        url: "http://127.0.0.1:3030/ui/s/019f7963ab7975d2bd42efb9/",
-        title: "advance heartbeat 11:00 IDT Jul 19 — board static; #1669 pre-commit ❌ unchanged (run 29509136918, stale)",
-        status: "completed",
-        timestamp: "2026-07-19 11:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-19 13:00 IDT",
+    lastActive: "2026-07-19 13:30 IDT",
   },
   {
     ticket: "JN-5865",
@@ -369,7 +369,7 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "yellow",
-    message: "🟡 #1638 (JN-5725, off-board): NEW CI RUN 29680583712 — bake ❌ FAIL (regression! was ✅ in run 29654523528). all-checks ✅ PASS, pre-commit ✅ PASS. OPEN + MERGEABLE. Investigate bake failure before merging. JN-5725 Done ✅.",
+    message: "🟡 #1638 (JN-5725, off-board): CI RUN 29683041833 — bake ❌ FAIL (persistent; was ✅ in run 29654523528). all-checks ✅ PASS, pre-commit ✅ PASS. OPEN + MERGEABLE. Investigate bake failure before merging. JN-5725 Done ✅.",
   },
   {
     level: "red",

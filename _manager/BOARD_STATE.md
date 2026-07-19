@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-19 13:00 IDT (advance heartbeat — weekday daytime)*
+*Last updated: 2026-07-19 13:30 IDT (advance heartbeat — weekday daytime)*
 
 ---
 
@@ -24,7 +24,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🟡 **NEW RUN 29680583712**: bake ❌ FAIL (new regression); all-checks ✅ PASS, pre-commit ✅ PASS | OPEN, **MERGEABLE** ✅ | 🟡 **bake REGRESSION** (new run 29680583712). all-checks ✅ still gates merge. Bake was ✅ in prev run 29654523528. Action: investigate bake failure; still mergeable per all-checks gate. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🟡 **RUN 29683041833**: bake ❌ FAIL (persistent); all-checks ✅ PASS, pre-commit ✅ PASS | OPEN, **MERGEABLE** ✅ | 🟡 **bake FAIL persistent** (new run 29683041833, same verdict as 29680583712). all-checks ✅ still gates merge. Action: investigate bake failure; still mergeable per all-checks gate. |
 
 ---
 
@@ -59,12 +59,11 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (13:00 IDT Jul 19 vs 12:30 IDT Jul 19)
+## Key Changes (13:30 IDT Jul 19 vs 13:00 IDT Jul 19)
 
 | What changed | Delta |
 |---|---|
-| **Board static** | No merges, no CI changes, no zone moves. |
-| **#1638 unchanged** | Same run 29680583712: bake ❌ FAIL, all-checks ✅ PASS. No new CI since 09:00 UTC Jul 19. |
+| **#1638 — new CI run** | NEW run 29683041833: bake ❌ FAIL (same verdict as prev run 29680583712). all-checks ✅ PASS still gates merge. |
 | **#1669 unchanged** | Same run 29509136918: pre-commit ❌ only. Stale 3+ days. No new CI. |
 | **#1667 still CONFLICTING** | No change — still needs rebase. |
 | **#1670 still DRAFT** | No change — CI stale (run 29403233416 all-pass). |
@@ -74,12 +73,12 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ## Attention Items
 
-### 🟡 #1638 (off-board JN-5725) — bake ❌ REGRESSION (new run 29680583712) — all-checks ✅ still pass
+### 🟡 #1638 (off-board JN-5725) — bake ❌ PERSISTENT (run 29683041833) — all-checks ✅ still pass
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements (JN-5725)"
 - State: OPEN, **MERGEABLE** ✅
-- **NEW Run 29680583712** (triggered since last heartbeat, conclusion: failure):
-  - FAIL: bake ❌ (was ✅ in prev run 29654523528 — regression)
+- **Run 29683041833** (latest, same verdict as 29680583712):
+  - FAIL: bake ❌ (persistent — regression from run 29654523528 which was ✅)
   - PASS: all-checks ✅, pre-commit ✅, nox ✅, JIRA ✅, atlas-validate ✅, check-changes ✅, e2e-tests ✅, integration-tests ✅
   - SKIP: pre-commit-run, e2e-api, e2e-smoke, e2e-product, integration-run, tox-run, atlas-validate-run
 - JN-5725 Jira → **Done** ✅.
