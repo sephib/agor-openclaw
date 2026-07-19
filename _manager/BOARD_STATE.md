@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-19 14:32 IDT (advance heartbeat — weekday daytime)*
+*Last updated: 2026-07-19 15:02 IDT (advance heartbeat — weekday daytime)*
 
 ---
 
@@ -24,7 +24,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🟡 **NEW run 29685164729 IN PROGRESS** — bake ✅, integration-run ✅, atlas-validate ✅, atlas-validate-run ✅; PENDING: e2e-api, pre-commit-run, tox-run, integration-tests | OPEN, **MERGEABLE** ✅ | 🟡 **NOW MERGEABLE** (recovered from CONFLICTING at 14:00). New CI run in progress. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🟡 **NEW run 29686179040 IN PROGRESS** — bake PENDING, pre-commit-run PENDING, tox-run PENDING, integration-run PENDING; check-changes ✅, JIRA ✅ | OPEN, **MERGEABLE** ✅ | 🟡 **MERGEABLE** — new CI run 29686179040 (supersedes 29685164729). All PENDING. |
 
 ---
 
@@ -59,12 +59,12 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (14:32 IDT Jul 19 vs 14:00 IDT Jul 19)
+## Key Changes (15:02 IDT Jul 19 vs 14:32 IDT Jul 19)
 
 | What changed | Delta |
 |---|---|
-| **#1638 — NOW MERGEABLE** | Was CONFLICTING at 14:00. Now MERGEABLE ✅. NEW CI run 29685164729 IN PROGRESS — bake ✅ PASS (was failing!), integration-run ✅, atlas-validate ✅; pending e2e-api/pre-commit-run/tox-run. |
-| **#1669 — NOW CONFLICTING** | Was UNKNOWN mergeable at 14:00. Now CONFLICTING ❌ (in addition to CI regression run 29683534910). |
+| **#1638 — NEW CI run 29686179040** | Run 29685164729 superseded by new run 29686179040 (all PENDING: bake, pre-commit-run, tox-run, integration-run, build). Still OPEN/MERGEABLE. A new push likely triggered re-run. |
+| **#1669 still CI ❌ + CONFLICTING** | No change — run 29683534910 (pre-commit ❌, nox ❌, tox-run ❌). |
 | **#1667 still CONFLICTING** | No change — still needs rebase. |
 | **#1670 still DRAFT** | No change — CI stale (run 29403233416 all-pass). |
 | **6 Jira mismatches** | Unchanged. AIPCC keys: AIPCC-26976/25962/24425/23824/23788/23220. |
@@ -73,13 +73,13 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ## Attention Items
 
-### 🟡 #1638 (off-board JN-5725) — NOW MERGEABLE, new CI run in progress
+### 🟡 #1638 (off-board JN-5725) — MERGEABLE, new CI run 29686179040 in progress
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements (JN-5725)"
-- State: OPEN, **MERGEABLE** ✅ (recovered from CONFLICTING at 14:00 IDT Jul 19)
-- **Run 29685164729** (NEW, IN PROGRESS): bake ✅ PASS, integration-run ✅, atlas-validate ✅, atlas-validate-run ✅, check-changes ✅; PENDING: e2e-api, pre-commit-run, tox-run, integration-tests
+- State: OPEN, **MERGEABLE** ✅
+- **Run 29686179040** (NEW, IN PROGRESS — supersedes 29685164729): bake PENDING, pre-commit-run PENDING, tox-run PENDING, integration-run PENDING, build PENDING; check-changes ✅, JIRA ✅
 - JN-5725 Jira → **Done** ✅.
-- **Action:** Await CI run 29685164729 to complete. If all-checks ✅, merge is unblocked.
+- **Action:** Await CI run 29686179040 to complete. If all-checks ✅, merge is unblocked.
 
 ---
 
