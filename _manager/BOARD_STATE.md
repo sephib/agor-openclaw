@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-19 20:32 IDT (advance heartbeat — weekday daytime)*
+*Last updated: 2026-07-19 21:02 IDT (advance heartbeat — weekday daytime)*
 
 ---
 
@@ -8,7 +8,7 @@
 
 | Worktree | Zone | PR | CI | Jira | Status |
 |---------|------|----|----|------|--------|
-| aipcc-27645-server-resources | **Code** | [#1690 DRAFT](https://github.com/Jounce-IO/jounce/pull/1690) | ✅ ALL CI PASS (run 29695543078 — NEW) — all-checks ✅, JIRA ✅, pre-commit-run ✅, pre-commit ✅, nox ✅, tox-run ✅, e2e-tests ✅, integration-tests ✅ | [AIPCC-27645](https://redhat.atlassian.net/browse/AIPCC-27645) | 🟡 DRAFT, ALL CI NOW PASSING. Needs: mark ready for review. |
+| aipcc-27645-server-resources | **Code** | [#1690 DRAFT](https://github.com/Jounce-IO/jounce/pull/1690) | 🔄 NEW RUN 29697956064 IN PROGRESS — fast checks pass (atlas-validate ✅, check-changes ✅, e2e-tests ✅, integration-tests ✅), tox-run/pre-commit-run/JIRA PENDING. (Prev: run 29695543078 ALL PASS) | [AIPCC-27645](https://redhat.atlassian.net/browse/AIPCC-27645) | 🟡 DRAFT, NEW COMMIT PUSHED — new CI run in progress. Needs: wait for CI, then mark ready for review. |
 | aipcc-27657-guidellm-output-dir | **Code** | [#1691](https://github.com/Jounce-IO/jounce/pull/1691) | ✅ ALL CI PASS (run 29695655172 — NEW) — JIRA ✅, all-checks ✅, pre-commit-run ✅, pre-commit ✅, nox ✅, tox-run ✅, e2e-tests ✅, integration-tests ✅, atlas-validate ✅ | [AIPCC-27657](https://redhat.atlassian.net/browse/AIPCC-27657) | 🟢 **PR READY FOR REVIEW** — no longer draft, ALL CI PASS. CodeRabbit review completed. ⚠️ PR title contains "JN-5872" (another ticket) — verify PR title. |
 | jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | UNKNOWN (stale) | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) — New | 🔴 DRAFT + CONFLICTING; frozen since Jun 14. No change. |
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — New | Design session done Jun 30. Ready for Plan phase. Stale 19+ days. |
@@ -60,13 +60,13 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (20:32 IDT Jul 19 vs 20:02 IDT Jul 19)
+## Key Changes (21:02 IDT Jul 19 vs 20:32 IDT Jul 19)
 
 | What changed | Delta |
 |---|---|
-| **#1638 e2e-product ✅ NOW PASSES 🎉** | Run 29694608697 COMPLETE: e2e-product ✅ (was PENDING at 20:02). **ALL CI FULLY PASS** — PR is now fully ready for review! Jira JN-5725 is Done ✅. |
-| **#1691 unchanged** | Same CI run 29695655172 ALL PASS. JIRA Association re-triggered (new run 29695988849) — still pass. PR OPEN, READY FOR REVIEW. |
-| **#1690 unchanged** | Same CI run 29695543078 ALL PASS. Still DRAFT. |
+| **#1690 NEW CI RUN 29697956064 TRIGGERED** | New commit pushed to DRAFT PR. Fast checks pass (atlas-validate ✅, check-changes ✅, e2e-tests ✅, integration-tests ✅). Longer checks PENDING: tox-run, pre-commit-run, JIRA Association, add-required-labels, build-image. Previous run 29695543078 ALL PASS. |
+| **#1691 unchanged** | Same CI run 29695655172 ALL PASS. PR OPEN, READY FOR REVIEW. |
+| **#1638 unchanged** | Run 29694608697 ALL CI FULLY PASS. PR fully ready for review. |
 | **0 merges, #1669/#1667 CONFLICTING unchanged** | No CI changes on #1669 (run 29683534910 stale). #1667 CONFLICTING unchanged. |
 | **6 Jira mismatches unchanged** | Same 6 tickets still need Jira → Done. |
 
@@ -96,13 +96,15 @@ PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM a
 
 ---
 
-### 🟡 #1690 DRAFT (aipcc-27645-server-resources) — ALL CI PASS, needs mark ready
+### 🟡 #1690 DRAFT (aipcc-27645-server-resources) — NEW CI RUN IN PROGRESS
 
 PR [#1690](https://github.com/Jounce-IO/jounce/pull/1690): "fix(helm): increase API server resources and probe tolerances (AIPCC-27645) JN-5872"
 - State: OPEN, isDraft:true, **MERGEABLE** ✅
-- **Run 29695543078** (NEW — ALL PASS):
-  - PASS: all-checks ✅, JIRA ✅, pre-commit-run ✅, pre-commit ✅, nox ✅, tox-run ✅, e2e-tests ✅, integration-tests ✅, atlas-validate ✅
-- **Action:** Mark PR ready for review (remove draft status). All CI passing.
+- **Run 29697956064** (NEW — IN PROGRESS 21:02 IDT):
+  - PASS: atlas-validate ✅, check-changes ✅, e2e-tests ✅, integration-tests ✅, generate_tag ✅ (multiple)
+  - PENDING: tox-run, pre-commit-run, JIRA Association (run 29697964867), add-required-labels (run 29697964820), build-image (multiple)
+  - (Previous run 29695543078 was ALL PASS)
+- **Action:** Wait for CI to complete. If all pass, mark PR ready for review.
 
 ---
 

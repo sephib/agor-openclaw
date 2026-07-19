@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-19 20:32 IDT";
+export const LAST_UPDATED = "2026-07-19 21:02 IDT";
 
 export const WORKTREES = [
   {
@@ -13,9 +13,17 @@ export const WORKTREES = [
     status: "🟢 **PR READY FOR REVIEW** — no longer draft, ALL CI PASS (run 29695655172). JIRA ✅, all-checks ✅, pre-commit ✅, nox ✅, tox-run ✅, CodeRabbit complete. ⚠️ PR title contains 'JN-5872' — verify title is correct for AIPCC-27657.",
     blockedOn: null,
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b6d9d347e1bbe75044a/",
-    sessionLabel: "advance heartbeat 20:32 IDT Jul 19 — #1691 unchanged (ALL CI PASS, READY FOR REVIEW)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b8914f87505bf9d7e3f/",
+    sessionLabel: "advance heartbeat 21:02 IDT Jul 19 — #1691 unchanged (ALL CI PASS, READY FOR REVIEW)",
     recentSessions: [
+      {
+        sessionId: "019f7b8914f87505bf9d7e3f",
+        url: "http://127.0.0.1:3030/ui/s/019f7b8914f87505bf9d7e3f/",
+        title: "advance heartbeat 21:02 IDT Jul 19 — #1691 unchanged (ALL CI PASS, READY FOR REVIEW)",
+        status: "completed",
+        timestamp: "2026-07-19 21:02 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7b6d9d347e1bbe75044a",
         url: "http://127.0.0.1:3030/ui/s/019f7b6d9d347e1bbe75044a/",
@@ -52,12 +60,20 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1690 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1690",
-    status: "🟡 DRAFT — ALL CI NOW PASSING (run 29695543078): all-checks ✅, JIRA ✅, pre-commit ✅, nox ✅, tox-run ✅. Needs: mark ready for review.",
-    blockedOn: "Draft PR — needs mark ready",
+    status: "🟡 DRAFT — NEW CI RUN 29697956064 IN PROGRESS: fast checks pass (atlas-validate ✅, check-changes ✅, e2e-tests ✅, integration-tests ✅), tox-run/pre-commit-run/JIRA PENDING. (Prev run 29695543078 ALL PASS). Needs: wait for CI, then mark ready for review.",
+    blockedOn: "Draft PR — CI in progress (new commit pushed)",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b6d9d347e1bbe75044a/",
-    sessionLabel: "advance heartbeat 20:32 IDT Jul 19 — #1690 unchanged (ALL CI PASS, still DRAFT)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b8914f87505bf9d7e3f/",
+    sessionLabel: "advance heartbeat 21:02 IDT Jul 19 — #1690 NEW CI RUN 29697956064 IN PROGRESS",
     recentSessions: [
+      {
+        sessionId: "019f7b8914f87505bf9d7e3f",
+        url: "http://127.0.0.1:3030/ui/s/019f7b8914f87505bf9d7e3f/",
+        title: "advance heartbeat 21:02 IDT Jul 19 — #1690 NEW CI RUN 29697956064 IN PROGRESS",
+        status: "completed",
+        timestamp: "2026-07-19 21:02 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7b6d9d347e1bbe75044a",
         url: "http://127.0.0.1:3030/ui/s/019f7b6d9d347e1bbe75044a/",
@@ -138,9 +154,17 @@ export const WORKTREES = [
     status: "🔴 #1667 CONFLICTING. CI stale (run 29402877354 all-pass, pre-conflict). Needs rebase on main.",
     blockedOn: "CONFLICTING — needs rebase on main",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b6d9d347e1bbe75044a/",
-    sessionLabel: "advance heartbeat 20:32 IDT Jul 19 — #1667 CONFLICTING unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b8914f87505bf9d7e3f/",
+    sessionLabel: "advance heartbeat 21:02 IDT Jul 19 — #1667 CONFLICTING unchanged",
     recentSessions: [
+      {
+        sessionId: "019f7b8914f87505bf9d7e3f",
+        url: "http://127.0.0.1:3030/ui/s/019f7b8914f87505bf9d7e3f/",
+        title: "advance heartbeat 21:02 IDT Jul 19 — #1667 CONFLICTING unchanged",
+        status: "completed",
+        timestamp: "2026-07-19 21:02 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7b6d9d347e1bbe75044a",
         url: "http://127.0.0.1:3030/ui/s/019f7b6d9d347e1bbe75044a/",
@@ -204,9 +228,17 @@ export const WORKTREES = [
     status: "🔴 CI ❌ run 29683534910 (stale): pre-commit ❌, nox ❌, tox-run ❌, all-checks ❌. CONFLICTING. Needs rebase + CI fix. Unchanged.",
     blockedOn: "CI REGRESSION — CONFLICTING + pre-commit/nox/tox-run fix needed",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b6d9d347e1bbe75044a/",
-    sessionLabel: "advance heartbeat 20:32 IDT Jul 19 — #1669 CI ❌ + CONFLICTING unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b8914f87505bf9d7e3f/",
+    sessionLabel: "advance heartbeat 21:02 IDT Jul 19 — #1669 CI ❌ + CONFLICTING unchanged",
     recentSessions: [
+      {
+        sessionId: "019f7b8914f87505bf9d7e3f",
+        url: "http://127.0.0.1:3030/ui/s/019f7b8914f87505bf9d7e3f/",
+        title: "advance heartbeat 21:02 IDT Jul 19 — #1669 CI ❌ + CONFLICTING unchanged",
+        status: "completed",
+        timestamp: "2026-07-19 21:02 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7b6d9d347e1bbe75044a",
         url: "http://127.0.0.1:3030/ui/s/019f7b6d9d347e1bbe75044a/",
@@ -501,7 +533,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "🟡 #1690 DRAFT (AIPCC-27645): ALL CI NOW PASSING (run 29695543078) — all-checks ✅, JIRA ✅, pre-commit ✅, nox ✅, tox-run ✅. Still DRAFT — mark ready for review.",
+    message: "🟡 #1690 DRAFT (AIPCC-27645): NEW CI RUN 29697956064 IN PROGRESS (new commit pushed) — fast checks pass, tox-run/pre-commit-run/JIRA PENDING. Prev run 29695543078 ALL PASS. Wait for CI, then mark ready.",
   },
   {
     level: "red",
