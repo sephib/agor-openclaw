@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-19 14:00 IDT";
+export const LAST_UPDATED = "2026-07-19 14:32 IDT";
 
 export const WORKTREES = [
   {
@@ -30,9 +30,17 @@ export const WORKTREES = [
     status: "🔴 #1667 CONFLICTING — needs rebase on main. CI stale (run 29402877354 all-pass, pre-conflict). Unchanged since Jul 17.",
     blockedOn: "CONFLICTING — needs rebase",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7a0876357e8d8774bea7/",
-    sessionLabel: "advance heartbeat 14:00 IDT Jul 19 — #1638 NOW CONFLICTING; #1669 CI regression (nox+tox+pre-commit fail)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7a23ed597b5c9c9a1188/",
+    sessionLabel: "advance heartbeat 14:32 IDT Jul 19 — #1638 MERGEABLE recovered; #1669 now CONFLICTING",
     recentSessions: [
+      {
+        sessionId: "019f7a23ed597b5c9c9a1188",
+        url: "http://127.0.0.1:3030/ui/s/019f7a23ed597b5c9c9a1188/",
+        title: "advance heartbeat 14:32 IDT Jul 19 — #1638 MERGEABLE + new CI; #1669 CONFLICTING",
+        status: "completed",
+        timestamp: "2026-07-19 14:32 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7a0876357e8d8774bea7",
         url: "http://127.0.0.1:3030/ui/s/019f7a0876357e8d8774bea7/",
@@ -85,12 +93,20 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1669",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1669",
-    status: "🔴 CI REGRESSION — NEW run 29683534910 (Jul 19): pre-commit ❌, nox ❌ (regression!), tox-run ❌ (regression!), all-checks ❌. Was: only pre-commit failing (run 29509136918). Fix pre-commit+nox+tox to unblock merge.",
-    blockedOn: "CI REGRESSION — pre-commit + nox + tox-run all failing (run 29683534910)",
+    status: "🔴 CI REGRESSION + CONFLICTING — run 29683534910 (Jul 19): pre-commit ❌, nox ❌ (regression), tox-run ❌ (regression), all-checks ❌. Also NOW CONFLICTING (14:32 IDT Jul 19). Must rebase + fix CI.",
+    blockedOn: "CI REGRESSION + CONFLICTING — rebase needed + pre-commit/nox/tox-run fix",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7a0876357e8d8774bea7/",
-    sessionLabel: "advance heartbeat 14:00 IDT Jul 19 — #1669 CI REGRESSION: nox+tox now also failing (run 29683534910)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7a23ed597b5c9c9a1188/",
+    sessionLabel: "advance heartbeat 14:32 IDT Jul 19 — #1669 now CONFLICTING + CI regression unchanged",
     recentSessions: [
+      {
+        sessionId: "019f7a23ed597b5c9c9a1188",
+        url: "http://127.0.0.1:3030/ui/s/019f7a23ed597b5c9c9a1188/",
+        title: "advance heartbeat 14:32 IDT Jul 19 — #1669 now CONFLICTING; #1638 MERGEABLE + new CI run",
+        status: "completed",
+        timestamp: "2026-07-19 14:32 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7a0876357e8d8774bea7",
         url: "http://127.0.0.1:3030/ui/s/019f7a0876357e8d8774bea7/",
@@ -369,11 +385,11 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "red",
-    message: "🔴 #1638 (JN-5725, off-board): NOW CONFLICTING ❌ (was MERGEABLE at 13:30 IDT Jul 19). Needs rebase on main. bake ❌ FAIL persistent (run 29683041833). JN-5725 Done ✅.",
+    message: "🔴 #1669 (jn-5872 JN-5872): CI REGRESSION + NOW CONFLICTING — run 29683534910: pre-commit ❌ + nox ❌ (regression) + tox-run ❌ (regression) + all-checks ❌. ALSO CONFLICTING ❌ as of 14:32 IDT. Must rebase + fix CI.",
   },
   {
-    level: "red",
-    message: "🔴 #1669 (jn-5872 JN-5872): CI REGRESSION — NEW run 29683534910 (Jul 19): pre-commit ❌ + nox ❌ (regression) + tox-run ❌ (regression) + all-checks ❌. Was: only pre-commit failing. Fix pre-commit+nox+tox to unblock.",
+    level: "yellow",
+    message: "🟡 #1638 (JN-5725, off-board): NOW MERGEABLE ✅ (recovered from CONFLICTING at 14:00). NEW CI run 29685164729 IN PROGRESS — bake ✅, integration-run ✅, atlas-validate ✅; pending: e2e-api, pre-commit-run, tox-run. Await CI completion to confirm merge readiness.",
   },
   {
     level: "red",
