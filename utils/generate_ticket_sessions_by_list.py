@@ -220,7 +220,6 @@ def generate_actions(creds: Dict) -> Dict:
     for list_info in lists:
         list_id = list_info['id']
         list_name = list_info['name']
-        worktree_name = sanitize_worktree_name(list_name)
 
         # Get cards in this list
         cards = cards_by_list.get(list_id, [])
@@ -229,8 +228,18 @@ def generate_actions(creds: Dict) -> Dict:
 
         list_type = classify_list_type(list_name)
 
-        # Check if any card in this list has a session (implies worktree exists)
-        has_worktree = any(card['id'] in existing_card_ids for card in cards)
+        # A worktree already exists for this list if either a card in it has an
+        # active session, OR the list is already mapped in trello_list (covers
+        # the case where the list has zero active cards right now but had a
+        # worktree created for it previously — otherwise every list that drains
+        # to zero active cards and then gets one new card spawns a fresh
+        # duplicate worktree, e.g. trello-list-aliexpress-2/-3/-4/...).
+        existing_list = db.get_list(list_id)
+        has_worktree = (
+            any(card['id'] in existing_card_ids for card in cards)
+            or (existing_list is not None and existing_list.get('worktree_name'))
+        )
+        worktree_name = existing_list['worktree_name'] if (existing_list and existing_list.get('worktree_name')) else sanitize_worktree_name(list_name)
         worktree_action = 'exists' if has_worktree else 'create'
 
         if worktree_action == 'create':
