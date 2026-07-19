@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-19 11:00 IDT (advance heartbeat — weekday daytime)*
+*Last updated: 2026-07-19 11:30 IDT (advance heartbeat — weekday daytime)*
 
 ---
 
@@ -58,12 +58,11 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (11:00 IDT Jul 19 vs 10:32 IDT Jul 19)
+## Key Changes (11:30 IDT Jul 19 vs 11:00 IDT Jul 19)
 
 | What changed | Delta |
 |---|---|
-| **Board static** | No merges, no CI changes, no zone moves since 10:32 IDT run. All PRs unchanged. |
-| **jn-5871 CONFIRMED ARCHIVED** | Corrected prior "NOT in Agor" note — jn-5871 WAS in Agor (Code zone, uid=283) and was ARCHIVED by Joseph on Jul 15 09:57 UTC. No PR was created. JN-5871 still New. Removed from Active Worktrees. |
+| **Board static** | No merges, no CI changes, no zone moves since 11:00 IDT run. All PRs unchanged. |
 | **#1638 unchanged** | Still OPEN, MERGEABLE ✅, CI ALL PASS (run 29654523528). READY TO MERGE. |
 | **#1669 unchanged** | Same run 29509136918: pre-commit ❌ only. Stale 3+ days. |
 | **#1667 still CONFLICTING** | No change — still needs rebase. |
