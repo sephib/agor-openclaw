@@ -4618,5 +4618,14 @@ export const HEARTBEAT_RUNS = [
     status: "ok",
     summary: "board static; #1638 CI ALL PASS (run 29654523528, ready to merge); #1669 pre-commit ❌ unchanged (run 29509136918); 0 merges; 6 Jira mismatches",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f797f206170e2b12b1c1f/",
+  },,
+  {
+    type: "advance",
+    timestamp: "2026-07-19 20:02 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "#1691 ALL CI PASS + no longer DRAFT (READY FOR REVIEW); #1690 ALL CI PASS (still DRAFT); #1638 e2e-smoke PASSES; #1669 CONFLICTING+CI unchanged; 0 merges; 6 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b5225e77995aed7eb56/",
   },
 ];
