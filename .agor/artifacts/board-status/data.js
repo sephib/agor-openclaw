@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-19 20:02 IDT";
+export const LAST_UPDATED = "2026-07-19 20:32 IDT";
 
 export const WORKTREES = [
   {
@@ -13,9 +13,17 @@ export const WORKTREES = [
     status: "🟢 **PR READY FOR REVIEW** — no longer draft, ALL CI PASS (run 29695655172). JIRA ✅, all-checks ✅, pre-commit ✅, nox ✅, tox-run ✅, CodeRabbit complete. ⚠️ PR title contains 'JN-5872' — verify title is correct for AIPCC-27657.",
     blockedOn: null,
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b5225e77995aed7eb56/",
-    sessionLabel: "advance heartbeat 20:02 IDT Jul 19 — #1691 ALL CI PASS + READY FOR REVIEW 🎉",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b6d9d347e1bbe75044a/",
+    sessionLabel: "advance heartbeat 20:32 IDT Jul 19 — #1691 unchanged (ALL CI PASS, READY FOR REVIEW)",
     recentSessions: [
+      {
+        sessionId: "019f7b6d9d347e1bbe75044a",
+        url: "http://127.0.0.1:3030/ui/s/019f7b6d9d347e1bbe75044a/",
+        title: "advance heartbeat 20:32 IDT Jul 19 — #1691 unchanged (ALL CI PASS, READY FOR REVIEW)",
+        status: "completed",
+        timestamp: "2026-07-19 20:32 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7b5225e77995aed7eb56",
         url: "http://127.0.0.1:3030/ui/s/019f7b5225e77995aed7eb56/",
@@ -33,7 +41,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-19 20:02 IDT",
+    lastActive: "2026-07-19 20:32 IDT",
   },
   {
     ticket: "AIPCC-27645",
@@ -47,9 +55,17 @@ export const WORKTREES = [
     status: "🟡 DRAFT — ALL CI NOW PASSING (run 29695543078): all-checks ✅, JIRA ✅, pre-commit ✅, nox ✅, tox-run ✅. Needs: mark ready for review.",
     blockedOn: "Draft PR — needs mark ready",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b5225e77995aed7eb56/",
-    sessionLabel: "advance heartbeat 20:02 IDT Jul 19 — #1690 ALL CI PASS (still DRAFT)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b6d9d347e1bbe75044a/",
+    sessionLabel: "advance heartbeat 20:32 IDT Jul 19 — #1690 unchanged (ALL CI PASS, still DRAFT)",
     recentSessions: [
+      {
+        sessionId: "019f7b6d9d347e1bbe75044a",
+        url: "http://127.0.0.1:3030/ui/s/019f7b6d9d347e1bbe75044a/",
+        title: "advance heartbeat 20:32 IDT Jul 19 — #1690 unchanged (ALL CI PASS, still DRAFT)",
+        status: "completed",
+        timestamp: "2026-07-19 20:32 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7b5225e77995aed7eb56",
         url: "http://127.0.0.1:3030/ui/s/019f7b5225e77995aed7eb56/",
@@ -122,9 +138,17 @@ export const WORKTREES = [
     status: "🔴 #1667 CONFLICTING. CI stale (run 29402877354 all-pass, pre-conflict). Needs rebase on main.",
     blockedOn: "CONFLICTING — needs rebase on main",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b5225e77995aed7eb56/",
-    sessionLabel: "advance heartbeat 20:02 IDT Jul 19 — #1667 CONFLICTING unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b6d9d347e1bbe75044a/",
+    sessionLabel: "advance heartbeat 20:32 IDT Jul 19 — #1667 CONFLICTING unchanged",
     recentSessions: [
+      {
+        sessionId: "019f7b6d9d347e1bbe75044a",
+        url: "http://127.0.0.1:3030/ui/s/019f7b6d9d347e1bbe75044a/",
+        title: "advance heartbeat 20:32 IDT Jul 19 — #1667 CONFLICTING unchanged",
+        status: "completed",
+        timestamp: "2026-07-19 20:32 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7b5225e77995aed7eb56",
         url: "http://127.0.0.1:3030/ui/s/019f7b5225e77995aed7eb56/",
@@ -180,9 +204,17 @@ export const WORKTREES = [
     status: "🔴 CI ❌ run 29683534910 (stale): pre-commit ❌, nox ❌, tox-run ❌, all-checks ❌. CONFLICTING. Needs rebase + CI fix. Unchanged.",
     blockedOn: "CI REGRESSION — CONFLICTING + pre-commit/nox/tox-run fix needed",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b5225e77995aed7eb56/",
-    sessionLabel: "advance heartbeat 20:02 IDT Jul 19 — #1669 CI ❌ + CONFLICTING unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b6d9d347e1bbe75044a/",
+    sessionLabel: "advance heartbeat 20:32 IDT Jul 19 — #1669 CI ❌ + CONFLICTING unchanged",
     recentSessions: [
+      {
+        sessionId: "019f7b6d9d347e1bbe75044a",
+        url: "http://127.0.0.1:3030/ui/s/019f7b6d9d347e1bbe75044a/",
+        title: "advance heartbeat 20:32 IDT Jul 19 — #1669 CI ❌ + CONFLICTING unchanged",
+        status: "completed",
+        timestamp: "2026-07-19 20:32 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7b5225e77995aed7eb56",
         url: "http://127.0.0.1:3030/ui/s/019f7b5225e77995aed7eb56/",
@@ -465,7 +497,7 @@ export const ALERTS = [
   },
   {
     level: "green",
-    message: "🎯 #1638 (JN-5725, off-board): e2e-smoke NOW PASSES ✅ (was failing 3 consecutive runs). All major checks pass. Only e2e-product still PENDING. Effectively ready for review.",
+    message: "🎉 #1638 (JN-5725, off-board): ALL CI FULLY PASS ✅ — e2e-product ✅ NOW COMPLETE (was PENDING at 20:02). Run 29694608697: JIRA ✅, pre-commit ✅, e2e-smoke ✅, e2e-api ✅, e2e-product ✅, integration ✅, nox ✅, tox ✅. PR FULLY READY FOR REVIEW! JN-5725 Done ✅.",
   },
   {
     level: "yellow",
