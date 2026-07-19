@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-19 13:30 IDT (advance heartbeat — weekday daytime)*
+*Last updated: 2026-07-19 14:00 IDT (advance heartbeat — weekday daytime)*
 
 ---
 
@@ -13,7 +13,7 @@
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | Last session Jul 8 IDLE. SHA 16ec44ea (2 commits). Needs: configs, rebase, PR. Stale 11+ days. |
 | jn-5844-service-lib-sql-agents-md | **Publish** | [#1670 DRAFT](https://github.com/Jounce-IO/jounce/pull/1670) | ✅ ALL CI PASS (run 29403233416 — stale) | [JN-5844](https://redhat.atlassian.net/browse/JN-5844) — New | DRAFT PR #1670. CI all pass (stale). Needs: mark ready for review. |
 | jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | ✅ CI PASS (run 29402877354 — stale, pre-conflict) | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) — New | 🔴 **CONFLICTING** — needs rebase on main. CI stale. |
-| jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | 🔴 run 29509136918 COMPLETE: pre-commit ❌; all others ✅ (no new runs since Jul 16) | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — In Progress | 🔴 **CI FAIL — pre-commit only.** No CI activity in 3+ days. |
+| jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | 🔴 **NEW run 29683534910**: pre-commit ❌, nox ❌, tox-run ❌, all-checks ❌ (REGRESSION — nox/tox now also failing) | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — In Progress | 🔴 **CI REGRESSION — pre-commit + nox + tox-run now all failing.** |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — New | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 11+** (still Ingest, should be Code). |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 24+ days. Propose archive. |
 | ~~model-packaging-cr~~ | ~~Code Review~~ | ~~—~~ | ~~—~~ | ~~—~~ | **ARCHIVED 12:30 IDT Jul 19** — PR #161 CLOSED Jun 16. Stale 34 days. Autonomous archive. |
@@ -24,7 +24,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🟡 **RUN 29683041833**: bake ❌ FAIL (persistent); all-checks ✅ PASS, pre-commit ✅ PASS | OPEN, **MERGEABLE** ✅ | 🟡 **bake FAIL persistent** (new run 29683041833, same verdict as 29680583712). all-checks ✅ still gates merge. Action: investigate bake failure; still mergeable per all-checks gate. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🔴 **CONFLICTING** (as of 14:00 IDT Jul 19) — CodeRabbit pass only | OPEN, **CONFLICTING** ❌ | 🔴 **NOW CONFLICTING** — needs rebase on main. Was MERGEABLE at 13:30. bake ❌ persistent (run 29683041833). |
 
 ---
 
@@ -59,12 +59,12 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (13:30 IDT Jul 19 vs 13:00 IDT Jul 19)
+## Key Changes (14:00 IDT Jul 19 vs 13:30 IDT Jul 19)
 
 | What changed | Delta |
 |---|---|
-| **#1638 — new CI run** | NEW run 29683041833: bake ❌ FAIL (same verdict as prev run 29680583712). all-checks ✅ PASS still gates merge. |
-| **#1669 unchanged** | Same run 29509136918: pre-commit ❌ only. Stale 3+ days. No new CI. |
+| **#1638 — NOW CONFLICTING** | Was MERGEABLE at 13:30. Now CONFLICTING ❌ — needs rebase. bake ❌ persistent (run 29683041833). |
+| **#1669 — CI REGRESSION** | NEW run 29683534910 (was 29509136918). REGRESSION: nox ❌ + tox-run ❌ now also failing (were ✅ before). pre-commit ❌, all-checks ❌. |
 | **#1667 still CONFLICTING** | No change — still needs rebase. |
 | **#1670 still DRAFT** | No change — CI stale (run 29403233416 all-pass). |
 | **6 Jira mismatches** | Unchanged. AIPCC keys: AIPCC-26976/25962/24425/23824/23788/23220. |
@@ -73,28 +73,25 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ## Attention Items
 
-### 🟡 #1638 (off-board JN-5725) — bake ❌ PERSISTENT (run 29683041833) — all-checks ✅ still pass
+### 🔴 #1638 (off-board JN-5725) — NOW CONFLICTING + bake ❌ PERSISTENT
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements (JN-5725)"
-- State: OPEN, **MERGEABLE** ✅
-- **Run 29683041833** (latest, same verdict as 29680583712):
-  - FAIL: bake ❌ (persistent — regression from run 29654523528 which was ✅)
-  - PASS: all-checks ✅, pre-commit ✅, nox ✅, JIRA ✅, atlas-validate ✅, check-changes ✅, e2e-tests ✅, integration-tests ✅
-  - SKIP: pre-commit-run, e2e-api, e2e-smoke, e2e-product, integration-run, tox-run, atlas-validate-run
+- State: OPEN, **CONFLICTING** ❌ (changed from MERGEABLE at 13:30 IDT Jul 19)
+- **Run 29683041833** (latest — pre-conflict checks): bake ❌ FAIL persistent; all-checks ✅ PASS
 - JN-5725 Jira → **Done** ✅.
-- **Action:** Investigate bake failure. all-checks gate still passes → still mergeable. Check if bake is a blocking requirement before merging.
+- **Action:** Rebase feat/vllm-analyzer-prerequisites on main FIRST, then investigate bake failure. Blocked by conflict — cannot merge until rebased.
 
 ---
 
-### 🔴 #1669 (jn-5872) — CI run 29509136918 COMPLETE — pre-commit ❌ only (stale 3 days)
+### 🔴 #1669 (jn-5872) — CI REGRESSION — run 29683534910 — pre-commit + nox + tox-run all failing
 
 PR [#1669](https://github.com/Jounce-IO/jounce/pull/1669): "feat(jbenchmark): improve dev-connect with namespace/service checks (JN-5872)"
-- State: OPEN, **MERGEABLE** ✅
-- **Run 29509136918 COMPLETE (Jul 16 — no new runs in 3+ days):**
-  - FAIL: all-checks ❌, pre-commit ❌
-  - PASS: JIRA ✅, atlas-validate ✅, check-changes ✅, e2e-api ✅, e2e-smoke ✅, integration-run ✅, integration-tests ✅, nox ✅, tox-run ✅, e2e-tests ✅
+- State: OPEN, mergeable: UNKNOWN
+- **NEW Run 29683534910 COMPLETE (Jul 19 — regression vs run 29509136918):**
+  - FAIL: all-checks ❌, pre-commit ❌, **nox ❌ (was ✅)**, **pre-commit-run ❌**, **tox-run ❌ (was ✅)**
+  - PASS: JIRA ✅, atlas-validate ✅, check-changes ✅, e2e-api ✅, e2e-smoke ✅, integration-run ✅, integration-tests ✅, e2e-tests ✅
   - SKIP: bake, atlas-validate-run, e2e-priority, e2e-product
-- **Action:** Fix pre-commit failure to unblock merge.
+- **Action:** REGRESSION — nox and tox-run now failing in addition to pre-commit. Investigate what changed. Fix pre-commit first, then nox/tox.
 
 ---
 

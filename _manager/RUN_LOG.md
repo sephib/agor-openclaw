@@ -4,6 +4,14 @@
 
 ---
 
+## 14:00 IDT — Weekday Daytime Heartbeat (Jul 19 2026)
+- PRs checked: #1638 (OPEN→CONFLICTING ❌ — regression), #1669 (OPEN, NEW run 29683534910 — CI REGRESSION), #1667 (OPEN, CONFLICTING), #1670 (DRAFT, all-pass stale), #1596 (DRAFT)
+- Merges detected: none (0 merges this run)
+- CI changes: **#1638 now CONFLICTING** (was MERGEABLE at 13:30). **#1669 NEW run 29683534910 — REGRESSION**: nox ❌ + tox-run ❌ now also failing (were ✅ in prior run 29509136918). pre-commit ❌ and all-checks ❌ persist.
+- Actions: 0 autonomous actions
+- Flags: 🔴 #1638 NOW CONFLICTING (needs rebase). 🔴 #1669 CI REGRESSION (nox+tox+pre-commit failing). 🔴 #1667 CONFLICTING. 🟡 #1670 still DRAFT. 6 Jira mismatches unchanged.
+- Next: Rebase #1638 on main. Fix pre-commit+nox+tox on #1669. Rebase #1667. Jira mismatches via `acli jira workitem transition`.
+
 ## 13:00 IDT — Weekday Daytime Heartbeat (Jul 19 2026)
 - PRs checked: #1638 (OPEN, MERGEABLE — off-board), #1669 (OPEN, MERGEABLE), #1667 (OPEN, CONFLICTING), #1670 (DRAFT, MERGEABLE), #1596 (DRAFT, CONFLICTING)
 - Merges detected: none (0 merges this run)
