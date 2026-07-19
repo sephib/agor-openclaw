@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-19 19:02 IDT";
+export const LAST_UPDATED = "2026-07-19 19:32 IDT";
 
 export const WORKTREES = [
   {
@@ -10,12 +10,20 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1690 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1690",
-    status: "🟡 #1690 DRAFT MERGEABLE ✅ — JIRA Association now PASSING (run 29693397675). Still: pre-commit ❌, all-checks ❌. Fix pre-commit then CI should fully pass.",
-    blockedOn: "pre-commit ❌ (JIRA Association now FIXED)",
+    status: "🟡 #1690 DRAFT MERGEABLE ✅ — JIRA Association PASSING (run 29693397675). Still: pre-commit ❌, all-checks ❌. Fix pre-commit then CI should fully pass.",
+    blockedOn: "pre-commit ❌ (JIRA Association FIXED)",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b1b399074cba954ba9f/",
-    sessionLabel: "advance heartbeat 19:02 IDT Jul 19 — #1690 JIRA Association FIXED, now MERGEABLE",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b36ae3f7aceb4bae56b/",
+    sessionLabel: "advance heartbeat 19:32 IDT Jul 19 — #1638 CONFLICT RESOLVED! e2e-smoke PENDING; #1691 created",
     recentSessions: [
+      {
+        sessionId: "019f7b36ae3f7aceb4bae56b",
+        url: "http://127.0.0.1:3030/ui/s/019f7b36ae3f7aceb4bae56b/",
+        title: "advance heartbeat 19:32 IDT Jul 19 — #1638 CONFLICT RESOLVED! e2e-smoke PENDING; #1691 created",
+        status: "completed",
+        timestamp: "2026-07-19 19:32 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7b1b399074cba954ba9f",
         url: "http://127.0.0.1:3030/ui/s/019f7b1b399074cba954ba9f/",
@@ -48,16 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-19 17:02 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f7a91cb4e765a9e4c29c9",
-        url: "http://127.0.0.1:3030/ui/s/019f7a91cb4e765a9e4c29c9/",
-        title: "advance heartbeat 16:32 IDT Jul 19 — NEW worktree aipcc-27645-server-resources discovered",
-        status: "completed",
-        timestamp: "2026-07-19 16:32 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-19 19:02 IDT",
+    lastActive: "2026-07-19 19:32 IDT",
   },
   {
     ticket: "AIPCC-27657",
@@ -66,24 +66,24 @@ export const WORKTREES = [
     branch: "aipcc-27657-guidellm-output-dir",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/aipcc-27657-guidellm-output-dir",
     zone: "Code",
-    pr: null,
-    prUrl: null,
-    status: "🆕 NEW worktree (18:50 IDT Jul 19). Session RUNNING: 'Implement + CR + publish AIPCC-27657'. Sub-task of AIPCC-27645. Fixes GuideLLM v0.6.1 CLI conflict (--output-path vs --output-dir in Argo template guidellm.yaml).",
-    blockedOn: null,
+    pr: "#1691 DRAFT",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1691",
+    status: "🟡 Session IDLE (completed ~19:01 IDT). PR #1691 DRAFT created. MERGEABLE ✅. CI run 29694017872: JIRA Association ❌, pre-commit ❌. Fix and CI should pass.",
+    blockedOn: "JIRA Association ❌ + pre-commit ❌ on first CI run",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b12bd837ecebc8c3244/",
-    sessionLabel: "Implement + CR + publish AIPCC-27657 (RUNNING)",
+    sessionLabel: "Implement + CR + publish AIPCC-27657 (IDLE — completed ~19:01 IDT)",
     recentSessions: [
       {
         sessionId: "019f7b12bd837ecebc8c3244",
         url: "http://127.0.0.1:3030/ui/s/019f7b12bd837ecebc8c3244/",
         title: "Implement + CR + publish AIPCC-27657",
-        status: "running",
-        timestamp: "2026-07-19 18:50 IDT",
+        status: "idle",
+        timestamp: "2026-07-19 19:01 IDT",
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-19 18:50 IDT",
+    lastActive: "2026-07-19 19:01 IDT",
   },
   {
     ticket: "JN-5695",
@@ -111,12 +111,20 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1667",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1667",
-    status: "🟡 #1667 mergeable UNKNOWN (was CONFLICTING — possibly resolving). CI stale (run 29402877354 all-pass, pre-conflict). Needs rebase on main.",
-    blockedOn: "Needs rebase on main",
+    status: "🔴 #1667 CONFLICTING (confirmed — was briefly UNKNOWN). CI stale (run 29402877354 all-pass, pre-conflict). Needs rebase on main.",
+    blockedOn: "CONFLICTING — needs rebase on main",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b1b399074cba954ba9f/",
-    sessionLabel: "advance heartbeat 19:02 IDT Jul 19 — #1667 UNKNOWN mergeable, no change",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b36ae3f7aceb4bae56b/",
+    sessionLabel: "advance heartbeat 19:32 IDT Jul 19 — #1667 CONFLICTING confirmed",
     recentSessions: [
+      {
+        sessionId: "019f7b36ae3f7aceb4bae56b",
+        url: "http://127.0.0.1:3030/ui/s/019f7b36ae3f7aceb4bae56b/",
+        title: "advance heartbeat 19:32 IDT Jul 19 — #1667 CONFLICTING confirmed",
+        status: "completed",
+        timestamp: "2026-07-19 19:32 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7b1b399074cba954ba9f",
         url: "http://127.0.0.1:3030/ui/s/019f7b1b399074cba954ba9f/",
@@ -149,16 +157,8 @@ export const WORKTREES = [
         timestamp: "2026-07-19 17:02 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f7a91cb4e765a9e4c29c9",
-        url: "http://127.0.0.1:3030/ui/s/019f7a91cb4e765a9e4c29c9/",
-        title: "advance heartbeat 16:32 IDT Jul 19 — #1667 UNKNOWN mergeable (was CONFLICTING)",
-        status: "completed",
-        timestamp: "2026-07-19 16:32 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-19 16:32 IDT",
+    lastActive: "2026-07-19 19:32 IDT",
   },
   {
     ticket: "JN-5872",
@@ -169,12 +169,20 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1669",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1669",
-    status: "🔴 CI ❌ run 29683534910 (Jul 19): pre-commit ❌, nox ❌ (regression), tox-run ❌ (regression), all-checks ❌. Mergeable UNKNOWN (was CONFLICTING). Must fix CI.",
-    blockedOn: "CI REGRESSION — pre-commit/nox/tox-run fix needed",
+    status: "🔴 CI ❌ run 29683534910: pre-commit ❌, nox ❌ (regression), tox-run ❌ (regression), all-checks ❌. Now CONFLICTING (was UNKNOWN). Needs rebase + CI fix.",
+    blockedOn: "CI REGRESSION — CONFLICTING + pre-commit/nox/tox-run fix needed",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b1b399074cba954ba9f/",
-    sessionLabel: "advance heartbeat 19:02 IDT Jul 19 — #1669 CI ❌ + UNKNOWN, no change",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b36ae3f7aceb4bae56b/",
+    sessionLabel: "advance heartbeat 19:32 IDT Jul 19 — #1669 CI ❌ + CONFLICTING",
     recentSessions: [
+      {
+        sessionId: "019f7b36ae3f7aceb4bae56b",
+        url: "http://127.0.0.1:3030/ui/s/019f7b36ae3f7aceb4bae56b/",
+        title: "advance heartbeat 19:32 IDT Jul 19 — #1669 CI ❌ + CONFLICTING",
+        status: "completed",
+        timestamp: "2026-07-19 19:32 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7b1b399074cba954ba9f",
         url: "http://127.0.0.1:3030/ui/s/019f7b1b399074cba954ba9f/",
@@ -207,16 +215,8 @@ export const WORKTREES = [
         timestamp: "2026-07-19 17:02 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f7a91cb4e765a9e4c29c9",
-        url: "http://127.0.0.1:3030/ui/s/019f7a91cb4e765a9e4c29c9/",
-        title: "advance heartbeat 16:32 IDT Jul 19 — #1669 CI ❌ + UNKNOWN mergeable (was CONFLICTING)",
-        status: "completed",
-        timestamp: "2026-07-19 16:32 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-19 16:32 IDT",
+    lastActive: "2026-07-19 19:32 IDT",
   },
   {
     ticket: "JN-5865",
@@ -283,7 +283,7 @@ export const WORKTREES = [
     blockedOn: "Draft PR — needs mark ready",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f60377abb7d9aa3e2e233/",
-    sessionLabel: "Publish — DRAFT PR #1670 (needs mark ready for review)",
+    sessionLabel: "Internal CR — JN-5844 service/lib/sql AGENTS.md (idle 10:46 IDT)",
     recentSessions: [
       {
         sessionId: "019f60377abb7d9aa3e2e233",
@@ -452,24 +452,24 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "red",
-    message: "🔴 #1638 (JN-5725, off-board): CI run 29689910782 CANCELLED — e2e-smoke ❌ for 3rd consecutive run. e2e-tests ❌, all-checks ❌. PASS: tox-run ✅, pre-commit ✅, e2e-api ✅, integration-run ✅, bake ✅. PR CONFLICTING. Action: resolve conflict + fix e2e-smoke root cause.",
+    level: "green",
+    message: "🎯 #1638 (JN-5725, off-board): CONFLICT RESOLVED! CI run 29694608697 IN PROGRESS — ALL checks PASS except e2e-smoke (PENDING). If e2e-smoke passes → PR ready for review! Watch next heartbeat.",
   },
   {
     level: "yellow",
-    message: "🟡 #1690 DRAFT (aipcc-27645-server-resources AIPCC-27645): MERGEABLE ✅. JIRA Association now PASSING (run 29693397675). Still: pre-commit ❌, all-checks ❌. Fix pre-commit then CI should fully pass.",
-  },
-  {
-    level: "red",
-    message: "🔴 #1669 (jn-5872 JN-5872): CI REGRESSION — run 29683534910: pre-commit ❌ + nox ❌ (regression) + tox-run ❌ (regression) + all-checks ❌. Mergeable UNKNOWN (was CONFLICTING). Must fix CI.",
-  },
-  {
-    level: "blue",
-    message: "🆕 aipcc-27657-guidellm-output-dir (AIPCC-27657): NEW worktree (18:50 IDT Jul 19). Session RUNNING: 'Implement + CR + publish AIPCC-27657'. Fix GuideLLM CLI flag --output-path → --output-dir in Argo template for v0.6.1 compatibility.",
+    message: "🟡 #1691 DRAFT (aipcc-27657): PR created, session IDLE. First CI run 29694017872: JIRA Association ❌, pre-commit ❌. Fix both to get CI passing. MERGEABLE ✅.",
   },
   {
     level: "yellow",
-    message: "🟡 #1667 (jn-5845 JN-5845): Mergeable UNKNOWN (was CONFLICTING — possibly resolving). CI stale (run 29402877354). Still needs rebase on main.",
+    message: "🟡 #1690 DRAFT (aipcc-27645-server-resources AIPCC-27645): MERGEABLE ✅. JIRA Association PASSING (run 29693397675). Still: pre-commit ❌, all-checks ❌. Fix pre-commit then CI should fully pass.",
+  },
+  {
+    level: "red",
+    message: "🔴 #1669 (jn-5872 JN-5872): CI REGRESSION — run 29683534910: pre-commit ❌ + nox ❌ + tox-run ❌ + all-checks ❌. Now CONFLICTING (was UNKNOWN). Needs rebase + CI fix.",
+  },
+  {
+    level: "yellow",
+    message: "🟡 #1667 (jn-5845 JN-5845): CONFLICTING confirmed (was briefly UNKNOWN). CI stale (run 29402877354). Needs rebase on main.",
   },
   {
     level: "yellow",
@@ -477,7 +477,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "🟡 Jira mismatches (6): JN-5842 (AIPCC-26976), JN-5877 (AIPCC-24425), JN-5874 (AIPCC-23824), JN-5401 (AIPCC-23788), JN-5827 (AIPCC-23220), JN-5546 (AIPCC-25962) — PRs merged but Jira not Done. Use acli jira workitem transition.",
+    message: "🟡 Jira mismatches (6): JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546 — PRs merged but Jira not Done. Use acli jira workitem transition.",
   },
   {
     level: "yellow",
