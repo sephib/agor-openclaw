@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-19 10:00 IDT (advance heartbeat — weekday daytime)*
+*Last updated: 2026-07-19 10:32 IDT (advance heartbeat — weekday daytime)*
 
 ---
 
@@ -59,16 +59,16 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (10:00 IDT Jul 19 vs 08:30 IDT Jul 19)
+## Key Changes (10:32 IDT Jul 19 vs 10:00 IDT Jul 19)
 
 | What changed | Delta |
 |---|---|
-| **Board static** | No merges, no CI changes, no zone moves since 08:30 IDT run. All PRs unchanged. |
+| **Board static** | No merges, no CI changes, no zone moves since 10:00 IDT run. All PRs unchanged. |
 | **#1638 unchanged** | Still OPEN, MERGEABLE ✅, CI ALL PASS (run 29654523528). READY TO MERGE. |
 | **#1669 unchanged** | Same run 29509136918: pre-commit ❌ only. Stale 3+ days. |
 | **#1667 still CONFLICTING** | No change — still needs rebase. |
 | **#1670 still DRAFT** | No change — CI stale (run 29403233416 all-pass). |
-| **6 Jira mismatches** | Unchanged. Jira MCP 401 (ongoing). |
+| **6 Jira mismatches** | Unchanged. Jira MCP 401 + acli JN- lookup failing (wrong instance). |
 
 ---
 

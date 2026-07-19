@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-19 10:00 IDT";
+export const LAST_UPDATED = "2026-07-19 10:32 IDT";
 
 export const WORKTREES = [
   {
@@ -47,9 +47,17 @@ export const WORKTREES = [
     status: "🔴 #1667 CONFLICTING — needs rebase on main. CI stale (run 29402877354 all-pass, pre-conflict). Unchanged since Jul 17.",
     blockedOn: "CONFLICTING — needs rebase",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f792cba5373e4b3128661/",
-    sessionLabel: "advance heartbeat 10:00 IDT Jul 19 — board static; #1638 CI ALL PASS unchanged; #1667 CONFLICTING unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f794831897effa7e3630b/",
+    sessionLabel: "advance heartbeat 10:32 IDT Jul 19 — board static; #1667 CONFLICTING unchanged",
     recentSessions: [
+      {
+        sessionId: "019f794831897effa7e3630b",
+        url: "http://127.0.0.1:3030/ui/s/019f794831897effa7e3630b/",
+        title: "advance heartbeat 10:32 IDT Jul 19 — board static; #1667 CONFLICTING unchanged",
+        status: "completed",
+        timestamp: "2026-07-19 10:32 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f792cba5373e4b3128661",
         url: "http://127.0.0.1:3030/ui/s/019f792cba5373e4b3128661/",
@@ -82,16 +90,8 @@ export const WORKTREES = [
         timestamp: "2026-07-17 06:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f6cbaf4fc76588ab3a82c",
-        url: "http://127.0.0.1:3030/ui/s/019f6cbaf4fc76588ab3a82c/",
-        title: "weekend heartbeat 00:00 IDT Jul 17 — board static overnight; #1667 CONFLICTING; #1669 pre-commit ❌ unchanged",
-        status: "completed",
-        timestamp: "2026-07-17 00:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-19 10:00 IDT",
+    lastActive: "2026-07-19 10:32 IDT",
   },
   {
     ticket: "JN-5872",
@@ -105,9 +105,17 @@ export const WORKTREES = [
     status: "🔴 CI run 29509136918 COMPLETE (Jul 16): pre-commit ❌ only (all-checks ❌). PROGRESS: nox ✅ tox ✅ e2e ✅ pass. No new CI in 3+ days. Fix pre-commit to unblock merge.",
     blockedOn: "CI FAIL — pre-commit only (run 29509136918, stale 3+ days)",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f792cba5373e4b3128661/",
-    sessionLabel: "advance heartbeat 10:00 IDT Jul 19 — board static; #1669 pre-commit ❌ unchanged (run 29509136918, stale)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f794831897effa7e3630b/",
+    sessionLabel: "advance heartbeat 10:32 IDT Jul 19 — board static; #1669 pre-commit ❌ unchanged (run 29509136918, stale)",
     recentSessions: [
+      {
+        sessionId: "019f794831897effa7e3630b",
+        url: "http://127.0.0.1:3030/ui/s/019f794831897effa7e3630b/",
+        title: "advance heartbeat 10:32 IDT Jul 19 — board static; #1669 pre-commit ❌ unchanged (run 29509136918, stale)",
+        status: "completed",
+        timestamp: "2026-07-19 10:32 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f792cba5373e4b3128661",
         url: "http://127.0.0.1:3030/ui/s/019f792cba5373e4b3128661/",
@@ -140,16 +148,8 @@ export const WORKTREES = [
         timestamp: "2026-07-17 06:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f6cbaf4fc76588ab3a82c",
-        url: "http://127.0.0.1:3030/ui/s/019f6cbaf4fc76588ab3a82c/",
-        title: "weekend heartbeat 00:00 IDT Jul 17 — board static overnight; #1669 pre-commit ❌ unchanged (run 29509136918)",
-        status: "completed",
-        timestamp: "2026-07-17 00:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-19 10:00 IDT",
+    lastActive: "2026-07-19 10:32 IDT",
   },
   {
     ticket: "JN-5865",
