@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-19 16:32 IDT";
+export const LAST_UPDATED = "2026-07-19 17:02 IDT";
 
 export const WORKTREES = [
   {
@@ -10,22 +10,30 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1690 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1690",
-    status: "🆕 NEW today (16:24 IDT). DRAFT PR #1690. CI run 29688828097: all-checks ✅, nox ✅, tox-run ✅, e2e-tests ✅ — JIRA Association ❌ (AIPCC format not recognized by CI check). Needs: remove draft + resolve JIRA Association CI.",
-    blockedOn: "DRAFT + JIRA Association CI issue",
-    blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7a91cb4e765a9e4c29c9/",
-    sessionLabel: "advance heartbeat 16:32 IDT Jul 19 — NEW worktree discovered, PR #1690 DRAFT",
+    status: "🔴 PR #1690 DRAFT now CONFLICTING (since 17:02 IDT — was UNKNOWN). Prior CI run 29688828097: all-checks ✅ but JIRA Association ❌. Needs: rebase on main to resolve conflict, then CI will re-run.",
+    blockedOn: "CONFLICTING — needs rebase on main",
+    blockedType: "blocked",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7aad42d57adcb1d95af2/",
+    sessionLabel: "advance heartbeat 17:02 IDT Jul 19 — #1690 now CONFLICTING (was UNKNOWN)",
     recentSessions: [
+      {
+        sessionId: "019f7aad42d57adcb1d95af2",
+        url: "http://127.0.0.1:3030/ui/s/019f7aad42d57adcb1d95af2/",
+        title: "advance heartbeat 17:02 IDT Jul 19 — #1690 now CONFLICTING (was UNKNOWN)",
+        status: "running",
+        timestamp: "2026-07-19 17:02 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7a91cb4e765a9e4c29c9",
         url: "http://127.0.0.1:3030/ui/s/019f7a91cb4e765a9e4c29c9/",
         title: "advance heartbeat 16:32 IDT Jul 19 — NEW worktree aipcc-27645-server-resources discovered",
-        status: "running",
+        status: "completed",
         timestamp: "2026-07-19 16:32 IDT",
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-19 16:24 IDT",
+    lastActive: "2026-07-19 17:02 IDT",
   },
   {
     ticket: "JN-5695",
@@ -56,14 +64,22 @@ export const WORKTREES = [
     status: "🟡 #1667 mergeable UNKNOWN (was CONFLICTING — possibly resolving). CI stale (run 29402877354 all-pass, pre-conflict). Needs rebase on main.",
     blockedOn: "Needs rebase on main",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7a91cb4e765a9e4c29c9/",
-    sessionLabel: "advance heartbeat 16:32 IDT Jul 19 — #1667 UNKNOWN (was CONFLICTING)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7aad42d57adcb1d95af2/",
+    sessionLabel: "advance heartbeat 17:02 IDT Jul 19 — #1667 UNKNOWN mergeable, no change",
     recentSessions: [
+      {
+        sessionId: "019f7aad42d57adcb1d95af2",
+        url: "http://127.0.0.1:3030/ui/s/019f7aad42d57adcb1d95af2/",
+        title: "advance heartbeat 17:02 IDT Jul 19 — #1667 UNKNOWN mergeable, no change",
+        status: "running",
+        timestamp: "2026-07-19 17:02 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7a91cb4e765a9e4c29c9",
         url: "http://127.0.0.1:3030/ui/s/019f7a91cb4e765a9e4c29c9/",
         title: "advance heartbeat 16:32 IDT Jul 19 — #1667 UNKNOWN mergeable (was CONFLICTING)",
-        status: "running",
+        status: "completed",
         timestamp: "2026-07-19 16:32 IDT",
         outputFile: null,
       },
@@ -114,14 +130,22 @@ export const WORKTREES = [
     status: "🔴 CI ❌ run 29683534910 (Jul 19): pre-commit ❌, nox ❌ (regression), tox-run ❌ (regression), all-checks ❌. Mergeable UNKNOWN (was CONFLICTING). Must fix CI.",
     blockedOn: "CI REGRESSION — pre-commit/nox/tox-run fix needed",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7a91cb4e765a9e4c29c9/",
-    sessionLabel: "advance heartbeat 16:32 IDT Jul 19 — #1669 CI ❌ + UNKNOWN (was CONFLICTING)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7aad42d57adcb1d95af2/",
+    sessionLabel: "advance heartbeat 17:02 IDT Jul 19 — #1669 CI ❌ + UNKNOWN, no change",
     recentSessions: [
+      {
+        sessionId: "019f7aad42d57adcb1d95af2",
+        url: "http://127.0.0.1:3030/ui/s/019f7aad42d57adcb1d95af2/",
+        title: "advance heartbeat 17:02 IDT Jul 19 — #1669 CI ❌ + UNKNOWN, no change",
+        status: "running",
+        timestamp: "2026-07-19 17:02 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7a91cb4e765a9e4c29c9",
         url: "http://127.0.0.1:3030/ui/s/019f7a91cb4e765a9e4c29c9/",
         title: "advance heartbeat 16:32 IDT Jul 19 — #1669 CI ❌ + UNKNOWN mergeable (was CONFLICTING)",
-        status: "running",
+        status: "completed",
         timestamp: "2026-07-19 16:32 IDT",
         outputFile: null,
       },
@@ -394,16 +418,16 @@ export const MERGED = [
 
 export const ALERTS = [
   {
+    level: "yellow",
+    message: "🟡 #1638 (JN-5725, off-board): MERGEABLE recovered (was CONFLICTING 🔴). NEW CI run 29689910782 IN PROGRESS (17:02 IDT): bake ✅, JIRA ✅, atlas-validate ✅, check-changes ✅ — integration-run ⏳, pre-commit-run ⏳, tox-run ⏳, e2e-api ⏳. Awaiting CI completion to confirm fix.",
+  },
+  {
     level: "red",
-    message: "🔴 #1638 (JN-5725, off-board): DOUBLE REGRESSION — CI run 29688060716 COMPLETE: e2e-smoke ❌ (new!), e2e-tests ❌, all-checks ❌. Fix push changed failure from e2e-api→e2e-smoke but not resolved. PLUS now CONFLICTING (was MERGEABLE at 16:02 IDT). Must: resolve conflict + fix e2e-smoke + e2e-tests.",
+    message: "🔴 #1690 DRAFT (aipcc-27645-server-resources AIPCC-27645): now CONFLICTING (17:02 IDT — was UNKNOWN). No active CI run. Needs: rebase on main to resolve conflict, then CI will re-run.",
   },
   {
     level: "red",
     message: "🔴 #1669 (jn-5872 JN-5872): CI REGRESSION — run 29683534910: pre-commit ❌ + nox ❌ (regression) + tox-run ❌ (regression) + all-checks ❌. Mergeable UNKNOWN (was CONFLICTING). Must fix CI.",
-  },
-  {
-    level: "yellow",
-    message: "🆕 #1690 DRAFT (aipcc-27645-server-resources AIPCC-27645): 'fix(helm): increase API server resources and probe tolerances'. NEW today (16:24 IDT). CI: all-checks ✅ but JIRA Association ❌ (AIPCC format not recognized). Needs: remove draft + JIRA Association CI fix decision.",
   },
   {
     level: "yellow",

@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-19 16:32 IDT (advance heartbeat — weekday daytime)*
+*Last updated: 2026-07-19 17:02 IDT (advance heartbeat — weekday daytime)*
 
 ---
 
@@ -8,7 +8,7 @@
 
 | Worktree | Zone | PR | CI | Jira | Status |
 |---------|------|----|----|------|--------|
-| aipcc-27645-server-resources | **Code** | [#1690 DRAFT](https://github.com/Jounce-IO/jounce/pull/1690) | 🟡 run 29688828097: all-checks ✅, pre-commit ✅, nox ✅, tox-run ✅, e2e-tests ✅ — JIRA Association ❌ (AIPCC format issue) | [AIPCC-27645](https://redhat.atlassian.net/browse/AIPCC-27645) | NEW today (16:24 IDT). "fix(helm): increase API server resources and probe tolerances". DRAFT PR. CI mostly passing except JIRA Association (AIPCC format not recognized by CI check). |
+| aipcc-27645-server-resources | **Code** | [#1690 DRAFT](https://github.com/Jounce-IO/jounce/pull/1690) | 🔴 CONFLICTING (new since 17:02 IDT — was UNKNOWN). Only CodeRabbit check shown (draft, no new CI on conflict) | [AIPCC-27645](https://redhat.atlassian.net/browse/AIPCC-27645) | 🔴 PR #1690 now CONFLICTING. Created today ~16:24 IDT. Needs: resolve conflict, then CI will re-run. |
 | jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | UNKNOWN (stale) | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) — New | 🔴 DRAFT + CONFLICTING; frozen since Jun 14. No change. |
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — New | Design session done Jun 30. Ready for Plan phase. Stale 19+ days. |
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | Last session Jul 8 IDLE. SHA 16ec44ea (2 commits). Needs: configs, rebase, PR. Stale 11+ days. |
@@ -59,29 +59,29 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (16:32 IDT Jul 19 vs 16:02 IDT Jul 19)
+## Key Changes (17:02 IDT Jul 19 vs 16:32 IDT Jul 19)
 
 | What changed | Delta |
 |---|---|
-| **#1638 — CI run 29688060716 COMPLETE + NOW CONFLICTING** | Run finished: FAIL e2e-smoke ❌, e2e-tests ❌, all-checks ❌ — fix push did NOT fully fix the issue. e2e-smoke now failing (was e2e-api before). Also PR became CONFLICTING (was MERGEABLE). 🔴 escalated from 🟡. |
-| **#1669 — no change** | CI still run 29683534910 (pre-commit ❌, nox ❌, tox-run ❌). Mergeable now UNKNOWN (was CONFLICTING). |
-| **NEW worktree: aipcc-27645-server-resources** | uid=295, Code zone, PR #1690 DRAFT — "fix(helm): increase API server resources and probe tolerances (AIPCC-27645)". Created today ~16:24 IDT. CI mostly passing, JIRA Association ❌ (AIPCC format issue). |
-| **6 Jira mismatches** | Confirmed via acli. All still active: AIPCC-26976 New, AIPCC-25962 In Progress, AIPCC-24425 New, AIPCC-23824 New, AIPCC-23788 New, AIPCC-23220 New. |
+| **#1638 — MERGEABLE recovered + new CI run IN PROGRESS** | Was CONFLICTING 🔴 at 16:32 IDT. Now MERGEABLE 🟡. New CI run 29689910782 IN PROGRESS: bake ✅, JIRA ✅, atlas-validate ✅, check-changes ✅, CodeRabbit ✅; integration-run ⏳, pre-commit-run ⏳, tox-run ⏳, e2e-api ⏳. Downgraded from 🔴 to 🟡. |
+| **#1690 — now CONFLICTING** | Was UNKNOWN at 16:32 IDT. Now CONFLICTING 🔴 — needs rebase on main. Escalated. |
+| **#1669 — no change** | CI still run 29683534910 (pre-commit ❌, nox ❌, tox-run ❌). Mergeable UNKNOWN. |
+| **6 Jira mismatches** | No change. AIPCC-26976 New, AIPCC-25962 In Progress, AIPCC-24425 New, AIPCC-23824 New, AIPCC-23788 New, AIPCC-23220 New. |
 
 ---
 
 ## Attention Items
 
-### 🔴 #1638 (off-board JN-5725) — CONFLICTING + CI FAILING (e2e-smoke + e2e-tests)
+### 🟡 #1638 (off-board JN-5725) — MERGEABLE recovered, new CI run IN PROGRESS
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements (JN-5725)"
-- State: OPEN, **CONFLICTING** 🔴 (new since 16:32 IDT)
-- **Run 29688060716** (COMPLETE):
-  - FAIL: all-checks ❌, e2e-smoke ❌, e2e-tests ❌
-  - PASS: bake ✅, JIRA ✅, atlas-validate ✅, check-changes ✅, e2e-api ✅, integration-run ✅, integration-tests ✅, nox ✅, pre-commit ✅, pre-commit-run ✅, tox-run ✅
-  - SKIP: atlas-validate-run, e2e-priority, e2e-product
-- **e2e-smoke now failing** (in addition to e2e-tests) — regression shifted from e2e-api→e2e-smoke
-- **Action:** Must resolve conflict on main AND fix e2e-smoke + e2e-tests failures.
+- State: OPEN, **MERGEABLE** 🟡 (recovered from CONFLICTING at 16:32 IDT)
+- **Run 29689910782** (IN PROGRESS as of 17:02 IDT):
+  - PASS so far: bake ✅, JIRA ✅, atlas-validate ✅, check-changes ✅, CodeRabbit ✅
+  - PENDING: integration-run ⏳, pre-commit-run ⏳, tox-run ⏳, e2e-api ⏳
+  - SKIP: atlas-validate-run
+- **Positive signs:** bake + JIRA + atlas-validate passing early; awaiting e2e results
+- **Action:** Wait for CI run 29689910782 to complete. If all-checks passes, can proceed to review.
 
 ---
 
@@ -114,15 +114,13 @@ PR [#1670](https://github.com/Jounce-IO/jounce/pull/1670): "docs(jbenchmark): ad
 
 ---
 
-### 🆕 #1690 DRAFT (aipcc-27645-server-resources) — New today
+### 🔴 #1690 DRAFT (aipcc-27645-server-resources) — Now CONFLICTING
 
 PR [#1690](https://github.com/Jounce-IO/jounce/pull/1690): "fix(helm): increase API server resources and probe tolerances (AIPCC-27645)"
-- State: OPEN, isDraft:true, UNKNOWN mergeable
-- **Run 29688828097** (complete):
-  - FAIL: JIRA Association ❌ (likely AIPCC ticket format not recognized by CI check)
-  - PASS: all-checks ✅, pre-commit ✅, pre-commit-run ✅, nox ✅, tox-run ✅, atlas-validate ✅, check-changes ✅, e2e-tests ✅, integration-tests ✅
-  - Note: all-checks passing means JIRA Association is not blocking gate
-- Created today ~16:24 IDT. Need Joseph to decide: remove draft, fix JIRA Association check if needed.
+- State: OPEN, isDraft:true, **CONFLICTING** 🔴 (new since 17:02 IDT — was UNKNOWN)
+- Only CI check visible: CodeRabbit (skipped — draft PR). No active CI run due to conflict.
+- Created today ~16:24 IDT. Prior CI run 29688828097 all-checks ✅ (before conflict).
+- **Action:** Rebase aipcc-27645-server-resources on main to resolve conflict, then CI will re-run.
 
 ---
 
