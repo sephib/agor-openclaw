@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-19 16:32 IDT",
+    actions: 0,
+    findings: 2,
+    status: "ok",
+    summary: "#1638 CI run 29688060716 COMPLETE — e2e-smoke ❌ (new), e2e-tests ❌, all-checks ❌; fix push did not fix; PR now CONFLICTING (was MERGEABLE). 🔴 escalated. NEW worktree aipcc-27645-server-resources (PR #1690 DRAFT, AIPCC-27645). #1669 unchanged CI ❌. 0 merges. 6 Jira mismatches.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7a91cb4e765a9e4c29c9/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-19 16:02 IDT",
     actions: 0,
     findings: 1,

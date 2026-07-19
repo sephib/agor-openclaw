@@ -1,6 +1,32 @@
-export const LAST_UPDATED = "2026-07-19 16:02 IDT";
+export const LAST_UPDATED = "2026-07-19 16:32 IDT";
 
 export const WORKTREES = [
+  {
+    ticket: "AIPCC-27645",
+    ticketUrl: "https://redhat.atlassian.net/browse/AIPCC-27645",
+    title: "Increase API server resources and probe tolerances (AIPCC-27645)",
+    branch: "aipcc-27645-server-resources",
+    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/aipcc-27645-server-resources",
+    zone: "Code",
+    pr: "#1690 DRAFT",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1690",
+    status: "🆕 NEW today (16:24 IDT). DRAFT PR #1690. CI run 29688828097: all-checks ✅, nox ✅, tox-run ✅, e2e-tests ✅ — JIRA Association ❌ (AIPCC format not recognized by CI check). Needs: remove draft + resolve JIRA Association CI.",
+    blockedOn: "DRAFT + JIRA Association CI issue",
+    blockedType: "active",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7a91cb4e765a9e4c29c9/",
+    sessionLabel: "advance heartbeat 16:32 IDT Jul 19 — NEW worktree discovered, PR #1690 DRAFT",
+    recentSessions: [
+      {
+        sessionId: "019f7a91cb4e765a9e4c29c9",
+        url: "http://127.0.0.1:3030/ui/s/019f7a91cb4e765a9e4c29c9/",
+        title: "advance heartbeat 16:32 IDT Jul 19 — NEW worktree aipcc-27645-server-resources discovered",
+        status: "running",
+        timestamp: "2026-07-19 16:32 IDT",
+        outputFile: null,
+      },
+    ],
+    lastActive: "2026-07-19 16:24 IDT",
+  },
   {
     ticket: "JN-5695",
     ticketUrl: "https://redhat.atlassian.net/browse/JN-5695",
@@ -27,17 +53,25 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1667",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1667",
-    status: "🔴 #1667 CONFLICTING — needs rebase on main. CI stale (run 29402877354 all-pass, pre-conflict). Unchanged since Jul 17.",
-    blockedOn: "CONFLICTING — needs rebase",
+    status: "🟡 #1667 mergeable UNKNOWN (was CONFLICTING — possibly resolving). CI stale (run 29402877354 all-pass, pre-conflict). Needs rebase on main.",
+    blockedOn: "Needs rebase on main",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7a7654257aa0a7d5b373/",
-    sessionLabel: "advance heartbeat 16:02 IDT Jul 19 — #1638 fix pushed, new CI run 29688060716 IN PROGRESS",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7a91cb4e765a9e4c29c9/",
+    sessionLabel: "advance heartbeat 16:32 IDT Jul 19 — #1667 UNKNOWN (was CONFLICTING)",
     recentSessions: [
+      {
+        sessionId: "019f7a91cb4e765a9e4c29c9",
+        url: "http://127.0.0.1:3030/ui/s/019f7a91cb4e765a9e4c29c9/",
+        title: "advance heartbeat 16:32 IDT Jul 19 — #1667 UNKNOWN mergeable (was CONFLICTING)",
+        status: "running",
+        timestamp: "2026-07-19 16:32 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7a7654257aa0a7d5b373",
         url: "http://127.0.0.1:3030/ui/s/019f7a7654257aa0a7d5b373/",
         title: "advance heartbeat 16:02 IDT Jul 19 — #1638 fix pushed, new CI run 29688060716 IN PROGRESS",
-        status: "running",
+        status: "completed",
         timestamp: "2026-07-19 16:02 IDT",
         outputFile: null,
       },
@@ -65,16 +99,8 @@ export const WORKTREES = [
         timestamp: "2026-07-19 14:32 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f7a0876357e8d8774bea7",
-        url: "http://127.0.0.1:3030/ui/s/019f7a0876357e8d8774bea7/",
-        title: "advance heartbeat 14:00 IDT Jul 19 — #1638 CONFLICTING; #1669 CI regression",
-        status: "completed",
-        timestamp: "2026-07-19 14:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-19 16:02 IDT",
+    lastActive: "2026-07-19 16:32 IDT",
   },
   {
     ticket: "JN-5872",
@@ -85,17 +111,25 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1669",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1669",
-    status: "🔴 CI REGRESSION + CONFLICTING — run 29683534910 (Jul 19): pre-commit ❌, nox ❌ (regression), tox-run ❌ (regression), all-checks ❌. Also NOW CONFLICTING (14:32 IDT Jul 19). Must rebase + fix CI.",
-    blockedOn: "CI REGRESSION + CONFLICTING — rebase needed + pre-commit/nox/tox-run fix",
+    status: "🔴 CI ❌ run 29683534910 (Jul 19): pre-commit ❌, nox ❌ (regression), tox-run ❌ (regression), all-checks ❌. Mergeable UNKNOWN (was CONFLICTING). Must fix CI.",
+    blockedOn: "CI REGRESSION — pre-commit/nox/tox-run fix needed",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7a7654257aa0a7d5b373/",
-    sessionLabel: "advance heartbeat 16:02 IDT Jul 19 — #1669 CI ❌ + CONFLICTING unchanged (run 29683534910)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7a91cb4e765a9e4c29c9/",
+    sessionLabel: "advance heartbeat 16:32 IDT Jul 19 — #1669 CI ❌ + UNKNOWN (was CONFLICTING)",
     recentSessions: [
+      {
+        sessionId: "019f7a91cb4e765a9e4c29c9",
+        url: "http://127.0.0.1:3030/ui/s/019f7a91cb4e765a9e4c29c9/",
+        title: "advance heartbeat 16:32 IDT Jul 19 — #1669 CI ❌ + UNKNOWN mergeable (was CONFLICTING)",
+        status: "running",
+        timestamp: "2026-07-19 16:32 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7a7654257aa0a7d5b373",
         url: "http://127.0.0.1:3030/ui/s/019f7a7654257aa0a7d5b373/",
         title: "advance heartbeat 16:02 IDT Jul 19 — #1669 CI ❌ + CONFLICTING unchanged (run 29683534910)",
-        status: "running",
+        status: "completed",
         timestamp: "2026-07-19 16:02 IDT",
         outputFile: null,
       },
@@ -123,16 +157,8 @@ export const WORKTREES = [
         timestamp: "2026-07-19 14:32 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f7a0876357e8d8774bea7",
-        url: "http://127.0.0.1:3030/ui/s/019f7a0876357e8d8774bea7/",
-        title: "advance heartbeat 14:00 IDT Jul 19 — #1669 CI REGRESSION (run 29683534910)",
-        status: "completed",
-        timestamp: "2026-07-19 14:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-19 16:02 IDT",
+    lastActive: "2026-07-19 16:32 IDT",
   },
   {
     ticket: "JN-5865",
@@ -369,15 +395,19 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "red",
-    message: "🔴 #1669 (jn-5872 JN-5872): CI REGRESSION + NOW CONFLICTING — run 29683534910: pre-commit ❌ + nox ❌ (regression) + tox-run ❌ (regression) + all-checks ❌. ALSO CONFLICTING ❌ as of 14:32 IDT. Must rebase + fix CI.",
-  },
-  {
-    level: "yellow",
-    message: "🟡 #1638 (JN-5725, off-board): FIX PUSHED — new CI run 29688060716 IN PROGRESS (supersedes failed run 29686833295: e2e-api ❌, e2e-tests ❌). JIRA ✅, check-changes ✅, bake PENDING. Await completion to confirm e2e fix. MERGEABLE (no conflict).",
+    message: "🔴 #1638 (JN-5725, off-board): DOUBLE REGRESSION — CI run 29688060716 COMPLETE: e2e-smoke ❌ (new!), e2e-tests ❌, all-checks ❌. Fix push changed failure from e2e-api→e2e-smoke but not resolved. PLUS now CONFLICTING (was MERGEABLE at 16:02 IDT). Must: resolve conflict + fix e2e-smoke + e2e-tests.",
   },
   {
     level: "red",
-    message: "🔴 #1667 (jn-5845 JN-5845): CONFLICTING — needs rebase on main. CI run 29402877354 stale (all-pass, pre-conflict). Unchanged since Jul 17.",
+    message: "🔴 #1669 (jn-5872 JN-5872): CI REGRESSION — run 29683534910: pre-commit ❌ + nox ❌ (regression) + tox-run ❌ (regression) + all-checks ❌. Mergeable UNKNOWN (was CONFLICTING). Must fix CI.",
+  },
+  {
+    level: "yellow",
+    message: "🆕 #1690 DRAFT (aipcc-27645-server-resources AIPCC-27645): 'fix(helm): increase API server resources and probe tolerances'. NEW today (16:24 IDT). CI: all-checks ✅ but JIRA Association ❌ (AIPCC format not recognized). Needs: remove draft + JIRA Association CI fix decision.",
+  },
+  {
+    level: "yellow",
+    message: "🟡 #1667 (jn-5845 JN-5845): Mergeable UNKNOWN (was CONFLICTING — possibly resolving). CI stale (run 29402877354). Still needs rebase on main.",
   },
   {
     level: "yellow",

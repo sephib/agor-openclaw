@@ -4,6 +4,13 @@
 
 ---
 
+## 16:32 IDT — Weekday Daytime Heartbeat (Jul 19 2026)
+- PRs checked: #1638 (OPEN, NOW CONFLICTING — CI run 29688060716 COMPLETE: e2e-smoke ❌, e2e-tests ❌, all-checks ❌, others pass), #1669 (OPEN, UNKNOWN — CI still run 29683534910: pre-commit ❌, nox ❌, tox-run ❌), #1667 (OPEN, UNKNOWN), #1670 (DRAFT, UNKNOWN), #1596 (DRAFT), #1690 NEW (DRAFT, AIPCC-27645 — JIRA Association ❌, others pass)
+- Merges detected: none (0 merges this run)
+- CI changes: **#1638 run 29688060716 COMPLETE** — e2e-smoke now failing (was e2e-api before fix push); fix push did not resolve; PR also became CONFLICTING (was MERGEABLE). Escalated back to 🔴. #1669 unchanged. **NEW #1690** created today (DRAFT, mostly CI passing except JIRA Association — AIPCC format issue).
+- Flags: 🔴 #1638 double regression (CONFLICTING + e2e-smoke + e2e-tests). 🔴 #1669 still CI failing. NEW worktree aipcc-27645-server-resources discovered. 6 Jira mismatches unchanged.
+- Next: #1638 needs conflict resolve + e2e-smoke fix. #1669 needs pre-commit/nox/tox fix. Joseph to decide on #1690 JIRA Association CI issue.
+
 ## 16:02 IDT — Weekday Daytime Heartbeat (Jul 19 2026)
 - PRs checked: #1638 (OPEN, MERGEABLE — new CI run 29688060716 IN PROGRESS), #1669 (OPEN, CONFLICTING, CI ❌ run 29683534910 unchanged), #1667 (OPEN, CONFLICTING unchanged), #1670 (DRAFT, CI stale unchanged), #1596 (DRAFT, CONFLICTING unchanged)
 - Merges detected: none (0 merges this run)
