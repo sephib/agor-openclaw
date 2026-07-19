@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-19 12:00 IDT (advance heartbeat — weekday daytime)*
+*Last updated: 2026-07-19 12:30 IDT (advance heartbeat — weekday daytime)*
 
 ---
 
@@ -16,6 +16,7 @@
 | jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | 🔴 run 29509136918 COMPLETE: pre-commit ❌; all others ✅ (no new runs since Jul 16) | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — In Progress | 🔴 **CI FAIL — pre-commit only.** No CI activity in 3+ days. |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — New | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 11+** (still Ingest, should be Code). |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 24+ days. Propose archive. |
+| ~~model-packaging-cr~~ | ~~Code Review~~ | ~~—~~ | ~~—~~ | ~~—~~ | **ARCHIVED 12:30 IDT Jul 19** — PR #161 CLOSED Jun 16. Stale 34 days. Autonomous archive. |
 
 ---
 
@@ -58,16 +59,17 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (12:00 IDT Jul 19 vs 11:30 IDT Jul 19)
+## Key Changes (12:30 IDT Jul 19 vs 12:00 IDT Jul 19)
 
 | What changed | Delta |
 |---|---|
-| **#1638 NEW CI RUN** ⚠️ | New run 29680583712 triggered: bake ❌ FAIL (regression — was ✅ in run 29654523528). all-checks ✅ still pass → still mergeable. |
-| **#1669 unchanged** | Same run 29509136918: pre-commit ❌ only. Stale 3+ days. |
+| **model-packaging-cr ARCHIVED** ✅ | Newly detected on board (Code Review, uid=128, model-packaging-pipeline repo). PR #161 CLOSED Jun 16. Stale 34 days. Archived autonomously at 12:30 IDT. |
+| **#1638 unchanged** | Same run 29680583712: bake ❌ FAIL, all-checks ✅ PASS. No new CI. |
+| **#1669 unchanged** | Same run 29509136918: pre-commit ❌ only. Stale 3+ days. No new CI. |
 | **#1667 still CONFLICTING** | No change — still needs rebase. |
 | **#1670 still DRAFT** | No change — CI stale (run 29403233416 all-pass). |
-| **Board zones static** | No zone moves, no merges, no new worktrees. |
-| **6 Jira mismatches** | Unchanged. Jira MCP 401 + acli `--fields` flag invalid. |
+| **Board zones otherwise static** | No other zone moves, no new merges. |
+| **6 Jira mismatches** | Unchanged. AIPCC keys now identified: AIPCC-26976/25962/24425/23824/23788/23220. |
 
 ---
 
@@ -153,7 +155,9 @@ Daytime sessions running correctly. 51h board state gap caused by this pattern.
 
 ## Archived This Session
 
-None this run (jn-5871 was already archived by Joseph on Jul 15 — just corrected our records).
+| Branch | PR | Reason | Time |
+|--------|-----|--------|------|
+| **model-packaging-cr** | [#161 CLOSED](https://github.com/Jounce-IO/model-packaging-pipeline/pull/161) | PR #161 CLOSED Jun 16; stale 34 days | 12:30 IDT Jul 19 |
 
 Previously archived:
 | Branch | PR | Reason | Time |

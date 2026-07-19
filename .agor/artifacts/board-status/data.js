@@ -1,23 +1,6 @@
-export const LAST_UPDATED = "2026-07-19 12:00 IDT";
+export const LAST_UPDATED = "2026-07-19 12:30 IDT";
 
 export const WORKTREES = [
-  {
-    ticket: null,
-    ticketUrl: null,
-    title: "Model packaging code review",
-    branch: "model-packaging-cr",
-    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/model-packaging-pipeline/model-packaging-cr",
-    zone: "Code Review",
-    pr: null,
-    prUrl: null,
-    status: "⚠️ model-packaging-pipeline repo. Created Jun 15 — stagnant 34+ days. No PR URL set. In Code Review zone with no visible work. Needs investigation or archive.",
-    blockedOn: "No PR, stagnant 34+ days",
-    blockedType: "blocked",
-    sessionUrl: null,
-    sessionLabel: null,
-    recentSessions: [],
-    lastActive: "2026-06-15 16:08 IDT",
-  },
   {
     ticket: "JN-5695",
     ticketUrl: "https://redhat.atlassian.net/browse/JN-5695",
@@ -47,14 +30,22 @@ export const WORKTREES = [
     status: "🔴 #1667 CONFLICTING — needs rebase on main. CI stale (run 29402877354 all-pass, pre-conflict). Unchanged since Jul 17.",
     blockedOn: "CONFLICTING — needs rebase",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f799a987778afa9c625fc/",
-    sessionLabel: "advance heartbeat 12:00 IDT Jul 19 — #1638 bake ❌ NEW (run 29680583712); #1667 CONFLICTING unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f79b60f8575b4b172c3b5/",
+    sessionLabel: "advance heartbeat 12:30 IDT Jul 19 — model-packaging-cr archived; board otherwise static",
     recentSessions: [
+      {
+        sessionId: "019f79b60f8575b4b172c3b5",
+        url: "http://127.0.0.1:3030/ui/s/019f79b60f8575b4b172c3b5/",
+        title: "advance heartbeat 12:30 IDT Jul 19 — model-packaging-cr archived (PR #161 CLOSED); board otherwise static",
+        status: "completed",
+        timestamp: "2026-07-19 12:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f799a987778afa9c625fc",
         url: "http://127.0.0.1:3030/ui/s/019f799a987778afa9c625fc/",
         title: "advance heartbeat 12:00 IDT Jul 19 — #1638 bake ❌ NEW (run 29680583712); #1667 CONFLICTING unchanged",
-        status: "running",
+        status: "completed",
         timestamp: "2026-07-19 12:00 IDT",
         outputFile: null,
       },
@@ -82,16 +73,8 @@ export const WORKTREES = [
         timestamp: "2026-07-19 10:32 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f792cba5373e4b3128661",
-        url: "http://127.0.0.1:3030/ui/s/019f792cba5373e4b3128661/",
-        title: "advance heartbeat 10:00 IDT Jul 19 — board static; #1667 CONFLICTING unchanged",
-        status: "completed",
-        timestamp: "2026-07-19 10:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-19 12:00 IDT",
+    lastActive: "2026-07-19 12:30 IDT",
   },
   {
     ticket: "JN-5872",
@@ -105,14 +88,22 @@ export const WORKTREES = [
     status: "🔴 CI run 29509136918 COMPLETE (Jul 16): pre-commit ❌ only (all-checks ❌). PROGRESS: nox ✅ tox ✅ e2e ✅ pass. No new CI in 3+ days. Fix pre-commit to unblock merge.",
     blockedOn: "CI FAIL — pre-commit only (run 29509136918, stale 3+ days)",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f799a987778afa9c625fc/",
-    sessionLabel: "advance heartbeat 12:00 IDT Jul 19 — #1669 pre-commit ❌ unchanged (run 29509136918, stale 3+ days)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f79b60f8575b4b172c3b5/",
+    sessionLabel: "advance heartbeat 12:30 IDT Jul 19 — #1669 pre-commit ❌ unchanged (run 29509136918, stale 3+ days)",
     recentSessions: [
+      {
+        sessionId: "019f79b60f8575b4b172c3b5",
+        url: "http://127.0.0.1:3030/ui/s/019f79b60f8575b4b172c3b5/",
+        title: "advance heartbeat 12:30 IDT Jul 19 — model-packaging-cr archived; #1669 pre-commit ❌ unchanged",
+        status: "completed",
+        timestamp: "2026-07-19 12:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f799a987778afa9c625fc",
         url: "http://127.0.0.1:3030/ui/s/019f799a987778afa9c625fc/",
         title: "advance heartbeat 12:00 IDT Jul 19 — #1669 pre-commit ❌ unchanged (run 29509136918, stale 3+ days)",
-        status: "running",
+        status: "completed",
         timestamp: "2026-07-19 12:00 IDT",
         outputFile: null,
       },
@@ -140,16 +131,8 @@ export const WORKTREES = [
         timestamp: "2026-07-19 10:32 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f792cba5373e4b3128661",
-        url: "http://127.0.0.1:3030/ui/s/019f792cba5373e4b3128661/",
-        title: "advance heartbeat 10:00 IDT Jul 19 — board static; #1669 pre-commit ❌ unchanged (run 29509136918, stale)",
-        status: "completed",
-        timestamp: "2026-07-19 10:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-19 12:00 IDT",
+    lastActive: "2026-07-19 12:30 IDT",
   },
   {
     ticket: "JN-5865",
@@ -402,7 +385,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "🟡 Jira mismatches (6): JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546 — PRs merged but Jira not Done (all showing New/In Progress). JN-5891 RESOLVED ✅. Jira MCP 401 — use acli.",
+    message: "🟡 Jira mismatches (6): JN-5842 (AIPCC-26976), JN-5877 (AIPCC-24425), JN-5874 (AIPCC-23824), JN-5401 (AIPCC-23788), JN-5827 (AIPCC-23220), JN-5546 (AIPCC-25962) — PRs merged but Jira not Done. Use acli jira workitem transition.",
   },
   {
     level: "yellow",
@@ -419,9 +402,5 @@ export const ALERTS = [
   {
     level: "yellow",
     message: "⚠️ jira-operations: NO ZONE, stale 24+ days (last Jun 25). No sessions, no PR. Propose archive.",
-  },
-  {
-    level: "yellow",
-    message: "⚠️ model-packaging-cr (Code Review zone): stagnant 34+ days. No PR URL set. Needs investigation or archive.",
   },
 ];
