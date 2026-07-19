@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-19 15:32 IDT";
+export const LAST_UPDATED = "2026-07-19 16:02 IDT";
 
 export const WORKTREES = [
   {
@@ -30,14 +30,22 @@ export const WORKTREES = [
     status: "🔴 #1667 CONFLICTING — needs rebase on main. CI stale (run 29402877354 all-pass, pre-conflict). Unchanged since Jul 17.",
     blockedOn: "CONFLICTING — needs rebase",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7a5adcae776c8ae5b5f0/",
-    sessionLabel: "advance heartbeat 15:32 IDT Jul 19 — #1638 CI REGRESSION run 29686833295 (e2e-api ❌, e2e-tests ❌)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7a7654257aa0a7d5b373/",
+    sessionLabel: "advance heartbeat 16:02 IDT Jul 19 — #1638 fix pushed, new CI run 29688060716 IN PROGRESS",
     recentSessions: [
+      {
+        sessionId: "019f7a7654257aa0a7d5b373",
+        url: "http://127.0.0.1:3030/ui/s/019f7a7654257aa0a7d5b373/",
+        title: "advance heartbeat 16:02 IDT Jul 19 — #1638 fix pushed, new CI run 29688060716 IN PROGRESS",
+        status: "running",
+        timestamp: "2026-07-19 16:02 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7a5adcae776c8ae5b5f0",
         url: "http://127.0.0.1:3030/ui/s/019f7a5adcae776c8ae5b5f0/",
         title: "advance heartbeat 15:32 IDT Jul 19 — #1638 CI REGRESSION (e2e-api ❌, e2e-tests ❌)",
-        status: "running",
+        status: "completed",
         timestamp: "2026-07-19 15:32 IDT",
         outputFile: null,
       },
@@ -65,16 +73,8 @@ export const WORKTREES = [
         timestamp: "2026-07-19 14:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f79ecfec47a8ca696a5cb",
-        url: "http://127.0.0.1:3030/ui/s/019f79ecfec47a8ca696a5cb/",
-        title: "advance heartbeat 13:30 IDT Jul 19 — #1638 new CI run 29683041833; board static",
-        status: "completed",
-        timestamp: "2026-07-19 13:30 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-19 15:32 IDT",
+    lastActive: "2026-07-19 16:02 IDT",
   },
   {
     ticket: "JN-5872",
@@ -88,14 +88,22 @@ export const WORKTREES = [
     status: "🔴 CI REGRESSION + CONFLICTING — run 29683534910 (Jul 19): pre-commit ❌, nox ❌ (regression), tox-run ❌ (regression), all-checks ❌. Also NOW CONFLICTING (14:32 IDT Jul 19). Must rebase + fix CI.",
     blockedOn: "CI REGRESSION + CONFLICTING — rebase needed + pre-commit/nox/tox-run fix",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7a5adcae776c8ae5b5f0/",
-    sessionLabel: "advance heartbeat 15:32 IDT Jul 19 — #1669 CI ❌ + CONFLICTING unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7a7654257aa0a7d5b373/",
+    sessionLabel: "advance heartbeat 16:02 IDT Jul 19 — #1669 CI ❌ + CONFLICTING unchanged (run 29683534910)",
     recentSessions: [
+      {
+        sessionId: "019f7a7654257aa0a7d5b373",
+        url: "http://127.0.0.1:3030/ui/s/019f7a7654257aa0a7d5b373/",
+        title: "advance heartbeat 16:02 IDT Jul 19 — #1669 CI ❌ + CONFLICTING unchanged (run 29683534910)",
+        status: "running",
+        timestamp: "2026-07-19 16:02 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7a5adcae776c8ae5b5f0",
         url: "http://127.0.0.1:3030/ui/s/019f7a5adcae776c8ae5b5f0/",
         title: "advance heartbeat 15:32 IDT Jul 19 — #1669 CI ❌ + CONFLICTING unchanged (run 29683534910)",
-        status: "running",
+        status: "completed",
         timestamp: "2026-07-19 15:32 IDT",
         outputFile: null,
       },
@@ -123,16 +131,8 @@ export const WORKTREES = [
         timestamp: "2026-07-19 14:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f79ecfec47a8ca696a5cb",
-        url: "http://127.0.0.1:3030/ui/s/019f79ecfec47a8ca696a5cb/",
-        title: "advance heartbeat 13:30 IDT Jul 19 — #1669 pre-commit ❌ unchanged (run 29509136918)",
-        status: "completed",
-        timestamp: "2026-07-19 13:30 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-19 15:32 IDT",
+    lastActive: "2026-07-19 16:02 IDT",
   },
   {
     ticket: "JN-5865",
@@ -372,8 +372,8 @@ export const ALERTS = [
     message: "🔴 #1669 (jn-5872 JN-5872): CI REGRESSION + NOW CONFLICTING — run 29683534910: pre-commit ❌ + nox ❌ (regression) + tox-run ❌ (regression) + all-checks ❌. ALSO CONFLICTING ❌ as of 14:32 IDT. Must rebase + fix CI.",
   },
   {
-    level: "red",
-    message: "🔴 #1638 (JN-5725, off-board): CI REGRESSION — run 29686833295 (COMPLETE): e2e-api ❌ + e2e-tests ❌ + all-checks ❌. MERGE BLOCKED. Most checks pass (bake ✅, pre-commit ✅, tox-run ✅, nox ✅, integration-run ✅). A new push triggered run 29686833295 (superseding 29686179040). e2e failures need investigation.",
+    level: "yellow",
+    message: "🟡 #1638 (JN-5725, off-board): FIX PUSHED — new CI run 29688060716 IN PROGRESS (supersedes failed run 29686833295: e2e-api ❌, e2e-tests ❌). JIRA ✅, check-changes ✅, bake PENDING. Await completion to confirm e2e fix. MERGEABLE (no conflict).",
   },
   {
     level: "red",
