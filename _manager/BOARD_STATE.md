@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-19 10:32 IDT (advance heartbeat — weekday daytime)*
+*Last updated: 2026-07-19 11:00 IDT (advance heartbeat — weekday daytime)*
 
 ---
 
@@ -15,7 +15,6 @@
 | jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | ✅ CI PASS (run 29402877354 — stale, pre-conflict) | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) — New | 🔴 **CONFLICTING** — needs rebase on main. CI stale. |
 | jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | 🔴 run 29509136918 COMPLETE: pre-commit ❌; all others ✅ (no new runs since Jul 16) | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — In Progress | 🔴 **CI FAIL — pre-commit only.** No CI activity in 3+ days. |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — New | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 11+** (still Ingest, should be Code). |
-| jn-5871 | **Code** (git-only) | — | — | [JN-5871](https://redhat.atlassian.net/browse/JN-5871) — New | Code done ~00:58 IDT Jul 9. SHA fc6e5f77. ⚠️ NOT in Agor board — git branch only. No PR created. Day 10+. |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 24+ days. Propose archive. |
 
 ---
@@ -59,16 +58,17 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (10:32 IDT Jul 19 vs 10:00 IDT Jul 19)
+## Key Changes (11:00 IDT Jul 19 vs 10:32 IDT Jul 19)
 
 | What changed | Delta |
 |---|---|
-| **Board static** | No merges, no CI changes, no zone moves since 10:00 IDT run. All PRs unchanged. |
+| **Board static** | No merges, no CI changes, no zone moves since 10:32 IDT run. All PRs unchanged. |
+| **jn-5871 CONFIRMED ARCHIVED** | Corrected prior "NOT in Agor" note — jn-5871 WAS in Agor (Code zone, uid=283) and was ARCHIVED by Joseph on Jul 15 09:57 UTC. No PR was created. JN-5871 still New. Removed from Active Worktrees. |
 | **#1638 unchanged** | Still OPEN, MERGEABLE ✅, CI ALL PASS (run 29654523528). READY TO MERGE. |
 | **#1669 unchanged** | Same run 29509136918: pre-commit ❌ only. Stale 3+ days. |
 | **#1667 still CONFLICTING** | No change — still needs rebase. |
 | **#1670 still DRAFT** | No change — CI stale (run 29403233416 all-pass). |
-| **6 Jira mismatches** | Unchanged. Jira MCP 401 + acli JN- lookup failing (wrong instance). |
+| **6 Jira mismatches** | Unchanged. Jira MCP 401 + acli `--fields` flag invalid. |
 
 ---
 
@@ -130,11 +130,10 @@ Use `acli jira workitem transition` to update. Jira MCP 401. acli working.
 
 ---
 
-### ⚠️ jn-5871 — NOT in Agor (git-only, no PR, Day 10+)
+### ✅ jn-5871 — ARCHIVED in Agor Jul 15 by Joseph
 
-- Code done ~00:58 IDT Jul 9. SHA fc6e5f77.
-- NOT registered as an Agor worktree. Git-only branch.
-- No PR created. **Flag for Joseph:** What should happen with jn-5871?
+- Was previously noted as "NOT in Agor" — **CORRECTED**: jn-5871 WAS registered in Agor (Code zone, uid=283) and was archived by Joseph on Jul 15 09:57 UTC.
+- No PR was created. JN-5871 still **New** in Jira — may need investigation if work should continue.
 
 ---
 
@@ -154,11 +153,12 @@ Daytime sessions running correctly. 51h board state gap caused by this pattern.
 
 ## Archived This Session
 
-None this run.
+None this run (jn-5871 was already archived by Joseph on Jul 15 — just corrected our records).
 
 Previously archived:
 | Branch | PR | Reason | Time |
 |--------|-----|--------|------|
+| **jn-5871** | — | ARCHIVED by Joseph (no PR, Code done) | 09:57 UTC Jul 15 |
 | **jn-5891-max-seconds-1200** | [#1673](https://github.com/Jounce-IO/jounce/pull/1673) | MERGED 14:14 IDT Jul 16 | 14:45 IDT Jul 16 |
 
 Previously archived (Jul 14):

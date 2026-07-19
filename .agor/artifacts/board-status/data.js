@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-19 10:32 IDT";
+export const LAST_UPDATED = "2026-07-19 11:00 IDT";
 
 export const WORKTREES = [
   {
@@ -47,9 +47,17 @@ export const WORKTREES = [
     status: "🔴 #1667 CONFLICTING — needs rebase on main. CI stale (run 29402877354 all-pass, pre-conflict). Unchanged since Jul 17.",
     blockedOn: "CONFLICTING — needs rebase",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f794831897effa7e3630b/",
-    sessionLabel: "advance heartbeat 10:32 IDT Jul 19 — board static; #1667 CONFLICTING unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7963ab7975d2bd42efb9/",
+    sessionLabel: "advance heartbeat 11:00 IDT Jul 19 — board static; #1667 CONFLICTING unchanged",
     recentSessions: [
+      {
+        sessionId: "019f7963ab7975d2bd42efb9",
+        url: "http://127.0.0.1:3030/ui/s/019f7963ab7975d2bd42efb9/",
+        title: "advance heartbeat 11:00 IDT Jul 19 — board static; #1667 CONFLICTING unchanged",
+        status: "completed",
+        timestamp: "2026-07-19 11:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f794831897effa7e3630b",
         url: "http://127.0.0.1:3030/ui/s/019f794831897effa7e3630b/",
@@ -82,16 +90,8 @@ export const WORKTREES = [
         timestamp: "2026-07-17 12:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f6e0490687cf6ae34c0c2",
-        url: "http://127.0.0.1:3030/ui/s/019f6e0490687cf6ae34c0c2/",
-        title: "weekend heartbeat 06:00 IDT Jul 17 — #1638 CI improved (all-checks ✅); #1667 CONFLICTING; #1669 pre-commit ❌ unchanged",
-        status: "completed",
-        timestamp: "2026-07-17 06:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-19 10:32 IDT",
+    lastActive: "2026-07-19 11:00 IDT",
   },
   {
     ticket: "JN-5872",
@@ -105,9 +105,17 @@ export const WORKTREES = [
     status: "🔴 CI run 29509136918 COMPLETE (Jul 16): pre-commit ❌ only (all-checks ❌). PROGRESS: nox ✅ tox ✅ e2e ✅ pass. No new CI in 3+ days. Fix pre-commit to unblock merge.",
     blockedOn: "CI FAIL — pre-commit only (run 29509136918, stale 3+ days)",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f794831897effa7e3630b/",
-    sessionLabel: "advance heartbeat 10:32 IDT Jul 19 — board static; #1669 pre-commit ❌ unchanged (run 29509136918, stale)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7963ab7975d2bd42efb9/",
+    sessionLabel: "advance heartbeat 11:00 IDT Jul 19 — board static; #1669 pre-commit ❌ unchanged (run 29509136918, stale)",
     recentSessions: [
+      {
+        sessionId: "019f7963ab7975d2bd42efb9",
+        url: "http://127.0.0.1:3030/ui/s/019f7963ab7975d2bd42efb9/",
+        title: "advance heartbeat 11:00 IDT Jul 19 — board static; #1669 pre-commit ❌ unchanged (run 29509136918, stale)",
+        status: "completed",
+        timestamp: "2026-07-19 11:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f794831897effa7e3630b",
         url: "http://127.0.0.1:3030/ui/s/019f794831897effa7e3630b/",
@@ -140,16 +148,8 @@ export const WORKTREES = [
         timestamp: "2026-07-17 12:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f6e0490687cf6ae34c0c2",
-        url: "http://127.0.0.1:3030/ui/s/019f6e0490687cf6ae34c0c2/",
-        title: "weekend heartbeat 06:00 IDT Jul 17 — #1669 pre-commit ❌ unchanged (run 29509136918)",
-        status: "completed",
-        timestamp: "2026-07-17 06:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-19 10:32 IDT",
+    lastActive: "2026-07-19 11:00 IDT",
   },
   {
     ticket: "JN-5865",
@@ -176,32 +176,6 @@ export const WORKTREES = [
       },
     ],
     lastActive: "2026-07-08 23:06 IDT",
-  },
-  {
-    ticket: "JN-5871",
-    ticketUrl: "https://redhat.atlassian.net/browse/JN-5871",
-    title: "Integrate IBM into runner main (JN-5871)",
-    branch: "jn-5871",
-    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/jn-5871",
-    zone: "Code",
-    pr: null,
-    prUrl: null,
-    status: "⚠️ Code done (~00:58 IDT Jul 9, SHA fc6e5f77). NOT in Agor board — no worktree registered. No PR created. Git-only branch. Day 10+. Needs investigation: create PR? Register in Agor?",
-    blockedOn: "Not in Agor — needs investigation (Day 10+)",
-    blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f43a679b57ca5918a79ca/",
-    sessionLabel: "code (done — but NOT in Agor, no PR)",
-    recentSessions: [
-      {
-        sessionId: "019f43a679b57ca5918a79ca",
-        url: "http://127.0.0.1:3030/ui/s/019f43a679b57ca5918a79ca/",
-        title: "Code JN-5871 — integrate IBM into runner main (done, SHA fc6e5f77)",
-        status: "idle",
-        timestamp: "2026-07-09 00:58 IDT",
-        outputFile: null,
-      },
-    ],
-    lastActive: "2026-07-09 00:58 IDT",
   },
   {
     ticket: "JN-5795",
@@ -431,8 +405,8 @@ export const ALERTS = [
     message: "🟡 Jira mismatches (6): JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546 — PRs merged but Jira not Done (all showing New/In Progress). JN-5891 RESOLVED ✅. Jira MCP 401 — use acli.",
   },
   {
-    level: "red",
-    message: "⚠️ jn-5871 (JN-5871): NOT in Agor board — no worktree registered. Code done ~00:58 IDT Jul 9 (SHA fc6e5f77), git-only branch, no PR. Day 10+. Needs investigation.",
+    level: "yellow",
+    message: "⚠️ jn-5871 (JN-5871): ARCHIVED in Agor by Joseph on Jul 15 — no PR created. Code done Jul 9 (SHA fc6e5f77). JN-5871 still New in Jira. Investigate if work should continue or ticket be closed.",
   },
   {
     level: "yellow",
