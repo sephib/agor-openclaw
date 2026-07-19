@@ -4,6 +4,25 @@
 
 ---
 
+## 00:04 IDT — Overnight Heartbeat (Jul 20 2026)
+- PRs checked: #1690 (OPEN/MERGEABLE ✅), #1691 (OPEN/MERGEABLE — pre-commit ❌ REGRESSION), #1638 (OPEN/MERGEABLE ✅), #1669 (OPEN/CONFLICTING), #1667 (OPEN/CONFLICTING), #1670 (DRAFT/MERGEABLE), #1596 (DRAFT/CONFLICTING)
+- Merges detected: none (0 merges overnight)
+- CI changes: **#1691 NEW RUN 29700868666** — e2e-product NOW PASSES ✅ (was PENDING). BUT: all-checks ❌, pre-commit ❌, pre-commit-run ❌ (REGRESSION — was passing). JIRA Association fixed (run 29701285829). Everything else unchanged.
+- Flags: 🔴 #1691 pre-commit REGRESSION overnight. 🟢 #1690 READY FOR REVIEW (unchanged). 🟢 #1638 READY FOR REVIEW (unchanged). 🔴 #1669 CI ❌ + CONFLICTING (unchanged). 6 Jira mismatches unchanged.
+- Next: Fix #1691 pre-commit failure (morning). Review+merge #1690 and #1638. Fix #1669 rebase+CI. Mark #1670 ready for review.
+
+---
+
+## 21:32 IDT — Weekday Daytime Heartbeat (Jul 19 2026)
+- PRs checked: #1638 (OPEN/MERGEABLE ✅), #1691 NEW RUN 29698179409 (OPEN/MERGEABLE, e2e-product PENDING), #1690 NOW READY (OPEN/MERGEABLE — no longer DRAFT, ALL CI PASS run 29698050089), #1669 (OPEN/CONFLICTING), #1667 (OPEN/CONFLICTING), #1670 (DRAFT/MERGEABLE), #1596 (DRAFT/CONFLICTING)
+- Merges detected: none (0 merges)
+- CI changes: **#1690 NO LONGER DRAFT** — isDraft changed false, CI run 29698050089 ALL PASS. **READY FOR REVIEW!** 🎉 **#1691 NEW CI RUN 29698179409** — e2e-product PENDING (all others pass). #1638 unchanged (ALL PASS). #1669/#1667 CONFLICTING unchanged.
+- Actions: 0 autonomous actions
+- Flags: 🟢 #1690 READY FOR REVIEW. 🟡 #1691 e2e-product pending. 🟢 #1638 ready. 🔴 #1669 CI ❌. 6 Jira mismatches.
+- Next: Wait for #1691 e2e-product result. Review+merge #1690 and #1638 morning. Fix #1669.
+
+---
+
 ## 19:32 IDT — Weekday Daytime Heartbeat (Jul 19 2026)
 - PRs checked: #1638 (OPEN/MERGEABLE ✅), #1691 NEW DRAFT (OPEN/MERGEABLE), #1690 (DRAFT/MERGEABLE), #1669 (OPEN/CONFLICTING), #1667 (OPEN/CONFLICTING), #1670 (DRAFT/MERGEABLE), #1596 (DRAFT/CONFLICTING)
 - Merges detected: none (0 merges)
@@ -2139,3 +2158,11 @@
 - CI changes: **#1690 NEW CI RUN 29697956064 TRIGGERED** — new commit pushed to DRAFT PR. Fast checks pass (atlas-validate ✅, check-changes ✅, e2e-tests ✅, integration-tests ✅), longer checks PENDING (tox-run, pre-commit-run, JIRA, add-required-labels, build-image). Previous run 29695543078 ALL PASS. #1691 unchanged (ALL CI PASS, run 29695655172). #1638 unchanged (ALL CI PASS). #1669 unchanged (CI ❌ + CONFLICTING, stale run 29683534910). #1667 unchanged (CONFLICTING).
 - Flags: #1690 CI in progress — watch next run. #1691 ready for review. #1638 ready for review. #1669 needs rebase + CI fix. 6 Jira mismatches unchanged.
 - Next: Wait for #1690 CI run 29697956064 to complete — if all pass, mark ready for review.
+
+## 21:32 IDT — Weekday Daytime Heartbeat (Jul 19 2026)
+- PRs checked: #1690 (OPEN/MERGEABLE ✅ — NO LONGER DRAFT + ALL CI PASS!), #1691 (OPEN/MERGEABLE — new run 29698179409, e2e-product PENDING), #1638 (OPEN/MERGEABLE ✅ — ALL CI PASS, unchanged), #1669 (OPEN/CONFLICTING — CI ❌ unchanged), #1667 (OPEN/CONFLICTING unchanged), #1670 (DRAFT/MERGEABLE unchanged), #1596 (DRAFT/CONFLICTING unchanged)
+- Merges detected: none (0 merges)
+- CI changes: 🎉 **#1690 NO LONGER DRAFT — ALL CI PASS** (run 29698050089): JIRA ✅, all-checks ✅, pre-commit ✅, tox-run ✅, e2e-smoke ✅, e2e-api ✅, integration-run ✅, nox ✅, pre-commit-run ✅. PR OPEN, MERGEABLE, REVIEW_REQUIRED. **READY FOR REVIEW!** **#1691 new CI run 29698179409** — most pass, e2e-product PENDING (was ALL PASS last run). #1638 unchanged ALL PASS. #1669 unchanged CI ❌.
+- Actions: 0 autonomous actions (no merges/closes detected)
+- Flags: 🎉 #1690 READY FOR REVIEW (was DRAFT, now ready). 🟡 #1691 e2e-product PENDING on new run. 🟢 #1638 ALL CI PASS, ready for review. 🔴 #1669 CI ❌ + CONFLICTING. 6 Jira mismatches unchanged.
+- Next: Joseph to review #1690 (AIPCC-27645, READY). Watch #1691 e2e-product result. Fix #1669 rebase + CI. Jira transitions via acli.

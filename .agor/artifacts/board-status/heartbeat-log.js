@@ -1,6 +1,24 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-20 00:04 IDT",
+    actions: 0,
+    findings: 1,
+    status: "ok",
+    summary: "#1691 pre-commit REGRESSION overnight (run 29700868666 — e2e-product now passes but pre-commit ❌). #1690 READY FOR REVIEW unchanged. #1638 ready unchanged. 0 merges. 6 Jira mismatches.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7c2df8497d879e02d5de/",
+  },
+  {
+    type: "advance",
+    timestamp: "2026-07-19 21:32 IDT",
+    actions: 1,
+    findings: 1,
+    status: "ok",
+    summary: "#1690 NO LONGER DRAFT + ALL CI PASS — READY FOR REVIEW! #1691 new run 29698179409, e2e-product PENDING. #1638 ALL PASS unchanged. 0 merges. 6 Jira mismatches.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7ba48c8472258c9018fd/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-19 21:02 IDT",
     actions: 0,
     findings: 1,
