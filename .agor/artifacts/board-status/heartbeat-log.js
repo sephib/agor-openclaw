@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-19 15:32 IDT",
+    actions: 0,
+    findings: 1,
+    status: "ok",
+    summary: "#1638 CI REGRESSION: run 29686833295 complete — e2e-api ❌, e2e-tests ❌, all-checks ❌; merge now BLOCKED. #1669 still CI ❌ + CONFLICTING unchanged. 0 merges.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7a5adcae776c8ae5b5f0/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-19 15:02 IDT",
     actions: 0,
     findings: 2,

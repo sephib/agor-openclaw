@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-19 15:02 IDT (advance heartbeat — weekday daytime)*
+*Last updated: 2026-07-19 15:32 IDT (advance heartbeat — weekday daytime)*
 
 ---
 
@@ -24,7 +24,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🟡 **NEW run 29686179040 IN PROGRESS** — bake PENDING, pre-commit-run PENDING, tox-run PENDING, integration-run PENDING; check-changes ✅, JIRA ✅ | OPEN, **MERGEABLE** ✅ | 🟡 **MERGEABLE** — new CI run 29686179040 (supersedes 29685164729). All PENDING. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🔴 **run 29686833295 COMPLETE** — all-checks ❌, e2e-api ❌, e2e-tests ❌; bake ✅, pre-commit ✅, tox-run ✅, nox ✅, integration-run ✅ | OPEN, **MERGEABLE** (no conflict) | 🔴 **CI REGRESSION on #1638** — e2e-api + e2e-tests now failing. New run 29686833295 (superseded 29686179040). |
 
 ---
 
@@ -59,11 +59,11 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (15:02 IDT Jul 19 vs 14:32 IDT Jul 19)
+## Key Changes (15:32 IDT Jul 19 vs 15:02 IDT Jul 19)
 
 | What changed | Delta |
 |---|---|
-| **#1638 — NEW CI run 29686179040** | Run 29685164729 superseded by new run 29686179040 (all PENDING: bake, pre-commit-run, tox-run, integration-run, build). Still OPEN/MERGEABLE. A new push likely triggered re-run. |
+| **#1638 — CI REGRESSION run 29686833295** | Run 29686179040 (all PENDING at 15:02) superseded by run 29686833295 (COMPLETE, FAILING): e2e-api ❌, e2e-tests ❌, all-checks ❌. Upgraded from 🟡 to 🔴. Merge BLOCKED. |
 | **#1669 still CI ❌ + CONFLICTING** | No change — run 29683534910 (pre-commit ❌, nox ❌, tox-run ❌). |
 | **#1667 still CONFLICTING** | No change — still needs rebase. |
 | **#1670 still DRAFT** | No change — CI stale (run 29403233416 all-pass). |
@@ -73,13 +73,16 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ## Attention Items
 
-### 🟡 #1638 (off-board JN-5725) — MERGEABLE, new CI run 29686179040 in progress
+### 🔴 #1638 (off-board JN-5725) — CI REGRESSION (e2e-api + e2e-tests failing)
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements (JN-5725)"
-- State: OPEN, **MERGEABLE** ✅
-- **Run 29686179040** (NEW, IN PROGRESS — supersedes 29685164729): bake PENDING, pre-commit-run PENDING, tox-run PENDING, integration-run PENDING, build PENDING; check-changes ✅, JIRA ✅
+- State: OPEN, **MERGEABLE** (no git conflict) ✅
+- **Run 29686833295** (NEW, COMPLETE — supersedes 29686179040 which was PENDING at 15:02 IDT):
+  - FAIL: all-checks ❌, **e2e-api ❌** (1m37s), **e2e-tests ❌** (4s)
+  - PASS: bake ✅, pre-commit ✅, pre-commit-run ✅, tox-run ✅, nox ✅, integration-run ✅, integration-tests ✅, atlas-validate ✅, check-changes ✅, JIRA ✅
+  - SKIP: e2e-smoke, e2e-priority, e2e-product, atlas-validate-run
 - JN-5725 Jira → **Done** ✅.
-- **Action:** Await CI run 29686179040 to complete. If all-checks ✅, merge is unblocked.
+- **Action:** 🔴 New CI regression — e2e-api and e2e-tests failing. Merge is BLOCKED. Needs investigation and fix. A new push triggered run 29686833295 (different from pending 29686179040).
 
 ---
 

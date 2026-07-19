@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-19 15:02 IDT";
+export const LAST_UPDATED = "2026-07-19 15:32 IDT";
 
 export const WORKTREES = [
   {
@@ -30,9 +30,17 @@ export const WORKTREES = [
     status: "🔴 #1667 CONFLICTING — needs rebase on main. CI stale (run 29402877354 all-pass, pre-conflict). Unchanged since Jul 17.",
     blockedOn: "CONFLICTING — needs rebase",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7a3f681274f7bef128b5/",
-    sessionLabel: "advance heartbeat 15:02 IDT Jul 19 — #1638 new run 29686179040 PENDING; board static",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7a5adcae776c8ae5b5f0/",
+    sessionLabel: "advance heartbeat 15:32 IDT Jul 19 — #1638 CI REGRESSION run 29686833295 (e2e-api ❌, e2e-tests ❌)",
     recentSessions: [
+      {
+        sessionId: "019f7a5adcae776c8ae5b5f0",
+        url: "http://127.0.0.1:3030/ui/s/019f7a5adcae776c8ae5b5f0/",
+        title: "advance heartbeat 15:32 IDT Jul 19 — #1638 CI REGRESSION (e2e-api ❌, e2e-tests ❌)",
+        status: "running",
+        timestamp: "2026-07-19 15:32 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7a3f681274f7bef128b5",
         url: "http://127.0.0.1:3030/ui/s/019f7a3f681274f7bef128b5/",
@@ -65,16 +73,8 @@ export const WORKTREES = [
         timestamp: "2026-07-19 13:30 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f79d1876f76d1ac947041",
-        url: "http://127.0.0.1:3030/ui/s/019f79d1876f76d1ac947041/",
-        title: "advance heartbeat 13:00 IDT Jul 19 — board static; no CI changes; 0 merges",
-        status: "completed",
-        timestamp: "2026-07-19 13:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-19 15:02 IDT",
+    lastActive: "2026-07-19 15:32 IDT",
   },
   {
     ticket: "JN-5872",
@@ -88,9 +88,17 @@ export const WORKTREES = [
     status: "🔴 CI REGRESSION + CONFLICTING — run 29683534910 (Jul 19): pre-commit ❌, nox ❌ (regression), tox-run ❌ (regression), all-checks ❌. Also NOW CONFLICTING (14:32 IDT Jul 19). Must rebase + fix CI.",
     blockedOn: "CI REGRESSION + CONFLICTING — rebase needed + pre-commit/nox/tox-run fix",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7a3f681274f7bef128b5/",
-    sessionLabel: "advance heartbeat 15:02 IDT Jul 19 — #1669 CI ❌ + CONFLICTING unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7a5adcae776c8ae5b5f0/",
+    sessionLabel: "advance heartbeat 15:32 IDT Jul 19 — #1669 CI ❌ + CONFLICTING unchanged",
     recentSessions: [
+      {
+        sessionId: "019f7a5adcae776c8ae5b5f0",
+        url: "http://127.0.0.1:3030/ui/s/019f7a5adcae776c8ae5b5f0/",
+        title: "advance heartbeat 15:32 IDT Jul 19 — #1669 CI ❌ + CONFLICTING unchanged (run 29683534910)",
+        status: "running",
+        timestamp: "2026-07-19 15:32 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7a3f681274f7bef128b5",
         url: "http://127.0.0.1:3030/ui/s/019f7a3f681274f7bef128b5/",
@@ -123,16 +131,8 @@ export const WORKTREES = [
         timestamp: "2026-07-19 13:30 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f79d1876f76d1ac947041",
-        url: "http://127.0.0.1:3030/ui/s/019f79d1876f76d1ac947041/",
-        title: "advance heartbeat 13:00 IDT Jul 19 — board static; #1669 pre-commit ❌ unchanged",
-        status: "completed",
-        timestamp: "2026-07-19 13:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-19 15:02 IDT",
+    lastActive: "2026-07-19 15:32 IDT",
   },
   {
     ticket: "JN-5865",
@@ -372,8 +372,8 @@ export const ALERTS = [
     message: "🔴 #1669 (jn-5872 JN-5872): CI REGRESSION + NOW CONFLICTING — run 29683534910: pre-commit ❌ + nox ❌ (regression) + tox-run ❌ (regression) + all-checks ❌. ALSO CONFLICTING ❌ as of 14:32 IDT. Must rebase + fix CI.",
   },
   {
-    level: "yellow",
-    message: "🟡 #1638 (JN-5725, off-board): MERGEABLE ✅ — NEW CI run 29686179040 IN PROGRESS (supersedes 29685164729 — likely new push). All checks PENDING: bake, pre-commit-run, tox-run, integration-run, build. check-changes ✅, JIRA ✅. Await CI completion to confirm merge readiness.",
+    level: "red",
+    message: "🔴 #1638 (JN-5725, off-board): CI REGRESSION — run 29686833295 (COMPLETE): e2e-api ❌ + e2e-tests ❌ + all-checks ❌. MERGE BLOCKED. Most checks pass (bake ✅, pre-commit ✅, tox-run ✅, nox ✅, integration-run ✅). A new push triggered run 29686833295 (superseding 29686179040). e2e failures need investigation.",
   },
   {
     level: "red",
