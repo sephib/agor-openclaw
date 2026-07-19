@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-19 18:02 IDT";
+export const LAST_UPDATED = "2026-07-19 18:32 IDT";
 
 export const WORKTREES = [
   {
@@ -13,14 +13,22 @@ export const WORKTREES = [
     status: "🔴 #1690 DRAFT: conflict resolved (was CONFLICTING at 17:02 IDT). New CI run 29690015249 FAILING: JIRA Association ❌ (AIPCC format?), pre-commit ❌, all-checks ❌. PASS: check-changes ✅, atlas-validate ✅, build_envoy ✅, nox ✅. Fix JIRA Association + pre-commit then CI should pass.",
     blockedOn: "CI FAILING — JIRA Association ❌ + pre-commit ❌ (run 29690015249)",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7ae4434771a98332d50b/",
-    sessionLabel: "advance heartbeat 18:02 IDT Jul 19 — #1690 CI run 29690015249 FAILING (JIRA Assoc ❌ + pre-commit ❌)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7affb5837f89898518b3/",
+    sessionLabel: "advance heartbeat 18:32 IDT Jul 19 — board static, no CI changes",
     recentSessions: [
+      {
+        sessionId: "019f7affb5837f89898518b3",
+        url: "http://127.0.0.1:3030/ui/s/019f7affb5837f89898518b3/",
+        title: "advance heartbeat 18:32 IDT Jul 19 — board static, no CI changes",
+        status: "completed",
+        timestamp: "2026-07-19 18:32 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7ae4434771a98332d50b",
         url: "http://127.0.0.1:3030/ui/s/019f7ae4434771a98332d50b/",
         title: "advance heartbeat 18:02 IDT Jul 19 — #1690 CI run 29690015249 FAILING (JIRA Assoc ❌ + pre-commit ❌)",
-        status: "running",
+        status: "completed",
         timestamp: "2026-07-19 18:02 IDT",
         outputFile: null,
       },
@@ -72,14 +80,22 @@ export const WORKTREES = [
     status: "🟡 #1667 mergeable UNKNOWN (was CONFLICTING — possibly resolving). CI stale (run 29402877354 all-pass, pre-conflict). Needs rebase on main.",
     blockedOn: "Needs rebase on main",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7ae4434771a98332d50b/",
-    sessionLabel: "advance heartbeat 18:02 IDT Jul 19 — #1667 UNKNOWN mergeable, no change",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7affb5837f89898518b3/",
+    sessionLabel: "advance heartbeat 18:32 IDT Jul 19 — board static, #1667 UNKNOWN mergeable, no change",
     recentSessions: [
+      {
+        sessionId: "019f7affb5837f89898518b3",
+        url: "http://127.0.0.1:3030/ui/s/019f7affb5837f89898518b3/",
+        title: "advance heartbeat 18:32 IDT Jul 19 — board static, #1667 UNKNOWN mergeable",
+        status: "completed",
+        timestamp: "2026-07-19 18:32 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7ae4434771a98332d50b",
         url: "http://127.0.0.1:3030/ui/s/019f7ae4434771a98332d50b/",
         title: "advance heartbeat 18:02 IDT Jul 19 — #1667 UNKNOWN mergeable, no change",
-        status: "running",
+        status: "completed",
         timestamp: "2026-07-19 18:02 IDT",
         outputFile: null,
       },
@@ -146,14 +162,22 @@ export const WORKTREES = [
     status: "🔴 CI ❌ run 29683534910 (Jul 19): pre-commit ❌, nox ❌ (regression), tox-run ❌ (regression), all-checks ❌. Mergeable UNKNOWN (was CONFLICTING). Must fix CI.",
     blockedOn: "CI REGRESSION — pre-commit/nox/tox-run fix needed",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7ae4434771a98332d50b/",
-    sessionLabel: "advance heartbeat 18:02 IDT Jul 19 — #1669 CI ❌ + UNKNOWN, no change",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7affb5837f89898518b3/",
+    sessionLabel: "advance heartbeat 18:32 IDT Jul 19 — board static, #1669 CI ❌ + UNKNOWN, no change",
     recentSessions: [
+      {
+        sessionId: "019f7affb5837f89898518b3",
+        url: "http://127.0.0.1:3030/ui/s/019f7affb5837f89898518b3/",
+        title: "advance heartbeat 18:32 IDT Jul 19 — board static, #1669 CI ❌ + UNKNOWN",
+        status: "completed",
+        timestamp: "2026-07-19 18:32 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7ae4434771a98332d50b",
         url: "http://127.0.0.1:3030/ui/s/019f7ae4434771a98332d50b/",
         title: "advance heartbeat 18:02 IDT Jul 19 — #1669 CI ❌ + UNKNOWN, no change",
-        status: "running",
+        status: "completed",
         timestamp: "2026-07-19 18:02 IDT",
         outputFile: null,
       },

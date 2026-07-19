@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-19 18:02 IDT (advance heartbeat — weekday daytime)*
+*Last updated: 2026-07-19 18:32 IDT (advance heartbeat — weekday daytime)*
 
 ---
 
@@ -59,15 +59,11 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (18:02 IDT Jul 19 vs 17:02 IDT Jul 19)
+## Key Changes (18:32 IDT Jul 19 vs 18:02 IDT Jul 19)
 
 | What changed | Delta |
 |---|---|
-| **#1638 — CI run 29689910782 CANCELLED + CONFLICTING again** | Was MERGEABLE 🟡 + CI IN PROGRESS at 17:02 IDT. Run 29689910782 complete (conclusion: cancelled): **e2e-smoke ❌ for 3rd consecutive run**. e2e-tests ❌, all-checks ❌. PASS: tox-run ✅, pre-commit ✅, e2e-api ✅, integration-run ✅, bake ✅, nox ✅. PR now CONFLICTING 🔴 again (conflict re-introduced). |
-| **#1690 — conflict resolved → CI FAILING (new mode)** | Was CONFLICTING 🔴 at 17:02 IDT. Now UNKNOWN + new CI run 29690015249: **JIRA Association ❌** (new — AIPCC format issue?), **pre-commit ❌**, all-checks ❌. PASS: check-changes ✅, atlas-validate ✅, build_envoy ✅, nox ✅, e2e-tests ✅, integration-tests ✅. |
-| **#1669 — no change** | CI still run 29683534910 (pre-commit ❌, nox ❌, tox-run ❌). Mergeable UNKNOWN. |
-| **#1667, #1670 — no change** | Both UNKNOWN mergeable, CI stale. |
-| **6 Jira mismatches** | No change. AIPCC-26976 New, AIPCC-25962 In Progress, AIPCC-24425 New, AIPCC-23824 New, AIPCC-23788 New, AIPCC-23220 New. |
+| **Board static — no changes** | All PR states unchanged. #1638 still OPEN/CONFLICTING (no new CI). #1690 still run 29690015249 FAILING (JIRA Association ❌ + pre-commit ❌). #1669 still run 29683534910 FAILING (pre-commit ❌, nox ❌, tox-run ❌). #1667/#1670 CI stale, mergeable UNKNOWN. 6 Jira mismatches unchanged. 0 merges. |
 
 ---
 
