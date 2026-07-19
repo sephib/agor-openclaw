@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-19 12:30 IDT (advance heartbeat — weekday daytime)*
+*Last updated: 2026-07-19 13:00 IDT (advance heartbeat — weekday daytime)*
 
 ---
 
@@ -59,17 +59,16 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (12:30 IDT Jul 19 vs 12:00 IDT Jul 19)
+## Key Changes (13:00 IDT Jul 19 vs 12:30 IDT Jul 19)
 
 | What changed | Delta |
 |---|---|
-| **model-packaging-cr ARCHIVED** ✅ | Newly detected on board (Code Review, uid=128, model-packaging-pipeline repo). PR #161 CLOSED Jun 16. Stale 34 days. Archived autonomously at 12:30 IDT. |
-| **#1638 unchanged** | Same run 29680583712: bake ❌ FAIL, all-checks ✅ PASS. No new CI. |
+| **Board static** | No merges, no CI changes, no zone moves. |
+| **#1638 unchanged** | Same run 29680583712: bake ❌ FAIL, all-checks ✅ PASS. No new CI since 09:00 UTC Jul 19. |
 | **#1669 unchanged** | Same run 29509136918: pre-commit ❌ only. Stale 3+ days. No new CI. |
 | **#1667 still CONFLICTING** | No change — still needs rebase. |
 | **#1670 still DRAFT** | No change — CI stale (run 29403233416 all-pass). |
-| **Board zones otherwise static** | No other zone moves, no new merges. |
-| **6 Jira mismatches** | Unchanged. AIPCC keys now identified: AIPCC-26976/25962/24425/23824/23788/23220. |
+| **6 Jira mismatches** | Unchanged. AIPCC keys: AIPCC-26976/25962/24425/23824/23788/23220. |
 
 ---
 
