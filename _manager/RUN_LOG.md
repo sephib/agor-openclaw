@@ -4,6 +4,13 @@
 
 ---
 
+## 12:00 IDT — Weekday Daytime Heartbeat (Jul 19 2026)
+- PRs checked: #1638 (OPEN, MERGEABLE — off-board), #1669 (OPEN, MERGEABLE), #1667 (OPEN, CONFLICTING), #1670 (DRAFT, MERGEABLE), #1596 (DRAFT, CONFLICTING)
+- Merges detected: none (0 merges this run)
+- CI changes: **#1638 NEW CI RUN 29680583712** — bake ❌ FAIL (regression vs run 29654523528 where bake was ✅). all-checks ✅ still PASS → PR still MERGEABLE. #1669 unchanged (pre-commit ❌, run 29509136918 stale 3+ days).
+- Flags: 🟡 #1638 bake regression — investigate before merging. 6 Jira mismatches persist. jn-5865 zone mismatch day 11+. jn-5824 stale 11+ days.
+- Next: Joseph to check bake failure on #1638 (run 29680583712). Fix pre-commit on #1669 for merge. Rebase #1667 to clear conflict.
+
 ## 10:32 IDT — Weekday Daytime Heartbeat (Jul 19 2026)
 - PRs checked: #1669 (OPEN, MERGEABLE), #1667 (OPEN, CONFLICTING), #1670 (DRAFT, MERGEABLE), #1638 (OPEN, MERGEABLE — off-board), #1596 (DRAFT, CONFLICTING)
 - Merges detected: none (0 merges this run)

@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-19 11:30 IDT (advance heartbeat — weekday daytime)*
+*Last updated: 2026-07-19 12:00 IDT (advance heartbeat — weekday daytime)*
 
 ---
 
@@ -23,7 +23,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | ✅ **ALL-CHECKS PASS** run 29654523528: all-checks ✅, pre-commit ✅, nox ✅, tox ✅, integration ✅, e2e-api ✅, e2e-smoke ✅, e2e-product ✅, bake ✅ | OPEN, **MERGEABLE** ✅ | 🟢 **CI ALL PASS — READY TO MERGE**. JN-5725 Done ✅. No blocking issues. Action: merge when ready. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🟡 **NEW RUN 29680583712**: bake ❌ FAIL (new regression); all-checks ✅ PASS, pre-commit ✅ PASS | OPEN, **MERGEABLE** ✅ | 🟡 **bake REGRESSION** (new run 29680583712). all-checks ✅ still gates merge. Bake was ✅ in prev run 29654523528. Action: investigate bake failure; still mergeable per all-checks gate. |
 
 ---
 
@@ -58,30 +58,31 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (11:30 IDT Jul 19 vs 11:00 IDT Jul 19)
+## Key Changes (12:00 IDT Jul 19 vs 11:30 IDT Jul 19)
 
 | What changed | Delta |
 |---|---|
-| **Board static** | No merges, no CI changes, no zone moves since 11:00 IDT run. All PRs unchanged. |
-| **#1638 unchanged** | Still OPEN, MERGEABLE ✅, CI ALL PASS (run 29654523528). READY TO MERGE. |
+| **#1638 NEW CI RUN** ⚠️ | New run 29680583712 triggered: bake ❌ FAIL (regression — was ✅ in run 29654523528). all-checks ✅ still pass → still mergeable. |
 | **#1669 unchanged** | Same run 29509136918: pre-commit ❌ only. Stale 3+ days. |
 | **#1667 still CONFLICTING** | No change — still needs rebase. |
 | **#1670 still DRAFT** | No change — CI stale (run 29403233416 all-pass). |
+| **Board zones static** | No zone moves, no merges, no new worktrees. |
 | **6 Jira mismatches** | Unchanged. Jira MCP 401 + acli `--fields` flag invalid. |
 
 ---
 
 ## Attention Items
 
-### 🟢 #1638 (off-board JN-5725) — CI ALL PASS — READY TO MERGE 🆕
+### 🟡 #1638 (off-board JN-5725) — bake ❌ REGRESSION (new run 29680583712) — all-checks ✅ still pass
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements (JN-5725)"
 - State: OPEN, **MERGEABLE** ✅
-- **Run 29654523528 ALL-CHECKS ✅ PASS** (latest complete run):
-  - PASS: all-checks ✅, pre-commit ✅, nox ✅, tox ✅, integration ✅, e2e-api ✅, e2e-smoke ✅, e2e-product ✅, bake ✅, JIRA ✅, atlas-validate ✅, check-changes ✅, e2e-tests ✅
-  - SKIP: atlas-validate-run
+- **NEW Run 29680583712** (triggered since last heartbeat, conclusion: failure):
+  - FAIL: bake ❌ (was ✅ in prev run 29654523528 — regression)
+  - PASS: all-checks ✅, pre-commit ✅, nox ✅, JIRA ✅, atlas-validate ✅, check-changes ✅, e2e-tests ✅, integration-tests ✅
+  - SKIP: pre-commit-run, e2e-api, e2e-smoke, e2e-product, integration-run, tox-run, atlas-validate-run
 - JN-5725 Jira → **Done** ✅.
-- **Action:** Merge when ready. No blocking issues.
+- **Action:** Investigate bake failure. all-checks gate still passes → still mergeable. Check if bake is a blocking requirement before merging.
 
 ---
 
