@@ -4781,4 +4781,13 @@ export const HEARTBEAT_RUNS = [
     summary: "#1691/#1692 NOW APPROVED ✅ + ALL CI PASS — MERGE READY; #1690 REVIEW_REQUIRED unchanged; 0 merges; 6 Jira mismatches",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f7e37a91b77e698bd9e13/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-07-20 14:03 IDT",
+    actions: 0,
+    findings: 2,
+    status: "ok",
+    summary: "#1638 e2e-smoke ❌ FAILED (was ⏳ pending at 13:33 IDT); #1690 ALL CI PASS unchanged; 7 Jira mismatches; 0 merges",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7f2f20697ccaa2c0251c/",
+  }
 ];

@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-20 13:33 IDT (advance heartbeat)*
+*Last updated: 2026-07-20 14:03 IDT (advance heartbeat)*
 
 ---
 
@@ -92,11 +92,11 @@ Active sprint tickets assigned to Joseph (non-Done/Closed, via acli):
 
 ---
 
-## Key Changes (13:33 IDT Jul 20 vs 13:03 IDT Jul 20)
+## Key Changes (14:03 IDT Jul 20 vs 13:33 IDT Jul 20)
 
 | What changed | Delta |
 |---|---|
-| **🟡→🟢 #1638 e2e-api NOW PASSING** | New CI run 29734729818: e2e-api ✅ (was ❌ at 13:03 IDT), nox ✅, tox-run ✅, integration ✅, pre-commit ✅. e2e-smoke ⏳ PENDING. If e2e-smoke passes → all-checks ✅ → **READY FOR REVIEW**. No Joseph action needed. |
+| **🔴 #1638 e2e-smoke NOW FAILED** | CI run 29734729818: **e2e-smoke ❌ FAILED** (was ⏳ PENDING at 13:33 IDT). Now: all-checks ❌, e2e-tests ❌. **Regression** — was trending toward passing. Joseph needs to investigate e2e-smoke failure. |
 | **#1690 unchanged** | ALL CI 100% PASS (run 29729530150) — still awaiting review request from Joseph. |
 | **All other PRs unchanged** | #1669 CI ❌ + CONFLICTING, #1667 CONFLICTING, #1670 DRAFT MERGEABLE — unchanged. |
 | **Jira mismatches: 7** | No change. |
@@ -116,17 +116,16 @@ PR [#1690](https://github.com/Jounce-IO/jounce/pull/1690): "fix(helm): increase 
 
 ---
 
-### 🟡 #1638 (off-board JN-5725) — e2e-api NOW PASSING, e2e-smoke ⏳ PENDING
+### 🔴 #1638 (off-board JN-5725) — e2e-smoke FAILED ❌
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements (JN-5725)"
 - State: OPEN, **MERGEABLE** 🟡
-- **New CI run 29734729818** (new run since 13:03 IDT):
-  - ✅ PASS: e2e-api ✅ **(NOW PASSING — was ❌ at last run!)**, nox, tox-run, integration-run, integration-tests, pre-commit-run, pre-commit, atlas-validate, check-changes, JIRA Assoc, CodeRabbit
-  - ⏳ PENDING: e2e-smoke
-  - ⏸ SKIP: atlas-validate-run, bake
-  - Not yet shown: all-checks, e2e-tests, e2e-product
+- **CI run 29734729818** (final results):
+  - ✅ PASS: e2e-api ✅, nox, tox-run, integration-run, integration-tests, pre-commit-run, pre-commit, atlas-validate, check-changes, JIRA Assoc, CodeRabbit
+  - ❌ FAIL: **e2e-smoke ❌** (was ⏳ PENDING at 13:33 IDT — now resolved as FAIL), all-checks ❌, e2e-tests ❌
+  - ⏸ SKIP: atlas-validate-run, bake, e2e-product, e2e-priority
 - Jira: JN-5725 is Done ✅
-- **Action:** Monitor e2e-smoke. If it passes → all-checks ✅ → **READY FOR REVIEW**. No fix needed from Joseph.
+- **Action:** 🔴 Joseph needs to investigate e2e-smoke failure. Check run 29734729818 e2e-smoke logs.
 
 ---
 

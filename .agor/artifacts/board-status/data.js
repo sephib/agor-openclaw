@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-20 13:33 IDT";
+export const LAST_UPDATED = "2026-07-20 14:03 IDT";
 
 export const WORKTREES = [
   {
@@ -13,9 +13,17 @@ export const WORKTREES = [
     status: "🟢 **ALL CI 100% PASSING** — run 29729530150: e2e-smoke ✅, pre-commit-run ✅, nox ✅, e2e-api ✅, **e2e-product ✅** (now complete!), integration-run ✅, integration-tests ✅, tox-run ✅, atlas-validate ✅, check-changes ✅, JIRA Assoc ✅, CodeRabbit ✅, pre-commit ✅, e2e-tests ✅, all-checks ✅. MERGEABLE. **READY FOR REVIEW — every check green.**",
     blockedOn: "Awaiting review request",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7f13a90c720285e2b81c/",
-    sessionLabel: "advance heartbeat 13:33 IDT Jul 20 — #1638 e2e-api NOW PASSING; e2e-smoke ⏳ pending",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7f2f20697ccaa2c0251c/",
+    sessionLabel: "advance heartbeat 14:03 IDT Jul 20 — #1638 e2e-smoke ❌ FAILED; #1690 ALL CI PASS unchanged",
     recentSessions: [
+      {
+        sessionId: "019f7f2f20697ccaa2c0251c",
+        url: "http://127.0.0.1:3030/ui/s/019f7f2f20697ccaa2c0251c/",
+        title: "advance heartbeat 14:03 IDT Jul 20 — #1638 e2e-smoke ❌ FAILED; #1690 ALL CI PASS unchanged",
+        status: "completed",
+        timestamp: "2026-07-20 14:03 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7f13a90c720285e2b81c",
         url: "http://127.0.0.1:3030/ui/s/019f7f13a90c720285e2b81c/",
@@ -48,16 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-20 12:03 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f7ea587167023b97636ac",
-        url: "http://127.0.0.1:3030/ui/s/019f7ea587167023b97636ac/",
-        title: "advance heartbeat 11:33 IDT Jul 20 — board static; 7 Jira mismatches; 0 merges",
-        status: "completed",
-        timestamp: "2026-07-20 11:33 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-20 13:33 IDT",
+    lastActive: "2026-07-20 14:03 IDT",
   },
   {
     ticket: "JN-5695",
@@ -372,8 +372,8 @@ export const ALERTS = [
     message: "🎉 #1691 (AIPCC-27657): **MERGED 10:20 IDT Jul 20** — into main. aipcc-27657-guidellm-output-dir ARCHIVED ✅. AIPCC-27657 needs Done in Jira.",
   },
   {
-    level: "yellow",
-    message: "🟡 #1638 (JN-5725, off-board): MERGEABLE. CI run 29734729818 — **e2e-api ✅ NOW PASSING** (was ❌ at 13:03 IDT!), nox ✅, tox ✅, integration ✅, pre-commit ✅. **e2e-smoke ⏳ PENDING** — if passes → all-checks ✅ → ready for review. Monitor next run. JN-5725 Done ✅.",
+    level: "red",
+    message: "🔴 #1638 (JN-5725, off-board): MERGEABLE. CI run 29734729818 — **e2e-smoke ❌ FAILED** (was ⏳ PENDING at 13:33 IDT). all-checks ❌, e2e-tests ❌. e2e-api ✅, nox ✅, tox ✅, integration ✅, pre-commit ✅ still pass. **Action: Joseph needs to investigate e2e-smoke failure.** JN-5725 Done ✅.",
   },
   {
     level: "red",
