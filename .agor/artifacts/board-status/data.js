@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-20 10:10 IDT";
+export const LAST_UPDATED = "2026-07-20 10:40 IDT";
 
 export const WORKTREES = [
   {
@@ -16,6 +16,14 @@ export const WORKTREES = [
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f7e6e983b72c1a122f2eb/",
     sessionLabel: "advance heartbeat 10:10 IDT Jul 20 — #1691 MERGED; #1690 NOW CONFLICTING",
     recentSessions: [
+      {
+        sessionId: "019f7e8a12407841a5103c38",
+        url: "http://127.0.0.1:3030/ui/s/019f7e8a12407841a5103c38/",
+        title: "advance heartbeat 10:40 IDT Jul 20 — #1638 NOW CONFLICTING; #1690 still CONFLICTING",
+        status: "completed",
+        timestamp: "2026-07-20 10:40 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7e6e983b72c1a122f2eb",
         url: "http://127.0.0.1:3030/ui/s/019f7e6e983b72c1a122f2eb/",
@@ -57,7 +65,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-20 10:10 IDT",
+    lastActive: "2026-07-20 10:40 IDT",
   },
   {
     ticket: "JN-5695",
@@ -372,8 +380,8 @@ export const ALERTS = [
     message: "🎉 #1691 (AIPCC-27657): **MERGED 10:20 IDT Jul 20** — into main. aipcc-27657-guidellm-output-dir ARCHIVED ✅. AIPCC-27657 needs Done in Jira.",
   },
   {
-    level: "green",
-    message: "🎉 #1638 (JN-5725, off-board): ALL CI FULLY PASS ✅ — Run 29694608697: JIRA ✅, pre-commit ✅, e2e-smoke ✅, e2e-api ✅, e2e-product ✅, integration ✅, nox ✅, tox ✅. PR FULLY READY FOR REVIEW! JN-5725 Done ✅.",
+    level: "red",
+    message: "🔴 #1638 (JN-5725, off-board): **NOW CONFLICTING** (changed from UNKNOWN/large-PR at 10:10 IDT). CI checks no longer visible via gh pr checks (only CodeRabbit). Old run 29694608697 (all-pass) may be stale. **Action: rebase feat/vllm-analyzer-prerequisites on main before requesting review.** JN-5725 Done ✅.",
   },
   {
     level: "red",

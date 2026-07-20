@@ -2237,3 +2237,11 @@
 - CI changes: **#1691 NEW RUN 29722197965** triggered by #1692 merge — e2e-product ⏳ PENDING (all other checks pass). STATUS: "MERGE NOW" → "wait for e2e-product". #1690 run 29698050089 unchanged (all pass). #1638 run 29694608697 unchanged.
 - Flags: ⏳ #1691 e2e-product pending — do NOT merge yet; wait for run 29722197965 to complete. 🟢 #1690 READY FOR REVIEW (unchanged). 🟢 #1638 READY FOR REVIEW (unchanged). 🔴 #1669 CI ❌ + CONFLICTING (unchanged). 6 Jira mismatches unchanged.
 - Next: Monitor #1691 e2e-product result. If pass → merge immediately. Review/merge #1690 and #1638.
+
+## 10:40 IDT — Weekday Daytime Heartbeat
+- PRs checked: #1690 (OPEN/CONFLICTING/REVIEW_REQUIRED), #1669 (OPEN/CONFLICTING/CI FAIL), #1667 (OPEN/CONFLICTING), #1670 (OPEN/DRAFT/MERGEABLE), #1638 (OPEN/**CONFLICTING**🔴 NEW), #1596 (OPEN/DRAFT/CONFLICTING)
+- Merges detected: none
+- CI changes: #1638 changed mergeable UNKNOWN→CONFLICTING; CI checks no longer visible (only CodeRabbit). All other PRs: no CI changes.
+- Flags: #1638 now CONFLICTING (was large PR/UNKNOWN last run) — needs rebase before review. 7 Jira mismatches unchanged (AIPCC-27657 still In Progress).
+- Actions: 0 archives, 0 merges. Board unchanged from 10:10 run.
+- Next: #1690 needs rebase + re-run CI; #1638 needs rebase; AIPCC-27657 + 6 others need Jira → Done.
