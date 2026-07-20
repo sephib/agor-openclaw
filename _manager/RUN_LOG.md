@@ -4,6 +4,15 @@
 
 ---
 
+## 15:30 IDT — Weekday Daytime Heartbeat (Jul 20 2026)
+- PRs checked: #1690 (OPEN/MERGEABLE), #1638 (OPEN/MERGEABLE), #1669 (OPEN/CONFLICTING), #1667 (OPEN/CONFLICTING), #1670 (DRAFT/MERGEABLE), **#1695 (DRAFT/MERGEABLE NEW)**, **#1696 (DRAFT/MERGEABLE NEW)**
+- Merges detected: none
+- CI changes: **#1690 ALL CI PASS unchanged** (run 29729530150 — still awaiting review). **#1638 e2e-smoke ❌ unchanged** (run 29734729818 final). **#1695 NEW: pre-commit ❌ + JIRA Assoc ❌ + all-checks ❌** (needs pre-commit fix). **#1696 NEW: JIRA Assoc ❌ but all-checks ✅** (docs-only CI mostly passing). #1669 #1667 #1670 unchanged.
+- Flags: 🆕 **4 new worktrees** discovered (created 15:14 IDT by split-PR session): aipcc-23845, aipcc-23890 (no PR), aipcc-23895 (PR #1696 DRAFT ✅), aipcc-23925 (PR #1695 DRAFT ❌). #1695 pre-commit needs fix. 7 Jira mismatches unchanged.
+- Next: Fix #1695 pre-commit. Fix #1696 JIRA Assoc. Assign zones to new worktrees. Request review on #1690. Investigate #1638 e2e-smoke.
+
+---
+
 ## 13:33 IDT — Weekday Daytime Heartbeat (Jul 20 2026)
 - PRs checked: #1690 (OPEN/MERGEABLE), #1638 (OPEN/MERGEABLE), #1669 (OPEN/CONFLICTING), #1667 (OPEN/CONFLICTING), #1670 (DRAFT/MERGEABLE)
 - Merges detected: none

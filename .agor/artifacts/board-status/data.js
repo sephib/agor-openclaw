@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-20 15:03 IDT";
+export const LAST_UPDATED = "2026-07-20 15:30 IDT";
 
 export const WORKTREES = [
   {
@@ -13,9 +13,17 @@ export const WORKTREES = [
     status: "🟢 **ALL CI 100% PASSING** — run 29729530150: e2e-smoke ✅, pre-commit-run ✅, nox ✅, e2e-api ✅, **e2e-product ✅** (now complete!), integration-run ✅, integration-tests ✅, tox-run ✅, atlas-validate ✅, check-changes ✅, JIRA Assoc ✅, CodeRabbit ✅, pre-commit ✅, e2e-tests ✅, all-checks ✅. MERGEABLE. **READY FOR REVIEW — every check green.**",
     blockedOn: "Awaiting review request",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7f66122d7aefa49de05c/",
-    sessionLabel: "advance heartbeat 15:03 IDT Jul 20 — board static; #1690 ALL CI PASS (awaiting review); #1638 e2e-smoke ❌ unchanged; 7 Jira mismatches; 0 merges",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7f8187817733b11d5b13/",
+    sessionLabel: "advance heartbeat 15:30 IDT Jul 20 — 4 new worktrees; #1690 ALL CI PASS (awaiting review); #1638 e2e-smoke ❌ unchanged; 7 Jira mismatches; 0 merges",
     recentSessions: [
+      {
+        sessionId: "019f7f8187817733b11d5b13",
+        url: "http://127.0.0.1:3030/ui/s/019f7f8187817733b11d5b13/",
+        title: "advance heartbeat 15:30 IDT Jul 20 — 4 new worktrees; #1690 ALL CI PASS unchanged; #1638 e2e-smoke ❌ unchanged",
+        status: "completed",
+        timestamp: "2026-07-20 15:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7f66122d7aefa49de05c",
         url: "http://127.0.0.1:3030/ui/s/019f7f66122d7aefa49de05c/",
@@ -48,16 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-20 13:33 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f7ef831e27298bbeaaa76",
-        url: "http://127.0.0.1:3030/ui/s/019f7ef831e27298bbeaaa76/",
-        title: "advance heartbeat 13:03 IDT Jul 20 — #1690 ALL CI 100% PASS (e2e-product ✅)",
-        status: "completed",
-        timestamp: "2026-07-20 13:03 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-20 15:03 IDT",
+    lastActive: "2026-07-20 15:30 IDT",
   },
   {
     ticket: "JN-5695",
@@ -233,6 +233,74 @@ export const WORKTREES = [
     lastActive: "2026-07-08 13:00 IDT",
   },
   {
+    ticket: "AIPCC-23925",
+    ticketUrl: "https://redhat.atlassian.net/browse/AIPCC-23925",
+    title: "Rewrite Argo URLs to public host (AIPCC-23925)",
+    branch: "aipcc-23925-argo-public-url",
+    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/aipcc-23925-argo-public-url",
+    zone: "NO ZONE",
+    pr: "#1695 DRAFT",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1695",
+    status: "🔴 NEW worktree (15:14 IDT Jul 20). DRAFT PR #1695 — CI FAILING: pre-commit ❌, JIRA Assoc ❌, all-checks ❌. nox ✅, tox ✅, integration ✅. Needs pre-commit fix before ready for review.",
+    blockedOn: "CI failure — pre-commit needs fix",
+    blockedType: "active",
+    sessionUrl: null,
+    sessionLabel: null,
+    recentSessions: [],
+    lastActive: "2026-07-20 15:14 IDT",
+  },
+  {
+    ticket: "AIPCC-23895",
+    ticketUrl: "https://redhat.atlassian.net/browse/AIPCC-23895",
+    title: "Document IBM prod cluster benchmarking workflow (AIPCC-23895)",
+    branch: "aipcc-23895-docs-ibm",
+    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/aipcc-23895-docs-ibm",
+    zone: "NO ZONE",
+    pr: "#1696 DRAFT",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1696",
+    status: "🟡 NEW worktree (15:14 IDT Jul 20). DRAFT PR #1696 — JIRA Assoc ❌ (all-checks ✅). Needs JIRA ticket reference fix in PR, then mark ready for review.",
+    blockedOn: "JIRA Association fix needed",
+    blockedType: "active",
+    sessionUrl: null,
+    sessionLabel: null,
+    recentSessions: [],
+    lastActive: "2026-07-20 15:14 IDT",
+  },
+  {
+    ticket: "AIPCC-23890",
+    ticketUrl: "https://redhat.atlassian.net/browse/AIPCC-23890",
+    title: "QE E2E validation of IBM cluster connection workflows (AIPCC-23890)",
+    branch: "aipcc-23890-qe-cluster-tests",
+    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/aipcc-23890-qe-cluster-tests",
+    zone: "NO ZONE",
+    pr: null,
+    prUrl: null,
+    status: "🆕 NEW worktree (15:14 IDT Jul 20). No PR yet. No zone assigned. In Progress in Jira.",
+    blockedOn: "No PR yet",
+    blockedType: "active",
+    sessionUrl: null,
+    sessionLabel: null,
+    recentSessions: [],
+    lastActive: "2026-07-20 15:14 IDT",
+  },
+  {
+    ticket: "AIPCC-23845",
+    ticketUrl: "https://redhat.atlassian.net/browse/AIPCC-23845",
+    title: "Cluster connection (AIPCC-23845)",
+    branch: "aipcc-23845-cluster-connection",
+    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/aipcc-23845-cluster-connection",
+    zone: "NO ZONE",
+    pr: null,
+    prUrl: null,
+    status: "🆕 NEW worktree (15:14 IDT Jul 20). No PR yet. No zone assigned.",
+    blockedOn: "No PR yet",
+    blockedType: "active",
+    sessionUrl: null,
+    sessionLabel: null,
+    recentSessions: [],
+    lastActive: "2026-07-20 15:14 IDT",
+  },
+  {
     ticket: null,
     ticketUrl: null,
     title: "jira-operations (stale, NO ZONE)",
@@ -363,6 +431,14 @@ export const MERGED = [
 ];
 
 export const ALERTS = [
+  {
+    level: "yellow",
+    message: "🆕 4 NEW worktrees (15:14 IDT Jul 20): aipcc-23845-cluster-connection (no PR), aipcc-23890-qe-cluster-tests (no PR), aipcc-23895-docs-ibm (PR #1696 DRAFT ✅ mostly), aipcc-23925-argo-public-url (PR #1695 DRAFT ❌ pre-commit). Assign zones. Fix CI.",
+  },
+  {
+    level: "red",
+    message: "🔴 #1695 (AIPCC-23925, aipcc-23925-argo-public-url): DRAFT PR — pre-commit ❌ + JIRA Assoc ❌ + all-checks ❌. Needs pre-commit fix.",
+  },
   {
     level: "green",
     message: "🟢 #1690 (AIPCC-27645): **ALL CI 100% PASSING** run 29729530150 — e2e-product ✅ (complete as of 13:03 IDT!), e2e-smoke ✅, pre-commit-run ✅, all checks green. MERGEABLE. **Action: Request review now.**",

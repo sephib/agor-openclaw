@@ -1,10 +1,43 @@
 # Proposals — jounce-workflow-ai Board
 
-*Last updated: 2026-07-19 08:30 IDT*
+*Last updated: 2026-07-20 15:30 IDT*
 
 ---
 
 ## ACTIVE PROPOSALS
+
+### Proposal: Fix Pre-commit CI on PR #1695 (aipcc-23925-argo-public-url)
+
+- **Action:** Investigate and fix pre-commit failures on PR #1695 in worktree `aipcc-23925-argo-public-url`. Check run 29741877329 pre-commit-run logs. Trigger a new session in the worktree.
+- **Reason:** New DRAFT PR #1695 (feat: rewrite Argo URLs to public host, AIPCC-23925) has pre-commit ❌ + JIRA Assoc ❌ + all-checks ❌. Must fix before marking ready for review.
+- **Risk:** Low — code fix in existing worktree
+- **Worktree:** aipcc-23925-argo-public-url
+- **Status:** PENDING — NEW as of 15:30 IDT Jul 20
+
+---
+
+### Proposal: Fix JIRA Association on PR #1696 (aipcc-23895-docs-ibm)
+
+- **Action:** Add JIRA ticket reference (AIPCC-23895) to PR #1696 description/title to fix JIRA Association check.
+- **Reason:** PR #1696 (docs: IBM cluster benchmarking workflow) has JIRA Assoc ❌ — likely branch name isn't auto-linked or PR description missing. all-checks ✅ so just the association needs fixing.
+- **Risk:** Very low — title/description update only
+- **Worktree:** aipcc-23895-docs-ibm
+- **Status:** PENDING — NEW as of 15:30 IDT Jul 20
+
+---
+
+### Proposal: Assign Zones to New Worktrees (aipcc-23845, aipcc-23890, aipcc-23895, aipcc-23925)
+
+- **Action:** Assign appropriate board zones to the 4 new worktrees created 15:14 IDT Jul 20:
+  - aipcc-23845-cluster-connection (no PR yet) → Ingest or Code depending on state
+  - aipcc-23890-qe-cluster-tests (no PR yet) → Ingest or Code depending on state
+  - aipcc-23895-docs-ibm (PR #1696 DRAFT) → Publish zone after JIRA fix
+  - aipcc-23925-argo-public-url (PR #1695 DRAFT, CI ❌) → Code zone until CI fixed
+- **Reason:** All 4 worktrees have no zone (not visible on board). Need to be placed in pipeline zones to track progress.
+- **Risk:** Low — zone moves are reversible
+- **Status:** PENDING — awaiting Joseph confirmation of current state of each worktree
+
+---
 
 ### Proposal: Move jn-5865-ibm-cluster-connect to Code Zone
 
