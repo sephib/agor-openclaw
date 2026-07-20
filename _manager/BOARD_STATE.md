@@ -1,6 +1,8 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-20 00:04 IDT (advance heartbeat — overnight)*
+*Last updated: 2026-07-20 06:04 IDT (advance heartbeat — overnight)*
+
+> ⚠️ BOARD_STATE.md was 6 hours old (00:04 → 06:04 IDT) — 2am/4am overnight sessions likely failed. Performing full refresh.
 
 ---
 
@@ -9,7 +11,7 @@
 | Worktree | Zone | PR | CI | Jira | Status |
 |---------|------|----|----|------|--------|
 | aipcc-27645-server-resources | **Code** | [#1690](https://github.com/Jounce-IO/jounce/pull/1690) | ✅ ALL CI PASS (run 29698050089) — JIRA ✅, all-checks ✅, pre-commit ✅, pre-commit-run ✅, tox-run ✅, nox ✅, e2e-smoke ✅, e2e-api ✅, e2e-tests ✅, integration-run ✅, integration-tests ✅, atlas-validate ✅ | [AIPCC-27645](https://redhat.atlassian.net/browse/AIPCC-27645) | 🟢 **READY FOR REVIEW** — not DRAFT, ALL CI PASS. State: OPEN, MERGEABLE ✅. Unchanged overnight. |
-| aipcc-27657-guidellm-output-dir | **Code** | [#1691](https://github.com/Jounce-IO/jounce/pull/1691) | 🔴 **NEW RUN 29700868666** — pre-commit ❌ REGRESSION (was passing); e2e-product ✅ NOW PASSES (was PENDING). all-checks ❌, pre-commit ❌, pre-commit-run ❌. PASS: JIRA ✅, atlas-validate ✅, e2e-api ✅, e2e-smoke ✅, e2e-tests ✅, integration-run ✅, integration-tests ✅, nox ✅, tox-run ✅. | [AIPCC-27657](https://redhat.atlassian.net/browse/AIPCC-27657) | 🔴 **pre-commit REGRESSION** overnight — e2e-product resolved but pre-commit now failing. ⚠️ PR title contains "JN-5872" — verify title. |
+| aipcc-27657-guidellm-output-dir | **Code** | [#1691](https://github.com/Jounce-IO/jounce/pull/1691) | 🔴 **NEW RUN 29703912393** (2nd new run since regression) — pre-commit ❌ STILL FAILING. all-checks ❌, pre-commit ❌, pre-commit-run ❌. PASS: JIRA ✅, atlas-validate ✅, check-changes ✅, e2e-api ✅, e2e-product ✅, e2e-smoke ✅, e2e-tests ✅, integration-run ✅, integration-tests ✅, nox ✅, tox-run ✅. | [AIPCC-27657](https://redhat.atlassian.net/browse/AIPCC-27657) | 🔴 **pre-commit STILL FAILING** — 2nd consecutive run. ⚠️ PR title contains "JN-5872" — verify title. |
 | jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | UNKNOWN (stale) | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) — New | 🔴 DRAFT + CONFLICTING; frozen since Jun 14. No change. |
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — New | Design session done Jun 30. Ready for Plan phase. Stale 20+ days. |
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | Last session Jul 8 IDLE. SHA 16ec44ea (2 commits). Needs: configs, rebase, PR. Stale 12+ days. |
@@ -66,30 +68,31 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (00:04 IDT Jul 20 vs 21:32 IDT Jul 19)
+## Key Changes (06:04 IDT Jul 20 vs 00:04 IDT Jul 20)
 
 | What changed | Delta |
 |---|---|
-| **🔴 #1691 (AIPCC-27657) pre-commit REGRESSION** | NEW RUN 29700868666 triggered overnight. e2e-product ✅ NOW PASSES (was PENDING). BUT: all-checks ❌, pre-commit ❌, pre-commit-run ❌ — REGRESSION (these were passing in previous runs). JIRA Association now passes (run 29701285829). |
+| **🔴 #1691 (AIPCC-27657) pre-commit STILL FAILING** | NEW RUN 29703912393 (2nd new run). pre-commit/all-checks/pre-commit-run still ❌. All other checks pass (e2e-product ✅ confirmed). Regression persists across 2 CI runs. |
 | **#1690 unchanged** | ALL CI PASS (run 29698050089). READY FOR REVIEW. No change. |
 | **#1638 unchanged** | ALL CI PASS (run 29694608697). READY FOR REVIEW. No change. |
-| **#1669/#1667 CONFLICTING unchanged** | No CI changes. Still failing/conflicting as before. |
-| **0 merges, 6 Jira mismatches** | No changes overnight. |
+| **#1669/#1667 CONFLICTING unchanged** | No CI changes. Still failing/conflicting. |
+| **0 merges, 6 Jira mismatches** | No changes. |
 
 ---
 
 ## Attention Items
 
-### 🔴 #1691 (aipcc-27657) — pre-commit REGRESSION overnight
+### 🔴 #1691 (aipcc-27657) — pre-commit STILL FAILING (2 consecutive runs)
 
 PR [#1691](https://github.com/Jounce-IO/jounce/pull/1691): "fix(helm): update GuideLLM flag from --output-path to --output-dir (AIPCC-27657) JN-5872"
 - State: OPEN, NOT DRAFT, **MERGEABLE** ✅
-- **Run 29700868666** (NEW overnight — partial fail):
-  - **FAIL**: all-checks ❌, pre-commit ❌, pre-commit-run ❌ (REGRESSION)
-  - **PASS**: JIRA ✅ (now fixed via run 29701285829), atlas-validate ✅, check-changes ✅, e2e-api ✅, **e2e-product ✅** (was PENDING — NOW PASSES!), e2e-smoke ✅, e2e-tests ✅, integration-run ✅, integration-tests ✅, nox ✅, tox-run ✅
+- **Run 29703912393** (2nd consecutive failing run — as of 06:04 IDT):
+  - **FAIL**: all-checks ❌, pre-commit ❌, pre-commit-run ❌ (regression persists)
+  - **PASS**: JIRA ✅, atlas-validate ✅, check-changes ✅, e2e-api ✅, **e2e-product ✅**, e2e-smoke ✅, e2e-tests ✅, integration-run ✅, integration-tests ✅, nox ✅, tox-run ✅
   - CodeRabbit: COMPLETED
+  - Previous run: 29700868666 (same failures)
 - ⚠️ **PR title includes "JN-5872"** — this may be an error (JN-5872 is a different ticket). Verify PR title.
-- **Note:** A sibling session "Diagnose tox lcov.info failure on PR #1691" ran and is idle — may have diagnosed a related issue.
+- **Note:** Sibling session "Diagnose tox lcov.info failure on PR #1691" is idle — may have relevant context.
 - **Action:** Fix pre-commit regression. Then review + merge.
 
 ---

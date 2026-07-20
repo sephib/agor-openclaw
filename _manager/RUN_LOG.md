@@ -4,6 +4,15 @@
 
 ---
 
+## 06:04 IDT — Overnight Heartbeat (Jul 20 2026)
+- PRs checked: #1690 (OPEN/MERGEABLE ✅), #1691 (OPEN/MERGEABLE — pre-commit ❌ 2nd consecutive run), #1638 (OPEN/MERGEABLE ✅), #1669 (OPEN/CONFLICTING), #1667 (OPEN/CONFLICTING), #1670 (DRAFT/MERGEABLE)
+- Merges detected: none (0 merges)
+- CI changes: **#1691 NEW RUN 29703912393** — pre-commit STILL FAILING (all-checks ❌, pre-commit ❌, pre-commit-run ❌). All other checks pass. 2nd consecutive failing run since regression. All other PRs unchanged.
+- Flags: ⚠️ Board state was 6h stale (2am/4am sessions likely failed). 🔴 #1691 pre-commit regression persists. 🟢 #1690 READY FOR REVIEW. 🟢 #1638 READY FOR REVIEW. 🔴 #1669 CI ❌ + CONFLICTING. 6 Jira mismatches unchanged.
+- Next: Joseph to fix #1691 pre-commit (morning). Review+merge #1690 and #1638. Fix #1669. Mark #1670 ready.
+
+---
+
 ## 00:04 IDT — Overnight Heartbeat (Jul 20 2026)
 - PRs checked: #1690 (OPEN/MERGEABLE ✅), #1691 (OPEN/MERGEABLE — pre-commit ❌ REGRESSION), #1638 (OPEN/MERGEABLE ✅), #1669 (OPEN/CONFLICTING), #1667 (OPEN/CONFLICTING), #1670 (DRAFT/MERGEABLE), #1596 (DRAFT/CONFLICTING)
 - Merges detected: none (0 merges overnight)
