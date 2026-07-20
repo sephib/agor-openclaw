@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-20 12:03 IDT";
+export const LAST_UPDATED = "2026-07-20 12:33 IDT";
 
 export const WORKTREES = [
   {
@@ -10,12 +10,20 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1690",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1690",
-    status: "✅ **NOW MERGEABLE** — rebased on main between 11:33–12:03 IDT. New CI run 29729530150: nox ✅, e2e-api ✅, integration-run ✅, integration-tests ✅, tox-run ✅, atlas-validate ✅, check-changes ✅, JIRA Assoc ✅, CodeRabbit ✅. ⏳ e2e-smoke + pre-commit-run IN_PROGRESS. reviewDecision reset to '' after push.",
-    blockedOn: "CI in progress — wait for e2e-smoke + pre-commit-run to pass, then request review",
+    status: "🟢 **CI FULLY PASSING** — run 29729530150: e2e-smoke ✅, pre-commit-run ✅, nox ✅, e2e-api ✅, integration-run ✅, integration-tests ✅, tox-run ✅, atlas-validate ✅, check-changes ✅, JIRA Assoc ✅, CodeRabbit ✅, pre-commit ✅. e2e-product ⏳ PENDING (non-blocking). MERGEABLE. **READY FOR REVIEW.**",
+    blockedOn: "Awaiting review request (all critical CI pass, e2e-product still pending)",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7ec0fe8879f684618ced/",
-    sessionLabel: "advance heartbeat 12:03 IDT Jul 20 — #1690 REBASED + CI ⏳; 7 Jira mismatches; 0 merges",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7edc75c577d3a7999c52/",
+    sessionLabel: "advance heartbeat 12:33 IDT Jul 20 — #1690 CI FULLY PASSING; ready for review",
     recentSessions: [
+      {
+        sessionId: "019f7edc75c577d3a7999c52",
+        url: "http://127.0.0.1:3030/ui/s/019f7edc75c577d3a7999c52/",
+        title: "advance heartbeat 12:33 IDT Jul 20 — #1690 CI FULLY PASSING; ready for review",
+        status: "completed",
+        timestamp: "2026-07-20 12:33 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7ec0fe8879f684618ced",
         url: "http://127.0.0.1:3030/ui/s/019f7ec0fe8879f684618ced/",
@@ -48,16 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-20 10:10 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f7e53209d78058d81ca91",
-        url: "http://127.0.0.1:3030/ui/s/019f7e53209d78058d81ca91/",
-        title: "advance heartbeat 09:40 IDT Jul 20 — #1690 unchanged, REVIEW_REQUIRED",
-        status: "completed",
-        timestamp: "2026-07-20 09:40 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-20 12:03 IDT",
+    lastActive: "2026-07-20 12:33 IDT",
   },
   {
     ticket: "JN-5695",
@@ -365,15 +365,15 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "green",
-    message: "✅ #1690 (AIPCC-27645): **REBASED + NEW CI RUN 29729530150** — branch rebased on main between 11:33–12:03 IDT. Most checks PASS. ⏳ e2e-smoke + pre-commit-run still IN_PROGRESS. **Action: wait ~10–20 min for CI to complete, then request review.**",
+    message: "🟢 #1690 (AIPCC-27645): **CI FULLY PASSING** run 29729530150 — e2e-smoke ✅, pre-commit-run ✅, all critical checks pass. e2e-product ⏳ still pending (non-blocking). MERGEABLE. **Action: Request review now.**",
   },
   {
     level: "green",
     message: "🎉 #1691 (AIPCC-27657): **MERGED 10:20 IDT Jul 20** — into main. aipcc-27657-guidellm-output-dir ARCHIVED ✅. AIPCC-27657 needs Done in Jira.",
   },
   {
-    level: "red",
-    message: "🔴 #1638 (JN-5725, off-board): **NOW CONFLICTING** (changed from UNKNOWN/large-PR at 10:10 IDT). CI checks no longer visible via gh pr checks (only CodeRabbit). Old run 29694608697 (all-pass) may be stale. **Action: rebase feat/vllm-analyzer-prerequisites on main before requesting review.** JN-5725 Done ✅.",
+    level: "yellow",
+    message: "🟡 #1638 (JN-5725, off-board): **NOW MERGEABLE** (rebased between 12:03–12:33 IDT). New CI run 29731143353: nox ❌ + tox-run ❌ FAILING. e2e-smoke ⏳ pending. **Action: Fix nox/tox failures, then request review.** JN-5725 Done ✅.",
   },
   {
     level: "red",

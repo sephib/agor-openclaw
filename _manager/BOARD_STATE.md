@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-20 12:03 IDT (advance heartbeat)*
+*Last updated: 2026-07-20 12:33 IDT (advance heartbeat)*
 
 ---
 
@@ -8,13 +8,13 @@
 
 | Worktree | Zone | PR | CI | Jira | Status |
 |---------|------|----|----|------|--------|
-| aipcc-27645-server-resources | **Code** | [#1690](https://github.com/Jounce-IO/jounce/pull/1690) | ⏳ **NEW CI RUN 29729530150** — nox ✅, e2e-api ✅, integration-run ✅, integration-tests ✅, tox-run ✅, atlas-validate ✅, check-changes ✅, JIRA Assoc ✅, CodeRabbit ✅; **e2e-smoke ⏳ + pre-commit-run ⏳ IN_PROGRESS** | [AIPCC-27645](https://redhat.atlassian.net/browse/AIPCC-27645) — In Progress | ✅ **NOW MERGEABLE** — branch rebased between 11:33–12:03 IDT. reviewDecision: "" (reset after push). CI run 29729530150 in progress, mostly passing. |
+| aipcc-27645-server-resources | **Code** | [#1690](https://github.com/Jounce-IO/jounce/pull/1690) | ✅ **CI FULLY PASSING** run 29729530150 — nox ✅, e2e-api ✅, e2e-smoke ✅, integration-run ✅, integration-tests ✅, tox-run ✅, atlas-validate ✅, check-changes ✅, JIRA Assoc ✅, CodeRabbit ✅, pre-commit ✅, pre-commit-run ✅; **e2e-product ⏳ PENDING** (non-blocking) | [AIPCC-27645](https://redhat.atlassian.net/browse/AIPCC-27645) — In Progress | 🟢 **READY FOR REVIEW** — MERGEABLE, reviewDecision:"" (reset after rebase). All critical CI PASS. **Action: Request review now.** |
 | jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | UNKNOWN (stale) | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) — In Progress | 🔴 DRAFT + CONFLICTING; frozen since Jun 14. No change. |
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — New | Design session done Jun 30. Ready for Plan phase. Stale 20+ days. |
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | Last session Jul 8 IDLE. SHA 16ec44ea (2 commits). Needs: configs, rebase, PR. Stale 12+ days. |
 | jn-5844-service-lib-sql-agents-md | **Publish** | [#1670 DRAFT](https://github.com/Jounce-IO/jounce/pull/1670) | ✅ ALL CI PASS (run 29403233416 — stale) | [JN-5844](https://redhat.atlassian.net/browse/JN-5844) — New | DRAFT PR #1670. CI all pass (stale). Needs: mark ready for review. |
 | jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | UNKNOWN (CONFLICTING) | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) — New | 🟡 **CONFLICTING** — needs rebase on main. |
-| jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | 🔴 run 29683534910: pre-commit ❌, nox ❌, tox-run ❌, all-checks ❌ (stale) | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — In Progress | 🔴 **CI ❌ + CONFLICTING** — unchanged. |
+| jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | 🔴 run 29683534910 (stale): pre-commit ❌, nox ❌, tox-run ❌, all-checks ❌ | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — In Progress | 🔴 **CI ❌ + CONFLICTING** — unchanged. |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — New | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 12+** (still Ingest, should be Code). |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 25+ days. Propose archive. |
 
@@ -24,7 +24,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | ⚠️ **CI UNKNOWN** — only CodeRabbit visible; old run 29694608697 (all-pass) may be stale | **OPEN, CONFLICTING** 🔴 | 🔴 **NEW: Changed to CONFLICTING** (was UNKNOWN/large PR). CI checks no longer visible. Needs rebase. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🔴 **NEW RUN 29731143353** — nox ❌, tox-run ❌; e2e-api ✅, integration ✅, pre-commit-run ✅, check-changes ✅; e2e-smoke ⏳ PENDING | **OPEN, MERGEABLE** 🟡 (was CONFLICTING — rebased!) | 🟡 **REBASED** (MERGEABLE now) but **CI FAILING** — nox ❌ + tox-run ❌. Fix nox/tox failures, then request review. |
 
 ---
 
@@ -92,12 +92,13 @@ Active sprint tickets assigned to Joseph (non-Done/Closed, via acli):
 
 ---
 
-## Key Changes (12:03 IDT Jul 20 vs 11:33 IDT Jul 20)
+## Key Changes (12:33 IDT Jul 20 vs 12:03 IDT Jul 20)
 
 | What changed | Delta |
 |---|---|
-| **🎉 #1690 NOW MERGEABLE** | Branch `aipcc-27645-server-resources` was rebased on main between 11:33–12:03 IDT. New CI run 29729530150 triggered. Most checks PASS; e2e-smoke + pre-commit-run ⏳ still IN_PROGRESS. reviewDecision reset to "" after push. |
-| **All other PRs unchanged** | #1638 CONFLICTING, #1669 CI FAIL+CONFLICTING, #1667 CONFLICTING, #1670 DRAFT MERGEABLE — unchanged. |
+| **🟢 #1690 CI FULLY PASSING** | e2e-smoke ✅ + pre-commit-run ✅ now complete (were IN_PROGRESS at 12:03 IDT). Only e2e-product ⏳ pending (non-blocking). **PR is READY FOR REVIEW — MERGEABLE, reviewDecision:"" — request review now.** |
+| **🟡 #1638 now MERGEABLE** (was CONFLICTING) | PR rebased by someone between 12:03–12:33 IDT. New CI run 29731143353: nox ❌, tox-run ❌ FAILING. e2e-smoke ⏳ pending. CI needs fix before review. |
+| **All other PRs unchanged** | #1669 CI ❌ + CONFLICTING, #1667 CONFLICTING, #1670 DRAFT MERGEABLE — unchanged. |
 | **Jira mismatches: 7** | No change. |
 | **0 merges, 0 archives** | No new merges or archives this run. |
 
@@ -105,25 +106,27 @@ Active sprint tickets assigned to Joseph (non-Done/Closed, via acli):
 
 ## Attention Items
 
-### 🔴 #1638 (off-board JN-5725) — NOW CONFLICTING (was UNKNOWN)
+### 🟢 #1690 (aipcc-27645) — CI FULLY PASSING — READY FOR REVIEW
 
-PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements (JN-5725)"
-- State: OPEN, **CONFLICTING** 🔴 (changed from UNKNOWN at 10:10 IDT)
-- reviewDecision: `""` (no review decision)
-- CI: Only CodeRabbit visible; old run 29694608697 (all-pass) may be stale/expired
-- Jira: JN-5725 is Done ✅
-- **Action:** Rebase `feat/vllm-analyzer-prerequisites` on updated main to resolve conflict, then re-run CI before requesting review.
+PR [#1690](https://github.com/Jounce-IO/jounce/pull/1690): "fix(helm): increase API server resources and probe tolerances (AIPCC-27645) JN-5872"
+- State: OPEN, **MERGEABLE** ✅, reviewDecision: "" (reset after rebase push)
+- **Run 29729530150** — ALL CRITICAL CHECKS PASS:
+  - ✅ PASS: e2e-smoke, pre-commit-run, nox, e2e-api, integration-run, integration-tests, tox-run, atlas-validate, check-changes, JIRA Assoc, CodeRabbit, pre-commit
+  - ⏳ PENDING: e2e-product (non-blocking for review request)
+- **Action:** Request review now.
 
 ---
 
-### ✅ #1690 (aipcc-27645) — REBASED, CI IN PROGRESS (awaiting e2e-smoke + pre-commit-run)
+### 🟡 #1638 (off-board JN-5725) — REBASED (now MERGEABLE) but CI FAILING
 
-PR [#1690](https://github.com/Jounce-IO/jounce/pull/1690): "fix(helm): increase API server resources and probe tolerances (AIPCC-27645) JN-5872"
-- State: OPEN, **MERGEABLE** ✅, reviewDecision: "" (reset after push)
-- **New CI run 29729530150** triggered after rebase:
-  - ✅ PASS: nox, e2e-api, integration-run, integration-tests, tox-run, atlas-validate, check-changes, JIRA Association, CodeRabbit
-  - ⏳ IN_PROGRESS: e2e-smoke/e2e, pre-commit-run/pre-commit
-- **Action:** Wait for CI to complete (e2e-smoke + pre-commit-run). If both pass → request review.
+PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements (JN-5725)"
+- State: OPEN, **MERGEABLE** 🟡 (was CONFLICTING — someone rebased between 12:03–12:33 IDT)
+- **New CI run 29731143353:**
+  - ❌ FAIL: nox, tox-run/tox
+  - ✅ PASS: e2e-api, integration-run, integration-tests, pre-commit-run, atlas-validate, check-changes, JIRA Assoc, CodeRabbit, pre-commit
+  - ⏳ PENDING: e2e-smoke
+- Jira: JN-5725 is Done ✅
+- **Action:** Fix nox + tox-run failures (likely test or lint issue from merge of recent main changes). Then request review.
 
 ---
 
