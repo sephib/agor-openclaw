@@ -2252,3 +2252,10 @@
 - CI changes: none — all CI states unchanged from 10:40 run
 - Flags: Board static. AIPCC-27657 confirmed unassigned in Jira, still In Progress. Identified AIPCC-23249 = jn-5824 Jira ticket. Updated sprint snapshot with full AIPCC ticket IDs.
 - Next: All 4 conflicting PRs need rebase (#1690, #1638, #1667, #1669). AIPCC-27657 needs Jira → Done. 7 Jira mismatches outstanding.
+
+## 12:03 IDT — Weekday Daytime Heartbeat
+- PRs checked: #1690 (MERGEABLE ✅ NEW CI 29729530150 — e2e-smoke+pre-commit-run ⏳), #1669 (CONFLICTING, CI FAIL unchanged), #1667 (CONFLICTING unchanged), #1670 (DRAFT MERGEABLE unchanged), #1638 (CONFLICTING unchanged), #1596 (DRAFT CONFLICTING unchanged)
+- Merges detected: none (last merge was #1691 at 10:20 IDT — already captured)
+- CI changes: #1690 — NEW run 29729530150 triggered after rebase; most checks PASS, 2 still IN_PROGRESS (e2e-smoke, pre-commit-run). reviewDecision reset to "" after push. Was CONFLICTING; now MERGEABLE.
+- Flags: 7 Jira mismatches unchanged
+- Next: #1690 CI should complete within ~10–20 min; if both pending checks pass → request review

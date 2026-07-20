@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-20 11:33 IDT (advance heartbeat)*
+*Last updated: 2026-07-20 12:03 IDT (advance heartbeat)*
 
 ---
 
@@ -8,7 +8,7 @@
 
 | Worktree | Zone | PR | CI | Jira | Status |
 |---------|------|----|----|------|--------|
-| aipcc-27645-server-resources | **Code** | [#1690](https://github.com/Jounce-IO/jounce/pull/1690) | ✅ ALL CI PASS (run 29698050089 — stale; **no new CI since #1691 merged into main**) | [AIPCC-27645](https://redhat.atlassian.net/browse/AIPCC-27645) — In Progress | 🔴 **CONFLICTING** — needs rebase on main. reviewDecision: REVIEW_REQUIRED. |
+| aipcc-27645-server-resources | **Code** | [#1690](https://github.com/Jounce-IO/jounce/pull/1690) | ⏳ **NEW CI RUN 29729530150** — nox ✅, e2e-api ✅, integration-run ✅, integration-tests ✅, tox-run ✅, atlas-validate ✅, check-changes ✅, JIRA Assoc ✅, CodeRabbit ✅; **e2e-smoke ⏳ + pre-commit-run ⏳ IN_PROGRESS** | [AIPCC-27645](https://redhat.atlassian.net/browse/AIPCC-27645) — In Progress | ✅ **NOW MERGEABLE** — branch rebased between 11:33–12:03 IDT. reviewDecision: "" (reset after push). CI run 29729530150 in progress, mostly passing. |
 | jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | UNKNOWN (stale) | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) — In Progress | 🔴 DRAFT + CONFLICTING; frozen since Jun 14. No change. |
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — New | Design session done Jun 30. Ready for Plan phase. Stale 20+ days. |
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | Last session Jul 8 IDLE. SHA 16ec44ea (2 commits). Needs: configs, rebase, PR. Stale 12+ days. |
@@ -66,7 +66,7 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Daily Jira Sprint Snapshot (11:33 IDT Jul 20)
+## Daily Jira Sprint Snapshot (12:03 IDT Jul 20)
 
 Active sprint tickets assigned to Joseph (non-Done/Closed, via acli):
 
@@ -92,15 +92,13 @@ Active sprint tickets assigned to Joseph (non-Done/Closed, via acli):
 
 ---
 
-## Key Changes (11:33 IDT Jul 20 vs 10:40 IDT Jul 20)
+## Key Changes (12:03 IDT Jul 20 vs 11:33 IDT Jul 20)
 
 | What changed | Delta |
 |---|---|
-| **Board static** | No new merges, no CI changes, no PR state changes. |
-| **AIPCC-27657 confirmed unassigned** | Jira search shows no assignee on AIPCC-27657 (not filtering by assignee now). Still In Progress. |
-| **AIPCC-23249 = jn-5824** | Identified: AIPCC-23249 "Prepare benchmark run configs for IBM hardware (H100, A100-80, H200)" — In Progress. Corresponds to jn-5824-benchmark-run-configs worktree. |
-| **All PRs unchanged** | #1690 CONFLICTING, #1638 CONFLICTING, #1669 CI FAIL+CONFLICTING, #1667 CONFLICTING, #1670 DRAFT — all unchanged. |
-| **Jira mismatches: 7** | AIPCC-27657 still In Progress. No new mismatches. |
+| **🎉 #1690 NOW MERGEABLE** | Branch `aipcc-27645-server-resources` was rebased on main between 11:33–12:03 IDT. New CI run 29729530150 triggered. Most checks PASS; e2e-smoke + pre-commit-run ⏳ still IN_PROGRESS. reviewDecision reset to "" after push. |
+| **All other PRs unchanged** | #1638 CONFLICTING, #1669 CI FAIL+CONFLICTING, #1667 CONFLICTING, #1670 DRAFT MERGEABLE — unchanged. |
+| **Jira mismatches: 7** | No change. |
 | **0 merges, 0 archives** | No new merges or archives this run. |
 
 ---
@@ -118,13 +116,14 @@ PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM a
 
 ---
 
-### 🔴 #1690 (aipcc-27645) — CONFLICTING (needs rebase)
+### ✅ #1690 (aipcc-27645) — REBASED, CI IN PROGRESS (awaiting e2e-smoke + pre-commit-run)
 
 PR [#1690](https://github.com/Jounce-IO/jounce/pull/1690): "fix(helm): increase API server resources and probe tolerances (AIPCC-27645) JN-5872"
-- State: OPEN, **CONFLICTING** 🔴, reviewDecision: REVIEW_REQUIRED
-- **Cause:** PR #1691 merged into main Jul 20 10:20 IDT
-- Previous CI run 29698050089: ALL PASS (stale)
-- **Action:** 1) Rebase `aipcc-27645-server-resources` on updated main. 2) Re-run CI. 3) Submit for review.
+- State: OPEN, **MERGEABLE** ✅, reviewDecision: "" (reset after push)
+- **New CI run 29729530150** triggered after rebase:
+  - ✅ PASS: nox, e2e-api, integration-run, integration-tests, tox-run, atlas-validate, check-changes, JIRA Association, CodeRabbit
+  - ⏳ IN_PROGRESS: e2e-smoke/e2e, pre-commit-run/pre-commit
+- **Action:** Wait for CI to complete (e2e-smoke + pre-commit-run). If both pass → request review.
 
 ---
 

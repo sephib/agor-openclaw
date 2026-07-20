@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-20 11:33 IDT";
+export const LAST_UPDATED = "2026-07-20 12:03 IDT";
 
 export const WORKTREES = [
   {
@@ -10,12 +10,20 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1690",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1690",
-    status: "🔴 **NOW CONFLICTING** — mergeable changed MERGEABLE→CONFLICTING after #1691 merged into main 10:20 IDT. reviewDecision: REVIEW_REQUIRED. CI stale (run 29698050089 ALL PASS — pre-conflict). Needs rebase on main.",
-    blockedOn: "CONFLICTING — needs rebase on main after #1691 merge",
-    blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7ea587167023b97636ac/",
-    sessionLabel: "advance heartbeat 11:33 IDT Jul 20 — board static; 7 Jira mismatches; 0 merges",
+    status: "✅ **NOW MERGEABLE** — rebased on main between 11:33–12:03 IDT. New CI run 29729530150: nox ✅, e2e-api ✅, integration-run ✅, integration-tests ✅, tox-run ✅, atlas-validate ✅, check-changes ✅, JIRA Assoc ✅, CodeRabbit ✅. ⏳ e2e-smoke + pre-commit-run IN_PROGRESS. reviewDecision reset to '' after push.",
+    blockedOn: "CI in progress — wait for e2e-smoke + pre-commit-run to pass, then request review",
+    blockedType: "active",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7ec0fe8879f684618ced/",
+    sessionLabel: "advance heartbeat 12:03 IDT Jul 20 — #1690 REBASED + CI ⏳; 7 Jira mismatches; 0 merges",
     recentSessions: [
+      {
+        sessionId: "019f7ec0fe8879f684618ced",
+        url: "http://127.0.0.1:3030/ui/s/019f7ec0fe8879f684618ced/",
+        title: "advance heartbeat 12:03 IDT Jul 20 — #1690 REBASED + CI ⏳ in progress",
+        status: "completed",
+        timestamp: "2026-07-20 12:03 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7ea587167023b97636ac",
         url: "http://127.0.0.1:3030/ui/s/019f7ea587167023b97636ac/",
@@ -48,16 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-20 09:40 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f7e37a91b77e698bd9e13",
-        url: "http://127.0.0.1:3030/ui/s/019f7e37a91b77e698bd9e13/",
-        title: "advance heartbeat 09:10 IDT Jul 20 — #1690 unchanged, REVIEW_REQUIRED",
-        status: "completed",
-        timestamp: "2026-07-20 09:10 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-20 11:33 IDT",
+    lastActive: "2026-07-20 12:03 IDT",
   },
   {
     ticket: "JN-5695",
@@ -364,8 +364,8 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "red",
-    message: "🔴 #1690 (AIPCC-27645): **NOW CONFLICTING** — mergeable changed from MERGEABLE→CONFLICTING after #1691 merged into main at 10:20 IDT. reviewDecision: REVIEW_REQUIRED. CI stale (run 29698050089 ALL PASS — pre-conflict). **Action: rebase aipcc-27645-server-resources on main.**",
+    level: "green",
+    message: "✅ #1690 (AIPCC-27645): **REBASED + NEW CI RUN 29729530150** — branch rebased on main between 11:33–12:03 IDT. Most checks PASS. ⏳ e2e-smoke + pre-commit-run still IN_PROGRESS. **Action: wait ~10–20 min for CI to complete, then request review.**",
   },
   {
     level: "green",
