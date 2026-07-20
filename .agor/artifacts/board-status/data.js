@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-20 10:40 IDT";
+export const LAST_UPDATED = "2026-07-20 11:33 IDT";
 
 export const WORKTREES = [
   {
@@ -13,9 +13,17 @@ export const WORKTREES = [
     status: "🔴 **NOW CONFLICTING** — mergeable changed MERGEABLE→CONFLICTING after #1691 merged into main 10:20 IDT. reviewDecision: REVIEW_REQUIRED. CI stale (run 29698050089 ALL PASS — pre-conflict). Needs rebase on main.",
     blockedOn: "CONFLICTING — needs rebase on main after #1691 merge",
     blockedType: "blocked",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7e6e983b72c1a122f2eb/",
-    sessionLabel: "advance heartbeat 10:10 IDT Jul 20 — #1691 MERGED; #1690 NOW CONFLICTING",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7ea587167023b97636ac/",
+    sessionLabel: "advance heartbeat 11:33 IDT Jul 20 — board static; 7 Jira mismatches; 0 merges",
     recentSessions: [
+      {
+        sessionId: "019f7ea587167023b97636ac",
+        url: "http://127.0.0.1:3030/ui/s/019f7ea587167023b97636ac/",
+        title: "advance heartbeat 11:33 IDT Jul 20 — board static; 7 Jira mismatches; 0 merges",
+        status: "completed",
+        timestamp: "2026-07-20 11:33 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7e8a12407841a5103c38",
         url: "http://127.0.0.1:3030/ui/s/019f7e8a12407841a5103c38/",
@@ -48,24 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-20 09:10 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f7e1c314775f580e2dc19",
-        url: "http://127.0.0.1:3030/ui/s/019f7e1c314775f580e2dc19/",
-        title: "advance heartbeat 08:40 IDT Jul 20 — #1690 unchanged, READY FOR REVIEW ✅",
-        status: "completed",
-        timestamp: "2026-07-20 08:40 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f7de55965732e90f87ecc",
-        url: "http://127.0.0.1:3030/ui/s/019f7de55965732e90f87ecc/",
-        title: "advance heartbeat 08:04 IDT Jul 20 — #1690 unchanged, READY FOR REVIEW ✅",
-        status: "completed",
-        timestamp: "2026-07-20 08:04 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-20 10:40 IDT",
+    lastActive: "2026-07-20 11:33 IDT",
   },
   {
     ticket: "JN-5695",

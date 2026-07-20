@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-20 10:40 IDT (advance heartbeat)*
+*Last updated: 2026-07-20 11:33 IDT (advance heartbeat)*
 
 ---
 
@@ -66,7 +66,7 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Daily Jira Sprint Snapshot (10:40 IDT Jul 20)
+## Daily Jira Sprint Snapshot (11:33 IDT Jul 20)
 
 Active sprint tickets assigned to Joseph (non-Done/Closed, via acli):
 
@@ -76,24 +76,31 @@ Active sprint tickets assigned to Joseph (non-Done/Closed, via acli):
 | [AIPCC-27012](https://redhat.atlassian.net/browse/AIPCC-27012) | New | [QE] Cross-tool validation of hierarchical AGENTS.md |
 | [AIPCC-27007](https://redhat.atlassian.net/browse/AIPCC-27007) | New | [DEV] Refine existing tests/e2e/AGENTS.md |
 | [AIPCC-27002](https://redhat.atlassian.net/browse/AIPCC-27002) | New | [DEV] Write peripheral app AGENTS.md files |
+| [AIPCC-26996](https://redhat.atlassian.net/browse/AIPCC-26996) | New | [DEV] Write Helm and CI/CD AGENTS.md files (= jn-5845 PR #1667) |
+| [AIPCC-26990](https://redhat.atlassian.net/browse/AIPCC-26990) | New | [DEV] Write service/lib/sql domain AGENTS.md files (= jn-5844 PR #1670) |
 | [AIPCC-26983](https://redhat.atlassian.net/browse/AIPCC-26983) | New | [CI] Remove ties infrastructure + Cursor AGENTS.md auto-generation |
-| [JN-5244](https://redhat.atlassian.net/browse/JN-5244) | In Progress | Add CLI flags to run_jbenchmark_runner |
-| [JN-4393](https://redhat.atlassian.net/browse/JN-4393) | In Progress | Upgrade AGENTS.md Standard for Jounce Repository |
+| [AIPCC-26976](https://redhat.atlassian.net/browse/AIPCC-26976) | New | [DEV] Write apps/jbenchmark/AGENTS.md (= JN-5842 PR #1658 MERGED — Jira mismatch!) |
+| [AIPCC-26144](https://redhat.atlassian.net/browse/AIPCC-26144) | In Progress | Add --user, --no-cache, --skip-estimator CLI flags (= JN-5244 subtask) |
+| [AIPCC-25962](https://redhat.atlassian.net/browse/AIPCC-25962) | In Progress | [DOCS] Document module layout convention and Dockerfile template |
+| [AIPCC-24211](https://redhat.atlassian.net/browse/AIPCC-24211) | In Progress | Upgrade AGENTS.md Standard for Jounce Repository (= JN-4393) |
 | [AIPCC-23890](https://redhat.atlassian.net/browse/AIPCC-23890) | In Progress | [QE] E2E validation of IBM cluster connection workflows |
-| [JN-5401](https://redhat.atlassian.net/browse/JN-5401) | New | Add subcommands to runner — MERGED, Jira stale! |
-| [JN-5132](https://redhat.atlassian.net/browse/JN-5132) | In Progress | Refactor run_jbenchmark script |
-| [JN-5788](https://redhat.atlassian.net/browse/JN-5788) | In Progress | Verify Visibility Notebook in Production |
-| [AIPCC-27645](https://redhat.atlassian.net/browse/AIPCC-27645) | In Progress | Increase API server resource limits |
+| [AIPCC-23857](https://redhat.atlassian.net/browse/AIPCC-23857) | In Progress | Refactor run_jbenchmark script (= JN-5132) |
+| [AIPCC-23788](https://redhat.atlassian.net/browse/AIPCC-23788) | New | Add subcommands to jbenchmark (= JN-5401 — MERGED, Jira stale!) |
+| [AIPCC-23249](https://redhat.atlassian.net/browse/AIPCC-23249) | In Progress | Prepare benchmark run configs for IBM H100/A100-80/H200 (= jn-5824 worktree) |
+| [AIPCC-23308](https://redhat.atlassian.net/browse/AIPCC-23308) | New | Implement v0.7.0 Report Ingestion |
+| [AIPCC-23298](https://redhat.atlassian.net/browse/AIPCC-23298) | New | Implement v0.7.0 Container Image & Argo Integration |
 
 ---
 
-## Key Changes (10:40 IDT Jul 20 vs 10:10 IDT Jul 20)
+## Key Changes (11:33 IDT Jul 20 vs 10:40 IDT Jul 20)
 
 | What changed | Delta |
 |---|---|
-| **🔴 #1638 now CONFLICTING** | Was `mergeable: UNKNOWN` (large PR 165 files) → now **CONFLICTING**. CI checks no longer visible via `gh pr checks` (only CodeRabbit shown). Old run 29694608697 (all-pass) may be stale. Needs rebase on main. |
-| **All other PRs unchanged** | #1690 CONFLICTING, #1669 CI FAIL+CONFLICTING, #1667 CONFLICTING, #1670 DRAFT — all unchanged from 10:10 run. |
-| **Jira mismatches: 7** | AIPCC-27657 still In Progress despite both PRs merged. No new mismatches. |
+| **Board static** | No new merges, no CI changes, no PR state changes. |
+| **AIPCC-27657 confirmed unassigned** | Jira search shows no assignee on AIPCC-27657 (not filtering by assignee now). Still In Progress. |
+| **AIPCC-23249 = jn-5824** | Identified: AIPCC-23249 "Prepare benchmark run configs for IBM hardware (H100, A100-80, H200)" — In Progress. Corresponds to jn-5824-benchmark-run-configs worktree. |
+| **All PRs unchanged** | #1690 CONFLICTING, #1638 CONFLICTING, #1669 CI FAIL+CONFLICTING, #1667 CONFLICTING, #1670 DRAFT — all unchanged. |
+| **Jira mismatches: 7** | AIPCC-27657 still In Progress. No new mismatches. |
 | **0 merges, 0 archives** | No new merges or archives this run. |
 
 ---

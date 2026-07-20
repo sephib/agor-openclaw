@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-20 11:33 IDT",
+    actions: 0,
+    findings: 0,
+    status: "ok",
+    summary: "Board static — no new merges, no CI changes; 7 Jira mismatches; AIPCC-23249 identified as jn-5824 Jira ticket",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7ea587167023b97636ac/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-20 10:40 IDT",
     actions: 0,
     findings: 1,
