@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-20 09:10 IDT";
+export const LAST_UPDATED = "2026-07-20 09:40 IDT";
 
 export const WORKTREES = [
   {
@@ -13,9 +13,17 @@ export const WORKTREES = [
     status: "🟢 **READY FOR REVIEW** — not DRAFT, ALL CI PASS (run 29698050089). JIRA ✅, all-checks ✅, pre-commit ✅, tox-run ✅, e2e-smoke ✅, e2e-api ✅, integration-run ✅, nox ✅. State: OPEN, MERGEABLE ✅.",
     blockedOn: null,
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7e37a91b77e698bd9e13/",
-    sessionLabel: "advance heartbeat 09:10 IDT Jul 20 — #1690 unchanged, REVIEW_REQUIRED",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7e53209d78058d81ca91/",
+    sessionLabel: "advance heartbeat 09:40 IDT Jul 20 — #1690 unchanged, REVIEW_REQUIRED",
     recentSessions: [
+      {
+        sessionId: "019f7e53209d78058d81ca91",
+        url: "http://127.0.0.1:3030/ui/s/019f7e53209d78058d81ca91/",
+        title: "advance heartbeat 09:40 IDT Jul 20 — #1690 unchanged, REVIEW_REQUIRED",
+        status: "completed",
+        timestamp: "2026-07-20 09:40 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7e37a91b77e698bd9e13",
         url: "http://127.0.0.1:3030/ui/s/019f7e37a91b77e698bd9e13/",
@@ -76,12 +84,20 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1691",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1691",
-    status: "🟢 ✅ **APPROVED + ALL CI PASS — READY TO MERGE** 🎉 — reviewDecision: APPROVED (09:10 IDT Jul 20). Run 29717054182: JIRA ✅, all-checks ✅, e2e-product ✅, pre-commit ✅, nox ✅, tox-run ✅, all others ✅. CodeRabbit ✅. State: OPEN, MERGEABLE. ⚠️ Merge companion PR #1692 into this branch FIRST. ⚠️ PR title contains 'JN-5872' — verify title.",
+    status: "🟡 ⏳ **APPROVED — e2e-product PENDING** — reviewDecision: APPROVED ✅. NEW run 29722197965 triggered by #1692 merge at 09:36 IDT. PASS: JIRA ✅, CodeRabbit ✅, atlas-validate ✅, check-changes ✅, e2e-api ✅, e2e-smoke ✅, integration-run ✅, integration-tests ✅, pre-commit-run ✅, tox-run ✅, nox ✅, pre-commit ✅. PENDING: e2e-product ⏳. all-checks not yet run. Wait before merging.",
     blockedOn: null,
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7e37a91b77e698bd9e13/",
-    sessionLabel: "advance heartbeat 09:10 IDT Jul 20 — #1691 APPROVED ✅ ALL CI PASS — MERGE NOW 🎉",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7e53209d78058d81ca91/",
+    sessionLabel: "advance heartbeat 09:40 IDT Jul 20 — #1692 MERGED 09:36 IDT; #1691 new CI e2e-product PENDING",
     recentSessions: [
+      {
+        sessionId: "019f7e53209d78058d81ca91",
+        url: "http://127.0.0.1:3030/ui/s/019f7e53209d78058d81ca91/",
+        title: "advance heartbeat 09:40 IDT Jul 20 — #1692 MERGED; #1691 e2e-product PENDING",
+        status: "completed",
+        timestamp: "2026-07-20 09:40 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7e37a91b77e698bd9e13",
         url: "http://127.0.0.1:3030/ui/s/019f7e37a91b77e698bd9e13/",
@@ -123,7 +139,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-20 09:10 IDT",
+    lastActive: "2026-07-20 09:40 IDT",
   },
   {
     ticket: "JN-5695",
@@ -319,6 +335,15 @@ export const WORKTREES = [
 
 export const MERGED = [
   {
+    ticket: "AIPCC-27657",
+    ticketUrl: "https://redhat.atlassian.net/browse/AIPCC-27657",
+    title: "test(jbenchmark): update test fixtures for GuideLLM v0.6.1 (companion to #1691)",
+    pr: "#1692",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1692",
+    mergedDate: "2026-07-20",
+    note: "Merged 09:36 IDT Jul 20 🎉 Off-board companion PR — merged into `aipcc-27657-guidellm-output-dir` (no Agor worktree). Triggered new CI run 29722197965 on #1691.",
+  },
+  {
     ticket: "JN-5891",
     ticketUrl: "https://redhat.atlassian.net/browse/JN-5891",
     title: "fix(jbenchmark): set GuideLLM max_seconds default to 1200 (JN-5891)",
@@ -412,12 +437,12 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "green",
-    message: "✅ 🎉 #1691 (AIPCC-27657): **APPROVED + ALL CI PASS** — reviewDecision: APPROVED as of 09:10 IDT Jul 20. Run 29717054182: e2e-product ✅, all-checks ✅, pre-commit ✅, CodeRabbit ✅. State: OPEN, MERGEABLE. **MERGE NOW**: 1) #1692 → feature branch, 2) #1691 → main. ⚠️ PR title contains 'JN-5872' — verify.",
+    level: "yellow",
+    message: "⏳ #1691 (AIPCC-27657): **APPROVED — e2e-product PENDING** — NEW CI run 29722197965 triggered by #1692 merge at 09:36 IDT. Most checks pass; e2e-product ⏳ pending; all-checks not yet run. reviewDecision: APPROVED ✅. Wait for e2e-product before merging.",
   },
   {
     level: "green",
-    message: "✅ 🎉 #1692 (AIPCC-27657 test fixtures): **APPROVED + ALL CI PASS** — reviewDecision: APPROVED as of 09:10 IDT Jul 20. Run 29717285073: e2e-product ✅, all-checks ✅. Merge into `aipcc-27657-guidellm-output-dir` FIRST, then merge #1691 into main.",
+    message: "✅ 🎉 #1692 (AIPCC-27657 test fixtures): **MERGED 09:36 IDT Jul 20** — into `aipcc-27657-guidellm-output-dir`. Triggered new CI run 29722197965 on #1691.",
   },
   {
     level: "green",
