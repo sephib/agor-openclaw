@@ -4,7 +4,16 @@
 
 ---
 
-## 06:04 IDT — Overnight Heartbeat (Jul 20 2026)
+## 08:10 IDT — Daily External Sync (Jul 20 2026)
+- Jira tickets checked: 30 (sprint search) — 4 non-Closed: AIPCC-23169 (In Progress), AIPCC-23119 (New), AIPCC-23104 (In Progress), AIPCC-27018 (New). All others Closed.
+- Mismatches found: 6 Jira mismatches unchanged (JN-5842/AIPCC-26976, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546 — not visible in sprint search, need manual acli update)
+- PR state discrepancies: 🆕 NEW PR #1692 (aipcc-27657-test-updates) — not previously tracked. CI mostly passing, e2e-product pending. Targets #1691 branch.
+- #1691 pre-commit confirmed FIXED in new run 29717054182 (advance heartbeat already captured this)
+- Updates made to BOARD_STATE.md: yes — added PR #1692, Jira sprint snapshot, updated Key Changes and Attention Items
+
+---
+
+## 08:04 IDT — Advance Heartbeat (Jul 20 2026)
 - PRs checked: #1690 (OPEN/MERGEABLE ✅), #1691 (OPEN/MERGEABLE — pre-commit ❌ 2nd consecutive run), #1638 (OPEN/MERGEABLE ✅), #1669 (OPEN/CONFLICTING), #1667 (OPEN/CONFLICTING), #1670 (DRAFT/MERGEABLE)
 - Merges detected: none (0 merges)
 - CI changes: **#1691 NEW RUN 29703912393** — pre-commit STILL FAILING (all-checks ❌, pre-commit ❌, pre-commit-run ❌). All other checks pass. 2nd consecutive failing run since regression. All other PRs unchanged.

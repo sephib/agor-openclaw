@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-20 08:04 IDT";
+export const LAST_UPDATED = "2026-07-20 08:10 IDT";
 
 export const WORKTREES = [
   {
@@ -92,8 +92,8 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1691",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1691",
-    status: "🟡 RUN 29717054182 (NEW) — pre-commit ✅ FIXED! PASS: JIRA ✅, atlas-validate ✅, check-changes ✅, e2e-api ✅, e2e-smoke ✅, integration-run ✅, integration-tests ✅, nox ✅, pre-commit ✅, pre-commit-run ✅, tox-run ✅, CodeRabbit ✅. PENDING: e2e-product ⏳. all-checks not yet complete. ⚠️ PR title contains 'JN-5872' — verify title.",
-    blockedOn: "e2e-product pending — all-checks not yet complete",
+    status: "🟡 RUN 29717054182 (NEW) — pre-commit ✅ FIXED! PASS: JIRA ✅, atlas-validate ✅, check-changes ✅, e2e-api ✅, e2e-smoke ✅, integration-run ✅, integration-tests ✅, nox ✅, pre-commit ✅, pre-commit-run ✅, tox-run ✅, CodeRabbit ✅. PENDING: e2e-product ⏳. all-checks not yet complete. ⚠️ PR title contains 'JN-5872' — verify title. 🆕 Companion PR #1692 (test fixtures) also pending e2e-product — merge #1692 into branch first, then #1691 into main.",
+    blockedOn: "e2e-product pending — all-checks not yet complete; #1692 merge order",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f7de55965732e90f87ecc/",
     sessionLabel: "advance heartbeat 08:04 IDT Jul 20 — #1691 pre-commit FIXED 🎉 (run 29717054182, e2e-product pending)",
@@ -566,6 +566,10 @@ export const ALERTS = [
   {
     level: "yellow",
     message: "🟡 #1691 (AIPCC-27657): pre-commit FIXED ✅ — NEW RUN 29717054182. Pre-commit ✅, pre-commit-run ✅, nox ✅, tox-run ✅ all PASS. e2e-product ⏳ still running — all-checks pending. Once e2e-product completes, PR ready for review + merge. ⚠️ PR title contains 'JN-5872' — verify.",
+  },
+  {
+    level: "yellow",
+    message: "🆕 #1692 (AIPCC-27657 test fixtures): NEW companion PR — 'test(jbenchmark): update test fixtures for GuideLLM v0.6.1'. Branch aipcc-27657-test-updates → targets #1691 branch. CI mostly passing, e2e-product ⏳ pending. Merge #1692 into aipcc-27657-guidellm-output-dir FIRST, then merge #1691 into main.",
   },
   {
     level: "green",
