@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-20 17:30 IDT";
+export const LAST_UPDATED = "2026-07-20 18:00 IDT";
 
 export const WORKTREES = [
   {
@@ -10,12 +10,20 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1690",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1690",
-    status: "🔴 **NOW CONFLICTING** (17:30 IDT — was UNKNOWN at 17:00). All CI 100% PASSING (run 29729530150 unchanged: e2e-smoke ✅, e2e-product ✅, all-checks ✅, everything green). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
+    status: "🔴 **CONFLICTING** (confirmed 17:30 IDT). All CI 100% PASSING (run 29729530150 unchanged: e2e-smoke ✅, e2e-product ✅, all-checks ✅, everything green). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
     blockedOn: "CONFLICTING — needs rebase on main",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f805d1a5f7a149aee1b82/",
-    sessionLabel: "advance heartbeat 17:30 IDT Jul 20 — #1690 NOW CONFLICTING; #1638 MERGEABLE but e2e-smoke ❌; #1698 ready for review; #1667 CONFLICTING; 0 merges",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8078919b75efa1f699f7/",
+    sessionLabel: "advance heartbeat 18:00 IDT Jul 20 — board static; all PRs unchanged; 0 merges",
     recentSessions: [
+      {
+        sessionId: "019f8078919b75efa1f699f7",
+        url: "http://127.0.0.1:3030/ui/s/019f8078919b75efa1f699f7/",
+        title: "advance heartbeat 18:00 IDT Jul 20 — board static; all PRs unchanged; 0 merges",
+        status: "completed",
+        timestamp: "2026-07-20 18:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f805d1a5f7a149aee1b82",
         url: "http://127.0.0.1:3030/ui/s/019f805d1a5f7a149aee1b82/",
@@ -46,22 +54,6 @@ export const WORKTREES = [
         title: "advance heartbeat 16:00 IDT Jul 20 — 2 new PRs (#1697/#1698 pre-commit ❌); 3 worktrees → Plan",
         status: "completed",
         timestamp: "2026-07-20 16:00 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f7f8187817733b11d5b13",
-        url: "http://127.0.0.1:3030/ui/s/019f7f8187817733b11d5b13/",
-        title: "advance heartbeat 15:30 IDT Jul 20 — 4 new worktrees; #1690 ALL CI PASS unchanged; #1638 e2e-smoke ❌ unchanged",
-        status: "completed",
-        timestamp: "2026-07-20 15:30 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f7f66122d7aefa49de05c",
-        url: "http://127.0.0.1:3030/ui/s/019f7f66122d7aefa49de05c/",
-        title: "advance heartbeat 15:03 IDT Jul 20 — board static; #1690 ALL CI PASS unchanged; #1638 e2e-smoke ❌ unchanged",
-        status: "completed",
-        timestamp: "2026-07-20 15:03 IDT",
         outputFile: null,
       },
     ],

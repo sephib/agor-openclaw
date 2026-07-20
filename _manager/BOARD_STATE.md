@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-20 17:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-20 18:00 IDT (advance heartbeat)*
 
 ---
 
@@ -96,16 +96,15 @@ Active sprint tickets assigned to Joseph (non-Done/Closed, via acli):
 
 ---
 
-## Key Changes (17:30 IDT Jul 20 vs 17:00 IDT Jul 20)
+## Key Changes (18:00 IDT Jul 20 vs 17:30 IDT Jul 20)
 
 | What changed | Delta |
 |---|---|
-| **🔴 #1690 NOW CONFLICTING** | Was UNKNOWN at 17:00. Now confirmed CONFLICTING. CI still ALL PASS (run 29729530150 unchanged). **Needs rebase before review.** |
-| **🟢 #1638 NOW MERGEABLE** (but e2e-smoke ❌) | Was CONFLICTING at 17:00 — conflict resolved! New CI run 29749975829: pre-commit ✅, nox ✅, tox ✅, e2e-api ✅ BUT **e2e-smoke ❌ FAILED**, e2e-tests ❌, all-checks ❌. |
-| **🟡 #1698 no longer draft, JIRA Assoc fixed** | isDraft changed to false (marked ready for review!). JIRA Assoc now ✅. CI run 29749885088 complete: pre-commit ❌, all-checks ❌. |
-| **🔴 #1667 CONFLICTING confirmed** | Was UNKNOWN at 17:00. Now confirmed CONFLICTING. CI still all-pass (stale run 29402877354). |
-| **#1669 unchanged** | CONFLICTING + CI ❌ (same). |
-| **#1695/#1696/#1697 unchanged** | Same CI as 16:00 IDT. No new pushes. |
+| **Board static** | No new CI runs, no new pushes, no merges, no state changes since 17:30 IDT. All PRs in same state. |
+| **#1690 CONFLICTING** | Unchanged. Still needs rebase + review request. |
+| **#1698 pre-commit ❌** | Unchanged. Ready for review but blocked on pre-commit fix. |
+| **#1638 e2e-smoke ❌** | Unchanged. Mergeable but e2e-smoke still failing. |
+| **#1667 CONFLICTING** | Unchanged. Needs rebase on main. |
 | **Jira mismatches: 7** | No change. |
 | **0 merges, 0 archives** | No new merges or archives this run. |
 
