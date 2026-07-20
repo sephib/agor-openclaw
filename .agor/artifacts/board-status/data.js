@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-20 06:04 IDT";
+export const LAST_UPDATED = "2026-07-20 08:04 IDT";
 
 export const WORKTREES = [
   {
@@ -13,9 +13,17 @@ export const WORKTREES = [
     status: "🟢 **READY FOR REVIEW** — no longer DRAFT, ALL CI PASS (run 29698050089). JIRA ✅, all-checks ✅, pre-commit ✅, tox-run ✅, e2e-smoke ✅, e2e-api ✅, integration-run ✅, nox ✅. State: OPEN, MERGEABLE ✅.",
     blockedOn: null,
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7d78f5367a35a34df6c3/",
-    sessionLabel: "advance heartbeat 06:04 IDT Jul 20 — #1690 unchanged, READY FOR REVIEW ✅",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7de55965732e90f87ecc/",
+    sessionLabel: "advance heartbeat 08:04 IDT Jul 20 — #1690 unchanged, READY FOR REVIEW ✅",
     recentSessions: [
+      {
+        sessionId: "019f7de55965732e90f87ecc",
+        url: "http://127.0.0.1:3030/ui/s/019f7de55965732e90f87ecc/",
+        title: "advance heartbeat 08:04 IDT Jul 20 — #1690 unchanged, READY FOR REVIEW ✅",
+        status: "completed",
+        timestamp: "2026-07-20 08:04 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7d78f5367a35a34df6c3",
         url: "http://127.0.0.1:3030/ui/s/019f7d78f5367a35a34df6c3/",
@@ -84,12 +92,20 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1691",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1691",
-    status: "🔴 RUN 29703912393 (2nd consecutive fail) — pre-commit STILL FAILING. FAIL: all-checks ❌, pre-commit ❌, pre-commit-run ❌. PASS: JIRA ✅, atlas-validate ✅, check-changes ✅, e2e-api ✅, e2e-product ✅, e2e-smoke ✅, e2e-tests ✅, integration-run ✅, integration-tests ✅, nox ✅, tox-run ✅. ⚠️ PR title contains 'JN-5872' — verify title.",
-    blockedOn: "pre-commit failing — 2 consecutive runs — fix needed",
+    status: "🟡 RUN 29717054182 (NEW) — pre-commit ✅ FIXED! PASS: JIRA ✅, atlas-validate ✅, check-changes ✅, e2e-api ✅, e2e-smoke ✅, integration-run ✅, integration-tests ✅, nox ✅, pre-commit ✅, pre-commit-run ✅, tox-run ✅, CodeRabbit ✅. PENDING: e2e-product ⏳. all-checks not yet complete. ⚠️ PR title contains 'JN-5872' — verify title.",
+    blockedOn: "e2e-product pending — all-checks not yet complete",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7d78f5367a35a34df6c3/",
-    sessionLabel: "advance heartbeat 06:04 IDT Jul 20 — #1691 pre-commit STILL FAILING (run 29703912393, 2nd consecutive)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7de55965732e90f87ecc/",
+    sessionLabel: "advance heartbeat 08:04 IDT Jul 20 — #1691 pre-commit FIXED 🎉 (run 29717054182, e2e-product pending)",
     recentSessions: [
+      {
+        sessionId: "019f7de55965732e90f87ecc",
+        url: "http://127.0.0.1:3030/ui/s/019f7de55965732e90f87ecc/",
+        title: "advance heartbeat 08:04 IDT Jul 20 — #1691 pre-commit FIXED 🎉 (run 29717054182, e2e-product pending)",
+        status: "completed",
+        timestamp: "2026-07-20 08:04 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7d78f5367a35a34df6c3",
         url: "http://127.0.0.1:3030/ui/s/019f7d78f5367a35a34df6c3/",
@@ -548,8 +564,8 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "red",
-    message: "🔴 #1691 (AIPCC-27657): pre-commit STILL FAILING — 2 consecutive runs (29700868666, 29703912393): all-checks ❌, pre-commit ❌, pre-commit-run ❌. All other checks pass including e2e-product ✅. Fix pre-commit to merge. ⚠️ PR title contains 'JN-5872' — verify.",
+    level: "yellow",
+    message: "🟡 #1691 (AIPCC-27657): pre-commit FIXED ✅ — NEW RUN 29717054182. Pre-commit ✅, pre-commit-run ✅, nox ✅, tox-run ✅ all PASS. e2e-product ⏳ still running — all-checks pending. Once e2e-product completes, PR ready for review + merge. ⚠️ PR title contains 'JN-5872' — verify.",
   },
   {
     level: "green",
