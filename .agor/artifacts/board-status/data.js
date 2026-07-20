@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-20 08:40 IDT";
+export const LAST_UPDATED = "2026-07-20 09:10 IDT";
 
 export const WORKTREES = [
   {
@@ -13,9 +13,17 @@ export const WORKTREES = [
     status: "🟢 **READY FOR REVIEW** — not DRAFT, ALL CI PASS (run 29698050089). JIRA ✅, all-checks ✅, pre-commit ✅, tox-run ✅, e2e-smoke ✅, e2e-api ✅, integration-run ✅, nox ✅. State: OPEN, MERGEABLE ✅.",
     blockedOn: null,
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7e1c314775f580e2dc19/",
-    sessionLabel: "advance heartbeat 08:40 IDT Jul 20 — #1690 unchanged, READY FOR REVIEW ✅",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7e37a91b77e698bd9e13/",
+    sessionLabel: "advance heartbeat 09:10 IDT Jul 20 — #1690 unchanged, REVIEW_REQUIRED",
     recentSessions: [
+      {
+        sessionId: "019f7e37a91b77e698bd9e13",
+        url: "http://127.0.0.1:3030/ui/s/019f7e37a91b77e698bd9e13/",
+        title: "advance heartbeat 09:10 IDT Jul 20 — #1690 unchanged, REVIEW_REQUIRED",
+        status: "completed",
+        timestamp: "2026-07-20 09:10 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7e1c314775f580e2dc19",
         url: "http://127.0.0.1:3030/ui/s/019f7e1c314775f580e2dc19/",
@@ -57,7 +65,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-20 08:40 IDT",
+    lastActive: "2026-07-20 09:10 IDT",
   },
   {
     ticket: "AIPCC-27657",
@@ -68,12 +76,20 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1691",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1691",
-    status: "🟢 **ALL CI FULLY PASS** 🎉 — Run 29717054182: JIRA ✅, all-checks ✅, e2e-product ✅ NOW PASSES, pre-commit ✅, pre-commit-run ✅, nox ✅, tox-run ✅, all others ✅. CodeRabbit ✅. State: OPEN, MERGEABLE. **READY FOR REVIEW**. ⚠️ Merge companion PR #1692 into this branch FIRST. ⚠️ PR title contains 'JN-5872' — verify title.",
+    status: "🟢 ✅ **APPROVED + ALL CI PASS — READY TO MERGE** 🎉 — reviewDecision: APPROVED (09:10 IDT Jul 20). Run 29717054182: JIRA ✅, all-checks ✅, e2e-product ✅, pre-commit ✅, nox ✅, tox-run ✅, all others ✅. CodeRabbit ✅. State: OPEN, MERGEABLE. ⚠️ Merge companion PR #1692 into this branch FIRST. ⚠️ PR title contains 'JN-5872' — verify title.",
     blockedOn: null,
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7e1c314775f580e2dc19/",
-    sessionLabel: "advance heartbeat 08:40 IDT Jul 20 — #1691 ALL CI FULLY PASS 🎉 READY FOR REVIEW",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7e37a91b77e698bd9e13/",
+    sessionLabel: "advance heartbeat 09:10 IDT Jul 20 — #1691 APPROVED ✅ ALL CI PASS — MERGE NOW 🎉",
     recentSessions: [
+      {
+        sessionId: "019f7e37a91b77e698bd9e13",
+        url: "http://127.0.0.1:3030/ui/s/019f7e37a91b77e698bd9e13/",
+        title: "advance heartbeat 09:10 IDT Jul 20 — #1691 APPROVED ✅ ALL CI PASS — MERGE NOW 🎉",
+        status: "completed",
+        timestamp: "2026-07-20 09:10 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7e1c314775f580e2dc19",
         url: "http://127.0.0.1:3030/ui/s/019f7e1c314775f580e2dc19/",
@@ -106,16 +122,8 @@ export const WORKTREES = [
         timestamp: "2026-07-20 00:04 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f7ba48c8472258c9018fd",
-        url: "http://127.0.0.1:3030/ui/s/019f7ba48c8472258c9018fd/",
-        title: "advance heartbeat 21:32 IDT Jul 19 — #1691 new run 29698179409, e2e-product PENDING",
-        status: "completed",
-        timestamp: "2026-07-19 21:32 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-20 08:40 IDT",
+    lastActive: "2026-07-20 09:10 IDT",
   },
   {
     ticket: "JN-5695",
@@ -405,15 +413,15 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "green",
-    message: "🟢 🎉 #1691 (AIPCC-27657): ALL CI FULLY PASS — Run 29717054182: e2e-product ✅ NOW PASSES, all-checks ✅, pre-commit ✅, CodeRabbit ✅. State: OPEN, MERGEABLE. **READY FOR REVIEW**. ⚠️ Merge companion PR #1692 into branch first, then #1691 into main. ⚠️ PR title contains 'JN-5872' — verify title.",
+    message: "✅ 🎉 #1691 (AIPCC-27657): **APPROVED + ALL CI PASS** — reviewDecision: APPROVED as of 09:10 IDT Jul 20. Run 29717054182: e2e-product ✅, all-checks ✅, pre-commit ✅, CodeRabbit ✅. State: OPEN, MERGEABLE. **MERGE NOW**: 1) #1692 → feature branch, 2) #1691 → main. ⚠️ PR title contains 'JN-5872' — verify.",
   },
   {
     level: "green",
-    message: "🎉 #1692 (AIPCC-27657 test fixtures): ALL CI FULLY PASS — Run 29717285073: e2e-product ✅, all-checks ✅. State: OPEN, MERGEABLE. Merge into `aipcc-27657-guidellm-output-dir` FIRST (feeds into #1691), then merge #1691 into main.",
+    message: "✅ 🎉 #1692 (AIPCC-27657 test fixtures): **APPROVED + ALL CI PASS** — reviewDecision: APPROVED as of 09:10 IDT Jul 20. Run 29717285073: e2e-product ✅, all-checks ✅. Merge into `aipcc-27657-guidellm-output-dir` FIRST, then merge #1691 into main.",
   },
   {
     level: "green",
-    message: "🟢 #1690 (AIPCC-27645): READY FOR REVIEW — not DRAFT, ALL CI PASS (run 29698050089). JIRA ✅, all-checks ✅, pre-commit ✅, e2e-smoke ✅, e2e-api ✅, integration ✅, nox ✅, tox-run ✅. State: OPEN, MERGEABLE ✅. Review + merge!",
+    message: "🟢 #1690 (AIPCC-27645): READY FOR REVIEW — not DRAFT, ALL CI PASS (run 29698050089). JIRA ✅, all-checks ✅, pre-commit ✅, e2e-smoke ✅, e2e-api ✅, integration ✅, nox ✅, tox-run ✅. State: OPEN, MERGEABLE ✅. REVIEW_REQUIRED.",
   },
   {
     level: "green",

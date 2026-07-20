@@ -4691,4 +4691,22 @@ export const HEARTBEAT_RUNS = [
     summary: "#1691 ALL CI PASS + no longer DRAFT (READY FOR REVIEW); #1690 ALL CI PASS (still DRAFT); #1638 e2e-smoke PASSES; #1669 CONFLICTING+CI unchanged; 0 merges; 6 Jira mismatches",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b5225e77995aed7eb56/",
   },
+  {
+    type: "advance",
+    timestamp: "2026-07-20 08:40 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "#1691/#1692 ALL CI FULLY PASS 🎉 (e2e-product ✅); #1690 READY FOR REVIEW unchanged; 0 merges; 6 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7e1c314775f580e2dc19/",
+  },
+  {
+    type: "advance",
+    timestamp: "2026-07-20 09:10 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "#1691/#1692 NOW APPROVED ✅ + ALL CI PASS — MERGE READY; #1690 REVIEW_REQUIRED unchanged; 0 merges; 6 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7e37a91b77e698bd9e13/",
+  },
 ];
