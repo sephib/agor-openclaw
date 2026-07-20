@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-20 15:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-20 16:00 IDT (advance heartbeat)*
 
 ---
 
@@ -17,10 +17,10 @@
 | jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | 🔴 run 29683534910 (stale): pre-commit ❌, nox ❌, tox-run ❌, all-checks ❌ | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — In Progress | 🔴 **CI ❌ + CONFLICTING** — unchanged. |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — New | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 12+** (still Ingest, should be Code). |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 25+ days. Propose archive. |
-| aipcc-23845-cluster-connection | **NO ZONE** | — | — | [AIPCC-23845](https://redhat.atlassian.net/browse/AIPCC-23845) | 🆕 NEW (created 15:14 IDT Jul 20). No zone, no PR. Cluster connection worktree. |
-| aipcc-23890-qe-cluster-tests | **NO ZONE** | — | — | [AIPCC-23890](https://redhat.atlassian.net/browse/AIPCC-23890) — In Progress | 🆕 NEW (created 15:14 IDT Jul 20). No zone, no PR. QE cluster tests worktree. |
-| aipcc-23895-docs-ibm | **NO ZONE** | [#1696 DRAFT](https://github.com/Jounce-IO/jounce/pull/1696) | 🟡 JIRA Assoc ❌; all-checks ✅ (docs-only) | [AIPCC-23895](https://redhat.atlassian.net/browse/AIPCC-23895) | 🆕 NEW (created 15:14 IDT Jul 20). No zone. DRAFT PR #1696 mostly passing. |
-| aipcc-23925-argo-public-url | **NO ZONE** | [#1695 DRAFT](https://github.com/Jounce-IO/jounce/pull/1695) | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌ | [AIPCC-23925](https://redhat.atlassian.net/browse/AIPCC-23925) | 🆕 NEW (created 15:14 IDT Jul 20). No zone. DRAFT PR #1695 CI failing. Needs pre-commit fix. |
+| aipcc-23845-cluster-connection | **Plan** | [#1698 DRAFT](https://github.com/Jounce-IO/jounce/pull/1698) | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌; nox ✅, tox ✅ | [AIPCC-23845](https://redhat.atlassian.net/browse/AIPCC-23845) | Moved to Plan zone. PR #1698 DRAFT set (16:00 IDT Jul 20). CI failing: pre-commit ❌. Needs pre-commit fix. |
+| aipcc-23890-qe-cluster-tests | **NO ZONE** | [#1697 DRAFT](https://github.com/Jounce-IO/jounce/pull/1697) | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌; nox ✅, tox ✅ | [AIPCC-23890](https://redhat.atlassian.net/browse/AIPCC-23890) — In Progress | PR #1697 DRAFT set (16:00 IDT Jul 20). Still no zone. CI failing: pre-commit ❌. |
+| aipcc-23895-docs-ibm | **Plan** | [#1696 DRAFT](https://github.com/Jounce-IO/jounce/pull/1696) | 🟡 JIRA Assoc ❌; all-checks ✅ (docs-only) | [AIPCC-23895](https://redhat.atlassian.net/browse/AIPCC-23895) | Moved to Plan zone. DRAFT PR #1696 mostly passing (JIRA Assoc ❌ only). |
+| aipcc-23925-argo-public-url | **Plan** | [#1695 DRAFT](https://github.com/Jounce-IO/jounce/pull/1695) | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌ | [AIPCC-23925](https://redhat.atlassian.net/browse/AIPCC-23925) | Moved to Plan zone. DRAFT PR #1695 CI failing. Needs pre-commit fix. |
 
 ---
 
@@ -96,13 +96,13 @@ Active sprint tickets assigned to Joseph (non-Done/Closed, via acli):
 
 ---
 
-## Key Changes (15:30 IDT Jul 20 vs 15:03 IDT Jul 20)
+## Key Changes (16:00 IDT Jul 20 vs 15:30 IDT Jul 20)
 
 | What changed | Delta |
 |---|---|
-| **4 NEW worktrees detected** | `aipcc-23845-cluster-connection` (no zone, no PR), `aipcc-23890-qe-cluster-tests` (no zone, no PR), `aipcc-23895-docs-ibm` (no zone, PR #1696 DRAFT ✅), `aipcc-23925-argo-public-url` (no zone, PR #1695 DRAFT ❌ pre-commit). All created 15:14 IDT Jul 20 — likely from "Split PR #1669 into 4 sub-task PRs" session. |
-| **PR #1695 CI failing** | New DRAFT PR #1695 (aipcc-23925): pre-commit ❌, JIRA Assoc ❌, all-checks ❌. Needs pre-commit fix before ready for review. |
-| **Existing PRs unchanged** | #1690 ALL CI PASS (run 29729530150) still awaiting review; #1638 e2e-smoke ❌ FAIL unchanged; #1669 CONFLICTING + CI ❌; #1667 CONFLICTING; #1670 DRAFT. |
+| **2 new PRs appeared** | #1698 DRAFT (`feat(jbenchmark): support IBM OpenShift cluster kubeconfig connection`) for aipcc-23845; #1697 DRAFT (`test(jbenchmark): QE unit tests for cluster connection workflows`) for aipcc-23890. Both have pre-commit ❌, JIRA Assoc ❌. |
+| **3 worktrees → Plan zone** | aipcc-23845, aipcc-23895, aipcc-23925 moved from NO ZONE → Plan. aipcc-23890 still NO ZONE. |
+| **Existing PRs unchanged** | #1690 ALL CI PASS (run 29729530150) still awaiting review; #1638 e2e-smoke ❌ FAIL unchanged; #1695 pre-commit ❌ unchanged; #1669 CONFLICTING + CI ❌; #1667 CONFLICTING; #1670 DRAFT. |
 | **Jira mismatches: 7** | No change. |
 | **0 merges, 0 archives** | No new merges or archives this run. |
 
@@ -110,20 +110,20 @@ Active sprint tickets assigned to Joseph (non-Done/Closed, via acli):
 
 ## Attention Items
 
-### 🆕 4 New Worktrees Discovered (15:14 IDT Jul 20)
+### 🆕 4 New Worktrees — PRs Now Set (16:00 IDT Jul 20)
 
-4 new worktrees appeared — created by the "Split PR #1669 into 4 sub-task PRs" session:
+4 worktrees from "Split PR #1669 into 4 sub-task PRs" session — now 3 have zones + all 4 have PRs:
 
-| Worktree | Ticket | PR | CI |
-|---------|--------|----|----|
-| aipcc-23845-cluster-connection | [AIPCC-23845](https://redhat.atlassian.net/browse/AIPCC-23845) | — | — |
-| aipcc-23890-qe-cluster-tests | [AIPCC-23890](https://redhat.atlassian.net/browse/AIPCC-23890) | — | — |
-| aipcc-23895-docs-ibm | [AIPCC-23895](https://redhat.atlassian.net/browse/AIPCC-23895) | [#1696 DRAFT](https://github.com/Jounce-IO/jounce/pull/1696) | 🟡 JIRA Assoc ❌, all-checks ✅ |
-| aipcc-23925-argo-public-url | [AIPCC-23925](https://redhat.atlassian.net/browse/AIPCC-23925) | [#1695 DRAFT](https://github.com/Jounce-IO/jounce/pull/1695) | 🔴 pre-commit ❌ + JIRA Assoc ❌ + all-checks ❌ |
+| Worktree | Zone | Ticket | PR | CI |
+|---------|------|--------|----|----|
+| aipcc-23845-cluster-connection | **Plan** | [AIPCC-23845](https://redhat.atlassian.net/browse/AIPCC-23845) | [#1698 DRAFT](https://github.com/Jounce-IO/jounce/pull/1698) | 🔴 pre-commit ❌ + JIRA Assoc ❌ + all-checks ❌ |
+| aipcc-23890-qe-cluster-tests | **NO ZONE** | [AIPCC-23890](https://redhat.atlassian.net/browse/AIPCC-23890) | [#1697 DRAFT](https://github.com/Jounce-IO/jounce/pull/1697) | 🔴 pre-commit ❌ + JIRA Assoc ❌ + all-checks ❌ |
+| aipcc-23895-docs-ibm | **Plan** | [AIPCC-23895](https://redhat.atlassian.net/browse/AIPCC-23895) | [#1696 DRAFT](https://github.com/Jounce-IO/jounce/pull/1696) | 🟡 JIRA Assoc ❌, all-checks ✅ |
+| aipcc-23925-argo-public-url | **Plan** | [AIPCC-23925](https://redhat.atlassian.net/browse/AIPCC-23925) | [#1695 DRAFT](https://github.com/Jounce-IO/jounce/pull/1695) | 🔴 pre-commit ❌ + JIRA Assoc ❌ + all-checks ❌ |
 
-**Action for PR #1695:** Pre-commit failing — needs fix before ready for review.
-**Action for PR #1696:** JIRA Association failing — likely just needs JIRA ticket link in PR description. all-checks ✅.
-**Action for aipcc-23845 + aipcc-23890:** No PRs yet — worktrees may still be in progress.
+**Action for PRs #1695/#1697/#1698:** Pre-commit failing — needs fix before ready for review.
+**Action for PR #1696:** JIRA Association failing — add JIRA ticket link in PR description. all-checks ✅.
+**Action for aipcc-23890:** Still no zone — assign a zone.
 
 ---
 

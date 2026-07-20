@@ -4,6 +4,15 @@
 
 ---
 
+## 16:00 IDT — Weekday Daytime Heartbeat (Jul 20 2026)
+- PRs checked: #1690 (OPEN/MERGEABLE), #1638 (OPEN/MERGEABLE), #1669 (OPEN/CONFLICTING DRAFT), #1667 (OPEN/CONFLICTING), #1670 (DRAFT/MERGEABLE), #1695 (DRAFT/MERGEABLE), #1696 (DRAFT/MERGEABLE), **#1697 (DRAFT/MERGEABLE NEW)**, **#1698 (DRAFT/MERGEABLE NEW)**
+- Merges detected: none
+- CI changes: **#1690 ALL CI PASS unchanged** (run 29729530150 — still awaiting review). **#1638 e2e-smoke ❌ unchanged**. **#1697 NEW: pre-commit ❌ + JIRA Assoc ❌ + all-checks ❌** (QE tests for aipcc-23890). **#1698 NEW: pre-commit ❌ + JIRA Assoc ❌ + all-checks ❌** (IBM cluster connect aipcc-23845). #1695 pre-commit ❌ unchanged. #1696 JIRA Assoc ❌ unchanged.
+- Flags: 🆕 **2 new DRAFTs** #1697/#1698 — pre-commit failing. 3 worktrees moved to Plan zone (aipcc-23845, aipcc-23895, aipcc-23925); aipcc-23890 still NO ZONE. 7 Jira mismatches unchanged.
+- Next: Fix pre-commit on #1695/#1697/#1698. Fix JIRA Assoc on #1696. Assign zone to aipcc-23890. Request review on #1690. Investigate #1638 e2e-smoke.
+
+---
+
 ## 15:30 IDT — Weekday Daytime Heartbeat (Jul 20 2026)
 - PRs checked: #1690 (OPEN/MERGEABLE), #1638 (OPEN/MERGEABLE), #1669 (OPEN/CONFLICTING), #1667 (OPEN/CONFLICTING), #1670 (DRAFT/MERGEABLE), **#1695 (DRAFT/MERGEABLE NEW)**, **#1696 (DRAFT/MERGEABLE NEW)**
 - Merges detected: none
