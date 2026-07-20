@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-20 18:30 IDT";
+export const LAST_UPDATED = "2026-07-21 00:00 IDT";
 
 export const WORKTREES = [
   {
@@ -10,12 +10,20 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1690",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1690",
-    status: "🔴 **CONFLICTING** (confirmed 17:30 IDT). All CI 100% PASSING (run 29729530150 unchanged: e2e-smoke ✅, e2e-product ✅, all-checks ✅, everything green). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
+    status: "🔴 **CONFLICTING** (unchanged overnight). All CI 100% PASSING (run 29729530150: e2e-smoke ✅, e2e-product ✅, all-checks ✅, everything green). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
     blockedOn: "CONFLICTING — needs rebase on main",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8094098e7817b786b032/",
-    sessionLabel: "advance heartbeat 18:30 IDT Jul 20 — board static; all PRs unchanged; 0 merges",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8154769670cf92fe616f/",
+    sessionLabel: "advance heartbeat 00:00 IDT Jul 21 — board static overnight; all PRs unchanged; 0 merges",
     recentSessions: [
+      {
+        sessionId: "019f8154769670cf92fe616f",
+        url: "http://127.0.0.1:3030/ui/s/019f8154769670cf92fe616f/",
+        title: "advance heartbeat 00:00 IDT Jul 21 — board static overnight; all PRs unchanged; 0 merges",
+        status: "completed",
+        timestamp: "2026-07-21 00:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f8094098e7817b786b032",
         url: "http://127.0.0.1:3030/ui/s/019f8094098e7817b786b032/",
@@ -48,16 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-20 17:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f7fb8769d776e8c8c7a79",
-        url: "http://127.0.0.1:3030/ui/s/019f7fb8769d776e8c8c7a79/",
-        title: "advance heartbeat 16:30 IDT Jul 20 — #1638 NOW CONFLICTING; #1667/#1669 UNKNOWN; #1690 ALL CI PASS unchanged",
-        status: "completed",
-        timestamp: "2026-07-20 16:30 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-20 18:30 IDT",
+    lastActive: "2026-07-21 00:00 IDT",
   },
   {
     ticket: "JN-5695",
@@ -437,7 +437,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 #1638 (JN-5725, off-board): **MERGEABLE** (conflict resolved!) but **e2e-smoke ❌ STILL FAILING** (run 29749975829). pre-commit ✅, nox ✅, tox ✅, e2e-api ✅. JN-5725 Done ✅. **Action: e2e-smoke root-cause investigation needed.**",
+    message: "🔴 #1638 (JN-5725, off-board): **MERGEABLE** but **e2e-api ❌ FAILING** (run 29749975829 — same run as Jul 20, now shows e2e-api as primary fail; e2e-smoke skipping downstream). JN-5725 Done ✅. **Action: e2e-api root-cause investigation needed.**",
   },
   {
     level: "red",

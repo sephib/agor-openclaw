@@ -2369,3 +2369,11 @@
 - Flags: Board static — no state changes since 17:30 IDT. All outstanding issues persist (see 17:30 run).
 - Actions: 0 archives, 0 auto-advances.
 - Next: Joseph to action — (1) rebase #1690 on main + request review, (2) fix pre-commit on #1698/#1695/#1697, (3) investigate e2e-smoke on #1638, (4) rebase #1667 on main, (5) update 7 Jira mismatches via acli.
+
+## 00:00 IDT Jul 21 — Overnight Heartbeat (2026-07-21)
+- PRs checked: #1690 (OPEN/CONFLICTING), #1638 (OPEN/MERGEABLE/CI ❌), #1698 (OPEN/MERGEABLE/pre-commit ❌), #1697 (DRAFT/MERGEABLE/CI ❌), #1696 (DRAFT/MERGEABLE/JIRA ❌), #1695 (DRAFT/MERGEABLE/CI ❌), #1667 (OPEN/CONFLICTING), #1669 (DRAFT/CONFLICTING/CI ❌), #1670 (DRAFT/MERGEABLE/CI ✅), #1596 (DRAFT/UNKNOWN)
+- Merges detected: none (last merge was #1691 at 10:20 IDT Jul 20 — already captured)
+- CI changes: #1638 display shift — same run 29749975829, now shows e2e-api ❌ as primary fail (e2e-smoke shows "skipping" downstream); all-checks ❌ unchanged. No new CI pushes on any PR.
+- Flags: 7 Jira mismatches unchanged; #1690 still CONFLICTING (needs rebase); #1667 still CONFLICTING; #1638 e2e-api failure needs investigation; #1698 pre-commit blocks review; #1695/#1697 pre-commit + JIRA failing
+- Actions: 0 archives, 0 auto-advances. Board static overnight.
+- Next: Joseph to action — (1) rebase #1690 + request review, (2) fix pre-commit on #1698/#1695/#1697, (3) investigate e2e-api on #1638, (4) rebase #1667, (5) update 7 Jira mismatches via acli
