@@ -4,6 +4,16 @@
 
 ---
 
+## 10:10 IDT — Advance Heartbeat (Jul 20 2026)
+- PRs checked: #1690 (OPEN/NOW CONFLICTING 🔴 — was MERGEABLE), #1638 (OPEN/MERGEABLE-UNKNOWN ✅), #1691 (MERGED 10:20 IDT 🎉), #1669 (OPEN/CONFLICTING), #1667 (OPEN/CONFLICTING), #1670 (DRAFT/MERGEABLE)
+- Merges detected: **PR #1691 MERGED 10:20 IDT Jul 20** (was APPROVED + e2e-product PENDING at 09:40 run)
+- Autonomously archived: **aipcc-27657-guidellm-output-dir** (PR #1691 MERGED — autonomous permission)
+- CI changes: **#1690 mergeable changed MERGEABLE→CONFLICTING** after #1691 merged into main; no new CI run yet on #1690. #1638 ALL PASS unchanged.
+- Flags: 🔴 #1690 NOW CONFLICTING (needs rebase). ⚠️ AIPCC-27657 Jira mismatch (7th mismatch — both PRs merged, Jira not Done). 🎉 #1691 done!
+- Next: Rebase #1690 on main. Update AIPCC-27657 Jira → Done (acli). Review+merge #1638.
+
+---
+
 ## 08:10 IDT — Daily External Sync (Jul 20 2026)
 - Jira tickets checked: 30 (sprint search) — 4 non-Closed: AIPCC-23169 (In Progress), AIPCC-23119 (New), AIPCC-23104 (In Progress), AIPCC-27018 (New). All others Closed.
 - Mismatches found: 6 Jira mismatches unchanged (JN-5842/AIPCC-26976, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546 — not visible in sprint search, need manual acli update)

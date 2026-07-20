@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-20 09:40 IDT";
+export const LAST_UPDATED = "2026-07-20 10:10 IDT";
 
 export const WORKTREES = [
   {
@@ -10,12 +10,20 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1690",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1690",
-    status: "🟢 **READY FOR REVIEW** — not DRAFT, ALL CI PASS (run 29698050089). JIRA ✅, all-checks ✅, pre-commit ✅, tox-run ✅, e2e-smoke ✅, e2e-api ✅, integration-run ✅, nox ✅. State: OPEN, MERGEABLE ✅.",
-    blockedOn: null,
-    blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7e53209d78058d81ca91/",
-    sessionLabel: "advance heartbeat 09:40 IDT Jul 20 — #1690 unchanged, REVIEW_REQUIRED",
+    status: "🔴 **NOW CONFLICTING** — mergeable changed MERGEABLE→CONFLICTING after #1691 merged into main 10:20 IDT. reviewDecision: REVIEW_REQUIRED. CI stale (run 29698050089 ALL PASS — pre-conflict). Needs rebase on main.",
+    blockedOn: "CONFLICTING — needs rebase on main after #1691 merge",
+    blockedType: "blocked",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7e6e983b72c1a122f2eb/",
+    sessionLabel: "advance heartbeat 10:10 IDT Jul 20 — #1691 MERGED; #1690 NOW CONFLICTING",
     recentSessions: [
+      {
+        sessionId: "019f7e6e983b72c1a122f2eb",
+        url: "http://127.0.0.1:3030/ui/s/019f7e6e983b72c1a122f2eb/",
+        title: "advance heartbeat 10:10 IDT Jul 20 — #1691 MERGED 10:20 IDT; #1690 NOW CONFLICTING",
+        status: "completed",
+        timestamp: "2026-07-20 10:10 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7e53209d78058d81ca91",
         url: "http://127.0.0.1:3030/ui/s/019f7e53209d78058d81ca91/",
@@ -48,98 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-20 08:04 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f7d78f5367a35a34df6c3",
-        url: "http://127.0.0.1:3030/ui/s/019f7d78f5367a35a34df6c3/",
-        title: "advance heartbeat 06:04 IDT Jul 20 — #1690 unchanged, READY FOR REVIEW ✅",
-        status: "completed",
-        timestamp: "2026-07-20 06:04 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f7c2df8497d879e02d5de",
-        url: "http://127.0.0.1:3030/ui/s/019f7c2df8497d879e02d5de/",
-        title: "advance heartbeat 00:04 IDT Jul 20 — #1690 unchanged, READY FOR REVIEW ✅",
-        status: "completed",
-        timestamp: "2026-07-20 00:04 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f7ba48c8472258c9018fd",
-        url: "http://127.0.0.1:3030/ui/s/019f7ba48c8472258c9018fd/",
-        title: "advance heartbeat 21:32 IDT Jul 19 — #1690 NO LONGER DRAFT + ALL CI PASS! READY FOR REVIEW 🎉",
-        status: "completed",
-        timestamp: "2026-07-19 21:32 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-20 09:10 IDT",
-  },
-  {
-    ticket: "AIPCC-27657",
-    ticketUrl: "https://redhat.atlassian.net/browse/AIPCC-27657",
-    title: "Update GuideLLM CLI flag --output-path → --output-dir (AIPCC-27657)",
-    branch: "aipcc-27657-guidellm-output-dir",
-    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/aipcc-27657-guidellm-output-dir",
-    zone: "Code",
-    pr: "#1691",
-    prUrl: "https://github.com/Jounce-IO/jounce/pull/1691",
-    status: "🟡 ⏳ **APPROVED — e2e-product PENDING** — reviewDecision: APPROVED ✅. NEW run 29722197965 triggered by #1692 merge at 09:36 IDT. PASS: JIRA ✅, CodeRabbit ✅, atlas-validate ✅, check-changes ✅, e2e-api ✅, e2e-smoke ✅, integration-run ✅, integration-tests ✅, pre-commit-run ✅, tox-run ✅, nox ✅, pre-commit ✅. PENDING: e2e-product ⏳. all-checks not yet run. Wait before merging.",
-    blockedOn: null,
-    blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7e53209d78058d81ca91/",
-    sessionLabel: "advance heartbeat 09:40 IDT Jul 20 — #1692 MERGED 09:36 IDT; #1691 new CI e2e-product PENDING",
-    recentSessions: [
-      {
-        sessionId: "019f7e53209d78058d81ca91",
-        url: "http://127.0.0.1:3030/ui/s/019f7e53209d78058d81ca91/",
-        title: "advance heartbeat 09:40 IDT Jul 20 — #1692 MERGED; #1691 e2e-product PENDING",
-        status: "completed",
-        timestamp: "2026-07-20 09:40 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f7e37a91b77e698bd9e13",
-        url: "http://127.0.0.1:3030/ui/s/019f7e37a91b77e698bd9e13/",
-        title: "advance heartbeat 09:10 IDT Jul 20 — #1691 APPROVED ✅ ALL CI PASS — MERGE NOW 🎉",
-        status: "completed",
-        timestamp: "2026-07-20 09:10 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f7e1c314775f580e2dc19",
-        url: "http://127.0.0.1:3030/ui/s/019f7e1c314775f580e2dc19/",
-        title: "advance heartbeat 08:40 IDT Jul 20 — #1691 ALL CI FULLY PASS 🎉 READY FOR REVIEW",
-        status: "completed",
-        timestamp: "2026-07-20 08:40 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f7de55965732e90f87ecc",
-        url: "http://127.0.0.1:3030/ui/s/019f7de55965732e90f87ecc/",
-        title: "advance heartbeat 08:04 IDT Jul 20 — #1691 pre-commit FIXED 🎉 (run 29717054182, e2e-product pending)",
-        status: "completed",
-        timestamp: "2026-07-20 08:04 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f7d78f5367a35a34df6c3",
-        url: "http://127.0.0.1:3030/ui/s/019f7d78f5367a35a34df6c3/",
-        title: "advance heartbeat 06:04 IDT Jul 20 — #1691 pre-commit STILL FAILING (run 29703912393)",
-        status: "completed",
-        timestamp: "2026-07-20 06:04 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f7c2df8497d879e02d5de",
-        url: "http://127.0.0.1:3030/ui/s/019f7c2df8497d879e02d5de/",
-        title: "advance heartbeat 00:04 IDT Jul 20 — #1691 pre-commit REGRESSION (run 29700868666)",
-        status: "completed",
-        timestamp: "2026-07-20 00:04 IDT",
-        outputFile: null,
-      },
-    ],
-    lastActive: "2026-07-20 09:40 IDT",
+    lastActive: "2026-07-20 10:10 IDT",
   },
   {
     ticket: "JN-5695",
@@ -337,11 +255,20 @@ export const MERGED = [
   {
     ticket: "AIPCC-27657",
     ticketUrl: "https://redhat.atlassian.net/browse/AIPCC-27657",
+    title: "fix(helm): update GuideLLM flag from --output-path to --output-dir (AIPCC-27657)",
+    pr: "#1691",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1691",
+    mergedDate: "2026-07-20",
+    note: "Merged 10:20 IDT Jul 20 🎉 aipcc-27657-guidellm-output-dir ARCHIVED 10:10 IDT Jul 20. AIPCC-27657 needs Done in Jira (both #1691 + companion #1692 merged).",
+  },
+  {
+    ticket: "AIPCC-27657",
+    ticketUrl: "https://redhat.atlassian.net/browse/AIPCC-27657",
     title: "test(jbenchmark): update test fixtures for GuideLLM v0.6.1 (companion to #1691)",
     pr: "#1692",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1692",
     mergedDate: "2026-07-20",
-    note: "Merged 09:36 IDT Jul 20 🎉 Off-board companion PR — merged into `aipcc-27657-guidellm-output-dir` (no Agor worktree). Triggered new CI run 29722197965 on #1691.",
+    note: "Merged 09:36 IDT Jul 20 🎉 Off-board companion PR — merged into `aipcc-27657-guidellm-output-dir` (no separate Agor worktree). Triggered final CI on #1691.",
   },
   {
     ticket: "JN-5891",
@@ -437,16 +364,12 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "yellow",
-    message: "⏳ #1691 (AIPCC-27657): **APPROVED — e2e-product PENDING** — NEW CI run 29722197965 triggered by #1692 merge at 09:36 IDT. Most checks pass; e2e-product ⏳ pending; all-checks not yet run. reviewDecision: APPROVED ✅. Wait for e2e-product before merging.",
+    level: "red",
+    message: "🔴 #1690 (AIPCC-27645): **NOW CONFLICTING** — mergeable changed from MERGEABLE→CONFLICTING after #1691 merged into main at 10:20 IDT. reviewDecision: REVIEW_REQUIRED. CI stale (run 29698050089 ALL PASS — pre-conflict). **Action: rebase aipcc-27645-server-resources on main.**",
   },
   {
     level: "green",
-    message: "✅ 🎉 #1692 (AIPCC-27657 test fixtures): **MERGED 09:36 IDT Jul 20** — into `aipcc-27657-guidellm-output-dir`. Triggered new CI run 29722197965 on #1691.",
-  },
-  {
-    level: "green",
-    message: "🟢 #1690 (AIPCC-27645): READY FOR REVIEW — not DRAFT, ALL CI PASS (run 29698050089). JIRA ✅, all-checks ✅, pre-commit ✅, e2e-smoke ✅, e2e-api ✅, integration ✅, nox ✅, tox-run ✅. State: OPEN, MERGEABLE ✅. REVIEW_REQUIRED.",
+    message: "🎉 #1691 (AIPCC-27657): **MERGED 10:20 IDT Jul 20** — into main. aipcc-27657-guidellm-output-dir ARCHIVED ✅. AIPCC-27657 needs Done in Jira.",
   },
   {
     level: "green",
@@ -466,7 +389,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "🟡 Jira mismatches (6): JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546 — PRs merged but Jira not Done. Use acli jira workitem transition.",
+    message: "🟡 Jira mismatches (7): AIPCC-27657 (NEW — both PRs merged), JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546 — PRs merged but Jira not Done. Use acli jira workitem transition.",
   },
   {
     level: "yellow",

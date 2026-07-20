@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-20 10:10 IDT",
+    actions: 1,
+    findings: 2,
+    status: "ok",
+    summary: "🎉 PR #1691 MERGED 10:20 IDT — aipcc-27657-guidellm-output-dir ARCHIVED; 🔴 #1690 NOW CONFLICTING (caused by #1691 merge into main); ⚠️ AIPCC-27657 new Jira mismatch (7 total); #1638 unchanged ALL PASS",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7e6e983b72c1a122f2eb/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-20 09:40 IDT",
     actions: 0,
     findings: 1,
