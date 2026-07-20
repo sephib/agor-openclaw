@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-20 08:10 IDT (daily external sync)*
+*Last updated: 2026-07-20 08:40 IDT (advance heartbeat)*
 
 ---
 
@@ -8,14 +8,14 @@
 
 | Worktree | Zone | PR | CI | Jira | Status |
 |---------|------|----|----|------|--------|
-| aipcc-27645-server-resources | **Code** | [#1690](https://github.com/Jounce-IO/jounce/pull/1690) | ✅ ALL CI PASS (run 29698050089) — JIRA ✅, all-checks ✅, pre-commit ✅, pre-commit-run ✅, tox-run ✅, nox ✅, e2e-smoke ✅, e2e-api ✅, e2e-tests ✅, integration-run ✅, integration-tests ✅, atlas-validate ✅ | [AIPCC-27645](https://redhat.atlassian.net/browse/AIPCC-27645) | 🟢 **READY FOR REVIEW** — not DRAFT, ALL CI PASS. State: OPEN, MERGEABLE ✅. Unchanged overnight. |
-| aipcc-27657-guidellm-output-dir | **Code** | [#1691](https://github.com/Jounce-IO/jounce/pull/1691) | 🟡 **NEW RUN 29717054182** — pre-commit ✅ NOW PASSES (regression fixed!). PASS: JIRA ✅, atlas-validate ✅, check-changes ✅, e2e-api ✅, e2e-smoke ✅, integration-run ✅, integration-tests ✅, nox ✅, pre-commit ✅, pre-commit-run ✅, tox-run ✅, CodeRabbit ✅. **e2e-product ⏳ PENDING** — all-checks not yet complete. | [AIPCC-27657](https://redhat.atlassian.net/browse/AIPCC-27657) | 🟡 **pre-commit FIXED** — new run 29717054182. Awaiting e2e-product to complete. ⚠️ PR title contains "JN-5872" — verify title. |
+| aipcc-27645-server-resources | **Code** | [#1690](https://github.com/Jounce-IO/jounce/pull/1690) | ✅ ALL CI PASS (run 29698050089) — JIRA ✅, all-checks ✅, pre-commit ✅, pre-commit-run ✅, tox-run ✅, nox ✅, e2e-smoke ✅, e2e-api ✅, e2e-tests ✅, integration-run ✅, integration-tests ✅, atlas-validate ✅ | [AIPCC-27645](https://redhat.atlassian.net/browse/AIPCC-27645) | 🟢 **READY FOR REVIEW** — not DRAFT, ALL CI PASS. State: OPEN, MERGEABLE ✅. Unchanged. |
+| aipcc-27657-guidellm-output-dir | **Code** | [#1691](https://github.com/Jounce-IO/jounce/pull/1691) | 🎉 **ALL CI FULLY PASS** — Run 29717054182: JIRA ✅, all-checks ✅, atlas-validate ✅, check-changes ✅, e2e-api ✅, **e2e-product ✅ NOW PASSES**, e2e-smoke ✅, e2e-tests ✅, integration-run ✅, integration-tests ✅, nox ✅, pre-commit ✅, pre-commit-run ✅, tox-run ✅, CodeRabbit ✅ | [AIPCC-27657](https://redhat.atlassian.net/browse/AIPCC-27657) | 🟢 **READY FOR REVIEW** 🎉 — ALL CI FULLY PASS (e2e-product ✅ completed). ⚠️ Merge companion PR #1692 into this branch first, then merge #1691 into main. ⚠️ PR title contains "JN-5872" — verify title. |
 | jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | UNKNOWN (stale) | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) — New | 🔴 DRAFT + CONFLICTING; frozen since Jun 14. No change. |
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — New | Design session done Jun 30. Ready for Plan phase. Stale 20+ days. |
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | Last session Jul 8 IDLE. SHA 16ec44ea (2 commits). Needs: configs, rebase, PR. Stale 12+ days. |
 | jn-5844-service-lib-sql-agents-md | **Publish** | [#1670 DRAFT](https://github.com/Jounce-IO/jounce/pull/1670) | ✅ ALL CI PASS (run 29403233416 — stale) | [JN-5844](https://redhat.atlassian.net/browse/JN-5844) — New | DRAFT PR #1670. CI all pass (stale). Needs: mark ready for review. |
 | jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | UNKNOWN (CONFLICTING) | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) — New | 🟡 **CONFLICTING** — needs rebase on main. |
-| jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | 🔴 run 29683534910: pre-commit ❌, nox ❌, tox-run ❌, all-checks ❌ (stale — no new run) | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — In Progress | 🔴 **CI ❌ + CONFLICTING** — unchanged from previous run. |
+| jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | 🔴 run 29683534910: pre-commit ❌, nox ❌, tox-run ❌, all-checks ❌ (stale — no new run) | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — In Progress | 🔴 **CI ❌ + CONFLICTING** — unchanged. |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — New | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 12+** (still Ingest, should be Code). |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 25+ days. Propose archive. |
 
@@ -25,8 +25,8 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | ✅ **Run 29694608697** — **ALL CI FULLY PASS**: JIRA ✅, pre-commit ✅, pre-commit-run ✅, atlas-validate ✅, check-changes ✅, e2e-smoke ✅, e2e-api ✅, e2e-product ✅, integration-run ✅, integration-tests ✅, tox-run ✅, nox ✅. | OPEN, **MERGEABLE** ✅ | 🎉 **ALL CI FULLY PASS** — ready for review. Unchanged overnight. |
-| [#1692](https://github.com/Jounce-IO/jounce/pull/1692) | aipcc-27657-test-updates | [AIPCC-27657](https://redhat.atlassian.net/browse/AIPCC-27657) | 🟡 Run 29717285073 — pre-commit ✅, pre-commit-run ✅, e2e-api ✅, e2e-smoke ✅, integration-run ✅, tox-run ✅, nox ✅, atlas-validate ✅. **e2e-product ⏳ PENDING**. CodeRabbit disabled (feature branch base). | OPEN, **MERGEABLE** ✅ | 🆕 **NEW** (overnight) — test fixtures for GuideLLM v0.6.1. Targets `aipcc-27657-guidellm-output-dir` (feeds into #1691). Merge this first, then #1691 into main. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | ✅ **Run 29694608697** — **ALL CI FULLY PASS**: JIRA ✅, pre-commit ✅, pre-commit-run ✅, atlas-validate ✅, check-changes ✅, e2e-smoke ✅, e2e-api ✅, e2e-product ✅, integration-run ✅, integration-tests ✅, tox-run ✅, nox ✅. | OPEN, **MERGEABLE** ✅ | 🎉 **ALL CI FULLY PASS** — ready for review. Unchanged. |
+| [#1692](https://github.com/Jounce-IO/jounce/pull/1692) | aipcc-27657-test-updates | [AIPCC-27657](https://redhat.atlassian.net/browse/AIPCC-27657) | 🎉 **ALL CI FULLY PASS** — Run 29717285073: pre-commit ✅, pre-commit-run ✅, e2e-api ✅, e2e-smoke ✅, **e2e-product ✅ NOW PASSES**, integration-run ✅, integration-tests ✅, tox-run ✅, nox ✅, atlas-validate ✅, all-checks ✅. CodeRabbit disabled (feature branch base). | OPEN, **MERGEABLE** ✅ | 🎉 **ALL CI FULLY PASS** — merge into `aipcc-27657-guidellm-output-dir` (feeds into #1691), then merge #1691 into main. |
 
 ---
 
@@ -82,41 +82,37 @@ All other sprint tickets returned by Jira are Closed. The 6 Jira mismatches (JN-
 
 ---
 
-## Key Changes (08:10 IDT Jul 20 vs 06:04 IDT Jul 20)
+## Key Changes (08:40 IDT Jul 20 vs 08:10 IDT Jul 20)
 
 | What changed | Delta |
 |---|---|
-| **🎉 #1691 (AIPCC-27657) pre-commit FIXED** | NEW RUN 29717054182 — pre-commit ✅ NOW PASSES (was failing 2 consecutive runs). All checks pass except e2e-product ⏳ still pending. Once e2e-product passes, all-checks should complete and PR is ready for review. |
-| **🆕 PR #1692 (AIPCC-27657 test fixtures)** | NEW PR overnight — test fixtures for GuideLLM v0.6.1 on `aipcc-27657-test-updates`. CI mostly passing, e2e-product pending. Feeds into #1691 branch. Must merge before #1691. |
-| **Jira sprint** | 4 non-Closed tickets: AIPCC-23169 (In Progress), AIPCC-23119 (New), AIPCC-23104 (In Progress), AIPCC-27018 (New). All others Closed. 6 Jira mismatches unchanged. |
+| **🎉 #1691 (AIPCC-27657) ALL CI FULLY PASS** | e2e-product ✅ NOW PASSES (was ⏳ PENDING at 08:10 IDT). Run 29717054182: all-checks ✅. PR is **READY FOR REVIEW** 🎉. Merge companion #1692 into branch first, then #1691 into main. |
+| **🎉 #1692 (AIPCC-27657 test fixtures) ALL CI FULLY PASS** | e2e-product ✅ NOW PASSES (was ⏳ PENDING at 08:10 IDT). Run 29717285073: all-checks ✅. Ready to merge into `aipcc-27657-guidellm-output-dir`. |
 | **#1690 unchanged** | ALL CI PASS (run 29698050089). READY FOR REVIEW. No change. |
 | **#1638 unchanged** | ALL CI PASS (run 29694608697). READY FOR REVIEW. No change. |
 | **#1669/#1667 CONFLICTING unchanged** | No CI changes. Still failing/conflicting. |
-| **0 merges** | No new merges since 06:04 IDT. |
+| **0 merges** | No new merges since 08:10 IDT. |
 
 ---
 
 ## Attention Items
 
-### 🟡 #1691 (aipcc-27657) — pre-commit FIXED, e2e-product PENDING
+### 🟢 #1691 (aipcc-27657) — ALL CI FULLY PASS! READY FOR REVIEW 🎉
 
 PR [#1691](https://github.com/Jounce-IO/jounce/pull/1691): "fix(helm): update GuideLLM flag from --output-path to --output-dir (AIPCC-27657) JN-5872"
 - State: OPEN, NOT DRAFT, **MERGEABLE** ✅
-- **Run 29717054182** (NEW — as of 08:04 IDT):
-  - **PASS**: JIRA ✅, atlas-validate ✅, check-changes ✅, e2e-api ✅, e2e-smoke ✅, integration-run ✅, integration-tests ✅, nox ✅, **pre-commit ✅ FIXED**, pre-commit-run ✅, tox-run ✅, CodeRabbit ✅
-  - **PENDING**: e2e-product ⏳ (still running)
-  - all-checks: not yet complete (depends on e2e-product)
+- **Run 29717054182** (ALL CI FULLY PASS as of 08:40 IDT):
+  - PASS: JIRA ✅, all-checks ✅, atlas-validate ✅, check-changes ✅, e2e-api ✅, **e2e-product ✅**, e2e-smoke ✅, e2e-tests ✅, integration-run ✅, integration-tests ✅, nox ✅, pre-commit ✅, pre-commit-run ✅, tox-run ✅, CodeRabbit ✅
 - ⚠️ **PR title includes "JN-5872"** — this may be an error (JN-5872 is a different ticket). Verify PR title.
-- **Action:** Wait for e2e-product to complete. If it passes, PR is ready for review + merge. 🎉
-- ⚠️ Also see companion **PR #1692** (test fixtures) which must merge into this branch first — it's also awaiting e2e-product.
+- **Action:** 1) Merge companion **PR #1692** into `aipcc-27657-guidellm-output-dir` first. 2) Then merge #1691 into main. 🎉
 
 ---
 
-### 🆕 #1692 (aipcc-27657-test-updates) — New companion PR
+### 🎉 #1692 (aipcc-27657-test-updates) — ALL CI PASS! Ready to merge
 
 PR [#1692](https://github.com/Jounce-IO/jounce/pull/1692): "test(jbenchmark): update test fixtures for GuideLLM v0.6.1 (JN-5872) aipcc-27657"
 - State: OPEN, NOT DRAFT, **MERGEABLE** ✅. Base: `aipcc-27657-guidellm-output-dir` (feeds into #1691).
-- **Run 29717285073** — pre-commit ✅, pre-commit-run ✅, e2e-api ✅, e2e-smoke ✅, integration-run ✅, tox-run ✅, nox ✅. **e2e-product ⏳ PENDING**.
+- **Run 29717285073** — ALL CI FULLY PASS: all-checks ✅, e2e-product ✅, e2e-api ✅, e2e-smoke ✅, integration-run ✅, tox-run ✅, nox ✅.
 - CodeRabbit disabled (base is feature branch, not main).
 - **Action:** Merge this into `aipcc-27657-guidellm-output-dir` first, then merge #1691 into main.
 
@@ -126,7 +122,7 @@ PR [#1692](https://github.com/Jounce-IO/jounce/pull/1692): "test(jbenchmark): up
 
 PR [#1690](https://github.com/Jounce-IO/jounce/pull/1690): "fix(helm): increase API server resources and probe tolerances (AIPCC-27645) JN-5872"
 - State: OPEN, **NOT DRAFT**, **MERGEABLE** ✅
-- **Run 29698050089** (ALL PASS — unchanged from last run):
+- **Run 29698050089** (ALL PASS — unchanged):
   - PASS: JIRA ✅, all-checks ✅, atlas-validate ✅, check-changes ✅, e2e-api ✅, e2e-smoke ✅, e2e-tests ✅, integration-run ✅, integration-tests ✅, nox ✅, pre-commit ✅, pre-commit-run ✅, tox-run ✅
   - CodeRabbit review: COMPLETED
 - **Action:** Review + merge. 🎉
@@ -202,7 +198,7 @@ Use `acli jira workitem transition` to update. Jira MCP 401. acli working.
 ### ⚠️ Overnight/Morning Session Failures (Jul 17–19)
 
 Multiple consecutive session failures since Jul 17 (overnight + weekend schedules).
-Daytime sessions running correctly. This overnight session (Jul 20 midnight) is running successfully.
+Daytime sessions running correctly.
 
 ---
 
