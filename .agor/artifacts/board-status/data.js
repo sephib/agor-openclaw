@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-20 14:33 IDT";
+export const LAST_UPDATED = "2026-07-20 15:03 IDT";
 
 export const WORKTREES = [
   {
@@ -13,9 +13,17 @@ export const WORKTREES = [
     status: "🟢 **ALL CI 100% PASSING** — run 29729530150: e2e-smoke ✅, pre-commit-run ✅, nox ✅, e2e-api ✅, **e2e-product ✅** (now complete!), integration-run ✅, integration-tests ✅, tox-run ✅, atlas-validate ✅, check-changes ✅, JIRA Assoc ✅, CodeRabbit ✅, pre-commit ✅, e2e-tests ✅, all-checks ✅. MERGEABLE. **READY FOR REVIEW — every check green.**",
     blockedOn: "Awaiting review request",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7f4a98437528bc53f4ef/",
-    sessionLabel: "advance heartbeat 14:33 IDT Jul 20 — board static; #1690 ALL CI PASS unchanged; #1638 e2e-smoke ❌ confirmed",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7f66122d7aefa49de05c/",
+    sessionLabel: "advance heartbeat 15:03 IDT Jul 20 — board static; #1690 ALL CI PASS (awaiting review); #1638 e2e-smoke ❌ unchanged; 7 Jira mismatches; 0 merges",
     recentSessions: [
+      {
+        sessionId: "019f7f66122d7aefa49de05c",
+        url: "http://127.0.0.1:3030/ui/s/019f7f66122d7aefa49de05c/",
+        title: "advance heartbeat 15:03 IDT Jul 20 — board static; #1690 ALL CI PASS unchanged; #1638 e2e-smoke ❌ unchanged",
+        status: "completed",
+        timestamp: "2026-07-20 15:03 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7f4a98437528bc53f4ef",
         url: "http://127.0.0.1:3030/ui/s/019f7f4a98437528bc53f4ef/",
@@ -48,16 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-20 13:03 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f7edc75c577d3a7999c52",
-        url: "http://127.0.0.1:3030/ui/s/019f7edc75c577d3a7999c52/",
-        title: "advance heartbeat 12:33 IDT Jul 20 — #1690 CI FULLY PASSING; ready for review",
-        status: "completed",
-        timestamp: "2026-07-20 12:33 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-20 14:33 IDT",
+    lastActive: "2026-07-20 15:03 IDT",
   },
   {
     ticket: "JN-5695",
