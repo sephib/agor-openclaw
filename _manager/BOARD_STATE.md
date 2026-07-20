@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-21 00:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-21 02:00 IDT (advance heartbeat)*
 
 ---
 
@@ -70,13 +70,12 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (00:00 IDT Jul 21 vs 18:30 IDT Jul 20)
+## Key Changes (02:00 IDT Jul 21 vs 00:00 IDT Jul 21)
 
 | What changed | Delta |
 |---|---|
-| **Board static overnight** | No new CI runs, no new pushes, no merges, no PRs, no zone moves since 18:30 IDT Jul 20. All PRs in same state. |
-| **#1638 CI display shift** | Same run 29749975829. Now shows e2e-api ❌ as primary fail (e2e-smoke shows "skipping" — downstream). Root cause investigation still needed. |
-| **All other PRs** | Unchanged from 18:30 IDT Jul 20. |
+| **Board static** | No new CI runs, no new pushes, no merges, no PRs, no zone moves since 00:00 IDT Jul 21. All PRs in same state. |
+| **All PRs** | Unchanged: #1690 (CONFLICTING, all-CI ✅), #1638 (MERGEABLE, e2e-api ❌), #1667 (CONFLICTING), #1669 (DRAFT/CONFLICTING, CI ❌), #1670 (DRAFT/MERGEABLE, CI ✅), #1695/#1697 (DRAFT, pre-commit ❌), #1696 (DRAFT, JIRA Assoc ❌ only), #1698 (ready, pre-commit ❌). |
 | **0 merges, 0 archives** | No new merges or archives overnight. |
 
 ---
