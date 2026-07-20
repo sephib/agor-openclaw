@@ -4,6 +4,15 @@
 
 ---
 
+## 17:00 IDT — Weekday Daytime Heartbeat (Jul 20 2026)
+- PRs checked: #1690 (OPEN/UNKNOWN mergeable), #1638 (OPEN/CONFLICTING), #1669 (DRAFT/UNKNOWN), #1667 (OPEN/UNKNOWN), #1670 (DRAFT/REVIEW_REQUIRED), #1695 (DRAFT/MERGEABLE), #1696 (DRAFT/UNKNOWN), **#1697 (DRAFT/UNKNOWN)**, **#1698 (DRAFT/MERGEABLE)**
+- Merges detected: none
+- CI changes: **#1638 NEW CI RUN 29748089336** — all checks PASS, **e2e-smoke ⏳ PENDING** (was ❌ FAILED). Someone pushed a fix! Still CONFLICTING. **#1698 NEW CI RUN 29748663864** — pre-commit-run ⏳ PENDING, tox-run ⏳ PENDING, JIRA Assoc ❌. MERGEABLE. #1690 CI unchanged (run 29729530150 all-pass). #1695/#1696/#1697 CI unchanged.
+- Flags: 🟡 **#1638 e2e-smoke improving** — if PENDING resolves to ✅, only rebase-to-resolve-conflict remains. 🟡 **#1698 possible pre-commit fix** — monitor CI result. 7 Jira mismatches unchanged.
+- Next: Monitor #1638 e2e-smoke result + #1698 pre-commit result (next heartbeat). Request review on #1690.
+
+---
+
 ## 16:00 IDT — Weekday Daytime Heartbeat (Jul 20 2026)
 - PRs checked: #1690 (OPEN/MERGEABLE), #1638 (OPEN/MERGEABLE), #1669 (OPEN/CONFLICTING DRAFT), #1667 (OPEN/CONFLICTING), #1670 (DRAFT/MERGEABLE), #1695 (DRAFT/MERGEABLE), #1696 (DRAFT/MERGEABLE), **#1697 (DRAFT/MERGEABLE NEW)**, **#1698 (DRAFT/MERGEABLE NEW)**
 - Merges detected: none
