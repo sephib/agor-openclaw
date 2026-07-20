@@ -2328,3 +2328,10 @@
 - Flags: 7 Jira mismatches persist. #1690 awaiting review request. #1638 e2e-smoke failure needs investigation.
 - Actions: 0 archives, 0 merges. Board static.
 - Next: Joseph to action — (1) request review on #1690, (2) investigate #1638 e2e-smoke failure, (3) rebase #1669 + #1667, (4) mark #1670 ready for review.
+
+## 16:30 IDT — Weekday Daytime Heartbeat (Jul 20 2026)
+- PRs checked: #1690 (OPEN/MERGEABLE/ALL CI PASS), #1638 (OPEN/**CONFLICTING** — NEW), #1669 (OPEN/DRAFT/UNKNOWN), #1667 (OPEN/UNKNOWN), #1670 (DRAFT/UNKNOWN), #1695 (DRAFT/pre-commit ❌), #1696 (DRAFT/JIRA Assoc ❌), #1697 (DRAFT/pre-commit ❌), #1698 (DRAFT/pre-commit ❌)
+- Merges detected: none
+- CI changes: **🔴 #1638 NOW CONFLICTING** (was MERGEABLE at 16:00 — new conflict appeared, e2e-smoke ❌ still unresolved). **#1667 mergeable: UNKNOWN** (was CONFLICTING). **#1669 mergeable: UNKNOWN** (was CONFLICTING). All others unchanged.
+- Flags: 🔴 #1638 needs rebase + e2e-smoke fix. 🟡 #1667/#1669 UNKNOWN mergeability — monitor. #1690 still awaiting review. 7 Jira mismatches unchanged.
+- Next: Rebase #1638 on main. Fix e2e-smoke. Confirm #1667/#1669 conflict status. Request review on #1690. Fix pre-commit on #1695/#1697/#1698.

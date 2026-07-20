@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-20 16:00 IDT";
+export const LAST_UPDATED = "2026-07-20 16:30 IDT";
 
 export const WORKTREES = [
   {
@@ -13,9 +13,17 @@ export const WORKTREES = [
     status: "🟢 **ALL CI 100% PASSING** — run 29729530150: e2e-smoke ✅, pre-commit-run ✅, nox ✅, e2e-api ✅, **e2e-product ✅** (now complete!), integration-run ✅, integration-tests ✅, tox-run ✅, atlas-validate ✅, check-changes ✅, JIRA Assoc ✅, CodeRabbit ✅, pre-commit ✅, e2e-tests ✅, all-checks ✅. MERGEABLE. **READY FOR REVIEW — every check green.**",
     blockedOn: "Awaiting review request",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7f9cfe9179749a87de04/",
-    sessionLabel: "advance heartbeat 16:00 IDT Jul 20 — 2 new PRs (#1697/#1698 DRAFT pre-commit ❌); 3 worktrees → Plan; #1690 ALL CI PASS; #1638 e2e-smoke ❌; 0 merges",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7fb8769d776e8c8c7a79/",
+    sessionLabel: "advance heartbeat 16:30 IDT Jul 20 — #1638 NOW CONFLICTING; #1667/#1669 UNKNOWN; #1690 ALL CI PASS unchanged; 7 Jira mismatches; 0 merges",
     recentSessions: [
+      {
+        sessionId: "019f7fb8769d776e8c8c7a79",
+        url: "http://127.0.0.1:3030/ui/s/019f7fb8769d776e8c8c7a79/",
+        title: "advance heartbeat 16:30 IDT Jul 20 — #1638 NOW CONFLICTING; #1667/#1669 UNKNOWN; #1690 ALL CI PASS unchanged",
+        status: "completed",
+        timestamp: "2026-07-20 16:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7f9cfe9179749a87de04",
         url: "http://127.0.0.1:3030/ui/s/019f7f9cfe9179749a87de04/",
@@ -48,16 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-20 14:33 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f7f2f20697ccaa2c0251c",
-        url: "http://127.0.0.1:3030/ui/s/019f7f2f20697ccaa2c0251c/",
-        title: "advance heartbeat 14:03 IDT Jul 20 — #1638 e2e-smoke ❌ FAILED; #1690 ALL CI PASS unchanged",
-        status: "completed",
-        timestamp: "2026-07-20 14:03 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-20 16:00 IDT",
+    lastActive: "2026-07-20 16:30 IDT",
   },
   {
     ticket: "JN-5695",
@@ -85,8 +85,8 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1667",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1667",
-    status: "🔴 #1667 CONFLICTING. CI stale (run 29402877354 all-pass, pre-conflict). Needs rebase on main.",
-    blockedOn: "CONFLICTING — needs rebase on main",
+    status: "🟡 #1667 mergeable: UNKNOWN (was CONFLICTING at 16:00 IDT). CI stale run 29402877354 all-pass. Possible rebase or GitHub recomputing. Monitor — if CONFLICTING again, rebase on main.",
+    blockedOn: "Mergeability UNKNOWN — possible conflict or rebase in progress",
     blockedType: "blocked",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b8914f87505bf9d7e3f/",
     sessionLabel: "advance heartbeat 21:02 IDT Jul 19 — #1667 CONFLICTING unchanged",
@@ -111,8 +111,8 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1669",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1669",
-    status: "🔴 CI ❌ run 29683534910 (stale): pre-commit ❌, nox ❌, tox-run ❌, all-checks ❌. CONFLICTING. Needs rebase + CI fix. Unchanged.",
-    blockedOn: "CI REGRESSION — CONFLICTING + pre-commit/nox/tox-run fix needed",
+    status: "🔴 CI ❌ run 29683534910 (stale): pre-commit ❌, nox ❌, tox-run ❌, all-checks ❌. DRAFT. mergeable: UNKNOWN (was CONFLICTING at 16:00). Needs rebase + CI fix.",
+    blockedOn: "CI REGRESSION — pre-commit/nox/tox-run fix needed; mergeability UNKNOWN",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b8914f87505bf9d7e3f/",
     sessionLabel: "advance heartbeat 21:02 IDT Jul 19 — #1669 CI ❌ + CONFLICTING unchanged",
@@ -449,15 +449,15 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 #1638 (JN-5725, off-board): MERGEABLE. CI run 29734729818 — **e2e-smoke ❌ FAILED** (was ⏳ PENDING at 13:33 IDT). all-checks ❌, e2e-tests ❌. e2e-api ✅, nox ✅, tox ✅, integration ✅, pre-commit ✅ still pass. **Action: Joseph needs to investigate e2e-smoke failure.** JN-5725 Done ✅.",
+    message: "🔴 #1638 (JN-5725, off-board): **NOW CONFLICTING** (was MERGEABLE at 16:00 IDT — new conflict this run). e2e-smoke ❌ FAILED (run 29734729818). **Action: 1) Rebase feat/vllm-analyzer-prerequisites on main. 2) Fix e2e-smoke. 3) Request review.** JN-5725 Done ✅.",
   },
   {
     level: "red",
-    message: "🔴 #1669 (jn-5872 JN-5872): CI REGRESSION — run 29683534910: pre-commit ❌ + nox ❌ + tox-run ❌ + all-checks ❌. CONFLICTING. Needs rebase + CI fix.",
+    message: "🔴 #1669 (jn-5872 JN-5872): CI REGRESSION — run 29683534910: pre-commit ❌ + nox ❌ + tox-run ❌ + all-checks ❌. DRAFT. mergeable: UNKNOWN (was CONFLICTING). Needs rebase + CI fix.",
   },
   {
     level: "yellow",
-    message: "🟡 #1667 (jn-5845 JN-5845): CONFLICTING. CI stale (run 29402877354). Needs rebase on main.",
+    message: "🟡 #1667 (jn-5845 JN-5845): mergeable UNKNOWN (was CONFLICTING at 16:00 IDT). CI stale (run 29402877354 all-pass). Possible rebase or GitHub recomputing — monitor for new CI run.",
   },
   {
     level: "yellow",
