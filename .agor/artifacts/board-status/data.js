@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-20 12:33 IDT";
+export const LAST_UPDATED = "2026-07-20 13:03 IDT";
 
 export const WORKTREES = [
   {
@@ -10,12 +10,20 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1690",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1690",
-    status: "🟢 **CI FULLY PASSING** — run 29729530150: e2e-smoke ✅, pre-commit-run ✅, nox ✅, e2e-api ✅, integration-run ✅, integration-tests ✅, tox-run ✅, atlas-validate ✅, check-changes ✅, JIRA Assoc ✅, CodeRabbit ✅, pre-commit ✅. e2e-product ⏳ PENDING (non-blocking). MERGEABLE. **READY FOR REVIEW.**",
-    blockedOn: "Awaiting review request (all critical CI pass, e2e-product still pending)",
+    status: "🟢 **ALL CI 100% PASSING** — run 29729530150: e2e-smoke ✅, pre-commit-run ✅, nox ✅, e2e-api ✅, **e2e-product ✅** (now complete!), integration-run ✅, integration-tests ✅, tox-run ✅, atlas-validate ✅, check-changes ✅, JIRA Assoc ✅, CodeRabbit ✅, pre-commit ✅, e2e-tests ✅, all-checks ✅. MERGEABLE. **READY FOR REVIEW — every check green.**",
+    blockedOn: "Awaiting review request",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7edc75c577d3a7999c52/",
-    sessionLabel: "advance heartbeat 12:33 IDT Jul 20 — #1690 CI FULLY PASSING; ready for review",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7ef831e27298bbeaaa76/",
+    sessionLabel: "advance heartbeat 13:03 IDT Jul 20 — #1690 ALL CI 100% PASS (e2e-product ✅); ready for review",
     recentSessions: [
+      {
+        sessionId: "019f7ef831e27298bbeaaa76",
+        url: "http://127.0.0.1:3030/ui/s/019f7ef831e27298bbeaaa76/",
+        title: "advance heartbeat 13:03 IDT Jul 20 — #1690 ALL CI 100% PASS (e2e-product ✅)",
+        status: "completed",
+        timestamp: "2026-07-20 13:03 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7edc75c577d3a7999c52",
         url: "http://127.0.0.1:3030/ui/s/019f7edc75c577d3a7999c52/",
@@ -48,16 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-20 10:40 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f7e6e983b72c1a122f2eb",
-        url: "http://127.0.0.1:3030/ui/s/019f7e6e983b72c1a122f2eb/",
-        title: "advance heartbeat 10:10 IDT Jul 20 — #1691 MERGED 10:20 IDT; #1690 NOW CONFLICTING",
-        status: "completed",
-        timestamp: "2026-07-20 10:10 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-20 12:33 IDT",
+    lastActive: "2026-07-20 13:03 IDT",
   },
   {
     ticket: "JN-5695",
@@ -365,15 +365,15 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "green",
-    message: "🟢 #1690 (AIPCC-27645): **CI FULLY PASSING** run 29729530150 — e2e-smoke ✅, pre-commit-run ✅, all critical checks pass. e2e-product ⏳ still pending (non-blocking). MERGEABLE. **Action: Request review now.**",
+    message: "🟢 #1690 (AIPCC-27645): **ALL CI 100% PASSING** run 29729530150 — e2e-product ✅ (complete as of 13:03 IDT!), e2e-smoke ✅, pre-commit-run ✅, all checks green. MERGEABLE. **Action: Request review now.**",
   },
   {
     level: "green",
     message: "🎉 #1691 (AIPCC-27657): **MERGED 10:20 IDT Jul 20** — into main. aipcc-27657-guidellm-output-dir ARCHIVED ✅. AIPCC-27657 needs Done in Jira.",
   },
   {
-    level: "yellow",
-    message: "🟡 #1638 (JN-5725, off-board): **NOW MERGEABLE** (rebased between 12:03–12:33 IDT). New CI run 29731143353: nox ❌ + tox-run ❌ FAILING. e2e-smoke ⏳ pending. **Action: Fix nox/tox failures, then request review.** JN-5725 Done ✅.",
+    level: "red",
+    message: "🔴 #1638 (JN-5725, off-board): MERGEABLE. New CI run 29732653099 (new commit pushed since 12:33 IDT): **e2e-api ❌ FAIL** (nox/tox now fixed but e2e-api broke). **Action: Fix e2e-api failure, then request review.** JN-5725 Done ✅.",
   },
   {
     level: "red",
