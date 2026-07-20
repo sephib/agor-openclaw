@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-20 14:03 IDT";
+export const LAST_UPDATED = "2026-07-20 14:33 IDT";
 
 export const WORKTREES = [
   {
@@ -13,9 +13,17 @@ export const WORKTREES = [
     status: "🟢 **ALL CI 100% PASSING** — run 29729530150: e2e-smoke ✅, pre-commit-run ✅, nox ✅, e2e-api ✅, **e2e-product ✅** (now complete!), integration-run ✅, integration-tests ✅, tox-run ✅, atlas-validate ✅, check-changes ✅, JIRA Assoc ✅, CodeRabbit ✅, pre-commit ✅, e2e-tests ✅, all-checks ✅. MERGEABLE. **READY FOR REVIEW — every check green.**",
     blockedOn: "Awaiting review request",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7f2f20697ccaa2c0251c/",
-    sessionLabel: "advance heartbeat 14:03 IDT Jul 20 — #1638 e2e-smoke ❌ FAILED; #1690 ALL CI PASS unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7f4a98437528bc53f4ef/",
+    sessionLabel: "advance heartbeat 14:33 IDT Jul 20 — board static; #1690 ALL CI PASS unchanged; #1638 e2e-smoke ❌ confirmed",
     recentSessions: [
+      {
+        sessionId: "019f7f4a98437528bc53f4ef",
+        url: "http://127.0.0.1:3030/ui/s/019f7f4a98437528bc53f4ef/",
+        title: "advance heartbeat 14:33 IDT Jul 20 — board static; #1690 ALL CI PASS unchanged; #1638 e2e-smoke ❌ confirmed",
+        status: "completed",
+        timestamp: "2026-07-20 14:33 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7f2f20697ccaa2c0251c",
         url: "http://127.0.0.1:3030/ui/s/019f7f2f20697ccaa2c0251c/",
@@ -48,16 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-20 12:33 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f7ec0fe8879f684618ced",
-        url: "http://127.0.0.1:3030/ui/s/019f7ec0fe8879f684618ced/",
-        title: "advance heartbeat 12:03 IDT Jul 20 — #1690 REBASED + CI ⏳ in progress",
-        status: "completed",
-        timestamp: "2026-07-20 12:03 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-20 14:03 IDT",
+    lastActive: "2026-07-20 14:33 IDT",
   },
   {
     ticket: "JN-5695",

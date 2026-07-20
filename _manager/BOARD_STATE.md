@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-20 14:03 IDT (advance heartbeat)*
+*Last updated: 2026-07-20 14:33 IDT (advance heartbeat)*
 
 ---
 
@@ -92,13 +92,11 @@ Active sprint tickets assigned to Joseph (non-Done/Closed, via acli):
 
 ---
 
-## Key Changes (14:03 IDT Jul 20 vs 13:33 IDT Jul 20)
+## Key Changes (14:33 IDT Jul 20 vs 14:03 IDT Jul 20)
 
 | What changed | Delta |
 |---|---|
-| **🔴 #1638 e2e-smoke NOW FAILED** | CI run 29734729818: **e2e-smoke ❌ FAILED** (was ⏳ PENDING at 13:33 IDT). Now: all-checks ❌, e2e-tests ❌. **Regression** — was trending toward passing. Joseph needs to investigate e2e-smoke failure. |
-| **#1690 unchanged** | ALL CI 100% PASS (run 29729530150) — still awaiting review request from Joseph. |
-| **All other PRs unchanged** | #1669 CI ❌ + CONFLICTING, #1667 CONFLICTING, #1670 DRAFT MERGEABLE — unchanged. |
+| **Board static** | All PRs unchanged: #1690 ALL CI PASS (run 29729530150) still awaiting review; #1638 e2e-smoke ❌ FAIL confirmed (run 29734729818 final); #1669 CONFLICTING + CI ❌; #1667 CONFLICTING; #1670 DRAFT. |
 | **Jira mismatches: 7** | No change. |
 | **0 merges, 0 archives** | No new merges or archives this run. |
 
