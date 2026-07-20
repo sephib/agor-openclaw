@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-20 13:03 IDT (advance heartbeat)*
+*Last updated: 2026-07-20 13:33 IDT (advance heartbeat)*
 
 ---
 
@@ -24,7 +24,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🔴 **NEW RUN 29732653099** — e2e-api ❌, all-checks ❌, e2e-tests ❌; nox ✅, tox-run ✅, pre-commit-run ✅, integration ✅ | **OPEN, MERGEABLE** 🟡 | 🔴 **CI FAILING** — e2e-api ❌ NEW FAILURE (run 29732653099: nox/tox now PASS but e2e-api broke). New commit pushed since 12:33 IDT. Fix e2e-api failure, then request review. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🟡 **RUN 29734729818** — e2e-api ✅ **NOW PASSING**, nox ✅, tox-run ✅, integration ✅, pre-commit ✅; **e2e-smoke ⏳ PENDING**; all-checks not yet shown | **OPEN, MERGEABLE** 🟡 | 🟡 **e2e-api NOW PASSING** (was ❌ at 13:03 IDT). New CI run 29734729818 — most checks ✅, e2e-smoke ⏳ PENDING. If e2e-smoke passes → all-checks ✅ → **READY FOR REVIEW**. JN-5725 Done ✅. |
 
 ---
 
@@ -92,12 +92,12 @@ Active sprint tickets assigned to Joseph (non-Done/Closed, via acli):
 
 ---
 
-## Key Changes (13:03 IDT Jul 20 vs 12:33 IDT Jul 20)
+## Key Changes (13:33 IDT Jul 20 vs 13:03 IDT Jul 20)
 
 | What changed | Delta |
 |---|---|
-| **🟢 #1690 e2e-product NOW PASS** | e2e-product ✅ completed (was ⏳ PENDING at 12:33 IDT). ALL CI 100% PASSING on run 29729530150 — every check green. **PR remains READY FOR REVIEW.** |
-| **🔴 #1638 NEW CI RUN 29732653099** | New commit pushed (nox/tox fixed). But e2e-api ❌ now FAILING (new failure). All-checks ❌, e2e-tests ❌. Integration ✅, nox ✅, tox-run ✅. Still not ready for review. |
+| **🟡→🟢 #1638 e2e-api NOW PASSING** | New CI run 29734729818: e2e-api ✅ (was ❌ at 13:03 IDT), nox ✅, tox-run ✅, integration ✅, pre-commit ✅. e2e-smoke ⏳ PENDING. If e2e-smoke passes → all-checks ✅ → **READY FOR REVIEW**. No Joseph action needed. |
+| **#1690 unchanged** | ALL CI 100% PASS (run 29729530150) — still awaiting review request from Joseph. |
 | **All other PRs unchanged** | #1669 CI ❌ + CONFLICTING, #1667 CONFLICTING, #1670 DRAFT MERGEABLE — unchanged. |
 | **Jira mismatches: 7** | No change. |
 | **0 merges, 0 archives** | No new merges or archives this run. |
@@ -116,16 +116,17 @@ PR [#1690](https://github.com/Jounce-IO/jounce/pull/1690): "fix(helm): increase 
 
 ---
 
-### 🔴 #1638 (off-board JN-5725) — MERGEABLE but CI FAILING (e2e-api ❌ NEW)
+### 🟡 #1638 (off-board JN-5725) — e2e-api NOW PASSING, e2e-smoke ⏳ PENDING
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements (JN-5725)"
 - State: OPEN, **MERGEABLE** 🟡
-- **New CI run 29732653099** (new commit pushed since 12:33 IDT):
-  - ❌ FAIL: e2e-api, all-checks, e2e-tests
-  - ✅ PASS: nox, tox-run/tox (now fixed!), pre-commit-run, integration-run, integration-tests, atlas-validate, check-changes, JIRA Assoc, CodeRabbit, pre-commit
-  - ⏸ SKIP: e2e-smoke, e2e-product, e2e-priority
+- **New CI run 29734729818** (new run since 13:03 IDT):
+  - ✅ PASS: e2e-api ✅ **(NOW PASSING — was ❌ at last run!)**, nox, tox-run, integration-run, integration-tests, pre-commit-run, pre-commit, atlas-validate, check-changes, JIRA Assoc, CodeRabbit
+  - ⏳ PENDING: e2e-smoke
+  - ⏸ SKIP: atlas-validate-run, bake
+  - Not yet shown: all-checks, e2e-tests, e2e-product
 - Jira: JN-5725 is Done ✅
-- **Action:** Fix e2e-api failure (regression from latest push — new test broke). Then request review.
+- **Action:** Monitor e2e-smoke. If it passes → all-checks ✅ → **READY FOR REVIEW**. No fix needed from Joseph.
 
 ---
 
