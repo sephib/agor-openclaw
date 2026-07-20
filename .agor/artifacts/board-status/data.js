@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-20 17:00 IDT";
+export const LAST_UPDATED = "2026-07-20 17:30 IDT";
 
 export const WORKTREES = [
   {
@@ -10,12 +10,20 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1690",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1690",
-    status: "🟢 **ALL CI 100% PASSING** — run 29729530150: e2e-smoke ✅, pre-commit-run ✅, nox ✅, e2e-api ✅, **e2e-product ✅** (now complete!), integration-run ✅, integration-tests ✅, tox-run ✅, atlas-validate ✅, check-changes ✅, JIRA Assoc ✅, CodeRabbit ✅, pre-commit ✅, e2e-tests ✅, all-checks ✅. UNKNOWN mergeable (GitHub recomputing). **READY FOR REVIEW — every check green.**",
-    blockedOn: "Awaiting review request",
+    status: "🔴 **NOW CONFLICTING** (17:30 IDT — was UNKNOWN at 17:00). All CI 100% PASSING (run 29729530150 unchanged: e2e-smoke ✅, e2e-product ✅, all-checks ✅, everything green). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
+    blockedOn: "CONFLICTING — needs rebase on main",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f7fd3edc27aaa89b8149d/",
-    sessionLabel: "advance heartbeat 17:00 IDT Jul 20 — #1638 NEW CI RUN e2e-smoke PENDING; #1698 NEW CI RUN; #1690 ALL CI PASS unchanged; 7 Jira mismatches; 0 merges",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f805d1a5f7a149aee1b82/",
+    sessionLabel: "advance heartbeat 17:30 IDT Jul 20 — #1690 NOW CONFLICTING; #1638 MERGEABLE but e2e-smoke ❌; #1698 ready for review; #1667 CONFLICTING; 0 merges",
     recentSessions: [
+      {
+        sessionId: "019f805d1a5f7a149aee1b82",
+        url: "http://127.0.0.1:3030/ui/s/019f805d1a5f7a149aee1b82/",
+        title: "advance heartbeat 17:30 IDT Jul 20 — #1690 NOW CONFLICTING; #1638 MERGEABLE but e2e-smoke ❌; #1698 ready; #1667 CONFLICTING",
+        status: "completed",
+        timestamp: "2026-07-20 17:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f7fd3edc27aaa89b8149d",
         url: "http://127.0.0.1:3030/ui/s/019f7fd3edc27aaa89b8149d/",
@@ -85,8 +93,8 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1667",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1667",
-    status: "🟡 #1667 mergeable: UNKNOWN (was CONFLICTING at 16:00 IDT). CI stale run 29402877354 all-pass. Possible rebase or GitHub recomputing. Monitor — if CONFLICTING again, rebase on main.",
-    blockedOn: "Mergeability UNKNOWN — possible conflict or rebase in progress",
+    status: "🔴 **CONFLICTING** confirmed 17:30 IDT (was UNKNOWN at 17:00). CI stale run 29402877354 all-pass. **Action: Rebase jn-5845-helm-cicd-agents-md on main. CI will auto-run after push.**",
+    blockedOn: "CONFLICTING — needs rebase on main",
     blockedType: "blocked",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b8914f87505bf9d7e3f/",
     sessionLabel: "advance heartbeat 21:02 IDT Jul 19 — #1667 CONFLICTING unchanged",
@@ -111,8 +119,8 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1669",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1669",
-    status: "🔴 CI ❌ run 29683534910 (stale): pre-commit ❌, nox ❌, tox-run ❌, all-checks ❌. DRAFT. mergeable: UNKNOWN (was CONFLICTING at 16:00). Needs rebase + CI fix.",
-    blockedOn: "CI REGRESSION — pre-commit/nox/tox-run fix needed; mergeability UNKNOWN",
+    status: "🔴 CI ❌ run 29683534910 (stale): pre-commit ❌, nox ❌, tox-run ❌, all-checks ❌. DRAFT. CONFLICTING. Unchanged. Needs rebase + CI fix.",
+    blockedOn: "CI REGRESSION — pre-commit/nox/tox-run fix needed; CONFLICTING",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b8914f87505bf9d7e3f/",
     sessionLabel: "advance heartbeat 21:02 IDT Jul 19 — #1669 CI ❌ + CONFLICTING unchanged",
@@ -292,8 +300,8 @@ export const WORKTREES = [
     zone: "Plan",
     pr: "#1698 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1698",
-    status: "🟡 DRAFT PR #1698 (`feat(jbenchmark): support IBM OpenShift cluster kubeconfig connection`) — NEW CI RUN 29748663864 in progress! pre-commit-run ⏳ PENDING, tox-run ⏳ PENDING. JIRA Assoc ❌. MERGEABLE. Possible pre-commit fix pushed by split-PR session.",
-    blockedOn: "CI run in progress — monitoring pre-commit result",
+    status: "🔴 PR #1698 (`feat(jbenchmark): support IBM OpenShift cluster kubeconfig connection`) — **isDraft:false** (marked ready for review 17:30!). CI run 29749885088 complete: pre-commit ❌, all-checks ❌; **JIRA Assoc ✅** (fixed!), nox ✅, tox ✅. MERGEABLE. **Action: Fix pre-commit to unblock.**",
+    blockedOn: "pre-commit failing — needs fix before merge",
     blockedType: "active",
     sessionUrl: null,
     sessionLabel: null,
@@ -432,20 +440,28 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "yellow",
-    message: "🆕 4 worktrees from split-PR session — all now have PRs. 3 moved to Plan zone. aipcc-23890 still NO ZONE (assign zone). PRs #1695/#1697/#1698 need pre-commit fix. PR #1696 needs JIRA Assoc fix.",
+    level: "red",
+    message: "🔴 #1690 (AIPCC-27645): **NOW CONFLICTING** (17:30 IDT). All CI 100% passing (run 29729530150). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
   },
   {
     level: "red",
-    message: "🔴 #1695/#1697 DRAFT PRs (aipcc-23925/aipcc-23890): pre-commit ❌ + JIRA Assoc ❌ + all-checks ❌. nox/tox ✅. Needs pre-commit fix before ready for review.",
+    message: "🔴 #1638 (JN-5725, off-board): **MERGEABLE** (conflict resolved!) but **e2e-smoke ❌ STILL FAILING** (run 29749975829). pre-commit ✅, nox ✅, tox ✅, e2e-api ✅. JN-5725 Done ✅. **Action: e2e-smoke root-cause investigation needed.**",
   },
   {
-    level: "yellow",
-    message: "🟡 #1698 (aipcc-23845): NEW CI RUN 29748663864 in progress! pre-commit-run ⏳ PENDING, tox-run ⏳ PENDING. JIRA Assoc ❌. Monitor — could be a pre-commit fix. MERGEABLE.",
+    level: "red",
+    message: "🔴 #1698 (aipcc-23845): **isDraft:false** (marked ready for review!). CI run 29749885088: **pre-commit ❌**, JIRA Assoc ✅, all-checks ❌. MERGEABLE. **Action: Fix pre-commit.**",
   },
   {
-    level: "green",
-    message: "🟢 #1690 (AIPCC-27645): **ALL CI 100% PASSING** run 29729530150 — e2e-product ✅ (complete as of 13:03 IDT!), e2e-smoke ✅, pre-commit-run ✅, all checks green. MERGEABLE. **Action: Request review now.**",
+    level: "red",
+    message: "🔴 #1667 (jn-5845 JN-5845): **CONFLICTING** confirmed 17:30 IDT (was UNKNOWN). CI all-pass (stale run 29402877354). **Action: Rebase jn-5845-helm-cicd-agents-md on main.**",
+  },
+  {
+    level: "red",
+    message: "🔴 #1695/#1697 DRAFT PRs (aipcc-23925/aipcc-23890): pre-commit ❌ + JIRA Assoc ❌ + all-checks ❌. nox/tox ✅. Needs pre-commit fix before ready for review. Unchanged.",
+  },
+  {
+    level: "red",
+    message: "🔴 #1669 (jn-5872 JN-5872): CI REGRESSION — run 29683534910: pre-commit ❌ + nox ❌ + tox-run ❌ + all-checks ❌. DRAFT. CONFLICTING. Unchanged.",
   },
   {
     level: "green",
@@ -453,23 +469,15 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "🟡 #1638 (JN-5725, off-board): **NEW CI RUN 29748089336** — all checks PASSING except e2e-smoke ⏳ PENDING (was ❌ FAILED). Still CONFLICTING. If e2e-smoke ✅: rebase on main to resolve conflict, then ready for review. JN-5725 Done ✅.",
-  },
-  {
-    level: "red",
-    message: "🔴 #1669 (jn-5872 JN-5872): CI REGRESSION — run 29683534910: pre-commit ❌ + nox ❌ + tox-run ❌ + all-checks ❌. DRAFT. mergeable: UNKNOWN (was CONFLICTING). Needs rebase + CI fix.",
+    message: "🟡 #1696 (aipcc-23895): DRAFT. JIRA Assoc ❌, all-checks ✅. Needs JIRA ticket reference fix in PR description, then mark ready for review.",
   },
   {
     level: "yellow",
-    message: "🟡 #1667 (jn-5845 JN-5845): mergeable UNKNOWN (was CONFLICTING at 16:00 IDT). CI stale (run 29402877354 all-pass). Possible rebase or GitHub recomputing — monitor for new CI run.",
+    message: "🟡 #1670 DRAFT (jn-5844 JN-5844): isDraft:true. CI all pass (run 29403233416 — stale). Needs: mark ready for review.",
   },
   {
     level: "yellow",
-    message: "🟡 #1670 DRAFT (jn-5844 JN-5844): 'docs(jbenchmark): add service, libs, and SQL domain AGENTS.md'. isDraft:true. CI all pass (run 29403233416 — stale). Needs: mark ready for review.",
-  },
-  {
-    level: "yellow",
-    message: "🟡 Jira mismatches (7): AIPCC-27657 (NEW — both PRs merged), JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546 — PRs merged but Jira not Done. Use acli jira workitem transition.",
+    message: "🟡 Jira mismatches (7): AIPCC-27657, JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546 — PRs merged but Jira not Done. Use acli jira workitem transition.",
   },
   {
     level: "yellow",
