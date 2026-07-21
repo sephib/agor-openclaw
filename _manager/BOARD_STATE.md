@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-21 08:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-21 10:00 IDT (advance heartbeat)*
 
 ---
 
@@ -19,6 +19,8 @@
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 26+ days. Propose archive. |
 | aipcc-23845-cluster-connection | **Plan** | [#1698](https://github.com/Jounce-IO/jounce/pull/1698) | 🔴 CI run 29749885088 — **pre-commit ❌**, pre-commit-run ❌, all-checks ❌; JIRA Assoc ✅, nox ✅, tox-run ✅ | [AIPCC-23845](https://redhat.atlassian.net/browse/AIPCC-23845) | **isDraft:false** (ready for review!). pre-commit still ❌. MERGEABLE. **Action: Fix pre-commit.** |
 | aipcc-23890-qe-cluster-tests | **NO ZONE** | [#1697 DRAFT](https://github.com/Jounce-IO/jounce/pull/1697) | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌; nox ✅, tox ✅ | [AIPCC-23890](https://redhat.atlassian.net/browse/AIPCC-23890) — In Progress | PR #1697 DRAFT. CI failing: pre-commit ❌. No zone assigned. |
+| aipcc-23845-script-runner | **NO ZONE** | [#1700 DRAFT](https://github.com/Jounce-IO/jounce/pull/1700) | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌ (run 29808132144); nox ✅, tox ✅ | [AIPCC-23845](https://redhat.atlassian.net/browse/AIPCC-23845) | 🆕 **NEW** (created ~09:48 IDT Jul 21). DRAFT "fix(jbenchmark): script runner and cluster config (AIPCC-23845)". Split from #1698. No zone assigned. |
+| aipcc-23845-generator-hotfix | **NO ZONE** | [#1701 DRAFT](https://github.com/Jounce-IO/jounce/pull/1701) | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌ (run 29808455073); nox ✅, tox ✅ | [AIPCC-23845](https://redhat.atlassian.net/browse/AIPCC-23845) | 🆕 **NEW** (created ~09:54 IDT Jul 21). DRAFT "fix(jbenchmark): config-generator hotfix (1 of 2, split from #1698)". No zone assigned. |
 | aipcc-23895-docs-ibm | **Plan** | [#1696 DRAFT](https://github.com/Jounce-IO/jounce/pull/1696) | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌ (run 29741945977) | [AIPCC-23895](https://redhat.atlassian.net/browse/AIPCC-23895) | DRAFT PR #1696 — **NOW MERGEABLE** (was CONFLICTING). pre-commit ❌ still blocks mark-ready. |
 | aipcc-23925-argo-public-url | **Plan** | [#1695 DRAFT](https://github.com/Jounce-IO/jounce/pull/1695) | 🟡 all-checks ✅, JIRA Assoc ❌ only (run 29741885397) — **CI IMPROVED** | [AIPCC-23925](https://redhat.atlassian.net/browse/AIPCC-23925) | DRAFT PR #1695 — pre-commit-run ✅, all-checks ✅. Only JIRA Assoc ❌ now. |
 
@@ -70,14 +72,13 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (08:30 IDT Jul 21 vs 06:00 IDT Jul 21)
+## Key Changes (10:00 IDT Jul 21 vs 08:30 IDT Jul 21)
 
 | What changed | Delta |
 |---|---|
-| **#1696 (AIPCC-23895) NOW MERGEABLE** | Was CONFLICTING, now MERGEABLE! pre-commit ❌ + JIRA ❌ still block it, but conflict resolved. |
-| **#1638 NEW CI run 29806749410** | e2e-api ❌ still failing in the new run — persistent failure (was run 29749975829, same pattern). |
-| **0 merges, 0 archives** | No new merges or archives since 06:00 IDT. |
-| **All other PRs** | Unchanged: #1690 (CONFLICTING, all-CI ✅), #1698 (ready, pre-commit ❌), #1695 (JIRA ❌ only), #1697 (DRAFT, pre-commit ❌), #1667 (CONFLICTING, CI stale ✅), #1670 (DRAFT/MERGEABLE, CI stale ✅), #1669 (CONFLICTING, CI ❌). |
+| **2 NEW worktrees discovered** | `aipcc-23845-script-runner` (PR [#1700](https://github.com/Jounce-IO/jounce/pull/1700)) and `aipcc-23845-generator-hotfix` (PR [#1701](https://github.com/Jounce-IO/jounce/pull/1701)) — both split from #1698 (AIPCC-23845), both DRAFT, both pre-commit ❌. Created ~09:48–09:54 IDT Jul 21. |
+| **0 merges, 0 archives** | No new merges or archives since 08:30 IDT. |
+| **All existing PRs** | Unchanged: #1690 (CONFLICTING, all-CI ✅), #1698 (ready, pre-commit ❌), #1696 (MERGEABLE, pre-commit ❌), #1695 (JIRA ❌ only), #1697 (DRAFT, pre-commit ❌), #1667 (CONFLICTING, CI stale ✅), #1670 (DRAFT/MERGEABLE, CI stale ✅), #1669 (CONFLICTING, CI ❌), #1638 (e2e-api ❌). |
 
 ---
 
@@ -126,6 +127,17 @@ PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): ad
 
 PR [#1698](https://github.com/Jounce-IO/jounce/pull/1698): isDraft:false (marked ready!). pre-commit ❌ (run 29749885088).
 - **Action:** Fix pre-commit to unblock review.
+
+---
+
+### 🆕 #1700 (aipcc-23845-script-runner) + #1701 (aipcc-23845-generator-hotfix) — NEW, split from #1698
+
+PR [#1700](https://github.com/Jounce-IO/jounce/pull/1700): "fix(jbenchmark): script runner and cluster config (AIPCC-23845)" — DRAFT, MERGEABLE
+PR [#1701](https://github.com/Jounce-IO/jounce/pull/1701): "fix(jbenchmark): config-generator hotfix (1 of 2, split from #1698)" — DRAFT, MERGEABLE
+- Created ~09:48–09:54 IDT Jul 21. Both split from #1698 (AIPCC-23845 cluster connection).
+- CI: pre-commit ❌, JIRA Assoc ❌, all-checks ❌ on both. nox ✅, tox ✅.
+- Both in NO ZONE — need zone assignment.
+- **Action:** Fix pre-commit on both. Assign to appropriate zone (Plan or Code).
 
 ---
 
@@ -182,7 +194,7 @@ Multiple consecutive overnight session failures (Jul 17–20). Daytime sessions 
 
 ## Archived This Session
 
-No archives this run (08:30 IDT Jul 21 — no merged/closed PRs detected).
+No archives this run (10:00 IDT Jul 21 — no merged/closed PRs detected).
 
 Previously archived:
 | Branch | PR | Reason | Time |

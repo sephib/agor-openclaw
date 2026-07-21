@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-21 08:30 IDT";
+export const LAST_UPDATED = "2026-07-21 10:00 IDT";
 
 export const WORKTREES = [
   {
@@ -13,9 +13,17 @@ export const WORKTREES = [
     status: "🔴 **CONFLICTING** (unchanged). All CI 100% PASSING (run 29729530150: e2e-smoke ✅, e2e-product ✅, all-checks ✅, everything green). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
     blockedOn: "CONFLICTING — needs rebase on main",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f835e224d78ceba16f38f/",
-    sessionLabel: "advance heartbeat 08:30 IDT Jul 21 — #1696 now MERGEABLE; #1638 new CI run; 0 merges; 7 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f837998fa767683e969c0/",
+    sessionLabel: "advance heartbeat 10:00 IDT Jul 21 — 2 new worktrees #1700/#1701; 0 merges; 7 Jira mismatches",
     recentSessions: [
+      {
+        sessionId: "019f837998fa767683e969c0",
+        url: "http://127.0.0.1:3030/ui/s/019f837998fa767683e969c0/",
+        title: "advance heartbeat 10:00 IDT Jul 21 — 2 new worktrees #1700/#1701; 0 merges",
+        status: "completed",
+        timestamp: "2026-07-21 10:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f835e224d78ceba16f38f",
         url: "http://127.0.0.1:3030/ui/s/019f835e224d78ceba16f38f/",
@@ -48,16 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-21 02:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f8154769670cf92fe616f",
-        url: "http://127.0.0.1:3030/ui/s/019f8154769670cf92fe616f/",
-        title: "advance heartbeat 00:00 IDT Jul 21 — board static overnight; all PRs unchanged; 0 merges",
-        status: "completed",
-        timestamp: "2026-07-21 00:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-21 08:30 IDT",
+    lastActive: "2026-07-21 10:00 IDT",
   },
   {
     ticket: "JN-5695",
@@ -301,6 +301,40 @@ export const WORKTREES = [
     lastActive: "2026-07-20 17:00 IDT",
   },
   {
+    ticket: "AIPCC-23845",
+    ticketUrl: "https://redhat.atlassian.net/browse/AIPCC-23845",
+    title: "Script runner and cluster config hotfix (AIPCC-23845) — split from #1698",
+    branch: "aipcc-23845-script-runner",
+    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/aipcc-23845-script-runner",
+    zone: "NO ZONE",
+    pr: "#1700 DRAFT",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1700",
+    status: "🆕 NEW (created ~09:48 IDT Jul 21). DRAFT 'fix(jbenchmark): script runner and cluster config (AIPCC-23845)'. Split from #1698. CI run 29808132144: pre-commit ❌, JIRA Assoc ❌, all-checks ❌; nox ✅, tox ✅. No zone assigned.",
+    blockedOn: "pre-commit failing; no zone assigned",
+    blockedType: "active",
+    sessionUrl: null,
+    sessionLabel: null,
+    recentSessions: [],
+    lastActive: "2026-07-21 09:48 IDT",
+  },
+  {
+    ticket: "AIPCC-23845",
+    ticketUrl: "https://redhat.atlassian.net/browse/AIPCC-23845",
+    title: "Config-generator hotfix (1 of 2, split from #1698) — AIPCC-23845",
+    branch: "aipcc-23845-generator-hotfix",
+    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/aipcc-23845-generator-hotfix",
+    zone: "NO ZONE",
+    pr: "#1701 DRAFT",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1701",
+    status: "🆕 NEW (created ~09:54 IDT Jul 21). DRAFT 'fix(jbenchmark): config-generator hotfix (1 of 2, split from #1698)'. CI run 29808455073: pre-commit ❌, JIRA Assoc ❌, all-checks ❌; nox ✅, tox ✅. No zone assigned.",
+    blockedOn: "pre-commit failing; no zone assigned",
+    blockedType: "active",
+    sessionUrl: null,
+    sessionLabel: null,
+    recentSessions: [],
+    lastActive: "2026-07-21 09:54 IDT",
+  },
+  {
     ticket: null,
     ticketUrl: null,
     title: "jira-operations (stale, NO ZONE)",
@@ -431,6 +465,10 @@ export const MERGED = [
 ];
 
 export const ALERTS = [
+  {
+    level: "red",
+    message: "🆕 #1700 + #1701 (AIPCC-23845): 2 new DRAFT PRs split from #1698 — 'script runner + cluster config' (#1700) and 'config-generator hotfix' (#1701). Both pre-commit ❌, JIRA Assoc ❌, NO ZONE. Action: Fix pre-commit, assign zones.",
+  },
   {
     level: "red",
     message: "🔴 #1690 (AIPCC-27645): **CONFLICTING** (unchanged). All CI 100% passing (run 29729530150). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
