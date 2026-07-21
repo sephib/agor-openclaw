@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-21 16:00 IDT";
+export const LAST_UPDATED = "2026-07-21 16:30 IDT";
 
 export const WORKTREES = [
   {
@@ -13,9 +13,17 @@ export const WORKTREES = [
     status: "🔴 **CONFLICTING** (unchanged). All CI 100% PASSING (run 29729530150: e2e-smoke ✅, e2e-product ✅, all-checks ✅, everything green). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
     blockedOn: "CONFLICTING — needs rebase on main",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f84c333aa77f9adf146b7/",
-    sessionLabel: "advance heartbeat 16:00 IDT Jul 21 — #1638 now CONFLICTING; 6 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f84deaaea7e45bff93dfb/",
+    sessionLabel: "advance heartbeat 16:30 IDT Jul 21 — #1698 now CONFLICTING; 6 Jira mismatches",
     recentSessions: [
+      {
+        sessionId: "019f84deaaea7e45bff93dfb",
+        url: "http://127.0.0.1:3030/ui/s/019f84deaaea7e45bff93dfb/",
+        title: "advance heartbeat 16:30 IDT Jul 21 — #1698 now CONFLICTING; 6 Jira mismatches",
+        status: "completed",
+        timestamp: "2026-07-21 16:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f84c333aa77f9adf146b7",
         url: "http://127.0.0.1:3030/ui/s/019f84c333aa77f9adf146b7/",
@@ -48,16 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-21 14:30 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f8455555778eb84ae6c8d",
-        url: "http://127.0.0.1:3030/ui/s/019f8455555778eb84ae6c8d/",
-        title: "advance heartbeat 14:00 IDT Jul 21 — #1638 e2e-api ❌ CI failed; 6 Jira mismatches",
-        status: "completed",
-        timestamp: "2026-07-21 14:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-21 16:00 IDT",
+    lastActive: "2026-07-21 16:30 IDT",
   },
   {
     ticket: "JN-5695",
@@ -292,8 +292,8 @@ export const WORKTREES = [
     zone: "Plan",
     pr: "#1698",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1698",
-    status: "🔴 PR #1698 (`feat(jbenchmark): support IBM OpenShift cluster kubeconfig connection`) — **isDraft:false** (marked ready for review). CI run 29749885088: pre-commit ❌, all-checks ❌; JIRA Assoc ✅, nox ✅, tox ✅. MERGEABLE. **Action: Fix pre-commit to unblock.**",
-    blockedOn: "pre-commit failing — needs fix before merge",
+    status: "🔴 PR #1698 (`feat(jbenchmark): support IBM OpenShift cluster kubeconfig connection`) — **isDraft:false** (ready for review). 🆕 **NOW CONFLICTING** (was MERGEABLE at 16:00 IDT). CI run 29749885088: pre-commit ❌, all-checks ❌; JIRA Assoc ✅, nox ✅, tox ✅. **Action: 1) Rebase on main. 2) Fix pre-commit.**",
+    blockedOn: "CONFLICTING + pre-commit failing — rebase on main then fix pre-commit",
     blockedType: "active",
     sessionUrl: null,
     sessionLabel: null,
@@ -479,7 +479,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 #1698 (aipcc-23845): **isDraft:false** (marked ready for review!). CI run 29749885088: **pre-commit ❌**, JIRA Assoc ✅, all-checks ❌. MERGEABLE. **Action: Fix pre-commit.**",
+    message: "🔴 #1698 (aipcc-23845): **isDraft:false** (ready for review). 🆕 **NOW CONFLICTING** (was MERGEABLE at 16:00 IDT — new push to main). CI run 29749885088: pre-commit ❌, all-checks ❌; JIRA Assoc ✅, nox ✅. **Action: 1) Rebase on main. 2) Fix pre-commit.**",
   },
   {
     level: "red",

@@ -2523,3 +2523,11 @@
 - Flags: 🆕 **#1638 NOW CONFLICTING** (was MERGEABLE at 15:30 IDT — someone pushed to main). #1638 double-blocked: e2e-api ❌ + CONFLICTING.
 - Actions: 0 archives, 0 auto-advances
 - Next: #1638 needs rebase + e2e-api fix; #1690 rebase + review request; fix pre-commit on multiple PRs; 6 Jira mismatches via acli
+
+## 16:30 IDT — Weekday Daytime Heartbeat
+- PRs checked: #1690 (OPEN/CONFLICTING, all-CI ✅ run 29729530150), #1695 (OPEN/MERGEABLE, pre-commit ❌), #1696 (OPEN/MERGEABLE, JIRA Assoc ❌ only), #1697 (DRAFT/MERGEABLE, pre-commit ❌), #1698 (OPEN/**NOW CONFLICTING**, pre-commit ❌), #1700 (DRAFT/MERGEABLE, pre-commit ❌), #1701 (DRAFT/MERGEABLE, pre-commit ❌), #1667 (OPEN/CONFLICTING, CI stale ✅), #1670 (DRAFT/MERGEABLE, CI stale ✅), #1669 (DRAFT/CONFLICTING, CI ❌), #1638 (off-board/CONFLICTING, e2e-api ❌)
+- Merges detected: none
+- CI changes: none — all CI run IDs identical to 16:00 IDT; board static
+- Flags: **⚠️ #1698 NOW CONFLICTING** (was MERGEABLE at 16:00 IDT — someone pushed to main between 16:00–16:30 IDT). #1698 double-blocked: CONFLICTING + pre-commit ❌. All other PRs, CI, and 6 Jira mismatches unchanged.
+- Actions: 0 archives, 0 auto-advances
+- Next: #1698 rebase on main + fix pre-commit; #1690 rebase + review request; #1638 rebase + fix e2e-api; fix pre-commit on #1695/#1697/#1700/#1701; 6 Jira mismatches via acli

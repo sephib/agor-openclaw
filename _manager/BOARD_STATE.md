@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-21 16:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-21 16:30 IDT (advance heartbeat)*
 
 ---
 
@@ -17,7 +17,7 @@
 | jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | 🔴 run 29741877329: pre-commit ❌, JIRA Assoc ❌, all-checks ❌ (nox/tox now skipping — DRAFT) | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — In Progress | 🔴 **CI ❌ + CONFLICTING** — DRAFT. Newer CI run vs prior (nox/tox now skip for draft). |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — New | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 13+** (still Ingest, should be Code). |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 26+ days. Propose archive. |
-| aipcc-23845-cluster-connection | **Plan** | [#1698](https://github.com/Jounce-IO/jounce/pull/1698) | 🔴 CI run 29749885088 — **pre-commit ❌**, pre-commit-run ❌, all-checks ❌; JIRA Assoc ✅, nox ✅, tox-run ✅ | [AIPCC-23845](https://redhat.atlassian.net/browse/AIPCC-23845) | **isDraft:false** (ready for review!). pre-commit still ❌. MERGEABLE. **Action: Fix pre-commit.** |
+| aipcc-23845-cluster-connection | **Plan** | [#1698](https://github.com/Jounce-IO/jounce/pull/1698) | 🔴 CI run 29749885088 — **pre-commit ❌**, pre-commit-run ❌, all-checks ❌; JIRA Assoc ✅, nox ✅, tox-run ✅ | [AIPCC-23845](https://redhat.atlassian.net/browse/AIPCC-23845) | **isDraft:false** (ready for review!). pre-commit ❌. 🆕 **NOW CONFLICTING** (was MERGEABLE at 16:00 IDT — new push to main). **Action: Rebase + fix pre-commit.** |
 | aipcc-23890-qe-cluster-tests | **NO ZONE** | [#1697 DRAFT](https://github.com/Jounce-IO/jounce/pull/1697) | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌; nox ✅, tox ✅ | [AIPCC-23890](https://redhat.atlassian.net/browse/AIPCC-23890) — In Progress | PR #1697 DRAFT. CI failing: pre-commit ❌. No zone assigned. |
 | aipcc-23845-script-runner | **NO ZONE** | [#1700 DRAFT](https://github.com/Jounce-IO/jounce/pull/1700) | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌ (run 29808132144); nox ✅, tox ✅ | [AIPCC-23845](https://redhat.atlassian.net/browse/AIPCC-23845) | 🆕 **NEW** (created ~09:48 IDT Jul 21). DRAFT "fix(jbenchmark): script runner and cluster config (AIPCC-23845)". Split from #1698. No zone assigned. |
 | aipcc-23845-generator-hotfix | **NO ZONE** | [#1701 DRAFT](https://github.com/Jounce-IO/jounce/pull/1701) | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌ (run 29808455073); nox ✅, tox ✅ | [AIPCC-23845](https://redhat.atlassian.net/browse/AIPCC-23845) | 🆕 **NEW** (created ~09:54 IDT Jul 21). DRAFT "fix(jbenchmark): config-generator hotfix (1 of 2, split from #1698)". No zone assigned. |
@@ -72,12 +72,12 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (16:00 IDT Jul 21 vs 15:30 IDT Jul 21)
+## Key Changes (16:30 IDT Jul 21 vs 16:00 IDT Jul 21)
 
 | What changed | Delta |
 |---|---|
-| **#1638 now CONFLICTING** | Was MERGEABLE at 15:30 IDT; now CONFLICTING at 16:00 IDT. Someone pushed to main causing a conflict. Double-blocked: e2e-api ❌ + CONFLICTING. |
-| **Other PRs: static** | All other PRs, CI runs, and Jira mismatches unchanged from 15:30 IDT. 6 Jira mismatches remain. |
+| **#1698 now CONFLICTING** | Was MERGEABLE at 16:00 IDT; now CONFLICTING at 16:30 IDT. Someone pushed to main causing a conflict. Double-blocked: CONFLICTING + pre-commit ❌. |
+| **Other PRs: static** | All other PRs, CI runs, and Jira mismatches unchanged from 16:00 IDT. 6 Jira mismatches remain. |
 
 ---
 
@@ -123,10 +123,10 @@ PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): ad
 
 ---
 
-### 🔴 #1698 (aipcc-23845) — Ready for review but pre-commit ❌
+### 🔴 #1698 (aipcc-23845) — NOW DOUBLE-BLOCKED: CONFLICTING + pre-commit ❌
 
-PR [#1698](https://github.com/Jounce-IO/jounce/pull/1698): isDraft:false (marked ready!). pre-commit ❌ (run 29749885088).
-- **Action:** Fix pre-commit to unblock review.
+PR [#1698](https://github.com/Jounce-IO/jounce/pull/1698): isDraft:false (marked ready!). 🆕 **NOW CONFLICTING** (was MERGEABLE at 16:00 IDT — someone pushed to main). pre-commit ❌ (run 29749885088).
+- **Action:** 1) Rebase aipcc-23845-cluster-connection on main. 2) Fix pre-commit to unblock review.
 
 ---
 
