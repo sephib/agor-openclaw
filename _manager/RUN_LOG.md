@@ -2429,3 +2429,10 @@
 - CI changes: **⚠️ CORRECTION — #1695/#1696 CI status swapped in prior board**: `gh pr checks 1695` → run 29741877329 → pre-commit ❌, JIRA Assoc ❌, all-checks ❌; `gh pr checks 1696` → run 29741885397 → all-checks ✅, JIRA Assoc ❌ only. Prior board (since 06:00 IDT) had these backwards.
 - Flags: CI correction (#1695 now 🔴, #1696 now 🟡); 7 Jira mismatches unchanged; #1690 still CONFLICTING (rebase needed); #1698 pre-commit ❌ (ready for review but blocked); #1700/#1701 new DRAFTs pre-commit ❌
 - Next: #1690 needs rebase; #1698/#1696 need pre-commit fix; #1695 needs pre-commit + JIRA fix; Jira updates for 7 mismatches
+
+## 11:00 IDT — Weekday Daytime Heartbeat
+- PRs checked: #1690 (CONFLICTING, CI ✅), #1695 (pre-commit ❌), #1696 (all-checks ✅ / JIRA Assoc ❌), #1697 (pre-commit ❌), #1698 (pre-commit ❌, JIRA Assoc ✅ confirmed new run 29750262478), #1669 (CONFLICTING, CI ❌), #1667 (CONFLICTING), #1670 (DRAFT/MERGEABLE), #1700 (pre-commit ❌), #1701 (pre-commit ❌), #1638 (e2e-api ❌)
+- Merges detected: none
+- CI changes: #1698 JIRA Assoc confirmed ✅ by new run 29750262478 (already shown ✅ on prior board)
+- Flags: 7 Jira mismatches unchanged; 5 CONFLICTING/CI-failing PRs unchanged
+- Next: Joseph action needed — rebase #1690/#1667, fix pre-commit on #1698/#1695/#1697/#1700/#1701, investigate e2e-api on #1638

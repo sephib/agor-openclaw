@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-21 10:30 IDT";
+export const LAST_UPDATED = "2026-07-21 11:00 IDT";
 
 export const WORKTREES = [
   {
@@ -13,9 +13,17 @@ export const WORKTREES = [
     status: "🔴 **CONFLICTING** (unchanged). All CI 100% PASSING (run 29729530150: e2e-smoke ✅, e2e-product ✅, all-checks ✅, everything green). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
     blockedOn: "CONFLICTING — needs rebase on main",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8395111f7c6d996f255f/",
-    sessionLabel: "advance heartbeat 10:30 IDT Jul 21 — CI correction #1695/#1696 swapped; 0 merges; 7 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f83b08b347f45af01ced0/",
+    sessionLabel: "advance heartbeat 11:00 IDT Jul 21 — board static; 0 merges; 7 Jira mismatches",
     recentSessions: [
+      {
+        sessionId: "019f83b08b347f45af01ced0",
+        url: "http://127.0.0.1:3030/ui/s/019f83b08b347f45af01ced0/",
+        title: "advance heartbeat 11:00 IDT Jul 21 — board static; 0 merges; 7 Jira mismatches",
+        status: "completed",
+        timestamp: "2026-07-21 11:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f8395111f7c6d996f255f",
         url: "http://127.0.0.1:3030/ui/s/019f8395111f7c6d996f255f/",
@@ -48,16 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-21 06:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f823033b778b0b5e8287e",
-        url: "http://127.0.0.1:3030/ui/s/019f823033b778b0b5e8287e/",
-        title: "advance heartbeat 04:00 IDT Jul 21 — board static; all PRs unchanged; 0 merges",
-        status: "completed",
-        timestamp: "2026-07-21 04:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-21 10:30 IDT",
+    lastActive: "2026-07-21 11:00 IDT",
   },
   {
     ticket: "JN-5695",

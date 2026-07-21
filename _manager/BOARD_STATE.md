@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-21 10:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-21 11:00 IDT (advance heartbeat)*
 
 ---
 
@@ -72,13 +72,13 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (10:30 IDT Jul 21 vs 10:00 IDT Jul 21)
+## Key Changes (11:00 IDT Jul 21 vs 10:30 IDT Jul 21)
 
 | What changed | Delta |
 |---|---|
-| **⚠️ CI CORRECTION — #1695/#1696 run IDs swapped** | `gh pr checks` shows: **#1695** uses run 29741877329 → **pre-commit ❌, JIRA Assoc ❌, all-checks ❌** (🔴). **#1696** uses run 29741885397 → **all-checks ✅, JIRA Assoc ❌ only** (🟡). Prior board (since 06:00 IDT Jul 21) had these backwards. |
-| **0 merges, 0 archives** | No new merges or archives since 10:00 IDT. |
-| **All other PRs** | Unchanged: #1690 (CONFLICTING, all-CI ✅), #1698 (ready, pre-commit ❌), #1697 (DRAFT, pre-commit ❌), #1700/#1701 (DRAFT, pre-commit ❌), #1667 (CONFLICTING, CI stale ✅), #1670 (DRAFT/MERGEABLE, CI stale ✅), #1669 (CONFLICTING, CI ❌), #1638 (e2e-api ❌). |
+| **0 merges, 0 archives** | No new merges or archives since 10:30 IDT. |
+| **#1698 JIRA Assoc** | New run 29750262478 confirms JIRA Assoc ✅ (was already shown as ✅, now confirmed by a fresh run). Pre-commit ❌ unchanged. |
+| **All other PRs** | Unchanged: #1690 (CONFLICTING, all-CI ✅), #1695 (pre-commit ❌), #1696 (all-checks ✅, JIRA Assoc ❌ only), #1697 (pre-commit ❌), #1700/#1701 (pre-commit ❌), #1667 (CONFLICTING, CI stale ✅), #1670 (DRAFT/MERGEABLE, CI stale ✅), #1669 (CONFLICTING, CI ❌), #1638 (e2e-api ❌). |
 
 ---
 

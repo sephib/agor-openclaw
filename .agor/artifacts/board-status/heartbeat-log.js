@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-21 11:00 IDT",
+    actions: 0,
+    findings: 0,
+    status: "ok",
+    summary: "board static; 0 merges; #1698 JIRA Assoc ✅ confirmed by new run; all PRs unchanged; 7 Jira mismatches persist",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f83b08b347f45af01ced0/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-21 10:30 IDT",
     actions: 0,
     findings: 1,
