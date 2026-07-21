@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-21 13:00 IDT";
+export const LAST_UPDATED = "2026-07-21 13:30 IDT";
 
 export const WORKTREES = [
   {
@@ -13,9 +13,17 @@ export const WORKTREES = [
     status: "🔴 **CONFLICTING** (unchanged). All CI 100% PASSING (run 29729530150: e2e-smoke ✅, e2e-product ✅, all-checks ✅, everything green). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
     blockedOn: "CONFLICTING — needs rebase on main",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f841e66b77968b663d541/",
-    sessionLabel: "advance heartbeat 13:00 IDT Jul 21 — #1638 CI shift (e2e-api→e2e-smoke); AIPCC-27657 Jira Closed; 6 mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8439ddd17a7a9e28ce6f/",
+    sessionLabel: "advance heartbeat 13:30 IDT Jul 21 — #1695 MERGEABLE (rebased); #1638 CI in progress; 6 mismatches",
     recentSessions: [
+      {
+        sessionId: "019f8439ddd17a7a9e28ce6f",
+        url: "http://127.0.0.1:3030/ui/s/019f8439ddd17a7a9e28ce6f/",
+        title: "advance heartbeat 13:30 IDT Jul 21 — #1695 MERGEABLE (rebased); #1638 CI in progress; 6 mismatches",
+        status: "completed",
+        timestamp: "2026-07-21 13:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f841e66b77968b663d541",
         url: "http://127.0.0.1:3030/ui/s/019f841e66b77968b663d541/",
@@ -46,14 +54,6 @@ export const WORKTREES = [
         title: "advance heartbeat 11:30 IDT Jul 21 — board static; 0 merges; 7 Jira mismatches",
         status: "completed",
         timestamp: "2026-07-21 11:30 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f83b08b347f45af01ced0",
-        url: "http://127.0.0.1:3030/ui/s/019f83b08b347f45af01ced0/",
-        title: "advance heartbeat 11:00 IDT Jul 21 — board static; 0 merges; 7 Jira mismatches",
-        status: "completed",
-        timestamp: "2026-07-21 11:00 IDT",
         outputFile: null,
       },
     ],
@@ -241,8 +241,8 @@ export const WORKTREES = [
     zone: "Plan",
     pr: "#1695 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1695",
-    status: "🔴 DRAFT PR #1695 — CI run 29741877329: pre-commit ❌, JIRA Assoc ❌, all-checks ❌. MERGEABLE. ⚠️ CORRECTED (10:30 IDT Jul 21) — prior board had #1695/#1696 CI swapped. Needs: pre-commit fix + JIRA Assoc fix before marking ready.",
-    blockedOn: "CI failure — pre-commit ❌ + JIRA Assoc ❌ (corrected from prior board)",
+    status: "🟡 DRAFT PR #1695 — **🟡 CONFLICT RESOLVED 13:30 IDT Jul 21** (was CONFLICTING, now MERGEABLE). CI run 29741877329: pre-commit ❌, JIRA Assoc ❌, all-checks ❌. Needs: pre-commit fix + JIRA Assoc fix before marking ready.",
+    blockedOn: "CI failure — pre-commit ❌ + JIRA Assoc ❌ (conflict resolved at 13:30 IDT)",
     blockedType: "active",
     sessionUrl: null,
     sessionLabel: null,
@@ -474,8 +474,8 @@ export const ALERTS = [
     message: "🔴 #1690 (AIPCC-27645): **CONFLICTING** (unchanged). All CI 100% passing (run 29729530150). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
   },
   {
-    level: "red",
-    message: "🔴 #1638 (JN-5725, off-board): **⚠️ CI SHIFT** — NEW run 29819037050: **e2e-api ✅ NOW PASSING** (was ❌ in prior runs); **e2e-smoke ❌ NOW FAILING** (was passing). All-checks ❌ still failing. JN-5725 Done ✅. **Action: e2e-smoke root-cause investigation needed.**",
+    level: "yellow",
+    message: "🟡 #1638 (JN-5725, off-board): CI run 29819037050 **IN PROGRESS** — integration-run ⏳, pre-commit-run ⏳, tox-run ⏳, e2e-api ⏳ pending. Prior: e2e-smoke ❌ (13:00 IDT). JN-5725 Done ✅. **Action: Wait for run to complete; check e2e-smoke result next heartbeat.**",
   },
   {
     level: "red",
@@ -502,8 +502,8 @@ export const ALERTS = [
     message: "🎉 #1691 (AIPCC-27657): **MERGED 10:20 IDT Jul 20** — into main. aipcc-27657-guidellm-output-dir ARCHIVED ✅. AIPCC-27657 **Closed ✅ in Jira** (13:00 IDT Jul 21).",
   },
   {
-    level: "red",
-    message: "🔴 #1695 (aipcc-23925): ⚠️ CORRECTED — pre-commit ❌, JIRA Assoc ❌, all-checks ❌ (run 29741877329). Prior board had #1695/#1696 CI swapped. **Action: Fix pre-commit + JIRA Assoc, then mark ready.**",
+    level: "yellow",
+    message: "🟡 #1695 (aipcc-23925): **🟡 CONFLICT RESOLVED** (rebased 13:30 IDT Jul 21 — now MERGEABLE). DRAFT. CI: pre-commit ❌, JIRA Assoc ❌, all-checks ❌ (run 29741877329). **Action: Fix pre-commit + JIRA Assoc, then mark ready for review.**",
   },
   {
     level: "yellow",
