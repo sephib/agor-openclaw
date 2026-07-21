@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-21 13:30 IDT";
+export const LAST_UPDATED = "2026-07-21 14:00 IDT";
 
 export const WORKTREES = [
   {
@@ -13,9 +13,17 @@ export const WORKTREES = [
     status: "🔴 **CONFLICTING** (unchanged). All CI 100% PASSING (run 29729530150: e2e-smoke ✅, e2e-product ✅, all-checks ✅, everything green). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
     blockedOn: "CONFLICTING — needs rebase on main",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8439ddd17a7a9e28ce6f/",
-    sessionLabel: "advance heartbeat 13:30 IDT Jul 21 — #1695 MERGEABLE (rebased); #1638 CI in progress; 6 mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8455555778eb84ae6c8d/",
+    sessionLabel: "advance heartbeat 14:00 IDT Jul 21 — #1638 e2e-api ❌ CI failed; 6 Jira mismatches",
     recentSessions: [
+      {
+        sessionId: "019f8455555778eb84ae6c8d",
+        url: "http://127.0.0.1:3030/ui/s/019f8455555778eb84ae6c8d/",
+        title: "advance heartbeat 14:00 IDT Jul 21 — #1638 e2e-api ❌ CI failed; 6 Jira mismatches",
+        status: "completed",
+        timestamp: "2026-07-21 14:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f8439ddd17a7a9e28ce6f",
         url: "http://127.0.0.1:3030/ui/s/019f8439ddd17a7a9e28ce6f/",
@@ -48,16 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-21 12:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f83cbffe57e38ae17ffaa",
-        url: "http://127.0.0.1:3030/ui/s/019f83cbffe57e38ae17ffaa/",
-        title: "advance heartbeat 11:30 IDT Jul 21 — board static; 0 merges; 7 Jira mismatches",
-        status: "completed",
-        timestamp: "2026-07-21 11:30 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-21 13:00 IDT",
+    lastActive: "2026-07-21 14:00 IDT",
   },
   {
     ticket: "JN-5695",
@@ -474,8 +474,8 @@ export const ALERTS = [
     message: "🔴 #1690 (AIPCC-27645): **CONFLICTING** (unchanged). All CI 100% passing (run 29729530150). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
   },
   {
-    level: "yellow",
-    message: "🟡 #1638 (JN-5725, off-board): CI run 29819037050 **IN PROGRESS** — integration-run ⏳, pre-commit-run ⏳, tox-run ⏳, e2e-api ⏳ pending. Prior: e2e-smoke ❌ (13:00 IDT). JN-5725 Done ✅. **Action: Wait for run to complete; check e2e-smoke result next heartbeat.**",
+    level: "red",
+    message: "🔴 #1638 (JN-5725, off-board): CI run 29819037050 **COMPLETED FAILED** (14:00 IDT Jul 21) — **e2e-api ❌**, all-checks ❌, e2e-tests ❌. integration-run ✅, pre-commit-run ✅, tox-run ✅, nox ✅, JIRA Assoc ✅. JN-5725 Done ✅. **Action: Investigate e2e-api failure — fix and push to unblock merge.**",
   },
   {
     level: "red",

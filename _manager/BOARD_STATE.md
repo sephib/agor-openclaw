@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-21 13:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-21 14:00 IDT (advance heartbeat)*
 
 ---
 
@@ -30,7 +30,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🟡 CI run 29819037050 **IN PROGRESS** — integration-run ⏳, pre-commit-run ⏳, tox-run ⏳, e2e-api ⏳ still pending. check-changes ✅, JIRA Assoc ✅. Prior run: e2e-smoke ❌, e2e-api ✅. | **OPEN, ✅ MERGEABLE** | 🟡 **CI in progress** (run 29819037050 still executing — jobs pending). Prior: e2e-smoke ❌. Awaiting completion for definitive status. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🔴 CI run 29819037050 **COMPLETED FAILED** — **e2e-api ❌** (3m46s), all-checks ❌, e2e-tests ❌. integration-run ✅, pre-commit-run ✅, tox-run ✅, nox ✅, JIRA Assoc ✅, CodeRabbit ✅. e2e-smoke/product/priority SKIPPING. | **OPEN, ✅ MERGEABLE** | 🔴 **CI FAILED** — e2e-api ❌ (run 29819037050 completed 14:00 IDT Jul 21). Was in progress at 13:30. JN-5725 Done ✅ but PR blocked by e2e-api failure. |
 
 ---
 
@@ -72,13 +72,12 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (13:30 IDT Jul 21 vs 13:00 IDT Jul 21)
+## Key Changes (14:00 IDT Jul 21 vs 13:30 IDT Jul 21)
 
 | What changed | Delta |
 |---|---|
-| **#1695 now MERGEABLE** | **🟡 CONFLICT RESOLVED** — #1695 (aipcc-23925-argo-public-url) is now MERGEABLE (was CONFLICTING since creation). Someone rebased the branch. CI still failing (pre-commit ❌, JIRA Assoc ❌). |
-| **#1638 CI in progress** | Run 29819037050 still executing — integration-run ⏳, pre-commit-run ⏳, tox-run ⏳, e2e-api ⏳ pending. Prior e2e-smoke ❌ observation unconfirmed until run completes. |
-| **All other board PRs** | Unchanged: #1690 (CONFLICTING, all-CI ✅), #1696 (all-checks ✅, JIRA Assoc ❌ only), #1697 (pre-commit ❌), #1698 (pre-commit ❌, isDraft:false), #1700/#1701 (pre-commit ❌), #1667 (CONFLICTING, CI stale ✅), #1670 (DRAFT/MERGEABLE, CI stale ✅), #1669 (CONFLICTING, CI ❌). |
+| **#1638 CI FAILED** | 🔴 **NEW FAILURE** — Run 29819037050 completed: **e2e-api ❌**. Was "in progress" at 13:30 IDT. JN-5725 Done ✅ but PR now blocked by e2e-api. Action: investigate + fix e2e-api. |
+| **All board PRs** | Unchanged: #1690 (CONFLICTING, all-CI ✅), #1696 (all-checks ✅, JIRA Assoc ❌ only), #1697 (pre-commit ❌), #1698 (pre-commit ❌, isDraft:false), #1700/#1701 (pre-commit ❌), #1667 (CONFLICTING, CI stale ✅), #1670 (DRAFT/MERGEABLE, CI stale ✅), #1669 (CONFLICTING, CI ❌), #1695 (MERGEABLE, pre-commit ❌). |
 
 ---
 
@@ -93,16 +92,16 @@ PR [#1690](https://github.com/Jounce-IO/jounce/pull/1690): "fix(helm): increase 
 
 ---
 
-### 🟡 #1638 (off-board JN-5725) — CI IN PROGRESS (run 29819037050 still executing)
+### 🔴 #1638 (off-board JN-5725) — CI FAILED: e2e-api ❌ (run completed 14:00 IDT)
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements (JN-5725)"
 - State: OPEN, **✅ MERGEABLE**
-- **🟡 CI run 29819037050 still in progress (13:30 IDT Jul 21)**:
-  - ⏳ PENDING: integration-run, pre-commit-run, tox-run, e2e-api, atlas-validate
-  - ✅ DONE: check-changes ✅, JIRA Assoc ✅, CodeRabbit ✅
-  - Prior observation (13:00 IDT): e2e-smoke ❌, e2e-api ✅ — unconfirmed until run completes
-- Jira: JN-5725 is Done ✅
-- **Action:** Wait for CI run to complete; check e2e-smoke result in next heartbeat.
+- **🔴 CI run 29819037050 COMPLETED FAILED (confirmed 14:00 IDT Jul 21)**:
+  - ❌ FAIL: e2e-api (3m46s), all-checks, e2e-tests
+  - ✅ PASS: integration-run, pre-commit-run, tox-run, nox, JIRA Assoc, atlas-validate, CodeRabbit, check-changes
+  - ⏭️ SKIP: e2e-smoke, e2e-product, e2e-priority
+- Jira: JN-5725 is Done ✅ (Jira closed, PR still open)
+- **Action:** Investigate e2e-api failure in run 29819037050. Fix and push to unblock merge.
 
 ---
 
