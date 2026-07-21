@@ -4,6 +4,15 @@
 
 ---
 
+## 19:00 IDT — Weekday Daytime Heartbeat (Jul 21 2026)
+- PRs checked: #1690 (CONFLICTING/all-CI-pass), #1667 (CONFLICTING), #1669 (CONFLICTING/CI-fail), #1698 (CONFLICTING/pre-commit❌), #1697 (MERGEABLE/pre-commit❌), #1700 (MERGEABLE/pre-commit❌), #1701 (MERGEABLE/new-run), #1696 (MERGEABLE/all-checks✅), #1695 (MERGEABLE/new-run/pre-commit❌), #1638 (CONFLICTING/new-run), #1670 (MERGEABLE/DRAFT)
+- Merges detected: none (assignee sweep + review-requested sweep both empty)
+- CI changes: **#1638** new run 29851081790 — e2e-api ❌ → ⏭️ SKIPPING; pre-commit ❌ now only CI blocker. **#1695** new run 29846894702 (push triggered). **#1701** new run 29845259306 (significant push + builds).
+- Flags: 6 Jira mismatches unchanged. CONFLICTING PRs (#1690, #1667, #1669, #1698, #1638) all unchanged. No auto-archives.
+- Next: Joseph to rebase + fix pre-commit on #1638 (only blocker now), fix pre-commit across #1695/#1697/#1700/#1701.
+
+---
+
 ## 15:00 IDT — Weekday Daytime Heartbeat (Jul 21 2026)
 - PRs checked: #1690 (OPEN/UNKNOWN), #1698 (OPEN/UNKNOWN/isDraft:false), #1696 (DRAFT/UNKNOWN), #1695 (DRAFT/UNKNOWN), #1697 (DRAFT/UNKNOWN), #1670 (DRAFT/MERGEABLE), #1669 (DRAFT/UNKNOWN), #1667 (OPEN/CONFLICTING), #1638 (OPEN/UNKNOWN), #1700 (DRAFT/UNKNOWN), #1701 (DRAFT/UNKNOWN), #1596 (DRAFT/CONFLICTING)
 - Merges detected: none (assignee sweep + review-requested sweep both empty)

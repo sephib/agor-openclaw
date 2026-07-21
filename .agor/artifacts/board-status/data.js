@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-21 18:30 IDT";
+export const LAST_UPDATED = "2026-07-21 19:00 IDT";
 
 export const WORKTREES = [
   {
@@ -13,9 +13,17 @@ export const WORKTREES = [
     status: "🔴 **CONFLICTING** (unchanged). All CI 100% PASSING (run 29729530150: e2e-smoke ✅, e2e-product ✅, all-checks ✅, everything green). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
     blockedOn: "CONFLICTING — needs rebase on main",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f856811ef7e45b37afb3d/",
-    sessionLabel: "advance heartbeat 18:30 IDT Jul 21 — board static; 6 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f85d5ff637155a7f3bb2d/",
+    sessionLabel: "advance heartbeat 19:00 IDT Jul 21 — #1638 CI changed; 6 Jira mismatches",
     recentSessions: [
+      {
+        sessionId: "019f85d5ff637155a7f3bb2d",
+        url: "http://127.0.0.1:3030/ui/s/019f85d5ff637155a7f3bb2d/",
+        title: "advance heartbeat 19:00 IDT Jul 21 — #1638 CI changed; 6 Jira mismatches",
+        status: "running",
+        timestamp: "2026-07-21 19:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f856811ef7e45b37afb3d",
         url: "http://127.0.0.1:3030/ui/s/019f856811ef7e45b37afb3d/",
@@ -48,16 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-21 16:30 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f84c333aa77f9adf146b7",
-        url: "http://127.0.0.1:3030/ui/s/019f84c333aa77f9adf146b7/",
-        title: "advance heartbeat 16:00 IDT Jul 21 — #1638 now CONFLICTING; 6 Jira mismatches",
-        status: "completed",
-        timestamp: "2026-07-21 16:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-21 18:30 IDT",
+    lastActive: "2026-07-21 19:00 IDT",
   },
   {
     ticket: "JN-5695",
@@ -241,7 +241,7 @@ export const WORKTREES = [
     zone: "Plan",
     pr: "#1695 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1695",
-    status: "🟡 DRAFT PR #1695 — **🟡 CONFLICT RESOLVED 13:30 IDT Jul 21** (was CONFLICTING, now MERGEABLE). CI run 29741877329: pre-commit ❌, JIRA Assoc ❌, all-checks ❌. Needs: pre-commit fix + JIRA Assoc fix before marking ready.",
+    status: "🟡 DRAFT PR #1695 — **🟡 CONFLICT RESOLVED 13:30 IDT Jul 21** (MERGEABLE). CI run 29846894702 (NEW): pre-commit ❌, JIRA Assoc ❌, all-checks ❌. Branch updated 19:00 IDT. Needs: pre-commit fix + JIRA Assoc fix before marking ready.",
     blockedOn: "CI failure — pre-commit ❌ + JIRA Assoc ❌ (conflict resolved at 13:30 IDT)",
     blockedType: "active",
     sessionUrl: null,
@@ -326,7 +326,7 @@ export const WORKTREES = [
     zone: "NO ZONE",
     pr: "#1701 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1701",
-    status: "🆕 NEW (created ~09:54 IDT Jul 21). DRAFT 'fix(jbenchmark): config-generator hotfix (1 of 2, split from #1698)'. CI run 29808455073: pre-commit ❌, JIRA Assoc ❌, all-checks ❌; nox ✅, tox ✅. No zone assigned.",
+    status: "DRAFT 'fix(jbenchmark): config-generator hotfix (1 of 2, split from #1698)'. CI run 29845259306 (NEW 19:00 IDT): pre-commit ❌, JIRA Assoc ❌, all-checks ❌; nox ✅, tox ✅. Build jobs triggered (significant push). No zone assigned.",
     blockedOn: "pre-commit failing; no zone assigned",
     blockedType: "active",
     sessionUrl: null,
@@ -475,7 +475,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 #1638 (JN-5725, off-board): **NOW DOUBLE-BLOCKED (16:00 IDT Jul 21)** — was MERGEABLE at 15:30, now CONFLICTING. CI run 29819037050 FAILED: e2e-api ❌, all-checks ❌, e2e-tests ❌. integration-run ✅, pre-commit-run ✅, tox-run ✅, nox ✅, JIRA Assoc ✅. JN-5725 Done ✅. **Action: Rebase on main + fix e2e-api failure.**",
+    message: "🔴 #1638 (JN-5725, off-board): CONFLICTING. CI run 29851081790 (NEW 19:00 IDT) FAILED: pre-commit ❌, all-checks ❌. **e2e-api now SKIPPING** (no longer failing — was ❌ in run 29819037050). integration-run ✅, nox ✅, tox ✅, JIRA Assoc ✅. JN-5725 Done ✅. **Action: Rebase on main + fix pre-commit. (e2e-api blocker resolved.)**",
   },
   {
     level: "red",
@@ -503,7 +503,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "🟡 #1695 (aipcc-23925): **🟡 CONFLICT RESOLVED** (rebased 13:30 IDT Jul 21 — now MERGEABLE). DRAFT. CI: pre-commit ❌, JIRA Assoc ❌, all-checks ❌ (run 29741877329). **Action: Fix pre-commit + JIRA Assoc, then mark ready for review.**",
+    message: "🟡 #1695 (aipcc-23925): **🟡 CONFLICT RESOLVED** (13:30 IDT Jul 21 — MERGEABLE). DRAFT. CI run 29846894702 (NEW): pre-commit ❌, JIRA Assoc ❌, all-checks ❌. Branch updated 19:00 IDT. **Action: Fix pre-commit + JIRA Assoc, then mark ready for review.**",
   },
   {
     level: "yellow",
