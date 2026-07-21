@@ -2422,3 +2422,10 @@
 - Next: Joseph to rebase #1690 + #1667; fix pre-commit on #1698 + #1696 + #1669; investigate e2e-api on #1638; fix JIRA Assoc on #1695; mark #1670 ready.
 
 ---
+
+## 10:30 IDT — Weekday Daytime Heartbeat
+- PRs checked: #1690 (OPEN/CONFLICTING, all-CI ✅), #1695 (OPEN/MERGEABLE, pre-commit ❌), #1696 (OPEN/MERGEABLE, JIRA Assoc ❌ only), #1697 (OPEN/DRAFT, pre-commit ❌), #1698 (OPEN/ready, pre-commit ❌), #1700 (OPEN/DRAFT, pre-commit ❌), #1701 (OPEN/DRAFT, pre-commit ❌), #1667 (OPEN/CONFLICTING), #1670 (OPEN/DRAFT, CI stale pass), #1669 (OPEN/DRAFT/CONFLICTING, CI ❌), #1638 (OPEN/MERGEABLE, e2e-api ❌)
+- Merges detected: none
+- CI changes: **⚠️ CORRECTION — #1695/#1696 CI status swapped in prior board**: `gh pr checks 1695` → run 29741877329 → pre-commit ❌, JIRA Assoc ❌, all-checks ❌; `gh pr checks 1696` → run 29741885397 → all-checks ✅, JIRA Assoc ❌ only. Prior board (since 06:00 IDT) had these backwards.
+- Flags: CI correction (#1695 now 🔴, #1696 now 🟡); 7 Jira mismatches unchanged; #1690 still CONFLICTING (rebase needed); #1698 pre-commit ❌ (ready for review but blocked); #1700/#1701 new DRAFTs pre-commit ❌
+- Next: #1690 needs rebase; #1698/#1696 need pre-commit fix; #1695 needs pre-commit + JIRA fix; Jira updates for 7 mismatches

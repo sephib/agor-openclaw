@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-21 10:00 IDT";
+export const LAST_UPDATED = "2026-07-21 10:30 IDT";
 
 export const WORKTREES = [
   {
@@ -13,9 +13,17 @@ export const WORKTREES = [
     status: "🔴 **CONFLICTING** (unchanged). All CI 100% PASSING (run 29729530150: e2e-smoke ✅, e2e-product ✅, all-checks ✅, everything green). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
     blockedOn: "CONFLICTING — needs rebase on main",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f837998fa767683e969c0/",
-    sessionLabel: "advance heartbeat 10:00 IDT Jul 21 — 2 new worktrees #1700/#1701; 0 merges; 7 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8395111f7c6d996f255f/",
+    sessionLabel: "advance heartbeat 10:30 IDT Jul 21 — CI correction #1695/#1696 swapped; 0 merges; 7 Jira mismatches",
     recentSessions: [
+      {
+        sessionId: "019f8395111f7c6d996f255f",
+        url: "http://127.0.0.1:3030/ui/s/019f8395111f7c6d996f255f/",
+        title: "advance heartbeat 10:30 IDT Jul 21 — CI correction #1695/#1696; 0 merges",
+        status: "completed",
+        timestamp: "2026-07-21 10:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f837998fa767683e969c0",
         url: "http://127.0.0.1:3030/ui/s/019f837998fa767683e969c0/",
@@ -48,16 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-21 04:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f81c2552d7578b9941cda",
-        url: "http://127.0.0.1:3030/ui/s/019f81c2552d7578b9941cda/",
-        title: "advance heartbeat 02:00 IDT Jul 21 — board static; all PRs unchanged; 0 merges",
-        status: "completed",
-        timestamp: "2026-07-21 02:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-21 10:00 IDT",
+    lastActive: "2026-07-21 10:30 IDT",
   },
   {
     ticket: "JN-5695",
@@ -241,8 +241,8 @@ export const WORKTREES = [
     zone: "Plan",
     pr: "#1695 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1695",
-    status: "🟡 DRAFT PR #1695 — CI: all-checks ✅, pre-commit-run ✅ (run 29741885397). Only JIRA Assoc ❌ remains. Fix JIRA Assoc (AIPCC ticket ref in PR title/description), then mark ready for review.",
-    blockedOn: "JIRA Association fix needed",
+    status: "🔴 DRAFT PR #1695 — CI run 29741877329: pre-commit ❌, JIRA Assoc ❌, all-checks ❌. MERGEABLE. ⚠️ CORRECTED (10:30 IDT Jul 21) — prior board had #1695/#1696 CI swapped. Needs: pre-commit fix + JIRA Assoc fix before marking ready.",
+    blockedOn: "CI failure — pre-commit ❌ + JIRA Assoc ❌ (corrected from prior board)",
     blockedType: "active",
     sessionUrl: null,
     sessionLabel: null,
@@ -258,8 +258,8 @@ export const WORKTREES = [
     zone: "Plan",
     pr: "#1696 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1696",
-    status: "🔴 DRAFT PR #1696 — **NOW MERGEABLE** (was CONFLICTING). CI run 29741945977: pre-commit ❌, JIRA Assoc ❌, all-checks ❌. Needs pre-commit fix before mark ready.",
-    blockedOn: "CI failure — pre-commit fix needed",
+    status: "🟡 DRAFT PR #1696 — CI run 29741885397: all-checks ✅, JIRA Assoc ❌ only. MERGEABLE. ⚠️ CORRECTED (10:30 IDT Jul 21) — prior board had #1695/#1696 CI swapped. Needs: JIRA Assoc fix (add AIPCC-23895 ref), then mark ready for review.",
+    blockedOn: "JIRA Association fix needed (corrected from prior board)",
     blockedType: "active",
     sessionUrl: null,
     sessionLabel: null,
@@ -486,8 +486,8 @@ export const ALERTS = [
     message: "🔴 #1667 (jn-5845 JN-5845): **CONFLICTING** (unchanged). CI all-pass (stale run 29402877354). **Action: Rebase jn-5845-helm-cicd-agents-md on main.**",
   },
   {
-    level: "red",
-    message: "🔴 #1696 (aipcc-23895): **NOW MERGEABLE** (was CONFLICTING — resolved!). CI run 29741945977: pre-commit ❌, JIRA Assoc ❌, all-checks ❌. **Action: Fix pre-commit before marking ready.**",
+    level: "yellow",
+    message: "🟡 #1696 (aipcc-23895): ⚠️ CORRECTED — all-checks ✅, JIRA Assoc ❌ only (run 29741885397). Prior board had #1695/#1696 CI swapped. **Action: Fix JIRA Assoc (add AIPCC-23895 ref to PR), then mark ready for review.**",
   },
   {
     level: "red",
@@ -502,8 +502,8 @@ export const ALERTS = [
     message: "🎉 #1691 (AIPCC-27657): **MERGED 10:20 IDT Jul 20** — into main. aipcc-27657-guidellm-output-dir ARCHIVED ✅. AIPCC-27657 needs Done in Jira.",
   },
   {
-    level: "yellow",
-    message: "🟡 #1695 (aipcc-23925) CI: all-checks ✅, pre-commit-run ✅ (run 29741885397). Only JIRA Assoc ❌. Fix JIRA ticket ref in PR, then mark ready.",
+    level: "red",
+    message: "🔴 #1695 (aipcc-23925): ⚠️ CORRECTED — pre-commit ❌, JIRA Assoc ❌, all-checks ❌ (run 29741877329). Prior board had #1695/#1696 CI swapped. **Action: Fix pre-commit + JIRA Assoc, then mark ready.**",
   },
   {
     level: "yellow",

@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-21 10:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-21 10:30 IDT (advance heartbeat)*
 
 ---
 
@@ -21,8 +21,8 @@
 | aipcc-23890-qe-cluster-tests | **NO ZONE** | [#1697 DRAFT](https://github.com/Jounce-IO/jounce/pull/1697) | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌; nox ✅, tox ✅ | [AIPCC-23890](https://redhat.atlassian.net/browse/AIPCC-23890) — In Progress | PR #1697 DRAFT. CI failing: pre-commit ❌. No zone assigned. |
 | aipcc-23845-script-runner | **NO ZONE** | [#1700 DRAFT](https://github.com/Jounce-IO/jounce/pull/1700) | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌ (run 29808132144); nox ✅, tox ✅ | [AIPCC-23845](https://redhat.atlassian.net/browse/AIPCC-23845) | 🆕 **NEW** (created ~09:48 IDT Jul 21). DRAFT "fix(jbenchmark): script runner and cluster config (AIPCC-23845)". Split from #1698. No zone assigned. |
 | aipcc-23845-generator-hotfix | **NO ZONE** | [#1701 DRAFT](https://github.com/Jounce-IO/jounce/pull/1701) | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌ (run 29808455073); nox ✅, tox ✅ | [AIPCC-23845](https://redhat.atlassian.net/browse/AIPCC-23845) | 🆕 **NEW** (created ~09:54 IDT Jul 21). DRAFT "fix(jbenchmark): config-generator hotfix (1 of 2, split from #1698)". No zone assigned. |
-| aipcc-23895-docs-ibm | **Plan** | [#1696 DRAFT](https://github.com/Jounce-IO/jounce/pull/1696) | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌ (run 29741945977) | [AIPCC-23895](https://redhat.atlassian.net/browse/AIPCC-23895) | DRAFT PR #1696 — **NOW MERGEABLE** (was CONFLICTING). pre-commit ❌ still blocks mark-ready. |
-| aipcc-23925-argo-public-url | **Plan** | [#1695 DRAFT](https://github.com/Jounce-IO/jounce/pull/1695) | 🟡 all-checks ✅, JIRA Assoc ❌ only (run 29741885397) — **CI IMPROVED** | [AIPCC-23925](https://redhat.atlassian.net/browse/AIPCC-23925) | DRAFT PR #1695 — pre-commit-run ✅, all-checks ✅. Only JIRA Assoc ❌ now. |
+| aipcc-23895-docs-ibm | **Plan** | [#1696 DRAFT](https://github.com/Jounce-IO/jounce/pull/1696) | 🟡 all-checks ✅, JIRA Assoc ❌ only (run 29741885397) | [AIPCC-23895](https://redhat.atlassian.net/browse/AIPCC-23895) | DRAFT PR #1696 — MERGEABLE. **⚠️ CORRECTED** (prior board had run ID confused). CI: all-checks ✅, JIRA Assoc ❌ only. **Action: Fix JIRA Assoc, then mark ready.** |
+| aipcc-23925-argo-public-url | **Plan** | [#1695 DRAFT](https://github.com/Jounce-IO/jounce/pull/1695) | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌ (run 29741877329) | [AIPCC-23925](https://redhat.atlassian.net/browse/AIPCC-23925) | DRAFT PR #1695 — MERGEABLE. **⚠️ CORRECTED** — prior board had #1695/#1696 CI swapped. CI: pre-commit ❌, JIRA Assoc ❌, all-checks ❌. Needs pre-commit fix. |
 
 ---
 
@@ -72,13 +72,13 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (10:00 IDT Jul 21 vs 08:30 IDT Jul 21)
+## Key Changes (10:30 IDT Jul 21 vs 10:00 IDT Jul 21)
 
 | What changed | Delta |
 |---|---|
-| **2 NEW worktrees discovered** | `aipcc-23845-script-runner` (PR [#1700](https://github.com/Jounce-IO/jounce/pull/1700)) and `aipcc-23845-generator-hotfix` (PR [#1701](https://github.com/Jounce-IO/jounce/pull/1701)) — both split from #1698 (AIPCC-23845), both DRAFT, both pre-commit ❌. Created ~09:48–09:54 IDT Jul 21. |
-| **0 merges, 0 archives** | No new merges or archives since 08:30 IDT. |
-| **All existing PRs** | Unchanged: #1690 (CONFLICTING, all-CI ✅), #1698 (ready, pre-commit ❌), #1696 (MERGEABLE, pre-commit ❌), #1695 (JIRA ❌ only), #1697 (DRAFT, pre-commit ❌), #1667 (CONFLICTING, CI stale ✅), #1670 (DRAFT/MERGEABLE, CI stale ✅), #1669 (CONFLICTING, CI ❌), #1638 (e2e-api ❌). |
+| **⚠️ CI CORRECTION — #1695/#1696 run IDs swapped** | `gh pr checks` shows: **#1695** uses run 29741877329 → **pre-commit ❌, JIRA Assoc ❌, all-checks ❌** (🔴). **#1696** uses run 29741885397 → **all-checks ✅, JIRA Assoc ❌ only** (🟡). Prior board (since 06:00 IDT Jul 21) had these backwards. |
+| **0 merges, 0 archives** | No new merges or archives since 10:00 IDT. |
+| **All other PRs** | Unchanged: #1690 (CONFLICTING, all-CI ✅), #1698 (ready, pre-commit ❌), #1697 (DRAFT, pre-commit ❌), #1700/#1701 (DRAFT, pre-commit ❌), #1667 (CONFLICTING, CI stale ✅), #1670 (DRAFT/MERGEABLE, CI stale ✅), #1669 (CONFLICTING, CI ❌), #1638 (e2e-api ❌). |
 
 ---
 
@@ -141,18 +141,19 @@ PR [#1701](https://github.com/Jounce-IO/jounce/pull/1701): "fix(jbenchmark): con
 
 ---
 
-### 🔴 #1696 (aipcc-23895) — pre-commit ❌ still failing (NOW MERGEABLE)
+### 🟡 #1696 (aipcc-23895) — CI actually passing (⚠️ CORRECTED)
 
-PR [#1696](https://github.com/Jounce-IO/jounce/pull/1696): DRAFT. pre-commit ❌, JIRA Assoc ❌, all-checks ❌ (run 29741945977).
-- **NEW (08:30 IDT):** Now MERGEABLE — was CONFLICTING in prior runs. Conflict resolved.
-- **Action:** Fix pre-commit before marking ready.
+PR [#1696](https://github.com/Jounce-IO/jounce/pull/1696): DRAFT. CI run 29741885397: **all-checks ✅, JIRA Assoc ❌ only**.
+- **⚠️ CORRECTED (10:30 IDT Jul 21)**: Prior board incorrectly showed pre-commit ❌. `gh pr checks 1696` confirms run 29741885397 → all-checks ✅.
+- **Action:** Fix JIRA Association (add AIPCC-23895 ref to PR title/description), then mark ready for review.
 
 ---
 
-### 🟡 #1695 (aipcc-23925) — CI improved (all-checks now ✅)
+### 🔴 #1695 (aipcc-23925) — CI failing (⚠️ CORRECTED)
 
-PR [#1695](https://github.com/Jounce-IO/jounce/pull/1695): DRAFT. all-checks ✅, pre-commit-run ✅ (run 29741885397). Only JIRA Assoc ❌.
-- **Action:** Fix JIRA Association (ensure AIPCC ticket ref in PR title/description), then mark ready.
+PR [#1695](https://github.com/Jounce-IO/jounce/pull/1695): DRAFT. CI run 29741877329: **pre-commit ❌, JIRA Assoc ❌, all-checks ❌**.
+- **⚠️ CORRECTED (10:30 IDT Jul 21)**: Prior board incorrectly showed "all-checks ✅, JIRA Assoc ❌ only". `gh pr checks 1695` confirms run 29741877329 → pre-commit ❌.
+- **Action:** Fix pre-commit AND JIRA Association, then mark ready.
 
 ---
 
