@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-21 12:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-21 12:30 IDT (advance heartbeat)*
 
 ---
 
@@ -72,13 +72,13 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (12:00 IDT Jul 21 vs 11:30 IDT Jul 21)
+## Key Changes (12:30 IDT Jul 21 vs 12:00 IDT Jul 21)
 
 | What changed | Delta |
 |---|---|
-| **0 merges, 0 archives** | No new merges or archives since 11:30 IDT. |
+| **2 archives** | **jn-5132** (PR #1457 CLOSED May 31) + **jn-5246-exp-plan-modelcar** (PR #1466 CLOSED May 31) — both autonomous archives, closed PRs detected in board scan |
 | **All PRs** | Fully unchanged: #1690 (CONFLICTING, all-CI ✅), #1695 (pre-commit ❌), #1696 (all-checks ✅, JIRA Assoc ❌ only), #1697 (pre-commit ❌), #1698 (pre-commit ❌, isDraft:false), #1700/#1701 (pre-commit ❌), #1667 (CONFLICTING, CI stale ✅), #1670 (DRAFT/MERGEABLE, CI stale ✅), #1669 (CONFLICTING, CI ❌), #1638 (e2e-api ❌). |
-| **No new CI runs** | All CI run IDs identical to 11:30 IDT. Board static. |
+| **No new CI runs** | All CI run IDs identical to 12:00 IDT. |
 
 ---
 
@@ -195,7 +195,11 @@ Multiple consecutive overnight session failures (Jul 17–20). Daytime sessions 
 
 ## Archived This Session
 
-No archives this run (12:00 IDT Jul 21 — no merged/closed PRs detected).
+**12:30 IDT Jul 21 — 2 autonomous archives (CLOSED PRs):**
+| Branch | PR | Reason | Time |
+|--------|-----|--------|------|
+| **jn-5132-refactor-run-jbenchmark-script-to-support** | [#1457 CLOSED](https://github.com/Jounce-IO/jounce/pull/1457) | PR CLOSED May 31; detected in board scan | 12:30 IDT Jul 21 |
+| **jn-5246-exp-plan-modelcar** | [#1466 CLOSED](https://github.com/Jounce-IO/jounce/pull/1466) | PR CLOSED May 31; detected in board scan | 12:30 IDT Jul 21 |
 
 Previously archived:
 | Branch | PR | Reason | Time |
