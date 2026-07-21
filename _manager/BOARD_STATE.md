@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-21 16:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-21 17:00 IDT (advance heartbeat)*
 
 ---
 
@@ -72,12 +72,11 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (16:30 IDT Jul 21 vs 16:00 IDT Jul 21)
+## Key Changes (17:00 IDT Jul 21 vs 16:30 IDT Jul 21)
 
 | What changed | Delta |
 |---|---|
-| **#1698 now CONFLICTING** | Was MERGEABLE at 16:00 IDT; now CONFLICTING at 16:30 IDT. Someone pushed to main causing a conflict. Double-blocked: CONFLICTING + pre-commit ❌. |
-| **Other PRs: static** | All other PRs, CI runs, and Jira mismatches unchanged from 16:00 IDT. 6 Jira mismatches remain. |
+| **Board static** | All PRs, CI runs, and Jira mismatches unchanged from 16:30 IDT. 6 Jira mismatches remain. |
 
 ---
 

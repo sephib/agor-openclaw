@@ -2531,3 +2531,12 @@
 - Flags: **⚠️ #1698 NOW CONFLICTING** (was MERGEABLE at 16:00 IDT — someone pushed to main between 16:00–16:30 IDT). #1698 double-blocked: CONFLICTING + pre-commit ❌. All other PRs, CI, and 6 Jira mismatches unchanged.
 - Actions: 0 archives, 0 auto-advances
 - Next: #1698 rebase on main + fix pre-commit; #1690 rebase + review request; #1638 rebase + fix e2e-api; fix pre-commit on #1695/#1697/#1700/#1701; 6 Jira mismatches via acli
+
+## 17:00 IDT — Weekday Daytime Heartbeat
+- PRs checked: #1690 (OPEN/CONFLICTING, all-CI ✅ run 29729530150), #1695 (OPEN/MERGEABLE, pre-commit ❌), #1696 (OPEN/MERGEABLE, JIRA Assoc ❌ only), #1697 (DRAFT/MERGEABLE, pre-commit ❌), #1698 (OPEN/CONFLICTING, pre-commit ❌), #1700 (DRAFT/MERGEABLE, pre-commit ❌), #1701 (DRAFT/MERGEABLE, pre-commit ❌), #1667 (OPEN/CONFLICTING, CI stale ✅), #1670 (DRAFT/MERGEABLE, CI stale ✅), #1669 (DRAFT/CONFLICTING, CI ❌), #1638 (off-board/CONFLICTING, e2e-api ❌)
+- Merges detected: none
+- CI changes: none — all CI run IDs identical to 16:30 IDT; board static
+- Jira: 6 mismatches unchanged (JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546)
+- Flags: board completely static from 16:30 IDT; same conflicts, same CI failures, same Jira mismatches
+- Actions: 0 archives, 0 auto-advances
+- Next: #1698 rebase on main + fix pre-commit; #1690 rebase + review request; #1638 rebase + fix e2e-api; fix pre-commit on #1695/#1697/#1700/#1701; 6 Jira mismatches via acli
