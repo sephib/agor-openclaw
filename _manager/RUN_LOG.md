@@ -2404,3 +2404,12 @@
 - Flags: 7 Jira mismatches unchanged; #1690 still CONFLICTING (needs rebase); #1667 still CONFLICTING; #1638 e2e-api failure needs investigation; #1698 pre-commit blocks review; #1695/#1697 pre-commit + JIRA failing
 - Actions: 0 archives, 0 auto-advances. Board static overnight.
 - Next: Joseph to action — (1) rebase #1690 + request review, (2) fix pre-commit on #1698/#1695/#1697, (3) investigate e2e-api on #1638, (4) rebase #1667, (5) update 7 Jira mismatches via acli
+
+## 08:30 IDT — Weekday Daytime Heartbeat (Jul 21 2026)
+- PRs checked: #1690 (OPEN/CONFLICTING), #1638 (OPEN/MERGEABLE), #1667 (OPEN/CONFLICTING), #1669 (DRAFT/CONFLICTING), #1670 (DRAFT/MERGEABLE), #1695 (DRAFT/MERGEABLE), #1696 (DRAFT/**NOW MERGEABLE**), #1697 (DRAFT/MERGEABLE), #1698 (OPEN/MERGEABLE)
+- Merges detected: none (0 new since 06:00 IDT)
+- CI changes: #1638 has NEW CI run 29806749410 — e2e-api ❌ still failing (same pattern as run 29749975829). All other CI runs unchanged.
+- Flags: #1696 (AIPCC-23895) now MERGEABLE — was CONFLICTING in all prior runs; pre-commit ❌ still blocks. #1638 e2e-api ❌ persists in fresh run. Board otherwise static. 7 Jira mismatches unchanged.
+- Next: Joseph to rebase #1690 + #1667; fix pre-commit on #1698 + #1696 + #1669; investigate e2e-api on #1638; fix JIRA Assoc on #1695; mark #1670 ready.
+
+---

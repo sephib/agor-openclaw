@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-21 06:00 IDT";
+export const LAST_UPDATED = "2026-07-21 08:30 IDT";
 
 export const WORKTREES = [
   {
@@ -10,12 +10,20 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1690",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1690",
-    status: "🔴 **CONFLICTING** (unchanged overnight). All CI 100% PASSING (run 29729530150: e2e-smoke ✅, e2e-product ✅, all-checks ✅, everything green). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
+    status: "🔴 **CONFLICTING** (unchanged). All CI 100% PASSING (run 29729530150: e2e-smoke ✅, e2e-product ✅, all-checks ✅, everything green). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
     blockedOn: "CONFLICTING — needs rebase on main",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f829e124a7c299175235f/",
-    sessionLabel: "advance heartbeat 06:00 IDT Jul 21 — board static; CI corrections #1695/#1696; 0 merges; 7 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f835e224d78ceba16f38f/",
+    sessionLabel: "advance heartbeat 08:30 IDT Jul 21 — #1696 now MERGEABLE; #1638 new CI run; 0 merges; 7 Jira mismatches",
     recentSessions: [
+      {
+        sessionId: "019f835e224d78ceba16f38f",
+        url: "http://127.0.0.1:3030/ui/s/019f835e224d78ceba16f38f/",
+        title: "advance heartbeat 08:30 IDT Jul 21 — #1696 now MERGEABLE; #1638 new CI run; 0 merges",
+        status: "completed",
+        timestamp: "2026-07-21 08:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f829e124a7c299175235f",
         url: "http://127.0.0.1:3030/ui/s/019f829e124a7c299175235f/",
@@ -48,16 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-21 00:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f8094098e7817b786b032",
-        url: "http://127.0.0.1:3030/ui/s/019f8094098e7817b786b032/",
-        title: "advance heartbeat 18:30 IDT Jul 20 — board static; all PRs unchanged; 0 merges",
-        status: "completed",
-        timestamp: "2026-07-20 18:30 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-21 06:00 IDT",
+    lastActive: "2026-07-21 08:30 IDT",
   },
   {
     ticket: "JN-5695",
@@ -85,7 +85,7 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1667",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1667",
-    status: "🔴 **CONFLICTING** confirmed 17:30 IDT (was UNKNOWN at 17:00). CI stale run 29402877354 all-pass. **Action: Rebase jn-5845-helm-cicd-agents-md on main. CI will auto-run after push.**",
+    status: "🔴 **CONFLICTING** (unchanged). CI stale run 29402877354 all-pass. **Action: Rebase jn-5845-helm-cicd-agents-md on main. CI will auto-run after push.**",
     blockedOn: "CONFLICTING — needs rebase on main",
     blockedType: "blocked",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b8914f87505bf9d7e3f/",
@@ -137,8 +137,8 @@ export const WORKTREES = [
     zone: "Ingest",
     pr: null,
     prUrl: null,
-    status: "Plan done ~23:06 IDT Jul 8. Still Ingest zone — zone mismatch persists (Day 12+). Propose move to Code zone + trigger /implement:code.",
-    blockedOn: "Zone mismatch — needs move to Code (Day 12+)",
+    status: "Plan done ~23:06 IDT Jul 8. Still Ingest zone — zone mismatch persists (Day 13+). Propose move to Code zone + trigger /implement:code.",
+    blockedOn: "Zone mismatch — needs move to Code (Day 13+)",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f4351d110788ba7254ee1/",
     sessionLabel: "plan (done, ready_for_prompt:TRUE)",
@@ -163,7 +163,7 @@ export const WORKTREES = [
     zone: "Ingest",
     pr: null,
     prUrl: null,
-    status: "Design session done Jun 30. Ready for /implement:plan trigger. Stale 20+ days.",
+    status: "Design session done Jun 30. Ready for /implement:plan trigger. Stale 21+ days.",
     blockedOn: null,
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f185c2c687ed7bbdd1902/",
@@ -241,7 +241,7 @@ export const WORKTREES = [
     zone: "Plan",
     pr: "#1695 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1695",
-    status: "🟡 DRAFT PR #1695 — CI IMPROVED (run 29741885397): all-checks ✅, pre-commit-run ✅. Only JIRA Assoc ❌ remains. Moved to Plan zone. Fix JIRA Assoc (AIPCC ticket ref in PR), then mark ready for review.",
+    status: "🟡 DRAFT PR #1695 — CI: all-checks ✅, pre-commit-run ✅ (run 29741885397). Only JIRA Assoc ❌ remains. Fix JIRA Assoc (AIPCC ticket ref in PR title/description), then mark ready for review.",
     blockedOn: "JIRA Association fix needed",
     blockedType: "active",
     sessionUrl: null,
@@ -258,13 +258,13 @@ export const WORKTREES = [
     zone: "Plan",
     pr: "#1696 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1696",
-    status: "🔴 DRAFT PR #1696 — CI DEGRADED (run 29741945977): pre-commit ❌, JIRA Assoc ❌, all-checks ❌. Was previously 'JIRA Assoc ❌ only'. Needs pre-commit fix before mark ready.",
+    status: "🔴 DRAFT PR #1696 — **NOW MERGEABLE** (was CONFLICTING). CI run 29741945977: pre-commit ❌, JIRA Assoc ❌, all-checks ❌. Needs pre-commit fix before mark ready.",
     blockedOn: "CI failure — pre-commit fix needed",
     blockedType: "active",
     sessionUrl: null,
     sessionLabel: null,
     recentSessions: [],
-    lastActive: "2026-07-20 15:14 IDT",
+    lastActive: "2026-07-21 08:30 IDT",
   },
   {
     ticket: "AIPCC-23890",
@@ -290,9 +290,9 @@ export const WORKTREES = [
     branch: "aipcc-23845-cluster-connection",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/aipcc-23845-cluster-connection",
     zone: "Plan",
-    pr: "#1698 DRAFT",
+    pr: "#1698",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1698",
-    status: "🔴 PR #1698 (`feat(jbenchmark): support IBM OpenShift cluster kubeconfig connection`) — **isDraft:false** (marked ready for review 17:30!). CI run 29749885088 complete: pre-commit ❌, all-checks ❌; **JIRA Assoc ✅** (fixed!), nox ✅, tox ✅. MERGEABLE. **Action: Fix pre-commit to unblock.**",
+    status: "🔴 PR #1698 (`feat(jbenchmark): support IBM OpenShift cluster kubeconfig connection`) — **isDraft:false** (marked ready for review). CI run 29749885088: pre-commit ❌, all-checks ❌; JIRA Assoc ✅, nox ✅, tox ✅. MERGEABLE. **Action: Fix pre-commit to unblock.**",
     blockedOn: "pre-commit failing — needs fix before merge",
     blockedType: "active",
     sessionUrl: null,
@@ -309,7 +309,7 @@ export const WORKTREES = [
     zone: "NO ZONE",
     pr: null,
     prUrl: null,
-    status: "⚠️ Still exists in Agor (uid=249, last updated Jun 25). Stale 25+ days — no sessions, no PR. Propose archive if no longer needed.",
+    status: "⚠️ Still exists in Agor (uid=249, last updated Jun 25). Stale 26+ days — no sessions, no PR. Propose archive if no longer needed.",
     blockedOn: "Stale, no activity",
     blockedType: "blocked",
     sessionUrl: null,
@@ -433,11 +433,11 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "red",
-    message: "🔴 #1690 (AIPCC-27645): **NOW CONFLICTING** (17:30 IDT). All CI 100% passing (run 29729530150). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
+    message: "🔴 #1690 (AIPCC-27645): **CONFLICTING** (unchanged). All CI 100% passing (run 29729530150). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
   },
   {
     level: "red",
-    message: "🔴 #1638 (JN-5725, off-board): **MERGEABLE** but **e2e-api ❌ FAILING** (run 29749975829 — same run as Jul 20, now shows e2e-api as primary fail; e2e-smoke skipping downstream). JN-5725 Done ✅. **Action: e2e-api root-cause investigation needed.**",
+    message: "🔴 #1638 (JN-5725, off-board): **MERGEABLE** but **e2e-api ❌ still FAILING** in NEW run 29806749410 (was 29749975829 — same pattern persists). JN-5725 Done ✅. **Action: e2e-api root-cause investigation needed.**",
   },
   {
     level: "red",
@@ -445,15 +445,11 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 #1667 (jn-5845 JN-5845): **CONFLICTING** confirmed 17:30 IDT (was UNKNOWN). CI all-pass (stale run 29402877354). **Action: Rebase jn-5845-helm-cicd-agents-md on main.**",
-  },
-  {
-    level: "yellow",
-    message: "🟡 #1695 (aipcc-23925) CI IMPROVED: all-checks ✅, pre-commit-run ✅ (run 29741885397). Only JIRA Assoc ❌. Fix JIRA ticket ref in PR, then mark ready.",
+    message: "🔴 #1667 (jn-5845 JN-5845): **CONFLICTING** (unchanged). CI all-pass (stale run 29402877354). **Action: Rebase jn-5845-helm-cicd-agents-md on main.**",
   },
   {
     level: "red",
-    message: "🔴 #1696 (aipcc-23895) CI DEGRADED: pre-commit ❌, JIRA Assoc ❌, all-checks ❌ (run 29741945977). Was 'JIRA Assoc ❌ only' — needs pre-commit fix.",
+    message: "🔴 #1696 (aipcc-23895): **NOW MERGEABLE** (was CONFLICTING — resolved!). CI run 29741945977: pre-commit ❌, JIRA Assoc ❌, all-checks ❌. **Action: Fix pre-commit before marking ready.**",
   },
   {
     level: "red",
@@ -461,11 +457,15 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 #1669 (jn-5872 JN-5872): DRAFT + CONFLICTING. Run 29741877329: pre-commit ❌ + JIRA Assoc ❌ + all-checks ❌ (nox/tox now skipping — DRAFT behaviour). Needs rebase + pre-commit fix.",
+    message: "🔴 #1669 (jn-5872 JN-5872): DRAFT + CONFLICTING. Run 29741877329: pre-commit ❌ + JIRA Assoc ❌ + all-checks ❌. Needs rebase + pre-commit fix.",
   },
   {
     level: "green",
     message: "🎉 #1691 (AIPCC-27657): **MERGED 10:20 IDT Jul 20** — into main. aipcc-27657-guidellm-output-dir ARCHIVED ✅. AIPCC-27657 needs Done in Jira.",
+  },
+  {
+    level: "yellow",
+    message: "🟡 #1695 (aipcc-23925) CI: all-checks ✅, pre-commit-run ✅ (run 29741885397). Only JIRA Assoc ❌. Fix JIRA ticket ref in PR, then mark ready.",
   },
   {
     level: "yellow",
@@ -481,14 +481,14 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "📍 jn-5865 (JN-5865): Still Ingest zone — plan done Jul 8 (Day 12+). Propose move to Code + trigger /implement:code.",
+    message: "📍 jn-5865 (JN-5865): Still Ingest zone — plan done Jul 8 (Day 13+). Propose move to Code + trigger /implement:code.",
   },
   {
     level: "yellow",
-    message: "🔄 jn-5824-benchmark-run-configs (JN-5824): Last session Jul 8 IDLE. SHA 16ec44ea. Stale 12+ days. Needs: generate 24 configs, rebase, PR.",
+    message: "🔄 jn-5824-benchmark-run-configs (JN-5824): Last session Jul 8 IDLE. SHA 16ec44ea. Stale 13+ days. Needs: generate 24 configs, rebase, PR.",
   },
   {
     level: "yellow",
-    message: "⚠️ jira-operations: NO ZONE, stale 25+ days (last Jun 25). No sessions, no PR. Propose archive.",
+    message: "⚠️ jira-operations: NO ZONE, stale 26+ days (last Jun 25). No sessions, no PR. Propose archive.",
   },
 ];
