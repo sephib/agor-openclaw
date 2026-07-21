@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-21 15:30 IDT";
+export const LAST_UPDATED = "2026-07-21 16:00 IDT";
 
 export const WORKTREES = [
   {
@@ -13,9 +13,17 @@ export const WORKTREES = [
     status: "🔴 **CONFLICTING** (unchanged). All CI 100% PASSING (run 29729530150: e2e-smoke ✅, e2e-product ✅, all-checks ✅, everything green). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
     blockedOn: "CONFLICTING — needs rebase on main",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f84a7bc407444baed9446/",
-    sessionLabel: "advance heartbeat 15:30 IDT Jul 21 — board static; 6 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f84c333aa77f9adf146b7/",
+    sessionLabel: "advance heartbeat 16:00 IDT Jul 21 — #1638 now CONFLICTING; 6 Jira mismatches",
     recentSessions: [
+      {
+        sessionId: "019f84c333aa77f9adf146b7",
+        url: "http://127.0.0.1:3030/ui/s/019f84c333aa77f9adf146b7/",
+        title: "advance heartbeat 16:00 IDT Jul 21 — #1638 now CONFLICTING; 6 Jira mismatches",
+        status: "completed",
+        timestamp: "2026-07-21 16:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f84a7bc407444baed9446",
         url: "http://127.0.0.1:3030/ui/s/019f84a7bc407444baed9446/",
@@ -48,16 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-21 14:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f8439ddd17a7a9e28ce6f",
-        url: "http://127.0.0.1:3030/ui/s/019f8439ddd17a7a9e28ce6f/",
-        title: "advance heartbeat 13:30 IDT Jul 21 — #1695 MERGEABLE (rebased); #1638 CI in progress; 6 mismatches",
-        status: "completed",
-        timestamp: "2026-07-21 13:30 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-21 15:00 IDT",
+    lastActive: "2026-07-21 16:00 IDT",
   },
   {
     ticket: "JN-5695",
@@ -475,7 +475,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 #1638 (JN-5725, off-board): CI run 29819037050 **COMPLETED FAILED** (14:00 IDT Jul 21) — **e2e-api ❌**, all-checks ❌, e2e-tests ❌. integration-run ✅, pre-commit-run ✅, tox-run ✅, nox ✅, JIRA Assoc ✅. JN-5725 Done ✅. **Action: Investigate e2e-api failure — fix and push to unblock merge.**",
+    message: "🔴 #1638 (JN-5725, off-board): **NOW DOUBLE-BLOCKED (16:00 IDT Jul 21)** — was MERGEABLE at 15:30, now CONFLICTING. CI run 29819037050 FAILED: e2e-api ❌, all-checks ❌, e2e-tests ❌. integration-run ✅, pre-commit-run ✅, tox-run ✅, nox ✅, JIRA Assoc ✅. JN-5725 Done ✅. **Action: Rebase on main + fix e2e-api failure.**",
   },
   {
     level: "red",

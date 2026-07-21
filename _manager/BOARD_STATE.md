@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-21 15:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-21 16:00 IDT (advance heartbeat)*
 
 ---
 
@@ -30,7 +30,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🔴 CI run 29819037050 **COMPLETED FAILED** — **e2e-api ❌** (3m46s), all-checks ❌, e2e-tests ❌. integration-run ✅, pre-commit-run ✅, tox-run ✅, nox ✅, JIRA Assoc ✅, CodeRabbit ✅. e2e-smoke/product/priority SKIPPING. | **OPEN, ✅ MERGEABLE** | 🔴 **CI FAILED** — e2e-api ❌ (run 29819037050 completed 14:00 IDT Jul 21). Was in progress at 13:30. JN-5725 Done ✅ but PR blocked by e2e-api failure. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🔴 CI run 29819037050 **COMPLETED FAILED** — **e2e-api ❌** (3m46s), all-checks ❌, e2e-tests ❌. integration-run ✅, pre-commit-run ✅, tox-run ✅, nox ✅, JIRA Assoc ✅, CodeRabbit ✅. e2e-smoke/product/priority SKIPPING. | **OPEN, 🔴 CONFLICTING** (was MERGEABLE at 15:30 IDT) | 🔴 **CI FAILED + NOW CONFLICTING** (16:00 IDT Jul 21) — e2e-api ❌ AND now CONFLICTING. Double-blocked. Action: Rebase + fix e2e-api. |
 
 ---
 
@@ -72,11 +72,12 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (15:30 IDT Jul 21 vs 15:00 IDT Jul 21)
+## Key Changes (16:00 IDT Jul 21 vs 15:30 IDT Jul 21)
 
 | What changed | Delta |
 |---|---|
-| **Board static** | No merges, no CI changes, no PR state changes. All PRs, CI runs, and Jira mismatches unchanged from 15:00 IDT. #1638 e2e-api ❌ confirmed (run 29819037050 — unchanged). All other PRs and CI runs static. |
+| **#1638 now CONFLICTING** | Was MERGEABLE at 15:30 IDT; now CONFLICTING at 16:00 IDT. Someone pushed to main causing a conflict. Double-blocked: e2e-api ❌ + CONFLICTING. |
+| **Other PRs: static** | All other PRs, CI runs, and Jira mismatches unchanged from 15:30 IDT. 6 Jira mismatches remain. |
 
 ---
 
@@ -91,16 +92,16 @@ PR [#1690](https://github.com/Jounce-IO/jounce/pull/1690): "fix(helm): increase 
 
 ---
 
-### 🔴 #1638 (off-board JN-5725) — CI FAILED: e2e-api ❌ (run completed 14:00 IDT)
+### 🔴 #1638 (off-board JN-5725) — CI FAILED + NOW CONFLICTING (16:00 IDT)
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements (JN-5725)"
-- State: OPEN, **✅ MERGEABLE**
-- **🔴 CI run 29819037050 COMPLETED FAILED (confirmed 14:00 IDT Jul 21)**:
+- State: OPEN, **🔴 CONFLICTING** (NEW — was MERGEABLE at 15:30 IDT, changed 16:00 IDT)
+- **🔴 CI run 29819037050 COMPLETED FAILED**:
   - ❌ FAIL: e2e-api (3m46s), all-checks, e2e-tests
   - ✅ PASS: integration-run, pre-commit-run, tox-run, nox, JIRA Assoc, atlas-validate, CodeRabbit, check-changes
   - ⏭️ SKIP: e2e-smoke, e2e-product, e2e-priority
 - Jira: JN-5725 is Done ✅ (Jira closed, PR still open)
-- **Action:** Investigate e2e-api failure in run 29819037050. Fix and push to unblock merge.
+- **Action:** Double-blocked — rebase on main AND fix e2e-api failure to unblock merge.
 
 ---
 
