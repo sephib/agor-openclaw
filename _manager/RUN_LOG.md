@@ -4,6 +4,15 @@
 
 ---
 
+## 06:00 IDT — Overnight Heartbeat (Jul 21 2026)
+- PRs checked: #1690 (OPEN/CONFLICTING), #1638 (OPEN/MERGEABLE), #1667 (OPEN/CONFLICTING), #1669 (DRAFT/CONFLICTING), #1670 (DRAFT/MERGEABLE), #1695 (DRAFT/MERGEABLE), #1696 (DRAFT), #1697 (DRAFT/MERGEABLE), #1698 (OPEN/MERGEABLE)
+- Merges detected: none (0 new since 04:00 IDT)
+- CI changes: #1695 (AIPCC-23925) IMPROVED — run 29741885397: all-checks ✅, JIRA Assoc ❌ only (was reported as "pre-commit ❌ + all-checks ❌"). #1696 (AIPCC-23895) DEGRADED — run 29741945977: pre-commit ❌, JIRA Assoc ❌, all-checks ❌ (was "JIRA Assoc ❌ only"). #1669 newer run 29741877329 (nox/tox now skipping for DRAFT vs failing before). All others unchanged.
+- Flags: Board static (no pushes/merges/zone moves). 7 Jira mismatches unchanged. #1690 still conflicting (needs rebase). #1698 ready for review but pre-commit blocking. #1696 now also needs pre-commit fix.
+- Next: Morning: Joseph to rebase #1690 + #1667; fix pre-commit on #1698 + #1696 + #1669; investigate e2e-api on #1638; fix JIRA Assoc on #1695.
+
+---
+
 ## 04:00 IDT — Overnight Heartbeat (Jul 21 2026)
 - PRs checked: #1690 (OPEN/CONFLICTING), #1638 (OPEN/MERGEABLE), #1667 (OPEN/CONFLICTING), #1669 (DRAFT/CONFLICTING), #1670 (DRAFT/MERGEABLE), #1595 (DRAFT/CONFLICTING), #1696 (DRAFT/MERGEABLE), #1697 (DRAFT/MERGEABLE), #1698 (OPEN/MERGEABLE)
 - Merges detected: none

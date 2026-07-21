@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-21 04:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-21 06:00 IDT (advance heartbeat)*
 
 ---
 
@@ -14,13 +14,13 @@
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | Last session Jul 8 IDLE. SHA 16ec44ea (2 commits). Needs: configs, rebase, PR. Stale 13+ days. |
 | jn-5844-service-lib-sql-agents-md | **Publish** | [#1670 DRAFT](https://github.com/Jounce-IO/jounce/pull/1670) | ✅ ALL CI PASS (run 29403233416 — stale) | [JN-5844](https://redhat.atlassian.net/browse/JN-5844) — New | DRAFT PR #1670. CI all pass (stale). Needs: mark ready for review. |
 | jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | ✅ all-pass stale run 29402877354 | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) — New | 🔴 **CONFLICTING** (unchanged overnight). CI stale (run 29402877354). **Action: Rebase jn-5845-helm-cicd-agents-md on main.** |
-| jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | 🔴 run 29683534910 (stale): pre-commit ❌, nox ❌, tox-run ❌, all-checks ❌ | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — In Progress | 🔴 **CI ❌ + CONFLICTING** — DRAFT. Unchanged overnight. |
+| jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | 🔴 run 29741877329: pre-commit ❌, JIRA Assoc ❌, all-checks ❌ (nox/tox now skipping — DRAFT) | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — In Progress | 🔴 **CI ❌ + CONFLICTING** — DRAFT. Newer CI run vs prior (nox/tox now skip for draft). |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — New | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 13+** (still Ingest, should be Code). |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 26+ days. Propose archive. |
 | aipcc-23845-cluster-connection | **Plan** | [#1698](https://github.com/Jounce-IO/jounce/pull/1698) | 🔴 CI run 29749885088 — **pre-commit ❌**, pre-commit-run ❌, all-checks ❌; JIRA Assoc ✅, nox ✅, tox-run ✅ | [AIPCC-23845](https://redhat.atlassian.net/browse/AIPCC-23845) | **isDraft:false** (ready for review!). pre-commit still ❌. MERGEABLE. **Action: Fix pre-commit.** |
 | aipcc-23890-qe-cluster-tests | **NO ZONE** | [#1697 DRAFT](https://github.com/Jounce-IO/jounce/pull/1697) | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌; nox ✅, tox ✅ | [AIPCC-23890](https://redhat.atlassian.net/browse/AIPCC-23890) — In Progress | PR #1697 DRAFT. CI failing: pre-commit ❌. No zone assigned. |
-| aipcc-23895-docs-ibm | **Plan** | [#1696 DRAFT](https://github.com/Jounce-IO/jounce/pull/1696) | 🟡 JIRA Assoc ❌; all-checks ✅ (docs-only) | [AIPCC-23895](https://redhat.atlassian.net/browse/AIPCC-23895) | Moved to Plan zone. DRAFT PR #1696 mostly passing (JIRA Assoc ❌ only). |
-| aipcc-23925-argo-public-url | **Plan** | [#1695 DRAFT](https://github.com/Jounce-IO/jounce/pull/1695) | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌ | [AIPCC-23925](https://redhat.atlassian.net/browse/AIPCC-23925) | Moved to Plan zone. DRAFT PR #1695 CI failing. Needs pre-commit fix. |
+| aipcc-23895-docs-ibm | **Plan** | [#1696 DRAFT](https://github.com/Jounce-IO/jounce/pull/1696) | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌ (run 29741945977) — **DEGRADED** | [AIPCC-23895](https://redhat.atlassian.net/browse/AIPCC-23895) | DRAFT PR #1696 — pre-commit now failing (was "JIRA Assoc ❌ only" in prior reports). |
+| aipcc-23925-argo-public-url | **Plan** | [#1695 DRAFT](https://github.com/Jounce-IO/jounce/pull/1695) | 🟡 all-checks ✅, JIRA Assoc ❌ only (run 29741885397) — **CI IMPROVED** | [AIPCC-23925](https://redhat.atlassian.net/browse/AIPCC-23925) | DRAFT PR #1695 — pre-commit-run ✅, all-checks ✅. Only JIRA Assoc ❌ now. |
 
 ---
 
@@ -70,13 +70,15 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (04:00 IDT Jul 21 vs 02:00 IDT Jul 21)
+## Key Changes (06:00 IDT Jul 21 vs 04:00 IDT Jul 21)
 
 | What changed | Delta |
 |---|---|
-| **Board static** | No new CI runs, no new pushes, no merges, no PRs, no zone moves since 02:00 IDT Jul 21. All PRs in same state. |
-| **All PRs** | Unchanged: #1690 (CONFLICTING, all-CI ✅), #1638 (MERGEABLE, e2e-api ❌), #1667 (CONFLICTING), #1669 (DRAFT/CONFLICTING, CI ❌), #1670 (DRAFT/MERGEABLE, CI ✅), #1695/#1697 (DRAFT, pre-commit ❌), #1696 (DRAFT, JIRA Assoc ❌ only), #1698 (ready, pre-commit ❌). |
-| **0 merges, 0 archives** | No new merges or archives overnight. |
+| **#1695 (AIPCC-23925) CI IMPROVED** | all-checks ✅ now (run 29741885397); pre-commit-run ✅. Only JIRA Assoc ❌ remains. Previously reported as "pre-commit ❌ + all-checks ❌" — corrected. |
+| **#1696 (AIPCC-23895) CI DEGRADED** | pre-commit ❌, JIRA Assoc ❌, all-checks ❌ (run 29741945977). Was previously reported as "JIRA Assoc ❌ only; all-checks ✅" — corrected. |
+| **#1669 (JN-5872) newer CI run** | Run 29741877329 (vs stale 29683534910). nox/tox-run now skipping (DRAFT behaviour). pre-commit ❌ + JIRA Assoc ❌ remain. |
+| **0 merges, 0 archives** | No new merges or archives since 04:00 IDT. |
+| **All other PRs** | Unchanged: #1690 (CONFLICTING, all-CI ✅), #1638 (MERGEABLE, e2e-api ❌), #1667 (CONFLICTING, CI stale ✅), #1670 (DRAFT/MERGEABLE, CI stale ✅), #1697 (DRAFT, pre-commit ❌), #1698 (ready, pre-commit ❌). |
 
 ---
 
@@ -125,6 +127,21 @@ PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): ad
 
 PR [#1698](https://github.com/Jounce-IO/jounce/pull/1698): isDraft:false (marked ready!). pre-commit ❌ (run 29749885088).
 - **Action:** Fix pre-commit to unblock review.
+
+---
+
+### 🔴 #1696 (aipcc-23895) — CI degraded (pre-commit ❌ now failing)
+
+PR [#1696](https://github.com/Jounce-IO/jounce/pull/1696): DRAFT. pre-commit ❌, JIRA Assoc ❌, all-checks ❌ (run 29741945977).
+- Was previously reported as "JIRA Assoc ❌ only" — corrected this run.
+- **Action:** Fix pre-commit before marking ready.
+
+---
+
+### 🟡 #1695 (aipcc-23925) — CI improved (all-checks now ✅)
+
+PR [#1695](https://github.com/Jounce-IO/jounce/pull/1695): DRAFT. all-checks ✅, pre-commit-run ✅ (run 29741885397). Only JIRA Assoc ❌.
+- **Action:** Fix JIRA Association (ensure AIPCC ticket ref in PR title/description), then mark ready.
 
 ---
 
