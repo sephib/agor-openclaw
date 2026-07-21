@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-21 12:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-21 13:00 IDT (advance heartbeat)*
 
 ---
 
@@ -30,7 +30,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🔴 CI **NEW run 29806749410** — **e2e-api ❌**, e2e-tests ❌, all-checks ❌; pre-commit ✅, nox ✅, tox ✅, integration ✅; e2e-smoke/product/priority: skipping | **OPEN, ✅ MERGEABLE** | 🔴 **MERGEABLE** but **e2e-api ❌ still failing** in new run 29806749410. JN-5725 Done ✅. **Action: e2e-api root cause investigation needed.** |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🔴 CI **NEW run 29819037050** — **e2e-smoke ❌** (SHIFT: was e2e-api ❌), e2e-tests ❌, all-checks ❌; **e2e-api ✅ NOW PASSING**, pre-commit ✅, nox ✅, tox ✅, integration ✅ | **OPEN, ✅ MERGEABLE** | 🔴 **CI shift** — e2e-api ✅ now passing; **e2e-smoke ❌ now failing** (new run 29819037050). JN-5725 Done ✅. **Action: e2e-smoke root cause investigation needed.** |
 
 ---
 
@@ -60,7 +60,7 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 | Ticket | PR | PR Status | Jira Status | Action |
 |--------|-----|-----------|-------------|--------|
-| **[AIPCC-27657](https://redhat.atlassian.net/browse/AIPCC-27657)** | **[#1691](https://github.com/Jounce-IO/jounce/pull/1691) + [#1692](https://github.com/Jounce-IO/jounce/pull/1692)** | **BOTH MERGED** (10:20 + 09:36 IDT Jul 20) | **In Progress** | ❌ Update Jira → Done |
+| ~~[AIPCC-27657](https://redhat.atlassian.net/browse/AIPCC-27657)~~ | ~~[#1691](https://github.com/Jounce-IO/jounce/pull/1691) + [#1692](https://github.com/Jounce-IO/jounce/pull/1692)~~ | ~~BOTH MERGED~~ | **Closed ✅** | ✅ **RESOLVED 13:00 IDT Jul 21** |
 | **[JN-5842](https://redhat.atlassian.net/browse/JN-5842)** / AIPCC-26976 | **[#1658](https://github.com/Jounce-IO/jounce/pull/1658)** | **MERGED 13:29 IDT Jul 14** | **New** | ❌ Update Jira → Done |
 | **[JN-5877](https://redhat.atlassian.net/browse/JN-5877)** | **[#1663](https://github.com/Jounce-IO/jounce/pull/1663)** | **MERGED 15:16 IDT Jul 13** | **New** | ❌ Update Jira → Done |
 | **[JN-5874](https://redhat.atlassian.net/browse/JN-5874)** | **[#1662](https://github.com/Jounce-IO/jounce/pull/1662)** | **MERGED 12:10 IDT Jul 13** | **New** | ❌ Update Jira → Done |
@@ -68,17 +68,17 @@ Active sprint tickets assigned to Joseph with no board worktree:
 | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) | [#1648](https://github.com/Jounce-IO/jounce/pull/1648) | MERGED Jul 12 | **New** | ❌ Update Jira → Done |
 | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | MERGED Jul 7 | **In Progress** | ❌ Update Jira → Done |
 
-*JN-5891: Done ✅. JN-5870: Done ✅. JN-5880: Done ✅. JN-5879: Done ✅. JN-5841: Done ✅. JN-5867: Done ✅. JN-5717: Done ✅. JN-5868: Done ✅. JN-5725: Done ✅. Jira MCP 401 — use acli for updates.*
+*AIPCC-27657: Closed ✅ (13:00 IDT Jul 21 — resolved, down to 6 mismatches). JN-5891: Done ✅. JN-5870: Done ✅. JN-5880: Done ✅. JN-5879: Done ✅. JN-5841: Done ✅. JN-5867: Done ✅. JN-5717: Done ✅. JN-5868: Done ✅. JN-5725: Done ✅. Jira MCP 401 — use acli for updates.*
 
 ---
 
-## Key Changes (12:30 IDT Jul 21 vs 12:00 IDT Jul 21)
+## Key Changes (13:00 IDT Jul 21 vs 12:30 IDT Jul 21)
 
 | What changed | Delta |
 |---|---|
-| **2 archives** | **jn-5132** (PR #1457 CLOSED May 31) + **jn-5246-exp-plan-modelcar** (PR #1466 CLOSED May 31) — both autonomous archives, closed PRs detected in board scan |
-| **All PRs** | Fully unchanged: #1690 (CONFLICTING, all-CI ✅), #1695 (pre-commit ❌), #1696 (all-checks ✅, JIRA Assoc ❌ only), #1697 (pre-commit ❌), #1698 (pre-commit ❌, isDraft:false), #1700/#1701 (pre-commit ❌), #1667 (CONFLICTING, CI stale ✅), #1670 (DRAFT/MERGEABLE, CI stale ✅), #1669 (CONFLICTING, CI ❌), #1638 (e2e-api ❌). |
-| **No new CI runs** | All CI run IDs identical to 12:00 IDT. |
+| **AIPCC-27657 Jira resolved** | **Closed ✅** in Jira (was "In Progress"). Mismatches: **6** (down from 7). |
+| **#1638 CI shift** | **NEW run 29819037050** — **e2e-api ✅ now PASSING** (was ❌ in all prior runs); **e2e-smoke ❌ now FAILING** (was passing). Failure root has shifted — investigation focus should move from e2e-api to e2e-smoke. |
+| **All board PRs** | Unchanged: #1690 (CONFLICTING, all-CI ✅), #1695 (pre-commit ❌), #1696 (all-checks ✅, JIRA Assoc ❌ only), #1697 (pre-commit ❌), #1698 (pre-commit ❌, isDraft:false), #1700/#1701 (pre-commit ❌), #1667 (CONFLICTING, CI stale ✅), #1670 (DRAFT/MERGEABLE, CI stale ✅), #1669 (CONFLICTING, CI ❌). |
 
 ---
 
@@ -93,15 +93,17 @@ PR [#1690](https://github.com/Jounce-IO/jounce/pull/1690): "fix(helm): increase 
 
 ---
 
-### 🔴 #1638 (off-board JN-5725) — MERGEABLE but CI STILL FAILING
+### 🔴 #1638 (off-board JN-5725) — MERGEABLE but CI STILL FAILING (failure shifted)
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements (JN-5725)"
 - State: OPEN, **✅ MERGEABLE**
-- **CI run 29749975829** (unchanged, same run as Jul 20):
-  - ❌ FAIL: **e2e-api ❌**, e2e-tests ❌, all-checks ❌ (e2e-smoke now shows "skipping" — downstream of e2e-api failure)
-  - ✅ PASS: JIRA Assoc, atlas-validate, check-changes, integration-run, nox, pre-commit, pre-commit-run, tox-run
+- **⚠️ CI SHIFT — NEW run 29819037050 (13:00 IDT Jul 21)**:
+  - **e2e-api ✅ NOW PASSING** (was ❌ failing in prior runs 29806749410 / 29749975829)
+  - **e2e-smoke ❌ NOW FAILING** (was passing before)
+  - ❌ FAIL: e2e-smoke ❌, e2e-tests ❌, all-checks ❌
+  - ✅ PASS: JIRA Assoc, atlas-validate, check-changes, integration-run, nox, pre-commit, pre-commit-run, tox-run, **e2e-api ✅**
 - Jira: JN-5725 is Done ✅
-- **Action:** e2e-api root-cause investigation needed.
+- **Action:** e2e-smoke root-cause investigation needed (failure shifted from e2e-api to e2e-smoke in new run).
 
 ---
 

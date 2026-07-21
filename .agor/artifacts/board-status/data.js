@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-21 12:30 IDT";
+export const LAST_UPDATED = "2026-07-21 13:00 IDT";
 
 export const WORKTREES = [
   {
@@ -13,9 +13,17 @@ export const WORKTREES = [
     status: "🔴 **CONFLICTING** (unchanged). All CI 100% PASSING (run 29729530150: e2e-smoke ✅, e2e-product ✅, all-checks ✅, everything green). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
     blockedOn: "CONFLICTING — needs rebase on main",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8402eea272e2af8c4a69/",
-    sessionLabel: "advance heartbeat 12:30 IDT Jul 21 — 2 archives (#1457/#1466 CLOSED); 7 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f841e66b77968b663d541/",
+    sessionLabel: "advance heartbeat 13:00 IDT Jul 21 — #1638 CI shift (e2e-api→e2e-smoke); AIPCC-27657 Jira Closed; 6 mismatches",
     recentSessions: [
+      {
+        sessionId: "019f841e66b77968b663d541",
+        url: "http://127.0.0.1:3030/ui/s/019f841e66b77968b663d541/",
+        title: "advance heartbeat 13:00 IDT Jul 21 — #1638 CI shift; AIPCC-27657 Jira Closed; 6 mismatches",
+        status: "completed",
+        timestamp: "2026-07-21 13:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f8402eea272e2af8c4a69",
         url: "http://127.0.0.1:3030/ui/s/019f8402eea272e2af8c4a69/",
@@ -48,16 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-21 11:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f8395111f7c6d996f255f",
-        url: "http://127.0.0.1:3030/ui/s/019f8395111f7c6d996f255f/",
-        title: "advance heartbeat 10:30 IDT Jul 21 — CI correction #1695/#1696; 0 merges",
-        status: "completed",
-        timestamp: "2026-07-21 10:30 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-21 12:30 IDT",
+    lastActive: "2026-07-21 13:00 IDT",
   },
   {
     ticket: "JN-5695",
@@ -361,7 +361,7 @@ export const MERGED = [
     pr: "#1691",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1691",
     mergedDate: "2026-07-20",
-    note: "Merged 10:20 IDT Jul 20 🎉 aipcc-27657-guidellm-output-dir ARCHIVED 10:10 IDT Jul 20. AIPCC-27657 needs Done in Jira (both #1691 + companion #1692 merged).",
+    note: "Merged 10:20 IDT Jul 20 🎉 aipcc-27657-guidellm-output-dir ARCHIVED 10:10 IDT Jul 20. AIPCC-27657 **Closed ✅ in Jira** (13:00 IDT Jul 21 — Jira mismatch resolved).",
   },
   {
     ticket: "AIPCC-27657",
@@ -475,7 +475,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 #1638 (JN-5725, off-board): **MERGEABLE** but **e2e-api ❌ still FAILING** in NEW run 29806749410 (was 29749975829 — same pattern persists). JN-5725 Done ✅. **Action: e2e-api root-cause investigation needed.**",
+    message: "🔴 #1638 (JN-5725, off-board): **⚠️ CI SHIFT** — NEW run 29819037050: **e2e-api ✅ NOW PASSING** (was ❌ in prior runs); **e2e-smoke ❌ NOW FAILING** (was passing). All-checks ❌ still failing. JN-5725 Done ✅. **Action: e2e-smoke root-cause investigation needed.**",
   },
   {
     level: "red",
@@ -499,7 +499,7 @@ export const ALERTS = [
   },
   {
     level: "green",
-    message: "🎉 #1691 (AIPCC-27657): **MERGED 10:20 IDT Jul 20** — into main. aipcc-27657-guidellm-output-dir ARCHIVED ✅. AIPCC-27657 needs Done in Jira.",
+    message: "🎉 #1691 (AIPCC-27657): **MERGED 10:20 IDT Jul 20** — into main. aipcc-27657-guidellm-output-dir ARCHIVED ✅. AIPCC-27657 **Closed ✅ in Jira** (13:00 IDT Jul 21).",
   },
   {
     level: "red",
@@ -511,7 +511,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "🟡 Jira mismatches (7): AIPCC-27657, JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546 — PRs merged but Jira not Done. Use acli jira workitem transition.",
+    message: "🟡 Jira mismatches (6): JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546 — PRs merged but Jira not Done. (AIPCC-27657 now Closed ✅ — resolved 13:00 IDT Jul 21). Use acli jira workitem transition.",
   },
   {
     level: "yellow",
