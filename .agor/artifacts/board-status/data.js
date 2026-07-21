@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-21 14:30 IDT";
+export const LAST_UPDATED = "2026-07-21 15:00 IDT";
 
 export const WORKTREES = [
   {
@@ -13,9 +13,17 @@ export const WORKTREES = [
     status: "🔴 **CONFLICTING** (unchanged). All CI 100% PASSING (run 29729530150: e2e-smoke ✅, e2e-product ✅, all-checks ✅, everything green). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
     blockedOn: "CONFLICTING — needs rebase on main",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8470cce3740d94dd6af4/",
-    sessionLabel: "advance heartbeat 14:30 IDT Jul 21 — board static; 6 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f848c46c87db8ba09cc8d/",
+    sessionLabel: "advance heartbeat 15:00 IDT Jul 21 — board static; 6 Jira mismatches",
     recentSessions: [
+      {
+        sessionId: "019f848c46c87db8ba09cc8d",
+        url: "http://127.0.0.1:3030/ui/s/019f848c46c87db8ba09cc8d/",
+        title: "advance heartbeat 15:00 IDT Jul 21 — board static; 6 Jira mismatches",
+        status: "completed",
+        timestamp: "2026-07-21 15:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f8470cce3740d94dd6af4",
         url: "http://127.0.0.1:3030/ui/s/019f8470cce3740d94dd6af4/",
@@ -40,24 +48,8 @@ export const WORKTREES = [
         timestamp: "2026-07-21 13:30 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f841e66b77968b663d541",
-        url: "http://127.0.0.1:3030/ui/s/019f841e66b77968b663d541/",
-        title: "advance heartbeat 13:00 IDT Jul 21 — #1638 CI shift; AIPCC-27657 Jira Closed; 6 mismatches",
-        status: "completed",
-        timestamp: "2026-07-21 13:00 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f8402eea272e2af8c4a69",
-        url: "http://127.0.0.1:3030/ui/s/019f8402eea272e2af8c4a69/",
-        title: "advance heartbeat 12:30 IDT Jul 21 — 2 archives (jn-5132/#1457 + jn-5246/#1466 CLOSED)",
-        status: "completed",
-        timestamp: "2026-07-21 12:30 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-21 14:30 IDT",
+    lastActive: "2026-07-21 15:00 IDT",
   },
   {
     ticket: "JN-5695",
