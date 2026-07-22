@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-22 13:03 IDT (advance heartbeat)*
+*Last updated: 2026-07-22 13:33 IDT (advance heartbeat)*
 
 ---
 
@@ -14,7 +14,7 @@
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — New | Design session done Jun 30. Ready for Plan phase. Stale 22+ days. |
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | Last session Jul 8 IDLE. SHA 16ec44ea (2 commits). Needs: configs, rebase, PR. Stale 14+ days. |
 | jn-5844-service-lib-sql-agents-md | **Publish** | [#1670 DRAFT](https://github.com/Jounce-IO/jounce/pull/1670) | ✅ **all-checks ✅, JIRA Assoc ✅, bake ✅** (run 29899957009 confirmed) | [JN-5844](https://redhat.atlassian.net/browse/JN-5844) — New | DRAFT PR #1670. New CI run confirmed all-checks ✅. **Needs: mark ready for review.** |
-| jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | 🟢 **gh pr checks: ALL PASSING** (no failures detected 13:03 IDT) | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) — New | 🎉 **CI NOW ALL PASSING** (was pre-commit ❌ at 12:33). MERGEABLE ✅. **Action: Mark ready for review.** |
+| jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | 🔴 run 29896027349: pre-commit ❌, pre-commit-run ❌, all-checks ❌; JIRA Assoc ✅, e2e-api ✅, e2e-smoke ✅, nox ✅, tox ✅ | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) — New | 🔴 **CONFLICTING** + pre-commit ❌. 13:03 "all passing" was premature — pre-commit was still running. **Action: Rebase + fix pre-commit.** |
 | jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | 🔴 run 29683534910 (stale): pre-commit ❌, nox ❌, tox-run ❌, all-checks ❌ | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — In Progress | 🔴 **CI ❌ + CONFLICTING** — DRAFT. Unchanged. Needs rebase + CI fix. |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — New | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 14+** (still Ingest, should be Code). |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 27+ days. Propose archive. |
@@ -40,7 +40,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🟢 **Run 29905926340 — ALL CI PASSING** (12:33 IDT): e2e-api ✅, e2e-smoke ✅, pre-commit ✅, nox ✅, tox ✅, JIRA Assoc ✅, integration ✅; **e2e-product PENDING** | **OPEN, 🟢 MERGEABLE** | 🎉 **ALL CI NOW PASSING** (except e2e-product PENDING). Push from 12:03 fixed e2e-api regression. **Ready to merge once e2e-product passes.** Two related PRs #1704+#1705 by AlonKellner-RedHat also open (JN-5725 scope). |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🟡 **NEW run 29911800158** (13:33 IDT): pre-commit-run ✅, e2e-api ✅, JIRA Assoc ✅, nox ✅, tox ✅, integration ✅; **e2e-smoke PENDING** | **OPEN, 🟢 MERGEABLE** | 🟡 **New push detected — run 29911800158** (most checks ✅, e2e-smoke still PENDING). Two related PRs #1704+#1705 by AlonKellner-RedHat also open (JN-5725 scope). |
 | [#1704](https://github.com/Jounce-IO/jounce/pull/1704) | — | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🔴 run 29848391431: e2e-tests ❌; pre-commit ✅, nox ✅, tox ✅, e2e-api ✅, e2e-smoke ✅ | OPEN, CONFLICTING (by AlonKellner-RedHat) | 🆕 "chore: dependencies, test config, docs, and tooling (JN-5725)". CONFLICTING. e2e-tests ❌. |
 | [#1705](https://github.com/Jounce-IO/jounce/pull/1705) | — | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🟡 **NEW run 29910246957 PENDING** (13:03 IDT): e2e-api PENDING, integration PENDING, pre-commit-run PENDING, tox PENDING; JIRA Assoc ✅, check-changes ✅ | OPEN, MERGEABLE (by AlonKellner-RedHat) | 🆕 "feat(e2e): enhanced test infrastructure -- clients, diagnostics, helpers (JN-5725)". New push triggered new CI run. |
 
@@ -83,29 +83,28 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (13:03 IDT Jul 22 vs 12:33 IDT Jul 22)
+## Key Changes (13:33 IDT Jul 22 vs 13:03 IDT Jul 22)
 
 | What changed | Delta |
 |---|---|
-| **#1693 e2e-product FAILED** 🔴 | Was PENDING at 12:33 — now **FAILED** (44m39s run). e2e-product ❌ is now a hard blocker in addition to pre-commit ❌ + JIRA Assoc ❌. |
-| **#1667 ALL CI NOW PASSING** 🎉 | `gh pr checks` shows no failures (was pre-commit ❌ at 12:33). MERGEABLE ✅. **Action: Mark ready for review.** |
-| **#1705 new CI run 29910246957 PENDING** | AlonKellner-RedHat pushed new changes. e2e-api/integration/pre-commit-run/tox all PENDING. JIRA Assoc ✅. |
-| **#1638 e2e-product still PENDING** | No change — run 29905926340 e2e-product job still pending from 12:33. |
-| **All other active pipeline PRs** | Unchanged — #1690 CONFLICTING all-CI-pass, #1669 CI ❌+CONFLICTING, #1670 DRAFT clean, #1704 CONFLICTING+e2e-tests ❌. 6 Jira mismatches unchanged. |
+| **#1667 CONFLICTING + pre-commit ❌** 🔴 | 13:03 "all CI passing" was premature — pre-commit (6m14s job) was still running when scan completed. Run 29896027349 now confirmed: pre-commit ❌, CONFLICTING. **Regression from "MERGEABLE" at 13:03.** |
+| **#1638 new CI run 29911800158** 🟡 | New push detected. Run 29911800158: pre-commit-run ✅, e2e-api ✅, JIRA Assoc ✅, nox ✅, tox ✅, integration ✅; e2e-smoke still PENDING. |
+| **#1693 CI unchanged** | Still APPROVED + e2e-product ❌ + pre-commit ❌ + JIRA Assoc ❌. No change. |
+| **All other PRs** | Unchanged — #1690 CONFLICTING all-CI-pass, #1669 CI ❌+CONFLICTING, #1670 DRAFT clean, #1698 CONFLICTING+pre-commit ❌, #1704 CONFLICTING+e2e ❌. 6 Jira mismatches unchanged. |
 
 ---
 
 ## Attention Items
 
-### 🟡 #1638 (off-board JN-5725) — ALL CI PASSING (e2e-product still PENDING)
+### 🟡 #1638 (off-board JN-5725) — New CI run, e2e-smoke PENDING
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites (JN-5725)"
 - State: OPEN, **🟢 MERGEABLE**
-- **Run 29905926340**: **e2e-api ✅, e2e-smoke ✅, pre-commit ✅, nox ✅, tox ✅, JIRA Assoc ✅, integration ✅** — all major CI still passing
-- Only remaining: **e2e-product PENDING** (still pending at 13:03 IDT)
+- **NEW run 29911800158** (13:33 IDT): pre-commit-run ✅, e2e-api ✅, JIRA Assoc ✅, nox ✅, tox ✅, integration ✅; **e2e-smoke PENDING**
+- New push detected — supersedes old run 29905926340
 - Jira: JN-5725 Done ✅
-- **Action:** Monitor e2e-product in run 29905926340. If passes → **ready to merge.**
-- **Note:** #1704 (CONFLICTING, e2e-tests ❌) + #1705 (new CI run PENDING) by AlonKellner-RedHat also open (JN-5725 scope).
+- **Action:** Monitor e2e-smoke in run 29911800158. If passes → **ready to merge.**
+- **Note:** #1704 (CONFLICTING, e2e-tests ❌) + #1705 (also new CI run) by AlonKellner-RedHat also open (JN-5725 scope).
 
 ---
 
@@ -142,13 +141,13 @@ PR [#1669](https://github.com/Jounce-IO/jounce/pull/1669): "feat(jbenchmark): im
 
 ---
 
-### 🟢 #1667 (jn-5845) — ALL CI NOW PASSING (13:03 IDT)
+### 🔴 #1667 (jn-5845) — CONFLICTING + pre-commit ❌ (REGRESSION from 13:03)
 
 PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): add Helm and CI/CD domain AGENTS.md files (JN-5845)"
-- State: OPEN, **MERGEABLE** ✅
-- `gh pr checks` (13:03 IDT): **ALL PASSING** — JIRA Assoc ✅, nox ✅, tox ✅, e2e-api ✅, e2e-smoke ✅, integration ✅, pre-commit (no failures detected)
-- **Was: pre-commit ❌ at 12:33 IDT — now cleared**
-- **Action:** Mark ready for review.
+- State: OPEN, **CONFLICTING** 🔴
+- Run 29896027349 (13:33 IDT confirmed): pre-commit ❌, pre-commit-run ❌ (6m14s), all-checks ❌; JIRA Assoc ✅, e2e-api ✅, e2e-smoke ✅, nox ✅, tox ✅
+- **Note:** 13:03 "all passing" was premature — pre-commit (6m14s job) was still running when that scan completed
+- **Action:** Rebase jn-5845-helm-cicd-agents-md on main, then fix pre-commit before marking ready.
 
 ---
 
