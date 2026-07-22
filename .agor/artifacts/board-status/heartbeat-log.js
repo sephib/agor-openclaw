@@ -5221,5 +5221,14 @@ export const HEARTBEAT_RUNS = [
     status: "ok",
     summary: "#1638 e2e-smoke ❌ FAILED (was ⏳ pending at 13:33 IDT); #1690 ALL CI PASS unchanged; 7 Jira mismatches; 0 merges",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f7f2f20697ccaa2c0251c/",
+  },
+  {
+    type: "advance",
+    timestamp: "2026-07-22 16:03 IDT",
+    actions: 0,
+    findings: 4,
+    status: "ok",
+    summary: "#1704 MERGED 14:14 IDT; #1670 ALL-CI-PASS run 29921067106; #1638 NOW MERGEABLE (rebased!)+CI pending; #1667 REGRESSION CONFLICTING (was MERGEABLE); #1693 e2e-product ✅ done; no on-board archives; 6 Jira mismatches unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8a3bc8ae7033ad4cda80/",
   }
 ];
