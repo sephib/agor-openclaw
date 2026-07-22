@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-22 11:03 IDT (advance heartbeat)*
+*Last updated: 2026-07-22 11:33 IDT (advance heartbeat)*
 
 ---
 
@@ -30,7 +30,7 @@
 
 | PR | Ticket | State | CI | Notes |
 |----|--------|-------|----|-------|
-| [#1693](https://github.com/Jounce-IO/jounce/pull/1693) | [AIPCC-27655](https://redhat.atlassian.net/browse/AIPCC-27655) | OPEN, MERGEABLE, NOT draft | 🔴 run 29899603591: pre-commit ❌, JIRA Assoc ❌; nox ✅, tox ✅, e2e-api ✅, **e2e-smoke ✅** (was PENDING); **e2e-product PENDING** (new) | Bot "jira-autofix" authored. e2e-smoke now completed ✅. e2e-product now running. Needs Joseph review. |
+| [#1693](https://github.com/Jounce-IO/jounce/pull/1693) | [AIPCC-27655](https://redhat.atlassian.net/browse/AIPCC-27655) | OPEN, MERGEABLE, NOT draft | 🔴 run 29899603591: **e2e-product ❌ FAILED** (was PENDING); pre-commit ❌, JIRA Assoc ❌, all-checks ❌; nox ✅, tox ✅, e2e-api ✅, e2e-smoke ✅ | Bot "jira-autofix" authored. **e2e-product NOW FAILED** (11:33 IDT). Needs Joseph review. |
 | [#1694](https://github.com/Jounce-IO/jounce/pull/1694) | [AIPCC-27681](https://redhat.atlassian.net/browse/AIPCC-27681) | OPEN, CONFLICTING, NOT draft | 🔴 run 29740715467 (latest): JIRA Assoc ❌, pre-commit ❌, all-checks ❌; nox ✅, tox ✅, e2e ✅ | Bot "jira-autofix" authored. "fix(jbenchmark): share MetadataResolver across gpu_count iterations". Unchanged. Needs Joseph review. |
 
 ---
@@ -39,7 +39,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🟢 **pre-commit-run ✅, pre-commit ✅, JIRA Assoc ✅, nox ✅, tox ✅, integration ✅** (run 29900239662); **e2e-api PENDING** ⏳ | **OPEN, 🟢 MERGEABLE** | 🟢 **#1638: ALL CORE CI PASSING!** Only e2e-api still pending. If e2e-api passes → **fully green, ready for review.** |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🔴 run 29900239662: **e2e-api ❌ FAILED** (was PENDING); pre-commit ✅, nox ✅, tox ✅, integration ✅, JIRA Assoc ✅ | **OPEN, 🟢 MERGEABLE** | 🔴 **e2e-api NOW FAILED** (regression from 11:03). Core CI still passing but e2e-api ❌ breaks all-checks. **Action: Investigate e2e-api failure.** |
 | [#1704](https://github.com/Jounce-IO/jounce/pull/1704) | — | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | NOT CHECKED | OPEN, NOT draft (by AlonKellner-RedHat) | 🆕 New off-board PR Jul 21: "chore: dependencies, test config, docs, and tooling (JN-5725)" |
 | [#1705](https://github.com/Jounce-IO/jounce/pull/1705) | — | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | NOT CHECKED | OPEN, NOT draft (by AlonKellner-RedHat) | 🆕 New off-board PR Jul 21: "feat(e2e): enhanced test infrastructure -- clients, diagnostics, helpers (JN-5725)" |
 
@@ -82,28 +82,28 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (11:03 IDT Jul 22 vs 10:33 IDT Jul 22)
+## Key Changes (11:33 IDT Jul 22 vs 11:03 IDT Jul 22)
 
 | What changed | Delta |
 |---|---|
-| **#1638 ALL CORE CI NOW PASSING** 🟢 | pre-commit-run ✅, pre-commit ✅, JIRA Assoc ✅, nox ✅, tox ✅, integration ✅ all pass. Only e2e-api still PENDING. If e2e-api passes → **fully green & ready for review!** |
-| **#1693 e2e-smoke NOW ✅** | Was PENDING at 10:33; now completed ✅. e2e-product now PENDING in new run (replacing old FAIL run). |
-| **#1670 CI confirmed ✅** | New run 29899957009 confirms all-checks ✅, JIRA Assoc ✅, bake ✅. DRAFT PR clean — just needs mark ready. |
-| **2 new off-board PRs spotted** | #1704 + #1705 by AlonKellner-RedHat (JN-5725) opened Jul 21. |
-| **All other active pipeline PRs** | Unchanged — #1690 still CONFLICTING all-CI-pass, #1667 pre-commit ❌, #1669 CI ❌+CONFLICTING. 6 Jira mismatches unchanged. |
+| **#1638 e2e-api NOW FAILED** 🔴 | Was PENDING at 11:03. Now FAILED (run 29900239662): all-checks ❌, e2e-api ❌, e2e-tests ❌. Core CI (pre-commit/nox/tox/integration/JIRA Assoc) still ✅. Regression — needs investigation. |
+| **#1693 e2e-product NOW FAILED** 🔴 | Was PENDING at 11:03. Now FAILED (run 29899603591): e2e-product ❌. Pre-commit ❌ + JIRA Assoc ❌ unchanged. e2e-api ✅ + e2e-smoke ✅ still passing. |
+| **New off-board PR #1699** 🆕 | alon-sananes: "feat(jbenchmark): Knative judge scale-from-zero (research)" — not Joseph's PR, not tracked. |
+| **All other active pipeline PRs** | Unchanged — #1690 CONFLICTING all-CI-pass, #1667 pre-commit ❌, #1669 CI ❌+CONFLICTING, #1670 DRAFT clean. 6 Jira mismatches unchanged. |
 
 ---
 
 ## Attention Items
 
-### 🟢 #1638 (off-board JN-5725) — NEARLY FULLY GREEN, e2e-api PENDING
+### 🔴 #1638 (off-board JN-5725) — e2e-api FAILED (REGRESSION)
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites (JN-5725)"
-- State: OPEN, **🟢 MERGEABLE** (rebased yesterday)
-- **Run 29900239662**: pre-commit ✅, pre-commit-run ✅, JIRA Assoc ✅, nox ✅, tox ✅, integration ✅ — **ALL CORE PASSING**
-- **e2e-api PENDING** ⏳ (still running)
+- State: OPEN, **🟢 MERGEABLE**
+- **Run 29900239662**: pre-commit ✅, pre-commit-run ✅, JIRA Assoc ✅, nox ✅, tox ✅, integration ✅ — core CI still passing
+- **e2e-api FAILED** ❌ (was PENDING at 11:03 IDT — now completed FAIL)
+- all-checks ❌, e2e-tests ❌ (gate failed)
 - Jira: JN-5725 Done ✅
-- **Action:** Await e2e-api result. If passes → PR is fully CI-green and ready for review!
+- **Action:** Investigate e2e-api failure ([run 29900239662](https://github.com/Jounce-IO/jounce/actions/runs/29900239662/job/88864846570)). May need new CI push.
 - **Note:** Two related PRs #1704 + #1705 by AlonKellner-RedHat also open (JN-5725 scope).
 
 ---
@@ -112,8 +112,8 @@ PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM a
 
 **[#1693](https://github.com/Jounce-IO/jounce/pull/1693)**: "fix(jbenchmark): return 409 Conflict on duplicate experiment plan name (AIPCC-27655)"
 - State: OPEN, MERGEABLE, NOT draft
-- Run 29899603591: pre-commit ❌, JIRA Assoc ❌; nox ✅, tox ✅, e2e-api ✅, **e2e-smoke ✅** (was pending); **e2e-product PENDING** ⏳
-- **Action:** Monitor e2e-product. Review PR. Fix pre-commit + JIRA Assoc.
+- Run 29899603591: pre-commit ❌, JIRA Assoc ❌, **e2e-product ❌** (FAILED — was PENDING at 11:03); nox ✅, tox ✅, e2e-api ✅, e2e-smoke ✅
+- **Action:** Review PR. Fix pre-commit + JIRA Assoc. Investigate e2e-product failure.
 
 **[#1694](https://github.com/Jounce-IO/jounce/pull/1694)**: "fix(jbenchmark): share MetadataResolver across gpu_count iterations (AIPCC-27681)"
 - State: OPEN, CONFLICTING, NOT draft

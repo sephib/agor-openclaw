@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-22 11:33 IDT",
+    actions: 0,
+    findings: 2,
+    status: "ok",
+    summary: "#1638 e2e-api FAILED (was PENDING — regression); #1693 e2e-product FAILED (was PENDING); new off-board PR #1699 (alon-sananes, not tracked); no merges; all other PRs unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f88f3651a7b209330b296/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-22 11:03 IDT",
     actions: 0,
     findings: 2,

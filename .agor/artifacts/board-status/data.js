@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-22 11:03 IDT";
+export const LAST_UPDATED = "2026-07-22 11:33 IDT";
 
 export const WORKTREES = [
   {
@@ -10,12 +10,20 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1690",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1690",
-    status: "🔴 **CONFLICTING** (3+ days unchanged). All CI 100% PASSING (run 29729530150). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
+    status: "🔴 **CONFLICTING** (3+ days unchanged). All CI 100% PASSING (run 29729530150). **Action: Rebase aipcc-27645-server-resources on main, then request review.** (unchanged 11:33 IDT)",
     blockedOn: "CONFLICTING — needs rebase on main",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f88d6e82d738382c65edb/",
-    sessionLabel: "advance heartbeat 11:03 IDT Jul 22 — #1638 ALL CORE CI PASSING (e2e-api pending); #1693 e2e-smoke ✅; 2 new off-board PRs",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f88f3651a7b209330b296/",
+    sessionLabel: "advance heartbeat 11:33 IDT Jul 22 — #1638 e2e-api FAILED; #1693 e2e-product FAILED; no merges",
     recentSessions: [
+      {
+        sessionId: "019f88f3651a7b209330b296",
+        url: "http://127.0.0.1:3030/ui/s/019f88f3651a7b209330b296/",
+        title: "advance heartbeat 11:33 IDT Jul 22 — #1638 e2e-api FAILED; #1693 e2e-product FAILED",
+        status: "running",
+        timestamp: "2026-07-22 11:33 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f88d6e82d738382c65edb",
         url: "http://127.0.0.1:3030/ui/s/019f88d6e82d738382c65edb/",
@@ -93,8 +101,8 @@ export const WORKTREES = [
     zone: "NO ZONE (bot PR)",
     pr: "#1693",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1693",
-    status: "🆕 **BOT PR** (jira-autofix). OPEN, MERGEABLE, NOT draft. Run 29899603591: pre-commit ❌, JIRA Assoc ❌; nox ✅, tox ✅, e2e-api ✅, **e2e-smoke ✅** (was pending); **e2e-product PENDING** ⏳. **Action: Monitor e2e-product. Joseph review. Fix pre-commit + JIRA Assoc.**",
-    blockedOn: "pre-commit + JIRA Assoc failing; e2e-product pending",
+    status: "🆕 **BOT PR** (jira-autofix). OPEN, MERGEABLE, NOT draft. Run 29899603591: **e2e-product ❌ FAILED** (was PENDING at 11:03); pre-commit ❌, JIRA Assoc ❌, all-checks ❌; nox ✅, tox ✅, e2e-api ✅, e2e-smoke ✅. **Action: Joseph review. Investigate e2e-product failure. Fix pre-commit + JIRA Assoc.**",
+    blockedOn: "pre-commit + JIRA Assoc failing; e2e-product FAILED",
     blockedType: "active",
     sessionUrl: null,
     sessionLabel: null,
@@ -513,15 +521,15 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🆕 #1693 (AIPCC-27655): **BOT PR** (jira-autofix) — MERGEABLE, not draft. Run 29899603591: pre-commit ❌, JIRA Assoc ❌; nox ✅, tox ✅, e2e-api ✅, **e2e-smoke ✅** (completed!); **e2e-product PENDING** ⏳. Action: Monitor e2e-product. Joseph review + fix pre-commit + JIRA Assoc.",
+    message: "🆕 #1693 (AIPCC-27655): **BOT PR** (jira-autofix) — MERGEABLE, not draft. Run 29899603591: **e2e-product ❌ FAILED** (11:33 IDT); pre-commit ❌, JIRA Assoc ❌, all-checks ❌; nox ✅, tox ✅, e2e-api ✅, e2e-smoke ✅. Action: Joseph review + investigate e2e-product failure + fix pre-commit + JIRA Assoc.",
   },
   {
     level: "red",
     message: "🔴 #1690 (AIPCC-27645): **CONFLICTING** (3+ days unchanged). All CI 100% passing (run 29729530150). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
   },
   {
-    level: "green",
-    message: "🟢 #1638 (JN-5725, off-board): **ALL CORE CI NOW PASSING!** Run 29900239662: pre-commit ✅, pre-commit-run ✅, JIRA Assoc ✅, nox ✅, tox ✅, integration ✅. **e2e-api still PENDING** ⏳. If e2e-api passes → fully green & ready for review! Note: 2 related PRs #1704+#1705 by AlonKellner-RedHat also open.",
+    level: "red",
+    message: "🔴 #1638 (JN-5725, off-board): **e2e-api FAILED** (11:33 IDT, was PENDING at 11:03). Run 29900239662: all-checks ❌, e2e-api ❌, e2e-tests ❌. Core CI (pre-commit/nox/tox/integration/JIRA Assoc) still ✅. MERGEABLE. **Action: Investigate e2e-api failure.** Note: 2 related PRs #1704+#1705 by AlonKellner-RedHat also open.",
   },
   {
     level: "red",
