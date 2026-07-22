@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-22 09:00 IDT",
+    actions: 0,
+    findings: 3,
+    status: "ok",
+    summary: "2 new bot PRs discovered (#1693 AIPCC-27655, #1694 AIPCC-27681); #1694 has new overnight CI run (nox/tox now failing); board otherwise static; 6 Jira mismatches; overnight session 03:00 IDT failed (11h gap)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f88690de074afb0bf3a04/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-21 22:00 IDT",
     actions: 0,
     findings: 6,
