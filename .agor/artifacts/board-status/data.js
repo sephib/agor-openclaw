@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-22 11:33 IDT";
+export const LAST_UPDATED = "2026-07-22 12:03 IDT";
 
 export const WORKTREES = [
   {
@@ -10,17 +10,25 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1690",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1690",
-    status: "🔴 **CONFLICTING** (3+ days unchanged). All CI 100% PASSING (run 29729530150). **Action: Rebase aipcc-27645-server-resources on main, then request review.** (unchanged 11:33 IDT)",
+    status: "🔴 **CONFLICTING** (3+ days unchanged). All CI 100% PASSING (run 29729530150). **Action: Rebase aipcc-27645-server-resources on main, then request review.** (unchanged 12:03 IDT)",
     blockedOn: "CONFLICTING — needs rebase on main",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f88f3651a7b209330b296/",
-    sessionLabel: "advance heartbeat 11:33 IDT Jul 22 — #1638 e2e-api FAILED; #1693 e2e-product FAILED; no merges",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f890df41c749fba0f2a47/",
+    sessionLabel: "advance heartbeat 12:03 IDT Jul 22 — #1638 new CI run; #1693 APPROVED; no merges",
     recentSessions: [
+      {
+        sessionId: "019f890df41c749fba0f2a47",
+        url: "http://127.0.0.1:3030/ui/s/019f890df41c749fba0f2a47/",
+        title: "advance heartbeat 12:03 IDT Jul 22 — #1638 new CI run; #1693 APPROVED",
+        status: "running",
+        timestamp: "2026-07-22 12:03 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f88f3651a7b209330b296",
         url: "http://127.0.0.1:3030/ui/s/019f88f3651a7b209330b296/",
         title: "advance heartbeat 11:33 IDT Jul 22 — #1638 e2e-api FAILED; #1693 e2e-product FAILED",
-        status: "running",
+        status: "completed",
         timestamp: "2026-07-22 11:33 IDT",
         outputFile: null,
       },
@@ -43,37 +51,13 @@ export const WORKTREES = [
       {
         sessionId: "019f88a104127980b8c0ed2c",
         url: "http://127.0.0.1:3030/ui/s/019f88a104127980b8c0ed2c/",
-        title: "advance heartbeat 10:13 IDT Jul 22 — #1667 rebased→MERGEABLE; #1693 e2e-product FAIL; #1694 correction",
+        title: "advance heartbeat 10:13 IDT Jul 22 — #1667 rebased→MERGEABLE; #1693 e2e-product FAIL",
         status: "completed",
         timestamp: "2026-07-22 10:13 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f88690de074afb0bf3a04",
-        url: "http://127.0.0.1:3030/ui/s/019f88690de074afb0bf3a04/",
-        title: "advance heartbeat 09:00 IDT Jul 22 — 2 new bot PRs; board otherwise static",
-        status: "completed",
-        timestamp: "2026-07-22 09:00 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f860cf6a17b3caeda6485",
-        url: "http://127.0.0.1:3030/ui/s/019f860cf6a17b3caeda6485/",
-        title: "advance heartbeat 22:00 IDT Jul 21 — board static; 6 Jira mismatches",
-        status: "completed",
-        timestamp: "2026-07-21 22:00 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f85f17ec0705db8b33216",
-        url: "http://127.0.0.1:3030/ui/s/019f85f17ec0705db8b33216/",
-        title: "advance heartbeat 19:30 IDT Jul 21 — board static; 6 Jira mismatches",
-        status: "completed",
-        timestamp: "2026-07-21 19:30 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-22 10:33 IDT",
+    lastActive: "2026-07-22 12:03 IDT",
   },
   {
     ticket: "AIPCC-27681",
@@ -101,8 +85,8 @@ export const WORKTREES = [
     zone: "NO ZONE (bot PR)",
     pr: "#1693",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1693",
-    status: "🆕 **BOT PR** (jira-autofix). OPEN, MERGEABLE, NOT draft. Run 29899603591: **e2e-product ❌ FAILED** (was PENDING at 11:03); pre-commit ❌, JIRA Assoc ❌, all-checks ❌; nox ✅, tox ✅, e2e-api ✅, e2e-smoke ✅. **Action: Joseph review. Investigate e2e-product failure. Fix pre-commit + JIRA Assoc.**",
-    blockedOn: "pre-commit + JIRA Assoc failing; e2e-product FAILED",
+    status: "🆕 **BOT PR** (jira-autofix). OPEN, MERGEABLE, **🎉 APPROVED** (12:03 IDT). Run 29905405310: e2e-api ✅, nox ✅, tox ✅, integration ✅; pre-commit ❌, JIRA Assoc ❌; e2e-smoke PENDING. **Action: Fix pre-commit + JIRA Assoc. Near-ready to merge once e2e-smoke ✅.**",
+    blockedOn: "pre-commit ❌ + JIRA Assoc ❌ + e2e-smoke PENDING",
     blockedType: "active",
     sessionUrl: null,
     sessionLabel: null,
@@ -520,16 +504,16 @@ export const ALERTS = [
     message: "🆕 #1694 (AIPCC-27681): **BOT PR** (jira-autofix) — CONFLICTING. CI run 29740715467: JIRA Assoc ❌, pre-commit ❌; nox ✅, tox ✅, e2e ✅. (Overnight run 29894545350 was misattributed to this PR — corrected.) Action: Joseph review + rebase + fix JIRA Assoc + pre-commit.",
   },
   {
-    level: "red",
-    message: "🆕 #1693 (AIPCC-27655): **BOT PR** (jira-autofix) — MERGEABLE, not draft. Run 29899603591: **e2e-product ❌ FAILED** (11:33 IDT); pre-commit ❌, JIRA Assoc ❌, all-checks ❌; nox ✅, tox ✅, e2e-api ✅, e2e-smoke ✅. Action: Joseph review + investigate e2e-product failure + fix pre-commit + JIRA Assoc.",
+    level: "yellow",
+    message: "🟡 #1693 (AIPCC-27655): **BOT PR** (jira-autofix) — **🎉 APPROVED** (12:03 IDT). Run 29905405310: e2e-api ✅, nox ✅, tox ✅; pre-commit ❌, JIRA Assoc ❌, e2e-smoke PENDING. Action: Fix pre-commit + JIRA Assoc. Near-ready to merge.",
   },
   {
     level: "red",
     message: "🔴 #1690 (AIPCC-27645): **CONFLICTING** (3+ days unchanged). All CI 100% passing (run 29729530150). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
   },
   {
-    level: "red",
-    message: "🔴 #1638 (JN-5725, off-board): **e2e-api FAILED** (11:33 IDT, was PENDING at 11:03). Run 29900239662: all-checks ❌, e2e-api ❌, e2e-tests ❌. Core CI (pre-commit/nox/tox/integration/JIRA Assoc) still ✅. MERGEABLE. **Action: Investigate e2e-api failure.** Note: 2 related PRs #1704+#1705 by AlonKellner-RedHat also open.",
+    level: "yellow",
+    message: "🟡 #1638 (JN-5725, off-board): **NEW CI run 29905926340** (12:03 IDT) — push detected, fix in progress. integration-run ✅, JIRA Assoc ✅; e2e-api PENDING, tox PENDING, pre-commit PENDING. Monitor next run for result. 2 related PRs #1704+#1705 by AlonKellner-RedHat also open.",
   },
   {
     level: "red",
