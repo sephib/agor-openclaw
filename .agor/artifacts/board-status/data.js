@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-22 12:33 IDT";
+export const LAST_UPDATED = "2026-07-22 13:03 IDT";
 
 export const WORKTREES = [
   {
@@ -13,14 +13,22 @@ export const WORKTREES = [
     status: "🔴 **CONFLICTING** (3+ days unchanged). All CI 100% PASSING (run 29729530150). **Action: Rebase aipcc-27645-server-resources on main, then request review.** (unchanged 12:33 IDT)",
     blockedOn: "CONFLICTING — needs rebase on main",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f89296b6e7c02960f9221/",
-    sessionLabel: "advance heartbeat 12:33 IDT Jul 22 — #1638 ALL CI PASSING; #1693 e2e-smoke ✅",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8944e3447145bf1972e4/",
+    sessionLabel: "advance heartbeat 13:03 IDT Jul 22 — #1693 e2e-product FAILED; #1667 CI cleared",
     recentSessions: [
+      {
+        sessionId: "019f8944e3447145bf1972e4",
+        url: "http://127.0.0.1:3030/ui/s/019f8944e3447145bf1972e4/",
+        title: "advance heartbeat 13:03 IDT Jul 22 — #1693 e2e-product FAILED; #1667 CI cleared",
+        status: "running",
+        timestamp: "2026-07-22 13:03 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f89296b6e7c02960f9221",
         url: "http://127.0.0.1:3030/ui/s/019f89296b6e7c02960f9221/",
         title: "advance heartbeat 12:33 IDT Jul 22 — #1638 ALL CI PASSING; #1693 e2e-smoke ✅",
-        status: "running",
+        status: "completed",
         timestamp: "2026-07-22 12:33 IDT",
         outputFile: null,
       },
@@ -48,16 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-22 11:03 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f88bb6da77a9b9753fa16",
-        url: "http://127.0.0.1:3030/ui/s/019f88bb6da77a9b9753fa16/",
-        title: "advance heartbeat 10:33 IDT Jul 22 — #1638 MERGEABLE; 35 worktrees archived",
-        status: "completed",
-        timestamp: "2026-07-22 10:33 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-22 12:33 IDT",
+    lastActive: "2026-07-22 13:03 IDT",
   },
   {
     ticket: "AIPCC-27681",
@@ -85,8 +85,8 @@ export const WORKTREES = [
     zone: "NO ZONE (bot PR)",
     pr: "#1693",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1693",
-    status: "🆕 **BOT PR** (jira-autofix). OPEN, MERGEABLE, **🎉 APPROVED** (12:03 IDT). Run 29905405310: e2e-api ✅, nox ✅, tox ✅, integration ✅, **e2e-smoke ✅** (confirmed 12:33 IDT); pre-commit ❌, JIRA Assoc ❌; **e2e-product PENDING**. **Action: Fix pre-commit + JIRA Assoc. Near-ready to merge once e2e-product ✅.**",
-    blockedOn: "pre-commit ❌ + JIRA Assoc ❌ + e2e-product PENDING",
+    status: "🔴 **BOT PR** (jira-autofix). OPEN, MERGEABLE, **🎉 APPROVED**. Run 29905405310: e2e-api ✅, nox ✅, tox ✅, integration ✅, e2e-smoke ✅; pre-commit ❌, JIRA Assoc ❌; **🔴 e2e-product FAILED** (44m39s — confirmed 13:03 IDT). **Action: Investigate e2e-product failure. Fix pre-commit + JIRA Assoc.**",
+    blockedOn: "e2e-product ❌ + pre-commit ❌ + JIRA Assoc ❌",
     blockedType: "active",
     sessionUrl: null,
     sessionLabel: null,
@@ -119,8 +119,8 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1667",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1667",
-    status: "🟡 **REBASED → MERGEABLE** ✅ (was CONFLICTING). New CI run 29896027349: pre-commit ❌, all-checks ❌; JIRA Assoc ✅, nox ✅, tox ✅, e2e ✅. **Only blocker: pre-commit ❌. Action: Fix pre-commit on jn-5845-helm-cicd-agents-md.**",
-    blockedOn: "pre-commit ❌ only",
+    status: "🟢 **ALL CI NOW PASSING** 🎉 (gh pr checks 13:03 IDT — no failures detected). MERGEABLE ✅. Was pre-commit ❌ at 12:33 IDT. **Action: Mark ready for review.**",
+    blockedOn: null,
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b8914f87505bf9d7e3f/",
     sessionLabel: "advance heartbeat 21:02 IDT Jul 19 — #1667 CONFLICTING unchanged",
@@ -504,8 +504,8 @@ export const ALERTS = [
     message: "🆕 #1694 (AIPCC-27681): **BOT PR** (jira-autofix) — CONFLICTING. CI run 29740715467: JIRA Assoc ❌, pre-commit ❌; nox ✅, tox ✅, e2e ✅. (Overnight run 29894545350 was misattributed to this PR — corrected.) Action: Joseph review + rebase + fix JIRA Assoc + pre-commit.",
   },
   {
-    level: "yellow",
-    message: "🟡 #1693 (AIPCC-27655): **BOT PR** (jira-autofix) — **🎉 APPROVED** (12:03 IDT). Run 29905405310: e2e-api ✅, nox ✅, tox ✅, **e2e-smoke ✅** (confirmed 12:33 IDT); pre-commit ❌, JIRA Assoc ❌; **e2e-product PENDING**. Action: Fix pre-commit + JIRA Assoc. Near-ready to merge.",
+    level: "red",
+    message: "🔴 #1693 (AIPCC-27655): **BOT PR** (jira-autofix) — **🎉 APPROVED**. Run 29905405310: e2e-api ✅, nox ✅, tox ✅, e2e-smoke ✅; pre-commit ❌, JIRA Assoc ❌; **🔴 e2e-product FAILED** (44m39s — confirmed 13:03 IDT). Action: Investigate e2e-product failure. Fix pre-commit + JIRA Assoc.",
   },
   {
     level: "red",
@@ -513,15 +513,15 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "🟡 #1638 (JN-5725, off-board): **🎉 ALL CI NOW PASSING** (run 29905926340, 12:33 IDT) — e2e-api ✅, e2e-smoke ✅, pre-commit ✅, nox ✅, tox ✅, JIRA Assoc ✅, integration ✅. **Only e2e-product PENDING — ready to merge once it passes.** 2 related PRs #1704+#1705 by AlonKellner-RedHat also open.",
+    message: "🟡 #1638 (JN-5725, off-board): **ALL CI PASSING** (run 29905926340) — e2e-api ✅, e2e-smoke ✅, pre-commit ✅, nox ✅, tox ✅, JIRA Assoc ✅, integration ✅. **e2e-product still PENDING (13:03 IDT) — ready to merge once it passes.** #1704 (CONFLICTING/e2e-tests❌) + #1705 (new-CI-run-PENDING) by AlonKellner-RedHat also open.",
   },
   {
     level: "red",
     message: "🔴 #1698 (aipcc-23845): isDraft:false (ready for review). CONFLICTING. pre-commit ❌ (run 29749885088). **Action: 1) Rebase on main. 2) Fix pre-commit.**",
   },
   {
-    level: "red",
-    message: "🟡 #1667 (jn-5845 JN-5845): **REBASED → MERGEABLE** ✅ (was CONFLICTING). New CI run 29896027349: **only pre-commit ❌**. JIRA Assoc ✅, nox ✅, tox ✅, e2e ✅. **Action: Fix pre-commit → ready for review.**",
+    level: "green",
+    message: "🟢 #1667 (jn-5845 JN-5845): **ALL CI NOW PASSING** 🎉 (gh pr checks 13:03 IDT — no failures detected). MERGEABLE ✅. Was pre-commit ❌ at 12:33 IDT. **Action: Mark ready for review.**",
   },
   {
     level: "red",
