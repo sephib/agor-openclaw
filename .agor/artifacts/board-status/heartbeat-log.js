@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-22 10:33 IDT",
+    actions: 35,
+    findings: 3,
+    status: "ok",
+    summary: "#1638 REBASED → MERGEABLE (CI PENDING); 35 Danger Delete Zone + Done-zone worktrees archived; #1693 new CI run (pre-commit/JIRA Assoc ❌, e2e-smoke pending); #1670 new CI run; all other PRs static",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f88bb6da77a9b9753fa16/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-22 10:13 IDT",
     actions: 0,
     findings: 3,

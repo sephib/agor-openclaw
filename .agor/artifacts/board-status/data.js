@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-22 10:13 IDT";
+export const LAST_UPDATED = "2026-07-22 10:33 IDT";
 
 export const WORKTREES = [
   {
@@ -13,9 +13,17 @@ export const WORKTREES = [
     status: "🔴 **CONFLICTING** (3+ days unchanged). All CI 100% PASSING (run 29729530150). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
     blockedOn: "CONFLICTING — needs rebase on main",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f88a104127980b8c0ed2c/",
-    sessionLabel: "advance heartbeat 10:13 IDT Jul 22 — #1667 rebased→MERGEABLE; #1693 e2e-product FAIL; #1694 correction",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f88bb6da77a9b9753fa16/",
+    sessionLabel: "advance heartbeat 10:33 IDT Jul 22 — #1638 MERGEABLE; 35 worktrees archived; #1693 new CI run",
     recentSessions: [
+      {
+        sessionId: "019f88bb6da77a9b9753fa16",
+        url: "http://127.0.0.1:3030/ui/s/019f88bb6da77a9b9753fa16/",
+        title: "advance heartbeat 10:33 IDT Jul 22 — #1638 MERGEABLE; 35 worktrees archived",
+        status: "completed",
+        timestamp: "2026-07-22 10:33 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f88a104127980b8c0ed2c",
         url: "http://127.0.0.1:3030/ui/s/019f88a104127980b8c0ed2c/",
@@ -48,16 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-21 19:30 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f85d5ff637155a7f3bb2d",
-        url: "http://127.0.0.1:3030/ui/s/019f85d5ff637155a7f3bb2d/",
-        title: "advance heartbeat 19:00 IDT Jul 21 — #1638 CI changed; 6 Jira mismatches",
-        status: "failed",
-        timestamp: "2026-07-21 19:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-22 10:13 IDT",
+    lastActive: "2026-07-22 10:33 IDT",
   },
   {
     ticket: "AIPCC-27681",
@@ -85,8 +85,8 @@ export const WORKTREES = [
     zone: "NO ZONE (bot PR)",
     pr: "#1693",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1693",
-    status: "🆕 **BOT PR** (jira-autofix). OPEN, MERGEABLE, NOT draft. **NEW CI run 29894545350**: e2e-product ❌ (49min FAILED), nox ❌, tox ❌, pre-commit ❌; JIRA Assoc ✅, e2e-api ✅, e2e-smoke ✅, integration ✅. **CI REGRESSION** — e2e-product now failing. **Action: Joseph review + fix e2e-product + nox/tox/pre-commit.**",
-    blockedOn: "pre-commit + JIRA Assoc failing",
+    status: "🆕 **BOT PR** (jira-autofix). OPEN, MERGEABLE, NOT draft. **NEW CI run 29899603591** (something pushed): pre-commit ❌, JIRA Assoc ❌ (run 29899604237); nox ✅, tox ✅, e2e-api ✅; e2e-smoke PENDING. Old run 29894545350 had e2e-product ❌ FAIL. **Action: Joseph review. Monitor e2e-smoke/e2e-product. Fix pre-commit + JIRA Assoc.**",
+    blockedOn: "pre-commit + JIRA Assoc failing; e2e-smoke/e2e-product pending",
     blockedType: "active",
     sessionUrl: null,
     sessionLabel: null,
@@ -223,7 +223,7 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1670 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1670",
-    status: "🟡 DRAFT PR #1670 — isDraft:true. CI all pass (run 29403233416 — stale). Needs: mark ready for review.",
+    status: "🟡 DRAFT PR #1670 — isDraft:true. **New CI run 29899957009** (build/bake ✅). Core CI (pre-commit/nox/tox) status pending in new run. Needs: mark ready for review.",
     blockedOn: "Draft PR — needs mark ready",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f60377abb7d9aa3e2e233/",
@@ -505,15 +505,15 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🆕 #1693 (AIPCC-27655): **BOT PR** (jira-autofix) — MERGEABLE, not draft. **NEW CI run 29894545350: e2e-product ❌ (49min FAILED), nox ❌, tox ❌, pre-commit ❌**; JIRA Assoc ✅. CI REGRESSION. Action: Joseph investigate e2e-product failure + fix nox/tox/pre-commit.",
+    message: "🆕 #1693 (AIPCC-27655): **BOT PR** (jira-autofix) — MERGEABLE, not draft. **NEW CI run 29899603591** (something pushed): pre-commit ❌, JIRA Assoc ❌; nox ✅, tox ✅, e2e-api ✅; e2e-smoke PENDING. Old run had e2e-product ❌. Action: Monitor e2e results. Joseph review + fix pre-commit + JIRA Assoc.",
   },
   {
     level: "red",
     message: "🔴 #1690 (AIPCC-27645): **CONFLICTING** (3+ days unchanged). All CI 100% passing (run 29729530150). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
   },
   {
-    level: "red",
-    message: "🔴 #1638 (JN-5725, off-board): CONFLICTING. CI run 29851081790 FAILED: pre-commit ❌, all-checks ❌. e2e-api ⏭️ SKIPPING. **Action: Rebase on main + fix pre-commit.**",
+    level: "yellow",
+    message: "🟡 #1638 (JN-5725, off-board): **REBASED → MERGEABLE** 🎉 (was CONFLICTING). **New CI run 29900239662 PENDING**: nox ✅, tox ✅, integration ✅, JIRA Assoc ✅; e2e-api PENDING, pre-commit-run PENDING. Action: Await CI results — may be ready for review soon!",
   },
   {
     level: "red",

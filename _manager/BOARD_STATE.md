@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-22 10:13 IDT (advance heartbeat)*
+*Last updated: 2026-07-22 10:33 IDT (advance heartbeat)*
 
 ---
 
@@ -30,7 +30,7 @@
 
 | PR | Ticket | State | CI | Notes |
 |----|--------|-------|----|-------|
-| [#1693](https://github.com/Jounce-IO/jounce/pull/1693) | [AIPCC-27655](https://redhat.atlassian.net/browse/AIPCC-27655) | OPEN, MERGEABLE, NOT draft | 🔴 **NEW run 29894545350**: e2e-product ❌ (49min), nox ❌, tox ❌, pre-commit ❌; JIRA Assoc ✅, e2e-api ✅, e2e-smoke ✅, integration ✅ | Bot "jira-autofix" authored. "fix(jbenchmark): return 409 Conflict on duplicate experiment plan name". **CI REGRESSION** — e2e-product now failing. Needs Joseph review. |
+| [#1693](https://github.com/Jounce-IO/jounce/pull/1693) | [AIPCC-27655](https://redhat.atlassian.net/browse/AIPCC-27655) | OPEN, MERGEABLE, NOT draft | 🔴 **NEW run 29899603591**: pre-commit ❌, JIRA Assoc ❌ (run 29899604237); nox ✅, tox ✅, e2e-api ✅; e2e-smoke PENDING; e2e-product not yet visible | Bot "jira-autofix" authored. Something was pushed — new CI run triggered. JIRA Assoc now ❌ again. e2e-smoke still running. Needs Joseph review. |
 | [#1694](https://github.com/Jounce-IO/jounce/pull/1694) | [AIPCC-27681](https://redhat.atlassian.net/browse/AIPCC-27681) | OPEN, CONFLICTING, NOT draft | 🔴 run 29740715467: JIRA Assoc ❌, pre-commit ❌, all-checks ❌; nox ✅, tox ✅, e2e ✅ | Bot "jira-autofix" authored. "fix(jbenchmark): share MetadataResolver across gpu_count iterations". ⚠️ Overnight session misattributed run 29894545350 to this PR — that run belongs to #1693. Actual state: run 29740715467 still latest. Needs Joseph review. |
 
 ---
@@ -39,7 +39,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🔴 CI run 29851081790 FAILED — **pre-commit ❌** (7m42s), all-checks ❌. integration-run ✅, nox ✅, tox ✅, JIRA Assoc ✅. e2e-api ⏭️ SKIPPING. | **OPEN, 🔴 CONFLICTING** (unchanged) | 🔴 **CI FAILED + CONFLICTING**. Action: Rebase on main + fix pre-commit. (e2e-api blocker resolved — now SKIPPING.) |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🟡 **NEW run 29900239662 PENDING** — nox ✅, tox ✅, integration ✅, JIRA Assoc ✅; e2e-api PENDING, pre-commit-run PENDING | **OPEN, 🟢 MERGEABLE** (was CONFLICTING — **rebased!**) | 🟡 **#1638 REBASED → MERGEABLE** 🎉. New CI run in progress — nox/tox/integration passing. Awaiting pre-commit-run + e2e-api results. |
 
 ---
 
@@ -80,14 +80,15 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (10:13 IDT Jul 22 vs 09:00 IDT Jul 22)
+## Key Changes (10:33 IDT Jul 22 vs 10:13 IDT Jul 22)
 
 | What changed | Delta |
 |---|---|
-| **#1667 REBASED → MERGEABLE** 🎉 | jn-5845-helm-cicd-agents-md was CONFLICTING — someone rebased! New CI run 29896027349. **Only blocker: pre-commit ❌.** JIRA Assoc ✅, nox ✅, tox ✅, e2e ✅. Close to ready. |
-| **#1693 CI REGRESSION** | New CI run 29894545350 — e2e-product FAIL (49min), nox ❌, tox ❌, pre-commit ❌. JIRA Assoc now ✅. More failures than before. Overnight session had run 29740715467 for this PR with fewer failures. |
-| **#1694 CORRECTION** | Overnight session incorrectly attributed run 29894545350 to #1694. Actual latest for #1694 is still run 29740715467: JIRA Assoc ❌, pre-commit ❌, nox ✅, tox ✅, e2e ✅. |
-| **All other PRs** | Board static — no CI run changes, no merges, no state changes. 6 Jira mismatches remain. |
+| **#1638 REBASED → MERGEABLE** 🎉 | feat/vllm-analyzer-prerequisites was CONFLICTING — someone rebased! New CI run 29900239662 PENDING. nox ✅, tox ✅, integration ✅, JIRA Assoc ✅. Awaiting pre-commit-run + e2e-api. |
+| **#1693 NEW CI RUN 29899603591** | Something pushed to bot PR #1693. New run: pre-commit ❌, JIRA Assoc ❌ (run 29899604237); nox ✅, tox ✅, e2e-api ✅; e2e-smoke PENDING. e2e-product not yet visible in new run (old run 29894545350 had it FAIL). |
+| **#1670 NEW CI RUN 29899957009** | New run triggered on draft PR #1670 (jn-5844). Build/bake checks visible pass. Core CI (pre-commit/nox/tox) status unclear in new run. |
+| **35 WORKTREES ARCHIVED** 🧹 | Mass cleanup of Danger Delete Zone + Done-zone stale worktrees (PRs all MERGED or CLOSED, or Done-zone with no PR). Board now much cleaner. |
+| **All active pipeline PRs** | Unchanged — #1690 still CONFLICTING all-CI-pass, #1667 pre-commit ❌, #1669 CI ❌+CONFLICTING, etc. 6 Jira mismatches remain. |
 
 ---
 
@@ -99,9 +100,9 @@ Two bot-authored PRs from `jira-autofix`:
 
 **[#1693](https://github.com/Jounce-IO/jounce/pull/1693)**: "fix(jbenchmark): return 409 Conflict on duplicate experiment plan name (AIPCC-27655)"
 - State: OPEN, MERGEABLE, NOT draft
-- **NEW CI run 29894545350**: ❌ pre-commit, nox ❌, tox ❌, all-checks ❌, **e2e-product ❌ (49min FAILED)**; JIRA Assoc ✅, e2e-api ✅, e2e-smoke ✅, integration ✅
-- **CI REGRESSION** — e2e-product now failing (was passing on run 29740715467). Bot may have pushed new code.
-- **Action:** Review PR content. Fix e2e-product failure (or investigate cause), pre-commit, nox, tox.
+- **NEW CI run 29899603591** (something was pushed to bot PR): pre-commit ❌, JIRA Assoc ❌ (run 29899604237); nox ✅, tox ✅, e2e-api ✅; e2e-smoke PENDING (still running). e2e-product not yet visible in new run.
+- Old run 29894545350 had e2e-product ❌ FAIL (49min). Status of e2e-product in new run TBD.
+- **Action:** Monitor e2e-smoke + e2e-product in new run. Review PR. Fix pre-commit + JIRA Assoc.
 
 **[#1694](https://github.com/Jounce-IO/jounce/pull/1694)**: "fix(jbenchmark): share MetadataResolver across gpu_count iterations (AIPCC-27681)"
 - State: OPEN, CONFLICTING, NOT draft
@@ -120,13 +121,13 @@ PR [#1690](https://github.com/Jounce-IO/jounce/pull/1690): "fix(helm): increase 
 
 ---
 
-### 🔴 #1638 (off-board JN-5725) — CI FAILED + CONFLICTING
+### 🟡 #1638 (off-board JN-5725) — REBASED → MERGEABLE, CI PENDING
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites (JN-5725)"
-- State: OPEN, **🔴 CONFLICTING** (unchanged)
-- **🔴 CI run 29851081790 FAILED**: pre-commit ❌, all-checks ❌. e2e-api ⏭️ SKIPPING (no longer blocking). integration ✅, nox ✅, tox ✅, JIRA Assoc ✅
+- State: OPEN, **🟢 MERGEABLE** 🎉 (was CONFLICTING — someone rebased!)
+- **🟡 NEW CI run 29900239662 PENDING**: nox ✅, tox ✅, integration ✅, JIRA Assoc ✅; e2e-api PENDING, pre-commit-run PENDING
 - Jira: JN-5725 Done ✅
-- **Action:** Rebase on main AND fix pre-commit.
+- **Action:** Await CI results. If pre-commit-run passes → PR is close to ready for review!
 
 ---
 
@@ -209,7 +210,47 @@ Last session Jul 8 IDLE. SHA 16ec44ea (2 commits).
 
 ## Archived This Session
 
-None.
+**🧹 Mass Danger Delete Zone cleanup — 35 worktrees archived (10:33 IDT Jul 22):**
+
+All had MERGED or CLOSED PRs, or were in Done/Danger Delete Zone with no active PR:
+
+| Branch | PR | Reason |
+|--------|-----|--------|
+| jn-2739-planning-service2 | [#1279 MERGED](https://github.com/Jounce-IO/jounce/pull/1279) | PR MERGED |
+| jn-2741-execution-service2 | [#1196 CLOSED](https://github.com/Jounce-IO/jounce/pull/1196) | PR CLOSED |
+| jn-2741-implement-execution-service-for-workflow-orchestration | [#1196 CLOSED](https://github.com/Jounce-IO/jounce/pull/1196) | PR CLOSED |
+| jn-2743-update-post-processing-for-new-schema | [#1224 CLOSED](https://github.com/Jounce-IO/jounce/pull/1224) | PR CLOSED |
+| jn-3676-implement-soft-delete-pattern | [#1225 CLOSED](https://github.com/Jounce-IO/jounce/pull/1225) | PR CLOSED |
+| jn-3762-execute-b200-benchmarks | [#1200 CLOSED](https://github.com/Jounce-IO/jounce/pull/1200) | PR CLOSED |
+| jn-3925-release-tagging-convention | [#1252 CLOSED](https://github.com/Jounce-IO/jounce/pull/1252) | PR CLOSED |
+| jn-4058-implement-benchmark-runner | [#1236 MERGED](https://github.com/Jounce-IO/jounce/pull/1236) | PR MERGED |
+| jn-4061-argo-artifact-spike | [#1247 CLOSED](https://github.com/Jounce-IO/jounce/pull/1247) | PR CLOSED |
+| jn-4062-update-execution-flow | [#1251 MERGED](https://github.com/Jounce-IO/jounce/pull/1251) | PR MERGED |
+| jn-4200-implement-combinatorial-matrix-expansion-logic | [#1280 MERGED](https://github.com/Jounce-IO/jounce/pull/1280) | PR MERGED |
+| jn-4212-update-tooling-configuration | [#1281 MERGED](https://github.com/Jounce-IO/jounce/pull/1281) | PR MERGED |
+| jn-4390-benchmark-app-management | [#1295 CLOSED](https://github.com/Jounce-IO/jounce/pull/1295) | PR CLOSED |
+| jn-4503-poc-slack-incoming-webhook | [#1322 MERGED](https://github.com/Jounce-IO/jounce/pull/1322) | PR MERGED |
+| jn-4526-integrate-run-estimator | [#1303 MERGED](https://github.com/Jounce-IO/jounce/pull/1303) | PR MERGED |
+| jn-4621-estimator-new-schema | [#1425 CLOSED](https://github.com/Jounce-IO/jounce/pull/1425) | PR CLOSED |
+| jn-5161-jn-4621-sub-task-1-create-schema-handler-p | [#1437 MERGED](https://github.com/Jounce-IO/jounce/pull/1437) | PR MERGED |
+| jn-5162-jn-4621-sub-task-2-implement-v2schemahandl | [#1439 MERGED](https://github.com/Jounce-IO/jounce/pull/1439) | PR MERGED |
+| jn-5181-populate-tensor-parallel | [#1451 MERGED](https://github.com/Jounce-IO/jounce/pull/1451) | PR MERGED |
+| jn-5133-use-cases-benchmark-visibility | [#1418 MERGED](https://github.com/Jounce-IO/jounce/pull/1418) | PR MERGED |
+| jn-4833-model-configs-2026-04 | [#1366 MERGED](https://github.com/Jounce-IO/jounce/pull/1366) | PR MERGED |
+| jn-4910-hw-aware-runner | [#1365 CLOSED](https://github.com/Jounce-IO/jounce/pull/1365) | PR CLOSED |
+| jn-4958-update-config-status-run | [#1387 CLOSED](https://github.com/Jounce-IO/jounce/pull/1387) | PR CLOSED |
+| jn-5243-refactor-run-jbenchmark-runner-orchestrati-8 | [#1468 MERGED](https://github.com/Jounce-IO/jounce/pull/1468) | PR MERGED (Done zone) |
+| jn-5246-enrich-experimentplan-deployment-configs-f-4 | [#1470 MERGED](https://github.com/Jounce-IO/jounce/pull/1470) | PR MERGED |
+| jn-5246-enrich-experimentplan-deployment-configs-f-8 | [#1466 CLOSED](https://github.com/Jounce-IO/jounce/pull/1466) | PR CLOSED |
+| jn-5243-refactor-run-jbenchmark-runner-orchestrati-9 | — | Done zone, no PR |
+| jn-5244-add-user-no-cache-skip-estimator-cli-flag-2 | — | Done zone, no PR |
+| jn-5244-add-user-no-cache-skip-estimator-cli-flags-8 | — | Done zone, no PR |
+| jn-5250-implement-run-estimator-server-side-skip-l-6 | — | Done zone, no PR |
+| jn-5326-integrate-v2-configgenerator-into-runner-3 | — | Done zone, no PR |
+| jn-5326-integrate-v2-configgenerator-into-runner-o-5 | — | Done zone, no PR |
+| jn-5191-db-erd-modelcar | — | Danger Delete Zone, Jira Done |
+| jn-5405-ci-test-coverage | — | Danger Delete Zone, unassigned |
+| root-value-analysis-prompt | — | Danger Delete Zone, Jira Done |
 
 Previously archived:
 | Branch | PR | Reason | Time |
