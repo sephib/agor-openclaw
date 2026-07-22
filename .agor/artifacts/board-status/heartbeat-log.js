@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-22 15:03 IDT",
+    actions: 0,
+    findings: 3,
+    status: "ok",
+    summary: "#1638 ALL CI FULLY PASSING (e2e-product ✅ 45m37s — now needs rebase only); #1667 NOW MERGEABLE + new CI run 29919820281; #1704 NOW MERGEABLE+APPROVED + new CI run 29919502303; #1693 new CI run; no merges; 6 Jira mismatches unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f89ce57c77348acf1e757/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-22 14:33 IDT",
     actions: 0,
     findings: 3,

@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-22 14:33 IDT (advance heartbeat)*
+*Last updated: 2026-07-22 15:03 IDT (advance heartbeat)*
 
 ---
 
@@ -13,8 +13,8 @@
 
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — New | Design session done Jun 30. Ready for Plan phase. Stale 22+ days. |
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | Last session Jul 8 IDLE. SHA 16ec44ea (2 commits). Needs: configs, rebase, PR. Stale 14+ days. |
-| jn-5844-service-lib-sql-agents-md | **Publish** | [#1670 DRAFT](https://github.com/Jounce-IO/jounce/pull/1670) | ✅ **ALL CI PASSING** run 29914429195 (new run — REBASED!) | [JN-5844](https://redhat.atlassian.net/browse/JN-5844) — New | 🟢 **NOW MERGEABLE** (was CONFLICTING at 14:03). REBASED. CI: all-checks ✅, JIRA Assoc ✅, tox ✅. Still DRAFT. **Action: Mark ready for review.** |
-| jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | 🔴 run 29896027349: pre-commit ❌, pre-commit-run ❌, all-checks ❌; JIRA Assoc ✅, e2e-api ✅, e2e-smoke ✅, nox ✅, tox ✅ | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) — New | 🔴 **CONFLICTING** + pre-commit ❌ (unchanged). **Action: Rebase + fix pre-commit.** |
+| jn-5844-service-lib-sql-agents-md | **Publish** | [#1670 DRAFT](https://github.com/Jounce-IO/jounce/pull/1670) | ✅ **ALL CI PASSING** run 29914429195 (REBASED) | [JN-5844](https://redhat.atlassian.net/browse/JN-5844) — New | 🟢 MERGEABLE (UNKNOWN at 15:03 — likely transient). CI from previous run: all-checks ✅, JIRA Assoc ✅, tox ✅. Still DRAFT. **Action: Mark ready for review.** |
+| jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | 🟡 **NEW RUN** 29919820281 PENDING (rebased!): atlas-validate ✅, JIRA Assoc ✅, check-changes ✅; e2e-api/integration/pre-commit/tox PENDING | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) — New | 🟢 **NOW MERGEABLE** (was CONFLICTING + pre-commit ❌ at 14:33). **Rebased!** New CI run in progress. Watch for result. |
 | jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | 🔴 run 29683534910 (stale): pre-commit ❌, nox ❌, tox-run ❌, all-checks ❌ | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — In Progress | 🔴 **CI ❌ + CONFLICTING** — DRAFT. Unchanged. Needs rebase + CI fix. |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — New | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 14+** (still Ingest, should be Code). |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 27+ days. Propose archive. |
@@ -31,7 +31,7 @@
 
 | PR | Ticket | State | CI | Notes |
 |----|--------|-------|----|-------|
-| [#1693](https://github.com/Jounce-IO/jounce/pull/1693) | [AIPCC-27655](https://redhat.atlassian.net/browse/AIPCC-27655) | OPEN, UNKNOWN mergeable, NOT draft | 🔴 run 29905405310: **e2e-product ❌** (FAILED 44m39s), pre-commit ❌, JIRA Assoc ❌, all-checks ❌; e2e-api ✅, nox ✅, tox ✅, integration ✅, e2e-smoke ✅ | Bot "jira-autofix". **🎉 reviewDecision: APPROVED**. CI unchanged. Needs: rebase + fix e2e-product + pre-commit + JIRA Assoc. |
+| [#1693](https://github.com/Jounce-IO/jounce/pull/1693) | [AIPCC-27655](https://redhat.atlassian.net/browse/AIPCC-27655) | OPEN, CONFLICTING, NOT draft | 🟡 **NEW RUN** 29919985849 PENDING: JIRA Assoc ✅; pre-commit/tox/integration PENDING | Bot "jira-autofix". **🎉 reviewDecision: APPROVED**. **Rebased!** New CI run in progress. Watch for result. |
 | [#1694](https://github.com/Jounce-IO/jounce/pull/1694) | [AIPCC-27681](https://redhat.atlassian.net/browse/AIPCC-27681) | OPEN, UNKNOWN mergeable, NOT draft | 🔴 run 29740715467 (latest): JIRA Assoc ❌, pre-commit ❌, all-checks ❌; nox ✅, tox ✅, e2e ✅ | Bot "jira-autofix" authored. Unchanged. Needs Joseph review. |
 
 ---
@@ -40,8 +40,8 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🟡 **Run 29915128929** (new run): e2e-smoke ✅ PASSED (9m3s), e2e-product PENDING; pre-commit ✅, JIRA Assoc ✅, nox ✅, tox ✅ | **OPEN, 🔴 CONFLICTING** (was MERGEABLE at 14:03) | 🔴 **NOW CONFLICTING** (regression). e2e-smoke now ✅ PASSING. e2e-product PENDING. Needs rebase + e2e-product result. |
-| [#1704](https://github.com/Jounce-IO/jounce/pull/1704) | — | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🟡 **Run 29911800158**: pre-commit ✅, JIRA Assoc ✅, all others ✅; **e2e-product PENDING** | **OPEN, 🔴 CONFLICTING** (by AlonKellner-RedHat) | 🔴 Still CONFLICTING. Still APPROVED. e2e-product still PENDING. "chore: dependencies, test config, docs, and tooling (JN-5725)". |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | ✅ **Run 29915128929** (new): **ALL CI FULLY PASSING** — e2e-product ✅ (45m37s), e2e-smoke ✅, pre-commit ✅, JIRA Assoc ✅, nox ✅, tox ✅, all-checks ✅ | **OPEN, 🔴 CONFLICTING** | 🎉 **ALL CI NOW FULLY PASSING** (e2e-product ✅ done!). Still CONFLICTING. **Action: Rebase on main — ready to merge once rebased!** |
+| [#1704](https://github.com/Jounce-IO/jounce/pull/1704) | — | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | 🟡 **NEW RUN** 29919502303 PENDING: e2e-api ✅, integration ✅, tox ✅, nox ✅, JIRA Assoc ✅; e2e-smoke PENDING, pre-commit PENDING | **OPEN, 🟢 MERGEABLE, APPROVED** | 🎉 **NOW MERGEABLE + APPROVED** (was CONFLICTING at 14:33). **Rebased!** New CI run mostly passing — watch e2e-smoke + pre-commit result. |
 | [#1705](https://github.com/Jounce-IO/jounce/pull/1705) | — | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) | ✅ ALL PASS | **🎉 MERGED 11:20 IDT Jul 22** | 🎉 MERGED! "feat(e2e): enhanced test infrastructure -- clients, diagnostics, helpers (JN-5725)". Off-board — no worktree to archive. |
 
 ---
@@ -83,47 +83,65 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (14:33 IDT Jul 22 vs 14:03 IDT Jul 22)
+## Key Changes (15:03 IDT Jul 22 vs 14:33 IDT Jul 22)
 
 | What changed | Delta |
 |---|---|
-| **🎉 #1705 MERGED** | Merged 11:20 IDT Jul 22. Off-board PR (AlonKellner-RedHat). "feat(e2e): enhanced test infrastructure". No Agor worktree to archive. JN-5725 already Done ✅. |
-| **🎉 #1670 REBASED + ALL CI ✅** | Was CONFLICTING at 14:03. Now MERGEABLE. New CI run 29914429195: all-checks ✅, JIRA Assoc ✅, tox ✅. Still DRAFT. **Immediate action: mark ready for review.** |
-| **🔴 #1638 NOW CONFLICTING** | Was MERGEABLE at 14:03. New CI run 29915128929: e2e-smoke ✅ PASSED, e2e-product PENDING. Regression to CONFLICTING status. |
-| **#1704 e2e-product still PENDING** | No change from 14:03. Still APPROVED + CONFLICTING. |
-| **All other PRs** | Unchanged — #1690 CONFLICTING/all-CI-pass, #1667 CONFLICTING+pre-commit❌, #1669 CI❌+CONFLICTING, #1698 CONFLICTING+pre-commit❌, #1693 APPROVED+e2e-product❌, #1694 CONFLICTING. 6 Jira mismatches unchanged. |
+| **🎉 #1638: ALL CI FULLY PASSING** | e2e-product ✅ PASSED (45m37s) in run 29915128929. ALL checks now green. Still CONFLICTING. **Ready to rebase and merge!** |
+| **🟢 #1667: NOW MERGEABLE** | Was CONFLICTING + pre-commit ❌ at 14:33. Now MERGEABLE (must have been rebased). New CI run 29919820281 started — JIRA Assoc ✅, check-changes ✅; e2e-api/integration/pre-commit/tox PENDING. |
+| **🎉 #1704: NOW MERGEABLE + APPROVED** | Was CONFLICTING + APPROVED at 14:33. Now MERGEABLE (rebased). New CI run 29919502303: e2e-api ✅, integration ✅, tox ✅, nox ✅, JIRA Assoc ✅; e2e-smoke + pre-commit PENDING. |
+| **#1693: New CI run started** | New run 29919985849 (rebased?). JIRA Assoc ✅; pre-commit/tox/integration PENDING. Still CONFLICTING. |
+| **All other PRs** | Unchanged — #1690 CONFLICTING/all-CI-pass, #1669 CI❌+CONFLICTING, #1698 CONFLICTING+pre-commit❌, #1694 unchanged. 6 Jira mismatches unchanged. |
 
 ---
 
 ## Attention Items
 
-### 🟢 #1670 (jn-5844) — READY FOR REVIEW (rebased + CI passing!)
+### 🎉 #1638 (off-board JN-5725) — ALL CI PASSING, NEEDS REBASE
 
-PR [#1670](https://github.com/Jounce-IO/jounce/pull/1670): "docs(jbenchmark): add service, libs, and SQL domain AGENTS.md files (JN-5844)"
-- State: OPEN, **🟢 MERGEABLE** (rebased!)
-- **Run 29914429195** (new): all-checks ✅, JIRA Assoc ✅, tox ✅
-- Still DRAFT — **Action: Mark #1670 ready for review immediately.**
+PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites (JN-5725)"
+- State: OPEN, **🔴 CONFLICTING**
+- **Run 29915128929** (new): **ALL CHECKS PASSING** — e2e-product ✅ (45m37s!), e2e-smoke ✅, pre-commit ✅, JIRA Assoc ✅, nox ✅, tox ✅, all-checks ✅
+- Jira: JN-5725 Done ✅
+- **Action: Rebase on main → then this PR is ready for review/merge.**
 
 ---
 
-### 🔴 #1638 (off-board JN-5725) — CONFLICTING + e2e-product PENDING
+### 🟢 #1667 (jn-5845) — NOW MERGEABLE, CI PENDING
 
-PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites (JN-5725)"
-- State: OPEN, **🔴 CONFLICTING** (was MERGEABLE at 14:03 — new regression!)
-- **Run 29915128929** (new): e2e-smoke ✅ PASSED, e2e-product PENDING; pre-commit ✅, JIRA Assoc ✅, nox ✅, tox ✅
-- Jira: JN-5725 Done ✅
-- **Action:** Rebase on main (CONFLICTING). Wait for e2e-product result.
-- **Note:** #1704 still CONFLICTING + APPROVED + e2e-product PENDING. #1705 MERGED 🎉.
+PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): add Helm and CI/CD domain AGENTS.md files (JN-5845)"
+- State: OPEN, **🟢 MERGEABLE** (was CONFLICTING + pre-commit ❌!)
+- **New CI run 29919820281** (rebased!): atlas-validate ✅, JIRA Assoc ✅, check-changes ✅; e2e-api/integration/pre-commit/tox PENDING
+- NOT draft (ready for review once CI clears)
+- **Action: Watch CI run. If all pass → ready to merge.**
+
+---
+
+### 🎉 #1704 (off-board JN-5725) — MERGEABLE + APPROVED, CI PENDING
+
+PR [#1704](https://github.com/Jounce-IO/jounce/pull/1704): "chore: dependencies, test config, docs, and tooling (JN-5725)"
+- State: OPEN, **🟢 MERGEABLE**, **APPROVED** (was CONFLICTING at 14:33!)
+- **New CI run 29919502303** (rebased): e2e-api ✅, integration ✅, tox ✅, nox ✅, JIRA Assoc ✅; e2e-smoke PENDING, pre-commit PENDING
+- **Action: Watch e2e-smoke + pre-commit → if pass, ready to merge.**
+
+---
+
+### 🟢 #1670 (jn-5844) — READY FOR REVIEW (rebased + CI passing!)
+
+PR [#1670](https://github.com/Jounce-IO/jounce/pull/1670): "docs(jbenchmark): add service, libs, and SQL domain AGENTS.md files (JN-5844)"
+- State: OPEN, UNKNOWN mergeable (likely transient — was MERGEABLE at 14:33)
+- **Run 29914429195** (previous): all-checks ✅, JIRA Assoc ✅, tox ✅
+- Still DRAFT — **Action: Mark #1670 ready for review immediately.**
 
 ---
 
 ### 🔴 #1693 + #1694 — Bot-Authored PRs Need Review
 
 **[#1693](https://github.com/Jounce-IO/jounce/pull/1693)**: "fix(jbenchmark): add DuplicatePlanNameError for 409 on duplicate plan name AIPCC-27655"
-- State: OPEN, UNKNOWN mergeable, NOT draft
+- State: OPEN, CONFLICTING, NOT draft
 - **🎉 reviewDecision: APPROVED**
-- **Run 29905405310**: e2e-api ✅, nox ✅, tox ✅, integration ✅, e2e-smoke ✅; pre-commit ❌, JIRA Assoc ❌; **🔴 e2e-product FAILED**
-- **Action:** Rebase on main. Fix e2e-product, pre-commit + JIRA Assoc.
+- **New CI run 29919985849** (rebased?): JIRA Assoc ✅; pre-commit/tox/integration PENDING
+- **Action:** Watch new CI run. Fix remaining issues + resolve conflict.
 
 **[#1694](https://github.com/Jounce-IO/jounce/pull/1694)**: "fix(jbenchmark): share MetadataResolver across gpu_count iterations (AIPCC-27681)"
 - State: OPEN, UNKNOWN mergeable, NOT draft
@@ -132,7 +150,7 @@ PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM a
 
 ---
 
-### 🔴 #1690 (aipcc-27645) — ALL CI PASSING BUT CONFLICTING
+### 🔴 #1690 (aipcc-27645) — ALL CI PASSING BUT CONFLICTING (unchanged)
 
 PR [#1690](https://github.com/Jounce-IO/jounce/pull/1690): "fix(helm): increase API server resources and probe tolerances (AIPCC-27645)"
 - State: OPEN, **CONFLICTING** 🔴 (3+ days unchanged)
