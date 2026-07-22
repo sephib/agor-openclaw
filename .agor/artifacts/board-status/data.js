@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-22 16:03 IDT";
+export const LAST_UPDATED = "2026-07-22 22:00 IDT";
 
 export const WORKTREES = [
   {
@@ -223,12 +223,20 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1670",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1670",
-    status: "🎉 **ALL CI FULLY PASSING** (run 29921067106 NEW): pre-commit ✅, e2e-smoke ✅, e2e-api ✅, integration ✅, nox ✅, tox ✅, JIRA Assoc ✅, all-checks ✅. UNKNOWN mergeable. **Open for review — fully green!**",
-    blockedOn: null,
+    status: "🔴 **NOW CONFLICTING** (regression — was ALL-CI-PASS at 16:03 IDT). CI run 29921067106 still shows ALL PASS but stale — main advanced after #1704+#1705 merges. **Action: Rebase jn-5844 on main. CI was clean — should clear quickly.**",
+    blockedOn: "CONFLICTING — rebase on main needed (main advanced overnight)",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f60377abb7d9aa3e2e233/",
     sessionLabel: "Internal CR — JN-5844 service/lib/sql AGENTS.md (idle 10:46 IDT)",
     recentSessions: [
+      {
+        sessionId: "019f8b334c197fc4b85c2f09",
+        url: "http://127.0.0.1:3030/ui/s/019f8b334c197fc4b85c2f09/",
+        title: "advance heartbeat 22:00 IDT Jul 22 — #1670 CONFLICTING (regression); #1638 near-ready; no merges",
+        status: "running",
+        timestamp: "2026-07-22 22:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f60377abb7d9aa3e2e233",
         url: "http://127.0.0.1:3030/ui/s/019f60377abb7d9aa3e2e233/",
@@ -238,7 +246,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-22 14:33 IDT",
+    lastActive: "2026-07-22 22:00 IDT",
   },
   {
     ticket: "JN-5824",
@@ -518,36 +526,36 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "green",
-    message: "🎉 #1704 (JN-5725, off-board): **MERGED 14:14 IDT Jul 22** — 'chore: dependencies, test config, docs, and tooling'. Off-board, no Agor worktree to archive. JN-5725 Done ✅.",
-  },
-  {
-    level: "green",
-    message: "🎉 #1670 (jn-5844 JN-5844): **ALL CI FULLY PASSING** (run 29921067106 NEW): pre-commit ✅, e2e-smoke ✅, e2e-api ✅, integration ✅, nox ✅, tox ✅, JIRA Assoc ✅, all-checks ✅. Open for review!",
-  },
-  {
-    level: "green",
-    message: "🎉 #1638 (JN-5725, off-board): **NOW MERGEABLE** (rebased since 15:33!). New CI run 29928844333 in progress: JIRA Assoc ✅, atlas-validate ✅; e2e-api/integration/pre-commit/tox PENDING. **Watch CI — ready to merge when green!**",
-  },
-  {
-    level: "green",
-    message: "🎉 #1705 (JN-5725): **MERGED 11:20 IDT Jul 22** — 'feat(e2e): enhanced test infrastructure -- clients, diagnostics, helpers'. Off-board PR (AlonKellner-RedHat). JN-5725 Done ✅.",
+    level: "yellow",
+    message: "🟡 #1638 (JN-5725, off-board): **NEARLY DONE** — NEW CI run 29947598648: pre-commit ✅, e2e-api ✅, integration ✅, tox ✅, e2e-smoke ✅, nox ✅, JIRA Assoc ✅; **e2e-product PENDING**. When it passes → ready to merge!",
   },
   {
     level: "red",
-    message: "🔴 #1667 (jn-5845 JN-5845): **NOW CONFLICTING** (was MERGEABLE). pre-commit ❌ (run 29920170788). **Action: 1) Rebase on main. 2) Fix pre-commit. Push.**",
+    message: "🔴 #1670 (jn-5844 JN-5844): **NOW CONFLICTING** (overnight regression — was ALL-CI-PASS at 16:03 IDT). CI run 29921067106 stale (main advanced after #1704+#1705 merges). **Action: Rebase on main — CI was clean, should clear quickly.**",
   },
   {
     level: "red",
-    message: "🔴 #1693 (AIPCC-27655): **BOT PR** — **🎉 APPROVED**. CI run 29920192197: **pre-commit ❌** only; e2e-product ✅ (done!); all others ✅. **Action: Fix pre-commit — only blocker.**",
+    message: "🔴 #1693 (AIPCC-27655): **BOT PR** — **🎉 APPROVED** but **NOW CONFLICTING**. CI run 29920192197: **pre-commit ❌** only; e2e-product ✅; all others ✅. **Action: Rebase + Fix pre-commit.**",
+  },
+  {
+    level: "green",
+    message: "🎉 #1704 (JN-5725, off-board): **MERGED 14:14 IDT Jul 22** — 'chore: dependencies, test config, docs, and tooling'. Off-board, no Agor worktree. JN-5725 Done ✅.",
+  },
+  {
+    level: "green",
+    message: "🎉 #1705 (JN-5725): **MERGED 11:20 IDT Jul 22** — 'feat(e2e): enhanced test infrastructure'. Off-board PR (AlonKellner-RedHat). JN-5725 Done ✅.",
   },
   {
     level: "red",
-    message: "🆕 #1694 (AIPCC-27681): **BOT PR** (jira-autofix) — UNKNOWN mergeable. CI run 29740715467: JIRA Assoc ❌, pre-commit ❌; nox ✅, tox ✅, e2e ✅. Action: Joseph review + rebase + fix JIRA Assoc + pre-commit.",
+    message: "🔴 #1667 (jn-5845 JN-5845): CONFLICTING + pre-commit ❌ (run 29920170788). **Action: 1) Rebase on main. 2) Fix pre-commit. Push.**",
   },
   {
     level: "red",
-    message: "🔴 #1690 (AIPCC-27645): **CONFLICTING** (3+ days unchanged). All CI 100% passing (run 29729530150). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
+    message: "🆕 #1694 (AIPCC-27681): **BOT PR** (jira-autofix) — CONFLICTING. CI run 29740715467: JIRA Assoc ❌, pre-commit ❌; nox ✅, tox ✅, e2e ✅. Action: Joseph review + rebase + fix.",
+  },
+  {
+    level: "red",
+    message: "🔴 #1690 (AIPCC-27645): **CONFLICTING** (4+ days unchanged). All CI 100% passing (run 29729530150). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
   },
   {
     level: "red",

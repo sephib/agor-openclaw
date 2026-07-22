@@ -2708,3 +2708,11 @@
 - Auto-archives: none (no on-board worktrees with merged/closed PRs)
 - Flags: #1667 REGRESSION (MERGEABLE→CONFLICTING); #1638 IMPROVEMENT (CONFLICTING→MERGEABLE); 6 Jira mismatches unchanged
 - Next: Watch #1638 CI run 29928844333; flag #1667 rebase needed; #1670 ready for review
+
+## 22:00 IDT — Overnight Heartbeat
+- PRs checked: #1670 (OPEN/CONFLICTING — regression from ALL-CI-PASS), #1667 (OPEN/CONFLICTING/pre-commit❌ unchanged), #1638 (OPEN/MERGEABLE/new CI run 29947598648 near-done), #1690 (OPEN/CONFLICTING/all-CI-pass unchanged), #1693 (OPEN/CONFLICTING/APPROVED — regression, was UNKNOWN), #1694 (OPEN/CONFLICTING unchanged), #1669 (DRAFT/CONFLICTING/CI❌ unchanged), #1698 (OPEN/CONFLICTING/pre-commit❌ unchanged)
+- Merges detected: none
+- CI changes: **#1638 NEW run 29947598648** — all checks ✅ except e2e-product PENDING (near-ready!); #1670 and #1693 newly CONFLICTING (main advanced after #1704+#1705 merges)
+- Flags: #1670 regression (ALL-CI-PASS→CONFLICTING overnight); #1693 regression (UNKNOWN→CONFLICTING); #1638 almost ready (e2e-product pending); 6 Jira mismatches unchanged
+- Actions: 0 archives, 0 auto-advances
+- Next: Morning — rebase #1670 (was CI-green, just needs rebase); fix pre-commit + rebase #1667 + #1693; check #1638 e2e-product result
