@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-22 14:03 IDT";
+export const LAST_UPDATED = "2026-07-22 14:33 IDT";
 
 export const WORKTREES = [
   {
@@ -10,17 +10,25 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1690",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1690",
-    status: "🔴 **CONFLICTING** (3+ days unchanged). All CI 100% PASSING (run 29729530150). **Action: Rebase aipcc-27645-server-resources on main, then request review.** (unchanged 14:03 IDT)",
+    status: "🔴 **CONFLICTING** (3+ days unchanged). All CI 100% PASSING (run 29729530150). **Action: Rebase aipcc-27645-server-resources on main, then request review.** (unchanged 14:33 IDT)",
     blockedOn: "CONFLICTING — needs rebase on main",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f897be58a795fa0b09082/",
-    sessionLabel: "advance heartbeat 14:03 IDT Jul 22 — #1638 e2e-smoke❌; #1670+#1693 now CONFLICTING; #1704 ALL CI PASSING",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f89975d187c47b70c384b/",
+    sessionLabel: "advance heartbeat 14:33 IDT Jul 22 — #1705 MERGED; #1670 REBASED+all-CI✅; #1638 CONFLICTING+e2e-smoke✅",
     recentSessions: [
+      {
+        sessionId: "019f89975d187c47b70c384b",
+        url: "http://127.0.0.1:3030/ui/s/019f89975d187c47b70c384b/",
+        title: "advance heartbeat 14:33 IDT Jul 22 — #1705 MERGED; #1670 REBASED+all-CI✅; #1638 CONFLICTING+e2e-smoke✅",
+        status: "running",
+        timestamp: "2026-07-22 14:33 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f897be58a795fa0b09082",
         url: "http://127.0.0.1:3030/ui/s/019f897be58a795fa0b09082/",
         title: "advance heartbeat 14:03 IDT Jul 22 — #1638 e2e-smoke❌; #1670+#1693 now CONFLICTING; #1704 ALL CI PASSING",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-22 14:03 IDT",
         outputFile: null,
       },
@@ -48,24 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-22 12:33 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f890df41c749fba0f2a47",
-        url: "http://127.0.0.1:3030/ui/s/019f890df41c749fba0f2a47/",
-        title: "advance heartbeat 12:03 IDT Jul 22 — #1638 new CI run; #1693 APPROVED",
-        status: "completed",
-        timestamp: "2026-07-22 12:03 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f88f3651a7b209330b296",
-        url: "http://127.0.0.1:3030/ui/s/019f88f3651a7b209330b296/",
-        title: "advance heartbeat 11:33 IDT Jul 22 — #1638 e2e-api FAILED; #1693 e2e-product FAILED",
-        status: "completed",
-        timestamp: "2026-07-22 11:33 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-22 13:33 IDT",
+    lastActive: "2026-07-22 14:33 IDT",
   },
   {
     ticket: "AIPCC-27681",
@@ -76,8 +68,8 @@ export const WORKTREES = [
     zone: "NO ZONE (bot PR)",
     pr: "#1694",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1694",
-    status: "🆕 **BOT PR** (jira-autofix). OPEN, CONFLICTING, NOT draft. CI run 29740715467 (latest): JIRA Assoc ❌, pre-commit ❌, all-checks ❌; nox ✅, tox ✅, e2e ✅. ⚠️ Overnight session misattributed run 29894545350 to this PR — corrected. **Action: Joseph review + rebase + fix JIRA Assoc + pre-commit.**",
-    blockedOn: "CONFLICTING + JIRA Assoc ❌ + pre-commit ❌",
+    status: "🆕 **BOT PR** (jira-autofix). OPEN, UNKNOWN mergeable, NOT draft. CI run 29740715467 (latest): JIRA Assoc ❌, pre-commit ❌, all-checks ❌; nox ✅, tox ✅, e2e ✅. **Action: Joseph review + rebase + fix JIRA Assoc + pre-commit.**",
+    blockedOn: "JIRA Assoc ❌ + pre-commit ❌",
     blockedType: "active",
     sessionUrl: null,
     sessionLabel: null,
@@ -93,8 +85,8 @@ export const WORKTREES = [
     zone: "NO ZONE (bot PR)",
     pr: "#1693",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1693",
-    status: "🔴 **BOT PR** (jira-autofix). OPEN, **🔴 CONFLICTING** (was MERGEABLE at 13:33), **🎉 APPROVED**. Run 29905405310: e2e-api ✅, nox ✅, tox ✅, e2e-smoke ✅; pre-commit ❌, JIRA Assoc ❌; **🔴 e2e-product FAILED**. **Action: Rebase on main. Fix e2e-product + pre-commit + JIRA Assoc.**",
-    blockedOn: "CONFLICTING + e2e-product ❌ + pre-commit ❌ + JIRA Assoc ❌",
+    status: "🔴 **BOT PR** (jira-autofix). OPEN, UNKNOWN mergeable, **🎉 APPROVED**. Run 29905405310: e2e-api ✅, nox ✅, tox ✅, e2e-smoke ✅; pre-commit ❌, JIRA Assoc ❌; **🔴 e2e-product FAILED**. **Action: Rebase on main. Fix e2e-product + pre-commit + JIRA Assoc.**",
+    blockedOn: "e2e-product ❌ + pre-commit ❌ + JIRA Assoc ❌",
     blockedType: "active",
     sessionUrl: null,
     sessionLabel: null,
@@ -127,7 +119,7 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1667",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1667",
-    status: "🔴 **CONFLICTING** + pre-commit ❌ (run 29896027349 confirmed 13:33 IDT). 13:03 'all passing' was premature — pre-commit job (6m14s) was still running. **Action: Rebase + fix pre-commit, then mark ready for review.**",
+    status: "🔴 **CONFLICTING** + pre-commit ❌ (run 29896027349). **Action: Rebase + fix pre-commit, then mark ready for review.**",
     blockedOn: "CONFLICTING + pre-commit ❌",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b8914f87505bf9d7e3f/",
@@ -231,8 +223,8 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1670 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1670",
-    status: "🔴 DRAFT PR #1670 — **NOW CONFLICTING** (was MERGEABLE at 13:33). CI run 29899957009: all-checks ✅, JIRA Assoc ✅, bake ✅. CI clean but CONFLICTING. **Needs: rebase on main, then mark ready for review.**",
-    blockedOn: "CONFLICTING — needs rebase before marking ready",
+    status: "🟢 DRAFT PR #1670 — **NOW MERGEABLE** (rebased! was CONFLICTING at 14:03). New CI run 29914429195: all-checks ✅, JIRA Assoc ✅, tox ✅. **Action: Mark #1670 ready for review now.**",
+    blockedOn: "Still DRAFT — needs to be marked ready for review",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f60377abb7d9aa3e2e233/",
     sessionLabel: "Internal CR — JN-5844 service/lib/sql AGENTS.md (idle 10:46 IDT)",
@@ -246,7 +238,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-14 10:46 IDT",
+    lastActive: "2026-07-22 14:33 IDT",
   },
   {
     ticket: "JN-5824",
@@ -283,7 +275,7 @@ export const WORKTREES = [
     zone: "Plan",
     pr: "#1695 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1695",
-    status: "🟡 DRAFT PR #1695 — MERGEABLE. CI run 29846894702: pre-commit ❌, JIRA Assoc ❌, all-checks ❌. Needs: pre-commit fix + JIRA Assoc fix before marking ready.",
+    status: "🟡 DRAFT PR #1695. CI run 29846894702: pre-commit ❌, JIRA Assoc ❌, all-checks ❌. Needs: pre-commit fix + JIRA Assoc fix before marking ready.",
     blockedOn: "CI failure — pre-commit ❌ + JIRA Assoc ❌",
     blockedType: "active",
     sessionUrl: null,
@@ -317,7 +309,7 @@ export const WORKTREES = [
     zone: "NO ZONE",
     pr: "#1697 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1697",
-    status: "🔴 DRAFT PR #1697 — pre-commit ❌, JIRA Assoc ❌, all-checks ❌. nox ✅, tox ✅. MERGEABLE. No zone assigned.",
+    status: "🔴 DRAFT PR #1697 — pre-commit ❌, JIRA Assoc ❌, all-checks ❌. nox ✅, tox ✅. No zone assigned.",
     blockedOn: "CI failure — pre-commit needs fix; no zone assigned",
     blockedType: "active",
     sessionUrl: null,
@@ -351,7 +343,7 @@ export const WORKTREES = [
     zone: "NO ZONE",
     pr: "#1700 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1700",
-    status: "DRAFT split from #1698. CI run 29808132144: pre-commit ❌, JIRA Assoc ❌, all-checks ❌; nox ✅, tox ✅. MERGEABLE. No zone assigned.",
+    status: "DRAFT split from #1698. CI run 29808132144: pre-commit ❌, JIRA Assoc ❌, all-checks ❌; nox ✅, tox ✅. No zone assigned.",
     blockedOn: "pre-commit failing; no zone assigned",
     blockedType: "active",
     sessionUrl: null,
@@ -368,7 +360,7 @@ export const WORKTREES = [
     zone: "NO ZONE",
     pr: "#1701 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1701",
-    status: "DRAFT split from #1698. CI run 29845259306: pre-commit ❌, JIRA Assoc ❌, all-checks ❌; nox ✅, tox ✅. MERGEABLE. No zone assigned.",
+    status: "DRAFT split from #1698. CI run 29845259306: pre-commit ❌, JIRA Assoc ❌, all-checks ❌; nox ✅, tox ✅. No zone assigned.",
     blockedOn: "pre-commit failing; no zone assigned",
     blockedType: "active",
     sessionUrl: null,
@@ -396,6 +388,15 @@ export const WORKTREES = [
 ];
 
 export const MERGED = [
+  {
+    ticket: "JN-5725",
+    ticketUrl: "https://redhat.atlassian.net/browse/JN-5725",
+    title: "feat(e2e): enhanced test infrastructure -- clients, diagnostics, helpers (JN-5725)",
+    pr: "#1705",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1705",
+    mergedDate: "2026-07-22",
+    note: "Merged 11:20 IDT Jul 22 🎉 Off-board PR (AlonKellner-RedHat). No Agor worktree to archive. JN-5725 Done ✅.",
+  },
   {
     ticket: "AIPCC-27657",
     ticketUrl: "https://redhat.atlassian.net/browse/AIPCC-27657",
@@ -508,12 +509,28 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "red",
-    message: "🆕 #1694 (AIPCC-27681): **BOT PR** (jira-autofix) — CONFLICTING. CI run 29740715467: JIRA Assoc ❌, pre-commit ❌; nox ✅, tox ✅, e2e ✅. (Overnight run 29894545350 was misattributed to this PR — corrected.) Action: Joseph review + rebase + fix JIRA Assoc + pre-commit.",
+    level: "green",
+    message: "🎉 #1705 (JN-5725): **MERGED 11:20 IDT Jul 22** — 'feat(e2e): enhanced test infrastructure -- clients, diagnostics, helpers'. Off-board PR (AlonKellner-RedHat). JN-5725 Done ✅.",
+  },
+  {
+    level: "green",
+    message: "🟢 #1670 (jn-5844 JN-5844): **REBASED + ALL CI PASSING** (run 29914429195: all-checks ✅, JIRA Assoc ✅, tox ✅). NOW MERGEABLE. Still DRAFT. **Action: Mark #1670 ready for review immediately.**",
   },
   {
     level: "red",
-    message: "🔴 #1693 (AIPCC-27655): **BOT PR** (jira-autofix) — **🎉 APPROVED** but **🔴 now CONFLICTING** (was MERGEABLE at 13:33). Run 29905405310: e2e-api ✅, nox ✅, tox ✅, e2e-smoke ✅; pre-commit ❌, JIRA Assoc ❌; **🔴 e2e-product FAILED**. Action: Rebase on main. Fix e2e-product + pre-commit + JIRA Assoc.",
+    message: "🔴 #1638 (JN-5725, off-board): **NOW CONFLICTING** (was MERGEABLE at 14:03 — new regression!). New run 29915128929: e2e-smoke ✅ PASSED, e2e-product PENDING; all others ✅. Needs rebase + wait for e2e-product result.",
+  },
+  {
+    level: "yellow",
+    message: "🟡 #1704 (JN-5725, off-board, AlonKellner-RedHat): APPROVED + CONFLICTING. Run 29911800158: all checks ✅ except e2e-product PENDING. Needs rebase + e2e-product to clear.",
+  },
+  {
+    level: "red",
+    message: "🆕 #1694 (AIPCC-27681): **BOT PR** (jira-autofix) — UNKNOWN mergeable. CI run 29740715467: JIRA Assoc ❌, pre-commit ❌; nox ✅, tox ✅, e2e ✅. Action: Joseph review + rebase + fix JIRA Assoc + pre-commit.",
+  },
+  {
+    level: "red",
+    message: "🔴 #1693 (AIPCC-27655): **BOT PR** (jira-autofix) — **🎉 APPROVED** but UNKNOWN mergeable. Run 29905405310: e2e-api ✅, nox ✅, tox ✅, e2e-smoke ✅; pre-commit ❌, JIRA Assoc ❌; **🔴 e2e-product FAILED**. Action: Rebase on main. Fix e2e-product + pre-commit + JIRA Assoc.",
   },
   {
     level: "red",
@@ -521,19 +538,15 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 #1638 (JN-5725, off-board): **Run 29911965755 (14:03 IDT) — e2e-smoke FAILED ❌** (25m26s). Was PENDING at 13:33. all-checks ❌, e2e-tests ❌; pre-commit ✅, JIRA Assoc ✅, e2e-api ✅, nox ✅, tox ✅. MERGEABLE. **#1704 now ALL CI PASSING + MERGEABLE 🟢**. #1705 e2e-product PENDING.",
-  },
-  {
-    level: "red",
     message: "🔴 #1698 (aipcc-23845): isDraft:false (ready for review). CONFLICTING. pre-commit ❌ (run 29749885088). **Action: 1) Rebase on main. 2) Fix pre-commit.**",
   },
   {
     level: "red",
-    message: "🔴 #1667 (jn-5845 JN-5845): **CONFLICTING + pre-commit ❌** (run 29896027349, 13:33 IDT). 13:03 'all passing' was premature — pre-commit job (6m14s) still running at scan time. **Action: Rebase jn-5845-helm-cicd-agents-md on main, fix pre-commit, then mark ready for review.**",
+    message: "🔴 #1667 (jn-5845 JN-5845): **CONFLICTING + pre-commit ❌** (run 29896027349). **Action: Rebase jn-5845-helm-cicd-agents-md on main, fix pre-commit, then mark ready for review.**",
   },
   {
     level: "red",
-    message: "🔴 #1700 + #1701 (AIPCC-23845 splits): pre-commit ❌, JIRA Assoc ❌, all-checks ❌. MERGEABLE. NO ZONE. Action: Fix pre-commit, assign zones.",
+    message: "🔴 #1700 + #1701 (AIPCC-23845 splits): pre-commit ❌, JIRA Assoc ❌, all-checks ❌. NO ZONE. Action: Fix pre-commit, assign zones.",
   },
   {
     level: "yellow",
@@ -541,7 +554,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 #1697 DRAFT (aipcc-23890): pre-commit ❌, JIRA Assoc ❌, all-checks ❌. MERGEABLE. No zone assigned.",
+    message: "🔴 #1697 DRAFT (aipcc-23890): pre-commit ❌, JIRA Assoc ❌, all-checks ❌. No zone assigned.",
   },
   {
     level: "red",
@@ -553,11 +566,7 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "🟡 #1695 (aipcc-23925): MERGEABLE. DRAFT. CI run 29846894702: pre-commit ❌, JIRA Assoc ❌, all-checks ❌. **Action: Fix pre-commit + JIRA Assoc, then mark ready.**",
-  },
-  {
-    level: "red",
-    message: "🔴 #1670 DRAFT (jn-5844 JN-5844): **NOW CONFLICTING** (was MERGEABLE at 13:33). CI run 29899957009: all-checks ✅, JIRA Assoc ✅, bake ✅ — CI clean. Needs: rebase on main, then mark ready for review.",
+    message: "🟡 #1695 (aipcc-23925): DRAFT. CI run 29846894702: pre-commit ❌, JIRA Assoc ❌, all-checks ❌. **Action: Fix pre-commit + JIRA Assoc, then mark ready.**",
   },
   {
     level: "yellow",

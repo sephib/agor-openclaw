@@ -4,6 +4,15 @@
 
 ---
 
+## 14:33 IDT — Weekday Daytime Heartbeat (Jul 22 2026)
+- PRs checked: #1690 (CONFLICTING/all-CI-pass), #1667 (CONFLICTING+pre-commit❌), #1670 (MERGEABLE+all-CI✅ — rebased!), #1669 (DRAFT/CONFLICTING/CI❌), #1638 (CONFLICTING+e2e-smoke✅+e2e-product PENDING — was MERGEABLE at 14:03), #1693 (APPROVED+e2e-product❌), #1694 (CONFLICTING), #1695-#1701 (unchanged), #1704 (APPROVED+CONFLICTING+e2e-product PENDING), #1705 (MERGED 11:20 IDT)
+- Merges detected: **#1705 MERGED 11:20 IDT Jul 22** — off-board PR (AlonKellner-RedHat). No Agor worktree to archive. JN-5725 already Done ✅.
+- CI changes: **#1670 REBASED** — new CI run 29914429195: all-checks ✅, JIRA Assoc ✅, tox ✅. NOW MERGEABLE (was CONFLICTING at 14:03). Still DRAFT — needs to be marked ready for review. **#1638 NOW CONFLICTING** (was MERGEABLE at 14:03 — new regression!). New run 29915128929: e2e-smoke ✅ PASSED (was FAILED at 14:03), e2e-product PENDING. #1704: e2e-product still PENDING, APPROVED+CONFLICTING (unchanged).
+- Flags: #1670 ready for review (rebase done + CI clean), #1638 conflicting regression (needs rebase), #1704 e2e-product pending
+- Next: Monitor #1638 e2e-product + rebase. Monitor #1704 e2e-product. Mark #1670 ready for review. Continue watching #1693 e2e-product failure.
+
+---
+
 ## 13:33 IDT — Weekday Daytime Heartbeat (Jul 22 2026)
 - PRs checked: #1638 (new run 29911800158), #1667 (CONFLICTING+pre-commit❌), #1693 (unchanged/APPROVED+e2e-product❌), #1690 (CONFLICTING/all-CI-pass), #1669 (DRAFT/CONFLICTING), #1670 (DRAFT/clean), #1694 (CONFLICTING), #1695-#1701 (unchanged), #1704 (unchanged), #1705 (unchanged)
 - Merges detected: none (sweep scoped to Joseph's PRs — no new merges from tracked worktrees)
