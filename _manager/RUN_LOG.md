@@ -4,6 +4,15 @@
 
 ---
 
+## 10:13 IDT — Weekday Daytime Heartbeat (Jul 22 2026)
+- PRs checked: #1690 (open), #1667 (🎉 REBASED→MERGEABLE), #1669 (DRAFT/CONFLICTING), #1698 (CONFLICTING/pre-commit❌), #1697 (DRAFT), #1700 (DRAFT), #1701 (DRAFT), #1696 (DRAFT), #1695 (DRAFT), #1638 (CONFLICTING/pre-commit❌), #1670 (DRAFT), #1596 (DRAFT/CONFLICTING), #1693 (bot), #1694 (bot)
+- Merges detected: none (both gh sweeps empty)
+- CI changes: **#1667 new run 29896027349** (rebased — MERGEABLE); only pre-commit ❌. **#1693 new run 29894545350**: e2e-product ❌ (49min), nox ❌, tox ❌ — CI REGRESSION (bot PR). **#1694 CORRECTION**: overnight falsely attributed run 29894545350 to #1694; actual latest is still 29740715467.
+- Flags: #1667 rebase (positive), #1693 e2e-product regression, 6 Jira mismatches unchanged
+- Next: Joseph should fix pre-commit on jn-5845 (#1667 ready to merge), investigate e2e-product failure on #1693
+
+---
+
 ## 22:00 IDT — Weekday Overnight Heartbeat (Jul 21 2026)
 - PRs checked: #1690 (CONFLICTING/all-CI-pass), #1667 (CONFLICTING/CI-stale-pass), #1669 (CONFLICTING/CI-fail), #1698 (CONFLICTING/pre-commit❌), #1697 (MERGEABLE/pre-commit❌), #1700 (MERGEABLE/pre-commit❌), #1701 (MERGEABLE/pre-commit❌), #1696 (MERGEABLE/JIRA-only❌), #1695 (MERGEABLE/pre-commit❌), #1638 (CONFLICTING/pre-commit❌), #1670 (DRAFT/MERGEABLE/CI-pass), #1596 (DRAFT/CONFLICTING)
 - Merges detected: none (assignee + review-requested sweeps both empty)

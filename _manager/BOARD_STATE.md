@@ -1,8 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-22 09:00 IDT (advance heartbeat)*
-
-⚠️ BOARD_STATE.md was 11+ hours old (22:00 IDT Jul 21 → 09:00 IDT Jul 22). Overnight session at 03:00 IDT failed — full refresh performed.
+*Last updated: 2026-07-22 10:13 IDT (advance heartbeat)*
 
 ---
 
@@ -15,7 +13,7 @@
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — New | Design session done Jun 30. Ready for Plan phase. Stale 22+ days. |
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | Last session Jul 8 IDLE. SHA 16ec44ea (2 commits). Needs: configs, rebase, PR. Stale 14+ days. |
 | jn-5844-service-lib-sql-agents-md | **Publish** | [#1670 DRAFT](https://github.com/Jounce-IO/jounce/pull/1670) | ✅ ALL CI PASS (run 29403233416 — stale) | [JN-5844](https://redhat.atlassian.net/browse/JN-5844) — New | DRAFT PR #1670. CI all pass (stale). Needs: mark ready for review. |
-| jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | ✅ all-pass stale run 29402877354 | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) — New | 🔴 **CONFLICTING** (unchanged). CI stale. **Action: Rebase jn-5845-helm-cicd-agents-md on main.** |
+| jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | 🔴 run 29896027349: pre-commit ❌, all-checks ❌; JIRA Assoc ✅, nox ✅, tox ✅, e2e ✅ | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) — New | 🟡 **REBASED → MERGEABLE** ✅ (was CONFLICTING). New CI run. **Only blocker: pre-commit ❌. Action: Fix pre-commit on jn-5845-helm-cicd-agents-md.** |
 | jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | 🔴 run 29683534910 (stale): pre-commit ❌, nox ❌, tox-run ❌, all-checks ❌ | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — In Progress | 🔴 **CI ❌ + CONFLICTING** — DRAFT. Unchanged. Needs rebase + CI fix. |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — New | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 14+** (still Ingest, should be Code). |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 27+ days. Propose archive. |
@@ -32,8 +30,8 @@
 
 | PR | Ticket | State | CI | Notes |
 |----|--------|-------|----|-------|
-| [#1693](https://github.com/Jounce-IO/jounce/pull/1693) | [AIPCC-27655](https://redhat.atlassian.net/browse/AIPCC-27655) | OPEN, MERGEABLE, NOT draft | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌ (run 29740715467); e2e ✅, nox ✅, tox ✅ | Bot "jira-autofix" authored. "fix(jbenchmark): return 409 Conflict on duplicate experiment plan name". Not on board. Needs Joseph review + merge or close. |
-| [#1694](https://github.com/Jounce-IO/jounce/pull/1694) | [AIPCC-27681](https://redhat.atlassian.net/browse/AIPCC-27681) | OPEN, CONFLICTING, NOT draft | 🔴 **NEW run 29894545350** (overnight): nox ❌, pre-commit ❌, tox ❌; JIRA Assoc ✅; e2e-product 🔄 PENDING; e2e-api ✅, e2e-smoke ✅, integration ✅ | Bot "jira-autofix" authored. "fix(jbenchmark): share MetadataResolver across gpu_count iterations". New code pushed overnight — JIRA Assoc fixed but nox/tox now failing. Needs Joseph review. |
+| [#1693](https://github.com/Jounce-IO/jounce/pull/1693) | [AIPCC-27655](https://redhat.atlassian.net/browse/AIPCC-27655) | OPEN, MERGEABLE, NOT draft | 🔴 **NEW run 29894545350**: e2e-product ❌ (49min), nox ❌, tox ❌, pre-commit ❌; JIRA Assoc ✅, e2e-api ✅, e2e-smoke ✅, integration ✅ | Bot "jira-autofix" authored. "fix(jbenchmark): return 409 Conflict on duplicate experiment plan name". **CI REGRESSION** — e2e-product now failing. Needs Joseph review. |
+| [#1694](https://github.com/Jounce-IO/jounce/pull/1694) | [AIPCC-27681](https://redhat.atlassian.net/browse/AIPCC-27681) | OPEN, CONFLICTING, NOT draft | 🔴 run 29740715467: JIRA Assoc ❌, pre-commit ❌, all-checks ❌; nox ✅, tox ✅, e2e ✅ | Bot "jira-autofix" authored. "fix(jbenchmark): share MetadataResolver across gpu_count iterations". ⚠️ Overnight session misattributed run 29894545350 to this PR — that run belongs to #1693. Actual state: run 29740715467 still latest. Needs Joseph review. |
 
 ---
 
@@ -82,15 +80,14 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (09:00 IDT Jul 22 vs 22:00 IDT Jul 21)
-
-⚠️ BOARD_STATE.md was 11+ hours old (overnight session at 03:00 IDT failed — full refresh).
+## Key Changes (10:13 IDT Jul 22 vs 09:00 IDT Jul 22)
 
 | What changed | Delta |
 |---|---|
-| **#1693 (NEW)** | Bot-authored PR for AIPCC-27655 detected — not previously tracked. MERGEABLE, not draft, pre-commit ❌ + JIRA Assoc ❌. Needs Joseph review. |
-| **#1694 (NEW + new CI run)** | Bot-authored PR for AIPCC-27681 detected — new CI run 29894545350 triggered overnight. nox ❌, pre-commit ❌, tox ❌; JIRA Assoc now ✅; e2e-product PENDING. CONFLICTING. Needs Joseph review. |
-| **All other PRs** | Board static — no CI run changes, no merges, no state changes since 22:00 IDT Jul 21. 6 Jira mismatches remain. |
+| **#1667 REBASED → MERGEABLE** 🎉 | jn-5845-helm-cicd-agents-md was CONFLICTING — someone rebased! New CI run 29896027349. **Only blocker: pre-commit ❌.** JIRA Assoc ✅, nox ✅, tox ✅, e2e ✅. Close to ready. |
+| **#1693 CI REGRESSION** | New CI run 29894545350 — e2e-product FAIL (49min), nox ❌, tox ❌, pre-commit ❌. JIRA Assoc now ✅. More failures than before. Overnight session had run 29740715467 for this PR with fewer failures. |
+| **#1694 CORRECTION** | Overnight session incorrectly attributed run 29894545350 to #1694. Actual latest for #1694 is still run 29740715467: JIRA Assoc ❌, pre-commit ❌, nox ✅, tox ✅, e2e ✅. |
+| **All other PRs** | Board static — no CI run changes, no merges, no state changes. 6 Jira mismatches remain. |
 
 ---
 
@@ -98,18 +95,19 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ### 🆕 #1693 + #1694 — Bot-Authored PRs Need Review
 
-Two new PRs authored by `jira-autofix` bot:
+Two bot-authored PRs from `jira-autofix`:
 
 **[#1693](https://github.com/Jounce-IO/jounce/pull/1693)**: "fix(jbenchmark): return 409 Conflict on duplicate experiment plan name (AIPCC-27655)"
-- State: OPEN, MERGEABLE, NOT draft (ready for review)
-- CI run 29740715467: ❌ pre-commit, JIRA Assoc ❌, all-checks ❌ — but e2e-api ✅, e2e-smoke ✅, integration ✅, nox ✅, tox ✅
-- **Action:** Review PR, fix pre-commit + JIRA Assoc, then merge if correct.
+- State: OPEN, MERGEABLE, NOT draft
+- **NEW CI run 29894545350**: ❌ pre-commit, nox ❌, tox ❌, all-checks ❌, **e2e-product ❌ (49min FAILED)**; JIRA Assoc ✅, e2e-api ✅, e2e-smoke ✅, integration ✅
+- **CI REGRESSION** — e2e-product now failing (was passing on run 29740715467). Bot may have pushed new code.
+- **Action:** Review PR content. Fix e2e-product failure (or investigate cause), pre-commit, nox, tox.
 
 **[#1694](https://github.com/Jounce-IO/jounce/pull/1694)**: "fix(jbenchmark): share MetadataResolver across gpu_count iterations (AIPCC-27681)"
 - State: OPEN, CONFLICTING, NOT draft
-- **New CI run 29894545350 (overnight):** nox ❌, pre-commit ❌, tox ❌; JIRA Assoc ✅ (fixed); e2e-product 🔄 PENDING; e2e-api ✅, e2e-smoke ✅, integration ✅
-- Someone pushed new code overnight — JIRA Assoc fixed but nox/tox now failing
-- **Action:** Review PR + monitor e2e-product. Rebase on main (CONFLICTING) + fix nox/tox + fix pre-commit.
+- CI run 29740715467 (latest): JIRA Assoc ❌, pre-commit ❌, all-checks ❌; nox ✅, tox ✅, e2e ✅
+- ⚠️ Overnight session incorrectly reported run 29894545350 for this PR — corrected.
+- **Action:** Review PR. Rebase on main (CONFLICTING). Fix JIRA Assoc + pre-commit.
 
 ---
 
@@ -141,12 +139,13 @@ PR [#1669](https://github.com/Jounce-IO/jounce/pull/1669): "feat(jbenchmark): im
 
 ---
 
-### 🔴 #1667 (jn-5845) — CONFLICTING
+### 🟡 #1667 (jn-5845) — REBASED → MERGEABLE (pre-commit ❌ only)
 
 PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): add Helm and CI/CD domain AGENTS.md files (JN-5845)"
-- State: OPEN, **🔴 CONFLICTING** (unchanged)
-- CI: stale run 29402877354 all-pass.
-- **Action:** Rebase jn-5845-helm-cicd-agents-md on main.
+- State: OPEN, **MERGEABLE** ✅ (was CONFLICTING — **rebased since last run!**)
+- **NEW CI run 29896027349**: pre-commit ❌, all-checks ❌; **JIRA Assoc ✅, nox ✅, tox ✅, e2e-api ✅, e2e-smoke ✅, integration ✅**
+- **Only blocker: pre-commit ❌**
+- **Action:** Fix pre-commit on jn-5845-helm-cicd-agents-md, then mark PR ready for review (currently isDraft:false, but not marked ready — check).
 
 ---
 
@@ -205,10 +204,6 @@ Last session Jul 8 IDLE. SHA 16ec44ea (2 commits).
 - **Propose:** Fork a new session to generate configs, rebase on main, create PR.
 
 ---
-
-### ⚠️ Overnight Session Failure (03:00 IDT Jul 22)
-
-The overnight session at 03:00 IDT (Jul 22) FAILED — causing 11-hour gap in BOARD_STATE.md. Daytime sessions running correctly.
 
 ---
 
