@@ -2782,3 +2782,11 @@
 - Flags: 🆕 aipcc-27996-faulty-export-cache NEW (Plan zone, AIPCC-27996, created 09:53 IDT — not previously tracked); 🔵 aipcc-27994-faulty-column zone Plan→Code; 🟡 #1670 CONFLICTING→MERGEABLE (rebased). 6 Jira mismatches unchanged.
 - Actions: 0 archives, 0 auto-advances
 - Next: Fix pre-commit on #1670 + #1667 (both MERGEABLE, both pre-commit only blocker); investigate #1638 CI failure; rebase #1690/#1698; ingest AIPCC-27996; 6 Jira mismatches via acli
+
+## 13:31 IDT — Weekday Daytime Heartbeat
+- PRs checked: #1690 (OPEN, CONFLICTING, isDraft:true), #1670 (OPEN, MERGEABLE, e2e-smoke ✅), #1667 (OPEN, MERGEABLE), #1669 (OPEN, CONFLICTING DRAFT), #1698 (OPEN, CONFLICTING), #1700 (OPEN, MERGEABLE, **NOT DRAFT**), #1701 (OPEN, MERGEABLE DRAFT), #1696 (OPEN, MERGEABLE DRAFT), #1695 (OPEN, MERGEABLE DRAFT), #1693 (OPEN, **MERGEABLE**, APPROVED), #1694 (OPEN, CONFLICTING), #1638 (OPEN, MERGEABLE, CI FAILING)
+- Merges detected: none
+- Zone advances: aipcc-27994-faulty-column Code→**Verify** (zone-1781429931920); aipcc-27996-faulty-export-cache Plan→**Code** (zone-1781429763919)
+- CI changes: #1693 new CI run 29999372432 IN PROGRESS (rebased CONFLICTING→MERGEABLE, already APPROVED — watch pre-commit); #1670 e2e-smoke ✅ (was pending)
+- Flags: #1700 un-drafted (isDraft:false); 6 Jira mismatches unchanged; #1638 CI still failing
+- Next: Watch #1693 CI run 29999372432 — if pre-commit ✅, merge immediately (already approved)

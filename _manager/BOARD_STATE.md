@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-23 13:01 IDT (advance heartbeat)*
+*Last updated: 2026-07-23 13:31 IDT (advance heartbeat)*
 
 ---
 
@@ -8,20 +8,20 @@
 
 | Worktree | Zone | PR | CI | Jira | Status |
 |---------|------|----|----|------|--------|
-| aipcc-27645-server-resources | **Code** | [#1690](https://github.com/Jounce-IO/jounce/pull/1690) | ✅ ALL CI FULLY PASSING run 29729530150 (stale) | [AIPCC-27645](https://redhat.atlassian.net/browse/AIPCC-27645) — In Progress | 🔴 **CONFLICTING** (5+ days unchanged). ALL CI 100% PASS. **Action: Rebase aipcc-27645-server-resources on main, then request review.** |
+| aipcc-27645-server-resources | **Code** | [#1690](https://github.com/Jounce-IO/jounce/pull/1690) | ✅ ALL CI FULLY PASSING run 29729530150 (stale) | [AIPCC-27645](https://redhat.atlassian.net/browse/AIPCC-27645) — In Progress | 🔴 **CONFLICTING** (5+ days unchanged). isDraft:true. ALL CI 100% PASS. **Action: Rebase aipcc-27645-server-resources on main, then request review.** |
 | jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | UNKNOWN (frozen) | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) — In Progress | 🔴 DRAFT + CONFLICTING; frozen since Jun 14. |
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — New | Design session done Jun 30. Ready for Plan phase. Stale 23+ days. |
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | Last session Jul 8 IDLE. SHA 16ec44ea (2 commits). Needs: configs, rebase, PR. Stale 15+ days. |
-| jn-5844-service-lib-sql-agents-md | **Publish** | [#1670](https://github.com/Jounce-IO/jounce/pull/1670) | 🟡 run 29996748376 (NEW): pre-commit ❌, pre-commit-run ❌; e2e-smoke 🟡 PENDING; e2e-api ✅, integration ✅, tox ✅, JIRA Assoc ✅, nox ✅, resolve-conflicts ✅ | [JN-5844](https://redhat.atlassian.net/browse/JN-5844) — New | 🟡 **REBASED → NOW MERGEABLE** (improved from CONFLICTING — resolve-conflicts ✅). New CI run 29996748376: **pre-commit ❌** still failing; e2e-smoke 🟡 pending; all others ✅. **Action: Fix pre-commit hook, then ready for review.** |
-| jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | 🟡 NEW run 29993991860: pre-commit ❌, all-checks ❌; e2e-api ✅, e2e-smoke ✅, integration ✅, tox ✅, nox ✅, JIRA Assoc ✅, e2e-tests ✅, resolve-conflicts ✅ | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) — New | 🟡 **REBASED → NOW MERGEABLE** (conflicts resolved ✅). pre-commit ❌ still failing. **Action: Fix pre-commit hook failure, then ready for review.** |
+| jn-5844-service-lib-sql-agents-md | **Publish** | [#1670](https://github.com/Jounce-IO/jounce/pull/1670) | 🟡 run 29996748376: pre-commit ❌, pre-commit-run ❌; **e2e-smoke ✅ PASS** (was pending); e2e-api ✅, integration ✅, tox ✅, JIRA Assoc ✅, nox ✅, resolve-conflicts ✅ | [JN-5844](https://redhat.atlassian.net/browse/JN-5844) — New | 🟡 **MERGEABLE** (rebased). **e2e-smoke ✅ now passing** (was pending at 13:01). **pre-commit ❌** still only blocker. **Action: Fix pre-commit hook.** |
+| jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | 🟡 run 29993991860: pre-commit ❌, all-checks ❌; e2e-api ✅, e2e-smoke ✅, integration ✅, tox ✅, nox ✅, JIRA Assoc ✅, e2e-tests ✅, resolve-conflicts ✅ | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) — New | 🟡 **MERGEABLE** (conflicts resolved ✅). pre-commit ❌ still failing. **Action: Fix pre-commit hook failure, then ready for review.** |
 | jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | 🔴 run 29683534910 (stale): pre-commit ❌, nox ❌, tox-run ❌, all-checks ❌ | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — In Progress | 🔴 **CI ❌ + CONFLICTING** — DRAFT. Unchanged. Needs rebase + CI fix. |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — New | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 15+** (still Ingest, should be Code). |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 28+ days. Propose archive. |
-| aipcc-27994-faulty-column | **Code** | — | — | [AIPCC-27994](https://redhat.atlassian.net/browse/AIPCC-27994) — New | Zone moved Plan → Code (13:01 IDT Jul 23). No sessions yet. [DEV] Faulty column, PATCH endpoint, experiment list filtering. |
-| aipcc-27996-faulty-export-cache | **Plan** | — | — | [AIPCC-27996](https://redhat.atlassian.net/browse/AIPCC-27996) — New | 🆕 NEW (detected 13:01 IDT Jul 23, created 09:53 IDT). No sessions yet. No PR. |
+| aipcc-27994-faulty-column | **Verify** | — | — | [AIPCC-27994](https://redhat.atlassian.net/browse/AIPCC-27994) — New | 🔵 Zone advanced **Code → Verify** (detected 13:31 IDT Jul 23). No sessions yet. No PR. |
+| aipcc-27996-faulty-export-cache | **Code** | — | — | [AIPCC-27996](https://redhat.atlassian.net/browse/AIPCC-27996) — New | 🔵 Zone advanced **Plan → Code** (detected 13:31 IDT Jul 23). Was Plan at 13:01 IDT. No sessions yet. No PR. |
 | aipcc-23845-cluster-connection | **Plan** | [#1698](https://github.com/Jounce-IO/jounce/pull/1698) | 🔴 CI run 29749885088 — pre-commit ❌, all-checks ❌; JIRA Assoc ✅, nox ✅, tox ✅ | [AIPCC-23845](https://redhat.atlassian.net/browse/AIPCC-23845) | isDraft:false. CONFLICTING + pre-commit ❌. **Action: Rebase + fix pre-commit.** |
 | aipcc-23890-qe-cluster-tests | **NO ZONE** | [#1697 DRAFT](https://github.com/Jounce-IO/jounce/pull/1697) | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌; nox ✅, tox ✅ (run 29741945977) | [AIPCC-23890](https://redhat.atlassian.net/browse/AIPCC-23890) — In Progress | DRAFT. CI failing: pre-commit ❌. No zone assigned. MERGEABLE. |
-| aipcc-23845-script-runner | **NO ZONE** | [#1700 DRAFT](https://github.com/Jounce-IO/jounce/pull/1700) | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌ (run 29808132144); nox ✅, tox ✅ | [AIPCC-23845](https://redhat.atlassian.net/browse/AIPCC-23845) | DRAFT split from #1698. MERGEABLE. No zone assigned. |
+| aipcc-23845-script-runner | **NO ZONE** | [#1700](https://github.com/Jounce-IO/jounce/pull/1700) | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌ (run 29808132144); nox ✅, tox ✅ | [AIPCC-23845](https://redhat.atlassian.net/browse/AIPCC-23845) | **🆕 NOT DRAFT** (isDraft:false — was DRAFT at 13:01). MERGEABLE. No zone assigned. |
 | aipcc-23845-generator-hotfix | **NO ZONE** | [#1701 DRAFT](https://github.com/Jounce-IO/jounce/pull/1701) | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌ (run 29845259306); nox ✅, tox ✅ | [AIPCC-23845](https://redhat.atlassian.net/browse/AIPCC-23845) | DRAFT split from #1698. MERGEABLE. No zone assigned. |
 | aipcc-23895-docs-ibm | **Plan** | [#1696 DRAFT](https://github.com/Jounce-IO/jounce/pull/1696) | 🟡 all-checks ✅, JIRA Assoc ❌ only (run 29741885397) | [AIPCC-23895](https://redhat.atlassian.net/browse/AIPCC-23895) | DRAFT. MERGEABLE. JIRA Assoc ❌ only. **Action: Fix JIRA Assoc, then mark ready.** |
 | aipcc-23925-argo-public-url | **Plan** | [#1695 DRAFT](https://github.com/Jounce-IO/jounce/pull/1695) | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌ (run 29846894702) | [AIPCC-23925](https://redhat.atlassian.net/browse/AIPCC-23925) | DRAFT. MERGEABLE. CI failing pre-commit + JIRA Assoc. |
@@ -32,7 +32,7 @@
 
 | PR | Ticket | State | CI | Notes |
 |----|--------|-------|----|-------|
-| [#1693](https://github.com/Jounce-IO/jounce/pull/1693) | [AIPCC-27655](https://redhat.atlassian.net/browse/AIPCC-27655) | OPEN, APPROVED, NOT draft | 🔴 run 29920192197: **pre-commit ❌**; e2e-api ✅, e2e-smoke ✅, integration ✅, tox ✅, nox ✅, JIRA Assoc ✅, **e2e-product ✅** | 🔴 **NOW CONFLICTING** (was UNKNOWN MERGEABLE at 16:03). Bot "jira-autofix". APPROVED. Only pre-commit blocks merge + now CONFLICTING. |
+| [#1693](https://github.com/Jounce-IO/jounce/pull/1693) | [AIPCC-27655](https://redhat.atlassian.net/browse/AIPCC-27655) | OPEN, APPROVED, NOT draft | 🟡 NEW run 29999372432 IN PROGRESS: resolve-conflicts ✅, JIRA Assoc ✅, atlas-validate ✅, integration-run ✅; e2e-api, pre-commit-run, tox-run, integration-tests **PENDING** | 🟡 **CONFLICTING → MERGEABLE** (rebased between 13:01 and 13:31 IDT). New CI run 29999372432 in progress. APPROVED. **Watch: if pre-commit passes, ready to merge!** |
 | [#1694](https://github.com/Jounce-IO/jounce/pull/1694) | [AIPCC-27681](https://redhat.atlassian.net/browse/AIPCC-27681) | OPEN, CONFLICTING, NOT draft | 🔴 run 29740715467: JIRA Assoc ❌, pre-commit ❌, all-checks ❌; nox ✅, tox ✅, e2e ✅ | Bot "jira-autofix". Unchanged. Needs Joseph review. |
 
 ---
@@ -41,7 +41,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🔴 **NEW FAILING CI RUN 29995066495** (09:22 IDT): pre-commit ❌, pre-commit-run ❌, e2e-api ❌, e2e-tests ❌, all-checks ❌; integration ✅, tox ✅, nox ✅, JIRA Assoc ✅ (prev run 29986495648 was ALL PASS at 06:53 IDT) | **OPEN, 🟢 MERGEABLE** | 🔴 **REGRESSION** — New CI run 29995066495 now FAILING. Was "READY TO MERGE" (run 29986495648). Likely caused by main advancing. Needs investigation. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🔴 **FAILING run 29995066495** (09:22 IDT): pre-commit ❌, pre-commit-run ❌, e2e-api ❌, e2e-tests ❌, all-checks ❌; integration ✅, tox ✅, nox ✅, JIRA Assoc ✅ | **OPEN, 🟢 MERGEABLE** | 🔴 **REGRESSION** unchanged. Still failing (was ALL PASS at 06:53 IDT Jul 23). Needs investigation. |
 
 ---
 
@@ -82,71 +82,85 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (13:01 IDT Jul 23 vs 12:31 IDT Jul 23)
+## Key Changes (13:31 IDT Jul 23 vs 13:01 IDT Jul 23)
 
 | What changed | Delta |
 |---|---|
-| **🆕 aipcc-27996-faulty-export-cache — NEW worktree** | Not previously tracked. Created 09:53 IDT Jul 23. Zone: Plan. Ticket: AIPCC-27996. No sessions, no PR yet. |
-| **aipcc-27994-faulty-column — zone Plan → Code** | Agor shows zone-1781429763919 (Code). Previous run (12:31 IDT) showed Plan. Zone advanced — possibly a session was triggered. |
-| **#1670 (jn-5844) — CONFLICTING → MERGEABLE** | Rebased between 12:31 and 13:01 IDT. New CI run 29996748376: resolve-conflicts ✅, MERGEABLE. But **pre-commit ❌** still failing; e2e-smoke 🟡 pending. |
-| **All other PRs** | No merges. No other CI changes. Board otherwise static. |
+| **🔵 aipcc-27994-faulty-column — Zone Code → Verify** | Agor now shows zone-1781429931920 (Verify). Was Code at 13:01 IDT. Sessions may have been triggered. No PR yet. |
+| **🔵 aipcc-27996-faulty-export-cache — Zone Plan → Code** | Agor now shows zone-1781429763919 (Code). Was Plan at 13:01 IDT. No sessions yet. No PR. |
+| **#1693 — CONFLICTING → MERGEABLE** | Rebased between 13:01 and 13:31 IDT. New CI run 29999372432 IN PROGRESS. Already APPROVED. Watch: if pre-commit ✅, ready to merge! |
+| **#1670 — e2e-smoke ✅ PASS** | e2e-smoke now passing (was PENDING at 13:01). Pre-commit still ❌. No change to merge readiness. |
+| **#1700 — isDraft:false (un-drafted)** | aipcc-23845-script-runner PR #1700 was DRAFT at 13:01, now NOT draft. Ready for review (still needs pre-commit fix). |
+| **All other PRs** | No merges. No other CI changes. |
 
 ---
 
 ## Attention Items
 
-### 🆕 aipcc-27996-faulty-export-cache — NEW Plan Worktree (not previously tracked)
+### 🟡 #1693 (AIPCC-27655) — REBASED → MERGEABLE; CI In Progress — Watch Closely
 
-- Created 09:53 IDT Jul 23. Zone: Plan. No sessions, no PR.
-- Ticket: [AIPCC-27996](https://redhat.atlassian.net/browse/AIPCC-27996)
-- **Action: Ingest ticket, start /agor-ingest-jira session.**
+PR [#1693](https://github.com/Jounce-IO/jounce/pull/1693): "fix(jbenchmark): add DuplicatePlanNameError for 409 on duplicate plan name AIPCC-27655"
+- State: OPEN, **🎉 APPROVED**, **🟢 MERGEABLE** (improved from CONFLICTING — rebased between 13:01 and 13:31 IDT)
+- New CI run 29999372432 **IN PROGRESS**: resolve-conflicts ✅, JIRA Assoc ✅, atlas-validate ✅, integration-run ✅; pre-commit-run, tox-run, e2e-api, integration-tests **PENDING**
+- **If pre-commit passes → READY TO MERGE immediately (already APPROVED, all others ✅)**
+- **Action: Watch run 29999372432. If pre-commit ✅, merge it.**
 
 ---
 
-### 🔵 aipcc-27994-faulty-column — Zone Advanced Plan → Code
+### 🔵 aipcc-27994-faulty-column — Zone Advanced Code → Verify
 
-- Agor shows zone-1781429763919 (Code) at 13:01 IDT. Was Plan at 12:31 IDT.
+- Agor shows zone-1781429931920 (Verify) at 13:31 IDT. Was Code at 13:01 IDT.
 - No PR yet. No sessions detected. Ticket: [AIPCC-27994](https://redhat.atlassian.net/browse/AIPCC-27994) — New.
-- **Note:** Zone may have been moved manually or by a session trigger.
+- **Note:** Zone may have been moved manually or by a session trigger. Two zone advances in one heartbeat cycle.
 
 ---
 
-### 🔴 #1638 (off-board JN-5725) — CI REGRESSION — Was "Ready to Merge", Now Failing
+### 🔵 aipcc-27996-faulty-export-cache — Zone Advanced Plan → Code
+
+- Agor shows zone-1781429763919 (Code) at 13:31 IDT. Was Plan at 13:01 IDT.
+- No PR yet. No sessions detected. Ticket: [AIPCC-27996](https://redhat.atlassian.net/browse/AIPCC-27996) — New.
+- **Note:** Zone may have been moved manually. No sessions yet in this zone.
+
+---
+
+### 🔴 #1638 (off-board JN-5725) — CI REGRESSION — Unchanged
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638): "chore(infra): vLLM analyzer prerequisites - workflow improvements (JN-5725)"
-- State: OPEN, **🟢 MERGEABLE** (technically mergeable)
-- **Previous run 29986495648 (06:53 IDT)**: ALL CI PASS ✅ — was "READY TO MERGE"
-- **NEW run 29995066495 (09:22 IDT)**: **FAILING** — pre-commit ❌, pre-commit-run ❌, e2e-api ❌, e2e-tests ❌, all-checks ❌; integration ✅, tox ✅, nox ✅, JIRA Assoc ✅
-- Pre-commit log shows all hooks "Passed" but process exits with code 1 — may be transient or triggered by main advancing
-- **Action: Investigate new CI failure. If transient (infra issue), re-run CI. If real failure, needs fix.**
-- Jira: JN-5725 Done ✅
+- State: OPEN, **🟢 MERGEABLE**
+- CI run 29995066495 (09:22 IDT): **FAILING** — pre-commit ❌, pre-commit-run ❌, e2e-api ❌, e2e-tests ❌, all-checks ❌; integration ✅, tox ✅, nox ✅, JIRA Assoc ✅
+- Unchanged since 13:01 IDT
+- **Action: Investigate new CI failure. Jira: JN-5725 Done ✅**
 
 ---
 
-### 🟡 #1670 (jn-5844) — NOW MERGEABLE (rebased); pre-commit ❌ + e2e-smoke pending
+### 🟡 #1670 (jn-5844) — MERGEABLE; e2e-smoke ✅; pre-commit ❌ only blocker
 
-PR [#1670](https://github.com/Jounce-IO/jounce/pull/1670): "docs(jbenchmark): add service, libs, and SQL domain AGENTS.md files (JN-5844)"
-- State: OPEN, **🟢 MERGEABLE** (improved from CONFLICTING — rebased between 12:31 and 13:01 IDT)
-- New CI run 29996748376: resolve-conflicts ✅, e2e-api ✅, integration ✅, tox ✅, JIRA Assoc ✅, nox ✅; **pre-commit ❌** still failing; e2e-smoke 🟡 PENDING
-- **Action: Fix pre-commit hook failure, then ready for review (same as #1667).**
-
----
-
-### 🟡 #1667 (jn-5845) — REBASED → MERGEABLE; pre-commit ❌ still fails
-
-PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): add Helm and CI/CD domain AGENTS.md files (JN-5845)"
-- State: OPEN, **🟢 MERGEABLE** (conflicts resolved — improvement from CONFLICTING)
-- New CI run 29993991860: resolve-conflicts ✅, e2e-api ✅, e2e-smoke ✅, integration ✅, tox ✅, nox ✅, JIRA Assoc ✅, e2e-tests ✅; **pre-commit ❌**, all-checks ❌
+PR [#1670](https://github.com/Jounce-IO/jounce/pull/1670)
+- State: OPEN, **🟢 MERGEABLE**
+- CI run 29996748376: e2e-smoke ✅ NOW PASSING (was pending at 13:01). pre-commit ❌ still fails.
 - **Action: Fix pre-commit hook failure, then ready for review.**
 
 ---
 
-### 🔴 #1693 + #1694 — Bot-Authored PRs Need Review
+### 🟡 #1667 (jn-5845) — MERGEABLE; pre-commit ❌ still fails
 
-**[#1693](https://github.com/Jounce-IO/jounce/pull/1693)**: "fix(jbenchmark): add DuplicatePlanNameError for 409 on duplicate plan name AIPCC-27655"
-- State: OPEN, **🎉 APPROVED**, **🔴 CONFLICTING** (regression from 16:03)
-- CI run 29920192197: **pre-commit ❌** still failing; all others ✅ including e2e-product ✅
-- **Action:** Rebase + Fix pre-commit — that's all blocking merge.
+PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667)
+- State: OPEN, **🟢 MERGEABLE** (unchanged)
+- CI run 29993991860: pre-commit ❌. All others ✅.
+- **Action: Fix pre-commit hook failure, then ready for review.**
+
+---
+
+### 🆕 #1700 (aipcc-23845-script-runner) — UN-DRAFTED — Now Ready for Review
+
+PR [#1700](https://github.com/Jounce-IO/jounce/pull/1700): "fix(jbenchmark): script runner and cluster config (AIPCC-23845)"
+- State: OPEN, **NOT DRAFT** (was DRAFT at 13:01), **MERGEABLE**
+- CI run 29808132144: pre-commit ❌, JIRA Assoc ❌, all-checks ❌; nox ✅, tox ✅
+- **Action: Fix pre-commit + JIRA Assoc, then assign to appropriate zone.**
+
+---
+
+### 🔴 #1694 — Bot PR Needs Review
 
 **[#1694](https://github.com/Jounce-IO/jounce/pull/1694)**: "fix(jbenchmark): share MetadataResolver across gpu_count iterations (AIPCC-27681)"
 - State: OPEN, CONFLICTING, NOT draft
@@ -155,18 +169,18 @@ PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): ad
 
 ---
 
-### 🔴 #1690 (aipcc-27645) — ALL CI PASSING BUT CONFLICTING (5+ days)
+### 🔴 #1690 (aipcc-27645) — ALL CI PASSING BUT CONFLICTING + isDraft:true (5+ days)
 
 PR [#1690](https://github.com/Jounce-IO/jounce/pull/1690): "fix(helm): increase API server resources and probe tolerances (AIPCC-27645)"
-- State: OPEN, **CONFLICTING** 🔴 (5+ days unchanged)
+- State: OPEN, **CONFLICTING** 🔴 (5+ days unchanged), isDraft:true
 - Run 29729530150 — ALL CHECKS PASS
-- **Action:** Rebase aipcc-27645-server-resources on main, then request review.
+- **Action:** Rebase aipcc-27645-server-resources on main, mark ready, then request review.
 
 ---
 
 ### 🔴 #1669 (jn-5872) — CI FAILING + CONFLICTING (unchanged)
 
-PR [#1669](https://github.com/Jounce-IO/jounce/pull/1669): "feat(jbenchmark): improve dev-connect with namespace/service checks (JN-5872)"
+PR [#1669](https://github.com/Jounce-IO/jounce/pull/1669)
 - State: OPEN, DRAFT, **CONFLICTING** 🔴
 - Run 29683534910 (stale): pre-commit ❌, nox ❌, tox-run ❌, all-checks ❌
 - **Action:** 1) Rebase on main. 2) Fix pre-commit + nox + tox-run.
@@ -180,11 +194,10 @@ PR [#1698](https://github.com/Jounce-IO/jounce/pull/1698): isDraft:false (ready 
 
 ---
 
-### 🔴 #1700 + #1701 (aipcc-23845 splits) — pre-commit ❌, NO ZONE
+### 🔴 #1701 (aipcc-23845) — DRAFT; pre-commit ❌, NO ZONE
 
-PR [#1700](https://github.com/Jounce-IO/jounce/pull/1700): DRAFT. MERGEABLE. pre-commit ❌, JIRA Assoc ❌, all-checks ❌.
 PR [#1701](https://github.com/Jounce-IO/jounce/pull/1701): DRAFT. MERGEABLE. pre-commit ❌, JIRA Assoc ❌, all-checks ❌.
-- **Action:** Fix pre-commit on both. Assign to appropriate zone.
+- **Action:** Fix pre-commit. Assign to appropriate zone.
 
 ---
 
@@ -226,7 +239,7 @@ Last session Jul 8 IDLE. SHA 16ec44ea (2 commits).
 
 ## Archived This Session
 
-None — no MERGED/CLOSED PRs found overnight.
+None — no MERGED/CLOSED PRs found.
 
 Previously archived:
 | Branch | PR | Reason | Time |
