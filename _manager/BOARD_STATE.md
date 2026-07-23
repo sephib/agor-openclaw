@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-23 16:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-23 17:00 IDT (advance heartbeat)*
 
 ---
 
@@ -86,7 +86,7 @@ Also **new mismatches (15:00 IDT)**:
 
 ---
 
-## Key Changes (16:30 IDT Jul 23 vs 16:00 IDT Jul 23)
+## Key Changes (17:00 IDT Jul 23 vs 16:30 IDT Jul 23)
 
 | What changed | Delta |
 |---|---|
