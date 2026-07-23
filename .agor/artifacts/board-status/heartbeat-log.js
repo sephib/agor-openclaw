@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-23 12:31 IDT",
+    actions: 0,
+    findings: 3,
+    status: "ok",
+    summary: "#1638 CI REGRESSION — new failing run 29995066495 (was READY TO MERGE); #1667 improved to MERGEABLE (rebased, pre-commit still fails); aipcc-27994-faulty-column zone corrected to Plan; no merges; 6 Jira mismatches unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8e4f8b8a7cf7a26f4769/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-23 12:01 IDT",
     actions: 0,
     findings: 1,

@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-23 12:01 IDT";
+export const LAST_UPDATED = "2026-07-23 12:31 IDT";
 
 export const WORKTREES = [
   {
@@ -16,6 +16,14 @@ export const WORKTREES = [
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f8a3bc8ae7033ad4cda80/",
     sessionLabel: "advance heartbeat 16:03 IDT Jul 22 — #1704 MERGED; #1670 ALL-CI-PASS; #1638 MERGEABLE; #1667 CONFLICTING",
     recentSessions: [
+      {
+        sessionId: "019f8e4f8b8a7cf7a26f4769",
+        url: "http://127.0.0.1:3030/ui/s/019f8e4f8b8a7cf7a26f4769/",
+        title: "advance heartbeat 12:31 IDT Jul 23 — #1638 CI REGRESSION (run 29995066495 FAILING); #1667 MERGEABLE; zone fix aipcc-27994",
+        status: "running",
+        timestamp: "2026-07-23 12:31 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f8e3413d2716db3dbf0f3",
         url: "http://127.0.0.1:3030/ui/s/019f8e3413d2716db3dbf0f3/",
@@ -48,16 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-23 10:30 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f8b334c197fc4b85c2f09",
-        url: "http://127.0.0.1:3030/ui/s/019f8b334c197fc4b85c2f09/",
-        title: "advance heartbeat 22:00 IDT Jul 22 — #1670 CONFLICTING (regression); #1638 near-ready; no merges",
-        status: "idle",
-        timestamp: "2026-07-22 22:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-23 12:01 IDT",
+    lastActive: "2026-07-23 12:31 IDT",
   },
   {
     ticket: "AIPCC-27681",
@@ -119,8 +119,8 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1667",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1667",
-    status: "🔴 **NOW CONFLICTING** (was MERGEABLE). pre-commit ❌ (run 29920170788). e2e-api ✅, e2e-smoke ✅, integration ✅, tox ✅, nox ✅, JIRA Assoc ✅. NOT draft. **Action: 1) Rebase on main. 2) Fix pre-commit. Push.**",
-    blockedOn: "CONFLICTING + pre-commit failing — rebase then fix",
+    status: "🟡 **REBASED → NOW MERGEABLE** (conflicts resolved). NEW CI run 29993991860: resolve-conflicts ✅, e2e-api ✅, e2e-smoke ✅, integration ✅, tox ✅, nox ✅, JIRA Assoc ✅, e2e-tests ✅; **pre-commit ❌** still failing. NOT draft. **Action: Fix pre-commit, then ready for review.**",
+    blockedOn: "pre-commit ❌ — rebase done, conflicts resolved, but pre-commit still fails",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b8914f87505bf9d7e3f/",
     sessionLabel: "advance heartbeat 21:02 IDT Jul 19 — #1667 CONFLICTING unchanged",
@@ -229,6 +229,14 @@ export const WORKTREES = [
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f60377abb7d9aa3e2e233/",
     sessionLabel: "Internal CR — JN-5844 service/lib/sql AGENTS.md (idle 10:46 IDT)",
     recentSessions: [
+      {
+        sessionId: "019f8e4f8b8a7cf7a26f4769",
+        url: "http://127.0.0.1:3030/ui/s/019f8e4f8b8a7cf7a26f4769/",
+        title: "advance heartbeat 12:31 IDT Jul 23 — #1638 CI REGRESSION; #1667 MERGEABLE; #1670 still CONFLICTING (day 3)",
+        status: "running",
+        timestamp: "2026-07-23 12:31 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f8e3413d2716db3dbf0f3",
         url: "http://127.0.0.1:3030/ui/s/019f8e3413d2716db3dbf0f3/",
@@ -406,10 +414,10 @@ export const WORKTREES = [
     title: "[DEV] Faulty column, PATCH endpoint, and experiment list filtering",
     branch: "aipcc-27994-faulty-column",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/aipcc-27994-faulty-column",
-    zone: "Ingest",
+    zone: "Plan",
     pr: null,
     prUrl: null,
-    status: "🆕 NEW — Ingest zone. No sessions yet. Created 11:51 IDT Jul 23. Ticket status: New.",
+    status: "🆕 NEW — Plan zone (corrected from Ingest). No sessions yet. Created 11:51 IDT Jul 23. Ticket status: New.",
     blockedOn: null,
     blockedType: "active",
     sessionUrl: null,
@@ -571,8 +579,8 @@ export const ALERTS = [
     message: "🆕 aipcc-27994-faulty-column: NEW Ingest worktree — AIPCC-27994: [DEV] Faulty column, PATCH endpoint, and experiment list filtering. Created 11:51 IDT Jul 23. No sessions yet — ready for /agor-ingest-jira.",
   },
   {
-    level: "green",
-    message: "🎉 #1638 (JN-5725, off-board): **ALL CI FULLY PASSING** — run 29986495648: pre-commit ✅, e2e-api ✅, integration ✅, tox ✅, e2e-smoke ✅, nox ✅, JIRA Assoc ✅, **e2e-product ✅ (36m5s)**. MERGEABLE. **⚡ READY TO MERGE NOW!**",
+    level: "red",
+    message: "🔴 #1638 (JN-5725, off-board): **CI REGRESSION** — New run 29995066495 (09:22 IDT Jul 23) FAILING: pre-commit ❌, e2e-api ❌, e2e-tests ❌, all-checks ❌. Was ALL-PASS (run 29986495648, 06:53 IDT). Still MERGEABLE. **Action: Investigate failure — transient infra issue or real regression?**",
   },
   {
     level: "yellow",
@@ -595,8 +603,8 @@ export const ALERTS = [
     message: "🎉 #1705 (JN-5725): **MERGED 11:20 IDT Jul 22** — 'feat(e2e): enhanced test infrastructure'. Off-board PR (AlonKellner-RedHat). JN-5725 Done ✅.",
   },
   {
-    level: "red",
-    message: "🔴 #1667 (jn-5845 JN-5845): CONFLICTING + pre-commit ❌ (run 29920170788). **Action: 1) Rebase on main. 2) Fix pre-commit. Push.**",
+    level: "yellow",
+    message: "🟡 #1667 (jn-5845 JN-5845): **NOW MERGEABLE** (rebased — conflicts resolved). New CI run 29993991860: resolve-conflicts ✅, all e2e ✅; **pre-commit ❌** still failing. **Action: Fix pre-commit hook failure.**",
   },
   {
     level: "red",

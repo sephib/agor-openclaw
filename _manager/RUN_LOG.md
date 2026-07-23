@@ -4,6 +4,15 @@
 
 ---
 
+## 12:31 IDT — Weekday Daytime Heartbeat (Jul 23 2026)
+- PRs checked: #1638 (🔴 REGRESSION — new CI run 29995066495 FAILING: pre-commit ❌, e2e-api ❌, e2e-tests ❌, all-checks ❌; was ALL-PASS run 29986495648 at 06:53 IDT), #1667 (🟢 NOW MERGEABLE — rebased; new run 29993991860: pre-commit ❌ still, but resolve-conflicts ✅), #1670 (CONFLICTING — unchanged), #1693 (APPROVED+CONFLICTING — unchanged), #1690 (CONFLICTING/all-CI-pass — unchanged), #1669 (DRAFT/CONFLICTING/CI❌ — unchanged), #1698 (CONFLICTING/pre-commit❌ — unchanged), #1697 #1700 #1701 #1694 #1695 #1696 (unchanged), #1596 (DRAFT/CONFLICTING — unchanged)
+- Merges detected: none
+- CI changes: **#1638 REGRESSION** — new failing run 29995066495 (09:22 IDT); **#1667 IMPROVED** — now MERGEABLE (rebased), pre-commit still fails
+- Flags: #1638 no longer "ready to merge"; #1667 pre-commit blocking; aipcc-27994-faulty-column zone corrected (Plan, not Ingest); 6 Jira mismatches unchanged
+- Next: Investigate #1638 CI failure (transient vs real); fix #1667 pre-commit; monitor CONFLICTING PRs
+
+---
+
 ## 11:31 IDT — Weekday Daytime Heartbeat (Jul 23 2026)
 - PRs checked: #1638 (ALL CI ✅ MERGEABLE — unchanged), #1670 (CONFLICTING — JIRA Assoc now confirmed ✅ from run 29921157985), #1667 (CONFLICTING + pre-commit ❌ — unchanged), #1693 (APPROVED + CONFLICTING + pre-commit ❌ — unchanged), #1690 (CONFLICTING/all-CI-pass — unchanged), #1669 (DRAFT/CONFLICTING/CI❌ — unchanged), #1698 (CONFLICTING/pre-commit❌ — unchanged), #1697 #1700 #1701 (DRAFTs — unchanged), #1694 #1695 #1696 (unchanged)
 - Merges detected: none
