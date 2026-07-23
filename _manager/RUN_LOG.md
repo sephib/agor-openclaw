@@ -4,6 +4,15 @@
 
 ---
 
+## 18:30 IDT — Weekday Daytime Heartbeat (Jul 23 2026)
+- PRs checked: #1690 (CHANGES_REQUESTED, CI run 30018947268: e2e-api ❌+e2e-tests ❌ NEW regression), #1693 (APPROVED, e2e-smoke ❌ FAILED — was pending), #1670 (ALL CI ✅ unchanged), #1713 (only CodeRabbit, 60+ min delay), #1667 (pre-commit ❌ unchanged), #1638 (CONFLICTING, CI unchanged)
+- Merges detected: none
+- CI changes: #1690 — e2e-api ❌ + e2e-tests ❌ (regression, were ✅ at 18:00, run 30018947268); #1693 — e2e-smoke ❌ FAILED (was pending at 18:00)
+- Flags: 2 new CI failures: #1690 e2e-api/e2e-tests regression; #1693 e2e-smoke failure (was expected to merge). #1713 CI mysteriously absent 60+ min after push.
+- Next: Watch #1713 CI run; #1690 + #1693 both need work before merge; #1670 remains fully green awaiting review request
+
+---
+
 ## 17:30 IDT — Weekday Daytime Heartbeat (Jul 23 2026)
 - PRs checked: #1690 (UN-DRAFTED! isDraft true→false; new CI 30015402807: all-checks ✅ PASS; REVIEW_REQUIRED), #1670 (pre-commit FIXED! run 30015595992: pre-commit ✅; e2e-smoke pending), #1713 (new push detected; CI reset — only CodeRabbit ✅; reviewDecision cleared), #1693 (new CI run 30016044501 — pending; was COMPLETED FAILING), #1667 (pre-commit ❌ unchanged, run 30015411147), #1638 (CI FAILING unchanged)
 - Merges detected: none
