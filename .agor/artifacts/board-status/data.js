@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-23 11:31 IDT";
+export const LAST_UPDATED = "2026-07-23 12:01 IDT";
 
 export const WORKTREES = [
   {
@@ -17,10 +17,18 @@ export const WORKTREES = [
     sessionLabel: "advance heartbeat 16:03 IDT Jul 22 — #1704 MERGED; #1670 ALL-CI-PASS; #1638 MERGEABLE; #1667 CONFLICTING",
     recentSessions: [
       {
+        sessionId: "019f8e3413d2716db3dbf0f3",
+        url: "http://127.0.0.1:3030/ui/s/019f8e3413d2716db3dbf0f3/",
+        title: "advance heartbeat 12:01 IDT Jul 23 — NEW worktree aipcc-27994-faulty-column detected; board otherwise static",
+        status: "completed",
+        timestamp: "2026-07-23 12:01 IDT",
+        outputFile: null,
+      },
+      {
         sessionId: "019f8e189cd67355814b8534",
         url: "http://127.0.0.1:3030/ui/s/019f8e189cd67355814b8534/",
         title: "advance heartbeat 11:31 IDT Jul 23 — board static; no merges; all CONFLICTING unchanged",
-        status: "completed",
+        status: "idle",
         timestamp: "2026-07-23 11:31 IDT",
         outputFile: null,
       },
@@ -48,16 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-22 22:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f8a3bc8ae7033ad4cda80",
-        url: "http://127.0.0.1:3030/ui/s/019f8a3bc8ae7033ad4cda80/",
-        title: "advance heartbeat 16:03 IDT Jul 22 — #1704 MERGED; #1670 ALL-CI-PASS; #1638 MERGEABLE; #1667 CONFLICTING",
-        status: "idle",
-        timestamp: "2026-07-22 16:03 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-23 11:31 IDT",
+    lastActive: "2026-07-23 12:01 IDT",
   },
   {
     ticket: "AIPCC-27681",
@@ -230,10 +230,18 @@ export const WORKTREES = [
     sessionLabel: "Internal CR — JN-5844 service/lib/sql AGENTS.md (idle 10:46 IDT)",
     recentSessions: [
       {
+        sessionId: "019f8e3413d2716db3dbf0f3",
+        url: "http://127.0.0.1:3030/ui/s/019f8e3413d2716db3dbf0f3/",
+        title: "advance heartbeat 12:01 IDT Jul 23 — NEW aipcc-27994-faulty-column; #1670 still CONFLICTING (day 3)",
+        status: "completed",
+        timestamp: "2026-07-23 12:01 IDT",
+        outputFile: null,
+      },
+      {
         sessionId: "019f8e189cd67355814b8534",
         url: "http://127.0.0.1:3030/ui/s/019f8e189cd67355814b8534/",
         title: "advance heartbeat 11:31 IDT Jul 23 — board static; #1670 still CONFLICTING (day 2); JIRA Assoc confirmed ✅ run 29921157985",
-        status: "completed",
+        status: "idle",
         timestamp: "2026-07-23 11:31 IDT",
         outputFile: null,
       },
@@ -261,16 +269,8 @@ export const WORKTREES = [
         timestamp: "2026-07-22 22:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f60377abb7d9aa3e2e233",
-        url: "http://127.0.0.1:3030/ui/s/019f60377abb7d9aa3e2e233/",
-        title: "Internal CR — JN-5844 service/lib/sql AGENTS.md (idle 10:46 IDT)",
-        status: "idle",
-        timestamp: "2026-07-14 10:46 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-23 11:31 IDT",
+    lastActive: "2026-07-23 12:01 IDT",
   },
   {
     ticket: "JN-5824",
@@ -399,6 +399,23 @@ export const WORKTREES = [
     sessionLabel: null,
     recentSessions: [],
     lastActive: "2026-07-21 09:54 IDT",
+  },
+  {
+    ticket: "AIPCC-27994",
+    ticketUrl: "https://redhat.atlassian.net/browse/AIPCC-27994",
+    title: "[DEV] Faulty column, PATCH endpoint, and experiment list filtering",
+    branch: "aipcc-27994-faulty-column",
+    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/aipcc-27994-faulty-column",
+    zone: "Ingest",
+    pr: null,
+    prUrl: null,
+    status: "🆕 NEW — Ingest zone. No sessions yet. Created 11:51 IDT Jul 23. Ticket status: New.",
+    blockedOn: null,
+    blockedType: "active",
+    sessionUrl: null,
+    sessionLabel: null,
+    recentSessions: [],
+    lastActive: "2026-07-23 11:51 IDT",
   },
   {
     ticket: null,
@@ -549,6 +566,10 @@ export const MERGED = [
 ];
 
 export const ALERTS = [
+  {
+    level: "yellow",
+    message: "🆕 aipcc-27994-faulty-column: NEW Ingest worktree — AIPCC-27994: [DEV] Faulty column, PATCH endpoint, and experiment list filtering. Created 11:51 IDT Jul 23. No sessions yet — ready for /agor-ingest-jira.",
+  },
   {
     level: "green",
     message: "🎉 #1638 (JN-5725, off-board): **ALL CI FULLY PASSING** — run 29986495648: pre-commit ✅, e2e-api ✅, integration ✅, tox ✅, e2e-smoke ✅, nox ✅, JIRA Assoc ✅, **e2e-product ✅ (36m5s)**. MERGEABLE. **⚡ READY TO MERGE NOW!**",

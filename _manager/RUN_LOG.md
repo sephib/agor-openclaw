@@ -2741,3 +2741,19 @@
 - Flags: 0 new regressions. 1 improvement: #1638 now fully green.
 - Actions: 0 archives, 0 auto-advances
 - Next: Joseph to merge #1638 (no blockers); rebase #1670 (was CI-green); fix pre-commit + rebase #1667 + #1693 + #1698; #1690 rebase + review request; 6 Jira mismatches via acli
+
+## 11:31 IDT — Weekday Daytime Heartbeat (Jul 23 2026)
+- PRs checked: #1638 (OPEN/MERGEABLE, ALL CI FULLY PASSING run 29986495648), #1670 (OPEN/CONFLICTING, CI all-pass stale), #1667 (OPEN/CONFLICTING/pre-commit❌ unchanged), #1690 (DRAFT/CONFLICTING/CI-pass unchanged), #1693 (OPEN/CONFLICTING/APPROVED/pre-commit❌ unchanged), all others unchanged
+- Merges detected: none
+- CI changes: JIRA Assoc for #1670 confirmed passing from new separate run 29921157985 (minor clarification, no functional change). No other CI changes.
+- Flags: 0 new regressions. Board fully static. 6 Jira mismatches unchanged.
+- Actions: 0 archives, 0 auto-advances
+- Next: Joseph to merge #1638; rebase #1670 (CI clean, just needs rebase); fix pre-commit + rebase #1667 + #1693 + #1698; #1690 rebase + review request
+
+## 12:01 IDT — Weekday Daytime Heartbeat (Jul 23 2026)
+- PRs checked: #1638 (OPEN/MERGEABLE, ALL CI FULLY PASSING — unchanged), #1670 (OPEN/CONFLICTING unchanged), #1667 (OPEN/CONFLICTING/pre-commit❌ unchanged), #1690 (DRAFT/CONFLICTING/CI-pass unchanged), #1693 (OPEN/CONFLICTING/APPROVED/pre-commit❌ unchanged), #1694 (OPEN/CONFLICTING unchanged), #1669 (DRAFT/CONFLICTING/CI❌ unchanged), #1698 (OPEN/CONFLICTING/pre-commit❌ unchanged), #1695/#1696/#1697/#1700/#1701 (DRAFT unchanged), #1596 (DRAFT/CONFLICTING unchanged)
+- Merges detected: none (Step 1 sweep: 20 merged PRs — all already tracked in Recently Merged)
+- CI changes: none (all CI runs same as previous: #1638 run 29986495648 ✅, #1670 run 29921067106 ✅ stale, #1667/#1693 pre-commit❌ unchanged, #1690 run 29729530150 ✅ stale)
+- Flags: 🆕 NEW WORKTREE: aipcc-27994-faulty-column (AIPCC-27994 — [DEV] Faulty column, PATCH endpoint, and experiment list filtering) — created 11:51 IDT today, Ingest zone, no sessions yet. 6 Jira mismatches unchanged.
+- Actions: 0 archives, 0 auto-advances
+- Next: Joseph to merge #1638; rebase #1670; fix pre-commit on #1667 + #1693 + #1698; ingest AIPCC-27994; #1690 rebase + review request

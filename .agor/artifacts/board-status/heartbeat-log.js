@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-23 12:01 IDT",
+    actions: 0,
+    findings: 1,
+    status: "ok",
+    summary: "NEW worktree aipcc-27994-faulty-column detected (AIPCC-27994, Ingest, created 11:51 IDT); all PRs unchanged; #1638 still READY TO MERGE; no new merges; 6 Jira mismatches unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8e3413d2716db3dbf0f3/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-23 11:31 IDT",
     actions: 0,
     findings: 0,

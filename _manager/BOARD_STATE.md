@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-23 11:31 IDT (advance heartbeat)*
+*Last updated: 2026-07-23 12:01 IDT (advance heartbeat)*
 
 ---
 
@@ -17,6 +17,7 @@
 | jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | 🔴 run 29683534910 (stale): pre-commit ❌, nox ❌, tox-run ❌, all-checks ❌ | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — In Progress | 🔴 **CI ❌ + CONFLICTING** — DRAFT. Unchanged. Needs rebase + CI fix. |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — New | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 15+** (still Ingest, should be Code). |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 28+ days. Propose archive. |
+| aipcc-27994-faulty-column | **Ingest** | — | — | [AIPCC-27994](https://redhat.atlassian.net/browse/AIPCC-27994) — New | 🆕 NEW — Created 11:51 IDT Jul 23. No sessions yet. [DEV] Faulty column, PATCH endpoint, experiment list filtering. |
 | aipcc-23845-cluster-connection | **Plan** | [#1698](https://github.com/Jounce-IO/jounce/pull/1698) | 🔴 CI run 29749885088 — pre-commit ❌, all-checks ❌; JIRA Assoc ✅, nox ✅, tox ✅ | [AIPCC-23845](https://redhat.atlassian.net/browse/AIPCC-23845) | isDraft:false. CONFLICTING + pre-commit ❌. **Action: Rebase + fix pre-commit.** |
 | aipcc-23890-qe-cluster-tests | **NO ZONE** | [#1697 DRAFT](https://github.com/Jounce-IO/jounce/pull/1697) | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌; nox ✅, tox ✅ (run 29741945977) | [AIPCC-23890](https://redhat.atlassian.net/browse/AIPCC-23890) — In Progress | DRAFT. CI failing: pre-commit ❌. No zone assigned. MERGEABLE. |
 | aipcc-23845-script-runner | **NO ZONE** | [#1700 DRAFT](https://github.com/Jounce-IO/jounce/pull/1700) | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌ (run 29808132144); nox ✅, tox ✅ | [AIPCC-23845](https://redhat.atlassian.net/browse/AIPCC-23845) | DRAFT split from #1698. MERGEABLE. No zone assigned. |
@@ -80,12 +81,12 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (11:31 IDT Jul 23 vs 11:01 IDT Jul 23)
+## Key Changes (12:01 IDT Jul 23 vs 11:31 IDT Jul 23)
 
 | What changed | Delta |
 |---|---|
-| **#1670** (jn-5844) | JIRA Association now confirmed passing from new separate run 29921157985. All CI fully green (run 29921067106). Still CONFLICTING — rebase needed. Minor clarification, no functional change. |
-| **All other PRs** | No merges. No new CI runs. Board fully static. |
+| **NEW: aipcc-27994-faulty-column** | New Ingest worktree detected — [AIPCC-27994](https://redhat.atlassian.net/browse/AIPCC-27994): "[DEV] Faulty column, PATCH endpoint, and experiment list filtering". Created 11:51 IDT today. Status: New. Assigned: Joseph. No PR yet. |
+| **All other PRs** | No merges. No new CI runs. Board otherwise static. |
 
 ---
 
