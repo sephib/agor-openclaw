@@ -2816,3 +2816,11 @@
 - Flags: #1693 CI failed (was pending at 13:31); 6 Jira mismatches unchanged; board zones unchanged
 - Actions: 0 archives, 0 auto-advances
 - Next: Fix pre-commit on #1693 (APPROVED — merge immediately once CI green); fix pre-commit on #1670 + #1667; investigate #1638 CI regression; rebase #1690 + #1698; 6 Jira mismatches via acli
+
+## 15:30 IDT — Weekday Daytime Heartbeat (Jul 23 2026)
+- PRs checked: #1713 (OPEN/MERGEABLE, **NEW CI run 30005720001 — CI WORSENED**: pre-commit ❌+e2e-api ❌ now also failing; CodeRabbit ✅ COMPLETED), #1693 (OPEN/APPROVED/MERGEABLE/CI-fail — unchanged run 29999372432), #1638 (OPEN/MERGEABLE/CI-fail — unchanged run 29995066495), #1670 (OPEN/MERGEABLE/pre-commit❌ — unchanged), #1667 (OPEN/MERGEABLE/pre-commit❌ — unchanged), #1690 (DRAFT/CONFLICTING — unchanged), #1698 (CONFLICTING — unchanged), #1694 (CONFLICTING/REVIEW_REQUIRED — unchanged), #1700 (MERGEABLE/pre-commit❌ — unchanged), all others unchanged
+- Merges detected: none (Step 1 sweep: 20 merged PRs — all already tracked in Recently Merged)
+- CI changes: **🔴 #1713 NEW run 30005720001** — CI worsened vs 30004585793: pre-commit ❌ (was ✅), e2e-api ❌ (was ✅) now also failing; JIRA Assoc ❌, atlas-validate ❌, all-checks ❌; tox ✅, integration ✅, nox ✅; **CodeRabbit ✅ COMPLETED** (was pending). No other CI changes.
+- Flags: 🔴 #1713 CI worsened (pre-commit + e2e-api now failing); CodeRabbit done (can read review); board otherwise static; 8 Jira mismatches unchanged
+- Actions: 0 archives, 0 auto-advances
+- Next: Fix pre-commit + JIRA Assoc + atlas-validate on #1713 (CodeRabbit review available); fix pre-commit on #1693 (APPROVED — merge immediately); fix pre-commit on #1670 + #1667; investigate #1638 CI regression; rebase #1690/#1698

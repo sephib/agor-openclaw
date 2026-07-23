@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-23 15:30 IDT",
+    actions: 0,
+    findings: 1,
+    status: "ok",
+    summary: "🆕 PR #1713 (AIPCC-27994, Code Review) — CI WORSENED (run 30005720001: pre-commit ❌+e2e-api ❌ now also failing vs 30004585793); CodeRabbit ✅ COMPLETED; no merges; 8 Jira mismatches unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8ef458d773c8a0e6954c/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-23 15:00 IDT",
     actions: 0,
     findings: 2,
