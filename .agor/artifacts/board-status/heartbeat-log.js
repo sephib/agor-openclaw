@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-23 19:00 IDT",
+    actions: 0,
+    findings: 2,
+    status: "ok",
+    summary: "#1713 CI ESCALATED (90+ min absent — manual trigger required); #1638 correction (e2e-api/tests not in CI run, only pre-commit ❌); all other PRs unchanged; no merges",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8fb4a09b7431a865a196/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-23 18:30 IDT",
     actions: 0,
     findings: 2,

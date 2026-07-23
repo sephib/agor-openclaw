@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-23 18:30 IDT";
+export const LAST_UPDATED = "2026-07-23 19:00 IDT";
 
 export const WORKTREES = [
   {
@@ -13,14 +13,22 @@ export const WORKTREES = [
     status: "🔴 **CHANGES_REQUESTED by MenD32** (14:53 IDT Jul 23). Reviewer flagged hardcoded resources in deployment.yaml — needs `.Values.server.resources` template. CI run 30018947268: pre-commit ❌, JIRA Assoc ❌, **e2e-api ❌ (REGRESSION)**, **e2e-tests ❌ (new)**; integration ✅, tox ✅, nox ✅, atlas-validate ✅. **Action: Address reviewer feedback + investigate e2e-api/e2e-tests regression + fix CI.**",
     blockedOn: "CHANGES_REQUESTED — address reviewer feedback + fix pre-commit/JIRA Assoc + investigate e2e regression",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8f7daefc768992acfa43/",
-    sessionLabel: "advance heartbeat 18:30 IDT Jul 23 — #1690 e2e-api REGRESSION; #1693 e2e-smoke FAILED; #1670 still all CI ✅",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8fb4a09b7431a865a196/",
+    sessionLabel: "advance heartbeat 19:00 IDT Jul 23 — #1690 unchanged; #1713 CI ESCALATED; #1638 correction",
     recentSessions: [
+      {
+        sessionId: "019f8fb4a09b7431a865a196",
+        url: "http://127.0.0.1:3030/ui/s/019f8fb4a09b7431a865a196/",
+        title: "advance heartbeat 19:00 IDT Jul 23 — board static; #1713 CI ESCALATED (90+ min)",
+        status: "running",
+        timestamp: "2026-07-23 19:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f8f992657739ea7537aee",
         url: "http://127.0.0.1:3030/ui/s/019f8f992657739ea7537aee/",
         title: "advance heartbeat 18:30 IDT Jul 23 — #1690 e2e-api REGRESSION; #1693 e2e-smoke FAILED",
-        status: "running",
+        status: "completed",
         timestamp: "2026-07-23 18:30 IDT",
         outputFile: null,
       },
@@ -48,16 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-23 17:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f8f2b48677506b7db8ae1",
-        url: "http://127.0.0.1:3030/ui/s/019f8f2b48677506b7db8ae1/",
-        title: "advance heartbeat 16:30 IDT Jul 23 — board static; no CI changes; 8 Jira mismatches",
-        status: "completed",
-        timestamp: "2026-07-23 16:30 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-23 18:30 IDT",
+    lastActive: "2026-07-23 19:00 IDT",
   },
   {
     ticket: "AIPCC-27681",
@@ -226,14 +226,22 @@ export const WORKTREES = [
     status: "🎉 **ALL CI PASSING** (run 30015595992 — confirmed at 18:30): all-checks ✅, pre-commit ✅, e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅, JIRA Assoc ✅, atlas-validate ✅, deploy ✅. MERGEABLE, NOT DRAFT. **Action: Request review immediately — PR is fully green!**",
     blockedOn: null,
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8f992657739ea7537aee/",
-    sessionLabel: "advance heartbeat 18:30 IDT Jul 23 — #1670 ALL CI ✅ confirmed; #1690 e2e-api REGRESSION; #1693 e2e-smoke FAILED",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8fb4a09b7431a865a196/",
+    sessionLabel: "advance heartbeat 19:00 IDT Jul 23 — #1670 ALL CI ✅ confirmed unchanged; still awaiting review",
     recentSessions: [
+      {
+        sessionId: "019f8fb4a09b7431a865a196",
+        url: "http://127.0.0.1:3030/ui/s/019f8fb4a09b7431a865a196/",
+        title: "advance heartbeat 19:00 IDT Jul 23 — #1670 ALL CI ✅ confirmed; still no review request",
+        status: "running",
+        timestamp: "2026-07-23 19:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f8f992657739ea7537aee",
         url: "http://127.0.0.1:3030/ui/s/019f8f992657739ea7537aee/",
         title: "advance heartbeat 18:30 IDT Jul 23 — #1690 e2e-api REGRESSION; #1693 e2e-smoke FAILED; #1670 all CI ✅",
-        status: "running",
+        status: "completed",
         timestamp: "2026-07-23 18:30 IDT",
         outputFile: null,
       },
@@ -262,7 +270,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-23 18:30 IDT",
+    lastActive: "2026-07-23 19:00 IDT",
   },
   {
     ticket: "JN-5824",
@@ -401,17 +409,25 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1713",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1713",
-    status: "🔵 **CI DELAYED** — only CodeRabbit ✅ showing 60+ min after push at 17:30. No new CI run started at 18:30 check. reviewDecision: \"\" (cleared by push). Prior run 30008510915: pre-commit ✅, JIRA Assoc ✅, tox ✅, integration ✅, nox ✅; atlas-validate ❌, e2e-api ❌. **Check manually at 19:00 IDT if still no CI run.**",
-    blockedOn: "CI run mysteriously absent — check manually at 19:00 IDT",
+    status: "🔴 **CI ABSENT 90+ MIN** — only CodeRabbit ✅ at 19:00 IDT check. Branch `aipcc-27994-faulty-column` absent from recent GHA runs list. CI is NOT auto-triggering for this branch. Prior run 30008510915: pre-commit ✅, JIRA Assoc ✅, tox ✅, integration ✅, nox ✅; atlas-validate ❌, e2e-api ❌. **Action: Push a new commit or trigger CI manually via GitHub Actions UI.**",
+    blockedOn: "CI not starting — manual trigger required (push new commit or GHA UI)",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8f992657739ea7537aee/",
-    sessionLabel: "advance heartbeat 18:30 IDT Jul 23 — #1713 CI still absent 60+ min after push",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8fb4a09b7431a865a196/",
+    sessionLabel: "advance heartbeat 19:00 IDT Jul 23 — #1713 CI ESCALATED (90+ min absent); #1638 CI correction",
     recentSessions: [
+      {
+        sessionId: "019f8fb4a09b7431a865a196",
+        url: "http://127.0.0.1:3030/ui/s/019f8fb4a09b7431a865a196/",
+        title: "advance heartbeat 19:00 IDT Jul 23 — #1713 CI ESCALATED (90+ min); #1638 correction",
+        status: "running",
+        timestamp: "2026-07-23 19:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f8f992657739ea7537aee",
         url: "http://127.0.0.1:3030/ui/s/019f8f992657739ea7537aee/",
         title: "advance heartbeat 18:30 IDT Jul 23 — #1713 CI still absent 60+ min after push",
-        status: "running",
+        status: "completed",
         timestamp: "2026-07-23 18:30 IDT",
         outputFile: null,
       },
@@ -439,16 +455,8 @@ export const WORKTREES = [
         timestamp: "2026-07-23 17:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f8f2b48677506b7db8ae1",
-        url: "http://127.0.0.1:3030/ui/s/019f8f2b48677506b7db8ae1/",
-        title: "advance heartbeat 16:30 IDT Jul 23 — board static; CI unchanged",
-        status: "completed",
-        timestamp: "2026-07-23 16:30 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-23 18:30 IDT",
+    lastActive: "2026-07-23 19:00 IDT",
   },
   {
     ticket: "AIPCC-27996",
@@ -638,12 +646,12 @@ export const ALERTS = [
     message: "🎉 #1670 (JN-5844): **ALL CI PASSING** (confirmed at 18:30). all-checks ✅, pre-commit ✅, e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅. **Action: Request review immediately — PR is fully green!**",
   },
   {
-    level: "blue",
-    message: "🔵 #1713 (AIPCC-27994): CI still absent 60+ min after 17:30 push. Only CodeRabbit ✅. Prior blockers: atlas-validate ❌ + e2e-api ❌. **Check manually at 19:00 IDT if no new CI run.**",
+    level: "red",
+    message: "🔴 #1713 (AIPCC-27994): **CI ABSENT 90+ MIN** — only CodeRabbit ✅ at 19:00 IDT. Branch absent from GHA recent runs. CI not auto-triggering. **Action: Push a new commit or re-run CI manually via GitHub Actions UI. Prior blockers: atlas-validate ❌ + e2e-api ❌.**",
   },
   {
-    level: "red",
-    message: "🔴 #1638 (JN-5725, off-board): **CI REGRESSION** — Run 29995066495 (09:22 IDT Jul 23) FAILING: pre-commit ❌, e2e-api ❌, e2e-tests ❌, all-checks ❌. **Action: Investigate failure.**",
+    level: "yellow",
+    message: "🟡 #1638 (JN-5725, off-board, CONFLICTING): **pre-commit ❌ only** — run 29995066495. e2e-api/e2e-tests NOT in this CI run (correction from prior reports). Needs pre-commit fix + rebase. JN-5725 Done ✅.",
   },
   {
     level: "yellow",

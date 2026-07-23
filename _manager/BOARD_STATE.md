@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-23 18:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-23 19:00 IDT (advance heartbeat)*
 
 ---
 
@@ -17,7 +17,7 @@
 | jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | 🔴 run 29683534910 (stale): pre-commit ❌, nox ❌, tox-run ❌, all-checks ❌ | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — In Progress | 🔴 **CI ❌ + CONFLICTING** — DRAFT. Unchanged. Needs rebase + CI fix. |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — New | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 15+** (still Ingest, should be Code). |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 28+ days. Propose archive. |
-| aipcc-27994-faulty-column | **Code Review** | [#1713](https://github.com/Jounce-IO/jounce/pull/1713) | 🔵 CI still only CodeRabbit ✅ for latest run (new CI run hasn't started yet as of 18:30). reviewDecision: "" (cleared by 17:30 push). | [AIPCC-27994](https://redhat.atlassian.net/browse/AIPCC-27994) — New | 🔵 Still awaiting new CI run from 17:30 push. Only CodeRabbit ✅ showing after 60+ min. Prior run 30008510915: atlas-validate ❌ + e2e-api ❌. OPEN/MERGEABLE/NOT DRAFT. |
+| aipcc-27994-faulty-column | **Code Review** | [#1713](https://github.com/Jounce-IO/jounce/pull/1713) | 🔴 **CI ABSENT 90+ min** — only CodeRabbit ✅; no other checks since auto-conflict-resolve at 17:20 IDT. CI not auto-triggering. | [AIPCC-27994](https://redhat.atlassian.net/browse/AIPCC-27994) — New | 🔴 **ESCALATED: CI not starting** — 90+ min with no CI run. Push new commit or trigger manually via GitHub Actions UI. Prior run 30008510915: atlas-validate ❌ + e2e-api ❌. OPEN/MERGEABLE/NOT DRAFT. |
 | aipcc-27996-faulty-export-cache | **Verify** | — | — | [AIPCC-27996](https://redhat.atlassian.net/browse/AIPCC-27996) — New | 🔵 Zone advanced **Code → Verify** (detected 15:00 IDT). Was Code at 14:30 IDT. No sessions yet. No PR. |
 | aipcc-23845-cluster-connection | **Plan** | [#1698](https://github.com/Jounce-IO/jounce/pull/1698) | 🔴 CI run 29749885088 — pre-commit ❌, all-checks ❌; JIRA Assoc ✅, nox ✅, tox ✅ | [AIPCC-23845](https://redhat.atlassian.net/browse/AIPCC-23845) | isDraft:false. MERGEABLE (was CONFLICTING — now MERGEABLE!). pre-commit ❌. **Action: Fix pre-commit.** |
 | aipcc-23890-qe-cluster-tests | **NO ZONE** | [#1697 DRAFT](https://github.com/Jounce-IO/jounce/pull/1697) | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌; nox ✅, tox ✅ (run 29741945977) | [AIPCC-23890](https://redhat.atlassian.net/browse/AIPCC-23890) — In Progress | DRAFT. CI failing: pre-commit ❌. No zone assigned. MERGEABLE. |
@@ -41,7 +41,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🔴 **FAILING run 29995066495** (09:22 IDT): pre-commit ❌, e2e-api ❌, e2e-tests ❌, all-checks ❌; integration ✅, tox ✅, nox ✅, JIRA Assoc ✅ | **OPEN, 🟡 UNKNOWN** | 🔴 **REGRESSION** unchanged. Still failing (was ALL PASS at 06:53 IDT Jul 23). Needs investigation. |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🟡 run 29995066495 (09:22 IDT): **pre-commit ❌ ONLY** (e2e-api/e2e-tests not in this CI run — correction from prior reports); JIRA Assoc ✅, integration ✅, tox ✅, nox ✅ | **OPEN, CONFLICTING** | 🟡 **CORRECTED**: Only pre-commit ❌ confirmed. Also CONFLICTING — needs rebase. JN-5725 Done ✅. |
 
 ---
 
@@ -86,15 +86,16 @@ Also **new mismatches (15:00 IDT)**:
 
 ---
 
-## Key Changes (18:30 IDT Jul 23 vs 18:00 IDT Jul 23)
+## Key Changes (19:00 IDT Jul 23 vs 18:30 IDT Jul 23)
 
 | What changed | Delta |
 |---|---|
-| **#1690** | 🔴 **CI REGRESSION** — New run 30018947268: e2e-api ❌ + e2e-tests ❌ now failing (were ✅ at 18:00). pre-commit ❌ + JIRA Assoc ❌ unchanged. Reviewer feedback unchanged (CHANGES_REQUESTED). |
-| **#1693** | 🔴 **e2e-smoke ❌ FAILED** (was pending at 18:00). all-checks ❌, e2e-tests ❌. APPROVED but NOT merge-ready. Requires investigation. |
-| **#1713** | Unchanged — still only CodeRabbit ✅ showing 60+ min after push at 17:30. |
-| **#1670** | Unchanged — ALL CI PASSING (confirmed). Still awaiting review request. |
-| **#1667** | Unchanged — pre-commit ❌ still only blocker. |
+| **#1713** | 🔴 **ESCALATED** — CI still only CodeRabbit ✅ at 90+ min (was flagged at 60+ min). `aipcc-27994-faulty-column` branch absent from recent GHA runs. Manual trigger required. |
+| **#1638** | 🟡 **CORRECTION** — e2e-api/e2e-tests not actually present in CI run 29995066495. Only pre-commit ❌ confirmed (previous reports overstated failure scope). |
+| **#1690** | Unchanged — CHANGES_REQUESTED + e2e regression (run 30018947268). |
+| **#1693** | Unchanged — e2e-smoke ❌, APPROVED but not merge-ready. |
+| **#1670** | Unchanged — ALL CI PASSING, still awaiting review request. |
+| **#1667** | Unchanged — pre-commit ❌ only blocker. |
 
 ---
 
@@ -131,22 +132,23 @@ PR [#1693](https://github.com/Jounce-IO/jounce/pull/1693) — bot PR (jira-autof
 
 ---
 
-### 🔵 #1713 (AIPCC-27994) — CI Still Not Started (60+ min after push)
+### 🔴 #1713 (AIPCC-27994) — CI STILL ABSENT (90+ min) — Action Required
 
 PR [#1713](https://github.com/Jounce-IO/jounce/pull/1713): "feat(jbenchmark): add is_faulty column, PATCH endpoint, and list filtering"
-- State: OPEN, **🟢 MERGEABLE**, NOT DRAFT, reviewDecision: "" (cleared by 17:30 push)
-- CI: Only CodeRabbit ✅ — still no other checks 60+ minutes after push (unusual delay)
+- State: OPEN, **🟢 MERGEABLE**, NOT DRAFT, reviewDecision: "" (cleared by auto-conflict-resolve commit at 17:20 IDT)
+- CI: **ONLY CodeRabbit ✅** — confirmed still absent at 19:00 IDT (90+ min since latest commit at 17:20 IDT)
+- No `aipcc-27994-faulty-column` branch appears in recent GitHub Actions runs list
 - Prior run 30008510915: pre-commit ✅, JIRA Assoc ✅, tox ✅, integration ✅, nox ✅; atlas-validate ❌, e2e-api ❌
-- **Action: Watch for CI run — may be delayed or skipped by GitHub. Check manually if still absent at 19:00 IDT.**
+- **Action: CI is NOT starting automatically. Push a new commit to trigger CI, or re-run manually via GitHub Actions UI.**
 
 ---
 
-### 🔴 #1638 (off-board JN-5725) — CI REGRESSION — Unchanged
+### 🟡 #1638 (off-board JN-5725) — pre-commit ❌ (Correction: e2e not failing)
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638)
-- State: OPEN, UNKNOWN mergeable
-- CI run 29995066495 (09:22 IDT): **FAILING** — pre-commit ❌, e2e-api ❌, e2e-tests ❌
-- **Action: Investigate new CI failure. Jira: JN-5725 Done ✅**
+- State: OPEN, CONFLICTING (unchanged)
+- CI run 29995066495 (09:22 IDT): **pre-commit ❌ ONLY** — e2e-api and e2e-tests NOT present in this CI run (previous reports were incorrect; JIRA Assoc ✅, integration ✅, tox ✅, nox ✅)
+- **Action: Fix pre-commit. Jira: JN-5725 Done ✅** (note: PR is CONFLICTING — needs rebase too)
 
 ---
 
