@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-23 15:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-23 16:00 IDT (advance heartbeat)*
 
 ---
 
@@ -17,7 +17,7 @@
 | jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | 🔴 run 29683534910 (stale): pre-commit ❌, nox ❌, tox-run ❌, all-checks ❌ | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — In Progress | 🔴 **CI ❌ + CONFLICTING** — DRAFT. Unchanged. Needs rebase + CI fix. |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — New | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 15+** (still Ingest, should be Code). |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 28+ days. Propose archive. |
-| aipcc-27994-faulty-column | **Code Review** | [#1713](https://github.com/Jounce-IO/jounce/pull/1713) | 🔴 **NEW run 30005720001**: pre-commit ❌, JIRA Assoc ❌, atlas-validate ❌, atlas-validate-run ❌, e2e-api ❌, e2e-tests ❌, all-checks ❌; tox ✅, integration ✅, nox ✅, deploy ✅; **CodeRabbit ✅ COMPLETED** | [AIPCC-27994](https://redhat.atlassian.net/browse/AIPCC-27994) — New | 🔴 **CI WORSENED** (run 30005720001): pre-commit ❌ (was ✅) + e2e-api ❌ (was ✅) now also failing vs run 30004585793. CodeRabbit review COMPLETED ✅. OPEN/MERGEABLE. **Action: Fix pre-commit + JIRA Assoc + atlas-validate.** |
+| aipcc-27994-faulty-column | **Code Review** | [#1713](https://github.com/Jounce-IO/jounce/pull/1713) | 🟡 **NEW run 30008510915**: pre-commit ✅ FIXED, JIRA Assoc ✅ FIXED, tox ✅, integration ✅, nox ✅, deploy ✅; **atlas-validate ❌, atlas-validate-run ❌, e2e-api ❌, e2e-tests ❌, all-checks ❌** still failing; **CodeRabbit ✅ COMPLETED** | [AIPCC-27994](https://redhat.atlassian.net/browse/AIPCC-27994) — New | 🟡 **CI IMPROVED** (run 30008510915 vs 30005720001): pre-commit ✅ FIXED (was ❌), JIRA Assoc ✅ FIXED (was ❌). Remaining failures: atlas-validate ❌ + e2e-api ❌. CodeRabbit ✅ COMPLETED. OPEN/MERGEABLE. **Action: Fix atlas-validate migration files + e2e-api.** |
 | aipcc-27996-faulty-export-cache | **Verify** | — | — | [AIPCC-27996](https://redhat.atlassian.net/browse/AIPCC-27996) — New | 🔵 Zone advanced **Code → Verify** (detected 15:00 IDT). Was Code at 14:30 IDT. No sessions yet. No PR. |
 | aipcc-23845-cluster-connection | **Plan** | [#1698](https://github.com/Jounce-IO/jounce/pull/1698) | 🔴 CI run 29749885088 — pre-commit ❌, all-checks ❌; JIRA Assoc ✅, nox ✅, tox ✅ | [AIPCC-23845](https://redhat.atlassian.net/browse/AIPCC-23845) | isDraft:false. CONFLICTING + pre-commit ❌. **Action: Rebase + fix pre-commit.** |
 | aipcc-23890-qe-cluster-tests | **NO ZONE** | [#1697 DRAFT](https://github.com/Jounce-IO/jounce/pull/1697) | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌; nox ✅, tox ✅ (run 29741945977) | [AIPCC-23890](https://redhat.atlassian.net/browse/AIPCC-23890) — In Progress | DRAFT. CI failing: pre-commit ❌. No zone assigned. MERGEABLE. |
@@ -86,27 +86,28 @@ Also **new mismatches (15:00 IDT)**:
 
 ---
 
-## Key Changes (15:30 IDT Jul 23 vs 15:00 IDT Jul 23)
+## Key Changes (16:00 IDT Jul 23 vs 15:30 IDT Jul 23)
 
 | What changed | Delta |
 |---|---|
-| **#1713 (aipcc-27994-faulty-column)** | 🔴 NEW CI run 30005720001 — **CI WORSENED**: pre-commit ❌ (was ✅) + e2e-api ❌ (was ✅) now failing; **CodeRabbit ✅ COMPLETED** |
+| **#1713 (aipcc-27994-faulty-column)** | 🟡 NEW CI run 30008510915 — **CI IMPROVED**: pre-commit ✅ FIXED (was ❌), JIRA Assoc ✅ FIXED (was ❌); remaining failures: atlas-validate ❌ + e2e-api ❌ |
 | **All other PRs** | No merges. No CI changes. Board static. |
 
 ---
 
 ## Attention Items
 
-### 🔴 #1713 (AIPCC-27994) — CI WORSENED; pre-commit ❌ + e2e-api ❌ now also failing; CodeRabbit ✅ COMPLETED
+### 🟡 #1713 (AIPCC-27994) — CI IMPROVED; pre-commit ✅ + JIRA Assoc ✅ now fixed; atlas-validate ❌ + e2e-api ❌ remain
 
 PR [#1713](https://github.com/Jounce-IO/jounce/pull/1713): "feat(jbenchmark): add is_faulty column, PATCH endpoint, and list filtering (AIPCC-27994)"
 - State: OPEN, **🟢 MERGEABLE**, REVIEW_REQUIRED, isDraft:false
-- **NEW CI run 30005720001** (vs 30004585793 at 15:00 IDT):
-  - Now failing: pre-commit ❌ (was ✅), JIRA Assoc ❌, atlas-validate ❌, atlas-validate-run ❌, e2e-api ❌ (was ✅), e2e-tests ❌, all-checks ❌
-  - Still passing: tox ✅, integration ✅, nox ✅, deploy ✅
-- **CodeRabbit review COMPLETED ✅** (was pending at 15:00 IDT)
-- atlas-validate failures suggest DB schema migration validation issue (adding `is_faulty` column)
-- **Action: Fix pre-commit + JIRA Assoc (add correct ticket ref) + atlas-validate migration files.**
+- **NEW CI run 30008510915** (vs 30005720001 at 15:30 IDT):
+  - Now fixed: pre-commit ✅ (was ❌), JIRA Assoc ✅ (was ❌)
+  - Still failing: atlas-validate ❌, atlas-validate-run ❌, e2e-api ❌, e2e-tests ❌, all-checks ❌
+  - Passing: tox ✅, integration ✅, nox ✅, deploy ✅
+- **CodeRabbit review COMPLETED ✅**
+- atlas-validate failures likely due to DB schema migration issue (adding `is_faulty` column)
+- **Action: Fix atlas-validate migration files + investigate e2e-api failure.**
 
 ---
 

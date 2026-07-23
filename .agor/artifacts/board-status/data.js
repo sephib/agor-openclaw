@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-23 15:30 IDT";
+export const LAST_UPDATED = "2026-07-23 16:00 IDT";
 
 export const WORKTREES = [
   {
@@ -13,9 +13,17 @@ export const WORKTREES = [
     status: "🔴 **CONFLICTING** (5+ days unchanged). isDraft:true. All CI 100% PASSING (run 29729530150). **Action: Rebase aipcc-27645-server-resources on main, mark ready, then request review.**",
     blockedOn: "CONFLICTING — needs rebase on main",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8ef458d773c8a0e6954c/",
-    sessionLabel: "advance heartbeat 15:30 IDT Jul 23 — #1713 CI worsened (pre-commit+e2e-api ❌); CodeRabbit ✅; no merges; 8 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8f0fd07c77cc96760d1e/",
+    sessionLabel: "advance heartbeat 16:00 IDT Jul 23 — #1713 CI improved (pre-commit ✅+JIRA Assoc ✅ fixed); atlas-validate+e2e-api ❌ remain; no merges; 8 Jira mismatches",
     recentSessions: [
+      {
+        sessionId: "019f8f0fd07c77cc96760d1e",
+        url: "http://127.0.0.1:3030/ui/s/019f8f0fd07c77cc96760d1e/",
+        title: "advance heartbeat 16:00 IDT Jul 23 — #1713 CI improved (pre-commit ✅+JIRA Assoc ✅); atlas-validate+e2e-api ❌",
+        status: "completed",
+        timestamp: "2026-07-23 16:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f8ef458d773c8a0e6954c",
         url: "http://127.0.0.1:3030/ui/s/019f8ef458d773c8a0e6954c/",
@@ -48,16 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-23 14:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f8e867a217793ae035aa8",
-        url: "http://127.0.0.1:3030/ui/s/019f8e867a217793ae035aa8/",
-        title: "advance heartbeat 13:31 IDT Jul 23 — aipcc-27994 Code→Verify; aipcc-27996 Plan→Code; #1693 CI running; #1700 un-drafted",
-        status: "completed",
-        timestamp: "2026-07-23 13:31 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-23 15:30 IDT",
+    lastActive: "2026-07-23 16:00 IDT",
   },
   {
     ticket: "AIPCC-27681",
@@ -425,12 +425,20 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1713",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1713",
-    status: "🔴 **CI WORSENED** — NEW run 30005720001: pre-commit ❌ (was ✅) + e2e-api ❌ (was ✅) now also failing vs 30004585793. JIRA Assoc ❌, atlas-validate ❌, atlas-validate-run ❌, all-checks ❌; tox ✅, integration ✅, nox ✅. **CodeRabbit ✅ COMPLETED**. OPEN/MERGEABLE. **Action: Fix pre-commit + JIRA Assoc + atlas-validate migration files.**",
-    blockedOn: "pre-commit ❌ + JIRA Assoc ❌ + atlas-validate ❌ — CI worsened in new run",
+    status: "🟡 **CI IMPROVED** — NEW run 30008510915: pre-commit ✅ FIXED (was ❌), JIRA Assoc ✅ FIXED (was ❌); atlas-validate ❌, atlas-validate-run ❌, e2e-api ❌, e2e-tests ❌, all-checks ❌ remain; tox ✅, integration ✅, nox ✅. **CodeRabbit ✅ COMPLETED**. OPEN/MERGEABLE. **Action: Fix atlas-validate migration files + investigate e2e-api.**",
+    blockedOn: "atlas-validate ❌ + e2e-api ❌ — pre-commit and JIRA Assoc now fixed",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8ef458d773c8a0e6954c/",
-    sessionLabel: "advance heartbeat 15:30 IDT Jul 23 — #1713 CI worsened (pre-commit+e2e-api ❌); CodeRabbit ✅",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8f0fd07c77cc96760d1e/",
+    sessionLabel: "advance heartbeat 16:00 IDT Jul 23 — #1713 CI improved (pre-commit ✅+JIRA Assoc ✅ fixed); atlas-validate+e2e-api ❌",
     recentSessions: [
+      {
+        sessionId: "019f8f0fd07c77cc96760d1e",
+        url: "http://127.0.0.1:3030/ui/s/019f8f0fd07c77cc96760d1e/",
+        title: "advance heartbeat 16:00 IDT Jul 23 — #1713 CI improved (pre-commit ✅+JIRA Assoc ✅); atlas-validate+e2e-api ❌",
+        status: "completed",
+        timestamp: "2026-07-23 16:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f8ef458d773c8a0e6954c",
         url: "http://127.0.0.1:3030/ui/s/019f8ef458d773c8a0e6954c/",
@@ -448,7 +456,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-23 15:30 IDT",
+    lastActive: "2026-07-23 16:00 IDT",
   },
   {
     ticket: "AIPCC-27996",
@@ -626,8 +634,8 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "red",
-    message: "🔴 #1713 (AIPCC-27994): **CI WORSENED** (run 30005720001 vs 30004585793) — pre-commit ❌ (was ✅), e2e-api ❌ (was ✅), JIRA Assoc ❌, atlas-validate ❌, all-checks ❌; tox ✅, integration ✅, nox ✅. **CodeRabbit ✅ COMPLETED** (read review). Action: Fix pre-commit + JIRA Assoc + atlas-validate migration.",
+    level: "yellow",
+    message: "🟡 #1713 (AIPCC-27994): **CI IMPROVED** (run 30008510915) — pre-commit ✅ FIXED (was ❌), JIRA Assoc ✅ FIXED (was ❌); atlas-validate ❌, atlas-validate-run ❌, e2e-api ❌ still failing. **CodeRabbit ✅ COMPLETED**. Action: Fix atlas-validate migration files + investigate e2e-api.",
   },
   {
     level: "red",
