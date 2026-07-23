@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-23 16:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-23 16:30 IDT (advance heartbeat)*
 
 ---
 
@@ -86,12 +86,11 @@ Also **new mismatches (15:00 IDT)**:
 
 ---
 
-## Key Changes (16:00 IDT Jul 23 vs 15:30 IDT Jul 23)
+## Key Changes (16:30 IDT Jul 23 vs 16:00 IDT Jul 23)
 
 | What changed | Delta |
 |---|---|
-| **#1713 (aipcc-27994-faulty-column)** | 🟡 NEW CI run 30008510915 — **CI IMPROVED**: pre-commit ✅ FIXED (was ❌), JIRA Assoc ✅ FIXED (was ❌); remaining failures: atlas-validate ❌ + e2e-api ❌ |
-| **All other PRs** | No merges. No CI changes. Board static. |
+| **All PRs** | No merges. No CI changes. Board fully static. |
 
 ---
 
