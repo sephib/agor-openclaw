@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-23 12:31 IDT";
+export const LAST_UPDATED = "2026-07-23 13:01 IDT";
 
 export const WORKTREES = [
   {
@@ -17,10 +17,18 @@ export const WORKTREES = [
     sessionLabel: "advance heartbeat 16:03 IDT Jul 22 — #1704 MERGED; #1670 ALL-CI-PASS; #1638 MERGEABLE; #1667 CONFLICTING",
     recentSessions: [
       {
+        sessionId: "019f8e6b030177a9a8cc0fbf",
+        url: "http://127.0.0.1:3030/ui/s/019f8e6b030177a9a8cc0fbf/",
+        title: "advance heartbeat 13:01 IDT Jul 23 — 🆕 aipcc-27996 (Plan); aipcc-27994 Plan→Code; #1670 MERGEABLE (rebased, pre-commit ❌); no merges",
+        status: "running",
+        timestamp: "2026-07-23 13:01 IDT",
+        outputFile: null,
+      },
+      {
         sessionId: "019f8e4f8b8a7cf7a26f4769",
         url: "http://127.0.0.1:3030/ui/s/019f8e4f8b8a7cf7a26f4769/",
         title: "advance heartbeat 12:31 IDT Jul 23 — #1638 CI REGRESSION (run 29995066495 FAILING); #1667 MERGEABLE; zone fix aipcc-27994",
-        status: "running",
+        status: "completed",
         timestamp: "2026-07-23 12:31 IDT",
         outputFile: null,
       },
@@ -48,16 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-23 11:01 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f8de1ad3a71fa9ae03742",
-        url: "http://127.0.0.1:3030/ui/s/019f8de1ad3a71fa9ae03742/",
-        title: "advance heartbeat 10:30 IDT Jul 23 — board static; #1638 new CI run 29986495648 e2e-product PENDING; 5 morning sessions failed",
-        status: "idle",
-        timestamp: "2026-07-23 10:30 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-23 12:31 IDT",
+    lastActive: "2026-07-23 13:01 IDT",
   },
   {
     ticket: "AIPCC-27681",
@@ -223,24 +223,32 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1670",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1670",
-    status: "🔴 **CONFLICTING** (overnight, day 2). CI run 29921067106 shows ALL PASS but stale — main advanced after #1704+#1705 merges. **Action: Rebase jn-5844 on main. CI was clean — should clear quickly.**",
-    blockedOn: "CONFLICTING — rebase on main needed (main advanced overnight)",
+    status: "🟡 **REBASED → MERGEABLE** (improved from CONFLICTING — rebased between 12:31-13:01 IDT). New CI run 29996748376: resolve-conflicts ✅, e2e-api ✅, integration ✅, tox ✅, JIRA Assoc ✅, nox ✅; **pre-commit ❌** still failing; e2e-smoke 🟡 PENDING. **Action: Fix pre-commit hook, then ready for review.**",
+    blockedOn: "pre-commit ❌ — rebased and MERGEABLE but pre-commit still fails",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f60377abb7d9aa3e2e233/",
     sessionLabel: "Internal CR — JN-5844 service/lib/sql AGENTS.md (idle 10:46 IDT)",
     recentSessions: [
       {
+        sessionId: "019f8e6b030177a9a8cc0fbf",
+        url: "http://127.0.0.1:3030/ui/s/019f8e6b030177a9a8cc0fbf/",
+        title: "advance heartbeat 13:01 IDT Jul 23 — #1670 MERGEABLE (rebased!); aipcc-27994 Plan→Code; NEW aipcc-27996",
+        status: "running",
+        timestamp: "2026-07-23 13:01 IDT",
+        outputFile: null,
+      },
+      {
         sessionId: "019f8e4f8b8a7cf7a26f4769",
         url: "http://127.0.0.1:3030/ui/s/019f8e4f8b8a7cf7a26f4769/",
-        title: "advance heartbeat 12:31 IDT Jul 23 — #1638 CI REGRESSION; #1667 MERGEABLE; #1670 still CONFLICTING (day 3)",
-        status: "running",
+        title: "advance heartbeat 12:31 IDT Jul 23 — #1638 CI REGRESSION; #1667 MERGEABLE; #1670 still CONFLICTING",
+        status: "completed",
         timestamp: "2026-07-23 12:31 IDT",
         outputFile: null,
       },
       {
         sessionId: "019f8e3413d2716db3dbf0f3",
         url: "http://127.0.0.1:3030/ui/s/019f8e3413d2716db3dbf0f3/",
-        title: "advance heartbeat 12:01 IDT Jul 23 — NEW aipcc-27994-faulty-column; #1670 still CONFLICTING (day 3)",
+        title: "advance heartbeat 12:01 IDT Jul 23 — NEW aipcc-27994-faulty-column; #1670 still CONFLICTING",
         status: "completed",
         timestamp: "2026-07-23 12:01 IDT",
         outputFile: null,
@@ -248,7 +256,7 @@ export const WORKTREES = [
       {
         sessionId: "019f8e189cd67355814b8534",
         url: "http://127.0.0.1:3030/ui/s/019f8e189cd67355814b8534/",
-        title: "advance heartbeat 11:31 IDT Jul 23 — board static; #1670 still CONFLICTING (day 2); JIRA Assoc confirmed ✅ run 29921157985",
+        title: "advance heartbeat 11:31 IDT Jul 23 — board static; #1670 CONFLICTING; JIRA Assoc ✅ run 29921157985",
         status: "idle",
         timestamp: "2026-07-23 11:31 IDT",
         outputFile: null,
@@ -256,29 +264,13 @@ export const WORKTREES = [
       {
         sessionId: "019f8dfd28167b36b8359a2a",
         url: "http://127.0.0.1:3030/ui/s/019f8dfd28167b36b8359a2a/",
-        title: "advance heartbeat 11:01 IDT Jul 23 — #1638 🎉 ALL CI PASSING; #1670 still CONFLICTING (day 2)",
+        title: "advance heartbeat 11:01 IDT Jul 23 — #1638 🎉 ALL CI PASSING; #1670 still CONFLICTING",
         status: "idle",
         timestamp: "2026-07-23 11:01 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f8de1ad3a71fa9ae03742",
-        url: "http://127.0.0.1:3030/ui/s/019f8de1ad3a71fa9ae03742/",
-        title: "advance heartbeat 10:30 IDT Jul 23 — board static; #1670 still CONFLICTING (day 2)",
-        status: "idle",
-        timestamp: "2026-07-23 10:30 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f8b334c197fc4b85c2f09",
-        url: "http://127.0.0.1:3030/ui/s/019f8b334c197fc4b85c2f09/",
-        title: "advance heartbeat 22:00 IDT Jul 22 — #1670 CONFLICTING (regression); #1638 near-ready; no merges",
-        status: "idle",
-        timestamp: "2026-07-22 22:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-23 12:01 IDT",
+    lastActive: "2026-07-23 13:01 IDT",
   },
   {
     ticket: "JN-5824",
@@ -414,16 +406,33 @@ export const WORKTREES = [
     title: "[DEV] Faulty column, PATCH endpoint, and experiment list filtering",
     branch: "aipcc-27994-faulty-column",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/aipcc-27994-faulty-column",
-    zone: "Plan",
+    zone: "Code",
     pr: null,
     prUrl: null,
-    status: "🆕 NEW — Plan zone (corrected from Ingest). No sessions yet. Created 11:51 IDT Jul 23. Ticket status: New.",
+    status: "Zone moved Plan → Code (detected 13:01 IDT Jul 23). No sessions yet. No PR. Ticket status: New.",
     blockedOn: null,
     blockedType: "active",
     sessionUrl: null,
     sessionLabel: null,
     recentSessions: [],
-    lastActive: "2026-07-23 11:51 IDT",
+    lastActive: "2026-07-23 13:01 IDT",
+  },
+  {
+    ticket: "AIPCC-27996",
+    ticketUrl: "https://redhat.atlassian.net/browse/AIPCC-27996",
+    title: "[DEV] Faulty export cache (AIPCC-27996)",
+    branch: "aipcc-27996-faulty-export-cache",
+    worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/aipcc-27996-faulty-export-cache",
+    zone: "Plan",
+    pr: null,
+    prUrl: null,
+    status: "🆕 NEW — Plan zone. Created 09:53 IDT Jul 23 (first detected 13:01 IDT). No sessions yet. No PR.",
+    blockedOn: null,
+    blockedType: "active",
+    sessionUrl: null,
+    sessionLabel: null,
+    recentSessions: [],
+    lastActive: "2026-07-23 09:53 IDT",
   },
   {
     ticket: null,
@@ -576,7 +585,11 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "yellow",
-    message: "🆕 aipcc-27994-faulty-column: NEW Ingest worktree — AIPCC-27994: [DEV] Faulty column, PATCH endpoint, and experiment list filtering. Created 11:51 IDT Jul 23. No sessions yet — ready for /agor-ingest-jira.",
+    message: "🆕 aipcc-27996-faulty-export-cache: NEW Plan worktree — AIPCC-27996. Created 09:53 IDT Jul 23 (first detected at 13:01 IDT). No sessions yet — ready for /agor-ingest-jira.",
+  },
+  {
+    level: "blue",
+    message: "🔵 aipcc-27994-faulty-column: Zone advanced Plan → Code (detected 13:01 IDT Jul 23). No sessions yet. Ticket: AIPCC-27994. May have been moved manually.",
   },
   {
     level: "red",
@@ -587,12 +600,12 @@ export const ALERTS = [
     message: "⚠️ **5 morning sessions failed (05:00 IDT Jul 23)**: Board Advancement, External Sync, Daily Standup, Morning Board Scan all failed to start. Board was not updated from 22:00 IDT Jul 22 until this 10:30 IDT session. Investigate scheduler/startup issue.",
   },
   {
-    level: "red",
-    message: "🔴 #1670 (jn-5844 JN-5844): **NOW CONFLICTING** (overnight regression — was ALL-CI-PASS at 16:03 IDT). CI run 29921067106 stale (main advanced after #1704+#1705 merges). **Action: Rebase on main — CI was clean, should clear quickly.**",
+    level: "yellow",
+    message: "🟡 #1670 (jn-5844 JN-5844): **NOW MERGEABLE** (rebased between 12:31-13:01 IDT). New CI run 29996748376: resolve-conflicts ✅, e2e-api ✅, integration ✅, tox ✅, JIRA Assoc ✅, nox ✅; **pre-commit ❌** still failing; e2e-smoke 🟡 pending. **Action: Fix pre-commit hook.**",
   },
   {
     level: "red",
-    message: "🔴 #1693 (AIPCC-27655): **BOT PR** — **🎉 APPROVED** but **NOW CONFLICTING**. CI run 29920192197: **pre-commit ❌** only; e2e-product ✅; all others ✅. **Action: Rebase + Fix pre-commit.**",
+    message: "🔴 #1693 (AIPCC-27655): **BOT PR** — **🎉 APPROVED** but **CONFLICTING**. CI run 29920192197: **pre-commit ❌** only; e2e-product ✅; all others ✅. **Action: Rebase + Fix pre-commit.**",
   },
   {
     level: "green",

@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-23 13:01 IDT",
+    actions: 0,
+    findings: 3,
+    status: "ok",
+    summary: "🆕 aipcc-27996-faulty-export-cache NEW (Plan, AIPCC-27996, created 09:53 IDT); aipcc-27994-faulty-column zone Plan→Code; #1670 CONFLICTING→MERGEABLE (rebased, pre-commit ❌, e2e-smoke pending); no merges; 6 Jira mismatches unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8e6b030177a9a8cc0fbf/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-23 12:31 IDT",
     actions: 0,
     findings: 3,

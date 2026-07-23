@@ -2766,3 +2766,19 @@
 - Flags: 🆕 NEW WORKTREE: aipcc-27994-faulty-column (AIPCC-27994 — [DEV] Faulty column, PATCH endpoint, and experiment list filtering) — created 11:51 IDT today, Ingest zone, no sessions yet. 6 Jira mismatches unchanged.
 - Actions: 0 archives, 0 auto-advances
 - Next: Joseph to merge #1638; rebase #1670; fix pre-commit on #1667 + #1693 + #1698; ingest AIPCC-27994; #1690 rebase + review request
+
+## 12:31 IDT — Weekday Daytime Heartbeat (Jul 23 2026)
+- PRs checked: #1638 (OPEN/MERGEABLE, CI run 29995066495 FAILING), #1670 (OPEN/CONFLICTING/CI stale), #1667 (OPEN/MERGEABLE/pre-commit❌), #1690 (DRAFT/CONFLICTING/CI-pass), #1693 (OPEN/CONFLICTING/APPROVED/pre-commit❌), #1694 (OPEN/CONFLICTING), #1669 (DRAFT/CONFLICTING/CI❌), #1698 (OPEN/CONFLICTING/pre-commit❌), all others unchanged
+- Merges detected: none
+- CI changes: NEW run 29995066495 for #1638 (09:22 IDT): pre-commit ❌, e2e-api ❌, e2e-tests ❌, all-checks ❌ — **CI REGRESSION** (was ALL PASS run 29986495648). NEW run 29993991860 for #1667: resolve-conflicts ✅, all e2e ✅, pre-commit ❌ — #1667 now MERGEABLE.
+- Flags: 🔴 #1638 CI REGRESSION; 🟡 #1667 improved CONFLICTING→MERGEABLE; aipcc-27994 zone corrected to Plan. 6 Jira mismatches unchanged.
+- Actions: 0 archives, 0 auto-advances
+- Next: Investigate #1638 CI failure (run 29995066495); fix pre-commit on #1667/#1670/#1693; rebase #1690/#1698; ingest AIPCC-27994
+
+## 13:01 IDT — Weekday Daytime Heartbeat (Jul 23 2026)
+- PRs checked: #1638 (OPEN/MERGEABLE, run 29995066495 still FAILING — unchanged), #1670 (OPEN/**MERGEABLE** — improved from CONFLICTING, new run 29996748376 pre-commit ❌ e2e-smoke pending), #1667 (OPEN/MERGEABLE/pre-commit❌ run 29993991860 — unchanged), #1690 (DRAFT/CONFLICTING/CI-pass — unchanged), #1693 (OPEN/CONFLICTING/APPROVED/pre-commit❌ — unchanged), #1694 (OPEN/CONFLICTING — unchanged), #1669 (DRAFT/CONFLICTING/CI❌ — unchanged), #1698 (OPEN/CONFLICTING/pre-commit❌ — unchanged), #1695/#1696/#1697/#1700/#1701 (DRAFT unchanged), #1596 (DRAFT/CONFLICTING unchanged)
+- Merges detected: none (Step 1 sweep: no new merges since 12:31 IDT)
+- CI changes: NEW run 29996748376 for #1670: resolve-conflicts ✅ (MERGEABLE now!), pre-commit ❌, e2e-smoke 🟡 pending, all others ✅
+- Flags: 🆕 aipcc-27996-faulty-export-cache NEW (Plan zone, AIPCC-27996, created 09:53 IDT — not previously tracked); 🔵 aipcc-27994-faulty-column zone Plan→Code; 🟡 #1670 CONFLICTING→MERGEABLE (rebased). 6 Jira mismatches unchanged.
+- Actions: 0 archives, 0 auto-advances
+- Next: Fix pre-commit on #1670 + #1667 (both MERGEABLE, both pre-commit only blocker); investigate #1638 CI failure; rebase #1690/#1698; ingest AIPCC-27996; 6 Jira mismatches via acli
