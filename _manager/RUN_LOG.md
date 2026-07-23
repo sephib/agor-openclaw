@@ -4,6 +4,15 @@
 
 ---
 
+## 22:01 IDT — Weekday Overnight Heartbeat (Jul 23 2026)
+- PRs checked: #1713 (CI NOW RUNNING — run 30032586926; pre-commit ✅ FIXED; JIRA Assoc ❌, atlas-validate ❌, e2e-api ❌ still failing), #1690 (unchanged — CHANGES_REQUESTED + e2e regression, run 30018947268), #1693 (unchanged — e2e-smoke ❌, APPROVED), #1670 (unchanged — ALL CI ✅, awaiting review), #1667 (unchanged — pre-commit ❌), #1638 (re-correction: e2e-api ❌ + e2e-tests ❌ ARE failing — 19:00 correction was wrong)
+- Merges detected: none
+- CI changes: #1713 — CI RESOLVED: new run 30032586926 started (was absent 90+ min at 19:00 IDT); pre-commit ✅ (was ❌). Remaining failures: JIRA Assoc ❌, atlas-validate ❌, e2e-api ❌.
+- Flags: #1638 re-correction (e2e-api + e2e-tests confirmed failing); #1713 progress (CI started, pre-commit fixed); #1670 still awaiting review (ALL CI ✅ since 18:00 IDT)
+- Next: Joseph to fix #1713 (JIRA Assoc + atlas-validate + e2e-api); request review for #1670; address CHANGES_REQUESTED on #1690; investigate #1638 e2e failures + rebase
+
+---
+
 ## 19:00 IDT — Weekday Daytime Heartbeat (Jul 23 2026)
 - PRs checked: #1690 (CHANGES_REQUESTED, CI run 30018947268: e2e-api ❌+e2e-tests ❌ — unchanged), #1693 (APPROVED, e2e-smoke ❌ — unchanged), #1670 (ALL CI ✅ unchanged), #1713 (CI ESCALATED: only CodeRabbit ✅ at 90+ min — branch absent from GHA runs), #1667 (pre-commit ❌ unchanged), #1638 (pre-commit ❌ ONLY — correction: e2e-api/e2e-tests not actually in CI run)
 - Merges detected: none
