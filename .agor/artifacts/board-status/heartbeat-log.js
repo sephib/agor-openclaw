@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-23 15:00 IDT",
+    actions: 0,
+    findings: 2,
+    status: "ok",
+    summary: "🆕 PR #1713 created (AIPCC-27994, Code Review zone, JIRA Assoc ❌ + atlas-validate ❌); aipcc-27996 Code→Verify; no merges; 8 Jira mismatches (2 new: AIPCC-27994, AIPCC-27996)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8ed8e4e070a0aea32c33/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-23 14:30 IDT",
     actions: 0,
     findings: 0,

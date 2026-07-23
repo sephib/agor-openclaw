@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-23 14:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-23 15:00 IDT (advance heartbeat)*
 
 ---
 
@@ -17,8 +17,8 @@
 | jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | 🔴 run 29683534910 (stale): pre-commit ❌, nox ❌, tox-run ❌, all-checks ❌ | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — In Progress | 🔴 **CI ❌ + CONFLICTING** — DRAFT. Unchanged. Needs rebase + CI fix. |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — New | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 15+** (still Ingest, should be Code). |
 | jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 28+ days. Propose archive. |
-| aipcc-27994-faulty-column | **Verify** | — | — | [AIPCC-27994](https://redhat.atlassian.net/browse/AIPCC-27994) — New | 🔵 Zone advanced **Code → Verify** (detected 13:31 IDT Jul 23). No sessions yet. No PR. |
-| aipcc-27996-faulty-export-cache | **Code** | — | — | [AIPCC-27996](https://redhat.atlassian.net/browse/AIPCC-27996) — New | 🔵 Zone advanced **Plan → Code** (detected 13:31 IDT Jul 23). Was Plan at 13:01 IDT. No sessions yet. No PR. |
+| aipcc-27994-faulty-column | **Code Review** | [#1713](https://github.com/Jounce-IO/jounce/pull/1713) | 🔴 run 30004585793: JIRA Assoc ❌, atlas-validate ❌, all-checks ❌; pre-commit ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅, build ✅; CodeRabbit pending | [AIPCC-27994](https://redhat.atlassian.net/browse/AIPCC-27994) — New | 🆕 **PR #1713 CREATED** (detected 15:00 IDT). Zone **Verify → Code Review**. OPEN, MERGEABLE, REVIEW_REQUIRED, isDraft:false. **CI: JIRA Assoc ❌ + atlas-validate ❌ blocking all-checks.** Action: Fix JIRA Assoc + atlas-validate migration. |
+| aipcc-27996-faulty-export-cache | **Verify** | — | — | [AIPCC-27996](https://redhat.atlassian.net/browse/AIPCC-27996) — New | 🔵 Zone advanced **Code → Verify** (detected 15:00 IDT). Was Code at 14:30 IDT. No sessions yet. No PR. |
 | aipcc-23845-cluster-connection | **Plan** | [#1698](https://github.com/Jounce-IO/jounce/pull/1698) | 🔴 CI run 29749885088 — pre-commit ❌, all-checks ❌; JIRA Assoc ✅, nox ✅, tox ✅ | [AIPCC-23845](https://redhat.atlassian.net/browse/AIPCC-23845) | isDraft:false. CONFLICTING + pre-commit ❌. **Action: Rebase + fix pre-commit.** |
 | aipcc-23890-qe-cluster-tests | **NO ZONE** | [#1697 DRAFT](https://github.com/Jounce-IO/jounce/pull/1697) | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌; nox ✅, tox ✅ (run 29741945977) | [AIPCC-23890](https://redhat.atlassian.net/browse/AIPCC-23890) — In Progress | DRAFT. CI failing: pre-commit ❌. No zone assigned. MERGEABLE. |
 | aipcc-23845-script-runner | **NO ZONE** | [#1700](https://github.com/Jounce-IO/jounce/pull/1700) | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌ (run 29808132144); nox ✅, tox ✅ | [AIPCC-23845](https://redhat.atlassian.net/browse/AIPCC-23845) | **🆕 NOT DRAFT** (isDraft:false — was DRAFT at 13:01). MERGEABLE. No zone assigned. |
@@ -78,19 +78,36 @@ Active sprint tickets assigned to Joseph with no board worktree:
 | [JN-5827](https://redhat.atlassian.net/browse/JN-5827) | [#1648](https://github.com/Jounce-IO/jounce/pull/1648) | MERGED Jul 12 | **New** | ❌ Update Jira → Done |
 | [JN-5546](https://redhat.atlassian.net/browse/JN-5546) | [#1588](https://github.com/Jounce-IO/jounce/pull/1588) | MERGED Jul 7 | **In Progress** | ❌ Update Jira → Done |
 
-*6 mismatches remain (unchanged). Jira MCP 401 — use acli for updates.*
+Also **new mismatches (15:00 IDT)**:
+| **[AIPCC-27994](https://redhat.atlassian.net/browse/AIPCC-27994)** | [#1713](https://github.com/Jounce-IO/jounce/pull/1713) | OPEN (Code Review) | **New** | ❌ Update Jira → In Review |
+| **[AIPCC-27996](https://redhat.atlassian.net/browse/AIPCC-27996)** | — | No PR (Verify) | **New** | ❌ Update Jira → In Progress |
+
+*8 mismatches total. Jira MCP 401 — use acli for updates.*
 
 ---
 
-## Key Changes (14:30 IDT Jul 23 vs 14:00 IDT Jul 23)
+## Key Changes (15:00 IDT Jul 23 vs 14:30 IDT Jul 23)
 
 | What changed | Delta |
 |---|---|
-| **All PRs** | No merges. No CI changes. No zone changes. Board fully static. |
+| **aipcc-27994-faulty-column** | 🆕 PR #1713 created; zone **Verify → Code Review** |
+| **aipcc-27996-faulty-export-cache** | 🔵 Zone advanced **Code → Verify** |
+| **All other PRs** | No merges. No CI changes. |
 
 ---
 
 ## Attention Items
+
+### 🆕 #1713 (AIPCC-27994) — NEW PR in Code Review; JIRA Assoc ❌ + atlas-validate ❌
+
+PR [#1713](https://github.com/Jounce-IO/jounce/pull/1713): "feat(jbenchmark): add is_faulty column, PATCH endpoint, and list filtering (AIPCC-27994)"
+- State: OPEN, **🟢 MERGEABLE**, REVIEW_REQUIRED, isDraft:false
+- CI run 30004585793: JIRA Assoc ❌, atlas-validate ❌, atlas-validate-run ❌, all-checks ❌; pre-commit ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅, build ✅
+- CodeRabbit: pending (review in progress)
+- atlas-validate failures suggest DB schema migration validation issue (adding `is_faulty` column)
+- **Action: Fix JIRA Assoc (add correct ticket ref) + atlas-validate migration files.**
+
+---
 
 ### 🔴 #1693 (AIPCC-27655) — MERGEABLE + APPROVED; CI FAILED — pre-commit ❌ Only Blocker
 
@@ -102,19 +119,12 @@ PR [#1693](https://github.com/Jounce-IO/jounce/pull/1693): "fix(jbenchmark): add
 
 ---
 
-### 🔵 aipcc-27994-faulty-column — Zone Advanced Code → Verify
+### 🔵 aipcc-27996-faulty-export-cache — Zone Advanced Code → Verify
 
-- Agor shows zone-1781429931920 (Verify) at 13:31 IDT. Was Code at 13:01 IDT.
-- No PR yet. No sessions detected. Ticket: [AIPCC-27994](https://redhat.atlassian.net/browse/AIPCC-27994) — New.
-- **Note:** Zone may have been moved manually or by a session trigger. Two zone advances in one heartbeat cycle.
-
----
-
-### 🔵 aipcc-27996-faulty-export-cache — Zone Advanced Plan → Code
-
-- Agor shows zone-1781429763919 (Code) at 13:31 IDT. Was Plan at 13:01 IDT.
+- Agor shows zone-1781429931920 (Verify) at 15:00 IDT. Was Code at 14:30 IDT.
 - No PR yet. No sessions detected. Ticket: [AIPCC-27996](https://redhat.atlassian.net/browse/AIPCC-27996) — New.
-- **Note:** Zone may have been moved manually. No sessions yet in this zone.
+- Jira: still "New" — should be updated to In Progress.
+- **Note:** Zone may have been moved manually or by a session trigger.
 
 ---
 

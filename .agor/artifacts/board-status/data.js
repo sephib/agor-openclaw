@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-23 14:30 IDT";
+export const LAST_UPDATED = "2026-07-23 15:00 IDT";
 
 export const WORKTREES = [
   {
@@ -13,9 +13,17 @@ export const WORKTREES = [
     status: "🔴 **CONFLICTING** (5+ days unchanged). isDraft:true. All CI 100% PASSING (run 29729530150). **Action: Rebase aipcc-27645-server-resources on main, mark ready, then request review.**",
     blockedOn: "CONFLICTING — needs rebase on main",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8ebd69b27de2895ce44e/",
-    sessionLabel: "advance heartbeat 14:30 IDT Jul 23 — board static; no merges; CI unchanged; 6 Jira mismatches unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8ed8e4e070a0aea32c33/",
+    sessionLabel: "advance heartbeat 15:00 IDT Jul 23 — #1713 NEW PR (AIPCC-27994); aipcc-27996 Code→Verify; 8 Jira mismatches",
     recentSessions: [
+      {
+        sessionId: "019f8ed8e4e070a0aea32c33",
+        url: "http://127.0.0.1:3030/ui/s/019f8ed8e4e070a0aea32c33/",
+        title: "advance heartbeat 15:00 IDT Jul 23 — #1713 NEW PR; aipcc-27996 Code→Verify",
+        status: "running",
+        timestamp: "2026-07-23 15:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f8ebd69b27de2895ce44e",
         url: "http://127.0.0.1:3030/ui/s/019f8ebd69b27de2895ce44e/",
@@ -422,16 +430,25 @@ export const WORKTREES = [
     title: "[DEV] Faulty column, PATCH endpoint, and experiment list filtering",
     branch: "aipcc-27994-faulty-column",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/aipcc-27994-faulty-column",
-    zone: "Verify",
-    pr: null,
-    prUrl: null,
-    status: "🔵 Zone advanced **Code → Verify** (detected 13:31 IDT Jul 23). Was Code at 13:01 IDT. No sessions. No PR.",
-    blockedOn: null,
+    zone: "Code Review",
+    pr: "#1713",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1713",
+    status: "🆕 **PR #1713 CREATED** (detected 15:00 IDT). Zone **Verify → Code Review**. OPEN, MERGEABLE, REVIEW_REQUIRED. CI run 30004585793: JIRA Assoc ❌, atlas-validate ❌, all-checks ❌; pre-commit ✅, e2e-api ✅, nox ✅, tox ✅, build ✅. CodeRabbit pending. **Action: Fix JIRA Assoc + atlas-validate migration files.**",
+    blockedOn: "JIRA Assoc ❌ + atlas-validate ❌ — CI failing",
     blockedType: "active",
-    sessionUrl: null,
-    sessionLabel: null,
-    recentSessions: [],
-    lastActive: "2026-07-23 13:31 IDT",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8ed8e4e070a0aea32c33/",
+    sessionLabel: "advance heartbeat 15:00 IDT Jul 23 — PR #1713 created; zone Verify→Code Review",
+    recentSessions: [
+      {
+        sessionId: "019f8ed8e4e070a0aea32c33",
+        url: "http://127.0.0.1:3030/ui/s/019f8ed8e4e070a0aea32c33/",
+        title: "advance heartbeat 15:00 IDT Jul 23 — PR #1713 created; zone Verify→Code Review",
+        status: "running",
+        timestamp: "2026-07-23 15:00 IDT",
+        outputFile: null,
+      },
+    ],
+    lastActive: "2026-07-23 15:00 IDT",
   },
   {
     ticket: "AIPCC-27996",
@@ -439,16 +456,25 @@ export const WORKTREES = [
     title: "[DEV] Faulty export cache (AIPCC-27996)",
     branch: "aipcc-27996-faulty-export-cache",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/aipcc-27996-faulty-export-cache",
-    zone: "Code",
+    zone: "Verify",
     pr: null,
     prUrl: null,
-    status: "🔵 Zone advanced **Plan → Code** (detected 13:31 IDT Jul 23). Was Plan at 13:01 IDT. No sessions. No PR.",
+    status: "🔵 Zone advanced **Code → Verify** (detected 15:00 IDT Jul 23). Was Code at 14:30 IDT. No sessions. No PR. Jira: still New (mismatch).",
     blockedOn: null,
     blockedType: "active",
-    sessionUrl: null,
-    sessionLabel: null,
-    recentSessions: [],
-    lastActive: "2026-07-23 13:31 IDT",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8ed8e4e070a0aea32c33/",
+    sessionLabel: "advance heartbeat 15:00 IDT Jul 23 — zone Code→Verify",
+    recentSessions: [
+      {
+        sessionId: "019f8ed8e4e070a0aea32c33",
+        url: "http://127.0.0.1:3030/ui/s/019f8ed8e4e070a0aea32c33/",
+        title: "advance heartbeat 15:00 IDT Jul 23 — zone Code→Verify",
+        status: "running",
+        timestamp: "2026-07-23 15:00 IDT",
+        outputFile: null,
+      },
+    ],
+    lastActive: "2026-07-23 15:00 IDT",
   },
   {
     ticket: null,
@@ -600,20 +626,20 @@ export const MERGED = [
 
 export const ALERTS = [
   {
+    level: "blue",
+    message: "🆕 #1713 (AIPCC-27994): **NEW PR — Code Review zone** (created, detected 15:00 IDT). OPEN, MERGEABLE, REVIEW_REQUIRED. CI: JIRA Assoc ❌, atlas-validate ❌ blocking; pre-commit ✅, e2e ✅, nox ✅, tox ✅. **Action: Fix JIRA Assoc + atlas-validate migration.**",
+  },
+  {
     level: "red",
     message: "🔴 #1693 (AIPCC-27655): **APPROVED + MERGEABLE** but CI run 29999372432 **COMPLETED FAILING** — pre-commit ❌, e2e-smoke ❌. Fix pre-commit → merge immediately (all other checks ✅).",
   },
   {
     level: "blue",
-    message: "🔵 aipcc-27994-faulty-column: Zone advanced **Code → Verify** (detected 13:31 IDT Jul 23). No sessions yet. Ticket: AIPCC-27994.",
-  },
-  {
-    level: "blue",
-    message: "🔵 aipcc-27996-faulty-export-cache: Zone advanced **Plan → Code** (detected 13:31 IDT Jul 23). No sessions yet. Ticket: AIPCC-27996.",
+    message: "🔵 aipcc-27996-faulty-export-cache: Zone advanced **Code → Verify** (detected 15:00 IDT Jul 23). No sessions yet. Jira: New (mismatch — should be In Progress).",
   },
   {
     level: "yellow",
-    message: "🆕 #1700 (aipcc-23845-script-runner): UN-DRAFTED (isDraft:false — was DRAFT at 13:01). MERGEABLE. Still needs pre-commit fix + JIRA Assoc + zone assignment.",
+    message: "🆕 #1700 (aipcc-23845-script-runner): UN-DRAFTED (isDraft:false). MERGEABLE. Still needs pre-commit fix + JIRA Assoc + zone assignment.",
   },
   {
     level: "red",
