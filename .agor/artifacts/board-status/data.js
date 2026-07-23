@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-23 11:01 IDT";
+export const LAST_UPDATED = "2026-07-23 11:31 IDT";
 
 export const WORKTREES = [
   {
@@ -17,10 +17,18 @@ export const WORKTREES = [
     sessionLabel: "advance heartbeat 16:03 IDT Jul 22 — #1704 MERGED; #1670 ALL-CI-PASS; #1638 MERGEABLE; #1667 CONFLICTING",
     recentSessions: [
       {
+        sessionId: "019f8e189cd67355814b8534",
+        url: "http://127.0.0.1:3030/ui/s/019f8e189cd67355814b8534/",
+        title: "advance heartbeat 11:31 IDT Jul 23 — board static; no merges; all CONFLICTING unchanged",
+        status: "completed",
+        timestamp: "2026-07-23 11:31 IDT",
+        outputFile: null,
+      },
+      {
         sessionId: "019f8dfd28167b36b8359a2a",
         url: "http://127.0.0.1:3030/ui/s/019f8dfd28167b36b8359a2a/",
         title: "advance heartbeat 11:01 IDT Jul 23 — #1638 🎉 ALL CI PASSING (e2e-product ✅); no merges",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-23 11:01 IDT",
         outputFile: null,
       },
@@ -48,16 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-22 16:03 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f89e9cee1785bb391d84f",
-        url: "http://127.0.0.1:3030/ui/s/019f89e9cee1785bb391d84f/",
-        title: "advance heartbeat 15:33 IDT Jul 22 — #1670 DRAFT removed; #1667 pre-commit❌; #1704 new CI run; no merges",
-        status: "idle",
-        timestamp: "2026-07-22 15:33 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-23 11:01 IDT",
+    lastActive: "2026-07-23 11:31 IDT",
   },
   {
     ticket: "AIPCC-27681",
@@ -230,10 +230,18 @@ export const WORKTREES = [
     sessionLabel: "Internal CR — JN-5844 service/lib/sql AGENTS.md (idle 10:46 IDT)",
     recentSessions: [
       {
+        sessionId: "019f8e189cd67355814b8534",
+        url: "http://127.0.0.1:3030/ui/s/019f8e189cd67355814b8534/",
+        title: "advance heartbeat 11:31 IDT Jul 23 — board static; #1670 still CONFLICTING (day 2); JIRA Assoc confirmed ✅ run 29921157985",
+        status: "completed",
+        timestamp: "2026-07-23 11:31 IDT",
+        outputFile: null,
+      },
+      {
         sessionId: "019f8dfd28167b36b8359a2a",
         url: "http://127.0.0.1:3030/ui/s/019f8dfd28167b36b8359a2a/",
         title: "advance heartbeat 11:01 IDT Jul 23 — #1638 🎉 ALL CI PASSING; #1670 still CONFLICTING (day 2)",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-23 11:01 IDT",
         outputFile: null,
       },
@@ -262,7 +270,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-23 10:30 IDT",
+    lastActive: "2026-07-23 11:31 IDT",
   },
   {
     ticket: "JN-5824",

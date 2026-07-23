@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-23 11:01 IDT (advance heartbeat)*
+*Last updated: 2026-07-23 11:31 IDT (advance heartbeat)*
 
 ---
 
@@ -80,13 +80,12 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (11:01 IDT Jul 23 vs 10:30 IDT Jul 23)
+## Key Changes (11:31 IDT Jul 23 vs 11:01 IDT Jul 23)
 
 | What changed | Delta |
 |---|---|
-| **🎉 #1638 (off-board): ALL CI FULLY PASSING** | e2e-product ✅ COMPLETED (36m5s). run 29986495648 now shows ALL green: pre-commit ✅, e2e-api ✅, integration ✅, tox ✅, e2e-smoke ✅, nox ✅, JIRA Assoc ✅, **e2e-product ✅**. **READY TO MERGE!** |
-| **#1690** | Now confirmed isDraft:true (was previously not flagged). Still CONFLICTING, All CI PASSING (stale). |
-| **All other PRs** | No merges. All still CONFLICTING/MERGEABLE same as 10:30 IDT Jul 23. |
+| **#1670** (jn-5844) | JIRA Association now confirmed passing from new separate run 29921157985. All CI fully green (run 29921067106). Still CONFLICTING — rebase needed. Minor clarification, no functional change. |
+| **All other PRs** | No merges. No new CI runs. Board fully static. |
 
 ---
 
