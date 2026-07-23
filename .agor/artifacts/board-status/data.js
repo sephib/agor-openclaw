@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-22 22:00 IDT";
+export const LAST_UPDATED = "2026-07-23 10:30 IDT";
 
 export const WORKTREES = [
   {
@@ -10,17 +10,33 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1690",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1690",
-    status: "🔴 **CONFLICTING** (3+ days unchanged). All CI 100% PASSING (run 29729530150). **Action: Rebase aipcc-27645-server-resources on main, then request review.** (unchanged 16:03 IDT)",
+    status: "🔴 **CONFLICTING** (5+ days unchanged). All CI 100% PASSING (run 29729530150). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
     blockedOn: "CONFLICTING — needs rebase on main",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f8a3bc8ae7033ad4cda80/",
     sessionLabel: "advance heartbeat 16:03 IDT Jul 22 — #1704 MERGED; #1670 ALL-CI-PASS; #1638 MERGEABLE; #1667 CONFLICTING",
     recentSessions: [
       {
+        sessionId: "019f8de1ad3a71fa9ae03742",
+        url: "http://127.0.0.1:3030/ui/s/019f8de1ad3a71fa9ae03742/",
+        title: "advance heartbeat 10:30 IDT Jul 23 — board static; #1638 new CI run 29986495648 e2e-product PENDING; 5 morning sessions failed",
+        status: "running",
+        timestamp: "2026-07-23 10:30 IDT",
+        outputFile: null,
+      },
+      {
+        sessionId: "019f8b334c197fc4b85c2f09",
+        url: "http://127.0.0.1:3030/ui/s/019f8b334c197fc4b85c2f09/",
+        title: "advance heartbeat 22:00 IDT Jul 22 — #1670 CONFLICTING (regression); #1638 near-ready; no merges",
+        status: "idle",
+        timestamp: "2026-07-22 22:00 IDT",
+        outputFile: null,
+      },
+      {
         sessionId: "019f8a3bc8ae7033ad4cda80",
         url: "http://127.0.0.1:3030/ui/s/019f8a3bc8ae7033ad4cda80/",
         title: "advance heartbeat 16:03 IDT Jul 22 — #1704 MERGED; #1670 ALL-CI-PASS; #1638 MERGEABLE; #1667 CONFLICTING",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-22 16:03 IDT",
         outputFile: null,
       },
@@ -48,16 +64,8 @@ export const WORKTREES = [
         timestamp: "2026-07-22 14:33 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f897be58a795fa0b09082",
-        url: "http://127.0.0.1:3030/ui/s/019f897be58a795fa0b09082/",
-        title: "advance heartbeat 14:03 IDT Jul 22 — #1638 e2e-smoke❌; #1670+#1693 now CONFLICTING; #1704 ALL CI PASSING",
-        status: "idle",
-        timestamp: "2026-07-22 14:03 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-22 16:03 IDT",
+    lastActive: "2026-07-23 10:30 IDT",
   },
   {
     ticket: "AIPCC-27681",
@@ -171,7 +179,7 @@ export const WORKTREES = [
     zone: "Ingest",
     pr: null,
     prUrl: null,
-    status: "Plan done ~23:06 IDT Jul 8. Still Ingest zone — zone mismatch persists (Day 14+). Propose move to Code zone + trigger /implement:code.",
+    status: "Plan done ~23:06 IDT Jul 8. Still Ingest zone — zone mismatch persists (Day 15+). Propose move to Code zone + trigger /implement:code.",
     blockedOn: "Zone mismatch — needs move to Code (Day 14+)",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f4351d110788ba7254ee1/",
@@ -197,7 +205,7 @@ export const WORKTREES = [
     zone: "Ingest",
     pr: null,
     prUrl: null,
-    status: "Design session done Jun 30. Ready for /implement:plan trigger. Stale 22+ days.",
+    status: "Design session done Jun 30. Ready for /implement:plan trigger. Stale 23+ days.",
     blockedOn: null,
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f185c2c687ed7bbdd1902/",
@@ -223,17 +231,25 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1670",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1670",
-    status: "🔴 **NOW CONFLICTING** (regression — was ALL-CI-PASS at 16:03 IDT). CI run 29921067106 still shows ALL PASS but stale — main advanced after #1704+#1705 merges. **Action: Rebase jn-5844 on main. CI was clean — should clear quickly.**",
+    status: "🔴 **CONFLICTING** (overnight, day 2). CI run 29921067106 shows ALL PASS but stale — main advanced after #1704+#1705 merges. **Action: Rebase jn-5844 on main. CI was clean — should clear quickly.**",
     blockedOn: "CONFLICTING — rebase on main needed (main advanced overnight)",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f60377abb7d9aa3e2e233/",
     sessionLabel: "Internal CR — JN-5844 service/lib/sql AGENTS.md (idle 10:46 IDT)",
     recentSessions: [
       {
+        sessionId: "019f8de1ad3a71fa9ae03742",
+        url: "http://127.0.0.1:3030/ui/s/019f8de1ad3a71fa9ae03742/",
+        title: "advance heartbeat 10:30 IDT Jul 23 — board static; #1670 still CONFLICTING (day 2)",
+        status: "running",
+        timestamp: "2026-07-23 10:30 IDT",
+        outputFile: null,
+      },
+      {
         sessionId: "019f8b334c197fc4b85c2f09",
         url: "http://127.0.0.1:3030/ui/s/019f8b334c197fc4b85c2f09/",
         title: "advance heartbeat 22:00 IDT Jul 22 — #1670 CONFLICTING (regression); #1638 near-ready; no merges",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-22 22:00 IDT",
         outputFile: null,
       },
@@ -246,7 +262,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-22 22:00 IDT",
+    lastActive: "2026-07-23 10:30 IDT",
   },
   {
     ticket: "JN-5824",
@@ -257,7 +273,7 @@ export const WORKTREES = [
     zone: "Code",
     pr: null,
     prUrl: null,
-    status: "🔄 Last session Jul 8 IDLE. SHA 16ec44ea (2 commits). Remaining: generate 24 configs, rebase, PR. Stale 14+ days.",
+    status: "🔄 Last session Jul 8 IDLE. SHA 16ec44ea (2 commits). Remaining: generate 24 configs, rebase, PR. Stale 15+ days.",
     blockedOn: "Awaiting direction (fork new session to generate configs, rebase, PR)",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f4202b61479cbbb22e657/",
@@ -385,7 +401,7 @@ export const WORKTREES = [
     zone: "NO ZONE",
     pr: null,
     prUrl: null,
-    status: "⚠️ Stale 27+ days (last Jun 25). No sessions, no PR. Propose archive.",
+    status: "⚠️ Stale 28+ days (last Jun 25). No sessions, no PR. Propose archive.",
     blockedOn: "Stale, no activity",
     blockedType: "blocked",
     sessionUrl: null,
@@ -527,7 +543,11 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "yellow",
-    message: "🟡 #1638 (JN-5725, off-board): **NEARLY DONE** — NEW CI run 29947598648: pre-commit ✅, e2e-api ✅, integration ✅, tox ✅, e2e-smoke ✅, nox ✅, JIRA Assoc ✅; **e2e-product PENDING**. When it passes → ready to merge!",
+    message: "🟡 #1638 (JN-5725, off-board): **NEARLY DONE** — LATEST RUN 29986495648 (new since overnight): pre-commit ✅, e2e-api ✅, integration ✅, tox ✅, e2e-smoke ✅, nox ✅, JIRA Assoc ✅; **e2e-product PENDING**. When it passes → ready to merge!",
+  },
+  {
+    level: "yellow",
+    message: "⚠️ **5 morning sessions failed (05:00 IDT Jul 23)**: Board Advancement, External Sync, Daily Standup, Morning Board Scan all failed to start. Board was not updated from 22:00 IDT Jul 22 until this 10:30 IDT session. Investigate scheduler/startup issue.",
   },
   {
     level: "red",
@@ -555,7 +575,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 #1690 (AIPCC-27645): **CONFLICTING** (4+ days unchanged). All CI 100% passing (run 29729530150). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
+    message: "🔴 #1690 (AIPCC-27645): **CONFLICTING** (5+ days unchanged). All CI 100% passing (run 29729530150). **Action: Rebase aipcc-27645-server-resources on main, then request review.**",
   },
   {
     level: "red",
@@ -591,14 +611,14 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "📍 jn-5865 (JN-5865): Still Ingest zone — plan done Jul 8 (Day 14+). Propose move to Code + trigger /implement:code.",
+    message: "📍 jn-5865 (JN-5865): Still Ingest zone — plan done Jul 8 (Day 15+). Propose move to Code + trigger /implement:code.",
   },
   {
     level: "yellow",
-    message: "🔄 jn-5824-benchmark-run-configs (JN-5824): Last session Jul 8 IDLE. SHA 16ec44ea. Stale 14+ days. Needs: generate 24 configs, rebase, PR.",
+    message: "🔄 jn-5824-benchmark-run-configs (JN-5824): Last session Jul 8 IDLE. SHA 16ec44ea. Stale 15+ days. Needs: generate 24 configs, rebase, PR.",
   },
   {
     level: "yellow",
-    message: "⚠️ jira-operations: NO ZONE, stale 27+ days (last Jun 25). No sessions, no PR. Propose archive.",
+    message: "⚠️ jira-operations: NO ZONE, stale 28+ days (last Jun 25). No sessions, no PR. Propose archive.",
   },
 ];

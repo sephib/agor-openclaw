@@ -1,10 +1,17 @@
 # Proposals — jounce-workflow-ai Board
 
-*Last updated: 2026-07-20 15:30 IDT*
+*Last updated: 2026-07-23 10:30 IDT*
 
 ---
 
 ## ACTIVE PROPOSALS
+
+### Proposal: Investigate 05:00 IDT morning session failures (Jul 23)
+- **Action:** Investigate why 5 scheduled sessions at 05:00 IDT Jul 23 all failed: Board Advancement, External Sync, Daily Standup, Morning Board Scan, Julie Morning Scan.
+- **Reason:** Board was dark for 8.5h (22:00 Jul 22 → 10:30 Jul 23). Could be a Agor scheduler issue, Claude Code startup failure, or resource exhaustion.
+- **Risk:** Recurring if not investigated — gaps in board monitoring.
+- **Worktree:** private-julie (this session)
+- **Status:** PENDING — needs Joseph to check Agor scheduler logs or relaunch affected schedules
 
 ### Proposal: Fix Pre-commit CI on PR #1695 (aipcc-23925-argo-public-url)
 

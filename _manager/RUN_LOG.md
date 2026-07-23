@@ -2716,3 +2716,11 @@
 - Flags: #1670 regression (ALL-CI-PASS→CONFLICTING overnight); #1693 regression (UNKNOWN→CONFLICTING); #1638 almost ready (e2e-product pending); 6 Jira mismatches unchanged
 - Actions: 0 archives, 0 auto-advances
 - Next: Morning — rebase #1670 (was CI-green, just needs rebase); fix pre-commit + rebase #1667 + #1693; check #1638 e2e-product result
+
+## 10:30 IDT — Weekday Daytime Heartbeat
+- PRs checked: #1638 (OPEN/MERGEABLE, new run 29986495648 — all ✅ except e2e-product PENDING), #1670 (OPEN/CONFLICTING, CI stale/all-pass), #1667 (OPEN/CONFLICTING/pre-commit❌ unchanged), #1690 (OPEN/CONFLICTING/all-CI-pass unchanged — 5+ days), #1693 (OPEN/CONFLICTING/APPROVED/pre-commit❌ unchanged), #1694 (OPEN/CONFLICTING unchanged), #1669 (DRAFT/CONFLICTING/CI❌ unchanged), #1698 (OPEN/CONFLICTING/pre-commit❌ unchanged), #1697/#1700/#1701/#1696/#1695/#1596 (unchanged)
+- Merges detected: none
+- CI changes: **#1638 new CI run 29986495648** triggered since overnight (29947598648→29986495648) — all checks still passing, e2e-product still PENDING
+- Flags: **⚠️ 5 scheduled sessions at 05:00 IDT Jul 23 all FAILED** (Board Advancement, External Sync, Daily Standup, Morning Board Scan, Julie Morning Scan) — board was not updated for 8.5h between 22:00 Jul 22 and this run; #1690 now 5+ days CONFLICTING; 6 Jira mismatches unchanged
+- Actions: 0 archives, 0 auto-advances
+- Next: Monitor #1638 e2e-product (run 29986495648); investigate 05:00 startup failures; rebase #1670 (was CI-green), fix pre-commit + rebase #1667 + #1693 + #1698; #1690 rebase + review request

@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-22 22:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-23 10:30 IDT (advance heartbeat)*
 
 ---
 
@@ -8,15 +8,15 @@
 
 | Worktree | Zone | PR | CI | Jira | Status |
 |---------|------|----|----|------|--------|
-| aipcc-27645-server-resources | **Code** | [#1690](https://github.com/Jounce-IO/jounce/pull/1690) | ✅ ALL CI FULLY PASSING run 29729530150 (stale) | [AIPCC-27645](https://redhat.atlassian.net/browse/AIPCC-27645) — In Progress | 🔴 **CONFLICTING** (4+ days unchanged). ALL CI 100% PASS. **Action: Rebase aipcc-27645-server-resources on main, then request review.** |
+| aipcc-27645-server-resources | **Code** | [#1690](https://github.com/Jounce-IO/jounce/pull/1690) | ✅ ALL CI FULLY PASSING run 29729530150 (stale) | [AIPCC-27645](https://redhat.atlassian.net/browse/AIPCC-27645) — In Progress | 🔴 **CONFLICTING** (5+ days unchanged). ALL CI 100% PASS. **Action: Rebase aipcc-27645-server-resources on main, then request review.** |
 | jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | UNKNOWN (frozen) | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) — In Progress | 🔴 DRAFT + CONFLICTING; frozen since Jun 14. |
-| jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — New | Design session done Jun 30. Ready for Plan phase. Stale 22+ days. |
-| jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | Last session Jul 8 IDLE. SHA 16ec44ea (2 commits). Needs: configs, rebase, PR. Stale 14+ days. |
+| jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — New | Design session done Jun 30. Ready for Plan phase. Stale 23+ days. |
+| jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | Last session Jul 8 IDLE. SHA 16ec44ea (2 commits). Needs: configs, rebase, PR. Stale 15+ days. |
 | jn-5844-service-lib-sql-agents-md | **Publish** | [#1670](https://github.com/Jounce-IO/jounce/pull/1670) | ✅ ALL CI FULLY PASSING run 29921067106 (stale — pre-16:03 IDT CI) | [JN-5844](https://redhat.atlassian.net/browse/JN-5844) — New | 🔴 **NOW CONFLICTING** (regression from 16:03 IDT — was UNKNOWN/ALL-CI-PASS). CI was fully green on run 29921067106 but main advanced after #1704/#1705 merges. **Action: Rebase jn-5844 on main, then open for review.** |
 | jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | 🔴 run 29920170788: pre-commit ❌, all-checks ❌; e2e-api ✅, e2e-smoke ✅, integration ✅, tox ✅, nox ✅, JIRA Assoc ✅ | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) — New | 🔴 CONFLICTING + pre-commit ❌. **Action: Fix pre-commit + rebase jn-5845-helm-cicd-agents-md.** |
 | jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | 🔴 run 29683534910 (stale): pre-commit ❌, nox ❌, tox-run ❌, all-checks ❌ | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — In Progress | 🔴 **CI ❌ + CONFLICTING** — DRAFT. Unchanged. Needs rebase + CI fix. |
-| jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — New | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 14+** (still Ingest, should be Code). |
-| jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 27+ days. Propose archive. |
+| jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — New | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 15+** (still Ingest, should be Code). |
+| jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 28+ days. Propose archive. |
 | aipcc-23845-cluster-connection | **Plan** | [#1698](https://github.com/Jounce-IO/jounce/pull/1698) | 🔴 CI run 29749885088 — pre-commit ❌, all-checks ❌; JIRA Assoc ✅, nox ✅, tox ✅ | [AIPCC-23845](https://redhat.atlassian.net/browse/AIPCC-23845) | isDraft:false. CONFLICTING + pre-commit ❌. **Action: Rebase + fix pre-commit.** |
 | aipcc-23890-qe-cluster-tests | **NO ZONE** | [#1697 DRAFT](https://github.com/Jounce-IO/jounce/pull/1697) | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌; nox ✅, tox ✅ (run 29741945977) | [AIPCC-23890](https://redhat.atlassian.net/browse/AIPCC-23890) — In Progress | DRAFT. CI failing: pre-commit ❌. No zone assigned. MERGEABLE. |
 | aipcc-23845-script-runner | **NO ZONE** | [#1700 DRAFT](https://github.com/Jounce-IO/jounce/pull/1700) | 🔴 pre-commit ❌, JIRA Assoc ❌, all-checks ❌ (run 29808132144); nox ✅, tox ✅ | [AIPCC-23845](https://redhat.atlassian.net/browse/AIPCC-23845) | DRAFT split from #1698. MERGEABLE. No zone assigned. |
@@ -39,7 +39,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🟡 **NEW RUN 29947598648**: JIRA Assoc ✅, atlas-validate ✅, check-changes ✅, e2e-api ✅, pre-commit-run ✅, integration ✅, tox ✅, e2e-smoke ✅, nox ✅; **e2e-product PENDING** | **OPEN, 🟢 MERGEABLE** | 🎉 **NEARLY DONE** — all checks pass except e2e-product PENDING. When e2e-product completes, ready to merge! |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | [JN-5725](https://redhat.atlassian.net/browse/JN-5725) — **Done** ✅ | 🟡 **LATEST RUN 29986495648**: JIRA Assoc ✅, atlas-validate ✅, check-changes ✅, e2e-api ✅, pre-commit-run ✅, integration ✅, tox ✅, e2e-smoke ✅, nox ✅; **e2e-product PENDING** | **OPEN, 🟢 MERGEABLE** | 🎉 **NEARLY DONE** — new CI run triggered since overnight. All checks pass except e2e-product still PENDING. When e2e-product completes, ready to merge! |
 
 ---
 
@@ -80,14 +80,13 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (22:00 IDT Jul 22 vs 16:03 IDT Jul 22)
+## Key Changes (10:30 IDT Jul 23 vs 22:00 IDT Jul 22)
 
 | What changed | Delta |
 |---|---|
-| **🔴 #1670 (jn-5844): NOW CONFLICTING** | Was UNKNOWN/ALL-CI-PASS at 16:03. main advanced after #1704+#1705 merges — now conflicts. CI run 29921067106 still ALL PASS but stale. Needs rebase. |
-| **🔴 #1693 (bot AIPCC-27655): NOW CONFLICTING** | Was UNKNOWN MERGEABLE at 16:03. Still APPROVED + pre-commit ❌. |
-| **🟡 #1638 (off-board): NEW CI run 29947598648** | Major: pre-commit ✅, e2e-api ✅, integration ✅, tox ✅, e2e-smoke ✅, nox ✅, JIRA Assoc ✅. **Only e2e-product PENDING**. When it passes → ready to merge! |
-| **All other PRs** | Unchanged — #1690 CONFLICTING/all-CI-pass, #1667 CONFLICTING+pre-commit❌, #1669 DRAFT+CI❌+CONFLICTING, #1698 CONFLICTING+pre-commit❌. 6 Jira mismatches unchanged. |
+| **🟡 #1638 (off-board): NEW CI run 29986495648** | Fresh run since overnight. All checks still passing (pre-commit ✅, e2e-api ✅, integration ✅, tox ✅, e2e-smoke ✅, nox ✅, JIRA Assoc ✅). **e2e-product still PENDING**. |
+| **🔴 Morning sessions failed (05:00 IDT Jul 23)** | 5 scheduled sessions at 05:00 IDT all failed: Board Advancement, External Sync, Daily Standup, Morning Board Scan. Likely startup issue. Board state unchanged as a result. |
+| **All PRs** | No merges. All still CONFLICTING/MERGEABLE same as 22:00 IDT Jul 22. #1690 now 5+ days unchanged. |
 
 ---
 
@@ -135,10 +134,10 @@ PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667): "docs(jbenchmark): ad
 
 ---
 
-### 🔴 #1690 (aipcc-27645) — ALL CI PASSING BUT CONFLICTING (4+ days)
+### 🔴 #1690 (aipcc-27645) — ALL CI PASSING BUT CONFLICTING (5+ days)
 
 PR [#1690](https://github.com/Jounce-IO/jounce/pull/1690): "fix(helm): increase API server resources and probe tolerances (AIPCC-27645)"
-- State: OPEN, **CONFLICTING** 🔴 (4+ days unchanged)
+- State: OPEN, **CONFLICTING** 🔴 (5+ days unchanged)
 - Run 29729530150 — ALL CHECKS PASS
 - **Action:** Rebase aipcc-27645-server-resources on main, then request review.
 
@@ -188,7 +187,7 @@ PR [#1695](https://github.com/Jounce-IO/jounce/pull/1695): DRAFT. MERGEABLE. CI 
 
 ---
 
-### 📋 jn-5865 — Zone Mismatch (Ingest, Plan Done — Day 14+)
+### 📋 jn-5865 — Zone Mismatch (Ingest, Plan Done — Day 15+)
 
 Plan session done ~23:06 IDT Jul 8. No code session triggered.
 - **Propose:** Move to Code zone + trigger /implement:code.
