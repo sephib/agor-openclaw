@@ -1,6 +1,24 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-23 11:01 IDT",
+    actions: 0,
+    findings: 1,
+    status: "ok",
+    summary: "#1638 🎉 ALL CI FULLY PASSING — e2e-product ✅ (36m5s) completed; READY TO MERGE. All other PRs unchanged (CONFLICTING). 0 merges, 0 archives.",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8dfd28167b36b8359a2a/",
+  },
+  {
+    type: "advance",
+    timestamp: "2026-07-23 10:30 IDT",
+    actions: 0,
+    findings: 2,
+    status: "ok",
+    summary: "Board static overnight; #1638 new CI run 29986495648 — all ✅ except e2e-product PENDING; 5 morning sessions failed (05:00 IDT Jul 23); 6 Jira mismatches unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8de1ad3a71fa9ae03742/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-22 22:00 IDT",
     actions: 0,
     findings: 2,

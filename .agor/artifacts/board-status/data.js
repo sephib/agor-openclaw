@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-23 10:30 IDT";
+export const LAST_UPDATED = "2026-07-23 11:01 IDT";
 
 export const WORKTREES = [
   {
@@ -17,10 +17,18 @@ export const WORKTREES = [
     sessionLabel: "advance heartbeat 16:03 IDT Jul 22 — #1704 MERGED; #1670 ALL-CI-PASS; #1638 MERGEABLE; #1667 CONFLICTING",
     recentSessions: [
       {
+        sessionId: "019f8dfd28167b36b8359a2a",
+        url: "http://127.0.0.1:3030/ui/s/019f8dfd28167b36b8359a2a/",
+        title: "advance heartbeat 11:01 IDT Jul 23 — #1638 🎉 ALL CI PASSING (e2e-product ✅); no merges",
+        status: "running",
+        timestamp: "2026-07-23 11:01 IDT",
+        outputFile: null,
+      },
+      {
         sessionId: "019f8de1ad3a71fa9ae03742",
         url: "http://127.0.0.1:3030/ui/s/019f8de1ad3a71fa9ae03742/",
         title: "advance heartbeat 10:30 IDT Jul 23 — board static; #1638 new CI run 29986495648 e2e-product PENDING; 5 morning sessions failed",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-23 10:30 IDT",
         outputFile: null,
       },
@@ -48,24 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-22 15:33 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f89ce57c77348acf1e757",
-        url: "http://127.0.0.1:3030/ui/s/019f89ce57c77348acf1e757/",
-        title: "advance heartbeat 15:03 IDT Jul 22 — #1638 ALL CI ✅; #1667+#1704 REBASED+MERGEABLE; new CI runs",
-        status: "idle",
-        timestamp: "2026-07-22 15:03 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f89975d187c47b70c384b",
-        url: "http://127.0.0.1:3030/ui/s/019f89975d187c47b70c384b/",
-        title: "advance heartbeat 14:33 IDT Jul 22 — #1705 MERGED; #1670 REBASED+all-CI✅; #1638 CONFLICTING+e2e-smoke✅",
-        status: "idle",
-        timestamp: "2026-07-22 14:33 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-23 10:30 IDT",
+    lastActive: "2026-07-23 11:01 IDT",
   },
   {
     ticket: "AIPCC-27681",
@@ -238,10 +230,18 @@ export const WORKTREES = [
     sessionLabel: "Internal CR — JN-5844 service/lib/sql AGENTS.md (idle 10:46 IDT)",
     recentSessions: [
       {
+        sessionId: "019f8dfd28167b36b8359a2a",
+        url: "http://127.0.0.1:3030/ui/s/019f8dfd28167b36b8359a2a/",
+        title: "advance heartbeat 11:01 IDT Jul 23 — #1638 🎉 ALL CI PASSING; #1670 still CONFLICTING (day 2)",
+        status: "running",
+        timestamp: "2026-07-23 11:01 IDT",
+        outputFile: null,
+      },
+      {
         sessionId: "019f8de1ad3a71fa9ae03742",
         url: "http://127.0.0.1:3030/ui/s/019f8de1ad3a71fa9ae03742/",
         title: "advance heartbeat 10:30 IDT Jul 23 — board static; #1670 still CONFLICTING (day 2)",
-        status: "running",
+        status: "idle",
         timestamp: "2026-07-23 10:30 IDT",
         outputFile: null,
       },
@@ -542,8 +542,8 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "yellow",
-    message: "🟡 #1638 (JN-5725, off-board): **NEARLY DONE** — LATEST RUN 29986495648 (new since overnight): pre-commit ✅, e2e-api ✅, integration ✅, tox ✅, e2e-smoke ✅, nox ✅, JIRA Assoc ✅; **e2e-product PENDING**. When it passes → ready to merge!",
+    level: "green",
+    message: "🎉 #1638 (JN-5725, off-board): **ALL CI FULLY PASSING** — run 29986495648: pre-commit ✅, e2e-api ✅, integration ✅, tox ✅, e2e-smoke ✅, nox ✅, JIRA Assoc ✅, **e2e-product ✅ (36m5s)**. MERGEABLE. **⚡ READY TO MERGE NOW!**",
   },
   {
     level: "yellow",
