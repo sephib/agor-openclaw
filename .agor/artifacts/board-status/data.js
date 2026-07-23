@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-23 17:30 IDT";
+export const LAST_UPDATED = "2026-07-23 18:00 IDT";
 
 export const WORKTREES = [
   {
@@ -10,17 +10,25 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1690",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1690",
-    status: "🎉 **UN-DRAFTED** (isDraft true→false at 17:30 IDT). New CI run 30015402807: **all-checks ✅ PASS**, pre-commit ✅, nox ✅, tox ✅, atlas-validate ✅, JIRA Assoc ✅, integration ✅, CodeRabbit ✅; pre-commit-run pending; e2e-* skipping (helm-only). REVIEW_REQUIRED. **Action: Assign reviewer — PR is ready!**",
-    blockedOn: "REVIEW_REQUIRED — needs reviewer assignment",
+    status: "🔴 **CHANGES_REQUESTED by MenD32** (14:53 IDT Jul 23). Reviewer flagged hardcoded resources in deployment.yaml — needs `.Values.server.resources` template. New CI run 30016479857 (new commits): pre-commit ❌, JIRA Assoc ❌; e2e-api ✅, integration ✅, tox ✅, nox ✅, atlas-validate ✅; e2e-smoke pending. **Action: Address reviewer feedback + fix CI.**",
+    blockedOn: "CHANGES_REQUESTED — address reviewer feedback + fix pre-commit/JIRA Assoc",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8f62377a7a8f9ea9016c/",
-    sessionLabel: "advance heartbeat 17:30 IDT Jul 23 — #1690 UN-DRAFTED + all-checks ✅; #1670 pre-commit FIXED; #1713 new push",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8f7daefc768992acfa43/",
+    sessionLabel: "advance heartbeat 18:00 IDT Jul 23 — #1690 CHANGES_REQUESTED; #1670 ALL CI ✅; #1693 pre-commit FIXED",
     recentSessions: [
+      {
+        sessionId: "019f8f7daefc768992acfa43",
+        url: "http://127.0.0.1:3030/ui/s/019f8f7daefc768992acfa43/",
+        title: "advance heartbeat 18:00 IDT Jul 23 — #1690 CHANGES_REQUESTED; #1670 ALL CI ✅",
+        status: "running",
+        timestamp: "2026-07-23 18:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f8f62377a7a8f9ea9016c",
         url: "http://127.0.0.1:3030/ui/s/019f8f62377a7a8f9ea9016c/",
         title: "advance heartbeat 17:30 IDT Jul 23 — #1690 UN-DRAFTED + all-checks ✅; #1670 pre-commit FIXED",
-        status: "running",
+        status: "completed",
         timestamp: "2026-07-23 17:30 IDT",
         outputFile: null,
       },
@@ -48,16 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-23 16:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f8ef458d773c8a0e6954c",
-        url: "http://127.0.0.1:3030/ui/s/019f8ef458d773c8a0e6954c/",
-        title: "advance heartbeat 15:30 IDT Jul 23 — #1713 CI worsened; CodeRabbit ✅ completed",
-        status: "completed",
-        timestamp: "2026-07-23 15:30 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-23 17:30 IDT",
+    lastActive: "2026-07-23 18:00 IDT",
   },
   {
     ticket: "AIPCC-27681",
@@ -68,7 +68,7 @@ export const WORKTREES = [
     zone: "NO ZONE (bot PR)",
     pr: "#1694",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1694",
-    status: "🆕 **BOT PR** (jira-autofix). OPEN, CONFLICTING, NOT draft. CI run 29740715467 (latest): JIRA Assoc ❌, pre-commit ❌, all-checks ❌; nox ✅, tox ✅, e2e ✅. **Action: Joseph review + rebase + fix JIRA Assoc + pre-commit.**",
+    status: "🆕 **BOT PR** (jira-autofix). OPEN, **MERGEABLE** (was CONFLICTING), REVIEW_REQUIRED, NOT draft. CI run 29740715467 (stale): JIRA Assoc ❌, pre-commit ❌, all-checks ❌; nox ✅, tox ✅, e2e ✅. **Action: Joseph review + fix JIRA Assoc + pre-commit.**",
     blockedOn: "JIRA Assoc ❌ + pre-commit ❌",
     blockedType: "active",
     sessionUrl: null,
@@ -85,8 +85,8 @@ export const WORKTREES = [
     zone: "NO ZONE (bot PR)",
     pr: "#1693",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1693",
-    status: "🔵 **BOT PR** (jira-autofix). OPEN, **🎉 APPROVED**, **🟢 MERGEABLE**. **NEW CI RUN 30016044501** — new push detected (pending: pre-commit, tox, integration, e2e-api; check-changes ✅, atlas-validate ✅, JIRA Assoc ✅). Watch new run — if pre-commit ✅, merge immediately (already APPROVED).",
-    blockedOn: "New CI run pending — prior run 29999372432 had pre-commit ❌",
+    status: "🟢 **BOT PR** (jira-autofix). OPEN, **🎉 APPROVED**, **🟢 MERGEABLE**. CI run 30017022583: **pre-commit ✅ FIXED**, JIRA Assoc ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅; **e2e-smoke: pending**. Near merge-ready — once e2e-smoke ✅, merge immediately.",
+    blockedOn: "e2e-smoke pending — once ✅, merge immediately (already APPROVED)",
     blockedType: "active",
     sessionUrl: null,
     sessionLabel: null,
@@ -223,17 +223,25 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1670",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1670",
-    status: "🟢 **pre-commit FIXED** (run 30015595992). pre-commit ✅, pre-commit-run ✅, e2e-api ✅, integration ✅, tox ✅, JIRA Assoc ✅, nox ✅, atlas-validate ✅, deploy ✅. **e2e-smoke: pending** (last remaining). Effectively ready for review once e2e-smoke ✅. **Action: Wait for e2e-smoke → request review.**",
-    blockedOn: "e2e-smoke pending — once complete, all CI green",
+    status: "🎉 **ALL CI NOW PASSING** (run 30015595992): all-checks ✅, pre-commit ✅, e2e-smoke ✅ (completed!), e2e-api ✅, integration ✅, tox ✅, nox ✅, JIRA Assoc ✅, atlas-validate ✅, deploy ✅. MERGEABLE, NOT DRAFT. **Action: Request review immediately — PR is fully green!**",
+    blockedOn: null,
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8f62377a7a8f9ea9016c/",
-    sessionLabel: "advance heartbeat 17:30 IDT Jul 23 — #1670 pre-commit FIXED; e2e-smoke pending",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8f7daefc768992acfa43/",
+    sessionLabel: "advance heartbeat 18:00 IDT Jul 23 — #1670 ALL CI ✅ (e2e-smoke ✅ completed)",
     recentSessions: [
+      {
+        sessionId: "019f8f7daefc768992acfa43",
+        url: "http://127.0.0.1:3030/ui/s/019f8f7daefc768992acfa43/",
+        title: "advance heartbeat 18:00 IDT Jul 23 — #1670 ALL CI ✅ (e2e-smoke completed)",
+        status: "running",
+        timestamp: "2026-07-23 18:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f8f62377a7a8f9ea9016c",
         url: "http://127.0.0.1:3030/ui/s/019f8f62377a7a8f9ea9016c/",
         title: "advance heartbeat 17:30 IDT Jul 23 — #1670 pre-commit FIXED; e2e-smoke pending",
-        status: "running",
+        status: "completed",
         timestamp: "2026-07-23 17:30 IDT",
         outputFile: null,
       },
@@ -270,7 +278,7 @@ export const WORKTREES = [
         outputFile: null,
       },
     ],
-    lastActive: "2026-07-23 17:30 IDT",
+    lastActive: "2026-07-23 18:00 IDT",
   },
   {
     ticket: "JN-5824",
@@ -409,17 +417,25 @@ export const WORKTREES = [
     zone: "Code Review",
     pr: "#1713",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1713",
-    status: "🔵 **NEW COMMIT PUSHED** (detected 17:30 IDT). CI reset — only CodeRabbit ✅ showing for latest run (new CI not started yet). reviewDecision cleared (was REVIEW_REQUIRED). Prior run 30008510915: pre-commit ✅, JIRA Assoc ✅, tox ✅, integration ✅, nox ✅; atlas-validate ❌, e2e-api ❌. New commit likely fixes blockers. **Watch new CI run.**",
-    blockedOn: "New CI run pending — previous blockers: atlas-validate ❌ + e2e-api ❌",
+    status: "🔵 **NEW COMMIT PUSHED** (detected 17:30 IDT). CI pending — only CodeRabbit ✅ showing for latest run (CI checks not yet started at 18:00 IDT check). reviewDecision: \"\" (cleared by push). Prior run 30008510915: pre-commit ✅, JIRA Assoc ✅, tox ✅, integration ✅, nox ✅; atlas-validate ❌, e2e-api ❌. New commit likely fixes blockers. **Watch new CI run.**",
+    blockedOn: "CI pending for new commit — watching for new run results",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8f62377a7a8f9ea9016c/",
-    sessionLabel: "advance heartbeat 17:30 IDT Jul 23 — #1713 new push; CI reset",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8f7daefc768992acfa43/",
+    sessionLabel: "advance heartbeat 18:00 IDT Jul 23 — #1713 CI still pending; no new run data",
     recentSessions: [
+      {
+        sessionId: "019f8f7daefc768992acfa43",
+        url: "http://127.0.0.1:3030/ui/s/019f8f7daefc768992acfa43/",
+        title: "advance heartbeat 18:00 IDT Jul 23 — #1713 CI still pending (no new run data)",
+        status: "running",
+        timestamp: "2026-07-23 18:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f8f62377a7a8f9ea9016c",
         url: "http://127.0.0.1:3030/ui/s/019f8f62377a7a8f9ea9016c/",
         title: "advance heartbeat 17:30 IDT Jul 23 — #1713 new push; CI reset; #1690 UN-DRAFTED",
-        status: "running",
+        status: "completed",
         timestamp: "2026-07-23 17:30 IDT",
         outputFile: null,
       },
@@ -447,16 +463,8 @@ export const WORKTREES = [
         timestamp: "2026-07-23 16:00 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f8ef458d773c8a0e6954c",
-        url: "http://127.0.0.1:3030/ui/s/019f8ef458d773c8a0e6954c/",
-        title: "advance heartbeat 15:30 IDT Jul 23 — #1713 CI worsened; CodeRabbit ✅ completed",
-        status: "completed",
-        timestamp: "2026-07-23 15:30 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-23 17:30 IDT",
+    lastActive: "2026-07-23 18:00 IDT",
   },
   {
     ticket: "AIPCC-27996",
@@ -634,20 +642,20 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "green",
-    message: "🎉 #1690 (AIPCC-27645): **UN-DRAFTED** (isDraft true→false at 17:30 IDT). New CI run 30015402807: **all-checks ✅ PASS**. REVIEW_REQUIRED. **Action: Assign reviewer — PR is ready!**",
+    level: "red",
+    message: "🔴 #1690 (AIPCC-27645): **CHANGES_REQUESTED by MenD32** (14:53 IDT Jul 23). Reviewer flagged hardcoded resources in deployment.yaml — should use `.Values.server.resources`. New CI run 30016479857: pre-commit ❌, JIRA Assoc ❌. **Action: Address reviewer feedback + fix CI.**",
   },
   {
     level: "green",
-    message: "🟢 #1670 (JN-5844): **pre-commit FIXED** (run 30015595992). pre-commit ✅, e2e-smoke pending. **Effectively CI-clean — request review once e2e-smoke ✅.**",
+    message: "🎉 #1670 (JN-5844): **ALL CI NOW PASSING** — e2e-smoke ✅ completed. all-checks ✅, pre-commit ✅, e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅. **Action: Request review immediately — PR is fully green!**",
+  },
+  {
+    level: "green",
+    message: "🟢 #1693 (AIPCC-27655): **pre-commit FIXED** (run 30017022583). APPROVED + MERGEABLE. e2e-smoke pending. **Action: Watch e2e-smoke — merge immediately once ✅.**",
   },
   {
     level: "blue",
-    message: "🔵 #1713 (AIPCC-27994): **NEW COMMIT PUSHED** (17:30 IDT). CI reset — only CodeRabbit ✅. Prior blockers: atlas-validate ❌ + e2e-api ❌. New commit likely fixes them. **Watch new CI run.**",
-  },
-  {
-    level: "blue",
-    message: "🔵 #1693 (AIPCC-27655): **NEW CI RUN 30016044501** — new push to APPROVED bot PR. Prior run had pre-commit ❌. New run pending. **If pre-commit ✅, merge immediately.**",
+    message: "🔵 #1713 (AIPCC-27994): New commit pushed at 17:30 IDT. CI pending (only CodeRabbit ✅ at 18:00 check). Prior blockers: atlas-validate ❌ + e2e-api ❌. **Watch new CI run.**",
   },
   {
     level: "red",
@@ -659,7 +667,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 #1694 (AIPCC-27681): **BOT PR** (jira-autofix) — CONFLICTING. CI run 29740715467: JIRA Assoc ❌, pre-commit ❌; nox ✅, tox ✅, e2e ✅. Action: Joseph review + rebase + fix.",
+    message: "🔴 #1694 (AIPCC-27681): **BOT PR** (jira-autofix) — now MERGEABLE (was CONFLICTING), REVIEW_REQUIRED. CI run 29740715467 (stale): JIRA Assoc ❌, pre-commit ❌; nox ✅, tox ✅, e2e ✅. Action: Joseph review + fix JIRA Assoc + pre-commit.",
   },
   {
     level: "red",

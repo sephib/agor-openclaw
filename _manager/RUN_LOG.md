@@ -2859,3 +2859,11 @@
 - Flags: 8 Jira mismatches unchanged; board zones unchanged; no new activity
 - Actions: 0 archives, 0 auto-advances
 - Next: Fix pre-commit on #1693 (APPROVED — merge immediately once green); fix pre-commit on #1670+#1667; fix atlas-validate+e2e-api on #1713; investigate #1638 CI regression; rebase #1690+#1698; 8 Jira mismatches via acli
+
+## 18:00 IDT — Weekday Daytime Heartbeat
+- PRs checked: #1690 (OPEN, CHANGES_REQUESTED), #1670 (OPEN, all CI ✅), #1693 (OPEN, APPROVED, e2e-smoke pending), #1713 (OPEN, CI pending), #1667 (OPEN, pre-commit ❌), #1638 (OPEN, CONFLICTING, CI ❌), #1698 (OPEN, CI pending), #1694 (OPEN, REVIEW_REQUIRED, MERGEABLE), #1695 #1696 (DRAFT)
+- Merges detected: none
+- CI changes: #1690 NEW COMMIT + CI reset (pre-commit ❌, JIRA Assoc ❌, reviewer CHANGES_REQUESTED); #1670 e2e-smoke ✅ completed (ALL CI NOW PASSING); #1693 pre-commit ✅ fixed (e2e-smoke pending); #1694 CONFLICTING→MERGEABLE
+- Archives: none
+- Flags: #1690 CHANGES_REQUESTED by MenD32 (hardcoded deployment resources); #1670 now fully green (request review!)
+- Next: watch #1693 e2e-smoke; watch #1713 new CI run; Joseph to address #1690 CHANGES_REQUESTED

@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-23 17:30 IDT (advance heartbeat)*
+*Last updated: 2026-07-23 18:00 IDT (advance heartbeat)*
 
 ---
 
@@ -8,11 +8,11 @@
 
 | Worktree | Zone | PR | CI | Jira | Status |
 |---------|------|----|----|------|--------|
-| aipcc-27645-server-resources | **Code** | [#1690](https://github.com/Jounce-IO/jounce/pull/1690) | ✅ **ALL CI PASSING** run 30015402807 (new!): all-checks ✅, pre-commit ✅, nox ✅, tox ✅, integration ✅, atlas-validate ✅, JIRA Assoc ✅, CodeRabbit ✅; pre-commit-run pending; e2e-* skipping (helm-only) | [AIPCC-27645](https://redhat.atlassian.net/browse/AIPCC-27645) — In Progress | 🎉 **UN-DRAFTED** (isDraft changed true→false). **All-checks ✅ PASS**. REVIEW_REQUIRED. **Action: Request reviewer for review.** |
+| aipcc-27645-server-resources | **Code** | [#1690](https://github.com/Jounce-IO/jounce/pull/1690) | 🔴 **NEW CI run 30016479857**: pre-commit ❌, JIRA Assoc ❌ (run 30018028454); e2e-api ✅, integration ✅, tox ✅, nox ✅, atlas-validate ✅; e2e-smoke pending | [AIPCC-27645](https://redhat.atlassian.net/browse/AIPCC-27645) — In Progress | 🔴 **CHANGES_REQUESTED by MenD32** (14:53 IDT). Reviewer flagged hardcoded resources in deployment.yaml — should use `.Values.server.resources`. New CI run shows pre-commit ❌ + JIRA Assoc ❌ (new commits since 17:30). **Action: Address reviewer feedback + fix CI.** |
 | jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | UNKNOWN (frozen) | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) — In Progress | 🔴 DRAFT + CONFLICTING; frozen since Jun 14. |
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — New | Design session done Jun 30. Ready for Plan phase. Stale 23+ days. |
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | Last session Jul 8 IDLE. SHA 16ec44ea (2 commits). Needs: configs, rebase, PR. Stale 15+ days. |
-| jn-5844-service-lib-sql-agents-md | **Publish** | [#1670](https://github.com/Jounce-IO/jounce/pull/1670) | 🟢 **pre-commit ✅ FIXED** run 30015595992 (new!): pre-commit ✅, pre-commit-run ✅, e2e-api ✅, integration ✅, tox ✅, JIRA Assoc ✅, nox ✅, atlas-validate ✅, deploy ✅; **e2e-smoke pending** | [JN-5844](https://redhat.atlassian.net/browse/JN-5844) — New | 🟢 **pre-commit FIXED** (was ❌ at 17:00). **e2e-smoke pending** (last remaining). Effectively ready for review once e2e-smoke ✅. **Action: Wait for e2e-smoke, then request review.** |
+| jn-5844-service-lib-sql-agents-md | **Publish** | [#1670](https://github.com/Jounce-IO/jounce/pull/1670) | 🎉 **ALL CI PASSING** run 30015595992: all-checks ✅, pre-commit ✅, e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅, JIRA Assoc ✅, atlas-validate ✅, deploy ✅ | [JN-5844](https://redhat.atlassian.net/browse/JN-5844) — New | 🎉 **ALL CI NOW PASSING** (e2e-smoke ✅ completed). MERGEABLE, NOT DRAFT, reviewDecision: "". **Action: Request review immediately — PR is fully green!** |
 | jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | 🟡 run 30015411147: pre-commit ❌, all-checks ❌; e2e-api ✅, e2e-smoke ✅, integration ✅, tox ✅, nox ✅, JIRA Assoc ✅; e2e-smoke pending | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) — New | 🟡 pre-commit ❌ still only blocker. **Action: Fix pre-commit hook failure.** |
 | jn-5872 | **Code** | [#1669](https://github.com/Jounce-IO/jounce/pull/1669) | 🔴 run 29683534910 (stale): pre-commit ❌, nox ❌, tox-run ❌, all-checks ❌ | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — In Progress | 🔴 **CI ❌ + CONFLICTING** — DRAFT. Unchanged. Needs rebase + CI fix. |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — New | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 15+** (still Ingest, should be Code). |
@@ -32,7 +32,7 @@
 
 | PR | Ticket | State | CI | Notes |
 |----|--------|-------|----|-------|
-| [#1693](https://github.com/Jounce-IO/jounce/pull/1693) | [AIPCC-27655](https://redhat.atlassian.net/browse/AIPCC-27655) | OPEN, APPROVED, NOT draft | 🔵 **NEW CI RUN 30016044501** — pending: pre-commit, tox, integration, e2e-api; check-changes ✅, atlas-validate ✅, JIRA Assoc ✅, resolve-conflicts ✅ | 🔵 **NEW PUSH** to branch (detected 17:30 IDT). Was failing run 29999372432. New CI in progress — may fix pre-commit. Still APPROVED + MERGEABLE. |
+| [#1693](https://github.com/Jounce-IO/jounce/pull/1693) | [AIPCC-27655](https://redhat.atlassian.net/browse/AIPCC-27655) | OPEN, APPROVED, NOT draft | 🟢 **NEW CI RUN 30017022583**: pre-commit ✅ (FIXED!), JIRA Assoc ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅; **e2e-smoke: pending** | 🟢 **pre-commit FIXED** on new run. APPROVED + MERGEABLE. **Action: Wait for e2e-smoke; if ✅, merge immediately.** |
 | [#1694](https://github.com/Jounce-IO/jounce/pull/1694) | [AIPCC-27681](https://redhat.atlassian.net/browse/AIPCC-27681) | OPEN, CONFLICTING, NOT draft | 🔴 run 29740715467: JIRA Assoc ❌, pre-commit ❌, all-checks ❌; nox ✅, tox ✅, e2e ✅ | Bot "jira-autofix". Unchanged. Needs Joseph review. |
 
 ---
@@ -86,62 +86,57 @@ Also **new mismatches (15:00 IDT)**:
 
 ---
 
-## Key Changes (17:30 IDT Jul 23 vs 17:00 IDT Jul 23)
+## Key Changes (18:00 IDT Jul 23 vs 17:30 IDT Jul 23)
 
 | What changed | Delta |
 |---|---|
-| **#1690** | 🎉 **UN-DRAFTED** (isDraft true→false). New CI run 30015402807: **all-checks ✅ PASS**. REVIEW_REQUIRED. Ready for reviewer assignment! |
-| **#1670** | 🟢 **pre-commit FIXED** (run 30015595992). Was ❌ only blocker. Now e2e-smoke pending. Effectively CI-clean. |
-| **#1713** | 🔵 **NEW COMMIT PUSHED** — CI reset (only CodeRabbit showing). reviewDecision cleared (review dismissed by push). New CI starting. |
-| **#1693** | 🔵 **NEW CI RUN 30016044501** — new push to bot PR. Prior run was COMPLETED FAILING. New run pending. |
-| **#1698** | 🔵 **CONFLICTING → MERGEABLE** (was CONFLICTING at last check; now MERGEABLE) |
+| **#1690** | 🔴 **CHANGES_REQUESTED by MenD32** (14:53 IDT). Was REVIEW_REQUIRED + all CI ✅. Now: new CI run 30016479857 with pre-commit ❌ + JIRA Assoc ❌ (new commits after review). Reviewer flagged hardcoded deployment resources. |
+| **#1670** | 🎉 **ALL CI NOW PASSING** — e2e-smoke ✅ completed. All checks green. Ready for review! |
+| **#1693** | 🟢 **pre-commit FIXED** on new run 30017022583. e2e-smoke pending. APPROVED — merge-ready once e2e-smoke ✅. |
+| **#1713** | Unchanged — only CodeRabbit showing, new CI run not yet started. |
+| **#1694** | 🔵 **CONFLICTING → MERGEABLE** + reviewDecision now REVIEW_REQUIRED (minor change). |
 
 ---
 
 ## Attention Items
 
-### 🎉 #1690 (AIPCC-27645) — UN-DRAFTED + ALL CI PASSING — Ready for Review!
+### 🔴 #1690 (AIPCC-27645) — CHANGES_REQUESTED — Needs Review Response
 
 PR [#1690](https://github.com/Jounce-IO/jounce/pull/1690): "fix(helm): increase API server resources and probe tolerances (AIPCC-27645)"
-- **State: OPEN, 🟢 MERGEABLE, NOT DRAFT (NEW!), REVIEW_REQUIRED**
-- **NEW CI run 30015402807** (vs stale run 29729530150):
-  - all-checks ✅ PASS, pre-commit ✅, nox ✅, tox ✅, atlas-validate ✅, JIRA Assoc ✅, integration ✅, e2e-tests ✅, CodeRabbit ✅
-  - pre-commit-run: pending (in progress)
-  - e2e-api/e2e-smoke/bake/atlas-validate-run: skipping (helm-only changes, expected)
-- **Was: CONFLICTING (5+ days), isDraft:true** → **Now: MERGEABLE, isDraft:false, all-checks ✅**
-- **Action: Assign reviewer immediately — this PR is ready!**
+- **State: OPEN, 🟢 MERGEABLE, NOT DRAFT, CHANGES_REQUESTED by MenD32**
+- Reviewer MenD32: first APPROVED (14:45), then CHANGES_REQUESTED (14:53) — flagged hardcoded `resources` in deployment.yaml instead of using `.Values.server.resources` templates
+- CodeRabbit also flagged: `lcov.info` should not be committed (43k line generated file)
+- **NEW CI run 30016479857** (after reviewer push): pre-commit ❌, JIRA Assoc ❌ (run 30018028454); e2e-smoke pending; others ✅
+- **Action: Joseph to review MenD32 feedback — fix deployment.yaml resources templating + fix pre-commit + JIRA Assoc + consider removing lcov.info**
 
 ---
 
-### 🟢 #1670 (jn-5844) — pre-commit FIXED — CI nearly all green!
+### 🎉 #1670 (jn-5844) — ALL CI PASSING — Ready for Review!
 
 PR [#1670](https://github.com/Jounce-IO/jounce/pull/1670)
-- State: OPEN, **🟢 MERGEABLE**, NOT DRAFT
-- **NEW CI run 30015595992** — pre-commit ✅ FIXED (was ❌ only blocker!):
-  - pre-commit ✅, pre-commit-run ✅, e2e-api ✅, integration ✅, tox ✅, JIRA Assoc ✅, nox ✅, atlas-validate ✅, deploy ✅
-  - **e2e-smoke: pending** (still running)
-- **Action: Wait for e2e-smoke result. If ✅, PR is fully green — request review.**
+- State: OPEN, **🟢 MERGEABLE**, NOT DRAFT, reviewDecision: ""
+- **ALL CI NOW PASSING** (run 30015595992): all-checks ✅, pre-commit ✅, e2e-smoke ✅ (completed!), e2e-api ✅, integration ✅, tox ✅, nox ✅, JIRA Assoc ✅, atlas-validate ✅, deploy ✅
+- e2e-smoke completed since 17:30 heartbeat — PR is fully green
+- **Action: Request review immediately — this PR is fully green!**
 
 ---
 
-### 🔵 #1713 (AIPCC-27994) — New Commit Pushed — CI Reset
+### 🟢 #1693 (AIPCC-27655) — pre-commit FIXED — Near Merge-Ready
+
+PR [#1693](https://github.com/Jounce-IO/jounce/pull/1693) — bot PR (jira-autofix), APPROVED
+- State: OPEN, **🎉 APPROVED**, **🟢 MERGEABLE**
+- **NEW CI RUN 30017022583**: pre-commit ✅ (FIXED!), JIRA Assoc ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅; **e2e-smoke: pending**
+- **Action: Wait for e2e-smoke. If ✅, merge immediately (already APPROVED).**
+
+---
+
+### 🔵 #1713 (AIPCC-27994) — CI Still Pending (new push at 17:30)
 
 PR [#1713](https://github.com/Jounce-IO/jounce/pull/1713): "feat(jbenchmark): add is_faulty column, PATCH endpoint, and list filtering"
-- State: OPEN, **🟢 MERGEABLE**, NOT DRAFT
-- **NEW COMMIT PUSHED** — reviewDecision cleared (was REVIEW_REQUIRED)
-- CI: Only CodeRabbit ✅ showing for latest run. All other checks not started yet.
+- State: OPEN, **🟢 MERGEABLE**, NOT DRAFT, reviewDecision: "" (cleared by push)
+- CI: Only CodeRabbit ✅ showing for latest run — no other checks started yet
 - Prior run 30008510915 had: pre-commit ✅, JIRA Assoc ✅, tox ✅, integration ✅, nox ✅; atlas-validate ❌, e2e-api ❌
-- **Action: Watch for new CI run. New commit likely fixes atlas-validate + e2e-api.**
-
----
-
-### 🔵 #1693 (AIPCC-27655) — New Push on Bot PR — CI Reset
-
-PR [#1693](https://github.com/Jounce-IO/jounce/pull/1693)
-- State: OPEN, **🎉 APPROVED**, **🟢 MERGEABLE**
-- **NEW CI RUN 30016044501** — pending: pre-commit, tox, integration, e2e-api
-- Prior run 29999372432 was COMPLETED FAILING (pre-commit ❌, e2e-smoke ❌)
-- **Action: Wait for new run. If pre-commit ✅, merge immediately (already APPROVED).**
+- **Action: Watch for new CI run — new commit expected to fix atlas-validate + e2e-api.**
 
 ---
 
