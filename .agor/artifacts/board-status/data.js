@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-23 14:00 IDT";
+export const LAST_UPDATED = "2026-07-23 14:30 IDT";
 
 export const WORKTREES = [
   {
@@ -13,9 +13,17 @@ export const WORKTREES = [
     status: "🔴 **CONFLICTING** (5+ days unchanged). isDraft:true. All CI 100% PASSING (run 29729530150). **Action: Rebase aipcc-27645-server-resources on main, mark ready, then request review.**",
     blockedOn: "CONFLICTING — needs rebase on main",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8ea1f1e5704eb46a3cf6/",
-    sessionLabel: "advance heartbeat 14:00 IDT Jul 23 — #1693 CI FAILED (pre-commit ❌); 6 Jira mismatches unchanged; no merges",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8ebd69b27de2895ce44e/",
+    sessionLabel: "advance heartbeat 14:30 IDT Jul 23 — board static; no merges; CI unchanged; 6 Jira mismatches unchanged",
     recentSessions: [
+      {
+        sessionId: "019f8ebd69b27de2895ce44e",
+        url: "http://127.0.0.1:3030/ui/s/019f8ebd69b27de2895ce44e/",
+        title: "advance heartbeat 14:30 IDT Jul 23 — board static; no merges; CI unchanged",
+        status: "completed",
+        timestamp: "2026-07-23 14:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f8ea1f1e5704eb46a3cf6",
         url: "http://127.0.0.1:3030/ui/s/019f8ea1f1e5704eb46a3cf6/",
@@ -48,24 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-23 12:31 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019f8e3413d2716db3dbf0f3",
-        url: "http://127.0.0.1:3030/ui/s/019f8e3413d2716db3dbf0f3/",
-        title: "advance heartbeat 12:01 IDT Jul 23 — NEW worktree aipcc-27994-faulty-column detected; board otherwise static",
-        status: "completed",
-        timestamp: "2026-07-23 12:01 IDT",
-        outputFile: null,
-      },
-      {
-        sessionId: "019f8e189cd67355814b8534",
-        url: "http://127.0.0.1:3030/ui/s/019f8e189cd67355814b8534/",
-        title: "advance heartbeat 11:31 IDT Jul 23 — board static; no merges; all CONFLICTING unchanged",
-        status: "idle",
-        timestamp: "2026-07-23 11:31 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-23 13:31 IDT",
+    lastActive: "2026-07-23 14:30 IDT",
   },
   {
     ticket: "AIPCC-27681",
@@ -234,9 +226,17 @@ export const WORKTREES = [
     status: "🟡 **MERGEABLE** (rebased). CI run 29996748376: **e2e-smoke ✅ NOW PASSING** (was pending at 13:01). resolve-conflicts ✅, e2e-api ✅, integration ✅, tox ✅, JIRA Assoc ✅, nox ✅; **pre-commit ❌** still only blocker. **Action: Fix pre-commit hook.**",
     blockedOn: "pre-commit ❌ only remaining blocker",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8ea1f1e5704eb46a3cf6/",
-    sessionLabel: "advance heartbeat 14:00 IDT Jul 23 — #1693 CI FAILED; pre-commit ❌ still only blocker for #1670",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8ebd69b27de2895ce44e/",
+    sessionLabel: "advance heartbeat 14:30 IDT Jul 23 — board static; pre-commit ❌ still only blocker for #1670",
     recentSessions: [
+      {
+        sessionId: "019f8ebd69b27de2895ce44e",
+        url: "http://127.0.0.1:3030/ui/s/019f8ebd69b27de2895ce44e/",
+        title: "advance heartbeat 14:30 IDT Jul 23 — board static; pre-commit ❌ still only blocker",
+        status: "completed",
+        timestamp: "2026-07-23 14:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f8ea1f1e5704eb46a3cf6",
         url: "http://127.0.0.1:3030/ui/s/019f8ea1f1e5704eb46a3cf6/",
