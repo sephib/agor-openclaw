@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-23 13:31 IDT";
+export const LAST_UPDATED = "2026-07-23 14:00 IDT";
 
 export const WORKTREES = [
   {
@@ -13,9 +13,17 @@ export const WORKTREES = [
     status: "🔴 **CONFLICTING** (5+ days unchanged). isDraft:true. All CI 100% PASSING (run 29729530150). **Action: Rebase aipcc-27645-server-resources on main, mark ready, then request review.**",
     blockedOn: "CONFLICTING — needs rebase on main",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8e867a217793ae035aa8/",
-    sessionLabel: "advance heartbeat 13:31 IDT Jul 23 — aipcc-27994 Code→Verify; aipcc-27996 Plan→Code; #1693 MERGEABLE CI in progress; #1700 un-drafted",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8ea1f1e5704eb46a3cf6/",
+    sessionLabel: "advance heartbeat 14:00 IDT Jul 23 — #1693 CI FAILED (pre-commit ❌); 6 Jira mismatches unchanged; no merges",
     recentSessions: [
+      {
+        sessionId: "019f8ea1f1e5704eb46a3cf6",
+        url: "http://127.0.0.1:3030/ui/s/019f8ea1f1e5704eb46a3cf6/",
+        title: "advance heartbeat 14:00 IDT Jul 23 — #1693 CI FAILED (pre-commit ❌); no merges",
+        status: "completed",
+        timestamp: "2026-07-23 14:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f8e867a217793ae035aa8",
         url: "http://127.0.0.1:3030/ui/s/019f8e867a217793ae035aa8/",
@@ -85,8 +93,8 @@ export const WORKTREES = [
     zone: "NO ZONE (bot PR)",
     pr: "#1693",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1693",
-    status: "🟡 **BOT PR** (jira-autofix). OPEN, **🎉 APPROVED**, **🟢 MERGEABLE** (rebased between 13:01-13:31 IDT). New CI run 29999372432 **IN PROGRESS**: resolve-conflicts ✅, JIRA Assoc ✅, atlas-validate ✅, integration-run ✅; pre-commit-run, tox-run, e2e-api **PENDING**. **If pre-commit ✅ → READY TO MERGE immediately!**",
-    blockedOn: "CI run 29999372432 in progress — watch pre-commit",
+    status: "🔴 **BOT PR** (jira-autofix). OPEN, **🎉 APPROVED**, **🟢 MERGEABLE**. CI run 29999372432 **COMPLETED — FAILING**: pre-commit ❌, e2e-smoke ❌, e2e-tests ❌, all-checks ❌; e2e-api ✅, JIRA Assoc ✅, integration ✅, tox ✅, nox ✅. **Only pre-commit blocking merge. Action: Fix pre-commit → merge immediately (already APPROVED).**",
+    blockedOn: "pre-commit ❌ — only blocker; CI run 29999372432 completed failing",
     blockedType: "active",
     sessionUrl: null,
     sessionLabel: null,
@@ -226,9 +234,17 @@ export const WORKTREES = [
     status: "🟡 **MERGEABLE** (rebased). CI run 29996748376: **e2e-smoke ✅ NOW PASSING** (was pending at 13:01). resolve-conflicts ✅, e2e-api ✅, integration ✅, tox ✅, JIRA Assoc ✅, nox ✅; **pre-commit ❌** still only blocker. **Action: Fix pre-commit hook.**",
     blockedOn: "pre-commit ❌ only remaining blocker",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f60377abb7d9aa3e2e233/",
-    sessionLabel: "Internal CR — JN-5844 service/lib/sql AGENTS.md (idle 10:46 IDT)",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f8ea1f1e5704eb46a3cf6/",
+    sessionLabel: "advance heartbeat 14:00 IDT Jul 23 — #1693 CI FAILED; pre-commit ❌ still only blocker for #1670",
     recentSessions: [
+      {
+        sessionId: "019f8ea1f1e5704eb46a3cf6",
+        url: "http://127.0.0.1:3030/ui/s/019f8ea1f1e5704eb46a3cf6/",
+        title: "advance heartbeat 14:00 IDT Jul 23 — #1693 CI FAILED; pre-commit ❌ still only blocker",
+        status: "completed",
+        timestamp: "2026-07-23 14:00 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f8e867a217793ae035aa8",
         url: "http://127.0.0.1:3030/ui/s/019f8e867a217793ae035aa8/",
@@ -584,8 +600,8 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "yellow",
-    message: "🟡 #1693 (AIPCC-27655): REBASED → **MERGEABLE** (between 13:01-13:31 IDT). New CI run 29999372432 IN PROGRESS. Already APPROVED. Watch: if pre-commit ✅ → **READY TO MERGE immediately!**",
+    level: "red",
+    message: "🔴 #1693 (AIPCC-27655): **APPROVED + MERGEABLE** but CI run 29999372432 **COMPLETED FAILING** — pre-commit ❌, e2e-smoke ❌. Fix pre-commit → merge immediately (all other checks ✅).",
   },
   {
     level: "blue",

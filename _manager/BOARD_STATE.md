@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-23 13:31 IDT (advance heartbeat)*
+*Last updated: 2026-07-23 14:00 IDT (advance heartbeat)*
 
 ---
 
@@ -32,7 +32,7 @@
 
 | PR | Ticket | State | CI | Notes |
 |----|--------|-------|----|-------|
-| [#1693](https://github.com/Jounce-IO/jounce/pull/1693) | [AIPCC-27655](https://redhat.atlassian.net/browse/AIPCC-27655) | OPEN, APPROVED, NOT draft | 🟡 NEW run 29999372432 IN PROGRESS: resolve-conflicts ✅, JIRA Assoc ✅, atlas-validate ✅, integration-run ✅; e2e-api, pre-commit-run, tox-run, integration-tests **PENDING** | 🟡 **CONFLICTING → MERGEABLE** (rebased between 13:01 and 13:31 IDT). New CI run 29999372432 in progress. APPROVED. **Watch: if pre-commit passes, ready to merge!** |
+| [#1693](https://github.com/Jounce-IO/jounce/pull/1693) | [AIPCC-27655](https://redhat.atlassian.net/browse/AIPCC-27655) | OPEN, APPROVED, NOT draft | 🔴 run 29999372432 **COMPLETED — FAILING**: pre-commit ❌, e2e-smoke ❌, e2e-tests ❌, all-checks ❌; e2e-api ✅, JIRA Assoc ✅, integration ✅, tox ✅, nox ✅ | 🔴 **CI FAILED** (was in-progress at 13:31). Still APPROVED + MERGEABLE. **Only pre-commit blocking merge.** |
 | [#1694](https://github.com/Jounce-IO/jounce/pull/1694) | [AIPCC-27681](https://redhat.atlassian.net/browse/AIPCC-27681) | OPEN, CONFLICTING, NOT draft | 🔴 run 29740715467: JIRA Assoc ❌, pre-commit ❌, all-checks ❌; nox ✅, tox ✅, e2e ✅ | Bot "jira-autofix". Unchanged. Needs Joseph review. |
 
 ---
@@ -82,28 +82,24 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (13:31 IDT Jul 23 vs 13:01 IDT Jul 23)
+## Key Changes (14:00 IDT Jul 23 vs 13:31 IDT Jul 23)
 
 | What changed | Delta |
 |---|---|
-| **🔵 aipcc-27994-faulty-column — Zone Code → Verify** | Agor now shows zone-1781429931920 (Verify). Was Code at 13:01 IDT. Sessions may have been triggered. No PR yet. |
-| **🔵 aipcc-27996-faulty-export-cache — Zone Plan → Code** | Agor now shows zone-1781429763919 (Code). Was Plan at 13:01 IDT. No sessions yet. No PR. |
-| **#1693 — CONFLICTING → MERGEABLE** | Rebased between 13:01 and 13:31 IDT. New CI run 29999372432 IN PROGRESS. Already APPROVED. Watch: if pre-commit ✅, ready to merge! |
-| **#1670 — e2e-smoke ✅ PASS** | e2e-smoke now passing (was PENDING at 13:01). Pre-commit still ❌. No change to merge readiness. |
-| **#1700 — isDraft:false (un-drafted)** | aipcc-23845-script-runner PR #1700 was DRAFT at 13:01, now NOT draft. Ready for review (still needs pre-commit fix). |
-| **All other PRs** | No merges. No other CI changes. |
+| **🔴 #1693 — CI run 29999372432 COMPLETED — FAILING** | Was IN PROGRESS at 13:31 IDT. Now DONE: pre-commit ❌, e2e-smoke ❌, e2e-tests ❌, all-checks ❌. Still APPROVED + MERGEABLE. Fix pre-commit → ready to merge. |
+| **All other PRs** | No merges. No CI changes. Board zones unchanged. |
 
 ---
 
 ## Attention Items
 
-### 🟡 #1693 (AIPCC-27655) — REBASED → MERGEABLE; CI In Progress — Watch Closely
+### 🔴 #1693 (AIPCC-27655) — MERGEABLE + APPROVED; CI FAILED — pre-commit ❌ Only Blocker
 
 PR [#1693](https://github.com/Jounce-IO/jounce/pull/1693): "fix(jbenchmark): add DuplicatePlanNameError for 409 on duplicate plan name AIPCC-27655"
-- State: OPEN, **🎉 APPROVED**, **🟢 MERGEABLE** (improved from CONFLICTING — rebased between 13:01 and 13:31 IDT)
-- New CI run 29999372432 **IN PROGRESS**: resolve-conflicts ✅, JIRA Assoc ✅, atlas-validate ✅, integration-run ✅; pre-commit-run, tox-run, e2e-api, integration-tests **PENDING**
-- **If pre-commit passes → READY TO MERGE immediately (already APPROVED, all others ✅)**
-- **Action: Watch run 29999372432. If pre-commit ✅, merge it.**
+- State: OPEN, **🎉 APPROVED**, **🟢 MERGEABLE**
+- CI run 29999372432 **COMPLETED — FAILING**: pre-commit ❌, e2e-smoke ❌, e2e-tests ❌, all-checks ❌; e2e-api ✅, JIRA Assoc ✅, integration ✅, tox ✅, nox ✅
+- All-checks failing but ONLY because pre-commit ❌ gates e2e-tests. If pre-commit fixed, all others are already ✅.
+- **Action: Fix pre-commit hook on AIPCC-27655 branch, then merge (already APPROVED).**
 
 ---
 
