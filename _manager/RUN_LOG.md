@@ -2894,3 +2894,12 @@
 - Archives: none
 - Flags: #1690 CHANGES_REQUESTED by MenD32 (hardcoded deployment resources); #1670 now fully green (request review!)
 - Next: watch #1693 e2e-smoke; watch #1713 new CI run; Joseph to address #1690 CHANGES_REQUESTED
+
+## 18:00 IDT — Weekend Heartbeat (Jul 24 2026)
+- PRs checked: #1670 (OPEN/MERGEABLE/ALL-CI-✅), #1690 (OPEN/CHANGES_REQUESTED/CI-❌), #1713 (OPEN/MERGEABLE/CI-partial), #1667 (OPEN/pre-commit-❌), #1693 (OPEN/APPROVED/e2e-smoke-❌), #1638 (OPEN/CONFLICTING/CI-❌), #1596 (DRAFT/CONFLICTING), #1694-1701 (unchanged)
+- Merges detected: none (20-PR sweep — all already tracked; last merge Jul 22)
+- CI changes: #1667 e2e-smoke confirmed ✅ (was pending last run, now verified passing — pre-commit still only blocker); all others unchanged
+- Flags: #1670 green since Jul 15 with no reviewer assigned (priority!); #1690 CHANGES_REQUESTED + CI regression; 8 Jira mismatches unchanged; AIPCC-23882 new Jira ticket (IBM cluster runner integration) with no worktree
+- Archives: none — no MERGED/CLOSED PRs detected
+- Actions: 0 archives, 0 auto-advances
+- Next: #1670 request review; fix pre-commit on #1667/#1690; fix JIRA Assoc+atlas-validate+e2e-api on #1713; investigate e2e-smoke on #1693; 8 Jira mismatches via acli
