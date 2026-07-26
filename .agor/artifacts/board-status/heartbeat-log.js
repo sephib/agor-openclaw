@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-26 21:00 IDT",
+    actions: 1,
+    findings: 3,
+    status: "ok",
+    summary: "#1693 bot PR MERGED 15:02 IDT Jul 26 (AIPCC-27655); jira-operations archived (31+ days stale, no PR/zone); #1638 e2e-smoke ❌ NEW FAILURE (was PENDING); #1713 e2e-api still failing (regression persists); #1690/#1667 CI unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f9f957aef732cb51dc18f/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-26 15:30 IDT",
     actions: 0,
     findings: 3,
