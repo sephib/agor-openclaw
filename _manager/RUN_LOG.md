@@ -4,6 +4,22 @@
 
 ---
 
+## 15:30 IDT — Weekday Daytime Heartbeat (Jul 26 2026)
+- PRs checked: #1713 (OPEN), #1670 (OPEN), #1667 (OPEN), #1690 (OPEN), #1638 (OPEN), #1693 (OPEN), #1694 (OPEN), #1696-#1701 (OPEN), #1669 (OPEN), #1596 (OPEN), #1714 (MERGED), #1715 (confirmed MERGED), #1716 (OPEN)
+- Merges detected: #1714 MERGED 12:44 IDT Jul 26 (off-board AIPCC-28059/JN-5714 — not tracked worktree, no action needed)
+- CI changes: #1713 🔴 REGRESSION — e2e-api ❌ FAILED (run 30200180001; was PENDING at 11:05); #1670 🟡 e2e-smoke ✅ confirmed (run 30200275098), JIRA Assoc ❌ still; #1667 🟡 new run 30200170190 — pre-commit+JIRA Assoc ❌ unchanged; #1690 🔴 new run 30200186081 — pre-commit+JIRA Assoc ❌; #1638 🟡 new run 30202214886 — JIRA Assoc ✅ holding, core checks PENDING
+- Flags: #1713 e2e-api regression is top priority; #1716 new off-board PR noted; 8 Jira mismatches unchanged
+- Next: Monitor #1713 e2e-api (FAILED — needs investigation); monitor #1638 CI run completion; watch #1670 JIRA Assoc fix
+
+## 11:05 IDT — Weekday Daytime Heartbeat (Jul 26 2026)
+- PRs checked: #1670 (JIRA Assoc ❌ NEW REGRESSION in new run 30197092905; e2e-api ✅, e2e-smoke PENDING), #1713 (MAJOR IMPROVEMENT — JIRA Assoc ✅ FIXED, atlas-validate ✅ FIXED; e2e-api PENDING), #1638 (DRAMATIC IMPROVEMENT — pre-commit ✅ FIXED, JIRA Assoc ✅ FIXED, MERGEABLE; e2e-api PENDING), #1667 (pre-commit ❌ + JIRA Assoc ❌ unchanged), #1690 (CHANGES_REQUESTED + pre-commit ❌ + JIRA Assoc ❌; e2e-api PENDING), #1693 (APPROVED, now CONFLICTING, e2e-product ❌ FAILED)
+- Merges detected: none — no new merges
+- CI changes: Active CI runs triggered across 5 PRs (new run IDs: #1670=30197092905, #1713=30197174172, #1638=30197330059, #1667=30197081061, #1690=30197090043); #1713 improved dramatically (JIRA Assoc+atlas-validate FIXED); #1638 improved (pre-commit+JIRA Assoc FIXED); #1670 regressed (JIRA Assoc now failing)
+- Flags: #1713 watching e2e-api result (if passes → near merge-ready); #1638 watching e2e-api result; #1670 JIRA Assoc regression needs investigation; #1693 now CONFLICTING + e2e-product ❌; board otherwise static
+- Next: Monitor e2e-api results for #1713, #1638, #1670 in next heartbeat
+
+---
+
 ## 08:04 IDT — Daily External Sync (Jul 26 2026)
 - Jira tickets checked: AIPCC-27645, AIPCC-27655, AIPCC-26990, AIPCC-26996, AIPCC-27994, AIPCC-27996, plus sprint snapshot (50 tickets)
 - Mismatches found: 8 — unchanged from last sync. AIPCC-27994 still "New" (should be "In Review"). AIPCC-27996 still "New" (should be "In Progress").
