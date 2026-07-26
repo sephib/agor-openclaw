@@ -4,6 +4,24 @@
 
 ---
 
+## 08:04 IDT — Daily External Sync (Jul 26 2026)
+- Jira tickets checked: AIPCC-27645, AIPCC-27655, AIPCC-26990, AIPCC-26996, AIPCC-27994, AIPCC-27996, plus sprint snapshot (50 tickets)
+- Mismatches found: 8 — unchanged from last sync. AIPCC-27994 still "New" (should be "In Review"). AIPCC-27996 still "New" (should be "In Progress").
+- PR state discrepancies: No tracked PRs changed state. New off-board PRs detected: #1715 MERGED (alon-sananes), #1714 OPEN (ushaket/AIPCC-28059), #1716 OPEN (bot/AIPCC-28110).
+- Jira/board zone alignment: AIPCC-27645=In Progress ✅, AIPCC-26990=In Progress ✅, AIPCC-26996=Review ✅, AIPCC-27655=Review ✅ — all consistent.
+- Updates made to BOARD_STATE.md: yes (key changes section, timestamp)
+
+---
+
+## 08:01 IDT — Weekday Daytime Heartbeat (Jul 26 2026)
+- PRs checked: #1670 (ALL CI ✅ — 11 days green since Jul 15, still no reviewer), #1667 (pre-commit ❌ only — unchanged), #1690 (CHANGES_REQUESTED + e2e regression — unchanged), #1713 (pre-commit ✅, JIRA Assoc + atlas-validate + e2e-api ❌ — unchanged), #1693 (APPROVED, e2e-smoke ❌ — unchanged), #1638 (CONFLICTING, pre-commit + e2e ❌ — unchanged)
+- Merges detected: none — no new merges since Jul 22
+- CI changes: none — all PRs static over weekend
+- Flags: BOARD_STATE.md was 48h old (last updated Jul 24 18:00 IDT — weekend gap); refreshed; #1670 now 11 days green with no reviewer (escalating urgency)
+- Next: Joseph to (1) request review for #1670; (2) fix #1713 JIRA Assoc + atlas-validate + e2e-api; (3) address #1690 CHANGES_REQUESTED + e2e regression; (4) investigate #1693 e2e-smoke; (5) fix #1667 pre-commit
+
+---
+
 ## 22:01 IDT — Weekday Overnight Heartbeat (Jul 23 2026)
 - PRs checked: #1713 (CI NOW RUNNING — run 30032586926; pre-commit ✅ FIXED; JIRA Assoc ❌, atlas-validate ❌, e2e-api ❌ still failing), #1690 (unchanged — CHANGES_REQUESTED + e2e regression, run 30018947268), #1693 (unchanged — e2e-smoke ❌, APPROVED), #1670 (unchanged — ALL CI ✅, awaiting review), #1667 (unchanged — pre-commit ❌), #1638 (re-correction: e2e-api ❌ + e2e-tests ❌ ARE failing — 19:00 correction was wrong)
 - Merges detected: none

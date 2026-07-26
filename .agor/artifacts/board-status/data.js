@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-24 18:00 IDT";
+export const LAST_UPDATED = "2026-07-26 08:04 IDT (daily external sync)";
 
 export const WORKTREES = [
   {
@@ -13,14 +13,22 @@ export const WORKTREES = [
     status: "🔴 **CHANGES_REQUESTED by MenD32**. Reviewer flagged hardcoded resources in deployment.yaml — needs `.Values.server.resources` template. CI run 30018947268: pre-commit ❌, JIRA Assoc ❌, **e2e-api ❌ (REGRESSION)**, **e2e-tests ❌**; integration ✅, tox ✅, nox ✅, atlas-validate ✅. Unchanged since Jul 23. **Action: Address reviewer feedback + investigate e2e regression + fix CI.**",
     blockedOn: "CHANGES_REQUESTED — address reviewer feedback + fix pre-commit/JIRA Assoc + investigate e2e regression",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f94a422ee7882ae9e2e11/",
-    sessionLabel: "weekend heartbeat 18:00 IDT Jul 24 — board static; #1667 e2e-smoke confirmed ✅",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f9ccbae7279448cd7ef95/",
+    sessionLabel: "advance heartbeat 08:01 IDT Jul 26 — board static over weekend; #1670 11 days green no reviewer",
     recentSessions: [
+      {
+        sessionId: "019f9ccbae7279448cd7ef95",
+        url: "http://127.0.0.1:3030/ui/s/019f9ccbae7279448cd7ef95/",
+        title: "advance heartbeat 08:01 IDT Jul 26 — board static over weekend; #1670 11 days green no reviewer",
+        status: "running",
+        timestamp: "2026-07-26 08:01 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f94a422ee7882ae9e2e11",
         url: "http://127.0.0.1:3030/ui/s/019f94a422ee7882ae9e2e11/",
         title: "weekend heartbeat 18:00 IDT Jul 24 — board static; #1667 e2e-smoke confirmed ✅",
-        status: "running",
+        status: "completed",
         timestamp: "2026-07-24 18:00 IDT",
         outputFile: null,
       },
@@ -223,17 +231,25 @@ export const WORKTREES = [
     zone: "Publish",
     pr: "#1670",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1670",
-    status: "🎉 **ALL CI PASSING** (run 30015595992): all-checks ✅, pre-commit ✅, e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅, JIRA Assoc ✅, atlas-validate ✅, deploy ✅. MERGEABLE, NOT DRAFT. **Green since Jul 15 — still no reviewer! Action: Request review immediately.**",
+    status: "🎉 **ALL CI PASSING** (run 30015595992): all-checks ✅, pre-commit ✅, e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅, JIRA Assoc ✅, atlas-validate ✅, deploy ✅. MERGEABLE, NOT DRAFT. **Green since Jul 15 — 11 DAYS — still no reviewer! Action: Request review immediately.**",
     blockedOn: null,
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f94a422ee7882ae9e2e11/",
-    sessionLabel: "weekend heartbeat 18:00 IDT Jul 24 — #1670 still ALL CI ✅; green since Jul 15, no reviewer",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f9ccbae7279448cd7ef95/",
+    sessionLabel: "advance heartbeat 08:01 IDT Jul 26 — #1670 11 days green no reviewer; board static over weekend",
     recentSessions: [
+      {
+        sessionId: "019f9ccbae7279448cd7ef95",
+        url: "http://127.0.0.1:3030/ui/s/019f9ccbae7279448cd7ef95/",
+        title: "advance heartbeat 08:01 IDT Jul 26 — #1670 11 days green no reviewer",
+        status: "running",
+        timestamp: "2026-07-26 08:01 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f94a422ee7882ae9e2e11",
         url: "http://127.0.0.1:3030/ui/s/019f94a422ee7882ae9e2e11/",
         title: "weekend heartbeat 18:00 IDT Jul 24 — #1670 still ALL CI ✅; green since Jul 15, no reviewer",
-        status: "running",
+        status: "completed",
         timestamp: "2026-07-24 18:00 IDT",
         outputFile: null,
       },
@@ -420,14 +436,22 @@ export const WORKTREES = [
     status: "🟡 CI run 30032586926: pre-commit ✅ FIXED. JIRA Assoc ❌, atlas-validate ❌, atlas-validate-run ❌, e2e-api ❌, e2e-tests ❌, all-checks ❌; integration ✅, tox ✅, nox ✅, deploy ✅. Unchanged since Jul 23. **Action: Fix JIRA Assoc + atlas-validate + e2e-api to make merge-ready.**",
     blockedOn: "JIRA Assoc ❌ + atlas-validate ❌ + e2e-api ❌ (pre-commit fixed)",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f94a422ee7882ae9e2e11/",
-    sessionLabel: "weekend heartbeat 18:00 IDT Jul 24 — #1713 unchanged; JIRA Assoc+atlas-validate+e2e-api still failing",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f9ccbae7279448cd7ef95/",
+    sessionLabel: "advance heartbeat 08:01 IDT Jul 26 — #1713 unchanged over weekend; still JIRA Assoc+atlas-validate+e2e-api failing",
     recentSessions: [
+      {
+        sessionId: "019f9ccbae7279448cd7ef95",
+        url: "http://127.0.0.1:3030/ui/s/019f9ccbae7279448cd7ef95/",
+        title: "advance heartbeat 08:01 IDT Jul 26 — #1713 unchanged; JIRA Assoc+atlas-validate+e2e-api still failing",
+        status: "running",
+        timestamp: "2026-07-26 08:01 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f94a422ee7882ae9e2e11",
         url: "http://127.0.0.1:3030/ui/s/019f94a422ee7882ae9e2e11/",
         title: "weekend heartbeat 18:00 IDT Jul 24 — #1713 unchanged; JIRA Assoc+atlas-validate+e2e-api failing",
-        status: "running",
+        status: "completed",
         timestamp: "2026-07-24 18:00 IDT",
         outputFile: null,
       },
@@ -650,16 +674,16 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "red",
-    message: "🔴 #1690 (AIPCC-27645): **CHANGES_REQUESTED by MenD32** + **CI REGRESSION** — run 30018947268: pre-commit ❌, JIRA Assoc ❌, **e2e-api ❌ (regression)**, **e2e-tests ❌ (new)**. Action: Address reviewer feedback + investigate e2e regression + fix CI.",
-  },
-  {
-    level: "red",
-    message: "🔴 #1693 (AIPCC-27655): **e2e-smoke ❌ FAILED** (was pending at 18:00). APPROVED but NOT merge-ready. all-checks ❌, e2e-tests ❌. **Action: Investigate e2e-smoke failure before merging.**",
-  },
-  {
     level: "green",
-    message: "🎉 #1670 (JN-5844): **ALL CI PASSING** (confirmed at 18:30). all-checks ✅, pre-commit ✅, e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅. **Action: Request review immediately — PR is fully green!**",
+    message: "🎉 #1670 (JN-5844): **ALL CI PASSING — 11 DAYS GREEN** (since Jul 15). all-checks ✅, pre-commit ✅, e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅. **Action: Request review immediately — PR is fully green!**",
+  },
+  {
+    level: "red",
+    message: "🔴 #1690 (AIPCC-27645): **CHANGES_REQUESTED by MenD32** + **CI REGRESSION** — run 30018947268: pre-commit ❌, JIRA Assoc ❌, **e2e-api ❌ (regression)**, **e2e-tests ❌ (new)**. Unchanged since Jul 23. Action: Address reviewer feedback + investigate e2e regression + fix CI.",
+  },
+  {
+    level: "red",
+    message: "🔴 #1693 (AIPCC-27655): **e2e-smoke ❌ FAILED**. APPROVED but NOT merge-ready. all-checks ❌, e2e-tests ❌. **Action: Investigate e2e-smoke failure before merging.**",
   },
   {
     level: "yellow",
@@ -667,23 +691,23 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 #1638 (JN-5725, off-board, CONFLICTING): **pre-commit ❌, e2e-api ❌, e2e-tests ❌** — re-confirmed in run 29995066495. Previous 19:00 IDT correction was wrong. Also CONFLICTING — needs rebase. JN-5725 Done ✅.",
+    message: "🔴 #1638 (JN-5725, off-board, CONFLICTING): **pre-commit ❌, e2e-api ❌, e2e-tests ❌** — run 29995066495. Also CONFLICTING — needs rebase. JN-5725 Done ✅.",
   },
   {
     level: "yellow",
-    message: "🟡 #1667 (jn-5845 JN-5845): **MERGEABLE**. CI run 30015411147: **pre-commit ❌** only blocker; **e2e-smoke ✅ confirmed** (was pending). All others ✅. **Action: Fix pre-commit hook failure.**",
+    message: "🟡 #1667 (jn-5845 JN-5845): **MERGEABLE**. CI run 30015411147: **pre-commit ❌** only blocker; e2e-smoke ✅, e2e-api ✅. **Action: Fix pre-commit hook failure.**",
   },
   {
     level: "red",
-    message: "🔴 #1694 (AIPCC-27681): **BOT PR** (jira-autofix) — now MERGEABLE (was CONFLICTING), REVIEW_REQUIRED. CI run 29740715467 (stale): JIRA Assoc ❌, pre-commit ❌; nox ✅, tox ✅, e2e ✅. Action: Joseph review + fix JIRA Assoc + pre-commit.",
+    message: "🔴 #1694 (AIPCC-27681): **BOT PR** (jira-autofix) — CONFLICTING, REVIEW_REQUIRED. CI run 29740715467 (stale): JIRA Assoc ❌, pre-commit ❌; nox ✅, tox ✅, e2e ✅. Action: Joseph review + fix CI.",
   },
   {
     level: "red",
-    message: "🔴 #1698 (aipcc-23845): isDraft:false (ready for review). MERGEABLE (was CONFLICTING). pre-commit ❌ (run 29749885088). **Action: Fix pre-commit.**",
+    message: "🔴 #1698 (aipcc-23845): isDraft:false (ready for review). MERGEABLE. pre-commit ❌ (run 29749885088). **Action: Fix pre-commit.**",
   },
   {
     level: "red",
-    message: "🔴 #1701 DRAFT (aipcc-23845-generator-hotfix): pre-commit ❌, JIRA Assoc ❌, all-checks ❌. NO ZONE. mergeable: UNKNOWN. Action: Fix pre-commit, assign zone.",
+    message: "🔴 #1701 DRAFT (aipcc-23845-generator-hotfix): pre-commit ❌, JIRA Assoc ❌, all-checks ❌. NO ZONE. Action: Fix pre-commit, assign zone.",
   },
   {
     level: "yellow",
@@ -719,14 +743,14 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "📍 jn-5865 (JN-5865): Still Ingest zone — plan done Jul 8 (Day 16+). Propose move to Code + trigger /implement:code.",
+    message: "📍 jn-5865 (JN-5865): Still Ingest zone — plan done Jul 8 (Day 18+). Propose move to Code + trigger /implement:code.",
   },
   {
     level: "yellow",
-    message: "🔄 jn-5824-benchmark-run-configs (JN-5824): Last session Jul 8 IDLE. SHA 16ec44ea. Stale 16+ days.",
+    message: "🔄 jn-5824-benchmark-run-configs (JN-5824): Last session Jul 8 IDLE. SHA 16ec44ea. Stale 18+ days.",
   },
   {
     level: "yellow",
-    message: "⚠️ jira-operations: NO ZONE, stale 29+ days (last Jun 25). No sessions, no PR. Propose archive.",
+    message: "⚠️ jira-operations: NO ZONE, stale 31+ days (last Jun 25). No sessions, no PR. Propose archive.",
   },
 ];

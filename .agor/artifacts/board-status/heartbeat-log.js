@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-26 08:01 IDT",
+    actions: 0,
+    findings: 1,
+    status: "ok",
+    summary: "Board static over weekend — no merges since Jul 22; #1670 now 11 days green with no reviewer (escalating urgency); all CI states unchanged from Jul 23; BOARD_STATE.md was 48h stale — refreshed",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019f9ccbae7279448cd7ef95/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-24 18:00 IDT",
     actions: 0,
     findings: 1,

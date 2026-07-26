@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-24 18:00 IDT (advance heartbeat — weekend)*
+*Last updated: 2026-07-26 08:04 IDT (daily external sync)*
 
 ---
 
@@ -9,14 +9,14 @@
 | Worktree | Zone | PR | CI | Jira | Status |
 |---------|------|----|----|------|--------|
 | aipcc-27645-server-resources | **Code** | [#1690](https://github.com/Jounce-IO/jounce/pull/1690) | 🔴 run 30018947268: pre-commit ❌, JIRA Assoc ❌, **e2e-api ❌ (REGRESSION)**, **e2e-tests ❌**; integration ✅, tox ✅, nox ✅, atlas-validate ✅ | [AIPCC-27645](https://redhat.atlassian.net/browse/AIPCC-27645) — In Progress | 🔴 **CHANGES_REQUESTED by MenD32**. CI unchanged since Jul 23. **Action: Address reviewer feedback + fix CI regression.** |
-| jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | UNKNOWN (frozen) | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) — In Progress | 🔴 DRAFT + CONFLICTING; frozen since Jun 14. AIPCC-23787 now Closed in Jira — possible mismatch. |
-| jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — New | Design session done Jun 30. Ready for Plan phase. Stale 24+ days. |
-| jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | Last session Jul 8 IDLE. SHA 16ec44ea (2 commits). Needs: configs, rebase, PR. Stale 16+ days. |
-| jn-5844-service-lib-sql-agents-md | **Publish** | [#1670](https://github.com/Jounce-IO/jounce/pull/1670) | 🎉 **ALL CI PASSING** run 30015595992: all-checks ✅, pre-commit ✅, e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅, JIRA Assoc ✅, atlas-validate ✅, deploy ✅ | [JN-5844](https://redhat.atlassian.net/browse/JN-5844) / AIPCC-26990 — In Progress | 🎉 **ALL CI PASSING — unchanged since Jul 15**. OPEN, MERGEABLE, NOT DRAFT, reviewDecision: "". **Action: Request review immediately — PR is fully green!** |
-| jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | 🟡 run 30015411147: pre-commit ❌, all-checks ❌; e2e-api ✅, **e2e-smoke ✅ (confirmed!)**, e2e-tests ✅, integration ✅, tox ✅, nox ✅, JIRA Assoc ✅, atlas-validate ✅ | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) / AIPCC-26996 — Review | 🟡 **pre-commit ❌ still only blocker**. e2e-smoke now confirmed ✅. **Action: Fix pre-commit hook failure.** |
+| jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | UNKNOWN (frozen) | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) — In Progress | 🔴 DRAFT + CONFLICTING; frozen since Jun 14. |
+| jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — New | Design session done Jun 30. Ready for Plan phase. Stale 26+ days. |
+| jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | Last session Jul 8 IDLE. SHA 16ec44ea (2 commits). Needs: configs, rebase, PR. Stale 18+ days. |
+| jn-5844-service-lib-sql-agents-md | **Publish** | [#1670](https://github.com/Jounce-IO/jounce/pull/1670) | 🎉 **ALL CI PASSING** run 30015595992: all-checks ✅, pre-commit ✅, e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅, JIRA Assoc ✅, atlas-validate ✅, deploy ✅ | [JN-5844](https://redhat.atlassian.net/browse/JN-5844) / AIPCC-26990 — In Progress | 🎉 **ALL CI PASSING — 11 days green (since Jul 15)**. OPEN, MERGEABLE, NOT DRAFT, reviewDecision: "". **Action: Request review immediately — PR is fully green!** |
+| jn-5845-helm-cicd-agents-md | **Publish** | [#1667](https://github.com/Jounce-IO/jounce/pull/1667) | 🟡 run 30015411147: pre-commit ❌, all-checks ❌; e2e-api ✅, e2e-smoke ✅, e2e-tests ✅, integration ✅, tox ✅, nox ✅, JIRA Assoc ✅, atlas-validate ✅ | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) / AIPCC-26996 — Review | 🟡 **pre-commit ❌ still only blocker**. **Action: Fix pre-commit hook failure.** |
 | jn-5872 | **Code** | [#1669 DRAFT](https://github.com/Jounce-IO/jounce/pull/1669) | 🔴 run 29683534910 (stale): pre-commit ❌, nox ❌, tox-run ❌, all-checks ❌ | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — In Progress | 🔴 **CI ❌ + CONFLICTING** — DRAFT. Unchanged. Needs rebase + CI fix. |
-| jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — New | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 16+** (still Ingest, should be Code). |
-| jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 29+ days. Propose archive. |
+| jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — New | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 18+** (still Ingest, should be Code). |
+| jira-operations | NO ZONE | — | — | — | ⚠️ uid=249, last updated Jun 25. Stale 31+ days. Propose archive. |
 | aipcc-27994-faulty-column | **Code Review** | [#1713](https://github.com/Jounce-IO/jounce/pull/1713) | 🟡 run 30032586926: pre-commit ✅, JIRA Assoc ❌, atlas-validate ❌, atlas-validate-run ❌, e2e-api ❌, e2e-tests ❌, all-checks ❌; integration ✅, tox ✅, nox ✅, deploy ✅ | [AIPCC-27994](https://redhat.atlassian.net/browse/AIPCC-27994) — New | 🟡 CI unchanged. pre-commit ✅. Still failing: JIRA Assoc ❌, atlas-validate ❌, e2e-api ❌. **Action: Fix JIRA Assoc + atlas-validate + e2e-api.** |
 | aipcc-27996-faulty-export-cache | **Verify** | — | — | [AIPCC-27996](https://redhat.atlassian.net/browse/AIPCC-27996) — New | No sessions yet. No PR. Stale. |
 | aipcc-23845-cluster-connection | **Plan** | [#1698](https://github.com/Jounce-IO/jounce/pull/1698) | 🔴 run 29749885088 — pre-commit ❌, all-checks ❌; JIRA Assoc ✅, nox ✅, tox ✅ | [AIPCC-23845](https://redhat.atlassian.net/browse/AIPCC-23845) | isDraft:false. MERGEABLE. pre-commit ❌. **Action: Fix pre-commit.** |
@@ -33,7 +33,7 @@
 | PR | Ticket | State | CI | Notes |
 |----|--------|-------|----|-------|
 | [#1693](https://github.com/Jounce-IO/jounce/pull/1693) | [AIPCC-27655](https://redhat.atlassian.net/browse/AIPCC-27655) | OPEN, APPROVED, NOT draft | 🔴 run 30017022583: pre-commit ✅, JIRA Assoc ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅; **e2e-smoke ❌ FAILED** | 🔴 **e2e-smoke FAILED** (unchanged). APPROVED but NOT merge-ready. **Action: Investigate e2e-smoke failure.** |
-| [#1694](https://github.com/Jounce-IO/jounce/pull/1694) | [AIPCC-27681](https://redhat.atlassian.net/browse/AIPCC-27681) | OPEN, CONFLICTING, NOT draft | 🔴 run 29740715467: JIRA Assoc ❌, pre-commit ❌, all-checks ❌; nox ✅, tox ✅, e2e ✅ | Bot "jira-autofix". Unchanged. Needs Joseph review. |
+| [#1694](https://github.com/Jounce-IO/jounce/pull/1694) | [AIPCC-27681](https://redhat.atlassian.net/browse/AIPCC-27681) | OPEN, CONFLICTING, NOT draft | 🔴 run 29740715467 (stale): JIRA Assoc ❌, pre-commit ❌, all-checks ❌; nox ✅, tox ✅, e2e ✅ | Bot "jira-autofix". Unchanged. Needs Joseph review. |
 
 ---
 
@@ -85,28 +85,27 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (18:00 IDT Jul 24 vs 22:01 IDT Jul 23)
+## Key Changes (08:04 IDT Jul 26 daily sync vs 08:01 IDT Jul 26 advance)
 
 | What changed | Delta |
 |---|---|
-| **Board** | Static — no new merges, no CI state changes overnight |
-| **#1670** | Unchanged — ALL CI ✅, still awaiting review request. Priority action. |
-| **#1667** | 🟡 e2e-smoke confirmed ✅ (was "pending" last run, now verified passing). pre-commit ❌ only blocker. |
-| **#1690** | Unchanged — CHANGES_REQUESTED + CI regression. |
-| **#1713** | Unchanged — pre-commit ✅, JIRA Assoc + atlas-validate + e2e-api still ❌. |
-| **#1693** | Unchanged — e2e-smoke ❌, APPROVED but not merge-ready. |
-| **AIPCC-23882** | 🆕 New Jira ticket (IBM cluster runner integration) — no worktree. |
+| **Board** | Static — no new merges among tracked PRs |
+| **#1715 (off-board)** | 🆕 MERGED 2026-07-23 14:20 IDT — "revert api-server to single uvicorn worker" by alon-sananes. Not Joseph's PR. |
+| **#1714 (off-board)** | 🆕 NEW OPEN PR by ushaket for AIPCC-28059. Not Joseph's PR. CI: JIRA Assoc ❌, e2e-api ❌, e2e-tests ❌; pre-commit ✅, tox ✅, nox ✅ |
+| **#1716 (off-board bot)** | 🆕 NEW OPEN bot PR by jira-autofix for AIPCC-28110. CI: pre-commit ❌, JIRA Assoc ❌; e2e-api ✅, e2e-smoke ✅ |
+| **Jira mismatches** | 8 mismatches confirmed unchanged. AIPCC-27994 still "New" (should be "In Review"). AIPCC-27996 still "New" (should be "In Progress"). |
+| **Jira status** | AIPCC-27645=In Progress ✅, AIPCC-26990=In Progress ✅, AIPCC-26996=Review ✅, AIPCC-27655=Review ✅ — all match board zones |
 
 ---
 
 ## Attention Items
 
-### 🎉 #1670 (jn-5844) — ALL CI PASSING — Priority Action: Request Review!
+### 🎉 #1670 (jn-5844) — ALL CI PASSING 11 DAYS — Priority Action: Request Review!
 
 PR [#1670](https://github.com/Jounce-IO/jounce/pull/1670)
 - State: OPEN, **🟢 MERGEABLE**, NOT DRAFT, reviewDecision: ""
 - **ALL CI PASSING** (run 30015595992): all-checks ✅, pre-commit ✅, e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅, nox ✅, JIRA Assoc ✅, atlas-validate ✅, deploy ✅
-- **This PR has been green since Jul 15 and still has no reviewer assigned.**
+- **This PR has been green since Jul 15 and still has no reviewer assigned (11 days!).**
 - **Action: Request review immediately.**
 
 ---
@@ -130,10 +129,10 @@ PR [#1713](https://github.com/Jounce-IO/jounce/pull/1713)
 
 ---
 
-### 🟡 #1667 (jn-5845) — pre-commit ❌ only; e2e-smoke NOW ✅
+### 🟡 #1667 (jn-5845) — pre-commit ❌ only; e2e-smoke ✅
 
 PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667)
-- CI run 30015411147: pre-commit ❌ only; **e2e-smoke ✅ confirmed** (was pending last run)
+- CI run 30015411147: pre-commit ❌ only; e2e-smoke ✅, e2e-api ✅
 - **Action: Fix pre-commit hook failure, then mark ready for review.**
 
 ---
@@ -156,14 +155,14 @@ PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638)
 
 ---
 
-### 📋 jn-5865 — Zone Mismatch (Ingest, Plan Done — Day 16+)
+### 📋 jn-5865 — Zone Mismatch (Ingest, Plan Done — Day 18+)
 
 Plan session done ~23:06 IDT Jul 8. No code session triggered.
 - **Propose:** Move to Code zone + trigger /implement:code.
 
 ---
 
-### 🔄 jn-5824 — Stale (16+ days, no PR)
+### 🔄 jn-5824 — Stale (18+ days, no PR)
 
 Last session Jul 8 IDLE. SHA 16ec44ea (2 commits).
 - **Propose:** Fork a new session to generate configs, rebase on main, create PR.
