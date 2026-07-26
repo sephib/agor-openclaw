@@ -4,6 +4,14 @@
 
 ---
 
+## 22:00 IDT — Weekday Overnight Heartbeat (Jul 26 2026)
+- PRs checked: #1713 (OPEN), #1670 (OPEN), #1667 (OPEN), #1690 (OPEN), #1638 (OPEN), #1694 (OPEN), #1696-#1701 (OPEN), #1669 (OPEN), #1596 (OPEN), #1716 (OPEN)
+- Merges detected: none — board static overnight
+- Actions taken: none (autonomous archive: none needed)
+- CI changes: all CI runs unchanged from 21:00 — #1713 e2e-api ❌ persists; #1670 JIRA Assoc ❌ only; #1690 pre-commit+JIRA Assoc ❌; #1667 pre-commit+JIRA Assoc ❌; #1638 e2e-smoke ❌ (no new runs)
+- Flags: #1713 e2e-api regression persists overnight — top priority for morning; 8 Jira mismatches unchanged; jn-5865 zone mismatch Day 18+; jn-5824 stale 18+ days
+- Next: Morning session — investigate #1713 e2e-api; fix #1670 JIRA Assoc; address #1638 e2e-smoke (ticket Done — consider closing PR)
+
 ## 21:00 IDT — Weekday Daytime Heartbeat (Jul 26 2026)
 - PRs checked: #1713 (OPEN), #1670 (OPEN), #1667 (OPEN), #1690 (OPEN), #1638 (OPEN), #1693 (MERGED), #1694 (OPEN), #1696-#1701 (OPEN), #1669 (OPEN), #1596 (OPEN), #1716 (OPEN)
 - Merges detected: #1693 MERGED 15:02 IDT Jul 26 (AIPCC-27655 bot PR jira-autofix — was OPEN+APPROVED+CONFLICTING at 15:30). Bot PR, no Agor worktree to archive.

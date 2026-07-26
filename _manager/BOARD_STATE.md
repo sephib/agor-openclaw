@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-26 21:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-26 22:00 IDT (advance heartbeat)*
 
 ---
 
@@ -87,17 +87,16 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (21:00 IDT Jul 26 advance vs 15:30 IDT Jul 26 advance)
+## Key Changes (22:00 IDT Jul 26 advance vs 21:00 IDT Jul 26 advance)
 
 | What changed | Delta |
 |---|---|
-| **#1693 MERGED** 🎉 | Bot PR (AIPCC-27655) **MERGED 15:02 IDT Jul 26** — was OPEN+APPROVED+CONFLICTING at last run. Resolved. |
-| **jira-operations ARCHIVED** | Stale 31+ days, no PR, no zone — archived autonomously 21:02 IDT Jul 26. |
-| **#1713 CI** | 🔴 New run 30207527731 — e2e-api ❌ STILL FAILING. No improvement since 15:30. |
-| **#1670 CI** | 🟡 New run 30207532827 — JIRA Assoc ❌ still only blocker. all-checks ✅ unchanged. |
-| **#1690 CI** | 🔴 New run 30207422955 — pre-commit ❌ + JIRA Assoc ❌ unchanged. |
-| **#1667 CI** | 🟡 New run 30207429826 — pre-commit ❌ + JIRA Assoc ❌ unchanged. |
-| **#1638 CI** | 🔴 **NEW FAILURE** — run 30207418279: **e2e-smoke ❌ FAILED** (was PENDING). e2e-tests ❌, all-checks ❌. e2e-api ✅, pre-commit ✅, JIRA Assoc ✅. |
+| **Board static** | No new merges detected. All open PRs remain open. |
+| **#1713 CI** | 🔴 run 30207527731 — e2e-api ❌ STILL FAILING. No change overnight. |
+| **#1670 CI** | 🟡 run 30207532827 — JIRA Assoc ❌ still only blocker. all-checks ✅ unchanged. |
+| **#1690 CI** | 🔴 run 30207422955 — pre-commit ❌ + JIRA Assoc ❌ unchanged. |
+| **#1667 CI** | 🟡 run 30207429826 — pre-commit ❌ + JIRA Assoc ❌ unchanged. |
+| **#1638 CI** | 🔴 run 30207418279 — e2e-smoke ❌ FAILED (since 21:00). No new runs overnight. |
 
 ---
 
@@ -139,11 +138,10 @@ PR [#1667](https://github.com/Jounce-IO/jounce/pull/1667)
 
 ---
 
-### 🎉 #1693 (AIPCC-27655) — MERGED 15:02 IDT Jul 26
+### 🎉 #1693 (AIPCC-27655) — MERGED 15:02 IDT Jul 26 (ARCHIVED — no action needed)
 
 PR [#1693](https://github.com/Jounce-IO/jounce/pull/1693) — bot PR (jira-autofix) — **MERGED**
-- Was APPROVED+CONFLICTING at last run (15:30). Merged at 15:02 IDT today.
-- No Agor worktree to archive (was a bot-authored PR).
+- No Agor worktree to archive (was a bot-authored PR). Board state confirmed.
 
 ---
 
