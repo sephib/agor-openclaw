@@ -545,6 +545,15 @@ export const WORKTREES = [
 
 export const MERGED = [
   {
+    ticket: null,
+    ticketUrl: null,
+    title: "fix(jbenchmark): revert api-server to single uvicorn worker",
+    pr: "#1715",
+    prUrl: "https://github.com/Jounce-IO/jounce/pull/1715",
+    mergedDate: "2026-07-23",
+    note: "Merged 14:20 IDT Jul 23 🎉 By alon-sananes. Off-board. Not Joseph's PR.",
+  },
+  {
     ticket: "JN-5725",
     ticketUrl: "https://redhat.atlassian.net/browse/JN-5725",
     title: "chore: dependencies, test config, docs, and tooling (JN-5725)",
@@ -736,6 +745,14 @@ export const ALERTS = [
   {
     level: "yellow",
     message: "🟡 #1695 (aipcc-23925): DRAFT. CI run 29846894702: pre-commit ❌, JIRA Assoc ❌, all-checks ❌. **Action: Fix pre-commit + JIRA Assoc, then mark ready.**",
+  },
+  {
+    level: "yellow",
+    message: "🟡 #1714 (AIPCC-28059) — NEW PR by ushaket: expose HF metadata fields in inference model API. OPEN, REVIEW_REQUIRED. CI: JIRA Assoc ❌, e2e-api ❌, e2e-tests ❌; pre-commit ✅, tox ✅, nox ✅. Not Joseph's PR — FYI only.",
+  },
+  {
+    level: "yellow",
+    message: "🟡 #1716 (AIPCC-28110) — NEW BOT PR (jira-autofix): Marlin tile alignment validation. OPEN, REVIEW_REQUIRED. CI: pre-commit ❌, JIRA Assoc ❌; e2e-api ✅, e2e-smoke ✅. Needs Joseph review.",
   },
   {
     level: "yellow",
