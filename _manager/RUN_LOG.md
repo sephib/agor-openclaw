@@ -4,6 +4,14 @@
 
 ---
 
+## 08:30 IDT — Weekday Daytime Heartbeat (Jul 27 2026)
+- PRs checked: #1713 (OPEN), #1670 (OPEN), #1667 (OPEN), #1690 (OPEN), #1638 (OPEN), #1694 (OPEN), #1696-#1701 (OPEN), #1669 (OPEN), #1596 (OPEN), #1716 (OPEN)
+- Merges detected: none — board static overnight
+- Actions taken: none (no merged/closed PRs requiring archive)
+- CI changes: #1713 run 30207527731 — e2e-api ❌ STILL FAILING (same run as overnight; no new CI triggered); #1670 run 30207532827 — JIRA Assoc ❌ only (all-checks ✅); #1690 run 30207422955 — pre-commit ❌ + JIRA Assoc ❌ unchanged; #1667 run 30207429826 — pre-commit ❌ + JIRA Assoc ❌ unchanged; #1638 run 30207418279 — e2e-smoke ❌ still failing; **#1669 updated to run 30207414186 — JIRA Assoc ❌, nox ❌, pre-commit ❌, tox ❌ (multiple failures)**
+- Flags: ⚠️ All 4 scheduled morning sessions (05:00 IDT Jul 27) FAILED — this is first successful session of the day; #1713 e2e-api regression URGENT (2+ days); #1638 e2e-smoke failing (ticket Done); 8 Jira mismatches unchanged; jn-5865 zone mismatch Day 19+; jn-5824 stale 19+ days
+- Next: #1713 e2e-api investigation; #1670 JIRA Assoc fix; #1638 consider closing; investigate why 05:00 morning sessions all failed
+
 ## 22:00 IDT — Weekday Overnight Heartbeat (Jul 26 2026)
 - PRs checked: #1713 (OPEN), #1670 (OPEN), #1667 (OPEN), #1690 (OPEN), #1638 (OPEN), #1694 (OPEN), #1696-#1701 (OPEN), #1669 (OPEN), #1596 (OPEN), #1716 (OPEN)
 - Merges detected: none — board static overnight

@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-26 22:00 IDT (advance heartbeat)";
+export const LAST_UPDATED = "2026-07-27 08:30 IDT (advance heartbeat)";
 
 export const WORKTREES = [
   {
@@ -13,9 +13,17 @@ export const WORKTREES = [
     status: "🔴 **e2e-api FAILED** — REGRESSION. CI run 30207527731: e2e-api ❌ FAILED, e2e-tests ❌, all-checks ❌; JIRA Assoc ✅, pre-commit ✅, atlas-validate ✅, atlas-validate-run ✅, integration ✅, tox ✅, nox ✅, deploy ✅. e2e-api failing continues to block.",
     blockedOn: "e2e-api FAILED — regression persists",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019f9fcc77ce7d4ca0a2cc4f/",
-    sessionLabel: "advance heartbeat 22:00 IDT Jul 26 — #1713 e2e-api ❌ still; board static overnight",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019fa20d50b2797296e21212/",
+    sessionLabel: "advance heartbeat 08:30 IDT Jul 27 — board static overnight; #1713 e2e-api ❌ persists; all morning sessions failed",
     recentSessions: [
+      {
+        sessionId: "019fa20d50b2797296e21212",
+        url: "http://127.0.0.1:3030/ui/s/019fa20d50b2797296e21212/",
+        title: "advance heartbeat 08:30 IDT Jul 27 — board static overnight; #1713 e2e-api ❌ persists",
+        status: "running",
+        timestamp: "2026-07-27 08:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019f9fcc77ce7d4ca0a2cc4f",
         url: "http://127.0.0.1:3030/ui/s/019f9fcc77ce7d4ca0a2cc4f/",
@@ -202,7 +210,7 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1669",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1669",
-    status: "🔴 CI ❌ run 29683534910 (stale): pre-commit ❌, nox ❌, tox-run ❌, all-checks ❌. DRAFT. MERGEABLE. Needs rebase + CI fix.",
+    status: "🔴 CI ❌ run 30207414186: JIRA Assoc ❌, nox ❌, pre-commit ❌, tox ❌, all-checks ❌. DRAFT. MERGEABLE. Needs rebase + CI fix.",
     blockedOn: "CI REGRESSION — pre-commit/nox/tox-run fix needed",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b8914f87505bf9d7e3f/",
@@ -648,7 +656,11 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 #1713 (AIPCC-27994): **e2e-api ❌ FAILED** — REGRESSION (run 30207527731, new run). e2e-tests ❌, all-checks ❌. JIRA Assoc ✅, pre-commit ✅ all else passing. **Action: Investigate e2e-api failure URGENTLY.**",
+    message: "⚠️ MORNING SESSIONS FAILED (05:00 IDT Jul 27): All 4 scheduled sessions (daytime heartbeat, overnight heartbeat, daily standup, external sync) failed. This 08:30 advance heartbeat is first success. No data loss — last commit was 22:00 IDT Jul 26.",
+  },
+  {
+    level: "red",
+    message: "🔴 #1713 (AIPCC-27994): **e2e-api ❌ FAILED** — REGRESSION (run 30207527731, same run). e2e-tests ❌, all-checks ❌. JIRA Assoc ✅, pre-commit ✅ all else passing. **Action: Investigate e2e-api failure URGENTLY.**",
   },
   {
     level: "yellow",
@@ -696,11 +708,11 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "📍 jn-5865 (JN-5865): Still Ingest zone — plan done Jul 8 (Day 18+). Propose move to Code + trigger /implement:code.",
+    message: "📍 jn-5865 (JN-5865): Still Ingest zone — plan done Jul 8 (Day 19+). Propose move to Code + trigger /implement:code.",
   },
   {
     level: "yellow",
-    message: "🔄 jn-5824-benchmark-run-configs (JN-5824): Last session Jul 8 IDLE. SHA 16ec44ea. Stale 18+ days.",
+    message: "🔄 jn-5824-benchmark-run-configs (JN-5824): Last session Jul 8 IDLE. SHA 16ec44ea. Stale 19+ days.",
   },
   {
     level: "green",
