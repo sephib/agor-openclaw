@@ -1,14 +1,16 @@
+// Model IDs: Opus = claude-opus-4-6, Sonnet = claude-sonnet-4-6
+// Permission mode: acceptEdits (for all spawned sessions)
 export const ZONE_MODEL_CONFIG = [
-  { zone: "Ingest", model: "Opus", rationale: "Deep understanding to parse tickets and set context" },
-  { zone: "Plan", model: "Opus", rationale: "Architecture and planning require strongest reasoning" },
-  { zone: "Code", model: "Sonnet", rationale: "Execution-focused; fast and cost-effective for coding" },
-  { zone: "Revise", model: "Opus", rationale: "Addressing review feedback requires judgment" },
-  { zone: "Verify", model: "Sonnet", rationale: "Running checks and validations" },
-  { zone: "Validate", model: "Sonnet", rationale: "Full validation passes" },
-  { zone: "Publish", model: "Sonnet", rationale: "PR creation is mechanical" },
-  { zone: "Respond", model: "Opus", rationale: "Communication/Slack needs nuance and judgment" },
-  { zone: "Code Review", model: "Opus", rationale: "Review requires deep reasoning for subtle issues" },
-  { zone: "BLOCKED", model: "Sonnet", rationale: "Triage and status checks" },
+  { zone: "Ingest", model: "Opus", modelId: "claude-opus-4-6", rationale: "Deep understanding to parse tickets and set context" },
+  { zone: "Plan", model: "Opus", modelId: "claude-opus-4-6", rationale: "Architecture and planning require strongest reasoning" },
+  { zone: "Code", model: "Sonnet", modelId: "claude-sonnet-4-6", rationale: "Execution-focused; fast and cost-effective for coding" },
+  { zone: "Revise", model: "Opus", modelId: "claude-opus-4-6", rationale: "Addressing review feedback requires judgment" },
+  { zone: "Verify", model: "Sonnet", modelId: "claude-sonnet-4-6", rationale: "Running checks and validations" },
+  { zone: "Validate", model: "Sonnet", modelId: "claude-sonnet-4-6", rationale: "Full validation passes" },
+  { zone: "Publish", model: "Sonnet", modelId: "claude-sonnet-4-6", rationale: "PR creation is mechanical" },
+  { zone: "Respond", model: "Opus", modelId: "claude-opus-4-6", rationale: "Communication/Slack needs nuance and judgment" },
+  { zone: "Code Review", model: "Opus", modelId: "claude-opus-4-6", rationale: "Review requires deep reasoning for subtle issues" },
+  { zone: "BLOCKED", model: "Sonnet", modelId: "claude-sonnet-4-6", rationale: "Triage and status checks" },
 ];
 
 export const SCHEDULES = [

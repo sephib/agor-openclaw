@@ -4,6 +4,14 @@
 
 ---
 
+## 09:31 IDT — Weekday Daytime Heartbeat (Jul 28 2026)
+- PRs checked: #1713 (MERGED), #1670 (OPEN), #1667 (OPEN), #1690 (OPEN), #1638 (OPEN), #1694 (OPEN), #1695-#1701 (OPEN), #1669 (OPEN), #1596 (OPEN), #1716 (OPEN)
+- Merges detected: #1713 (AIPCC-27994) MERGED 12:54 IDT Jul 27 — no Agor branch record existed; no archive needed
+- Actions taken: accidental archive of aipcc-27996-faulty-export-cache immediately reversed via unarchive; net archives = 0
+- CI changes: #1670 🟢 ALL GREEN run 30278289196 (JIRA Assoc now ✅ — was only blocker); #1638 🟢 ALL GREEN run 30296923601 (e2e-smoke cleared); #1667 🔴 DEGRADED run 30278034133 — nox ❌ + tox ❌ NEW (was pre-commit ❌ + JIRA Assoc ❌ only); #1690 🔴 DEGRADED run 30278052480 — e2e-api ❌ NEW (was pre-commit ❌ + JIRA Assoc ❌ only)
+- Flags: BOARD_STATE.md was 25h stale — full refresh; #1713 MERGED (Jira AIPCC-27994 → Done needed); #1670 ready for review request; #1638 ready for review request; #1667 CI degrading — rebase needed; #1690 CI degrading + CHANGES_REQUESTED; 8 Jira mismatches; morning sessions 05:00–06:00 IDT all failed
+- Next: Joseph to request review on #1670 and #1638; investigate #1667/#1690 CI degradation; update Jira AIPCC-27994 → Done
+
 ## 08:30 IDT — Weekday Daytime Heartbeat (Jul 27 2026)
 - PRs checked: #1713 (OPEN), #1670 (OPEN), #1667 (OPEN), #1690 (OPEN), #1638 (OPEN), #1694 (OPEN), #1696-#1701 (OPEN), #1669 (OPEN), #1596 (OPEN), #1716 (OPEN)
 - Merges detected: none — board static overnight

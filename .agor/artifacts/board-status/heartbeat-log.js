@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-28 09:31 IDT",
+    actions: 0,
+    findings: 4,
+    status: "ok",
+    summary: "#1713 (AIPCC-27994) MERGED 12:54 IDT Jul 27 — no Agor branch record; accidental archive of aipcc-27996 immediately reversed; #1670 ALL GREEN run 30278289196 — request review; #1638 ALL GREEN run 30296923601; #1667 DEGRADED run 30278034133 (nox+tox new failures); #1690 DEGRADED run 30278052480 (e2e-api new); BOARD_STATE.md was 25h stale — full refresh; 8 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019fa76abe77735fad237f98/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-27 08:30 IDT",
     actions: 0,
     findings: 3,
