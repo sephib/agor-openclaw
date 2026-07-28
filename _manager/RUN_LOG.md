@@ -4,6 +4,14 @@
 
 ---
 
+## 17:30 IDT — Weekday Daytime Heartbeat (Jul 28 2026)
+- PRs checked: #1723 (MERGED), #1667 (MERGED), #1670 (OPEN/APPROVED), #1690 (OPEN), #1669 (OPEN), #1694 (OPEN), #1638 (OPEN), #1716 (OPEN), #1695-#1701 (OPEN), #1596 (OPEN)
+- Merges detected: #1723 (AIPCC-27996) MERGED 11:31 IDT Jul 28 — no Agor worktree; #1667 (JN-5845) MERGED 14:12 IDT Jul 28 — worktree jn-5845-helm-cicd-agents-md ARCHIVED autonomously
+- Actions taken: **jn-5845-helm-cicd-agents-md ARCHIVED** (PR #1667 MERGED). Net archives = 1.
+- CI changes: #1670 🟡 reviewDecision: APPROVED 🎉 (was REVIEW_REQUIRED) — new run: JIRA Assoc ❌ still, e2e-api PENDING, all others ✅; #1690 🟢 e2e-api ✅ CLEARED (was ❌) — pre-commit ❌ + JIRA Assoc ❌ remain, e2e-smoke PENDING; #1669 new run confirms JIRA Assoc ❌ + nox ❌ + pre-commit ❌ + tox ❌; #1638 stable — e2e-smoke PENDING, all others ✅
+- Flags: #1670 APPROVED + JIRA Assoc ❌ = only blocker before merge; 9 Jira mismatches (AIPCC-27996 + JN-5845 → Done added); jn-5865 zone mismatch Day 20+; jn-5824 stale 20+ days
+- Next: Joseph to fix JIRA Assoc on #1670 → merge; update Jira AIPCC-27996 + JN-5845 + AIPCC-27994 → Done; address CHANGES_REQUESTED on #1690
+
 ## 09:31 IDT — Weekday Daytime Heartbeat (Jul 28 2026)
 - PRs checked: #1713 (MERGED), #1670 (OPEN), #1667 (OPEN), #1690 (OPEN), #1638 (OPEN), #1694 (OPEN), #1695-#1701 (OPEN), #1669 (OPEN), #1596 (OPEN), #1716 (OPEN)
 - Merges detected: #1713 (AIPCC-27994) MERGED 12:54 IDT Jul 27 — no Agor branch record existed; no archive needed
