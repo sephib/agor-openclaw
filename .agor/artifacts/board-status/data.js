@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-29 09:00 IDT (advance heartbeat)";
+export const LAST_UPDATED = "2026-07-29 09:30 IDT (advance heartbeat)";
 
 export const WORKTREES = [
   {
@@ -13,14 +13,22 @@ export const WORKTREES = [
     status: "🎉 **PR #1670 MERGED 16:03 IDT Jul 28** — APPROVED. Worktree ARCHIVED autonomously 18:04 IDT Jul 28. Action: Update Jira JN-5844 → Done.",
     blockedOn: "Jira mismatch — update to Done",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019fac5a12137edb970e9501/",
-    sessionLabel: "advance heartbeat 08:30 IDT Jul 29 — board static overnight; 10 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019fad35f4807d10880dd671/",
+    sessionLabel: "advance heartbeat 09:30 IDT Jul 29 — board static; 10 Jira mismatches",
     recentSessions: [
+      {
+        sessionId: "019fad35f4807d10880dd671",
+        url: "http://127.0.0.1:3030/ui/s/019fad35f4807d10880dd671/",
+        title: "advance heartbeat 09:30 IDT Jul 29 — board static; 10 Jira mismatches",
+        status: "running",
+        timestamp: "2026-07-29 09:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019fac5a12137edb970e9501",
         url: "http://127.0.0.1:3030/ui/s/019fac5a12137edb970e9501/",
         title: "advance heartbeat 08:30 IDT Jul 29 — board static overnight; 10 Jira mismatches",
-        status: "running",
+        status: "completed",
         timestamp: "2026-07-29 08:30 IDT",
         outputFile: null,
       },
@@ -134,17 +142,25 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1690",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1690",
-    status: "🔴 **CHANGES_REQUESTED by MenD32**. CI completed: pre-commit ❌, e2e-product ❌, JIRA Assoc ❌; e2e-api ✅, tox ✅, integration ✅. **Action: Address reviewer feedback + fix pre-commit.**",
+    status: "🔴 **CHANGES_REQUESTED by MenD32**. CI partial: nox ✅ cleared; pre-commit ❌, JIRA Assoc ❌ remain; e2e-smoke ⏳ pending. **Action: Address reviewer feedback + fix pre-commit.**",
     blockedOn: "CHANGES_REQUESTED — address reviewer feedback + fix pre-commit",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019fac5a12137edb970e9501/",
-    sessionLabel: "advance heartbeat 08:30 IDT Jul 29 — board static overnight; #1690 CI completed with failures",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019fad35f4807d10880dd671/",
+    sessionLabel: "advance heartbeat 09:30 IDT Jul 29 — #1690 nox ✅ cleared; #1638 e2e-product pending; board static",
     recentSessions: [
+      {
+        sessionId: "019fad35f4807d10880dd671",
+        url: "http://127.0.0.1:3030/ui/s/019fad35f4807d10880dd671/",
+        title: "advance heartbeat 09:30 IDT Jul 29 — #1690 nox ✅ cleared; #1638 e2e-product pending",
+        status: "running",
+        timestamp: "2026-07-29 09:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019fac5a12137edb970e9501",
         url: "http://127.0.0.1:3030/ui/s/019fac5a12137edb970e9501/",
         title: "advance heartbeat 08:30 IDT Jul 29 — board static overnight; #1690 CI completed with failures",
-        status: "running",
+        status: "completed",
         timestamp: "2026-07-29 08:30 IDT",
         outputFile: null,
       },
@@ -639,16 +655,16 @@ export const ALERTS = [
     message: "🎉 #1667 (JN-5845): **MERGED 14:12 IDT Jul 28** — 'docs: add Helm and CI/CD AGENTS.md'. APPROVED. Worktree ARCHIVED ✅.",
   },
   {
-    level: "red",
-    message: "🔴 #1638 (AIPCC-28249 off-board): e2e-product ❌ sole blocker. All other checks pass. **Investigate e2e-product failure.**",
+    level: "yellow",
+    message: "🟡 #1638 (AIPCC-28249 off-board): e2e-product ⏳ pending (new run — was ❌). All other checks ✅. **Monitor next run.**",
   },
   {
     level: "red",
-    message: "🔴 #1690 (AIPCC-27645): **CHANGES_REQUESTED by MenD32** — CI: pre-commit ❌, e2e-product ❌, JIRA Assoc ❌. Action: Address feedback + fix pre-commit.",
+    message: "🔴 #1690 (AIPCC-27645): **CHANGES_REQUESTED by MenD32** — CI: nox ✅ cleared; pre-commit ❌, JIRA Assoc ❌ remain; e2e-smoke ⏳. Action: Address feedback + fix pre-commit.",
   },
   {
     level: "red",
-    message: "🔴 #1669 (JN-5872): **CI degraded** — tox-run ❌, nox ❌, JIRA Assoc ❌, pre-commit ❌ (was JIRA Assoc only at 08:30 IDT). Needs rebase + CI fix.",
+    message: "🔴 #1669 (JN-5872): **CI degraded** — tox-run ❌, nox ❌, JIRA Assoc ❌, pre-commit ❌. Needs rebase + CI fix.",
   },
   {
     level: "red",

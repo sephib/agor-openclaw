@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-29 09:00 IDT (advance heartbeat)*
+*Last updated: 2026-07-29 09:30 IDT (advance heartbeat)*
 
 ---
 
@@ -8,13 +8,13 @@
 
 | Worktree | Zone | PR | CI | Jira | Status |
 |---------|------|----|----|------|--------|
-| aipcc-27645-server-resources | **Code** | [#1690](https://github.com/Jounce-IO/jounce/pull/1690) | 🔴 pre-commit ❌, e2e-product ❌, JIRA Assoc ❌; e2e-api ✅, tox ✅, integration ✅ | [AIPCC-27645](https://redhat.atlassian.net/browse/AIPCC-27645) — In Progress | 🔴 **CHANGES_REQUESTED by MenD32**. CI failures unchanged. **Action: Address reviewer feedback + fix CI.** |
+| aipcc-27645-server-resources | **Code** | [#1690](https://github.com/Jounce-IO/jounce/pull/1690) | 🔴 pre-commit ❌, JIRA Assoc ❌; nox ✅, tox ✅, e2e-api ✅, integration ✅; e2e-smoke ⏳ pending | [AIPCC-27645](https://redhat.atlassian.net/browse/AIPCC-27645) — In Progress | 🔴 **CHANGES_REQUESTED by MenD32**. CI partial: nox now ✅ (was ❌). pre-commit ❌ + JIRA Assoc ❌ remain. **Action: Address reviewer feedback + fix pre-commit.** |
 | jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | CONFLICTING | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) — In Progress | 🔴 DRAFT + CONFLICTING; frozen since Jun 14. |
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — New | Design session done Jun 30. Ready for Plan phase. Stale 29+ days. |
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) — In Progress | Last session Jul 8 IDLE. Needs: configs, rebase, PR. Stale 21+ days. |
 | ~~jn-5844-service-lib-sql-agents-md~~ | ~~Publish~~ | [#1670 **MERGED**](https://github.com/Jounce-IO/jounce/pull/1670) | — | [JN-5844](https://redhat.atlassian.net/browse/JN-5844) / AIPCC-26990 | ✅ **PR #1670 MERGED 16:03 IDT Jul 28**. Worktree ARCHIVED autonomously 18:04 IDT Jul 28. Jira → Done needed. |
 | ~~jn-5845-helm-cicd-agents-md~~ | ~~Publish~~ | [#1667 **MERGED**](https://github.com/Jounce-IO/jounce/pull/1667) | — | [JN-5845](https://redhat.atlassian.net/browse/JN-5845) | ✅ **PR #1667 MERGED 14:12 IDT Jul 28**. Worktree ARCHIVED autonomously. Jira → Done needed. |
-| jn-5872 | **Code** | [#1669 DRAFT](https://github.com/Jounce-IO/jounce/pull/1669) | 🔴 JIRA Assoc ❌, tox-run ❌, nox ❌, pre-commit ❌; resolve-conflicts ✅ | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — In Progress | 🔴 **CI degraded** — DRAFT. tox-run + nox now failing (new since 08:30). Needs rebase + CI fix. |
+| jn-5872 | **Code** | [#1669 DRAFT](https://github.com/Jounce-IO/jounce/pull/1669) | 🔴 JIRA Assoc ❌, tox-run ❌, nox ❌, pre-commit ❌; resolve-conflicts ✅ | [JN-5872](https://redhat.atlassian.net/browse/JN-5872) — In Progress | 🔴 **CI degraded** — DRAFT. tox-run + nox + pre-commit ❌. Unchanged from 09:00. Needs rebase + CI fix. |
 | jn-5865-ibm-cluster-connect | **Ingest** | — | — | [JN-5865](https://redhat.atlassian.net/browse/JN-5865) — New | Plan done ~23:06 IDT Jul 8. **Zone mismatch Day 21+** (still Ingest, should be Code). |
 | ~~aipcc-27994-faulty-column~~ | ~~Code Review~~ | [#1713 **MERGED**](https://github.com/Jounce-IO/jounce/pull/1713) | — | [AIPCC-27994](https://redhat.atlassian.net/browse/AIPCC-27994) | ✅ **PR #1713 MERGED 12:54 IDT Jul 27**. No Agor branch record — already cleaned. |
 | ~~aipcc-27996-faulty-export-cache~~ | ~~Verify~~ | [#1723 **MERGED**](https://github.com/Jounce-IO/jounce/pull/1723) | — | [AIPCC-27996](https://redhat.atlassian.net/browse/AIPCC-27996) | ✅ **PR #1723 MERGED 11:31 IDT Jul 28**. No Agor worktree to archive. Jira → Done needed. |
@@ -40,7 +40,7 @@
 
 | PR | Branch | Jira | CI | State | Flags |
 |----|--------|------|----|-------|-------|
-| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | AIPCC-28249 | 🔴 e2e-product ❌; JIRA Assoc ✅, pre-commit ✅, tox ✅, integration ✅, e2e-api ✅, e2e-smoke ✅ | **OPEN, MERGEABLE** | 🔴 e2e-product ❌ is the sole remaining CI blocker. reviewDecision: "". |
+| [#1638](https://github.com/Jounce-IO/jounce/pull/1638) | feat/vllm-analyzer-prerequisites | AIPCC-28249 | 🟡 e2e-product ⏳ pending (new run); all other checks ✅ | **OPEN, MERGEABLE** | 🟡 e2e-product now **pending** (new run triggered — was ❌). reviewDecision: "". |
 | [#1714](https://github.com/Jounce-IO/jounce/pull/1714) | — | [AIPCC-28059](https://redhat.atlassian.net/browse/AIPCC-28059) / JN-5714 | — | **MERGED 12:44 IDT Jul 26** 🎉 | Off-board. Merged. |
 | [#1716](https://github.com/Jounce-IO/jounce/pull/1716) | — | [AIPCC-28110](https://redhat.atlassian.net/browse/AIPCC-28110) | — | OPEN, NOT draft, REVIEW_REQUIRED | Off-board. Monitoring only. |
 
@@ -85,14 +85,14 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (09:00 IDT Jul 29 vs 08:30 IDT Jul 29)
+## Key Changes (09:30 IDT Jul 29 vs 09:00 IDT Jul 29)
 
 | What changed | Delta |
 |---|---|
-| **No new merges** | Board static since 08:30 IDT. All PRs in same state. |
-| **🔴 #1669 CI degraded** | tox-run ❌ + nox ❌ now failing (was JIRA Assoc ❌ only at 08:30). |
-| **#1690 CI unchanged** | pre-commit ❌, e2e-product ❌, JIRA Assoc ❌ — no new run. |
-| **#1638 CI unchanged** | e2e-product ❌ sole blocker persists. |
+| **No new merges** | Board static. All PRs in same state. |
+| **🟡 #1690 CI partial improvement** | nox now ✅ (was ❌ at 08:30). pre-commit ❌ + JIRA Assoc ❌ remain. e2e-smoke ⏳ pending. |
+| **🟡 #1638 e2e-product status** | e2e-product now **pending** (new run triggered — was ❌). All other checks pass. |
+| **#1669 CI unchanged** | tox ❌, nox ❌, pre-commit ❌, JIRA Assoc ❌ — no new run. |
 
 ---
 
@@ -102,7 +102,7 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 PR [#1690](https://github.com/Jounce-IO/jounce/pull/1690): "fix(helm): increase API server resources and probe tolerances"
 - **State: OPEN, MERGEABLE, NOT DRAFT, CHANGES_REQUESTED by MenD32**
-- CI: pre-commit ❌, e2e-product ❌, JIRA Assoc ❌
+- CI update: nox ✅ (cleared), pre-commit ❌, JIRA Assoc ❌, e2e-smoke ⏳ pending
 - **Action: Address MenD32 review feedback + fix pre-commit.**
 
 ---
@@ -110,8 +110,8 @@ PR [#1690](https://github.com/Jounce-IO/jounce/pull/1690): "fix(helm): increase 
 ### 🔴 #1669 (JN-5872) — CI degraded
 
 PR [#1669](https://github.com/Jounce-IO/jounce/pull/1669): "feat(jbenchmark): improve dev-connect"
-- **State: OPEN, DRAFT, MERGEABLE**
-- CI degraded since 08:30: tox-run ❌, nox ❌, JIRA Assoc ❌, pre-commit ❌ (was just JIRA Assoc ❌)
+- **State: OPEN, DRAFT, CONFLICTING**
+- CI: tox-run ❌, nox ❌, JIRA Assoc ❌, pre-commit ❌ — unchanged
 - **Action: Rebase on main + fix CI failures.**
 
 ---
@@ -151,12 +151,12 @@ PR [#1694](https://github.com/Jounce-IO/jounce/pull/1694) — "fix(jbenchmark): 
 
 ---
 
-### 🔴 #1638 (off-board AIPCC-28249) — e2e-product ❌ sole blocker
+### 🟡 #1638 (off-board AIPCC-28249) — e2e-product pending (new run)
 
 PR [#1638](https://github.com/Jounce-IO/jounce/pull/1638)
 - State: OPEN, MERGEABLE, reviewDecision: "".
-- CI: e2e-product ❌; all others pass.
-- **Action: Investigate e2e-product failure.**
+- CI: e2e-product ⏳ pending (new run — was ❌); all others pass.
+- **Monitor: check next run for e2e-product result.**
 
 ---
 
