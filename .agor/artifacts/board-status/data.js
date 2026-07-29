@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-28 18:00 IDT (advance heartbeat)";
+export const LAST_UPDATED = "2026-07-29 08:30 IDT (advance heartbeat)";
 
 export const WORKTREES = [
   {
@@ -13,14 +13,22 @@ export const WORKTREES = [
     status: "🎉 **PR #1670 MERGED 16:03 IDT Jul 28** — APPROVED. Worktree ARCHIVED autonomously 18:04 IDT Jul 28. Action: Update Jira JN-5844 → Done.",
     blockedOn: "Jira mismatch — update to Done",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019fa974931e75aaad8671c3/",
-    sessionLabel: "advance heartbeat 18:00 IDT Jul 28 — #1670 MERGED; jn-5844 archived; 10 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019fac5a12137edb970e9501/",
+    sessionLabel: "advance heartbeat 08:30 IDT Jul 29 — board static overnight; 10 Jira mismatches",
     recentSessions: [
+      {
+        sessionId: "019fac5a12137edb970e9501",
+        url: "http://127.0.0.1:3030/ui/s/019fac5a12137edb970e9501/",
+        title: "advance heartbeat 08:30 IDT Jul 29 — board static overnight; 10 Jira mismatches",
+        status: "running",
+        timestamp: "2026-07-29 08:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019fa974931e75aaad8671c3",
         url: "http://127.0.0.1:3030/ui/s/019fa974931e75aaad8671c3/",
         title: "advance heartbeat 18:00 IDT Jul 28 — #1670 MERGED; jn-5844 worktree archived",
-        status: "running",
+        status: "completed",
         timestamp: "2026-07-28 18:00 IDT",
         outputFile: null,
       },
@@ -126,17 +134,25 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1690",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1690",
-    status: "🔴 **CHANGES_REQUESTED by MenD32**. New CI run PENDING (CodeRabbit, JIRA Assoc, check-changes, resolve-conflicts all started). **Action: Address reviewer feedback + fix pre-commit/JIRA Assoc.**",
-    blockedOn: "CHANGES_REQUESTED — address reviewer feedback + fix pre-commit/JIRA Assoc",
+    status: "🔴 **CHANGES_REQUESTED by MenD32**. CI completed: pre-commit ❌, e2e-product ❌, JIRA Assoc ❌; e2e-api ✅, tox ✅, integration ✅. **Action: Address reviewer feedback + fix pre-commit.**",
+    blockedOn: "CHANGES_REQUESTED — address reviewer feedback + fix pre-commit",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019fa974931e75aaad8671c3/",
-    sessionLabel: "advance heartbeat 18:00 IDT Jul 28 — #1690 new CI run PENDING",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019fac5a12137edb970e9501/",
+    sessionLabel: "advance heartbeat 08:30 IDT Jul 29 — board static overnight; #1690 CI completed with failures",
     recentSessions: [
+      {
+        sessionId: "019fac5a12137edb970e9501",
+        url: "http://127.0.0.1:3030/ui/s/019fac5a12137edb970e9501/",
+        title: "advance heartbeat 08:30 IDT Jul 29 — board static overnight; #1690 CI completed with failures",
+        status: "running",
+        timestamp: "2026-07-29 08:30 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019fa974931e75aaad8671c3",
         url: "http://127.0.0.1:3030/ui/s/019fa974931e75aaad8671c3/",
         title: "advance heartbeat 18:00 IDT Jul 28 — #1690 new CI run PENDING",
-        status: "running",
+        status: "completed",
         timestamp: "2026-07-28 18:00 IDT",
         outputFile: null,
       },
@@ -623,12 +639,12 @@ export const ALERTS = [
     message: "🎉 #1667 (JN-5845): **MERGED 14:12 IDT Jul 28** — 'docs: add Helm and CI/CD AGENTS.md'. APPROVED. Worktree ARCHIVED ✅.",
   },
   {
-    level: "yellow",
-    message: "🟡 #1638 (AIPCC-28249 off-board): New CI run in progress — JIRA Assoc ❌; others (integration/pre-commit/tox/ensure-images) PENDING; atlas-validate ✅. **Monitor.**",
+    level: "red",
+    message: "🔴 #1638 (AIPCC-28249 off-board): CI completed — e2e-product ❌ sole blocker. All other checks pass (JIRA Assoc ✅ now). **Investigate e2e-product failure.**",
   },
   {
     level: "red",
-    message: "🔴 #1690 (AIPCC-27645): **CHANGES_REQUESTED by MenD32** — new CI run PENDING. Action: Address feedback + fix pre-commit/JIRA Assoc.",
+    message: "🔴 #1690 (AIPCC-27645): **CHANGES_REQUESTED by MenD32** — CI completed: pre-commit ❌, e2e-product ❌, JIRA Assoc ❌. Action: Address feedback + fix pre-commit.",
   },
   {
     level: "red",

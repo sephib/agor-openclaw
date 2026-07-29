@@ -4,6 +4,14 @@
 
 ---
 
+## 08:30 IDT — Weekday Daytime Heartbeat (Jul 29 2026)
+- PRs checked: #1690 (OPEN, CHANGES_REQUESTED), #1669 (OPEN DRAFT), #1694 (OPEN bot), #1638 (OPEN off-board), #1716 (OPEN), #1695-#1701 (OPEN), #1596 (OPEN DRAFT), #1698 (OPEN)
+- Merges detected: none — board static overnight
+- Actions taken: none (no archives needed)
+- CI changes: #1690 run completed — pre-commit ❌, e2e-product ❌, JIRA Assoc ❌ (was PENDING). #1638 run completed — e2e-product ❌ sole blocker; JIRA Assoc ✅ now (was ❌).
+- Flags: #1690 CHANGES_REQUESTED + CI still failing; #1638 e2e-product ❌ new blocker; 10 Jira mismatches unchanged; jn-5865 zone mismatch Day 21+; jn-5824 stale 21+ days; #1694 bot PR needs review; BOARD_STATE.md was 14h stale — full refresh
+- Next: Address CHANGES_REQUESTED on #1690; investigate e2e-product on #1638; Joseph review #1694; update 10 Jira mismatches → Done
+
 ## 18:00 IDT — Weekday Daytime Heartbeat (Jul 28 2026)
 - PRs checked: #1670 (MERGED), #1690 (OPEN), #1669 (OPEN), #1694 (OPEN), #1638 (OPEN), #1716 (OPEN), #1695-#1701 (OPEN), #1596 (OPEN), #1698 (OPEN)
 - Merges detected: **#1670 (JN-5844) MERGED 16:03 IDT Jul 28** — worktree jn-5844-service-lib-sql-agents-md ARCHIVED autonomously
