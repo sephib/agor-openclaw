@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-29 09:00 IDT",
+    actions: 0,
+    findings: 2,
+    status: "ok",
+    summary: "Board static; #1669 CI degraded (tox-run ❌, nox ❌, now also failing beyond JIRA Assoc); #1690/#1638 CI unchanged; no merges; 10 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019fac75be547138ac99ff85/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-29 08:30 IDT",
     actions: 0,
     findings: 4,

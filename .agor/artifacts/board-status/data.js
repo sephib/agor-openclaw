@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-29 08:30 IDT (advance heartbeat)";
+export const LAST_UPDATED = "2026-07-29 09:00 IDT (advance heartbeat)";
 
 export const WORKTREES = [
   {
@@ -234,8 +234,8 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1669",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1669",
-    status: "🔴 CI ❌ new run: JIRA Assoc ❌, check-changes PENDING, resolve-conflicts ✅. DRAFT. Needs rebase + CI fix.",
-    blockedOn: "CI failing — JIRA Assoc ❌ fix needed",
+    status: "🔴 CI degraded: JIRA Assoc ❌, tox-run ❌, nox ❌, pre-commit ❌; resolve-conflicts ✅. DRAFT. Needs rebase + CI fix.",
+    blockedOn: "CI degraded — tox-run ❌, nox ❌, JIRA Assoc ❌, pre-commit ❌",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f7b8914f87505bf9d7e3f/",
     sessionLabel: "advance heartbeat 21:02 IDT Jul 19 — #1669 CI ❌ + CONFLICTING unchanged",
@@ -640,11 +640,15 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 #1638 (AIPCC-28249 off-board): CI completed — e2e-product ❌ sole blocker. All other checks pass (JIRA Assoc ✅ now). **Investigate e2e-product failure.**",
+    message: "🔴 #1638 (AIPCC-28249 off-board): e2e-product ❌ sole blocker. All other checks pass. **Investigate e2e-product failure.**",
   },
   {
     level: "red",
-    message: "🔴 #1690 (AIPCC-27645): **CHANGES_REQUESTED by MenD32** — CI completed: pre-commit ❌, e2e-product ❌, JIRA Assoc ❌. Action: Address feedback + fix pre-commit.",
+    message: "🔴 #1690 (AIPCC-27645): **CHANGES_REQUESTED by MenD32** — CI: pre-commit ❌, e2e-product ❌, JIRA Assoc ❌. Action: Address feedback + fix pre-commit.",
+  },
+  {
+    level: "red",
+    message: "🔴 #1669 (JN-5872): **CI degraded** — tox-run ❌, nox ❌, JIRA Assoc ❌, pre-commit ❌ (was JIRA Assoc only at 08:30 IDT). Needs rebase + CI fix.",
   },
   {
     level: "red",
@@ -656,15 +660,15 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "🟡 Jira mismatches (10): JN-5844 (→Done NEW), AIPCC-27996 (→Done), AIPCC-27994 (→Done), JN-5845 (→Done), JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546. Use acli jira workitem transition.",
+    message: "🟡 Jira mismatches (10): JN-5844 (→Done), AIPCC-27996 (→Done), AIPCC-27994 (→Done), JN-5845 (→Done), JN-5842, JN-5877, JN-5874, JN-5401, JN-5827, JN-5546. Use acli jira workitem transition.",
   },
   {
     level: "yellow",
-    message: "📍 jn-5865 (JN-5865): Still Ingest zone — plan done Jul 8 (Day 20+). Propose move to Code + trigger /implement:code.",
+    message: "📍 jn-5865 (JN-5865): Still Ingest zone — plan done Jul 8 (Day 21+). Propose move to Code + trigger /implement:code.",
   },
   {
     level: "yellow",
-    message: "🔄 jn-5824-benchmark-run-configs (JN-5824): Last session Jul 8 IDLE. Stale 20+ days.",
+    message: "🔄 jn-5824-benchmark-run-configs (JN-5824): Last session Jul 8 IDLE. Stale 21+ days.",
   },
   {
     level: "yellow",

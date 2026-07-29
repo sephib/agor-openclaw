@@ -2993,3 +2993,11 @@
 - Archives: none — no MERGED/CLOSED PRs detected
 - Actions: 0 archives, 0 auto-advances
 - Next: #1670 request review; fix pre-commit on #1667/#1690; fix JIRA Assoc+atlas-validate+e2e-api on #1713; investigate e2e-smoke on #1693; 8 Jira mismatches via acli
+
+## 09:00 IDT — Weekday Daytime Heartbeat (Jul 29 2026)
+- PRs checked: #1690 (OPEN, CHANGES_REQUESTED), #1669 (OPEN DRAFT), #1694 (OPEN bot), #1638 (OPEN off-board), #1695-#1701 (OPEN), #1596 (OPEN DRAFT), #1698 (OPEN)
+- Merges detected: none — board static since 08:30 IDT
+- CI changes: **#1669 CI degraded** — tox-run ❌, nox ❌ now failing (was JIRA Assoc ❌ only); #1690 unchanged (pre-commit ❌, e2e-product ❌, JIRA Assoc ❌); #1638 unchanged (e2e-product ❌)
+- Actions taken: none (no archives needed)
+- Flags: #1669 CI degradation (new), #1690 CHANGES_REQUESTED (persistent), #1694 bot PR (persistent), #1638 e2e-product ❌ (persistent), 10 Jira mismatches (persistent)
+- Next: Monitor for #1669 fix; watch for Joseph to address #1690 MenD32 review
