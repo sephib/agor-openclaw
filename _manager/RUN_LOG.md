@@ -4,6 +4,14 @@
 
 ---
 
+## 10:00 IDT — Weekday Daytime Heartbeat (Jul 29 2026)
+- PRs checked: #1690 (OPEN, CHANGES_REQUESTED), #1669 (OPEN DRAFT), #1694 (OPEN bot), #1638 (OPEN off-board), #1716 (OPEN), #1695-#1701 (OPEN), #1596 (OPEN DRAFT), #1698 (OPEN)
+- Merges detected: none — board static
+- Actions taken: none
+- CI changes: #1690 — **e2e-product ❌ NEW FAILURE** (run 30438043057; was ⏳ pending at 09:30). pre-commit ❌ + JIRA Assoc ❌ unchanged. nox ✅, e2e-smoke ✅, e2e-api ✅, tox ✅. #1638 — **e2e-product ❌ CONFIRMED** (run 30438015210; was ⏳ pending at 09:30). All other checks ✅. #1669 — unchanged (no new run).
+- Flags: #1690 CHANGES_REQUESTED + pre-commit ❌ + e2e-product ❌ (new); #1638 e2e-product ❌ confirmed; 10 Jira mismatches unchanged; jn-5865 zone mismatch Day 21+; jn-5824 stale 21+ days; #1694 bot PR needs review
+- Next: Investigate e2e-product failures on #1690 and #1638 (same test suite — likely shared regression); address CHANGES_REQUESTED on #1690; Joseph review #1694; update 10 Jira mismatches → Done
+
 ## 09:30 IDT — Weekday Daytime Heartbeat (Jul 29 2026)
 - PRs checked: #1690 (OPEN, CHANGES_REQUESTED), #1669 (OPEN DRAFT), #1694 (OPEN bot), #1638 (OPEN off-board), #1716 (OPEN), #1695-#1701 (OPEN), #1596 (OPEN DRAFT), #1698 (OPEN)
 - Merges detected: none — board static
