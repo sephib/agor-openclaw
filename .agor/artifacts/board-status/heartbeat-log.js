@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-07-30 00:05 IDT",
+    actions: 0,
+    findings: 2,
+    status: "ok",
+    summary: "Board static overnight — no Joseph PRs merged; #1698 now CONFLICTING (was MERGEABLE); CI unchanged on all tracked PRs; 10 Jira mismatches unchanged",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019fafadbef87621a498241d/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-07-29 10:00 IDT",
     actions: 0,
     findings: 3,

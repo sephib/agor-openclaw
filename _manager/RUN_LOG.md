@@ -4,6 +4,15 @@
 
 ---
 
+## 00:05 IDT — Weekday Overnight Heartbeat (Jul 30 2026)
+- PRs checked: #1690 (OPEN, CHANGES_REQUESTED), #1669 (OPEN DRAFT CONFLICTING), #1694 (OPEN bot), #1638 (OPEN off-board), #1698 (OPEN CONFLICTING — new), #1695-#1701 (OPEN), #1596 (OPEN DRAFT)
+- Merges detected: #1730 merged (by Uri Shaket, not Joseph — not tracked)
+- CI changes: no new runs on any tracked PRs overnight; #1698 now CONFLICTING (was MERGEABLE)
+- Flags: #1690 CHANGES_REQUESTED + CI ❌ (unchanged); #1638 e2e-product ❌ (unchanged); #1698 now CONFLICTING; 10 Jira mismatches unchanged
+- Next: Day shift heartbeat — check if any new CI runs triggered; #1690 needs developer action
+
+---
+
 ## 10:00 IDT — Weekday Daytime Heartbeat (Jul 29 2026)
 - PRs checked: #1690 (OPEN, CHANGES_REQUESTED), #1669 (OPEN DRAFT), #1694 (OPEN bot), #1638 (OPEN off-board), #1716 (OPEN), #1695-#1701 (OPEN), #1596 (OPEN DRAFT), #1698 (OPEN)
 - Merges detected: none — board static
