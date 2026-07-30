@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-30 13:15 IDT (advance heartbeat)";
+export const LAST_UPDATED = "2026-07-30 15:45 IDT (advance heartbeat)";
 
 export const WORKTREES = [
   {
@@ -14,9 +14,9 @@ export const WORKTREES = [
     blockedOn: "CHANGES_REQUESTED — address reviewer feedback + fix pre-commit + e2e-product ❌",
     blockedType: "active",
     sessionUrl: null,
-    sessionLabel: "advance heartbeat 13:15 IDT Jul 30 — CI unchanged",
+    sessionLabel: "advance heartbeat 15:45 IDT Jul 30 — CI unchanged",
     recentSessions: [],
-    lastActive: "2026-07-30 13:15 IDT",
+    lastActive: "2026-07-30 15:45 IDT",
   },
   {
     ticket: "AIPCC-27681",
