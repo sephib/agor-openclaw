@@ -4,6 +4,17 @@
 
 ---
 
+## 13:15 IDT — Weekday Daytime Heartbeat (Jul 30 2026)
+- PRs checked: #1690 (OPEN, CHANGES_REQUESTED), #1669 (OPEN DRAFT CONFLICTING), #1694 (OPEN bot), #1729 (OPEN bot), #1638 (OPEN off-board), #1698 (OPEN CONFLICTING), #1695-#1701 (OPEN), #1596 (OPEN DRAFT), #1716 (OPEN)
+- Merges detected: none — board static
+- Actions taken: none (no PRs merged/closed to archive)
+- CI changes: #1690 — unchanged (same run 30438043057); #1638 — unchanged (same run 30438015210)
+- Jira update: **mismatches 10→5** — AIPCC-27996, 27994 (both Closed), AIPCC-26990/JN-5844 (Closed), AIPCC-26996/JN-5845 (Closed), AIPCC-23788/JN-5401 (Closed); 5 remain (AIPCC-26976, 24425, 23824, 23220, 25962)
+- Flags: #1690 CHANGES_REQUESTED + CI ❌ (unchanged); #1638 e2e-product ❌ (unchanged); #1698 CONFLICTING; 2 bot PRs need review (#1694, #1729); jn-5865 zone mismatch Day 22+; jn-5824 stale 22+ days; 5 Jira mismatches remaining
+- Next: #1690 needs developer action (reviewer feedback + pre-commit + e2e-product); Joseph review #1694 + #1729; update 5 Jira mismatches → Done
+
+---
+
 ## 00:05 IDT — Weekday Overnight Heartbeat (Jul 30 2026)
 - PRs checked: #1690 (OPEN, CHANGES_REQUESTED), #1669 (OPEN DRAFT CONFLICTING), #1694 (OPEN bot), #1638 (OPEN off-board), #1698 (OPEN CONFLICTING — new), #1695-#1701 (OPEN), #1596 (OPEN DRAFT)
 - Merges detected: #1730 merged (by Uri Shaket, not Joseph — not tracked)
