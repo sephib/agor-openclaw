@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-07-30 15:45 IDT (advance heartbeat)*
+*Last updated: 2026-07-30 16:15 IDT (advance heartbeat)*
 
 ---
 
@@ -89,7 +89,7 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (15:45 IDT Jul 30 advance heartbeat vs 13:15 IDT Jul 30 advance heartbeat)
+## Key Changes (16:15 IDT Jul 30 advance heartbeat vs 15:45 IDT Jul 30 advance heartbeat)
 
 | What changed | Delta |
 |---|---|
@@ -98,6 +98,7 @@ Active sprint tickets assigned to Joseph with no board worktree:
 | **#1638 CI** | Unchanged — same run 30438015210. e2e-product ❌ still sole blocker. |
 | **#1698** | Still CONFLICTING (unchanged). |
 | **Jira mismatches** | Unchanged at 5 — no new resolutions. |
+| **Sprint tickets** | AIPCC-28413 no longer appearing in open sprint (likely removed/closed). All others unchanged. |
 
 ---
 
@@ -177,7 +178,7 @@ Down from 10 — 5 resolved since last run (now Closed in Jira).
 
 ## Archived This Session
 
-No archives this run (15:45 IDT Jul 30 advance heartbeat).
+No archives this run (16:15 IDT Jul 30 advance heartbeat).
 
 Previously archived:
 | Branch | PR | Reason | Time |
