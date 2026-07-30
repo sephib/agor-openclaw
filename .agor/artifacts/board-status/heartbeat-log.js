@@ -5545,5 +5545,14 @@ export const HEARTBEAT_RUNS = [
     status: "ok",
     summary: "#1693 CI run 29999372432 COMPLETED — FAILING (pre-commit ❌, e2e-smoke ❌); still APPROVED + MERGEABLE; no merges; 6 Jira mismatches unchanged; board zones unchanged",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f8ea1f1e5704eb46a3cf6/",
+  },
+  {
+    type: "advance",
+    timestamp: "2026-07-30 08:01 IDT",
+    actions: 0,
+    findings: 5,
+    status: "ok",
+    summary: "Board static; no merges since 00:05 IDT; CI all unchanged — #1690 CHANGES_REQUESTED+CI❌, #1669 CONFLICTING+CI❌, #1698 CONFLICTING, #1638 e2e-product❌; 10 Jira mismatches; merged with concurrent 10:30 IDT manual scan",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019fb164dd167378813d2e84/",
   }
 ];

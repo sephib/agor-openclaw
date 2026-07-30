@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-30 00:05 IDT (advance heartbeat)";
+export const LAST_UPDATED = "2026-07-30 08:01 IDT (advance heartbeat)";
 
 export const WORKTREES = [
   {
@@ -13,14 +13,22 @@ export const WORKTREES = [
     status: "🎉 **PR #1670 MERGED 16:03 IDT Jul 28** — APPROVED. Worktree ARCHIVED autonomously 18:04 IDT Jul 28. Action: Update Jira JN-5844 → Done.",
     blockedOn: "Jira mismatch — update to Done",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019fafadbef87621a498241d/",
-    sessionLabel: "advance heartbeat 00:05 IDT Jul 30 — board static overnight; #1698 now CONFLICTING; 10 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019fb164dd167378813d2e84/",
+    sessionLabel: "advance heartbeat 08:01 IDT Jul 30 — board static; all CI unchanged; 10 Jira mismatches",
     recentSessions: [
+      {
+        sessionId: "019fb164dd167378813d2e84",
+        url: "http://127.0.0.1:3030/ui/s/019fb164dd167378813d2e84/",
+        title: "advance heartbeat 08:01 IDT Jul 30 — board static; all CI unchanged",
+        status: "running",
+        timestamp: "2026-07-30 08:01 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019fafadbef87621a498241d",
         url: "http://127.0.0.1:3030/ui/s/019fafadbef87621a498241d/",
         title: "advance heartbeat 00:05 IDT Jul 30 — board static overnight; #1698 CONFLICTING",
-        status: "running",
+        status: "completed",
         timestamp: "2026-07-30 00:05 IDT",
         outputFile: null,
       },
@@ -48,16 +56,8 @@ export const WORKTREES = [
         timestamp: "2026-07-29 08:30 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019fa974931e75aaad8671c3",
-        url: "http://127.0.0.1:3030/ui/s/019fa974931e75aaad8671c3/",
-        title: "advance heartbeat 18:00 IDT Jul 28 — #1670 MERGED; jn-5844 worktree archived",
-        status: "completed",
-        timestamp: "2026-07-28 18:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-28 18:00 IDT",
+    lastActive: "2026-07-30 08:01 IDT",
   },
   {
     ticket: "AIPCC-27994",
@@ -129,14 +129,22 @@ export const WORKTREES = [
     status: "🔴 **CHANGES_REQUESTED by MenD32**. CI (run 30438043057): nox ✅, e2e-smoke ✅, e2e-api ✅, tox ✅; **e2e-product ❌**; pre-commit ❌, JIRA Assoc ❌. CI unchanged overnight. **Action: Address reviewer feedback + fix pre-commit + investigate e2e-product.**",
     blockedOn: "CHANGES_REQUESTED — address reviewer feedback + fix pre-commit + e2e-product ❌",
     blockedType: "active",
-    sessionUrl: "http://127.0.0.1:3030/ui/s/019fafadbef87621a498241d/",
-    sessionLabel: "advance heartbeat 00:05 IDT Jul 30 — board static overnight; #1698 CONFLICTING; 10 Jira mismatches",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019fb164dd167378813d2e84/",
+    sessionLabel: "advance heartbeat 08:01 IDT Jul 30 — board static; CI unchanged; 10 Jira mismatches",
     recentSessions: [
+      {
+        sessionId: "019fb164dd167378813d2e84",
+        url: "http://127.0.0.1:3030/ui/s/019fb164dd167378813d2e84/",
+        title: "advance heartbeat 08:01 IDT Jul 30 — board static; CI unchanged",
+        status: "running",
+        timestamp: "2026-07-30 08:01 IDT",
+        outputFile: null,
+      },
       {
         sessionId: "019fafadbef87621a498241d",
         url: "http://127.0.0.1:3030/ui/s/019fafadbef87621a498241d/",
         title: "advance heartbeat 00:05 IDT Jul 30 — board static overnight; #1698 CONFLICTING",
-        status: "running",
+        status: "completed",
         timestamp: "2026-07-30 00:05 IDT",
         outputFile: null,
       },
@@ -164,16 +172,8 @@ export const WORKTREES = [
         timestamp: "2026-07-29 08:30 IDT",
         outputFile: null,
       },
-      {
-        sessionId: "019fa974931e75aaad8671c3",
-        url: "http://127.0.0.1:3030/ui/s/019fa974931e75aaad8671c3/",
-        title: "advance heartbeat 18:00 IDT Jul 28 — #1690 new CI run PENDING",
-        status: "completed",
-        timestamp: "2026-07-28 18:00 IDT",
-        outputFile: null,
-      },
     ],
-    lastActive: "2026-07-30 00:05 IDT",
+    lastActive: "2026-07-30 08:01 IDT",
   },
   {
     ticket: "AIPCC-27681",
