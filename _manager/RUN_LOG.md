@@ -4,6 +4,15 @@
 
 ---
 
+## 10:15 IDT — Weekend Heartbeat (Jul 31 2026)
+- PRs checked: #1690 (OPEN, CHANGES_REQUESTED), #1669 (OPEN DRAFT CONFLICTING), #1694 (OPEN bot), #1729 (OPEN bot), #1638 (OPEN off-board), #1698 (OPEN CONFLICTING), #1695-#1701 (OPEN), #1596 (OPEN DRAFT), #1716 (OPEN MERGEABLE)
+- Merges detected: none — board static
+- CI changes: **#1690 NEW run 30548288372** (was 30438043057) — same failures (e2e-product ❌, pre-commit ❌, JIRA Assoc ❌); **#1638 NEW run 30548081534** (was 30438015210) — e2e-product ❌ still sole failure
+- Flags: Jira MCP unavailable — mismatches not verified this run; 5 mismatches unchanged
+- Next: Weekend overnight heartbeat ~16:15 IDT Jul 31
+
+---
+
 ## 16:15 IDT — Weekday Daytime Heartbeat (Jul 30 2026)
 - PRs checked: #1690 (OPEN, CHANGES_REQUESTED), #1669 (OPEN DRAFT CONFLICTING), #1694 (OPEN bot), #1729 (OPEN bot), #1638 (OPEN off-board), #1698 (OPEN CONFLICTING), #1695-#1701 (OPEN), #1596 (OPEN DRAFT), #1716 (OPEN)
 - Merges detected: none — board static

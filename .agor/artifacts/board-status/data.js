@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-30 16:15 IDT (advance heartbeat)";
+export const LAST_UPDATED = "2026-07-31 10:15 IDT (advance heartbeat)";
 
 export const WORKTREES = [
   {
@@ -10,13 +10,13 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1690",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1690",
-    status: "🔴 **CHANGES_REQUESTED by MenD32**. CI (run 30438043057): nox ✅, e2e-smoke ✅, e2e-api ✅, tox ✅; **e2e-product ❌**; pre-commit ❌, JIRA Assoc ❌. CI unchanged. **Action: Address reviewer feedback + fix pre-commit + investigate e2e-product.**",
+    status: "🔴 **CHANGES_REQUESTED by MenD32**. CI (run 30548288372 — new): nox ✅, e2e-smoke ✅, e2e-api ✅, tox ✅; **e2e-product ❌**; pre-commit ❌, JIRA Assoc ❌. CI re-ran — same failures. **Action: Address reviewer feedback + fix pre-commit + investigate e2e-product.**",
     blockedOn: "CHANGES_REQUESTED — address reviewer feedback + fix pre-commit + e2e-product ❌",
     blockedType: "active",
     sessionUrl: null,
-    sessionLabel: "advance heartbeat 15:45 IDT Jul 30 — CI unchanged",
+    sessionLabel: "advance heartbeat 10:15 IDT Jul 31 — CI re-ran, same failures",
     recentSessions: [],
-    lastActive: "2026-07-30 15:45 IDT",
+    lastActive: "2026-07-31 10:15 IDT",
   },
   {
     ticket: "AIPCC-27681",
@@ -413,11 +413,11 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 #1638 (AIPCC-28249 off-board): **e2e-product ❌ CONFIRMED** (run 30438015210). All other checks ✅. e2e-product is sole blocker — unchanged. Needs investigation.",
+    message: "🔴 #1638 (AIPCC-28249 off-board): **e2e-product ❌ CONFIRMED** (NEW run 30548081534). All other checks ✅. e2e-product is sole blocker — CI re-ran, still failing. Needs investigation.",
   },
   {
     level: "red",
-    message: "🔴 #1690 (AIPCC-27645): **CHANGES_REQUESTED by MenD32** — CI: nox ✅, e2e-smoke ✅, e2e-api ✅, tox ✅; **e2e-product ❌**; pre-commit ❌, JIRA Assoc ❌. Action: Address feedback + fix pre-commit + investigate e2e-product.",
+    message: "🔴 #1690 (AIPCC-27645): **CHANGES_REQUESTED by MenD32** — CI (NEW run 30548288372): nox ✅, e2e-smoke ✅, e2e-api ✅, tox ✅; **e2e-product ❌**; pre-commit ❌, JIRA Assoc ❌. CI re-ran — same failures. Action: Address feedback + fix pre-commit + investigate e2e-product.",
   },
   {
     level: "red",
