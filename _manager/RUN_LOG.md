@@ -4,6 +4,16 @@
 
 ---
 
+## 09:00 IDT — Weekday Daytime Heartbeat (Aug 2 2026)
+- PRs checked: #1690 (OPEN, CHANGES_REQUESTED), #1669 (OPEN DRAFT CONFLICTING), #1694 (OPEN bot), #1729 (OPEN bot), #1638 (OPEN off-board), #1698 (OPEN CONFLICTING), #1695-#1701 (OPEN DRAFT/OPEN), #1596 (OPEN DRAFT), #1716 (OPEN MERGEABLE)
+- Merges detected: none — board static (Step 1 sweep: assignee @me + review-requested:joberry, no new merges)
+- CI changes: none — #1690 run 30548288372 unchanged; #1638 run 30548081534 unchanged (both same as Jul 31)
+- Flags: ⚠️ BOARD_STATE.md was 2+ days old (last good run Jul 31 10:15 IDT; multiple sessions failed Jul 31–Aug 2); Jira MCP unavailable — mismatches not verified; 5 mismatches unchanged
+- Actions: none (no archives, no zone moves)
+- Next: Next advance heartbeat ~09:30 IDT Aug 2
+
+---
+
 ## 10:15 IDT — Weekend Heartbeat (Jul 31 2026)
 - PRs checked: #1690 (OPEN, CHANGES_REQUESTED), #1669 (OPEN DRAFT CONFLICTING), #1694 (OPEN bot), #1729 (OPEN bot), #1638 (OPEN off-board), #1698 (OPEN CONFLICTING), #1695-#1701 (OPEN), #1596 (OPEN DRAFT), #1716 (OPEN MERGEABLE)
 - Merges detected: none — board static

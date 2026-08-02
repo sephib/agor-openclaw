@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-07-31 10:15 IDT (advance heartbeat)";
+export const LAST_UPDATED = "2026-08-02 09:00 IDT (advance heartbeat)";
 
 export const WORKTREES = [
   {
@@ -10,13 +10,13 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1690",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1690",
-    status: "🔴 **CHANGES_REQUESTED by MenD32**. CI (run 30548288372 — new): nox ✅, e2e-smoke ✅, e2e-api ✅, tox ✅; **e2e-product ❌**; pre-commit ❌, JIRA Assoc ❌. CI re-ran — same failures. **Action: Address reviewer feedback + fix pre-commit + investigate e2e-product.**",
+    status: "🔴 **CHANGES_REQUESTED by MenD32**. CI (run 30548288372 — unchanged since Jul 31): nox ✅, e2e-smoke ✅, e2e-api ✅, tox ✅; **e2e-product ❌**; pre-commit ❌, JIRA Assoc ❌. **Action: Address reviewer feedback + fix pre-commit + investigate e2e-product.**",
     blockedOn: "CHANGES_REQUESTED — address reviewer feedback + fix pre-commit + e2e-product ❌",
     blockedType: "active",
     sessionUrl: null,
-    sessionLabel: "advance heartbeat 10:15 IDT Jul 31 — CI re-ran, same failures",
+    sessionLabel: "advance heartbeat 09:00 IDT Aug 2 — CI unchanged since Jul 31, same failures",
     recentSessions: [],
-    lastActive: "2026-07-31 10:15 IDT",
+    lastActive: "2026-08-02 09:00 IDT",
   },
   {
     ticket: "AIPCC-27681",
@@ -44,11 +44,11 @@ export const WORKTREES = [
     zone: "NO ZONE (bot PR)",
     pr: "#1729",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1729",
-    status: "🆕 **NEW BOT PR** (autofix). OPEN, NOT draft, REVIEW_REQUIRED. test(jbenchmark): verify updated_at after PATCH experiment. **Action: Joseph review.**",
+    status: "🆕 **BOT PR** (autofix). OPEN, NOT draft, REVIEW_REQUIRED. test(jbenchmark): verify updated_at after PATCH experiment. **Action: Joseph review.**",
     blockedOn: "Needs Joseph review",
     blockedType: "active",
     sessionUrl: null,
-    sessionLabel: "new — discovered in daily sync Jul 30",
+    sessionLabel: "discovered in daily sync Jul 30",
     recentSessions: [],
     lastActive: "2026-07-30 10:00 IDT",
   },
@@ -95,8 +95,8 @@ export const WORKTREES = [
     zone: "Ingest",
     pr: null,
     prUrl: null,
-    status: "Plan done ~23:06 IDT Jul 8. Still Ingest zone — zone mismatch persists (Day 22+). Propose move to Code zone + trigger /implement:code.",
-    blockedOn: "Zone mismatch — needs move to Code (Day 22+)",
+    status: "Plan done ~23:06 IDT Jul 8. Still Ingest zone — zone mismatch persists (Day 25+). Propose move to Code zone + trigger /implement:code.",
+    blockedOn: "Zone mismatch — needs move to Code (Day 25+)",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f4351d110788ba7254ee1/",
     sessionLabel: "plan (done, ready_for_prompt:TRUE)",
@@ -121,7 +121,7 @@ export const WORKTREES = [
     zone: "Ingest",
     pr: null,
     prUrl: null,
-    status: "Design session done Jun 30. Ready for /implement:plan trigger. Stale 30+ days.",
+    status: "Design session done Jun 30. Ready for /implement:plan trigger. Stale 33+ days.",
     blockedOn: null,
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f185c2c687ed7bbdd1902/",
@@ -147,7 +147,7 @@ export const WORKTREES = [
     zone: "Code",
     pr: null,
     prUrl: null,
-    status: "🔄 Last session Jul 8 IDLE. SHA 16ec44ea (2 commits). Remaining: generate configs, rebase, PR. Stale 22+ days.",
+    status: "🔄 Last session Jul 8 IDLE. SHA 16ec44ea (2 commits). Remaining: generate configs, rebase, PR. Stale 25+ days.",
     blockedOn: "Awaiting direction (fork new session to generate configs, rebase, PR)",
     blockedType: "active",
     sessionUrl: "http://127.0.0.1:3030/ui/s/019f4202b61479cbbb22e657/",
@@ -173,7 +173,7 @@ export const WORKTREES = [
     zone: "Plan",
     pr: "#1695 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1695",
-    status: "🔴 DRAFT PR #1695. REVIEW_REQUIRED.",
+    status: "🔴 DRAFT PR #1695. MERGEABLE, REVIEW_REQUIRED.",
     blockedOn: "DRAFT",
     blockedType: "active",
     sessionUrl: null,
@@ -190,7 +190,7 @@ export const WORKTREES = [
     zone: "Plan",
     pr: "#1696 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1696",
-    status: "🟡 DRAFT PR #1696 — REVIEW_REQUIRED.",
+    status: "🟡 DRAFT PR #1696 — MERGEABLE, REVIEW_REQUIRED.",
     blockedOn: "DRAFT",
     blockedType: "active",
     sessionUrl: null,
@@ -207,7 +207,7 @@ export const WORKTREES = [
     zone: "NO ZONE",
     pr: "#1697 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1697",
-    status: "🔴 DRAFT PR #1697 — REVIEW_REQUIRED. No zone assigned. Jira = In Progress.",
+    status: "🔴 DRAFT PR #1697 — MERGEABLE, REVIEW_REQUIRED. No zone assigned. Jira = In Progress.",
     blockedOn: "DRAFT; no zone assigned",
     blockedType: "active",
     sessionUrl: null,
@@ -255,11 +255,11 @@ export const WORKTREES = [
     title: "Config-generator hotfix (split from #1698) — AIPCC-23845",
     branch: "aipcc-23845-generator-hotfix",
     worktreePath: "/Users/josephberry/.agor/worktrees/Jounce-IO/jounce/aipcc-23845-generator-hotfix",
-    zone: "NO ZONE",
+    zone: "Plan",
     pr: "#1701 DRAFT",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1701",
-    status: "DRAFT split from #1698. REVIEW_REQUIRED. No zone assigned.",
-    blockedOn: "DRAFT; no zone assigned",
+    status: "DRAFT split from #1698. MERGEABLE, REVIEW_REQUIRED. Plan zone.",
+    blockedOn: "DRAFT",
     blockedType: "active",
     sessionUrl: null,
     sessionLabel: null,
@@ -408,16 +408,16 @@ export const MERGED = [
 
 export const ALERTS = [
   {
-    level: "green",
-    message: "🎉 Jira mismatches 10→5: AIPCC-27996, 27994, AIPCC-26990 (JN-5844), AIPCC-26996 (JN-5845), AIPCC-23788 (JN-5401) now Closed in Jira. Resolved since 10:00 IDT sync.",
+    level: "red",
+    message: "⚠️ BOARD_STATE.md was 2+ days old (Jul 31 10:15 IDT → Aug 2 09:00 IDT). Multiple scheduled sessions failed between Jul 31–Aug 2. Full refresh performed this run.",
   },
   {
     level: "red",
-    message: "🔴 #1638 (AIPCC-28249 off-board): **e2e-product ❌ CONFIRMED** (NEW run 30548081534). All other checks ✅. e2e-product is sole blocker — CI re-ran, still failing. Needs investigation.",
+    message: "🔴 #1638 (AIPCC-28249 off-board): **e2e-product ❌ CONFIRMED** (run 30548081534 — unchanged since Jul 31). All other checks ✅. e2e-product is sole blocker. Needs investigation.",
   },
   {
     level: "red",
-    message: "🔴 #1690 (AIPCC-27645): **CHANGES_REQUESTED by MenD32** — CI (NEW run 30548288372): nox ✅, e2e-smoke ✅, e2e-api ✅, tox ✅; **e2e-product ❌**; pre-commit ❌, JIRA Assoc ❌. CI re-ran — same failures. Action: Address feedback + fix pre-commit + investigate e2e-product.",
+    message: "🔴 #1690 (AIPCC-27645): **CHANGES_REQUESTED by MenD32** — CI (run 30548288372 — unchanged): nox ✅, e2e-smoke ✅, e2e-api ✅, tox ✅; **e2e-product ❌**; pre-commit ❌, JIRA Assoc ❌. Action: Address feedback + fix pre-commit + investigate e2e-product.",
   },
   {
     level: "red",
@@ -429,7 +429,7 @@ export const ALERTS = [
   },
   {
     level: "red",
-    message: "🔴 #1729 (AIPCC-28414): **NEW BOT PR** (autofix) — REVIEW_REQUIRED. test(jbenchmark): verify updated_at after PATCH experiment. Action: Joseph review.",
+    message: "🔴 #1729 (AIPCC-28414): **BOT PR** (autofix) — REVIEW_REQUIRED. test(jbenchmark): verify updated_at after PATCH experiment. Action: Joseph review.",
   },
   {
     level: "yellow",
@@ -441,11 +441,11 @@ export const ALERTS = [
   },
   {
     level: "yellow",
-    message: "📍 jn-5865 (JN-5865): Still Ingest zone — plan done Jul 8 (Day 22+). Propose move to Code + trigger /implement:code.",
+    message: "📍 jn-5865 (JN-5865): Still Ingest zone — plan done Jul 8 (Day 25+). Propose move to Code + trigger /implement:code.",
   },
   {
     level: "yellow",
-    message: "🔄 jn-5824-benchmark-run-configs (JN-5824/AIPCC-23249): Last session Jul 8 IDLE. Stale 22+ days.",
+    message: "🔄 jn-5824-benchmark-run-configs (JN-5824/AIPCC-23249): Last session Jul 8 IDLE. Stale 25+ days.",
   },
   {
     level: "yellow",
