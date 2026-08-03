@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-08-02 09:00 IDT (advance heartbeat)";
+export const LAST_UPDATED = "2026-08-03 09:02 IDT (advance heartbeat)";
 
 export const WORKTREES = [
   {
@@ -10,13 +10,13 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1690",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1690",
-    status: "🔴 **CHANGES_REQUESTED by MenD32**. CI (run 30548288372 — unchanged since Jul 31): nox ✅, e2e-smoke ✅, e2e-api ✅, tox ✅; **e2e-product ❌**; pre-commit ❌, JIRA Assoc ❌. **Action: Address reviewer feedback + fix pre-commit + investigate e2e-product.**",
-    blockedOn: "CHANGES_REQUESTED — address reviewer feedback + fix pre-commit + e2e-product ❌",
+    status: "🔴 **CHANGES_REQUESTED by MenD32**. CI (run 30755602471 — NEW): nox ✅, e2e-smoke ✅, e2e-api ✅, tox ✅, **e2e-product ✅**, **JIRA Assoc ✅**; **pre-commit ❌** (only remaining). **Action: Address MenD32 feedback + fix pre-commit.**",
+    blockedOn: "CHANGES_REQUESTED — address reviewer feedback + fix pre-commit ❌",
     blockedType: "active",
     sessionUrl: null,
-    sessionLabel: "advance heartbeat 09:00 IDT Aug 2 — CI unchanged since Jul 31, same failures",
+    sessionLabel: "advance heartbeat 09:02 IDT Aug 3 — CI improved: e2e-product & JIRA Assoc now pass",
     recentSessions: [],
-    lastActive: "2026-08-02 09:00 IDT",
+    lastActive: "2026-08-03 09:02 IDT",
   },
   {
     ticket: "AIPCC-27681",
@@ -409,15 +409,11 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "red",
-    message: "⚠️ BOARD_STATE.md was 2+ days old (Jul 31 10:15 IDT → Aug 2 09:00 IDT). Multiple scheduled sessions failed between Jul 31–Aug 2. Full refresh performed this run.",
+    message: "🔴 #1690 (AIPCC-27645): **CHANGES_REQUESTED by MenD32** — CI improved (run 30755602471): e2e-product ✅, JIRA Assoc ✅; **pre-commit ❌** only. Action: Address MenD32 feedback + fix pre-commit.",
   },
   {
     level: "red",
-    message: "🔴 #1638 (AIPCC-28249 off-board): **e2e-product ❌ CONFIRMED** (run 30548081534 — unchanged since Jul 31). All other checks ✅. e2e-product is sole blocker. Needs investigation.",
-  },
-  {
-    level: "red",
-    message: "🔴 #1690 (AIPCC-27645): **CHANGES_REQUESTED by MenD32** — CI (run 30548288372 — unchanged): nox ✅, e2e-smoke ✅, e2e-api ✅, tox ✅; **e2e-product ❌**; pre-commit ❌, JIRA Assoc ❌. Action: Address feedback + fix pre-commit + investigate e2e-product.",
+    message: "🔴 #1638 (AIPCC-28249 off-board): **e2e-product ❌ CONFIRMED** (run 30739939885 — unchanged). All other checks ✅. e2e-product is sole blocker. Needs investigation.",
   },
   {
     level: "red",
