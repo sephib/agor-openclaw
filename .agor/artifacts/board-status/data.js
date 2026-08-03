@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-08-03 09:02 IDT (advance heartbeat)";
+export const LAST_UPDATED = "2026-08-03 12:02 IDT (advance heartbeat)";
 
 export const WORKTREES = [
   {
@@ -10,13 +10,13 @@ export const WORKTREES = [
     zone: "Code",
     pr: "#1690",
     prUrl: "https://github.com/Jounce-IO/jounce/pull/1690",
-    status: "🔴 **CHANGES_REQUESTED by MenD32**. CI (run 30755602471 — NEW): nox ✅, e2e-smoke ✅, e2e-api ✅, tox ✅, **e2e-product ✅**, **JIRA Assoc ✅**; **pre-commit ❌** (only remaining). **Action: Address MenD32 feedback + fix pre-commit.**",
-    blockedOn: "CHANGES_REQUESTED — address reviewer feedback + fix pre-commit ❌",
+    status: "🔴 **CHANGES_REQUESTED by MenD32**. CI (run 30795247823 — NEW): JIRA Assoc ✅, nox ✅, e2e-smoke ✅, e2e-api ✅, tox ✅; **e2e-product ❌** (REGRESSION — was ✅), **pre-commit ❌**. **Action: Address MenD32 feedback + fix pre-commit + investigate e2e-product regression.**",
+    blockedOn: "CHANGES_REQUESTED — address reviewer feedback + fix pre-commit ❌ + e2e-product ❌ REGRESSION",
     blockedType: "active",
     sessionUrl: null,
-    sessionLabel: "advance heartbeat 09:02 IDT Aug 3 — CI improved: e2e-product & JIRA Assoc now pass",
+    sessionLabel: "advance heartbeat 12:02 IDT Aug 3 — CI REGRESSED: e2e-product ❌ back",
     recentSessions: [],
-    lastActive: "2026-08-03 09:02 IDT",
+    lastActive: "2026-08-03 12:02 IDT",
   },
   {
     ticket: "AIPCC-27681",
@@ -409,7 +409,7 @@ export const MERGED = [
 export const ALERTS = [
   {
     level: "red",
-    message: "🔴 #1690 (AIPCC-27645): **CHANGES_REQUESTED by MenD32** — CI improved (run 30755602471): e2e-product ✅, JIRA Assoc ✅; **pre-commit ❌** only. Action: Address MenD32 feedback + fix pre-commit.",
+    message: "🔴 #1690 (AIPCC-27645): **CHANGES_REQUESTED by MenD32** — CI REGRESSED (new run 30795247823): **e2e-product ❌ back** (was ✅ in run 30755602471), **pre-commit ❌**. Action: Address MenD32 feedback + fix pre-commit + investigate e2e-product regression.",
   },
   {
     level: "red",

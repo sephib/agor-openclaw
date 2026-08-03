@@ -1,6 +1,15 @@
 export const HEARTBEAT_RUNS = [
   {
     type: "advance",
+    timestamp: "2026-08-03 12:02 IDT",
+    actions: 0,
+    findings: 1,
+    status: "ok",
+    summary: "CI REGRESSION: #1690 e2e-product ❌ back (new run 30795247823 — was ✅ in 30755602471); board static, no merges",
+    sessionUrl: "http://127.0.0.1:3030/ui/s/019fc6da549a783e842c6441/",
+  },
+  {
+    type: "advance",
     timestamp: "2026-08-03 09:02 IDT",
     actions: 0,
     findings: 1,

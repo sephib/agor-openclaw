@@ -1,6 +1,6 @@
 # Board State — jounce-workflow-ai
 
-*Last updated: 2026-08-03 09:02 IDT (advance heartbeat)*
+*Last updated: 2026-08-03 12:02 IDT (advance heartbeat)*
 
 ---
 
@@ -8,7 +8,7 @@
 
 | Worktree | Zone | PR | CI | Jira | Status |
 |---------|------|----|----|------|--------|
-| aipcc-27645-server-resources | **Code** | [#1690](https://github.com/Jounce-IO/jounce/pull/1690) | 🟡 **New CI run 30755602471**: pre-commit ❌ (ONLY remaining failure); e2e-product ✅, JIRA Assoc ✅, nox ✅, e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅ | [AIPCC-27645](https://redhat.atlassian.net/browse/AIPCC-27645) — In Progress | 🔴 **CHANGES_REQUESTED by MenD32**. MERGEABLE. **CI improved**: e2e-product & JIRA Assoc now pass — only pre-commit ❌ remains. **Action: Address MenD32 feedback + fix pre-commit.** |
+| aipcc-27645-server-resources | **Code** | [#1690](https://github.com/Jounce-IO/jounce/pull/1690) | 🔴 **New CI run 30795247823**: e2e-product ❌ (REGRESSION — was ✅ last run), pre-commit ❌; JIRA Assoc ✅, nox ✅, e2e-smoke ✅, e2e-api ✅, integration ✅, tox ✅ | [AIPCC-27645](https://redhat.atlassian.net/browse/AIPCC-27645) — In Progress | 🔴 **CHANGES_REQUESTED by MenD32**. MERGEABLE. **CI REGRESSED**: e2e-product ❌ back. Was passing last run. **Action: Address MenD32 feedback + fix pre-commit + investigate e2e-product regression.** |
 | jn-5695-db-connect-script | BLOCKED | [#1596 DRAFT](https://github.com/Jounce-IO/jounce/pull/1596) | UNKNOWN | [JN-5695](https://redhat.atlassian.net/browse/JN-5695) — In Progress | 🔴 DRAFT + UNKNOWN (was CONFLICTING); frozen since Jun 14. |
 | jn-5795-upgrade-to-guidellm-v070 | Ingest | — | — | [JN-5795](https://redhat.atlassian.net/browse/JN-5795) — New | Design session done Jun 30. Ready for Plan phase. Stale 34+ days. |
 | jn-5824-benchmark-run-configs | Code | — | — | [JN-5824](https://redhat.atlassian.net/browse/JN-5824) / [AIPCC-23249](https://redhat.atlassian.net/browse/AIPCC-23249) — In Progress | Last session Jul 8 IDLE. Needs: configs, rebase, PR. Stale 26+ days. |
@@ -86,29 +86,28 @@ Active sprint tickets assigned to Joseph with no board worktree:
 
 ---
 
-## Key Changes (09:02 IDT Aug 3 advance heartbeat vs 09:00 IDT Aug 2 advance heartbeat)
+## Key Changes (12:02 IDT Aug 3 advance heartbeat vs 09:02 IDT Aug 3 advance heartbeat)
 
 | What changed | Delta |
 |---|---|
-| **#1690 CI** | 🎉 **New CI run 30755602471**. e2e-product now ✅, JIRA Assoc now ✅. **Only pre-commit ❌ remains.** Significant improvement. |
+| **#1690 CI** | 🔴 **REGRESSION**: New run 30795247823 — e2e-product ❌ back (was ✅ in run 30755602471). pre-commit ❌ unchanged. CI has degraded since last heartbeat. |
 | **#1638 CI** | Run 30739939885 — still e2e-product ❌. Unchanged. |
 | **Merges** | None detected (Step 1 sweep: all open PRs confirmed still OPEN). |
 | **Board zones** | Fully static — no zone changes. |
-| **Jira mismatches** | Unchanged at 5 (Jira MCP unavailable). |
-| **Sprint tickets** | Unchanged (Jira MCP unavailable this run). |
-| **#1596 (jn-5695)** | Was CONFLICTING — now UNKNOWN (GitHub state indeterminate). No change in status. |
+| **Jira mismatches** | Unchanged at 5 (acli jql not supported this run). |
+| **Sprint tickets** | Unchanged (Jira unavailable this run). |
 
 ---
 
 ## Attention Items
 
-### 🔴 #1690 (AIPCC-27645) — CHANGES_REQUESTED + pre-commit failing
+### 🔴 #1690 (AIPCC-27645) — CHANGES_REQUESTED + CI REGRESSED
 
 PR [#1690](https://github.com/Jounce-IO/jounce/pull/1690): "fix(helm): increase API server resources and probe tolerances"
 - **State: OPEN, MERGEABLE, NOT DRAFT, CHANGES_REQUESTED by MenD32**
-- CI (run 30755602471 — **new run**): nox ✅, e2e-smoke ✅, e2e-api ✅, tox ✅, e2e-product ✅, JIRA Assoc ✅; **pre-commit ❌** (only failure)
-- **🎉 e2e-product and JIRA Assoc now passing. Only pre-commit ❌ remains.**
-- **Action: Address MenD32 review feedback + fix pre-commit.**
+- CI (run 30795247823 — **new run**): nox ✅, e2e-smoke ✅, e2e-api ✅, tox ✅, JIRA Assoc ✅; **e2e-product ❌** (REGRESSION — was ✅ in run 30755602471), **pre-commit ❌**
+- **🔴 CI REGRESSED: e2e-product ❌ is back. Was passing in previous heartbeat run.**
+- **Action: Address MenD32 review feedback + fix pre-commit + investigate e2e-product regression.**
 
 ---
 
@@ -177,7 +176,7 @@ Unchanged — Jira MCP unavailable this run.
 
 ## Archived This Session
 
-No archives this run (09:02 IDT Aug 3 advance heartbeat). No merged/closed PRs detected.
+No archives this run (12:02 IDT Aug 3 advance heartbeat). No merged/closed PRs detected.
 
 Previously archived:
 | Branch | PR | Reason | Time |
