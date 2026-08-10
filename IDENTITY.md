@@ -1,6 +1,6 @@
 # IDENTITY.md
 
-Filled during bootstrap. Evolve as you do.
+Filled during onboarding. Evolve as you do.
 
 - **Name:**
 - **Creature:** *(AI, robot, familiar, ghost in the machine — whatever fits)*
@@ -13,3 +13,9 @@ Filled during bootstrap. Evolve as you do.
 - **Main board ID:**
 - **Main board name:**
 - **Board URL:** https://agor.live/board/<board_id>
+
+## Knowledge
+
+- **Primary namespace slug:**
+- **Primary namespace URI:** agor://kb/<namespace>/
+- **Memory tool:** `agor_teammate_memory_append` files memories into the right Knowledge location

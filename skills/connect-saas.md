@@ -1,0 +1,52 @@
+# Skill: connect-saas
+
+**When to use:** The user asks to connect an external service, or a concrete task would materially benefit from direct access to one.
+
+**Goal:** Find the best maintained connection path and apply it safely in Agor. This is a research method + Agor wrapper, not a hand-maintained SaaS catalog.
+
+## Principles
+
+- Lead with the value the connection unlocks.
+- Recommend one high-leverage source based on the user's goal; do not present a catalog.
+- Prefer reusable, approved paths over one-off secrets.
+- Offer to configure the connection, while making clear where the user can
+  review, change, or disable the same configuration in Agor.
+- Ask/apply the user's security stance from `USER.md` when scopes, visibility, or posting are involved.
+- Never ask for secrets in chat. Prefer OAuth; otherwise discover and use the
+  secure credential widget appropriate to the connection.
+- Verify: registered → enabled → attached to current session when needed → authenticated → tools visible → first useful action works.
+
+## Research order
+
+1. Existing Agor MCP registration / company-approved connector already available to the user/workspace.
+2. MCP server + OAuth / URL discovery.
+3. MCP server + Dynamic Client Registration (DCR).
+4. Trusted community skill.
+5. PAT/API token fallback with exact minimum scopes inline.
+
+Registry pointers, not a catalog:
+
+- Skills: [skills.sh](https://skills.sh), [SkillsMP](https://skillsmp.com), [github.com/anthropics/skills](https://github.com/anthropics/skills), internal `preset-io/agent-skills`, internal `preset-io/preset-agent-skills`.
+- MCP: [registry.modelcontextprotocol.io](https://registry.modelcontextprotocol.io), [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers), [Smithery](https://smithery.ai), [Glama](https://glama.ai), [mcp.so](https://mcp.so), [PulseMCP](https://pulsemcp.com), [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers).
+- Meta-connectors: Zapier MCP, Composio, Pipedream.
+
+## Agor wrapper
+
+1. Discover exact Agor tool schemas at runtime (`mcp-servers`, service-specific tools, widgets).
+2. Find or create the non-secret config. For remote OAuth, start simple: `name` + public `url` + `auth:{type:"oauth"}`; add client/endpoints only if discovery/DCR fails.
+3. If session-scoped, attach it to the **current session**; don't stop at “registered.”
+4. Check authentication status. If a credential is unavoidable, explain its
+   type and minimum scope, invoke the appropriate secure flow, then stop while
+   the user completes it.
+5. Verify tools are visible after refresh/re-prompt if needed.
+6. Do the first useful action from live context, usually read/summarize/draft before write/post; authentication alone is not an outcome.
+7. If the result has recurring value, offer a specific cadence through Agor's scheduler and agree on scope, output, destination, and how to stop it.
+8. Return the connection or settings link when available and explain how the
+   user can review, narrow, or disable it.
+9. Record outcome in memory/Knowledge if available; never record secrets.
+
+## Examples
+
+- **GitHub:** Prefer existing GitHub MCP/App/OAuth. PAT fallback should be fine-grained, selected repos only, minimum permissions for the task.
+- **Fellow:** Try public MCP `https://fellow.app/mcp` with OAuth. Verify current-session attachment. Watch for redirect URI allowlisting on dev/test hosts.
+- **Slack:** Prefer an existing company Slack app/MCP if available. Proactive posts require an outbound-capable Slack connector and explicit posting policy.
