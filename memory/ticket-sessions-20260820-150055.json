@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-08-20T12:00:55.009943+00:00",
+  "board_id": "5af14633e01cb0c5e1df9df6",
+  "lists": [],
+  "archived_cards": [
+    {
+      "card_id": "6a860cef795be9877a5f9a43",
+      "session_id": "01a01e32-ad71-7845-bd87-a58e5173e088",
+      "title": "ebike"
+    }
+  ],
+  "deleted_cards": [],
+  "stats": {
+    "worktrees_to_create": 0,
+    "worktrees_existing": 0,
+    "sessions_to_create": 0,
+    "sessions_to_update": 0,
+    "total_cards": 0,
+    "sessions_archived": 1,
+    "sessions_deleted": 0
+  }
+}
